@@ -1,0 +1,254 @@
+[
+  {
+    "id": "before-fed",
+    "start": 1900,
+    "end": 1913,
+    "zh": {
+      "title": "中央银行制度的转折",
+      "description": "1907 年金融恐慌暴露了美国银行体系的脆弱性，推动了 1913 年美联储的建立。",
+      "mechanism": "银行挤兑 → 信贷紧缩 → 改革货币制度",
+      "lesson": "理解通胀，也要理解货币与银行制度。此时期尚无本项目的官方 CPI 观测值。"
+    },
+    "en": {
+      "title": "Before a new central bank",
+      "description": "The Panic of 1907 exposed weaknesses in U.S. banking and helped motivate the creation of the Federal Reserve in 1913.",
+      "mechanism": "Bank runs → tighter credit → monetary reform",
+      "lesson": "The monetary system matters for understanding prices. This project has no official CPI observations for this era."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/before-the-fed"
+    }
+  },
+  {
+    "id": "wwi",
+    "start": 1914,
+    "end": 1920,
+    "zh": {
+      "title": "一战与价格上升",
+      "description": "一战改变了贸易与融资。美国的黄金流入和货币扩张，与战时需求一起推动价格上涨。",
+      "mechanism": "战争需求与融资 → 购买力增加 → 价格压力",
+      "lesson": "战争冲击既影响供应，也改变支出和融资。"
+    },
+    "en": {
+      "title": "War and rising prices",
+      "description": "World War I reshaped trade and finance. Gold inflows and monetary expansion accompanied wartime demand in the United States.",
+      "mechanism": "War demand and finance → increased spending power → price pressure",
+      "lesson": "War shocks affect both supply and the way spending is financed."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/feds-formative-years"
+    }
+  },
+  {
+    "id": "twenties",
+    "start": 1921,
+    "end": 1928,
+    "zh": {
+      "title": "战后调整与恢复",
+      "description": "美国在 1920 年收紧货币政策后经历衰退与价格下跌，随后在较低通胀环境中恢复。",
+      "mechanism": "紧缩与需求回落 → 价格调整 → 经济恢复",
+      "lesson": "通胀回落可能伴随经济代价，路径并不平稳。"
+    },
+    "en": {
+      "title": "Postwar adjustment",
+      "description": "Following monetary tightening in 1920, the U.S. experienced recession and falling prices before recovering with relatively low inflation.",
+      "mechanism": "Tightening and weaker demand → price adjustment → recovery",
+      "lesson": "Disinflation can carry economic costs and need not follow a smooth path."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/feds-formative-years"
+    }
+  },
+  {
+    "id": "depression",
+    "start": 1929,
+    "end": 1938,
+    "zh": {
+      "title": "大萧条与通缩",
+      "description": "银行危机、货币收缩与需求崩塌加深了大萧条。价格下跌也加重了实际债务负担。",
+      "mechanism": "信贷与需求收缩 → 价格下跌 → 实际债务变重",
+      "lesson": "价格下跌并不总是好消息，尤其当收入与就业也下滑时。"
+    },
+    "en": {
+      "title": "Depression and deflation",
+      "description": "Banking distress, monetary contraction, and collapsing demand deepened the Depression. Falling prices increased real debt burdens.",
+      "mechanism": "Credit and demand contract → prices fall → real debt burdens rise",
+      "lesson": "Falling prices need not be good news when incomes and employment are falling too."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/great-depression"
+    }
+  },
+  {
+    "id": "wwii",
+    "start": 1939,
+    "end": 1948,
+    "zh": {
+      "title": "二战与战后通胀",
+      "description": "战时融资与价格管制塑造了美国物价；战后解除管制和需求释放带来了新的价格压力。",
+      "mechanism": "战争与管制 → 供需失衡 → 战后价格调整",
+      "lesson": "管制下的价格不一定反映全部短缺压力。"
+    },
+    "en": {
+      "title": "War controls and postwar inflation",
+      "description": "War finance and price controls shaped U.S. prices. Removing controls and releasing pent-up demand brought renewed pressure after the war.",
+      "mechanism": "War and controls → supply-demand imbalances → postwar price adjustment",
+      "lesson": "Controlled prices may not reveal the full pressure of shortages."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/wwii-and-its-aftermath"
+    }
+  },
+  {
+    "id": "accord",
+    "start": 1949,
+    "end": 1964,
+    "zh": {
+      "title": "货币政策独立性",
+      "description": "1951 年财政部与美联储达成协议，结束了战时形成的固定利率支持安排。",
+      "mechanism": "财政融资需求 ↔ 货币政策目标",
+      "lesson": "政策制度决定央行如何在融资、增长与物价之间作出选择。"
+    },
+    "en": {
+      "title": "Monetary policy independence",
+      "description": "The 1951 Treasury–Fed Accord ended the wartime arrangement of supporting fixed interest rates.",
+      "mechanism": "Public financing needs ↔ monetary policy goals",
+      "lesson": "Policy institutions shape how central banks navigate financing, growth, and price stability."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/wwii-and-its-aftermath"
+    }
+  },
+  {
+    "id": "great-inflation",
+    "start": 1965,
+    "end": 1978,
+    "zh": {
+      "title": "大通胀与第一次石油冲击",
+      "description": "美国通胀在 1960 年代中期开始走高。1973 年石油冲击叠加政策失误和不断变化的预期，令问题更加复杂。",
+      "mechanism": "需求与政策压力 + 能源冲击 + 预期",
+      "lesson": "滞胀不能只用一个油价因素解释。"
+    },
+    "en": {
+      "title": "The Great Inflation and oil",
+      "description": "U.S. inflation rose from the mid-1960s. The 1973 oil shock compounded policy errors and shifting expectations.",
+      "mechanism": "Demand and policy pressures + energy shock + expectations",
+      "lesson": "Stagflation cannot be explained by oil prices alone."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/great-inflation"
+    }
+  },
+  {
+    "id": "volcker",
+    "start": 1979,
+    "end": 1982,
+    "zh": {
+      "title": "第二次油价冲击与沃尔克紧缩",
+      "description": "新的能源冲击之后，美联储转向更紧缩的政策。通胀最终下降，但期间经历了严重衰退。",
+      "mechanism": "政策紧缩 → 融资和需求降温 → 通胀下降",
+      "lesson": "抑制通胀存在时滞，也可能影响就业和产出。"
+    },
+    "en": {
+      "title": "Oil shock and Volcker tightening",
+      "description": "After another energy shock, the Fed adopted tighter policy. Inflation eventually fell, with severe recessions along the way.",
+      "mechanism": "Policy tightening → cooler financing and demand → lower inflation",
+      "lesson": "Reducing inflation takes time and may affect jobs and output."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/great-inflation"
+    }
+  },
+  {
+    "id": "moderation",
+    "start": 1983,
+    "end": 2007,
+    "zh": {
+      "title": "大缓和时期",
+      "description": "许多发达经济体的通胀和产出波动下降。更好的政策、结构变化与较温和冲击的作用仍有争论。",
+      "mechanism": "政策与结构变化 → 波动减小",
+      "lesson": "低波动并不意味着金融风险已经消失。"
+    },
+    "en": {
+      "title": "The Great Moderation",
+      "description": "Inflation and output became less volatile in many advanced economies. The roles of policy, structural change, and milder shocks remain debated.",
+      "mechanism": "Policy and structural changes → lower volatility",
+      "lesson": "Lower macroeconomic volatility does not eliminate financial risk."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/great-moderation"
+    }
+  },
+  {
+    "id": "recession",
+    "start": 2008,
+    "end": 2019,
+    "zh": {
+      "title": "金融危机后的低通胀",
+      "description": "金融危机冲击信贷与需求。央行降息并购买资产，试图支持经济恢复。",
+      "mechanism": "金融冲击 → 支出收缩 → 政策支持",
+      "lesson": "资产购买与消费者价格之间并不存在固定比例关系。"
+    },
+    "en": {
+      "title": "Low inflation after the crisis",
+      "description": "The financial crisis damaged credit and demand. Central banks cut rates and purchased assets to support recovery.",
+      "mechanism": "Financial shock → weaker spending → policy support",
+      "lesson": "Asset purchases do not translate into consumer prices at a fixed ratio."
+    },
+    "source": {
+      "name": "Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath"
+    }
+  },
+  {
+    "id": "pandemic",
+    "start": 2020,
+    "end": 2024,
+    "zh": {
+      "title": "疫情、通胀上升与回落",
+      "description": "疫情后的供给受限和需求变化，叠加能源与食品冲击，推动通胀上升。随后供应恢复与货币紧缩共同推动通胀回落。",
+      "mechanism": "供应与需求冲击 → 通胀上升 → 供应恢复与紧缩",
+      "lesson": "通胀放缓是价格涨得更慢，不一定是价格回到从前。"
+    },
+    "en": {
+      "title": "Pandemic inflation and disinflation",
+      "description": "Supply constraints and demand shifts after the pandemic combined with energy and food shocks. Supply recovery and monetary tightening later helped inflation fall.",
+      "mechanism": "Supply and demand shocks → higher inflation → recovery and tightening",
+      "lesson": "Disinflation means prices rise more slowly, not necessarily that prices return to earlier levels."
+    },
+    "source": {
+      "name": "IMF",
+      "url": "https://www.imf.org/en/publications/weo/issues/2024/10/22/world-economic-outlook-october-2024"
+    }
+  },
+  {
+    "id": "present",
+    "start": 2025,
+    "end": 2026,
+    "zh": {
+      "title": "阅读当下，先核对数据",
+      "description": "本项目以已发布的月度 CPI 观察价格变化。2026 年尚未结束，不能把已发布月份称为全年结果。",
+      "mechanism": "核对月份与口径 → 区分价格水平和涨幅 → 再解释原因",
+      "lesson": "单一 CPI 指标不足以判断所有通胀成因，也不足以预测未来。"
+    },
+    "en": {
+      "title": "Read the present with care",
+      "description": "This project uses released monthly CPI observations. Because 2026 is not complete, available months are not a full-year outcome.",
+      "mechanism": "Check dates and definitions → separate levels from rates → investigate causes",
+      "lesson": "One CPI series cannot identify every inflation driver or predict the future."
+    },
+    "source": {
+      "name": "BLS / FRED",
+      "url": "https://fred.stlouisfed.org/series/CPIAUCNS"
+    }
+  }
+]

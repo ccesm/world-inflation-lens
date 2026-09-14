@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify": "node scripts/verify.mjs"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -14,5 +15,8 @@
   },
   "devDependencies": {
     "vite": "^7.1.7"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

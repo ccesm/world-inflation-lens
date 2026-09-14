@@ -6,14 +6,25 @@ import { Overview } from './pages/Overview.jsx'
 import { Timeline } from './pages/Timeline.jsx'
 import { Placeholder } from './pages/Placeholder.jsx'
 import { Sources } from './pages/Sources.jsx'
+import { UsCpi } from './pages/UsCpi.jsx'
+import { experience } from './i18n/experience.js'
+
+function initialLanguage() {
+  try {
+    const saved = localStorage.getItem('wil-language')
+    if (saved === 'zh' || saved === 'en') return saved
+  } catch { /* Storage may be disabled; the interface still works. */ }
+  return navigator.language.startsWith('zh') ? 'zh' : 'en'
+}
 
 export default function App() {
   const [route, setRoute] = useState(routeFromHash)
-  const [language, setLanguage] = useState(() => localStorage.getItem('wil-language') === 'zh' ? 'zh' : 'en')
+  const [language, setLanguage] = useState(initialLanguage)
   const t = copy[language]
+  const labels = experience[language]
 
   useEffect(() => {
-    const onHashChange = () => setRoute(routeFromHash())
+    const onHashChange = () => { setRoute(routeFromHash()); window.scrollTo(0, 0) }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
@@ -21,12 +32,12 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en'
     document.title = `${t.nav[route]} | World Inflation Lens`
-    localStorage.setItem('wil-language', language)
+    try { localStorage.setItem('wil-language', language) } catch { /* Optional persistence. */ }
   }, [language, route, t])
 
   return <div className="site-shell">
     <header className="site-header">
-      <a className="brand" href="#/home" aria-label="World Inflation Lens home"><span className="brand-mark">◎</span><span>WORLD<br /><strong>INFLATION LENS</strong></span></a>
+      <a className="brand" href="#/home" aria-label={language === 'zh' ? '全球通胀透视 · 首页' : 'World Inflation Lens home'}><span className="brand-mark">◎</span><span>WORLD<br /><strong>INFLATION LENS</strong>{language === 'zh' && <small className="brand-chinese">全球通胀透视</small>}</span></a>
       <nav className="desktop-nav" aria-label={t.navigation}>
         {routes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}
       </nav>
@@ -37,10 +48,10 @@ export default function App() {
     </header>
     <nav className="mobile-nav" aria-label={t.navigation}>{routes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
     <main key={route}>
-      {route === 'home' && <Home t={t} />}
-      {route === 'overview' && <Overview t={t} />}
-      {route === 'timeline' && <Timeline t={t} />}
-      {route === 'us-cpi' && <Placeholder t={t} kind="us-cpi" />}
+      {route === 'home' && <Home language={language} />}
+      {route === 'overview' && <Overview t={{ ...t, overview: { ...t.overview, notice: labels.overviewNotice } }} />}
+      {route === 'timeline' && <Timeline language={language} />}
+      {route === 'us-cpi' && <UsCpi language={language} />}
       {route === 'map' && <Placeholder t={t} kind="map" />}
       {route === 'sources' && <Sources t={t} language={language} />}
     </main>
