@@ -1,5 +1,7 @@
 # Inflation data
 
+`drivers.json` contains four monthly public-domain FRED snapshots: BLS food CPI (CPIUFDNS), BLS energy CPI (CPIENGNS), EIA WTI oil price (MCOILWTICO), and Federal Reserve effective federal funds rate (FEDFUNDS). Source metadata and original values are stored together. CPI component year-on-year rates are computed on the frontend; interest rates and oil prices retain their original units. Refresh with `scripts/import-drivers.mjs`; see the root README for instructions.
+
 `worldbank.json` contains WDI FP.CPI.TOTL.ZG (annual consumer price inflation, %), 1960–2025. Each country has 66 year slots, with missing observations stored as null. Source metadata, attribution, UTC retrieval date, license and source update date are embedded. This annual series is separate from the monthly FRED CPI series below. Regenerate via `scripts/import-worldbank.mjs` using the documented inputs in the root README.
 
 `fred.json` is the CPIAUCNS snapshot: BLS CPI-U via FRED, monthly, not seasonally adjusted, 1982–1984 = 100. It covers 1913-01 through 2026-08 and was retrieved 2026-09-13.

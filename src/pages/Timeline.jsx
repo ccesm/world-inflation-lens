@@ -4,10 +4,15 @@ import { TimeSeriesChart } from '../charts/TimeSeriesChart.jsx'
 import { cpi } from '../data/inflation.js'
 import events from '../../data/history/events.json'
 import { experience } from '../i18n/experience.js'
+import { driverLinkForChapter } from '../data/driverEpisodes.js'
+import { driversCopy } from '../i18n/drivers.js'
 
 export function Timeline({ language }) {
   const labels = experience[language]
-  const [year, setYear] = useState(1973)
+  const [year, setYear] = useState(() => {
+    const value = Number(new URLSearchParams(window.location.hash.split('?')[1]).get('year'))
+    return Number.isInteger(value) && value >= 1900 && value <= 2026 ? value : 1973
+  })
   const event = events.find(item => year >= item.start && year <= item.end)
   const content = event[language]
   return <><PageIntro eyebrow={labels.historyEyebrow} title={labels.historyTitle} description={labels.historyDescription} />
@@ -18,5 +23,6 @@ export function Timeline({ language }) {
           <article className="era-story" aria-live="polite"><p className="eyebrow">{event.start} — {event.end}</p><h2>{content.title}</h2><p>{content.description}</p><h3>{labels.mechanism}</h3><p className="mechanism">{content.mechanism}</p><h3>{labels.lesson}</h3><p>{content.lesson}</p><a className="text-link" href={event.source.url} target="_blank" rel="noreferrer">{event.source.name} · {labels.sourceLink}</a></article>
         </div>
       </div>
+      {driverLinkForChapter(event.id) && <div className="home-global-link"><span>{driversCopy[language].bridge}</span><a href={driverLinkForChapter(event.id)}>{driversCopy[language].open} →</a></div>}
     </section></>
 }

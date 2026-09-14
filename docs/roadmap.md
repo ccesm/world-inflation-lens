@@ -12,8 +12,11 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## Suggested next releases
 
-- V0.3: food, energy, and rates versus CPI, connected to historical explanations.
 - V0.4: scheduled data ingestion with validation, revision review, and update status.
+
+## Delivered V0.3
+
+U.S. food/energy CPI versus headline inflation; WTI monthly oil prices on a separate scale; effective federal funds rates versus inflation. Synchronized month inspection, range controls, missing-data handling, monthly table/CSV, and four historical windows with two-way history links. All seven pages remain bilingual, responsive, and theme-aware. No causal contributions or inflation-regime scores are inferred.
 
 ## Future V1.0 scope from the product brief
 

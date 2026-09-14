@@ -15,7 +15,14 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
-## V0.2 features
+## V0.3 features
+
+- A bilingual **Drivers** page with food CPI versus headline CPI, energy CPI versus headline CPI plus a separate WTI oil panel, and effective federal funds rate versus headline inflation.
+- Monthly date controls, 5 / 10 / 50-year and full-history ranges, synchronized month inspection, accessible data tables, and CSV download with units in column names.
+- Four historical windows (1973 oil shock, Volcker tightening, financial crisis, pandemic), episode shading, and links in both directions with the history timeline. Direct links such as `#/drivers?topic=rates&episode=volcker` work after refresh.
+- Explicit U.S. scope, source coverage, update/retrieval dates, missing-data gaps, and explanations distinguishing co-movement from causal contributions.
+
+## V0.2 features retained
 
 - Real annual country inflation map, 1960–2025, with seven colour classes including deflation and missing data.
 - Country details: selected-year value, separately dated latest value, historical high/low, and annual chart.
@@ -34,7 +41,36 @@ Retained from V0.1:
 - Purchasing-power calculator for arbitrary available months and nonnegative dollar amounts.
 - Source registry distinguishing integrated data from planned providers.
 
-The historical-event timeline still uses **U.S. CPI**, not a global aggregate. Country comparisons use annual World Bank data. Forecasts, global aggregates, and additional drivers remain planned; see `docs/roadmap.md`.
+The historical-event timeline and Drivers page use **U.S. data**, not a global aggregate. Country comparisons use annual World Bank data. Forecasts, global aggregates, and further drivers remain planned; see `docs/roadmap.md`.
+
+## Driver data methodology
+
+`data/inflation/drivers.json` contains four public-domain monthly FRED source snapshots. The existing `fred.json` supplies headline CPI. Retrieval dates use UTC.
+
+| Series | Source | Stored measure | Coverage |
+| --- | --- | --- | --- |
+| CPIUFDNS | BLS via FRED | Food CPI, 1982–1984=100, unadjusted | 1913-01–2026-08 |
+| CPIENGNS | BLS via FRED | Energy CPI, 1982–1984=100, unadjusted | 1957-01–2026-08 |
+| MCOILWTICO | EIA via FRED | Monthly WTI spot price, USD/barrel | 1986-01–2026-08 |
+| FEDFUNDS | Federal Reserve Board via FRED | Effective federal funds rate, monthly average, percent | 1954-07–2026-08 |
+
+Food/energy indexes are converted to year-on-year rates by matching the same calendar month one year earlier. October 2025 is missing in both CPI component sources and stays null. FEDFUNDS is kept as a rate level; it is not transformed into a growth rate. Oil stays in USD/barrel in a separate panel with its own vertical scale and the same date axis. Before 1986 the WTI panel remains empty. Monthly averages cannot show daily futures-price extremes. Dates are aligned without interpolation, forward filling, or fabricated data. Food and energy are subsets of headline CPI; the charts do not estimate weighted contributions or causal effects.
+
+The food view can span 1913 onward; energy/rates views start at July 1954 to include the federal funds series, with missing early energy/WTI observations retained. Episode shading is an editorial reading window, not an estimate of causal duration. Presets add surrounding months for context; source coverage may differ.
+
+Manual refresh (all four downloads must succeed):
+
+```sh
+curl -fL 'https://fred.stlouisfed.org/data/CPIUFDNS' -o /tmp/wil-CPIUFDNS.html
+curl -fL 'https://fred.stlouisfed.org/data/CPIENGNS' -o /tmp/wil-CPIENGNS.html
+curl -fL 'https://fred.stlouisfed.org/data/MCOILWTICO' -o /tmp/wil-MCOILWTICO.html
+curl -fL 'https://fred.stlouisfed.org/data/FEDFUNDS' -o /tmp/wil-FEDFUNDS.html
+node scripts/import-drivers.mjs /tmp
+npm run build
+npm run verify
+```
+
+The importer parses only FRED metadata, observation table cells, and text overflow rows. It never executes downloaded scripts. It validates series identity, monthly frequency, adjustment, date bounds, numeric values, and complete consecutive months before replacing the snapshot. Review source revisions and update fixed snapshot assertions when refreshing. No API keys or runtime API calls are required.
 
 ## Global data methodology
 
@@ -78,7 +114,7 @@ The frontend bundles these JSON files at build time. Visitors do not need an API
 - `src/App.jsx`: app shell, language state, and page selection
 - `src/main.jsx`: React entry point and global styles
 - `src/components/`: shared page elements and purchasing-power calculator
-- `src/pages/`: homepage, global overview, history, U.S. CPI, global map/comparison, sources
+- `src/pages/`: homepage, global overview, history, U.S. CPI, global map/comparison, drivers, sources
 - `src/charts/`: reusable SVG time-series chart and visual placeholders
 - `src/data/`: source registry and adapters for bundled snapshots
 - `src/i18n/`: English / Chinese interface and educational copy

@@ -8,7 +8,9 @@ import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { equivalentCost, monthNumber, withAnnualChange } from '../src/utils/inflation.js'
 import { valueAt, rowsAt, rankRows, chooseDefaultYear, bucketIndex, linePath } from '../src/utils/globalInflation.js'
-import { routeFromHash } from '../src/utils/routing.js'
+import { routeFromHash, routes } from '../src/utils/routing.js'
+import { alignMonthly, monthsBetween, monthlyPath, monthlyCsv } from '../src/utils/drivers.js'
+import { parseFredTable } from './lib/fredTable.mjs'
 
 const root = resolve(import.meta.dirname, '..')
 const raw = JSON.parse(await readFile(join(root, 'data/inflation/fred.json'), 'utf8'))
@@ -66,6 +68,42 @@ globalThis.window = { location: { hash: '#/map?country=USA&year=2024' } }
 assert.equal(routeFromHash(), 'map')
 console.log('PASS: World Bank coverage, source precision, missing values, ranking, colour boundaries, country joins and query routes')
 
+const drivers = JSON.parse(await readFile(join(root, 'data/inflation/drivers.json'), 'utf8')).series
+assert.deepEqual(drivers.map(s => s.id), ['CPIUFDNS', 'CPIENGNS', 'MCOILWTICO', 'FEDFUNDS'])
+for (const source of drivers) {
+  assert.equal(source.frequency, 'monthly')
+  assert.equal(source.seasonalAdjustment, 'not seasonally adjusted')
+  assert.equal(source.observations.at(-1).date, '2026-08')
+  source.observations.forEach((point, i) => {
+    assert.ok(point.value === null || Number.isFinite(point.value))
+    if (i) assert.equal(monthNumber(point.date) - monthNumber(source.observations[i - 1].date), 1)
+  })
+}
+const food = drivers[0], energy = drivers[1], oil = drivers[2], rates = drivers[3]
+assert.equal(food.observations.at(-1).value, 350.418)
+assert.equal(energy.observations.at(-1).value, 329.351)
+assert.equal(oil.observations.find(p => p.date === '2020-04').value, 16.55)
+assert.equal(rates.observations[0].value, .8)
+assert.equal(rates.observations.at(-1).value, 3.63)
+for (const source of [food, energy]) {
+  const yoy = withAnnualChange(source.observations)
+  assert.ok(yoy.slice(0, 12).every(p => p.inflation === null))
+  assert.equal(yoy.find(p => p.date === '2025-10').inflation, null)
+  assert.equal(yoy.at(-1).inflation, (source.observations.at(-1).value / source.observations.find(p => p.date === '2025-08').value - 1) * 100)
+}
+assert.deepEqual(monthsBetween('2020-12', '2021-02'), ['2020-12', '2021-01', '2021-02'])
+const aligned = alignMonthly([{ id: 'TEST', measure: 'rate_percent', points: [{ date: '2020-12', value: 0 }, { date: '2021-02', value: -1 }] }], monthsBetween('2020-12', '2021-02'))
+assert.deepEqual(aligned[0].points.map(p => p.value), [0, null, -1])
+assert.equal(monthlyPath(aligned[0].points, monthNumber, v => v).split('M').length, 3)
+assert.match(monthlyCsv(aligned, monthsBetween('2020-12', '2021-02')), /2020-12,0\r\n2021-01,\r\n2021-02,-1/)
+const earlyOil = alignMonthly([{ points: oil.observations }], monthsBetween('1972-01', '1976-12'))
+assert.ok(earlyOil[0].points.every(p => p.value === null))
+const fixture = `<table><th>Series ID</th><td>TEST</td><th>Title</th><td>Test</td><th>Source</th><td>Test source</td><th>Units</th><td>Percent</td><th>Frequency</th><td>Monthly</td><th>Seasonal Adjustment</th><td>Not Seasonally Adjusted</td><th>Date Range</th><td>2020-01-01 to 2020-03-01</td><th>Last Updated</th><td>2020-04-01</td></table><table id="data-table-observations"><th>2020-01-01</th><td>0</td></table><div id="extra-rows">#2020-02-01| .\n#2020-03-01| -2\n</div>`
+assert.deepEqual(parseFredTable(fixture, 'TEST').observations.map(p => p.value), [0, null, -2])
+assert.throws(() => parseFredTable(fixture.replace('#2020-02-01| .', ''), 'TEST'))
+assert.throws(() => parseFredTable(fixture.replace('#2020-02-01', '#2020-01-01'), 'TEST'))
+console.log('PASS: driver source values, monthly alignment, CPI transformations, unfilled early oil, CSV and complete table import')
+
 // Execute the JSX components, not just the bundler. Missing runtime imports fail here.
 const temp = await mkdtemp(join(root, 'node_modules', '.wil-verify-'))
 try {
@@ -73,7 +111,7 @@ try {
   const { default: App } = await import(pathToFileURL(join(temp, 'App.js')))
   for (const language of ['en', 'zh']) {
     globalThis.localStorage = { getItem: () => language }
-    for (const route of ['home', 'overview', 'timeline', 'us-cpi', 'map', 'sources']) {
+    for (const route of routes) {
       globalThis.window = { location: { hash: `#/${route}` } }
       const html = renderToString(React.createElement(App))
       assert.match(html, /<h1>/)
@@ -83,12 +121,25 @@ try {
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
       if (route === 'overview') { assert.match(html, /174/); assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
       if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
+      if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.doesNotMatch(html, /NaN|undefined%/) }
     }
+    for (const topic of ['food', 'energy', 'rates']) {
+      for (const episode of ['oil', 'volcker', 'crisis', 'pandemic']) {
+        globalThis.window = { location: { hash: `#/drivers?topic=${topic}&episode=${episode}` } }
+        const html = renderToString(React.createElement(App))
+        assert.match(html, /driver-episode/)
+        assert.match(html, /era-band/)
+        assert.doesNotMatch(html, /NaN|Infinity/)
+        if (topic === 'energy' && ['oil', 'volcker'].includes(episode)) assert.match(html, /driver-empty/)
+      }
+    }
+    globalThis.window = { location: { hash: '#/timeline?year=1979' } }
+    assert.match(renderToString(React.createElement(App)), /drivers\?topic=rates&amp;episode=volcker/)
   }
   globalThis.localStorage = { getItem: () => { throw new Error('Storage blocked') } }
   globalThis.window = { location: { hash: '#/home' } }
   assert.match(renderToString(React.createElement(App)), /site-shell/)
-  console.log('PASS: all six views render in both languages; blocked storage does not break the app')
+  console.log('PASS: all seven views and 24 driver-topic/episode combinations render; history links and blocked storage work')
   await build({ configFile: false, root, logLevel: 'error', build: { ssr: 'src/charts/WorldMap.jsx', outDir: join(temp, 'map'), minify: false } })
   const { default: WorldMap } = await import(pathToFileURL(join(temp, 'map/WorldMap.js')))
   for (const language of ['en', 'zh']) {

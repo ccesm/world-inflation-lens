@@ -1,4 +1,4 @@
-export const routes = ['home', 'overview', 'timeline', 'us-cpi', 'map', 'sources']
+export const routes = ['home', 'overview', 'timeline', 'us-cpi', 'map', 'drivers', 'sources']
 
 export function routeFromHash() {
   const route = window.location.hash.slice(2).split('?')[0]
