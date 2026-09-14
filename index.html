@@ -6,6 +6,16 @@
     <meta name="theme-color" content="#f5f3ed" />
     <meta name="description" content="Explore global inflation through time, place, and data." />
     <title>World Inflation Lens</title>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('wil-theme')
+        const theme = savedTheme === 'light' || savedTheme === 'dark'
+          ? savedTheme
+          : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = theme
+        document.documentElement.style.colorScheme = theme
+      } catch { document.documentElement.dataset.theme = 'light' }
+    </script>
   </head>
   <body>
     <div id="root"></div>

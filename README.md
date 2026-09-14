@@ -18,6 +18,7 @@ npm run verify
 ## V0.1 features
 
 - Chinese / English UI with language persistence; blocked browser storage does not stop rendering.
+- Light / dark appearance toggle in the top-right header, with system preference fallback and saved selection.
 - Homepage with three interactive inflation-transmission explanations and a shopping-basket example.
 - Twelve cited historical chapters covering 1900–2026, with a year selector and highlighted eras on a U.S. inflation chart.
 - U.S. CPI from January 1913 through August 2026, with index / year-over-year modes, 1 / 5 / 10 / 50-year and full-history views, a keyboard-accessible observation slider, and a data table.

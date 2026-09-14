@@ -1,5 +1,10 @@
 /* The explanatory V0.1 experience extends the shared layout. */
 :root { --ink: #243c33; --muted: #637469; --copper: #a75835; --paper: #fffdf7; }
+html { background: #f5f3ed; transition: background-color .25s ease, color .25s ease; }
+body, .site-shell { transition: background-color .25s ease, color .25s ease; }
+.header-actions { margin-left: auto; display: flex; align-items: center; justify-content: flex-end; gap: 10px; white-space: nowrap; }
+.theme-toggle { width: 36px; height: 36px; display: grid; place-items: center; flex: 0 0 auto; border: 1px solid #d7d9d1; border-radius: 50%; background: transparent; color: #314b40; cursor: pointer; font-size: 17px; line-height: 1; }
+.theme-toggle:hover { background: #e6e9e1; }
 input, button { font: inherit; }
 input:focus-visible, summary:focus-visible { outline: 2px solid var(--copper); outline-offset: 4px; }
 input[type=range] { width: 100%; accent-color: #a25a3b; cursor: pointer; min-height: 30px; }
@@ -111,3 +116,122 @@ input[type=range] { width: 100%; accent-color: #a25a3b; cursor: pointer; min-hei
 .month-picker > div { display: grid; grid-template-columns: 1.3fr 1fr; gap: 8px; }
 .month-picker select { width: 100%; min-width: 0; background: #fffdf7; border: 1px solid #bccaad; border-radius: 0; color: var(--ink); padding: 14px 8px; font: inherit; }
 .month-picker select:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+
+html[data-theme="dark"] { --ink: #e9eee8; --muted: #aab7ad; --copper: #df8a61; --paper: #18221d; background: #111814; color: #e7ece6; }
+html[data-theme="dark"] body,
+html[data-theme="dark"] .site-shell { background: #111814; color: #e7ece6; }
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .mobile-nav,
+html[data-theme="dark"] footer { background: #111814; border-color: #2d3a33; }
+html[data-theme="dark"] .brand { color: #eef2ed; }
+html[data-theme="dark"] .desktop-nav a,
+html[data-theme="dark"] .mobile-nav a,
+html[data-theme="dark"] footer { color: #9caaa1; }
+html[data-theme="dark"] .desktop-nav a:hover,
+html[data-theme="dark"] .desktop-nav a.active,
+html[data-theme="dark"] .mobile-nav a.active { color: #e79770; }
+html[data-theme="dark"] .header-actions .theme-toggle,
+html[data-theme="dark"] .language-toggle { border-color: #405048; }
+html[data-theme="dark"] .theme-toggle { color: #f0cf88; background: #1a251f; }
+html[data-theme="dark"] .theme-toggle:hover { background: #26352d; }
+html[data-theme="dark"] .language-toggle button { color: #a7b4ab; }
+html[data-theme="dark"] .language-toggle button.selected { background: #dce7dd; color: #17221c; }
+html[data-theme="dark"] .hero,
+html[data-theme="dark"] .page-intro { background: #16211b; border-color: #2c3932; }
+html[data-theme="dark"] .lead,
+html[data-theme="dark"] .page-intro > p:last-child,
+html[data-theme="dark"] .section-heading > p,
+html[data-theme="dark"] .feature-card p,
+html[data-theme="dark"] .insight-card p,
+html[data-theme="dark"] .timeline-item p,
+html[data-theme="dark"] .source-row p,
+html[data-theme="dark"] .placeholder-message p,
+html[data-theme="dark"] .data-note,
+html[data-theme="dark"] .scope-note,
+html[data-theme="dark"] .source-caption { color: #a5b2a8; }
+html[data-theme="dark"] .hero h1 em { color: #e28a62; }
+html[data-theme="dark"] .primary-button { background: #d7835d; color: #121914; }
+html[data-theme="dark"] .primary-button:hover { background: #ee9b72; }
+html[data-theme="dark"] .text-link { border-color: #64746a; }
+html[data-theme="dark"] .feature-card,
+html[data-theme="dark"] .insight-card,
+html[data-theme="dark"] .chart-panel,
+html[data-theme="dark"] .driver-body,
+html[data-theme="dark"] .era-story { background: #18221d; border-color: #334139; }
+html[data-theme="dark"] .feature-card:hover { box-shadow: 0 15px 35px rgba(0,0,0,.28); }
+html[data-theme="dark"] .notice { background: #2e2920; color: #d8b38f; }
+html[data-theme="dark"] .snapshot-card { background: #202d25; border-color: #3a4b40; }
+html[data-theme="dark"] .snapshot-card .snapshot-value { color: #eef2ed; }
+html[data-theme="dark"] .snapshot-card > p:not(.eyebrow):not(.snapshot-value):not(.data-note),
+html[data-theme="dark"] .snapshot-card .data-note,
+html[data-theme="dark"] .snapshot-meta { color: #a6b3aa; }
+html[data-theme="dark"] .snapshot-card svg { border-color: #435248; }
+html[data-theme="dark"] .snapshot-card path { stroke: #98bea0; }
+html[data-theme="dark"] .driver-tabs { border-color: #334139; }
+html[data-theme="dark"] .driver-tabs button { background: #1d2822; color: #aebbb1; }
+html[data-theme="dark"] .driver-tabs button + button { border-color: #334139; }
+html[data-theme="dark"] .driver-tabs button[aria-pressed="true"] { background: #d7835d; color: #151c17; }
+html[data-theme="dark"] .driver-detail,
+html[data-theme="dark"] .driver-outcome p,
+html[data-theme="dark"] .era-story > p:not(.eyebrow) { color: #aab7ad; }
+html[data-theme="dark"] .driver-outcome { background: #243229; }
+html[data-theme="dark"] .basket-section { background: #2b251e; }
+html[data-theme="dark"] .basket-section p { color: #c0b2a0; }
+html[data-theme="dark"] .basket-result { border-color: #4c4032; }
+html[data-theme="dark"] .basket-result > span { color: #bfa98f; }
+html[data-theme="dark"] .basket-result strong { color: #e4956f; }
+html[data-theme="dark"] .segmented-control button,
+html[data-theme="dark"] .range-control button { border-color: #3a4a41; color: #aec0b1; }
+html[data-theme="dark"] .segmented-control button[aria-pressed="true"],
+html[data-theme="dark"] .range-control button[aria-pressed="true"] { background: #d7835d; border-color: #d7835d; color: #141b16; }
+html[data-theme="dark"] .series-heading,
+html[data-theme="dark"] .series-figure figcaption,
+html[data-theme="dark"] .chart-scrubber { color: #a4b2a8; }
+html[data-theme="dark"] .series-heading strong { color: #e7956d; }
+html[data-theme="dark"] .series-chart text { fill: #a9b6ac; }
+html[data-theme="dark"] .series-grid { stroke: #344239; }
+html[data-theme="dark"] .series-zero { stroke: #839287; }
+html[data-theme="dark"] .series-line { stroke: #e18b64; }
+html[data-theme="dark"] .series-cursor { stroke: #b9c9bc; }
+html[data-theme="dark"] .series-point { fill: #f2aa84; stroke: #18221d; }
+html[data-theme="dark"] .era-band { fill: #324836; opacity: .75; }
+html[data-theme="dark"] .data-table { border-color: #3a483f; }
+html[data-theme="dark"] .data-table th,
+html[data-theme="dark"] .data-table td { border-color: #303d35; }
+html[data-theme="dark"] .data-table thead th { background: #27342c; }
+html[data-theme="dark"] .purchasing-power { background: #202d25; }
+html[data-theme="dark"] .calculator-inputs label,
+html[data-theme="dark"] .month-picker legend { color: #b4c1b7; }
+html[data-theme="dark"] .calculator-inputs input,
+html[data-theme="dark"] .month-picker select { background: #111914; color: #e8ede7; border-color: #45564a; }
+html[data-theme="dark"] .calculator-results { border-color: #405046; }
+html[data-theme="dark"] .year-selector { background: #2d281f; }
+html[data-theme="dark"] .year-selector > span { color: #c4ac91; }
+html[data-theme="dark"] .history-layout { border-color: #344139; }
+html[data-theme="dark"] .era-list { background: #17211c; }
+html[data-theme="dark"] .era-list button { color: #adbab0; border-color: #303d35; }
+html[data-theme="dark"] .era-list button[aria-pressed="true"] { background: #d7835d; color: #151c17; }
+html[data-theme="dark"] .era-story .mechanism { background: #2d2921; }
+html[data-theme="dark"] .placeholder-panel,
+html[data-theme="dark"] .map-panel { background: #1d2922; border-color: #34443a; }
+html[data-theme="dark"] .next-step,
+html[data-theme="dark"] .source-list,
+html[data-theme="dark"] .source-row { border-color: #344139; }
+html[data-theme="dark"] .next-step { color: #a7b4aa; }
+html[data-theme="dark"] .source-initial { border-color: #496052; color: #a9cfb1; }
+html[data-theme="dark"] .source-status { background: #332c22; color: #d8b28b; }
+html[data-theme="dark"] .source-status.integrated { background: #29402f; color: #b2d7b8; }
+
+@media(max-width:800px) {
+  .header-actions { gap: 7px; }
+  .theme-toggle { width: 34px; height: 34px; }
+}
+@media(max-width:430px) {
+  .site-header { padding-left: 16px; padding-right: 16px; }
+  .brand { min-width: 0; }
+  .brand strong { font-size: 10px; }
+  .brand-mark { font-size: 34px; }
+  .brand-chinese { font-size: 8px; }
+  .header-actions { gap: 5px; }
+  .language-toggle button { padding: 6px 8px; }
+}

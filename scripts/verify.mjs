@@ -44,6 +44,8 @@ try {
       const html = renderToString(React.createElement(App))
       assert.match(html, /<h1>/)
       assert.match(html, /site-shell/)
+      assert.match(html, /class="theme-toggle"/)
+      assert.match(html, /aria-pressed="false"/)
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
     }
   }
@@ -63,3 +65,7 @@ for (const asset of assets) {
   assert.ok(existsSync(join(root, 'dist', asset.replace('/world-inflation-lens/', ''))), asset)
 }
 console.log('PASS: production asset URLs use the GitHub Pages subpath and resolve in dist')
+
+assert.match(html, /localStorage\.getItem\('wil-theme'\)/)
+assert.match(html, /document\.documentElement\.dataset\.theme/)
+console.log('PASS: theme is initialized before React and the theme toggle renders on every view')
