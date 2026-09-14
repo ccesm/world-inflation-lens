@@ -1,3 +1,4 @@
+import React from 'react'
 import { Eyebrow } from '../components/Eyebrow.jsx'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { sources } from '../data/sources.js'

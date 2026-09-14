@@ -1,3 +1,4 @@
+import React from 'react'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { CpiChartPlaceholder, InflationMapPlaceholder } from '../charts/Placeholders.jsx'
 

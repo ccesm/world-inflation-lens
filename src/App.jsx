@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { copy } from './i18n/translations.js'
 import { routes, routeFromHash } from './utils/routing.js'
 import { Home } from './pages/Home.jsx'

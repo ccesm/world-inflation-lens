@@ -1,3 +1,4 @@
+import React from 'react'
 import { Eyebrow } from '../components/Eyebrow.jsx'
 
 export function Home({ t }) {
