@@ -1,5 +1,6 @@
-// Provider registry. FRED snapshots and cited historical chapters are integrated; other providers are planned.
+// Provider registry. Integration status is displayed on the sources page.
 export const sources = [
+  { id: 'natural-earth', short: 'NE', name: 'Natural Earth', url: 'https://www.naturalearthdata.com/about/terms-of-use/', description: { en: 'Public-domain 1:110m country boundaries, version 5.1.2. Simplified map geometry; smaller areas may be omitted.', zh: '公有领域 1:110m 国家边界，版本 5.1.2。简化地图可能省略较小地区。' } },
   { id: 'bis', short: 'BIS', name: 'Bank for International Settlements', url: 'https://www.bis.org/statistics/', description: { en: 'International monetary and financial statistics, including long-run price series.', zh: '国际货币与金融统计数据，包括长期价格序列。' } },
   { id: 'world-bank', short: 'WB', name: 'World Bank Open Data', url: 'https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG', description: { en: 'Country-level consumer price inflation indicators and development data.', zh: '各国消费者价格通胀指标及发展数据。' } },
   { id: 'imf', short: 'IMF', name: 'International Monetary Fund', url: 'https://www.imf.org/en/Data', description: { en: 'Macroeconomic datasets and cross-country inflation estimates.', zh: '宏观经济数据集与跨国通胀估计。' } },

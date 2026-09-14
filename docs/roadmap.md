@@ -4,7 +4,16 @@ World Inflation Lens explains inflation through **data → history → causes �
 
 ## Delivered V0.1
 
-Educational homepage; a 1900–2026 historical timeline; official U.S. CPI since 1913; purchasing-power calculator; bilingual UI and cited sources. Static snapshots are bundled for GitHub Pages. Global data and the map are still placeholders.
+Educational homepage; a 1900–2026 historical timeline; official U.S. CPI since 1913; purchasing-power calculator; bilingual UI and cited sources. Static snapshots are bundled for GitHub Pages. Light/dark themes persist across visits.
+
+## Delivered V0.2
+
+Annual World Bank country/economy data for 1960–2025; a Natural Earth map; country detail/history; 2–5-country comparison with tables and CSV export; same-year overview, coverage, and searchable rankings. Missing values remain visible. 2024 is the default year based on coverage. No global aggregate is constructed.
+
+## Suggested next releases
+
+- V0.3: food, energy, and rates versus CPI, connected to historical explanations.
+- V0.4: scheduled data ingestion with validation, revision review, and update status.
 
 ## Future V1.0 scope from the product brief
 

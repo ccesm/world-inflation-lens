@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { copy } from './i18n/translations.js'
 import { routes, routeFromHash } from './utils/routing.js'
 import { Home } from './pages/Home.jsx'
-import { Overview } from './pages/Overview.jsx'
+import { GlobalOverview } from './pages/GlobalOverview.jsx'
 import { Timeline } from './pages/Timeline.jsx'
-import { Placeholder } from './pages/Placeholder.jsx'
+import { GlobalMap } from './pages/GlobalMap.jsx'
 import { Sources } from './pages/Sources.jsx'
 import { UsCpi } from './pages/UsCpi.jsx'
-import { experience } from './i18n/experience.js'
 
 function initialLanguage() {
   try {
@@ -30,7 +29,6 @@ export default function App() {
   const [language, setLanguage] = useState(initialLanguage)
   const [theme, setTheme] = useState(initialTheme)
   const t = copy[language]
-  const labels = experience[language]
 
   useEffect(() => {
     const onHashChange = () => { setRoute(routeFromHash()); window.scrollTo(0, 0) }
@@ -70,10 +68,10 @@ export default function App() {
     <nav className="mobile-nav" aria-label={t.navigation}>{routes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
     <main key={route}>
       {route === 'home' && <Home language={language} />}
-      {route === 'overview' && <Overview t={{ ...t, overview: { ...t.overview, notice: labels.overviewNotice } }} />}
+      {route === 'overview' && <GlobalOverview language={language} />}
       {route === 'timeline' && <Timeline language={language} />}
       {route === 'us-cpi' && <UsCpi language={language} />}
-      {route === 'map' && <Placeholder t={t} kind="map" />}
+      {route === 'map' && <GlobalMap language={language} />}
       {route === 'sources' && <Sources t={t} language={language} />}
     </main>
     <footer><span>© {new Date().getFullYear()} World Inflation Lens</span><span>{t.footer}</span></footer>

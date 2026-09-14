@@ -7,6 +7,8 @@ import { build } from 'vite'
 import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { equivalentCost, monthNumber, withAnnualChange } from '../src/utils/inflation.js'
+import { valueAt, rowsAt, rankRows, chooseDefaultYear, bucketIndex, linePath } from '../src/utils/globalInflation.js'
+import { routeFromHash } from '../src/utils/routing.js'
 
 const root = resolve(import.meta.dirname, '..')
 const raw = JSON.parse(await readFile(join(root, 'data/inflation/fred.json'), 'utf8'))
@@ -32,6 +34,38 @@ const events = JSON.parse(await readFile(join(root, 'data/history/events.json'),
 for (let year = 1900; year <= 2026; year++) assert.equal(events.filter(event => event.start <= year && event.end >= year).length, 1)
 console.log('PASS: CPI dates, missing values, annual changes, purchasing power, historical coverage')
 
+const world = JSON.parse(await readFile(join(root, 'data/inflation/worldbank.json'), 'utf8'))
+const countries = JSON.parse(await readFile(join(root, 'data/countries/metadata.json'), 'utf8'))
+const map = JSON.parse(await readFile(join(root, 'data/countries/world.geo.json'), 'utf8'))
+assert.equal(world.metadata.indicator, 'FP.CPI.TOTL.ZG')
+assert.equal(world.metadata.frequency, 'annual')
+assert.equal(countries.length, 217)
+assert.equal(new Set(countries.map(c => c.id)).size, countries.length)
+assert.ok(!countries.some(c => ['WLD', 'HIC', 'EUU'].includes(c.id)))
+for (const country of countries) {
+  assert.ok(country.name.en && country.name.zh)
+  const observations = world.values[country.id]
+  assert.equal(observations.length, 66)
+  assert.ok(observations.every(v => v === null || Number.isFinite(v)))
+}
+assert.equal(valueAt(world.values, 'CHN', 2024, 1960), 0.218128938439177)
+assert.equal(valueAt(world.values, 'USA', 2024, 1960), 2.94952520485207)
+assert.equal(valueAt(world.values, 'USA', 2025, 1960), null)
+assert.equal(valueAt(world.values, 'AND', 2024, 1960), null)
+assert.equal(valueAt(world.values, 'CHN', 1959, 1960), null)
+const ranks = rankRows(rowsAt(countries, world.values, 2024, 1960))
+assert.equal(ranks.length, 174)
+assert.ok(ranks.every((r, i) => i === 0 || ranks[i - 1].value >= r.value))
+const coverage = Array.from({ length: 66 }, (_, i) => ({ year: 1960 + i, count: rankRows(rowsAt(countries, world.values, 1960 + i, 1960)).length }))
+assert.equal(chooseDefaultYear(coverage, 2025), 2024)
+assert.deepEqual([null, -1, 0, 2, 4, 8, 20].map(bucketIndex), [6, 0, 1, 2, 3, 4, 5])
+assert.equal(linePath([{ year: 1, value: 2 }, { year: 2, value: null }, { year: 3, value: -1 }], x => x, y => y), 'M1.00,2.00  M3.00,-1.00')
+assert.equal(map.features.find(f => f.id === 'KOS').properties.countryId, 'XKX')
+for (const feature of map.features) assert.ok(feature.properties.countryId === null || countries.some(c => c.id === feature.properties.countryId))
+globalThis.window = { location: { hash: '#/map?country=USA&year=2024' } }
+assert.equal(routeFromHash(), 'map')
+console.log('PASS: World Bank coverage, source precision, missing values, ranking, colour boundaries, country joins and query routes')
+
 // Execute the JSX components, not just the bundler. Missing runtime imports fail here.
 const temp = await mkdtemp(join(root, 'node_modules', '.wil-verify-'))
 try {
@@ -47,12 +81,23 @@ try {
       assert.match(html, /class="theme-toggle"/)
       assert.match(html, /aria-pressed="false"/)
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
+      if (route === 'overview') { assert.match(html, /174/); assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
+      if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
     }
   }
   globalThis.localStorage = { getItem: () => { throw new Error('Storage blocked') } }
   globalThis.window = { location: { hash: '#/home' } }
   assert.match(renderToString(React.createElement(App)), /site-shell/)
   console.log('PASS: all six views render in both languages; blocked storage does not break the app')
+  await build({ configFile: false, root, logLevel: 'error', build: { ssr: 'src/charts/WorldMap.jsx', outDir: join(temp, 'map'), minify: false } })
+  const { default: WorldMap } = await import(pathToFileURL(join(temp, 'map/WorldMap.js')))
+  for (const language of ['en', 'zh']) {
+    const html = renderToString(React.createElement(WorldMap, { year: 2024, selected: 'CHN', language, onSelect: () => {} }))
+    assert.equal((html.match(/class="map-country /g) || []).length, 176)
+    assert.doesNotMatch(html, /NaN|Infinity/)
+    assert.match(html, /is-selected/)
+  }
+  console.log('PASS: actual map component projects all 176 features in both languages')
 } finally {
   await rm(temp, { recursive: true, force: true })
 }

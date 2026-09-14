@@ -44,7 +44,7 @@ export const experience = {
     sourceStatus: '已接入', sourcePlanned: '计划接入',
     overviewNotice: '当前已接入美国长期 CPI；全球汇总、地图与跨国比较将在后续版本接入并说明统计口径。',
     sourcesDescription: '查看每份数据的来源、口径和覆盖时间。美国 CPI 为本地静态快照，历史解释附原始资料链接。',
-    sourcesNote: '美国 CPI：BLS / FRED，CPIAUCNS，未季调月度指数。其余提供方尚未接入；没有把美国数据当作全球数据。',
+    sourcesNote: '美国 CPI 使用 BLS / FRED 月度数据；国家比较使用 World Bank WDI 年度通胀。BIS 与 IMF 直接接入尚在计划中。',
     historicalReferences: '历史章节的引用可在时间轴中逐项查看。',
   },
   en: {
@@ -92,7 +92,7 @@ export const experience = {
     sourceStatus: 'Integrated', sourcePlanned: 'Planned',
     overviewNotice: 'U.S. long-run CPI is now available. Global aggregates, the map, and country comparisons will follow with documented measurement choices.',
     sourcesDescription: 'Inspect provenance, definitions, and coverage. U.S. CPI is bundled as a static snapshot; historical explanations link to their original references.',
-    sourcesNote: 'U.S. CPI: BLS / FRED, CPIAUCNS, monthly, not seasonally adjusted. Other providers are planned; U.S. observations are never labeled as global data.',
+    sourcesNote: 'U.S. CPI uses monthly BLS / FRED data; country comparisons use annual World Bank WDI inflation. Direct BIS and IMF integrations remain planned.',
     historicalReferences: 'References for each historical chapter are available in the timeline.',
   },
 }

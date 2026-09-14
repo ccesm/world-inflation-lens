@@ -15,7 +15,16 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
-## V0.1 features
+## V0.2 features
+
+- Real annual country inflation map, 1960–2025, with seven colour classes including deflation and missing data.
+- Country details: selected-year value, separately dated latest value, historical high/low, and annual chart.
+- Compare 2–5 countries/economies with adjustable dates, an observation slider, accessible table, and CSV download.
+- Global overview with same-year coverage, six major economies, percentage-point changes, searchable and sortable rankings.
+- World Bank WDI snapshot covering 217 countries/economies; 174 have observations in the default year, 2024.
+- Natural Earth map geometry loads only when visiting the map. Small areas omitted from the simplified map remain available in the selector.
+
+Retained from V0.1:
 
 - Chinese / English UI with language persistence; blocked browser storage does not stop rendering.
 - Light / dark appearance toggle in the top-right header, with system preference fallback and saved selection.
@@ -25,7 +34,31 @@ npm run verify
 - Purchasing-power calculator for arbitrary available months and nonnegative dollar amounts.
 - Source registry distinguishing integrated data from planned providers.
 
-The global overview and map remain V0.1 scaffolding. The plotted historical series is **U.S. CPI**, not a global aggregate. Global comparisons, map values, forecasts, and additional drivers belong to later releases; see `docs/roadmap.md`.
+The historical-event timeline still uses **U.S. CPI**, not a global aggregate. Country comparisons use annual World Bank data. Forecasts, global aggregates, and additional drivers remain planned; see `docs/roadmap.md`.
+
+## Global data methodology
+
+`data/inflation/worldbank.json` stores WDI `FP.CPI.TOTL.ZG`, consumer price inflation (annual %), with source definition, original IMF IFS attribution, license, source update date, and UTC retrieval date. `data/countries/metadata.json` excludes regional and income aggregates. Every country has one slot per year from 1960 to 2025; missing values are `null`. Values preserve source precision and are rounded only for display.
+
+The default is the latest year reaching 95% of the maximum coverage in the final five snapshot years: **2024 (174 / 217)**. 2025 remains selectable with 165 values; the U.S. 2025 value is missing in this snapshot. Map, rankings, and major-economy cards use the selected year without substituting another year's value. Country details label the latest available observation separately. No global average is inferred from country rates. Annual rates must not be confused with monthly year-on-year U.S. CPI readings.
+
+The map uses Natural Earth v5.1.2 1:110m country boundaries (public domain), excluding Antarctica, projected with D3's Natural Earth projection. World Bank codes are joined through Natural Earth's WB/ISO identifiers, with the explicit Kosovo `KSV → XKX` alias. Unmatched geometries are gray. Simplification omits some small countries/territories; all 217 statistical entities remain accessible through the selector. Boundaries are inherited from the source, not reconstructed for each historical year.
+
+Charts use a linear scale, include extremes, and break lines at missing years. Rankings exclude missing values; changes are percentage points. CSV exports contain the selected countries and dates, source precision, and blank cells for missing values; the filename records the indicator. No runtime API requests or keys are needed.
+
+To refresh manually, download the four public inputs (filenames matter):
+
+```sh
+curl -fL 'https://api.worldbank.org/v2/country?format=json&per_page=400' -o /tmp/wil-countries.json
+curl -fL 'https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=1960:2025' -o /tmp/wil-inflation.json
+curl -fL 'https://api.worldbank.org/v2/indicator/FP.CPI.TOTL.ZG?format=json' -o /tmp/wil-indicator.json
+curl -fL 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_admin_0_countries.geojson' -o /tmp/wil-world.geojson
+node scripts/import-worldbank.mjs /tmp
+npm run build
+npm run verify
+```
+
+The importer rejects incomplete pagination, duplicate records, invalid values, or missing country-year slots before writing. Review data revisions and update snapshot-specific test expectations against the source before committing. Extending beyond 2025 requires updating import bounds and the query together. Scheduled ingestion is deferred.
 
 ## Data and calculations
 
@@ -45,14 +78,14 @@ The frontend bundles these JSON files at build time. Visitors do not need an API
 - `src/App.jsx`: app shell, language state, and page selection
 - `src/main.jsx`: React entry point and global styles
 - `src/components/`: shared page elements and purchasing-power calculator
-- `src/pages/`: homepage, overview, history, U.S. CPI, map placeholder, sources
+- `src/pages/`: homepage, global overview, history, U.S. CPI, global map/comparison, sources
 - `src/charts/`: reusable SVG time-series chart and visual placeholders
 - `src/data/`: source registry and adapters for bundled snapshots
 - `src/i18n/`: English / Chinese interface and educational copy
 - `src/utils/`: hash navigation and pure numerical helpers
 - `data/inflation/`: source-tagged observations
 - `data/history/`: cited historical event records
-- `data/countries/`: reserved country metadata
+- `data/countries/`: bilingual country metadata and attributed map geometry
 - `public/`: untransformed static assets
 - `scripts/verify.mjs`: data, calculations, JSX rendering, and built-path checks
 

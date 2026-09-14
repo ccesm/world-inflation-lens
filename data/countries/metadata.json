@@ -1,0 +1,1955 @@
+[
+  {
+    "id": "ABW",
+    "iso2": "AW",
+    "name": {
+      "en": "Aruba",
+      "zh": "阿鲁巴"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "AFG",
+    "iso2": "AF",
+    "name": {
+      "en": "Afghanistan",
+      "zh": "阿富汗"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "AGO",
+    "iso2": "AO",
+    "name": {
+      "en": "Angola",
+      "zh": "安哥拉"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "ALB",
+    "iso2": "AL",
+    "name": {
+      "en": "Albania",
+      "zh": "阿尔巴尼亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "AND",
+    "iso2": "AD",
+    "name": {
+      "en": "Andorra",
+      "zh": "安道尔"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "ARE",
+    "iso2": "AE",
+    "name": {
+      "en": "United Arab Emirates",
+      "zh": "阿拉伯联合酋长国"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "ARG",
+    "iso2": "AR",
+    "name": {
+      "en": "Argentina",
+      "zh": "阿根廷"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "ARM",
+    "iso2": "AM",
+    "name": {
+      "en": "Armenia",
+      "zh": "亚美尼亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "ASM",
+    "iso2": "AS",
+    "name": {
+      "en": "American Samoa",
+      "zh": "美属萨摩亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "ATG",
+    "iso2": "AG",
+    "name": {
+      "en": "Antigua and Barbuda",
+      "zh": "安提瓜和巴布达"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "AUS",
+    "iso2": "AU",
+    "name": {
+      "en": "Australia",
+      "zh": "澳大利亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "AUT",
+    "iso2": "AT",
+    "name": {
+      "en": "Austria",
+      "zh": "奥地利"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "AZE",
+    "iso2": "AZ",
+    "name": {
+      "en": "Azerbaijan",
+      "zh": "阿塞拜疆"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "BDI",
+    "iso2": "BI",
+    "name": {
+      "en": "Burundi",
+      "zh": "布隆迪"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "BEL",
+    "iso2": "BE",
+    "name": {
+      "en": "Belgium",
+      "zh": "比利时"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "BEN",
+    "iso2": "BJ",
+    "name": {
+      "en": "Benin",
+      "zh": "贝宁"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "BFA",
+    "iso2": "BF",
+    "name": {
+      "en": "Burkina Faso",
+      "zh": "布基纳法索"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "BGD",
+    "iso2": "BD",
+    "name": {
+      "en": "Bangladesh",
+      "zh": "孟加拉国"
+    },
+    "region": "South Asia"
+  },
+  {
+    "id": "BGR",
+    "iso2": "BG",
+    "name": {
+      "en": "Bulgaria",
+      "zh": "保加利亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "BHR",
+    "iso2": "BH",
+    "name": {
+      "en": "Bahrain",
+      "zh": "巴林"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "BHS",
+    "iso2": "BS",
+    "name": {
+      "en": "Bahamas, The",
+      "zh": "巴哈马"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "BIH",
+    "iso2": "BA",
+    "name": {
+      "en": "Bosnia and Herzegovina",
+      "zh": "波斯尼亚和黑塞哥维那"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "BLR",
+    "iso2": "BY",
+    "name": {
+      "en": "Belarus",
+      "zh": "白俄罗斯"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "BLZ",
+    "iso2": "BZ",
+    "name": {
+      "en": "Belize",
+      "zh": "伯利兹"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "BMU",
+    "iso2": "BM",
+    "name": {
+      "en": "Bermuda",
+      "zh": "百慕大"
+    },
+    "region": "North America"
+  },
+  {
+    "id": "BOL",
+    "iso2": "BO",
+    "name": {
+      "en": "Bolivia",
+      "zh": "玻利维亚"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "BRA",
+    "iso2": "BR",
+    "name": {
+      "en": "Brazil",
+      "zh": "巴西"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "BRB",
+    "iso2": "BB",
+    "name": {
+      "en": "Barbados",
+      "zh": "巴巴多斯"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "BRN",
+    "iso2": "BN",
+    "name": {
+      "en": "Brunei Darussalam",
+      "zh": "文莱"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "BTN",
+    "iso2": "BT",
+    "name": {
+      "en": "Bhutan",
+      "zh": "不丹"
+    },
+    "region": "South Asia"
+  },
+  {
+    "id": "BWA",
+    "iso2": "BW",
+    "name": {
+      "en": "Botswana",
+      "zh": "博茨瓦纳"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "CAF",
+    "iso2": "CF",
+    "name": {
+      "en": "Central African Republic",
+      "zh": "中非共和国"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "CAN",
+    "iso2": "CA",
+    "name": {
+      "en": "Canada",
+      "zh": "加拿大"
+    },
+    "region": "North America"
+  },
+  {
+    "id": "CHE",
+    "iso2": "CH",
+    "name": {
+      "en": "Switzerland",
+      "zh": "瑞士"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "CHI",
+    "iso2": "JG",
+    "name": {
+      "en": "Channel Islands",
+      "zh": "JG"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "CHL",
+    "iso2": "CL",
+    "name": {
+      "en": "Chile",
+      "zh": "智利"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "CHN",
+    "iso2": "CN",
+    "name": {
+      "en": "China",
+      "zh": "中国"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "CIV",
+    "iso2": "CI",
+    "name": {
+      "en": "Cote d'Ivoire",
+      "zh": "科特迪瓦"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "CMR",
+    "iso2": "CM",
+    "name": {
+      "en": "Cameroon",
+      "zh": "喀麦隆"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "COD",
+    "iso2": "CD",
+    "name": {
+      "en": "Congo, Dem. Rep.",
+      "zh": "刚果（金）"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "COG",
+    "iso2": "CG",
+    "name": {
+      "en": "Congo, Rep.",
+      "zh": "刚果（布）"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "COL",
+    "iso2": "CO",
+    "name": {
+      "en": "Colombia",
+      "zh": "哥伦比亚"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "COM",
+    "iso2": "KM",
+    "name": {
+      "en": "Comoros",
+      "zh": "科摩罗"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "CPV",
+    "iso2": "CV",
+    "name": {
+      "en": "Cabo Verde",
+      "zh": "佛得角"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "CRI",
+    "iso2": "CR",
+    "name": {
+      "en": "Costa Rica",
+      "zh": "哥斯达黎加"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "CUB",
+    "iso2": "CU",
+    "name": {
+      "en": "Cuba",
+      "zh": "古巴"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "CUW",
+    "iso2": "CW",
+    "name": {
+      "en": "Curacao",
+      "zh": "库拉索"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "CYM",
+    "iso2": "KY",
+    "name": {
+      "en": "Cayman Islands",
+      "zh": "开曼群岛"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "CYP",
+    "iso2": "CY",
+    "name": {
+      "en": "Cyprus",
+      "zh": "塞浦路斯"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "CZE",
+    "iso2": "CZ",
+    "name": {
+      "en": "Czechia",
+      "zh": "捷克"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "DEU",
+    "iso2": "DE",
+    "name": {
+      "en": "Germany",
+      "zh": "德国"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "DJI",
+    "iso2": "DJ",
+    "name": {
+      "en": "Djibouti",
+      "zh": "吉布提"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "DMA",
+    "iso2": "DM",
+    "name": {
+      "en": "Dominica",
+      "zh": "多米尼克"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "DNK",
+    "iso2": "DK",
+    "name": {
+      "en": "Denmark",
+      "zh": "丹麦"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "DOM",
+    "iso2": "DO",
+    "name": {
+      "en": "Dominican Republic",
+      "zh": "多米尼加共和国"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "DZA",
+    "iso2": "DZ",
+    "name": {
+      "en": "Algeria",
+      "zh": "阿尔及利亚"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "ECU",
+    "iso2": "EC",
+    "name": {
+      "en": "Ecuador",
+      "zh": "厄瓜多尔"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "EGY",
+    "iso2": "EG",
+    "name": {
+      "en": "Egypt, Arab Rep.",
+      "zh": "埃及"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "ERI",
+    "iso2": "ER",
+    "name": {
+      "en": "Eritrea",
+      "zh": "厄立特里亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "ESP",
+    "iso2": "ES",
+    "name": {
+      "en": "Spain",
+      "zh": "西班牙"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "EST",
+    "iso2": "EE",
+    "name": {
+      "en": "Estonia",
+      "zh": "爱沙尼亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "ETH",
+    "iso2": "ET",
+    "name": {
+      "en": "Ethiopia",
+      "zh": "埃塞俄比亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "FIN",
+    "iso2": "FI",
+    "name": {
+      "en": "Finland",
+      "zh": "芬兰"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "FJI",
+    "iso2": "FJ",
+    "name": {
+      "en": "Fiji",
+      "zh": "斐济"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "FRA",
+    "iso2": "FR",
+    "name": {
+      "en": "France",
+      "zh": "法国"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "FRO",
+    "iso2": "FO",
+    "name": {
+      "en": "Faroe Islands",
+      "zh": "法罗群岛"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "FSM",
+    "iso2": "FM",
+    "name": {
+      "en": "Micronesia, Fed. Sts.",
+      "zh": "密克罗尼西亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "GAB",
+    "iso2": "GA",
+    "name": {
+      "en": "Gabon",
+      "zh": "加蓬"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "GBR",
+    "iso2": "GB",
+    "name": {
+      "en": "United Kingdom",
+      "zh": "英国"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "GEO",
+    "iso2": "GE",
+    "name": {
+      "en": "Georgia",
+      "zh": "格鲁吉亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "GHA",
+    "iso2": "GH",
+    "name": {
+      "en": "Ghana",
+      "zh": "加纳"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "GIB",
+    "iso2": "GI",
+    "name": {
+      "en": "Gibraltar",
+      "zh": "直布罗陀"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "GIN",
+    "iso2": "GN",
+    "name": {
+      "en": "Guinea",
+      "zh": "几内亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "GMB",
+    "iso2": "GM",
+    "name": {
+      "en": "Gambia, The",
+      "zh": "冈比亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "GNB",
+    "iso2": "GW",
+    "name": {
+      "en": "Guinea-Bissau",
+      "zh": "几内亚比绍"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "GNQ",
+    "iso2": "GQ",
+    "name": {
+      "en": "Equatorial Guinea",
+      "zh": "赤道几内亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "GRC",
+    "iso2": "GR",
+    "name": {
+      "en": "Greece",
+      "zh": "希腊"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "GRD",
+    "iso2": "GD",
+    "name": {
+      "en": "Grenada",
+      "zh": "格林纳达"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "GRL",
+    "iso2": "GL",
+    "name": {
+      "en": "Greenland",
+      "zh": "格陵兰"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "GTM",
+    "iso2": "GT",
+    "name": {
+      "en": "Guatemala",
+      "zh": "危地马拉"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "GUM",
+    "iso2": "GU",
+    "name": {
+      "en": "Guam",
+      "zh": "关岛"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "GUY",
+    "iso2": "GY",
+    "name": {
+      "en": "Guyana",
+      "zh": "圭亚那"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "HKG",
+    "iso2": "HK",
+    "name": {
+      "en": "Hong Kong SAR, China",
+      "zh": "中国香港特别行政区"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "HND",
+    "iso2": "HN",
+    "name": {
+      "en": "Honduras",
+      "zh": "洪都拉斯"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "HRV",
+    "iso2": "HR",
+    "name": {
+      "en": "Croatia",
+      "zh": "克罗地亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "HTI",
+    "iso2": "HT",
+    "name": {
+      "en": "Haiti",
+      "zh": "海地"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "HUN",
+    "iso2": "HU",
+    "name": {
+      "en": "Hungary",
+      "zh": "匈牙利"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "IDN",
+    "iso2": "ID",
+    "name": {
+      "en": "Indonesia",
+      "zh": "印度尼西亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "IMN",
+    "iso2": "IM",
+    "name": {
+      "en": "Isle of Man",
+      "zh": "马恩岛"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "IND",
+    "iso2": "IN",
+    "name": {
+      "en": "India",
+      "zh": "印度"
+    },
+    "region": "South Asia"
+  },
+  {
+    "id": "IRL",
+    "iso2": "IE",
+    "name": {
+      "en": "Ireland",
+      "zh": "爱尔兰"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "IRN",
+    "iso2": "IR",
+    "name": {
+      "en": "Iran, Islamic Rep.",
+      "zh": "伊朗"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "IRQ",
+    "iso2": "IQ",
+    "name": {
+      "en": "Iraq",
+      "zh": "伊拉克"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "ISL",
+    "iso2": "IS",
+    "name": {
+      "en": "Iceland",
+      "zh": "冰岛"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "ISR",
+    "iso2": "IL",
+    "name": {
+      "en": "Israel",
+      "zh": "以色列"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "ITA",
+    "iso2": "IT",
+    "name": {
+      "en": "Italy",
+      "zh": "意大利"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "JAM",
+    "iso2": "JM",
+    "name": {
+      "en": "Jamaica",
+      "zh": "牙买加"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "JOR",
+    "iso2": "JO",
+    "name": {
+      "en": "Jordan",
+      "zh": "约旦"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "JPN",
+    "iso2": "JP",
+    "name": {
+      "en": "Japan",
+      "zh": "日本"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "KAZ",
+    "iso2": "KZ",
+    "name": {
+      "en": "Kazakhstan",
+      "zh": "哈萨克斯坦"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "KEN",
+    "iso2": "KE",
+    "name": {
+      "en": "Kenya",
+      "zh": "肯尼亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "KGZ",
+    "iso2": "KG",
+    "name": {
+      "en": "Kyrgyz Republic",
+      "zh": "吉尔吉斯斯坦"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "KHM",
+    "iso2": "KH",
+    "name": {
+      "en": "Cambodia",
+      "zh": "柬埔寨"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "KIR",
+    "iso2": "KI",
+    "name": {
+      "en": "Kiribati",
+      "zh": "基里巴斯"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "KNA",
+    "iso2": "KN",
+    "name": {
+      "en": "St. Kitts and Nevis",
+      "zh": "圣基茨和尼维斯"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "KOR",
+    "iso2": "KR",
+    "name": {
+      "en": "Korea, Rep.",
+      "zh": "韩国"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "KWT",
+    "iso2": "KW",
+    "name": {
+      "en": "Kuwait",
+      "zh": "科威特"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "LAO",
+    "iso2": "LA",
+    "name": {
+      "en": "Lao PDR",
+      "zh": "老挝"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "LBN",
+    "iso2": "LB",
+    "name": {
+      "en": "Lebanon",
+      "zh": "黎巴嫩"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "LBR",
+    "iso2": "LR",
+    "name": {
+      "en": "Liberia",
+      "zh": "利比里亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "LBY",
+    "iso2": "LY",
+    "name": {
+      "en": "Libya",
+      "zh": "利比亚"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "LCA",
+    "iso2": "LC",
+    "name": {
+      "en": "St. Lucia",
+      "zh": "圣卢西亚"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "LIE",
+    "iso2": "LI",
+    "name": {
+      "en": "Liechtenstein",
+      "zh": "列支敦士登"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "LKA",
+    "iso2": "LK",
+    "name": {
+      "en": "Sri Lanka",
+      "zh": "斯里兰卡"
+    },
+    "region": "South Asia"
+  },
+  {
+    "id": "LSO",
+    "iso2": "LS",
+    "name": {
+      "en": "Lesotho",
+      "zh": "莱索托"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "LTU",
+    "iso2": "LT",
+    "name": {
+      "en": "Lithuania",
+      "zh": "立陶宛"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "LUX",
+    "iso2": "LU",
+    "name": {
+      "en": "Luxembourg",
+      "zh": "卢森堡"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "LVA",
+    "iso2": "LV",
+    "name": {
+      "en": "Latvia",
+      "zh": "拉脱维亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "MAC",
+    "iso2": "MO",
+    "name": {
+      "en": "Macao SAR, China",
+      "zh": "中国澳门特别行政区"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "MAF",
+    "iso2": "MF",
+    "name": {
+      "en": "St. Martin (French part)",
+      "zh": "法属圣马丁"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "MAR",
+    "iso2": "MA",
+    "name": {
+      "en": "Morocco",
+      "zh": "摩洛哥"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "MCO",
+    "iso2": "MC",
+    "name": {
+      "en": "Monaco",
+      "zh": "摩纳哥"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "MDA",
+    "iso2": "MD",
+    "name": {
+      "en": "Moldova",
+      "zh": "摩尔多瓦"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "MDG",
+    "iso2": "MG",
+    "name": {
+      "en": "Madagascar",
+      "zh": "马达加斯加"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "MDV",
+    "iso2": "MV",
+    "name": {
+      "en": "Maldives",
+      "zh": "马尔代夫"
+    },
+    "region": "South Asia"
+  },
+  {
+    "id": "MEX",
+    "iso2": "MX",
+    "name": {
+      "en": "Mexico",
+      "zh": "墨西哥"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "MHL",
+    "iso2": "MH",
+    "name": {
+      "en": "Marshall Islands",
+      "zh": "马绍尔群岛"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "MKD",
+    "iso2": "MK",
+    "name": {
+      "en": "North Macedonia",
+      "zh": "北马其顿"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "MLI",
+    "iso2": "ML",
+    "name": {
+      "en": "Mali",
+      "zh": "马里"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "MLT",
+    "iso2": "MT",
+    "name": {
+      "en": "Malta",
+      "zh": "马耳他"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "MMR",
+    "iso2": "MM",
+    "name": {
+      "en": "Myanmar",
+      "zh": "缅甸"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "MNE",
+    "iso2": "ME",
+    "name": {
+      "en": "Montenegro",
+      "zh": "黑山"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "MNG",
+    "iso2": "MN",
+    "name": {
+      "en": "Mongolia",
+      "zh": "蒙古"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "MNP",
+    "iso2": "MP",
+    "name": {
+      "en": "Northern Mariana Islands",
+      "zh": "北马里亚纳群岛"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "MOZ",
+    "iso2": "MZ",
+    "name": {
+      "en": "Mozambique",
+      "zh": "莫桑比克"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "MRT",
+    "iso2": "MR",
+    "name": {
+      "en": "Mauritania",
+      "zh": "毛里塔尼亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "MUS",
+    "iso2": "MU",
+    "name": {
+      "en": "Mauritius",
+      "zh": "毛里求斯"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "MWI",
+    "iso2": "MW",
+    "name": {
+      "en": "Malawi",
+      "zh": "马拉维"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "MYS",
+    "iso2": "MY",
+    "name": {
+      "en": "Malaysia",
+      "zh": "马来西亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "NAM",
+    "iso2": "NA",
+    "name": {
+      "en": "Namibia",
+      "zh": "纳米比亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "NCL",
+    "iso2": "NC",
+    "name": {
+      "en": "New Caledonia",
+      "zh": "新喀里多尼亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "NER",
+    "iso2": "NE",
+    "name": {
+      "en": "Niger",
+      "zh": "尼日尔"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "NGA",
+    "iso2": "NG",
+    "name": {
+      "en": "Nigeria",
+      "zh": "尼日利亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "NIC",
+    "iso2": "NI",
+    "name": {
+      "en": "Nicaragua",
+      "zh": "尼加拉瓜"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "NLD",
+    "iso2": "NL",
+    "name": {
+      "en": "Netherlands",
+      "zh": "荷兰"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "NOR",
+    "iso2": "NO",
+    "name": {
+      "en": "Norway",
+      "zh": "挪威"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "NPL",
+    "iso2": "NP",
+    "name": {
+      "en": "Nepal",
+      "zh": "尼泊尔"
+    },
+    "region": "South Asia"
+  },
+  {
+    "id": "NRU",
+    "iso2": "NR",
+    "name": {
+      "en": "Naoero",
+      "zh": "瑙鲁"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "NZL",
+    "iso2": "NZ",
+    "name": {
+      "en": "New Zealand",
+      "zh": "新西兰"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "OMN",
+    "iso2": "OM",
+    "name": {
+      "en": "Oman",
+      "zh": "阿曼"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "PAK",
+    "iso2": "PK",
+    "name": {
+      "en": "Pakistan",
+      "zh": "巴基斯坦"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "PAN",
+    "iso2": "PA",
+    "name": {
+      "en": "Panama",
+      "zh": "巴拿马"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "PER",
+    "iso2": "PE",
+    "name": {
+      "en": "Peru",
+      "zh": "秘鲁"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "PHL",
+    "iso2": "PH",
+    "name": {
+      "en": "Philippines",
+      "zh": "菲律宾"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "PLW",
+    "iso2": "PW",
+    "name": {
+      "en": "Palau",
+      "zh": "帕劳"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "PNG",
+    "iso2": "PG",
+    "name": {
+      "en": "Papua New Guinea",
+      "zh": "巴布亚新几内亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "POL",
+    "iso2": "PL",
+    "name": {
+      "en": "Poland",
+      "zh": "波兰"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "PRI",
+    "iso2": "PR",
+    "name": {
+      "en": "Puerto Rico (US)",
+      "zh": "波多黎各"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "PRK",
+    "iso2": "KP",
+    "name": {
+      "en": "Korea, Dem. People's Rep.",
+      "zh": "朝鲜"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "PRT",
+    "iso2": "PT",
+    "name": {
+      "en": "Portugal",
+      "zh": "葡萄牙"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "PRY",
+    "iso2": "PY",
+    "name": {
+      "en": "Paraguay",
+      "zh": "巴拉圭"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "PSE",
+    "iso2": "PS",
+    "name": {
+      "en": "West Bank and Gaza",
+      "zh": "巴勒斯坦领土"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "PYF",
+    "iso2": "PF",
+    "name": {
+      "en": "French Polynesia",
+      "zh": "法属波利尼西亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "QAT",
+    "iso2": "QA",
+    "name": {
+      "en": "Qatar",
+      "zh": "卡塔尔"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "ROU",
+    "iso2": "RO",
+    "name": {
+      "en": "Romania",
+      "zh": "罗马尼亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "RUS",
+    "iso2": "RU",
+    "name": {
+      "en": "Russian Federation",
+      "zh": "俄罗斯"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "RWA",
+    "iso2": "RW",
+    "name": {
+      "en": "Rwanda",
+      "zh": "卢旺达"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "SAU",
+    "iso2": "SA",
+    "name": {
+      "en": "Saudi Arabia",
+      "zh": "沙特阿拉伯"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "SDN",
+    "iso2": "SD",
+    "name": {
+      "en": "Sudan",
+      "zh": "苏丹"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "SEN",
+    "iso2": "SN",
+    "name": {
+      "en": "Senegal",
+      "zh": "塞内加尔"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "SGP",
+    "iso2": "SG",
+    "name": {
+      "en": "Singapore",
+      "zh": "新加坡"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "SLB",
+    "iso2": "SB",
+    "name": {
+      "en": "Solomon Islands",
+      "zh": "所罗门群岛"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "SLE",
+    "iso2": "SL",
+    "name": {
+      "en": "Sierra Leone",
+      "zh": "塞拉利昂"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "SLV",
+    "iso2": "SV",
+    "name": {
+      "en": "El Salvador",
+      "zh": "萨尔瓦多"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "SMR",
+    "iso2": "SM",
+    "name": {
+      "en": "San Marino",
+      "zh": "圣马力诺"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "SOM",
+    "iso2": "SO",
+    "name": {
+      "en": "Somalia, Fed. Rep.",
+      "zh": "索马里"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "SRB",
+    "iso2": "RS",
+    "name": {
+      "en": "Serbia",
+      "zh": "塞尔维亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "SSD",
+    "iso2": "SS",
+    "name": {
+      "en": "South Sudan",
+      "zh": "南苏丹"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "STP",
+    "iso2": "ST",
+    "name": {
+      "en": "Sao Tome and Principe",
+      "zh": "圣多美和普林西比"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "SUR",
+    "iso2": "SR",
+    "name": {
+      "en": "Suriname",
+      "zh": "苏里南"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "SVK",
+    "iso2": "SK",
+    "name": {
+      "en": "Slovak Republic",
+      "zh": "斯洛伐克"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "SVN",
+    "iso2": "SI",
+    "name": {
+      "en": "Slovenia",
+      "zh": "斯洛文尼亚"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "SWE",
+    "iso2": "SE",
+    "name": {
+      "en": "Sweden",
+      "zh": "瑞典"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "SWZ",
+    "iso2": "SZ",
+    "name": {
+      "en": "Eswatini",
+      "zh": "斯威士兰"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "SXM",
+    "iso2": "SX",
+    "name": {
+      "en": "Sint Maarten (Dutch part)",
+      "zh": "荷属圣马丁"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "SYC",
+    "iso2": "SC",
+    "name": {
+      "en": "Seychelles",
+      "zh": "塞舌尔"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "SYR",
+    "iso2": "SY",
+    "name": {
+      "en": "Syrian Arab Republic",
+      "zh": "叙利亚"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "TCA",
+    "iso2": "TC",
+    "name": {
+      "en": "Turks and Caicos Islands",
+      "zh": "特克斯和凯科斯群岛"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "TCD",
+    "iso2": "TD",
+    "name": {
+      "en": "Chad",
+      "zh": "乍得"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "TGO",
+    "iso2": "TG",
+    "name": {
+      "en": "Togo",
+      "zh": "多哥"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "THA",
+    "iso2": "TH",
+    "name": {
+      "en": "Thailand",
+      "zh": "泰国"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "TJK",
+    "iso2": "TJ",
+    "name": {
+      "en": "Tajikistan",
+      "zh": "塔吉克斯坦"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "TKM",
+    "iso2": "TM",
+    "name": {
+      "en": "Turkmenistan",
+      "zh": "土库曼斯坦"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "TLS",
+    "iso2": "TL",
+    "name": {
+      "en": "Timor-Leste",
+      "zh": "东帝汶"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "TON",
+    "iso2": "TO",
+    "name": {
+      "en": "Tonga",
+      "zh": "汤加"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "TTO",
+    "iso2": "TT",
+    "name": {
+      "en": "Trinidad and Tobago",
+      "zh": "特立尼达和多巴哥"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "TUN",
+    "iso2": "TN",
+    "name": {
+      "en": "Tunisia",
+      "zh": "突尼斯"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "TUR",
+    "iso2": "TR",
+    "name": {
+      "en": "Turkiye",
+      "zh": "土耳其"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "TUV",
+    "iso2": "TV",
+    "name": {
+      "en": "Tuvalu",
+      "zh": "图瓦卢"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "TZA",
+    "iso2": "TZ",
+    "name": {
+      "en": "Tanzania",
+      "zh": "坦桑尼亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "UGA",
+    "iso2": "UG",
+    "name": {
+      "en": "Uganda",
+      "zh": "乌干达"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "UKR",
+    "iso2": "UA",
+    "name": {
+      "en": "Ukraine",
+      "zh": "乌克兰"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "URY",
+    "iso2": "UY",
+    "name": {
+      "en": "Uruguay",
+      "zh": "乌拉圭"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "USA",
+    "iso2": "US",
+    "name": {
+      "en": "United States",
+      "zh": "美国"
+    },
+    "region": "North America"
+  },
+  {
+    "id": "UZB",
+    "iso2": "UZ",
+    "name": {
+      "en": "Uzbekistan",
+      "zh": "乌兹别克斯坦"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "VCT",
+    "iso2": "VC",
+    "name": {
+      "en": "St. Vincent and the Grenadines",
+      "zh": "圣文森特和格林纳丁斯"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "VEN",
+    "iso2": "VE",
+    "name": {
+      "en": "Venezuela, RB",
+      "zh": "委内瑞拉"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "VGB",
+    "iso2": "VG",
+    "name": {
+      "en": "British Virgin Islands",
+      "zh": "英属维尔京群岛"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "VIR",
+    "iso2": "VI",
+    "name": {
+      "en": "Virgin Islands (U.S.)",
+      "zh": "美属维尔京群岛"
+    },
+    "region": "Latin America & Caribbean "
+  },
+  {
+    "id": "VNM",
+    "iso2": "VN",
+    "name": {
+      "en": "Viet Nam",
+      "zh": "越南"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "VUT",
+    "iso2": "VU",
+    "name": {
+      "en": "Vanuatu",
+      "zh": "瓦努阿图"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "WSM",
+    "iso2": "WS",
+    "name": {
+      "en": "Samoa",
+      "zh": "萨摩亚"
+    },
+    "region": "East Asia & Pacific"
+  },
+  {
+    "id": "XKX",
+    "iso2": "XK",
+    "name": {
+      "en": "Kosovo",
+      "zh": "科索沃"
+    },
+    "region": "Europe & Central Asia"
+  },
+  {
+    "id": "YEM",
+    "iso2": "YE",
+    "name": {
+      "en": "Yemen, Rep.",
+      "zh": "也门"
+    },
+    "region": "Middle East, North Africa, Afghanistan & Pakistan"
+  },
+  {
+    "id": "ZAF",
+    "iso2": "ZA",
+    "name": {
+      "en": "South Africa",
+      "zh": "南非"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "ZMB",
+    "iso2": "ZM",
+    "name": {
+      "en": "Zambia",
+      "zh": "赞比亚"
+    },
+    "region": "Sub-Saharan Africa "
+  },
+  {
+    "id": "ZWE",
+    "iso2": "ZW",
+    "name": {
+      "en": "Zimbabwe",
+      "zh": "津巴布韦"
+    },
+    "region": "Sub-Saharan Africa "
+  }
+]
