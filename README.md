@@ -1,6 +1,6 @@
 # World Inflation Lens · 全球通胀透视
 
-A bilingual Vite + React site that connects inflation data, historical context, and everyday purchasing power.
+A bilingual Vite + React research site focused on the long-term purchasing power of the U.S. dollar, monetary history and fiscal constraints. Global inflation remains available as supporting context.
 
 ## Run locally
 
@@ -15,7 +15,36 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
-## V0.5 features
+## V0.6: Dollar purchasing power
+
+- Dollar-focused homepage with monthly CPI purchasing power since 1913 and seven selectable base dates.
+- Eleven indicator cards: CPI, core PCE, 5y5y inflation compensation, public debt/GDP, deficit/GDP, net interest/receipts, Fed assets, M2 growth, nominal and real 10-year yields, and the broad trade-weighted dollar. Each shows dated observations, source links, recent history and data tables. No composite risk score or scenario probabilities are inferred.
+- Dollar regime history separates monetary arrangements from overlapping policy and inflation episodes, including the 1971 gold-window closure and the 1973 transition to floating rates.
+- Fiscal page separates historical public debt from verified CBO 2026/2036 endpoints and an editable, explicitly hypothetical debt model. The 2056 workbook is not yet imported; no intermediate CBO values are fabricated.
+- Purchasing-power scenarios compare 2%, 3%, 4%, 5% and 7% inflation over 10/20/30 years, with customizable amounts, rates and horizons.
+- Since 1971: exact-base-month nominal and CPI-adjusted food, shelter-service, oil and wage indexes. Missing baselines remain unavailable. Shelter CPI is not a house-price index; gold, property transaction prices and equity total returns are pending.
+- Existing global map, comparison, drivers, CPI and sources remain under research navigation. Chinese/English and top-right light/dark controls are retained.
+
+### Dollar methodology and ingestion
+
+The purchasing-power formula is `amount × CPI[base] / CPI[end]`. The future scenario uses `amount / (1 + inflation)^years`, excluding investment returns, taxes and flows. The debt experiment uses `d[t] = d[t−1] × (1+i)/(1+g) + p`, where `i` is average nominal financing cost, `g` nominal GDP growth and `p` the primary deficit as a share of GDP. It does not model repricing, maturities or policy feedback and is not a CBO forecast.
+
+`data/inflation/monitor.json` adds ten FRED series to the existing eight:
+
+| Series | Frequency | Stored measure |
+| --- | --- | --- |
+| PCEPILFE | Monthly | Core PCE index, 2017=100, seasonally adjusted |
+| T5YIFR | Daily | 5y5y forward inflation compensation, % |
+| DGS10 / DFII10 | Daily | Nominal / inflation-indexed 10-year Treasury yield, % |
+| DTWEXBGS | Daily | Broad nominal dollar index, January 2006=100 |
+| WALCL | Weekly, Wednesday | Federal Reserve assets, millions USD |
+| FYPUGDA188S | Annual | Publicly held federal debt / GDP, % |
+| FYFSGDA188S | Annual | Federal surplus or deficit / GDP, % |
+| FYOINT / FYFR | Fiscal annual | Net interest outlays / federal receipts, millions USD |
+
+The display negates the fiscal balance so positive values mean deficits, divides Fed assets by 1,000 to show billions, and matches fiscal dates exactly for interest/receipts. Core PCE and M2 growth use the same month one year earlier. Daily holiday gaps remain null. Daily/weekly records are not relabeled as monthly readings. FRED fiscal ratios use calendar-year GDP and are not spliced into CBO fiscal-year projections. The Fed's 2% goal applies to headline PCE, while 5y5y compensation includes risk/liquidity premia and is not a 30-year forecast. All metadata and complete observations are retained in the committed snapshots.
+
+## V0.5 features retained
 
 - Weekly validated FRED and World Bank refreshes, including headline CPI, with manual dispatch and deployment in the same GitHub Actions run.
 - Bilingual data health panel on Data Sources: last successful check, latest non-missing observation, source update date, snapshot retrieval date and missing-record counts.
@@ -32,13 +61,13 @@ npm run build
 npm run verify
 ```
 
-The refresher downloads all eight FRED series plus World Bank observations and definitions. World Bank coverage extends through the previous calendar year, preserving the existing 217-country universe and map joins. Changed country membership requires manual review. Static country names and map geometry are maintained separately.
+The refresher downloads all eighteen FRED series plus World Bank observations and definitions. World Bank coverage extends through the previous calendar year, preserving the existing 217-country universe and map joins. Changed country membership requires manual review. Static country names and map geometry are maintained separately.
 
 All downloads and validations finish in memory before any snapshot is replaced. Checks reject wrong series/units/adjustment, incomplete pagination, duplicate or missing date slots, regressed source dates, removed historical slots and withdrawals exceeding 5% of a series or country's available observations (one withdrawal is allowed for very sparse series). A write error restores the original files. GitHub commits and publishes only after build and tests pass; any download, validation, test or push failure prevents deployment and leaves the previous website available. CI logs identify failed attempts; the deployed panel only reports the last successful check, never a live success claim.
 
-The bot commits the four snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
+The bot commits the five snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 
-GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags checks older than 10 days and links to Actions for diagnosis. Observation-age hints use separate thresholds: over 3 months for monthly data or over 3 years for annual data. These are site heuristics, not promises about provider release dates. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
+GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags checks older than 10 days and links to Actions for diagnosis. Observation-age hints use separate thresholds: over 3 months for monthly data or over 3 years for annual data, or over 14 days for daily/weekly data. These are site heuristics, not promises about provider release dates. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
 
 `scripts/refresh-data.mjs --input-dir <directory>` runs the same pipeline against downloaded inputs for offline reproduction. Input filenames are `wil-<FRED-ID>.html`, `wil-countries.json`, `wil-inflation.json` and `wil-indicator.json`. `npm run verify` exercises the real CLI in a temporary checkout, verifies failed-update preservation and revision accounting, and checks all views and share-link parsing.
 
@@ -69,7 +98,6 @@ Retained from V0.1:
 
 - Chinese / English UI with language persistence; blocked browser storage does not stop rendering.
 - Light / dark appearance toggle in the top-right header, with system preference fallback and saved selection.
-- Homepage with three interactive inflation-transmission explanations and a shopping-basket example.
 - Twelve cited historical chapters covering 1900–2026, with a year selector and highlighted eras on a U.S. inflation chart.
 - U.S. CPI from January 1913 through August 2026, with index / year-over-year modes, 1 / 5 / 10 / 50-year and full-history views, a keyboard-accessible observation slider, and a data table.
 - Purchasing-power calculator for arbitrary available months and nonnegative dollar amounts.

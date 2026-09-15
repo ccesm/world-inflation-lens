@@ -1,6 +1,6 @@
 # Product direction
 
-World Inflation Lens explains inflation through **data → history → causes → everyday effects**, with English and Chinese content written for understanding.
+World Inflation Lens now centers on **how much purchasing power the dollar can preserve over the next 20–30 years**. Historical observations, official conditional projections and hypothetical scenarios remain visibly distinct. Global inflation provides supporting context. Both Chinese and English are supported.
 
 ## Delivered V0.1
 
@@ -12,7 +12,12 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## Suggested next releases
 
-- V0.6: wage purchasing power and a personal consumption basket, with explicit assumptions and source coverage.
+- V0.7: import and validate the full CBO long-term workbook, preserving forecast vintage, fiscal-year definitions and separate historical/projected segments. Add gold and a true house-price series after checking licensing, coverage and comparability.
+- Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
+
+## Delivered V0.6
+
+Dollar purchasing-power homepage; eleven dated risk indicators; monetary regime history; future purchasing-power calculator; observed debt, verified CBO 2026/2036 endpoints and an editable debt accounting scenario; nominal/real comparisons with exact base-month matching. Daily, weekly and fiscal-year sources join the validated automatic update pipeline. Gold and the CBO 2056 table remain clearly marked as pending.
 
 ## Delivered V0.5
 

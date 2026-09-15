@@ -6,5 +6,6 @@ import './experience.css'
 import './global.css'
 import './drivers.css'
 import './updates.css'
+import './dollar.css'
 
 createRoot(document.getElementById('root')).render(<React.StrictMode><App /></React.StrictMode>)

@@ -1,0 +1,42 @@
+.dollar-hero h1 { font-size: clamp(40px,4.6vw,70px); line-height: 1.15; max-width: 850px; }
+.dollar-scenario-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 0; border-bottom: 1px solid var(--global-border); font-size: 13px; }
+.dollar-scenario-row strong { font-size: 31px; font-weight: 500; }
+.dollar-panel { padding: 30px; border: 1px solid var(--global-border); margin: 0 0 36px; background: var(--global-bg); }
+.dollar-section h2 { font-size: clamp(25px,3vw,36px); font-weight: 500; line-height: 1.4; }
+.dollar-section p { line-height: 1.9; }
+.dollar-panel>p,.dollar-paths>p { color: var(--global-muted); font-size: 14px; }
+.dollar-section a { text-underline-offset: 4px; font-size: 12px; }
+.dollar-presets { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0; }
+.dollar-presets button,.scenario-bars button { border: 1px solid var(--global-border); background: var(--global-bg); color: var(--global-text); padding: 12px; cursor: pointer; font: inherit; font-size: 12px; }
+.dollar-presets button[aria-pressed=true],.scenario-bars button[aria-pressed=true] { background: var(--global-text); color: var(--global-bg); }
+.dollar-power-result { padding: 22px; background: var(--global-soft); font-size: 24px; }
+.dollar-power-result strong { color: var(--global-accent); font-size: 42px; font-weight: 500; }
+.dollar-power-result small { font-size: 12px; }
+.dollar-power-result p { font-size: 13px; margin-bottom: 0; }
+.dollar-panel>label { display: block; margin: 20px 0; font-size: 13px; }
+.dollar-panel input[type=range] { display: block; width: 100%; margin: 18px 0; }
+.dollar-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin: 24px 0; }
+.dollar-grid article { background: var(--global-soft); border: 1px solid var(--global-border); padding: 25px; min-width: 0; }
+.dollar-grid h3 { font-size: 20px; font-weight: 500; line-height: 1.5; }
+.dollar-grid p { font-size: 13px; color: var(--global-muted); }
+.dollar-grid small { font-size: 11px; color: var(--global-accent); }
+.dollar-links { display: flex; flex-wrap: wrap; gap: 20px 30px; }
+.dollar-inputs { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.dollar-inputs label { font-size: 12px; line-height: 1.8; }
+.dollar-inputs input,.dollar-inputs select { width: 100%; min-width: 0; padding: 12px; margin-top: 8px; border: 1px solid var(--global-border); color: var(--global-text); background: var(--global-bg); font: inherit; font-size: 16px; }
+.scenario-results strong { font-size: clamp(22px,3vw,35px); font-weight: 500; overflow-wrap: anywhere; }
+.scenario-bars>div { display: grid; grid-template-columns: 60px minmax(0,1fr) 125px; gap: 16px; align-items: center; margin: 12px 0; font-size: 14px; }
+.scenario-bars>div>div { background: var(--global-soft); height: 14px; }
+.scenario-bars span { display: block; height: 100%; background: var(--global-accent); }
+.dollar-section .data-table { overflow-x: auto; }
+.monitor-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.monitor-grid strong { display: block; font-size: 30px; font-weight: 500; margin: 12px 0; }
+.monitor-grid svg { width: 100%; height: 65px; }
+.debt-plot { width: 100%; height: auto; display: block; margin: 25px 0; }
+.regime-row { padding: 24px 0; border-top: 1px solid var(--global-border); display: grid; grid-template-columns: 145px 1fr; gap: 25px; }
+.regime-row h3 { margin-top: 0; font-weight: 500; }
+.research-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px 25px; padding: 14px 24px; border-bottom: 1px solid var(--global-border); font-size: 12px; }
+.research-nav a { color: var(--global-muted); }
+.research-nav a[aria-current=page] { color: var(--global-accent); }
+@media(max-width:900px) { .monitor-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .dollar-panel { padding: 20px; } .dollar-grid,.dollar-inputs { grid-template-columns: 1fr; } .dollar-power-result { padding: 16px; } .dollar-power-result strong { font-size: 34px; } .regime-row { grid-template-columns: 1fr; gap: 12px; } .scenario-bars>div { grid-template-columns: 48px minmax(0,1fr) 96px; gap: 8px; font-size: 12px; } }

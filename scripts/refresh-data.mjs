@@ -2,13 +2,15 @@ import assert from 'node:assert/strict'
 import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { parseFredTable } from './lib/fredTable.mjs'
+import { monitorSources } from './lib/monitorSources.mjs'
 import { diffObservations, parseWorldBank, worldPoints, summarizeChanges } from './lib/refresh.mjs'
 
 const root = resolve(import.meta.dirname, '..')
 const checkedAt = new Date().toISOString()
 const read = async path => JSON.parse(await readFile(resolve(root, path), 'utf8'))
-const [headline, drivers, world, countries, ledger] = await Promise.all([
+const [headline, drivers, world, countries, ledger, monitor] = await Promise.all([
   read('data/inflation/fred.json'), read('data/inflation/drivers.json'), read('data/inflation/worldbank.json'), read('data/countries/metadata.json'), read('data/updates/history.json'),
+  read('data/inflation/monitor.json'),
 ])
 const inputIndex = process.argv.indexOf('--input-dir')
 const input = inputIndex >= 0 ? process.argv[inputIndex + 1] : null
@@ -30,17 +32,18 @@ async function download(url, filename, json = false) {
 }
 
 // Build the complete candidate in memory. A failed download or validation writes nothing.
-const oldSeries = [headline, ...drivers.series]
+const oldSeries = [headline, ...drivers.series, ...monitor.series]
 const series = []
 for (const prior of oldSeries) {
   const html = await download(`https://fred.stlouisfed.org/data/${prior.id}`, `wil-${prior.id}.html`)
   const next = parseFredTable(html, prior.id, {
     units: prior.units,
     adjustment: prior.seasonalAdjustment === 'seasonally adjusted' ? 'Seasonally Adjusted' : 'Not Seasonally Adjusted',
-    positive: !['MCOILWTICO', 'FEDFUNDS'].includes(prior.id),
+    positive: !['MCOILWTICO', 'FEDFUNDS', 'T5YIFR', 'DGS10', 'DFII10', 'FYFSGDA188S'].includes(prior.id),
+    ...monitorSources.find(s => s.id === prior.id),
   })
   assert.ok(next.sourceUpdatedAt >= prior.sourceUpdatedAt, `${prior.id}: source date regressed`)
-  assert.ok(next.observations.at(-1).date <= checkedAt.slice(0, 7), 'Future observation')
+  assert.ok(next.observations.at(-1).date <= checkedAt.slice(0, next.frequency === 'monthly' ? 7 : 10), 'Future observation')
   next.retrievedAt = checkedAt.slice(0, 10)
   series.push(next)
 }
@@ -65,7 +68,8 @@ const entry = { checkedAt, runUrl, changes }
 const nextLedger = { ...ledger, lastSuccessfulCheck: checkedAt, runs: [entry, ...ledger.runs].slice(0, 30) }
 const output = {
   'data/inflation/fred.json': series[0],
-  'data/inflation/drivers.json': { series: series.slice(1) },
+  'data/inflation/drivers.json': { series: series.slice(1, 1 + drivers.series.length) },
+  'data/inflation/monitor.json': { series: series.slice(1 + drivers.series.length) },
   'data/inflation/worldbank.json': nextWorld,
   'data/updates/history.json': nextLedger,
 }

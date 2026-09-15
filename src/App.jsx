@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { copy } from './i18n/translations.js'
-import { routes, routeFromHash } from './utils/routing.js'
-import { Home } from './pages/Home.jsx'
+import { primaryRoutes, referenceRoutes, routeFromHash } from './utils/routing.js'
+import { Home } from './pages/DollarHome.jsx'
+import { Monitor } from './pages/Monitor.jsx'
+import { Scenarios } from './pages/Scenarios.jsx'
+import { Fiscal } from './pages/Fiscal.jsx'
+import { Regimes } from './pages/Regimes.jsx'
+import { Since1971 } from './pages/Since1971.jsx'
 import { GlobalOverview } from './pages/GlobalOverview.jsx'
 import { Timeline } from './pages/Timeline.jsx'
 import { GlobalMap } from './pages/GlobalMap.jsx'
@@ -55,7 +60,7 @@ export default function App() {
     <header className="site-header">
       <a className="brand" href="#/home" aria-label={language === 'zh' ? '全球通胀透视 · 首页' : 'World Inflation Lens home'}><span className="brand-mark">◎</span><span>WORLD<br /><strong>INFLATION LENS</strong>{language === 'zh' && <small className="brand-chinese">全球通胀透视</small>}</span></a>
       <nav className="desktop-nav" aria-label={t.navigation}>
-        {routes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}
+        {primaryRoutes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}
       </nav>
       <div className="header-actions">
         <button className="theme-toggle" type="button" onClick={() => setTheme(current => current === 'light' ? 'dark' : 'light')} aria-label={theme === 'light' ? (language === 'zh' ? '切换到深色模式' : 'Switch to dark mode') : (language === 'zh' ? '切换到浅色模式' : 'Switch to light mode')} aria-pressed={theme === 'dark'} title={theme === 'light' ? (language === 'zh' ? '深色模式' : 'Dark mode') : (language === 'zh' ? '浅色模式' : 'Light mode')}>
@@ -67,9 +72,15 @@ export default function App() {
         </div>
       </div>
     </header>
-    <nav className="mobile-nav" aria-label={t.navigation}>{routes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
+    <nav className="mobile-nav" aria-label={t.navigation}>{primaryRoutes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
+    <nav className="research-nav" aria-label={language === 'zh' ? '研究资料' : 'Research references'}>{referenceRoutes.map(item => <a key={item} href={`#/${item}`} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
     <main key={navigationKey}>
       {route === 'home' && <Home language={language} />}
+      {route === 'monitor' && <Monitor language={language} />}
+      {route === 'scenarios' && <Scenarios language={language} />}
+      {route === 'fiscal' && <Fiscal language={language} />}
+      {route === 'regimes' && <Regimes language={language} />}
+      {route === 'since-1971' && <Since1971 language={language} />}
       {route === 'overview' && <GlobalOverview language={language} />}
       {route === 'timeline' && <Timeline language={language} />}
       {route === 'us-cpi' && <UsCpi language={language} />}

@@ -130,9 +130,14 @@ try {
       assert.match(html, /aria-pressed="false"/)
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
       if (route === 'overview') { assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
-      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 9) }
+      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 19) }
       if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.match(html, /chart-share/); assert.doesNotMatch(html, /NaN|undefined%/) }
+      if (['home', 'monitor', 'scenarios', 'fiscal', 'regimes', 'since-1971'].includes(route)) assert.doesNotMatch(html, /NaN|Infinity|undefined/)
+      if (route === 'monitor') assert.equal((html.match(/<article>/g) || []).length, 11)
+      if (route === 'home') assert.match(html, /dollar-power-result/)
+      if (route === 'scenarios') assert.match(html, /411,987/)
+      if (route === 'fiscal') assert.match(html, /161.00/)
     }
     for (const topic of ['food', 'energy', 'rates', 'housing', 'wages', 'money']) {
       for (const episode of ['oil', 'volcker', 'crisis', 'pandemic']) {
@@ -153,7 +158,7 @@ try {
   globalThis.localStorage = { getItem: () => { throw new Error('Storage blocked') } }
   globalThis.window = { location: { hash: '#/home' } }
   assert.match(renderToString(React.createElement(App)), /site-shell/)
-  console.log('PASS: all seven views and 48 driver-topic/episode/language combinations render; history links and blocked storage work')
+  console.log('PASS: all twelve views and 48 driver-topic/episode/language combinations render; history links and blocked storage work')
   await build({ configFile: false, root, logLevel: 'error', build: { ssr: 'src/charts/WorldMap.jsx', outDir: join(temp, 'map'), minify: false } })
   const { default: WorldMap } = await import(pathToFileURL(join(temp, 'map/WorldMap.js')))
   for (const language of ['en', 'zh']) {

@@ -30,20 +30,20 @@ assert.equal(readDriverLink('#/drivers?episode=oil', config).topic, 'energy')
 const root = resolve(import.meta.dirname, '..')
 const temp = await mkdtemp(join(tmpdir(), 'wil-refresh-test-'))
 const read = async path => JSON.parse(await readFile(join(root, path), 'utf8'))
-const files = ['data/inflation/fred.json', 'data/inflation/drivers.json', 'data/inflation/worldbank.json', 'data/updates/history.json']
+const files = ['data/inflation/fred.json', 'data/inflation/drivers.json', 'data/inflation/worldbank.json', 'data/updates/history.json', 'data/inflation/monitor.json']
 try {
-  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js']) {
+  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js']) {
     await mkdir(join(temp, path, '..'), { recursive: true }); await cp(join(root, path), join(temp, path))
   }
   await writeFile(join(temp, 'package.json'), '{"type":"module"}')
   const input = join(temp, 'inputs'); await mkdir(input)
   const headline = await read(files[0]), drivers = await read(files[1]), world = await read(files[2]), countries = await read('data/countries/metadata.json')
   const originalFiles = await Promise.all(files.map(path => readFile(join(temp, path), 'utf8')))
-  const allSeries = [structuredClone(headline), ...drivers.series]
+  const allSeries = [structuredClone(headline), ...drivers.series, ...(await read('data/inflation/monitor.json')).series]
   allSeries[0].observations.at(-1).value += .125
   for (const source of allSeries) {
-    const fields = { 'Series ID': source.id, Title: source.title, Source: source.publisher, Units: source.units, Frequency: 'Monthly', 'Seasonal Adjustment': source.seasonalAdjustment === 'seasonally adjusted' ? 'Seasonally Adjusted' : 'Not Seasonally Adjusted', 'Date Range': `${source.observations[0].date}-01 to ${source.observations.at(-1).date}-01`, 'Last Updated': source.sourceUpdatedAt }
-    const html = `<table>${Object.entries(fields).map(([key, value]) => `<th>${key}</th><td>${value}</td>`).join('')}</table><table id="data-table-observations">${source.observations.map(p => `<th>${p.date}-01</th><td>${p.value ?? '.'}</td>`).join('')}</table>`
+    const fields = { 'Series ID': source.id, Title: source.title, Source: source.publisher, Units: source.units, Frequency: source.frequency.split(', ').map(s => s[0].toUpperCase()+s.slice(1)).join(', ').replace('As of wednesday', 'As of Wednesday').replace('Fiscal year', 'Fiscal Year'), 'Seasonal Adjustment': source.seasonalAdjustment === 'seasonally adjusted' ? 'Seasonally Adjusted' : 'Not Seasonally Adjusted', 'Date Range': `${source.observations[0].date.length === 7 ? source.observations[0].date + '-01' : source.observations[0].date} to ${source.observations.at(-1).date.length === 7 ? source.observations.at(-1).date + '-01' : source.observations.at(-1).date}`, 'Last Updated': source.sourceUpdatedAt }
+    const html = `<table>${Object.entries(fields).map(([key, value]) => `<th>${key}</th><td>${value}</td>`).join('')}</table><table id="data-table-observations">${source.observations.map(p => `<th>${p.date.length === 7 ? p.date + '-01' : p.date}</th><td>${p.value ?? '.'}</td>`).join('')}</table>`
     await writeFile(join(input, `wil-${source.id}.html`), html)
   }
   const wrap = records => [{ pages: 1, page: 1, total: records.length, lastupdated: world.metadata.sourceUpdatedAt }, records]
