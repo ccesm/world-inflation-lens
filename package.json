@@ -1,13 +1,13 @@
 {
   "name": "world-inflation-lens",
   "private": true,
-  "version": "0.6.0",
+  "version": "0.7.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "verify": "node scripts/verify-dollar.mjs && node scripts/verify-refresh.mjs && node scripts/verify.mjs",
+    "verify": "node scripts/verify-cbo.mjs && node scripts/verify-dollar.mjs && node scripts/verify-refresh.mjs && node scripts/verify.mjs",
     "data:refresh": "node scripts/refresh-data.mjs"
   },
   "dependencies": {

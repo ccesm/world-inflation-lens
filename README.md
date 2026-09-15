@@ -15,12 +15,38 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
+## V0.7: CBO long-term fiscal evidence
+
+The Fiscal Pressure page now includes all three requested measures: public debt/GDP, deficit/GDP and net interest/GDP. Select a metric, inspect individual years, switch between full history / since 2000 / projections only, open the annual table or download all 95 years as CSV.
+
+- **Historical actuals:** FY1962–FY2025 from CBO's February 2026 historical budget release.
+- **Conditional projections:** FY2026–FY2056 from CBO's February 25, 2026 extended baseline.
+- Historical values use a solid line. Projections use a dashed line and shaded region, with separate paths at the boundary. All use fiscal-year GDP; the older FRED/OMB calendar-year-ratio chart is retained as a separate expandable reference.
+- The forecast assumes current laws generally remain unchanged and excludes effects of the Supreme Court's February 20, 2026 tariff ruling. It is not a current-policy update or a probability forecast. The editable debt experiment remains separate.
+- Chinese/English labels, source links, version dates, accessible tables and keyboard year selection are included.
+
+### CBO provenance and reproduction
+
+CBO's [official data page](https://www.cbo.gov/data/budget-economic-data) links to its [open-data repository](https://github.com/US-CBO/cbo-data). We use the official CSV transformation, pinned to commit `284a95665f9f2f74ed1f482feb629b43fce323da`. The repository's `etl/config.py` maps its `2026-02` long-term vintage to `51119-2026-02-25-LTBO-Budget.xlsx`. The canonical [release notes](https://www.cbo.gov/publication/62044) supply the publication date and policy caveat. Direct Excel download was unavailable during ingestion; no third-party estimates or interpolated endpoints are used.
+
+`data/fiscal/sources/` preserves both original CSVs and their field schemas. `data/fiscal/cbo-2026-02.json` holds the compact frontend snapshot, source URLs, retrieval date, pinned commit and SHA-256 source hashes. Downloaded files were verified against that commit's Git blob hashes. Run:
+
+```sh
+node scripts/import-cbo.mjs
+npm run build
+npm run verify
+```
+
+The importer validates dataset identity, fiscal-year frequency, percent-of-GDP units, unique keys, complete annual coverage, finite values and the revenue/outlays/balance identity. It negates the original CBO deficit/surplus balance: positive means deficit, negative means surplus. Underlying three-decimal precision is retained. Tests cover malformed inputs, sign errors, missing years, fiscal boundaries and exported provenance.
+
+This is a reviewed **fixed forecast vintage**, not part of the weekly FRED/World Bank refresher. Importing a new CBO release requires reviewing source mappings, policy assumptions, expected coverage, hashes and numerical assertions. A 2056 observation is a projection horizon, never a freshness timestamp.
+
 ## V0.6: Dollar purchasing power
 
 - Dollar-focused homepage with monthly CPI purchasing power since 1913 and seven selectable base dates.
 - Eleven indicator cards: CPI, core PCE, 5y5y inflation compensation, public debt/GDP, deficit/GDP, net interest/receipts, Fed assets, M2 growth, nominal and real 10-year yields, and the broad trade-weighted dollar. Each shows dated observations, source links, recent history and data tables. No composite risk score or scenario probabilities are inferred.
 - Dollar regime history separates monetary arrangements from overlapping policy and inflation episodes, including the 1971 gold-window closure and the 1973 transition to floating rates.
-- Fiscal page separates historical public debt from verified CBO 2026/2036 endpoints and an editable, explicitly hypothetical debt model. The 2056 workbook is not yet imported; no intermediate CBO values are fabricated.
+- Fiscal page separates historical public debt from verified CBO 2026/2036 endpoints and an editable, explicitly hypothetical debt model. V0.7 expands those endpoints into the complete official annual projections.
 - Purchasing-power scenarios compare 2%, 3%, 4%, 5% and 7% inflation over 10/20/30 years, with customizable amounts, rates and horizons.
 - Since 1971: exact-base-month nominal and CPI-adjusted food, shelter-service, oil and wage indexes. Missing baselines remain unavailable. Shelter CPI is not a house-price index; gold, property transaction prices and equity total returns are pending.
 - Existing global map, comparison, drivers, CPI and sources remain under research navigation. Chinese/English and top-right light/dark controls are retained.

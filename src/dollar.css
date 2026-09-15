@@ -40,3 +40,16 @@
 .research-nav a[aria-current=page] { color: var(--global-accent); }
 @media(max-width:900px) { .monitor-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media(max-width:600px) { .dollar-panel { padding: 20px; } .dollar-grid,.dollar-inputs { grid-template-columns: 1fr; } .dollar-power-result { padding: 16px; } .dollar-power-result strong { font-size: 34px; } .regime-row { grid-template-columns: 1fr; gap: 12px; } .scenario-bars>div { grid-template-columns: 48px minmax(0,1fr) 96px; gap: 8px; font-size: 12px; } }
+
+.cbo-milestones { grid-template-columns: repeat(4,minmax(0,1fr)); }
+.cbo-milestones strong { font-size: clamp(26px,3vw,38px); font-weight: 500; }
+.cbo-chart { display: block; width: 100%; height: auto; margin-top: 15px; touch-action: pan-y; }
+.cbo-chart text { fill: var(--global-muted); font-size: 14px; }
+.cbo-legend { display: flex; flex-wrap: wrap; gap: 12px 25px; font-size: 12px; }
+.cbo-legend span { display: flex; align-items: center; gap: 8px; }
+.cbo-legend i { width: 25px; border-top: 3px solid var(--global-text); }
+.cbo-legend span:last-child i { border-top: 3px dashed var(--global-accent); }
+.cbo-assumptions { border-top: 1px solid var(--global-border); margin-top: 25px; padding-top: 15px; font-size: 14px; color: var(--global-muted); }
+.cbo-outlook details { margin: 20px 0; font-size: 13px; line-height: 1.8; }
+@media(max-width:900px) { .cbo-milestones { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .cbo-milestones article { padding: 16px; } }

@@ -12,12 +12,16 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## Suggested next releases
 
-- V0.7: import and validate the full CBO long-term workbook, preserving forecast vintage, fiscal-year definitions and separate historical/projected segments. Add gold and a true house-price series after checking licensing, coverage and comparability.
+- V0.8: add gold and a true house-price series after checking licensing, coverage and comparability. Improve initial loading with on-demand data chunks.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
+
+## Delivered V0.7
+
+CBO public debt, deficits and net interest as shares of fiscal-year GDP: 1962–2025 historical actuals and complete 2026–2056 conditional projections. Official CSVs and schemas are pinned and retained with source hashes. Metric/range controls, year inspection, distinct historical/projected paths, bilingual assumptions, annual table and CSV export. The February 25, 2026 forecast is reviewed separately from weekly observations and explicitly excludes the February 20 tariff ruling's effects. Gold and house-price integration remain future work.
 
 ## Delivered V0.6
 
-Dollar purchasing-power homepage; eleven dated risk indicators; monetary regime history; future purchasing-power calculator; observed debt, verified CBO 2026/2036 endpoints and an editable debt accounting scenario; nominal/real comparisons with exact base-month matching. Daily, weekly and fiscal-year sources join the validated automatic update pipeline. Gold and the CBO 2056 table remain clearly marked as pending.
+Dollar purchasing-power homepage; eleven dated risk indicators; monetary regime history; future purchasing-power calculator; observed debt, verified CBO 2026/2036 endpoints and an editable debt accounting scenario; nominal/real comparisons with exact base-month matching. Daily, weekly and fiscal-year sources join the validated automatic update pipeline. Gold remains pending; V0.7 subsequently completes the CBO annual fiscal projections.
 
 ## Delivered V0.5
 

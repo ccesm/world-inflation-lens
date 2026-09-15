@@ -137,7 +137,17 @@ try {
       if (route === 'monitor') assert.equal((html.match(/<article>/g) || []).length, 11)
       if (route === 'home') assert.match(html, /dollar-power-result/)
       if (route === 'scenarios') assert.match(html, /411,987/)
-      if (route === 'fiscal') assert.match(html, /161.00/)
+      if (route === 'fiscal') {
+        assert.match(html, /161.00/)
+        assert.match(html.replace(/<!--.*?-->/g, ''), /175\.076%/)
+        assert.match(html.replace(/<!--.*?-->/g, ''), /9\.134%/)
+        assert.match(html.replace(/<!--.*?-->/g, ''), /6\.930%/)
+        assert.match(html, /2026-02-25/)
+        assert.match(html, /data-cbo-segment="actual" d="M[^"]+"/)
+        assert.match(html, /data-cbo-segment="projected" d="M[^"]+"[^>]+stroke-dasharray="8 5"/)
+        assert.match(html, language === 'zh' ? /关税裁决/ : /tariff ruling/)
+        assert.doesNotMatch(html, /not yet been imported|尚未完成导入/)
+      }
     }
     for (const topic of ['food', 'energy', 'rates', 'housing', 'wages', 'money']) {
       for (const episode of ['oil', 'volcker', 'crisis', 'pandemic']) {

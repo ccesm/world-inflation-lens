@@ -1,0 +1,692 @@
+{
+  "metadata": {
+    "provider": "Congressional Budget Office",
+    "vintage": "2026-02",
+    "projectionPublishedAt": "2026-02-25",
+    "retrievedAt": "2026-09-15",
+    "frequency": "annual_fy",
+    "units": "% of GDP",
+    "projectionSource": "https://www.cbo.gov/publication/62044",
+    "historicalSource": "https://www.cbo.gov/publication/51134",
+    "originalWorkbook": "https://www.cbo.gov/system/files/2026-02/51119-2026-02-25-LTBO-Budget.xlsx",
+    "repository": "https://github.com/US-CBO/cbo-data",
+    "commit": "284a95665f9f2f74ed1f482feb629b43fce323da",
+    "projectionCsv": "https://github.com/US-CBO/cbo-data/blob/284a95665f9f2f74ed1f482feb629b43fce323da/data/budget/long_term_budget/annual_fy_2026-02.csv",
+    "historicalCsv": "https://github.com/US-CBO/cbo-data/blob/284a95665f9f2f74ed1f482feb629b43fce323da/data/budget/historical_budget/annual_fy_2026-02.csv",
+    "sourceHashes": {
+      "historical-2026-02.csv": "8fee9c6ec249b8b1685a189edbb28cfa8233022f72fe4f65723eb886c7ac7309",
+      "long-term-2026-02.csv": "61018d3f4334c26a1704438e28c3b523b641c45549c8bf04c3890fd463f7a5f5",
+      "historical-schema.json": "b81d86470cca2cbb9aa53a86674cd25751c5a79c9d96a788188fb7b8d63fbc02",
+      "long-term-schema.json": "86ab64b7f1e5a952d45626abb07f03f3682e174c2b23b60b2c44e9103ac04c50"
+    },
+    "policy": "Current laws generally remain unchanged. Excludes effects of the Supreme Court tariff ruling of February 20, 2026.",
+    "transformation": "Source deficit/surplus sign reversed: positive means deficit. All three indicators are percent of fiscal-year GDP. Publicly held debt is not gross federal debt."
+  },
+  "observations": [
+    {
+      "year": 1962,
+      "status": "actual",
+      "debt": 42.346,
+      "deficit": 1.22,
+      "interest": 1.176
+    },
+    {
+      "year": 1963,
+      "status": "actual",
+      "debt": 41.083,
+      "deficit": 0.769,
+      "interest": 1.252
+    },
+    {
+      "year": 1964,
+      "status": "actual",
+      "debt": 38.817,
+      "deficit": 0.894,
+      "interest": 1.239
+    },
+    {
+      "year": 1965,
+      "status": "actual",
+      "debt": 36.764,
+      "deficit": 0.199,
+      "interest": 1.211
+    },
+    {
+      "year": 1966,
+      "status": "actual",
+      "debt": 33.789,
+      "deficit": 0.474,
+      "interest": 1.203
+    },
+    {
+      "year": 1967,
+      "status": "actual",
+      "debt": 31.873,
+      "deficit": 1.033,
+      "interest": 1.227
+    },
+    {
+      "year": 1968,
+      "status": "actual",
+      "debt": 32.259,
+      "deficit": 2.803,
+      "interest": 1.236
+    },
+    {
+      "year": 1969,
+      "status": "actual",
+      "debt": 28.37,
+      "deficit": -0.331,
+      "interest": 1.295
+    },
+    {
+      "year": 1970,
+      "status": "actual",
+      "debt": 27.057,
+      "deficit": 0.272,
+      "interest": 1.374
+    },
+    {
+      "year": 1971,
+      "status": "actual",
+      "debt": 27.14,
+      "deficit": 2.063,
+      "interest": 1.329
+    },
+    {
+      "year": 1972,
+      "status": "actual",
+      "debt": 26.506,
+      "deficit": 1.922,
+      "interest": 1.273
+    },
+    {
+      "year": 1973,
+      "status": "actual",
+      "debt": 25.202,
+      "deficit": 1.102,
+      "interest": 1.283
+    },
+    {
+      "year": 1974,
+      "status": "actual",
+      "debt": 23.178,
+      "deficit": 0.414,
+      "interest": 1.446
+    },
+    {
+      "year": 1975,
+      "status": "actual",
+      "debt": 24.562,
+      "deficit": 3.313,
+      "interest": 1.446
+    },
+    {
+      "year": 1976,
+      "status": "actual",
+      "debt": 26.729,
+      "deficit": 4.128,
+      "interest": 1.496
+    },
+    {
+      "year": 1977,
+      "status": "actual",
+      "debt": 27.125,
+      "deficit": 2.651,
+      "interest": 1.477
+    },
+    {
+      "year": 1978,
+      "status": "actual",
+      "debt": 26.705,
+      "deficit": 2.603,
+      "interest": 1.56
+    },
+    {
+      "year": 1979,
+      "status": "actual",
+      "debt": 24.958,
+      "deficit": 1.587,
+      "interest": 1.662
+    },
+    {
+      "year": 1980,
+      "status": "actual",
+      "debt": 25.5,
+      "deficit": 2.644,
+      "interest": 1.882
+    },
+    {
+      "year": 1981,
+      "status": "actual",
+      "debt": 25.195,
+      "deficit": 2.52,
+      "interest": 2.195
+    },
+    {
+      "year": 1982,
+      "status": "actual",
+      "debt": 27.905,
+      "deficit": 3.862,
+      "interest": 2.566
+    },
+    {
+      "year": 1983,
+      "status": "actual",
+      "debt": 32.163,
+      "deficit": 5.877,
+      "interest": 2.54
+    },
+    {
+      "year": 1984,
+      "status": "actual",
+      "debt": 33.095,
+      "deficit": 4.694,
+      "interest": 2.813
+    },
+    {
+      "year": 1985,
+      "status": "actual",
+      "debt": 35.339,
+      "deficit": 4.978,
+      "interest": 3.036
+    },
+    {
+      "year": 1986,
+      "status": "actual",
+      "debt": 38.456,
+      "deficit": 4.888,
+      "interest": 3.005
+    },
+    {
+      "year": 1987,
+      "status": "actual",
+      "debt": 39.637,
+      "deficit": 3.141,
+      "interest": 2.907
+    },
+    {
+      "year": 1988,
+      "status": "actual",
+      "debt": 39.926,
+      "deficit": 3.02,
+      "interest": 2.954
+    },
+    {
+      "year": 1989,
+      "status": "actual",
+      "debt": 39.439,
+      "deficit": 2.748,
+      "interest": 3.042
+    },
+    {
+      "year": 1990,
+      "status": "actual",
+      "debt": 40.883,
+      "deficit": 3.747,
+      "interest": 3.125
+    },
+    {
+      "year": 1991,
+      "status": "actual",
+      "debt": 44.131,
+      "deficit": 4.419,
+      "interest": 3.191
+    },
+    {
+      "year": 1992,
+      "status": "actual",
+      "debt": 46.752,
+      "deficit": 4.525,
+      "interest": 3.107
+    },
+    {
+      "year": 1993,
+      "status": "actual",
+      "debt": 47.945,
+      "deficit": 3.764,
+      "interest": 2.933
+    },
+    {
+      "year": 1994,
+      "status": "actual",
+      "debt": 47.835,
+      "deficit": 2.831,
+      "interest": 2.828
+    },
+    {
+      "year": 1995,
+      "status": "actual",
+      "debt": 47.674,
+      "deficit": 2.169,
+      "interest": 3.07
+    },
+    {
+      "year": 1996,
+      "status": "actual",
+      "debt": 46.962,
+      "deficit": 1.351,
+      "interest": 3.032
+    },
+    {
+      "year": 1997,
+      "status": "actual",
+      "debt": 44.638,
+      "deficit": 0.259,
+      "interest": 2.887
+    },
+    {
+      "year": 1998,
+      "status": "actual",
+      "debt": 41.666,
+      "deficit": -0.776,
+      "interest": 2.7
+    },
+    {
+      "year": 1999,
+      "status": "actual",
+      "debt": 38.318,
+      "deficit": -1.325,
+      "interest": 2.424
+    },
+    {
+      "year": 2000,
+      "status": "actual",
+      "debt": 33.703,
+      "deficit": -2.335,
+      "interest": 2.204
+    },
+    {
+      "year": 2001,
+      "status": "actual",
+      "debt": 31.538,
+      "deficit": -1.218,
+      "interest": 1.959
+    },
+    {
+      "year": 2002,
+      "status": "actual",
+      "debt": 32.694,
+      "deficit": 1.457,
+      "interest": 1.579
+    },
+    {
+      "year": 2003,
+      "status": "actual",
+      "debt": 34.697,
+      "deficit": 3.348,
+      "interest": 1.357
+    },
+    {
+      "year": 2004,
+      "status": "actual",
+      "debt": 35.712,
+      "deficit": 3.431,
+      "interest": 1.332
+    },
+    {
+      "year": 2005,
+      "status": "actual",
+      "debt": 35.765,
+      "deficit": 2.479,
+      "interest": 1.433
+    },
+    {
+      "year": 2006,
+      "status": "actual",
+      "debt": 35.411,
+      "deficit": 1.82,
+      "interest": 1.662
+    },
+    {
+      "year": 2007,
+      "status": "actual",
+      "debt": 35.197,
+      "deficit": 1.123,
+      "interest": 1.657
+    },
+    {
+      "year": 2008,
+      "status": "actual",
+      "debt": 39.219,
+      "deficit": 3.099,
+      "interest": 1.708
+    },
+    {
+      "year": 2009,
+      "status": "actual",
+      "debt": 52.15,
+      "deficit": 9.765,
+      "interest": 1.292
+    },
+    {
+      "year": 2010,
+      "status": "actual",
+      "debt": 60.593,
+      "deficit": 8.696,
+      "interest": 1.318
+    },
+    {
+      "year": 2011,
+      "status": "actual",
+      "debt": 65.485,
+      "deficit": 8.403,
+      "interest": 1.487
+    },
+    {
+      "year": 2012,
+      "status": "actual",
+      "debt": 70.028,
+      "deficit": 6.683,
+      "interest": 1.368
+    },
+    {
+      "year": 2013,
+      "status": "actual",
+      "debt": 71.805,
+      "deficit": 4.073,
+      "interest": 1.324
+    },
+    {
+      "year": 2014,
+      "status": "actual",
+      "debt": 73.329,
+      "deficit": 2.782,
+      "interest": 1.314
+    },
+    {
+      "year": 2015,
+      "status": "actual",
+      "debt": 72.212,
+      "deficit": 2.433,
+      "interest": 1.229
+    },
+    {
+      "year": 2016,
+      "status": "actual",
+      "debt": 76.001,
+      "deficit": 3.136,
+      "interest": 1.288
+    },
+    {
+      "year": 2017,
+      "status": "actual",
+      "debt": 75.692,
+      "deficit": 3.435,
+      "interest": 1.355
+    },
+    {
+      "year": 2018,
+      "status": "actual",
+      "debt": 77.067,
+      "deficit": 3.812,
+      "interest": 1.59
+    },
+    {
+      "year": 2019,
+      "status": "actual",
+      "debt": 78.928,
+      "deficit": 4.621,
+      "interest": 1.762
+    },
+    {
+      "year": 2020,
+      "status": "actual",
+      "debt": 98.5,
+      "deficit": 14.681,
+      "interest": 1.619
+    },
+    {
+      "year": 2021,
+      "status": "actual",
+      "debt": 96.702,
+      "deficit": 12.044,
+      "interest": 1.529
+    },
+    {
+      "year": 2022,
+      "status": "actual",
+      "debt": 94.868,
+      "deficit": 5.382,
+      "interest": 1.861
+    },
+    {
+      "year": 2023,
+      "status": "actual",
+      "debt": 95.758,
+      "deficit": 6.182,
+      "interest": 2.403
+    },
+    {
+      "year": 2024,
+      "status": "actual",
+      "debt": 97.401,
+      "deficit": 6.325,
+      "interest": 3.04
+    },
+    {
+      "year": 2025,
+      "status": "actual",
+      "debt": 99.375,
+      "deficit": 5.847,
+      "interest": 3.195
+    },
+    {
+      "year": 2026,
+      "status": "projected",
+      "debt": 100.605,
+      "deficit": 5.807,
+      "interest": 3.257
+    },
+    {
+      "year": 2027,
+      "status": "projected",
+      "debt": 102.069,
+      "deficit": 5.665,
+      "interest": 3.325
+    },
+    {
+      "year": 2028,
+      "status": "projected",
+      "debt": 104.116,
+      "deficit": 5.643,
+      "interest": 3.513
+    },
+    {
+      "year": 2029,
+      "status": "projected",
+      "debt": 105.811,
+      "deficit": 5.952,
+      "interest": 3.678
+    },
+    {
+      "year": 2030,
+      "status": "projected",
+      "debt": 107.726,
+      "deficit": 5.886,
+      "interest": 3.829
+    },
+    {
+      "year": 2031,
+      "status": "projected",
+      "debt": 109.573,
+      "deficit": 5.889,
+      "interest": 3.989
+    },
+    {
+      "year": 2032,
+      "status": "projected",
+      "debt": 111.535,
+      "deficit": 6.057,
+      "interest": 4.147
+    },
+    {
+      "year": 2033,
+      "status": "projected",
+      "debt": 113.992,
+      "deficit": 6.256,
+      "interest": 4.269
+    },
+    {
+      "year": 2034,
+      "status": "projected",
+      "debt": 116.186,
+      "deficit": 6.47,
+      "interest": 4.389
+    },
+    {
+      "year": 2035,
+      "status": "projected",
+      "debt": 117.977,
+      "deficit": 6.57,
+      "interest": 4.486
+    },
+    {
+      "year": 2036,
+      "status": "projected",
+      "debt": 120.209,
+      "deficit": 6.669,
+      "interest": 4.591
+    },
+    {
+      "year": 2037,
+      "status": "projected",
+      "debt": 122.449,
+      "deficit": 6.709,
+      "interest": 4.687
+    },
+    {
+      "year": 2038,
+      "status": "projected",
+      "debt": 124.742,
+      "deficit": 6.81,
+      "interest": 4.788
+    },
+    {
+      "year": 2039,
+      "status": "projected",
+      "debt": 127.066,
+      "deficit": 6.883,
+      "interest": 4.887
+    },
+    {
+      "year": 2040,
+      "status": "projected",
+      "debt": 129.383,
+      "deficit": 6.941,
+      "interest": 4.989
+    },
+    {
+      "year": 2041,
+      "status": "projected",
+      "debt": 131.71,
+      "deficit": 7.042,
+      "interest": 5.097
+    },
+    {
+      "year": 2042,
+      "status": "projected",
+      "debt": 134.155,
+      "deficit": 7.208,
+      "interest": 5.217
+    },
+    {
+      "year": 2043,
+      "status": "projected",
+      "debt": 136.631,
+      "deficit": 7.318,
+      "interest": 5.334
+    },
+    {
+      "year": 2044,
+      "status": "projected",
+      "debt": 139.168,
+      "deficit": 7.452,
+      "interest": 5.443
+    },
+    {
+      "year": 2045,
+      "status": "projected",
+      "debt": 141.784,
+      "deficit": 7.575,
+      "interest": 5.554
+    },
+    {
+      "year": 2046,
+      "status": "projected",
+      "debt": 144.497,
+      "deficit": 7.701,
+      "interest": 5.676
+    },
+    {
+      "year": 2047,
+      "status": "projected",
+      "debt": 147.277,
+      "deficit": 7.839,
+      "interest": 5.792
+    },
+    {
+      "year": 2048,
+      "status": "projected",
+      "debt": 150.113,
+      "deficit": 7.965,
+      "interest": 5.907
+    },
+    {
+      "year": 2049,
+      "status": "projected",
+      "debt": 153.018,
+      "deficit": 8.113,
+      "interest": 6.022
+    },
+    {
+      "year": 2050,
+      "status": "projected",
+      "debt": 155.982,
+      "deficit": 8.238,
+      "interest": 6.143
+    },
+    {
+      "year": 2051,
+      "status": "projected",
+      "debt": 159.029,
+      "deficit": 8.394,
+      "interest": 6.269
+    },
+    {
+      "year": 2052,
+      "status": "projected",
+      "debt": 162.163,
+      "deficit": 8.565,
+      "interest": 6.4
+    },
+    {
+      "year": 2053,
+      "status": "projected",
+      "debt": 165.314,
+      "deficit": 8.676,
+      "interest": 6.529
+    },
+    {
+      "year": 2054,
+      "status": "projected",
+      "debt": 168.524,
+      "deficit": 8.835,
+      "interest": 6.658
+    },
+    {
+      "year": 2055,
+      "status": "projected",
+      "debt": 171.785,
+      "deficit": 8.991,
+      "interest": 6.79
+    },
+    {
+      "year": 2056,
+      "status": "projected",
+      "debt": 175.076,
+      "deficit": 9.134,
+      "interest": 6.93
+    }
+  ]
+}
