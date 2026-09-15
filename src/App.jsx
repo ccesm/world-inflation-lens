@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { copy } from './i18n/translations.js'
-import { primaryRoutes, referenceRoutes, routeFromHash } from './utils/routing.js'
+import { primaryRoutes, routeSection, routeFromHash } from './utils/routing.js'
+import { iaCopy, sectionLinks } from './i18n/architecture.js'
+import { SectionLanding } from './pages/SectionLanding.jsx'
+import { DollarPower } from './components/DollarPower.jsx'
+import { PageIntro } from './components/PageIntro.jsx'
 import { Home } from './pages/DollarHome.jsx'
 import { Monitor } from './pages/Monitor.jsx'
 import { Scenarios } from './pages/Scenarios.jsx'
@@ -35,13 +39,20 @@ export default function App() {
   const [navigationKey, setNavigationKey] = useState(() => window.location.hash)
   const [language, setLanguage] = useState(initialLanguage)
   const [theme, setTheme] = useState(initialTheme)
-  const t = copy[language]
+  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav } }
+  const section = routeSection(route), links = sectionLinks[section] || []
 
   useEffect(() => {
     const onHashChange = () => { setRoute(routeFromHash()); setNavigationKey(window.location.hash); window.scrollTo(0, 0) }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
+
+  useEffect(() => {
+    const focus = new URLSearchParams(navigationKey.split('?')[1]).get('focus')
+    const id = { model: 'fiscal-model', outlook: 'fiscal-outlook', compare: 'country-compare', health: 'data-status' }[focus]
+    if (id) document.getElementById(id)?.scrollIntoView({ block: 'start' })
+  }, [navigationKey])
 
   useEffect(() => {
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en'
@@ -60,7 +71,7 @@ export default function App() {
     <header className="site-header">
       <a className="brand" href="#/home" aria-label={language === 'zh' ? '全球通胀透视 · 首页' : 'World Inflation Lens home'}><span className="brand-mark">◎</span><span>WORLD<br /><strong>INFLATION LENS</strong>{language === 'zh' && <small className="brand-chinese">全球通胀透视</small>}</span></a>
       <nav className="desktop-nav" aria-label={t.navigation}>
-        {primaryRoutes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}
+        {primaryRoutes.map(item => <a key={item} href={`#/${item}`} className={section === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}
       </nav>
       <div className="header-actions">
         <button className="theme-toggle" type="button" onClick={() => setTheme(current => current === 'light' ? 'dark' : 'light')} aria-label={theme === 'light' ? (language === 'zh' ? '切换到深色模式' : 'Switch to dark mode') : (language === 'zh' ? '切换到浅色模式' : 'Switch to light mode')} aria-pressed={theme === 'dark'} title={theme === 'light' ? (language === 'zh' ? '深色模式' : 'Dark mode') : (language === 'zh' ? '浅色模式' : 'Light mode')}>
@@ -72,14 +83,16 @@ export default function App() {
         </div>
       </div>
     </header>
-    <nav className="mobile-nav" aria-label={t.navigation}>{primaryRoutes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
-    <nav className="research-nav" aria-label={language === 'zh' ? '研究资料' : 'Research references'}>{referenceRoutes.map(item => <a key={item} href={`#/${item}`} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
+    <nav className="mobile-nav" aria-label={t.navigation}>{primaryRoutes.map(item => <a key={item} href={`#/${item}`} className={section === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
+    {links.length > 0 && <div className="section-navigation"><nav aria-label={a.sectionNavigation}>{links.map(([href, zh, en]) => <a key={href} href={href} aria-current={navigationKey === href ? 'page' : undefined}>{language === 'zh' ? zh : en}</a>)}</nav><label>{a.sectionNavigation}<select value={links.some(([href]) => href === navigationKey) ? navigationKey : ''} onChange={event => { window.location.hash = event.target.value }}><option value="" disabled>{a.nav[section]}</option>{links.map(([href, zh, en]) => <option key={href} value={href}>{language === 'zh' ? zh : en}</option>)}</select></label></div>}
     <main key={navigationKey}>
       {route === 'home' && <Home language={language} />}
+      {['dollar', 'research'].includes(route) && <SectionLanding section={route} language={language} />}
+      {route === 'purchasing-power' && <><PageIntro eyebrow="DOLLAR / CPI" title={a.powerTitle} description={a.powerClarify} /><section className="content-section global-section"><DollarPower language={language} /></section></>}
       {route === 'monitor' && <Monitor language={language} />}
       {route === 'scenarios' && <Scenarios language={language} />}
       {route === 'fiscal' && <Fiscal language={language} />}
-      {route === 'regimes' && <Regimes language={language} />}
+      {['regimes', 'history'].includes(route) && <Regimes language={language} />}
       {route === 'since-1971' && <Since1971 language={language} />}
       {route === 'overview' && <GlobalOverview language={language} />}
       {route === 'timeline' && <Timeline language={language} />}

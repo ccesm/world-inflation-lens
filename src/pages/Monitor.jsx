@@ -1,4 +1,6 @@
 import React from 'react'
+import { viewParameter } from '../utils/routing.js'
+import { iaCopy } from '../i18n/architecture.js'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { monitorDefinitions } from '../data/monitor.js'
 import { dollarCopy } from '../i18n/dollar.js'
@@ -7,7 +9,10 @@ import { formatNumber } from '../utils/inflation.js'
 
 export function Monitor({ language }) {
   const t = dollarCopy[language], u = updatesCopy[language]
-  return <><PageIntro eyebrow={t.observed} title={t.monitorTitle} description={t.monitorDesc} /><section className="content-section global-section dollar-section"><p>{t.cadence}</p><div className="dollar-grid monitor-grid">{monitorDefinitions.map(item => {
+  const groups = { inflation: ['CPIAUCNS', 'PCEPILFE', 'T5YIFR'], monetary: ['WALCL', 'M2SL', 'DFII10'], market: ['DTWEXBGS', 'DGS10', 'DFII10', 'T5YIFR'] }
+  const group = viewParameter('group', Object.keys(groups), null)
+  const items = group ? monitorDefinitions.filter(item => groups[group].includes(item.id)) : monitorDefinitions
+  return <><PageIntro eyebrow={t.observed} title={t.monitorTitle} description={t.monitorDesc} /><section className="content-section global-section dollar-section"><p>{t.cadence}</p>{group && <a className="ia-more" href="#/monitor">{iaCopy[language].evidenceLink} →</a>}<div className="dollar-grid monitor-grid">{items.map(item => {
     const last = item.points.findLast(p => p.value !== null)
     const points = item.points.slice(-60), values = points.filter(p => p.value !== null).map(p => p.value), lo = Math.min(...values), hi = Math.max(...values)
     let connected = false

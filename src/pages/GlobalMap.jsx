@@ -49,7 +49,7 @@ export function GlobalMap({ language }) {
       <AnnualComparison key={selected} ids={[selected]} start={years[0]} end={years.at(-1)} language={language} title={`${country.name[language]} · ${t.history}`} />
       <GlobalDataNote language={language} />
     </section>
-    <section className="global-panel comparison-panel" aria-label={t.compare}>
+    <section id="country-compare" className="global-panel comparison-panel" aria-label={t.compare}>
       <div className="global-heading"><div><p className="eyebrow">02 / {t.annual}</p><h2>{t.compare}</h2><p className="global-help">{t.compareIntro}</p></div></div>
       <div className="comparison-chips">{comparison.map((id, index) => <span key={id}><i style={{ background: seriesColors[index] }} />{countryById[id].name[language]}<button disabled={comparison.length <= 2} aria-label={`${t.remove} ${countryById[id].name[language]}`} onClick={() => setComparison(comparison.filter(item => item !== id))}>×</button></span>)}</div>
       <div className="comparison-add"><CountrySelect value={candidate} onChange={setCandidate} language={language} /><button className="global-button" onClick={() => add(candidate)} disabled={comparison.length >= 5 || comparison.includes(candidate)}>{comparison.includes(candidate) ? t.already : t.add} +</button></div>

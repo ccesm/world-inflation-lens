@@ -15,7 +15,56 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
-## V0.7: CBO long-term fiscal evidence
+## V0.7: two complementary parts
+
+**Part A — Long-term U.S. fiscal history and CBO 2026–2056 projections.** The completed fiscal dataset, ingestion validation, historical/forecast labels, source vintage, policy caveat, year inspection, tables and CSV remain intact.
+
+**Part B — Information architecture around long-term dollar purchasing power.** The primary question is whether the U.S. dollar can preserve purchasing power over the next 20–30 years. High inflation is a research possibility, not a predetermined outcome.
+
+Primary navigation is now exactly **Home / Dollar / Fiscal / History / Scenarios / Research**, with Chinese labels 首页 / 美元 / 财政 / 历史 / 情景 / 研究. Desktop pages have scoped secondary links; mobile pages use a native section selector. Theme and language controls stay in the upper right. The homepage has no secondary tool navigation bar.
+
+The homepage progresses through eleven compact sections:
+
+1. Research question, two CTAs and only three dated observations: CPI, 10-year real yield and public debt/GDP.
+2. CPI purchasing power: selectable 1913/1945/1971/1980/2000/2020 bases. The example is the remaining purchasing power of an unchanged $100, explicitly expressed at starting-month prices.
+3. Illustrative future scenarios using $100,000 by default, 10/20/30-year controls and editable amount/rate/horizon.
+4. Four forces: inflation, fiscal pressure, monetary conditions and market confidence.
+5. A compact preview of the existing CBO chart, retaining metric selection, solid/dashed separation, source links, vintage and assumptions.
+6. Four transparent descriptive proxy labels, never summed into a score.
+7. Opposing fiscal-pressure and productivity pathways, labeled as conditional mechanisms.
+8. Since 1971: existing CPI, M2, shelter and CBO historical debt ratios normalized independently. Wage and oil coverage limitations remain explicit.
+9. A concise monetary-history reading timeline linking to detailed regimes.
+10. Evidence for rising inflation risk and evidence that may constrain it.
+11. Supporting global context, common-year major economies and a map preview loaded as it approaches the viewport.
+
+Full country rankings, country comparison, the full map, all monitor/driver charts, source registry, health panel, long methodology and large tables remain in detailed tools. The fiscal page now reads **Where we are now → What CBO projects → What this could mean**, followed by the preserved historical reference and independent debt scenario model.
+
+### Routes and backward compatibility
+
+New section routes: `#/dollar`, `#/history`, `#/research`; new detailed route: `#/purchasing-power`. `#/history` renders the same detailed regime content as the preserved `#/regimes` route. All former hash routes remain valid, including `#/monitor`, `#/since-1971`, `#/us-cpi`, `#/timeline`, `#/overview`, `#/map`, `#/drivers` and `#/sources`. Existing driver share parameters and map country/year parameters are unchanged.
+
+Additional focused links only select an existing tool view:
+
+- `#/monitor?group=inflation|monetary|market` filters existing cards; `#/monitor` still shows all eleven.
+- `#/fiscal?metric=debt|deficit|interest&focus=outlook` opens the corresponding CBO metric; `focus=model` scrolls to the existing debt experiment.
+- `#/map?focus=compare` and `#/sources?focus=health` target the preserved comparison and data-health sections.
+
+Unknown metric/group choices fall back safely. Parameterized navigation remounts the selected view so back/forward and same-route links update consistently. No data APIs, chatbot, trading recommendations, investment forecasts or opaque score were added.
+
+### Descriptive environment labels
+
+Each label applies only to a named proxy, with the value, observation date, frequency, source and thresholds visible. The four ordered labels are Low / Moderate / Elevated / High. The lower bounds for the latter three bands are:
+
+| Category | Proxy | Boundaries |
+| --- | --- | --- |
+| Inflation pressure | CPI year-over-year inflation | 2%, 4%, 6% |
+| Fiscal pressure | FRED public debt / GDP | 60%, 90%, 120% |
+| Monetary conditions | 10-year TIPS real yield level | 0%, 1%, 2% |
+| Market confidence | 5y5y inflation compensation level | 2%, 3%, 4% |
+
+These are disclosed editorial reading bands, not official targets, empirically validated danger thresholds, an overall confidence rating or a prediction. A high real-yield label means high real yields, not high inflation risk. 5y5y includes risk/liquidity premia and is not a literal 30-year forecast. Missing or stale observations receive no level label, using the existing data-age heuristics. The labels do not summarize every indicator within a category.
+
+## V0.7 Part A: CBO long-term fiscal evidence
 
 The Fiscal Pressure page now includes all three requested measures: public debt/GDP, deficit/GDP and net interest/GDP. Select a metric, inspect individual years, switch between full history / since 2000 / projections only, open the annual table or download all 95 years as CSV.
 

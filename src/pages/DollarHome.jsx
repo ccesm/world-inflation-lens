@@ -1,15 +1,27 @@
 import React from 'react'
-import { dollarCopy } from '../i18n/dollar.js'
+import { iaCopy } from '../i18n/architecture.js'
 import { DollarPower } from '../components/DollarPower.jsx'
-import { futurePower } from '../utils/dollar.js'
-import { formatNumber } from '../utils/inflation.js'
+import { CboOutlook } from '../components/CboOutlook.jsx'
+import { ScenarioCalculator } from './Scenarios.jsx'
+import { OutlookSummary, Environment } from '../components/OutlookSummary.jsx'
+import { GlobalPreview } from '../components/GlobalPreview.jsx'
+import { SincePreview } from '../components/SincePreview.jsx'
 
 export function Home({ language }) {
-  const t = dollarCopy[language]
-  return <>
-    <section className="hero educational-hero dollar-hero"><div className="hero-copy"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="lead">{t.description}</p><div className="hero-actions"><a href="#/monitor" className="primary-button">{t.explore} ↗</a><a href="#/scenarios" className="text-link">{t.scenarioLink} →</a></div></div><aside className="snapshot-card"><p className="eyebrow">{t.assumptions}</p><h2>$100 →</h2>{[2, 3, 4, 7].map(rate => <div className="dollar-scenario-row" key={rate}><span>{rate}% · 30 {t.after}</span><strong>${formatNumber(futurePower(100, rate, 30), language, 0)}</strong></div>)}<p className="data-note">{t.scenarioDesc}</p></aside></section>
-    <section className="content-section global-section dollar-section"><DollarPower language={language} /><section className="dollar-panel"><h2>{t.tensionTitle}</h2><p>{t.tension}</p><a href="https://www.federalreserve.gov/aboutthefed/fedexplained/monetary-policy.htm" target="_blank" rel="noreferrer">Federal Reserve · Monetary policy ↗</a></section>
-    <section className="dollar-paths"><h2>{t.pathsTitle}</h2><p>{t.pathsNote}</p><div className="dollar-grid">{t.paths.map((item, i) => <article key={item.title}><small>0{i + 1}</small><h3>{item.title}</h3><p>{item.body}</p></article>)}</div><p className="global-help"><a href="https://www.federalreserve.gov/econres/ifdp/simple-monetary-rules-under-fiscal-dominance.htm" target="_blank" rel="noreferrer">Federal Reserve research · Fiscal dominance ↗</a></p></section>
-    <section className="dollar-panel"><h2>{t.resources}</h2><div className="dollar-links">{['regimes', 'fiscal', 'since-1971', 'overview', 'us-cpi', 'sources'].map((route, i) => <a key={route} href={`#/${route}`}>{t.links[i]} →</a>)}</div></section></section>
-  </>
+  const t = iaCopy[language]
+  return <div className="ia-home global-section">
+    <section className="ia-hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="ia-subtitle">{t.subtitle}</p><p className="ia-stance">{t.stance}</p><div className="hero-actions"><a href="#/dollar" className="primary-button">{t.outlookLink} →</a><a href="#/scenarios" className="text-link">{t.scenarioLink} →</a></div><OutlookSummary language={language} /></section>
+    <div className="content-section ia-home-body dollar-section">
+      <section className="ia-section"><DollarPower language={language} initialBase="1971-08" preview /><a className="ia-more" href="#/purchasing-power">{t.powerLink} →</a></section>
+      <section className="ia-section"><h2>{t.scenarioTitle}</h2><ScenarioCalculator language={language} compact /><a className="ia-more" href="#/scenarios">{t.calculatorLink} →</a></section>
+      <section className="ia-section"><h2>{t.forcesTitle}</h2><div className="ia-grid four">{['#/monitor?group=inflation', '#/fiscal', '#/monitor?group=monetary', '#/monitor?group=market'].map((href, i) => <a className="ia-tool" href={href} key={href}><small>0{i + 1}</small><h3>{t.forces[i]}</h3><p>{t.forceNotes[i]}</p><span>{t.tool} →</span></a>)}</div></section>
+      <section className="ia-section"><CboOutlook language={language} preview /></section>
+      <Environment language={language} />
+      <section className="ia-section"><h2>{t.pathwayTitle}</h2><div className="ia-grid two ia-pathways">{[[t.riskPath, t.riskSteps], [t.growthPath, t.growthSteps]].map(([title, steps]) => <article key={title}><h3>{title}</h3><ol>{steps.map(step => <li key={step}>{step}</li>)}</ol></article>)}</div><p>{t.pathwayNote}</p><a className="ia-source" href="https://www.federalreserve.gov/econres/ifdp/simple-monetary-rules-under-fiscal-dominance.htm" target="_blank" rel="noreferrer">Federal Reserve · Fiscal dominance research ↗</a></section>
+      <section className="ia-section"><h2>{t.sinceTitle}</h2><p>{t.sinceNote}</p><SincePreview language={language} /><p className="ia-source">{t.planned}</p><a className="ia-more" href="#/since-1971">{t.sinceLink} →</a></section>
+      <section className="ia-section"><h2>{t.regimesTitle}</h2><ol className="ia-regimes">{['1913–1933', '1933–1944', '1944–1971', '1971–1980', '1980–2008', '2008–2020', '2020–'].map((date, i) => <li key={date}><span>{date}</span><a href="#/history">{t.regimeNames[i]} →</a></li>)}</ol><p className="ia-source">{t.regimeNote}</p><a className="ia-more" href="#/history">{t.historyLink} →</a></section>
+      <section className="ia-section"><h2>{t.debateTitle}</h2><div className="ia-grid two">{[[t.debateLeft, t.riskEvidence], [t.debateRight, t.restraintEvidence]].map(([title, items]) => <article key={title}><h3>{title}</h3><ul>{items.map(item => <li key={item}>{item}</li>)}</ul></article>)}</div><p>{t.debateNote}</p><div className="dollar-links"><a href="#/fiscal">CBO →</a><a href="#/monitor?group=inflation">5y5y →</a><a href="https://www.federalreserve.gov/aboutthefed/fedexplained/monetary-policy.htm" target="_blank" rel="noreferrer">Federal Reserve · {language === 'zh' ? '使命与政策' : 'Mandate & policy'} ↗</a></div></section>
+      <GlobalPreview language={language} />
+    </div>
+  </div>
 }

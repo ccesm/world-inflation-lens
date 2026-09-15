@@ -8,9 +8,12 @@ import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { equivalentCost, monthNumber, withAnnualChange } from '../src/utils/inflation.js'
 import { valueAt, rowsAt, rankRows, chooseDefaultYear, bucketIndex, linePath } from '../src/utils/globalInflation.js'
-import { routeFromHash, routes } from '../src/utils/routing.js'
+import { routeFromHash, routes, primaryRoutes, routeSection, viewParameter } from '../src/utils/routing.js'
 import { alignMonthly, monthsBetween, monthlyPath, monthlyCsv } from '../src/utils/drivers.js'
 import { parseFredTable } from './lib/fredTable.mjs'
+
+import { sectionLinks } from '../src/i18n/architecture.js'
+import { environmentRules, descriptiveLevel } from '../src/utils/environment.js'
 
 const root = resolve(import.meta.dirname, '..')
 const raw = JSON.parse(await readFile(join(root, 'data/inflation/fred.json'), 'utf8'))
@@ -125,6 +128,8 @@ try {
       globalThis.window = { location: { hash: `#/${route}` } }
       const html = renderToString(React.createElement(App))
       assert.match(html, /<h1>/)
+      assert.equal((html.match(/<h1>/g) || []).length, 1)
+      assert.doesNotMatch(html, /NaN|Infinity|undefined/)
       assert.match(html, /site-shell/)
       assert.match(html, /class="theme-toggle"/)
       assert.match(html, /aria-pressed="false"/)
@@ -135,7 +140,20 @@ try {
       if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.match(html, /chart-share/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (['home', 'monitor', 'scenarios', 'fiscal', 'regimes', 'since-1971'].includes(route)) assert.doesNotMatch(html, /NaN|Infinity|undefined/)
       if (route === 'monitor') assert.equal((html.match(/<article>/g) || []).length, 11)
-      if (route === 'home') assert.match(html, /dollar-power-result/)
+      if (route === 'home') {
+        assert.match(html, /dollar-power-result/)
+        assert.match(html, /value="100000"/)
+        assert.match(html, /41,199/)
+        assert.doesNotMatch(html, /<table|class="health-card"|class="ranking-table"/)
+        assert.match(html, /2026-02-25/)
+        assert.match(html, /data-cbo-segment="projected"/)
+        assert.match(html, language === 'zh' ? /未来20–30年/ : /A 20–30 YEAR VIEW/)
+        assert.match(html, language === 'zh' ? /不预设美元一定会崩溃/ : /does not assume that the dollar will collapse/)
+        const primaryNav = html.match(/<nav class="desktop-nav"[^>]*>(.*?)<\/nav>/)[1]
+        assert.equal((primaryNav.match(/<a /g) || []).length, 6)
+        assert.doesNotMatch(primaryNav, /#\/monitor|#\/map|#\/sources|#\/drivers/)
+        assert.equal((html.match(/<section class="ia-section"/g) || []).length, 10)
+      }
       if (route === 'scenarios') assert.match(html, /411,987/)
       if (route === 'fiscal') {
         assert.match(html, /161.00/)
@@ -148,6 +166,17 @@ try {
         assert.match(html, language === 'zh' ? /关税裁决/ : /tariff ruling/)
         assert.doesNotMatch(html, /not yet been imported|尚未完成导入/)
       }
+    }
+    for (const hash of ['#/fiscal?metric=interest&focus=outlook', '#/fiscal?metric=deficit', '#/monitor?group=inflation', '#/monitor?group=monetary', '#/monitor?group=market', '#/map?country=USA&year=2024&focus=compare', '#/sources?focus=health']) {
+      globalThis.window = { location: { hash } }
+      const html = renderToString(React.createElement(App))
+      assert.doesNotMatch(html, /NaN|undefined|Infinity/)
+      if (hash.includes('metric=interest')) assert.match(html.replace(/<!--.*?-->/g, ''), /6\.93% GDP/)
+      if (hash.includes('metric=deficit')) assert.match(html.replace(/<!--.*?-->/g, ''), /9\.13% GDP/)
+      if (hash.includes('group=inflation') || hash.includes('group=monetary')) assert.equal((html.match(/<article>/g) || []).length, 3)
+      if (hash.includes('group=market')) assert.equal((html.match(/<article>/g) || []).length, 4)
+      if (hash.includes('focus=compare')) assert.match(html, /id="country-compare"/)
+      if (hash.includes('focus=health')) assert.match(html, /id="data-status"/)
     }
     for (const topic of ['food', 'energy', 'rates', 'housing', 'wages', 'money']) {
       for (const episode of ['oil', 'volcker', 'crisis', 'pandemic']) {
@@ -168,7 +197,7 @@ try {
   globalThis.localStorage = { getItem: () => { throw new Error('Storage blocked') } }
   globalThis.window = { location: { hash: '#/home' } }
   assert.match(renderToString(React.createElement(App)), /site-shell/)
-  console.log('PASS: all twelve views and 48 driver-topic/episode/language combinations render; history links and blocked storage work')
+  console.log('PASS: all sixteen views and 48 driver-topic/episode/language combinations render; history links and blocked storage work')
   await build({ configFile: false, root, logLevel: 'error', build: { ssr: 'src/charts/WorldMap.jsx', outDir: join(temp, 'map'), minify: false } })
   const { default: WorldMap } = await import(pathToFileURL(join(temp, 'map/WorldMap.js')))
   for (const language of ['en', 'zh']) {
@@ -194,3 +223,28 @@ console.log('PASS: production asset URLs use the GitHub Pages subpath and resolv
 assert.match(html, /localStorage\.getItem\('wil-theme'\)/)
 assert.match(html, /document\.documentElement\.dataset\.theme/)
 console.log('PASS: theme is initialized before React and the theme toggle renders on every view')
+
+assert.deepEqual(primaryRoutes, ['home', 'dollar', 'fiscal', 'history', 'scenarios', 'research'])
+for (const links of Object.values(sectionLinks)) for (const [hash] of links) {
+  globalThis.window = { location: { hash } }
+  assert.ok(routes.includes(routeFromHash()))
+  assert.notEqual(routeFromHash(), 'home')
+}
+for (const route of ['monitor','regimes','since-1971','drivers','us-cpi','timeline','overview','map','sources']) {
+  globalThis.window = { location: { hash: `#/${route}?example=kept` } }
+  assert.equal(routeFromHash(), route)
+}
+assert.equal(routeSection('us-cpi'), 'dollar')
+assert.equal(routeSection('regimes'), 'history')
+assert.equal(routeSection('sources'), 'research')
+globalThis.window = { location: { hash: '#/fiscal?metric=bogus' } }
+assert.equal(viewParameter('metric', ['debt','deficit','interest'], 'debt'), 'debt')
+for (const rule of environmentRules) {
+  const now = new Date('2026-09-15T00:00:00Z')
+  for (const [i, cutoff] of rule.thresholds.entries()) {
+    assert.equal(descriptiveLevel([{date:'2026-09-14',value:cutoff}], 'daily', rule.thresholds, now), i + 1)
+  }
+  assert.equal(descriptiveLevel([{date:'2025-01-01',value:10}], 'daily', rule.thresholds, now), null)
+  assert.equal(descriptiveLevel([{date:'2026-09-14',value:null}], 'daily', rule.thresholds, now), null)
+}
+console.log('PASS: six-section architecture, focused tool links, legacy hashes, compact homepage and transparent environment thresholds')

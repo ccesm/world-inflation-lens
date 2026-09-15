@@ -15,7 +15,13 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 - V0.8: add gold and a true house-price series after checking licensing, coverage and comparability. Improve initial loading with on-demand data chunks.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
 
-## Delivered V0.7
+## Delivered V0.7 — Part B: information architecture
+
+Six primary sections (Home, Dollar, Fiscal, History, Scenarios, Research) organize the long-term dollar purchasing-power question. Eleven compact homepage sections connect historical CPI, illustrative scenarios, four forces, preserved CBO previews, explicit descriptive proxy bands, opposing pathways, Since 1971, regimes, the central debate and global context. Detailed tables, source health, global rankings and all charts remain in secondary tools. Original hash links and query parameters remain supported; History aliases existing regimes. No data ingestion or forecast logic from Part A is replaced.
+
+V0.8 should prioritize independently verified gold and house-price history, with nominal/real comparisons, explicit starting dates and licensing. Separately, split large observation bundles by route to reduce first-load cost. Do not add gold, equity or house-price forecasts.
+
+## Delivered V0.7 — Part A: fiscal evidence
 
 CBO public debt, deficits and net interest as shares of fiscal-year GDP: 1962–2025 historical actuals and complete 2026–2056 conditional projections. Official CSVs and schemas are pinned and retained with source hashes. Metric/range controls, year inspection, distinct historical/projected paths, bilingual assumptions, annual table and CSV export. The February 25, 2026 forecast is reviewed separately from weekly observations and explicitly excludes the February 20 tariff ruling's effects. Gold and house-price integration remain future work.
 

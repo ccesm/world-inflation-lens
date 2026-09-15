@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import snapshot from '../../data/fiscal/cbo-2026-02.json'
 import { cboCopy } from '../i18n/cbo.js'
 import { formatNumber } from '../utils/inflation.js'
+import { iaCopy } from '../i18n/architecture.js'
+import { viewParameter } from '../utils/routing.js'
 import { cboCsv } from '../utils/cbo.js'
 
 function CboChart({ rows, metric, selected, onSelect, t, language }) {
@@ -34,9 +36,9 @@ function CboChart({ rows, metric, selected, onSelect, t, language }) {
   </svg>
 }
 
-export function CboOutlook({ language }) {
+export function CboOutlook({ language, preview = false }) {
   const t = cboCopy[language], { metadata, observations } = snapshot
-  const [metric, setMetric] = useState('debt'), [range, setRange] = useState('all'), [year, setYear] = useState(2056)
+  const [metric, setMetric] = useState(() => preview ? 'debt' : viewParameter('metric', ['debt', 'deficit', 'interest'], 'debt')), [range, setRange] = useState('all'), [year, setYear] = useState(2056)
   const rows = observations.filter(p => p.year >= (range === 'recent' ? 2000 : range === 'future' ? 2026 : 1962))
   const selected = Math.max(rows[0].year, year), inspected = rows.find(p => p.year === selected)
   const download = () => {
@@ -45,18 +47,19 @@ export function CboOutlook({ language }) {
     setTimeout(() => URL.revokeObjectURL(url), 1000)
   }
   return <section className="dollar-panel cbo-outlook" aria-labelledby="cbo-title">
-    <p className="eyebrow">CBO / {metadata.vintage}</p><h2 id="cbo-title">{t.title}</h2><p>{t.intro}</p>
+    <p className="eyebrow">CBO / {metadata.vintage}</p><h2 id="cbo-title">{preview ? iaCopy[language].fiscalPreview : t.title}</h2><p>{t.intro}</p>
     <p className="global-help">{t.vintage}: {metadata.projectionPublishedAt} · {t.retrieved}: {metadata.retrievedAt}</p>
     <div className="dollar-presets" role="group" aria-label={t.metric}>{['debt', 'deficit', 'interest'].map(id => <button key={id} aria-pressed={metric === id} onClick={() => setMetric(id)}>{t[id]}</button>)}</div>
-    <div className="dollar-grid cbo-milestones">{[2025, 2026, 2036, 2056].map(year => { const row = observations.find(p => p.year === year); return <article key={year}><p>{year} · {t[row.status]}</p><strong>{formatNumber(row[metric], language, 1)}%</strong><p>{t[metric]}</p></article> })}</div>
-    <div className="dollar-presets" role="group" aria-label={t.range}>{['all', 'recent', 'future'].map(id => <button key={id} aria-pressed={range === id} onClick={() => setRange(id)}>{t[id]}</button>)}</div>
+    {!preview && <div className="dollar-grid cbo-milestones">{[2025, 2026, 2036, 2056].map(year => { const row = observations.find(p => p.year === year); return <article key={year}><p>{year} · {t[row.status]}</p><strong>{formatNumber(row[metric], language, 1)}%</strong><p>{t[metric]}</p></article> })}</div>}
+    {!preview && <div className="dollar-presets" role="group" aria-label={t.range}>{['all', 'recent', 'future'].map(id => <button key={id} aria-pressed={range === id} onClick={() => setRange(id)}>{t[id]}</button>)}</div>}
     <div className="cbo-legend"><span><i />{t.actual}</span><span><i />{t.projected}</span></div>
     <CboChart rows={rows} metric={metric} selected={selected} onSelect={setYear} t={t} language={language} />
     <label>{t.inspect}: {selected} · {t[inspected.status]} · <strong>{formatNumber(inspected[metric], language, 2)}% GDP</strong><input type="range" min={rows[0].year} max="2056" step="1" value={selected} onChange={event => setYear(Number(event.target.value))} /></label>
     <p className="global-help">{t.reading}</p>
-    <details className="data-table"><summary>{t.table}</summary><div tabIndex="0" role="region" aria-label={t.table}><table><thead><tr>{[t.year, t.status, t.debt, t.deficit, t.interest].map(label => <th key={label} scope="col">{label}</th>)}</tr></thead><tbody>{rows.map(row => <tr key={row.year}><th scope="row">{row.year}</th><td>{t[row.status]}</td>{['debt', 'deficit', 'interest'].map(id => <td key={id}>{formatNumber(row[id], language, 3)}%</td>)}</tr>)}</tbody></table></div></details>
-    <button className="global-button secondary" onClick={download}>{t.download} ↓</button>
-    <div className="cbo-assumptions"><h3>{t.assumptions}</h3><p>{t.policy}</p><p>{t.cutoff}</p><p>{t.definitions}</p><p>{t.note}</p></div>
-    <details><summary>{t.sources}</summary><p>{t.pinned}</p><div className="dollar-links">{[[t.report, metadata.projectionSource], [t.workbook, metadata.originalWorkbook], [t.historicalFile, metadata.historicalCsv], [t.projectedFile, metadata.projectionCsv]].map(([label, url]) => <a key={label} href={url} target="_blank" rel="noreferrer">{label} ↗</a>)}</div></details>
+    {!preview && <><details className="data-table"><summary>{t.table}</summary><div tabIndex="0" role="region" aria-label={t.table}><table><thead><tr>{[t.year, t.status, t.debt, t.deficit, t.interest].map(label => <th key={label} scope="col">{label}</th>)}</tr></thead><tbody>{rows.map(row => <tr key={row.year}><th scope="row">{row.year}</th><td>{t[row.status]}</td>{['debt', 'deficit', 'interest'].map(id => <td key={id}>{formatNumber(row[id], language, 3)}%</td>)}</tr>)}</tbody></table></div></details>
+    <button className="global-button secondary" onClick={download}>{t.download} ↓</button></>}
+    {!preview && <div className="cbo-assumptions"><h3>{t.assumptions}</h3><p>{t.policy}</p><p>{t.cutoff}</p><p>{t.definitions}</p><p>{t.note}</p></div>}
+    {preview && <><p>{iaCopy[language].fiscalMeaning}</p><p className="global-help">{t.policy} {t.cutoff}</p><p className="global-help">{language === 'zh' ? '年度 · GDP 占比 · 最新历史值：2025 · 预测终点：2056' : 'Annual · % of GDP · Latest actual: 2025 · Projection horizon: 2056'}</p><div className="dollar-links"><a href={metadata.historicalCsv} target="_blank" rel="noreferrer">CBO · {t.actual} 1962–2025 ↗</a><a href={metadata.projectionSource} target="_blank" rel="noreferrer">CBO · {t.projected} 2026–2056 ↗</a></div><a className="ia-more" href="#/fiscal">{iaCopy[language].fiscalLink} →</a></>}
+    {!preview && <details><summary>{t.sources}</summary><p>{t.pinned}</p><div className="dollar-links">{[[t.report, metadata.projectionSource], [t.workbook, metadata.originalWorkbook], [t.historicalFile, metadata.historicalCsv], [t.projectedFile, metadata.projectionCsv]].map(([label, url]) => <a key={label} href={url} target="_blank" rel="noreferrer">{label} ↗</a>)}</div></details>}
   </section>
 }
