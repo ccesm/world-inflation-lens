@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { monthNumber } from '../../src/utils/inflation.js'
 
 // Parse only published table cells and FRED's text-only overflow rows, never scripts.
-export function parseFredTable(html, expectedId) {
+export function parseFredTable(html, expectedId, expected = {}) {
   const field = label => {
     const match = html.match(new RegExp(`<th[^>]*>${label}</th>\\s*<td[^>]*>([^<]*)</td>`))
     assert.ok(match, `Missing metadata field: ${label}`)
@@ -10,7 +10,8 @@ export function parseFredTable(html, expectedId) {
   }
   assert.equal(field('Series ID'), expectedId)
   assert.equal(field('Frequency'), 'Monthly')
-  assert.equal(field('Seasonal Adjustment'), 'Not Seasonally Adjusted')
+  assert.equal(field('Seasonal Adjustment'), expected.adjustment || 'Not Seasonally Adjusted')
+  if (expected.units) assert.equal(field('Units'), expected.units)
   const table = html.match(/<table id="data-table-observations"[\s\S]*?<\/table>/)?.[0]
   assert.ok(table, 'Missing observation table')
   const extra = html.match(/<div id="extra-rows">([\s\S]*?)<\/div>/)?.[1] || ''
@@ -28,11 +29,11 @@ export function parseFredTable(html, expectedId) {
   assert.equal(observations.length, monthNumber(bounds[2]) - monthNumber(bounds[1]) + 1)
   observations.forEach((point, index) => {
     if (index) assert.equal(monthNumber(point.date) - monthNumber(observations[index - 1].date), 1, 'Duplicate or missing month')
-    if (expectedId.startsWith('CPI') && point.value !== null) assert.ok(point.value > 0)
+    if ((expectedId.startsWith('CPI') || expected.positive) && point.value !== null) assert.ok(point.value > 0)
   })
   return {
     id: expectedId, provider: 'FRED', publisher: field('Source'), title: field('Title'),
-    geography: 'US', units: field('Units'), frequency: 'monthly', seasonalAdjustment: 'not seasonally adjusted',
+    geography: 'US', units: field('Units'), frequency: 'monthly', seasonalAdjustment: field('Seasonal Adjustment').toLowerCase(),
     sourceUrl: `https://fred.stlouisfed.org/series/${expectedId}`, downloadUrl: `https://fred.stlouisfed.org/data/${expectedId}`,
     retrievedAt: new Date().toISOString().slice(0, 10), sourceUpdatedAt: field('Last Updated').slice(0, 10),
     license: 'Public domain; source citation requested', observations,

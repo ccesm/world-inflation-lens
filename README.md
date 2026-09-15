@@ -15,7 +15,14 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
-## V0.3 features
+## V0.4 features
+
+- Three additional comparisons: shelter CPI, average hourly earnings and M2 growth versus headline CPI.
+- Six bilingual topic tabs and four cited explanations of fiscal policy, exchange rates, supply chains and expectations.
+- Explicit seasonal-adjustment labels and per-series empty-period notices. Historical windows remain selectable even when a newer series has no data.
+- Housing services are distinguished from house prices, average wages from individual pay, and broad money from credit or money printing.
+
+## V0.3 features retained
 
 - A bilingual **Drivers** page with food CPI versus headline CPI, energy CPI versus headline CPI plus a separate WTI oil panel, and effective federal funds rate versus headline inflation.
 - Monthly date controls, 5 / 10 / 50-year and full-history ranges, synchronized month inspection, accessible data tables, and CSV download with units in column names.
@@ -45,7 +52,7 @@ The historical-event timeline and Drivers page use **U.S. data**, not a global a
 
 ## Driver data methodology
 
-`data/inflation/drivers.json` contains four public-domain monthly FRED source snapshots. The existing `fred.json` supplies headline CPI. Retrieval dates use UTC.
+`data/inflation/drivers.json` contains seven public-domain monthly FRED source snapshots. The existing `fred.json` supplies headline CPI. Retrieval dates use UTC.
 
 | Series | Source | Stored measure | Coverage |
 | --- | --- | --- | --- |
@@ -53,18 +60,26 @@ The historical-event timeline and Drivers page use **U.S. data**, not a global a
 | CPIENGNS | BLS via FRED | Energy CPI, 1982–1984=100, unadjusted | 1957-01–2026-08 |
 | MCOILWTICO | EIA via FRED | Monthly WTI spot price, USD/barrel | 1986-01–2026-08 |
 | FEDFUNDS | Federal Reserve Board via FRED | Effective federal funds rate, monthly average, percent | 1954-07–2026-08 |
+| CUUR0000SAH1 | BLS via FRED | Shelter CPI, 1982–1984=100, unadjusted | 1952-12–2026-08 |
+| CEU0500000003 | BLS via FRED | Average hourly earnings, USD/hour, unadjusted | 2006-03–2026-08 |
+| M2SL | Federal Reserve Board via FRED | M2, billions USD, seasonally adjusted | 1959-01–2026-07 |
 
 Food/energy indexes are converted to year-on-year rates by matching the same calendar month one year earlier. October 2025 is missing in both CPI component sources and stays null. FEDFUNDS is kept as a rate level; it is not transformed into a growth rate. Oil stays in USD/barrel in a separate panel with its own vertical scale and the same date axis. Before 1986 the WTI panel remains empty. Monthly averages cannot show daily futures-price extremes. Dates are aligned without interpolation, forward filling, or fabricated data. Food and energy are subsets of headline CPI; the charts do not estimate weighted contributions or causal effects.
 
-The food view can span 1913 onward; energy/rates views start at July 1954 to include the federal funds series, with missing early energy/WTI observations retained. Episode shading is an editorial reading window, not an estimate of causal duration. Presets add surrounding months for context; source coverage may differ.
+Shelter, earnings and M2 levels are also converted to year-on-year growth with exact calendar matching. Shelter is missing October 2025. M2 uses seasonally adjusted levels while CPI and wages are unadjusted; August 2026 M2 remains empty. Wage growth begins March 2007 because it needs a prior-year observation. Shelter is part of CPI, while earnings and M2 are separate economic indicators. No causal effects are inferred.
 
-Manual refresh (all four downloads must succeed):
+Custom dates may span 1913 onward. Full-history and year-range presets are bounded by the selected topic's first calculable observation. Historical windows retain empty observations from newer sources and show an explicit notice if an entire series is unavailable. Episode shading is an editorial reading window, not an estimate of causal duration.
+
+Manual refresh (all seven downloads must succeed):
 
 ```sh
 curl -fL 'https://fred.stlouisfed.org/data/CPIUFDNS' -o /tmp/wil-CPIUFDNS.html
 curl -fL 'https://fred.stlouisfed.org/data/CPIENGNS' -o /tmp/wil-CPIENGNS.html
 curl -fL 'https://fred.stlouisfed.org/data/MCOILWTICO' -o /tmp/wil-MCOILWTICO.html
 curl -fL 'https://fred.stlouisfed.org/data/FEDFUNDS' -o /tmp/wil-FEDFUNDS.html
+curl -fL 'https://fred.stlouisfed.org/data/CUUR0000SAH1' -o /tmp/wil-CUUR0000SAH1.html
+curl -fL 'https://fred.stlouisfed.org/data/CEU0500000003' -o /tmp/wil-CEU0500000003.html
+curl -fL 'https://fred.stlouisfed.org/data/M2SL' -o /tmp/wil-M2SL.html
 node scripts/import-drivers.mjs /tmp
 npm run build
 npm run verify

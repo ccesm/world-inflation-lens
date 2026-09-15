@@ -69,11 +69,11 @@ assert.equal(routeFromHash(), 'map')
 console.log('PASS: World Bank coverage, source precision, missing values, ranking, colour boundaries, country joins and query routes')
 
 const drivers = JSON.parse(await readFile(join(root, 'data/inflation/drivers.json'), 'utf8')).series
-assert.deepEqual(drivers.map(s => s.id), ['CPIUFDNS', 'CPIENGNS', 'MCOILWTICO', 'FEDFUNDS'])
+assert.deepEqual(drivers.map(s => s.id), ['CPIUFDNS', 'CPIENGNS', 'MCOILWTICO', 'FEDFUNDS', 'CUUR0000SAH1', 'CEU0500000003', 'M2SL'])
 for (const source of drivers) {
   assert.equal(source.frequency, 'monthly')
-  assert.equal(source.seasonalAdjustment, 'not seasonally adjusted')
-  assert.equal(source.observations.at(-1).date, '2026-08')
+  assert.equal(source.seasonalAdjustment, source.id === 'M2SL' ? 'seasonally adjusted' : 'not seasonally adjusted')
+  assert.equal(source.observations.at(-1).date, source.id === 'M2SL' ? '2026-07' : '2026-08')
   source.observations.forEach((point, i) => {
     assert.ok(point.value === null || Number.isFinite(point.value))
     if (i) assert.equal(monthNumber(point.date) - monthNumber(source.observations[i - 1].date), 1)
@@ -85,12 +85,27 @@ assert.equal(energy.observations.at(-1).value, 329.351)
 assert.equal(oil.observations.find(p => p.date === '2020-04').value, 16.55)
 assert.equal(rates.observations[0].value, .8)
 assert.equal(rates.observations.at(-1).value, 3.63)
-for (const source of [food, energy]) {
+const [shelter, wages, money] = drivers.slice(4)
+assert.equal(shelter.observations.at(-1).value, 430.611)
+assert.equal(wages.observations.at(-1).value, 37.78)
+assert.equal(wages.observations[0].date, '2006-03')
+assert.equal(money.observations.at(-1).value, 23218)
+for (const source of [food, energy, shelter]) {
   const yoy = withAnnualChange(source.observations)
   assert.ok(yoy.slice(0, 12).every(p => p.inflation === null))
   assert.equal(yoy.find(p => p.date === '2025-10').inflation, null)
   assert.equal(yoy.at(-1).inflation, (source.observations.at(-1).value / source.observations.find(p => p.date === '2025-08').value - 1) * 100)
 }
+for (const source of [wages, money]) {
+  const growth = withAnnualChange(source.observations)
+  assert.ok(growth.slice(0, 12).every(p => p.inflation === null))
+  assert.equal(growth[12].inflation, (source.observations[12].value / source.observations[0].value - 1) * 100)
+}
+const moneyAligned = alignMonthly([{ id: money.id, measure: 'yoy_percent', points: withAnnualChange(money.observations).map(p => ({ date: p.date, value: p.inflation })) }], ['2026-07', '2026-08'])
+assert.ok(Number.isFinite(moneyAligned[0].points[0].value))
+assert.equal(moneyAligned[0].points[1].value, null)
+assert.match(monthlyCsv(moneyAligned, ['2026-07', '2026-08']), /M2SL_yoy_percent/)
+assert.match(monthlyCsv(moneyAligned, ['2026-07', '2026-08']), /2026-08,(?:\r?\n)?$/)
 assert.deepEqual(monthsBetween('2020-12', '2021-02'), ['2020-12', '2021-01', '2021-02'])
 const aligned = alignMonthly([{ id: 'TEST', measure: 'rate_percent', points: [{ date: '2020-12', value: 0 }, { date: '2021-02', value: -1 }] }], monthsBetween('2020-12', '2021-02'))
 assert.deepEqual(aligned[0].points.map(p => p.value), [0, null, -1])
@@ -102,6 +117,10 @@ const fixture = `<table><th>Series ID</th><td>TEST</td><th>Title</th><td>Test</t
 assert.deepEqual(parseFredTable(fixture, 'TEST').observations.map(p => p.value), [0, null, -2])
 assert.throws(() => parseFredTable(fixture.replace('#2020-02-01| .', ''), 'TEST'))
 assert.throws(() => parseFredTable(fixture.replace('#2020-02-01', '#2020-01-01'), 'TEST'))
+const adjustedFixture = fixture.replace('Not Seasonally Adjusted', 'Seasonally Adjusted')
+assert.throws(() => parseFredTable(adjustedFixture, 'TEST'))
+assert.equal(parseFredTable(adjustedFixture, 'TEST', { adjustment: 'Seasonally Adjusted', units: 'Percent' }).seasonalAdjustment, 'seasonally adjusted')
+assert.throws(() => parseFredTable(fixture, 'TEST', { units: 'Dollars per Hour' }))
 console.log('PASS: driver source values, monthly alignment, CPI transformations, unfilled early oil, CSV and complete table import')
 
 // Execute the JSX components, not just the bundler. Missing runtime imports fail here.
@@ -123,7 +142,7 @@ try {
       if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.doesNotMatch(html, /NaN|undefined%/) }
     }
-    for (const topic of ['food', 'energy', 'rates']) {
+    for (const topic of ['food', 'energy', 'rates', 'housing', 'wages', 'money']) {
       for (const episode of ['oil', 'volcker', 'crisis', 'pandemic']) {
         globalThis.window = { location: { hash: `#/drivers?topic=${topic}&episode=${episode}` } }
         const html = renderToString(React.createElement(App))
@@ -131,6 +150,9 @@ try {
         assert.match(html, /era-band/)
         assert.doesNotMatch(html, /NaN|Infinity/)
         if (topic === 'energy' && ['oil', 'volcker'].includes(episode)) assert.match(html, /driver-empty/)
+        if (topic === 'wages' && ['oil', 'volcker'].includes(episode)) assert.match(html, /driver-unavailable/)
+        assert.match(html, /driver-channel-grid/)
+        assert.match(html, new RegExp({ housing: 'CUUR0000SAH1', wages: 'CEU0500000003', money: 'M2SL' }[topic] || 'CPIAUCNS'))
       }
     }
     globalThis.window = { location: { hash: '#/timeline?year=1979' } }
@@ -139,7 +161,7 @@ try {
   globalThis.localStorage = { getItem: () => { throw new Error('Storage blocked') } }
   globalThis.window = { location: { hash: '#/home' } }
   assert.match(renderToString(React.createElement(App)), /site-shell/)
-  console.log('PASS: all seven views and 24 driver-topic/episode combinations render; history links and blocked storage work')
+  console.log('PASS: all seven views and 48 driver-topic/episode/language combinations render; history links and blocked storage work')
   await build({ configFile: false, root, logLevel: 'error', build: { ssr: 'src/charts/WorldMap.jsx', outDir: join(temp, 'map'), minify: false } })
   const { default: WorldMap } = await import(pathToFileURL(join(temp, 'map/WorldMap.js')))
   for (const language of ['en', 'zh']) {

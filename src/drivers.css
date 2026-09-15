@@ -1,7 +1,8 @@
 .drivers-scope { color: var(--global-muted); font-size: 12px; margin: 0 0 26px; }
 .drivers-tabs { display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid var(--global-border); }
 .drivers-tabs button { display: flex; align-items: center; gap: 18px; padding: 23px; border: 0; border-right: 1px solid var(--global-border); color: var(--global-text); background: var(--global-bg); cursor: pointer; font-size: 17px; }
-.drivers-tabs button:last-child { border-right: 0; }
+.drivers-tabs button:nth-child(3n) { border-right: 0; }
+.drivers-tabs button:nth-child(-n+3) { border-bottom: 1px solid var(--global-border); }
 .drivers-tabs button[aria-pressed=true] { background: var(--global-text); color: var(--global-bg); }
 .drivers-tabs small { opacity: .6; font-size: 11px; }
 .driver-explanation { background: var(--global-soft); border: 1px solid var(--global-border); border-top: 0; padding: 30px; }
@@ -51,6 +52,14 @@
 .driver-source-list a { text-decoration: underline; text-underline-offset: 3px; }
 .driver-download { margin-top: 18px; }
 .driver-data table { min-width: 520px; }
+.driver-channels { margin-top: 48px; }
+.driver-channels h2 { font-weight: 500; font-size: 27px; }
+.driver-channel-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin-top: 24px; }
+.driver-channel-grid article { padding: 26px; border: 1px solid var(--global-border); background: var(--global-soft); }
+.driver-channel-grid small { font-size: 11px; color: var(--global-accent); }
+.driver-channel-grid h3 { font-size: 20px; font-weight: 500; }
+.driver-channel-grid p { font-size: 14px; color: var(--global-muted); line-height: 1.9; }
+.driver-channel-grid a { font-size: 11px; text-decoration: underline; text-underline-offset: 4px; line-height: 1.8; }
 @media(min-width:801px) and (max-width:1200px) {
   .site-header { gap: 14px; padding-left: 24px; padding-right: 24px; }
   .desktop-nav { gap: 12px; }
@@ -58,6 +67,7 @@
   .brand { min-width: 170px; }
 }
 @media(max-width:600px) {
+  .driver-channel-grid { grid-template-columns: 1fr; }
   .drivers-tabs button { padding: 18px 10px; font-size: 14px; gap: 8px; }
   .driver-explanation { padding: 22px; }
   .driver-episode { padding: 20px; flex-direction: column; }

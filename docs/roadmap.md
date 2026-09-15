@@ -12,7 +12,11 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## Suggested next releases
 
-- V0.4: scheduled data ingestion with validation, revision review, and update status.
+- V0.5: scheduled data ingestion with validation, revision review, and update status.
+
+## Delivered V0.4
+
+Shelter CPI, average hourly earnings and M2 growth versus headline inflation; six bilingual driver topics; cited context on fiscal policy, exchange rates, supply chains and inflation expectations. Mixed seasonal-adjustment conventions and unavailable historical periods are visible. Static public data remains compatible with GitHub Pages and requires no frontend API keys.
 
 ## Delivered V0.3
 

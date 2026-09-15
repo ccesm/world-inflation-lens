@@ -1,7 +1,9 @@
-export const driversCopy = {
+import { driverContext } from './driverContext.js'
+
+const baseCopy = {
   en: {
     eyebrow: '05 / INFLATION DRIVERS · UNITED STATES', title: 'Follow the pressure behind prices.',
-    description: 'Explore food, energy and interest rates alongside U.S. inflation. Connect the data to history, then ask what each comparison can—and cannot—explain.',
+    description: 'Explore food, energy, interest rates, housing, wages and money alongside U.S. inflation. Connect the data to history and understand the limits of each comparison.',
     scope: 'U.S. monthly observations · static snapshots · no forecasts',
     topics: { food: 'Food', energy: 'Energy & oil', rates: 'Interest rates' },
     series: { headline: 'Headline CPI · year-on-year', food: 'Food CPI · year-on-year', energy: 'Energy CPI · year-on-year', oil: 'WTI spot oil · monthly average', rates: 'Effective federal funds rate · monthly average' },
@@ -28,18 +30,18 @@ export const driversCopy = {
     monthly: 'Monthly observations', yoy: 'CPI year-on-year change (%)', rateAxis: 'CPI year-on-year / interest-rate level (%)', oilTitle: 'Crude oil prices, on their own scale',
     oilNote: 'WTI monthly data begins in January 1986. Earlier windows remain empty. Monthly averages do not show daily futures-price extremes.',
     chartHelp: 'Move across the chart, use the month slider, or open the data table. Missing months break the lines; dates are never shifted to close gaps.',
-    formula: 'CPI year-on-year = (index this month ÷ index in the same month a year earlier − 1) × 100. All CPI series here are not seasonally adjusted. The first 12 months and comparisons involving missing values have no calculated rate.',
-    caution: 'These comparisons show timing and differences, not measured causal contributions. Food and energy are already included in headline CPI; their inflation rates cannot be added together.',
+    formula: 'Year-on-year growth = (value this month ÷ value in the same month a year earlier − 1) × 100. CPI and earnings are unadjusted; M2 is seasonally adjusted. The first 12 months and missing-value comparisons have no calculated growth. Interest rates and oil prices remain levels.',
+    caution: 'These comparisons show timing and differences, not measured causal contributions. Food, energy and shelter are already included in headline CPI; their growth rates cannot be added together.',
     history: 'Look through a historical window', historyNote: 'Select a window to change the chart dates. Shading marks the selected episode; the surrounding months provide context.',
     noEpisode: 'Choose an episode below to connect these curves to a historical explanation.',
     shaded: 'Shaded episode', outside: 'The selected episode falls outside the current chart dates.',
     backHistory: 'Read the historical chapter', clearEpisode: 'Clear episode', custom: 'Custom period',
     episodes: { oil: '1973–74 · Oil shock', volcker: '1979–82 · Volcker tightening', crisis: '2008–09 · Financial crisis', pandemic: '2020–24 · Pandemic & disinflation' },
-    latest: 'Latest in this snapshot', bridge: 'New in V0.3 · Connect food, energy and rates to inflation', open: 'Explore inflation drivers',
+    latest: 'Latest in this snapshot', bridge: 'New in V0.4 · Explore housing, wages and money behind inflation', open: 'Explore inflation drivers',
   },
   zh: {
     eyebrow: '05 / 通胀因素 · 美国', title: '沿着价格，追问背后的压力。',
-    description: '把食品、能源和利率放到美国通胀曲线旁边，联系历史背景，理解每一种对照能说明什么、又有哪些局限。',
+    description: '把食品、能源、利率、住房、工资与货币放到美国通胀曲线旁边，联系历史背景，理解每一种对照能说明什么、又有哪些局限。',
     scope: '美国月度观测 · 静态数据快照 · 不含预测',
     topics: { food: '食品', energy: '能源与油价', rates: '利率' },
     series: { headline: '总体 CPI · 同比', food: '食品 CPI · 同比', energy: '能源 CPI · 同比', oil: 'WTI 现货油价 · 月平均', rates: '有效联邦基金利率 · 月平均' },
@@ -66,13 +68,20 @@ export const driversCopy = {
     monthly: '月度观测', yoy: 'CPI 同比变化（%）', rateAxis: 'CPI 同比 / 利率水平（%）', oilTitle: '原油价格，使用独立刻度',
     oilNote: 'WTI 月度数据从 1986 年 1 月开始，更早的区间保持为空。月平均值不能反映每日的期货价格极端波动。',
     chartHelp: '移动指针、拖动月份滑块，或打开数据表查看数值。缺失月份使曲线中断，不会移动日期来连接缺口。',
-    formula: 'CPI 同比 =（本月指数 ÷ 上年同月指数 − 1）× 100。本页 CPI 均为未季调数据。最初 12 个月，以及涉及缺失值的比较，都不计算同比。',
-    caution: '这些图展示时间关系和变化差异，不代表已经测算的因果贡献。食品和能源已包含在总体 CPI 中，不能把这些涨幅直接相加。',
+    formula: '同比增速 =（本月值 ÷ 上年同月值 − 1）× 100。CPI 和工资使用未季调数据，M2 使用已季调数据。最初 12 个月及涉及缺失值的比较不计算同比。利率与油价仍显示水平值。',
+    caution: '这些图展示时间关系和变化差异，不代表已经测算的因果贡献。食品、能源和居住费用已包含在总体 CPI 中，不能把这些涨幅直接相加。',
     history: '从一个历史窗口看起', historyNote: '选择窗口会调整图表日期。阴影标记所选事件，前后的月份用来提供背景。',
     noEpisode: '选择下面的事件，将曲线变化与历史解释联系起来。',
     shaded: '阴影对应事件', outside: '所选事件不在当前图表日期范围内。',
     backHistory: '阅读历史章节', clearEpisode: '清除事件', custom: '自定义区间',
     episodes: { oil: '1973–74 · 石油冲击', volcker: '1979–82 · 沃尔克紧缩', crisis: '2008–09 · 金融危机', pandemic: '2020–24 · 疫情与通胀回落' },
-    latest: '当前快照的最新月份', bridge: 'V0.3 新增 · 连接食品、能源、利率与通胀', open: '探索通胀因素',
+    latest: '当前快照的最新月份', bridge: 'V0.4 新增 · 从住房、工资与货币理解通胀', open: '探索通胀因素',
   },
 }
+
+export const driversCopy = Object.fromEntries(Object.entries(baseCopy).map(([language, base]) => {
+  const context = driverContext[language]
+  const copy = { ...base, ...context }
+  for (const key of ['topics', 'series', 'questions', 'explanations', 'lessons', 'topicSources']) copy[key] = { ...base[key], ...context[key] }
+  return [language, copy]
+}))
