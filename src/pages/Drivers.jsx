@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { ChartShare } from '../components/ChartShare.jsx'
+import { driverHash, readDriverLink } from '../utils/driverLinks.js'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { DriverChart } from '../charts/DriverChart.jsx'
 import { driverSeries, driverTopics, topicKeys, driverStart, driverEnd } from '../data/drivers.js'
@@ -9,9 +11,7 @@ import { formatNumber } from '../utils/inflation.js'
 
 const colors = { headline: '#c46b46', food: '#409989', energy: '#8f87cf', rates: '#4499b5', oil: '#be993e', housing: '#409989', wages: '#8f87cf', money: '#4499b5' }
 function initialSettings() {
-  const params = new URLSearchParams(window.location.hash.split('?')[1])
-  const episode = driverEpisodes.find(item => item.id === params.get('episode'))
-  return { topic: driverTopics.includes(params.get('topic')) ? params.get('topic') : episode?.topic || 'food', episode, from: episode?.from || '2019-01', to: episode?.to || driverEnd }
+  return readDriverLink(window.location.hash, { topics: driverTopics, episodes: driverEpisodes, earliest: driverSeries.headline.points[0].date, latest: driverEnd })
 }
 
 export function Drivers({ language }) {
@@ -20,13 +20,17 @@ export function Drivers({ language }) {
   const [topic, setTopic] = useState(initial.topic)
   const [episode, setEpisode] = useState(initial.episode || null)
   const [from, setFrom] = useState(initial.from), [to, setTo] = useState(initial.to)
-  const [month, setMonth] = useState(initial.to)
+  const [month, setMonth] = useState(initial.month)
   const topicStart = driverSeries[topic].points.find(p => p.value !== null)?.date || driverStart
   const earliest = driverSeries.headline.points[0].date
   const valid = /^\d{4}-(0[1-9]|1[0-2])$/.test(from) && /^\d{4}-(0[1-9]|1[0-2])$/.test(to) && from >= earliest && to <= driverEnd && from < to
   const dates = valid ? monthsBetween(from, to) : []
   const selected = valid ? (month < from ? from : month > to ? to : month) : ''
   const selectedIndex = dates.indexOf(selected)
+  const shareHash = driverHash({ topic, from, to, month: selected, episode })
+  useEffect(() => {
+    if (valid) window.history.replaceState(null, '', shareHash)
+  }, [shareHash, valid])
   const series = alignMonthly(topicKeys[topic].map(key => ({ ...driverSeries[key], key, name: t.series[key], color: colors[key] })), dates)
   const rateSeries = series.filter(s => s.key !== 'oil')
   const oilSeries = series.filter(s => s.key === 'oil')
@@ -63,6 +67,7 @@ export function Drivers({ language }) {
         {oilSeries.length > 0 && <><DriverChart series={oilSeries} dates={dates} selected={selected} onSelect={setMonth} title={t.oilTitle} unit={t.units.oil} language={language} labels={t} episode={episode} /><p className="global-help">{t.oilNote}</p></>}
         <details className="data-table driver-data"><summary>{t.chartData} · {from}–{to}</summary><div tabIndex="0" role="region" aria-label={t.chartData}><table><caption>{t.monthly} · {t.topics[topic]}</caption><thead><tr><th scope="col">{t.inspect}</th>{series.map(s => <th scope="col" key={s.id}>{s.name}<br />{s.key === 'oil' ? t.units.oil : '%'}</th>)}</tr></thead><tbody>{dates.map((date, index) => <tr key={date}><th scope="row">{date}</th>{series.map(s => <td key={s.id}>{valueLabel(s, s.points[index].value)}</td>)}</tr>)}</tbody></table></div></details>
         <button className="global-button secondary driver-download" onClick={download}>{t.download} ↓</button>
+        <ChartShare hash={shareHash} language={language} />
       </>}
       <div className="global-data-note"><p>{t.formula}</p><p>{t.caution}</p></div>
       <div className="driver-source-list">{series.map(s => <p key={s.id}><a href={s.metadata.sourceUrl} target="_blank" rel="noreferrer">{s.name} · {s.id} ↗</a><span>{s.metadata.publisher}</span><span>{t.adjustment}: {s.metadata.seasonalAdjustment === 'seasonally adjusted' ? t.sa : t.nsa}</span><span>{t.covered}: {driverSeries[s.key].points[0].date}–{driverSeries[s.key].points.at(-1).date} · {t.updated}: {s.metadata.sourceUpdatedAt} · {t.retrieved}: {s.metadata.retrievedAt}</span></p>)}</div>

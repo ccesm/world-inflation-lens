@@ -16,15 +16,15 @@ const root = resolve(import.meta.dirname, '..')
 const raw = JSON.parse(await readFile(join(root, 'data/inflation/fred.json'), 'utf8'))
 const points = raw.observations
 assert.equal(points[0].date, '1913-01')
-assert.equal(points.at(-1).date, '2026-08')
+assert.ok(points.at(-1).date >= '2026-08')
 for (let i = 0; i < points.length; i++) {
   assert.ok(points[i].value === null || points[i].value > 0)
   if (i) assert.equal(monthNumber(points[i].date) - monthNumber(points[i - 1].date), 1)
 }
 const calculated = withAnnualChange(points)
-assert.equal(calculated.find(p => p.date === '2025-10').inflation, null)
+assert.ok(calculated.filter(p => p.value === null).every(p => p.inflation === null))
 assert.equal(calculated[0].inflation, null)
-assert.equal(calculated.find(p => p.date === '1914-01').inflation, (10 / 9.8 - 1) * 100)
+assert.equal(withAnnualChange([{ date: '1913-01', value: 9.8 }, { date: '1914-01', value: 10 }])[1].inflation, (10 / 9.8 - 1) * 100)
 assert.equal(equivalentCost(100, 100, 125), 125)
 assert.equal(equivalentCost(100, 125, 100), 80)
 assert.equal(equivalentCost(100, null, 125), null)
@@ -47,19 +47,16 @@ assert.ok(!countries.some(c => ['WLD', 'HIC', 'EUU'].includes(c.id)))
 for (const country of countries) {
   assert.ok(country.name.en && country.name.zh)
   const observations = world.values[country.id]
-  assert.equal(observations.length, 66)
+  assert.equal(observations.length, world.metadata.endYear - world.metadata.startYear + 1)
   assert.ok(observations.every(v => v === null || Number.isFinite(v)))
 }
-assert.equal(valueAt(world.values, 'CHN', 2024, 1960), 0.218128938439177)
-assert.equal(valueAt(world.values, 'USA', 2024, 1960), 2.94952520485207)
-assert.equal(valueAt(world.values, 'USA', 2025, 1960), null)
-assert.equal(valueAt(world.values, 'AND', 2024, 1960), null)
+assert.equal(valueAt({ CHN: [0.218128938439177, null] }, 'CHN', 2024, 2024), 0.218128938439177)
+assert.equal(valueAt({ USA: [2.94952520485207, null] }, 'USA', 2025, 2024), null)
 assert.equal(valueAt(world.values, 'CHN', 1959, 1960), null)
 const ranks = rankRows(rowsAt(countries, world.values, 2024, 1960))
-assert.equal(ranks.length, 174)
+assert.equal(ranks.length, countries.filter(c => valueAt(world.values, c.id, 2024, 1960) !== null).length)
 assert.ok(ranks.every((r, i) => i === 0 || ranks[i - 1].value >= r.value))
-const coverage = Array.from({ length: 66 }, (_, i) => ({ year: 1960 + i, count: rankRows(rowsAt(countries, world.values, 1960 + i, 1960)).length }))
-assert.equal(chooseDefaultYear(coverage, 2025), 2024)
+assert.equal(chooseDefaultYear([{ year: 2023, count: 170 }, { year: 2024, count: 174 }, { year: 2025, count: 165 }], 2025), 2024)
 assert.deepEqual([null, -1, 0, 2, 4, 8, 20].map(bucketIndex), [6, 0, 1, 2, 3, 4, 5])
 assert.equal(linePath([{ year: 1, value: 2 }, { year: 2, value: null }, { year: 3, value: -1 }], x => x, y => y), 'M1.00,2.00  M3.00,-1.00')
 assert.equal(map.features.find(f => f.id === 'KOS').properties.countryId, 'XKX')
@@ -73,35 +70,29 @@ assert.deepEqual(drivers.map(s => s.id), ['CPIUFDNS', 'CPIENGNS', 'MCOILWTICO', 
 for (const source of drivers) {
   assert.equal(source.frequency, 'monthly')
   assert.equal(source.seasonalAdjustment, source.id === 'M2SL' ? 'seasonally adjusted' : 'not seasonally adjusted')
-  assert.equal(source.observations.at(-1).date, source.id === 'M2SL' ? '2026-07' : '2026-08')
+  assert.ok(source.observations.at(-1).date >= (source.id === 'M2SL' ? '2026-07' : '2026-08'))
   source.observations.forEach((point, i) => {
     assert.ok(point.value === null || Number.isFinite(point.value))
     if (i) assert.equal(monthNumber(point.date) - monthNumber(source.observations[i - 1].date), 1)
   })
 }
 const food = drivers[0], energy = drivers[1], oil = drivers[2], rates = drivers[3]
-assert.equal(food.observations.at(-1).value, 350.418)
-assert.equal(energy.observations.at(-1).value, 329.351)
-assert.equal(oil.observations.find(p => p.date === '2020-04').value, 16.55)
-assert.equal(rates.observations[0].value, .8)
-assert.equal(rates.observations.at(-1).value, 3.63)
 const [shelter, wages, money] = drivers.slice(4)
-assert.equal(shelter.observations.at(-1).value, 430.611)
-assert.equal(wages.observations.at(-1).value, 37.78)
 assert.equal(wages.observations[0].date, '2006-03')
-assert.equal(money.observations.at(-1).value, 23218)
 for (const source of [food, energy, shelter]) {
   const yoy = withAnnualChange(source.observations)
   assert.ok(yoy.slice(0, 12).every(p => p.inflation === null))
-  assert.equal(yoy.find(p => p.date === '2025-10').inflation, null)
-  assert.equal(yoy.at(-1).inflation, (source.observations.at(-1).value / source.observations.find(p => p.date === '2025-08').value - 1) * 100)
+  for (let i = 12; i < yoy.length; i++) {
+    const current = source.observations[i].value, prior = source.observations[i - 12].value
+    assert.equal(yoy[i].inflation, current === null || prior === null ? null : (current / prior - 1) * 100)
+  }
 }
 for (const source of [wages, money]) {
   const growth = withAnnualChange(source.observations)
   assert.ok(growth.slice(0, 12).every(p => p.inflation === null))
   assert.equal(growth[12].inflation, (source.observations[12].value / source.observations[0].value - 1) * 100)
 }
-const moneyAligned = alignMonthly([{ id: money.id, measure: 'yoy_percent', points: withAnnualChange(money.observations).map(p => ({ date: p.date, value: p.inflation })) }], ['2026-07', '2026-08'])
+const moneyAligned = alignMonthly([{ id: money.id, measure: 'yoy_percent', points: [{ date: '2026-07', value: 5.41 }] }], ['2026-07', '2026-08'])
 assert.ok(Number.isFinite(moneyAligned[0].points[0].value))
 assert.equal(moneyAligned[0].points[1].value, null)
 assert.match(monthlyCsv(moneyAligned, ['2026-07', '2026-08']), /M2SL_yoy_percent/)
@@ -138,9 +129,10 @@ try {
       assert.match(html, /class="theme-toggle"/)
       assert.match(html, /aria-pressed="false"/)
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
-      if (route === 'overview') { assert.match(html, /174/); assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
+      if (route === 'overview') { assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
+      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 9) }
       if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
-      if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.doesNotMatch(html, /NaN|undefined%/) }
+      if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.match(html, /chart-share/); assert.doesNotMatch(html, /NaN|undefined%/) }
     }
     for (const topic of ['food', 'energy', 'rates', 'housing', 'wages', 'money']) {
       for (const episode of ['oil', 'volcker', 'crisis', 'pandemic']) {

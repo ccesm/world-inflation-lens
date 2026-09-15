@@ -27,12 +27,13 @@ function initialTheme() {
 
 export default function App() {
   const [route, setRoute] = useState(routeFromHash)
+  const [navigationKey, setNavigationKey] = useState(() => window.location.hash)
   const [language, setLanguage] = useState(initialLanguage)
   const [theme, setTheme] = useState(initialTheme)
   const t = copy[language]
 
   useEffect(() => {
-    const onHashChange = () => { setRoute(routeFromHash()); window.scrollTo(0, 0) }
+    const onHashChange = () => { setRoute(routeFromHash()); setNavigationKey(window.location.hash); window.scrollTo(0, 0) }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
@@ -67,7 +68,7 @@ export default function App() {
       </div>
     </header>
     <nav className="mobile-nav" aria-label={t.navigation}>{routes.map(item => <a key={item} href={`#/${item}`} className={route === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
-    <main key={route}>
+    <main key={navigationKey}>
       {route === 'home' && <Home language={language} />}
       {route === 'overview' && <GlobalOverview language={language} />}
       {route === 'timeline' && <Timeline language={language} />}

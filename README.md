@@ -15,7 +15,34 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
-## V0.4 features
+## V0.5 features
+
+- Weekly validated FRED and World Bank refreshes, including headline CPI, with manual dispatch and deployment in the same GitHub Actions run.
+- Bilingual data health panel on Data Sources: last successful check, latest non-missing observation, source update date, snapshot retrieval date and missing-record counts.
+- Revision summaries distinguish new observations, filled gaps, revised values and withdrawals. The panel retains 30 successful checks and up to 20 examples per series; full diffs remain in Git history.
+- Share links on the Drivers page preserve topic, date range, inspected month and historical episode. Refresh and same-page navigation restore the settings. Invalid parameters fall back to safe defaults. Links do not freeze a data vintage.
+
+### Automatic updates
+
+`.github/workflows/deploy.yml` checks data every Monday at **14:23 UTC**. Use **Run workflow → refresh: true** for an immediate check; use false to redeploy the committed snapshot. Ordinary pushes build and deploy without refreshing data.
+
+```sh
+npm run data:refresh
+npm run build
+npm run verify
+```
+
+The refresher downloads all eight FRED series plus World Bank observations and definitions. World Bank coverage extends through the previous calendar year, preserving the existing 217-country universe and map joins. Changed country membership requires manual review. Static country names and map geometry are maintained separately.
+
+All downloads and validations finish in memory before any snapshot is replaced. Checks reject wrong series/units/adjustment, incomplete pagination, duplicate or missing date slots, regressed source dates, removed historical slots and withdrawals exceeding 5% of a series or country's available observations (one withdrawal is allowed for very sparse series). A write error restores the original files. GitHub commits and publishes only after build and tests pass; any download, validation, test or push failure prevents deployment and leaves the previous website available. CI logs identify failed attempts; the deployed panel only reports the last successful check, never a live success claim.
+
+The bot commits the four snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
+
+GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags checks older than 10 days and links to Actions for diagnosis. Observation-age hints use separate thresholds: over 3 months for monthly data or over 3 years for annual data. These are site heuristics, not promises about provider release dates. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
+
+`scripts/refresh-data.mjs --input-dir <directory>` runs the same pipeline against downloaded inputs for offline reproduction. Input filenames are `wil-<FRED-ID>.html`, `wil-countries.json`, `wil-inflation.json` and `wil-indicator.json`. `npm run verify` exercises the real CLI in a temporary checkout, verifies failed-update preservation and revision accounting, and checks all views and share-link parsing.
+
+## V0.4 features retained
 
 - Three additional comparisons: shelter CPI, average hourly earnings and M2 growth versus headline CPI.
 - Six bilingual topic tabs and four cited explanations of fiscal policy, exchange rates, supply chains and expectations.
@@ -54,7 +81,9 @@ The historical-event timeline and Drivers page use **U.S. data**, not a global a
 
 `data/inflation/drivers.json` contains seven public-domain monthly FRED source snapshots. The existing `fred.json` supplies headline CPI. Retrieval dates use UTC.
 
-| Series | Source | Stored measure | Coverage |
+V0.4 baseline coverage is listed below; current coverage and retrieval dates are shown on Data Sources and stored in each snapshot.
+
+| Series | Source | Stored measure | Baseline coverage |
 | --- | --- | --- | --- |
 | CPIUFDNS | BLS via FRED | Food CPI, 1982–1984=100, unadjusted | 1913-01–2026-08 |
 | CPIENGNS | BLS via FRED | Energy CPI, 1982–1984=100, unadjusted | 1957-01–2026-08 |
@@ -91,7 +120,7 @@ The importer parses only FRED metadata, observation table cells, and text overfl
 
 `data/inflation/worldbank.json` stores WDI `FP.CPI.TOTL.ZG`, consumer price inflation (annual %), with source definition, original IMF IFS attribution, license, source update date, and UTC retrieval date. `data/countries/metadata.json` excludes regional and income aggregates. Every country has one slot per year from 1960 to 2025; missing values are `null`. Values preserve source precision and are rounded only for display.
 
-The default is the latest year reaching 95% of the maximum coverage in the final five snapshot years: **2024 (174 / 217)**. 2025 remains selectable with 165 values; the U.S. 2025 value is missing in this snapshot. Map, rankings, and major-economy cards use the selected year without substituting another year's value. Country details label the latest available observation separately. No global average is inferred from country rates. Annual rates must not be confused with monthly year-on-year U.S. CPI readings.
+The default is the latest year reaching 95% of the maximum coverage in the final five snapshot years. At the V0.4 baseline this was **2024 (174 / 217)**, with 165 values for 2025. Coverage and the default year are recomputed from each snapshot. Map, rankings, and major-economy cards use the selected year without substituting another year's value. Country details label the latest available observation separately. No global average is inferred from country rates. Annual rates must not be confused with monthly year-on-year U.S. CPI readings.
 
 The map uses Natural Earth v5.1.2 1:110m country boundaries (public domain), excluding Antarctica, projected with D3's Natural Earth projection. World Bank codes are joined through Natural Earth's WB/ISO identifiers, with the explicit Kosovo `KSV → XKX` alias. Unmatched geometries are gray. Simplification omits some small countries/territories; all 217 statistical entities remain accessible through the selector. Boundaries are inherited from the source, not reconstructed for each historical year.
 
@@ -109,7 +138,7 @@ npm run build
 npm run verify
 ```
 
-The importer rejects incomplete pagination, duplicate records, invalid values, or missing country-year slots before writing. Review data revisions and update snapshot-specific test expectations against the source before committing. Extending beyond 2025 requires updating import bounds and the query together. Scheduled ingestion is deferred.
+The original offline importer uses fixed 1960–2025 bounds and also maintains the country/map files. For routine updates use `npm run data:refresh`, which extends annual coverage automatically and validates before publishing. Numerical tests use deterministic fixtures so legitimate provider revisions and new observations can pass without changing tests.
 
 ## Data and calculations
 

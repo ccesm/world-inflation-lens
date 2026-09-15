@@ -1,0 +1,23 @@
+.data-health { margin-bottom: 60px; }
+.data-health>p { line-height: 1.8; }
+.data-health a { text-decoration: underline; text-underline-offset: 4px; font-size: 12px; }
+.health-check { display: flex; flex-wrap: wrap; gap: 14px 28px; padding: 22px; background: var(--global-soft); border: 1px solid var(--global-border); font-size: 13px; line-height: 1.8; }
+.health-check span { color: var(--global-accent); }
+.health-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; margin: 28px 0; }
+.health-card { border: 1px solid var(--global-border); padding: 24px; min-width: 0; }
+.health-card h3 { font-size: 15px; line-height: 1.6; font-weight: 500; }
+.health-card small,.health-card dt { color: var(--global-muted); font-size: 11px; }
+.health-card p { font-size: 12px; }
+.health-card .health-old { color: var(--global-accent); }
+.health-card dl { display: grid; grid-template-columns: 1fr; gap: 5px; }
+.health-card dd { margin: 0 0 10px; font-size: 14px; }
+.health-run { padding: 22px 0; border-bottom: 1px solid var(--global-border); }
+.health-run h3 { font-size: 15px; overflow-wrap: anywhere; }
+.health-run p { font-size: 13px; line-height: 1.8; }
+.chart-share { padding: 22px 0 0; }
+.chart-share>div { display: flex; flex-wrap: wrap; align-items: center; gap: 15px; }
+.chart-share label { display: block; font-size: 12px; margin-top: 16px; }
+.chart-share input { display: block; width: 100%; min-width: 0; padding: 12px; margin-top: 8px; color: var(--global-text); background: var(--global-bg); border: 1px solid var(--global-border); font: inherit; }
+.chart-share p { font-size: 12px; line-height: 1.8; color: var(--global-muted); }
+@media(max-width:1000px) { .health-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .health-grid { grid-template-columns: 1fr; } }

@@ -12,7 +12,11 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## Suggested next releases
 
-- V0.5: scheduled data ingestion with validation, revision review, and update status.
+- V0.6: wage purchasing power and a personal consumption basket, with explicit assumptions and source coverage.
+
+## Delivered V0.5
+
+Weekly and manually triggered FRED/World Bank ingestion, including headline CPI. Whole-batch validation, failed-update preservation, revision summaries, and deployment from the same Actions run. Bilingual source health panel and shareable Drivers chart settings. Observational age hints are distinct from last successful checks and official release schedules; complete revisions remain in Git history.
 
 ## Delivered V0.4
 
@@ -34,4 +38,4 @@ U.S. food/energy CPI versus headline inflation; WTI monthly oil prices on a sepa
 
 A future inflation-regime or driver model must disclose its methodology and be labeled as an educational analytical model. Correlation must not be presented as a measured causal contribution. No unverified current global statistics or unexplained forecast values should be displayed.
 
-A World Food Lens link can be added once its exact project URL is supplied. Scheduled ingestion can be added after the source definitions and update policy are established.
+A World Food Lens link can be added once its exact project URL is supplied. Future ingestion providers must follow the same validation and revision policy.
