@@ -23,12 +23,14 @@ npm run verify
 
 Primary navigation is now exactly **Home / Dollar / Fiscal / History / Scenarios / Research**, with Chinese labels 首页 / 美元 / 财政 / 历史 / 情景 / 研究. Desktop pages have scoped secondary links; mobile pages use a native section selector. Theme and language controls stay in the upper right. The homepage has no secondary tool navigation bar.
 
-The homepage progresses through eleven compact sections:
+The homepage now explains the research framework before any observed values. The five-force visual includes inflation pressure, fiscal pressure, monetary conditions, market confidence and real economic capacity/productivity, each with 2–4 indicators. It is a conceptual channel map, not an additive equation or measured causal model. Three time horizons (6–24 months, 2–10 years, 10–30 years) lead to four unweighted scenarios: stable low inflation, financial repression/gradual erosion, persistent high inflation and severe monetary stress. Unintegrated series are explicitly marked.
 
-1. Research question, two CTAs and only three dated observations: CPI, 10-year real yield and public debt/GDP.
+The evidence sequence is:
+
+1. Research question and two CTAs, then the research framework. Only after the framework come three dated observations: CPI, 10-year real yield and public debt/GDP.
 2. CPI purchasing power: selectable 1913/1945/1971/1980/2000/2020 bases. The example is the remaining purchasing power of an unchanged $100, explicitly expressed at starting-month prices.
 3. Illustrative future scenarios using $100,000 by default, 10/20/30-year controls and editable amount/rate/horizon.
-4. Four forces: inflation, fiscal pressure, monetary conditions and market confidence.
+4. The former four-force card block is consolidated into the five-force framework above the evidence. The four observed environment proxies below remain distinct from this broader research coverage; productivity is not yet an integrated series.
 5. A compact preview of the existing CBO chart, retaining metric selection, solid/dashed separation, source links, vintage and assumptions.
 6. Four transparent descriptive proxy labels, never summed into a score.
 7. Opposing fiscal-pressure and productivity pathways, labeled as conditional mechanisms.

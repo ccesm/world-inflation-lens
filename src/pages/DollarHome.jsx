@@ -1,4 +1,6 @@
 import React from 'react'
+import { ResearchFramework } from '../components/ResearchFramework.jsx'
+import { frameworkCopy } from '../i18n/framework.js'
 import { iaCopy } from '../i18n/architecture.js'
 import { DollarPower } from '../components/DollarPower.jsx'
 import { CboOutlook } from '../components/CboOutlook.jsx'
@@ -8,13 +10,14 @@ import { GlobalPreview } from '../components/GlobalPreview.jsx'
 import { SincePreview } from '../components/SincePreview.jsx'
 
 export function Home({ language }) {
-  const t = iaCopy[language]
+  const t = iaCopy[language], f = frameworkCopy[language]
   return <div className="ia-home global-section">
-    <section className="ia-hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="ia-subtitle">{t.subtitle}</p><p className="ia-stance">{t.stance}</p><div className="hero-actions"><a href="#/dollar" className="primary-button">{t.outlookLink} →</a><a href="#/scenarios" className="text-link">{t.scenarioLink} →</a></div><OutlookSummary language={language} /></section>
+    <section className="ia-hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="ia-subtitle">{t.subtitle}</p><p className="ia-stance">{t.stance}</p><div className="hero-actions"><a href="#/dollar" className="primary-button">{t.outlookLink} →</a><a href="#/scenarios" className="text-link">{t.scenarioLink} →</a></div></section>
     <div className="content-section ia-home-body dollar-section">
+      <ResearchFramework language={language} />
+      <section className="ia-section evidence-start"><h2>{f.evidenceTitle}</h2><p>{f.evidenceIntro}</p><OutlookSummary language={language} /></section>
       <section className="ia-section"><DollarPower language={language} initialBase="1971-08" preview /><a className="ia-more" href="#/purchasing-power">{t.powerLink} →</a></section>
       <section className="ia-section"><h2>{t.scenarioTitle}</h2><ScenarioCalculator language={language} compact /><a className="ia-more" href="#/scenarios">{t.calculatorLink} →</a></section>
-      <section className="ia-section"><h2>{t.forcesTitle}</h2><div className="ia-grid four">{['#/monitor?group=inflation', '#/fiscal', '#/monitor?group=monetary', '#/monitor?group=market'].map((href, i) => <a className="ia-tool" href={href} key={href}><small>0{i + 1}</small><h3>{t.forces[i]}</h3><p>{t.forceNotes[i]}</p><span>{t.tool} →</span></a>)}</div></section>
       <section className="ia-section"><CboOutlook language={language} preview /></section>
       <Environment language={language} />
       <section className="ia-section"><h2>{t.pathwayTitle}</h2><div className="ia-grid two ia-pathways">{[[t.riskPath, t.riskSteps], [t.growthPath, t.growthSteps]].map(([title, steps]) => <article key={title}><h3>{title}</h3><ol>{steps.map(step => <li key={step}>{step}</li>)}</ol></article>)}</div><p>{t.pathwayNote}</p><a className="ia-source" href="https://www.federalreserve.gov/econres/ifdp/simple-monetary-rules-under-fiscal-dominance.htm" target="_blank" rel="noreferrer">Federal Reserve · Fiscal dominance research ↗</a></section>

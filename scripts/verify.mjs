@@ -12,6 +12,7 @@ import { routeFromHash, routes, primaryRoutes, routeSection, viewParameter } fro
 import { alignMonthly, monthsBetween, monthlyPath, monthlyCsv } from '../src/utils/drivers.js'
 import { parseFredTable } from './lib/fredTable.mjs'
 
+import { frameworkCopy } from '../src/i18n/framework.js'
 import { sectionLinks } from '../src/i18n/architecture.js'
 import { environmentRules, descriptiveLevel } from '../src/utils/environment.js'
 
@@ -152,7 +153,15 @@ try {
         const primaryNav = html.match(/<nav class="desktop-nav"[^>]*>(.*?)<\/nav>/)[1]
         assert.equal((primaryNav.match(/<a /g) || []).length, 6)
         assert.doesNotMatch(primaryNav, /#\/monitor|#\/map|#\/sources|#\/drivers/)
-        assert.equal((html.match(/<section class="ia-section"/g) || []).length, 10)
+        assert.equal((html.match(/<section class="ia-section"/g) || []).length, 9)
+        assert.ok(html.indexOf('class="research-framework"') < html.indexOf('class="ia-summary"'))
+        assert.ok(html.indexOf('class="framework-scenarios"') < html.indexOf('class="dollar-power-result"'))
+        assert.equal((html.match(/class="framework-force"/g) || []).length, 5)
+        assert.equal((html.match(/class="framework-planned"/g) || []).length, 4)
+        const f = frameworkCopy[language]
+        for (const phrase of [f.question, f.outcome, f.horizonsTitle, f.scenariosTitle, ...f.horizons.map(h => h.duration), ...f.scenarios.map(s => s[0])]) assert.ok(html.includes(phrase), phrase)
+        assert.match(html, language === 'zh' ? /不分配概率/ : /No probabilities are assigned/)
+        assert.doesNotMatch(html, /What Determines Long-Term Dollar Purchasing Power|什么决定美元的长期购买力/)
       }
       if (route === 'scenarios') assert.match(html, /411,987/)
       if (route === 'fiscal') {
@@ -248,3 +257,18 @@ for (const rule of environmentRules) {
   assert.equal(descriptiveLevel([{date:'2026-09-14',value:null}], 'daily', rule.thresholds, now), null)
 }
 console.log('PASS: six-section architecture, focused tool links, legacy hashes, compact homepage and transparent environment thresholds')
+
+for (const language of ['en', 'zh']) {
+  const f = frameworkCopy[language]
+  assert.equal(f.forces.length, 5)
+  assert.equal(f.horizons.length, 3)
+  assert.equal(f.scenarios.length, 4)
+  for (const force of f.forces) {
+    assert.ok(force.indicators.length >= 2 && force.indicators.length <= 4)
+    for (const [, hash] of force.indicators) if (hash) {
+      globalThis.window = { location: { hash } }
+      assert.notEqual(routeFromHash(), 'home')
+    }
+  }
+}
+console.log('PASS: bilingual five-force framework precedes data, three horizons, four non-probabilistic scenarios and explicit unintegrated indicators')

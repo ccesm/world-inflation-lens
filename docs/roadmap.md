@@ -17,7 +17,7 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## Delivered V0.7 — Part B: information architecture
 
-Six primary sections (Home, Dollar, Fiscal, History, Scenarios, Research) organize the long-term dollar purchasing-power question. Eleven compact homepage sections connect historical CPI, illustrative scenarios, four forces, preserved CBO previews, explicit descriptive proxy bands, opposing pathways, Since 1971, regimes, the central debate and global context. Detailed tables, source health, global rankings and all charts remain in secondary tools. Original hash links and query parameters remain supported; History aliases existing regimes. No data ingestion or forecast logic from Part A is replaced.
+Six primary sections (Home, Dollar, Fiscal, History, Scenarios, Research) organize the long-term dollar purchasing-power question. A framework-first homepage connects historical CPI, illustrative scenarios, five interacting research forces (including productivity), three time horizons, four scenarios without probabilities, preserved CBO previews, explicit descriptive proxy bands, opposing pathways, Since 1971, regimes, the central debate and global context. Detailed tables, source health, global rankings and all charts remain in secondary tools. Original hash links and query parameters remain supported; History aliases existing regimes. No data ingestion or forecast logic from Part A is replaced.
 
 V0.8 should prioritize independently verified gold and house-price history, with nominal/real comparisons, explicit starting dates and licensing. Separately, split large observation bundles by route to reduce first-load cost. Do not add gold, equity or house-price forecasts.
 
@@ -54,3 +54,5 @@ U.S. food/energy CPI versus headline inflation; WTI monthly oil prices on a sepa
 A future inflation-regime or driver model must disclose its methodology and be labeled as an educational analytical model. Correlation must not be presented as a measured causal contribution. No unverified current global statistics or unexplained forecast values should be displayed.
 
 A World Food Lens link can be added once its exact project URL is supplied. Future ingestion providers must follow the same validation and revision policy.
+
+The framework names unit labor cost, productivity, real GDP growth, labor supply, labor-market, supply-chain and credit series as unintegrated research priorities. No new dataset or causal score is implied by the diagram.
