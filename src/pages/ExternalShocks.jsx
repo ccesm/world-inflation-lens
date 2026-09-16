@@ -1,4 +1,7 @@
 import React from 'react'
+import { TransmissionMonitor, GprPanel, MilitaryPanel, SupplyPanel, FoodPanel, HistoryLab, SourceNote } from '../components/Transmission.jsx'
+import { externalSeries } from '../data/transmission.js'
+import { transmissionCopy } from '../i18n/transmission.js'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { shockCopy } from '../i18n/externalShocks.js'
 import { shockTopics, shockIndicators, shockFields, shockEpisodes, shockSources } from '../data/externalShocks.js'
@@ -7,15 +10,15 @@ import { viewParameter } from '../utils/routing.js'
 
 function EvidenceCard({ indicator, language }) {
   const t = shockCopy[language]
-  const series = indicator.status === 'available' ? driverSeries[indicator.driverKey] : null
+  const series = indicator.seriesId ? externalSeries[indicator.seriesId] : indicator.status === 'available' ? driverSeries[indicator.driverKey] : null
   const latest = series?.points.findLast(point => Number.isFinite(point.value))
   return <article className="shock-indicator" data-indicator={indicator.id} data-status={indicator.status}>
     <p className="eyebrow">{series ? t.available : t.planned}</p><h3>{t.indicators[indicator.id]}</h3>
     {series ? <>
       <strong>{latest ? latest.value.toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : '—'}</strong>
-      <p>{series.measure === 'usd_per_barrel' ? t.oilUnit : t.yoy}</p>
-      <p>{t.latest}: {latest?.date ?? t.missing}<br />{t.monthly}<br />{t.checked}: {series.metadata.retrievedAt}</p>
-      <p className="ia-source">{t.source}: <a href={series.metadata.sourceUrl} target="_blank" rel="noreferrer">{series.id} · {series.metadata.publisher} / FRED ↗</a></p>
+      <p>{indicator.seriesId ? transmissionCopy[language].units[series.units] : series.measure === 'usd_per_barrel' ? t.oilUnit : t.yoy}</p>
+      {indicator.seriesId && <SourceNote s={series} language={language} />}<p>{t.latest}: {latest?.date ?? t.missing}<br />{indicator.seriesId ? transmissionCopy[language][series.frequency] : t.monthly}<br />{t.checked}: {series.metadata.retrievedAt}</p>
+      <p className="ia-source">{t.source}: <a href={series.metadata.sourceUrl} target="_blank" rel="noreferrer">{series.id} · {indicator.seriesId ? series.metadata.provider : `${series.metadata.publisher} / FRED`} ↗</a></p>
       <a className="ia-more" href={indicator.href}>{t.chart} →</a>
     </> : <p>{t.plannedNote}</p>}
   </article>
@@ -39,8 +42,13 @@ export function ExternalShocks({ language }) {
   return <><PageIntro eyebrow={t.eyebrow} title={t.title} description={t.intro} />
     <div className="content-section global-section ia-page shocks-page">
       <nav className="shock-topic-links" aria-label={t.topicNav}>{['overview', ...shockTopics].map(key => <a key={key} href={key === 'overview' ? '#/external-shocks' : `#/external-shocks?topic=${key}`} aria-current={topic === key ? 'page' : undefined}>{key === 'overview' ? t.overview : t.topics[key]}</a>)}</nav>
+      {topic === 'overview' && <TransmissionMonitor language={language} />}
       {topic === 'overview' && <section className="ia-section"><h2>{t.pathsTitle}</h2><p>{t.pathsNote}</p><div className="ia-grid three ia-pathways">{t.paths.map(path => <article key={path.name}><h3>{path.name}</h3><ol>{path.steps.map(step => <li key={step}>{step}</li>)}</ol></article>)}</div><p>{t.balance}</p></section>}
       {topic !== 'history' && <section className="ia-section"><h2>{topic === 'overview' ? t.evidenceTitle : t.topics[topic]}</h2>{t.topicNotes[topic] && <p>{t.topicNotes[topic]}</p>}<p>{t.dataNote}</p><div className="ia-grid three">{indicators.map(indicator => <EvidenceCard key={indicator.id} indicator={indicator} language={language} />)}</div><a className="ia-more" href="#/sources?focus=health">{t.health} →</a></section>}
+      {['overview', 'geopolitical'].includes(topic) && <><GprPanel language={language} /><MilitaryPanel language={language} /></>}
+      {['overview', 'supply-chain'].includes(topic) && <SupplyPanel language={language} />}
+      {['overview', 'food'].includes(topic) && <FoodPanel language={language} />}
+      {['overview', 'history'].includes(topic) && <HistoryLab language={language} />}
       {['overview', 'history'].includes(topic) && <Episodes language={language} />}
       <section className="ia-section shock-dollar"><h2>{t.dollarTitle}</h2><div className="ia-pathways"><ol>{t.dollarSteps.map(step => <li key={step}>{step}</li>)}</ol></div><p>{t.dollarNote}</p><div className="dollar-links"><a className="ia-more" href="#/purchasing-power">{t.power} →</a><a className="ia-more" href="#/fiscal">{t.fiscal} →</a></div></section>
       <section className="ia-section shock-method"><h2>{t.surveyTitle}</h2><h3>{t.surveyLabel}</h3><p>{t.surveyNote}</p><p>{t.method}</p></section>

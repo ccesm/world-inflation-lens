@@ -5,11 +5,11 @@ export const shockIndicators = [
   { id: 'oil', topic: 'energy', status: 'available', driverKey: 'oil', href: '#/drivers?topic=energy' },
   { id: 'energy-cpi', topic: 'energy', status: 'available', driverKey: 'energy', href: '#/drivers?topic=energy' },
   { id: 'food-cpi', topic: 'food', status: 'available', driverKey: 'food', href: '#/drivers?topic=food' },
-  { id: 'gpr', topic: 'geopolitical', status: 'planned' },
-  { id: 'defense', topic: 'geopolitical', status: 'planned' },
+  { id: 'gpr', topic: 'geopolitical', status: 'available', seriesId: 'GPR', href: '#/external-shocks?topic=geopolitical' },
+  { id: 'defense', topic: 'geopolitical', status: 'available', seriesId: 'SIPRI_US_GDP', href: '#/external-shocks?topic=geopolitical' },
   { id: 'natural-gas', topic: 'energy', status: 'planned' },
-  { id: 'fao-food', topic: 'food', status: 'planned' },
-  { id: 'gscpi', topic: 'supply-chain', status: 'planned' },
+  { id: 'fao-food', topic: 'food', status: 'available', seriesId: 'FAO_FOOD', href: '#/external-shocks?topic=food' },
+  { id: 'gscpi', topic: 'supply-chain', status: 'available', seriesId: 'GSCPI', href: '#/external-shocks?topic=supply-chain' },
   { id: 'freight', topic: 'shipping', status: 'planned' },
 ]
 

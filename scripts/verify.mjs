@@ -138,7 +138,7 @@ try {
       assert.match(html, /aria-pressed="false"/)
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
       if (route === 'overview') { assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
-      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 19) }
+      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 23) }
       if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.match(html, /chart-share/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (['home', 'monitor', 'scenarios', 'fiscal', 'regimes', 'since-1971'].includes(route)) assert.doesNotMatch(html, /NaN|Infinity|undefined/)
@@ -201,6 +201,7 @@ try {
       const t = shockCopy[language]
       assert.equal(routeFromHash(), 'external-shocks')
       assert.equal(routeSection(routeFromHash()), 'research')
+      assert.match(html, /<option value="#\/external-shocks" selected="">/)
       assert.doesNotMatch(html, /NaN|undefined|Infinity/)
       for (const text of [t.dollarTitle, t.surveyLabel, t.surveyNote, t.method]) assert.ok(html.includes(text), text)
       const overview = ['overview', 'invalid'].includes(topic)
@@ -212,6 +213,12 @@ try {
         if (indicator.status === 'planned') {
           assert.ok(card.includes(t.planned))
           assert.doesNotMatch(card, /<strong>|[0-9]+%/)
+        } else if (indicator.seriesId) {
+          const dataset = JSON.parse(await readFile(join(root, `data/external/${{GPR:'gpr',SIPRI_US_GDP:'sipri-military',FAO_FOOD:'fao-food',GSCPI:'gscpi'}[indicator.seriesId]}.json`), 'utf8'))
+          const source = dataset.series.find(s => s.id === indicator.seriesId)
+          const last = source.observations.findLast(p => Number.isFinite(p.value))
+          assert.ok(card.includes(last.date)); assert.ok(card.includes(dataset.metadata.sourceUrl))
+          assert.ok(card.includes(last.value.toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US', {minimumFractionDigits:2, maximumFractionDigits:2})))
         } else {
           const source = drivers.find(s => s.id === { oil: 'MCOILWTICO', energy: 'CPIENGNS', food: 'CPIUFDNS' }[indicator.driverKey])
           assert.ok(source)
@@ -224,6 +231,13 @@ try {
         }
       }
       assert.equal((html.match(/class="shock-episode"/g) || []).length, overview || topic === 'history' ? 8 : 0)
+      if (overview) {
+        for (const id of ['GPR','GPRT','GPRA','GSCPI','SIPRI_US_GDP','FAO_FOOD']) assert.ok(html.includes(`data-series="${id}"`))
+        for (const id of ['FAO_CEREALS','FAO_OILS','FAO_DAIRY','FAO_MEAT','FAO_SUGAR']) assert.ok(html.includes(`value="${id}"`))
+        assert.ok(html.includes('https://www.sipri.org/about/terms-and-conditions'))
+        assert.ok(html.includes('https://www.newyorkfed.org/privacy/termsofuse'))
+        assert.ok(html.includes('calendar_year') || html.includes('日历年度') || html.includes('calendar-year'))
+      }
       if (overview) for (const path of t.paths) for (const step of path.steps) assert.ok(html.includes(step))
       if (overview || topic === 'history') for (const episode of shockEpisodes) {
         assert.ok(html.includes(episode.name[language]))

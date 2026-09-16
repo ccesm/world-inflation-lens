@@ -15,6 +15,21 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
+## V0.8 — Geopolitical Risk Data Expansion
+
+Research → External Shocks now asks whether geopolitical stress is transmitting through military spending, supply chains, energy and food into U.S. inflation and long-term dollar purchasing power. It does not predict wars or assign probabilities.
+
+- Six dated summary cards; explicit data-availability chain; risk/perception versus economic transmission versus inflation outcomes.
+- GPR Total / Threats / Acts monthly charts (1/5/10/25 years or full history), with historical context bands.
+- SIPRI U.S. military/GDP, military/government spending, real military spending and official real world aggregate. Annual metric/year selection and exact five-year real changes. **All U.S. figures use SIPRI's fiscal-year footnote 44; world totals use calendar years.**
+- NY Fed GSCPI in standard deviations, including negative observations; separate aligned GPR/GSCPI/WTI charts.
+- FAO nominal food index and all five components; exact-lag MoM/YoY, full-sample high/date and separately scaled U.S. Food CPI comparison. Recent meat/total indices can include FAO projected prices.
+- Historical Transmission Lab: 1973, 1990, 2008, 2020, 2022 and a rolling recent window. Ten small multiples share a month selector and X-axis window; unavailable observations stay blank.
+- Documented deterministic common-month summary, without an opaque score, probabilities or geopolitical causal attribution. Tables/CSV retain source, original units and fiscal/calendar basis.
+- Four additional Data Health entries, source release/retrieval/coverage, missing counts, revision accounting and licensing. Existing fiscal/CBO datasets, routes, scenarios and calculations are unchanged.
+
+See [V0.8 sources, methodology and release report](docs/v0.8-geopolitical-data.md) for exact endpoints, coverage, values, limitations and validation. The homepage remains a framework-first preview rather than duplicating these charts.
+
 ## V0.7: two complementary parts
 
 **Part A — Long-term U.S. fiscal history and CBO 2026–2056 projections.** The completed fiscal dataset, ingestion validation, historical/forecast labels, source vintage, policy caveat, year inspection, tables and CSV remain intact.
@@ -47,7 +62,7 @@ The sixth research force covers geopolitical risk, energy, food, supply chains a
 
 - `#/external-shocks` opens the complete framework; `?topic=geopolitical|energy|food|supply-chain|shipping|history` opens a focused subsection. Unknown topics fall back to the overview. Existing routes and the six primary navigation items remain unchanged.
 - Available evidence reuses validated FRED snapshots: EIA WTI monthly USD/barrel (`MCOILWTICO`), BLS energy CPI (`CPIENGNS`) and food CPI (`CPIUFDNS`). CPI cards show calculated year-over-year changes, not index levels. Observation dates, frequency, adjustment, publisher, retrieval date and source links remain visible. Links open the existing charts, tables and CSV exports. No ingestion or CBO calculation was replaced.
-- Planned only: Geopolitical Risk Index, natural gas, FAO Food Price Index, freight/shipping index, Global Supply Chain Pressure Index and defense spending/GDP. The registry in `src/data/externalShocks.js` contains no synthetic values; future ingestion must validate definitions, sources, licensing and coverage. U.S. food CPI is not the FAO index; oil is not a shipping index.
+- In V0.8, GPR, FAO, GSCPI and SIPRI military burden are integrated. Natural gas and freight/shipping remain planned. The registry in `src/data/externalShocks.js` contains no synthetic values; future ingestion must validate definitions, sources, licensing and coverage. U.S. food CPI is not the FAO index; oil is not a shipping index.
 - Eight bilingual, expandable historical cases: WWI, WWII, 1973 embargo, 1979 oil shock, 1990 Gulf War, 2008 commodities, 2020 pandemic and 2022 energy/food. Each covers shock, energy, food, supply chains, inflation, fiscal and monetary responses. Field-level citations identify BLS, Federal Reserve, IMF and GAO sources; unquantified channels and policy recommendations are distinguished from observed responses.
 - Verification covers both languages, all topic links/fallbacks, exact snapshot-derived values, planned cards without numeric data, source attribution, homepage order, legacy routes and the existing fiscal/calculation/export checks. Responsive cards wrap; history uses native keyboard/touch disclosures and theme tokens.
 
@@ -148,15 +163,15 @@ npm run build
 npm run verify
 ```
 
-The refresher downloads all eighteen FRED series plus World Bank observations and definitions. World Bank coverage extends through the previous calendar year, preserving the existing 217-country universe and map joins. Changed country membership requires manual review. Static country names and map geometry are maintained separately.
+The refresher downloads all eighteen FRED series, World Bank observations and definitions, and the three monthly external datasets (GPR, GSCPI, FAO). SIPRI remains a manually reviewed annual snapshot. Workbook ingestion additionally needs Python 3.12 and `python -m pip install -r scripts/requirements-external.txt`; set `WIL_PYTHON` to use a specific interpreter. Ordinary npm install/dev/build/verify require only Node and the committed snapshots. World Bank coverage extends through the previous calendar year, preserving the existing 217-country universe and map joins. Changed country membership requires manual review. Static country names and map geometry are maintained separately.
 
-All downloads and validations finish in memory before any snapshot is replaced. Checks reject wrong series/units/adjustment, incomplete pagination, duplicate or missing date slots, regressed source dates, removed historical slots and withdrawals exceeding 5% of a series or country's available observations (one withdrawal is allowed for very sparse series). A write error restores the original files. GitHub commits and publishes only after build and tests pass; any download, validation, test or push failure prevents deployment and leaves the previous website available. CI logs identify failed attempts; the deployed panel only reports the last successful check, never a live success claim.
+All downloads and validations finish in memory before any snapshot is replaced. Checks reject wrong series/units/adjustment, incomplete pagination, duplicate or missing date slots, regressed source dates, removed historical slots and withdrawals exceeding 5% of a series or country's available observations (one withdrawal is allowed for very sparse series). Parser tests run before replacing the bundle. Any write, build or verification error restores every original snapshot and the ledger. The refresh command runs build and verification itself; CI repeats those gates before deployment. GitHub commits and publishes only after build and tests pass; any download, validation, test or push failure prevents deployment and leaves the previous website available. CI logs identify failed attempts; the deployed panel only reports the last successful check, never a live success claim.
 
-The bot commits the five snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
+The bot commits the eight routinely refreshed snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 
 GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags checks older than 10 days and links to Actions for diagnosis. Observation-age hints use separate thresholds: over 3 months for monthly data or over 3 years for annual data, or over 14 days for daily/weekly data. These are site heuristics, not promises about provider release dates. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
 
-`scripts/refresh-data.mjs --input-dir <directory>` runs the same pipeline against downloaded inputs for offline reproduction. Input filenames are `wil-<FRED-ID>.html`, `wil-countries.json`, `wil-inflation.json` and `wil-indicator.json`. `npm run verify` exercises the real CLI in a temporary checkout, verifies failed-update preservation and revision accounting, and checks all views and share-link parsing.
+`scripts/refresh-data.mjs --input-dir <directory>` runs the same pipeline against downloaded inputs for offline reproduction. Input filenames are `wil-<FRED-ID>.html`, `wil-countries.json`, `wil-inflation.json` and `wil-indicator.json`, plus `gpr.xls`, `gpr.html`, `gscpi.csv`, `fao.csv` and `fao.html`. Test fixtures may provide `gpr-extracted.json`; production always reads the workbook. `npm run verify` exercises the real CLI in a temporary checkout, verifies failed-update preservation and revision accounting, and checks all views and share-link parsing.
 
 ## V0.4 features retained
 

@@ -12,14 +12,18 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## Suggested next releases
 
-- V0.8: validate the first external-shock series (GSCPI or FAO food) with source, license, coverage, missing-data rules and refresh checks before ingestion. Keep gold and true house-price history as separately reviewed work. Improve initial loading with on-demand data chunks.
+- V0.9: improve research usability and initial loading before widening coverage: route-level data loading, persistent/shareable comparison windows and clearer revision-vintage comparisons. Then evaluate one licensed shipping/freight or natural-gas series. Country-specific GPR and military comparisons, shortage measures, sanctions/trade fragmentation and critical minerals remain reviewed candidates.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
+
+## Delivered V0.8 — geopolitical inflation transmission
+
+Four official snapshot families: GPR/GPRT/GPRA; SIPRI U.S. military burden and real expenditure plus official global real spending; NY Fed GSCPI; FAO total and five components. Bilingual six-card monitor, conditional transmission map, exact-calendar-lag changes, separate-scale historical comparisons, source-aware tables/CSV and transparent common-month summary. Monthly source revisions join the weekly whole-bundle rollback pipeline; SIPRI is manually reviewed annually. Explicit limitations include no pre-1985 GPR splicing, no global military/GDP series, world military spending missing in 1991, FAO meat source estimates, and no synthetic backfills. CBO history/projections remain untouched. No war probabilities, news feed, composite risk score or investment signals.
 
 ## Delivered V0.7 — Part B: information architecture
 
 Six primary sections (Home, Dollar, Fiscal, History, Scenarios, Research) organize the long-term dollar purchasing-power question. A framework-first homepage connects historical CPI, illustrative scenarios, six interacting research forces (including productivity and external shocks), three time horizons, four scenarios without probabilities, preserved CBO previews, explicit descriptive proxy bands, opposing pathways, Since 1971, regimes, the central debate and global context. Detailed tables, source health, global rankings and all charts remain in secondary tools. Original hash links and query parameters remain supported; History aliases existing regimes. No data ingestion or forecast logic from Part A is replaced.
 
-V0.8 should connect the new shock framework to independently verified supply-chain or international food evidence before expanding it further. Gold and house-price history still require explicit starting dates, licensing and nominal/real comparability. Separately, split large observation bundles by route to reduce first-load cost. Do not add gold, equity or house-price forecasts.
+V0.8 connects the shock framework to GPR, SIPRI, GSCPI and FAO evidence. These should remain independently attributed before further expansion. Gold and house-price history still require explicit starting dates, licensing and nominal/real comparability. Separately, split large observation bundles by route to reduce first-load cost. Do not add gold, equity or house-price forecasts.
 
 ## Delivered V0.7 — Part A: fiscal evidence
 

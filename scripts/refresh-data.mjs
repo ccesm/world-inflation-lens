@@ -1,6 +1,9 @@
 import assert from 'node:assert/strict'
 import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
+import { spawnSync } from 'node:child_process'
+import { prepareExternal } from './lib/external-ingestion.mjs'
+import { compareExternal, replaceBundle, validateExternal } from './lib/external.mjs'
 import { parseFredTable } from './lib/fredTable.mjs'
 import { monitorSources } from './lib/monitorSources.mjs'
 import { diffObservations, parseWorldBank, worldPoints, summarizeChanges } from './lib/refresh.mjs'
@@ -62,6 +65,9 @@ for (const country of countries) {
   diffObservations(points(world), points(nextWorld))
 }
 changes.push(summarizeChanges(world.metadata.indicator, diffObservations(worldPoints(world), worldPoints(nextWorld))))
+const external = await prepareExternal({ input, checkedAt })
+validateExternal(await read('data/external/sipri-military.json')) // Annual source is intentionally not downloaded.
+for (const [id, next] of Object.entries(external)) changes.push(...compareExternal(await read(`data/external/${id}.json`), next))
 const runId = process.env.GITHUB_RUN_ID
 const runUrl = /^\d+$/.test(runId || '') ? `https://github.com/ccesm/world-inflation-lens/actions/runs/${runId}` : null
 const entry = { checkedAt, runUrl, changes }
@@ -72,15 +78,19 @@ const output = {
   'data/inflation/monitor.json': { series: series.slice(1 + drivers.series.length) },
   'data/inflation/worldbank.json': nextWorld,
   'data/updates/history.json': nextLedger,
+  ...Object.fromEntries(Object.entries(external).map(([id, data]) => [`data/external/${id}.json`, data])),
 }
-const originals = new Map(await Promise.all(Object.keys(output).map(async path => [path, await readFile(resolve(root, path), 'utf8')])))
-try {
-  for (const [path, value] of Object.entries(output)) {
-    const indent = path === 'data/inflation/fred.json' || path === 'data/updates/history.json' ? 2 : undefined
-    await writeFile(resolve(root, path), JSON.stringify(value, null, indent) + '\n')
-  }
-} catch (error) {
-  for (const [path, text] of originals) await writeFile(resolve(root, path), text)
-  throw error
-}
+// Unit checks precede replacement; build and full verification gate the transaction.
+const checked = spawnSync(process.execPath, [resolve(root, 'scripts/verify-external.mjs')], { cwd: root, encoding: 'utf8' })
+assert.equal(checked.status, 0, checked.stderr)
+await replaceBundle(Object.fromEntries(Object.entries(output).map(([path, value]) => [path, JSON.stringify(value, null, path === 'data/updates/history.json' ? 2 : undefined) + '\n'])), {
+  read: path => readFile(resolve(root, path), 'utf8'),
+  write: (path, value) => writeFile(resolve(root, path), value),
+  check: async () => {
+    for (const script of ['build', 'verify']) {
+      const result = spawnSync('npm', ['run', script], { cwd: root, encoding: 'utf8', timeout: 180000, maxBuffer: 10_000_000 })
+      assert.equal(result.status, 0, `${script} failed; restoring bundle: ${result.stderr} ${result.stdout}`)
+    }
+  },
+})
 console.log(JSON.stringify(entry, null, 2))

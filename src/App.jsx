@@ -42,6 +42,7 @@ export default function App() {
   const [theme, setTheme] = useState(initialTheme)
   const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav } }
   const section = routeSection(route), links = sectionLinks[section] || []
+  const selectedSectionLink = links.find(([href]) => href === navigationKey)?.[0] || links.find(([href]) => href === navigationKey.split('?')[0])?.[0] || ''
 
   useEffect(() => {
     const onHashChange = () => { setRoute(routeFromHash()); setNavigationKey(window.location.hash); window.scrollTo(0, 0) }
@@ -85,7 +86,7 @@ export default function App() {
       </div>
     </header>
     <nav className="mobile-nav" aria-label={t.navigation}>{primaryRoutes.map(item => <a key={item} href={`#/${item}`} className={section === item ? 'active' : ''} aria-current={route === item ? 'page' : undefined}>{t.nav[item]}</a>)}</nav>
-    {links.length > 0 && <div className="section-navigation"><nav aria-label={a.sectionNavigation}>{links.map(([href, zh, en]) => <a key={href} href={href} aria-current={navigationKey === href ? 'page' : undefined}>{language === 'zh' ? zh : en}</a>)}</nav><label>{a.sectionNavigation}<select value={links.some(([href]) => href === navigationKey) ? navigationKey : ''} onChange={event => { window.location.hash = event.target.value }}><option value="" disabled>{a.nav[section]}</option>{links.map(([href, zh, en]) => <option key={href} value={href}>{language === 'zh' ? zh : en}</option>)}</select></label></div>}
+    {links.length > 0 && <div className="section-navigation"><nav aria-label={a.sectionNavigation}>{links.map(([href, zh, en]) => <a key={href} href={href} aria-current={selectedSectionLink === href ? 'page' : undefined}>{language === 'zh' ? zh : en}</a>)}</nav><label>{a.sectionNavigation}<select value={selectedSectionLink} onChange={event => { window.location.hash = event.target.value }}><option value="" disabled>{a.nav[section]}</option>{links.map(([href, zh, en]) => <option key={href} value={href}>{language === 'zh' ? zh : en}</option>)}</select></label></div>}
     <main key={navigationKey}>
       {route === 'home' && <Home language={language} />}
       {['dollar', 'research'].includes(route) && <SectionLanding section={route} language={language} />}

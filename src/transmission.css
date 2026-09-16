@@ -1,0 +1,28 @@
+.trans-chart { min-width: 0; margin: 1.5rem 0; padding: clamp(12px, 2vw, 24px); border: 1px solid var(--global-border); border-radius: 16px; background: var(--paper); }
+.trans-chart svg { display: block; width: 100%; height: auto; color: var(--ink); overflow: visible; }
+.trans-chart svg text { fill: currentColor; font: 12px system-ui; }
+.trans-line { stroke: var(--copper); stroke-width: 2.4; vector-effect: non-scaling-stroke; }
+.trans-gridline { stroke: currentColor; opacity: .15; }
+.trans-cursor { stroke: currentColor; stroke-dasharray: 4 4; opacity: .55; }
+.trans-band { fill: #bd9b52; opacity: .13; }
+.trans-source { font-size: .8rem; line-height: 1.65; overflow-wrap: anywhere; }
+.trans-source p { margin: .6rem 0; }
+.trans-controls { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.2rem 0; }
+.trans-controls label, .trans-lab label { display: grid; gap: .5rem; flex: 1 1 180px; min-width: 0; }
+.shocks-page select, .shocks-page input, .shocks-page button { max-width: 100%; min-height: 44px; font: inherit; border-radius: 8px; padding: .5rem; color: var(--ink); background: var(--paper); border: 1px solid var(--global-border); }
+.shocks-page select { width: 100%; }
+.shocks-page summary, .data-health summary { cursor: pointer; min-height: 44px; padding: .75rem 0; }
+.trans-slider { width: 100%; accent-color: var(--copper); }
+.trans-chain { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 0; gap: 1rem; list-style: none; }
+.trans-chain li { border-top: 2px solid var(--global-border); padding: 1rem 0; min-width: 0; }
+.trans-chain li:not(:last-child)::after { content: '→'; display: block; margin-top: .5rem; }
+.trans-cards strong { font-size: 1.65rem; }
+.trans-stats { display: flex; flex-wrap: wrap; gap: .5rem 2rem; }
+.trans-lab { margin: 2.5rem 0; }
+.trans-empty { min-height: 130px; display: grid; place-items: center; border: 1px dashed var(--global-border); }
+.trans-chart .data-table > div { overflow: auto; max-height: 320px; }
+.trans-chart table { width: 100%; }
+.trans-assessment { border-left: 3px solid var(--copper); padding-left: 1.5rem; }
+@media (max-width: 700px) { .trans-chain { grid-template-columns: 1fr; gap: 0; } .trans-chain li:not(:last-child)::after { content: '↓'; } .trans-cards { grid-template-columns: 1fr !important; } .trans-chart { padding: 10px; } }
+
+@media (max-width: 700px) { .trans-chart svg text { font-size: 22px; } }
