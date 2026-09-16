@@ -1,4 +1,5 @@
 import React from 'react'
+import { ExternalShocksPreview } from '../components/ExternalShocksPreview.jsx'
 import { ResearchFramework } from '../components/ResearchFramework.jsx'
 import { frameworkCopy } from '../i18n/framework.js'
 import { iaCopy } from '../i18n/architecture.js'
@@ -15,6 +16,7 @@ export function Home({ language }) {
     <section className="ia-hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="ia-subtitle">{t.subtitle}</p><p className="ia-stance">{t.stance}</p><div className="hero-actions"><a href="#/dollar" className="primary-button">{t.outlookLink} →</a><a href="#/scenarios" className="text-link">{t.scenarioLink} →</a></div></section>
     <div className="content-section ia-home-body dollar-section">
       <ResearchFramework language={language} />
+      <ExternalShocksPreview language={language} />
       <section className="ia-section evidence-start"><h2>{f.evidenceTitle}</h2><p>{f.evidenceIntro}</p><OutlookSummary language={language} /></section>
       <section className="ia-section"><DollarPower language={language} initialBase="1971-08" preview /><a className="ia-more" href="#/purchasing-power">{t.powerLink} →</a></section>
       <section className="ia-section"><h2>{t.scenarioTitle}</h2><ScenarioCalculator language={language} compact /><a className="ia-more" href="#/scenarios">{t.calculatorLink} →</a></section>

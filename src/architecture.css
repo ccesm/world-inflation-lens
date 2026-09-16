@@ -94,7 +94,7 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,su
 .research-framework p { color: var(--global-muted); font-size: 14px; line-height: 1.8; }
 .research-framework .framework-question { color: var(--global-text); font-size: 20px; max-width: 850px; }
 .framework-diagram { margin: 28px 0 16px; }
-.framework-forces { display: grid; grid-template-columns: minmax(0,1fr) 18px minmax(0,1fr) 18px minmax(0,1fr) 18px minmax(0,1fr) 18px minmax(0,1fr); gap: 6px; align-items: stretch; }
+.framework-forces { display: grid; grid-template-columns: repeat(5,minmax(0,1fr) 18px) minmax(0,1fr); gap: 6px; align-items: stretch; }
 .framework-force { min-width: 0; padding: 18px 14px; border: 1px solid var(--global-border); background: var(--global-bg); }
 .framework-force h3 { margin: 14px 0 10px; font-size: 17px; line-height: 1.5; font-weight: 500; overflow-wrap: anywhere; }
 .framework-force p { font-size: 12px; }
@@ -117,5 +117,24 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,su
 .framework-scenario-list li { border: 1px solid var(--global-border); padding: 22px; background: var(--global-bg); min-width: 0; color: var(--global-accent); }
 .framework-scenario-list h4 { display: inline; margin-left: 5px; color: var(--global-text); }
 .framework-scenario-list p { margin-bottom: 0; font-size: 13px; }
-@media(max-width:1100px) { .framework-forces { grid-template-columns: 1fr; gap: 10px; } .framework-force { padding: 20px; } .framework-force ul { display: flex; flex-wrap: wrap; gap: 8px 24px; } .framework-force li { min-width: 120px; } .framework-plus { height: 20px; } }
+@media(max-width:1250px) { .framework-forces { grid-template-columns: 1fr; gap: 10px; } .framework-force { padding: 20px; } .framework-force ul { display: flex; flex-wrap: wrap; gap: 8px 24px; } .framework-force li { min-width: 120px; } .framework-plus { height: 20px; } }
 @media(max-width:600px) { .framework-scenario-list { grid-template-columns: 1fr; } .framework-result h3 { font-size: 21px; padding: 18px; } .research-framework .framework-question { font-size: 18px; } }
+
+/* External shocks use existing theme tokens and progressively disclose history. */
+.shock-topic-links { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0; }
+.shock-topic-links a { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 48px; padding: 12px 16px; border: 1px solid var(--global-border); background: var(--global-bg); font-size: 13px; line-height: 1.6; max-width: 100%; overflow-wrap: anywhere; }
+.shock-topic-links a:hover,.shock-topic-links a[aria-current=page] { border-color: var(--global-accent); color: var(--global-accent); }
+.shocks-preview .shock-topic-links { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); }
+.shock-indicator strong { font-variant-numeric: tabular-nums; }
+.shock-indicator[data-status=planned] { border-style: dashed; }
+.shock-episode { border-top: 1px solid var(--global-border); padding: 8px 0; }
+.shock-episode summary { min-height: 56px; padding: 14px 8px; cursor: pointer; font-size: 17px; line-height: 1.8; overflow-wrap: anywhere; }
+.shock-episode summary>span { color: var(--global-accent); font-size: 13px; margin-right: 18px; }
+.shock-episode dl { margin: 8px 0 24px; }
+.shock-episode dl>div { display: grid; grid-template-columns: 180px minmax(0,1fr); gap: 22px; padding: 16px; border-top: 1px solid var(--global-border); }
+.shock-episode dt { font-size: 14px; font-weight: 600; line-height: 1.8; }
+.shock-episode dd { margin: 0; font-size: 14px; line-height: 1.85; min-width: 0; }
+.shock-episode .ia-source a { display: inline-flex; align-items: center; min-height: 44px; margin-right: 16px; }
+.shock-dollar { padding: 28px; background: var(--global-soft); border: 1px solid var(--global-border); }
+@media(max-width:1050px) { .shocks-preview .shock-topic-links { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .shocks-preview .shock-topic-links { grid-template-columns: 1fr; } .shocks-page .shock-topic-links a { flex: 1 1 130px; } .shock-episode dl>div { grid-template-columns: 1fr; gap: 8px; padding: 14px 8px; } .shock-dollar { padding: 20px; } }

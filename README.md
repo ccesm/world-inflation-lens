@@ -23,14 +23,14 @@ npm run verify
 
 Primary navigation is now exactly **Home / Dollar / Fiscal / History / Scenarios / Research**, with Chinese labels 首页 / 美元 / 财政 / 历史 / 情景 / 研究. Desktop pages have scoped secondary links; mobile pages use a native section selector. Theme and language controls stay in the upper right. The homepage has no secondary tool navigation bar.
 
-The homepage now explains the research framework before any observed values. The five-force visual includes inflation pressure, fiscal pressure, monetary conditions, market confidence and real economic capacity/productivity, each with 2–4 indicators. It is a conceptual channel map, not an additive equation or measured causal model. Three time horizons (6–24 months, 2–10 years, 10–30 years) lead to four unweighted scenarios: stable low inflation, financial repression/gradual erosion, persistent high inflation and severe monetary stress. Unintegrated series are explicitly marked.
+The homepage now explains the research framework before any observed values. The six-force visual includes inflation pressure, fiscal pressure, monetary conditions, market confidence, real economic capacity/productivity and external shocks, each with 2–4 indicators. It is a conceptual channel map, not an additive equation or measured causal model. Three time horizons (6–24 months, 2–10 years, 10–30 years) lead to four unweighted scenarios: stable low inflation, financial repression/gradual erosion, persistent high inflation and severe monetary stress. Unintegrated series are explicitly marked.
 
 The evidence sequence is:
 
-1. Research question and two CTAs, then the research framework. Only after the framework come three dated observations: CPI, 10-year real yield and public debt/GDP.
+1. Research question and two CTAs, then the research framework and a compact External Shocks preview. Only after the framework come three dated observations: CPI, 10-year real yield and public debt/GDP.
 2. CPI purchasing power: selectable 1913/1945/1971/1980/2000/2020 bases. The example is the remaining purchasing power of an unchanged $100, explicitly expressed at starting-month prices.
 3. Illustrative future scenarios using $100,000 by default, 10/20/30-year controls and editable amount/rate/horizon.
-4. The former four-force card block is consolidated into the five-force framework above the evidence. The four observed environment proxies below remain distinct from this broader research coverage; productivity is not yet an integrated series.
+4. The former four-force card block is consolidated into the six-force framework above the evidence. The four observed environment proxies below remain distinct from this broader research coverage; productivity is not yet an integrated series.
 5. A compact preview of the existing CBO chart, retaining metric selection, solid/dashed separation, source links, vintage and assumptions.
 6. Four transparent descriptive proxy labels, never summed into a score.
 7. Opposing fiscal-pressure and productivity pathways, labeled as conditional mechanisms.
@@ -40,6 +40,16 @@ The evidence sequence is:
 11. Supporting global context, common-year major economies and a map preview loaded as it approaches the viewport.
 
 Full country rankings, country comparison, the full map, all monitor/driver charts, source registry, health panel, long methodology and large tables remain in detailed tools. The fiscal page now reads **Where we are now → What CBO projects → What this could mean**, followed by the preserved historical reference and independent debt scenario model.
+
+### V0.7/V0.8 External Shocks framework
+
+The sixth research force covers geopolitical risk, energy, food, supply chains and shipping. A compact homepage preview follows the Research Framework and precedes observed data. Research → External Shocks explains three conditional transmission paths: supply costs, fiscal responses and market confidence. All views reconnect to long-term dollar purchasing power. This framework is **explanatory and descriptive, not predictive**; there are no war probabilities, alerts or composite scores. Survey respondent shares, if integrated later, must be labeled **Survey-based risk perception / 基于调查的风险认知**, never event probabilities.
+
+- `#/external-shocks` opens the complete framework; `?topic=geopolitical|energy|food|supply-chain|shipping|history` opens a focused subsection. Unknown topics fall back to the overview. Existing routes and the six primary navigation items remain unchanged.
+- Available evidence reuses validated FRED snapshots: EIA WTI monthly USD/barrel (`MCOILWTICO`), BLS energy CPI (`CPIENGNS`) and food CPI (`CPIUFDNS`). CPI cards show calculated year-over-year changes, not index levels. Observation dates, frequency, adjustment, publisher, retrieval date and source links remain visible. Links open the existing charts, tables and CSV exports. No ingestion or CBO calculation was replaced.
+- Planned only: Geopolitical Risk Index, natural gas, FAO Food Price Index, freight/shipping index, Global Supply Chain Pressure Index and defense spending/GDP. The registry in `src/data/externalShocks.js` contains no synthetic values; future ingestion must validate definitions, sources, licensing and coverage. U.S. food CPI is not the FAO index; oil is not a shipping index.
+- Eight bilingual, expandable historical cases: WWI, WWII, 1973 embargo, 1979 oil shock, 1990 Gulf War, 2008 commodities, 2020 pandemic and 2022 energy/food. Each covers shock, energy, food, supply chains, inflation, fiscal and monetary responses. Field-level citations identify BLS, Federal Reserve, IMF and GAO sources; unquantified channels and policy recommendations are distinguished from observed responses.
+- Verification covers both languages, all topic links/fallbacks, exact snapshot-derived values, planned cards without numeric data, source attribution, homepage order, legacy routes and the existing fiscal/calculation/export checks. Responsive cards wrap; history uses native keyboard/touch disclosures and theme tokens.
 
 ### Routes and backward compatibility
 

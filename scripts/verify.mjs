@@ -12,6 +12,8 @@ import { routeFromHash, routes, primaryRoutes, routeSection, viewParameter } fro
 import { alignMonthly, monthsBetween, monthlyPath, monthlyCsv } from '../src/utils/drivers.js'
 import { parseFredTable } from './lib/fredTable.mjs'
 
+import { shockCopy } from '../src/i18n/externalShocks.js'
+import { shockTopics, shockIndicators, shockEpisodes, shockFields, shockSources } from '../src/data/externalShocks.js'
 import { frameworkCopy } from '../src/i18n/framework.js'
 import { sectionLinks } from '../src/i18n/architecture.js'
 import { environmentRules, descriptiveLevel } from '../src/utils/environment.js'
@@ -156,8 +158,14 @@ try {
         assert.equal((html.match(/<section class="ia-section"/g) || []).length, 9)
         assert.ok(html.indexOf('class="research-framework"') < html.indexOf('class="ia-summary"'))
         assert.ok(html.indexOf('class="framework-scenarios"') < html.indexOf('class="dollar-power-result"'))
-        assert.equal((html.match(/class="framework-force"/g) || []).length, 5)
+        assert.equal((html.match(/class="framework-force"/g) || []).length, 6)
         assert.equal((html.match(/class="framework-planned"/g) || []).length, 4)
+        const shocksAt = html.indexOf('class="ia-section shocks-preview"')
+        assert.ok(shocksAt > html.indexOf('class="research-framework"'))
+        assert.ok(shocksAt < html.indexOf('class="ia-summary"'))
+        const preview = html.slice(shocksAt, html.indexOf('class="ia-section evidence-start"'))
+        assert.doesNotMatch(preview, /<svg|<table|data-indicator=/)
+        for (const topic of shockTopics.filter(topic => topic !== 'history')) assert.ok(preview.includes(`#/external-shocks?topic=${topic}`))
         const f = frameworkCopy[language]
         for (const phrase of [f.question, f.outcome, f.horizonsTitle, f.scenariosTitle, ...f.horizons.map(h => h.duration), ...f.scenarios.map(s => s[0])]) assert.ok(html.includes(phrase), phrase)
         assert.match(html, language === 'zh' ? /不分配概率/ : /No probabilities are assigned/)
@@ -187,6 +195,45 @@ try {
       if (hash.includes('focus=compare')) assert.match(html, /id="country-compare"/)
       if (hash.includes('focus=health')) assert.match(html, /id="data-status"/)
     }
+    for (const topic of ['overview', ...shockTopics, 'invalid']) {
+      globalThis.window = { location: { hash: `#/external-shocks?topic=${topic}` } }
+      const html = renderToString(React.createElement(App))
+      const t = shockCopy[language]
+      assert.equal(routeFromHash(), 'external-shocks')
+      assert.equal(routeSection(routeFromHash()), 'research')
+      assert.doesNotMatch(html, /NaN|undefined|Infinity/)
+      for (const text of [t.dollarTitle, t.surveyLabel, t.surveyNote, t.method]) assert.ok(html.includes(text), text)
+      const overview = ['overview', 'invalid'].includes(topic)
+      const expected = shockIndicators.filter(i => overview || i.topic === topic)
+      assert.equal((html.match(/class="shock-indicator"/g) || []).length, expected.length)
+      for (const indicator of expected) {
+        const card = html.match(new RegExp(`<article class="shock-indicator" data-indicator="${indicator.id}"[^>]*>(.*?)</article>`))[1]
+        assert.ok(card.includes(t.indicators[indicator.id]))
+        if (indicator.status === 'planned') {
+          assert.ok(card.includes(t.planned))
+          assert.doesNotMatch(card, /<strong>|[0-9]+%/)
+        } else {
+          const source = drivers.find(s => s.id === { oil: 'MCOILWTICO', energy: 'CPIENGNS', food: 'CPIUFDNS' }[indicator.driverKey])
+          assert.ok(source)
+          const values = indicator.driverKey === 'oil' ? source.observations : withAnnualChange(source.observations).map(p => ({ date: p.date, value: p.inflation }))
+          const last = values.findLast(p => Number.isFinite(p.value))
+          assert.ok(card.includes(last.date))
+          assert.ok(card.includes(last.value.toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })))
+          assert.ok(card.includes(source.sourceUrl))
+          assert.ok(card.includes(source.retrievedAt))
+        }
+      }
+      assert.equal((html.match(/class="shock-episode"/g) || []).length, overview || topic === 'history' ? 8 : 0)
+      if (overview) for (const path of t.paths) for (const step of path.steps) assert.ok(html.includes(step))
+      if (overview || topic === 'history') for (const episode of shockEpisodes) {
+        assert.ok(html.includes(episode.name[language]))
+        for (const key of shockFields) assert.ok(html.includes(episode.fields[key][language]))
+      }
+      for (const [, href] of html.matchAll(/href="(#\/[^"]+)"/g)) {
+        globalThis.window.location.hash = href.replaceAll('&amp;', '&')
+        assert.ok(routes.includes(href.slice(2).split('?')[0]), href)
+      }
+    }
     for (const topic of ['food', 'energy', 'rates', 'housing', 'wages', 'money']) {
       for (const episode of ['oil', 'volcker', 'crisis', 'pandemic']) {
         globalThis.window = { location: { hash: `#/drivers?topic=${topic}&episode=${episode}` } }
@@ -206,7 +253,7 @@ try {
   globalThis.localStorage = { getItem: () => { throw new Error('Storage blocked') } }
   globalThis.window = { location: { hash: '#/home' } }
   assert.match(renderToString(React.createElement(App)), /site-shell/)
-  console.log('PASS: all sixteen views and 48 driver-topic/episode/language combinations render; history links and blocked storage work')
+  console.log('PASS: all seventeen views and 48 driver-topic/episode/language combinations render; history links and blocked storage work')
   await build({ configFile: false, root, logLevel: 'error', build: { ssr: 'src/charts/WorldMap.jsx', outDir: join(temp, 'map'), minify: false } })
   const { default: WorldMap } = await import(pathToFileURL(join(temp, 'map/WorldMap.js')))
   for (const language of ['en', 'zh']) {
@@ -260,7 +307,7 @@ console.log('PASS: six-section architecture, focused tool links, legacy hashes, 
 
 for (const language of ['en', 'zh']) {
   const f = frameworkCopy[language]
-  assert.equal(f.forces.length, 5)
+  assert.equal(f.forces.length, 6)
   assert.equal(f.horizons.length, 3)
   assert.equal(f.scenarios.length, 4)
   for (const force of f.forces) {
@@ -271,4 +318,21 @@ for (const language of ['en', 'zh']) {
     }
   }
 }
-console.log('PASS: bilingual five-force framework precedes data, three horizons, four non-probabilistic scenarios and explicit unintegrated indicators')
+console.log('PASS: bilingual six-force framework precedes data, three horizons, four non-probabilistic scenarios and explicit unintegrated indicators')
+
+assert.equal(shockEpisodes.length, 8)
+assert.equal(new Set(shockIndicators.map(i => i.id)).size, shockIndicators.length)
+for (const indicator of shockIndicators) {
+  assert.ok(shockTopics.includes(indicator.topic))
+  assert.ok(['available', 'planned'].includes(indicator.status))
+  assert.ok(!('observations' in indicator) && !('value' in indicator))
+  if (indicator.status === 'planned') assert.ok(!indicator.driverKey && !indicator.href)
+}
+for (const episode of shockEpisodes) {
+  assert.deepEqual(Object.keys(episode.fields), shockFields)
+  for (const field of Object.values(episode.fields)) {
+    assert.ok(field.en && field.zh)
+    for (const id of field.sources) assert.ok(shockSources[id]?.url.startsWith('https://'))
+  }
+}
+console.log('PASS: bilingual External Shocks views, real snapshot values, planned-only gaps, eight attributed episodes, three conditional paths and survey interpretation')
