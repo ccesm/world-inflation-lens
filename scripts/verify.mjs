@@ -138,10 +138,18 @@ try {
       assert.match(html, /aria-pressed="false"/)
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
       if (route === 'overview') { assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
-      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 23) }
+      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 39) }
       if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.match(html, /chart-share/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (['home', 'monitor', 'scenarios', 'fiscal', 'regimes', 'since-1971'].includes(route)) assert.doesNotMatch(html, /NaN|Infinity|undefined/)
+      if (route === 'research/ai-productivity') {
+        assert.equal((html.match(/class="ai-monitor-card"/g)||[]).length,8)
+        for (const id of ['OPHNFB','ULCNFB','COMPNFB','CENSUS_DATACENTER','REAL_GDP_WORKER','IPN22112CS']) assert.ok(html.includes(id))
+        assert.match(html, language === 'zh' ? /本判断如何计算/ : /How this assessment is calculated/)
+        assert.match(html, language === 'zh' ? /不是纯 AI/ : /not AI-only/)
+        assert.match(html, /viewBox="0 0 640 245"/)
+        assert.match(html, /#\/fiscal/)
+      }
       if (route === 'monitor') assert.equal((html.match(/<article>/g) || []).length, 11)
       if (route === 'home') {
         assert.match(html, /dollar-power-result/)
@@ -159,7 +167,7 @@ try {
         assert.ok(html.indexOf('class="research-framework"') < html.indexOf('class="ia-summary"'))
         assert.ok(html.indexOf('class="framework-scenarios"') < html.indexOf('class="dollar-power-result"'))
         assert.equal((html.match(/class="framework-force"/g) || []).length, 6)
-        assert.equal((html.match(/class="framework-planned"/g) || []).length, 4)
+        assert.equal((html.match(/class="framework-planned"/g) || []).length, 0)
         const shocksAt = html.indexOf('class="ia-section shocks-preview"')
         assert.ok(shocksAt > html.indexOf('class="research-framework"'))
         assert.ok(shocksAt < html.indexOf('class="ia-summary"'))
@@ -184,7 +192,7 @@ try {
         assert.doesNotMatch(html, /not yet been imported|尚未完成导入/)
       }
     }
-    for (const hash of ['#/fiscal?metric=interest&focus=outlook', '#/fiscal?metric=deficit', '#/monitor?group=inflation', '#/monitor?group=monetary', '#/monitor?group=market', '#/map?country=USA&year=2024&focus=compare', '#/sources?focus=health']) {
+    for (const hash of ['#/research/ai-productivity?focus=labor', '#/research/ai-productivity?focus=growth', '#/fiscal?metric=interest&focus=outlook', '#/fiscal?metric=deficit', '#/monitor?group=inflation', '#/monitor?group=monetary', '#/monitor?group=market', '#/map?country=USA&year=2024&focus=compare', '#/sources?focus=health']) {
       globalThis.window = { location: { hash } }
       const html = renderToString(React.createElement(App))
       assert.doesNotMatch(html, /NaN|undefined|Infinity/)
@@ -267,7 +275,7 @@ try {
   globalThis.localStorage = { getItem: () => { throw new Error('Storage blocked') } }
   globalThis.window = { location: { hash: '#/home' } }
   assert.match(renderToString(React.createElement(App)), /site-shell/)
-  console.log('PASS: all seventeen views and 48 driver-topic/episode/language combinations render; history links and blocked storage work')
+  console.log(`PASS: all ${routes.length} views and 48 driver-topic/episode/language combinations render; history links and blocked storage work`)
   await build({ configFile: false, root, logLevel: 'error', build: { ssr: 'src/charts/WorldMap.jsx', outDir: join(temp, 'map'), minify: false } })
   const { default: WorldMap } = await import(pathToFileURL(join(temp, 'map/WorldMap.js')))
   for (const language of ['en', 'zh']) {

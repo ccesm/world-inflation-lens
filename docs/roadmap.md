@@ -12,8 +12,12 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## Suggested next releases
 
-- V0.9: improve research usability and initial loading before widening coverage: route-level data loading, persistent/shareable comparison windows and clearer revision-vintage comparisons. Then evaluate one licensed shipping/freight or natural-gas series. Country-specific GPR and military comparisons, shortage measures, sanctions/trade fragmentation and critical minerals remain reviewed candidates.
+- V1.0: consolidate the research workspace before adding more datasets: route-level loading, shared/persistent comparison windows, and explicit source-vintage comparisons. Then review official firm-level AI adoption, sector productivity, electricity-grid investment, transformer/equipment constraints, AI capital intensity and TFP decomposition individually.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
+
+## Delivered V0.9 — AI & Productivity Expansion
+
+Five evidence groups connect investment and electricity demand to labor productivity, unit labor costs and long-term real growth. Sixteen official monthly/quarterly series plus a derived GDP-per-worker ratio; eight monitor cards; transparent common-quarter rules; historical comparisons; bilingual tables/CSV; source-health integration; strict validation and whole-bundle rollback. Data-center construction is directly observed but remains an AI-context proxy. No AI-specific spending total or causal productivity contribution is fabricated. Potential growth, annual TFP, adoption and grid-capacity datasets remain explicitly planned. Fiscal/CBO and External Shocks snapshots are unchanged. See [the source and methodology report](v0.9-ai-productivity.md).
 
 ## Delivered V0.8 — geopolitical inflation transmission
 
@@ -59,7 +63,7 @@ A future inflation-regime or driver model must disclose its methodology and be l
 
 A World Food Lens link can be added once its exact project URL is supplied. Future ingestion providers must follow the same validation and revision policy.
 
-The framework names unit labor cost, productivity, real GDP growth, labor supply, labor-market, supply-chain and credit series as unintegrated research priorities. No new dataset or causal score is implied by the diagram.
+V0.9 integrates unit labor cost, productivity, real GDP and employment; V0.8 integrates GSCPI supply-chain evidence. Labor supply, credit and firm-level adoption remain research priorities. Framework arrows do not imply measured causal effects.
 
 ## V0.7/V0.8 — External Shocks framework
 

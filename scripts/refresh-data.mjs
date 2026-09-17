@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { spawnSync } from 'node:child_process'
+import { prepareProductivity, compareProductivity } from './lib/productivity.mjs'
 import { prepareExternal } from './lib/external-ingestion.mjs'
 import { compareExternal, replaceBundle, validateExternal } from './lib/external.mjs'
 import { parseFredTable } from './lib/fredTable.mjs'
@@ -68,11 +69,14 @@ changes.push(summarizeChanges(world.metadata.indicator, diffObservations(worldPo
 const external = await prepareExternal({ input, checkedAt })
 validateExternal(await read('data/external/sipri-military.json')) // Annual source is intentionally not downloaded.
 for (const [id, next] of Object.entries(external)) changes.push(...compareExternal(await read(`data/external/${id}.json`), next))
+const productivity = await prepareProductivity({ input, checkedAt })
+changes.push(...compareProductivity(await read('data/productivity/series.json'), productivity))
 const runId = process.env.GITHUB_RUN_ID
 const runUrl = /^\d+$/.test(runId || '') ? `https://github.com/ccesm/world-inflation-lens/actions/runs/${runId}` : null
 const entry = { checkedAt, runUrl, changes }
 const nextLedger = { ...ledger, lastSuccessfulCheck: checkedAt, runs: [entry, ...ledger.runs].slice(0, 30) }
 const output = {
+  'data/productivity/series.json': productivity,
   'data/inflation/fred.json': series[0],
   'data/inflation/drivers.json': { series: series.slice(1, 1 + drivers.series.length) },
   'data/inflation/monitor.json': { series: series.slice(1 + drivers.series.length) },

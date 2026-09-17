@@ -1,6 +1,6 @@
 export const iaCopy = {
   en: {
-    nav: { home: 'Home', dollar: 'Dollar', fiscal: 'Fiscal', history: 'History', scenarios: 'Scenarios', research: 'Research', 'purchasing-power': 'Purchasing Power', 'external-shocks': 'External Shocks' },
+    nav: { home: 'Home', dollar: 'Dollar', fiscal: 'Fiscal', history: 'History', scenarios: 'Scenarios', research: 'Research', 'purchasing-power': 'Purchasing Power', 'external-shocks': 'External Shocks', 'research/ai-productivity': 'AI & Productivity' },
     eyebrow: 'THE U.S. DOLLAR / A 20–30 YEAR VIEW', title: 'Will the U.S. Dollar Preserve Its Purchasing Power?',
     subtitle: 'Track inflation, fiscal pressure, monetary conditions, real interest rates, and the forces shaping the dollar’s long-term purchasing power.',
     stance: 'This site does not assume that the dollar will collapse or that 2% inflation will always hold. It tracks evidence on both sides.',
@@ -35,7 +35,7 @@ export const iaCopy = {
     evidenceLink: 'View all dollar indicators', sectionNavigation: 'In this section', tool: 'Open tool',
   },
   zh: {
-    nav: { home: '首页', dollar: '美元', fiscal: '财政', history: '历史', scenarios: '情景', research: '研究', 'purchasing-power': '购买力', 'external-shocks': '外部冲击' },
+    nav: { home: '首页', dollar: '美元', fiscal: '财政', history: '历史', scenarios: '情景', research: '研究', 'purchasing-power': '购买力', 'external-shocks': '外部冲击', 'research/ai-productivity': '人工智能与生产率' },
     eyebrow: '美元 / 未来 20–30 年', title: '未来20–30年，美元还能保存多少购买力？',
     subtitle: '通过通胀、财政压力、货币环境、实际利率以及影响美元长期价值的关键因素，持续观察美元购买力。',
     stance: '本网站不预设美元一定会崩溃，也不预设2%的通胀目标一定能够长期维持，而是持续跟踪支持不同结果的证据。',
@@ -69,5 +69,5 @@ export const sectionLinks = {
   fiscal: [ ['#/fiscal', '财政概览', 'Fiscal Overview'], ['#/fiscal?metric=debt&focus=outlook', '联邦债务', 'Federal Debt'], ['#/fiscal?metric=deficit&focus=outlook', '联邦赤字', 'Federal Deficit'], ['#/fiscal?metric=interest&focus=outlook', '净利息负担', 'Net Interest'], ['#/fiscal?focus=outlook', 'CBO 长期展望', 'CBO Outlook'], ['#/fiscal?focus=model', '财政情景模型', 'Fiscal Scenario Model'] ],
   history: [ ['#/history', '美元制度', 'Dollar Regimes'], ['#/timeline', '通胀时间线', 'Inflation Timeline'], ['#/drivers?episode=volcker&topic=rates', '重大历史事件', 'Major Episodes'] ],
   scenarios: [ ['#/scenarios', '购买力与通胀计算器', 'Purchasing Power Calculator'], ['#/fiscal?focus=model', '债务情景模型', 'Debt Scenario Model'] ],
-  research: [ ['#/external-shocks', '外部冲击', 'External Shocks'], ['#/overview', '全球通胀', 'Global Inflation'], ['#/map', '全球地图', 'Global Map'], ['#/map?focus=compare', '国家对比', 'Country Compare'], ['#/drivers', '通胀因素', 'Inflation Drivers'], ['#/drivers?topic=food', '食品', 'Food'], ['#/drivers?topic=energy', '能源', 'Energy'], ['#/drivers?topic=money', '货币', 'Money'], ['#/sources', '数据来源', 'Data Sources'], ['#/sources?focus=health', '数据健康', 'Data Health'] ],
+  research: [ ['#/research/ai-productivity', '人工智能与生产率', 'AI & Productivity'], ['#/external-shocks', '外部冲击', 'External Shocks'], ['#/overview', '全球通胀', 'Global Inflation'], ['#/map', '全球地图', 'Global Map'], ['#/map?focus=compare', '国家对比', 'Country Compare'], ['#/drivers', '通胀因素', 'Inflation Drivers'], ['#/drivers?topic=food', '食品', 'Food'], ['#/drivers?topic=energy', '能源', 'Energy'], ['#/drivers?topic=money', '货币', 'Money'], ['#/sources', '数据来源', 'Data Sources'], ['#/sources?focus=health', '数据健康', 'Data Health'] ],
 }

@@ -16,6 +16,7 @@ import { Timeline } from './pages/Timeline.jsx'
 import { GlobalMap } from './pages/GlobalMap.jsx'
 import { Sources } from './pages/Sources.jsx'
 import { UsCpi } from './pages/UsCpi.jsx'
+import { AiProductivity } from './pages/AiProductivity.jsx'
 import { ExternalShocks } from './pages/ExternalShocks.jsx'
 import { Drivers } from './pages/Drivers.jsx'
 
@@ -101,6 +102,7 @@ export default function App() {
       {route === 'us-cpi' && <UsCpi language={language} />}
       {route === 'map' && <GlobalMap language={language} />}
       {route === 'drivers' && <Drivers language={language} />}
+      {route === 'research/ai-productivity' && <AiProductivity language={language} />}
       {route === 'external-shocks' && <ExternalShocks language={language} />}
       {route === 'sources' && <Sources t={t} language={language} />}
     </main>

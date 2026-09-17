@@ -35,6 +35,7 @@ export function parseFredTable(html, expectedId, expected = {}) {
       const prior = observations[index - 1].date
       assert.ok(point.date > prior, 'Duplicate date')
       if (frequency === 'Monthly') assert.equal(monthNumber(point.date) - monthNumber(prior), 1, 'Missing month')
+      else if (frequency === 'Quarterly') assert.equal(monthNumber(point.date) - monthNumber(prior), 3, 'Missing quarter')
       else if (frequency.startsWith('Weekly')) assert.equal((Date.parse(point.date) - Date.parse(prior)) / 86400000, 7, 'Missing week')
       else if (frequency.startsWith('Annual')) assert.ok(Number(point.date.slice(0, 4)) - Number(prior.slice(0, 4)) <= 1, 'Missing year')
       else if (frequency === 'Daily') {
@@ -43,6 +44,7 @@ export function parseFredTable(html, expectedId, expected = {}) {
         assert.equal(point.date, cursor.toISOString().slice(0, 10), 'Missing weekday')
       }
     }
+    if (frequency === 'Quarterly') assert.match(point.date, /^\d{4}-(01|04|07|10)-01$/, 'Invalid quarter anchor')
     if ((expectedId.startsWith('CPI') || expected.positive) && point.value !== null) assert.ok(point.value > 0)
   })
   return {

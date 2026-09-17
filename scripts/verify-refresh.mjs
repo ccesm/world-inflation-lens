@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict'
+import { productivityFixtures } from './lib/productivity-fixtures.mjs'
 import { externalFixtures } from './lib/external-fixtures.mjs'
 import { readFile, writeFile, mkdir, mkdtemp, cp, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
@@ -31,13 +32,13 @@ assert.equal(readDriverLink('#/drivers?episode=oil', config).topic, 'energy')
 const root = resolve(import.meta.dirname, '..')
 const temp = await mkdtemp(join(tmpdir(), 'wil-refresh-test-'))
 const read = async path => JSON.parse(await readFile(join(root, path), 'utf8'))
-const files = ['data/inflation/fred.json', 'data/inflation/drivers.json', 'data/inflation/worldbank.json', 'data/updates/history.json', 'data/inflation/monitor.json', ...['gpr','gscpi','fao-food','sipri-military'].map(id => `data/external/${id}.json`)]
+const files = ['data/inflation/fred.json', 'data/inflation/drivers.json', 'data/inflation/worldbank.json', 'data/updates/history.json', 'data/inflation/monitor.json', ...['gpr','gscpi','fao-food','sipri-military'].map(id => `data/external/${id}.json`), 'data/productivity/series.json']
 try {
-  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js', 'src/utils/transmission.js', 'scripts/verify-external.mjs', 'scripts/lib/external.mjs', 'scripts/lib/external-ingestion.mjs']) {
+  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js', 'src/utils/transmission.js', 'scripts/verify-external.mjs', 'scripts/lib/external.mjs', 'scripts/lib/external-ingestion.mjs', 'scripts/lib/productivity.mjs', 'scripts/lib/productivity-sources.mjs']) {
     await mkdir(join(temp, path, '..'), { recursive: true }); await cp(join(root, path), join(temp, path))
   }
   await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',scripts:{build:'node -e "process.exit(0)"',verify:'node -e "process.exit(0)"'}}))
-  const input = join(temp, 'inputs'); await mkdir(input); await externalFixtures(root, input)
+  const input = join(temp, 'inputs'); await mkdir(input); await externalFixtures(root, input); await productivityFixtures(root,input,{revise:true})
   const headline = await read(files[0]), drivers = await read(files[1]), world = await read(files[2]), countries = await read('data/countries/metadata.json')
   const originalFiles = await Promise.all(files.map(path => readFile(join(temp, path), 'utf8')))
   const allSeries = [structuredClone(headline), ...drivers.series, ...(await read('data/inflation/monitor.json')).series]
@@ -73,7 +74,8 @@ try {
   const ledger = JSON.parse(await readFile(join(temp, files[3]), 'utf8'))
   assert.equal(ledger.runs[0].changes[0].revised, 1)
   assert.equal(ledger.runs[0].changes.find(c=>c.id==='GPR').revised,1)
-  assert.equal(await readFile(join(temp, 'data/external/sipri-military.json'),'utf8'), originalFiles.at(-1))
+  assert.equal(ledger.runs[0].changes.find(c=>c.id==='OPHNFB').revised,1)
+  assert.equal(await readFile(join(temp, 'data/external/sipri-military.json'),'utf8'), originalFiles[files.indexOf('data/external/sipri-military.json')])
   assert.equal(ledger.runs[0].changes[0].examples[0].before, headline.observations.at(-1).value)
   const repeat = run(); assert.equal(repeat.status, 0, repeat.stderr)
   const repeated = JSON.parse(await readFile(join(temp, files[3]), 'utf8'))

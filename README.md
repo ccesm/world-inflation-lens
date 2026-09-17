@@ -15,6 +15,19 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
+## V0.9 — AI & Productivity Expansion
+
+Research → **AI & Productivity** (`#/research/ai-productivity`) connects AI investment and infrastructure demand to productivity, unit labor costs, real growth and long-term dollar purchasing power. It presents both possible channels: near-term investment/electricity demand may raise costs; longer-term productivity and supply gains may ease inflation and fiscal pressure. Neither channel is assumed to dominate or attributed to AI from correlation alone.
+
+- **16 official series**: BLS productivity, compensation, unit labor costs, electricity CPI and employment; BEA real business investment, technology/software/computer investment and real GDP; Federal Reserve commercial electricity sales and semiconductor output; EIA natural gas; Census data-center, nonresidential and electronics-factory construction.
+- **One derived ratio**: real GDP per employed person, using complete three-month employment averages. It is distinct from BLS output per hour.
+- Bilingual eight-card monitor, five evidence groups, quarterly annualized/YoY productivity, a 20-quarter moving average, historical mean, labor-cost small multiples, source-aware tables and CSV, six historical comparison windows and transparent common-quarter interpretation.
+- AI investment and infrastructure **proxies** are labeled, including data-center construction (which includes non-AI centers). No synthetic AI-spending total, AI causality estimate, probability, composite score or stock coverage.
+- Existing snapshot refresh and rollback now include these monthly/quarterly series; weekly checks retain original observation frequency. Initial import establishes a baseline, not a claim of zero source revisions. Source IDs, adjustment, definitions, release/retrieval dates, licensing and coverage are retained. No browser API calls or API keys.
+- The six top-level sections, legacy routes, CBO history/projections and V0.8 External Shocks functionality are preserved. Homepage productivity links and a concise preview lead to the new research page; detailed evidence stays off the homepage.
+
+See [V0.9 implementation and source report](docs/v0.9-ai-productivity.md) for exact datasets, coverage, source updates, methods, limitations, validation and remaining research gaps.
+
 ## V0.8 — Geopolitical Risk Data Expansion
 
 Research → External Shocks now asks whether geopolitical stress is transmitting through military spending, supply chains, energy and food into U.S. inflation and long-term dollar purchasing power. It does not predict wars or assign probabilities.
