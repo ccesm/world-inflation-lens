@@ -15,6 +15,19 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
+## V0.10 — Digital Money & Dollar System
+
+This expansion has **two separate milestones**. Phase 1, V0.9 AI & Productivity, was completed and its build/verification passed again before Phase 2 began. Phase 2 adds **Research → Digital Money** (`#/research/digital-money`). Its question is how the structure of dollar demand and usage is changing; the AI page continues to ask whether productive capacity can grow with less inflation.
+
+- Eight bilingual sections: stablecoin size, USD denomination, Treasury holdings, bank deposits, Treasury demand, digital dollarization, alternative stores of value and financial stability. Three conditional channels connect dollar/Treasury demand, bank funding and monetary competition to purchasing power.
+- Four manually reviewed, dated publication estimates from Federal Reserve research and IMF remarks, plus Federal Reserve H.8 commercial-bank deposits (`DPSACBM027SBOG`, monthly, seasonally adjusted, January 1973–August 2026). The bank chart supports level/YoY, time ranges, month selection, table and CSV.
+- Publication snapshots are **not a comparable market time series**. Unknown measurement dates remain missing, approximate values retain their qualifiers, and the Treasury estimate uses outstanding **Treasury bills** as its denominator. Aggregate bank deposits are context, not measured stablecoin migration.
+- Separate `data/digital-money/` datasets and ingestion adapter reuse the existing validation, revision ledger and whole-bundle rollback. Only the monthly bank series joins weekly automatic checks; publication estimates require manual source review. No frontend data APIs or keys.
+- The homepage now has seven research forces and two compact, separate AI/Digital Money previews. Six primary navigation items and all legacy routes remain. Existing productivity, Fiscal/CBO and External Shocks datasets are unchanged.
+- Continuous stablecoin market history, reconciled issuer Treasury holdings, actual deposit migration, holder geography and Bitcoin/gold price histories remain planned. Stablecoin issuance is not treated as Federal Reserve money creation; crypto prices are not evidence of dollar collapse. No trading signals or probabilities.
+
+See [V0.10 source, methodology and validation report](docs/v0.10-digital-money.md).
+
 ## V0.9 — AI & Productivity Expansion
 
 Research → **AI & Productivity** (`#/research/ai-productivity`) connects AI investment and infrastructure demand to productivity, unit labor costs, real growth and long-term dollar purchasing power. It presents both possible channels: near-term investment/electricity demand may raise costs; longer-term productivity and supply gains may ease inflation and fiscal pressure. Neither channel is assumed to dominate or attributed to AI from correlation alone.
@@ -51,14 +64,14 @@ See [V0.8 sources, methodology and release report](docs/v0.8-geopolitical-data.m
 
 Primary navigation is now exactly **Home / Dollar / Fiscal / History / Scenarios / Research**, with Chinese labels 首页 / 美元 / 财政 / 历史 / 情景 / 研究. Desktop pages have scoped secondary links; mobile pages use a native section selector. Theme and language controls stay in the upper right. The homepage has no secondary tool navigation bar.
 
-The homepage now explains the research framework before any observed values. The six-force visual includes inflation pressure, fiscal pressure, monetary conditions, market confidence, real economic capacity/productivity and external shocks, each with 2–4 indicators. It is a conceptual channel map, not an additive equation or measured causal model. Three time horizons (6–24 months, 2–10 years, 10–30 years) lead to four unweighted scenarios: stable low inflation, financial repression/gradual erosion, persistent high inflation and severe monetary stress. Unintegrated series are explicitly marked.
+The homepage now explains the research framework before any observed values. The original V0.7 six-force visual includes inflation pressure, fiscal pressure, monetary conditions, market confidence, real economic capacity/productivity and external shocks, each with 2–4 indicators. It is a conceptual channel map, not an additive equation or measured causal model. Three time horizons (6–24 months, 2–10 years, 10–30 years) lead to four unweighted scenarios: stable low inflation, financial repression/gradual erosion, persistent high inflation and severe monetary stress. Unintegrated series are explicitly marked.
 
 The evidence sequence is:
 
 1. Research question and two CTAs, then the research framework and a compact External Shocks preview. Only after the framework come three dated observations: CPI, 10-year real yield and public debt/GDP.
 2. CPI purchasing power: selectable 1913/1945/1971/1980/2000/2020 bases. The example is the remaining purchasing power of an unchanged $100, explicitly expressed at starting-month prices.
 3. Illustrative future scenarios using $100,000 by default, 10/20/30-year controls and editable amount/rate/horizon.
-4. The former four-force card block is consolidated into the six-force framework above the evidence. The four observed environment proxies below remain distinct from this broader research coverage; productivity is not yet an integrated series.
+4. The former four-force card block is consolidated into the six-force framework above the evidence. The four observed environment proxies below remain distinct from this broader research coverage; V0.9 subsequently integrates productivity and V0.10 adds digital money as a seventh research force.
 5. A compact preview of the existing CBO chart, retaining metric selection, solid/dashed separation, source links, vintage and assumptions.
 6. Four transparent descriptive proxy labels, never summed into a score.
 7. Opposing fiscal-pressure and productivity pathways, labeled as conditional mechanisms.
@@ -176,11 +189,11 @@ npm run build
 npm run verify
 ```
 
-The refresher downloads all eighteen FRED series, World Bank observations and definitions, and the three monthly external datasets (GPR, GSCPI, FAO). SIPRI remains a manually reviewed annual snapshot. Workbook ingestion additionally needs Python 3.12 and `python -m pip install -r scripts/requirements-external.txt`; set `WIL_PYTHON` to use a specific interpreter. Ordinary npm install/dev/build/verify require only Node and the committed snapshots. World Bank coverage extends through the previous calendar year, preserving the existing 217-country universe and map joins. Changed country membership requires manual review. Static country names and map geometry are maintained separately.
+The refresher downloads the original eighteen FRED series, the sixteen V0.9 productivity-family series, the V0.10 bank-deposit series, World Bank observations and definitions, and the three monthly external datasets (GPR, GSCPI, FAO). SIPRI remains a manually reviewed annual snapshot. Workbook ingestion additionally needs Python 3.12 and `python -m pip install -r scripts/requirements-external.txt`; set `WIL_PYTHON` to use a specific interpreter. Ordinary npm install/dev/build/verify require only Node and the committed snapshots. World Bank coverage extends through the previous calendar year, preserving the existing 217-country universe and map joins. Changed country membership requires manual review. Static country names and map geometry are maintained separately.
 
 All downloads and validations finish in memory before any snapshot is replaced. Checks reject wrong series/units/adjustment, incomplete pagination, duplicate or missing date slots, regressed source dates, removed historical slots and withdrawals exceeding 5% of a series or country's available observations (one withdrawal is allowed for very sparse series). Parser tests run before replacing the bundle. Any write, build or verification error restores every original snapshot and the ledger. The refresh command runs build and verification itself; CI repeats those gates before deployment. GitHub commits and publishes only after build and tests pass; any download, validation, test or push failure prevents deployment and leaves the previous website available. CI logs identify failed attempts; the deployed panel only reports the last successful check, never a live success claim.
 
-The bot commits the eight routinely refreshed snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
+The bot commits the ten routinely refreshed snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 
 GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags checks older than 10 days and links to Actions for diagnosis. Observation-age hints use separate thresholds: over 3 months for monthly data or over 3 years for annual data, or over 14 days for daily/weekly data. These are site heuristics, not promises about provider release dates. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
 

@@ -138,10 +138,18 @@ try {
       assert.match(html, /aria-pressed="false"/)
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
       if (route === 'overview') { assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
-      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 39) }
+      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 44) }
       if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.match(html, /chart-share/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (['home', 'monitor', 'scenarios', 'fiscal', 'regimes', 'since-1971'].includes(route)) assert.doesNotMatch(html, /NaN|Infinity|undefined/)
+      if (route === 'research/digital-money') {
+        assert.equal((html.match(/data-digital-fact=/g)||[]).length,4)
+        assert.match(html,/DPSACBM027SBOG/)
+        assert.match(html,language==='zh'?/来源未注明/:/Not specified by the source/)
+        assert.match(html,language==='zh'?/不等于美联储创造货币/:/not Federal Reserve money creation/)
+        assert.match(html,language==='zh'?/短期美国国库券余额/:/outstanding U.S. T-bills/)
+        assert.doesNotMatch(html,/data-series="OPHNFB"/)
+      }
       if (route === 'research/ai-productivity') {
         assert.equal((html.match(/class="ai-monitor-card"/g)||[]).length,8)
         for (const id of ['OPHNFB','ULCNFB','COMPNFB','CENSUS_DATACENTER','REAL_GDP_WORKER','IPN22112CS']) assert.ok(html.includes(id))
@@ -166,7 +174,7 @@ try {
         assert.equal((html.match(/<section class="ia-section"/g) || []).length, 9)
         assert.ok(html.indexOf('class="research-framework"') < html.indexOf('class="ia-summary"'))
         assert.ok(html.indexOf('class="framework-scenarios"') < html.indexOf('class="dollar-power-result"'))
-        assert.equal((html.match(/class="framework-force"/g) || []).length, 6)
+        assert.equal((html.match(/class="framework-force"/g) || []).length, 7)
         assert.equal((html.match(/class="framework-planned"/g) || []).length, 0)
         const shocksAt = html.indexOf('class="ia-section shocks-preview"')
         assert.ok(shocksAt > html.indexOf('class="research-framework"'))
@@ -174,6 +182,8 @@ try {
         const preview = html.slice(shocksAt, html.indexOf('class="ia-section evidence-start"'))
         assert.doesNotMatch(preview, /<svg|<table|data-indicator=/)
         for (const topic of shockTopics.filter(topic => topic !== 'history')) assert.ok(preview.includes(`#/external-shocks?topic=${topic}`))
+        assert.match(html,/class="ia-section dm-preview"/)
+        assert.match(html,/#\/research\/digital-money/)
         const f = frameworkCopy[language]
         for (const phrase of [f.question, f.outcome, f.horizonsTitle, f.scenariosTitle, ...f.horizons.map(h => h.duration), ...f.scenarios.map(s => s[0])]) assert.ok(html.includes(phrase), phrase)
         assert.match(html, language === 'zh' ? /不分配概率/ : /No probabilities are assigned/)
@@ -192,7 +202,7 @@ try {
         assert.doesNotMatch(html, /not yet been imported|尚未完成导入/)
       }
     }
-    for (const hash of ['#/research/ai-productivity?focus=labor', '#/research/ai-productivity?focus=growth', '#/fiscal?metric=interest&focus=outlook', '#/fiscal?metric=deficit', '#/monitor?group=inflation', '#/monitor?group=monetary', '#/monitor?group=market', '#/map?country=USA&year=2024&focus=compare', '#/sources?focus=health']) {
+    for (const hash of ['#/research/digital-money?focus=deposits', '#/research/digital-money?focus=dollarization', '#/research/ai-productivity?focus=labor', '#/research/ai-productivity?focus=growth', '#/fiscal?metric=interest&focus=outlook', '#/fiscal?metric=deficit', '#/monitor?group=inflation', '#/monitor?group=monetary', '#/monitor?group=market', '#/map?country=USA&year=2024&focus=compare', '#/sources?focus=health']) {
       globalThis.window = { location: { hash } }
       const html = renderToString(React.createElement(App))
       assert.doesNotMatch(html, /NaN|undefined|Infinity/)
@@ -329,7 +339,7 @@ console.log('PASS: six-section architecture, focused tool links, legacy hashes, 
 
 for (const language of ['en', 'zh']) {
   const f = frameworkCopy[language]
-  assert.equal(f.forces.length, 6)
+  assert.equal(f.forces.length, 7)
   assert.equal(f.horizons.length, 3)
   assert.equal(f.scenarios.length, 4)
   for (const force of f.forces) {
@@ -340,7 +350,7 @@ for (const language of ['en', 'zh']) {
     }
   }
 }
-console.log('PASS: bilingual six-force framework precedes data, three horizons, four non-probabilistic scenarios and explicit unintegrated indicators')
+console.log('PASS: bilingual seven-force framework precedes data, three horizons, four non-probabilistic scenarios and explicit unintegrated indicators')
 
 assert.equal(shockEpisodes.length, 8)
 assert.equal(new Set(shockIndicators.map(i => i.id)).size, shockIndicators.length)

@@ -1,4 +1,5 @@
 import React from 'react'
+import { DigitalMoneyPreview } from '../components/DigitalMoneyPreview.jsx'
 import { AiProductivityPreview } from './AiProductivity.jsx'
 import { ExternalShocksPreview } from '../components/ExternalShocksPreview.jsx'
 import { ResearchFramework } from '../components/ResearchFramework.jsx'
@@ -18,6 +19,7 @@ export function Home({ language }) {
     <div className="content-section ia-home-body dollar-section">
       <ResearchFramework language={language} />
       <AiProductivityPreview language={language} />
+      <DigitalMoneyPreview language={language} />
       <ExternalShocksPreview language={language} />
       <section className="ia-section evidence-start"><h2>{f.evidenceTitle}</h2><p>{f.evidenceIntro}</p><OutlookSummary language={language} /></section>
       <section className="ia-section"><DollarPower language={language} initialBase="1971-08" preview /><a className="ia-more" href="#/purchasing-power">{t.powerLink} →</a></section>

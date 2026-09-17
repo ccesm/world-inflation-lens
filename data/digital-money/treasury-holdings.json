@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "IMF_TBILL_SHARE",
+      "provider": "IMF / public remarks",
+      "sourceUrl": "https://www.imf.org/en/news/articles/2026/05/11/sp051126-tokenized-finance-and-money",
+      "sourceUpdatedAt": "2026-05-11",
+      "observationDate": null,
+      "units": "percent of outstanding US Treasury bills",
+      "qualifier": "approximately",
+      "definition": "Approximate stablecoin holdings as a share of outstanding U.S. Treasury bills cited in IMF remarks. Not percent of all Treasury debt, nor percent of issuer reserves; no dollar holding inferred.",
+      "underlyingProvider": "Not specified for this estimate in the cited statement",
+      "value": 2,
+      "frequency": "publication snapshot",
+      "seasonalAdjustment": "not applicable",
+      "proxy": true,
+      "status": "published_research_estimate",
+      "retrievedAt": "2026-09-17",
+      "reviewedAt": "2026-09-17",
+      "evidenceSha256": "33107af8efa4181e2b5959495ae486c1320d13ce07ba9ef5b1f5fc0ca178e3d7",
+      "evidenceHashScope": "Retained short source excerpt, not full source document",
+      "license": "IMF attribution; factual statistic and short excerpt only, no underlying proprietary dataset redistributed"
+    }
+  ]
+}

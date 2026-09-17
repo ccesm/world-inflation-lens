@@ -1,0 +1,34 @@
+[
+  {
+    "id": "FED_STABLECOIN_SIZE",
+    "sourceUrl": "https://www.federalreserve.gov/econres/notes/feds-notes/stablecoins-in-2025-developments-and-financial-stability-implications-20260408.html",
+    "sourceUpdatedAt": "2026-04-08",
+    "text": "market capitalization reaching $317 billion as of April 6, 2026",
+    "retrievedAt": "2026-09-17",
+    "checkedVia": "official publication manually reviewed"
+  },
+  {
+    "id": "IMF_STABLECOIN_SIZE",
+    "sourceUrl": "https://www.imf.org/en/news/articles/2026/08/07/sp080726-stablecoins-emerging-markets-dan-katz",
+    "sourceUpdatedAt": "2026-08-07",
+    "text": "around $300 billion",
+    "retrievedAt": "2026-09-17",
+    "checkedVia": "official publication manually reviewed"
+  },
+  {
+    "id": "IMF_USD_SHARE",
+    "sourceUrl": "https://www.imf.org/en/news/articles/2026/08/07/sp080726-stablecoins-emerging-markets-dan-katz",
+    "sourceUpdatedAt": "2026-08-07",
+    "text": "Nearly 99 percent of stablecoins are denominated in U.S. dollars.",
+    "retrievedAt": "2026-09-17",
+    "checkedVia": "official publication manually reviewed"
+  },
+  {
+    "id": "IMF_TBILL_SHARE",
+    "sourceUrl": "https://www.imf.org/en/news/articles/2026/05/11/sp051126-tokenized-finance-and-money",
+    "sourceUpdatedAt": "2026-05-11",
+    "text": "Stablecoins currently hold approximately 2 percent of outstanding US Treasury bills.",
+    "retrievedAt": "2026-09-17",
+    "checkedVia": "official publication manually reviewed"
+  }
+]

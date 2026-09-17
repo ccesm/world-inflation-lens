@@ -13,3 +13,5 @@ createRoot(document.getElementById('root')).render(<React.StrictMode><App /></Re
 import './architecture.css'
 
 import './productivity.css'
+
+import './digital-money.css'

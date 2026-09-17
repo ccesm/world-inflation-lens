@@ -32,17 +32,18 @@ assert.equal(readDriverLink('#/drivers?episode=oil', config).topic, 'energy')
 const root = resolve(import.meta.dirname, '..')
 const temp = await mkdtemp(join(tmpdir(), 'wil-refresh-test-'))
 const read = async path => JSON.parse(await readFile(join(root, path), 'utf8'))
-const files = ['data/inflation/fred.json', 'data/inflation/drivers.json', 'data/inflation/worldbank.json', 'data/updates/history.json', 'data/inflation/monitor.json', ...['gpr','gscpi','fao-food','sipri-military'].map(id => `data/external/${id}.json`), 'data/productivity/series.json']
+const files = ['data/inflation/fred.json', 'data/inflation/drivers.json', 'data/inflation/worldbank.json', 'data/updates/history.json', 'data/inflation/monitor.json', ...['gpr','gscpi','fao-food','sipri-military'].map(id => `data/external/${id}.json`), 'data/productivity/series.json', ...['bank-deposits','stablecoins','treasury-holdings','source-excerpts'].map(id=>`data/digital-money/${id}.json`)]
 try {
-  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js', 'src/utils/transmission.js', 'scripts/verify-external.mjs', 'scripts/lib/external.mjs', 'scripts/lib/external-ingestion.mjs', 'scripts/lib/productivity.mjs', 'scripts/lib/productivity-sources.mjs']) {
+  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js', 'src/utils/transmission.js', 'scripts/verify-external.mjs', 'scripts/lib/external.mjs', 'scripts/lib/external-ingestion.mjs', 'scripts/lib/productivity.mjs', 'scripts/lib/productivity-sources.mjs', 'scripts/lib/digital-money.mjs']) {
     await mkdir(join(temp, path, '..'), { recursive: true }); await cp(join(root, path), join(temp, path))
   }
   await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',scripts:{build:'node -e "process.exit(0)"',verify:'node -e "process.exit(0)"'}}))
   const input = join(temp, 'inputs'); await mkdir(input); await externalFixtures(root, input); await productivityFixtures(root,input,{revise:true})
   const headline = await read(files[0]), drivers = await read(files[1]), world = await read(files[2]), countries = await read('data/countries/metadata.json')
   const originalFiles = await Promise.all(files.map(path => readFile(join(temp, path), 'utf8')))
-  const allSeries = [structuredClone(headline), ...drivers.series, ...(await read('data/inflation/monitor.json')).series]
+  const allSeries = [structuredClone(headline), ...drivers.series, ...(await read('data/inflation/monitor.json')).series, await read('data/digital-money/bank-deposits.json')]
   allSeries[0].observations.at(-1).value += .125
+  allSeries.at(-1).observations.at(-1).value += .25
   for (const source of allSeries) {
     const fields = { 'Series ID': source.id, Title: source.title, Source: source.publisher, Units: source.units, Frequency: source.frequency.split(', ').map(s => s[0].toUpperCase()+s.slice(1)).join(', ').replace('As of wednesday', 'As of Wednesday').replace('Fiscal year', 'Fiscal Year'), 'Seasonal Adjustment': source.seasonalAdjustment === 'seasonally adjusted' ? 'Seasonally Adjusted' : 'Not Seasonally Adjusted', 'Date Range': `${source.observations[0].date.length === 7 ? source.observations[0].date + '-01' : source.observations[0].date} to ${source.observations.at(-1).date.length === 7 ? source.observations.at(-1).date + '-01' : source.observations.at(-1).date}`, 'Last Updated': source.sourceUpdatedAt }
     const html = `<table>${Object.entries(fields).map(([key, value]) => `<th>${key}</th><td>${value}</td>`).join('')}</table><table id="data-table-observations">${source.observations.map(p => `<th>${p.date.length === 7 ? p.date + '-01' : p.date}</th><td>${p.value ?? '.'}</td>`).join('')}</table>`
@@ -75,6 +76,7 @@ try {
   assert.equal(ledger.runs[0].changes[0].revised, 1)
   assert.equal(ledger.runs[0].changes.find(c=>c.id==='GPR').revised,1)
   assert.equal(ledger.runs[0].changes.find(c=>c.id==='OPHNFB').revised,1)
+  assert.equal(ledger.runs[0].changes.find(c=>c.id==='DPSACBM027SBOG').revised,1)
   assert.equal(await readFile(join(temp, 'data/external/sipri-military.json'),'utf8'), originalFiles[files.indexOf('data/external/sipri-military.json')])
   assert.equal(ledger.runs[0].changes[0].examples[0].before, headline.observations.at(-1).value)
   const repeat = run(); assert.equal(repeat.status, 0, repeat.stderr)

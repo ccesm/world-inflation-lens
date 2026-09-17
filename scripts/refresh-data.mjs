@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { spawnSync } from 'node:child_process'
+import { prepareDigitalMoney, compareBank, validatePublications } from './lib/digital-money.mjs'
 import { prepareProductivity, compareProductivity } from './lib/productivity.mjs'
 import { prepareExternal } from './lib/external-ingestion.mjs'
 import { compareExternal, replaceBundle, validateExternal } from './lib/external.mjs'
@@ -71,11 +72,15 @@ validateExternal(await read('data/external/sipri-military.json')) // Annual sour
 for (const [id, next] of Object.entries(external)) changes.push(...compareExternal(await read(`data/external/${id}.json`), next))
 const productivity = await prepareProductivity({ input, checkedAt })
 changes.push(...compareProductivity(await read('data/productivity/series.json'), productivity))
+const digitalBank = await prepareDigitalMoney({ input, checkedAt })
+validatePublications({'stablecoins':await read('data/digital-money/stablecoins.json'),'treasury-holdings':await read('data/digital-money/treasury-holdings.json')},await read('data/digital-money/source-excerpts.json'))
+changes.push(compareBank(await read('data/digital-money/bank-deposits.json'), digitalBank))
 const runId = process.env.GITHUB_RUN_ID
 const runUrl = /^\d+$/.test(runId || '') ? `https://github.com/ccesm/world-inflation-lens/actions/runs/${runId}` : null
 const entry = { checkedAt, runUrl, changes }
 const nextLedger = { ...ledger, lastSuccessfulCheck: checkedAt, runs: [entry, ...ledger.runs].slice(0, 30) }
 const output = {
+  'data/digital-money/bank-deposits.json': digitalBank,
   'data/productivity/series.json': productivity,
   'data/inflation/fred.json': series[0],
   'data/inflation/drivers.json': { series: series.slice(1, 1 + drivers.series.length) },

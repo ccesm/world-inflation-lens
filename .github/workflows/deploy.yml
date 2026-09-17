@@ -50,7 +50,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/productivity/series.json data/external/gpr.json data/external/gscpi.json data/external/fao-food.json data/inflation/fred.json data/inflation/drivers.json data/inflation/monitor.json data/inflation/worldbank.json data/updates/history.json
+          git add data/digital-money/bank-deposits.json data/productivity/series.json data/external/gpr.json data/external/gscpi.json data/external/fao-food.json data/inflation/fred.json data/inflation/drivers.json data/inflation/monitor.json data/inflation/worldbank.json data/updates/history.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh validated inflation snapshots'
             git push origin HEAD:main

@@ -1,0 +1,28 @@
+.dm-page { min-width:0; }
+.dm-principle,.dm-preview { border-left:3px solid var(--copper); padding-left:1.2rem; }
+.dm-jump { display:flex; flex-wrap:wrap; gap:.6rem; margin:1.5rem 0; }
+.dm-jump a { border:1px solid var(--global-border); border-radius:8px; padding:.7rem 1rem; }
+.dm-path { list-style:none; padding:0; }
+.dm-path li { padding:.45rem 0; }
+.dm-path li+li::before { content:'↓'; display:block; color:var(--copper); margin-bottom:.4rem; }
+.dm-fact,.dm-bank { border:1px solid var(--global-border); border-radius:12px; padding:clamp(1rem,2vw,1.5rem); min-width:0; }
+.dm-value { display:block; font-size:clamp(1.5rem,3vw,2.1rem); font-variant-numeric:tabular-nums; }
+.dm-fact dt { color:var(--muted); font-size:.85rem; }
+.dm-fact dd { margin:0 0 .8rem; }
+.dm-source { font-size:.82rem; color:var(--muted); line-height:1.7; overflow-wrap:anywhere; }
+.dm-page details { margin-top:.8rem; }
+.dm-page summary { cursor:pointer; padding:.8rem 0; min-height:44px; }
+.dm-controls { display:flex; flex-wrap:wrap; gap:1rem; }
+.dm-page label { display:flex; flex-direction:column; gap:.4rem; max-width:100%; font-size:.85rem; }
+.dm-page select,.dm-page button { min-height:44px; max-width:100%; padding:.65rem; background:var(--paper); color:var(--ink); border:1px solid var(--global-border); border-radius:6px; font:inherit; }
+.dm-bank svg { display:block; width:100%; height:auto; }
+.dm-bank svg text { fill:var(--muted); font-size:14px; }
+.dm-gridline { stroke:var(--global-border); }
+.dm-line { fill:none; stroke:var(--copper); stroke-width:2; vector-effect:non-scaling-stroke; }
+.dm-point { fill:var(--ink); }
+.dm-table { max-height:360px; overflow:auto; margin-top:1rem; }
+.dm-table table { width:100%; border-collapse:collapse; font-size:.85rem; }
+.dm-table th,.dm-table td { padding:.65rem; border-bottom:1px solid var(--global-border); text-align:right; }
+.dm-table th:first-child { text-align:left; }
+.dm-page section[id] { scroll-margin-top:2rem; }
+@media(max-width:600px) { .dm-controls,.dm-controls label { width:100%; } .dm-bank svg text { font-size:24px; } .dm-page .ia-grid.two { grid-template-columns:1fr; } }

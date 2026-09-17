@@ -15,6 +15,14 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 - V1.0: consolidate the research workspace before adding more datasets: route-level loading, shared/persistent comparison windows, and explicit source-vintage comparisons. Then review official firm-level AI adoption, sector productivity, electricity-grid investment, transformer/equipment constraints, AI capital intensity and TFP decomposition individually.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
 
+## Delivered V0.10 — Digital Money & Dollar System
+
+Phase 2 follows the separately verified V0.9 AI milestone. A dedicated Research page explains stablecoin demand, Treasury financing, bank-deposit redistribution, digital dollarization, alternative stores of value and financial-stability mechanisms. Four reviewed Fed/IMF publication estimates and one observed monthly Federal Reserve H.8 deposit series have independent provenance, explicit date/denominator limitations, tables/CSV and Data Health coverage. Publication estimates remain manually reviewed; bank data joins weekly validation and rollback without changing its monthly frequency. Neither AI nor digital money is assumed to improve or impair dollar purchasing power automatically.
+
+The homepage now connects seven research forces to long-term purchasing power, with separate compact AI and Digital Money previews. No large new charts are added there. Existing AI, Fiscal/CBO and External Shocks datasets remain intact. See [the source and validation report](v0.10-digital-money.md).
+
+Future Digital Money candidates require source and licensing review: continuous stablecoin market coverage, reconciled direct/indirect issuer Treasury exposure, measured deposit migration and holder geography. Bitcoin and gold histories require a justified benchmark and clear usage rights before integration. No token recommendations, forecasts or collapse probabilities.
+
 ## Delivered V0.9 — AI & Productivity Expansion
 
 Five evidence groups connect investment and electricity demand to labor productivity, unit labor costs and long-term real growth. Sixteen official monthly/quarterly series plus a derived GDP-per-worker ratio; eight monitor cards; transparent common-quarter rules; historical comparisons; bilingual tables/CSV; source-health integration; strict validation and whole-bundle rollback. Data-center construction is directly observed but remains an AI-context proxy. No AI-specific spending total or causal productivity contribution is fabricated. Potential growth, annual TFP, adoption and grid-capacity datasets remain explicitly planned. Fiscal/CBO and External Shocks snapshots are unchanged. See [the source and methodology report](v0.9-ai-productivity.md).
