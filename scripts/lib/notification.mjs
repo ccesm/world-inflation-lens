@@ -42,9 +42,12 @@ export function mailConfig(env) {
   const names = ['GMAIL_ADDRESS', 'GMAIL_APP_PASSWORD']
   if (names.some(k => !env[k]?.trim())) return null
   const address = env.GMAIL_ADDRESS.trim()
-  const password = env.GMAIL_APP_PASSWORD.replace(/\s/g, '')
+  // Phone copy/paste can include invisible formatting characters. Google also groups
+  // app passwords with spaces; none of these characters belong to the SMTP password.
+  const password = env.GMAIL_APP_PASSWORD.normalize('NFKC').replace(/[\s\u200B-\u200D\u2060\uFEFF]/g, '')
   if (!/^[^\s<>@,;]+@(gmail\.com|googlemail\.com)$/i.test(address)) throw new Error('GMAIL_ADDRESS must be one personal Gmail address')
-  if (!/^[a-z0-9]{16}$/i.test(password)) throw new Error('GMAIL_APP_PASSWORD must be a 16-character Google app password')
+  if (password.length !== 16) throw new Error(`GMAIL_APP_PASSWORD has ${password.length} characters after removing spaces; expected 16. Use the generated app password, not the app name or normal Gmail password.`)
+  if (!/^[a-z0-9]{16}$/i.test(password)) throw new Error('GMAIL_APP_PASSWORD has 16 characters but includes symbols; paste only the generated Google app password.')
   return { address, password }
 }
 

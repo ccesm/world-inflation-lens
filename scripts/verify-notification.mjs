@@ -21,9 +21,11 @@ assert.equal(mailConfig({}), null)
 assert.equal(mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com' }), null)
 assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com,other@gmail.com', GMAIL_APP_PASSWORD: 'abcdefghijklmnop' }), /one personal Gmail address/)
 assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@example.com', GMAIL_APP_PASSWORD: 'abcdefghijklmnop' }), /one personal Gmail address/)
-assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com', GMAIL_APP_PASSWORD: 'short' }), /16-character/)
+assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com', GMAIL_APP_PASSWORD: 'short' }), /has 5 characters after removing spaces; expected 16/)
+assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com', GMAIL_APP_PASSWORD: 'abcd efgh ijkl mno!' }), /16 characters but includes symbols/)
 const config = mailConfig({ GMAIL_ADDRESS: ' owner@gmail.com ', GMAIL_APP_PASSWORD: 'abcd efgh ijkl mnop' })
 assert.deepEqual(config, { address: 'owner@gmail.com', password: 'abcdefghijklmnop' })
+assert.equal(mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com', GMAIL_APP_PASSWORD: 'abcd\u200befgh\u200cijkl\u200dmnop' }).password, 'abcdefghijklmnop')
 assert.deepEqual(await sendDigest({ config: null, transporterFactory: () => { throw Error('Must not connect') } }), { status: 'not_configured' })
 
 const messages = []
