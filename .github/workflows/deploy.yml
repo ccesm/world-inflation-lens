@@ -93,11 +93,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+      - run: npm ci
       - name: Send result after update and deployment
         env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          NOTIFY_FROM: ${{ secrets.NOTIFY_FROM }}
-          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           BUILD_RESULT: ${{ needs.build.result }}
           DEPLOY_RESULT: ${{ needs.deploy.result }}
         run: node scripts/notify.mjs

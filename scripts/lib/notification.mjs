@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto'
+import nodemailer from 'nodemailer'
 
 const site = 'https://ccesm.github.io/world-inflation-lens/'
 export const runUrl = id => /^\d+$/.test(id || '') ? `https://github.com/ccesm/world-inflation-lens/actions/runs/${id}` : null
@@ -38,36 +39,28 @@ export function createDigest({ ledger, build, deploy, runId, observations = [] }
 }
 
 export function mailConfig(env) {
-  const names = ['RESEND_API_KEY', 'NOTIFY_FROM', 'NOTIFY_TO']
+  const names = ['GMAIL_ADDRESS', 'GMAIL_APP_PASSWORD']
   if (names.some(k => !env[k]?.trim())) return null
-  // Single mailbox only: no implicit mailing lists or recipient expansion.
-  if (![env.NOTIFY_FROM, env.NOTIFY_TO].every(s => /^[^\s<>@,;]+@[^\s<>@,;]+\.[^\s<>@,;]+$/.test(s))) throw new Error('Notification addresses must be single plain email addresses')
-  return { key: env.RESEND_API_KEY, from: env.NOTIFY_FROM, to: env.NOTIFY_TO }
+  const address = env.GMAIL_ADDRESS.trim()
+  const password = env.GMAIL_APP_PASSWORD.replace(/\s/g, '')
+  if (!/^[^\s<>@,;]+@(gmail\.com|googlemail\.com)$/i.test(address)) throw new Error('GMAIL_ADDRESS must be one personal Gmail address')
+  if (!/^[a-z0-9]{16}$/i.test(password)) throw new Error('GMAIL_APP_PASSWORD must be a 16-character Google app password')
+  return { address, password }
 }
 
-export async function sendDigest({ config, digest, runId, attempt = '1', fetchFn = fetch, pause = ms => new Promise(r => setTimeout(r, ms)) }) {
+export async function sendDigest({ config, digest, runId, attempt = '1', transporterFactory = options => nodemailer.createTransport(options) }) {
   if (!config) return { status: 'not_configured' }
   if (!runUrl(runId) || !/^\d+$/.test(attempt)) throw new Error('Invalid workflow identity')
-  const payload = JSON.stringify({ from: config.from, to: [config.to], subject: digest.subject, text: digest.text })
-  const hash = createHash('sha256').update(payload).digest('hex')
-  const idempotency = `wil-${runId}-${attempt}-${hash}`
-  for (let i = 0; i < 3; i++) {
-    let response
-    try {
-      response = await fetchFn('https://api.resend.com/emails', {
-        method: 'POST', signal: AbortSignal.timeout(15000),
-        headers: { Authorization: `Bearer ${config.key}`, 'Content-Type': 'application/json', 'Idempotency-Key': idempotency }, body: payload,
-      })
-    } catch {
-      if (i === 2) throw new Error('Email service unavailable; acceptance could not be confirmed')
-      await pause(1000 * (i + 1)); continue
-    }
-    if (response.ok) {
-      const body = await response.json().catch(() => null)
-      if (!body?.id) throw new Error('Email service response missing acceptance ID')
-      return { status: 'accepted' } // Provider acceptance does not establish inbox delivery.
-    }
-    if (!(response.status === 429 || response.status >= 500) || i === 2) throw new Error(`Email service rejected the request (HTTP ${response.status})`)
-    await pause(1000 * (i + 1))
+  const hash = createHash('sha256').update(digest.subject + digest.text).digest('hex').slice(0, 24)
+  const transporter = transporterFactory({ service: 'gmail', auth: { user: config.address, pass: config.password }, connectionTimeout: 15000, greetingTimeout: 15000, socketTimeout: 15000 })
+  try {
+    // SMTP cannot prove whether an uncertain send reached Gmail. Do not retry automatically.
+    const result = await transporter.sendMail({ from: config.address, to: config.address, subject: digest.subject, text: digest.text, messageId: `<wil-${runId}-${attempt}-${hash}@world-inflation-lens.github.io>` })
+    if (result?.rejected?.length || !result?.accepted?.some(address => address.toLowerCase() === config.address.toLowerCase())) throw new Error('Gmail did not confirm recipient acceptance')
+    return { status: 'accepted' } // SMTP acceptance is not confirmed inbox delivery.
+  } catch {
+    throw new Error('Gmail sending failed or acceptance is uncertain; check the workflow and Gmail account')
+  } finally {
+    transporter.close?.()
   }
 }

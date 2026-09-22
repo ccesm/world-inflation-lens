@@ -20,7 +20,7 @@ npm run verify
 - Fixed the seven-force homepage grid: the old six-card desktop template squeezed the seventh card into a narrow separator column. Cards now wrap at readable widths across desktop, tablet and phone.
 - Daily official/public-data checks at **08:00 America/Los_Angeles** replace the weekly schedule. The final September 22 refresh passed with 9 new observations and 24 source revisions relative to the preserved remote automated snapshot. Source frequency, reviewed forecast vintages, validation and rollback stay intact. Data Health flags checks older than 48 hours.
 - A separate server-side email job reports successful updates, unchanged observations or failed updates/deployment. It never treats a previous run's ledger as today's result. Ordinary code pushes do not send mail.
-- **Email setup is still required:** repository secrets `RESEND_API_KEY`, `NOTIFY_FROM` and `NOTIFY_TO`. No recipient is assumed; absent settings produce an explicit “not sent” warning. No frontend keys or browser email requests. `npm run notify:preview` is safe and sends nothing.
+- **Gmail setup is still required:** repository Actions secrets `GMAIL_ADDRESS` and `GMAIL_APP_PASSWORD`. The Gmail address is both sender and recipient. Missing settings produce an explicit “not sent” warning. Credentials stay in GitHub Actions, never in the frontend. `npm run notify:preview` is safe and sends nothing.
 
 See [V0.11 fixes, setup and verification](docs/v0.11-daily-updates.md). Email delivery is not verified until the user's sending configuration is available.
 

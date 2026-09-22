@@ -17,7 +17,7 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 
 ## V0.11 — Homepage repair and daily operations
 
-Fixed the seven-card desktop grid overflow/misalignment, retaining the research framework and all source data. Daily official-source checks replace weekly scheduling; data-health check freshness uses 48 hours and rejects invalid timestamps. The server-side bilingual email digest distinguishes current-run success, unchanged data and failed updates/deployment. Sender/recipient secrets and a verified sender are required before actual email delivery; these are not yet configured or delivery-tested. See [setup and verification](v0.11-daily-updates.md).
+Fixed the seven-card desktop grid overflow/misalignment, retaining the research framework and all source data. Daily official-source checks replace weekly scheduling; data-health check freshness uses 48 hours and rejects invalid timestamps. The server-side bilingual email digest distinguishes current-run success, unchanged data and failed updates/deployment. Gmail sends from and to the same address once the address and app password are configured as GitHub Actions secrets; delivery is not yet verified. See [setup and verification](v0.11-daily-updates.md).
 
 ## Delivered V0.10 — Digital Money & Dollar System
 

@@ -21,7 +21,7 @@ try {
   } else {
     const config = mailConfig(env)
     const result = await sendDigest({ config, digest, runId, attempt: env.GITHUB_RUN_ATTEMPT || '1' })
-    const message = result.status === 'accepted' ? 'Email accepted by provider; inbox delivery is not verified.' : 'Email NOT SENT: configure RESEND_API_KEY, NOTIFY_FROM and NOTIFY_TO in repository secrets.'
+    const message = result.status === 'accepted' ? 'Gmail accepted the message; inbox delivery is not verified.' : 'Email NOT SENT: configure GMAIL_ADDRESS and GMAIL_APP_PASSWORD in repository secrets.'
     console.log(message)
     if (env.GITHUB_STEP_SUMMARY) await appendFile(env.GITHUB_STEP_SUMMARY, `\n${message}\n`)
     if (result.status === 'not_configured') console.log('::warning::Email reminders are not configured; no email was sent.')
