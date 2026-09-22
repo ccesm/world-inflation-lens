@@ -18,7 +18,7 @@ npm run verify
 ## V0.11 — Homepage repair and daily email reminders
 
 - Fixed the seven-force homepage grid: the old six-card desktop template squeezed the seventh card into a narrow separator column. Cards now wrap at readable widths across desktop, tablet and phone.
-- Daily official/public-data checks at **08:00 America/Los_Angeles** replace the weekly schedule. A real September 22 refresh passed with 24 new observations and 31 source revisions. Source frequency, reviewed forecast vintages, validation and rollback stay intact. Data Health flags checks older than 48 hours.
+- Daily official/public-data checks at **08:00 America/Los_Angeles** replace the weekly schedule. The final September 22 refresh passed with 9 new observations and 24 source revisions relative to the preserved remote automated snapshot. Source frequency, reviewed forecast vintages, validation and rollback stay intact. Data Health flags checks older than 48 hours.
 - A separate server-side email job reports successful updates, unchanged observations or failed updates/deployment. It never treats a previous run's ledger as today's result. Ordinary code pushes do not send mail.
 - **Email setup is still required:** repository secrets `RESEND_API_KEY`, `NOTIFY_FROM` and `NOTIFY_TO`. No recipient is assumed; absent settings produce an explicit “not sent” warning. No frontend keys or browser email requests. `npm run notify:preview` is safe and sends nothing.
 
