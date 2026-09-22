@@ -1,9 +1,9 @@
 export const updatesCopy = {
   en: {
     title: 'Data health & update history', bridge: 'V0.5 · Follow data updates and revisions', open: 'View data status',
-    intro: 'Weekly public-data checks. Validated snapshots are published together; a failed update leaves the previous website in place.',
+    intro: 'Daily public-data checks. Validated snapshots are published together; a failed update leaves the previous website in place.',
     last: 'Last successful data check (UTC)', never: 'Not run yet', overdue: 'Check overdue or not run', checked: 'Checked recently',
-    schedule: 'Scheduled for Mondays at 14:23 UTC. Scheduling may be delayed. This panel describes the deployed snapshot; open Actions for the latest attempt, including failures.',
+    schedule: 'Scheduled daily at 08:00 America/Los_Angeles. Checks over 48 hours old are marked overdue. Scheduling may be delayed. This panel describes the deployed snapshot; open Actions for the latest attempt, including failures.',
     policy: '“Older observations” is a site heuristic: over 14 days for daily/weekly series, 3 months for monthly series or 3 years for annual data. It is not an official release deadline. A recent check does not guarantee a new observation.',
     actions: 'View update runs', latest: 'Latest non-missing observation', updated: 'Source updated', retrieved: 'Snapshot retrieved', missing: 'Missing / total slots',
     monthly: 'Monthly', annual: 'Annual · country-year slots', old: 'Older observations', available: 'Within age threshold',
@@ -16,9 +16,9 @@ export const updatesCopy = {
   zh: {
     sourceTitles: { CPIAUCNS: '美国总体消费者价格指数', CPIUFDNS: '美国食品消费者价格指数', CPIENGNS: '美国能源消费者价格指数', MCOILWTICO: 'WTI 原油现货价格', FEDFUNDS: '有效联邦基金利率', CUUR0000SAH1: '美国居住消费者价格指数', CEU0500000003: '美国私营部门雇员平均时薪', M2SL: '美国 M2 广义货币', 'FP.CPI.TOTL.ZG': '世界银行 · 各国消费者价格通胀' },
     title: '数据状态与更新记录', bridge: 'V0.5 · 查看数据更新与历史修订', open: '查看数据状态',
-    intro: '每周检查公开数据。整批快照通过校验后一起发布；更新失败时继续保留上一版网站。',
+    intro: '每日检查公开数据。整批快照通过校验后一起发布；更新失败时继续保留上一版网站。',
     last: '最近成功检查数据（UTC）', never: '尚未运行', overdue: '检查已超过预期间隔或尚未运行', checked: '近期已检查',
-    schedule: '计划每周一 14:23 UTC 检查，调度可能延迟。本面板反映已部署快照；最近一次尝试及失败情况请查看 Actions。',
+    schedule: '计划每天洛杉矶时间上午 8 点检查，超过 48 小时未成功检查会提示逾期；调度可能延迟。本面板反映已部署快照；最近一次尝试及失败情况请查看 Actions。',
     policy: '“观测较旧”是本站的提示规则：日度/周度数据超过 14 天、月度超过 3 个月、年度超过 3 年。它不是官方发布日期承诺。刚完成检查，也不代表来源已有新观测。',
     actions: '查看更新运行记录', latest: '最新非缺失观测', updated: '来源更新日期', retrieved: '快照获取日期', missing: '缺失 / 总记录数',
     monthly: '月度', annual: '年度 · 国家年份记录', old: '观测较旧', available: '未超过提示阈值',

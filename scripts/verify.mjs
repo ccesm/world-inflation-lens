@@ -175,6 +175,9 @@ try {
         assert.ok(html.indexOf('class="research-framework"') < html.indexOf('class="ia-summary"'))
         assert.ok(html.indexOf('class="framework-scenarios"') < html.indexOf('class="dollar-power-result"'))
         assert.equal((html.match(/class="framework-force"/g) || []).length, 7)
+        const forces = html.split('<div class="framework-forces">')[1].split('<div class="framework-result">')[0]
+        assert.doesNotMatch(forces, /<\/article><span/, 'Separators must not occupy grid cells between cards')
+        assert.equal((forces.match(/class="framework-card-heading"/g) || []).length, 7)
         assert.equal((html.match(/class="framework-planned"/g) || []).length, 0)
         const shocksAt = html.indexOf('class="ia-section shocks-preview"')
         assert.ok(shocksAt > html.indexOf('class="research-framework"'))

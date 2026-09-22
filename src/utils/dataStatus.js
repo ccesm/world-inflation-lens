@@ -9,5 +9,6 @@ export function observationStatus(points, frequency, now = new Date()) {
 }
 
 export function checkOverdue(checkedAt, now = new Date()) {
-  return !checkedAt || now.getTime() - Date.parse(checkedAt) > 10 * 86400000
+  const time = Date.parse(checkedAt)
+  return !Number.isFinite(time) || time > now.getTime() || now.getTime() - time > 2 * 86400000
 }

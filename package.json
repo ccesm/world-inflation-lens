@@ -1,14 +1,15 @@
 {
   "name": "world-inflation-lens",
   "private": true,
-  "version": "0.10.0",
+  "version": "0.11.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "verify": "node scripts/verify-digital-money.mjs && node scripts/verify-productivity.mjs && node scripts/verify-external.mjs && node scripts/verify-cbo.mjs && node scripts/verify-dollar.mjs && node scripts/verify-refresh.mjs && node scripts/verify.mjs",
-    "data:refresh": "node scripts/refresh-data.mjs"
+    "verify": "node scripts/verify-notification.mjs && node scripts/verify-digital-money.mjs && node scripts/verify-productivity.mjs && node scripts/verify-external.mjs && node scripts/verify-cbo.mjs && node scripts/verify-dollar.mjs && node scripts/verify-refresh.mjs && node scripts/verify.mjs",
+    "data:refresh": "node scripts/refresh-data.mjs",
+    "notify:preview": "node scripts/notify.mjs --dry-run"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

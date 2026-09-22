@@ -8,12 +8,9 @@ export function ResearchFramework({ language }) {
     <h2 id="framework-title">{t.title}</h2>
     <p className="framework-question">{t.question}</p><p>{t.intro}</p>
     <figure className="framework-diagram" aria-labelledby="framework-outcome" aria-describedby="framework-diagram-note">
-      <div className="framework-forces">{t.forces.map((force, index) => <React.Fragment key={force.name}>
-        {index > 0 && <span className="framework-plus" aria-hidden="true">+</span>}
-        <article className="framework-force"><span className="eyebrow">0{index + 1}</span><h3>{force.name}</h3><p>{force.description}</p>
+      <div className="framework-forces">{t.forces.map((force, index) => <article key={force.name} className="framework-force"><div className="framework-card-heading"><span className="eyebrow">0{index + 1}</span>{index > 0 && <span className="framework-plus" aria-hidden="true">+</span>}</div><h3>{force.name}</h3><p>{force.description}</p>
           <ul>{force.indicators.map(([label, href]) => <li key={label}>{href ? <a href={href}>{label} →</a> : <span>{label}<small className="framework-planned">{t.planned}</small></span>}</li>)}</ul>
-        </article>
-      </React.Fragment>)}</div>
+        </article>)}</div>
       <div className="framework-result"><span aria-hidden="true">↓</span><h3 id="framework-outcome">{t.outcome}</h3></div>
       <figcaption id="framework-diagram-note">{t.diagramNote}</figcaption>
     </figure>

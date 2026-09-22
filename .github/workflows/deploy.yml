@@ -9,7 +9,8 @@ on:
         type: boolean
         default: true
   schedule:
-    - cron: '23 14 * * 1'
+    - cron: '0 8 * * *'
+      timezone: America/Los_Angeles
 permissions:
   contents: read
   pages: write
@@ -21,7 +22,9 @@ jobs:
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
+    outputs:
+      snapshot_commit: ${{ steps.snapshot.outputs.commit }}
     permissions:
       contents: write
       pages: read
@@ -55,6 +58,9 @@ jobs:
             git commit -m 'Refresh validated inflation snapshots'
             git push origin HEAD:main
           fi
+      - name: Record exact snapshot commit
+        id: snapshot
+        run: echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       # GITHUB_TOKEN pushes do not trigger another push workflow. Deploy this build here.
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -69,3 +75,29 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  notify:
+    name: Daily email summary
+    if: >-
+      always() && github.ref == 'refs/heads/main' &&
+      (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh))
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.build.outputs.snapshot_commit || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Send result after update and deployment
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NOTIFY_FROM: ${{ secrets.NOTIFY_FROM }}
+          NOTIFY_TO: ${{ secrets.NOTIFY_TO }}
+          BUILD_RESULT: ${{ needs.build.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+        run: node scripts/notify.mjs

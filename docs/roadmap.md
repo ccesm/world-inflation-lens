@@ -15,6 +15,10 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 - V1.0: consolidate the research workspace before adding more datasets: route-level loading, shared/persistent comparison windows, and explicit source-vintage comparisons. Then review official firm-level AI adoption, sector productivity, electricity-grid investment, transformer/equipment constraints, AI capital intensity and TFP decomposition individually.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
 
+## V0.11 — Homepage repair and daily operations
+
+Fixed the seven-card desktop grid overflow/misalignment, retaining the research framework and all source data. Daily official-source checks replace weekly scheduling; data-health check freshness uses 48 hours and rejects invalid timestamps. The server-side bilingual email digest distinguishes current-run success, unchanged data and failed updates/deployment. Sender/recipient secrets and a verified sender are required before actual email delivery; these are not yet configured or delivery-tested. See [setup and verification](v0.11-daily-updates.md).
+
 ## Delivered V0.10 — Digital Money & Dollar System
 
 Phase 2 follows the separately verified V0.9 AI milestone. A dedicated Research page explains stablecoin demand, Treasury financing, bank-deposit redistribution, digital dollarization, alternative stores of value and financial-stability mechanisms. Four reviewed Fed/IMF publication estimates and one observed monthly Federal Reserve H.8 deposit series have independent provenance, explicit date/denominator limitations, tables/CSV and Data Health coverage. Publication estimates remain manually reviewed; bank data joins weekly validation and rollback without changing its monthly frequency. Neither AI nor digital money is assumed to improve or impair dollar purchasing power automatically.

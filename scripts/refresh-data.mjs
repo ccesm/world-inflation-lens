@@ -28,7 +28,7 @@ async function download(url, filename, json = false) {
   let failure
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const response = await fetch(url, { signal: AbortSignal.timeout(30000), headers: { 'User-Agent': 'WorldInflationLens/0.5 public-data-refresh' } })
+      const response = await fetch(url, { signal: AbortSignal.timeout(30000), headers: { 'User-Agent': 'WorldInflationLens/0.11 public-data-refresh' } })
       assert.ok(response.ok, `HTTP ${response.status}: ${url}`)
       return json ? await response.json() : await response.text()
     } catch (error) { failure = error }

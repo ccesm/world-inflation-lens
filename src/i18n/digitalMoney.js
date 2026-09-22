@@ -26,9 +26,9 @@ export const digitalCopy = {
  risks:['Redemption pressure → asset sales → possible Treasury / repo market stress','Bank or custodian stress → reserve-access problems → possible depegging','Operational or bridge failure → settlement interruption → confidence pressure'],
  why:'Why this matters for dollar purchasing power',conclusion:'Digital money may change dollar usage, funding channels and policy transmission. Those changes interact with inflation, fiscal choices and real rates; greater dollar usage alone does not prove stronger consumer purchasing power.',
  gaps:'Data boundaries and next research steps',gapsNote:'Integrated: four attributed publication estimates and one official bank-deposit time series. Not integrated: a licensed continuous stablecoin market series, reconciled issuer-by-issuer Treasury holdings, measured deposit migration, holder geography, or Bitcoin/gold price histories. No empty market chart or invented observation is shown.',
- method:'Publication estimates are manually checked and pinned to source versions. A missing observation date remains missing, not replaced with the publication date. Monthly bank data join the existing weekly validation/revision/rollback workflow. Weekly checks do not update publication dates or invent observations. Changes to reviewed publications require a new source review and an explicit Git revision. No browser API calls.',
+ method:'Publication estimates are manually checked and pinned to source versions. A missing observation date remains missing, not replaced with the publication date. Monthly bank data join the existing daily validation/revision/rollback workflow. Daily checks do not update publication dates or invent observations. Changes to reviewed publications require a new source review and an explicit Git revision. No browser API calls.',
  health:'Data Sources & Health',fiscal:'Fiscal Outlook',dollar:'Dollar Purchasing Power',ai:'AI & Productivity: can the economy produce more with less inflation?',
- healthNote:'Publication estimates are fixed vintages, manually reviewed; they are not refreshed by weekly checks. Source dates and retrieval dates differ. Publication revisions are preserved in Git; bank-data revisions use the retained 30-run ledger.',
+ healthNote:'Publication estimates are fixed vintages, manually reviewed; they are not refreshed by daily checks. Source dates and retrieval dates differ. Publication revisions are preserved in Git; bank-data revisions use the retained 30-run ledger.',
  },
  zh: {
  nav:'数字货币',title:'数字货币与美元体系',question:'美元需求和使用方式的结构正在改变吗？',
@@ -56,8 +56,8 @@ export const digitalCopy = {
  risks:['赎回压力 → 出售资产 → 国库券 / 回购市场可能承压','银行或托管机构压力 → 储备动用困难 → 可能脱锚','运营或跨链桥故障 → 结算中断 → 信心承压'],
  why:'这为什么会影响美元购买力',conclusion:'数字货币可能改变美元使用、融资渠道与政策传导。这些变化会与通胀、财政选择和实际利率相互作用；美元使用扩大本身不等于消费购买力更强。',
  gaps:'数据边界与后续研究',gapsNote:'已接入四项注明来源的发布估计，以及一条官方银行存款时间序列。尚未接入：许可明确的连续稳定币市场数据、逐家核对的国债持仓、实际存款迁移、持有人地域分布、比特币与黄金价格历史。页面不显示虚构观测或空行情图。',
- method:'研究估计经过人工核验，并保留来源版本。缺少观测日期时明确保留缺失，不用发布日期代替。月度银行数据加入现有每周校验、修订记录与失败恢复流程；每周检查不会改写研究发布日期或生成虚构观测。研究快照修改需要重新核验来源并明确提交 Git 版本。浏览器不调用外部数据 API。',
+ method:'研究估计经过人工核验，并保留来源版本。缺少观测日期时明确保留缺失，不用发布日期代替。月度银行数据加入现有每日校验、修订记录与失败恢复流程；每日检查不会改写研究发布日期或生成虚构观测。研究快照修改需要重新核验来源并明确提交 Git 版本。浏览器不调用外部数据 API。',
  health:'数据来源与健康',fiscal:'财政长期前景',dollar:'美元购买力',ai:'AI 与生产率：经济能否以更少的通胀生产更多？',
- healthNote:'研究估计固定在已核验的来源版本，需人工复核，不随每周检查刷新。发布日期与获取日期分开记录。发布快照修订保留在 Git；银行数据修订使用最近30次检查记录。',
+ healthNote:'研究估计固定在已核验的来源版本，需人工复核，不随每日检查刷新。发布日期与获取日期分开记录。发布快照修订保留在 Git；银行数据修订使用最近30次检查记录。',
  },
 }

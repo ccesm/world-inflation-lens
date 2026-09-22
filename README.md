@@ -15,6 +15,15 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
+## V0.11 — Homepage repair and daily email reminders
+
+- Fixed the seven-force homepage grid: the old six-card desktop template squeezed the seventh card into a narrow separator column. Cards now wrap at readable widths across desktop, tablet and phone.
+- Daily official/public-data checks at **08:00 America/Los_Angeles** replace the weekly schedule. A real September 22 refresh passed with 24 new observations and 31 source revisions. Source frequency, reviewed forecast vintages, validation and rollback stay intact. Data Health flags checks older than 48 hours.
+- A separate server-side email job reports successful updates, unchanged observations or failed updates/deployment. It never treats a previous run's ledger as today's result. Ordinary code pushes do not send mail.
+- **Email setup is still required:** repository secrets `RESEND_API_KEY`, `NOTIFY_FROM` and `NOTIFY_TO`. No recipient is assumed; absent settings produce an explicit “not sent” warning. No frontend keys or browser email requests. `npm run notify:preview` is safe and sends nothing.
+
+See [V0.11 fixes, setup and verification](docs/v0.11-daily-updates.md). Email delivery is not verified until the user's sending configuration is available.
+
 ## V0.10 — Digital Money & Dollar System
 
 This expansion has **two separate milestones**. Phase 1, V0.9 AI & Productivity, was completed and its build/verification passed again before Phase 2 began. Phase 2 adds **Research → Digital Money** (`#/research/digital-money`). Its question is how the structure of dollar demand and usage is changing; the AI page continues to ask whether productive capacity can grow with less inflation.
@@ -181,7 +190,7 @@ The display negates the fiscal balance so positive values mean deficits, divides
 
 ### Automatic updates
 
-`.github/workflows/deploy.yml` checks data every Monday at **14:23 UTC**. Use **Run workflow → refresh: true** for an immediate check; use false to redeploy the committed snapshot. Ordinary pushes build and deploy without refreshing data.
+`.github/workflows/deploy.yml` checks data daily at **08:00 America/Los_Angeles** (daylight-saving aware). Use **Run workflow → refresh: true** for an immediate check; use false to redeploy the committed snapshot. Ordinary pushes build and deploy without refreshing data.
 
 ```sh
 npm run data:refresh
@@ -195,7 +204,7 @@ All downloads and validations finish in memory before any snapshot is replaced. 
 
 The bot commits the ten routinely refreshed snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 
-GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags checks older than 10 days and links to Actions for diagnosis. Observation-age hints use separate thresholds: over 3 months for monthly data or over 3 years for annual data, or over 14 days for daily/weekly data. These are site heuristics, not promises about provider release dates. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
+GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags checks older than 48 hours and links to Actions for diagnosis. Observation-age hints use separate thresholds: over 3 months for monthly data or over 3 years for annual data, or over 14 days for daily/weekly data. These are site heuristics, not promises about provider release dates. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
 
 `scripts/refresh-data.mjs --input-dir <directory>` runs the same pipeline against downloaded inputs for offline reproduction. Input filenames are `wil-<FRED-ID>.html`, `wil-countries.json`, `wil-inflation.json` and `wil-indicator.json`, plus `gpr.xls`, `gpr.html`, `gscpi.csv`, `fao.csv` and `fao.html`. Test fixtures may provide `gpr-extracted.json`; production always reads the workbook. `npm run verify` exercises the real CLI in a temporary checkout, verifies failed-update preservation and revision accounting, and checks all views and share-link parsing.
 

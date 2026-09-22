@@ -19,6 +19,9 @@ assert.equal(observationStatus([{ date: '2026-03', value: 0 }], 'monthly', new D
 assert.equal(observationStatus([{ date: '2024', value: 1 }], 'annual', new Date('2026-07-01')).old, false)
 assert.equal(checkOverdue('2026-01-01T00:00:00Z', new Date('2026-01-12')), true)
 assert.equal(checkOverdue('2026-01-01T00:00:00Z', new Date('2026-01-02')), false)
+assert.equal(checkOverdue('2026-01-01T00:00:00Z', new Date('2026-01-03T00:00:01Z')), true)
+assert.equal(checkOverdue('bad-date', new Date()), true)
+assert.equal(checkOverdue('2099-01-01', new Date('2026-01-02')), true)
 
 const episode = { id: 'oil', topic: 'energy', from: '1972-01', to: '1976-12' }
 const config = { topics: ['food', 'energy', 'wages'], episodes: [episode], earliest: '1913-01', latest: '2026-08' }
