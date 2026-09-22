@@ -47,7 +47,8 @@ export function mailConfig(env) {
   const password = env.GMAIL_APP_PASSWORD.normalize('NFKC').replace(/[\s\u200B-\u200D\u2060\uFEFF]/g, '')
   if (!/^[^\s<>@,;]+@(gmail\.com|googlemail\.com)$/i.test(address)) throw new Error('GMAIL_ADDRESS must be one personal Gmail address')
   if (password.length !== 16) throw new Error(`GMAIL_APP_PASSWORD has ${password.length} characters after removing spaces; expected 16. Use the generated app password, not the app name or normal Gmail password.`)
-  if (!/^[a-z0-9]{16}$/i.test(password)) throw new Error('GMAIL_APP_PASSWORD has 16 characters but includes symbols; paste only the generated Google app password.')
+  // Google documents the length, not a character-set contract. Gmail validates
+  // credentials; do not reject punctuation locally or silently strip it.
   return { address, password }
 }
 
@@ -61,7 +62,11 @@ export async function sendDigest({ config, digest, runId, attempt = '1', transpo
     const result = await transporter.sendMail({ from: config.address, to: config.address, subject: digest.subject, text: digest.text, messageId: `<wil-${runId}-${attempt}-${hash}@world-inflation-lens.github.io>` })
     if (result?.rejected?.length || !result?.accepted?.some(address => address.toLowerCase() === config.address.toLowerCase())) throw new Error('Gmail did not confirm recipient acceptance')
     return { status: 'accepted' } // SMTP acceptance is not confirmed inbox delivery.
-  } catch {
+  } catch (error) {
+    // Report only known categories. SMTP response/message text may contain secrets.
+    if (error?.code === 'EAUTH') throw new Error('Gmail authentication rejected (EAUTH). Confirm GMAIL_ADDRESS matches the Google account that generated the app password; use an active Google app password, not the account password.')
+    if (['ETIMEDOUT', 'ECONNECTION', 'EDNS', 'ESOCKET'].includes(error?.code)) throw new Error('Gmail connection failed. Check runner connectivity or Gmail availability; delivery has not been confirmed.')
+    if (error?.code === 'EENVELOPE') throw new Error('Gmail rejected the sender or recipient. Check GMAIL_ADDRESS; delivery has not been confirmed.')
     throw new Error('Gmail sending failed or acceptance is uncertain; check the workflow and Gmail account')
   } finally {
     transporter.close?.()

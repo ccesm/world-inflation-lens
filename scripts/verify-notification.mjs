@@ -22,7 +22,7 @@ assert.equal(mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com' }), null)
 assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com,other@gmail.com', GMAIL_APP_PASSWORD: 'abcdefghijklmnop' }), /one personal Gmail address/)
 assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@example.com', GMAIL_APP_PASSWORD: 'abcdefghijklmnop' }), /one personal Gmail address/)
 assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com', GMAIL_APP_PASSWORD: 'short' }), /has 5 characters after removing spaces; expected 16/)
-assert.throws(() => mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com', GMAIL_APP_PASSWORD: 'abcd efgh ijkl mno!' }), /16 characters but includes symbols/)
+assert.equal(mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com', GMAIL_APP_PASSWORD: 'abcd efgh ijkl mno!' }).password, 'abcdefghijklmno!', 'Gmail validates the character set; punctuation must not be stripped')
 const config = mailConfig({ GMAIL_ADDRESS: ' owner@gmail.com ', GMAIL_APP_PASSWORD: 'abcd efgh ijkl mnop' })
 assert.deepEqual(config, { address: 'owner@gmail.com', password: 'abcdefghijklmnop' })
 assert.equal(mailConfig({ GMAIL_ADDRESS: 'owner@gmail.com', GMAIL_APP_PASSWORD: 'abcd\u200befgh\u200cijkl\u200dmnop' }).password, 'abcdefghijklmnop')
@@ -55,6 +55,12 @@ await assert.rejects(sendDigest({ config, digest, runId: '42', transporterFactor
   close: () => {}
 }) }), error => /acceptance is uncertain/.test(error.message) && !error.message.includes('secret'))
 assert.equal(attempts, 1, 'Uncertain SMTP sends must not retry automatically')
+for (const [code, expected] of [['EAUTH', /authentication rejected/], ['ETIMEDOUT', /connection failed/], ['EENVELOPE', /rejected the sender/]]) {
+  await assert.rejects(sendDigest({ config, digest, runId: '42', transporterFactory: () => ({
+    sendMail: async () => { throw Object.assign(new Error('PRIVATE SMTP RESPONSE'), { code, response: 'PRIVATE SMTP RESPONSE' }) },
+    close: () => {}
+  }) }), error => expected.test(error.message) && !error.message.includes('PRIVATE'))
+}
 await assert.rejects(sendDigest({ config, digest, runId: '42', transporterFactory: () => ({
   sendMail: async () => ({ accepted: [], rejected: ['owner@gmail.com'] }),
   close: () => {}
