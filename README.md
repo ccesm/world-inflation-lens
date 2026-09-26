@@ -15,14 +15,25 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
+## V0.12 — Research workspace and data provenance
+
+- **Research → Data Workspace** (`#/research/data`): search 49 existing snapshot series by name, ID, publisher, topic or frequency; save favorites on this device; inspect up to three series with a shared time window. Presets cover consumer prices, productivity/labor costs and Treasury pricing.
+- Each panel provides original levels, exact-calendar YoY for eligible monthly/quarterly series, period inspection, a paginated table, source/download links and attributed CSV. Independent vertical scales are explicit. Missing values remain missing; no resampling or interpolation.
+- Shareable series/range URLs override saved preferences. Language/theme and favorites survive reloads where storage is available; blocked storage still permits use and link sharing.
+- **Research → Updates & Revisions** (`#/research/updates`): filter the retained check ledger by indicator and changes, inspect before/after examples, export summaries and follow workflow/Git history links. A successful data check does not establish email delivery or deployment success.
+- Expanded source links include BLS productivity, BEA GDP, Census construction, Fed H.4.1, plus explicitly unintegrated EIA electricity details and Census business-adoption research. Official CPI/BEA/Fed release calendars are linked without inventing future release dates.
+- All six primary sections, 19 legacy views, fiscal/CBO history and projections, bilingual UI, daily refresh and GitHub Pages paths remain. No new economic observations or forecasts are fabricated; the release makes existing data easier to use and trace.
+
+See [V0.12 scope and verification](docs/v0.12-research-workspace.md). Gmail authentication was restored and the complete manual refresh run [#31](https://github.com/ccesm/world-inflation-lens/actions/runs/36217076753) passed its build, deployment and daily-email jobs. SMTP acceptance does not independently prove inbox placement.
+
 ## V0.11 — Homepage repair and daily email reminders
 
 - Fixed the seven-force homepage grid: the old six-card desktop template squeezed the seventh card into a narrow separator column. Cards now wrap at readable widths across desktop, tablet and phone.
 - Daily official/public-data checks at **08:00 America/Los_Angeles** replace the weekly schedule. The final September 22 refresh passed with 9 new observations and 24 source revisions relative to the preserved remote automated snapshot. Source frequency, reviewed forecast vintages, validation and rollback stay intact. Data Health flags checks older than 48 hours.
 - A separate server-side email job reports successful updates, unchanged observations or failed updates/deployment. It never treats a previous run's ledger as today's result. Ordinary code pushes do not send mail.
-- **Gmail setup is still required:** repository Actions secrets `GMAIL_ADDRESS` and `GMAIL_APP_PASSWORD`. The Gmail address is both sender and recipient. Missing settings produce an explicit “not sent” warning. Credentials stay in GitHub Actions, never in the frontend. `npm run notify:preview` is safe and sends nothing.
+- Gmail uses repository Actions secrets `GMAIL_ADDRESS` and `GMAIL_APP_PASSWORD`; the same address sends and receives. Missing settings produce an explicit “not sent” warning. Credentials stay in GitHub Actions, never in the frontend. `npm run notify:preview` is safe and sends nothing.
 
-See [V0.11 fixes, setup and verification](docs/v0.11-daily-updates.md). Email delivery is not verified until the user's sending configuration is available.
+See [V0.11 fixes, setup and verification](docs/v0.11-daily-updates.md). A real configured send completed successfully in workflow run #31; inbox placement remains subject to Gmail filtering.
 
 ## V0.10 — Digital Money & Dollar System
 

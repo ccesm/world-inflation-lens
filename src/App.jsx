@@ -20,6 +20,9 @@ import { DigitalMoney } from './pages/DigitalMoney.jsx'
 import { AiProductivity } from './pages/AiProductivity.jsx'
 import { ExternalShocks } from './pages/ExternalShocks.jsx'
 import { Drivers } from './pages/Drivers.jsx'
+import { DataWorkspace } from './pages/DataWorkspace.jsx'
+import { UpdateJournal } from './pages/UpdateJournal.jsx'
+import { workspaceCopy } from './i18n/workspace.js'
 
 function initialLanguage() {
   try {
@@ -42,7 +45,7 @@ export default function App() {
   const [navigationKey, setNavigationKey] = useState(() => window.location.hash)
   const [language, setLanguage] = useState(initialLanguage)
   const [theme, setTheme] = useState(initialTheme)
-  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav } }
+  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav, 'research/data': workspaceCopy[language].title, 'research/updates': workspaceCopy[language].journal } }
   const section = routeSection(route), links = sectionLinks[section] || []
   const selectedSectionLink = links.find(([href]) => href === navigationKey)?.[0] || links.find(([href]) => href === navigationKey.split('?')[0])?.[0] || ''
 
@@ -107,6 +110,8 @@ export default function App() {
       {route === 'research/ai-productivity' && <AiProductivity language={language} />}
       {route === 'external-shocks' && <ExternalShocks language={language} />}
       {route === 'sources' && <Sources t={t} language={language} />}
+      {route === 'research/data' && <DataWorkspace language={language} />}
+      {route === 'research/updates' && <UpdateJournal language={language} />}
     </main>
     <footer><span>© {new Date().getFullYear()} World Inflation Lens</span><span>{t.footer}</span></footer>
   </div>

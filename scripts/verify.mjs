@@ -139,6 +139,18 @@ try {
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
       if (route === 'overview') { assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
       if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 44) }
+      if (route === 'research/data') {
+        assert.match(html, /data-workspace-series="CPIAUCNS"/)
+        assert.match(html, /1913-01/)
+        assert.match(html, /workspace-chart/)
+        assert.match(html, /CPIAUCNS&amp;range=10/)
+        assert.match(html, language === 'zh' ? /个匹配指标/ : /matching series/)
+      }
+      if (route === 'research/updates') {
+        assert.match(html, /workspace-totals/)
+        assert.match(html, /bls.gov\/schedule\/news_release\/cpi.htm/)
+        assert.match(html, language === 'zh' ? /不代表邮件已送达/ : /not successful email delivery/)
+      }
       if (route === 'map') { assert.match(html, /comparison-panel/); assert.match(html, /annual-line/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.match(html, /chart-share/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (['home', 'monitor', 'scenarios', 'fiscal', 'regimes', 'since-1971'].includes(route)) assert.doesNotMatch(html, /NaN|Infinity|undefined/)
@@ -205,7 +217,7 @@ try {
         assert.doesNotMatch(html, /not yet been imported|尚未完成导入/)
       }
     }
-    for (const hash of ['#/research/digital-money?focus=deposits', '#/research/digital-money?focus=dollarization', '#/research/ai-productivity?focus=labor', '#/research/ai-productivity?focus=growth', '#/fiscal?metric=interest&focus=outlook', '#/fiscal?metric=deficit', '#/monitor?group=inflation', '#/monitor?group=monetary', '#/monitor?group=market', '#/map?country=USA&year=2024&focus=compare', '#/sources?focus=health']) {
+    for (const hash of ['#/research/data?series=OPHNFB,ULCNFB,COMPNFB&range=5', '#/research/data?series=GSCPI,SIPRI_US_GDP,DFII10&range=all', '#/research/digital-money?focus=deposits', '#/research/digital-money?focus=dollarization', '#/research/ai-productivity?focus=labor', '#/research/ai-productivity?focus=growth', '#/fiscal?metric=interest&focus=outlook', '#/fiscal?metric=deficit', '#/monitor?group=inflation', '#/monitor?group=monetary', '#/monitor?group=market', '#/map?country=USA&year=2024&focus=compare', '#/sources?focus=health']) {
       globalThis.window = { location: { hash } }
       const html = renderToString(React.createElement(App))
       assert.doesNotMatch(html, /NaN|undefined|Infinity/)

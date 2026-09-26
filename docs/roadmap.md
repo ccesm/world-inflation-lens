@@ -15,9 +15,15 @@ Annual World Bank country/economy data for 1960–2025; a Natural Earth map; cou
 - V1.0: consolidate the research workspace before adding more datasets: route-level loading, shared/persistent comparison windows, and explicit source-vintage comparisons. Then review official firm-level AI adoption, sector productivity, electricity-grid investment, transformer/equipment constraints, AI capital intensity and TFP decomposition individually.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
 
+## V0.12 — Research workspace and provenance
+
+A unified searchable library exposes 49 existing published series, with local favorites, three research presets, independent-scale panels sharing a date window, exact-calendar YoY, tables, CSV and shareable selections. The new revision journal filters recorded checks and before/after examples without implying complete vintage reconstruction or email success. Official research and release-calendar links clarify integrated versus candidate datasets. Both new tools remain secondary Research pages; the homepage adds only compact shortcuts.
+
+Next: route-level loading, review a single firm-level AI adoption source (Census BTOS) with survey definitions and revision policy, then evaluate a real vintage comparison from retained snapshots. EIA electricity detail, TFP and IMF/BIS integrations remain unintegrated. Gmail authentication is operational as of workflow run #31; SMTP success does not guarantee inbox placement.
+
 ## V0.11 — Homepage repair and daily operations
 
-Fixed the seven-card desktop grid overflow/misalignment, retaining the research framework and all source data. Daily official-source checks replace weekly scheduling; data-health check freshness uses 48 hours and rejects invalid timestamps. The server-side bilingual email digest distinguishes current-run success, unchanged data and failed updates/deployment. Gmail sends from and to the same address once the address and app password are configured as GitHub Actions secrets; delivery is not yet verified. See [setup and verification](v0.11-daily-updates.md).
+Fixed the seven-card desktop grid overflow/misalignment, retaining the research framework and all source data. Daily official-source checks replace weekly scheduling; data-health check freshness uses 48 hours and rejects invalid timestamps. The server-side bilingual email digest distinguishes current-run success, unchanged data and failed updates/deployment. Gmail sends from and to the same address through GitHub Actions secrets; the configured workflow completed successfully in run #31. See [setup and verification](v0.11-daily-updates.md).
 
 ## Delivered V0.10 — Digital Money & Dollar System
 

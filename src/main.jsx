@@ -15,3 +15,4 @@ import './architecture.css'
 import './productivity.css'
 
 import './digital-money.css'
+import './workspace.css'

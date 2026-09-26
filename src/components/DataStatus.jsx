@@ -12,7 +12,7 @@ export function DataStatus({ language }) {
   const t = updatesCopy[language]
   const now = new Date()
   return <section className="global-section data-health" id="data-status" aria-labelledby="data-health-title">
-    <div className="global-heading"><h2 id="data-health-title">{t.title}</h2><span>V0.11</span></div>
+    <div className="global-heading"><h2 id="data-health-title">{t.title}</h2><span>V0.12</span></div>
     <p>{t.intro}</p>
     <div className="health-check"><strong>{t.last}: {history.lastSuccessfulCheck ? checkDate(history.lastSuccessfulCheck) : t.never}</strong><span>{checkOverdue(history.lastSuccessfulCheck, now) ? t.overdue : t.checked}</span></div>
     <p className="global-help">{t.schedule}</p><a href="https://github.com/ccesm/world-inflation-lens/actions/workflows/deploy.yml" target="_blank" rel="noreferrer">{t.actions} ↗</a>

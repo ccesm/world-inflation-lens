@@ -1,4 +1,5 @@
 import React from 'react'
+import { ResearchShortcuts } from '../components/ResearchShortcuts.jsx'
 import { DigitalMoneyPreview } from '../components/DigitalMoneyPreview.jsx'
 import { AiProductivityPreview } from './AiProductivity.jsx'
 import { ExternalShocksPreview } from '../components/ExternalShocksPreview.jsx'
@@ -31,6 +32,7 @@ export function Home({ language }) {
       <section className="ia-section"><h2>{t.regimesTitle}</h2><ol className="ia-regimes">{['1913–1933', '1933–1944', '1944–1971', '1971–1980', '1980–2008', '2008–2020', '2020–'].map((date, i) => <li key={date}><span>{date}</span><a href="#/history">{t.regimeNames[i]} →</a></li>)}</ol><p className="ia-source">{t.regimeNote}</p><a className="ia-more" href="#/history">{t.historyLink} →</a></section>
       <section className="ia-section"><h2>{t.debateTitle}</h2><div className="ia-grid two">{[[t.debateLeft, t.riskEvidence], [t.debateRight, t.restraintEvidence]].map(([title, items]) => <article key={title}><h3>{title}</h3><ul>{items.map(item => <li key={item}>{item}</li>)}</ul></article>)}</div><p>{t.debateNote}</p><div className="dollar-links"><a href="#/fiscal">CBO →</a><a href="#/monitor?group=inflation">5y5y →</a><a href="https://www.federalreserve.gov/aboutthefed/fedexplained/monetary-policy.htm" target="_blank" rel="noreferrer">Federal Reserve · {language === 'zh' ? '使命与政策' : 'Mandate & policy'} ↗</a></div></section>
       <GlobalPreview language={language} />
+      <ResearchShortcuts language={language} />
     </div>
   </div>
 }
