@@ -1,7 +1,1866 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulCheck": "2026-09-29T19:43:10.168Z",
+  "lastSuccessfulCheck": "2026-09-30T19:44:29.602Z",
   "runs": [
+    {
+      "checkedAt": "2026-09-30T19:44:29.602Z",
+      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/36767721667",
+      "changes": [
+        {
+          "id": "CPIAUCNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIUFDNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIENGNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "MCOILWTICO",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FEDFUNDS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CUUR0000SAH1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CEU0500000003",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "M2SL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "PCEPILFE",
+          "added": 1,
+          "filled": 0,
+          "revised": 67,
+          "withdrawn": 0,
+          "total": 68,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 106.281,
+              "after": 106.168
+            },
+            {
+              "date": "2021-02",
+              "kind": "revised",
+              "before": 106.501,
+              "after": 106.435
+            },
+            {
+              "date": "2021-03",
+              "kind": "revised",
+              "before": 106.933,
+              "after": 106.865
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 107.558,
+              "after": 107.493
+            },
+            {
+              "date": "2021-05",
+              "kind": "revised",
+              "before": 108.099,
+              "after": 107.989
+            },
+            {
+              "date": "2021-06",
+              "kind": "revised",
+              "before": 108.603,
+              "after": 108.522
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 109.058,
+              "after": 108.971
+            },
+            {
+              "date": "2021-08",
+              "kind": "revised",
+              "before": 109.409,
+              "after": 109.34
+            },
+            {
+              "date": "2021-09",
+              "kind": "revised",
+              "before": 109.641,
+              "after": 109.548
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 110.188,
+              "after": 110.119
+            },
+            {
+              "date": "2021-11",
+              "kind": "revised",
+              "before": 110.77,
+              "after": 110.671
+            },
+            {
+              "date": "2021-12",
+              "kind": "revised",
+              "before": 111.418,
+              "after": 111.28
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 111.976,
+              "after": 111.822
+            },
+            {
+              "date": "2022-02",
+              "kind": "revised",
+              "before": 112.468,
+              "after": 112.362
+            },
+            {
+              "date": "2022-03",
+              "kind": "revised",
+              "before": 112.914,
+              "after": 112.807
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 113.307,
+              "after": 113.178
+            },
+            {
+              "date": "2022-05",
+              "kind": "revised",
+              "before": 113.703,
+              "after": 113.571
+            },
+            {
+              "date": "2022-06",
+              "kind": "revised",
+              "before": 114.376,
+              "after": 114.273
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 114.628,
+              "after": 114.658
+            },
+            {
+              "date": "2022-08",
+              "kind": "revised",
+              "before": 115.276,
+              "after": 115.248
+            }
+          ]
+        },
+        {
+          "id": "T5YIFR",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-29",
+              "kind": "added",
+              "before": null,
+              "after": 2.36
+            }
+          ]
+        },
+        {
+          "id": "DGS10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-28",
+              "kind": "added",
+              "before": null,
+              "after": 5.24
+            }
+          ]
+        },
+        {
+          "id": "DFII10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-28",
+              "kind": "added",
+              "before": null,
+              "after": 2.9
+            }
+          ]
+        },
+        {
+          "id": "DTWEXBGS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "WALCL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYPUGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFSGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYOINT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FP.CPI.TOTL.ZG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "GPR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GSCPI",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_FOOD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_MEAT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_DAIRY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_CEREALS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_OILS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_SUGAR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "OPHNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "ULCNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COMPNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "PNFIC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 22,
+          "withdrawn": 0,
+          "total": 22,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 2939.916,
+              "after": 2943.184
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 3010.859,
+              "after": 3012.48
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 2999.341,
+              "after": 2999.648
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 3022.081,
+              "after": 3025.423
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 3110.067,
+              "after": 3109.127
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 3163.406,
+              "after": 3159.964
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 3210.162,
+              "after": 3210.761
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 3265.979,
+              "after": 3272.791
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 3333.291,
+              "after": 3346.365
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 3421.757,
+              "after": 3432.347
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 3436.424,
+              "after": 3449.742
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 3482.993,
+              "after": 3500.212
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 3496.025,
+              "after": 3525.231
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 3517.46,
+              "after": 3547.536
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 3547.627,
+              "after": 3599.331
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 3514.424,
+              "after": 3593.431
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 3595.389,
+              "after": 3686.231
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 3659.32,
+              "after": 3754.415
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 3687.843,
+              "after": 3789.751
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 3709.689,
+              "after": 3809.821
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 2939.916,
+              "after": 2943.184
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 3010.859,
+              "after": 3012.48
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 2999.341,
+              "after": 2999.648
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 3022.081,
+              "after": 3025.423
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 3110.067,
+              "after": 3109.127
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 3163.406,
+              "after": 3159.964
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 3210.162,
+              "after": 3210.761
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 3265.979,
+              "after": 3272.791
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 3333.291,
+              "after": 3346.365
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 3421.757,
+              "after": 3432.347
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 3436.424,
+              "after": 3449.742
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 3482.993,
+              "after": 3500.212
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 3496.025,
+              "after": 3525.231
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 3517.46,
+              "after": 3547.536
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 3547.627,
+              "after": 3599.331
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 3514.424,
+              "after": 3593.431
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 3595.389,
+              "after": 3686.231
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 3659.32,
+              "after": 3754.415
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 3687.843,
+              "after": 3789.751
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 3709.689,
+              "after": 3809.821
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 3804.382,
+              "after": 3900.923
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 3882.722,
+              "after": 3985.726
+            }
+          ]
+        },
+        {
+          "id": "A679RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 22,
+          "withdrawn": 0,
+          "total": 22,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 944.128,
+              "after": 945.758
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 966.784,
+              "after": 967.549
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 974.727,
+              "after": 975.278
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 1014.367,
+              "after": 1017.415
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 1057.49,
+              "after": 1057.902
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 1075.331,
+              "after": 1075.297
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 1095.029,
+              "after": 1099.55
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 1089.678,
+              "after": 1094.706
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 1103.962,
+              "after": 1109.7
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 1101.79,
+              "after": 1107.172
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 1106.745,
+              "after": 1114.626
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 1134.704,
+              "after": 1142.85
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 1151.082,
+              "after": 1153.521
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 1181.589,
+              "after": 1183.687
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 1216.85,
+              "after": 1227.161
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 1227.027,
+              "after": 1235.805
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 1311.203,
+              "after": 1320.107
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 1352.452,
+              "after": 1374.816
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 1395.505,
+              "after": 1426.042
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 1466.358,
+              "after": 1494.995
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 944.128,
+              "after": 945.758
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 966.784,
+              "after": 967.549
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 974.727,
+              "after": 975.278
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 1014.367,
+              "after": 1017.415
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 1057.49,
+              "after": 1057.902
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 1075.331,
+              "after": 1075.297
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 1095.029,
+              "after": 1099.55
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 1089.678,
+              "after": 1094.706
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 1103.962,
+              "after": 1109.7
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 1101.79,
+              "after": 1107.172
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 1106.745,
+              "after": 1114.626
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 1134.704,
+              "after": 1142.85
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 1151.082,
+              "after": 1153.521
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 1181.589,
+              "after": 1183.687
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 1216.85,
+              "after": 1227.161
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 1227.027,
+              "after": 1235.805
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 1311.203,
+              "after": 1320.107
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 1352.452,
+              "after": 1374.816
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 1395.505,
+              "after": 1426.042
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 1466.358,
+              "after": 1494.995
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 1556.469,
+              "after": 1586.328
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 1611.52,
+              "after": 1645.684
+            }
+          ]
+        },
+        {
+          "id": "B985RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 22,
+          "withdrawn": 0,
+          "total": 22,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 510.612,
+              "after": 510.307
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 528.315,
+              "after": 528.101
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 539.449,
+              "after": 539.496
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 554.153,
+              "after": 554.624
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 575.858,
+              "after": 576.871
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 595.628,
+              "after": 596.475
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 611.122,
+              "after": 611.06
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 621.515,
+              "after": 619.716
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 636.09,
+              "after": 631.574
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 638.386,
+              "after": 632.026
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 645.436,
+              "after": 637.813
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 658.537,
+              "after": 650.531
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 671.394,
+              "after": 663.871
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 687.423,
+              "after": 680.288
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 702.928,
+              "after": 694.474
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 710.239,
+              "after": 705.314
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 726.021,
+              "after": 722.98
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 745.934,
+              "after": 744.664
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 765.536,
+              "after": 762.757
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 781.603,
+              "after": 774.944
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 510.612,
+              "after": 510.307
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 528.315,
+              "after": 528.101
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 539.449,
+              "after": 539.496
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 554.153,
+              "after": 554.624
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 575.858,
+              "after": 576.871
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 595.628,
+              "after": 596.475
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 611.122,
+              "after": 611.06
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 621.515,
+              "after": 619.716
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 636.09,
+              "after": 631.574
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 638.386,
+              "after": 632.026
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 645.436,
+              "after": 637.813
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 658.537,
+              "after": 650.531
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 671.394,
+              "after": 663.871
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 687.423,
+              "after": 680.288
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 702.928,
+              "after": 694.474
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 710.239,
+              "after": 705.314
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 726.021,
+              "after": 722.98
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 745.934,
+              "after": 744.664
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 765.536,
+              "after": 762.757
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 781.603,
+              "after": 774.944
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 797.647,
+              "after": 790.777
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 816.63,
+              "after": 809.265
+            }
+          ]
+        },
+        {
+          "id": "B935RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 22,
+          "withdrawn": 0,
+          "total": 22,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 143.705,
+              "after": 144.346
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 143.417,
+              "after": 143.196
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 147.152,
+              "after": 146.132
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 154.372,
+              "after": 154.914
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 162.608,
+              "after": 162.235
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 159.521,
+              "after": 158.469
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 163.695,
+              "after": 165.02
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 155.208,
+              "after": 155.868
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 148.085,
+              "after": 147.885
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 147.456,
+              "after": 146.164
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 145.642,
+              "after": 144.708
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 155.071,
+              "after": 155.398
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 165.506,
+              "after": 163.978
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 175.579,
+              "after": 174.657
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 187.72,
+              "after": 193.972
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 186.118,
+              "after": 186.495
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 222.838,
+              "after": 222.076
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 253.788,
+              "after": 263.332
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 280.934,
+              "after": 295.722
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 325.358,
+              "after": 339.515
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 143.705,
+              "after": 144.346
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 143.417,
+              "after": 143.196
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 147.152,
+              "after": 146.132
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 154.372,
+              "after": 154.914
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 162.608,
+              "after": 162.235
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 159.521,
+              "after": 158.469
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 163.695,
+              "after": 165.02
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 155.208,
+              "after": 155.868
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 148.085,
+              "after": 147.885
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 147.456,
+              "after": 146.164
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 145.642,
+              "after": 144.708
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 155.071,
+              "after": 155.398
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 165.506,
+              "after": 163.978
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 175.579,
+              "after": 174.657
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 187.72,
+              "after": 193.972
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 186.118,
+              "after": 186.495
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 222.838,
+              "after": 222.076
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 253.788,
+              "after": 263.332
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 280.934,
+              "after": 295.722
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 325.358,
+              "after": 339.515
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 384.178,
+              "after": 399.615
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 400.629,
+              "after": 420.074
+            }
+          ]
+        },
+        {
+          "id": "IPN22112CS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CUUR0000SEHF01",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GDPC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 22,
+          "withdrawn": 0,
+          "total": 22,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 21082.134,
+              "after": 21106.619
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 21440.929,
+              "after": 21474.077
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 21617.828,
+              "after": 21641.672
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 21988.737,
+              "after": 22001.64
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 21932.71,
+              "after": 21945.682
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 21967.045,
+              "after": 21976.292
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 22125.625,
+              "after": 22124.384
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 22278.345,
+              "after": 22272.546
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 22439.607,
+              "after": 22456.938
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 22580.499,
+              "after": 22577.556
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 22840.989,
+              "after": 22828.796
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 23033.78,
+              "after": 23033.25
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 23082.119,
+              "after": 23115.975
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 23286.508,
+              "after": 23320.074
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 23478.57,
+              "after": 23501.76
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 23586.542,
+              "after": 23641.759
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 23548.21,
+              "after": 23650.213
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 23770.976,
+              "after": 23884.563
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 24026.834,
+              "after": 24112.966
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 24055.749,
+              "after": 24125.479
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 21082.134,
+              "after": 21106.619
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 21440.929,
+              "after": 21474.077
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 21617.828,
+              "after": 21641.672
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 21988.737,
+              "after": 22001.64
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 21932.71,
+              "after": 21945.682
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 21967.045,
+              "after": 21976.292
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 22125.625,
+              "after": 22124.384
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 22278.345,
+              "after": 22272.546
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 22439.607,
+              "after": 22456.938
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 22580.499,
+              "after": 22577.556
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 22840.989,
+              "after": 22828.796
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 23033.78,
+              "after": 23033.25
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 23082.119,
+              "after": 23115.975
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 23286.508,
+              "after": 23320.074
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 23478.57,
+              "after": 23501.76
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 23586.542,
+              "after": 23641.759
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 23548.21,
+              "after": 23650.213
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 23770.976,
+              "after": 23884.563
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 24026.834,
+              "after": 24112.966
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 24055.749,
+              "after": 24125.479
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 24180.419,
+              "after": 24274.383
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 24269.613,
+              "after": 24408.011
+            }
+          ]
+        },
+        {
+          "id": "CE16OV",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPG3344S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "MHHNGSP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_DATACENTER",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_NONRES",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_ELECTRONIC",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "DPSACBM027SBOG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        }
+      ]
+    },
     {
       "checkedAt": "2026-09-29T19:43:10.168Z",
       "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/36621182979",
