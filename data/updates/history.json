@@ -1,7 +1,1087 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulCheck": "2026-09-30T19:44:29.602Z",
+  "lastSuccessfulCheck": "2026-10-01T19:58:58.387Z",
   "runs": [
+    {
+      "checkedAt": "2026-10-01T19:58:58.387Z",
+      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/36918180630",
+      "changes": [
+        {
+          "id": "CPIAUCNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIUFDNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIENGNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "MCOILWTICO",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FEDFUNDS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CUUR0000SAH1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CEU0500000003",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "M2SL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "PCEPILFE",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "T5YIFR",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-30",
+              "kind": "added",
+              "before": null,
+              "after": 2.36
+            }
+          ]
+        },
+        {
+          "id": "DGS10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-29",
+              "kind": "added",
+              "before": null,
+              "after": 5.26
+            }
+          ]
+        },
+        {
+          "id": "DFII10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-29",
+              "kind": "added",
+              "before": null,
+              "after": 2.91
+            }
+          ]
+        },
+        {
+          "id": "DTWEXBGS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "WALCL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYPUGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFSGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYOINT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FP.CPI.TOTL.ZG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "GPR",
+          "added": 1,
+          "filled": 0,
+          "revised": 13,
+          "withdrawn": 0,
+          "total": 14,
+          "examples": [
+            {
+              "date": "2025-05",
+              "kind": "revised",
+              "before": 167.42288208007812,
+              "after": 167.0130615234375
+            },
+            {
+              "date": "2025-06",
+              "kind": "revised",
+              "before": 222.58563232421875,
+              "after": 222.33692932128906
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 134.64071655273438,
+              "after": 134.23008728027344
+            },
+            {
+              "date": "2025-09",
+              "kind": "revised",
+              "before": 125.86952209472656,
+              "after": 124.12738037109375
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 153.4799346923828,
+              "after": 154.31407165527344
+            },
+            {
+              "date": "2025-11",
+              "kind": "revised",
+              "before": 103.939208984375,
+              "after": 104.15531921386719
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 168.62986755371094,
+              "after": 168.0076141357422
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 119.86540985107422,
+              "after": 121.6249008178711
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 250.28366088867188,
+              "after": 248.23397827148438
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 203.5819854736328,
+              "after": 202.11822509765625
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 179.9416961669922,
+              "after": 177.9998321533203
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 167.53224182128906,
+              "after": 167.86692810058594
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 117.9188461303711,
+              "after": 125.62138366699219
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 146.20989990234375
+            }
+          ],
+          "changes": [
+            {
+              "date": "2025-05",
+              "kind": "revised",
+              "before": 167.42288208007812,
+              "after": 167.0130615234375
+            },
+            {
+              "date": "2025-06",
+              "kind": "revised",
+              "before": 222.58563232421875,
+              "after": 222.33692932128906
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 134.64071655273438,
+              "after": 134.23008728027344
+            },
+            {
+              "date": "2025-09",
+              "kind": "revised",
+              "before": 125.86952209472656,
+              "after": 124.12738037109375
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 153.4799346923828,
+              "after": 154.31407165527344
+            },
+            {
+              "date": "2025-11",
+              "kind": "revised",
+              "before": 103.939208984375,
+              "after": 104.15531921386719
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 168.62986755371094,
+              "after": 168.0076141357422
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 119.86540985107422,
+              "after": 121.6249008178711
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 250.28366088867188,
+              "after": 248.23397827148438
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 203.5819854736328,
+              "after": 202.11822509765625
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 179.9416961669922,
+              "after": 177.9998321533203
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 167.53224182128906,
+              "after": 167.86692810058594
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 117.9188461303711,
+              "after": 125.62138366699219
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 146.20989990234375
+            }
+          ]
+        },
+        {
+          "id": "GPRT",
+          "added": 1,
+          "filled": 0,
+          "revised": 13,
+          "withdrawn": 0,
+          "total": 14,
+          "examples": [
+            {
+              "date": "2025-05",
+              "kind": "revised",
+              "before": 206.15826416015625,
+              "after": 205.8100128173828
+            },
+            {
+              "date": "2025-06",
+              "kind": "revised",
+              "before": 288.1604919433594,
+              "after": 288.10675048828125
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 156.7975311279297,
+              "after": 156.1194610595703
+            },
+            {
+              "date": "2025-09",
+              "kind": "revised",
+              "before": 141.8061065673828,
+              "after": 139.63558959960938
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 166.6230010986328,
+              "after": 167.66224670410156
+            },
+            {
+              "date": "2025-11",
+              "kind": "revised",
+              "before": 118.0085678100586,
+              "after": 117.66785430908203
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 220.17141723632812,
+              "after": 219.1377410888672
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 156.00601196289062,
+              "after": 158.19815063476562
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 268.60107421875,
+              "after": 265.87322998046875
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 233.49290466308594,
+              "after": 232.44528198242188
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 214.94244384765625,
+              "after": 212.19248962402344
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 190.89479064941406,
+              "after": 191.2559814453125
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 130.72189331054688,
+              "after": 138.63320922851562
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 173.0873565673828
+            }
+          ],
+          "changes": [
+            {
+              "date": "2025-05",
+              "kind": "revised",
+              "before": 206.15826416015625,
+              "after": 205.8100128173828
+            },
+            {
+              "date": "2025-06",
+              "kind": "revised",
+              "before": 288.1604919433594,
+              "after": 288.10675048828125
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 156.7975311279297,
+              "after": 156.1194610595703
+            },
+            {
+              "date": "2025-09",
+              "kind": "revised",
+              "before": 141.8061065673828,
+              "after": 139.63558959960938
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 166.6230010986328,
+              "after": 167.66224670410156
+            },
+            {
+              "date": "2025-11",
+              "kind": "revised",
+              "before": 118.0085678100586,
+              "after": 117.66785430908203
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 220.17141723632812,
+              "after": 219.1377410888672
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 156.00601196289062,
+              "after": 158.19815063476562
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 268.60107421875,
+              "after": 265.87322998046875
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 233.49290466308594,
+              "after": 232.44528198242188
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 214.94244384765625,
+              "after": 212.19248962402344
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 190.89479064941406,
+              "after": 191.2559814453125
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 130.72189331054688,
+              "after": 138.63320922851562
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 173.0873565673828
+            }
+          ]
+        },
+        {
+          "id": "GPRA",
+          "added": 1,
+          "filled": 0,
+          "revised": 12,
+          "withdrawn": 0,
+          "total": 13,
+          "examples": [
+            {
+              "date": "2025-05",
+              "kind": "revised",
+              "before": 149.22117614746094,
+              "after": 148.81414794921875
+            },
+            {
+              "date": "2025-06",
+              "kind": "revised",
+              "before": 183.72996520996094,
+              "after": 183.281982421875
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 119.74867248535156,
+              "after": 119.3396224975586
+            },
+            {
+              "date": "2025-09",
+              "kind": "revised",
+              "before": 114.78914642333984,
+              "after": 113.48472595214844
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 151.14178466796875,
+              "after": 151.55816650390625
+            },
+            {
+              "date": "2025-11",
+              "kind": "revised",
+              "before": 88.70289611816406,
+              "after": 89.12689971923828
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 81.2406234741211,
+              "after": 82.99718475341797
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 305.9411926269531,
+              "after": 305.1354675292969
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 215.2461395263672,
+              "after": 212.7493133544922
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 184.83316040039062,
+              "after": 184.13058471679688
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 180.69992065429688,
+              "after": 180.8005828857422
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 120.34859466552734,
+              "after": 127.60411834716797
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 144.28797912597656
+            }
+          ],
+          "changes": [
+            {
+              "date": "2025-05",
+              "kind": "revised",
+              "before": 149.22117614746094,
+              "after": 148.81414794921875
+            },
+            {
+              "date": "2025-06",
+              "kind": "revised",
+              "before": 183.72996520996094,
+              "after": 183.281982421875
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 119.74867248535156,
+              "after": 119.3396224975586
+            },
+            {
+              "date": "2025-09",
+              "kind": "revised",
+              "before": 114.78914642333984,
+              "after": 113.48472595214844
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 151.14178466796875,
+              "after": 151.55816650390625
+            },
+            {
+              "date": "2025-11",
+              "kind": "revised",
+              "before": 88.70289611816406,
+              "after": 89.12689971923828
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 81.2406234741211,
+              "after": 82.99718475341797
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 305.9411926269531,
+              "after": 305.1354675292969
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 215.2461395263672,
+              "after": 212.7493133544922
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 184.83316040039062,
+              "after": 184.13058471679688
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 180.69992065429688,
+              "after": 180.8005828857422
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 120.34859466552734,
+              "after": 127.60411834716797
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 144.28797912597656
+            }
+          ]
+        },
+        {
+          "id": "GSCPI",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_FOOD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_MEAT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_DAIRY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_CEREALS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_OILS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_SUGAR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "OPHNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "ULCNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COMPNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "PNFIC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "A679RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "B985RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "B935RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPN22112CS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CUUR0000SEHF01",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GDPC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CE16OV",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPG3344S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "MHHNGSP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_DATACENTER",
+          "added": 1,
+          "filled": 0,
+          "revised": 2,
+          "withdrawn": 0,
+          "total": 3,
+          "examples": [
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 70755,
+              "after": 72695
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 75166,
+              "after": 79007
+            },
+            {
+              "date": "2026-08",
+              "kind": "added",
+              "before": null,
+              "after": 84950
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 70755,
+              "after": 72695
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 75166,
+              "after": 79007
+            },
+            {
+              "date": "2026-08",
+              "kind": "added",
+              "before": null,
+              "after": 84950
+            }
+          ]
+        },
+        {
+          "id": "CENSUS_NONRES",
+          "added": 1,
+          "filled": 0,
+          "revised": 2,
+          "withdrawn": 0,
+          "total": 3,
+          "examples": [
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 752375,
+              "after": 758852
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 755169,
+              "after": 764979
+            },
+            {
+              "date": "2026-08",
+              "kind": "added",
+              "before": null,
+              "after": 773010
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 752375,
+              "after": 758852
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 755169,
+              "after": 764979
+            },
+            {
+              "date": "2026-08",
+              "kind": "added",
+              "before": null,
+              "after": 773010
+            }
+          ]
+        },
+        {
+          "id": "CENSUS_ELECTRONIC",
+          "added": 1,
+          "filled": 0,
+          "revised": 2,
+          "withdrawn": 0,
+          "total": 3,
+          "examples": [
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 52411,
+              "after": 52134
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 51304,
+              "after": 52126
+            },
+            {
+              "date": "2026-08",
+              "kind": "added",
+              "before": null,
+              "after": 52298
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 52411,
+              "after": 52134
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 51304,
+              "after": 52126
+            },
+            {
+              "date": "2026-08",
+              "kind": "added",
+              "before": null,
+              "after": 52298
+            }
+          ]
+        },
+        {
+          "id": "DPSACBM027SBOG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        }
+      ]
+    },
     {
       "checkedAt": "2026-09-30T19:44:29.602Z",
       "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/36767721667",
