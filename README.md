@@ -1,6 +1,6 @@
 # World Inflation Lens · 全球通胀透视
 
-A bilingual Vite + React research site focused on the long-term purchasing power of the U.S. dollar, monetary history and fiscal constraints. Global inflation remains available as supporting context.
+A bilingual Vite + React research site studying two related questions over the next 20–30 years: the U.S. dollar’s domestic purchasing power and its international role in reserves, finance, trade and payments. Observations, official conditional projections and hypothetical scenarios remain distinct. Global inflation provides supporting context.
 
 ## Run locally
 
@@ -14,6 +14,35 @@ npm run verify
 ```
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
+
+## V1.0 — Dual-Dollar research architecture
+
+The homepage now introduces the two dollar questions, a compact explanatory map, four dated observations, four structural themes, research tools and historical purchasing power. Detailed AI/Productivity, Digital Money, External Shocks, CBO, scenarios and global comparisons remain on their existing routes. Research retains the three time horizons and four scenarios without probabilities. The existing per-indicator descriptive bands remain available under Dollar in a collapsed detail view.
+
+- One research configuration (`src/data/researchArchitecture.js`) links stages, themes, canonical/secondary roles, implemented evidence, planned gaps and routes to the protected series registry. It does not duplicate source metadata or observations.
+- The reading order is **Structural Forces → Inflation Transmission → Policy Response → Market Validation → Two Dollar Outcomes**, with explicit feedbacks. Fiscal conditions, productive capacity, external supply shocks and the dollar system organize structural research.
+- Domestic purchasing power has direct CPI/history tools. International evidence remains **partial**; reserve shares, trade invoicing, international lending and other unintegrated categories are visibly planned. FX strength and stablecoin growth do not establish dollar dominance or domestic purchasing-power stability.
+- Monitor adds **DGS10 − DFII10** only on exactly matching daily dates. Missing inputs remain missing, older common dates are disclosed, and the difference includes inflation-risk/liquidity effects. T5YIFR has a different maturity concept. Existing SeriesStatusNote supplies input provenance and freshness.
+- The six primary navigation items and all 21 legal routes remain. Detailed pages have compact research context, a back-to-map link, route-heading/section focus, active navigation semantics and a keyboard skip link.
+- External Shocks and the Dollar/Research landing component load on demand to keep initial assets within the prior budget. Large shared data bundles remain a documented future optimization; no data pipeline was rebuilt.
+- V0.13 data contracts, release calendars, status/notification semantics, snapshots, CBO vintage/history/projections, CSV exports and tested calculations remain protected. No Signal Engine, aggregate score, probability or investment recommendation is added.
+
+See [the V1.0 implementation and acceptance report](docs/v1.0-dual-dollar.md) for measured mobile results, bundle comparisons, preservation checks and release readiness. `package.json` remains the application version source; passing local acceptance does not imply deployment to production.
+
+### Real-browser acceptance
+
+After `npm run build`, serve the build with `npm run preview -- --host 127.0.0.1 --port 4173 --strictPort`, then run:
+
+```sh
+WIL_BROWSER_URL=http://127.0.0.1:4173/world-inflation-lens/ \
+WIL_PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.mjs \
+WIL_CHROME_EXECUTABLE=/absolute/path/to/chrome \
+npm run verify:browser
+```
+
+Playwright is optional tooling, not a production dependency. Results and screenshots are saved under `.refresh/browser-acceptance/` (ignored by Git). The suite checks 320/390/1280 widths, English/Chinese, light/dark, navigation, legacy query behavior, calculators, provenance/freshness, CBO and CSV. Status fixtures are reported separately from live public-status observations and send no email. The `--baseline` option measures a separately served V0.13 homepage without changing its source.
+
+Earlier release sections below describe their historical scope; the V1.0 homepage and research ownership supersede the old seven-force homepage layout.
 
 ## V0.13 — Data contract, freshness and system status
 

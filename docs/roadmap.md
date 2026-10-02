@@ -1,6 +1,6 @@
 # Product direction
 
-World Inflation Lens now centers on **how much purchasing power the dollar can preserve over the next 20–30 years**. Historical observations, official conditional projections and hypothetical scenarios remain visibly distinct. Global inflation provides supporting context. Both Chinese and English are supported.
+World Inflation Lens studies **domestic dollar purchasing power and the international dollar role over the next 20–30 years**. These outcomes interact but are not interchangeable. Historical observations, official conditional projections and hypothetical scenarios remain visibly distinct. Global inflation provides supporting context. Both Chinese and English are supported.
 
 ## Delivered V0.1
 
@@ -16,9 +16,16 @@ A compatibility layer now shares series names, maintenance types, source-specifi
 
 The daily schedule is 17:40 America/Los_Angeles. Safe start/completion reports survive refresh failure without replacing validated economic data. A separate status-only branch records deployment and email outcomes after their jobs finish, while the Sources page reports version/code/snapshot, check/attempt, deployment and notification separately. See [V0.13 design and limits](v0.13-data-status.md).
 
+## V1.0 — Dual-Dollar consolidation
+
+The feature branch introduces a short homepage, central registry-linked research architecture, four structural themes, transparent exact-date Treasury inflation compensation, lightweight page context and accessible navigation. Existing tools remain on their original routes. Research explains feedback loops and explicitly separates existing, partial and planned international-dollar evidence. Detailed acceptance and version readiness are tracked in [the V1.0 report](v1.0-dual-dollar.md); this milestone does not authorize a production deployment.
+
 ## Suggested next releases
 
-- V1.0: consolidate the causal research logic and explicitly distinguish domestic purchasing power from the international dollar role. Shorten the homepage framework, then address route-level loading and shared comparison windows. Evaluate minimal international-dollar evidence before considering a transparent Signal Engine contract. Review additional AI/productivity sources individually after this foundation.
+- Reduce remaining shared observation-bundle loading by route after measuring cold-load and navigation behavior. V1.0 defers only External Shocks and the Dollar/Research landing component; a wider data-loading redesign is out of scope.
+- Review one minimal international-dollar dataset at a time: reserve shares, foreign Treasury holdings, international debt/lending, trade invoicing or actual cross-border payment use. Define coverage, denominators, dates, vintage and update policy before integration.
+- Review additional AI/productivity sources individually. No observed productivity movement should be attributed to AI without supporting identification.
+- Any future Signal Engine requires a separate specification, transparent methodology and independent validation. V1.0 contains no score, probabilities or investment signals.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
 
 ## V0.12 — Research workspace and provenance
@@ -73,7 +80,7 @@ Shelter CPI, average hourly earnings and M2 growth versus headline inflation; si
 
 U.S. food/energy CPI versus headline inflation; WTI monthly oil prices on a separate scale; effective federal funds rates versus inflation. Synchronized month inspection, range controls, missing-data handling, monthly table/CSV, and four historical windows with two-way history links. All seven pages remain bilingual, responsive, and theme-aware. No causal contributions or inflation-regime scores are inferred.
 
-## Future V1.0 scope from the product brief
+## Earlier product-brief research backlog (not V1.0 acceptance)
 
 1. A country inflation map and country comparisons, with visible coverage and missing data.
 2. Long-run international CPI from BIS and World Bank, with explicit aggregate construction and country membership.
@@ -89,13 +96,13 @@ A World Food Lens link can be added once its exact project URL is supplied. Futu
 
 V0.9 integrates unit labor cost, productivity, real GDP and employment; V0.8 integrates GSCPI supply-chain evidence. Labor supply, credit and firm-level adoption remain research priorities. Framework arrows do not imply measured causal effects.
 
-## V0.7/V0.8 — External Shocks framework
+## Historical V0.7/V0.8 — External Shocks framework
 
 Delivered: six-force logic map; a compact homepage preview before evidence; Research → External Shocks with geopolitical, energy, food, supply-chain, shipping and historical subsections. Three conditional paths connect disruptions to supply costs, fiscal choices and market confidence, then to dollar purchasing power. Eight historical cases include all seven requested channels, field-level sources and explicit gaps. The framework is explanatory and descriptive, not predictive. Survey-based perceptions must never become war-event probabilities.
 
 Existing evidence: WTI (EIA/FRED), energy CPI and food CPI (BLS/FRED), with current snapshots, monthly dates and existing charts/tables/CSV. Fiscal history, CBO projections, source/version labels and refresh/deployment workflows are preserved.
 
-Planned datasets (no observations or numeric placeholders added):
+At the original framework checkpoint, the following were planned. V0.8/V0.9 subsequently integrated GPR, natural gas, FAO, GSCPI and SIPRI as described above; freight remains planned. No numeric placeholders were added:
 
 - Geopolitical Risk Index: review author methodology and coverage; index intensity is not event probability.
 - Natural gas: select a benchmark and disclose geography and units.

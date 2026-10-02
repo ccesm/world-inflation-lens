@@ -1,0 +1,375 @@
+{
+  "result": "PASS",
+  "suiteStartedAt": "2026-10-02T13:40:53.904Z",
+  "browser": "Headless Google Chrome via Playwright, locally served Vite production build",
+  "routeLayoutChecks": 252,
+  "testedRoutes": [
+    "dollar",
+    "drivers",
+    "external-shocks",
+    "fiscal",
+    "history",
+    "home",
+    "map",
+    "monitor",
+    "overview",
+    "purchasing-power",
+    "regimes",
+    "research",
+    "research/ai-productivity",
+    "research/data",
+    "research/digital-money",
+    "research/updates",
+    "scenarios",
+    "since-1971",
+    "sources",
+    "timeline",
+    "us-cpi"
+  ],
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "homes": [
+    {
+      "width": 320,
+      "language": "en",
+      "theme": "light",
+      "firstEvidenceY": 1445,
+      "firstValue": "3.40 %",
+      "pageHeight": 7214,
+      "assetBytes": 635565
+    },
+    {
+      "width": 320,
+      "language": "en",
+      "theme": "dark",
+      "firstEvidenceY": 1445,
+      "firstValue": "3.40 %",
+      "pageHeight": 7214,
+      "assetBytes": 635565
+    },
+    {
+      "width": 320,
+      "language": "zh",
+      "theme": "light",
+      "firstEvidenceY": 1243,
+      "firstValue": "3.40 %",
+      "pageHeight": 6316,
+      "assetBytes": 635565
+    },
+    {
+      "width": 320,
+      "language": "zh",
+      "theme": "dark",
+      "firstEvidenceY": 1243,
+      "firstValue": "3.40 %",
+      "pageHeight": 6316,
+      "assetBytes": 635565
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "firstEvidenceY": 1301,
+      "firstValue": "3.40 %",
+      "pageHeight": 6549,
+      "assetBytes": 635565
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "dark",
+      "firstEvidenceY": 1301,
+      "firstValue": "3.40 %",
+      "pageHeight": 6549,
+      "assetBytes": 635565
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "theme": "light",
+      "firstEvidenceY": 1254,
+      "firstValue": "3.40 %",
+      "pageHeight": 6066,
+      "assetBytes": 635565
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "theme": "dark",
+      "firstEvidenceY": 1254,
+      "firstValue": "3.40 %",
+      "pageHeight": 6066,
+      "assetBytes": 635565
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "theme": "light",
+      "firstEvidenceY": 932,
+      "firstValue": "3.40 %",
+      "pageHeight": 4187,
+      "assetBytes": 635565
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "theme": "dark",
+      "firstEvidenceY": 932,
+      "firstValue": "3.40 %",
+      "pageHeight": 4187,
+      "assetBytes": 635565
+    },
+    {
+      "width": 1280,
+      "language": "zh",
+      "theme": "light",
+      "firstEvidenceY": 850,
+      "firstValue": "3.40 %",
+      "pageHeight": 4063,
+      "assetBytes": 635565
+    },
+    {
+      "width": 1280,
+      "language": "zh",
+      "theme": "dark",
+      "firstEvidenceY": 850,
+      "firstValue": "3.40 %",
+      "pageHeight": 4063,
+      "assetBytes": 635565
+    }
+  ],
+  "baselineHomes": [
+    {
+      "width": 320,
+      "language": "en",
+      "theme": "light",
+      "firstEvidenceY": 9759,
+      "firstValue": "3.40 %",
+      "pageHeight": 24864,
+      "assetBytes": 638521
+    },
+    {
+      "width": 320,
+      "language": "en",
+      "theme": "dark",
+      "firstEvidenceY": 9759,
+      "firstValue": "3.40 %",
+      "pageHeight": 24864,
+      "assetBytes": 638521
+    },
+    {
+      "width": 320,
+      "language": "zh",
+      "theme": "light",
+      "firstEvidenceY": 8508,
+      "firstValue": "3.40 %",
+      "pageHeight": 21952,
+      "assetBytes": 638521
+    },
+    {
+      "width": 320,
+      "language": "zh",
+      "theme": "dark",
+      "firstEvidenceY": 8508,
+      "firstValue": "3.40 %",
+      "pageHeight": 21952,
+      "assetBytes": 638521
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "firstEvidenceY": 9027,
+      "firstValue": "3.40 %",
+      "pageHeight": 23060,
+      "assetBytes": 638521
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "dark",
+      "firstEvidenceY": 9027,
+      "firstValue": "3.40 %",
+      "pageHeight": 23060,
+      "assetBytes": 638521
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "theme": "light",
+      "firstEvidenceY": 8082,
+      "firstValue": "3.40 %",
+      "pageHeight": 20837,
+      "assetBytes": 638521
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "theme": "dark",
+      "firstEvidenceY": 8082,
+      "firstValue": "3.40 %",
+      "pageHeight": 20837,
+      "assetBytes": 638521
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "theme": "light",
+      "firstEvidenceY": 4909,
+      "firstValue": "3.40 %",
+      "pageHeight": 14033,
+      "assetBytes": 638521
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "theme": "dark",
+      "firstEvidenceY": 4909,
+      "firstValue": "3.40 %",
+      "pageHeight": 14033,
+      "assetBytes": 638521
+    },
+    {
+      "width": 1280,
+      "language": "zh",
+      "theme": "light",
+      "firstEvidenceY": 4718,
+      "firstValue": "3.40 %",
+      "pageHeight": 13587,
+      "assetBytes": 638521
+    },
+    {
+      "width": 1280,
+      "language": "zh",
+      "theme": "dark",
+      "firstEvidenceY": 4718,
+      "firstValue": "3.40 %",
+      "pageHeight": 13587,
+      "assetBytes": 638521
+    }
+  ],
+  "baselineLimitation": "Baseline home measurement completed but baseline error assertion failed solely for pre-existing missing /favicon.ico; fixed with an explicit base-path SVG icon in the feature build.",
+  "keyboard": [
+    "Skip-to-main preserves route and moves keyboard focus",
+    "All primary links activate with Enter and focus the route heading",
+    "Language and theme controls persist through reload"
+  ],
+  "behaviors": [
+    {
+      "language": "zh",
+      "check": "CBO metric query, solid/dashed segments, full history/projection CSV with values and provenance, keyboard year inspection"
+    },
+    {
+      "language": "zh",
+      "check": "Debt model arithmetic and invalid-input handling"
+    },
+    {
+      "language": "zh",
+      "check": "Map country/year, Drivers topic/episode/range/inspection/CSV, Timeline year and keyboard adjustment"
+    },
+    {
+      "language": "zh",
+      "check": "Workspace query selection/range, exact-period YoY CSV, share URL and saved selection"
+    },
+    {
+      "language": "zh",
+      "check": "Treasury matched-date arithmetic, recent calculation rows/nulls, input source provenance and freshness"
+    },
+    {
+      "language": "zh",
+      "check": "Monitor filters, External topic/planned evidence, AI focus/proxies, Digital focus/publication dates/qualifiers/CSV"
+    },
+    {
+      "language": "zh",
+      "check": "Historical purchasing power, Since 1971 real/nominal controls, scenario arithmetic and invalid-input handling"
+    },
+    {
+      "language": "zh",
+      "check": "Data Health and System Status, distinct date precision, manual review and fixed-vintage rules, Research Map focus"
+    },
+    {
+      "language": "zh",
+      "check": "Dollar descriptive-band deep link opens retained observations and per-indicator thresholds"
+    },
+    {
+      "language": "en",
+      "check": "CBO metric query, solid/dashed segments, full history/projection CSV with values and provenance, keyboard year inspection"
+    },
+    {
+      "language": "en",
+      "check": "Debt model arithmetic and invalid-input handling"
+    },
+    {
+      "language": "en",
+      "check": "Map country/year, Drivers topic/episode/range/inspection/CSV, Timeline year and keyboard adjustment"
+    },
+    {
+      "language": "en",
+      "check": "Workspace query selection/range, exact-period YoY CSV, share URL and saved selection"
+    },
+    {
+      "language": "en",
+      "check": "Treasury matched-date arithmetic, recent calculation rows/nulls, input source provenance and freshness"
+    },
+    {
+      "language": "en",
+      "check": "Monitor filters, External topic/planned evidence, AI focus/proxies, Digital focus/publication dates/qualifiers/CSV"
+    },
+    {
+      "language": "en",
+      "check": "Historical purchasing power, Since 1971 real/nominal controls, scenario arithmetic and invalid-input handling"
+    },
+    {
+      "language": "en",
+      "check": "Data Health and System Status, distinct date precision, manual review and fixed-vintage rules, Research Map focus"
+    },
+    {
+      "language": "en",
+      "check": "Dollar descriptive-band deep link opens retained observations and per-indicator thresholds"
+    }
+  ],
+  "isolatedStatusFixtures": [
+    {
+      "language": "en",
+      "cases": [
+        "failed refresh retains validated data",
+        "Gmail acceptance explicitly does not confirm inbox delivery",
+        "malformed status falls back without inventing success"
+      ]
+    },
+    {
+      "language": "zh",
+      "cases": [
+        "failed refresh retains validated data",
+        "Gmail acceptance explicitly does not confirm inbox delivery",
+        "malformed status falls back without inventing success"
+      ]
+    }
+  ],
+  "errors": [],
+  "versionPolicy": "Full suite passed at 0.13.0 before promotion. Final 1.0.0 build and full verification passed; post-promotion browser smoke recorded separately.",
+  "postPromotionSmoke": {
+    "result": "PASS",
+    "version": "1.0.0",
+    "checkedAt": "2026-10-02T13:43:12.637Z",
+    "checks": [
+      "System Status application V1.0.0",
+      "skip link remains offscreen when unfocused",
+      "Treasury rendering",
+      "lazy Research focus",
+      "lazy External Shocks deep link"
+    ],
+    "errors": []
+  }
+}
