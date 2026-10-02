@@ -1,7 +1,491 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulCheck": "2026-10-01T19:58:58.387Z",
+  "lastSuccessfulCheck": "2026-10-02T04:03:43.319Z",
   "runs": [
+    {
+      "checkedAt": "2026-10-02T04:03:43.319Z",
+      "checkStartedAt": "2026-10-02T04:03:43.319Z",
+      "checkCompletedAt": "2026-10-02T04:04:06.635Z",
+      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/36962842431",
+      "changes": [
+        {
+          "id": "CPIAUCNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIUFDNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIENGNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "MCOILWTICO",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FEDFUNDS",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 3.75
+            }
+          ]
+        },
+        {
+          "id": "CUUR0000SAH1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CEU0500000003",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "M2SL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "PCEPILFE",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "T5YIFR",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-10-01",
+              "kind": "added",
+              "before": null,
+              "after": 2.36
+            }
+          ]
+        },
+        {
+          "id": "DGS10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-30",
+              "kind": "added",
+              "before": null,
+              "after": 5.29
+            }
+          ]
+        },
+        {
+          "id": "DFII10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-30",
+              "kind": "added",
+              "before": null,
+              "after": 2.93
+            }
+          ]
+        },
+        {
+          "id": "DTWEXBGS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "WALCL",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09-30",
+              "kind": "added",
+              "before": null,
+              "after": 6743031
+            }
+          ]
+        },
+        {
+          "id": "FYPUGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFSGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYOINT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FP.CPI.TOTL.ZG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "GPR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GSCPI",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_FOOD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_MEAT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_DAIRY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_CEREALS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_OILS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_SUGAR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "OPHNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "ULCNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COMPNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "PNFIC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "A679RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "B985RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "B935RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPN22112CS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CUUR0000SEHF01",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GDPC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CE16OV",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPG3344S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "MHHNGSP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_DATACENTER",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_NONRES",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_ELECTRONIC",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "DPSACBM027SBOG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        }
+      ]
+    },
     {
       "checkedAt": "2026-10-01T19:58:58.387Z",
       "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/36918180630",
@@ -10547,5 +11031,6 @@
         }
       ]
     }
-  ]
+  ],
+  "lastSuccessfulCheckCompletedAt": "2026-10-02T04:04:06.635Z"
 }
