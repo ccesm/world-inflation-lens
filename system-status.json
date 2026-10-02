@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-02T04:00:58.618Z",
+  "application": {
+    "version": "0.13.0",
+    "codeCommit": "da9006750b4b04dabf93ace89bb1c417963ad8fa",
+    "snapshotCommit": "da9006750b4b04dabf93ace89bb1c417963ad8fa"
+  },
+  "lastAttempt": {
+    "runId": "36962612470",
+    "attempt": "1",
+    "startedAt": "2026-10-02T04:00:08Z",
+    "completedAt": "2026-10-02T04:00:58.618Z",
+    "refreshResult": "NOT_REQUESTED",
+    "buildResult": "success",
+    "deploymentResult": "success",
+    "notificationResult": "NOT_REQUESTED",
+    "codeCommit": "da9006750b4b04dabf93ace89bb1c417963ad8fa",
+    "snapshotCommit": "da9006750b4b04dabf93ace89bb1c417963ad8fa",
+    "version": "0.13.0"
+  },
+  "data": {
+    "checkStartedAt": null,
+    "checkCompletedAt": null,
+    "lastSuccessfulCheck": null,
+    "lastSuccessfulCheckStartedAt": null,
+    "legacySuccessfulCheckRecordedAt": "2026-10-01T19:58:58.387Z",
+    "lastAttemptAt": null,
+    "result": "UNKNOWN"
+  },
+  "deployment": {
+    "lastSuccessfulAt": "2026-10-02T04:00:45Z",
+    "codeCommit": "da9006750b4b04dabf93ace89bb1c417963ad8fa",
+    "snapshotCommit": "da9006750b4b04dabf93ace89bb1c417963ad8fa",
+    "version": "0.13.0",
+    "result": "success"
+  },
+  "notification": {
+    "result": "NOT_REQUESTED",
+    "updatedAt": "2026-10-02T04:00:58.618Z"
+  },
+  "freshness": {
+    "asOf": "2026-10-02T04:00:58.618Z",
+    "counts": {
+      "CURRENT": 43,
+      "STALE": 3,
+      "MANUAL_REVIEWED": 8,
+      "FIXED_VINTAGE": 3
+    }
+  },
+  "seriesChecks": {}
+}
