@@ -9,7 +9,7 @@ on:
         type: boolean
         default: true
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '40 17 * * *'
       timezone: America/Los_Angeles
 permissions:
   contents: read
@@ -25,6 +25,8 @@ jobs:
     timeout-minutes: 30
     outputs:
       snapshot_commit: ${{ steps.snapshot.outputs.commit }}
+      code_commit: ${{ steps.context.outputs.code_commit }}
+      app_version: ${{ steps.context.outputs.app_version }}
     permissions:
       contents: write
       pages: read
@@ -36,6 +38,9 @@ jobs:
           cache: npm
       - uses: actions/configure-pages@v5
       - run: npm ci
+      - name: Record application and code identity
+        id: context
+        run: node scripts/status-context.mjs
       - uses: actions/setup-python@v5
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
         with:
@@ -46,8 +51,6 @@ jobs:
       - name: Refresh official data
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
         run: npm run data:refresh
-      - run: npm run build
-      - run: npm run verify
       - name: Save validated snapshots and revision summary
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
         run: |
@@ -60,11 +63,23 @@ jobs:
           fi
       - name: Record exact snapshot commit
         id: snapshot
-        run: echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+        run: |
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          node scripts/status-context.mjs
+      - run: npm run build
+      - run: npm run verify
       # GITHUB_TOKEN pushes do not trigger another push workflow. Deploy this build here.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+      - name: Preserve safe data-check report even after failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: data-check-status
+          path: .refresh/check.json
+          include-hidden-files: true
+          if-no-files-found: ignore
   deploy:
     environment:
       name: github-pages
@@ -72,9 +87,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: build
+    outputs:
+      deployed_at: ${{ steps.outcome.outputs.deployed_at }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Record completed successful deployment
+        id: outcome
+        run: echo "deployed_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
 
   notify:
     name: Daily email summary
@@ -86,6 +106,8 @@ jobs:
     timeout-minutes: 5
     permissions:
       contents: read
+    outputs:
+      notification_result: ${{ steps.mail.outputs.notification_result }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -96,9 +118,47 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Send result after update and deployment
+        id: mail
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           BUILD_RESULT: ${{ needs.build.result }}
           DEPLOY_RESULT: ${{ needs.deploy.result }}
         run: node scripts/notify.mjs
+
+  status:
+    name: Publish independent system status
+    if: always() && github.ref == 'refs/heads/main'
+    needs: [build, deploy, notify]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.build.outputs.snapshot_commit || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Read safe check report if the refresh ran
+        id: report
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: data-check-status
+          path: .refresh
+      - name: Publish safe outcomes after deployment and notification finish
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          APP_VERSION: ${{ needs.build.outputs.app_version }}
+          CODE_COMMIT: ${{ needs.build.outputs.code_commit || github.sha }}
+          SNAPSHOT_COMMIT: ${{ needs.build.outputs.snapshot_commit }}
+          BUILD_RESULT: ${{ needs.build.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+          DEPLOYED_AT: ${{ needs.deploy.outputs.deployed_at }}
+          NOTIFICATION_RESULT: ${{ needs.notify.outputs.notification_result }}
+          REFRESH_REQUESTED: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh) }}
+        run: node scripts/publish-system-status.mjs

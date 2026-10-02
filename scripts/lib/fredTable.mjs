@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict'
 import { monthNumber } from '../../src/utils/inflation.js'
+import { fredUseMetadata } from '../../src/data/seriesRegistry.js'
+import { fredUpdateTime } from '../../src/utils/timeSemantics.js'
 
 // Parse only published table cells and FRED's text-only overflow rows, never scripts.
 export function parseFredTable(html, expectedId, expected = {}) {
@@ -52,6 +54,7 @@ export function parseFredTable(html, expectedId, expected = {}) {
     geography: 'US', units: field('Units'), frequency: frequency.toLowerCase(), seasonalAdjustment: field('Seasonal Adjustment').toLowerCase(),
     sourceUrl: `https://fred.stlouisfed.org/series/${expectedId}`, downloadUrl: `https://fred.stlouisfed.org/data/${expectedId}`,
     retrievedAt: new Date().toISOString().slice(0, 10), sourceUpdatedAt: field('Last Updated').slice(0, 10),
-    license: 'Public domain; source citation requested', observations,
+    sourceUpdatedOriginal: field('Last Updated'), sourceUpdatedTime: fredUpdateTime(field('Last Updated')),
+    distributor: 'FRED', ...fredUseMetadata(expectedId, expected), observations,
   }
 }

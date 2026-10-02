@@ -1,8 +1,9 @@
 import stablecoins from '../../data/digital-money/stablecoins.json'
 import treasury from '../../data/digital-money/treasury-holdings.json'
 import bank from '../../data/digital-money/bank-deposits.json'
-export const digitalPublications = [...stablecoins.records, ...treasury.records]
-export const digitalBank = bank
+import {withSeriesContract} from './seriesContract.js'
+export const digitalPublications = [...stablecoins.records, ...treasury.records].map(withSeriesContract)
+export const digitalBank = withSeriesContract(bank)
 export const digitalSources = {
  market: {name:'Federal Reserve / FEDS Notes · 2026-04-08',url:digitalPublications[0].sourceUrl},
  dollarization: {name:'IMF · 2026-08-07',url:digitalPublications[1].sourceUrl},

@@ -12,7 +12,7 @@ export const cboCopy = {
     reading: '实线：1962–2025 年历史值；虚线及阴影：2026–2056 年预测。两段不连接，不对缺失年份插值。预测数值保留来源精度，展示时四舍五入。',
     note: '历史与预测均来自 CBO 财政年度数据，未与 FRED 的日历年 GDP 比率拼接。债务水平本身不决定未来通胀。',
     sources: '来源与版本', report: 'CBO 发布说明', historicalFile: '历史数据 CSV', projectedFile: '预测数据 CSV', workbook: '原始工作簿',
-    pinned: '采用 CBO 官方开放数据仓库的固定版本。与每周更新的市场指标分开维护；新的预测版本须核对政策假设后导入。',
+    pinned: '采用 CBO 官方开放数据仓库的固定版本。与每日检查的市场指标分开维护；新的预测版本须核对政策假设后导入。',
     earlier: '更长历史参考：FRED / OMB 公众持有债务（1940 年起）',
   },
   en: {
@@ -28,7 +28,7 @@ export const cboCopy = {
     reading: 'Solid line: 1962–2025 actuals. Dashed line and shading: 2026–2056 projections. The segments are not joined and missing years are not interpolated. Source precision is retained; displayed values are rounded.',
     note: 'Both segments use CBO fiscal-year data, without splicing in FRED calendar-year GDP ratios. Debt levels alone do not determine future inflation.',
     sources: 'Sources & vintage', report: 'CBO release notes', historicalFile: 'Historical CSV', projectedFile: 'Projection CSV', workbook: 'Original workbook',
-    pinned: 'Pinned to a version of CBO’s official open-data repository. Maintained separately from weekly market updates; a new projection vintage requires review of its policy assumptions.',
+    pinned: 'Pinned to a version of CBO’s official open-data repository. Maintained separately from daily market-data checks; a new projection vintage requires review of its policy assumptions.',
     earlier: 'Longer historical reference: FRED / OMB public debt (since 1940)',
   },
 }

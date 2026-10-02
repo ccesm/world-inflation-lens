@@ -15,6 +15,17 @@ npm run verify
 
 `npm run preview` serves the production build locally. If a port is already in use, specify a free port, for example `npm run preview -- --port 5187 --strictPort`.
 
+## V0.13 — Data contract, freshness and system status
+
+- Shared metadata registry and compatibility adapter distinguish publisher/distributor, evidence maintenance, research role, temporal precision and source-specific citation notes. Natural gas reuses the existing `MHHNGSP` series across research modules.
+- Release-aware H.15/H.10/H.4.1 status, normal holidays/DST and a four-hour distribution buffer; conservative period lags for other monthly/quarterly/annual sources. Manual facts, SIPRI, fixed CBO vintages and static history retain their own maintenance semantics.
+- Daily refresh moves to **17:40 America/Los_Angeles**, after normal US afternoon releases. GitHub may delay execution; a successful check does not guarantee a new observation.
+- **Sources → Data Health → System Status** distinguishes application version/code/snapshot, check start/completion, last attempt, last successful deployment and mail outcomes. `package.json` is the build version source.
+- The workflow publishes a whitelisted status-only JSON on the separate `system-status` branch after actual outcomes. The frontend reads that public artifact; economic data remain bundled snapshots. Refresh failure keeps prior production data while status can report failure. Gmail acceptance does not verify inbox delivery.
+- No new indicators, Signal Engine, composite score or homepage redesign. Existing CBO versions, validation, rollback, routes, calculations, tables and CSV remain.
+
+See [V0.13 implementation and methodology](docs/v0.13-data-status.md) for exact states, thresholds, timestamps, failure behavior and operational limitations. Until the first V0.13 main workflow publishes its status, unrecorded deployment/mail fields correctly display unknown.
+
 ## V0.12 — Research workspace and data provenance
 
 - **Research → Data Workspace** (`#/research/data`): search 49 existing snapshot series by name, ID, publisher, topic or frequency; save favorites on this device; inspect up to three series with a shared time window. Presets cover consumer prices, productivity/labor costs and Treasury pricing.
@@ -29,7 +40,7 @@ See [V0.12 scope and verification](docs/v0.12-research-workspace.md). Gmail auth
 ## V0.11 — Homepage repair and daily email reminders
 
 - Fixed the seven-force homepage grid: the old six-card desktop template squeezed the seventh card into a narrow separator column. Cards now wrap at readable widths across desktop, tablet and phone.
-- Daily official/public-data checks at **08:00 America/Los_Angeles** replace the weekly schedule. The final September 22 refresh passed with 9 new observations and 24 source revisions relative to the preserved remote automated snapshot. Source frequency, reviewed forecast vintages, validation and rollback stay intact. Data Health flags checks older than 48 hours.
+- Daily official/public-data checks at **17:40 America/Los_Angeles** (updated in V0.13) replace the weekly schedule. The final September 22 refresh passed with 9 new observations and 24 source revisions relative to the preserved remote automated snapshot. Source frequency, reviewed forecast vintages, validation and rollback stay intact. Data Health flags checks older than 48 hours.
 - A separate server-side email job reports successful updates, unchanged observations or failed updates/deployment. It never treats a previous run's ledger as today's result. Ordinary code pushes do not send mail.
 - Gmail uses repository Actions secrets `GMAIL_ADDRESS` and `GMAIL_APP_PASSWORD`; the same address sends and receives. Missing settings produce an explicit “not sent” warning. Credentials stay in GitHub Actions, never in the frontend. `npm run notify:preview` is safe and sends nothing.
 
@@ -42,7 +53,7 @@ This expansion has **two separate milestones**. Phase 1, V0.9 AI & Productivity,
 - Eight bilingual sections: stablecoin size, USD denomination, Treasury holdings, bank deposits, Treasury demand, digital dollarization, alternative stores of value and financial stability. Three conditional channels connect dollar/Treasury demand, bank funding and monetary competition to purchasing power.
 - Four manually reviewed, dated publication estimates from Federal Reserve research and IMF remarks, plus Federal Reserve H.8 commercial-bank deposits (`DPSACBM027SBOG`, monthly, seasonally adjusted, January 1973–August 2026). The bank chart supports level/YoY, time ranges, month selection, table and CSV.
 - Publication snapshots are **not a comparable market time series**. Unknown measurement dates remain missing, approximate values retain their qualifiers, and the Treasury estimate uses outstanding **Treasury bills** as its denominator. Aggregate bank deposits are context, not measured stablecoin migration.
-- Separate `data/digital-money/` datasets and ingestion adapter reuse the existing validation, revision ledger and whole-bundle rollback. Only the monthly bank series joins weekly automatic checks; publication estimates require manual source review. No frontend data APIs or keys.
+- Separate `data/digital-money/` datasets and ingestion adapter reuse the existing validation, revision ledger and whole-bundle rollback. Only the monthly bank series joins daily automatic checks; publication estimates require manual source review. No frontend economic-data APIs or keys; V0.13 reads only the public system-status artifact.
 - The homepage now has seven research forces and two compact, separate AI/Digital Money previews. Six primary navigation items and all legacy routes remain. Existing productivity, Fiscal/CBO and External Shocks datasets are unchanged.
 - Continuous stablecoin market history, reconciled issuer Treasury holdings, actual deposit migration, holder geography and Bitcoin/gold price histories remain planned. Stablecoin issuance is not treated as Federal Reserve money creation; crypto prices are not evidence of dollar collapse. No trading signals or probabilities.
 
@@ -56,7 +67,7 @@ Research → **AI & Productivity** (`#/research/ai-productivity`) connects AI in
 - **One derived ratio**: real GDP per employed person, using complete three-month employment averages. It is distinct from BLS output per hour.
 - Bilingual eight-card monitor, five evidence groups, quarterly annualized/YoY productivity, a 20-quarter moving average, historical mean, labor-cost small multiples, source-aware tables and CSV, six historical comparison windows and transparent common-quarter interpretation.
 - AI investment and infrastructure **proxies** are labeled, including data-center construction (which includes non-AI centers). No synthetic AI-spending total, AI causality estimate, probability, composite score or stock coverage.
-- Existing snapshot refresh and rollback now include these monthly/quarterly series; weekly checks retain original observation frequency. Initial import establishes a baseline, not a claim of zero source revisions. Source IDs, adjustment, definitions, release/retrieval dates, licensing and coverage are retained. No browser API calls or API keys.
+- Existing snapshot refresh and rollback now include these monthly/quarterly series; daily checks retain original observation frequency. Initial import establishes a baseline, not a claim of zero source revisions. Source IDs, adjustment, definitions, release/retrieval dates, licensing and coverage are retained. No browser macro-data API calls or API keys. V0.13 adds only a safe public system-status JSON read.
 - The six top-level sections, legacy routes, CBO history/projections and V0.8 External Shocks functionality are preserved. Homepage productivity links and a concise preview lead to the new research page; detailed evidence stays off the homepage.
 
 See [V0.9 implementation and source report](docs/v0.9-ai-productivity.md) for exact datasets, coverage, source updates, methods, limitations, validation and remaining research gaps.
@@ -161,7 +172,7 @@ npm run verify
 
 The importer validates dataset identity, fiscal-year frequency, percent-of-GDP units, unique keys, complete annual coverage, finite values and the revenue/outlays/balance identity. It negates the original CBO deficit/surplus balance: positive means deficit, negative means surplus. Underlying three-decimal precision is retained. Tests cover malformed inputs, sign errors, missing years, fiscal boundaries and exported provenance.
 
-This is a reviewed **fixed forecast vintage**, not part of the weekly FRED/World Bank refresher. Importing a new CBO release requires reviewing source mappings, policy assumptions, expected coverage, hashes and numerical assertions. A 2056 observation is a projection horizon, never a freshness timestamp.
+This is a reviewed **fixed forecast vintage**, not part of the daily FRED/World Bank checks. Importing a new CBO release requires reviewing source mappings, policy assumptions, expected coverage, hashes and numerical assertions. A 2056 observation is a projection horizon, never a freshness timestamp.
 
 ## V0.6: Dollar purchasing power
 
@@ -201,7 +212,7 @@ The display negates the fiscal balance so positive values mean deficits, divides
 
 ### Automatic updates
 
-`.github/workflows/deploy.yml` checks data daily at **08:00 America/Los_Angeles** (daylight-saving aware). Use **Run workflow → refresh: true** for an immediate check; use false to redeploy the committed snapshot. Ordinary pushes build and deploy without refreshing data.
+`.github/workflows/deploy.yml` checks data daily at **17:40 America/Los_Angeles** (updated in V0.13) (daylight-saving aware). Use **Run workflow → refresh: true** for an immediate check; use false to redeploy the committed snapshot. Ordinary pushes build and deploy without refreshing data.
 
 ```sh
 npm run data:refresh
@@ -215,7 +226,7 @@ All downloads and validations finish in memory before any snapshot is replaced. 
 
 The bot commits the ten routinely refreshed snapshot/history files using the repository's `GITHUB_TOKEN`. That token's pushes do not trigger another push workflow, so the current run uploads `dist` and deploys it directly. Runs share the Pages concurrency group and do not cancel in-progress deployments. A conflicting main-branch update causes a normal push rejection; no force push is used. See [GitHub trigger behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 
-GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags checks older than 48 hours and links to Actions for diagnosis. Observation-age hints use separate thresholds: over 3 months for monthly data or over 3 years for annual data, or over 14 days for daily/weekly data. These are site heuristics, not promises about provider release dates. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
+GitHub scheduling can be delayed; repository policies may also block bot writes. The panel flags successful-check records older than 48 hours and links to Actions for diagnosis. V0.13 separately assesses release-aware series windows and conservative period lags, with manual/fixed-vintage exceptions. These are disclosed expectations, not proof of provider publication. No API keys are required; any future authenticated ingestion must keep secrets in GitHub Secrets and out of `VITE_` variables.
 
 `scripts/refresh-data.mjs --input-dir <directory>` runs the same pipeline against downloaded inputs for offline reproduction. Input filenames are `wil-<FRED-ID>.html`, `wil-countries.json`, `wil-inflation.json` and `wil-indicator.json`, plus `gpr.xls`, `gpr.html`, `gscpi.csv`, `fao.csv` and `fao.html`. Test fixtures may provide `gpr-extracted.json`; production always reads the workbook. `npm run verify` exercises the real CLI in a temporary checkout, verifies failed-update preservation and revision accounting, and checks all views and share-link parsing.
 
@@ -267,11 +278,11 @@ V0.4 baseline coverage is listed below; current coverage and retrieval dates are
 | FEDFUNDS | Federal Reserve Board via FRED | Effective federal funds rate, monthly average, percent | 1954-07–2026-08 |
 | CUUR0000SAH1 | BLS via FRED | Shelter CPI, 1982–1984=100, unadjusted | 1952-12–2026-08 |
 | CEU0500000003 | BLS via FRED | Average hourly earnings, USD/hour, unadjusted | 2006-03–2026-08 |
-| M2SL | Federal Reserve Board via FRED | M2, billions USD, seasonally adjusted | 1959-01–2026-07 |
+| M2SL | Federal Reserve Board via FRED | M2, billions USD, seasonally adjusted | 1959-01–2026-08 |
 
 Food/energy indexes are converted to year-on-year rates by matching the same calendar month one year earlier. October 2025 is missing in both CPI component sources and stays null. FEDFUNDS is kept as a rate level; it is not transformed into a growth rate. Oil stays in USD/barrel in a separate panel with its own vertical scale and the same date axis. Before 1986 the WTI panel remains empty. Monthly averages cannot show daily futures-price extremes. Dates are aligned without interpolation, forward filling, or fabricated data. Food and energy are subsets of headline CPI; the charts do not estimate weighted contributions or causal effects.
 
-Shelter, earnings and M2 levels are also converted to year-on-year growth with exact calendar matching. Shelter is missing October 2025. M2 uses seasonally adjusted levels while CPI and wages are unadjusted; August 2026 M2 remains empty. Wage growth begins March 2007 because it needs a prior-year observation. Shelter is part of CPI, while earnings and M2 are separate economic indicators. No causal effects are inferred.
+Shelter, earnings and M2 levels are also converted to year-on-year growth with exact calendar matching. Shelter is missing October 2025. M2 uses seasonally adjusted levels while CPI and wages are unadjusted; August 2026 M2 is now present in the validated snapshot. Coverage dates in these historical examples are not live status; consult Data Health for the currently deployed observations. Wage growth begins March 2007 because it needs a prior-year observation. Shelter is part of CPI, while earnings and M2 are separate economic indicators. No causal effects are inferred.
 
 Custom dates may span 1913 onward. Full-history and year-range presets are bounded by the selected topic's first calculable observation. Historical windows retain empty observations from newer sources and show an explicit notice if an entire series is unavailable. Episode shading is an editorial reading window, not an estimate of causal duration.
 
@@ -318,7 +329,7 @@ The original offline importer uses fixed 1960–2025 bounds and also maintains t
 
 ## Data and calculations
 
-`data/inflation/fred.json` contains a static snapshot of BLS CPI-U, all items, U.S. city average, published through FRED as `CPIAUCNS`. It is monthly, not seasonally adjusted, with base 1982–1984 = 100. Retrieved September 13, 2026, from https://fred.stlouisfed.org/data/CPIAUCNS; the source was updated September 11, 2026.
+`data/inflation/fred.json` contains a validated snapshot of BLS CPI-U, all items, U.S. city average, distributed through FRED as `CPIAUCNS`. It is monthly, not seasonally adjusted, with base 1982–1984 = 100. Automatic checks update the snapshot's retrieval and source-update metadata independently of its observation periods. Consult Data Health for the deployed snapshot dates.
 
 - Source metadata and 1,364 monthly records are stored together. October 2025 is missing in the source and is stored as `null`. No interpolation or invented values are used.
 - Annual inflation compares the same calendar month: `(CPI[t] / CPI[t−12] − 1) × 100`. Both observations must be available. It is not an annual-average rate.
@@ -327,7 +338,7 @@ The original offline importer uses fixed 1960–2025 bounds and also maintains t
 - The 2026 data is a partial year. No forecast values or pre-1913 reconstructions are included.
 - Historical chapters in `data/history/events.json` contain bilingual summaries and source links. Era boundaries are explanatory choices, not estimates of causality.
 
-The frontend bundles these JSON files at build time. Visitors do not need an API connection or key. Changes to a snapshot require a new build and deployment. Future authenticated ingestion belongs in a server-side or GitHub Actions process; `VITE_` variables are public browser configuration and must never contain secrets.
+The frontend bundles economic JSON files at build time. Economic charts work without an API connection or key; V0.13 additionally reads a public status-only JSON and falls back to unknown status if it is unavailable. Changes to an economic snapshot require a new build and deployment. Authenticated ingestion belongs in a server-side or GitHub Actions process; `VITE_` variables are public browser configuration and must never contain secrets.
 
 ## Architecture
 

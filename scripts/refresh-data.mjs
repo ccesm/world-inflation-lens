@@ -9,9 +9,16 @@ import { compareExternal, replaceBundle, validateExternal } from './lib/external
 import { parseFredTable } from './lib/fredTable.mjs'
 import { monitorSources } from './lib/monitorSources.mjs'
 import { diffObservations, parseWorldBank, worldPoints, summarizeChanges } from './lib/refresh.mjs'
+import { writeCheckReport } from './lib/statusFiles.mjs'
+import { readFileSync } from 'node:fs'
 
 const root = resolve(import.meta.dirname, '..')
 const checkedAt = new Date().toISOString()
+const version=JSON.parse(readFileSync(resolve(root,'package.json'),'utf8')).version
+const report={schemaVersion:1,checkStartedAt:checkedAt,checkCompletedAt:null,result:'RUNNING',seriesChecks:{},changed:false,counts:{}}
+await writeCheckReport(report)
+const capture=source=>{report.seriesChecks[source.id]={sourceUpdatedAt:['timestamp','date','month'].includes(source.sourceUpdatedTime?.precision)?source.sourceUpdatedTime.value:source.sourceUpdatedAt,latestAvailableObservationDate:source.observations.findLast(p=>Number.isFinite(p.value))?.date||null,checkedAt:new Date().toISOString()}}
+try {
 const read = async path => JSON.parse(await readFile(resolve(root, path), 'utf8'))
 const [headline, drivers, world, countries, ledger, monitor] = await Promise.all([
   read('data/inflation/fred.json'), read('data/inflation/drivers.json'), read('data/inflation/worldbank.json'), read('data/countries/metadata.json'), read('data/updates/history.json'),
@@ -28,7 +35,7 @@ async function download(url, filename, json = false) {
   let failure
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const response = await fetch(url, { signal: AbortSignal.timeout(30000), headers: { 'User-Agent': 'WorldInflationLens/0.11 public-data-refresh' } })
+      const response = await fetch(url, { signal: AbortSignal.timeout(30000), headers: { 'User-Agent': `WorldInflationLens/${version} public-data-refresh` } })
       assert.ok(response.ok, `HTTP ${response.status}: ${url}`)
       return json ? await response.json() : await response.text()
     } catch (error) { failure = error }
@@ -51,6 +58,7 @@ for (const prior of oldSeries) {
   assert.ok(next.observations.at(-1).date <= checkedAt.slice(0, next.frequency === 'monthly' ? 7 : 10), 'Future observation')
   next.retrievedAt = checkedAt.slice(0, 10)
   series.push(next)
+  capture(next)
 }
 const endYear = Math.max(world.metadata.endYear, Number(checkedAt.slice(0, 4)) - 1)
 const [countryResponse, response, definition] = await Promise.all([
@@ -60,6 +68,8 @@ const [countryResponse, response, definition] = await Promise.all([
 ])
 const nextWorld = parseWorldBank(countryResponse, response, definition, world, countries, endYear, checkedAt)
 assert.ok(nextWorld.metadata.sourceUpdatedAt >= world.metadata.sourceUpdatedAt, 'World Bank source date regressed')
+const availableWorldYears=Object.values(nextWorld.values).flatMap(values=>values.flatMap((value,i)=>Number.isFinite(value)?[nextWorld.metadata.startYear+i]:[]))
+report.seriesChecks[nextWorld.metadata.indicator]={sourceUpdatedAt:nextWorld.metadata.sourceUpdatedAt,latestAvailableObservationDate:availableWorldYears.length?String(Math.max(...new Set(availableWorldYears))):null,checkedAt:new Date().toISOString()}
 const changes = series.map((next, i) => summarizeChanges(next.id, diffObservations(oldSeries[i].observations, next.observations)))
 // Validate withdrawals per country as well as across the complete dataset.
 for (const country of countries) {
@@ -69,15 +79,17 @@ for (const country of countries) {
 changes.push(summarizeChanges(world.metadata.indicator, diffObservations(worldPoints(world), worldPoints(nextWorld))))
 const external = await prepareExternal({ input, checkedAt })
 validateExternal(await read('data/external/sipri-military.json')) // Annual source is intentionally not downloaded.
-for (const [id, next] of Object.entries(external)) changes.push(...compareExternal(await read(`data/external/${id}.json`), next))
+for (const [id, next] of Object.entries(external)) { changes.push(...compareExternal(await read(`data/external/${id}.json`), next));next.series.forEach(s=>capture({...next.metadata,...s})) }
 const productivity = await prepareProductivity({ input, checkedAt })
 changes.push(...compareProductivity(await read('data/productivity/series.json'), productivity))
+productivity.series.forEach(capture)
 const digitalBank = await prepareDigitalMoney({ input, checkedAt })
 validatePublications({'stablecoins':await read('data/digital-money/stablecoins.json'),'treasury-holdings':await read('data/digital-money/treasury-holdings.json')},await read('data/digital-money/source-excerpts.json'))
+capture(digitalBank)
 changes.push(compareBank(await read('data/digital-money/bank-deposits.json'), digitalBank))
 const runId = process.env.GITHUB_RUN_ID
 const runUrl = /^\d+$/.test(runId || '') ? `https://github.com/ccesm/world-inflation-lens/actions/runs/${runId}` : null
-const entry = { checkedAt, runUrl, changes }
+const entry = { checkedAt, checkStartedAt:checkedAt, checkCompletedAt:null, runUrl, changes }
 const nextLedger = { ...ledger, lastSuccessfulCheck: checkedAt, runs: [entry, ...ledger.runs].slice(0, 30) }
 const output = {
   'data/digital-money/bank-deposits.json': digitalBank,
@@ -100,6 +112,21 @@ await replaceBundle(Object.fromEntries(Object.entries(output).map(([path, value]
       const result = spawnSync('npm', ['run', script], { cwd: root, encoding: 'utf8', timeout: 180000, maxBuffer: 10_000_000 })
       assert.equal(result.status, 0, `${script} failed; restoring bundle: ${result.stderr} ${result.stdout}`)
     }
+    // Completion is recorded only AFTER candidate build/verification pass.
+    entry.checkCompletedAt=new Date().toISOString()
+    nextLedger.lastSuccessfulCheckCompletedAt=entry.checkCompletedAt
+    await writeFile(resolve(root,'data/updates/history.json'),JSON.stringify(nextLedger,null,2)+'\n')
   },
 })
+report.checkCompletedAt=entry.checkCompletedAt
+report.changed=changes.some(s=>s.total>0)
+report.result=report.changed?'SUCCESS_CHANGED':'SUCCESS_NO_CHANGE'
+report.counts=Object.fromEntries(['added','filled','revised','withdrawn'].map(k=>[k,changes.reduce((n,s)=>n+(s[k]||0),0)]))
+for(const change of changes)if(report.seriesChecks[change.id])report.seriesChecks[change.id].changed=change.total>0
+await writeCheckReport(report)
 console.log(JSON.stringify(entry, null, 2))
+} catch(error) {
+  report.result='FAILED';report.checkCompletedAt=new Date().toISOString()
+  await writeCheckReport(report)
+  throw error
+}

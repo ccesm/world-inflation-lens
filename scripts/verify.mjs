@@ -138,7 +138,7 @@ try {
       assert.match(html, /aria-pressed="false"/)
       if (route === 'us-cpi' || route === 'timeline') assert.match(html, /class="series-line"/)
       if (route === 'overview') { assert.match(html, /ranking-table/); assert.match(html, /FP.CPI.TOTL.ZG/) }
-      if (route === 'sources') { assert.match(html, /data-health/); assert.equal((html.match(/class="health-card"/g) || []).length, 44) }
+      if (route === 'sources') { assert.match(html, /data-health/); assert.match(html, /system-status-title/); assert.match(html, /data-series-status="DGS10"/); assert.match(html, /data-freshness="FIXED_VINTAGE"/); assert.match(html, /data-freshness="MANUAL_(REVIEWED|REVIEW_REQUIRED)"/) }
       if (route === 'research/data') {
         assert.match(html, /data-workspace-series="CPIAUCNS"/)
         assert.match(html, /1913-01/)
@@ -247,10 +247,11 @@ try {
           assert.ok(card.includes(t.planned))
           assert.doesNotMatch(card, /<strong>|[0-9]+%/)
         } else if (indicator.seriesId) {
-          const dataset = JSON.parse(await readFile(join(root, `data/external/${{GPR:'gpr',SIPRI_US_GDP:'sipri-military',FAO_FOOD:'fao-food',GSCPI:'gscpi'}[indicator.seriesId]}.json`), 'utf8'))
+          const isProductivity = indicator.seriesId === 'MHHNGSP'
+          const dataset = JSON.parse(await readFile(join(root, isProductivity ? 'data/productivity/series.json' : `data/external/${{GPR:'gpr',SIPRI_US_GDP:'sipri-military',FAO_FOOD:'fao-food',GSCPI:'gscpi'}[indicator.seriesId]}.json`), 'utf8'))
           const source = dataset.series.find(s => s.id === indicator.seriesId)
           const last = source.observations.findLast(p => Number.isFinite(p.value))
-          assert.ok(card.includes(last.date)); assert.ok(card.includes(dataset.metadata.sourceUrl))
+          assert.ok(card.includes(last.date)); assert.ok(card.includes(isProductivity ? source.sourceUrl : dataset.metadata.sourceUrl))
           assert.ok(card.includes(last.value.toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US', {minimumFractionDigits:2, maximumFractionDigits:2})))
         } else {
           const source = drivers.find(s => s.id === { oil: 'MCOILWTICO', energy: 'CPIENGNS', food: 'CPIUFDNS' }[indicator.driverKey])

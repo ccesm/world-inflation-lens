@@ -1,3 +1,4 @@
+import { appVersion } from '../data/buildInfo.js'
 import React, { useEffect, useState } from 'react'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { ChartShare } from '../components/ChartShare.jsx'
@@ -19,7 +20,7 @@ export function DataWorkspace({ language }) {
   const startDate = state.range === 'all' ? selection.map(s => s.observations[0]?.date).filter(Boolean).sort()[0] : anchor && String(Number(anchor.slice(0, 4)) - Number(state.range)) + anchor.slice(4)
   const filtered = catalog.filter(s => (!topic || s.topic === topic) && (!frequency || s.frequency === frequency) && (!savedOnly || saved.includes(s.id)) && `${s.id} ${s.title} ${seriesName(s, language)} ${s.publisher || ''} ${s.provider}`.toLowerCase().includes(query.trim().toLowerCase()))
   function favorite(id) { const next = saved.includes(id) ? saved.filter(x => x !== id) : [...saved, id]; setSaved(next); setStorageOK(writeSaved('wil-saved-series', next)) }
-  return <><PageIntro className="workspace-intro" eyebrow="RESEARCH / V0.12" title={t.title} description={t.intro} /><section className="content-section workspace global-section">
+  return <><PageIntro className="workspace-intro" eyebrow={`RESEARCH / V${appVersion}`} title={t.title} description={t.intro} /><section className="content-section workspace global-section">
     <nav className="workspace-actions"><a href="#/research/updates">{t.journal} →</a><a href="#/sources">{t.sources} →</a></nav>
     <section aria-labelledby="workspace-title"><h2 id="workspace-title">{t.workspace}</h2><p>{t.note}</p><p>{t.presetTitle}</p><div className="workspace-actions">{[['CPIAUCNS', 'PCEPILFE', 'CUUR0000SAH1'], ['OPHNFB', 'ULCNFB', 'COMPNFB'], ['DGS10', 'DFII10', 'T5YIFR']].map((ids, i) => <button key={i} className="global-button secondary" onClick={() => setState({ ...state, ids })}>{t.presets[i]}</button>)}</div><label>{t.range}<select value={state.range} onChange={e => setState({ ...state, range: e.target.value })}>{['5', '10', '20', 'all'].map(r => <option key={r} value={r}>{r === 'all' ? t.full : `${r} ${t.years}`}</option>)}</select></label>
       <div className="workspace-charts">{selection.map(s => <WorkspaceSeries key={s.id} series={s} language={language} range={state.range} anchor={anchor} startDate={startDate} onRemove={() => setState({ ...state, ids: state.ids.filter(id => id !== s.id) })} />)}</div>

@@ -1,3 +1,4 @@
+import { appVersion } from '../data/buildInfo.js'
 import React, { useState } from 'react'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { history } from '../data/status.js'
@@ -15,7 +16,7 @@ export function UpdateJournal({ language }) {
     const rows = [['checked_at_utc', 'series', 'added', 'filled', 'revised', 'withdrawn', 'workflow'], ...runs.flatMap(run => run.changes.map(s => [run.checkedAt, s.id, s.added, s.filled, s.revised, s.withdrawn, run.runUrl]))]
     downloadCsv('world-inflation-lens-update-summary.csv', '\ufeff' + rows.map(row => row.map(csvCell).join(',')).join('\r\n'))
   }
-  return <><PageIntro className="workspace-intro" eyebrow="RESEARCH / V0.12" title={t.journal} description={t.journalIntro} /><section className="content-section workspace global-section">
+  return <><PageIntro className="workspace-intro" eyebrow={`RESEARCH / V${appVersion}`} title={t.journal} description={t.journalIntro} /><section className="content-section workspace global-section">
     <div className="workspace-banner"><strong>{t.checked}: {history.lastSuccessfulCheck || '—'}</strong><p>{checkOverdue(history.lastSuccessfulCheck) ? t.overdue : t.current}</p><a href="https://github.com/ccesm/world-inflation-lens/actions/workflows/deploy.yml" target="_blank" rel="noreferrer">{t.run} ↗</a></div>
     <div className="workspace-filters"><label>{t.series}<select value={id} onChange={e => { setId(e.target.value); setCount(8) }}><option value="">{t.all}</option>{ids.map(value => <option key={value}>{value}</option>)}</select></label><label className="workspace-checkbox"><input type="checkbox" checked={onlyChanges} onChange={e => { setOnlyChanges(e.target.checked); setCount(8) }} />{t.changesOnly}</label><button className="global-button" onClick={exportSummary}>{t.exportJournal}</button></div>
     <div className="workspace-totals">{Object.entries(totals).map(([key, value]) => <div key={key}><strong>{value.toLocaleString(language)}</strong><span>{t[key]}</span></div>)}</div><p>{t.sample}</p>

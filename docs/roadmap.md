@@ -10,9 +10,15 @@ Educational homepage; a 1900–2026 historical timeline; official U.S. CPI since
 
 Annual World Bank country/economy data for 1960–2025; a Natural Earth map; country detail/history; 2–5-country comparison with tables and CSV export; same-year overview, coverage, and searchable rankings. Missing values remain visible. 2024 is the default year based on coverage. No global aggregate is constructed.
 
+## V0.13 — Data contract, freshness and system status
+
+A compatibility layer now shares series names, maintenance types, source-specific use notes, date precision, causal roles and freshness policies across existing snapshots. Natural gas status is corrected using the existing series. Normal H.15/H.10/H.4.1 release calendars, holidays/DST and distribution grace replace broad day-age hints in Data Health. Other source periods use disclosed conservative lags; CBO remains fixed-vintage and SIPRI/publication facts remain manually reviewed.
+
+The daily schedule is 17:40 America/Los_Angeles. Safe start/completion reports survive refresh failure without replacing validated economic data. A separate status-only branch records deployment and email outcomes after their jobs finish, while the Sources page reports version/code/snapshot, check/attempt, deployment and notification separately. See [V0.13 design and limits](v0.13-data-status.md).
+
 ## Suggested next releases
 
-- V1.0: consolidate the research workspace before adding more datasets: route-level loading, shared/persistent comparison windows, and explicit source-vintage comparisons. Then review official firm-level AI adoption, sector productivity, electricity-grid investment, transformer/equipment constraints, AI capital intensity and TFP decomposition individually.
+- V1.0: consolidate the causal research logic and explicitly distinguish domestic purchasing power from the international dollar role. Shorten the homepage framework, then address route-level loading and shared comparison windows. Evaluate minimal international-dollar evidence before considering a transparent Signal Engine contract. Review additional AI/productivity sources individually after this foundation.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.
 
 ## V0.12 — Research workspace and provenance
@@ -27,7 +33,7 @@ Fixed the seven-card desktop grid overflow/misalignment, retaining the research 
 
 ## Delivered V0.10 — Digital Money & Dollar System
 
-Phase 2 follows the separately verified V0.9 AI milestone. A dedicated Research page explains stablecoin demand, Treasury financing, bank-deposit redistribution, digital dollarization, alternative stores of value and financial-stability mechanisms. Four reviewed Fed/IMF publication estimates and one observed monthly Federal Reserve H.8 deposit series have independent provenance, explicit date/denominator limitations, tables/CSV and Data Health coverage. Publication estimates remain manually reviewed; bank data joins weekly validation and rollback without changing its monthly frequency. Neither AI nor digital money is assumed to improve or impair dollar purchasing power automatically.
+Phase 2 follows the separately verified V0.9 AI milestone. A dedicated Research page explains stablecoin demand, Treasury financing, bank-deposit redistribution, digital dollarization, alternative stores of value and financial-stability mechanisms. Four reviewed Fed/IMF publication estimates and one observed monthly Federal Reserve H.8 deposit series have independent provenance, explicit date/denominator limitations, tables/CSV and Data Health coverage. Publication estimates remain manually reviewed; bank data joins daily validation and rollback without changing its monthly frequency. Neither AI nor digital money is assumed to improve or impair dollar purchasing power automatically.
 
 The homepage now connects seven research forces to long-term purchasing power, with separate compact AI and Digital Money previews. No large new charts are added there. Existing AI, Fiscal/CBO and External Shocks datasets remain intact. See [the source and validation report](v0.10-digital-money.md).
 
@@ -39,7 +45,7 @@ Five evidence groups connect investment and electricity demand to labor producti
 
 ## Delivered V0.8 — geopolitical inflation transmission
 
-Four official snapshot families: GPR/GPRT/GPRA; SIPRI U.S. military burden and real expenditure plus official global real spending; NY Fed GSCPI; FAO total and five components. Bilingual six-card monitor, conditional transmission map, exact-calendar-lag changes, separate-scale historical comparisons, source-aware tables/CSV and transparent common-month summary. Monthly source revisions join the weekly whole-bundle rollback pipeline; SIPRI is manually reviewed annually. Explicit limitations include no pre-1985 GPR splicing, no global military/GDP series, world military spending missing in 1991, FAO meat source estimates, and no synthetic backfills. CBO history/projections remain untouched. No war probabilities, news feed, composite risk score or investment signals.
+Four official snapshot families: GPR/GPRT/GPRA; SIPRI U.S. military burden and real expenditure plus official global real spending; NY Fed GSCPI; FAO total and five components. Bilingual six-card monitor, conditional transmission map, exact-calendar-lag changes, separate-scale historical comparisons, source-aware tables/CSV and transparent common-month summary. Monthly source revisions join the daily whole-bundle rollback pipeline; SIPRI is manually reviewed annually. Explicit limitations include no pre-1985 GPR splicing, no global military/GDP series, world military spending missing in 1991, FAO meat source estimates, and no synthetic backfills. CBO history/projections remain untouched. No war probabilities, news feed, composite risk score or investment signals.
 
 ## Delivered V0.7 — Part B: information architecture
 
@@ -49,7 +55,7 @@ V0.8 connects the shock framework to GPR, SIPRI, GSCPI and FAO evidence. These s
 
 ## Delivered V0.7 — Part A: fiscal evidence
 
-CBO public debt, deficits and net interest as shares of fiscal-year GDP: 1962–2025 historical actuals and complete 2026–2056 conditional projections. Official CSVs and schemas are pinned and retained with source hashes. Metric/range controls, year inspection, distinct historical/projected paths, bilingual assumptions, annual table and CSV export. The February 25, 2026 forecast is reviewed separately from weekly observations and explicitly excludes the February 20 tariff ruling's effects. Gold and house-price integration remain future work.
+CBO public debt, deficits and net interest as shares of fiscal-year GDP: 1962–2025 historical actuals and complete 2026–2056 conditional projections. Official CSVs and schemas are pinned and retained with source hashes. Metric/range controls, year inspection, distinct historical/projected paths, bilingual assumptions, annual table and CSV export. The February 25, 2026 forecast is reviewed separately from automatic observation checks and explicitly excludes the February 20 tariff ruling's effects. Gold and house-price integration remain future work.
 
 ## Delivered V0.6
 

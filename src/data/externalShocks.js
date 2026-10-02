@@ -7,7 +7,7 @@ export const shockIndicators = [
   { id: 'food-cpi', topic: 'food', status: 'available', driverKey: 'food', href: '#/drivers?topic=food' },
   { id: 'gpr', topic: 'geopolitical', status: 'available', seriesId: 'GPR', href: '#/external-shocks?topic=geopolitical' },
   { id: 'defense', topic: 'geopolitical', status: 'available', seriesId: 'SIPRI_US_GDP', href: '#/external-shocks?topic=geopolitical' },
-  { id: 'natural-gas', topic: 'energy', status: 'planned' },
+  { id: 'natural-gas', topic: 'energy', status: 'available', seriesId: 'MHHNGSP', href: '#/research/ai-productivity?focus=electricity' },
   { id: 'fao-food', topic: 'food', status: 'available', seriesId: 'FAO_FOOD', href: '#/external-shocks?topic=food' },
   { id: 'gscpi', topic: 'supply-chain', status: 'available', seriesId: 'GSCPI', href: '#/external-shocks?topic=supply-chain' },
   { id: 'freight', topic: 'shipping', status: 'planned' },

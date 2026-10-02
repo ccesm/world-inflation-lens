@@ -1,8 +1,9 @@
 import snapshot from '../../data/inflation/drivers.json'
 import { cpi, cpiMetadata } from './inflation.js'
 import { withAnnualChange } from '../utils/inflation.js'
+import { withSeriesContract } from './seriesContract.js'
 
-export const driverMetadata = snapshot.series.map(({ observations, ...metadata }) => metadata)
+export const driverMetadata = snapshot.series.map(withSeriesContract).map(({ observations, ...metadata }) => metadata)
 const raw = Object.fromEntries(snapshot.series.map(series => [series.id, series]))
 const cpiSeries = (id, points, metadata) => ({ id, measure: 'yoy_percent', points: points.map(p => ({ date: p.date, value: p.inflation })), metadata })
 export const driverSeries = {

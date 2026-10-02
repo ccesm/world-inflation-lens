@@ -7,16 +7,18 @@ import { shockCopy } from '../i18n/externalShocks.js'
 import { shockTopics, shockIndicators, shockFields, shockEpisodes, shockSources } from '../data/externalShocks.js'
 import { driverSeries } from '../data/drivers.js'
 import { viewParameter } from '../utils/routing.js'
+import { productivitySeries } from '../data/productivity.js'
 
 function EvidenceCard({ indicator, language }) {
   const t = shockCopy[language]
-  const series = indicator.seriesId ? externalSeries[indicator.seriesId] : indicator.status === 'available' ? driverSeries[indicator.driverKey] : null
+  const existing = productivitySeries[indicator.seriesId]
+  const series = indicator.seriesId ? externalSeries[indicator.seriesId] || (existing && { ...existing, points: existing.observations, metadata: existing }) : indicator.status === 'available' ? driverSeries[indicator.driverKey] : null
   const latest = series?.points.findLast(point => Number.isFinite(point.value))
   return <article className="shock-indicator" data-indicator={indicator.id} data-status={indicator.status}>
     <p className="eyebrow">{series ? t.available : t.planned}</p><h3>{t.indicators[indicator.id]}</h3>
     {series ? <>
       <strong>{latest ? latest.value.toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : '—'}</strong>
-      <p>{indicator.seriesId ? transmissionCopy[language].units[series.units] : series.measure === 'usd_per_barrel' ? t.oilUnit : t.yoy}</p>
+      <p>{indicator.seriesId ? transmissionCopy[language].units[series.units] || series.units : series.measure === 'usd_per_barrel' ? t.oilUnit : t.yoy}</p>
       {indicator.seriesId && <SourceNote s={series} language={language} />}<p>{t.latest}: {latest?.date ?? t.missing}<br />{indicator.seriesId ? transmissionCopy[language][series.frequency] : t.monthly}<br />{t.checked}: {series.metadata.retrievedAt}</p>
       <p className="ia-source">{t.source}: <a href={series.metadata.sourceUrl} target="_blank" rel="noreferrer">{series.id} · {indicator.seriesId ? series.metadata.provider : `${series.metadata.publisher} / FRED`} ↗</a></p>
       <a className="ia-more" href={indicator.href}>{t.chart} →</a>

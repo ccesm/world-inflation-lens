@@ -13,7 +13,8 @@ export function createDigest({ ledger, build, deploy, runId, observations = [] }
   const subject = `World Inflation Lens · ${success ? '每日数据更新 / Daily update' : '更新未完成 / Update incomplete'}`
   const lines = [subject, '', `构建 / Build: ${build}`, `部署 / Deployment: ${deploy}`]
   if (success) {
-    lines.push(`本次成功检查 / This successful check (UTC): ${current.checkedAt}`)
+    lines.push(`检查开始 / Check started (UTC): ${current.checkStartedAt || current.checkedAt}`)
+    lines.push(`检查完成 / Check completed (UTC): ${current.checkCompletedAt || 'not recorded in legacy ledger'}`)
     const totals = Object.fromEntries(categories.map(k => [k, 0]))
     for (const s of current.changes) for (const k of categories) {
       if (!Number.isSafeInteger(s[k]) || s[k] < 0) throw new Error('Invalid revision counts')
@@ -64,10 +65,11 @@ export async function sendDigest({ config, digest, runId, attempt = '1', transpo
     return { status: 'accepted' } // SMTP acceptance is not confirmed inbox delivery.
   } catch (error) {
     // Report only known categories. SMTP response/message text may contain secrets.
-    if (error?.code === 'EAUTH') throw new Error('Gmail authentication rejected (EAUTH). Confirm GMAIL_ADDRESS matches the Google account that generated the app password; use an active Google app password, not the account password.')
-    if (['ETIMEDOUT', 'ECONNECTION', 'EDNS', 'ESOCKET'].includes(error?.code)) throw new Error('Gmail connection failed. Check runner connectivity or Gmail availability; delivery has not been confirmed.')
-    if (error?.code === 'EENVELOPE') throw new Error('Gmail rejected the sender or recipient. Check GMAIL_ADDRESS; delivery has not been confirmed.')
-    throw new Error('Gmail sending failed or acceptance is uncertain; check the workflow and Gmail account')
+    const safeError=(message,status)=>Object.assign(new Error(message),{notificationResult:status})
+    if (error?.code === 'EAUTH') throw safeError('Gmail authentication rejected (EAUTH). Confirm GMAIL_ADDRESS matches the Google account that generated the app password; use an active Google app password, not the account password.','FAILED_AUTH')
+    if (['ETIMEDOUT', 'ECONNECTION', 'EDNS', 'ESOCKET'].includes(error?.code)) throw safeError('Gmail connection failed. Check runner connectivity or Gmail availability; delivery has not been confirmed.','FAILED_TRANSPORT')
+    if (error?.code === 'EENVELOPE') throw safeError('Gmail rejected the sender or recipient. Check GMAIL_ADDRESS; delivery has not been confirmed.','FAILED_TRANSPORT')
+    throw safeError('Gmail sending failed or acceptance is uncertain; check the workflow and Gmail account','FAILED_TRANSPORT')
   } finally {
     transporter.close?.()
   }

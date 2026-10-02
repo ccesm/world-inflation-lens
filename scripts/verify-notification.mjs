@@ -68,7 +68,7 @@ await assert.rejects(sendDigest({ config, digest, runId: '42', transporterFactor
 console.log('PASS: notification success/failure/stale-run handling, Gmail configuration, same-address delivery, SMTP uncertainty and sanitized errors; no real mail sent')
 
 const workflow = await readFile(new URL('../.github/workflows/deploy.yml', import.meta.url), 'utf8')
-assert.match(workflow, /cron: '0 8 \* \* \*'/)
+assert.match(workflow, /cron: '40 17 \* \* \*'/)
 assert.match(workflow, /timezone: America\/Los_Angeles/)
 assert.match(workflow, /needs: \[build, deploy\]/)
 assert.match(workflow, /always\(\)/)

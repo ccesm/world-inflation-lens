@@ -2,7 +2,8 @@ import snapshot from '../../data/inflation/monitor.json'
 import { cpi, cpiMetadata } from './inflation.js'
 import { driverSeries } from './drivers.js'
 import { withAnnualChange } from '../utils/inflation.js'
-export const monitorRaw = Object.fromEntries(snapshot.series.map(s => [s.id, s]))
+import { withSeriesContract } from './seriesContract.js'
+export const monitorRaw = Object.fromEntries(snapshot.series.map(withSeriesContract).map(s => [s.id, s]))
 const growth = s => withAnnualChange(s.observations).map(p => ({ date: p.date, value: p.inflation }))
 export const monitorDefinitions = [
   { id: 'CPIAUCNS', zh: '总体 CPI 同比', en: 'Headline CPI · YoY', unit: '%', points: cpi.map(p => ({ date: p.date, value: p.inflation })), source: cpiMetadata, note: { zh: '未季调；消费篮子的同比变化。', en: 'Unadjusted; annual change in the consumer basket.' } },

@@ -1,7 +1,8 @@
+import { seriesTitles } from '../data/seriesRegistry.js'
 export const transmissionCopy = {
   en: {
     title: 'Geopolitical Inflation Transmission Monitor', question: 'Is geopolitical stress actually transmitting into supply constraints, fiscal pressure, energy/food prices, and ultimately inflation?',
-    names: { GPR: 'Geopolitical Risk Index', GPRT: 'Geopolitical Threats', GPRA: 'Geopolitical Acts', GSCPI: 'Global Supply Chain Pressure Index', FAO_FOOD: 'FAO Food Price Index · Total', FAO_MEAT: 'Meat', FAO_DAIRY: 'Dairy', FAO_CEREALS: 'Cereals', FAO_OILS: 'Vegetable Oils', FAO_SUGAR: 'Sugar', SIPRI_US_GDP: 'U.S. Military Expenditure / GDP', SIPRI_US_GOV: 'U.S. Military Expenditure / Government Expenditure', SIPRI_US_REAL: 'U.S. Real Military Expenditure', SIPRI_WORLD_REAL: 'World Military Expenditure · Official Aggregate', oil: 'WTI crude oil', energy: 'U.S. Energy CPI inflation', food: 'U.S. Food CPI inflation', headline: 'U.S. Headline CPI inflation', rates: 'Federal Funds Rate' },
+    names: { ...seriesTitles('en'), oil: 'WTI crude oil', energy: 'U.S. Energy CPI inflation', food: 'U.S. Food CPI inflation', headline: 'U.S. Headline CPI inflation', rates: 'Federal Funds Rate'  },
     units: { index_1985_2019_100: 'Index · 1985–2019 = 100', standard_deviations: 'Standard deviations from historical average', index_2014_2016_100: 'Nominal index · 2014–2016 = 100', percent_gdp: '% of GDP', percent_government: '% of general government expenditure', million_2024_usd: 'Million USD · constant 2024 prices', billion_2024_usd: 'Billion USD · constant 2024 prices', yoy_percent: 'Year-over-year change (%)', usd_per_barrel: 'USD per barrel', rate_percent: 'Percent' },
     monthly: 'Monthly', annual: 'Annual', fiscalYear: 'U.S. fiscal year ending September (source footnote 44)', calendar: 'Calendar year · official world aggregate', latest: 'Latest available', observed: 'Published historical snapshot · subject to revisions', sourceEstimate: 'Published source estimates · subject to revisions',
     rising: 'Rising', falling: 'Falling', stable: 'Stable', unavailable: 'Data unavailable for this period', direction: 'Direction compares the latest available observation with the immediately preceding calendar month/year. Stable means unchanged (numerical tolerance 0.000000001). A gap produces no direction. This is not an inflation-risk rating.',
@@ -31,7 +32,7 @@ export const transmissionCopy = {
   },
   zh: {
     title: '地缘政治通胀传导监测', question: '地缘政治压力是否正在通过供应受限、财政压力、能源与粮食价格，真正向通胀传导？',
-    names: { GPR: '地缘政治风险指数', GPRT: '地缘政治威胁指数', GPRA: '地缘政治实际行动指数', GSCPI: '全球供应链压力指数', FAO_FOOD: 'FAO 食品价格指数 · 总指数', FAO_MEAT: '肉类', FAO_DAIRY: '乳制品', FAO_CEREALS: '谷物', FAO_OILS: '植物油', FAO_SUGAR: '糖', SIPRI_US_GDP: '美国军费支出 / GDP', SIPRI_US_GOV: '美国军费支出 / 政府财政支出', SIPRI_US_REAL: '美国实际军费支出', SIPRI_WORLD_REAL: '全球军费支出 · 官方汇总', oil: 'WTI 原油', energy: '美国能源 CPI 同比', food: '美国食品 CPI 同比', headline: '美国总体 CPI 同比', rates: '联邦基金利率' },
+    names: { ...seriesTitles('zh'), oil: 'WTI 原油', energy: '美国能源 CPI 同比', food: '美国食品 CPI 同比', headline: '美国总体 CPI 同比', rates: '联邦基金利率'  },
     units: { index_1985_2019_100: '指数 · 1985–2019 = 100', standard_deviations: '相对历史均值的标准差', index_2014_2016_100: '名义指数 · 2014–2016 = 100', percent_gdp: '占 GDP 百分比', percent_government: '占一般政府支出百分比', million_2024_usd: '百万美元 · 2024年不变价格', billion_2024_usd: '十亿美元 · 2024年不变价格', yoy_percent: '同比变化（%）', usd_per_barrel: '美元 / 桶', rate_percent: '百分比' },
     monthly: '月度', annual: '年度', fiscalYear: '截至9月的美国财政年度（来源脚注44）', calendar: '日历年度 · 官方全球汇总', latest: '最新可用观测', observed: '已发布历史快照 · 可能修订', sourceEstimate: '来源发布的估计值 · 可能修订',
     rising: '上升', falling: '下降', stable: '稳定', unavailable: '该时期无可用数据', direction: '方向比较最新可用值与紧邻的上一个月／年度。稳定表示数值未变（数值容差为 0.000000001）；相邻时期缺失时不判断方向。这不是通胀风险评级。',

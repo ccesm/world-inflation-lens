@@ -37,10 +37,10 @@ const temp = await mkdtemp(join(tmpdir(), 'wil-refresh-test-'))
 const read = async path => JSON.parse(await readFile(join(root, path), 'utf8'))
 const files = ['data/inflation/fred.json', 'data/inflation/drivers.json', 'data/inflation/worldbank.json', 'data/updates/history.json', 'data/inflation/monitor.json', ...['gpr','gscpi','fao-food','sipri-military'].map(id => `data/external/${id}.json`), 'data/productivity/series.json', ...['bank-deposits','stablecoins','treasury-holdings','source-excerpts'].map(id=>`data/digital-money/${id}.json`)]
 try {
-  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js', 'src/utils/transmission.js', 'scripts/verify-external.mjs', 'scripts/lib/external.mjs', 'scripts/lib/external-ingestion.mjs', 'scripts/lib/productivity.mjs', 'scripts/lib/productivity-sources.mjs', 'scripts/lib/digital-money.mjs']) {
+  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/statusFiles.mjs', 'src/utils/systemStatus.js', 'src/utils/timeSemantics.js', 'src/data/seriesRegistry.js', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js', 'src/utils/transmission.js', 'scripts/verify-external.mjs', 'scripts/lib/external.mjs', 'scripts/lib/external-ingestion.mjs', 'scripts/lib/productivity.mjs', 'scripts/lib/productivity-sources.mjs', 'scripts/lib/digital-money.mjs']) {
     await mkdir(join(temp, path, '..'), { recursive: true }); await cp(join(root, path), join(temp, path))
   }
-  await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',scripts:{build:'node -e "process.exit(0)"',verify:'node -e "process.exit(0)"'}}))
+  await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',version:'0.13.0',scripts:{build:'node -e "process.exit(0)"',verify:'node -e "process.exit(0)"'}}))
   const input = join(temp, 'inputs'); await mkdir(input); await externalFixtures(root, input); await productivityFixtures(root,input,{revise:true})
   const headline = await read(files[0]), drivers = await read(files[1]), world = await read(files[2]), countries = await read('data/countries/metadata.json')
   const originalFiles = await Promise.all(files.map(path => readFile(join(temp, path), 'utf8')))
@@ -67,16 +67,20 @@ try {
   const failed = run()
   assert.notEqual(failed.status, 0)
   assert.match(failed.stderr, /Missing country-year slots/)
+  const failedReport=JSON.parse(await readFile(join(temp,'.refresh/check.json'),'utf8'));assert.equal(failedReport.result,'FAILED');assert.ok(failedReport.checkCompletedAt>=failedReport.checkStartedAt)
   assert.deepEqual(await Promise.all(files.map(path => readFile(join(temp, path), 'utf8'))), originalFiles, 'Failure must preserve every original snapshot and ledger')
   await writeFile(join(input, 'wil-inflation.json'), JSON.stringify(response))
   // A failing build must restore the complete new+old data bundle and ledger.
-  await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',scripts:{build:'node -e "process.exit(1)"',verify:'node -e "process.exit(0)"'}}))
+  await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',version:'0.13.0',scripts:{build:'node -e "process.exit(1)"',verify:'node -e "process.exit(0)"'}}))
   const buildFailure = run(); assert.notEqual(buildFailure.status, 0); assert.match(buildFailure.stderr, /restoring bundle/)
   assert.deepEqual(await Promise.all(files.map(path => readFile(join(temp, path), 'utf8'))), originalFiles)
-  await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',scripts:{build:'node -e "process.exit(0)"',verify:'node -e "process.exit(0)"'}}))
+  await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',version:'0.13.0',scripts:{build:'node -e "process.exit(0)"',verify:'node -e "process.exit(0)"'}}))
   const success = run(); assert.equal(success.status, 0, success.stderr)
   const ledger = JSON.parse(await readFile(join(temp, files[3]), 'utf8'))
   assert.equal(ledger.runs[0].changes[0].revised, 1)
+  assert.ok(ledger.runs[0].checkCompletedAt>=ledger.runs[0].checkStartedAt)
+  assert.equal(ledger.lastSuccessfulCheckCompletedAt,ledger.runs[0].checkCompletedAt)
+  assert.equal(JSON.parse(await readFile(join(temp,'.refresh/check.json'),'utf8')).result,'SUCCESS_CHANGED')
   assert.equal(ledger.runs[0].changes.find(c=>c.id==='GPR').revised,1)
   assert.equal(ledger.runs[0].changes.find(c=>c.id==='OPHNFB').revised,1)
   assert.equal(ledger.runs[0].changes.find(c=>c.id==='DPSACBM027SBOG').revised,1)
@@ -85,5 +89,6 @@ try {
   const repeat = run(); assert.equal(repeat.status, 0, repeat.stderr)
   const repeated = JSON.parse(await readFile(join(temp, files[3]), 'utf8'))
   assert.ok(repeated.runs[0].changes.every(s => s.total === 0))
+  assert.equal(JSON.parse(await readFile(join(temp,'.refresh/check.json'),'utf8')).result,'SUCCESS_NO_CHANGE')
 } finally { await rm(temp, { recursive: true, force: true }) }
 console.log('PASS: refresh rollback, revision accounting, pagination, duplicate and missing records, repeat checks, age labels and share-link round trips')
