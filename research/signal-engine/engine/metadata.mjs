@@ -57,6 +57,10 @@ export function publisherEvidenceProven(source,point,snapshot,cutoff) {
  if(t.precision!=='timestamp'||!t.value||!t.timeZone||!t.evidenceRef)return false
  let published
  try {published=instant(t.value);new Intl.DateTimeFormat('en',{timeZone:t.timeZone}).format(new Date(published))}catch{return false}
+ // This is only a plausibility floor for completed observations, not an
+ // invented release lag or publisher calendar. Undated facts cannot prove it.
+ const observation=period(point.date,source.frequency,point.sourcePeriod,source.periodBasis)
+ if(!observation.end||Date.parse(published)<Date.parse(observation.end))return false
  const record=(snapshot.publisherEvidence||[]).find(r=>r.evidenceRef===t.evidenceRef&&r.seriesId===source.id&&r.sourceUrl===source.sourceUrl&&r.snapshotSha256===snapshot.snapshotSha256&&r.inputCommit===snapshot.inputCommit&&r.observationPeriods?.includes(point.date))
  if(!record||record.publishedAt!==t.value||record.timeZone!==t.timeZone||!eventEligible(record,cutoff))return false
  if(['availableAt','evidenceAt','completedAt','recordedAt'].some(key=>record[key]&&Date.parse(record[key])<Date.parse(published)))return false

@@ -91,3 +91,11 @@ Operational records must provide supported UTC availability/completion evidence.
 When using `--previous`, retain predecessor artifacts and their original accepted inputs. Corrective CLI writes an immutable content-addressed copy under the destination's `artifacts/` directory. Parent chains are resolved there (or beside a content-addressed previous file), hash-checked and semantically validated. Missing ancestors or input vintages fail closed; unavailable directions are never carried forward.
 
 Corrected generated artifacts use `outputs/corrective-v0.1.1/`; original outputs remain intact. Wall-clock run metadata stays separate. Canonical factor arithmetic may be equivalent while raw-byte/provenance identity differs; raw hashes are preserved.
+
+## Second corrective pass (offline-prototype/0.1.2)
+
+The focused re-review found four remaining gaps in 0.1.1. [The second-pass report](../../docs/signal-engine-v0.1-prototype.md#second-corrective-safeguard-pass) preserves that history and records the corrections. `tests/second-corrective.test.mjs` independently covers retained-vintage future revision annotations, factor-only availability fabrication, coherent full-window publication backdating, and raw artifact identity changes.
+
+Revision comparisons separate canonical native-period/value content from revision evidence eligible at AS-OF. Publisher evidence used for HIGH cannot precede completion of its observation period; no exact release lag is invented. Factor availability is derived from supported mode and eligible evidence and checked semantically. Raw/canonical input identity changes are non-directional audit changes even when arithmetic is identical. Execution timestamps remain separate.
+
+Use the invocation examples above with new destinations under `outputs/corrective-v0.1.2/` to preserve prior artifacts. The rule/config/schema and public version 1.0.0 remain unchanged. [Second-pass results](fixtures/corrections/second-pass-results.json) record final validation; readiness is for independent safeguard re-review only.

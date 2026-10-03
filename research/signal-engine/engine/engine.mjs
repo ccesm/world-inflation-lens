@@ -1,6 +1,6 @@
 // Pure evaluation: no filesystem, live APIs, implicit clock, email or deployment.
 import { period,transformWindow,scenarios,contemporaneous,VERSION,contentHash,instant } from './core.mjs'
-import { requestOptions,selectArchive,eligibility,manualEligibility,isRetrospective,cutoffOf,lagBoundary,pointAvailability,visiblePoints } from './alignment.mjs'
+import { requestOptions,selectArchive,eligibility,manualEligibility,isRetrospective,cutoffOf,lagBoundary,pointAvailability,visiblePoints,assessmentAvailabilityBasis } from './alignment.mjs'
 import { seriesMetadata } from '../../../src/data/seriesContract.js'
 import { derive10YBreakeven } from '../../../src/utils/treasuryPricing.js'
 import { releaseWindow } from '../../../src/utils/releaseCalendar.js'
@@ -8,6 +8,7 @@ import { confidenceFromReasons } from './confidence.mjs'
 import { rawRecord,derivedRecord } from './lineage.mjs'
 import { sourceAtCutoff,publisherEvidenceProven,snapshotOutput } from './metadata.mjs'
 import { applyChangeAudit } from './audit.mjs'
+import { analyticalObservationContent,eligibleRevisionContent } from './comparison.mjs'
 export function validateConfig(config,expectedHash=null) {
  if(config.ruleVersion!=='signal-engine-v0.1-draft.1'||config.schemaVersion!=='signal-rule-config/0.1')throw Error('UNKNOWN_RULE_VERSION')
  if(expectedHash&&contentHash(config)!==expectedHash)throw Error('MUTATED_IMMUTABLE_CONFIG')
@@ -20,7 +21,7 @@ const diagnostic=(id,st)=>({seriesId:id,freshnessState:st?.state||'UNKNOWN',reas
 function primaryFailure(status,error) {if(error&&error!=='INELIGIBLE_FRESHNESS')return 'INSUFFICIENT_DATA';return ['SOURCE_UPDATED_NOT_YET_CAPTURED','REFRESH_FAILED','STALE'].includes(status?.state)?status.state:'INSUFFICIENT_DATA'}
 function horizon(points,frequency){return {start:period(points[0].date,frequency).start,end:period(points.at(-1).date,frequency).end}}
 function blockedFactor(f,r,st,reason) {
- return {factorId:f.id,ruleVersion:r.ruleVersion,direction:'INSUFFICIENT_DATA',observationThrough:null,evidence:[],counterevidence:[],context:[],missingContext:f.contextSeriesIds,confidence:'UNASSESSED',qualityReasons:[reason],dataStatus:primaryFailure(st,reason),sourceStatuses:[diagnostic(f.primarySeriesId,st)],availabilityBasis:r.retrospective?'NOT_RECONSTRUCTED':'UNKNOWN',alignment:'UNASSESSED',changeReason:['INITIAL'],lastValidArtifactRef:null,limitations:[reason,'No current assessment is inferred from unavailable evidence']}
+ return {factorId:f.id,ruleVersion:r.ruleVersion,direction:'INSUFFICIENT_DATA',observationThrough:null,evidence:[],counterevidence:[],context:[],missingContext:f.contextSeriesIds,confidence:'UNASSESSED',qualityReasons:[reason],dataStatus:primaryFailure(st,reason),sourceStatuses:[diagnostic(f.primarySeriesId,st)],availabilityBasis:assessmentAvailabilityBasis(r,false),alignment:'UNASSESSED',changeReason:['INITIAL'],lastValidArtifactRef:null,limitations:[reason,'No current assessment is inferred from unavailable evidence']}
 }
 export function evaluate(archive,env,request,{scenario={multiplier:1,persistenceOffset:0,id:'BASE'},priorArtifact=null}={}) {
  if(priorArtifact&&(Date.parse(priorArtifact.evaluatedAt)>Date.parse(request.evaluatedAt)||request.mode==='RECORDED_AS_OF'&&(!priorArtifact.asOf||Date.parse(priorArtifact.asOf)>Date.parse(request.asOf))))throw Error('FUTURE_OR_UNPROVEN_PARENT_ARTIFACT')
@@ -71,8 +72,8 @@ export function evaluate(archive,env,request,{scenario={multiplier:1,persistence
  const factors=[],factorHorizons=new Map()
  for(const f of config.factors) {
   const entry=byId.get(f.primarySeriesId),st=status(f.primarySeriesId,true)
-  if(!entry||st.error){factors.push(blockedFactor(f,{ruleVersion:config.ruleVersion,retrospective},st,st.error||'MISSING_INPUT'));continue}
-  if(entry.source.units!==f.expectedInputUnits||entry.source.frequency!==f.frequency){factors.push(blockedFactor(f,{ruleVersion:config.ruleVersion,retrospective},st,'CONFIG_SOURCE_IDENTITY_MISMATCH'));continue}
+  if(!entry||st.error){factors.push(blockedFactor(f,{...request,ruleVersion:config.ruleVersion,retrospective},st,st.error||'MISSING_INPUT'));continue}
+  if(entry.source.units!==f.expectedInputUnits||entry.source.frequency!==f.frequency){factors.push(blockedFactor(f,{...request,ruleVersion:config.ruleVersion,retrospective},st,'CONFIG_SOURCE_IDENTITY_MISMATCH'));continue}
   let window=transformWindow({...entry.source,observations:st.points},f,config,st.last.date,scenario)
   // Validate component identities only when components exist; never count them as additional primary evidence.
   if(f.primarySeriesId==='BIS_USD_TOTAL')for(const id of ['BIS_USD_LOANS','BIS_USD_SECURITIES']){
@@ -82,7 +83,7 @@ export function evaluate(archive,env,request,{scenario={multiplier:1,persistence
    const loans=new Map(status('BIS_USD_LOANS').points.map(p=>[p.date,p.value])),sec=new Map(status('BIS_USD_SECURITIES').points.map(p=>[p.date,p.value]))
    if(window.raw.some(p=>Number.isFinite(loans.get(p.date))&&Number.isFinite(sec.get(p.date))&&Math.abs(p.value-loans.get(p.date)-sec.get(p.date))>0.002))window={error:'BIS_TOTAL_COMPONENT_MISMATCH'}
   }
-  if(window.error){factors.push(blockedFactor(f,{ruleVersion:config.ruleVersion,retrospective},st,window.error));continue}
+  if(window.error){factors.push(blockedFactor(f,{...request,ruleVersion:config.ruleVersion,retrospective},st,window.error));continue}
   const missing=[],ctx=[],quality=[],contexts=[]
   for(const id of f.contextSeriesIds){const ref=id==='REAL_GDP_WORKER'?(lineage.has(`context:${id}`)?`context:${id}`:null):context(id);if(!ref)missing.push(id);else {ctx.push(ref);contexts.push(lineage.get(ref))}}
   const h=horizon(window.raw,f.frequency);factorHorizons.set(f.id,h)
@@ -114,12 +115,16 @@ export function evaluate(archive,env,request,{scenario={multiplier:1,persistence
   lineage.set(lid,rawRecord(lid,entry.source,entry.snapshot,st,window.raw,request,config,{role:'PRIMARY_SIGNAL',transform:{id:f.transformId,parameters:{entry:f.entry*scenario.multiplier,quiet:f.quiet*scenario.multiplier,persistencePeriods:Math.max(1,f.persistencePeriods+scenario.persistenceOffset)},value:window.transformed.at(-1).value,units:config.transforms[f.transformId].units},transformed:window.transformed,supplemental,state:window.direction}))
   lineage.get(lid).qualityFlags=quality
   const reasons=[]
-  if(priorWindow&&!priorWindow.error&&contentHash(priorWindow.raw)!==contentHash(window.raw))reasons.push('REVISION_DRIVEN_CHANGE')
+  if(priorWindow&&!priorWindow.error) {
+   const old=previous.series.find(s=>s.id===f.primarySeriesId),cutoff=retrospective?request.evaluatedAt:cutoffOf(request)
+   if(contentHash(analyticalObservationContent(old,priorWindow.raw))!==contentHash(analyticalObservationContent(entry.source,window.raw)))reasons.push('REVISION_DRIVEN_CHANGE')
+   else if(contentHash(eligibleRevisionContent(old,priorWindow.raw,previous.snapshot,cutoff))!==contentHash(eligibleRevisionContent(entry.source,window.raw,entry.snapshot,cutoff)))reasons.push('STATUS_CHANGE')
+  }
   else if(previous&&previous.series.find(s=>s.id===f.primarySeriesId)?.observations.at(-1)?.date<st.last.date)reasons.push('NEW_OBSERVATION')
   const prior=priorArtifact?.factors.find(p=>p.factorId===f.id)
   if(prior){if(prior.observationThrough?.label!==period(st.last.date,f.frequency).label)reasons.unshift('NEW_OBSERVATION');if(prior.ruleVersion!==config.ruleVersion)reasons.push('RULE_CHANGE');if(prior.dataStatus!==(retrospective?'RETROSPECTIVE':st.state==='WAITING_FOR_EXPECTED_RELEASE'?'WAITING_FOR_RELEASE':missing.length?'PARTIAL_CONTEXT':'READY'))reasons.push('STATUS_CHANGE');if(contentHash(prior.context)!==contentHash(ctx))reasons.push('CONTEXT_CHANGE');if(!reasons.length)reasons.push('UNCHANGED')}
   else if(!reasons.length)reasons.push('INITIAL')
-  factors.push({factorId:f.id,ruleVersion:config.ruleVersion,direction:window.direction,observationThrough:period(st.last.date,f.frequency),evidence:[lid],counterevidence:[],context:ctx,missingContext:missing,confidence,qualityReasons:quality,dataStatus:retrospective?'RETROSPECTIVE':st.state==='WAITING_FOR_EXPECTED_RELEASE'?'WAITING_FOR_RELEASE':missing.length?'PARTIAL_CONTEXT':'READY',sourceStatuses:[diagnostic(f.primarySeriesId,st),...f.contextSeriesIds.map(id=>diagnostic(id,statuses.get(id)||{state:lineage.has(`context:${id}`)?'DERIVED':'UNKNOWN',reason:derivedFailures.get(id)||'Derived context'}))],availabilityBasis:retrospective?'NOT_RECONSTRUCTED':'PROJECT_ACCEPTED_SNAPSHOT',alignment,changeReason:[...new Set(reasons)],lastValidArtifactRef:null,limitations:[`Narrow measurement: ${f.title.en}`,'Draft thresholds are not calibrated','WINDOW_CONFIRMED across distinct observation periods; no independent release count',...(retrospective?['Current revised vintage; not a real-time backtest']:[])]})
+  factors.push({factorId:f.id,ruleVersion:config.ruleVersion,direction:window.direction,observationThrough:period(st.last.date,f.frequency),evidence:[lid],counterevidence:[],context:ctx,missingContext:missing,confidence,qualityReasons:quality,dataStatus:retrospective?'RETROSPECTIVE':st.state==='WAITING_FOR_EXPECTED_RELEASE'?'WAITING_FOR_RELEASE':missing.length?'PARTIAL_CONTEXT':'READY',sourceStatuses:[diagnostic(f.primarySeriesId,st),...f.contextSeriesIds.map(id=>diagnostic(id,statuses.get(id)||{state:lineage.has(`context:${id}`)?'DERIVED':'UNKNOWN',reason:derivedFailures.get(id)||'Derived context'}))],availabilityBasis:assessmentAvailabilityBasis(request,true),alignment,changeReason:[...new Set(reasons)],lastValidArtifactRef:null,limitations:[`Narrow measurement: ${f.title.en}`,'Draft thresholds are not calibrated','WINDOW_CONFIRMED across distinct observation periods; no independent release count',...(retrospective?['Current revised vintage; not a real-time backtest']:[])]})
  }
  function outcome(kind) {
   const fs=config.factors.filter(f=>f.outcome===kind),actual=factors.filter(f=>fs.some(d=>d.id===f.factorId)),usable=actual.filter(f=>f.direction!=='INSUFFICIENT_DATA'),gaps=[],ctx=[]

@@ -82,7 +82,7 @@ export function validateArtifact(output,config,schemaValidator,{archive=null,env
   if(output.parentArtifactRef&&!priorArtifact)throw Error('PRIOR_ARTIFACT_REQUIRED_FOR_HISTORY_VALIDATION')
   if(priorArtifact&&output.parentArtifactRef!==`sha256:${contentHash(priorArtifact)}`)throw Error('PARENT_ARTIFACT_MISMATCH')
   const expected=evaluate(archive,env,output,{scenario,priorArtifact})
-  for(let i=0;i<output.factors.length;i++)for(const key of ['direction','confidence','qualityReasons','dataStatus','alignment','evidence','context','missingContext','sourceStatuses','observationThrough'])if(contentHash(output.factors[i][key])!==contentHash(expected.factors[i][key]))throw Error('ASSESSMENT_RULE_MISMATCH:'+key)
+  for(let i=0;i<output.factors.length;i++)for(const key of ['direction','confidence','qualityReasons','dataStatus','availabilityBasis','alignment','evidence','context','missingContext','sourceStatuses','observationThrough'])if(contentHash(output.factors[i][key])!==contentHash(expected.factors[i][key]))throw Error('ASSESSMENT_RULE_MISMATCH:'+key)
   for(const key of ['domestic','international'])if(contentHash(output[key])!==contentHash(expected[key]))throw Error('OUTCOME_RULE_MISMATCH')
   for(const key of ['inputs','lineage','engineVersion','limitations'])if(contentHash(output[key])!==contentHash(expected[key]))throw Error('PINNED_ARTIFACT_MISMATCH:'+key)
   for(let i=0;i<output.factors.length;i++)for(const key of ['changeReason','lastValidArtifactRef','ruleVersion','limitations'])if(contentHash(output.factors[i][key])!==contentHash(expected.factors[i][key]))throw Error('HISTORY_RULE_MISMATCH:'+key)

@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto'
 import { temporalValue } from '../../../src/utils/timeSemantics.js'
 import { zonedInstant } from '../../../src/utils/releaseCalendar.js'
-export const VERSION = 'offline-prototype/0.1.1'
+export const VERSION = 'offline-prototype/0.1.2'
 export const MODES = ['CURRENT_SNAPSHOT','CURRENT_VINTAGE_RECONSTRUCTION','RECORDED_AS_OF','TRUE_RELEASE_VINTAGE']
 export const unknownTime = () => ({value:null,precision:'unknown',timeZone:null,evidenceRef:null})
 export const sha256 = value => createHash('sha256').update(value).digest('hex')

@@ -6,6 +6,11 @@ import { validateSource } from './inputs.mjs'
 import { validateAcceptance } from './acceptance.mjs'
 import { operationalMetadata } from './metadata.mjs'
 export const isRetrospective = request => request.mode==='CURRENT_VINTAGE_RECONSTRUCTION'
+export function assessmentAvailabilityBasis(request,hasPrimaryEvidence) {
+ if(isRetrospective(request))return 'NOT_RECONSTRUCTED'
+ if(!['CURRENT_SNAPSHOT','RECORDED_AS_OF'].includes(request.mode))throw Error('UNSUPPORTED_ASSESSMENT_AVAILABILITY_MODE')
+ return hasPrimaryEvidence?'PROJECT_ACCEPTED_SNAPSHOT':'UNKNOWN'
+}
 export function requestOptions(request) {
  if(!['CURRENT_SNAPSHOT','CURRENT_VINTAGE_RECONSTRUCTION','RECORDED_AS_OF','TRUE_RELEASE_VINTAGE'].includes(request.mode))throw Error('UNKNOWN_MODE')
  if(request.mode==='TRUE_RELEASE_VINTAGE')throw Error('UNSUPPORTED_PUBLISHER_VINTAGE_REPLAY')
