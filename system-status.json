@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T04:00:39.561Z",
+  "updatedAt": "2026-10-03T04:05:12.991Z",
   "application": {
     "version": "1.0.0",
-    "codeCommit": "9d55115a4524bcfdab0ad6d8e5d4ccd12047f5d3",
-    "snapshotCommit": "9d55115a4524bcfdab0ad6d8e5d4ccd12047f5d3"
+    "codeCommit": "e988d85915db1ad2237d1db675a60884ee692822",
+    "snapshotCommit": "e988d85915db1ad2237d1db675a60884ee692822"
   },
   "lastAttempt": {
-    "runId": "37095027558",
+    "runId": "37095296882",
     "attempt": "1",
-    "startedAt": "2026-10-03T03:59:34Z",
-    "completedAt": "2026-10-03T04:00:39.561Z",
-    "refreshResult": "FAILED",
-    "buildResult": "failure",
-    "deploymentResult": "skipped",
-    "notificationResult": "ACCEPTED_BY_GMAIL",
-    "codeCommit": "9d55115a4524bcfdab0ad6d8e5d4ccd12047f5d3",
-    "snapshotCommit": null,
+    "startedAt": "2026-10-03T04:04:07Z",
+    "completedAt": "2026-10-03T04:05:12.991Z",
+    "refreshResult": "NOT_REQUESTED",
+    "buildResult": "success",
+    "deploymentResult": "success",
+    "notificationResult": "NOT_REQUESTED",
+    "codeCommit": "e988d85915db1ad2237d1db675a60884ee692822",
+    "snapshotCommit": "e988d85915db1ad2237d1db675a60884ee692822",
     "version": "1.0.0"
   },
   "data": {
@@ -29,21 +29,21 @@
     "result": "FAILED"
   },
   "deployment": {
-    "lastSuccessfulAt": "2026-10-03T03:56:00Z",
-    "codeCommit": "9d55115a4524bcfdab0ad6d8e5d4ccd12047f5d3",
-    "snapshotCommit": "9d55115a4524bcfdab0ad6d8e5d4ccd12047f5d3",
+    "lastSuccessfulAt": "2026-10-03T04:05:02Z",
+    "codeCommit": "e988d85915db1ad2237d1db675a60884ee692822",
+    "snapshotCommit": "e988d85915db1ad2237d1db675a60884ee692822",
     "version": "1.0.0",
-    "result": "skipped"
+    "result": "success"
   },
   "notification": {
-    "result": "ACCEPTED_BY_GMAIL",
-    "updatedAt": "2026-10-03T04:00:39.561Z"
+    "result": "NOT_REQUESTED",
+    "updatedAt": "2026-10-03T04:05:12.991Z"
   },
   "freshness": {
-    "asOf": "2026-10-03T03:56:11.395Z",
+    "asOf": "2026-10-03T04:05:12.991Z",
     "counts": {
-      "CURRENT": 62,
-      "STALE": 2,
+      "REFRESH_FAILED": 60,
+      "SOURCE_UPDATED_NOT_YET_CAPTURED": 4,
       "MANUAL_REVIEWED": 8,
       "FIXED_VINTAGE": 3
     }
