@@ -6,13 +6,17 @@ import { diffObservations, summarizeChanges } from './refresh.mjs'
 export const externalSources = {
   gpr: { provider: 'Caldara–Iacoviello', authors: 'Dario Caldara and Matteo Iacoviello', frequency: 'monthly', sourceUrl: 'https://www.matteoiacoviello.com/gpr.htm', downloadUrl: 'https://www.matteoiacoviello.com/gpr_files/data_gpr_export.xls', license: 'CC BY; source and authors must be credited', licenseUrl: 'https://www.matteoiacoviello.com/gpr.htm', attribution: 'Caldara, Dario and Matteo Iacoviello (2022), Measuring Geopolitical Risk, American Economic Review 112(4), 1194–1225.', methodologyUrl: 'https://www.matteoiacoviello.com/gpr_files/GPR_PAPER.pdf', file: 'gpr.xls' },
   gscpi: { provider: 'Federal Reserve Bank of New York', authors: 'Gianluca Benigno, Julian di Giovanni, Jan J. J. Groen and Adam I. Noble', frequency: 'monthly', sourceUrl: 'https://www.newyorkfed.org/research/policy/gscpi', downloadUrl: 'https://www.newyorkfed.org/medialibrary/research/interactives/data/gscpi/gscpi_interactive_data.csv', license: 'New York Fed Terms of Use; attribution required; no endorsement', licenseUrl: 'https://www.newyorkfed.org/privacy/termsofuse', attribution: 'Federal Reserve Bank of New York, Global Supply Chain Pressure Index. © Federal Reserve Bank of New York. Subject to its Terms of Use.', methodologyUrl: 'https://www.newyorkfed.org/research/staff_reports/sr1017', file: 'gscpi.csv' },
-  'fao-food': { provider: 'FAO', authors: 'Food and Agriculture Organization of the United Nations', frequency: 'monthly', sourceUrl: 'https://www.fao.org/worldfoodsituation/foodpricesindex/en/', downloadUrl: 'https://www.fao.org/media/docs/worldfoodsituationlibraries/default-document-library/food_price_indices_data.csv?sfvrsn=523ebd2a_83&download=true', license: 'CC BY 4.0, complemented by FAO Statistical Database Terms of Use', licenseUrl: 'https://www.fao.org/contact-us/terms/db-terms-of-use/en/', attribution: '© FAO 2026. FAO Food Price Index. Monthly nominal indices; data reformatted by World Inflation Lens, no FAO endorsement.', methodologyUrl: 'https://www.fao.org/worldfoodsituation/foodpricesindex/en/', file: 'fao.csv' },
+  'fao-food': { provider: 'FAO', authors: 'Food and Agriculture Organization of the United Nations', frequency: 'monthly', sourceUrl: 'https://www.fao.org/worldfoodsituation/foodpricesindex/en/', downloadUrl: 'https://www.fao.org/media/docs/worldfoodsituationlibraries/wfs-library/food_price_indices_data.csv', license: 'CC BY 4.0, complemented by FAO Statistical Database Terms of Use', licenseUrl: 'https://www.fao.org/contact-us/terms/db-terms-of-use/en/', attribution: '© FAO 2026. FAO Food Price Index. Monthly nominal indices; data reformatted by World Inflation Lens, no FAO endorsement.', methodologyUrl: 'https://www.fao.org/worldfoodsituation/foodpricesindex/en/', file: 'fao.csv' },
   'sipri-military': { provider: 'SIPRI', authors: 'Stockholm International Peace Research Institute', frequency: 'annual', sourceUrl: 'https://www.sipri.org/databases/milex', downloadUrl: 'https://www.sipri.org/sites/default/files/SIPRI-Milex-data-1949-2025_v1.2.xlsx', license: 'SIPRI non-commercial fair use: attribution and less than 10% of dataset; commercial use requires permission', licenseUrl: 'https://www.sipri.org/about/terms-and-conditions', attribution: 'Information from the Stockholm International Peace Research Institute (SIPRI) Military Expenditure Database, https://doi.org/10.55163/CQGC9685. © SIPRI 2026.', methodologyUrl: 'https://www.sipri.org/databases/milex/sources-and-methods', file: 'sipri.xlsx' },
 }
 export const externalIds = {
   gpr: ['GPR', 'GPRT', 'GPRA'], gscpi: ['GSCPI'],
   'fao-food': ['FAO_FOOD', 'FAO_MEAT', 'FAO_DAIRY', 'FAO_CEREALS', 'FAO_OILS', 'FAO_SUGAR'],
   'sipri-military': ['SIPRI_US_GDP', 'SIPRI_US_GOV', 'SIPRI_US_REAL', 'SIPRI_WORLD_REAL'],
+}
+// Retain exact historical download provenance after FAO's October 2026 library move.
+const historicalDownloadUrls = {
+  'fao-food': ['https://www.fao.org/media/docs/worldfoodsituationlibraries/default-document-library/food_price_indices_data.csv?sfvrsn=523ebd2a_83&download=true'],
 }
 export function csvRows(text) {
   const rows = []; let row = [], cell = '', quoted = false
@@ -69,7 +73,8 @@ export function parseSipri(raw) {
 }
 export function validateExternal(dataset, now = new Date()) {
   const { metadata: m, series } = dataset
-  assert.ok(externalSources[m.id]); assert.equal(m.sourceUrl, externalSources[m.id].sourceUrl); assert.equal(m.downloadUrl, externalSources[m.id].downloadUrl)
+  assert.ok(externalSources[m.id]); assert.equal(m.sourceUrl, externalSources[m.id].sourceUrl)
+  assert.ok([externalSources[m.id].downloadUrl, ...(historicalDownloadUrls[m.id] || [])].includes(m.downloadUrl), 'Unrecognized official download provenance')
   assert.deepEqual(series.map(s => s.id), externalIds[m.id])
   assert.equal(m.frequency, externalSources[m.id].frequency)
   assert.ok(m.license && m.attribution && m.sourceSha256?.length === 64 && m.sourceUpdatedAt && m.retrievedAt)

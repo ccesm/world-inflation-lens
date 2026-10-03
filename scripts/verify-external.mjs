@@ -1,11 +1,17 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import { parseGpr, parseGscpi, parseFao, parseSipri, validateExternal, compareExternal, replaceBundle, csvRows } from './lib/external.mjs'
+import { externalSources, parseGpr, parseGscpi, parseFao, parseSipri, validateExternal, compareExternal, replaceBundle, csvRows } from './lib/external.mjs'
 import { transmissionCsv, changeAt, direction, assessment, windowPoints } from '../src/utils/transmission.js'
 const root = resolve(import.meta.dirname, '..')
 const datasets = await Promise.all(['gpr','gscpi','fao-food','sipri-military'].map(async id => validateExternal(JSON.parse(await readFile(resolve(root, `data/external/${id}.json`), 'utf8')))))
 const [gpr,gscpi,fao,sipri] = datasets
+const movedFao = structuredClone(fao); movedFao.metadata.downloadUrl = externalSources['fao-food'].downloadUrl
+validateExternal(movedFao)
+for (const url of ['https://example.com/food_price_indices_data.csv', movedFao.metadata.downloadUrl + '?unreviewed=true']) {
+  const invalid = structuredClone(fao); invalid.metadata.downloadUrl = url
+  assert.throws(() => validateExternal(invalid), /download provenance/)
+}
 assert.deepEqual(parseGpr({ header:['month','GPR','GPRT','GPRA'], labels:{ GPR:'1985:2019=100',GPRT:'1985:2019=100',GPRA:'1985:2019=100' },rows:[['2026-08',1,2,3]] }).map(s=>s.observations[0].value),[1,2,3])
 assert.throws(()=>parseGpr({header:['bad']}))
 const supply = parseGscpi('Date,Aug-26,Sep-26\n2026-06-01,-1,-0.5\n2026-07-01,0.79,0.94\n2026-08-01,#N/A,1.06')
