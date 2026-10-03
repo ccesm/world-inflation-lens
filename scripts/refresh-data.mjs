@@ -1,3 +1,4 @@
+import { internationalFiles, prepareInternational, compareInternational, internationalSummary } from './lib/international.mjs'
 import assert from 'node:assert/strict'
 import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
@@ -87,11 +88,21 @@ const digitalBank = await prepareDigitalMoney({ input, checkedAt })
 validatePublications({'stablecoins':await read('data/digital-money/stablecoins.json'),'treasury-holdings':await read('data/digital-money/treasury-holdings.json')},await read('data/digital-money/source-excerpts.json'))
 capture(digitalBank)
 changes.push(compareBank(await read('data/digital-money/bank-deposits.json'), digitalBank))
+const priorInternational = Object.fromEntries(await Promise.all(Object.entries(internationalFiles).map(async ([id,file]) => [id,await read(`data/international-dollar/${file}.json`)])))
+const international = await prepareInternational({input,checkedAt})
+const internationalChanges = compareInternational(priorInternational,international)
+changes.push(...internationalChanges)
+Object.values(international).forEach(d => d.series.forEach(s => capture({...d.metadata,...s})))
+const priorInternationalLedger = await read('data/international-dollar/revisions.json')
+const nextInternationalLedger = {...priorInternationalLedger,runs:[{checkedAt,changes:internationalChanges},...priorInternationalLedger.runs].slice(0,120)}
 const runId = process.env.GITHUB_RUN_ID
 const runUrl = /^\d+$/.test(runId || '') ? `https://github.com/ccesm/world-inflation-lens/actions/runs/${runId}` : null
 const entry = { checkedAt, checkStartedAt:checkedAt, checkCompletedAt:null, runUrl, changes }
 const nextLedger = { ...ledger, lastSuccessfulCheck: checkedAt, runs: [entry, ...ledger.runs].slice(0, 30) }
 const output = {
+  ...Object.fromEntries(Object.entries(internationalFiles).map(([id,file])=>[`data/international-dollar/${file}.json`,international[id]])),
+  'data/international-dollar/summary.json': internationalSummary(international),
+  'data/international-dollar/revisions.json': nextInternationalLedger,
   'data/digital-money/bank-deposits.json': digitalBank,
   'data/productivity/series.json': productivity,
   'data/inflation/fred.json': series[0],

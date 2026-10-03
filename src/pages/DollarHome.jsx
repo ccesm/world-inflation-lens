@@ -1,38 +1,82 @@
+import { InternationalSummary } from '../components/InternationalSummary.jsx'
 import React from 'react'
-import { ResearchShortcuts } from '../components/ResearchShortcuts.jsx'
-import { DigitalMoneyPreview } from '../components/DigitalMoneyPreview.jsx'
-import { AiProductivityPreview } from './AiProductivity.jsx'
-import { ExternalShocksPreview } from '../components/ExternalShocksPreview.jsx'
-import { ResearchFramework } from '../components/ResearchFramework.jsx'
-import { frameworkCopy } from '../i18n/framework.js'
-import { iaCopy } from '../i18n/architecture.js'
+import { DualDollarSummary, EvidenceState, ResearchMap } from '../components/ResearchMap.jsx'
+import { SeriesStatusNote } from '../components/SystemStatus.jsx'
 import { DollarPower } from '../components/DollarPower.jsx'
-import { CboOutlook } from '../components/CboOutlook.jsx'
-import { ScenarioCalculator } from './Scenarios.jsx'
-import { OutlookSummary, Environment } from '../components/OutlookSummary.jsx'
-import { GlobalPreview } from '../components/GlobalPreview.jsx'
-import { SincePreview } from '../components/SincePreview.jsx'
+import { structuralThemes } from '../data/researchArchitecture.js'
+import { monitorDefinitions } from '../data/monitor.js'
+import { cpi } from '../data/inflation.js'
+import { seriesMetadata } from '../data/seriesContract.js'
+import { formatNumber } from '../utils/inflation.js'
+
+const copy = {
+  en: {
+    eyebrow: 'THE U.S. DOLLAR · A 20–30 YEAR VIEW', title: 'What will the dollar look like in 20–30 years?',
+    intro: 'Explore its purchasing power at home and its role abroad through observed evidence, history and conditional scenarios.',
+    evidence: 'Current evidence', evidenceNote: 'Latest available observations—not live readings or a combined score. Dates and update schedules differ.',
+    observed: 'Observed', explore: 'Explore the evidence', forces: 'What is driving the outlook?',
+    deeper: 'Go deeper', research: 'Research map & evidence gaps', monitor: 'All monitor series', workspace: 'Compare data & export CSV', sources: 'Sources, Data Health & System Status',
+    history: 'Purchasing power & history', historyNote: 'Consumer prices measure domestic purchasing power. They do not measure the dollar’s international role.',
+    power: 'Open Purchasing Power', since: 'Since 1971', regimes: 'Historical Regimes', scenarios: 'Explore conditional scenarios',
+  },
+  zh: {
+    eyebrow: '美元 · 未来20–30年', title: '20–30 年后的美元会是什么样？',
+    intro: '从观测数据、历史与条件情景，理解美元的国内购买力和国际作用。',
+    evidence: '当前证据', evidenceNote: '最新可用观测，不是实时读数或综合评分。各序列的日期和更新节奏不同。',
+    observed: '观测期', explore: '查看证据', forces: '哪些力量正在塑造前景？',
+    deeper: '深入研究', research: '研究地图与证据缺口', monitor: '全部监测指标', workspace: '比较数据与导出 CSV', sources: '来源、数据健康与系统状态',
+    history: '购买力与历史', historyNote: '消费物价衡量国内购买力，不衡量美元的国际作用。',
+    power: '打开购买力工具', since: '1971 年以来', regimes: '历史货币制度', scenarios: '查看条件情景',
+  },
+}
+
+// These are existing monitor transformations, not a parallel data/metadata registry.
+const evidenceIds = ['CPIAUCNS', 'DFII10', 'FYPUGDA188S', 'DTWEXBGS']
+
+function CurrentEvidence({ language }) {
+  const t = copy[language]
+  return <section id="current-evidence" className="home-evidence" aria-labelledby="current-evidence-title">
+    <h2 id="current-evidence-title">{t.evidence}</h2><p>{t.evidenceNote}</p>
+    <div className="home-evidence-grid">{evidenceIds.map(id => {
+      const item = monitorDefinitions.find(series => series.id === id)
+      const latest = item.points.findLast(point => Number.isFinite(point.value))
+      const source = id === 'CPIAUCNS' ? { ...item.source, observations: cpi } : item.source
+      const metadata = seriesMetadata(source)
+      return <article key={id} data-evidence-series={id}>
+        <h3>{item[language]}</h3>
+        <strong data-observed-value>{formatNumber(latest?.value ?? null, language)} <small>{item.unit}</small></strong>
+        <p data-observation-date>{t.observed} · {latest ? (source.frequency.startsWith('annual') ? latest.date.slice(0, 4) : latest.date) : '—'}</p>
+        <a className="home-evidence-source" href={metadata.sourceUrl} target="_blank" rel="noreferrer">{metadata.publisher} / {metadata.distributor} · {id} <span aria-hidden="true">↗</span></a>
+        <SeriesStatusNote source={source} language={language} />
+        <p>{item.note[language]}</p>
+      </article>
+    })}</div>
+    <a className="ia-more" href="#/monitor">{t.explore} <span aria-hidden="true">→</span></a>
+  </section>
+}
 
 export function Home({ language }) {
-  const t = iaCopy[language], f = frameworkCopy[language]
-  return <div className="ia-home global-section">
-    <section className="ia-hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="ia-subtitle">{t.subtitle}</p><p className="ia-stance">{t.stance}</p><div className="hero-actions"><a href="#/dollar" className="primary-button">{t.outlookLink} →</a><a href="#/scenarios" className="text-link">{t.scenarioLink} →</a></div></section>
+  const t = copy[language]
+  return <div className="ia-home global-section v1-home" data-page="home">
+    <section className="ia-hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="ia-subtitle">{t.intro}</p></section>
     <div className="content-section ia-home-body dollar-section">
-      <ResearchFramework language={language} />
-      <AiProductivityPreview language={language} />
-      <DigitalMoneyPreview language={language} />
-      <ExternalShocksPreview language={language} />
-      <section className="ia-section evidence-start"><h2>{f.evidenceTitle}</h2><p>{f.evidenceIntro}</p><OutlookSummary language={language} /></section>
-      <section className="ia-section"><DollarPower language={language} initialBase="1971-08" preview /><a className="ia-more" href="#/purchasing-power">{t.powerLink} →</a></section>
-      <section className="ia-section"><h2>{t.scenarioTitle}</h2><ScenarioCalculator language={language} compact /><a className="ia-more" href="#/scenarios">{t.calculatorLink} →</a></section>
-      <section className="ia-section"><CboOutlook language={language} preview /></section>
-      <Environment language={language} />
-      <section className="ia-section"><h2>{t.pathwayTitle}</h2><div className="ia-grid two ia-pathways">{[[t.riskPath, t.riskSteps], [t.growthPath, t.growthSteps]].map(([title, steps]) => <article key={title}><h3>{title}</h3><ol>{steps.map(step => <li key={step}>{step}</li>)}</ol></article>)}</div><p>{t.pathwayNote}</p><a className="ia-source" href="https://www.federalreserve.gov/econres/ifdp/simple-monetary-rules-under-fiscal-dominance.htm" target="_blank" rel="noreferrer">Federal Reserve · Fiscal dominance research ↗</a></section>
-      <section className="ia-section"><h2>{t.sinceTitle}</h2><p>{t.sinceNote}</p><SincePreview language={language} /><p className="ia-source">{t.planned}</p><a className="ia-more" href="#/since-1971">{t.sinceLink} →</a></section>
-      <section className="ia-section"><h2>{t.regimesTitle}</h2><ol className="ia-regimes">{['1913–1933', '1933–1944', '1944–1971', '1971–1980', '1980–2008', '2008–2020', '2020–'].map((date, i) => <li key={date}><span>{date}</span><a href="#/history">{t.regimeNames[i]} →</a></li>)}</ol><p className="ia-source">{t.regimeNote}</p><a className="ia-more" href="#/history">{t.historyLink} →</a></section>
-      <section className="ia-section"><h2>{t.debateTitle}</h2><div className="ia-grid two">{[[t.debateLeft, t.riskEvidence], [t.debateRight, t.restraintEvidence]].map(([title, items]) => <article key={title}><h3>{title}</h3><ul>{items.map(item => <li key={item}>{item}</li>)}</ul></article>)}</div><p>{t.debateNote}</p><div className="dollar-links"><a href="#/fiscal">CBO →</a><a href="#/monitor?group=inflation">5y5y →</a><a href="https://www.federalreserve.gov/aboutthefed/fedexplained/monetary-policy.htm" target="_blank" rel="noreferrer">Federal Reserve · {language === 'zh' ? '使命与政策' : 'Mandate & policy'} ↗</a></div></section>
-      <GlobalPreview language={language} />
-      <ResearchShortcuts language={language} />
+      <DualDollarSummary language={language} compact />
+      <ResearchMap language={language} compact />
+      <CurrentEvidence language={language} />
+      <InternationalSummary language={language} />
+      <section className="home-structural" aria-labelledby="home-forces-title"><h2 id="home-forces-title">{t.forces}</h2>
+        <div className="home-theme-grid">{structuralThemes.map(theme => <article key={theme.id} data-research-theme={theme.id}>
+          <h3>{theme.label[language]}</h3><EvidenceState state={theme.evidenceState} language={language} /><p>{theme.description[language]}</p>
+          <a className="ia-more" href={theme.routes[0].href}>{theme.routes[0].label[language]} <span aria-hidden="true">→</span></a>
+        </article>)}</div>
+      </section>
+      <section className="home-deeper" aria-labelledby="home-deeper-title"><h2 id="home-deeper-title">{t.deeper}</h2>
+        <div className="home-research-links">{[['#/research', t.research], ['#/monitor', t.monitor], ['#/research/data', t.workspace], ['#/sources', t.sources]].map(([href, title]) => <a key={href} href={href}>{title} <span aria-hidden="true">↗</span></a>)}</div>
+      </section>
+      <section className="home-history" aria-labelledby="home-history-title"><h2 id="home-history-title">{t.history}</h2><p>{t.historyNote}</p>
+        <DollarPower language={language} initialBase="1971-08" preview />
+        <div className="home-research-links">{[['#/purchasing-power', t.power], ['#/since-1971', t.since], ['#/history', t.regimes], ['#/scenarios', t.scenarios]].map(([href, title]) => <a key={href} href={href}>{title} <span aria-hidden="true">→</span></a>)}</div>
+      </section>
     </div>
   </div>
 }

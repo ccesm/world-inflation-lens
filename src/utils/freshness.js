@@ -14,7 +14,7 @@ export function freshness(source,{now=new Date(),check=null,probe=null,refreshRe
     return finish(age>(m.freshnessPolicy.reviewAfterDays||400)?'MANUAL_REVIEW_REQUIRED':'MANUAL_REVIEWED','manual_evidence_not_automatically_refreshed',base)
   }
   if(m.automationType==='DERIVED')return finish('DERIVED','assess_input_series_separately',base)
-  if(!latest || !source.sourceUpdatedAt || !source.retrievedAt || m.frequency==='unknown' || m.units==='unknown' || !m.sourceUrl || m.automationType==='UNKNOWN' || !Number.isFinite(now.getTime()))return finish('UNKNOWN','missing_metadata_or_observation',base)
+  if(!latest || (!source.sourceUpdatedAt && !m.freshnessPolicy.allowUnknownSourceUpdate) || !source.retrievedAt || m.frequency==='unknown' || m.units==='unknown' || !m.sourceUrl || m.automationType==='UNKNOWN' || !Number.isFinite(now.getTime()))return finish('UNKNOWN','missing_metadata_or_observation',base)
   // Only a validated probe can prove newer upstream metadata/coverage is available.
   const oldUpdate=m.sourceUpdatedAt.value
   const newerUpdate=probe?.sourceUpdatedAt && oldUpdate && (probe.sourceUpdatedAt.slice(0,10)>oldUpdate.slice(0,10) || (m.sourceUpdatedAt.precision==='timestamp' && probe.sourceUpdatedAt.includes('T') && Date.parse(probe.sourceUpdatedAt)>Date.parse(oldUpdate)))

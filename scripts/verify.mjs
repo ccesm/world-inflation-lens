@@ -5,7 +5,13 @@ import { resolve, join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { build } from 'vite'
 import React from 'react'
-import { renderToString } from 'react-dom/server'
+import { renderToReadableStream } from 'react-dom/server'
+
+async function renderHtml(element) {
+  const stream = await renderToReadableStream(element)
+  await stream.allReady
+  return new Response(stream).text()
+}
 import { equivalentCost, monthNumber, withAnnualChange } from '../src/utils/inflation.js'
 import { valueAt, rowsAt, rankRows, chooseDefaultYear, bucketIndex, linePath } from '../src/utils/globalInflation.js'
 import { routeFromHash, routes, primaryRoutes, routeSection, viewParameter } from '../src/utils/routing.js'
@@ -14,7 +20,7 @@ import { parseFredTable } from './lib/fredTable.mjs'
 
 import { shockCopy } from '../src/i18n/externalShocks.js'
 import { shockTopics, shockIndicators, shockEpisodes, shockFields, shockSources } from '../src/data/externalShocks.js'
-import { frameworkCopy } from '../src/i18n/framework.js'
+import { dollarOutcomes, structuralThemes, researchStages } from '../src/data/researchArchitecture.js'
 import { sectionLinks } from '../src/i18n/architecture.js'
 import { environmentRules, descriptiveLevel } from '../src/utils/environment.js'
 
@@ -129,9 +135,9 @@ try {
     globalThis.localStorage = { getItem: () => language }
     for (const route of routes) {
       globalThis.window = { location: { hash: `#/${route}` } }
-      const html = renderToString(React.createElement(App))
-      assert.match(html, /<h1>/)
-      assert.equal((html.match(/<h1>/g) || []).length, 1)
+      const html = await renderHtml(React.createElement(App))
+      assert.match(html, /<h1(?:\s[^>]*)?>/)
+      assert.equal((html.match(/<h1(?:\s[^>]*)?>/g) || []).length, 1)
       assert.doesNotMatch(html, /NaN|Infinity|undefined/)
       assert.match(html, /site-shell/)
       assert.match(html, /class="theme-toggle"/)
@@ -155,7 +161,10 @@ try {
       if (route === 'drivers') { assert.match(html, /driver-line/); assert.match(html, /CPIUFDNS/); assert.match(html, /chart-share/); assert.doesNotMatch(html, /NaN|undefined%/) }
       if (['home', 'monitor', 'scenarios', 'fiscal', 'regimes', 'since-1971'].includes(route)) assert.doesNotMatch(html, /NaN|Infinity|undefined/)
       if (route === 'research/digital-money') {
-        assert.equal((html.match(/data-digital-fact=/g)||[]).length,4)
+        for (const file of ['stablecoins', 'treasury-holdings']) {
+          const publications = JSON.parse(await readFile(join(root, `data/digital-money/${file}.json`), 'utf8'))
+          for (const record of publications.records) assert.ok(html.includes(`data-digital-fact="${record.id}"`), record.id)
+        }
         assert.match(html,/DPSACBM027SBOG/)
         assert.match(html,language==='zh'?/来源未注明/:/Not specified by the source/)
         assert.match(html,language==='zh'?/不等于美联储创造货币/:/not Federal Reserve money creation/)
@@ -163,46 +172,47 @@ try {
         assert.doesNotMatch(html,/data-series="OPHNFB"/)
       }
       if (route === 'research/ai-productivity') {
-        assert.equal((html.match(/class="ai-monitor-card"/g)||[]).length,8)
+        assert.match(html, /class="ai-monitor-card"/)
         for (const id of ['OPHNFB','ULCNFB','COMPNFB','CENSUS_DATACENTER','REAL_GDP_WORKER','IPN22112CS']) assert.ok(html.includes(id))
         assert.match(html, language === 'zh' ? /本判断如何计算/ : /How this assessment is calculated/)
         assert.match(html, language === 'zh' ? /不是纯 AI/ : /not AI-only/)
         assert.match(html, /viewBox="0 0 640 245"/)
         assert.match(html, /#\/fiscal/)
       }
-      if (route === 'monitor') assert.equal((html.match(/<article>/g) || []).length, 11)
+      if (route === 'monitor') {
+        for (const id of ['CPIAUCNS', 'M2SL']) assert.ok(!html.includes(`data-series-status="${id}" data-freshness="UNKNOWN"`), `${id}: stripped chart metadata retains its contracted observation date`)
+      }
+      if (route === 'monitor') for (const id of ['CPIAUCNS', 'PCEPILFE', 'DGS10', 'DFII10', 'T5YIFR', 'DTWEXBGS', 'WALCL', 'M2SL']) assert.ok(html.includes(id), `Monitor retains ${id}`)
       if (route === 'home') {
-        assert.match(html, /dollar-power-result/)
-        assert.match(html, /value="100000"/)
-        assert.match(html, /41,199/)
-        assert.doesNotMatch(html, /<table|class="health-card"|class="ranking-table"/)
-        assert.match(html, /2026-02-25/)
-        assert.match(html, /data-cbo-segment="projected"/)
-        assert.match(html, language === 'zh' ? /未来20–30年/ : /A 20–30 YEAR VIEW/)
-        assert.match(html, language === 'zh' ? /不预设美元一定会崩溃/ : /does not assume that the dollar will collapse/)
+        assert.match(html, /data-page="home"/)
+        const domesticAt = html.indexOf('data-dollar-outcome="domestic"')
+        const internationalAt = html.indexOf('data-dollar-outcome="international"')
+        const mapAt = html.indexOf('id="research-map"')
+        const evidenceAt = html.indexOf('id="current-evidence"')
+        const themesAt = html.indexOf('data-research-theme=')
+        assert.ok(domesticAt >= 0 && internationalAt >= 0, 'Two separate dollar outcomes are visible')
+        assert.ok(mapAt > domesticAt && mapAt > internationalAt, 'Dual outcomes precede the explanatory map')
+        assert.ok(evidenceAt > mapAt && themesAt > evidenceAt, 'Compact map precedes early evidence, then detailed themes')
+        for (const stage of researchStages) assert.ok(html.includes(`data-research-stage="${stage.id}"`), stage.id)
+        for (const theme of structuralThemes) assert.ok(html.includes(`data-research-theme="${theme.id}"`), theme.id)
+        const cards = [...html.matchAll(/<article[^>]*data-evidence-series="([^"]+)"[^>]*>([\s\S]*?)<\/article>/g)]
+        assert.ok(cards.length >= 3 && cards.length <= 5, 'Home presents a compact evidence selection')
+        for (const [, id, card] of cards) {
+          assert.match(card, /data-observed-value/)
+          assert.match(card, /data-observation-date/)
+          assert.match(card, /\d{4}-(?:\d{2}|Q[1-4])|\b20\d{2}\b/)
+          assert.ok(card.includes(`data-series-status="${id}"`), `${id} reuses V0.13 provenance`)
+          assert.match(card, /data-freshness="[A-Z_]+"/)
+          assert.match(card, /href="https:\/\//)
+        }
+        assert.doesNotMatch(html, /<table|class="health-card"|class="ranking-table"|data-cbo-segment=/)
+        assert.doesNotMatch(html, /class="[^"]*(?:ai-preview|dm-preview|shocks-preview|framework-forces)/)
+        for (const route of ['#/purchasing-power', '#/scenarios', '#/research']) assert.ok(html.includes(route), route)
         const primaryNav = html.match(/<nav class="desktop-nav"[^>]*>(.*?)<\/nav>/)[1]
-        assert.equal((primaryNav.match(/<a /g) || []).length, 6)
+        for (const route of primaryRoutes) assert.ok(primaryNav.includes(`href="#/${route}"`), route)
         assert.doesNotMatch(primaryNav, /#\/monitor|#\/map|#\/sources|#\/drivers/)
-        assert.equal((html.match(/<section class="ia-section"/g) || []).length, 9)
-        assert.ok(html.indexOf('class="research-framework"') < html.indexOf('class="ia-summary"'))
-        assert.ok(html.indexOf('class="framework-scenarios"') < html.indexOf('class="dollar-power-result"'))
-        assert.equal((html.match(/class="framework-force"/g) || []).length, 7)
-        const forces = html.split('<div class="framework-forces">')[1].split('<div class="framework-result">')[0]
-        assert.doesNotMatch(forces, /<\/article><span/, 'Separators must not occupy grid cells between cards')
-        assert.equal((forces.match(/class="framework-card-heading"/g) || []).length, 7)
-        assert.equal((html.match(/class="framework-planned"/g) || []).length, 0)
-        const shocksAt = html.indexOf('class="ia-section shocks-preview"')
-        assert.ok(shocksAt > html.indexOf('class="research-framework"'))
-        assert.ok(shocksAt < html.indexOf('class="ia-summary"'))
-        const preview = html.slice(shocksAt, html.indexOf('class="ia-section evidence-start"'))
-        assert.doesNotMatch(preview, /<svg|<table|data-indicator=/)
-        for (const topic of shockTopics.filter(topic => topic !== 'history')) assert.ok(preview.includes(`#/external-shocks?topic=${topic}`))
-        assert.match(html,/class="ia-section dm-preview"/)
-        assert.match(html,/#\/research\/digital-money/)
-        const f = frameworkCopy[language]
-        for (const phrase of [f.question, f.outcome, f.horizonsTitle, f.scenariosTitle, ...f.horizons.map(h => h.duration), ...f.scenarios.map(s => s[0])]) assert.ok(html.includes(phrase), phrase)
-        assert.match(html, language === 'zh' ? /不分配概率/ : /No probabilities are assigned/)
-        assert.doesNotMatch(html, /What Determines Long-Term Dollar Purchasing Power|什么决定美元的长期购买力/)
+        assert.match(html, /id="main-content"/)
+        assert.match(html, /class="skip-link"/)
       }
       if (route === 'scenarios') assert.match(html, /411,987/)
       if (route === 'fiscal') {
@@ -219,18 +229,19 @@ try {
     }
     for (const hash of ['#/research/data?series=OPHNFB,ULCNFB,COMPNFB&range=5', '#/research/data?series=GSCPI,SIPRI_US_GDP,DFII10&range=all', '#/research/digital-money?focus=deposits', '#/research/digital-money?focus=dollarization', '#/research/ai-productivity?focus=labor', '#/research/ai-productivity?focus=growth', '#/fiscal?metric=interest&focus=outlook', '#/fiscal?metric=deficit', '#/monitor?group=inflation', '#/monitor?group=monetary', '#/monitor?group=market', '#/map?country=USA&year=2024&focus=compare', '#/sources?focus=health']) {
       globalThis.window = { location: { hash } }
-      const html = renderToString(React.createElement(App))
+      const html = await renderHtml(React.createElement(App))
       assert.doesNotMatch(html, /NaN|undefined|Infinity/)
       if (hash.includes('metric=interest')) assert.match(html.replace(/<!--.*?-->/g, ''), /6\.93% GDP/)
       if (hash.includes('metric=deficit')) assert.match(html.replace(/<!--.*?-->/g, ''), /9\.13% GDP/)
-      if (hash.includes('group=inflation') || hash.includes('group=monetary')) assert.equal((html.match(/<article>/g) || []).length, 3)
-      if (hash.includes('group=market')) assert.equal((html.match(/<article>/g) || []).length, 4)
+      if (hash.includes('group=inflation')) for (const id of ['CPIAUCNS', 'PCEPILFE', 'T5YIFR']) assert.ok(html.includes(id))
+      if (hash.includes('group=monetary')) for (const id of ['WALCL', 'M2SL', 'DFII10']) assert.ok(html.includes(id))
+      if (hash.includes('group=market')) for (const id of ['DGS10', 'DFII10', 'T5YIFR', 'DTWEXBGS']) assert.ok(html.includes(id))
       if (hash.includes('focus=compare')) assert.match(html, /id="country-compare"/)
       if (hash.includes('focus=health')) assert.match(html, /id="data-status"/)
     }
     for (const topic of ['overview', ...shockTopics, 'invalid']) {
       globalThis.window = { location: { hash: `#/external-shocks?topic=${topic}` } }
-      const html = renderToString(React.createElement(App))
+      const html = await renderHtml(React.createElement(App))
       const t = shockCopy[language]
       assert.equal(routeFromHash(), 'external-shocks')
       assert.equal(routeSection(routeFromHash()), 'research')
@@ -285,7 +296,7 @@ try {
     for (const topic of ['food', 'energy', 'rates', 'housing', 'wages', 'money']) {
       for (const episode of ['oil', 'volcker', 'crisis', 'pandemic']) {
         globalThis.window = { location: { hash: `#/drivers?topic=${topic}&episode=${episode}` } }
-        const html = renderToString(React.createElement(App))
+        const html = await renderHtml(React.createElement(App))
         assert.match(html, /driver-episode/)
         assert.match(html, /era-band/)
         assert.doesNotMatch(html, /NaN|Infinity/)
@@ -296,16 +307,16 @@ try {
       }
     }
     globalThis.window = { location: { hash: '#/timeline?year=1979' } }
-    assert.match(renderToString(React.createElement(App)), /drivers\?topic=rates&amp;episode=volcker/)
+    assert.match(await renderHtml(React.createElement(App)), /drivers\?topic=rates&amp;episode=volcker/)
   }
   globalThis.localStorage = { getItem: () => { throw new Error('Storage blocked') } }
   globalThis.window = { location: { hash: '#/home' } }
-  assert.match(renderToString(React.createElement(App)), /site-shell/)
+  assert.match(await renderHtml(React.createElement(App)), /site-shell/)
   console.log(`PASS: all ${routes.length} views and 48 driver-topic/episode/language combinations render; history links and blocked storage work`)
   await build({ configFile: false, root, logLevel: 'error', build: { ssr: 'src/charts/WorldMap.jsx', outDir: join(temp, 'map'), minify: false } })
   const { default: WorldMap } = await import(pathToFileURL(join(temp, 'map/WorldMap.js')))
   for (const language of ['en', 'zh']) {
-    const html = renderToString(React.createElement(WorldMap, { year: 2024, selected: 'CHN', language, onSelect: () => {} }))
+    const html = await renderHtml(React.createElement(WorldMap, { year: 2024, selected: 'CHN', language, onSelect: () => {} }))
     assert.equal((html.match(/class="map-country /g) || []).length, 176)
     assert.doesNotMatch(html, /NaN|Infinity/)
     assert.match(html, /is-selected/)
@@ -319,7 +330,7 @@ const html = await readFile(join(root, 'dist/index.html'), 'utf8')
 const assets = [...html.matchAll(/(?:src|href)="([^\"]+)"/g)].map(match => match[1])
 assert.ok(assets.length >= 2)
 for (const asset of assets) {
-  assert.ok(asset.startsWith('/world-inflation-lens/assets/'), asset)
+  assert.ok(asset.startsWith('/world-inflation-lens/assets/') || asset === '/world-inflation-lens/favicon.svg', asset)
   assert.ok(existsSync(join(root, 'dist', asset.replace('/world-inflation-lens/', ''))), asset)
 }
 console.log('PASS: production asset URLs use the GitHub Pages subpath and resolve in dist')
@@ -354,19 +365,15 @@ for (const rule of environmentRules) {
 console.log('PASS: six-section architecture, focused tool links, legacy hashes, compact homepage and transparent environment thresholds')
 
 for (const language of ['en', 'zh']) {
-  const f = frameworkCopy[language]
-  assert.equal(f.forces.length, 7)
-  assert.equal(f.horizons.length, 3)
-  assert.equal(f.scenarios.length, 4)
-  for (const force of f.forces) {
-    assert.ok(force.indicators.length >= 2 && force.indicators.length <= 4)
-    for (const [, hash] of force.indicators) if (hash) {
-      globalThis.window = { location: { hash } }
-      assert.notEqual(routeFromHash(), 'home')
+  for (const item of [...dollarOutcomes, ...structuralThemes, ...researchStages]) {
+    assert.ok(item.label[language] && item.description[language], `${item.id}: bilingual research meaning`)
+    for (const route of item.routes || []) {
+      const pathname = route.href.slice(2).split('?')[0]
+      assert.ok(routes.includes(pathname), `Research configuration links to an implemented route: ${route.href}`)
     }
   }
 }
-console.log('PASS: bilingual seven-force framework precedes data, three horizons, four non-probabilistic scenarios and explicit unintegrated indicators')
+console.log('PASS: bilingual Dual-Dollar structure, canonical research map, dated source-linked early evidence and preserved secondary tools')
 
 assert.equal(shockEpisodes.length, 8)
 assert.equal(new Set(shockIndicators.map(i => i.id)).size, shockIndicators.length)

@@ -1,0 +1,7 @@
+import React from 'react'
+import summary from '../../data/international-dollar/summary.json'
+import { SeriesStatusNote } from './SystemStatus.jsx'
+export function InternationalSummary({language}) {
+ const zh=language==='zh', names=zh?['美元外汇储备份额','外国持有美国国债','境外非银行美元信贷']:['USD share of FX reserves','Foreign Treasury holdings','USD credit to non-banks outside US']
+ return <section className="intl-summary" aria-labelledby="intl-summary-title"><h2 id="intl-summary-title">{zh?'国际美元证据':'International dollar evidence'}</h2><p>{zh?'三种职能，覆盖仍不完整；各自日期不同，不相加。':'Three functions, still partial coverage. Dates differ; these measures are not added together.'}</p><div className="intl-summary-grid">{summary.series.map((s,i)=><article key={s.id} data-international-summary={s.id}><h3>{names[i]}</h3><p className="intl-summary-value"><strong>{s.value.toLocaleString(language,{maximumFractionDigits:i===0?2:0})}</strong> {i===0?'%':zh?'百万美元':'USD millions'}</p><span className="intl-summary-period">{s.sourcePeriod}</span><details><summary>{zh?'来源、口径与新鲜度':'Source, definition and freshness'}</summary><a href={s.sourceUrl} target="_blank" rel="noreferrer">{s.publisher} ↗</a><p>{i===0?(zh?'含 IMF 插补的全球外汇储备，不含黄金。':'World FX reserves including IMF imputations; excludes gold.'):(zh?'水平值，不是流量。':'Outstanding level, not a flow.')}</p><SeriesStatusNote source={s} language={language}/></details></article>)}</div><a className="ia-more" href="#/research/international-dollar">{zh?'打开国际美元透视':'Open International Dollar Lens'} →</a></section>
+}

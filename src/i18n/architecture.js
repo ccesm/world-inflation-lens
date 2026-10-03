@@ -72,4 +72,5 @@ export const sectionLinks = {
   scenarios: [ ['#/scenarios', '购买力与通胀计算器', 'Purchasing Power Calculator'], ['#/fiscal?focus=model', '债务情景模型', 'Debt Scenario Model'] ],
   research: [ ['#/research/digital-money', '数字货币', 'Digital Money'], ['#/research/ai-productivity', '人工智能与生产率', 'AI & Productivity'], ['#/external-shocks', '外部冲击', 'External Shocks'], ['#/overview', '全球通胀', 'Global Inflation'], ['#/map', '全球地图', 'Global Map'], ['#/map?focus=compare', '国家对比', 'Country Compare'], ['#/drivers', '通胀因素', 'Inflation Drivers'], ['#/drivers?topic=food', '食品', 'Food'], ['#/drivers?topic=energy', '能源', 'Energy'], ['#/drivers?topic=money', '货币', 'Money'], ['#/sources', '数据来源', 'Data Sources'], ['#/sources?focus=health', '数据健康', 'Data Health'] ],
 }
-sectionLinks.research.unshift(['#/research/data', '数据工作台', 'Data Workspace'], ['#/research/updates', '更新与修订', 'Updates & Revisions'])
+sectionLinks.dollar.push(['#/research/international-dollar', '国际美元', 'International Dollar'])
+sectionLinks.research.unshift(['#/research/international-dollar', '国际美元', 'International Dollar'], ['#/research/data', '数据工作台', 'Data Workspace'], ['#/research/updates', '更新与修订', 'Updates & Revisions'])

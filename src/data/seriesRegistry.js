@@ -1,3 +1,4 @@
+import { internationalPolicies } from './internationalDefinitions.js'
 // Authoritative display names and evidence policies; observations remain in validated snapshots.
 const names = {
   "CPIAUCNS": {
@@ -353,6 +354,7 @@ seriesRegistry['FP.CPI.TOTL.ZG'] = { title: { zh: '世界银行 · 各国消费�
 seriesRegistry.REAL_GDP_WORKER = { title: { zh: '每名劳动者实际 GDP · 衍生指标', en: 'Real GDP per Worker · Derived' }, automationType: 'DERIVED', researchStatus: 'INTEGRATED', primaryResearchRole: 'STRUCTURAL_CAPACITY', secondaryRoles: [], inputIds: ['GDPC1', 'CE16OV'] }
 seriesRegistry.HISTORY_EVENTS = { title: { zh: '历史事件资料', en: 'Historical Events' }, automationType: 'STATIC', researchStatus: 'INTEGRATED', primaryResearchRole: 'HISTORICAL_CONTEXT', secondaryRoles: [] }
 seriesRegistry.FREIGHT = { title: { zh: '运价', en: 'Freight Rates' }, automationType: 'PLANNED', researchStatus: 'PLANNED', primaryResearchRole: 'STRUCTURAL_EXTERNAL', secondaryRoles: [] }
+Object.assign(seriesRegistry, internationalPolicies)
 export const seriesTitles = language => Object.fromEntries(Object.entries(seriesRegistry).map(([id,entry])=>[id,entry.title[language]]))
 export const indicatorSeriesIds = { 'natural-gas': 'MHHNGSP', oil: 'MCOILWTICO', 'energy-cpi': 'CPIENGNS', 'food-cpi': 'CPIUFDNS', gpr: 'GPR', defense: 'SIPRI_US_GDP', 'fao-food': 'FAO_FOOD', gscpi: 'GSCPI', freight: 'FREIGHT' }
 export function assertResearchConsistency(indicators, integratedIds) {

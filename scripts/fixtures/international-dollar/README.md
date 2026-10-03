@@ -1,0 +1,9 @@
+# Official source-response fixtures
+
+These are gzip-compressed original public official-source responses downloaded October 2, 2026. They are test inputs, not a second frontend data store. `scripts/lib/international-fixtures.mjs` decompresses them into isolated refresh test directories. Exact endpoint URLs and SHA-256 hashes are retained in the corresponding snapshots under `data/international-dollar/`.
+
+- `wil-cofer.csv.gz`: IMF Statistics Department, COFER 7.0.1, selected world currency/imputation quarterly shares. [Product](https://data.imf.org/en/Datasets/COFER), [IMF terms](https://www.imf.org/en/about/copyright-and-terms).
+- `wil-tic.txt.gz`: U.S. Treasury TIC SLT Table 3, original full tab-delimited response; selected columns/holders are parsed. `wil-tic-headers.json` preserves official HTTP Last-Modified for deterministic file-update semantics. [Download](https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/slt_table3.txt), [Treasury terms](https://home.treasury.gov/utility/privacy-legal-and-disclaimers).
+- `wil-bis-total.csv.gz`, `wil-bis-loans.csv.gz`, `wil-bis-securities.csv.gz`: BIS Global Liquidity Indicators WS_GLI 1.0, USD non-bank credit outside the US. [Product](https://data.bis.org/topics/GLI), [BIS statistical terms](https://data.bis.org/help/legal). Source responses are in English; any Chinese interface translation is unofficial and does not imply BIS endorsement.
+
+Tests independently mutate field names, dimensions, units, denominator markers, category coverage, missingness, periods and revisions to verify failure behavior. A fixture update needs source review; do not silently rewrite fixtures to make an unexpected upstream schema pass. Current snapshots are current-vintage history, not reconstructed historical publication vintages.
