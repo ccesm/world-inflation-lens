@@ -1,0 +1,554 @@
+{
+  "CPIAUCNS": {
+    "id": "CPIAUCNS",
+    "units": "Index 1982-1984=100",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "CPIUFDNS": {
+    "id": "CPIUFDNS",
+    "units": "Index 1982-1984=100",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "CPIENGNS": {
+    "id": "CPIENGNS",
+    "units": "Index 1982-1984=100",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "MCOILWTICO": {
+    "id": "MCOILWTICO",
+    "units": "Dollars per Barrel",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "FEDFUNDS": {
+    "id": "FEDFUNDS",
+    "units": "Percent",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "CUUR0000SAH1": {
+    "id": "CUUR0000SAH1",
+    "units": "Index 1982-1984=100",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "CEU0500000003": {
+    "id": "CEU0500000003",
+    "units": "Dollars per Hour",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "M2SL": {
+    "id": "M2SL",
+    "units": "Billions of Dollars",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "geography": "US"
+  },
+  "PCEPILFE": {
+    "id": "PCEPILFE",
+    "units": "Index 2017=100",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "geography": "US"
+  },
+  "T5YIFR": {
+    "id": "T5YIFR",
+    "units": "Percent",
+    "frequency": "daily",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "DGS10": {
+    "id": "DGS10",
+    "units": "Percent",
+    "frequency": "daily",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "DFII10": {
+    "id": "DFII10",
+    "units": "Percent",
+    "frequency": "daily",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "DTWEXBGS": {
+    "id": "DTWEXBGS",
+    "units": "Index Jan 2006=100",
+    "frequency": "daily",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "WALCL": {
+    "id": "WALCL",
+    "units": "Millions of U.S. Dollars",
+    "frequency": "weekly, as of wednesday",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "FYPUGDA188S": {
+    "id": "FYPUGDA188S",
+    "units": "Percent of GDP",
+    "frequency": "annual",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "FYFSGDA188S": {
+    "id": "FYFSGDA188S",
+    "units": "Percent of GDP",
+    "frequency": "annual",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "FYOINT": {
+    "id": "FYOINT",
+    "units": "Millions of Dollars",
+    "frequency": "annual, fiscal year",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "FYFR": {
+    "id": "FYFR",
+    "units": "Millions of Dollars",
+    "frequency": "annual, fiscal year",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "geography": "US"
+  },
+  "OPHNFB": {
+    "id": "OPHNFB",
+    "units": "Index 2017=100",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "definition": "Nonfarm business real output per hour of all workers; observed labor productivity, not an AI contribution.",
+    "geography": "US"
+  },
+  "ULCNFB": {
+    "id": "ULCNFB",
+    "units": "Index 2017=100",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "definition": "Nonfarm business nominal labor compensation per unit of real output.",
+    "geography": "US"
+  },
+  "COMPNFB": {
+    "id": "COMPNFB",
+    "units": "Index 2017=100",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "definition": "Nonfarm business nominal hourly compensation, including wages and benefits; same sector as OPHNFB and ULCNFB.",
+    "geography": "US"
+  },
+  "PNFIC1": {
+    "id": "PNFIC1",
+    "units": "Billions of Chained 2017 Dollars",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "seasonally adjusted annual rate",
+    "definition": "Real private nonresidential fixed investment; broad business investment, not AI-only spending.",
+    "geography": "US"
+  },
+  "A679RC1Q027SBEA": {
+    "id": "A679RC1Q027SBEA",
+    "units": "Billions of Dollars",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "seasonally adjusted annual rate",
+    "definition": "Nominal private fixed investment in information processing equipment and software; AI investment proxy, includes non-AI technology.",
+    "geography": "US"
+  },
+  "B985RC1Q027SBEA": {
+    "id": "B985RC1Q027SBEA",
+    "units": "Billions of Dollars",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "seasonally adjusted annual rate",
+    "definition": "Nominal private nonresidential software investment; AI investment proxy, not a direct AI-spending measure.",
+    "geography": "US"
+  },
+  "B935RC1Q027SBEA": {
+    "id": "B935RC1Q027SBEA",
+    "units": "Billions of Dollars",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "seasonally adjusted annual rate",
+    "definition": "Nominal private investment in computers and peripheral equipment; includes non-AI uses.",
+    "geography": "US"
+  },
+  "IPN22112CS": {
+    "id": "IPN22112CS",
+    "units": "Index 2017=100",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "definition": "Commercial and other electricity sales volume index. Demand proxy, not national kWh consumption or AI-specific load.",
+    "geography": "US"
+  },
+  "CUUR0000SEHF01": {
+    "id": "CUUR0000SEHF01",
+    "units": "Index 1982-1984=100",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "definition": "U.S. city average consumer electricity price index; not industrial tariffs or data-center electricity costs.",
+    "geography": "US"
+  },
+  "GDPC1": {
+    "id": "GDPC1",
+    "units": "Billions of Chained 2017 Dollars",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "seasonally adjusted annual rate",
+    "definition": "Observed real U.S. GDP at seasonally adjusted annual rate; not potential GDP.",
+    "geography": "US"
+  },
+  "CE16OV": {
+    "id": "CE16OV",
+    "units": "Thousands of Persons",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "definition": "Civilian employed persons age 16 and older, household survey. Population-control breaks are not adjusted by this site.",
+    "geography": "US"
+  },
+  "IPG3344S": {
+    "id": "IPG3344S",
+    "units": "Index 2017=100",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "definition": "Real production of semiconductors and other electronic components, NAICS 3344; broader than AI chips, not installed compute capacity.",
+    "geography": "US"
+  },
+  "MHHNGSP": {
+    "id": "MHHNGSP",
+    "units": "Dollars per Million BTU",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "definition": "Henry Hub natural gas spot price; a generation-input benchmark, not an electricity tariff or a measure of AI demand.",
+    "geography": "US"
+  },
+  "CENSUS_DATACENTER": {
+    "id": "CENSUS_DATACENTER",
+    "units": "Millions of Dollars",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted annual rate",
+    "definition": "Private data-center construction spending, including non-AI data centers. Buildings put in place, not total AI capex, equipment purchases or installed computing capacity."
+  },
+  "CENSUS_NONRES": {
+    "id": "CENSUS_NONRES",
+    "units": "Millions of Dollars",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted annual rate",
+    "definition": "Broad private nonresidential construction spending; not AI-specific infrastructure."
+  },
+  "CENSUS_ELECTRONIC": {
+    "id": "CENSUS_ELECTRONIC",
+    "units": "Millions of Dollars",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted annual rate",
+    "definition": "Private computer, electronic and electrical manufacturing construction; broader than semiconductor fabs and not an AI-only measure."
+  },
+  "DPSACBM027SBOG": {
+    "id": "DPSACBM027SBOG",
+    "units": "Billions of U.S. Dollars",
+    "frequency": "monthly",
+    "seasonalAdjustment": "seasonally adjusted",
+    "definition": "Total deposits at all U.S. commercial banks, H.8 monthly seasonally adjusted stock. Aggregate bank funding context, not a measure of deposits migrating to stablecoins.",
+    "geography": "US"
+  },
+  "GPR": {
+    "id": "GPR",
+    "units": "index_1985_2019_100",
+    "frequency": "monthly",
+    "definition": "Recent GPR (Index: 1985:2019=100)"
+  },
+  "GPRT": {
+    "id": "GPRT",
+    "units": "index_1985_2019_100",
+    "frequency": "monthly",
+    "definition": "Recent GPR Threats (Index: 1985:2019=100)"
+  },
+  "GPRA": {
+    "id": "GPRA",
+    "units": "index_1985_2019_100",
+    "frequency": "monthly",
+    "definition": "Recent GPR Acts (Index: 1985:2019=100)"
+  },
+  "GSCPI": {
+    "id": "GSCPI",
+    "units": "standard_deviations",
+    "frequency": "monthly",
+    "definition": "Standard deviations from historical average; source-model estimates, not percent."
+  },
+  "FAO_FOOD": {
+    "id": "FAO_FOOD",
+    "units": "index_2014_2016_100",
+    "frequency": "monthly",
+    "definition": "Nominal Food Price Index; international commodity prices, 2014–2016=100. Recent meat/total values include source projections and can be revised."
+  },
+  "FAO_MEAT": {
+    "id": "FAO_MEAT",
+    "units": "index_2014_2016_100",
+    "frequency": "monthly",
+    "definition": "Nominal Meat; international commodity prices, 2014–2016=100. Recent meat/total values include source projections and can be revised."
+  },
+  "FAO_DAIRY": {
+    "id": "FAO_DAIRY",
+    "units": "index_2014_2016_100",
+    "frequency": "monthly",
+    "definition": "Nominal Dairy; international commodity prices, 2014–2016=100. Recent meat/total values include source projections and can be revised."
+  },
+  "FAO_CEREALS": {
+    "id": "FAO_CEREALS",
+    "units": "index_2014_2016_100",
+    "frequency": "monthly",
+    "definition": "Nominal Cereals; international commodity prices, 2014–2016=100. Recent meat/total values include source projections and can be revised."
+  },
+  "FAO_OILS": {
+    "id": "FAO_OILS",
+    "units": "index_2014_2016_100",
+    "frequency": "monthly",
+    "definition": "Nominal Oils; international commodity prices, 2014–2016=100. Recent meat/total values include source projections and can be revised."
+  },
+  "FAO_SUGAR": {
+    "id": "FAO_SUGAR",
+    "units": "index_2014_2016_100",
+    "frequency": "monthly",
+    "definition": "Nominal Sugar; international commodity prices, 2014–2016=100. Recent meat/total values include source projections and can be revised."
+  },
+  "SIPRI_US_GDP": {
+    "id": "SIPRI_US_GDP",
+    "units": "percent_gdp",
+    "frequency": "annual",
+    "definition": "USA: All figures for the USA are for financial year (1 Oct. of the previous year–30 Sep. of the stated year) rather than calendar year. US military expenditure includes a portion of the total spending of the National Intelligence Programme, which SIPRI has judged to be military-related. US figures between 2022 and 2024 include estimates of military aid to Ukraine. These include financial contributions, training and operational costs, replacement costs for military equipment stocks donated to Ukraine, and payments to procure additional military equipment for the Ukrainian armed forces. However, these estimates do not include the estimated value of military equipment stocks donated to Ukraine."
+  },
+  "SIPRI_US_GOV": {
+    "id": "SIPRI_US_GOV",
+    "units": "percent_government",
+    "frequency": "annual",
+    "definition": "USA: All figures for the USA are for financial year (1 Oct. of the previous year–30 Sep. of the stated year) rather than calendar year. US military expenditure includes a portion of the total spending of the National Intelligence Programme, which SIPRI has judged to be military-related. US figures between 2022 and 2024 include estimates of military aid to Ukraine. These include financial contributions, training and operational costs, replacement costs for military equipment stocks donated to Ukraine, and payments to procure additional military equipment for the Ukrainian armed forces. However, these estimates do not include the estimated value of military equipment stocks donated to Ukraine."
+  },
+  "SIPRI_US_REAL": {
+    "id": "SIPRI_US_REAL",
+    "units": "million_2024_usd",
+    "frequency": "annual",
+    "definition": "USA: All figures for the USA are for financial year (1 Oct. of the previous year–30 Sep. of the stated year) rather than calendar year. US military expenditure includes a portion of the total spending of the National Intelligence Programme, which SIPRI has judged to be military-related. US figures between 2022 and 2024 include estimates of military aid to Ukraine. These include financial contributions, training and operational costs, replacement costs for military equipment stocks donated to Ukraine, and payments to procure additional military equipment for the Ukrainian armed forces. However, these estimates do not include the estimated value of military equipment stocks donated to Ukraine."
+  },
+  "SIPRI_WORLD_REAL": {
+    "id": "SIPRI_WORLD_REAL",
+    "units": "billion_2024_usd",
+    "frequency": "annual",
+    "definition": "Official world aggregate in constant 2024 USD billions; includes source estimates; 1991 unavailable."
+  },
+  "FED_STABLECOIN_SIZE": {
+    "id": "FED_STABLECOIN_SIZE",
+    "units": "USD billion",
+    "frequency": "publication snapshot",
+    "seasonalAdjustment": "not applicable",
+    "definition": "Global stablecoin market capitalization cited by Fed staff; underlying provider DeFiLlama. Not an official monetary aggregate."
+  },
+  "IMF_STABLECOIN_SIZE": {
+    "id": "IMF_STABLECOIN_SIZE",
+    "units": "USD billion",
+    "frequency": "publication snapshot",
+    "seasonalAdjustment": "not applicable",
+    "definition": "Rounded global stablecoin market-size estimate in IMF remarks; exact observation date and underlying dataset not specified."
+  },
+  "IMF_USD_SHARE": {
+    "id": "IMF_USD_SHARE",
+    "units": "percent of stablecoin denomination",
+    "frequency": "publication snapshot",
+    "seasonalAdjustment": "not applicable",
+    "definition": "Approximate USD-denominated share cited in IMF remarks; exact measurement date and denominator construction not specified. Not the share of global payments."
+  },
+  "IMF_TBILL_SHARE": {
+    "id": "IMF_TBILL_SHARE",
+    "units": "percent of outstanding US Treasury bills",
+    "frequency": "publication snapshot",
+    "seasonalAdjustment": "not applicable",
+    "definition": "Approximate stablecoin holdings as a share of outstanding U.S. Treasury bills cited in IMF remarks. Not percent of all Treasury debt, nor percent of issuer reserves; no dollar holding inferred."
+  },
+  "COFER_USD": {
+    "id": "COFER_USD",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_USD.SHRO_PT.Q",
+    "definition": "IMF-published US dollar share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_EUR": {
+    "id": "COFER_EUR",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_EUR.SHRO_PT.Q",
+    "definition": "IMF-published Euro share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_CNY": {
+    "id": "COFER_CNY",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_CNY.SHRO_PT.Q",
+    "definition": "IMF-published Chinese renminbi share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_JPY": {
+    "id": "COFER_JPY",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_JPY.SHRO_PT.Q",
+    "definition": "IMF-published Japanese yen share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_GBP": {
+    "id": "COFER_GBP",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_GBP.SHRO_PT.Q",
+    "definition": "IMF-published Pound sterling share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_AUD": {
+    "id": "COFER_AUD",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_AUD.SHRO_PT.Q",
+    "definition": "IMF-published Australian dollar share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_CAD": {
+    "id": "COFER_CAD",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_CAD.SHRO_PT.Q",
+    "definition": "IMF-published Canadian dollar share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_CHF": {
+    "id": "COFER_CHF",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_CHF.SHRO_PT.Q",
+    "definition": "IMF-published Swiss franc share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_OTHER": {
+    "id": "COFER_OTHER",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.AFXRA.CI_OTHC.SHRO_PT.Q",
+    "definition": "IMF-published Other currencies share of global official foreign-exchange reserves, including IMF imputations under the revised COFER methodology.",
+    "geography": "World"
+  },
+  "COFER_IMPUTED": {
+    "id": "COFER_IMPUTED",
+    "units": "Percent of world FX reserves",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "Global official foreign-exchange reserves including IMF imputations; excludes monetary gold",
+    "sourceKey": "G001.TFXRA_IMP.CI_T.SHRO_PT.Q",
+    "definition": "IMF-published share of total foreign-exchange reserves imputed by IMF staff. Coverage qualifier; not a currency share.",
+    "geography": "World"
+  },
+  "TIC_TOTAL": {
+    "id": "TIC_TOTAL",
+    "units": "USD millions",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "None: a level of Treasury securities holdings, not a share or a flow.",
+    "definition": "End-of-month foreign holdings of long- and short-term U.S. Treasury securities; Table 3 for_treas_pos, combining TIC SLT long-term holdings with TIC BL2 short-term holdings. Long-term securities are reported at fair value. Holdings changes are not net purchases.",
+    "geography": "All foreign residents, including international and regional organizations"
+  },
+  "TIC_JAPAN": {
+    "id": "TIC_JAPAN",
+    "units": "USD millions",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "None: a level of Treasury securities holdings, not a share or a flow.",
+    "definition": "End-of-month foreign holdings of long- and short-term U.S. Treasury securities; Table 3 for_treas_pos, combining TIC SLT long-term holdings with TIC BL2 short-term holdings. Long-term securities are reported at fair value. Holdings changes are not net purchases.",
+    "geography": "Japan; custody-based country attribution"
+  },
+  "TIC_CHINA": {
+    "id": "TIC_CHINA",
+    "units": "USD millions",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "None: a level of Treasury securities holdings, not a share or a flow.",
+    "definition": "End-of-month foreign holdings of long- and short-term U.S. Treasury securities; Table 3 for_treas_pos, combining TIC SLT long-term holdings with TIC BL2 short-term holdings. Long-term securities are reported at fair value. Holdings changes are not net purchases.",
+    "geography": "Mainland China; custody-based country attribution"
+  },
+  "TIC_UK": {
+    "id": "TIC_UK",
+    "units": "USD millions",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "None: a level of Treasury securities holdings, not a share or a flow.",
+    "definition": "End-of-month foreign holdings of long- and short-term U.S. Treasury securities; Table 3 for_treas_pos, combining TIC SLT long-term holdings with TIC BL2 short-term holdings. Long-term securities are reported at fair value. Holdings changes are not net purchases.",
+    "geography": "United Kingdom; custody-based country attribution"
+  },
+  "TIC_OFFICIAL": {
+    "id": "TIC_OFFICIAL",
+    "units": "USD millions",
+    "frequency": "monthly",
+    "seasonalAdjustment": "not seasonally adjusted",
+    "denominator": "None: a level of Treasury securities holdings, not a share or a flow.",
+    "definition": "End-of-month foreign holdings of long- and short-term U.S. Treasury securities; Table 3 for_treas_pos, combining TIC SLT long-term holdings with TIC BL2 short-term holdings. Long-term securities are reported at fair value. Holdings changes are not net purchases.",
+    "geography": "Foreign official institutions, including international and regional organizations"
+  },
+  "BIS_USD_TOTAL": {
+    "id": "BIS_USD_TOTAL",
+    "units": "USD millions",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "Not seasonally adjusted",
+    "denominator": "none; credit level",
+    "sourceKey": "Q.USD.3P.N.A.I.B.USD",
+    "definition": "Outstanding USD-denominated bank loans and international debt securities credit to non-bank borrowers resident outside the United States.",
+    "geography": "Non-bank borrowers resident outside the United States; residence, not nationality; BIS coverage and estimation conventions apply.",
+    "currencyDenomination": "USD",
+    "borrowerSector": "Non-banks, total"
+  },
+  "BIS_USD_LOANS": {
+    "id": "BIS_USD_LOANS",
+    "units": "USD millions",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "Not seasonally adjusted",
+    "denominator": "none; credit level",
+    "sourceKey": "Q.USD.3P.N.B.I.G.USD",
+    "definition": "Outstanding USD-denominated cross-border and locally extended bank loans to non-bank borrowers outside the United States. The BIS instrument classification is loans and deposits; estimates supplement reporting gaps.",
+    "geography": "Non-bank borrowers resident outside the United States; residence, not nationality; BIS coverage and estimation conventions apply.",
+    "currencyDenomination": "USD",
+    "borrowerSector": "Non-banks, total"
+  },
+  "BIS_USD_SECURITIES": {
+    "id": "BIS_USD_SECURITIES",
+    "units": "USD millions",
+    "frequency": "quarterly",
+    "seasonalAdjustment": "Not seasonally adjusted",
+    "denominator": "none; credit level",
+    "sourceKey": "Q.USD.3P.N.A.I.D.USD",
+    "definition": "Outstanding USD-denominated international debt securities issued by non-banks resident outside the United States, including non-bank financial and non-financial issuers; BIS exclusions apply.",
+    "geography": "Non-bank borrowers resident outside the United States; residence, not nationality; BIS coverage and estimation conventions apply.",
+    "currencyDenomination": "USD",
+    "borrowerSector": "Non-banks, total"
+  }
+}
