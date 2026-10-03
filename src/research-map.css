@@ -123,3 +123,17 @@
   .v1-home .ia-home-body>section { margin-bottom: 24px; }
   .home-evidence-grid,.home-theme-grid,.home-research-links { grid-template-columns: minmax(0,1fr); }
 }
+
+.intl-summary {margin-block:2rem;}
+.intl-summary-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;}
+.intl-summary-grid article {padding:1rem;border:1px solid var(--global-border);min-width:0;overflow-wrap:anywhere;}
+.intl-summary-grid h3 {font-size:1rem;}
+.intl-summary-grid strong {font-size:1.35rem;}
+@media(max-width:650px){.intl-summary-grid{grid-template-columns:1fr;}}
+
+/* The homepage holds only three latest observations; history stays in the research route. */
+.intl-summary-grid article { padding:.85rem; }
+.intl-summary-grid h3 { margin:0 0 .5rem; line-height:1.4; }
+.intl-summary-grid .intl-summary-value { margin:.35rem 0; line-height:1.5; }
+.intl-summary-period { display:inline-block; margin-bottom:.5rem; font-size:.9rem; }
+.intl-summary-grid details > summary { font-size:.85rem; }

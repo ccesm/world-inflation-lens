@@ -1,3 +1,4 @@
+import { InternationalSummary } from '../components/InternationalSummary.jsx'
 import React from 'react'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { iaCopy, sectionLinks } from '../i18n/architecture.js'
@@ -26,6 +27,7 @@ export function SectionLanding({ section, language }) {
     <div className="content-section global-section ia-page research-landing">
       {section === 'dollar' && <>
         <DualDollarSummary language={language} />
+        <InternationalSummary language={language} />
         <section className="research-outcome-caveats" aria-labelledby="dollar-distinction-title"><h2 id="dollar-distinction-title">{language === 'zh' ? '两种结果不能互相替代' : 'Keep the two outcomes distinct'}</h2><ul>{researchCopy[language].outcomeCaveats.map(caveat => <li key={caveat}>{caveat}</li>)}</ul></section>
         <a className="ia-more" href="#/research?focus=research-map">{language === 'zh' ? '查看完整研究地图' : 'Explore the full research map'} <span aria-hidden="true">→</span></a>
       </>}

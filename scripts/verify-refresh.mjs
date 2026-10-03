@@ -1,3 +1,4 @@
+import { internationalFixtures } from './lib/international-fixtures.mjs'
 import assert from 'node:assert/strict'
 import { productivityFixtures } from './lib/productivity-fixtures.mjs'
 import { externalFixtures } from './lib/external-fixtures.mjs'
@@ -36,12 +37,13 @@ const root = resolve(import.meta.dirname, '..')
 const temp = await mkdtemp(join(tmpdir(), 'wil-refresh-test-'))
 const read = async path => JSON.parse(await readFile(join(root, path), 'utf8'))
 const files = ['data/inflation/fred.json', 'data/inflation/drivers.json', 'data/inflation/worldbank.json', 'data/updates/history.json', 'data/inflation/monitor.json', ...['gpr','gscpi','fao-food','sipri-military'].map(id => `data/external/${id}.json`), 'data/productivity/series.json', ...['bank-deposits','stablecoins','treasury-holdings','source-excerpts'].map(id=>`data/digital-money/${id}.json`)]
+files.push(...['reserve-composition','treasury-holdings','global-dollar-credit','summary','revisions'].map(file=>`data/international-dollar/${file}.json`))
 try {
-  for (const path of [...files, 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/statusFiles.mjs', 'src/utils/systemStatus.js', 'src/utils/timeSemantics.js', 'src/data/seriesRegistry.js', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js', 'src/utils/transmission.js', 'scripts/verify-external.mjs', 'scripts/lib/external.mjs', 'scripts/lib/external-ingestion.mjs', 'scripts/lib/productivity.mjs', 'scripts/lib/productivity-sources.mjs', 'scripts/lib/digital-money.mjs']) {
+  for (const path of [...files, ...['international','international-cofer','international-tic','international-bis'].map(name=>`scripts/lib/${name}.mjs`), 'src/data/internationalDefinitions.js', 'data/countries/metadata.json', 'scripts/refresh-data.mjs', 'scripts/lib/refresh.mjs', 'scripts/lib/statusFiles.mjs', 'src/utils/systemStatus.js', 'src/utils/timeSemantics.js', 'src/data/seriesRegistry.js', 'scripts/lib/monitorSources.mjs', 'scripts/lib/fredTable.mjs', 'src/utils/inflation.js', 'src/utils/transmission.js', 'scripts/verify-external.mjs', 'scripts/lib/external.mjs', 'scripts/lib/external-ingestion.mjs', 'scripts/lib/productivity.mjs', 'scripts/lib/productivity-sources.mjs', 'scripts/lib/digital-money.mjs']) {
     await mkdir(join(temp, path, '..'), { recursive: true }); await cp(join(root, path), join(temp, path))
   }
   await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',version:'0.13.0',scripts:{build:'node -e "process.exit(0)"',verify:'node -e "process.exit(0)"'}}))
-  const input = join(temp, 'inputs'); await mkdir(input); await externalFixtures(root, input); await productivityFixtures(root,input,{revise:true})
+  const input = join(temp, 'inputs'); await mkdir(input); await externalFixtures(root, input); await productivityFixtures(root,input,{revise:true}); await internationalFixtures(root,input)
   const headline = await read(files[0]), drivers = await read(files[1]), world = await read(files[2]), countries = await read('data/countries/metadata.json')
   const originalFiles = await Promise.all(files.map(path => readFile(join(temp, path), 'utf8')))
   const allSeries = [structuredClone(headline), ...drivers.series, ...(await read('data/inflation/monitor.json')).series, await read('data/digital-money/bank-deposits.json')]
@@ -70,6 +72,11 @@ try {
   const failedReport=JSON.parse(await readFile(join(temp,'.refresh/check.json'),'utf8'));assert.equal(failedReport.result,'FAILED');assert.ok(failedReport.checkCompletedAt>=failedReport.checkStartedAt)
   assert.deepEqual(await Promise.all(files.map(path => readFile(join(temp, path), 'utf8'))), originalFiles, 'Failure must preserve every original snapshot and ledger')
   await writeFile(join(input, 'wil-inflation.json'), JSON.stringify(response))
+  const originalBis=await readFile(join(input,'wil-bis-total.csv'),'utf8')
+  await writeFile(join(input,'wil-bis-total.csv'),originalBis.replace('USD,3P,N,A,I,B,USD','EUR,3P,N,A,I,B,USD'))
+  const wrongCurrency=run();assert.notEqual(wrongCurrency.status,0);assert.match(wrongCurrency.stderr,/identity changed/)
+  assert.deepEqual(await Promise.all(files.map(path=>readFile(join(temp,path),'utf8'))),originalFiles,'Invalid international candidate preserves all domestic and international data')
+  await writeFile(join(input,'wil-bis-total.csv'),originalBis)
   // A failing build must restore the complete new+old data bundle and ledger.
   await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',version:'0.13.0',scripts:{build:'node -e "process.exit(1)"',verify:'node -e "process.exit(0)"'}}))
   const buildFailure = run(); assert.notEqual(buildFailure.status, 0); assert.match(buildFailure.stderr, /restoring bundle/)

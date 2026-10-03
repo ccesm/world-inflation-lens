@@ -13,17 +13,21 @@ import { Since1971 } from './pages/Since1971.jsx'
 import { GlobalOverview } from './pages/GlobalOverview.jsx'
 import { Timeline } from './pages/Timeline.jsx'
 import { GlobalMap } from './pages/GlobalMap.jsx'
-import { Sources } from './pages/Sources.jsx'
+import { ResearchLoadBoundary } from './components/ResearchLoadBoundary.jsx'
 import { UsCpi } from './pages/UsCpi.jsx'
 import { DigitalMoney } from './pages/DigitalMoney.jsx'
 import { AiProductivity } from './pages/AiProductivity.jsx'
 import { Drivers } from './pages/Drivers.jsx'
-import { DataWorkspace } from './pages/DataWorkspace.jsx'
-import { UpdateJournal } from './pages/UpdateJournal.jsx'
+
+const UpdateJournal = lazy(() => import('./pages/UpdateJournal.jsx').then(m => ({default:m.UpdateJournal})))
 import { workspaceCopy } from './i18n/workspace.js'
 import { ResearchContext } from './components/ResearchContext.jsx'
 import './research-map.css'
 import './treasury-pricing.css'
+
+const InternationalDollar = lazy(() => import('./pages/InternationalDollar.jsx').then(m => ({default:m.InternationalDollar})))
+const Sources = lazy(() => import('./pages/Sources.jsx').then(m => ({default:m.Sources})))
+const DataWorkspace = lazy(() => import('./pages/DataWorkspace.jsx').then(m => ({default:m.DataWorkspace})))
 
 const SectionLanding = lazy(() => import('./pages/SectionLanding.jsx').then(module => ({ default: module.SectionLanding })))
 const ExternalShocks = lazy(() => import('./pages/ExternalShocks.jsx').then(module => ({ default: module.ExternalShocks })))
@@ -76,7 +80,7 @@ export default function App() {
   const [theme, setTheme] = useState(initialTheme)
   const mainRef = useRef(null)
   const previousNavigationKey = useRef(navigationKey)
-  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav, 'research/data': workspaceCopy[language].title, 'research/updates': workspaceCopy[language].journal } }
+  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav, 'research/data': workspaceCopy[language].title, 'research/updates': workspaceCopy[language].journal, 'research/international-dollar': language === 'zh' ? '国际美元' : 'International Dollar' } }
   const section = routeSection(route), links = sectionLinks[section] || []
   const selectedSectionLink = links.find(([href]) => href === navigationKey)?.[0] || links.find(([href]) => href === navigationKey.split('?')[0])?.[0] || ''
 
@@ -120,7 +124,7 @@ export default function App() {
     {links.length > 0 && <div className="section-navigation"><nav aria-label={a.sectionNavigation}>{links.map(([href, zh, en]) => <a key={href} href={href} aria-current={selectedSectionLink === href ? 'page' : undefined}>{language === 'zh' ? zh : en}</a>)}</nav><label>{a.sectionNavigation}<select value={selectedSectionLink} onChange={event => { window.location.hash = event.target.value }}><option value="" disabled>{a.nav[section]}</option>{links.map(([href, zh, en]) => <option key={href} value={href}>{language === 'zh' ? zh : en}</option>)}</select></label></div>}
     <main key={navigationKey} id="main-content" tabIndex={-1} ref={mainRef}>
       <ResearchContext route={route} navigationKey={navigationKey} language={language} />
-      <Suspense fallback={<p className="content-section" role="status">{language === 'zh' ? '正在加载研究…' : 'Loading research…'}</p>}>
+      <ResearchLoadBoundary key={navigationKey} language={language}><Suspense fallback={<p className="content-section" role="status">{language === 'zh' ? '正在加载研究…' : 'Loading research…'}</p>}>
       <RouteFocus navigationKey={navigationKey} mainRef={mainRef} previousNavigationKey={previousNavigationKey} />
       {route === 'home' && <Home language={language} />}
       {['dollar', 'research'].includes(route) && <SectionLanding section={route} language={language} />}
@@ -139,9 +143,10 @@ export default function App() {
       {route === 'research/ai-productivity' && <AiProductivity language={language} />}
       {route === 'external-shocks' && <ExternalShocks language={language} />}
       {route === 'sources' && <Sources t={t} language={language} />}
+      {route === 'research/international-dollar' && <InternationalDollar language={language} />}
       {route === 'research/data' && <DataWorkspace language={language} />}
       {route === 'research/updates' && <UpdateJournal language={language} />}
-      </Suspense>
+      </Suspense></ResearchLoadBoundary>
     </main>
     <footer><span>© {new Date().getFullYear()} World Inflation Lens</span><span>{t.footer}</span></footer>
   </div>

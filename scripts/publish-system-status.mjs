@@ -31,6 +31,7 @@ try {
   const sources=[await read('inflation/fred.json'),...(await read('inflation/drivers.json')).series,...(await read('inflation/monitor.json')).series,...(await read('productivity/series.json')).series,await read('digital-money/bank-deposits.json')]
   for(const id of ['gpr','gscpi','fao-food','sipri-military']){const d=await read(`external/${id}.json`);sources.push(...d.series.map(s=>({...d.metadata,...s})))}
   sources.push(...(await read('digital-money/stablecoins.json')).records,...(await read('digital-money/treasury-holdings.json')).records)
+  for(const file of ['reserve-composition','treasury-holdings','global-dollar-credit']){const d=await read(`international-dollar/${file}.json`);sources.push(...d.series.map(s=>({...d.metadata,...s})))}
   const world=await read('inflation/worldbank.json')
   const years=Object.values(world.values).flatMap(values=>values.flatMap((value,i)=>Number.isFinite(value)?[world.metadata.startYear+i]:[]))
   sources.push({...world.metadata,id:world.metadata.indicator,observationDate:years.length?String(Math.max(...new Set(years))):null})

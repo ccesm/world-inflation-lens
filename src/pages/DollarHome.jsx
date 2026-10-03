@@ -1,3 +1,4 @@
+import { InternationalSummary } from '../components/InternationalSummary.jsx'
 import React from 'react'
 import { DualDollarSummary, EvidenceState, ResearchMap } from '../components/ResearchMap.jsx'
 import { SeriesStatusNote } from '../components/SystemStatus.jsx'
@@ -62,6 +63,7 @@ export function Home({ language }) {
       <DualDollarSummary language={language} compact />
       <ResearchMap language={language} compact />
       <CurrentEvidence language={language} />
+      <InternationalSummary language={language} />
       <section className="home-structural" aria-labelledby="home-forces-title"><h2 id="home-forces-title">{t.forces}</h2>
         <div className="home-theme-grid">{structuralThemes.map(theme => <article key={theme.id} data-research-theme={theme.id}>
           <h3>{theme.label[language]}</h3><EvidenceState state={theme.evidenceState} language={language} /><p>{theme.description[language]}</p>

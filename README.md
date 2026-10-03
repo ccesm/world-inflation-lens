@@ -2,6 +2,14 @@
 
 A bilingual Vite + React research site studying two related questions over the next 20–30 years: the U.S. dollar’s domestic purchasing power and its international role in reserves, finance, trade and payments. Observations, official conditional projections and hypothetical scenarios remain distinct. Global inflation provides supporting context.
 
+## International Dollar evidence — feature branch
+
+`codex/international-dollar-evidence` adds a detailed `#/research/international-dollar` page with 18 official IMF COFER, Treasury TIC and BIS GLI series, function-based coverage, quarterly/monthly charts, tables and CSV. Existing Digital Money research supplies partial publication evidence; invoicing, payment usage and alternative reserve assets remain explicit gaps. COFER uses the revised world-FX-reserves denominator including IMF imputations, not the legacy allocated-only share.
+
+The new snapshots join the existing atomic refresh/rollback, V0.13 metadata/freshness, Data Health, revision ledger and Workspace. History is deferred from Home; Home/Dollar show only three dated observations. No public-version promotion, score, Signal Engine, merge or deployment is included. See [source methodology, feasibility and acceptance](docs/international-dollar-evidence.md).
+
+`npm run verify` includes the deterministic international adapters and protected-contract checks. For production-browser acceptance, use the same `WIL_BROWSER_URL`, `WIL_PLAYWRIGHT_MODULE`, `WIL_CHROME_EXECUTABLE` and `WIL_BROWSER_OUTPUT_DIR` environment variables described below with `node scripts/verify-international-browser.mjs`; then run the existing `npm run verify:browser` regression suite. Tests use local production builds and send no real email.
+
 ## Run locally
 
 Use Node.js 22.12 or later (Node 22 LTS is configured for GitHub Actions).

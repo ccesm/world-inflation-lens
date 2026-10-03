@@ -48,10 +48,13 @@ researchStages.forEach(validEvidence)
 
 const international = dollarOutcomes.find(item => item.id === 'international')
 assert.equal(international.evidenceState, 'PARTIAL')
-assert.ok(international.plannedEvidence.some(item => item.id === 'reserve-shares'))
+assert.ok(international.existingEvidence.includes('COFER_USD'))
+assert.ok(international.existingEvidence.includes('TIC_TOTAL'))
+assert.ok(international.existingEvidence.includes('BIS_USD_TOTAL'))
+assert.ok(!international.plannedEvidence.some(item => item.id === 'reserve-shares'))
 assert.ok(international.plannedEvidence.some(item => item.id === 'trade-invoicing'))
 assert.ok(international.plannedEvidence.some(item => item.id === 'global-dollar-funding'))
-assert.ok(international.existingEvidence.every(id => seriesRegistry[id].primaryResearchRole === 'DOLLAR_SYSTEM'))
+assert.ok(international.existingEvidence.every(id => ['DOLLAR_SYSTEM','INTERNATIONAL_RESERVES','TREASURY_DEMAND','GLOBAL_FINANCING'].includes(seriesRegistry[id].primaryResearchRole)))
 assert.equal(international.existingEvidence.includes('DTWEXBGS'), false, 'FX context cannot become a direct dollar-dominance measure')
 
 for (const [id, roles] of Object.entries(seriesResearchRoles)) {

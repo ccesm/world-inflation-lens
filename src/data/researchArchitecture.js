@@ -1,3 +1,4 @@
+import { internationalSources } from './internationalDefinitions.js'
 import { seriesRegistry } from './seriesRegistry.js'
 
 // Research relationships only. Series names, provenance, units, dates and maintenance
@@ -9,9 +10,9 @@ const unique = ids => [...new Set(ids)]
 
 export const plannedResearchCategories = [
   {
-    id: 'reserves', label: label('Reserve System', '储备体系'), evidenceState: 'PLANNED',
-    description: label('Reserve-currency shares are not integrated yet.', '尚未接入储备货币份额数据。'),
-    existingEvidence: [], plannedEvidence: [planned('reserve-shares', 'Global reserve-currency shares', '全球储备货币份额'), planned('euro-role', 'International role of the euro', '欧元的国际作用'), planned('rmb-role', 'International role of the renminbi', '人民币的国际作用')],
+    id: 'reserves', label: label('Reserve System', '储备体系'), evidenceState: 'PARTIAL',
+    description: label('Quarterly IMF COFER currency shares include IMF imputations and exclude gold; reserve managers’ motives remain unmeasured.', 'IMF COFER 季度币种份额含 IMF 插补，不含黄金；储备管理动机仍未衡量。'),
+    existingEvidence: internationalSources.cofer.ids, plannedEvidence: [planned('euro-role', 'International role of the euro', '欧元的国际作用'), planned('rmb-role', 'International role of the renminbi', '人民币的国际作用')],
   },
   {
     id: 'trade', label: label('Trade & Commodity Currency', '贸易与大宗商品计价'), evidenceState: 'PLANNED',
@@ -19,9 +20,14 @@ export const plannedResearchCategories = [
     existingEvidence: [], plannedEvidence: [planned('trade-invoicing', 'Trade invoicing currencies', '贸易计价货币'), planned('commodity-invoicing', 'Commodity invoicing currencies', '大宗商品计价货币')],
   },
   {
-    id: 'finance', label: label('Global Financial System', '全球金融体系'), evidenceState: 'PARTIAL',
-    description: label('A reviewed stablecoin/T-bill estimate provides limited context; broad international financing is not measured.', '已审核的稳定币与短期国库券估计仅提供局部背景，尚未衡量完整的国际融资体系。'),
-    existingEvidence: ['IMF_TBILL_SHARE'], plannedEvidence: [planned('foreign-treasury-holdings', 'Global Treasury holdings', '全球美国国债持有量'), planned('international-debt', 'International dollar debt', '国际美元债务'), planned('cross-border-lending', 'Cross-border dollar lending', '跨境美元贷款')],
+    id: 'finance', label: label('Global Dollar Financing', '全球美元融资'), evidenceState: 'PARTIAL',
+    description: label('BIS quarterly USD credit to non-banks outside the US: bank loans and international debt securities. Not domestic M2 or all global financing.', 'BIS 美国境外非银行借款人季度美元信贷：银行贷款与国际债务证券。不是国内 M2 或全部全球融资。'),
+    existingEvidence: internationalSources.bis.ids, plannedEvidence: [planned('funding-costs', 'Cross-currency funding costs', '跨币种融资成本')],
+  },
+  {
+    id: 'treasury-demand', label: label('Treasury / Safe-Asset Holdings', '国债 / 安全资产持有量'), evidenceState: 'PARTIAL',
+    description: label('Monthly Treasury TIC foreign holdings with custodial geography; holdings changes are not transaction flows or motives.', '财政部 TIC 月度外国持有量采用托管地理口径；持有量变化不等于交易流量或动机。'),
+    existingEvidence: [...internationalSources.tic.ids, 'IMF_TBILL_SHARE'], plannedEvidence: [planned('ultimate-owners', 'Ultimate beneficial ownership', '最终受益所有权')],
   },
   {
     id: 'payments', label: label('Payment Networks & Digital Money', '支付网络与数字货币'), evidenceState: 'PARTIAL',
@@ -52,9 +58,9 @@ export const dollarOutcomes = [
   },
   {
     id: 'international', label: label('International Dollar Role', '美元的国际作用'), evidenceState: 'PARTIAL',
-    description: label('How important is the dollar in global reserves, financing, trade and payments? Current digital-money research covers only part of this question; a strong exchange rate alone cannot answer it.', '美元在全球储备、融资、贸易和支付中有多重要？现有数字货币研究只覆盖其中一部分，强势汇率本身不能回答这个问题。'),
+    description: label('How important is the dollar in global reserves, financing, trade and payments? Reserve shares, Treasury holdings, global credit and digital-money research cover distinct parts of this question; a strong exchange rate alone cannot answer it.', '美元在全球储备、融资、贸易和支付中有多重要？储备份额、国债持有、全球信贷与数字货币研究覆盖其中不同部分，强势汇率本身不能回答这个问题。'),
     existingEvidence: dollarSystemEvidence, plannedEvidence: internationalPlanned,
-    routes: [route('#/research/digital-money', 'Digital Money Evidence', '数字货币证据'), route('#/research?focus=dollar-system', 'Dollar System Research', '美元体系研究'), route('#/monitor?group=market', 'Exchange Rate & Treasury Context', '汇率与国债背景')],
+    routes: [route('#/research/international-dollar', 'International Dollar Lens', '国际美元透视'), route('#/research/digital-money', 'Digital Money Evidence', '数字货币证据'), route('#/research?focus=dollar-system', 'Dollar System Research', '美元体系研究'), route('#/monitor?group=market', 'Exchange Rate & Treasury Context', '汇率与国债背景')],
   },
 ]
 
@@ -83,7 +89,7 @@ export const structuralThemes = [
     id: 'dollar-system', stage: 'structural', label: label('Dollar System', '美元体系'), evidenceState: 'PARTIAL',
     description: label('Digital money, payment networks and Treasury-demand mechanisms connect to international dollar use. Current evidence is incomplete and includes manually reviewed publications.', '数字货币、支付网络与国债需求机制关联美元的国际使用。现有证据并不完整，部分来自人工审核的研究资料。'),
     existingEvidence: dollarSystemEvidence, plannedEvidence: internationalPlanned,
-    routes: [route('#/research/digital-money', 'Digital Money', '数字货币'), route('#/research?focus=international-evidence', 'International Evidence Gaps', '国际证据缺口')],
+    routes: [route('#/research/international-dollar', 'International Dollar Lens', '国际美元透视'), route('#/research/digital-money', 'Digital Money', '数字货币'), route('#/research?focus=international-evidence', 'International Evidence Gaps', '国际证据缺口')],
   },
 ]
 
@@ -137,6 +143,7 @@ export const seriesResearchRoles = Object.fromEntries(Object.entries(seriesRegis
 
 const context = (stage, theme, en, zh) => ({ stage, ...(theme ? { theme } : {}), label: label(en, zh), href: `#/research?focus=${theme || stage}` })
 export const pageResearchContext = {
+  'research/international-dollar': context('structural', 'dollar-system', 'International Dollar Lens', '国际美元透视'),
   fiscal: context('structural', 'fiscal', 'Fiscal Outlook', '财政展望'),
   'research/ai-productivity': context('structural', 'capacity', 'AI & Productivity', '人工智能与生产率'),
   'external-shocks': context('structural', 'external', 'External Shocks', '外部冲击'),
@@ -193,7 +200,7 @@ export const researchCopy = {
     breakevenTitle: '10-Year Inflation Compensation · Derived Proxy',
     breakevenMethod: 'Same-date 10-year nominal Treasury yield minus 10-year TIPS real yield, in percentage points. Missing dates remain missing; no adjacent-date subtraction.',
     breakevenCaution: 'This arithmetic difference includes inflation-risk and liquidity effects; it is not a pure inflation forecast. The 5y5y series measures a different forward maturity and is not a 30-year forecast.',
-    internationalLimit: 'No comprehensive measurement of international dollar dominance is available here. Reserve shares, trade invoicing, international credit and payment-network use remain separate evidence gaps.',
+    internationalLimit: 'No comprehensive measurement of international dollar dominance is available here. Reserve shares, Treasury holdings and selected international credit are integrated; invoicing, payment-network use and ultimate ownership remain separate gaps.',
   },
   zh: {
     question: '未来 20–30 年，美元会是什么样？',
@@ -208,6 +215,6 @@ export const researchCopy = {
     breakevenTitle: '10 年期通胀补偿 · 衍生代理指标',
     breakevenMethod: '同一天的 10 年期名义国债收益率减去 10 年期 TIPS 实际收益率，单位为百分点。缺失日期保持缺失，不使用相邻日期相减。',
     breakevenCaution: '这一算术差额含有通胀风险与流动性因素，不是纯粹的通胀预测。5y5y 指标对应另一种远期期限，也不是 30 年预测。',
-    internationalLimit: '目前没有完整衡量美元国际主导地位的数据。储备份额、贸易计价、国际信贷与支付网络使用量仍是不同的证据缺口。',
+    internationalLimit: '目前没有完整衡量美元国际主导地位的数据。已接入储备份额、国债持有量和部分国际信贷；计价、支付网络使用量及最终所有权仍是独立的缺口。',
   },
 }

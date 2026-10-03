@@ -20,10 +20,14 @@ The daily schedule is 17:40 America/Los_Angeles. Safe start/completion reports s
 
 The feature branch introduces a short homepage, central registry-linked research architecture, four structural themes, transparent exact-date Treasury inflation compensation, lightweight page context and accessible navigation. Existing tools remain on their original routes. Research explains feedback loops and explicitly separates existing, partial and planned international-dollar evidence. Detailed acceptance and version readiness are tracked in [the V1.0 report](v1.0-dual-dollar.md); this milestone does not authorize a production deployment.
 
+## International Dollar evidence feature branch
+
+The child feature adds IMF COFER, Treasury TIC and BIS global dollar credit, an eight-function coverage matrix, a dedicated International Dollar Lens, and additive Workspace/Data Health/refresh integration. See [methodology and acceptance](international-dollar-evidence.md). The international question remains partially covered. No main merge or production release is part of this milestone. F1–F4 remain tracked there, with feature-related download recovery assessed separately.
+
 ## Suggested next releases
 
-- Reduce remaining shared observation-bundle loading by route after measuring cold-load and navigation behavior. V1.0 defers only External Shocks and the Dollar/Research landing component; a wider data-loading redesign is out of scope.
-- Review one minimal international-dollar dataset at a time: reserve shares, foreign Treasury holdings, international debt/lending, trade invoicing or actual cross-border payment use. Define coverage, denominators, dates, vintage and update policy before integration.
+- Reduce remaining shared observation-bundle loading by route after measuring cold-load and navigation behavior. The international feature additionally defers Workspace, Sources, Updates and international history. Existing shared domestic bundles remain candidates for measured improvement.
+- After reviewing the integrated COFER/TIC/BIS feature, research trade/commodity invoicing, actual payment use, ultimate-holder coverage and gold/alternative reserve composition individually. Require source feasibility, exact denominators, vintage and maintenance policy before integration.
 - Review additional AI/productivity sources individually. No observed productivity movement should be attributed to AI without supporting identification.
 - Any future Signal Engine requires a separate specification, transparent methodology and independent validation. V1.0 contains no score, probabilities or investment signals.
 - Later: selectable fiscal-policy and productivity assumptions with explicit feedback and sensitivity analysis; additional BIS/IMF comparisons and equity total returns. Do not assign scenario probabilities without a documented model.

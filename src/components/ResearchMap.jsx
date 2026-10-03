@@ -8,7 +8,7 @@ const copy = {
     distinction: 'Domestic purchasing power and international use interact, but neither proves the other.',
     map: 'How the research fits together', compactNote: 'A reading order, with feedbacks—not a one-way causal model.', fullMap: 'Open the full research map',
     available: 'Explore existing evidence', evidence: 'Series used in this research', planned: 'Planned research — no observations integrated',
-    feedbacks: 'Feedbacks also matter', categories: 'The international evidence gap', categoryNote: 'These categories organize the research agenda. Existing publications cover only part of the dollar system; a dollar index or a stablecoin total cannot measure international dominance.',
+    feedbacks: 'Feedbacks also matter', categories: 'The international evidence gap', categoryNote: 'These categories organize the research agenda. Integrated reserves, Treasury, credit and publication evidence cover only part of the dollar system; a dollar index or a stablecoin total cannot measure international dominance.',
     context: 'Existing evidence and its limits', open: 'Explore',
   },
   zh: {
@@ -16,7 +16,7 @@ const copy = {
     distinction: '国内购买力与国际使用相互影响，但不能用其中一个证明另一个。',
     map: '研究如何相互衔接', compactNote: '这是带有反馈的阅读顺序，并非单向的机械因果模型。', fullMap: '打开完整研究地图',
     available: '查看现有证据', evidence: '本研究使用的序列', planned: '规划中的研究——尚未接入观测数据',
-    feedbacks: '还需要考虑反馈', categories: '国际美元证据的缺口', categoryNote: '这些分类用于组织研究计划。现有资料只覆盖美元体系的一部分；美元指数或稳定币总量都不能衡量美元的国际主导地位。',
+    feedbacks: '还需要考虑反馈', categories: '国际美元证据的缺口', categoryNote: '这些分类用于组织研究计划。已接入的储备、国债、信贷与研究资料只覆盖美元体系的一部分；美元指数或稳定币总量都不能衡量美元的国际主导地位。',
     context: '现有证据及其局限', open: '查看',
   },
 }

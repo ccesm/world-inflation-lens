@@ -1,3 +1,5 @@
+import { InternationalHealth } from './InternationalHealth.jsx'
+import '../international-dollar.css'
 import React from 'react'
 import { DigitalMoneyHealth } from './DigitalMoneyEvidence.jsx'
 import { ProductivityHealth } from './ProductivityHealth.jsx'
@@ -21,6 +23,7 @@ export function DataStatus({ language }) {
     <div className="health-check"><strong>{t.last}: {history.lastSuccessfulCheck ? checkDate(history.lastSuccessfulCheck) : t.never}</strong><span>{checkOverdue(history.lastSuccessfulCheck, now) ? t.overdue : t.checked}</span></div>
     <p className="global-help">{t.schedule}</p><a href="https://github.com/ccesm/world-inflation-lens/actions/workflows/deploy.yml" target="_blank" rel="noreferrer">{t.actions} ↗</a>
     <div className="health-grid">{sourceStatus(now).map(source => <article key={source.id} className="health-card"><a href={source.sourceUrl} target="_blank" rel="noreferrer">{source.id} ↗</a><h3>{source.contract.title[language]}</h3><small>{source.frequency === 'monthly' ? t.monthly : source.id === 'FP.CPI.TOTL.ZG' ? t.annual : source.frequency.startsWith('annual') ? (language === 'zh' ? '年度' : 'Annual') : source.frequency === 'daily' ? (language === 'zh' ? '日度' : 'Daily') : (language === 'zh' ? '每周三' : 'Weekly, Wednesday')}</small><SeriesStatusNote source={source} language={language} /><dl><dt>{t.latest}</dt><dd>{source.latest || '—'}</dd><dt>{t.updated}</dt><dd>{source.updated}</dd><dt>{t.retrieved}</dt><dd>{source.retrieved}</dd><dt>{t.missing}</dt><dd>{source.missing.toLocaleString(language)} / {source.total.toLocaleString(language)}</dd></dl></article>)}</div>
+    <InternationalHealth language={language} />
     <ExternalDataHealth language={language} history={history} />
     <ProductivityHealth language={language} history={history} />
     <DigitalMoneyHealth language={language} history={history} />

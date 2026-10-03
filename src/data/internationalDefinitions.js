@@ -1,0 +1,14 @@
+// Small, observation-free registry. Historical snapshots are loaded only by detailed tools.
+const title = (en, zh) => ({ en, zh })
+const reserve = 'World official foreign-exchange reserves including IMF imputations; excludes monetary gold (revised 2025Q3 methodology)'
+export const internationalDefinitions = {
+  ...Object.fromEntries([['USD','U.S. dollar','美元'],['EUR','Euro','欧元'],['CNY','Renminbi','人民币'],['JPY','Japanese yen','日元'],['GBP','Pound sterling','英镑'],['AUD','Australian dollar','澳元'],['CAD','Canadian dollar','加元'],['CHF','Swiss franc','瑞士法郎'],['OTHER','Other currencies','其他货币'],['IMPUTED','IMF-imputed reserves','IMF 插补储备']].map(([code,en,zh])=>[`COFER_${code}`,{title:title(`COFER · ${en} share`,`COFER · ${zh}占比`),dataset:'cofer',primaryResearchRole:'INTERNATIONAL_RESERVES',frequency:'quarterly',denominator:reserve,maxLagDays:190}])),
+  ...Object.fromEntries([['TOTAL','All foreign holders','所有外国持有者'],['JAPAN','Japan','日本'],['CHINA','China, mainland','中国大陆'],['UK','United Kingdom','英国'],['OFFICIAL','Foreign official institutions','外国官方机构']].map(([code,en,zh])=>[`TIC_${code}`,{title:title(`Treasury holdings · ${en}`,`美国国债持有量 · ${zh}`),dataset:'tic',primaryResearchRole:'TREASURY_DEMAND',frequency:'monthly',denominator:'None: stock of Treasury securities in USD millions',maxLagDays:95}])),
+  ...Object.fromEntries([['TOTAL','Total USD credit','美元信贷总额'],['LOANS','USD bank loans','美元银行贷款'],['SECURITIES','USD international debt securities','美元国际债务证券']].map(([code,en,zh])=>[`BIS_USD_${code}`,{title:title(`${en} · non-banks outside US`,`${zh} · 美国境外非银行借款人`),dataset:'bis',primaryResearchRole:'GLOBAL_FINANCING',frequency:'quarterly',denominator:'None: outstanding USD credit in USD millions',maxLagDays:210}])),
+}
+export const internationalPolicies = Object.fromEntries(Object.entries(internationalDefinitions).map(([id,d])=>[id,{title:d.title,automationType:'AUTOMATIC',researchStatus:'INTEGRATED',primaryResearchRole:d.primaryResearchRole,secondaryRoles:d.dataset==='tic'?['STRUCTURAL_FISCAL']:[],freshnessPolicy:{maxLagDays:d.maxLagDays,allowUnknownSourceUpdate:true}}]))
+export const internationalSources = {
+ cofer:{name:'IMF · COFER',url:'https://data.imf.org/en/Datasets/COFER',schedule:'https://data.imf.org/en/Resource-Pages/Release-Calendar',ids:Object.keys(internationalDefinitions).filter(id=>id.startsWith('COFER_'))},
+ tic:{name:'U.S. Treasury · TIC',url:'https://home.treasury.gov/data/treasury-international-capital-tic-system',schedule:'https://home.treasury.gov/data/treasury-international-capital-tic-system/release-dates-of-tic-data',ids:Object.keys(internationalDefinitions).filter(id=>id.startsWith('TIC_'))},
+ bis:{name:'BIS · Global Liquidity Indicators',url:'https://data.bis.org/topics/GLI',schedule:'https://www.bis.org/statistics/relcal.htm',ids:Object.keys(internationalDefinitions).filter(id=>id.startsWith('BIS_'))},
+}

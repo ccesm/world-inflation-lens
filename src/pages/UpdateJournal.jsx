@@ -1,3 +1,4 @@
+import { InternationalRevisions } from '../components/InternationalRevisions.jsx'
 import { appVersion } from '../data/buildInfo.js'
 import React, { useState } from 'react'
 import { PageIntro } from '../components/PageIntro.jsx'
@@ -23,6 +24,6 @@ export function UpdateJournal({ language }) {
     {runs.slice(0, count).map(run => <article className="workspace-panel" key={run.checkedAt}><div className="workspace-heading"><h2>{run.checkedAt.replace('T', ' ').slice(0, 19)} UTC</h2>{run.runUrl && <a href={run.runUrl} target="_blank" rel="noreferrer">{t.run} ↗</a>}</div>{run.changes.every(s => s.total === 0) && <p>{t.unchanged}</p>}{run.changes.filter(s => s.total).map(s => <details className="data-table" key={s.id}><summary>{s.id} · {['added', 'filled', 'revised', 'withdrawn'].map(key => `${t[key]} ${s[key]}`).join(' / ')}</summary><p>{t.examples}: {s.examples.length} / {s.total}</p><div role="region" aria-label={`${s.id} ${t.examples}`} tabIndex="0"><table><thead><tr><th>{t.period}</th><th>{t.kind}</th><th>{t.before}</th><th>{t.after}</th></tr></thead><tbody>{s.examples.map((change, i) => <tr key={`${change.date}-${i}`}><th scope="row">{change.date}</th><td>{t[change.kind] || change.kind}</td><td>{change.before ?? '—'}</td><td>{change.after ?? '—'}</td></tr>)}</tbody></table></div></details>)}</article>)}
     {!runs.length && <p>{t.noRuns}</p>}{count < runs.length && <button className="global-button secondary" onClick={() => setCount(count + 8)}>{t.more}</button>}
     <div className="workspace-actions"><a href="https://github.com/ccesm/world-inflation-lens/commits/main/data" target="_blank" rel="noreferrer">{t.repo} ↗</a><a href="#/research/data">{t.title} →</a><a href="#/sources?focus=health">{language === 'zh' ? '数据健康' : 'Data Health'} →</a></div>
-    <section><h2>{t.calendars}</h2><p>{t.calendarNote}</p><div className="workspace-library">{releaseCalendars.map(item => <a className="workspace-card" href={item.url} target="_blank" rel="noreferrer" key={item.url}>{item[language]} ↗</a>)}</div></section>
+    <InternationalRevisions language={language}/><section><h2>{t.calendars}</h2><p>{t.calendarNote}</p><div className="workspace-library">{releaseCalendars.map(item => <a className="workspace-card" href={item.url} target="_blank" rel="noreferrer" key={item.url}>{item[language]} ↗</a>)}</div></section>
   </section></>
 }
