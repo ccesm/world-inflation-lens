@@ -1,0 +1,1382 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:world-inflation-lens:offline-signal-output:0.1",
+  "title": "Offline research signal output; not production",
+  "description": "Structural contract only. Cross-field lineage, hashes, eligibility, formula results, mode support and factor ownership also require semantic validation. Hash this canonical payload externally; no wall-clock run log or self-hash belongs inside it.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": "signal-output/0.1"
+    },
+    "ruleVersion": {
+      "const": "signal-engine-v0.1-draft.1"
+    },
+    "ruleSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "outputSchemaSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "normativeDocumentHashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "minProperties": 3
+    },
+    "contractCodeHashes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      },
+      "minProperties": 3
+    },
+    "engineVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "timeZoneDatabaseVersion": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "timeZoneDatabaseVersion"
+      ]
+    },
+    "inputCommit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "inputKind": {
+      "enum": [
+        "VALIDATED_REPOSITORY_SNAPSHOT",
+        "SYNTHETIC"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "CURRENT_SNAPSHOT",
+        "CURRENT_VINTAGE_RECONSTRUCTION",
+        "RECORDED_AS_OF",
+        "TRUE_RELEASE_VINTAGE"
+      ]
+    },
+    "asOf": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "periodCutoff": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evaluatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
+    "historicalAvailabilityClaim": {
+      "type": "boolean"
+    },
+    "sensitivityScenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/inputSnapshot"
+      }
+    },
+    "lineage": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lineage"
+      }
+    },
+    "factors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/factor"
+      }
+    },
+    "domestic": {
+      "$ref": "#/$defs/outcome"
+    },
+    "international": {
+      "$ref": "#/$defs/outcome"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "parentArtifactRef": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "ruleVersion",
+    "ruleSha256",
+    "outputSchemaSha256",
+    "normativeDocumentHashes",
+    "contractCodeHashes",
+    "engineVersion",
+    "runtime",
+    "inputCommit",
+    "inputKind",
+    "mode",
+    "asOf",
+    "periodCutoff",
+    "evaluatedAt",
+    "historicalAvailabilityClaim",
+    "sensitivityScenario",
+    "inputs",
+    "lineage",
+    "factors",
+    "domestic",
+    "international",
+    "limitations",
+    "parentArtifactRef"
+  ],
+  "$defs": {
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "day",
+            "week",
+            "month",
+            "quarter",
+            "calendar_year",
+            "fiscal_year",
+            "publication_fact",
+            "projection_target"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "label",
+        "start",
+        "end"
+      ]
+    },
+    "timeEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "precision": {
+          "enum": [
+            "timestamp",
+            "date",
+            "month",
+            "unknown"
+          ]
+        },
+        "timeZone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidenceRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "precision",
+        "timeZone",
+        "evidenceRef"
+      ]
+    },
+    "inputSnapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "datasetId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshotPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshotSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "rawSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rawRetentionLimitation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "inputVintageId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshotAcceptedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "acceptanceEvidenceRef": {
+          "type": "string",
+          "minLength": 1
+        },
+        "firstSeenAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "parserVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceMethodologyId": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "datasetId",
+        "snapshotPath",
+        "snapshotSha256",
+        "rawSha256",
+        "rawRetentionLimitation",
+        "inputVintageId",
+        "snapshotAcceptedAt",
+        "acceptanceEvidenceRef",
+        "firstSeenAt",
+        "parserVersion",
+        "sourceMethodologyId"
+      ]
+    },
+    "point": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "observationPeriod": {
+          "$ref": "#/$defs/period"
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "availableAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "availabilityBasis": {
+          "enum": [
+            "PROJECT_ACCEPTED_SNAPSHOT",
+            "PUBLISHER_RELEASE_VINTAGE",
+            "NOT_RECONSTRUCTED",
+            "UNKNOWN"
+          ]
+        },
+        "releasePublishedAt": {
+          "$ref": "#/$defs/timeEvidence"
+        },
+        "revisionEventIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "observationPeriod",
+        "value",
+        "availableAt",
+        "availabilityBasis",
+        "releasePublishedAt",
+        "revisionEventIds"
+      ]
+    },
+    "lineage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seriesId": {
+          "enum": [
+            "PCEPILFE",
+            "OPHNFB",
+            "GSCPI",
+            "FEDFUNDS",
+            "COFER_USD",
+            "TIC_TOTAL",
+            "BIS_USD_TOTAL",
+            "CPIAUCNS",
+            "CPIUFDNS",
+            "CPIENGNS",
+            "CUUR0000SAH1",
+            "ULCNFB",
+            "COMPNFB",
+            "CEU0500000003",
+            "GDPC1",
+            "CE16OV",
+            "REAL_GDP_WORKER",
+            "PNFIC1",
+            "A679RC1Q027SBEA",
+            "B985RC1Q027SBEA",
+            "B935RC1Q027SBEA",
+            "IPG3344S",
+            "CENSUS_DATACENTER",
+            "CENSUS_NONRES",
+            "CENSUS_ELECTRONIC",
+            "IPN22112CS",
+            "CUUR0000SEHF01",
+            "MCOILWTICO",
+            "MHHNGSP",
+            "FAO_FOOD",
+            "FAO_MEAT",
+            "FAO_DAIRY",
+            "FAO_CEREALS",
+            "FAO_OILS",
+            "FAO_SUGAR",
+            "FYPUGDA188S",
+            "FYFSGDA188S",
+            "FYOINT",
+            "FYFR",
+            "M2SL",
+            "WALCL",
+            "DGS10",
+            "DFII10",
+            "T5YIFR",
+            "DTWEXBGS",
+            "GPR",
+            "GPRT",
+            "GPRA",
+            "SIPRI_US_GDP",
+            "SIPRI_US_GOV",
+            "SIPRI_US_REAL",
+            "SIPRI_WORLD_REAL",
+            "CBO_DEBT",
+            "CBO_DEFICIT",
+            "CBO_INTEREST",
+            "FED_STABLECOIN_SIZE",
+            "IMF_STABLECOIN_SIZE",
+            "IMF_USD_SHARE",
+            "IMF_TBILL_SHARE",
+            "DPSACBM027SBOG",
+            "COFER_EUR",
+            "COFER_CNY",
+            "COFER_JPY",
+            "COFER_GBP",
+            "COFER_AUD",
+            "COFER_CAD",
+            "COFER_CHF",
+            "COFER_OTHER",
+            "COFER_IMPUTED",
+            "TIC_OFFICIAL",
+            "TIC_JAPAN",
+            "TIC_CHINA",
+            "TIC_UK",
+            "BIS_USD_LOANS",
+            "BIS_USD_SECURITIES",
+            "FP.CPI.TOTL.ZG",
+            "HISTORY_EVENTS",
+            "FREIGHT",
+            "ENGINE_DERIVED_TREASURY_COMPENSATION_10Y",
+            "ENGINE_DERIVED_INTEREST_REVENUE",
+            "ENGINE_DERIVED_POSITIVE_DEFICIT"
+          ]
+        },
+        "sourceSeriesKey": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "datasetId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceUrl": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "snapshotId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "inputVintageId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshotSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "frequency": {
+          "type": "string",
+          "minLength": 1
+        },
+        "units": {
+          "type": "string",
+          "minLength": 1
+        },
+        "denominator": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maintenanceType": {
+          "enum": [
+            "AUTOMATIC",
+            "MANUAL_REVIEWED",
+            "FIXED_VINTAGE",
+            "DERIVED",
+            "STATIC",
+            "PLANNED"
+          ]
+        },
+        "dependencyRole": {
+          "enum": [
+            "PRIMARY_SIGNAL",
+            "DECOMPOSITION",
+            "CONFIRMING_CONTEXT",
+            "DISPLAY_ONLY"
+          ]
+        },
+        "observationPeriod": {
+          "$ref": "#/$defs/period"
+        },
+        "rawValue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "sourceUpdatedAt": {
+          "$ref": "#/$defs/timeEvidence"
+        },
+        "retrievedAt": {
+          "$ref": "#/$defs/timeEvidence"
+        },
+        "firstSeenAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "snapshotAcceptedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "availableAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "availabilityBasis": {
+          "enum": [
+            "PROJECT_ACCEPTED_SNAPSHOT",
+            "PUBLISHER_RELEASE_VINTAGE",
+            "NOT_RECONSTRUCTED",
+            "UNKNOWN"
+          ]
+        },
+        "validUntil": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "Z$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "validUntilInclusive": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "freshnessState": {
+          "enum": [
+            "CURRENT",
+            "CHECKED_NO_NEW_RELEASE",
+            "WAITING_FOR_EXPECTED_RELEASE",
+            "SOURCE_UPDATED_NOT_YET_CAPTURED",
+            "STALE",
+            "REFRESH_FAILED",
+            "MANUAL_REVIEWED",
+            "MANUAL_REVIEW_REQUIRED",
+            "FIXED_VINTAGE",
+            "STATIC",
+            "DERIVED",
+            "PLANNED",
+            "UNKNOWN",
+            "NOT_RECONSTRUCTED"
+          ]
+        },
+        "freshnessPolicyRef": {
+          "type": "string",
+          "minLength": 1
+        },
+        "inputObservations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/point"
+          }
+        },
+        "operandEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "transform": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "parameters": {
+              "type": "object",
+              "additionalProperties": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean",
+                  "null"
+                ]
+              }
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "units": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "parameters",
+            "value",
+            "units"
+          ]
+        },
+        "state": {
+          "enum": [
+            "CORE_INFLATION_ACCELERATING",
+            "CORE_INFLATION_DECELERATING",
+            "FOREIGN_TREASURY_HOLDINGS_CONTRACTING",
+            "FOREIGN_TREASURY_HOLDINGS_EXPANDING",
+            "INSUFFICIENT_DATA",
+            "LITTLE_CHANGE",
+            "OFFSHORE_USD_CREDIT_CONTRACTING",
+            "OFFSHORE_USD_CREDIT_EXPANDING",
+            "OUTPUT_PER_HOUR_CONTRACTING",
+            "OUTPUT_PER_HOUR_GROWING",
+            "POLICY_RATE_FALLING",
+            "POLICY_RATE_RISING",
+            "SUPPLY_CHAIN_PRESSURE_FALLING",
+            "SUPPLY_CHAIN_PRESSURE_RISING",
+            "TRANSITION",
+            "USD_RESERVE_SHARE_FALLING",
+            "USD_RESERVE_SHARE_RISING",
+            "CONTEXT_ONLY"
+          ]
+        },
+        "ruleId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revisionEventIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "qualityFlags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "methodologyRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transformedWindow": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "observationPeriod": {
+                "$ref": "#/$defs/period"
+              },
+              "value": {
+                "type": "number"
+              },
+              "units": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "observationPeriod",
+              "value",
+              "units"
+            ]
+          }
+        },
+        "supplementalMeasurements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "const": "core_yoy_level"
+              },
+              "transformId": {
+                "const": "yoy_monthly"
+              },
+              "inputPeriodLabels": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 13,
+                "maxItems": 13,
+                "uniqueItems": true
+              },
+              "value": {
+                "type": "number"
+              },
+              "units": {
+                "const": "percent"
+              }
+            },
+            "required": [
+              "id",
+              "transformId",
+              "inputPeriodLabels",
+              "value",
+              "units"
+            ]
+          }
+        }
+      },
+      "required": [
+        "id",
+        "seriesId",
+        "sourceSeriesKey",
+        "datasetId",
+        "publisher",
+        "sourceUrl",
+        "snapshotId",
+        "inputVintageId",
+        "snapshotSha256",
+        "frequency",
+        "units",
+        "denominator",
+        "maintenanceType",
+        "dependencyRole",
+        "observationPeriod",
+        "rawValue",
+        "sourceUpdatedAt",
+        "retrievedAt",
+        "firstSeenAt",
+        "snapshotAcceptedAt",
+        "availableAt",
+        "availabilityBasis",
+        "validUntil",
+        "validUntilInclusive",
+        "freshnessState",
+        "freshnessPolicyRef",
+        "inputObservations",
+        "operandEvidenceIds",
+        "transform",
+        "state",
+        "ruleId",
+        "revisionEventIds",
+        "qualityFlags",
+        "limitations",
+        "methodologyRef",
+        "transformedWindow",
+        "supplementalMeasurements"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "maintenanceType": {
+                "const": "DERIVED"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "seriesId": {
+                "enum": [
+                  "ENGINE_DERIVED_TREASURY_COMPENSATION_10Y",
+                  "ENGINE_DERIVED_INTEREST_REVENUE",
+                  "ENGINE_DERIVED_POSITIVE_DEFICIT",
+                  "REAL_GDP_WORKER"
+                ]
+              },
+              "operandEvidenceIds": {
+                "minItems": 1
+              },
+              "snapshotId": {
+                "type": "null"
+              },
+              "snapshotSha256": {
+                "type": "null"
+              },
+              "snapshotAcceptedAt": {
+                "type": "null"
+              },
+              "sourceSeriesKey": {
+                "type": "null"
+              },
+              "sourceUrl": {
+                "type": "null"
+              },
+              "inputObservations": {
+                "maxItems": 0
+              },
+              "methodologyRef": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "snapshotId": {
+                "type": "string"
+              },
+              "snapshotSha256": {
+                "type": "string"
+              },
+              "snapshotAcceptedAt": {
+                "type": "string"
+              },
+              "sourceSeriesKey": {
+                "type": "string"
+              },
+              "sourceUrl": {
+                "type": "string"
+              },
+              "operandEvidenceIds": {
+                "maxItems": 0
+              },
+              "methodologyRef": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "factor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "factorId": {
+          "enum": [
+            "inflation-persistence",
+            "observed-productivity",
+            "supply-chain-pressure",
+            "policy-rate-direction",
+            "reserve-share",
+            "foreign-treasury-holdings",
+            "offshore-usd-credit"
+          ]
+        },
+        "ruleVersion": {
+          "const": "signal-engine-v0.1-draft.1"
+        },
+        "direction": {
+          "enum": [
+            "CORE_INFLATION_ACCELERATING",
+            "CORE_INFLATION_DECELERATING",
+            "FOREIGN_TREASURY_HOLDINGS_CONTRACTING",
+            "FOREIGN_TREASURY_HOLDINGS_EXPANDING",
+            "INSUFFICIENT_DATA",
+            "LITTLE_CHANGE",
+            "OFFSHORE_USD_CREDIT_CONTRACTING",
+            "OFFSHORE_USD_CREDIT_EXPANDING",
+            "OUTPUT_PER_HOUR_CONTRACTING",
+            "OUTPUT_PER_HOUR_GROWING",
+            "POLICY_RATE_FALLING",
+            "POLICY_RATE_RISING",
+            "SUPPLY_CHAIN_PRESSURE_FALLING",
+            "SUPPLY_CHAIN_PRESSURE_RISING",
+            "TRANSITION",
+            "USD_RESERVE_SHARE_FALLING",
+            "USD_RESERVE_SHARE_RISING"
+          ]
+        },
+        "observationThrough": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/period"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "counterevidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "context": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "missingContext": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "confidence": {
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW",
+            "UNASSESSED"
+          ]
+        },
+        "qualityReasons": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "dataStatus": {
+          "enum": [
+            "READY",
+            "PARTIAL_CONTEXT",
+            "WAITING_FOR_RELEASE",
+            "STALE",
+            "REFRESH_FAILED",
+            "SOURCE_UPDATED_NOT_YET_CAPTURED",
+            "INSUFFICIENT_DATA",
+            "RETROSPECTIVE"
+          ]
+        },
+        "sourceStatuses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "seriesId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "freshnessState": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "seriesId",
+              "freshnessState",
+              "reason"
+            ]
+          }
+        },
+        "availabilityBasis": {
+          "enum": [
+            "PROJECT_ACCEPTED_SNAPSHOT",
+            "PUBLISHER_RELEASE_VINTAGE",
+            "NOT_RECONSTRUCTED",
+            "UNKNOWN"
+          ]
+        },
+        "alignment": {
+          "enum": [
+            "ALIGNED",
+            "MIXED_FREQUENCY_DISCLOSED",
+            "NOT_CONTEMPORANEOUS",
+            "CONTEXT_INCOMPLETE",
+            "UNASSESSED"
+          ]
+        },
+        "changeReason": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "NEW_OBSERVATION",
+              "REVISION_DRIVEN_CHANGE",
+              "RULE_CHANGE",
+              "STATUS_CHANGE",
+              "CONTEXT_CHANGE",
+              "INITIAL",
+              "UNCHANGED"
+            ]
+          }
+        },
+        "lastValidArtifactRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "factorId",
+        "ruleVersion",
+        "direction",
+        "observationThrough",
+        "evidence",
+        "counterevidence",
+        "context",
+        "missingContext",
+        "confidence",
+        "qualityReasons",
+        "dataStatus",
+        "sourceStatuses",
+        "availabilityBasis",
+        "alignment",
+        "changeReason",
+        "lastValidArtifactRef",
+        "limitations"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "direction": {
+                "const": "INSUFFICIENT_DATA"
+              }
+            },
+            "required": [
+              "direction"
+            ]
+          },
+          "then": {
+            "properties": {
+              "confidence": {
+                "const": "UNASSESSED"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "confidence": {
+                "enum": [
+                  "HIGH",
+                  "MEDIUM",
+                  "LOW"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "outcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "factorIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "contextEvidenceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "coverage": {
+          "enum": [
+            "PARTIAL",
+            "INSUFFICIENT_DATA"
+          ]
+        },
+        "evidencePattern": {
+          "enum": [
+            "DESCRIPTIVE",
+            "MIXED",
+            "INSUFFICIENT_DATA"
+          ]
+        },
+        "contrasts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "contrastId": {
+                "enum": [
+                  "DOMESTIC_OFFSETTING_CHANNELS",
+                  "DOMESTIC_REVERSE_CHANNELS",
+                  "INTERNATIONAL_FUNCTION_DIVERGENCE"
+                ]
+              },
+              "factorIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "evidenceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "messageKey": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "contrastId",
+              "factorIds",
+              "evidenceIds",
+              "messageKey"
+            ]
+          }
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "factorIds",
+        "contextEvidenceIds",
+        "coverage",
+        "evidencePattern",
+        "contrasts",
+        "gaps"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "CURRENT_VINTAGE_RECONSTRUCTION"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "asOf": {
+            "type": "null"
+          },
+          "periodCutoff": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$"
+          },
+          "historicalAvailabilityClaim": {
+            "const": false
+          },
+          "factors": {
+            "items": {
+              "properties": {
+                "availabilityBasis": {
+                  "const": "NOT_RECONSTRUCTED"
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "asOf": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "Z$"
+          },
+          "periodCutoff": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "enum": [
+              "RECORDED_AS_OF",
+              "TRUE_RELEASE_VINTAGE"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "historicalAvailabilityClaim": {
+            "const": true
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "historicalAvailabilityClaim": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}
