@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ChartShare } from '../components/ChartShare.jsx'
 import { driverHash, readDriverLink } from '../utils/driverLinks.js'
+import { navigateHash } from '../utils/navigation.js'
 import { PageIntro } from '../components/PageIntro.jsx'
 import { DriverChart } from '../charts/DriverChart.jsx'
 import { driverSeries, driverTopics, topicKeys, driverStart, driverEnd } from '../data/drivers.js'
@@ -10,38 +11,64 @@ import { alignMonthly, monthsBetween, monthlyCsv } from '../utils/drivers.js'
 import { formatNumber } from '../utils/inflation.js'
 
 const colors = { headline: '#c46b46', food: '#409989', energy: '#8f87cf', rates: '#4499b5', oil: '#be993e', housing: '#409989', wages: '#8f87cf', money: '#4499b5' }
-function initialSettings() {
-  return readDriverLink(window.location.hash, { topics: driverTopics, episodes: driverEpisodes, earliest: driverSeries.headline.points[0].date, latest: driverEnd })
+function settingsFromHash(hash) {
+  return readDriverLink(hash, { topics: driverTopics, episodes: driverEpisodes, earliest: driverSeries.headline.points[0].date, latest: driverEnd })
 }
+const validRange = ({from, to}) => /^\d{4}-(0[1-9]|1[0-2])$/.test(from) && /^\d{4}-(0[1-9]|1[0-2])$/.test(to) && from >= driverSeries.headline.points[0].date && to <= driverEnd && from < to
 
-export function Drivers({ language }) {
+export function Drivers({ language, navigationKey }) {
   const t = driversCopy[language]
-  const [initial] = useState(initialSettings)
-  const [topic, setTopic] = useState(initial.topic)
-  const [episode, setEpisode] = useState(initial.episode || null)
-  const [from, setFrom] = useState(initial.from), [to, setTo] = useState(initial.to)
-  const [month, setMonth] = useState(initial.month)
+  const [linked, setLinked] = useState(() => ({hash: navigationKey, settings: settingsFromHash(navigationKey)}))
+  // Adopt external URLs during render, before committing children. An effect
+  // would briefly render old settings and could write them over Back/Forward.
+  // Local invalid date drafts remain local until another URL is navigated to.
+  const settings = linked.hash === navigationKey ? linked.settings : settingsFromHash(navigationKey)
+  if (linked.hash !== navigationKey) setLinked({hash: navigationKey, settings})
+  const {topic, episode, from, to, month} = settings
   const topicStart = driverSeries[topic].points.find(p => p.value !== null)?.date || driverStart
   const earliest = driverSeries.headline.points[0].date
-  const valid = /^\d{4}-(0[1-9]|1[0-2])$/.test(from) && /^\d{4}-(0[1-9]|1[0-2])$/.test(to) && from >= earliest && to <= driverEnd && from < to
+  const valid = validRange(settings)
   const dates = valid ? monthsBetween(from, to) : []
   const selected = valid ? (month < from ? from : month > to ? to : month) : ''
   const selectedIndex = dates.indexOf(selected)
   const shareHash = driverHash({ topic, from, to, month: selected, episode })
   useEffect(() => {
-    if (valid) window.history.replaceState(null, '', shareHash)
-  }, [shareHash, valid])
+    // Normalize direct/legacy links once, without adding a history entry.
+    if (valid && navigationKey !== shareHash) {
+      setLinked({hash: shareHash, settings: {...settings, month: selected}})
+      navigateHash(shareHash, {replace: true})
+    }
+  }, [navigationKey, shareHash, valid, settings, selected])
+  const updateSettings = (patch, {replace = true} = {}) => {
+    const next = {...settings, ...patch}
+    let hash = navigationKey
+    if (validRange(next)) {
+      next.month = next.month < next.from ? next.from : next.month > next.to ? next.to : next.month
+      hash = driverHash(next)
+    } else if (next.topic !== topic) {
+      // Keep the last shareable range while an invalid input draft is visible,
+      // but always keep the URL's semantic topic in sync with the active tab.
+      const params = new URLSearchParams(navigationKey.split('?')[1])
+      params.set('topic', next.topic)
+      hash = `#/drivers?${params}`
+    }
+    setLinked({hash, settings: next})
+    navigateHash(hash, {replace})
+  }
+  const setMonth = month => updateSettings({month})
   const series = alignMonthly(topicKeys[topic].map(key => ({ ...driverSeries[key], key, name: t.series[key], color: colors[key] })), dates)
   const rateSeries = series.filter(s => s.key !== 'oil')
   const oilSeries = series.filter(s => s.key === 'oil')
   const valueLabel = (s, value) => value == null ? t.noData : `${formatNumber(value, language)} ${s.key === 'oil' ? t.units.oil : '%'}`
   const changeTopic = next => {
-    setTopic(next)
+    // Topic selections are semantic navigation: Back restores the previous
+    // topic and its last range/month/episode. Other controls replace that entry.
+    updateSettings({topic: next}, {replace: false})
   }
-  const chooseEpisode = item => { setEpisode(item); setFrom(item.from); setTo(item.to); setMonth(item.end) }
+  const chooseEpisode = item => updateSettings({episode: item, from: item.from, to: item.to, month: item.end})
   const chooseRange = count => {
     const start = count ? `${Number(driverEnd.slice(0, 4)) - count}${driverEnd.slice(4)}` : topicStart
-    setFrom(start < topicStart ? topicStart : start); setTo(driverEnd); setMonth(driverEnd); setEpisode(null)
+    updateSettings({from: start < topicStart ? topicStart : start, to: driverEnd, month: driverEnd, episode: null})
   }
   const download = () => {
     const url = URL.createObjectURL(new Blob([monthlyCsv(series, dates)], { type: 'text/csv;charset=utf-8' }))
@@ -53,11 +80,11 @@ export function Drivers({ language }) {
     <div className="drivers-tabs" role="group" aria-label={t.read}>{driverTopics.map((key, index) => <button key={key} onClick={() => changeTopic(key)} aria-pressed={topic === key}><small>0{index + 1}</small>{t.topics[key]}</button>)}</div>
     <section className="driver-explanation"><h2>{t.questions[topic]}</h2><p>{t.explanations[topic]}</p><strong>{t.lessons[topic]}</strong><div className="driver-citations">{t.topicSources[topic].map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.name} ↗</a>)}</div></section>
     <section className="driver-history" aria-label={t.history}><div className="global-heading"><h2>{t.history}</h2></div><p className="global-help">{t.historyNote}</p><div className="episode-buttons">{driverEpisodes.map(item => <button key={item.id} onClick={() => chooseEpisode(item)} aria-pressed={episode?.id === item.id}>{t.episodes[item.id]}</button>)}</div>
-      {episode && <article className="driver-episode" aria-live="polite"><div><p className="eyebrow">{t.shaded} · {episode.start}–{episode.end}</p><h3>{episode.chapter[language].title}</h3><p>{episode.chapter[language].description}</p><p>{episode.chapter[language].lesson}</p><div className="driver-citations"><a href={(episode.source || episode.chapter.source).url} target="_blank" rel="noreferrer">{(episode.source || episode.chapter.source).name} ↗</a><a href={`#/timeline?year=${episode.chapter.start}`}>{t.backHistory} →</a></div></div><button className="global-button secondary" onClick={() => setEpisode(null)}>{t.clearEpisode}</button></article>}
+      {episode && <article className="driver-episode" aria-live="polite"><div><p className="eyebrow">{t.shaded} · {episode.start}–{episode.end}</p><h3>{episode.chapter[language].title}</h3><p>{episode.chapter[language].description}</p><p>{episode.chapter[language].lesson}</p><div className="driver-citations"><a href={(episode.source || episode.chapter.source).url} target="_blank" rel="noreferrer">{(episode.source || episode.chapter.source).name} ↗</a><a href={`#/timeline?year=${episode.chapter.start}`}>{t.backHistory} →</a></div></div><button className="global-button secondary" onClick={() => updateSettings({episode: null})}>{t.clearEpisode}</button></article>}
     </section>
     <section className="global-panel driver-workbench" aria-label={t.dates}>
       <div className="global-heading"><h2>{t.topics[topic]} × CPI</h2><span>{t.monthly}</span></div>
-      <div className="driver-date-controls"><label>{t.from}<input aria-label={t.from} type="month" min={earliest} max={driverEnd} value={from} onInput={event => setFrom(event.currentTarget.value)} onChange={event => setFrom(event.target.value)} /></label><label>{t.to}<input aria-label={t.to} type="month" min={earliest} max={driverEnd} value={to} onInput={event => setTo(event.currentTarget.value)} onChange={event => setTo(event.target.value)} /></label><div className="range-control">{[5, 10, 50, null].map(count => <button key={count || 'all'} onClick={() => chooseRange(count)}>{count ? `${count}Y` : t.all}</button>)}</div></div>
+      <div className="driver-date-controls"><label>{t.from}<input aria-label={t.from} type="month" min={earliest} max={driverEnd} value={from} onInput={event => updateSettings({from: event.currentTarget.value})} onChange={event => updateSettings({from: event.target.value})} /></label><label>{t.to}<input aria-label={t.to} type="month" min={earliest} max={driverEnd} value={to} onInput={event => updateSettings({to: event.currentTarget.value})} onChange={event => updateSettings({to: event.target.value})} /></label><div className="range-control">{[5, 10, 50, null].map(count => <button key={count || 'all'} onClick={() => chooseRange(count)}>{count ? `${count}Y` : t.all}</button>)}</div></div>
       {!valid ? <p role="alert" className="driver-date-error">{t.dateError}</p> : <>
         {episode && (episode.end < from || episode.start > to) && <p className="global-help">{t.outside}</p>}
         <div className="driver-inspect"><label>{t.inspect}<input aria-label={t.inspect} type="month" min={from} max={to} value={selected} onInput={event => { if (dates.includes(event.currentTarget.value)) setMonth(event.currentTarget.value) }} onChange={event => { if (dates.includes(event.target.value)) setMonth(event.target.value) }} /></label><div><button className="global-button secondary" disabled={selectedIndex === 0} onClick={() => setMonth(dates[selectedIndex - 1])} aria-label={t.previous}>←</button><button className="global-button secondary" disabled={selectedIndex === dates.length - 1} onClick={() => setMonth(dates[selectedIndex + 1])} aria-label={t.next}>→</button></div><input type="range" min="0" max={dates.length - 1} value={selectedIndex} onChange={event => setMonth(dates[Number(event.target.value)])} aria-label={t.inspect} aria-valuetext={selected} /></div>

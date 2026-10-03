@@ -165,3 +165,22 @@ A cold Chrome comparison of separately served starting/feature builds measured *
 At 390px, first domestic evidence remains **y=1,301px English / 1,254px Chinese**, exactly matching the starting branch. Total Home height is **7,263 / 6,755px**, compared with **6,549 / 6,066px**; the added compact summary does not push first evidence below the framework. Full international charts and history remain on the research route.
 
 **READY FOR FEATURE REVIEW.** F2, F3 and F4 still block a final combined release; F1's repair requires review with this feature. Neither feature readiness nor the unchanged package version authorizes merging or deploying. The existing V1.0 release history remains intact, with an appended feature note.
+
+## Known release-blocker fixes — October 2, 2026 (Pacific)
+
+The independent review of `bf3321248dc7cccfb34300603db01252dc067c25` verified the international feature and reproduced inherited F2/F3/F4. The historical findings above remain part of the record. This focused follow-up on `codex/international-dollar-evidence` resolves them:
+
+- **F2 — FIXED:** all six Drivers topics resolve centrally through `researchContextForRoute`. Rates and money use Policy Response; energy/food use Inflation Transmission with External Supply Shocks; housing/wages use Inflation Transmission. Bilingual labels and Research Map return destinations live in the canonical architecture.
+- **F3 — FIXED:** External Shocks distinguishes available matching-date `DGS10 − DFII10` inflation compensation from a dedicated published breakeven series that is not separately integrated. Both languages retain risk/liquidity qualifications and distinguish T5YIFR's 5-year-forward 5-year maturity. No T10YIE dataset was added.
+- **F4 — FIXED:** a small shared navigation subscription observes native hash/history events and explicit history writes. Drivers adopts external URL settings before committing its children. Topic selections **push** a history entry; range, inspection month, episode selection/clearing and link normalization **replace** the current entry. Drivers query changes retain its mounted workbench and control focus. Other pages retain query-keyed rendering and failure recovery. Scroll reset occurs before resolved-page deep-link focus, preventing a native event from undoing the destination scroll.
+
+Verification against the local production build passed:
+
+- `npm run build` and `npm run verify`, including deterministic checks for all six topic roles, both languages, return destinations and compensation methodology.
+- `scripts/verify-release-blockers-browser.mjs`: **12 display combinations** (320/390/1280 × English/Chinese × light/dark); fresh direct rates/energy loads, topic changes, real Back/Forward, direct same-route hashes, copied share URL with range/month/episode, legacy episode links, invalid-date recovery, history-entry counts and retained workbench/focus. No unexpected browser errors.
+- Existing V1.0 browser acceptance: **264 route/display checks, 12 Home checks, 18 behavior checks, three keyboard checks and two mocked status fixtures**, with no unexpected errors. Deep-link destinations remain focused and visible.
+- International acceptance: **12 display combinations, 34 exact CSV exports**, Workspace/Data Health/navigation checks and **six deferred-download recovery cases**. **F1 remains FIXED** for SectionLanding, ExternalShocks and International Dollar in both languages.
+
+Browser scripts use the optional environment settings documented in README; output is ignored under `.refresh/release-blockers*`. Compared with `bf33212`, the diff is empty for `data/`, `.github/`, `scripts/lib/`, the series registry/contract, freshness, release calendar, time semantics and system-status utilities. Economic data, calculations, dependencies and public version are unchanged. No source re-ingestion, real email, merge or production deployment was performed.
+
+**READY FOR FINAL RELEASE REVIEW.** No known F1–F4 blockers remain at this tested checkpoint. This statement does not authorize a merge or deployment.

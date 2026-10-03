@@ -7,6 +7,8 @@ import {
   plannedResearchCategories, pageResearchContext, viewResearchContext, researchContextForRoute, researchCopy,
 } from '../src/data/researchArchitecture.js'
 import { derive10YBreakeven } from '../src/utils/treasuryPricing.js'
+import { driversCopy } from '../src/i18n/drivers.js'
+import { transmissionCopy } from '../src/i18n/transmission.js'
 
 const bilingual = value => {
   assert.equal(typeof value?.en, 'string')
@@ -98,6 +100,30 @@ assert.equal(researchContextForRoute('#/monitor?group=inflation').stage, 'transm
 assert.equal(researchContextForRoute('#/monitor?group=monetary').stage, 'policy')
 assert.equal(researchContextForRoute('#/monitor?group=market').stage, 'market')
 assert.equal(researchContextForRoute('#/drivers?topic=rates').stage, 'policy')
+const driverContexts = {
+  rates: ['policy', undefined, 'policy', /Policy Rate/, /政策利率/],
+  energy: ['transmission', 'external', 'external', /Energy.*Price/, /能源.*价格/],
+  food: ['transmission', 'external', 'external', /Food.*Transmission/, /食品.*传导/],
+  housing: ['transmission', undefined, 'transmission', /Housing.*Shelter/, /住房.*居住/],
+  wages: ['transmission', undefined, 'transmission', /Wages.*Labor Costs/, /工资.*劳动成本/],
+  money: ['policy', undefined, 'policy', /Monetary.*Financing/, /货币.*融资/],
+}
+assert.deepEqual(new Set(Object.keys(viewResearchContext.drivers.values)), new Set(Object.keys(driversCopy.en.topics)), 'Every Drivers topic needs canonical context')
+for (const [topic, [stage, theme, destination, en, zh]] of Object.entries(driverContexts)) {
+  const actual = researchContextForRoute(`#/drivers?topic=${topic}&month=1982-12`)
+  assert.equal(actual.stage, stage); assert.equal(actual.theme, theme)
+  assert.equal(actual.href, `#/research?focus=${destination}`)
+  assert.match(actual.label.en, en); assert.match(actual.label.zh, zh)
+}
+for (const language of ['en', 'zh']) {
+  const copy = transmissionCopy[language].planned
+  assert.equal(/10Y breakeven: not integrated|10年盈亏平衡通胀率：尚未接入/.test(copy), false)
+  for (const id of ['DGS10', 'DFII10', 'T5YIFR']) assert.ok(copy.includes(id))
+  assert.match(copy, language === 'en' ? /available.*matching dates/ : /可由同日.*计算/)
+  assert.match(copy, language === 'en' ? /dedicated published.*not separately integrated/ : /未单独接入直接发布/)
+  assert.match(copy, language === 'en' ? /not pure expected inflation.*risk and liquidity/ : /不是纯粹的预期通胀.*风险与流动性/)
+  assert.match(copy, language === 'en' ? /different maturity/ : /不同期限/)
+}
 assert.equal(researchContextForRoute('monitor?group=unknown'), pageResearchContext.monitor)
 assert.equal(researchContextForRoute('#/monitor?group=toString'), pageResearchContext.monitor)
 assert.equal(researchContextForRoute('#/research/ai-productivity'), pageResearchContext['research/ai-productivity'])

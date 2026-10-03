@@ -174,7 +174,14 @@ export const viewResearchContext = {
   },
   drivers: {
     parameter: 'topic',
-    values: { rates: context('policy', null, 'Policy Rate Transmission', '政策利率传导') },
+    values: {
+      rates: context('policy', null, 'Policy Rate Transmission', '政策利率传导'),
+      energy: context('transmission', 'external', 'Energy / Price Transmission', '能源／价格传导'),
+      food: context('transmission', 'external', 'Food Price Transmission', '食品价格传导'),
+      housing: context('transmission', null, 'Housing / Shelter Prices', '住房／居住价格'),
+      wages: context('transmission', null, 'Wages / Labor Costs', '工资／劳动成本'),
+      money: context('policy', null, 'Monetary & Financing Conditions', '货币与融资条件'),
+    },
   },
 }
 

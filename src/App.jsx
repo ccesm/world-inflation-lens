@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { copy } from './i18n/translations.js'
 import { primaryRoutes, routeSection, routeFromHash } from './utils/routing.js'
+import { useNavigationHash } from './utils/navigation.js'
 import { iaCopy, sectionLinks } from './i18n/architecture.js'
 import { DollarPower } from './components/DollarPower.jsx'
 import { PageIntro } from './components/PageIntro.jsx'
@@ -62,6 +63,9 @@ function RouteFocus({ navigationKey, mainRef, previousNavigationKey }) {
     previousNavigationKey.current = navigationKey
     // On initial load leave focus at the document, where Tab reaches the skip link first.
     if (!destination && !navigated) return
+    // Reset before scrolling to a resolved deep-link destination. A native
+    // hashchange handler could run after synchronous URL subscribers focus it.
+    if (navigated) window.scrollTo(0, 0)
     if (destination?.tagName === 'DETAILS') destination.open = true
     const heading = destination?.querySelector('h1, h2, h3, h4, summary') || destination || mainRef.current?.querySelector('h1') || mainRef.current
     if (heading) {
@@ -74,21 +78,18 @@ function RouteFocus({ navigationKey, mainRef, previousNavigationKey }) {
 }
 
 export default function App() {
-  const [route, setRoute] = useState(routeFromHash)
-  const [navigationKey, setNavigationKey] = useState(() => window.location.hash)
+  const navigationKey = useNavigationHash()
+  const route = routeFromHash(navigationKey)
+  // Drivers consumes query changes without remounting its chart or controls.
+  // Other pages retain their established query-keyed navigation/recovery.
+  const pageKey = route === 'drivers' ? '#/drivers' : navigationKey
   const [language, setLanguage] = useState(initialLanguage)
   const [theme, setTheme] = useState(initialTheme)
   const mainRef = useRef(null)
-  const previousNavigationKey = useRef(navigationKey)
+  const previousNavigationKey = useRef(pageKey)
   const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav, 'research/data': workspaceCopy[language].title, 'research/updates': workspaceCopy[language].journal, 'research/international-dollar': language === 'zh' ? '国际美元' : 'International Dollar' } }
   const section = routeSection(route), links = sectionLinks[section] || []
   const selectedSectionLink = links.find(([href]) => href === navigationKey)?.[0] || links.find(([href]) => href === navigationKey.split('?')[0])?.[0] || ''
-
-  useEffect(() => {
-    const onHashChange = () => { setRoute(routeFromHash()); setNavigationKey(window.location.hash); window.scrollTo(0, 0) }
-    window.addEventListener('hashchange', onHashChange)
-    return () => window.removeEventListener('hashchange', onHashChange)
-  }, [])
 
   useEffect(() => {
     document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en'
@@ -122,10 +123,10 @@ export default function App() {
     </header>
     <nav className="mobile-nav" aria-label={t.navigation}>{primaryRoutes.map(item => <a key={item} href={`#/${item}`} className={section === item ? 'active' : ''} aria-current={section === item ? (route === item ? 'page' : 'location') : undefined}>{t.nav[item]}</a>)}</nav>
     {links.length > 0 && <div className="section-navigation"><nav aria-label={a.sectionNavigation}>{links.map(([href, zh, en]) => <a key={href} href={href} aria-current={selectedSectionLink === href ? 'page' : undefined}>{language === 'zh' ? zh : en}</a>)}</nav><label>{a.sectionNavigation}<select value={selectedSectionLink} onChange={event => { window.location.hash = event.target.value }}><option value="" disabled>{a.nav[section]}</option>{links.map(([href, zh, en]) => <option key={href} value={href}>{language === 'zh' ? zh : en}</option>)}</select></label></div>}
-    <main key={navigationKey} id="main-content" tabIndex={-1} ref={mainRef}>
+    <main key={pageKey} id="main-content" tabIndex={-1} ref={mainRef}>
       <ResearchContext route={route} navigationKey={navigationKey} language={language} />
-      <ResearchLoadBoundary key={navigationKey} language={language}><Suspense fallback={<p className="content-section" role="status">{language === 'zh' ? '正在加载研究…' : 'Loading research…'}</p>}>
-      <RouteFocus navigationKey={navigationKey} mainRef={mainRef} previousNavigationKey={previousNavigationKey} />
+      <ResearchLoadBoundary key={pageKey} language={language}><Suspense fallback={<p className="content-section" role="status">{language === 'zh' ? '正在加载研究…' : 'Loading research…'}</p>}>
+      <RouteFocus navigationKey={pageKey} mainRef={mainRef} previousNavigationKey={previousNavigationKey} />
       {route === 'home' && <Home language={language} />}
       {['dollar', 'research'].includes(route) && <SectionLanding section={route} language={language} />}
       {route === 'purchasing-power' && <><PageIntro eyebrow="DOLLAR / CPI" title={a.powerTitle} description={a.powerClarify} /><section className="content-section global-section"><DollarPower language={language} /></section></>}
@@ -138,7 +139,7 @@ export default function App() {
       {route === 'timeline' && <Timeline language={language} />}
       {route === 'us-cpi' && <UsCpi language={language} />}
       {route === 'map' && <GlobalMap language={language} />}
-      {route === 'drivers' && <Drivers language={language} />}
+      {route === 'drivers' && <Drivers language={language} navigationKey={navigationKey} />}
       {route === 'research/digital-money' && <DigitalMoney language={language} />}
       {route === 'research/ai-productivity' && <AiProductivity language={language} />}
       {route === 'external-shocks' && <ExternalShocks language={language} />}
