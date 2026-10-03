@@ -3,6 +3,8 @@ import { seriesMetadata } from '../../../src/data/seriesContract.js'
 import { releaseWindow } from '../../../src/utils/releaseCalendar.js'
 import { period,instant,availabilityBound,timeEvidence,unknownTime } from './core.mjs'
 import { validateSource } from './inputs.mjs'
+import { validateAcceptance } from './acceptance.mjs'
+import { operationalMetadata } from './metadata.mjs'
 export const isRetrospective = request => request.mode==='CURRENT_VINTAGE_RECONSTRUCTION'
 export function requestOptions(request) {
  if(!['CURRENT_SNAPSHOT','CURRENT_VINTAGE_RECONSTRUCTION','RECORDED_AS_OF','TRUE_RELEASE_VINTAGE'].includes(request.mode))throw Error('UNKNOWN_MODE')
@@ -16,6 +18,7 @@ export const cutoffOf = r => isRetrospective(r)?r.periodCutoff:r.asOf
 export function selectArchive(archive,request) {
  const cutoff=isRetrospective(request)?request.evaluatedAt:request.asOf,selected=new Map()
  for(const item of archive) {
+  validateAcceptance(item.snapshot)
   if(!item.snapshot.snapshotAcceptedAt||Date.parse(item.snapshot.snapshotAcceptedAt)>Date.parse(cutoff))continue
   const previous=selected.get(item.snapshot.datasetId)
   if(previous&&previous.snapshot.snapshotAcceptedAt===item.snapshot.snapshotAcceptedAt&&previous.snapshot.snapshotSha256!==item.snapshot.snapshotSha256)throw Error('AMBIGUOUS_SAME_TIME_VINTAGE')
@@ -51,9 +54,9 @@ const eligibilityCache=new WeakMap()
 export function eligibility(source,snapshot,request,options={}) {
  const key=[request.mode,cutoffOf(request),request.evaluatedAt,snapshot.id,options.primary||false].join('|')
  const cached=eligibilityCache.get(source.observations)
- if(Object.isFrozen(source.observations)&&Object.isFrozen(snapshot)&&cached?.key===key)return cached.value
+ if(Object.isFrozen(source.observations)&&Object.isFrozen(snapshot)&&cached?.has(key))return cached.get(key)
  const value=calculateEligibility(source,snapshot,request,options)
- if(Object.isFrozen(source.observations)&&Object.isFrozen(snapshot))eligibilityCache.set(source.observations,{key,value})
+ if(Object.isFrozen(source.observations)&&Object.isFrozen(snapshot)){const entries=cached||new Map();if(entries.size>=8)entries.delete(entries.keys().next().value);entries.set(key,value);eligibilityCache.set(source.observations,entries)}
  return value
 }
 function calculateEligibility(source,snapshot,request,{expected=null,primary=false}={}) {
@@ -73,7 +76,7 @@ function calculateEligibility(source,snapshot,request,{expected=null,primary=fal
   if(m.releaseSchedule){const win=releaseWindow(m.releaseSchedule,new Date(cut));status=win?.mature&&latest.date<win.mature.observation?{state:'STALE',reason:'Retrospective observation lag outside pinned calendar'}:{state:'NOT_RECONSTRUCTED',reason:'Historical operational freshness not reconstructed'};boundary={validUntil:win?.next?.captureDueAt||null,validUntilInclusive:false}}
   else {boundary=lagBoundary(source,latest);status=Date.parse(cut)>Date.parse(boundary.validUntil)?{state:'STALE',reason:'Retrospective observation lag exceeded'}:{state:'NOT_RECONSTRUCTED',reason:'Historical operational freshness not reconstructed'}}
  } else {
-  status=freshness(cropped,{now:new Date(cut),check:snapshot.check||null,probe:snapshot.probe||null,refreshResult:snapshot.refreshResult||null})
+  status=freshness(cropped,{now:new Date(cut),...operationalMetadata(snapshot,cut)})
   if(m.releaseSchedule){const win=releaseWindow(m.releaseSchedule,new Date(cut));boundary={validUntil:win?.next?.captureDueAt||null,validUntilInclusive:false}}
   else if(m.automationType==='AUTOMATIC')boundary=lagBoundary(source,last)
  }

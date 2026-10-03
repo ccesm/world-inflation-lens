@@ -80,3 +80,14 @@ Capture validates local Git blobs and records the actual validation completion t
 The authoritative schema uses factor `direction` for the assessment state; outcome membership is in `domestic.factorIds`/`international.factorIds`; mode/as-of information is at artifact level; factor evidence/context references resolve into the shared `lineage` array. These are deliberate schema mappings, not omitted evidence. V0.1's factor `counterevidence` arrays are empty under the frozen rules; named outcome contrasts represent conflicting channels.
 
 See [the prototype report](../../docs/signal-engine-v0.1-prototype.md), [recorded review results](fixtures/review-results.json), and [the exact 83-case catalogue accounting](tests/validation-results.json). Generated full outputs and local dependencies are ignored. The configuration, specification and production version remain unchanged.
+
+
+## Corrective iteration (offline-prototype/0.1.1)
+
+R1–R6 safeguards are documented in [the prototype report](../../docs/signal-engine-v0.1-prototype.md#independent-methodology-review-corrections). The frozen rule/config/schema are unchanged. New tests are in `tests/corrective.test.mjs`; single-field provenance attacks and results are retained under `fixtures/corrections/`.
+
+Operational records must provide supported UTC availability/completion evidence. Publisher proof records identify source/URL, snapshot hash, commit, applicable periods and exact publication timing; a precision label alone cannot qualify HIGH. Explicit capture receipts bind first-seen/validation/recorded/acceptance chronology to the selected snapshot. Legacy committed receipts are checked against their exact completion references.
+
+When using `--previous`, retain predecessor artifacts and their original accepted inputs. Corrective CLI writes an immutable content-addressed copy under the destination's `artifacts/` directory. Parent chains are resolved there (or beside a content-addressed previous file), hash-checked and semantically validated. Missing ancestors or input vintages fail closed; unavailable directions are never carried forward.
+
+Corrected generated artifacts use `outputs/corrective-v0.1.1/`; original outputs remain intact. Wall-clock run metadata stays separate. Canonical factor arithmetic may be equivalent while raw-byte/provenance identity differs; raw hashes are preserved.

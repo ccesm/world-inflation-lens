@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto'
 import { temporalValue } from '../../../src/utils/timeSemantics.js'
 import { zonedInstant } from '../../../src/utils/releaseCalendar.js'
-export const VERSION = 'offline-prototype/0.1.0'
+export const VERSION = 'offline-prototype/0.1.1'
 export const MODES = ['CURRENT_SNAPSHOT','CURRENT_VINTAGE_RECONSTRUCTION','RECORDED_AS_OF','TRUE_RELEASE_VINTAGE']
 export const unknownTime = () => ({value:null,precision:'unknown',timeZone:null,evidenceRef:null})
 export const sha256 = value => createHash('sha256').update(value).digest('hex')
@@ -14,8 +14,15 @@ export function canonical(value) {
 export const serialize = value => JSON.stringify(canonical(value))+'\n'
 export const contentHash = value => sha256(serialize(value))
 export function instant(value) {
- if(typeof value!=='string'|| !/T.*Z$/.test(value)||!Number.isFinite(Date.parse(value)))throw Error('EXPLICIT_UTC_INSTANT_REQUIRED')
+ if(typeof value!=='string'|| !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?Z$/.test(value)||!Number.isFinite(Date.parse(value)))throw Error('EXPLICIT_UTC_INSTANT_REQUIRED')
+ calendarDate(value.slice(0,10))
+ const parsed=new Date(value).toISOString()
+ if(parsed.slice(0,19)!==value.slice(0,19))throw Error('INVALID_CLOCK_TIME')
  return new Date(value).toISOString()
+}
+export function calendarDate(value) {
+ if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value)||!Number.isFinite(Date.parse(value+'T00:00:00Z'))||new Date(value+'T00:00:00Z').toISOString().slice(0,10)!==value)throw Error('INVALID_CALENDAR_DATE')
+ return value
 }
 export function timeEvidence(value,ref=null,zone=null) {
  const t=typeof value==='object'&&value?value:temporalValue(value)
@@ -24,7 +31,7 @@ export function timeEvidence(value,ref=null,zone=null) {
 }
 export function availabilityBound(t) {
  if(!t?.value)return null
- if(t.precision==='timestamp')return Number.isFinite(Date.parse(t.value))?new Date(t.value).toISOString():null
+ if(t.precision==='timestamp')return instant(t.value)
  if(!t.timeZone)return null
  let next
  if(t.precision==='date') {
@@ -37,7 +44,7 @@ export function availabilityBound(t) {
  return zonedInstant(next,0,0,t.timeZone)
 }
 export function period(date,frequency,sourcePeriod=null,periodBasis='') {
- if(frequency==='publication snapshot')return date?{kind:'publication_fact',label:date,start:`${date}T00:00:00.000Z`,end:`${date}T23:59:59.999Z`}:{kind:'publication_fact',label:'UNKNOWN_OBSERVATION',start:null,end:null}
+ if(frequency==='publication snapshot')return date?{kind:'publication_fact',label:calendarDate(date),start:`${date}T00:00:00.000Z`,end:`${date}T23:59:59.999Z`}:{kind:'publication_fact',label:'UNKNOWN_OBSERVATION',start:null,end:null}
  let y,m,d,start,end,kind,label
  if(frequency==='monthly'||frequency==='quarterly') {
   if(!/^\d{4}-(0[1-9]|1[0-2])$/.test(date))throw Error('INVALID_PERIOD')
@@ -48,6 +55,7 @@ export function period(date,frequency,sourcePeriod=null,periodBasis='') {
   start=Date.UTC(y,m-1,1);end=Date.UTC(y,m-1+(kind==='quarter'?3:1),1)-1
  } else if(frequency.startsWith('annual')) {
   y=Number(date.slice(0,4));if(!Number.isInteger(y)||!/^\d{4}(?:-\d{2}-\d{2})?$/.test(date))throw Error('INVALID_ANNUAL_PERIOD')
+  if(date.length===10)calendarDate(date)
   kind=/fiscal/i.test(frequency+' '+periodBasis)?'fiscal_year':'calendar_year';label=kind==='fiscal_year'?`FY${y}`:String(y)
   // Fiscal source endpoints are retained; modern US fiscal years run Oct–Sep.
   if(kind==='fiscal_year'&&date.length===10){end=Date.parse(`${date}T23:59:59.999Z`);start=Date.UTC(y-1,Number(date.slice(5,7)),1)}

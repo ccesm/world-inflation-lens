@@ -21,6 +21,9 @@ export function atomicImmutable(target,bytes,{beforePromote=null}={}) {
 export function persistArtifact(repo,output,target,validate,{beforePromote=null}={}) {
  validate(output);const bytes=serialize(output),hash=sha256(bytes),absolute=offlinePath(repo,target)
  atomicImmutable(absolute,bytes,{beforePromote})
+ // Retain addressable predecessors so factor-level last-valid links can be
+ // checked after an unavailable assessment or a later recovery.
+ atomicImmutable(path.join(path.dirname(absolute),'artifacts',hash+'.json'),bytes)
  const run={schemaVersion:'offline-run/0.1',engineVersion:VERSION,generationTimestamp:new Date().toISOString(),payloadSha256:hash,artifactPath:absolute,status:'SIGNAL_EVALUATION_SUCCESS'}
  const runPath=path.join(path.dirname(absolute),'runs',`${hash}-${Date.now()}-${process.pid}.json`)
  fs.mkdirSync(path.dirname(runPath),{recursive:true});fs.writeFileSync(runPath,JSON.stringify(run,null,2)+'\n',{flag:'wx'})

@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process'
 import { seriesMetadata } from '../../../src/data/seriesContract.js'
 import { validateInternational } from '../../../scripts/lib/international.mjs'
 import { sha256,contentHash,period,instant,availabilityBound,timeEvidence } from './core.mjs'
+import { manifestAcceptance,receipt } from './acceptance.mjs'
 export const SPEC_COMMIT='faaae287f1b144bd8396023a8f134b66ae84404c'
 export const SOURCE_FILES=['data/inflation/fred.json','data/inflation/drivers.json','data/inflation/monitor.json','data/productivity/series.json','data/digital-money/bank-deposits.json','data/external/gpr.json','data/external/gscpi.json','data/external/fao-food.json','data/external/sipri-military.json','data/digital-money/stablecoins.json','data/digital-money/treasury-holdings.json','data/international-dollar/reserve-composition.json','data/international-dollar/treasury-holdings.json','data/international-dollar/global-dollar-credit.json']
 export const CONTRACT_FILES=['src/data/seriesRegistry.js','src/data/seriesContract.js','src/data/internationalDefinitions.js','src/utils/freshness.js','src/utils/releaseCalendar.js','src/utils/timeSemantics.js','src/utils/treasuryPricing.js','src/utils/productivity.js']
@@ -29,6 +30,8 @@ export function validateSource(source,expected=null) {
   if(last!==null&&p.date<=last)throw Error(p.date===last?'DUPLICATE_PERIOD':'UNSORTED_PERIODS')
   last=p.date
   if(p.availableAt)instant(p.availableAt)
+  if(p.releasePublishedAt&&['value','precision','timeZone','evidenceRef'].some(key=>!Object.hasOwn(p.releasePublishedAt,key)))throw Error('INCOMPLETE_PUBLISHER_TIME_METADATA')
+  if(p.releasePublishedAt?.value)availabilityBound(p.releasePublishedAt)
   if(p.releasePublishedAt?.value && p.availableAt) {const bound=availabilityBound(p.releasePublishedAt);if(bound&&Date.parse(bound)>Date.parse(p.availableAt))throw Error('AVAILABILITY_PRECEDES_RELEASE')}
   if(source.id.startsWith('COFER_')&&p.value!==null&&(p.value<0||p.value>100))throw Error('INVALID_SHARE_RANGE')
   if(op.kind==='publication_fact'&&source.observations.length!==1)throw Error('PUBLICATION_FACT_NOT_SERIES')
@@ -56,15 +59,14 @@ export function captureManifest(repo,commit,contracts) {
  validateInternational({cofer:parsed['data/international-dollar/reserve-composition.json'],tic:parsed['data/international-dollar/treasury-holdings.json'],bis:parsed['data/international-dollar/global-dollar-credit.json']})
  // Acceptance is recorded only after all local validation completes. It is not backdated to publication or retrieval.
  const completed=new Date().toISOString()
- for(const d of datasets){d.snapshotAcceptedAt=completed;d.firstSeenAt=completed;d.acceptanceEvidenceRef=`OFFLINE_LOCAL_VALIDATION:${d.snapshotSha256}:${completed}`}
+ for(const d of datasets){d.snapshotAcceptedAt=completed;d.firstSeenAt=completed;d.acceptanceEvidenceRef=`OFFLINE_LOCAL_VALIDATION:${d.snapshotSha256}:${completed}`;d.acceptanceRecord=receipt(d,completed)}
  return {schemaVersion:'project-input-manifest/0.1',inputCommit:commit,validationCompletedAt:completed,validation:'PASS_GENERIC_CONTRACTS_AND_EXISTING_INTERNATIONAL_VALIDATORS',datasets}
 }
 export function loadArchive(repo,manifest,env) {
  if(manifest.schemaVersion!=='project-input-manifest/0.1')throw Error('UNKNOWN_MANIFEST_VERSION')
  const archive=[]
- for(const d of manifest.datasets) {
-  instant(d.snapshotAcceptedAt)
-  if(!d.acceptanceEvidenceRef||!d.inputVintageId)throw Error('MISSING_ACCEPTANCE_PROOF')
+ for(const dataset of manifest.datasets) {
+  const d=manifestAcceptance(dataset,manifest)
   const bytes=gitBytes(repo,d.inputCommit,d.snapshotPath)
   if(sha256(bytes)!==d.snapshotSha256)throw Error('INPUT_HASH_MISMATCH')
   const series=normalizeDataset(JSON.parse(bytes)).map(source=>{validateSource(source,env.contracts[source.id]);return {...source,contract:seriesMetadata(source)}})

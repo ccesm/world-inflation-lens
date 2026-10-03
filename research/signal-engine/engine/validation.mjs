@@ -4,15 +4,18 @@ import addFormats from 'ajv-formats'
 import { contentHash,transformWindow,confirmedBand,period,scenarios } from './core.mjs'
 import { evaluate } from './engine.mjs'
 import { selectArchive,pointAvailability,isRetrospective,cutoffOf } from './alignment.mjs'
+import { validatePinnedInputs,validatePinnedRecord } from './provenance.mjs'
 export function compileOutputSchema(schema) {const ajv=new Ajv2020({strict:false,allErrors:true});addFormats(ajv);return ajv.compile(schema)}
 const sourcePeriodCache=new WeakMap()
-export function validateArtifact(output,config,schemaValidator,{archive=null,env=null}={}) {
+export function validateArtifact(output,config,schemaValidator,{archive=null,env=null,priorArtifact=null}={}) {
+ if(!archive||!env)throw Error('PINNED_ARCHIVE_AND_ENVIRONMENT_REQUIRED')
  if(!schemaValidator(output))throw Error(`OUTPUT_SCHEMA_FAILED:${JSON.stringify(schemaValidator.errors)}`)
  const ids=new Map(),snapshots=new Map(output.inputs.map(s=>[s.id,s])),factorIds=output.factors.map(f=>f.factorId)
  if(new Set(snapshots.keys()).size!==output.inputs.length)throw Error('DUPLICATE_SNAPSHOT')
  if(contentHash(factorIds)!==contentHash(config.factors.map(f=>f.id)))throw Error('FACTOR_SCOPE_MISMATCH')
  if(env)for(const key of ['ruleSha256','outputSchemaSha256','normativeDocumentHashes','contractCodeHashes'])if(contentHash(output[key])!==contentHash(env[key]))throw Error(`MANIFEST_HASH_MISMATCH:${key}`)
  const selected=archive?selectArchive(archive,output):[],sources=new Map()
+ if(archive)validatePinnedInputs(output,selected,env)
  for(const item of selected)for(const source of item.series)sources.set(source.id,{source,snapshot:item.snapshot})
  for(const l of output.lineage) {
   if(ids.has(l.id))throw Error('DUPLICATE_LINEAGE_ID');ids.set(l.id,l)
@@ -23,6 +26,7 @@ export function validateArtifact(output,config,schemaValidator,{archive=null,env
    if(l.rawValue!==l.inputObservations.at(-1).value)throw Error('RAW_VALUE_MISMATCH')
    if(archive) {
     const src=sources.get(l.seriesId);if(!src||src.snapshot.id!==l.snapshotId)throw Error('WRONG_SELECTED_VINTAGE')
+    validatePinnedRecord(l,src,output,config)
     let available=Object.isFrozen(src.source.observations)?sourcePeriodCache.get(src.source.observations):null
     if(!available){available=new Map(src.source.observations.map(p=>[period(p.date,src.source.frequency,p.sourcePeriod,src.source.periodBasis).label,p]));if(Object.isFrozen(src.source.observations))sourcePeriodCache.set(src.source.observations,available)}
     for(const p of l.inputObservations){const original=available.get(p.observationPeriod.label);if(!original||original.value!==p.value)throw Error('LINEAGE_VALUE_NOT_IN_SNAPSHOT');if(contentHash(p.observationPeriod)!==contentHash(period(original.date,src.source.frequency,original.sourcePeriod,src.source.periodBasis)))throw Error('PERIOD_SEMANTICS_MISMATCH');if(!isRetrospective(output)&&p.availableAt!==pointAvailability(src.source,original,src.snapshot))throw Error('AVAILABILITY_PROOF_MISMATCH')}
@@ -75,9 +79,13 @@ export function validateArtifact(output,config,schemaValidator,{archive=null,env
   for(const c of o.contrasts){if(!config.conflicts.some(r=>r.id===c.contrastId&&r.outcome===outcome))throw Error('UNKNOWN_CONTRAST');for(const id of c.evidenceIds)if(!ids.has(id))throw Error('BROKEN_CONTRAST_REFERENCE')}
  }
  if(archive&&env){
-  const expected=evaluate(archive,env,output,{scenario})
+  if(output.parentArtifactRef&&!priorArtifact)throw Error('PRIOR_ARTIFACT_REQUIRED_FOR_HISTORY_VALIDATION')
+  if(priorArtifact&&output.parentArtifactRef!==`sha256:${contentHash(priorArtifact)}`)throw Error('PARENT_ARTIFACT_MISMATCH')
+  const expected=evaluate(archive,env,output,{scenario,priorArtifact})
   for(let i=0;i<output.factors.length;i++)for(const key of ['direction','confidence','qualityReasons','dataStatus','alignment','evidence','context','missingContext','sourceStatuses','observationThrough'])if(contentHash(output.factors[i][key])!==contentHash(expected.factors[i][key]))throw Error('ASSESSMENT_RULE_MISMATCH:'+key)
   for(const key of ['domestic','international'])if(contentHash(output[key])!==contentHash(expected[key]))throw Error('OUTCOME_RULE_MISMATCH')
+  for(const key of ['inputs','lineage','engineVersion','limitations'])if(contentHash(output[key])!==contentHash(expected[key]))throw Error('PINNED_ARTIFACT_MISMATCH:'+key)
+  for(let i=0;i<output.factors.length;i++)for(const key of ['changeReason','lastValidArtifactRef','ruleVersion','limitations'])if(contentHash(output.factors[i][key])!==contentHash(expected.factors[i][key]))throw Error('HISTORY_RULE_MISMATCH:'+key)
  }
  return true
 }

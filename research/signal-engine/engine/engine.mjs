@@ -1,11 +1,13 @@
 // Pure evaluation: no filesystem, live APIs, implicit clock, email or deployment.
 import { period,transformWindow,scenarios,contemporaneous,VERSION,contentHash,instant } from './core.mjs'
-import { requestOptions,selectArchive,eligibility,manualEligibility,isRetrospective,cutoffOf,lagBoundary,pointAvailability } from './alignment.mjs'
+import { requestOptions,selectArchive,eligibility,manualEligibility,isRetrospective,cutoffOf,lagBoundary,pointAvailability,visiblePoints } from './alignment.mjs'
 import { seriesMetadata } from '../../../src/data/seriesContract.js'
 import { derive10YBreakeven } from '../../../src/utils/treasuryPricing.js'
 import { releaseWindow } from '../../../src/utils/releaseCalendar.js'
 import { confidenceFromReasons } from './confidence.mjs'
 import { rawRecord,derivedRecord } from './lineage.mjs'
+import { sourceAtCutoff,publisherEvidenceProven,snapshotOutput } from './metadata.mjs'
+import { applyChangeAudit } from './audit.mjs'
 export function validateConfig(config,expectedHash=null) {
  if(config.ruleVersion!=='signal-engine-v0.1-draft.1'||config.schemaVersion!=='signal-rule-config/0.1')throw Error('UNKNOWN_RULE_VERSION')
  if(expectedHash&&contentHash(config)!==expectedHash)throw Error('MUTATED_IMMUTABLE_CONFIG')
@@ -15,15 +17,15 @@ export function validateConfig(config,expectedHash=null) {
  return config
 }
 const diagnostic=(id,st)=>({seriesId:id,freshnessState:st?.state||'UNKNOWN',reason:st?.reason||st?.error||'MISSING_INPUT'})
-const snapshotOut=s=>Object.fromEntries(['id','datasetId','snapshotPath','snapshotSha256','rawSha256','rawRetentionLimitation','inputVintageId','snapshotAcceptedAt','acceptanceEvidenceRef','firstSeenAt','parserVersion','sourceMethodologyId'].map(k=>[k,s[k]??null]))
 function primaryFailure(status,error) {if(error&&error!=='INELIGIBLE_FRESHNESS')return 'INSUFFICIENT_DATA';return ['SOURCE_UPDATED_NOT_YET_CAPTURED','REFRESH_FAILED','STALE'].includes(status?.state)?status.state:'INSUFFICIENT_DATA'}
 function horizon(points,frequency){return {start:period(points[0].date,frequency).start,end:period(points.at(-1).date,frequency).end}}
 function blockedFactor(f,r,st,reason) {
  return {factorId:f.id,ruleVersion:r.ruleVersion,direction:'INSUFFICIENT_DATA',observationThrough:null,evidence:[],counterevidence:[],context:[],missingContext:f.contextSeriesIds,confidence:'UNASSESSED',qualityReasons:[reason],dataStatus:primaryFailure(st,reason),sourceStatuses:[diagnostic(f.primarySeriesId,st)],availabilityBasis:r.retrospective?'NOT_RECONSTRUCTED':'UNKNOWN',alignment:'UNASSESSED',changeReason:['INITIAL'],lastValidArtifactRef:null,limitations:[reason,'No current assessment is inferred from unavailable evidence']}
 }
 export function evaluate(archive,env,request,{scenario={multiplier:1,persistenceOffset:0,id:'BASE'},priorArtifact=null}={}) {
+ if(priorArtifact&&(Date.parse(priorArtifact.evaluatedAt)>Date.parse(request.evaluatedAt)||request.mode==='RECORDED_AS_OF'&&(!priorArtifact.asOf||Date.parse(priorArtifact.asOf)>Date.parse(request.asOf))))throw Error('FUTURE_OR_UNPROVEN_PARENT_ARTIFACT')
  requestOptions(request);const config=validateConfig(env.config,env.configCanonicalHash),retrospective=isRetrospective(request),selected=selectArchive(archive,request),byId=new Map(),lineage=new Map(),derivedFailures=new Map()
- for(const item of selected)for(const raw of item.series){if(byId.has(raw.id))throw Error('DUPLICATE_CANONICAL_SERIES');const source={...raw,contract:raw.contract||seriesMetadata(raw)};byId.set(source.id,{source,snapshot:item.snapshot})}
+ for(const item of selected)for(const raw of item.series){if(byId.has(raw.id))throw Error('DUPLICATE_CANONICAL_SERIES');const view=sourceAtCutoff(raw,item.snapshot,retrospective?request.evaluatedAt:cutoffOf(request));const source={...view,contract:view===raw?(raw.contract||seriesMetadata(raw)):seriesMetadata(view)};byId.set(source.id,{source,snapshot:item.snapshot})}
  const statuses=new Map()
  function status(id,primary=false) {
   const entry=byId.get(id);if(!entry)return {error:'MISSING_INPUT',state:'UNKNOWN',reason:'No accepted snapshot/series',points:[]}
@@ -87,18 +89,24 @@ export function evaluate(archive,env,request,{scenario={multiplier:1,persistence
   const alignment=missing.length?'CONTEXT_INCOMPLETE':contexts.some(c=>!contemporaneous(h,c.observationPeriod))?'NOT_CONTEMPORANEOUS':contexts.some(c=>c.frequency!==f.frequency)?'MIXED_FREQUENCY_DISCLOSED':'ALIGNED'
   if(missing.length)quality.push('MISSING_OPTIONAL_CONTEXT');if(alignment==='NOT_CONTEMPORANEOUS')quality.push('NONCONTEMPORANEOUS_CONTEXT')
   if(retrospective)quality.push('RETROSPECTIVE_AVAILABILITY_UNPROVEN')
-  if(!window.raw.every(p=>p.releasePublishedAt?.precision==='timestamp'))quality.push('UNKNOWN_OR_COARSE_PUBLISHER_AVAILABILITY')
+  if(!window.raw.every(p=>publisherEvidenceProven(entry.source,p,entry.snapshot,retrospective?request.evaluatedAt:cutoffOf(request))))quality.push('UNKNOWN_OR_COARSE_PUBLISHER_AVAILABILITY')
   if(f.primarySeriesId==='COFER_USD'){
-   const imputed=byId.get('COFER_IMPUTED')?.source.observations||[],map=new Map(imputed.map(p=>[p.date,p.value]))
+   const imputationStatus=status('COFER_IMPUTED'),imputed=imputationStatus.error?[]:imputationStatus.points,map=new Map(imputed.map(p=>[p.date,p.value]))
    if(window.raw.some(p=>!Number.isFinite(map.get(p.date))))quality.push('UNKNOWN_IMPUTATION')
    if(window.raw.some(p=>map.get(p.date)>0))quality.push('IMPUTED_PRIMARY_MEASURE')
+  }
+  // Quality and component checks must expose the actual eligible operands,
+  // rather than a latest-only context record unrelated to the checked window.
+  for(const id of f.primarySeriesId==='COFER_USD'?['COFER_IMPUTED']:f.primarySeriesId==='BIS_USD_TOTAL'?['BIS_USD_LOANS','BIS_USD_SECURITIES']:[]) {
+   const dates=new Set(window.raw.map(p=>p.date)),points=(status(id).points||[]).filter(p=>dates.has(p.date)),e=byId.get(id),lid=`context:${id}`
+   if(e&&points.length&&ctx.includes(lid))lineage.set(lid,rawRecord(lid,e.source,e.snapshot,status(id),points,request,config))
   }
   const allVariants=scenarios(config).map(s=>transformWindow({...entry.source,observations:st.points},f,config,st.last.date,s))
   if(allVariants.some(w=>w.error))quality.push('SENSITIVITY_NOT_EVALUATED')
   if(allVariants.some(w=>!w.error&&w.direction!==window.direction))quality.push('PARAMETER_SENSITIVE')
   const previous=archive.filter(a=>a.snapshot.datasetId===entry.snapshot.datasetId&&Date.parse(a.snapshot.snapshotAcceptedAt)<Date.parse(entry.snapshot.snapshotAcceptedAt)).sort((a,b)=>Date.parse(b.snapshot.snapshotAcceptedAt)-Date.parse(a.snapshot.snapshotAcceptedAt))[0]
   let priorWindow=null
-  if(previous){const p=previous.series.find(s=>s.id===f.primarySeriesId);if(p&&p.units===entry.source.units&&p.denominator===entry.source.denominator&&previous.snapshot.sourceMethodologyId===entry.snapshot.sourceMethodologyId)priorWindow=transformWindow(p,f,config,st.last.date,scenario)}
+  if(previous){const p=previous.series.find(s=>s.id===f.primarySeriesId);if(p&&p.units===entry.source.units&&p.denominator===entry.source.denominator&&previous.snapshot.sourceMethodologyId===entry.snapshot.sourceMethodologyId)priorWindow=transformWindow({...p,observations:visiblePoints(p,previous.snapshot,request)},f,config,st.last.date,scenario)}
   if(!priorWindow||priorWindow.error)quality.push('NO_COMPARABLE_PRIOR_VINTAGE')
   else if(priorWindow.direction!==window.direction)quality.push('REVISION_SENSITIVE')
   const confidence=confidenceFromReasons(quality)
@@ -128,5 +136,6 @@ export function evaluate(archive,env,request,{scenario={multiplier:1,persistence
  }
  const domestic=outcome('DOMESTIC_PURCHASING_POWER'),international=outcome('INTERNATIONAL_DOLLAR_ROLE')
  const usedSnapshotIds=new Set([...lineage.values()].map(l=>l.snapshotId).filter(Boolean))
- return {schemaVersion:'signal-output/0.1',ruleVersion:config.ruleVersion,ruleSha256:env.ruleSha256,outputSchemaSha256:env.outputSchemaSha256,normativeDocumentHashes:env.normativeDocumentHashes,contractCodeHashes:env.contractCodeHashes,engineVersion:VERSION,runtime:env.runtime,inputCommit:env.inputCommit,inputKind:env.inputKind,mode:request.mode,asOf:request.asOf,periodCutoff:request.periodCutoff,evaluatedAt:request.evaluatedAt,historicalAvailabilityClaim:request.mode==='RECORDED_AS_OF',sensitivityScenario:scenario.id||'BASE',inputs:selected.filter(s=>usedSnapshotIds.has(s.snapshot.id)).map(s=>snapshotOut(s.snapshot)),lineage:[...lineage.values()].sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0),factors,domestic,international,limitations:['Offline research artifact; no aggregate score, probabilities or investment recommendation','No complete publisher-vintage archive',...(retrospective?['CURRENT-VINTAGE RECONSTRUCTION — revised data; historical publication availability is not established']:[]),...(!selected.length?['No accepted project snapshots at the requested cutoff']:[])],parentArtifactRef:priorArtifact?`sha256:${contentHash(priorArtifact)}`:null}
+ const output={schemaVersion:'signal-output/0.1',ruleVersion:config.ruleVersion,ruleSha256:env.ruleSha256,outputSchemaSha256:env.outputSchemaSha256,normativeDocumentHashes:env.normativeDocumentHashes,contractCodeHashes:env.contractCodeHashes,engineVersion:VERSION,runtime:env.runtime,inputCommit:env.inputCommit,inputKind:env.inputKind,mode:request.mode,asOf:request.asOf,periodCutoff:request.periodCutoff,evaluatedAt:request.evaluatedAt,historicalAvailabilityClaim:request.mode==='RECORDED_AS_OF',sensitivityScenario:scenario.id||'BASE',inputs:selected.filter(s=>usedSnapshotIds.has(s.snapshot.id)).map(s=>snapshotOutput(s.snapshot)),lineage:[...lineage.values()].sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0),factors,domestic,international,limitations:['Offline research artifact; no aggregate score, probabilities or investment recommendation','No complete publisher-vintage archive',...(retrospective?['CURRENT-VINTAGE RECONSTRUCTION — revised data; historical publication availability is not established']:[]),...(!selected.length?['No accepted project snapshots at the requested cutoff']:[])],parentArtifactRef:priorArtifact?`sha256:${contentHash(priorArtifact)}`:null}
+ return applyChangeAudit(output,priorArtifact)
 }
