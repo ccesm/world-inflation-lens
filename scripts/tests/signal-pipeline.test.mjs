@@ -18,7 +18,7 @@ import { summaryFromRun } from '../lib/signalShadowSummary.mjs'
 
 const COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
 // Accepted production baseline after the v1.1.0 release snapshot sync.
-const FEATURE_BASE = 'd03e9e48f6e4f8b0bce6d9367586f17ebda788cd'
+const FEATURE_BASE = '7123887af80647a8c2298872b29e1f6697296c0f'
 const ACCEPTED = '2026-10-04T00:20:00.000Z', ASOF = '2026-10-04T00:21:00.000Z'
 const passed = () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }]
 // This explicit mock proves adapter behavior, never live production acceptance.
