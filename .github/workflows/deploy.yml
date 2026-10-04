@@ -8,6 +8,11 @@ on:
         description: Check official data before deploying
         type: boolean
         default: true
+      signal_qualification:
+        description: Feature-branch-only shadow qualification (production jobs skip)
+        type: choice
+        options: [disabled, normal, failure-injection]
+        default: disabled
   schedule:
     - cron: '40 17 * * *'
       timezone: America/Los_Angeles
@@ -19,6 +24,26 @@ concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
+  # GitHub registers dispatch-only workflows on the default branch. This
+  # branch-only bridge permits pre-merge Linux qualification via the already
+  # registered dispatcher. No production job runs on this feature ref.
+  signal-qualification:
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      github.ref == 'refs/heads/codex/signal-engine-production-pipeline' &&
+      (inputs.signal_qualification == 'normal' || inputs.signal_qualification == 'failure-injection')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: ./.github/actions/signal-shadow-qualification
+        with:
+          mode: ${{ inputs.signal_qualification }}
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest

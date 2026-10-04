@@ -73,7 +73,8 @@ function relationship(input, previous) {
 
 export function runShadow({ repo = ROOT, store = new RestrictedStore(), accepted, acceptedFactory, codeCommit,
   runId = randomUUID(), attempt = 1, startedAt, asOf, clock = now, dryRun = false,
-  evaluateFn = evaluate, afterEvaluation = output => output, beforeArtifact = artifact => artifact } = {}) {
+  evaluateFn = evaluate, afterEvaluation = output => output, beforeArtifact = artifact => artifact,
+  testOnlyForceEvaluation = false } = {}) {
   let stage = 'STORAGE', release, state, previous, currentInput = null
   const attemptedAt = instant(clock()), ordering = { runId, attempt, startedAt: instant(startedAt || attemptedAt) }
   const run = {
@@ -141,7 +142,10 @@ export function runShadow({ repo = ROOT, store = new RestrictedStore(), accepted
     if (Date.parse(cutoff) < Date.parse(accepted.receipt.acceptedAt)) throw Error('ASOF_PRECEDES_PRODUCTION_ACCEPTANCE')
     const request = { mode: 'CURRENT_SNAPSHOT', asOf: cutoff, periodCutoff: null, evaluatedAt: cutoff }
     stage = 'ENGINE'
-    if (previous && previous.artifact.content.semanticCodeHash === semanticCodeHash && contentHash(currentInput) === contentHash(inputReference(previous.accepted)) && Date.parse(cutoff) >= Date.parse(previous.output.asOf)) {
+    // Qualification-only injection must exercise evaluation, not a cache hit.
+    // This library hook is deliberately unavailable through the production CLI.
+    if (testOnlyForceEvaluation && evaluateFn === evaluate) throw Error('TEST_EVALUATOR_REQUIRED')
+    if (!testOnlyForceEvaluation && previous && previous.artifact.content.semanticCodeHash === semanticCodeHash && contentHash(currentInput) === contentHash(inputReference(previous.accepted)) && Date.parse(cutoff) >= Date.parse(previous.output.asOf)) {
       const original = eligibilityFingerprint(previous.archive, previous.env, previous.context.request)
       const latest = eligibilityFingerprint(previous.archive, previous.env, request)
       if (original === latest) {

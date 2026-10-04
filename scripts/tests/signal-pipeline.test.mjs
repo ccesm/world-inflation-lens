@@ -13,6 +13,7 @@ import { ROOT, semanticCodeIdentity, dataIdentity } from '../signal-engine/ident
 import { contentHash, serialize, sha256 } from '../../research/signal-engine/engine/core.mjs'
 import { evaluate } from '../../research/signal-engine/engine/engine.mjs'
 import { parseArguments } from '../signal-evaluate.mjs'
+import { disclosureCategories } from '../signal-shadow-qualification.mjs'
 
 const COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
 const ACCEPTED = '2026-10-04T00:20:00.000Z', ASOF = '2026-10-04T00:21:00.000Z'
@@ -83,6 +84,37 @@ test('PIPELINE no-op check reuses digest and keeps original as-of/evaluation tim
     assert.equal(ledger.status, 'UNCHANGED'); assert.equal(ledger.lastSuccessfulEvaluationAt, ASOF)
     assert.equal(ledger.lastSuccessfulReuseCheckAt, '2026-10-04T00:22:00.000Z')
   } finally { s.close() }
+})
+test('QUALIFICATION forced test evaluator fails despite an eligible cache hit and preserves last valid', () => {
+  const s = sandbox()
+  try {
+    let called = false
+    const r = invoke(s.store, { testOnlyForceEvaluation: true, evaluateFn: () => { called = true; throw Error('TEST_ONLY_INJECTION') } })
+    assert(called); assert.equal(r.run.result, 'FAILED'); assert.equal(r.run.failureStage, 'ENGINE')
+    assert.equal(r.run.fallbackArtifactHash, first.run.artifactHash)
+    const ledger = s.store.readState().ledger
+    assert.equal(ledger.status, 'FAILED_WITH_LAST_VALID'); assert.equal(ledger.lastValidArtifactHash, first.run.artifactHash)
+    assert.equal(count(s.root, 'interpretations'), 1)
+    validateStoredInterpretation(s.store, first.run.artifactHash)
+    assert.equal(workingEconomicHash(), workingBefore)
+  } finally { s.close() }
+})
+test('QUALIFICATION force hook requires an explicit test evaluator and is absent from production CLI', () => {
+  const s = sandbox()
+  try {
+    const r = invoke(s.store, { testOnlyForceEvaluation: true })
+    assert.equal(r.run.result, 'FAILED'); assert.equal(r.run.failureStage, 'ENGINE')
+    assert.throws(() => parseArguments(['--test-only-force-evaluation']))
+  } finally { s.close() }
+})
+test('QUALIFICATION disclosure checks reject email, personal paths, credentials and restricted public payloads', () => {
+  for (const [text, category] of [
+    ['researcher@example.org', 'EMAIL_ADDRESS'], ['/Users/example/private.json', 'PERSONAL_PATH'],
+    ['ghp_' + 'x'.repeat(36), 'CREDENTIAL_PATTERN'],
+    ['signal-shadow-interpretation/1', 'RESTRICTED_SIGNAL_PAYLOAD'],
+    ['/home/runner/work/repository/file.json', 'WORKSPACE_PATH'],
+  ]) assert(disclosureCategories(text, { publicOutput: true }).includes(category))
+  assert.deepEqual(disclosureCategories('{"result":"PASS"}', { logs: true }), [])
 })
 test('PIPELINE execution timestamp/unrelated code commit changes only operational run identity', () => {
   const s = sandbox()

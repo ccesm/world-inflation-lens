@@ -1,0 +1,32 @@
+name: Qualify Signal Engine shadow isolation
+description: Test-only local artifacts; no refresh, remote archive, mail or deployment
+inputs:
+  mode:
+    description: normal or failure-injection
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '24.19.0'
+        cache: npm
+    - name: Install website dependencies
+      shell: bash
+      run: npm ci --no-audit --no-fund
+    - name: Install isolated engine dependencies
+      shell: bash
+      run: npm ci --prefix research/signal-engine --no-audit --no-fund
+    - name: Qualify accepted-input evaluation and failure isolation
+      shell: bash
+      env:
+        QUALIFICATION_MODE: ${{ inputs.mode }}
+        QUALIFICATION_ROOT: ${{ runner.temp }}/signal-shadow-qualification
+      run: node scripts/signal-shadow-qualification.mjs
+    - name: Upload qualification output only
+      uses: actions/upload-artifact@v4
+      with:
+        name: signal-shadow-qualification-${{ inputs.mode }}-${{ github.run_id }}
+        path: ${{ runner.temp }}/signal-shadow-qualification/upload/
+        if-no-files-found: error
+        retention-days: 3

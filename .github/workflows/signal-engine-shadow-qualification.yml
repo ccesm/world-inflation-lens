@@ -1,0 +1,26 @@
+name: Signal Engine shadow qualification
+run-name: Signal shadow qualification — ${{ inputs.mode }}
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Qualification scenario
+        type: choice
+        options: [normal, failure-injection]
+        default: normal
+        required: true
+permissions:
+  contents: read
+jobs:
+  qualification:
+    if: github.ref == 'refs/heads/codex/signal-engine-production-pipeline'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: ./.github/actions/signal-shadow-qualification
+        with:
+          mode: ${{ inputs.mode }}
