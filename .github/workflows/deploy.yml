@@ -8,6 +8,11 @@ on:
         description: Check official data before deploying
         type: boolean
         default: true
+      signal_qualification:
+        description: Feature-branch-only shadow qualification (production jobs skip)
+        type: choice
+        options: [disabled, normal, failure-injection]
+        default: disabled
   schedule:
     - cron: '40 17 * * *'
       timezone: America/Los_Angeles
@@ -19,6 +24,26 @@ concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
+  # GitHub registers dispatch-only workflows on the default branch. This
+  # branch-only bridge permits pre-merge Linux qualification via the already
+  # registered dispatcher. No production job runs on this feature ref.
+  signal-qualification:
+    if: >-
+      github.event_name == 'workflow_dispatch' &&
+      github.ref == 'refs/heads/codex/signal-engine-production-pipeline' &&
+      (inputs.signal_qualification == 'normal' || inputs.signal_qualification == 'failure-injection')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: ./.github/actions/signal-shadow-qualification
+        with:
+          mode: ${{ inputs.signal_qualification }}
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
@@ -82,6 +107,38 @@ jobs:
           path: .refresh/check.json
           include-hidden-files: true
           if-no-files-found: ignore
+  signal-shadow:
+    name: Restricted Signal Engine shadow evaluation
+    # This independent job can never reject an accepted economic build or make
+    # deployment/notifications depend on an interpretation. No public artifacts.
+    if: github.ref == 'refs/heads/main' && vars.SIGNAL_SHADOW_ENABLED == 'true'
+    needs: build
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.build.outputs.snapshot_commit }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Install isolated frozen engine dependencies
+        run: npm ci --prefix research/signal-engine
+      - name: Evaluate accepted snapshot into the private shadow archive
+        env:
+          SIGNAL_ARCHIVE_REPOSITORY: ${{ vars.SIGNAL_ARCHIVE_REPOSITORY }}
+          SIGNAL_ARCHIVE_TOKEN: ${{ secrets.SIGNAL_ARCHIVE_TOKEN }}
+        run: >-
+          npm run signal:evaluate -- --private-archive
+          --snapshot '${{ needs.build.outputs.snapshot_commit }}'
+          --code-commit '${{ needs.build.outputs.code_commit }}'
+
   deploy:
     environment:
       name: github-pages

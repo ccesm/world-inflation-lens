@@ -1,0 +1,1130 @@
+{
+  "schemaVersion": "signal-rule-config/0.1",
+  "ruleVersion": "signal-engine-v0.1-draft.1",
+  "status": "OFFLINE_DRAFT_NOT_EMPIRICALLY_VALIDATED",
+  "productionEnabled": false,
+  "baseCommit": "b3d2fc295b0378c7d29ae6fe8d36e275a55753a9",
+  "productionVersionUnchanged": "1.0.0",
+  "normativeDocuments": [
+    "docs/signal-engine-spec.md",
+    "docs/signal-engine-factor-matrix.md",
+    "docs/signal-engine-validation-plan.md"
+  ],
+  "outputSchema": "research/signal-engine/output.schema.json",
+  "aggregation": "NONE",
+  "outcomes": [
+    "DOMESTIC_PURCHASING_POWER",
+    "INTERNATIONAL_DOLLAR_ROLE"
+  ],
+  "modes": {
+    "CURRENT_SNAPSHOT": {
+      "supportedInPrototype": true,
+      "asOfRequired": true,
+      "periodCutoffRequired": false,
+      "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT",
+      "historicalAvailabilityClaim": false
+    },
+    "CURRENT_VINTAGE_RECONSTRUCTION": {
+      "supportedInPrototype": true,
+      "asOfRequired": false,
+      "periodCutoffRequired": true,
+      "availabilityBasis": "NOT_RECONSTRUCTED",
+      "historicalAvailabilityClaim": false
+    },
+    "RECORDED_AS_OF": {
+      "supportedInPrototype": true,
+      "asOfRequired": true,
+      "periodCutoffRequired": false,
+      "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT",
+      "historicalAvailabilityClaim": true,
+      "requiresRetainedAcceptedVintage": true
+    },
+    "TRUE_RELEASE_VINTAGE": {
+      "supportedInPrototype": false,
+      "asOfRequired": true,
+      "periodCutoffRequired": false,
+      "availabilityBasis": "PUBLISHER_RELEASE_VINTAGE",
+      "historicalAvailabilityClaim": true
+    }
+  },
+  "inputPolicy": {
+    "validatedSnapshotsOnly": true,
+    "networkAccess": false,
+    "writeEconomicSnapshots": false,
+    "interpolation": false,
+    "forwardFillObservations": false,
+    "rejectUnsorted": true,
+    "rejectDuplicates": true,
+    "requiredWindow": "ALL_CONTIGUOUS_NATIVE_PERIODS",
+    "lagBasis": "EXACT_CALENDAR_PERIOD",
+    "missingLatestReportedValue": "INSUFFICIENT_DATA",
+    "snapshotSelection": "LATEST_COMPLETE_ACCEPTED_DATASET_VINTAGE_AT_OR_BEFORE_ASOF",
+    "modeFallback": false,
+    "quarterStorageAnchor": "FIRST_MONTH_OF_FULL_QUARTER",
+    "unavailableContext": "OMIT_WITH_REASON_AND_CAP_MEDIUM",
+    "maxContextEndGapDays": 100,
+    "contextHorizonsMustOverlap": true,
+    "measurementHorizon": "CLOSED_FIRST_REQUIRED_RAW_PERIOD_START_TO_LATEST_RAW_PERIOD_END; LITERAL_CONTEXT_USES_OWN_PERIOD",
+    "historicalWindowOperandFreshness": "NOT_INDIVIDUALLY_EXPIRED; REQUIRE_ELIGIBLE_SOURCE_SNAPSHOT_AND_FACTOR_ENDPOINT"
+  },
+  "numericPolicy": {
+    "arithmetic": "IEEE754_BINARY64",
+    "comparisonDecimalPlaces": 8,
+    "comparisonRounding": "HALF_AWAY_FROM_ZERO",
+    "displayRoundingBeforeComparison": false,
+    "nonFinite": "REJECT",
+    "negativeZero": "NORMALIZE_ZERO",
+    "percentChangeRequiresPositiveFullWindow": true
+  },
+  "persistence": {
+    "algorithm": "CONFIRMED_BAND_STATELESS",
+    "positive": "ALL_LAST_N_GTE_ENTRY",
+    "negative": "ALL_LAST_N_LTE_NEGATIVE_ENTRY",
+    "quiet": "ALL_LAST_N_ABS_LTE_QUIET",
+    "otherwise": "TRANSITION",
+    "missing": "INSUFFICIENT_DATA",
+    "count": "DISTINCT_CONSECUTIVE_OBSERVATION_PERIODS",
+    "coldStart": "USE_COMPLETE_RETAINED_WINDOW",
+    "revisionAddsPeriod": false,
+    "unchangedCheckAddsPeriod": false
+  },
+  "freshness": {
+    "implementation": "src/utils/freshness.js",
+    "metadataContract": "src/data/seriesContract.js",
+    "calendar": "src/utils/releaseCalendar.js",
+    "pinCodeHashes": true,
+    "admitAutomatic": [
+      "CURRENT",
+      "CHECKED_NO_NEW_RELEASE",
+      "WAITING_FOR_EXPECTED_RELEASE"
+    ],
+    "withholdAutomatic": [
+      "SOURCE_UPDATED_NOT_YET_CAPTURED",
+      "STALE",
+      "REFRESH_FAILED",
+      "UNKNOWN"
+    ],
+    "waitingStateMap": {
+      "WAITING_FOR_EXPECTED_RELEASE": "WAITING_FOR_RELEASE"
+    },
+    "contextOnly": [
+      "MANUAL_REVIEWED",
+      "MANUAL_REVIEW_REQUIRED",
+      "FIXED_VINTAGE",
+      "STATIC",
+      "DERIVED",
+      "PLANNED"
+    ],
+    "unknownState": "REJECT",
+    "manualReviewRequired": "OMIT_WITH_REASON",
+    "plannedOrStaticDirectionalInput": "REJECT",
+    "lagBoundary": "PINNED_IMPLEMENTATION_PERIOD_END_PLUS_LAG_INCLUSIVE",
+    "calendarBoundary": "CAPTURE_DUE_AT_EXCLUSIVE",
+    "retrospectiveOperationalFreshness": "NOT_RECONSTRUCTED",
+    "retrospectiveObservationLagCheck": "PINNED_POLICY_AT_PERIOD_CUTOFF"
+  },
+  "confidence": {
+    "semantics": "EVIDENCE_QUALITY_NOT_OUTCOME_PROBABILITY",
+    "orderedRules": [
+      {
+        "value": "UNASSESSED",
+        "when": "ANY_PRIMARY_ELIGIBILITY_FAILURE",
+        "direction": "INSUFFICIENT_DATA"
+      },
+      {
+        "value": "LOW",
+        "whenAny": [
+          "REVISION_SENSITIVE"
+        ]
+      },
+      {
+        "value": "MEDIUM",
+        "whenAny": [
+          "UNKNOWN_OR_COARSE_PUBLISHER_AVAILABILITY",
+          "NO_COMPARABLE_PRIOR_VINTAGE",
+          "IMPUTED_PRIMARY_MEASURE",
+          "UNKNOWN_IMPUTATION",
+          "MISSING_OPTIONAL_CONTEXT",
+          "NONCONTEMPORANEOUS_CONTEXT",
+          "PARAMETER_SENSITIVE",
+          "RETROSPECTIVE_AVAILABILITY_UNPROVEN",
+          "SENSITIVITY_NOT_EVALUATED"
+        ]
+      },
+      {
+        "value": "HIGH",
+        "when": "ALL_ELIGIBILITY_PASSED_AND_NO_PRECEDING_QUALITY_FLAGS"
+      }
+    ],
+    "substantiveDisagreementReducesQuality": false,
+    "sameEndpointPriorVintageRequiredForRevisionComparison": true
+  },
+  "revision": {
+    "definitionBreak": "BLOCK_INCOMPATIBLE_WINDOW",
+    "preserveOldArtifacts": true,
+    "orderedChangeReasons": [
+      "NEW_OBSERVATION",
+      "REVISION_DRIVEN_CHANGE",
+      "RULE_CHANGE",
+      "STATUS_CHANGE",
+      "CONTEXT_CHANGE",
+      "INITIAL",
+      "UNCHANGED"
+    ],
+    "noComparablePriorVintage": "UNKNOWN_NOT_STABLE"
+  },
+  "sensitivity": {
+    "entryAndQuietJointMultipliers": [
+      0.5,
+      1,
+      1.5
+    ],
+    "persistenceOffsets": [
+      -1,
+      0,
+      1
+    ],
+    "minimumPersistence": 1,
+    "grid": "CARTESIAN_PRODUCT",
+    "chooseWinningVariant": false
+  },
+  "transforms": {
+    "yoy_monthly": {
+      "frequency": "monthly",
+      "formula": "100 * (x[t] / x[t-12] - 1)",
+      "units": "percent",
+      "minimumPeriodsSingleResult": 13,
+      "requiresPositiveFullWindow": true,
+      "missing": "NULL_AND_INSUFFICIENT_DATA",
+      "revisionSensitive": true
+    },
+    "yoy_quarterly": {
+      "frequency": "quarterly",
+      "formula": "100 * (x[t] / x[t-4] - 1)",
+      "units": "percent",
+      "minimumPeriodsSingleResult": 5,
+      "requiresPositiveFullWindow": true,
+      "missing": "NULL_AND_INSUFFICIENT_DATA",
+      "revisionSensitive": true
+    },
+    "core_yoy_delta_3m": {
+      "frequency": "monthly",
+      "formula": "100*(x[t]/x[t-12]-1) - 100*(x[t-3]/x[t-15]-1)",
+      "units": "percentage_points",
+      "minimumPeriodsSingleResult": 16,
+      "requiresPositiveFullWindow": true,
+      "missing": "NULL_AND_INSUFFICIENT_DATA",
+      "revisionSensitive": true
+    },
+    "gscpi_mean_delta_3m": {
+      "frequency": "monthly",
+      "formula": "(x[t]+x[t-1]+x[t-2])/3 - (x[t-3]+x[t-4]+x[t-5])/3",
+      "units": "source_standard_deviation_units",
+      "minimumPeriodsSingleResult": 6,
+      "requiresPositiveFullWindow": false,
+      "missing": "NULL_AND_INSUFFICIENT_DATA",
+      "revisionSensitive": true
+    },
+    "rate_delta_3m": {
+      "frequency": "monthly",
+      "formula": "x[t] - x[t-3]",
+      "units": "percentage_points",
+      "minimumPeriodsSingleResult": 4,
+      "requiresPositiveFullWindow": false,
+      "missing": "NULL_AND_INSUFFICIENT_DATA",
+      "revisionSensitive": true
+    },
+    "share_delta_8q": {
+      "frequency": "quarterly",
+      "formula": "x[t] - x[t-8]",
+      "units": "percentage_points",
+      "minimumPeriodsSingleResult": 9,
+      "requiresPositiveFullWindow": false,
+      "missing": "NULL_AND_INSUFFICIENT_DATA",
+      "revisionSensitive": true
+    }
+  },
+  "factors": [
+    {
+      "id": "inflation-persistence",
+      "title": {
+        "en": "Core inflation persistence",
+        "zh": "核心通胀持续性"
+      },
+      "outcome": "DOMESTIC_PURCHASING_POWER",
+      "researchDecision": "ACCEPT WITH LIMITATIONS",
+      "engineeringGate": "READY FOR PROTOTYPE",
+      "primarySeriesId": "PCEPILFE",
+      "snapshotPath": "data/inflation/monitor.json",
+      "expectedInputUnits": "Index 2017=100",
+      "frequency": "monthly",
+      "transformId": "core_yoy_delta_3m",
+      "entry": 0.3,
+      "quiet": 0.1,
+      "persistencePeriods": 3,
+      "minimumContiguousPeriods": 18,
+      "maxLagDays": 65,
+      "contextSeriesIds": [
+        "CPIAUCNS",
+        "CUUR0000SAH1",
+        "ULCNFB",
+        "COMPNFB",
+        "CEU0500000003"
+      ],
+      "states": {
+        "positive": "CORE_INFLATION_ACCELERATING",
+        "negative": "CORE_INFLATION_DECELERATING",
+        "quiet": "LITTLE_CHANGE",
+        "unconfirmed": "TRANSITION",
+        "missing": "INSUFFICIENT_DATA"
+      },
+      "contextChangesDirection": false,
+      "aggregateOutcomeSign": null,
+      "releasePolicy": "MODE_AND_SOURCE_SPECIFIC",
+      "revisionPolicy": "RECOMPUTE_SAME_COMPATIBLE_VINTAGE_PRESERVE_PRIOR_ARTIFACT",
+      "confidencePolicy": "ORDERED_NONCOMPENSATING_RULES",
+      "limitationsRef": "docs/signal-engine-factor-matrix.md",
+      "denominator": null,
+      "supplementalMeasurements": [
+        {
+          "id": "core_yoy_level",
+          "transformId": "yoy_monthly",
+          "inputWindowPeriods": 13,
+          "classifier": null
+        }
+      ]
+    },
+    {
+      "id": "observed-productivity",
+      "title": {
+        "en": "Observed labor productivity",
+        "zh": "已观测劳动生产率"
+      },
+      "outcome": "DOMESTIC_PURCHASING_POWER",
+      "researchDecision": "ACCEPT WITH LIMITATIONS",
+      "engineeringGate": "READY FOR PROTOTYPE",
+      "primarySeriesId": "OPHNFB",
+      "snapshotPath": "data/productivity/series.json",
+      "expectedInputUnits": "Index 2017=100",
+      "frequency": "quarterly",
+      "transformId": "yoy_quarterly",
+      "entry": 0.5,
+      "quiet": 0.1,
+      "persistencePeriods": 2,
+      "minimumContiguousPeriods": 6,
+      "maxLagDays": 150,
+      "contextSeriesIds": [
+        "GDPC1",
+        "CE16OV",
+        "REAL_GDP_WORKER",
+        "PNFIC1"
+      ],
+      "states": {
+        "positive": "OUTPUT_PER_HOUR_GROWING",
+        "negative": "OUTPUT_PER_HOUR_CONTRACTING",
+        "quiet": "LITTLE_CHANGE",
+        "unconfirmed": "TRANSITION",
+        "missing": "INSUFFICIENT_DATA"
+      },
+      "contextChangesDirection": false,
+      "aggregateOutcomeSign": null,
+      "releasePolicy": "MODE_AND_SOURCE_SPECIFIC",
+      "revisionPolicy": "RECOMPUTE_SAME_COMPATIBLE_VINTAGE_PRESERVE_PRIOR_ARTIFACT",
+      "confidencePolicy": "ORDERED_NONCOMPENSATING_RULES",
+      "limitationsRef": "docs/signal-engine-factor-matrix.md",
+      "denominator": null,
+      "supplementalMeasurements": []
+    },
+    {
+      "id": "supply-chain-pressure",
+      "title": {
+        "en": "Supply-chain pressure trend",
+        "zh": "供应链压力趋势"
+      },
+      "outcome": "DOMESTIC_PURCHASING_POWER",
+      "researchDecision": "ACCEPT WITH LIMITATIONS",
+      "engineeringGate": "READY FOR PROTOTYPE",
+      "primarySeriesId": "GSCPI",
+      "snapshotPath": "data/external/gscpi.json",
+      "expectedInputUnits": "standard_deviations",
+      "frequency": "monthly",
+      "transformId": "gscpi_mean_delta_3m",
+      "entry": 0.5,
+      "quiet": 0.1,
+      "persistencePeriods": 2,
+      "minimumContiguousPeriods": 7,
+      "maxLagDays": 75,
+      "contextSeriesIds": [
+        "MCOILWTICO",
+        "MHHNGSP",
+        "FAO_FOOD",
+        "GPR"
+      ],
+      "states": {
+        "positive": "SUPPLY_CHAIN_PRESSURE_RISING",
+        "negative": "SUPPLY_CHAIN_PRESSURE_FALLING",
+        "quiet": "LITTLE_CHANGE",
+        "unconfirmed": "TRANSITION",
+        "missing": "INSUFFICIENT_DATA"
+      },
+      "contextChangesDirection": false,
+      "aggregateOutcomeSign": null,
+      "releasePolicy": "MODE_AND_SOURCE_SPECIFIC",
+      "revisionPolicy": "RECOMPUTE_SAME_COMPATIBLE_VINTAGE_PRESERVE_PRIOR_ARTIFACT",
+      "confidencePolicy": "ORDERED_NONCOMPENSATING_RULES",
+      "limitationsRef": "docs/signal-engine-factor-matrix.md",
+      "denominator": null,
+      "supplementalMeasurements": []
+    },
+    {
+      "id": "policy-rate-direction",
+      "title": {
+        "en": "Effective policy-rate direction",
+        "zh": "有效政策利率变动方向"
+      },
+      "outcome": "DOMESTIC_PURCHASING_POWER",
+      "researchDecision": "ACCEPT WITH LIMITATIONS",
+      "engineeringGate": "READY FOR PROTOTYPE",
+      "primarySeriesId": "FEDFUNDS",
+      "snapshotPath": "data/inflation/drivers.json",
+      "expectedInputUnits": "Percent",
+      "frequency": "monthly",
+      "transformId": "rate_delta_3m",
+      "entry": 0.25,
+      "quiet": 0.05,
+      "persistencePeriods": 2,
+      "minimumContiguousPeriods": 5,
+      "maxLagDays": 75,
+      "contextSeriesIds": [
+        "M2SL",
+        "WALCL",
+        "DFII10"
+      ],
+      "states": {
+        "positive": "POLICY_RATE_RISING",
+        "negative": "POLICY_RATE_FALLING",
+        "quiet": "LITTLE_CHANGE",
+        "unconfirmed": "TRANSITION",
+        "missing": "INSUFFICIENT_DATA"
+      },
+      "contextChangesDirection": false,
+      "aggregateOutcomeSign": null,
+      "releasePolicy": "MODE_AND_SOURCE_SPECIFIC",
+      "revisionPolicy": "RECOMPUTE_SAME_COMPATIBLE_VINTAGE_PRESERVE_PRIOR_ARTIFACT",
+      "confidencePolicy": "ORDERED_NONCOMPENSATING_RULES",
+      "limitationsRef": "docs/signal-engine-factor-matrix.md",
+      "denominator": null,
+      "supplementalMeasurements": []
+    },
+    {
+      "id": "reserve-share",
+      "title": {
+        "en": "USD reserve-share trend",
+        "zh": "美元外汇储备占比趋势"
+      },
+      "outcome": "INTERNATIONAL_DOLLAR_ROLE",
+      "researchDecision": "ACCEPT WITH LIMITATIONS",
+      "engineeringGate": "READY FOR PROTOTYPE",
+      "primarySeriesId": "COFER_USD",
+      "snapshotPath": "data/international-dollar/reserve-composition.json",
+      "expectedInputUnits": "Percent of world FX reserves",
+      "frequency": "quarterly",
+      "transformId": "share_delta_8q",
+      "entry": 1,
+      "quiet": 0.25,
+      "persistencePeriods": 2,
+      "minimumContiguousPeriods": 10,
+      "maxLagDays": 190,
+      "contextSeriesIds": [
+        "COFER_EUR",
+        "COFER_CNY",
+        "COFER_JPY",
+        "COFER_GBP",
+        "COFER_IMPUTED"
+      ],
+      "states": {
+        "positive": "USD_RESERVE_SHARE_RISING",
+        "negative": "USD_RESERVE_SHARE_FALLING",
+        "quiet": "LITTLE_CHANGE",
+        "unconfirmed": "TRANSITION",
+        "missing": "INSUFFICIENT_DATA"
+      },
+      "contextChangesDirection": false,
+      "aggregateOutcomeSign": null,
+      "releasePolicy": "MODE_AND_SOURCE_SPECIFIC",
+      "revisionPolicy": "RECOMPUTE_SAME_COMPATIBLE_VINTAGE_PRESERVE_PRIOR_ARTIFACT",
+      "confidencePolicy": "ORDERED_NONCOMPENSATING_RULES",
+      "limitationsRef": "docs/signal-engine-factor-matrix.md",
+      "denominator": "World official foreign-exchange reserves including IMF imputations; excludes monetary gold (revised 2025Q3 methodology)",
+      "methodologyId": "COFER_REVISED_2025Q3",
+      "valueRange": [
+        0,
+        100
+      ],
+      "supplementalMeasurements": []
+    },
+    {
+      "id": "foreign-treasury-holdings",
+      "title": {
+        "en": "Foreign Treasury holdings trend",
+        "zh": "外国持有美国国债规模趋势"
+      },
+      "outcome": "INTERNATIONAL_DOLLAR_ROLE",
+      "researchDecision": "ACCEPT WITH LIMITATIONS",
+      "engineeringGate": "READY FOR PROTOTYPE",
+      "primarySeriesId": "TIC_TOTAL",
+      "snapshotPath": "data/international-dollar/treasury-holdings.json",
+      "expectedInputUnits": "USD millions",
+      "frequency": "monthly",
+      "transformId": "yoy_monthly",
+      "entry": 5,
+      "quiet": 1,
+      "persistencePeriods": 3,
+      "minimumContiguousPeriods": 15,
+      "maxLagDays": 95,
+      "contextSeriesIds": [
+        "TIC_OFFICIAL",
+        "TIC_JAPAN",
+        "TIC_CHINA",
+        "TIC_UK"
+      ],
+      "states": {
+        "positive": "FOREIGN_TREASURY_HOLDINGS_EXPANDING",
+        "negative": "FOREIGN_TREASURY_HOLDINGS_CONTRACTING",
+        "quiet": "LITTLE_CHANGE",
+        "unconfirmed": "TRANSITION",
+        "missing": "INSUFFICIENT_DATA"
+      },
+      "contextChangesDirection": false,
+      "aggregateOutcomeSign": null,
+      "releasePolicy": "MODE_AND_SOURCE_SPECIFIC",
+      "revisionPolicy": "RECOMPUTE_SAME_COMPATIBLE_VINTAGE_PRESERVE_PRIOR_ARTIFACT",
+      "confidencePolicy": "ORDERED_NONCOMPENSATING_RULES",
+      "limitationsRef": "docs/signal-engine-factor-matrix.md",
+      "denominator": "None: stock of Treasury securities in USD millions",
+      "supplementalMeasurements": []
+    },
+    {
+      "id": "offshore-usd-credit",
+      "title": {
+        "en": "Offshore USD credit outstanding trend",
+        "zh": "美国境外美元信贷余额趋势"
+      },
+      "outcome": "INTERNATIONAL_DOLLAR_ROLE",
+      "researchDecision": "ACCEPT WITH LIMITATIONS",
+      "engineeringGate": "READY FOR PROTOTYPE",
+      "primarySeriesId": "BIS_USD_TOTAL",
+      "snapshotPath": "data/international-dollar/global-dollar-credit.json",
+      "expectedInputUnits": "USD millions",
+      "frequency": "quarterly",
+      "transformId": "yoy_quarterly",
+      "entry": 5,
+      "quiet": 1,
+      "persistencePeriods": 2,
+      "minimumContiguousPeriods": 6,
+      "maxLagDays": 210,
+      "contextSeriesIds": [
+        "BIS_USD_LOANS",
+        "BIS_USD_SECURITIES"
+      ],
+      "states": {
+        "positive": "OFFSHORE_USD_CREDIT_EXPANDING",
+        "negative": "OFFSHORE_USD_CREDIT_CONTRACTING",
+        "quiet": "LITTLE_CHANGE",
+        "unconfirmed": "TRANSITION",
+        "missing": "INSUFFICIENT_DATA"
+      },
+      "contextChangesDirection": false,
+      "aggregateOutcomeSign": null,
+      "releasePolicy": "MODE_AND_SOURCE_SPECIFIC",
+      "revisionPolicy": "RECOMPUTE_SAME_COMPATIBLE_VINTAGE_PRESERVE_PRIOR_ARTIFACT",
+      "confidencePolicy": "ORDERED_NONCOMPENSATING_RULES",
+      "limitationsRef": "docs/signal-engine-factor-matrix.md",
+      "denominator": "None: outstanding USD credit in USD millions",
+      "supplementalMeasurements": []
+    }
+  ],
+  "ownership": {
+    "PCEPILFE": {
+      "classification": "PRIMARY FACTOR",
+      "owner": "inflation-persistence",
+      "dependencyRole": "PRIMARY_SIGNAL"
+    },
+    "OPHNFB": {
+      "classification": "PRIMARY FACTOR",
+      "owner": "observed-productivity",
+      "dependencyRole": "PRIMARY_SIGNAL"
+    },
+    "GSCPI": {
+      "classification": "PRIMARY FACTOR",
+      "owner": "supply-chain-pressure",
+      "dependencyRole": "PRIMARY_SIGNAL"
+    },
+    "FEDFUNDS": {
+      "classification": "PRIMARY FACTOR",
+      "owner": "policy-rate-direction",
+      "dependencyRole": "PRIMARY_SIGNAL"
+    },
+    "COFER_USD": {
+      "classification": "PRIMARY FACTOR",
+      "owner": "reserve-share",
+      "dependencyRole": "PRIMARY_SIGNAL"
+    },
+    "TIC_TOTAL": {
+      "classification": "PRIMARY FACTOR",
+      "owner": "foreign-treasury-holdings",
+      "dependencyRole": "PRIMARY_SIGNAL"
+    },
+    "BIS_USD_TOTAL": {
+      "classification": "PRIMARY FACTOR",
+      "owner": "offshore-usd-credit",
+      "dependencyRole": "PRIMARY_SIGNAL"
+    },
+    "CPIAUCNS": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "domestic-prices",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "CPIUFDNS": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "domestic-prices",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "CPIENGNS": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "domestic-prices",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "CUUR0000SAH1": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "inflation-persistence",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "ULCNFB": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "inflation-persistence",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "COMPNFB": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "inflation-persistence",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "CEU0500000003": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "inflation-persistence",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "GDPC1": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "observed-productivity",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "CE16OV": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "observed-productivity",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "REAL_GDP_WORKER": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "observed-productivity",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "PNFIC1": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "capacity-investment",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "A679RC1Q027SBEA": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "capacity-investment",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "B985RC1Q027SBEA": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "capacity-investment",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "B935RC1Q027SBEA": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "capacity-investment",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "IPG3344S": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "capacity-investment",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "CENSUS_DATACENTER": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "capacity-investment",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "CENSUS_NONRES": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "capacity-investment",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "CENSUS_ELECTRONIC": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "capacity-investment",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "IPN22112CS": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "CUUR0000SEHF01": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "MCOILWTICO": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "MHHNGSP": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "FAO_FOOD": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "FAO_MEAT": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "FAO_DAIRY": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "FAO_CEREALS": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "FAO_OILS": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "FAO_SUGAR": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "external-costs",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "FYPUGDA188S": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "observed-fiscal",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "FYFSGDA188S": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "observed-fiscal",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "FYOINT": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "observed-fiscal",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "FYFR": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "observed-fiscal",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "M2SL": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "monetary-context",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "WALCL": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "monetary-context",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "DGS10": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "treasury-market",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "DFII10": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "treasury-market",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "T5YIFR": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "treasury-market",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "DTWEXBGS": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "fx-market",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "GPR": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "geopolitical-context",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "GPRT": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "geopolitical-context",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "GPRA": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "geopolitical-context",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "SIPRI_US_GDP": {
+      "classification": "DISPLAY ONLY",
+      "owner": "military-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "SIPRI_US_GOV": {
+      "classification": "DISPLAY ONLY",
+      "owner": "military-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "SIPRI_US_REAL": {
+      "classification": "DISPLAY ONLY",
+      "owner": "military-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "SIPRI_WORLD_REAL": {
+      "classification": "DISPLAY ONLY",
+      "owner": "military-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "CBO_DEBT": {
+      "classification": "DISPLAY ONLY",
+      "owner": "conditional-fiscal",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "CBO_DEFICIT": {
+      "classification": "DISPLAY ONLY",
+      "owner": "conditional-fiscal",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "CBO_INTEREST": {
+      "classification": "DISPLAY ONLY",
+      "owner": "conditional-fiscal",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "FED_STABLECOIN_SIZE": {
+      "classification": "DISPLAY ONLY",
+      "owner": "digital-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "IMF_STABLECOIN_SIZE": {
+      "classification": "DISPLAY ONLY",
+      "owner": "digital-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "IMF_USD_SHARE": {
+      "classification": "DISPLAY ONLY",
+      "owner": "digital-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "IMF_TBILL_SHARE": {
+      "classification": "DISPLAY ONLY",
+      "owner": "digital-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "DPSACBM027SBOG": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "digital-context",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "COFER_EUR": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-share",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "COFER_CNY": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-share",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "COFER_JPY": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-share",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "COFER_GBP": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-share",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "COFER_AUD": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-share",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "COFER_CAD": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-share",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "COFER_CHF": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-share",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "COFER_OTHER": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-share",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "COFER_IMPUTED": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "reserve-quality",
+      "dependencyRole": "CONFIRMING_CONTEXT"
+    },
+    "TIC_OFFICIAL": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "foreign-treasury-holdings",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "TIC_JAPAN": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "foreign-treasury-holdings",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "TIC_CHINA": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "foreign-treasury-holdings",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "TIC_UK": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "foreign-treasury-holdings",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "BIS_USD_LOANS": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "offshore-usd-credit",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "BIS_USD_SECURITIES": {
+      "classification": "SECONDARY CONTEXT",
+      "owner": "offshore-usd-credit",
+      "dependencyRole": "DECOMPOSITION"
+    },
+    "FP.CPI.TOTL.ZG": {
+      "classification": "DISPLAY ONLY",
+      "owner": "global-prices",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "HISTORY_EVENTS": {
+      "classification": "DISPLAY ONLY",
+      "owner": "historical-context",
+      "dependencyRole": "DISPLAY_ONLY"
+    },
+    "FREIGHT": {
+      "classification": "NOT SUITABLE FOR ENGINE",
+      "owner": "planned-external",
+      "dependencyRole": "EXCLUDED"
+    }
+  },
+  "conflicts": [
+    {
+      "id": "DOMESTIC_OFFSETTING_CHANNELS",
+      "outcome": "DOMESTIC_PURCHASING_POWER",
+      "all": {
+        "inflation-persistence": "CORE_INFLATION_ACCELERATING",
+        "observed-productivity": "OUTPUT_PER_HOUR_GROWING"
+      }
+    },
+    {
+      "id": "DOMESTIC_REVERSE_CHANNELS",
+      "outcome": "DOMESTIC_PURCHASING_POWER",
+      "all": {
+        "inflation-persistence": "CORE_INFLATION_DECELERATING",
+        "observed-productivity": "OUTPUT_PER_HOUR_CONTRACTING"
+      }
+    },
+    {
+      "id": "INTERNATIONAL_FUNCTION_DIVERGENCE",
+      "outcome": "INTERNATIONAL_DOLLAR_ROLE",
+      "anyAll": [
+        {
+          "reserve-share": "USD_RESERVE_SHARE_FALLING",
+          "offshore-usd-credit": "OFFSHORE_USD_CREDIT_EXPANDING"
+        },
+        {
+          "reserve-share": "USD_RESERVE_SHARE_RISING",
+          "offshore-usd-credit": "OFFSHORE_USD_CREDIT_CONTRACTING"
+        }
+      ]
+    }
+  ],
+  "outputPolicy": {
+    "noEligibleFactor": "INSUFFICIENT_DATA",
+    "someEligibleFactorsCoverage": "PARTIAL",
+    "contrastPresent": "MIXED",
+    "otherwisePattern": "DESCRIPTIVE",
+    "contrastRequiresEligibleContemporaneousInputs": true,
+    "aggregateScore": false,
+    "probability": false,
+    "investmentRecommendation": false
+  },
+  "failurePolicy": {
+    "dataRefreshIndependent": true,
+    "rollbackValidEconomicData": false,
+    "sendEmail": false,
+    "publishPartialArtifact": false,
+    "retainLastValidArtifactWithOriginalAsOf": true
+  },
+  "contextDerivations": {
+    "treasury_compensation_10y": {
+      "inputs": [
+        "DGS10",
+        "DFII10"
+      ],
+      "operation": "EXACT_DATE_SUBTRACTION",
+      "units": "percentage_points",
+      "role": "DECOMPOSITION",
+      "availableAt": "MAX_INPUT_AVAILABILITY",
+      "minimumHistory": "ONE_MATCHED_DATE",
+      "outputSeriesId": "ENGINE_DERIVED_TREASURY_COMPENSATION_10Y",
+      "requiredForDirection": false,
+      "freshnessPolicy": {
+        "type": "release_calendar",
+        "schedule": "H15",
+        "applyTo": "MATCHED_OBSERVATION_DATE"
+      },
+      "sourceSnapshotEligibilityRequired": true
+    },
+    "interest_revenue": {
+      "inputs": [
+        "FYOINT",
+        "FYFR"
+      ],
+      "operation": "100 * FYOINT / FYFR",
+      "alignment": "EXACT_FISCAL_YEAR_AND_SOURCE_DATE",
+      "positiveDenominator": true,
+      "units": "percent",
+      "role": "DECOMPOSITION",
+      "minimumHistory": "ONE_MATCHED_FISCAL_YEAR",
+      "outputSeriesId": "ENGINE_DERIVED_INTEREST_REVENUE",
+      "requiredForDirection": false,
+      "availableAt": "MAX_INPUT_AVAILABILITY",
+      "freshnessPolicy": {
+        "type": "period_lag",
+        "frequency": "annual",
+        "maxLagDays": 455,
+        "anchor": "PINNED_EXISTING_ANNUAL_FRESHNESS_IMPLEMENTATION"
+      },
+      "sourceSnapshotEligibilityRequired": true
+    },
+    "positive_deficit_display": {
+      "inputs": [
+        "FYFSGDA188S"
+      ],
+      "operation": "-value",
+      "units": "percent_of_GDP",
+      "role": "DECOMPOSITION",
+      "minimumHistory": "ONE_ANNUAL_OBSERVATION",
+      "outputSeriesId": "ENGINE_DERIVED_POSITIVE_DEFICIT",
+      "requiredForDirection": false,
+      "availableAt": "MAX_INPUT_AVAILABILITY",
+      "freshnessPolicy": {
+        "type": "period_lag",
+        "frequency": "annual",
+        "maxLagDays": 455,
+        "anchor": "PINNED_EXISTING_ANNUAL_FRESHNESS_IMPLEMENTATION"
+      },
+      "sourceSnapshotEligibilityRequired": true
+    },
+    "real_gdp_worker": {
+      "inputs": [
+        "GDPC1",
+        "CE16OV"
+      ],
+      "operation": "GDPC1 / mean(ALL_THREE_CE16OV_MONTHS) * 1000000",
+      "alignment": "COMPLETE_SAME_QUARTER",
+      "units": "2017_USD_PER_EMPLOYED_PERSON_ANNUALIZED",
+      "role": "CONFIRMING_CONTEXT",
+      "minimumHistory": "ONE_GDP_QUARTER_AND_THREE_EMPLOYMENT_MONTHS",
+      "outputSeriesId": "REAL_GDP_WORKER",
+      "requiredForDirection": false,
+      "availableAt": "MAX_INPUT_AVAILABILITY",
+      "freshnessPolicy": {
+        "type": "period_lag",
+        "frequency": "quarterly",
+        "maxLagDays": 150
+      },
+      "sourceSnapshotEligibilityRequired": true
+    }
+  },
+  "statusPrecedence": [
+    "INSUFFICIENT_DATA",
+    "SOURCE_UPDATED_NOT_YET_CAPTURED",
+    "REFRESH_FAILED",
+    "STALE",
+    "RETROSPECTIVE",
+    "WAITING_FOR_RELEASE",
+    "PARTIAL_CONTEXT",
+    "READY"
+  ],
+  "alignmentPrecedence": [
+    "UNASSESSED",
+    "CONTEXT_INCOMPLETE",
+    "NOT_CONTEMPORANEOUS",
+    "MIXED_FREQUENCY_DISCLOSED",
+    "ALIGNED"
+  ],
+  "contextPolicy": {
+    "defaultTransform": "LITERAL_LEVEL",
+    "classifier": null,
+    "unselectedInventory": "NOT_EMITTED",
+    "globalLineageOrder": "ID_ASCENDING",
+    "factorReferenceOrder": "CONFIG_ORDER",
+    "factorCounterevidence": "EMPTY_IN_V0_1; NAMED_OUTCOME_CONTRASTS_ONLY",
+    "missing": "OMIT_AND_EXPLAIN",
+    "primaryTransformedWindow": "ALL_LAST_N_TRANSFORM_RESULTS",
+    "fixedVintageCbo": "INVENTORY_AND_DESIGN_ONLY; NOT_EMITTED_IN_V0_1",
+    "derivedOperandIds": "operand:<derivationId>:<seriesId>:<periodLabel>",
+    "derivedOperandOrder": "CONFIG_INPUT_ORDER_THEN_PERIOD_ASCENDING",
+    "derivedOperandAvailability": "EXACT_SELECTED_POINTS_NOT_LATEST_LITERAL_CONTEXT",
+    "literalContextArrays": "EMPTY_TRANSFORMED_WINDOW_AND_SUPPLEMENTAL_MEASUREMENTS",
+    "derivedFreshness": "ELIGIBLE_LATEST_SOURCE_SNAPSHOTS_AND_DECLARED_DERIVED_ENDPOINT_POLICY",
+    "derivedValidUntil": "EARLIEST_SOURCE_SNAPSHOT_OR_DERIVED_ENDPOINT_BOUNDARY; EXCLUSIVE_WINS_TIES",
+    "historicalOperandFreshnessRef": "WINDOW_OPERAND_SOURCE_SNAPSHOT"
+  },
+  "outcomeContextSeriesIds": {
+    "DOMESTIC_PURCHASING_POWER": [
+      "CPIAUCNS",
+      "CPIUFDNS",
+      "CPIENGNS",
+      "FYPUGDA188S",
+      "FYFSGDA188S",
+      "FYOINT",
+      "FYFR",
+      "DGS10",
+      "DFII10",
+      "T5YIFR",
+      "DTWEXBGS",
+      "ENGINE_DERIVED_TREASURY_COMPENSATION_10Y",
+      "ENGINE_DERIVED_INTEREST_REVENUE",
+      "ENGINE_DERIVED_POSITIVE_DEFICIT"
+    ],
+    "INTERNATIONAL_DOLLAR_ROLE": [
+      "DTWEXBGS",
+      "FED_STABLECOIN_SIZE",
+      "IMF_STABLECOIN_SIZE",
+      "IMF_USD_SHARE",
+      "IMF_TBILL_SHARE"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "specCommit": "faaae287f1b144bd8396023a8f134b66ae84404c",
+  "hashes": {
+    "docs/signal-engine-spec.md": "1f00de7f3b0f33c4f940dd736ba69ceac37fc09f7a8cf89a96a945336cc8f171",
+    "docs/signal-engine-factor-matrix.md": "6db0d356266d84b37b4847a2d71fa74dd33eeccd0fd8a37b5ec2f7943ab9032e",
+    "docs/signal-engine-validation-plan.md": "282780ff5047ddfa6625ea8ab9d9e165d037c9d944b6dc946b5c49851d9813c4",
+    "research/signal-engine/signal-engine-v0.1-draft.json": "a7d0c169ff2aa8ebe946f28baa6c6ebed385d912c70561ba04907a7603d67a3f",
+    "research/signal-engine/output.schema.json": "0ac9ae006cf263afbc1231128a359ad78cb7e8c6f6c359ea939cfac65f966f58",
+    "src/data/seriesRegistry.js": "89c1bcf973dc3a90fd4d3ae83b03c7d2952ad0761692864dd4dee92dbbb80501",
+    "src/data/seriesContract.js": "42b7526890e50f996ea46e0618d38155f2e9e298f7d7c5c7e433f76527e50b3e",
+    "src/data/internationalDefinitions.js": "42895efbf2914398ed4619a3dc839b87bf9b39a3de4bc1ac9833be395c3b4eed",
+    "src/utils/freshness.js": "873ce2adbee17d7fa092d9289108f6244229e5096924f886ca609e5dd0253801",
+    "src/utils/releaseCalendar.js": "c4b018db7824894fa56bd2f61c54bc12178518a15c554e9acfc34bb154e0bc9e",
+    "src/utils/timeSemantics.js": "5c3b7bdd351138bc1edb3ac091efc9275c5943ad3eeaf1226138c7e459d37709",
+    "src/utils/treasuryPricing.js": "5aa1a591046fc2db3e8328e5d2527d9d40b0b650fbaf60b5e0d82b7cdbe79742",
+    "src/utils/productivity.js": "a26f263546f151362430f735286204e68dcf1060f329d87cd7ce439be44d01cc"
+  }
+}
