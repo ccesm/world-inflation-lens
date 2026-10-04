@@ -17,7 +17,7 @@ import { disclosureCategories } from '../signal-shadow-qualification.mjs'
 import { summaryFromRun } from '../lib/signalShadowSummary.mjs'
 
 const COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
-const FEATURE_BASE = '388d4d022a3b0c70342e4d7c87c730b7a0f529d9'
+const FEATURE_BASE = '2e6be076ce2af09abf782b7a265566e8550aa3c4'
 const ACCEPTED = '2026-10-04T00:20:00.000Z', ASOF = '2026-10-04T00:21:00.000Z'
 const passed = () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }]
 // This explicit mock proves adapter behavior, never live production acceptance.
@@ -75,6 +75,8 @@ test('SUMMARY validated pipeline result yields actual safe quality, sensitivity 
   assert.equal(summary.evidenceQualitySummary.MEDIUM, 7)
   assert.deepEqual(summary.thresholdSensitiveFactors, ['GSCPI', 'BIS'])
   assert.equal(summary.lastValidArtifactShort, first.run.artifactHash.slice(0, 10))
+  assert.equal(summary.factorAssessments.length, 7); assert(summary.conclusions.domesticSummary.zh.includes('生产能力'))
+  assert(summary.conclusions.internationalSummary.en.includes('distinct functions'))
   assert(!JSON.stringify(summary).includes(ROOT)); assert(!Object.hasOwn(summary, 'lineage'))
 })
 test('PIPELINE same immutable request is byte-identical in independent fresh processes', () => {
