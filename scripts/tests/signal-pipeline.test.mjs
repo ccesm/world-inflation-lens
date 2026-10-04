@@ -480,7 +480,7 @@ test('ISOLATION workflow shadow job cannot gate deployment/notifications; restri
   const shadow = yml.split('  signal-shadow:')[1].split('  deploy:')[0]
   assert(shadow.includes('needs: build')); assert(shadow.includes('continue-on-error: true')); assert(shadow.includes('--store')); assert(!/--private-archive|SIGNAL_ARCHIVE_REPOSITORY|SIGNAL_ARCHIVE_TOKEN/.test(shadow))
   assert(!shadow.includes('upload-artifact')); assert(!yml.split('  deploy:')[1].split('  notify:')[0].includes('signal-shadow'))
-  assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'))).version, '1.0.0')
+  assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'))).version, '1.1.0')
   assert(fs.readFileSync(path.join(ROOT, '.gitignore'), 'utf8').includes('research/signal-engine/production-artifacts/'))
   // Email now intentionally appends safe shadow health; its SMTP/isolation
   // behavior is independently protected by the notification summary tests.

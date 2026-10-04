@@ -24,7 +24,7 @@ let root, result, projection, acceptedFixture, server, Brief, Page, Card
 before(async () => {
  root = fs.mkdtempSync(path.join(fs.realpathSync(os.tmpdir()), 'wil-public-test-'))
  const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim()
- const clock = () => '2026-10-04T10:00:00.000Z'
+ const clock = () => '2026-10-04T18:00:00.000Z'
  // Explicit test acceptance fixture; real command is separately run with real gates.
  const accepted = captureAcceptedInput({ targetCommit: commit, codeCommit: commit, clock, gates: () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }] })
  acceptedFixture = accepted
@@ -152,7 +152,7 @@ test('accepted-input engine failure is isolated and temporary restricted storage
  const temp = fs.realpathSync(os.tmpdir()), before = fs.readdirSync(temp).filter(n => n.startsWith('wil-public-signal-')).sort()
  const hash = workingSignalInputHash(ROOT)
  const fallback = await generatePublicSignal({ file, acceptedFactory: () => acceptedFixture,
-  evaluateOptions: { clock: () => '2026-10-04T10:00:00.000Z', evaluateFn: () => { throw Error('test-only evaluation failure') }, testOnlyForceEvaluation: true } })
+  evaluateOptions: { clock: () => '2026-10-04T18:00:00.000Z', evaluateFn: () => { throw Error('test-only evaluation failure') }, testOnlyForceEvaluation: true } })
  assert.deepEqual(fallback, unavailableSignal()); assert.equal(workingSignalInputHash(ROOT), hash)
  assert.deepEqual(fs.readdirSync(temp).filter(n => n.startsWith('wil-public-signal-')).sort(), before)
 })
@@ -230,7 +230,7 @@ test('F3: cleanup EACCES cannot alter CURRENT or block an UNAVAILABLE fallback',
  try {
   const goodFile = path.join(root, 'cleanup-current.json')
   const good = await generatePublicSignal({ file: goodFile, snapshot, acceptedFactory: () => acceptedFixture,
-   evaluateOptions: { clock: () => '2026-10-04T10:00:00.000Z' }, cleanupTemporary })
+   evaluateOptions: { clock: () => '2026-10-04T18:00:00.000Z' }, cleanupTemporary })
   assert.equal(good.status, 'CURRENT'); assert.equal(JSON.parse(fs.readFileSync(goodFile)).status, 'CURRENT')
   assert.equal(verifyPublicIdentity({ repo: ROOT, file: goodFile, identityFile: `${goodFile}.build-identity.json`, expectedSnapshot: snapshot }).status, 'CURRENT')
   const badFile = path.join(root, 'cleanup-unavailable.json')
