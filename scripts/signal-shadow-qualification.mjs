@@ -9,9 +9,10 @@ import { runShadow } from './signal-engine/pipeline.mjs'
 import { RestrictedStore } from './signal-engine/store.mjs'
 import { validateStoredInterpretation } from './signal-engine/artifact.mjs'
 import { ROOT, dataIdentity, git } from './signal-engine/identity.mjs'
+import { readSummary, renderSummary } from './lib/signalShadowSummary.mjs'
 import { contentHash, serialize, sha256 } from '../research/signal-engine/engine/core.mjs'
 
-const branch = 'refs/heads/codex/signal-engine-production-pipeline'
+const branches = ['refs/heads/codex/signal-engine-production-pipeline', 'refs/heads/codex/signal-shadow-no-private-archive']
 const restrictedMarkers = /signal-shadow-interpretation\/1|signal-public-shadow\/1|signal-economic-acceptance\/1|signal-shadow-context\/1|signal-shadow-run\/1/
 export function disclosureCategories(text, { publicOutput = false, logs = false } = {}) {
   const categories = []
@@ -51,7 +52,7 @@ export function qualify({ mode, outputRoot }) {
   assert(path.isAbsolute(outputRoot || '') && !root.startsWith(ROOT + path.sep) && !fs.existsSync(root), 'FRESH_EXTERNAL_QUALIFICATION_ROOT_REQUIRED')
   if (process.env.GITHUB_ACTIONS === 'true') {
     assert.equal(process.platform, 'linux'); assert.equal(process.env.RUNNER_OS, 'Linux')
-    assert.equal(process.env.GITHUB_REF, branch)
+    assert(branches.includes(process.env.GITHUB_REF))
     assert.equal(process.env.GITHUB_EVENT_NAME, 'workflow_dispatch')
   }
   fs.mkdirSync(root, { recursive: true, mode: 0o700 })
@@ -93,6 +94,37 @@ export function qualify({ mode, outputRoot }) {
   report.artifactHash = first.run.artifactHash
   report.deterministicContentHash = first.run.deterministicContentHash
   report.checks.semanticProvenance = 'PASS'
+  // Exercise the automatic CLI path with no archive configuration, then read
+  // the stored interpretation independently. Only the allowlisted summary and
+  // qualification report may leave this runner; restricted objects stay local.
+  const localStore = new RestrictedStore(path.join(root, 'automatic-local-store'))
+  const summaryFile = path.join(root, 'safe-summary.json')
+  const child = spawnSync(process.execPath, ['scripts/signal-evaluate.mjs', '--store', localStore.root,
+    '--snapshot', commit, '--code-commit', commit], {
+    cwd: ROOT, encoding: 'utf8', maxBuffer: 32_000_000, timeout: 300_000,
+    env: { PATH: process.env.PATH, TMPDIR: process.env.TMPDIR, RUNNER_TEMP: root, SIGNAL_SHADOW_SUMMARY_FILE: summaryFile,
+      SIGNAL_ARCHIVE_REPOSITORY: '', SIGNAL_ARCHIVE_TOKEN: '' },
+  })
+  ensureNoDisclosure((child.stdout || '') + (child.stderr || ''), { logs: true })
+  assert.equal(child.status, 0, 'LOCAL_ONLY_CLI_FAILED')
+  const summary = readSummary(fs.readFileSync(summaryFile, 'utf8'))
+  assert.equal(summary.status, 'CURRENT')
+  assert.equal(summary.factorCount, 7)
+  const localState = localStore.readState()
+  validateStoredInterpretation(localStore, localState.ledger.lastValidArtifactHash)
+  assert.match(renderSummary(summary), /Factors valid:/)
+  report.localOnlySummary = summary
+  report.checks.localOnlyWithoutArchive = 'PASS'
+  report.checks.localOnlySemanticProvenance = 'PASS'
+  // A new automatic job has no prior artifact. An injected failure must not
+  // fabricate the persistent fallback tested separately by the optional store.
+  const failedLocal = runShadow({ accepted, store: new RestrictedStore(path.join(root, 'failed-local-store')),
+    codeCommit: commit, evaluateFn: () => { throw Error('QUALIFICATION_TEST_INJECTION') } })
+  assert.equal(failedLocal.run.result, 'FAILED')
+  assert.equal(failedLocal.run.fallbackArtifactHash, null)
+  assert.equal(failedLocal.fallback, null)
+  assert.equal(new RestrictedStore(path.join(root, 'failed-local-store')).readState().ledger.status, 'NO_VALID_ARTIFACT')
+  report.checks.localOnlyFailureWithoutFallback = 'PASS'
   if (mode === 'normal') {
     const duplicate = runShadow({ accepted, codeCommit: commit,
       store: new RestrictedStore(path.join(root, 'independent-store')),
@@ -146,11 +178,7 @@ export function qualify({ mode, outputRoot }) {
   report.checks.publicBundle = 'PASS'; report.checks.logDisclosure = 'PASS'
   const upload = path.join(root, 'upload')
   fs.mkdirSync(upload, { mode: 0o700 })
-  // The user explicitly permits qualification artifacts in Actions storage.
-  // Only generated qualification objects are uploaded, never dist or raw logs.
-  const exported = path.join(upload, 'restricted-test-artifacts')
-  fs.cpSync(store.root, exported, { recursive: true })
-  for (const file of filesUnder(exported)) ensureNoDisclosure(fs.readFileSync(file, 'utf8'))
+  // Upload only bounded qualification results, never restricted engine stores.
   ensureNoDisclosure(serialize(report), { logs: true })
   fs.writeFileSync(path.join(upload, 'qualification-report.json'), serialize(report), { mode: 0o600 })
   return report
