@@ -7,6 +7,18 @@ import { runShadow } from './signal-engine/pipeline.mjs'
 import { ROOT, git } from './signal-engine/identity.mjs'
 import { RestrictedStore } from './signal-engine/store.mjs'
 import { PrivateArchive } from './signal-engine/private-archive.mjs'
+import { emptySummary, summaryFromRun } from './lib/signalShadowSummary.mjs'
+
+function writeSummary(summary) {
+  try {
+    const file = process.env.SIGNAL_SHADOW_SUMMARY_FILE
+    if (!file) return
+    const directory = fs.realpathSync(path.dirname(file))
+    const allowed = [fs.realpathSync(os.tmpdir()), process.env.RUNNER_TEMP].filter(Boolean).map(p => fs.realpathSync(p))
+    if (!allowed.some(root => directory === root || directory.startsWith(root + path.sep)) || fs.existsSync(file) && fs.lstatSync(file).isSymbolicLink()) return
+    fs.writeFileSync(file, JSON.stringify(summary) + '\n', { mode: 0o600 })
+  } catch { /* Summary failure must not change engine or email outcomes. */ }
+}
 
 export function parseArguments(argv) {
   const out = { shadow: true, dryRun: false }
@@ -29,11 +41,12 @@ export function parseArguments(argv) {
 export async function main(argv = process.argv.slice(2)) {
   let options
   try { options = parseArguments(argv) } catch {
+    writeSummary(emptySummary())
     console.log(JSON.stringify({ shadow: true, result: 'FAILED', failureStage: 'CONFIGURATION', errorCategory: 'INVALID_SHADOW_COMMAND', storagePersisted: false, contentChanged: false }))
     process.exitCode = 1
     return
   }
-  let remote, temporary, stage = 'CONFIGURATION'
+  let remote, temporary, stage = 'CONFIGURATION', summary = emptySummary()
   try {
     const codeCommit = options.codeCommit || git(ROOT, ['rev-parse', 'HEAD'])
     const targetCommit = options.snapshot || git(ROOT, ['rev-parse', 'HEAD'])
@@ -50,6 +63,7 @@ export async function main(argv = process.argv.slice(2)) {
     })
     stage = 'ARCHIVE_PUBLISH'
     if (remote && result.run.result !== 'SUPERSEDED' && result.run.storagePersisted) await remote.publish(store)
+    summary = summaryFromRun(result)
     // Phase 1 console output is operational only; factor results and local paths
     // remain in the restricted archive, never public workflow logs or assets.
     console.log(JSON.stringify({ shadow: true, result: result.run.result, failureStage: result.run.failureStage, errorCategory: result.run.errorCategory, storagePersisted: result.run.storagePersisted, contentChanged: result.run.contentChanged }))
@@ -59,6 +73,7 @@ export async function main(argv = process.argv.slice(2)) {
     console.log(JSON.stringify({ shadow: true, result: 'FAILED', failureStage: stage, errorCategory: 'RESTRICTED_SHADOW_OPERATION_FAILED', storagePersisted: false, contentChanged: false }))
     process.exitCode = 1
   } finally {
+    writeSummary(summary)
     if (temporary) fs.rmSync(temporary, { recursive: true, force: true })
   }
 }

@@ -2,6 +2,7 @@ import { readFile, appendFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { createDigest, mailConfig, sendDigest } from './lib/notification.mjs'
 import { notificationOutput } from './lib/statusFiles.mjs'
+import { resolveSummary } from './lib/signalShadowSummary.mjs'
 
 const root = resolve(import.meta.dirname, '..')
 const read = async path => JSON.parse(await readFile(resolve(root, path), 'utf8'))
@@ -16,7 +17,9 @@ try {
     return { id: s.id, date: latest?.date || 'unavailable', value: latest?.value ?? '—', units: s.units, frequency: s.frequency, sourceUrl: s.sourceUrl }
   })
   const runId = env.GITHUB_RUN_ID || (dry ? '0' : '')
-  const digest = createDigest({ ledger, observations, build: env.BUILD_RESULT || 'unknown', deploy: env.DEPLOY_RESULT || 'unknown', runId })
+  const signalSummary = resolveSummary({ value: env.SIGNAL_SHADOW_SUMMARY,
+    enabled: env.SIGNAL_SHADOW_ENABLED === 'true', jobResult: env.SIGNAL_SHADOW_RESULT, buildResult: env.BUILD_RESULT })
+  const digest = createDigest({ ledger, observations, build: env.BUILD_RESULT || 'unknown', deploy: env.DEPLOY_RESULT || 'unknown', runId, signalSummary })
   if (dry) {
     console.log('PREVIEW ONLY — no email sent.\n' + digest.text)
   } else {

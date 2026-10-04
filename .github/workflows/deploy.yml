@@ -118,6 +118,8 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: read
+    outputs:
+      summary: ${{ steps.summary.outputs.summary }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -132,12 +134,19 @@ jobs:
         run: npm ci --prefix research/signal-engine
       - name: Evaluate accepted snapshot into the private shadow archive
         env:
+          SIGNAL_SHADOW_SUMMARY_FILE: ${{ runner.temp }}/signal-shadow-summary.json
           SIGNAL_ARCHIVE_REPOSITORY: ${{ vars.SIGNAL_ARCHIVE_REPOSITORY }}
           SIGNAL_ARCHIVE_TOKEN: ${{ secrets.SIGNAL_ARCHIVE_TOKEN }}
         run: >-
           npm run signal:evaluate -- --private-archive
           --snapshot '${{ needs.build.outputs.snapshot_commit }}'
           --code-commit '${{ needs.build.outputs.code_commit }}'
+      - name: Export safe Signal Engine summary
+        id: summary
+        if: always()
+        env:
+          SIGNAL_SHADOW_SUMMARY_FILE: ${{ runner.temp }}/signal-shadow-summary.json
+        run: node scripts/signal-shadow-summary.mjs
 
   deploy:
     environment:
@@ -160,7 +169,7 @@ jobs:
     if: >-
       always() && github.ref == 'refs/heads/main' &&
       (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh))
-    needs: [build, deploy]
+    needs: [build, deploy, signal-shadow]
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -183,6 +192,9 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           BUILD_RESULT: ${{ needs.build.result }}
           DEPLOY_RESULT: ${{ needs.deploy.result }}
+          SIGNAL_SHADOW_SUMMARY: ${{ needs.signal-shadow.outputs.summary }}
+          SIGNAL_SHADOW_RESULT: ${{ needs.signal-shadow.result }}
+          SIGNAL_SHADOW_ENABLED: ${{ vars.SIGNAL_SHADOW_ENABLED == 'true' }}
         run: node scripts/notify.mjs
 
   status:
