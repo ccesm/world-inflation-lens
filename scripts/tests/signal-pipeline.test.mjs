@@ -17,8 +17,8 @@ import { disclosureCategories } from '../signal-shadow-qualification.mjs'
 import { summaryFromRun } from '../lib/signalShadowSummary.mjs'
 
 const COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
-// Public presentation branch baseline; newer accepted snapshots are legitimate.
-const FEATURE_BASE = '9ff9939bcd464b7ffc8c674c67292d0ec99f7ce1'
+// Accepted production baseline after the v1.1.0 release snapshot sync.
+const FEATURE_BASE = 'd03e9e48f6e4f8b0bce6d9367586f17ebda788cd'
 const ACCEPTED = '2026-10-04T00:20:00.000Z', ASOF = '2026-10-04T00:21:00.000Z'
 const passed = () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }]
 // This explicit mock proves adapter behavior, never live production acceptance.
