@@ -1,19 +1,21 @@
 {
   "name": "world-inflation-lens",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "verify": "node scripts/verify-status.mjs && node scripts/verify-status-publication.mjs && node scripts/verify-workspace.mjs && node scripts/verify-notification.mjs && node scripts/verify-digital-money.mjs && node scripts/verify-productivity.mjs && node scripts/verify-external.mjs && node scripts/verify-cbo.mjs && node scripts/verify-dollar.mjs && node scripts/verify-refresh.mjs && node scripts/verify-international.mjs && node scripts/verify-research-architecture.mjs && node scripts/verify.mjs",
+    "verify": "node scripts/verify-status.mjs && node scripts/verify-status-publication.mjs && node scripts/verify-workspace.mjs && node scripts/verify-notification.mjs && node scripts/verify-digital-money.mjs && node scripts/verify-productivity.mjs && node scripts/verify-external.mjs && node scripts/verify-cbo.mjs && node scripts/verify-dollar.mjs && node scripts/verify-refresh.mjs && node scripts/verify-international.mjs && node scripts/verify-research-architecture.mjs && node scripts/verify.mjs && node scripts/verify-signal-public.mjs",
     "data:refresh": "node scripts/refresh-data.mjs",
     "notify:preview": "node scripts/notify.mjs --dry-run",
     "verify:browser": "node scripts/verify-v1-browser.mjs",
     "signal:evaluate": "node scripts/signal-evaluate.mjs --shadow",
     "signal:test": "npm test --prefix research/signal-engine",
-    "signal:test:pipeline": "node --test scripts/tests/signal-pipeline.test.mjs scripts/tests/signal-archive.test.mjs"
+    "signal:test:pipeline": "node --test scripts/tests/signal-pipeline.test.mjs scripts/tests/signal-archive.test.mjs",
+    "signal:public": "node scripts/signal-public.mjs",
+    "signal:test:public": "node --test scripts/tests/signal-public.test.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

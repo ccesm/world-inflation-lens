@@ -1,3 +1,4 @@
+import './signal-engine.css'
 import React, { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { copy } from './i18n/translations.js'
 import { primaryRoutes, routeSection, routeFromHash } from './utils/routing.js'
@@ -26,6 +27,7 @@ import { ResearchContext } from './components/ResearchContext.jsx'
 import './research-map.css'
 import './treasury-pricing.css'
 
+const SignalEngine = lazy(() => import('./pages/SignalEngine.jsx').then(m => ({default:m.SignalEngine})))
 const InternationalDollar = lazy(() => import('./pages/InternationalDollar.jsx').then(m => ({default:m.InternationalDollar})))
 const Sources = lazy(() => import('./pages/Sources.jsx').then(m => ({default:m.Sources})))
 const DataWorkspace = lazy(() => import('./pages/DataWorkspace.jsx').then(m => ({default:m.DataWorkspace})))
@@ -87,7 +89,7 @@ export default function App() {
   const [theme, setTheme] = useState(initialTheme)
   const mainRef = useRef(null)
   const previousNavigationKey = useRef(pageKey)
-  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav, 'research/data': workspaceCopy[language].title, 'research/updates': workspaceCopy[language].journal, 'research/international-dollar': language === 'zh' ? '国际美元' : 'International Dollar' } }
+  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav, 'research/signal-engine': language === 'zh' ? '信号引擎' : 'Signal Engine', 'research/data': workspaceCopy[language].title, 'research/updates': workspaceCopy[language].journal, 'research/international-dollar': language === 'zh' ? '国际美元' : 'International Dollar' } }
   const section = routeSection(route), links = sectionLinks[section] || []
   const selectedSectionLink = links.find(([href]) => href === navigationKey)?.[0] || links.find(([href]) => href === navigationKey.split('?')[0])?.[0] || ''
 
@@ -144,6 +146,7 @@ export default function App() {
       {route === 'research/ai-productivity' && <AiProductivity language={language} />}
       {route === 'external-shocks' && <ExternalShocks language={language} />}
       {route === 'sources' && <Sources t={t} language={language} />}
+      {route === 'research/signal-engine' && <SignalEngine language={language} />}
       {route === 'research/international-dollar' && <InternationalDollar language={language} />}
       {route === 'research/data' && <DataWorkspace language={language} />}
       {route === 'research/updates' && <UpdateJournal language={language} />}

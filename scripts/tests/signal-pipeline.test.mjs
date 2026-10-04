@@ -17,7 +17,8 @@ import { disclosureCategories } from '../signal-shadow-qualification.mjs'
 import { summaryFromRun } from '../lib/signalShadowSummary.mjs'
 
 const COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
-const FEATURE_BASE = '2e6be076ce2af09abf782b7a265566e8550aa3c4'
+// Accepted production baseline after the v1.1.0 release snapshot sync.
+const FEATURE_BASE = '7123887af80647a8c2298872b29e1f6697296c0f'
 const ACCEPTED = '2026-10-04T00:20:00.000Z', ASOF = '2026-10-04T00:21:00.000Z'
 const passed = () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }]
 // This explicit mock proves adapter behavior, never live production acceptance.
@@ -474,14 +475,14 @@ for (const argv of [['--publish'], ['--private-archive'], ['--store', path.join(
   assert.equal(report.result, 'FAILED'); assert.equal(report.storagePersisted, false)
   assert(!r.stdout.includes(ROOT)); assert(!r.stdout.includes('TOKEN'))
 })
-test('ISOLATION workflow shadow job cannot gate deployment/notifications; no public artifacts or UI changes', () => {
+test('ISOLATION workflow shadow job cannot gate deployment/notifications; restricted shadow artifacts stay isolated from the public presentation', () => {
   const yml = fs.readFileSync(path.join(ROOT, '.github/workflows/deploy.yml'), 'utf8')
   const shadow = yml.split('  signal-shadow:')[1].split('  deploy:')[0]
   assert(shadow.includes('needs: build')); assert(shadow.includes('continue-on-error: true')); assert(shadow.includes('--store')); assert(!/--private-archive|SIGNAL_ARCHIVE_REPOSITORY|SIGNAL_ARCHIVE_TOKEN/.test(shadow))
   assert(!shadow.includes('upload-artifact')); assert(!yml.split('  deploy:')[1].split('  notify:')[0].includes('signal-shadow'))
-  assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'))).version, '1.0.0')
+  assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'))).version, '1.1.0')
   assert(fs.readFileSync(path.join(ROOT, '.gitignore'), 'utf8').includes('research/signal-engine/production-artifacts/'))
   // Email now intentionally appends safe shadow health; its SMTP/isolation
   // behavior is independently protected by the notification summary tests.
-  assert.equal(execFileSync('git', ['diff', FEATURE_BASE, '--name-only', '--', 'src', 'data', 'public', 'scripts/refresh-data.mjs'], { cwd: ROOT }).toString(), '')
+  assert.equal(execFileSync('git', ['diff', FEATURE_BASE, '--name-only', '--', 'data', 'scripts/refresh-data.mjs'], { cwd: ROOT }).toString(), '')
 })

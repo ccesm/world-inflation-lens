@@ -143,6 +143,7 @@ export const seriesResearchRoles = Object.fromEntries(Object.entries(seriesRegis
 
 const context = (stage, theme, en, zh) => ({ stage, ...(theme ? { theme } : {}), label: label(en, zh), href: `#/research?focus=${theme || stage}` })
 export const pageResearchContext = {
+  'research/signal-engine': context('outcomes', null, 'Signal Engine', '信号引擎'),
   'research/international-dollar': context('structural', 'dollar-system', 'International Dollar Lens', '国际美元透视'),
   fiscal: context('structural', 'fiscal', 'Fiscal Outlook', '财政展望'),
   'research/ai-productivity': context('structural', 'capacity', 'AI & Productivity', '人工智能与生产率'),

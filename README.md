@@ -2,6 +2,10 @@
 
 A bilingual Vite + React research site studying two related questions over the next 20–30 years: the U.S. dollar’s domestic purchasing power and its international role in reserves, finance, trade and payments. Observations, official conditional projections and hypothetical scenarios remain distinct. Global inflation provides supporting context.
 
+## V1.1.0 — Public Signal Engine
+
+A current macro interpretation appears at the top of Home, with seven independent factor assessments on **Research → Signal Engine** (`#/research/signal-engine`). Deterministic English/Chinese conclusions show Evidence Quality, Threshold Sensitivity and dated monthly/quarterly evidence. There is no aggregate score or investment signal. See [v1.1.0 release notes](docs/v1.1-public-signal-engine.md).
+
 ## International Dollar evidence — feature branch
 
 `codex/international-dollar-evidence` adds a detailed `#/research/international-dollar` page with 18 official IMF COFER, Treasury TIC and BIS GLI series, function-based coverage, quarterly/monthly charts, tables and CSV. Existing Digital Money research supplies partial publication evidence; invoicing, payment usage and alternative reserve assets remain explicit gaps. COFER uses the revised world-FX-reserves denominator including IMF imputations, not the legacy allocated-only share.
@@ -406,3 +410,7 @@ Website: https://ccesm.github.io/world-inflation-lens/
 Views use hash routes such as `#/timeline` and `#/us-cpi`, so direct links and refreshes require no server rewrite rules. Import local assets from source or use `import.meta.env.BASE_URL` for future public assets; do not use unprefixed `/assets/...` URLs.
 
 Verification runs every page in both languages and checks emitted asset paths. Browser QA should also cover chart modes, date and amount inputs, the year slider, language switching, and phone-sized layouts before release.
+
+## Public Signal Engine feature
+
+The first public presentation adds a compact Home brief and `#/research/signal-engine`, using a strict pre-generated public summary. Local review requires `npm ci --prefix research/signal-engine`, then `npm run signal:public`, `npm run build` and `npm run verify`. The committed public JSON is an unavailable bootstrap; internal shadow artifacts are never browser inputs. See [feature review and lifecycle](docs/public-signal-engine-ui.md) and [public schema](docs/signal-public-summary.schema.json). The daily shadow/email pipeline remains independent. The application release candidate is 1.1.0 following the passed independent release review; see [release notes](docs/v1.1-public-signal-engine.md).

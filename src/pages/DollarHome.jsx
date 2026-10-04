@@ -1,3 +1,4 @@
+import { SignalEngineBrief } from '../components/SignalEngineBrief.jsx'
 import { InternationalSummary } from '../components/InternationalSummary.jsx'
 import React from 'react'
 import { DualDollarSummary, EvidenceState, ResearchMap } from '../components/ResearchMap.jsx'
@@ -58,6 +59,7 @@ function CurrentEvidence({ language }) {
 export function Home({ language }) {
   const t = copy[language]
   return <div className="ia-home global-section v1-home" data-page="home">
+    <SignalEngineBrief language={language} />
     <section className="ia-hero"><p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p className="ia-subtitle">{t.intro}</p></section>
     <div className="content-section ia-home-body dollar-section">
       <DualDollarSummary language={language} compact />
