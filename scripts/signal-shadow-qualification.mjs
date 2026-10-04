@@ -13,7 +13,7 @@ import { readSummary, renderSummary } from './lib/signalShadowSummary.mjs'
 import { contentHash, serialize, sha256 } from '../research/signal-engine/engine/core.mjs'
 
 const branches = ['refs/heads/codex/signal-engine-production-pipeline', 'refs/heads/codex/signal-shadow-no-private-archive']
-const restrictedMarkers = /signal-shadow-interpretation\/1|signal-public-shadow\/1|signal-economic-acceptance\/1|signal-shadow-context\/1|signal-shadow-run\/1/
+const restrictedMarkers = /signal-shadow-interpretation\/1|signal-public-shadow\/1|signal-economic-acceptance\/1|signal-shadow-context\/1|signal-shadow-run\/1|signal-shadow-summary\/[12]|deterministic-signal-conclusions\/1/
 export function disclosureCategories(text, { publicOutput = false, logs = false } = {}) {
   const categories = []
   if (/\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AIza[A-Za-z0-9_-]{30,})\b/.test(text) || /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/.test(text)) categories.push('CREDENTIAL_PATTERN')

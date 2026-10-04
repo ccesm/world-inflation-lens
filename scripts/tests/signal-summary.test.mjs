@@ -4,14 +4,24 @@ import fs from 'node:fs'
 import path from 'node:path'
 import os from 'node:os'
 import { execFileSync } from 'node:child_process'
-import { emptySummary, validateSummary, readSummary, resolveSummary, renderSummary, summaryFromRun } from '../lib/signalShadowSummary.mjs'
+import { emptySummary, validateSummary, readSummary, resolveSummary, renderSummary, summaryFromRun, MAX_SUMMARY_BYTES } from '../lib/signalShadowSummary.mjs'
+import { generateConclusions } from '../lib/signalConclusions.mjs'
 import { createDigest, runUrl } from '../lib/notification.mjs'
 
-const current = { ...emptySummary('CURRENT'), inputSnapshotShort: '261f2955ff', lastValidSnapshotShort: '261f2955ff', lastValidArtifactShort: '0123456789', factorsValid: 7, factorCount: 7,
-  evidenceQualitySummary: { HIGH: 0, MEDIUM: 7, LOW: 0, UNASSESSED: 0 }, thresholdSensitiveFactors: ['GSCPI', 'BIS'] }
+const states = ['TRANSITION', 'OUTPUT_PER_HOUR_GROWING', 'TRANSITION', 'TRANSITION', 'USD_RESERVE_SHARE_FALLING', 'TRANSITION', 'OFFSHORE_USD_CREDIT_EXPANDING']
+const ids = ['inflation-persistence', 'observed-productivity', 'supply-chain-pressure', 'policy-rate-direction', 'reserve-share', 'foreign-treasury-holdings', 'offshore-usd-credit']
+const assessments = ids.map((factorId, i) => ({ factorId, state: states[i], evidenceQuality: 'MEDIUM', sensitivity: [2, 6].includes(i) ? 'THRESHOLD_SENSITIVE' : 'NOT_SENSITIVE' }))
+function assessedSummary(factors = assessments) {
+  return { ...emptySummary('CURRENT'), inputSnapshotShort: '261f2955ff', lastValidSnapshotShort: '261f2955ff', lastValidArtifactShort: '0123456789',
+    factorsValid: factors.filter(f => f.state !== 'INSUFFICIENT_DATA').length, factorCount: 7,
+    evidenceQualitySummary: Object.fromEntries(['HIGH', 'MEDIUM', 'LOW', 'UNASSESSED'].map(q => [q, factors.filter(f => f.evidenceQuality === q).length])),
+    thresholdSensitiveFactors: factors.filter(f => f.sensitivity === 'THRESHOLD_SENSITIVE').map(f => ['Core PCE', 'Productivity', 'GSCPI', 'FEDFUNDS', 'COFER', 'TIC', 'BIS'][ids.indexOf(f.factorId)]),
+    factorAssessments: factors, conclusions: generateConclusions(factors) }
+}
+const current = assessedSummary()
 const samples = {
   CURRENT: current, UNCHANGED: { ...current, status: 'UNCHANGED', interpretationReused: true },
-  FAILED_WITH_LAST_VALID: { ...current, status: 'FAILED_WITH_LAST_VALID', inputSnapshotShort: 'abcdef0123', failureStage: 'ENGINE', failureCategory: 'ENGINE_EVALUATION_FAILED' },
+  FAILED_WITH_LAST_VALID: { ...current, factorAssessments: null, conclusions: null, status: 'FAILED_WITH_LAST_VALID', inputSnapshotShort: 'abcdef0123', failureStage: 'ENGINE', failureCategory: 'ENGINE_EVALUATION_FAILED' },
   NO_VALID_ARTIFACT: { ...emptySummary('NO_VALID_ARTIFACT'), inputSnapshotShort: '261f2955ff', failureStage: 'ENGINE', failureCategory: 'ENGINE_EVALUATION_FAILED' },
   DISABLED: emptySummary('DISABLED'), UNKNOWN: emptySummary(),
 }
@@ -35,15 +45,27 @@ test('EMAIL reused and failed wording never promotes an old direction to current
   assert.match(noValid, /No validated Signal Engine interpretation is available for this run/)
   assert.match(noValid, /Economic deployment remains unaffected/)
   assert(!/Last valid artifact|Factors valid:|Evidence quality:/.test(noValid))
+  for (const status of ['FAILED_WITH_LAST_VALID', 'NO_VALID_ARTIFACT', 'DISABLED', 'UNKNOWN']) {
+    const text = renderSummary(samples[status])
+    assert.match(text, /本次没有可验证的当前 Signal Engine 结论/); assert(!text.includes('国内购买力'))
+  }
   assert.match(renderSummary(samples.DISABLED), /currently disabled/)
   assert.match(renderSummary(samples.UNKNOWN), /Summary unavailable/)
 })
+test('EMAIL unsupported FAILED status with otherwise valid conclusions cannot publish a current interpretation', () => {
+  const text = renderSummary({ ...current, status: 'FAILED' })
+  assert.match(text, /Status: UNKNOWN/)
+  assert.match(text, /本次没有可验证的当前 Signal Engine 结论/)
+  assert(!text.includes('国内购买力'))
+})
 test('EMAIL mixed evidence quality and actual empty sensitivity', () => {
-  const mixed = { ...current, evidenceQualitySummary: { HIGH: 2, MEDIUM: 4, LOW: 1, UNASSESSED: 0 }, thresholdSensitiveFactors: [] }
+  const factors = assessments.map((f, i) => ({ ...f, evidenceQuality: i < 2 ? 'HIGH' : i === 6 ? 'LOW' : 'MEDIUM', sensitivity: 'NOT_SENSITIVE' }))
+  const mixed = assessedSummary(factors)
   assert.match(renderSummary(mixed), /HIGH 2 \/ MEDIUM 4 \/ LOW 1/)
   assert.match(renderSummary(mixed), /Threshold-sensitive: None/)
   assert.match(renderSummary(current), /Threshold-sensitive: GSCPI, BIS/)
-  assert.match(renderSummary({ ...mixed, factorsValid: 6, evidenceQualitySummary: { HIGH: 2, MEDIUM: 3, LOW: 1, UNASSESSED: 1 } }), /Factors valid: 6\/7/)
+  factors[3] = { ...factors[3], state: 'INSUFFICIENT_DATA', evidenceQuality: 'UNASSESSED', sensitivity: 'NOT_EVALUATED' }
+  assert.match(renderSummary(assessedSummary(factors)), /Factors valid: 6\/7/)
 })
 for (const [name, mutation] of Object.entries({
   fullArtifact: s => { s.lineage = [{ localPath: '/Users/private/file' }] },
@@ -57,6 +79,10 @@ for (const [name, mutation] of Object.entries({
   unknownQuality: s => { s.evidenceQualitySummary.token = 'SECRET' },
   reuse: s => { s.interpretationReused = true },
   noArtifactCurrent: s => { s.lastValidArtifactShort = null },
+  fabricatedConclusion: s => { s.conclusions.domesticSummary.zh = 'SECRET fabricated interpretation' },
+  fabricatedState: s => { s.factorAssessments[0].state = 'BUY' },
+  staleConclusion: s => { s.status = 'FAILED_WITH_LAST_VALID'; s.failureStage = 'ENGINE'; s.failureCategory = 'ENGINE_EVALUATION_FAILED' },
+  contradictoryQuality: s => { s.factorAssessments[0].evidenceQuality = 'HIGH' },
 })) test(`SUMMARY rejects unsafe/inconsistent ${name} and email still generates`, () => {
   const s = structuredClone(current); mutation(s)
   assert.throws(() => validateSummary(s)); assert.equal(readSummary(s).status, 'UNKNOWN')
@@ -65,7 +91,7 @@ for (const [name, mutation] of Object.entries({
   assert(!digest.text.includes('SECRET') && !digest.text.includes('/Users/') && !digest.text.includes('private@example.org'))
 })
 test('SUMMARY malformed JSON, oversized payload and absent input fail safely', () => {
-  for (const value of [undefined, '{', 'x'.repeat(5000), null]) assert.equal(readSummary(value).status, 'UNKNOWN')
+  for (const value of [undefined, '{', 'x'.repeat(MAX_SUMMARY_BYTES + 1), null]) assert.equal(readSummary(value).status, 'UNKNOWN')
   assert.equal(resolveSummary({ enabled: false, jobResult: 'skipped', value: current }).status, 'DISABLED')
   for (const jobResult of ['failure', 'cancelled', 'skipped', 'success']) assert.equal(resolveSummary({ enabled: true, jobResult }).status, 'UNKNOWN')
   assert.equal(resolveSummary({ enabled: true, jobResult: 'success', value: JSON.stringify(current) }).status, 'CURRENT')
@@ -74,7 +100,7 @@ test('SUMMARY malformed JSON, oversized payload and absent input fail safely', (
 })
 test('SUMMARY generated counts and sensitivity come from actual factor metadata', () => {
   const ids = ['inflation-persistence', 'observed-productivity', 'supply-chain-pressure', 'policy-rate-direction', 'reserve-share', 'foreign-treasury-holdings', 'offshore-usd-credit']
-  const factors = ids.map((factorId, i) => ({ factorId, state: i === 0 ? 'INSUFFICIENT_DATA' : 'TRANSITION', evidenceQuality: i === 0 ? 'UNASSESSED' : 'HIGH', sensitivity: i === 4 ? 'THRESHOLD_SENSITIVE' : 'NOT_SENSITIVE' }))
+  const factors = ids.map((factorId, i) => ({ factorId, state: i === 0 ? 'INSUFFICIENT_DATA' : 'TRANSITION', evidenceQuality: i === 0 ? 'UNASSESSED' : 'HIGH', sensitivity: i === 0 ? 'NOT_EVALUATED' : i === 4 ? 'THRESHOLD_SENSITIVE' : 'NOT_SENSITIVE' }))
   const artifact = { content: { ruleVersion: current.ruleVersion, engineVersion: current.engineVersion, inputSnapshotCommit: 'a'.repeat(40), domesticFactors: factors.slice(0, 4), internationalFactors: factors.slice(4) } }
   const run = { storagePersisted: true, result: 'SUCCESS_NEW', inputSnapshotCommit: 'a'.repeat(40), artifactHash: 'b'.repeat(64), failureStage: null, errorCategory: null }
   const s = summaryFromRun({ run, artifact })

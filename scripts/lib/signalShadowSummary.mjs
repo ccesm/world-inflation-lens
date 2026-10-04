@@ -1,5 +1,7 @@
+import { generateConclusions, normalizeAssessments, QUALITY } from './signalConclusions.mjs'
 // Small allowlisted handoff, never an interpretation/lineage transport.
-export const SUMMARY_VERSION = 'signal-shadow-summary/1'
+export const SUMMARY_VERSION = 'signal-shadow-summary/2'
+export const MAX_SUMMARY_BYTES = 24576
 const statuses = ['CURRENT', 'UNCHANGED', 'FAILED_WITH_LAST_VALID', 'NO_VALID_ARTIFACT', 'DISABLED', 'UNKNOWN']
 const quality = ['HIGH', 'MEDIUM', 'LOW', 'UNASSESSED']
 const labels = {
@@ -16,7 +18,7 @@ export function emptySummary(status = 'UNKNOWN') {
     ruleVersion: 'signal-engine-v0.1-draft.1', engineVersion: 'offline-prototype/0.1.2',
     factorsValid: null, factorCount: null, evidenceQualitySummary: null,
     thresholdSensitiveFactors: [], failureStage: null, failureCategory: null,
-    interpretationReused: false }
+    interpretationReused: false, factorAssessments: null, conclusions: null }
 }
 export function validateSummary(s) {
   const expected = Object.keys(emptySummary()).sort()
@@ -36,12 +38,20 @@ export function validateSummary(s) {
   } else if (s.lastValidArtifactShort || s.lastValidSnapshotShort || s.factorCount !== null) throw Error('UNSUPPORTED_LAST_VALID_CLAIM')
   if (['CURRENT', 'UNCHANGED'].includes(s.status) && (!s.inputSnapshotShort || s.inputSnapshotShort !== s.lastValidSnapshotShort || s.failureStage || s.failureCategory)) throw Error('INVALID_CURRENT_CLAIM')
   if (['FAILED_WITH_LAST_VALID', 'NO_VALID_ARTIFACT'].includes(s.status) && (!s.failureStage || !s.failureCategory)) throw Error('MISSING_FAILURE_CATEGORY')
+  if (['CURRENT', 'UNCHANGED'].includes(s.status)) {
+    const factors = normalizeAssessments(s.factorAssessments)
+    if (JSON.stringify(s.factorAssessments) !== JSON.stringify(factors) || JSON.stringify(s.conclusions) !== JSON.stringify(generateConclusions(factors))) throw Error('INVALID_SIGNAL_CONCLUSIONS')
+    const counts = Object.fromEntries(QUALITY.map(q => [q, factors.filter(f => f.evidenceQuality === q).length]))
+    const sensitive = factors.filter(f => f.sensitivity === 'THRESHOLD_SENSITIVE').map(f => labels[f.factorId])
+    if (JSON.stringify(counts) !== JSON.stringify(s.evidenceQualitySummary) || JSON.stringify(sensitive) !== JSON.stringify(s.thresholdSensitiveFactors) || s.factorsValid !== factors.filter(f => f.state !== 'INSUFFICIENT_DATA').length) throw Error('INCONSISTENT_SIGNAL_CONCLUSIONS')
+  } else if (s.factorAssessments !== null || s.conclusions !== null) throw Error('UNSUPPORTED_CURRENT_CONCLUSIONS')
+  if (Buffer.byteLength(JSON.stringify(s), 'utf8') > MAX_SUMMARY_BYTES) throw Error('SUMMARY_TOO_LARGE')
   return s
 }
 export function readSummary(value) {
   try {
     const json = typeof value === 'string' ? value : JSON.stringify(value)
-    if (typeof json !== 'string' || json.length > 4096) throw Error('SUMMARY_TOO_LARGE')
+    if (typeof json !== 'string' || Buffer.byteLength(json, 'utf8') > MAX_SUMMARY_BYTES) throw Error('SUMMARY_TOO_LARGE')
     value = JSON.parse(json)
     return validateSummary(value)
   } catch { return emptySummary() }
@@ -66,6 +76,10 @@ export function summaryFromRun(result) {
       s.factorsValid = factors.filter(f => f.state !== 'INSUFFICIENT_DATA' && f.evidenceQuality !== 'UNASSESSED').length
       s.evidenceQualitySummary = Object.fromEntries(quality.map(q => [q, factors.filter(f => f.evidenceQuality === q).length]))
       s.thresholdSensitiveFactors = factors.filter(f => f.sensitivity === 'THRESHOLD_SENSITIVE').map(f => labels[f.factorId])
+      if (['CURRENT', 'UNCHANGED'].includes(s.status)) {
+        s.factorAssessments = normalizeAssessments(factors.map(f => ({ factorId: f.factorId, state: f.state, evidenceQuality: f.evidenceQuality, sensitivity: f.sensitivity })))
+        s.conclusions = generateConclusions(s.factorAssessments)
+      }
     }
     return validateSummary(s)
   } catch { return emptySummary() }
@@ -97,6 +111,12 @@ export function renderSummary(value, { deploy = 'unaffected' } = {}) {
   if (s.status === 'DISABLED') lines.push('Automatic Signal Engine shadow execution is currently disabled.')
   if (s.status === 'UNKNOWN') lines.push('Summary unavailable for this run.')
   const deployment = ['success', 'failure', 'cancelled', 'skipped'].includes(deploy) ? deploy.toUpperCase() : 'unaffected'
-  lines.push(`Economic deployment: ${deployment}`, 'Deployment affected by Signal Engine: NO')
+  lines.push(`Economic deployment: ${deployment}`, 'Deployment affected by Signal Engine: NO', '',
+    '--------------------------------', 'Signal Engine Interpretation', '--------------------------------')
+  if (s.conclusions) {
+    lines.push('国内购买力', s.conclusions.domesticSummary.zh, '', '国际美元地位', s.conclusions.internationalSummary.zh, '', '证据说明', s.conclusions.evidenceQualifier.zh)
+  } else {
+    lines.push('本次没有可验证的当前 Signal Engine 结论。', 'No validated current Signal Engine interpretation is available for this run.')
+  }
   return lines.join('\n')
 }
