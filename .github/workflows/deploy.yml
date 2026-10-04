@@ -132,13 +132,11 @@ jobs:
       - run: npm ci
       - name: Install isolated frozen engine dependencies
         run: npm ci --prefix research/signal-engine
-      - name: Evaluate accepted snapshot into the private shadow archive
+      - name: Evaluate accepted snapshot in temporary local storage
         env:
           SIGNAL_SHADOW_SUMMARY_FILE: ${{ runner.temp }}/signal-shadow-summary.json
-          SIGNAL_ARCHIVE_REPOSITORY: ${{ vars.SIGNAL_ARCHIVE_REPOSITORY }}
-          SIGNAL_ARCHIVE_TOKEN: ${{ secrets.SIGNAL_ARCHIVE_TOKEN }}
         run: >-
-          npm run signal:evaluate -- --private-archive
+          npm run signal:evaluate -- --store "${RUNNER_TEMP}/signal-shadow-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
           --snapshot '${{ needs.build.outputs.snapshot_commit }}'
           --code-commit '${{ needs.build.outputs.code_commit }}'
       - name: Export safe Signal Engine summary
@@ -147,6 +145,9 @@ jobs:
         env:
           SIGNAL_SHADOW_SUMMARY_FILE: ${{ runner.temp }}/signal-shadow-summary.json
         run: node scripts/signal-shadow-summary.mjs
+      - name: Discard temporary restricted interpretation
+        if: always()
+        run: rm -rf -- "${RUNNER_TEMP}/signal-shadow-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
 
   deploy:
     environment:

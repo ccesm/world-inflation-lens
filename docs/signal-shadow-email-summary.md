@@ -21,3 +21,15 @@ npm run verify
 ```
 
 Local preview fixtures cover CURRENT, UNCHANGED and FAILED_WITH_LAST_VALID. These demonstrate rendering, not new economic observations or live mail delivery. The safe-summary suite also covers NO_VALID_ARTIFACT, DISABLED, UNKNOWN, mixed quality, empty sensitivity, unsafe-field rejection, workflow dependency guards and CLI failure export.
+
+## Automatic local-only shadow storage
+
+The automatic `signal-shadow` job now evaluates into a fresh `$RUNNER_TEMP/signal-shadow-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT` directory. It does not pass `--private-archive`, reference `SIGNAL_ARCHIVE_REPOSITORY` or require `SIGNAL_ARCHIVE_TOKEN`. Optional private-archive code and tests remain available for future explicit use. The activation gate is unchanged; this change does not enable it or change repository settings.
+
+Economic acceptance, semantic/provenance validation, snapshot binding and the frozen R1–R6 engine safeguards remain on the same evaluator path. Only the allowlisted safe summary is exported to Actions/email. After that handoff an `always()` cleanup removes the temporary restricted store; nothing is uploaded from it or copied to `public/` or `dist/`.
+
+A fresh automatic job has no cross-run last-valid interpretation. Success normally reports CURRENT. UNCHANGED requires a genuinely validated prior interpretation in the same local store; a new runner does not have one. Evaluation failure in a fresh store reports NO_VALID_ARTIFACT, no factor counts or last-valid identity, and: “No validated Signal Engine interpretation is available for this run. Economic deployment remains unaffected.” The optional explicitly persistent archive path retains its validated fallback semantics. Missing or unreadable summaries continue to report UNKNOWN rather than inventing an assessment.
+
+Deployment still depends only on the successful economic build. The existing daily notification still awaits the isolated shadow result under `always()`, sends only one email and uses the actual deployment outcome. No secrets, public UI, data snapshots, methodology, thresholds or version are changed.
+
+The manually dispatched qualification also allows `codex/signal-shadow-no-private-archive`. It executes the actual local-only CLI with no archive credentials, independently validates the stored interpretation, checks a fresh-store failure has no fallback, runs safeguards/build/verify and checks disclosure. Only the bounded qualification report is uploaded; restricted interpretations remain runner-local. Frozen pipeline regression inputs are reconstructed in an isolated fixture so routine production snapshot refreshes do not invalidate the test baseline.

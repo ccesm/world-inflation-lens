@@ -13,7 +13,7 @@ permissions:
   contents: read
 jobs:
   qualification:
-    if: github.ref == 'refs/heads/codex/signal-engine-production-pipeline'
+    if: github.ref == 'refs/heads/codex/signal-engine-production-pipeline' || github.ref == 'refs/heads/codex/signal-shadow-no-private-archive'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:

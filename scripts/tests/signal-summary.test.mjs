@@ -31,7 +31,10 @@ test('EMAIL reused and failed wording never promotes an old direction to current
   assert.match(failed, /Previous validated interpretation was preserved/)
   assert.match(failed, /No current Signal Engine interpretation was published/)
   assert.match(failed, /Last-valid Evidence quality: 7 MEDIUM/)
-  assert.match(renderSummary(samples.NO_VALID_ARTIFACT), /No validated Signal Engine interpretation/)
+  const noValid = renderSummary(samples.NO_VALID_ARTIFACT)
+  assert.match(noValid, /No validated Signal Engine interpretation is available for this run/)
+  assert.match(noValid, /Economic deployment remains unaffected/)
+  assert(!/Last valid artifact|Factors valid:|Evidence quality:/.test(noValid))
   assert.match(renderSummary(samples.DISABLED), /currently disabled/)
   assert.match(renderSummary(samples.UNKNOWN), /Summary unavailable/)
 })
@@ -87,6 +90,8 @@ test('WORKFLOW notification always runs despite skipped/failed shadow; deploymen
   assert.match(notify, /always\(\)/); assert.match(notify, /needs: \[build, deploy, signal-shadow\]/)
   assert.match(shadow, /vars.SIGNAL_SHADOW_ENABLED == 'true'/); assert.match(shadow, /needs: build/)
   assert.match(shadow, /id: summary\n\s+if: always\(\)/); assert.match(shadow, /steps.summary.outputs.summary/)
+  assert.match(shadow, /--store \"\$\{RUNNER_TEMP\}/); assert(!/--private-archive|SIGNAL_ARCHIVE_REPOSITORY|SIGNAL_ARCHIVE_TOKEN|upload-artifact/.test(shadow))
+  assert.match(shadow, /Discard temporary restricted interpretation/); assert.match(shadow, /rm -rf --/)
   assert.match(deploy, /needs: build/); assert(!deploy.includes('signal-shadow'))
   assert(!/SIGNAL_SMTP_USER|SIGNAL_SMTP_APP_PASSWORD|SIGNAL_EMAIL_TO/.test(yml))
   assert.equal((notify.match(/run: node scripts\/notify.mjs/g) || []).length, 1)
@@ -115,7 +120,7 @@ test('CLI configuration failure exports UNKNOWN without internal diagnostics', (
   } finally { fs.rmSync(root, { recursive: true, force: true }) }
 })
 test('DRY RUN existing notify script renders safe examples without mail credentials or SMTP', () => {
-  for (const status of ['CURRENT', 'UNCHANGED', 'FAILED_WITH_LAST_VALID']) {
+  for (const status of ['CURRENT', 'UNCHANGED', 'FAILED_WITH_LAST_VALID', 'NO_VALID_ARTIFACT']) {
     const text = execFileSync(process.execPath, ['scripts/notify.mjs', '--dry-run'], { encoding: 'utf8', env: { PATH: process.env.PATH, BUILD_RESULT: 'success', DEPLOY_RESULT: 'success', GITHUB_RUN_ID: '42', SIGNAL_SHADOW_ENABLED: 'true', SIGNAL_SHADOW_RESULT: 'success', SIGNAL_SHADOW_SUMMARY: JSON.stringify(samples[status]) } })
     assert.match(text, /PREVIEW ONLY — no email sent/); assert(text.includes(`Status: ${status}`))
     fs.writeFileSync(`/private/tmp/wil-shadow-email-${status.toLowerCase()}.txt`, text)

@@ -93,7 +93,7 @@ export function renderSummary(value, { deploy = 'unaffected' } = {}) {
   if (s.failureStage) lines.push(`Failure stage: ${s.failureStage}`, `Failure category: ${s.failureCategory}`)
   if (s.status === 'UNCHANGED') lines.push('Interpretation reused because semantic inputs and eligibility were unchanged.')
   if (s.status === 'FAILED_WITH_LAST_VALID') lines.push('Previous validated interpretation was preserved.', 'No current Signal Engine interpretation was published.')
-  if (s.status === 'NO_VALID_ARTIFACT') lines.push('No validated Signal Engine interpretation is currently available.', 'Economic deployment remains independent.')
+  if (s.status === 'NO_VALID_ARTIFACT') lines.push('No validated Signal Engine interpretation is available for this run.', 'Economic deployment remains unaffected.')
   if (s.status === 'DISABLED') lines.push('Automatic Signal Engine shadow execution is currently disabled.')
   if (s.status === 'UNKNOWN') lines.push('Summary unavailable for this run.')
   const deployment = ['success', 'failure', 'cancelled', 'skipped'].includes(deploy) ? deploy.toUpperCase() : 'unaffected'

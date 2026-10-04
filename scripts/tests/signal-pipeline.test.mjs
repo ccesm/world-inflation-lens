@@ -17,11 +17,16 @@ import { disclosureCategories } from '../signal-shadow-qualification.mjs'
 import { summaryFromRun } from '../lib/signalShadowSummary.mjs'
 
 const COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
+const FEATURE_BASE = '388d4d022a3b0c70342e4d7c87c730b7a0f529d9'
 const ACCEPTED = '2026-10-04T00:20:00.000Z', ASOF = '2026-10-04T00:21:00.000Z'
 const passed = () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }]
 // This explicit mock proves adapter behavior, never live production acceptance.
-const accepted = captureAcceptedInput({ targetCommit: COMMIT, codeCommit: COMMIT, gates: passed, clock: () => ACCEPTED })
 const temp = prefix => fs.mkdtempSync(path.join(fs.realpathSync(os.tmpdir()), prefix))
+// Preserve frozen regression inputs independently of later production refreshes.
+const fixture = vintageSandbox()
+fixture.install(COMMIT)
+const accepted = captureAcceptedInput({ repo: fixture.repo, targetCommit: COMMIT, codeCommit: COMMIT, gates: passed, clock: () => ACCEPTED })
+fixture.close()
 const baselineRoot = temp('wil-shadow-baseline-'), baselineStore = new RestrictedStore(baselineRoot)
 const invocation = { accepted, codeCommit: COMMIT, clock: () => ASOF, asOf: ASOF, runId: '100', attempt: 1 }
 const first = runShadow({ ...invocation, store: baselineStore })
@@ -419,6 +424,43 @@ test('DRY RUN evaluates and validates with no storage mutations', () => {
     assert.equal(result.run.result, 'DRY_RUN'); assert.equal(fs.readdirSync(s.root).length, 0)
   } finally { s.close() }
 })
+test('LOCAL ONLY CLI succeeds without archive configuration and emits a validated safe email summary', () => {
+  const s = sandbox(false), receipt = path.join(s.root, 'receipt.json'), summaryFile = path.join(s.root, 'summary.json')
+  try {
+    fs.writeFileSync(receipt, JSON.stringify(accepted))
+    const child = spawnSync(process.execPath, ['scripts/signal-evaluate.mjs', '--store', path.join(s.root, 'store'), '--receipt', receipt,
+      '--code-commit', COMMIT, '--as-of', ASOF], { cwd: ROOT, encoding: 'utf8',
+      env: { PATH: process.env.PATH, TMPDIR: process.env.TMPDIR, RUNNER_TEMP: s.root, SIGNAL_SHADOW_SUMMARY_FILE: summaryFile } })
+    assert.equal(child.status, 0, child.stdout); assert.equal(child.stderr, '')
+    const store = new RestrictedStore(path.join(s.root, 'store')), state = store.readState()
+    validateStoredInterpretation(store, state.ledger.lastValidArtifactHash)
+    const summary = JSON.parse(fs.readFileSync(summaryFile))
+    assert.equal(summary.status, 'CURRENT'); assert.equal(summary.factorCount, 7)
+    assert.equal(summary.lastValidArtifactShort, state.ledger.lastValidArtifactHash.slice(0, 10))
+    assert(!serialize(summary).includes(ROOT)); assert(!store.root.startsWith(ROOT + path.sep))
+    assert.equal(workingEconomicHash(), workingBefore)
+  } finally { s.close() }
+})
+test('LOCAL ONLY failed fresh evaluation has no fabricated fallback and preserves economic data', () => {
+  const s = sandbox(false)
+  try {
+    const failed = invoke(s.store, { evaluateFn: () => { throw Error('TEST_FAILURE') } })
+    assert.equal(failed.run.failureStage, 'ENGINE'); assert.equal(failed.run.fallbackArtifactHash, null)
+    const summary = summaryFromRun(failed)
+    assert.equal(summary.status, 'NO_VALID_ARTIFACT'); assert.equal(summary.lastValidArtifactShort, null)
+    assert.equal(summary.factorCount, null); assert.equal(count(s.root, 'interpretations'), 0)
+    assert.equal(workingEconomicHash(), workingBefore)
+  } finally { s.close() }
+})
+test('LOCAL ONLY semantic corruption cannot create a current artifact or valid-factor claims', () => {
+  const s = sandbox(false)
+  try {
+    const failed = invoke(s.store, { afterEvaluation: o => { o.factors[0].availabilityBasis = 'PUBLISHER_RELEASE_VINTAGE'; return o } })
+    assert.equal(failed.run.result, 'FAILED'); assert.equal(failed.run.failureStage, 'SEMANTIC_VALIDATION')
+    assert.equal(summaryFromRun(failed).status, 'NO_VALID_ARTIFACT')
+    assert.equal(count(s.root, 'interpretations'), 0)
+  } finally { s.close() }
+})
 test('CLI accepts explicit shadow/dry-run input and rejects dangerous or ambiguous options', () => {
   assert.equal(parseArguments(['--shadow', '--dry-run', '--snapshot', COMMIT]).snapshot, COMMIT)
   for (const argv of [['--mode', 'public'], ['--publish'], ['--attempt', '0'], ['--private-archive', '--dry-run'], ['--snapshot', COMMIT, '--snapshot', COMMIT]]) assert.throws(() => parseArguments(argv))
@@ -433,11 +475,11 @@ for (const argv of [['--publish'], ['--private-archive'], ['--store', path.join(
 test('ISOLATION workflow shadow job cannot gate deployment/notifications; no public artifacts or UI changes', () => {
   const yml = fs.readFileSync(path.join(ROOT, '.github/workflows/deploy.yml'), 'utf8')
   const shadow = yml.split('  signal-shadow:')[1].split('  deploy:')[0]
-  assert(shadow.includes('needs: build')); assert(shadow.includes('continue-on-error: true')); assert(shadow.includes('--private-archive'))
+  assert(shadow.includes('needs: build')); assert(shadow.includes('continue-on-error: true')); assert(shadow.includes('--store')); assert(!/--private-archive|SIGNAL_ARCHIVE_REPOSITORY|SIGNAL_ARCHIVE_TOKEN/.test(shadow))
   assert(!shadow.includes('upload-artifact')); assert(!yml.split('  deploy:')[1].split('  notify:')[0].includes('signal-shadow'))
   assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'))).version, '1.0.0')
   assert(fs.readFileSync(path.join(ROOT, '.gitignore'), 'utf8').includes('research/signal-engine/production-artifacts/'))
   // Email now intentionally appends safe shadow health; its SMTP/isolation
   // behavior is independently protected by the notification summary tests.
-  assert.equal(execFileSync('git', ['diff', COMMIT, '--name-only', '--', 'src', 'data', 'public', 'scripts/refresh-data.mjs'], { cwd: ROOT }).toString(), '')
+  assert.equal(execFileSync('git', ['diff', FEATURE_BASE, '--name-only', '--', 'src', 'data', 'public', 'scripts/refresh-data.mjs'], { cwd: ROOT }).toString(), '')
 })
