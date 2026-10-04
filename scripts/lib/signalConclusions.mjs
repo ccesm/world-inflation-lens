@@ -109,3 +109,52 @@ export function generateConclusions(input) {
   }))
   return { presentationVersion: CONCLUSION_VERSION, factorInterpretations, domesticSummary, internationalSummary, evidenceQualifier }
 }
+
+// Explicit short presentation rules; never truncate the long interpretation.
+export const HOME_BRIEF_VERSION = 'deterministic-signal-home-brief/1'
+const homeDirectional = {
+  CORE_INFLATION_ACCELERATING: pair('核心 PCE 通胀动能持续加速。', 'Core PCE inflation momentum is persistently accelerating.'),
+  CORE_INFLATION_DECELERATING: pair('核心 PCE 通胀动能持续减速。', 'Core PCE inflation momentum is persistently decelerating.'),
+  OUTPUT_PER_HOUR_GROWING: pair('生产率增长提供一定供给侧缓冲。', 'Productivity growth provides some supply-side support.'),
+  OUTPUT_PER_HOUR_CONTRACTING: pair('已观测生产率收缩。', 'Observed productivity is contracting.'),
+  SUPPLY_CHAIN_PRESSURE_RISING: pair('全球供应链压力趋势上升。', 'Global supply-chain pressure is trending upward.'),
+  SUPPLY_CHAIN_PRESSURE_FALLING: pair('全球供应链压力趋势下降。', 'Global supply-chain pressure is trending downward.'),
+  POLICY_RATE_RISING: pair('有效政策利率方向上升。', 'The effective policy rate is moving upward.'),
+  POLICY_RATE_FALLING: pair('有效政策利率方向下降。', 'The effective policy rate is moving downward.'),
+  USD_RESERVE_SHARE_RISING: pair('美元官方外汇储备份额持续上升。', 'The dollar share of official foreign-exchange reserves is persistently rising.'),
+  USD_RESERVE_SHARE_FALLING: pair('美元官方外汇储备份额持续下降。', 'The dollar share of official foreign-exchange reserves is persistently falling.'),
+  FOREIGN_TREASURY_HOLDINGS_EXPANDING: pair('外国持有美国国债的名义余额扩张。', 'Nominal foreign Treasury holdings are expanding.'),
+  FOREIGN_TREASURY_HOLDINGS_CONTRACTING: pair('外国持有美国国债的名义余额收缩。', 'Nominal foreign Treasury holdings are contracting.'),
+  OFFSHORE_USD_CREDIT_EXPANDING: pair('美国境外美元融资余额仍在扩张。', 'Offshore dollar financing outstanding continues to expand.'),
+  OFFSHORE_USD_CREDIT_CONTRACTING: pair('美国境外美元融资余额收缩。', 'Offshore dollar financing outstanding is contracting.'),
+}
+export function generateHomeBrief(input) {
+  const factors = normalizeAssessments(input)
+  function group(items, international) {
+    return Object.fromEntries(['zh', 'en'].map(lang => {
+      const parts = []
+      const transitions = items.filter(f => f.state === 'TRANSITION')
+      if (transitions.length) {
+        parts.push(lang === 'zh' ? `${transitions.map(f => FACTOR_TEMPLATES[f.factorId].title.zh).join('、')}尚未确认持续方向。` : `A persistent direction is not confirmed for ${transitions.map(f => FACTOR_TEMPLATES[f.factorId].title.en).join(', ')}.`)
+      }
+      for (const f of items) {
+        if (homeDirectional[f.state]) parts.push(homeDirectional[f.state][lang])
+        else if (f.state === 'LITTLE_CHANGE') parts.push(lang === 'zh' ? `${FACTOR_TEMPLATES[f.factorId].title.zh}处于规则定义的稳定区间。` : `${FACTOR_TEMPLATES[f.factorId].title.en} is within the rule-defined quiet band.`)
+        else if (f.state === 'INSUFFICIENT_DATA') parts.push(lang === 'zh' ? `${FACTOR_TEMPLATES[f.factorId].title.zh}数据不足，本组解释不完整。` : `${FACTOR_TEMPLATES[f.factorId].title.en} has insufficient data; this group interpretation is incomplete.`)
+      }
+      if (items.some(f => ['LOW', 'UNASSESSED'].includes(f.evidenceQuality))) parts.push(caution[lang])
+      if (international) {
+        if (items[0].state === 'USD_RESERVE_SHARE_FALLING' && items[2].state === 'OFFSHORE_USD_CREDIT_EXPANDING') parts.push(lang === 'zh' ? '储备多元化与全球美元融资使用可并存，并不证实美元国际角色快速、系统性弱化。' : 'Reserve diversification can coexist with continued global dollar financing; this does not establish rapid, systemic weakening of the dollar’s international role.')
+        else parts.push(lang === 'zh' ? '这些不同功能不能合并为美元国际角色的净方向。' : 'These distinct functions do not establish a net direction for the dollar’s international role.')
+      } else parts.push(lang === 'zh' ? '这些因素不能合并为购买力的净方向，也不能单独确认明显再通胀或快速通胀降温。' : 'These factors do not establish a net purchasing-power direction or alone confirm reflation or rapid disinflation.')
+      if (international && items[0].state === 'USD_RESERVE_SHARE_FALLING' && items[1].state === 'TRANSITION' && items[2].state === 'OFFSHORE_USD_CREDIT_EXPANDING' && items.every(f => ['HIGH', 'MEDIUM'].includes(f.evidenceQuality))) {
+        return [lang, lang === 'zh' ? '美元官方外汇储备份额下降，但境外美元融资仍在扩张，国债持有量方向尚未确认。储备多元化与全球美元融资使用可并存，并不证实美元国际角色快速、系统性弱化。' : 'The dollar’s reserve share is falling while offshore dollar credit expands. Treasury holdings have no confirmed direction. Reserve diversification and dollar financing coexist; this does not establish rapid, systemic weakening.']
+      }
+      if (!international && items[0].state === 'TRANSITION' && items[1].state === 'OUTPUT_PER_HOUR_GROWING' && items[2].state === 'TRANSITION' && items[3].state === 'TRANSITION' && items.every(f => ['HIGH', 'MEDIUM'].includes(f.evidenceQuality))) {
+        return [lang, lang === 'zh' ? '国内通胀动能、供应链压力与政策利率尚未确认持续方向，生产率增长提供一定供给侧缓冲；现有证据尚未确认明显再通胀或快速通胀降温。' : 'Persistent directions in inflation momentum, supply-chain pressure and policy rates remain unconfirmed. Productivity growth offers some supply-side support; these factors alone do not confirm reflation or rapid disinflation.']
+      }
+      return [lang, parts.join(lang === 'en' ? ' ' : '')]
+    }))
+  }
+  return { domestic: group(factors.slice(0, 4), false), international: group(factors.slice(4), true) }
+}

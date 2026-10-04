@@ -77,6 +77,7 @@ export function ResearchMap({ language, compact = false }) {
         <p>{label(stage.description, language)}</p>
         {stage.id === 'structural' ? <StructuralThemes language={language} /> : stage.id === 'outcomes' ? <div className="research-outcome-links">{dollarOutcomes.map(outcome => <article key={outcome.id} data-dollar-outcome={outcome.id}><h4>{label(outcome.label, language)}</h4><EvidenceState state={outcome.evidenceState} language={language} /><p>{label(outcome.description, language)}</p><RouteLinks routes={outcome.routes} language={language} /></article>)}</div> : <><RouteLinks routes={stage.routes} language={language} /><EvidenceDetails {...stage} language={language} /></>}
       </li>)}</ol>
+      <p className="research-map-caption"><a href="#/research/signal-engine">{language === 'zh' ? 'Signal Engine：已验证证据的下游规则解读' : 'Signal Engine: downstream rule-based interpretation of validated evidence'}</a></p>
       <aside className="research-feedbacks"><h3>{t.feedbacks}</h3><ul>{framework.feedbacks.map(feedback => <li key={feedback}>{feedback}</li>)}</ul></aside>
       <section className="research-planned" id="international-evidence" aria-labelledby="research-planned-title"><h3 id="research-planned-title">{t.categories}</h3><p>{t.categoryNote}</p>
         <div className="research-category-grid">{plannedResearchCategories.map(category => <article key={category.id} data-research-category={category.id}>

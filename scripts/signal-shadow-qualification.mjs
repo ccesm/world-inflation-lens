@@ -10,6 +10,7 @@ import { RestrictedStore } from './signal-engine/store.mjs'
 import { validateStoredInterpretation } from './signal-engine/artifact.mjs'
 import { ROOT, dataIdentity, git } from './signal-engine/identity.mjs'
 import { readSummary, renderSummary } from './lib/signalShadowSummary.mjs'
+import { validatePublicSignal } from '../src/utils/signalPublicContract.js'
 import { contentHash, serialize, sha256 } from '../research/signal-engine/engine/core.mjs'
 
 const branches = ['refs/heads/codex/signal-engine-production-pipeline', 'refs/heads/codex/signal-shadow-no-private-archive']
@@ -172,7 +173,9 @@ export function qualify({ mode, outputRoot }) {
   report.checks.economicIsolation = 'PASS'
   const distFiles = filesUnder(path.join(ROOT, 'dist'))
   for (const file of distFiles) {
-    assert(!/signal-engine|production-artifacts/.test(path.relative(path.join(ROOT, 'dist'), file)))
+    const relative = path.relative(path.join(ROOT, 'dist'), file)
+    if (relative === 'data/signal-engine/current.json') validatePublicSignal(JSON.parse(fs.readFileSync(file, 'utf8')))
+    else assert(!/signal-engine|production-artifacts/.test(relative))
     ensureNoDisclosure(fs.readFileSync(file).toString('utf8'), { publicOutput: true })
   }
   report.checks.publicBundle = 'PASS'; report.checks.logDisclosure = 'PASS'

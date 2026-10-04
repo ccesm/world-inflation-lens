@@ -1,0 +1,439 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": "signal-public-summary/1"
+    },
+    "status": {
+      "enum": [
+        "CURRENT",
+        "UNAVAILABLE"
+      ]
+    },
+    "inputSnapshot": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-f0-9]{10}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "inputSnapshotHash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ruleVersion": {
+      "const": "signal-engine-v0.1-draft.1"
+    },
+    "engineVersion": {
+      "const": "offline-prototype/0.1.2"
+    },
+    "evidenceThrough": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "earliest": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "latest": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "earliest",
+            "latest"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "factorCount": {
+      "const": 7
+    },
+    "validFactorCount": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 7
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evidenceQuality": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "HIGH": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            },
+            "MEDIUM": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            },
+            "LOW": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            },
+            "UNASSESSED": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            }
+          },
+          "required": [
+            "HIGH",
+            "MEDIUM",
+            "LOW",
+            "UNASSESSED"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "thresholdSensitiveFactorIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 7,
+      "items": {
+        "enum": [
+          "inflation-persistence",
+          "observed-productivity",
+          "supply-chain-pressure",
+          "policy-rate-direction",
+          "reserve-share",
+          "foreign-treasury-holdings",
+          "offshore-usd-credit"
+        ]
+      }
+    },
+    "brief": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "domestic": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "zh": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                }
+              },
+              "required": [
+                "zh",
+                "en"
+              ]
+            },
+            "international": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "zh": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                }
+              },
+              "required": [
+                "zh",
+                "en"
+              ]
+            }
+          },
+          "required": [
+            "domestic",
+            "international"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "conclusions": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "domestic": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "zh": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                }
+              },
+              "required": [
+                "zh",
+                "en"
+              ]
+            },
+            "international": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "zh": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                }
+              },
+              "required": [
+                "zh",
+                "en"
+              ]
+            },
+            "evidenceQualifier": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "zh": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                },
+                "en": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 5000
+                }
+              },
+              "required": [
+                "zh",
+                "en"
+              ]
+            }
+          },
+          "required": [
+            "domestic",
+            "international",
+            "evidenceQualifier"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "factors": {
+      "type": "array",
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "factorId": {
+            "enum": [
+              "inflation-persistence",
+              "observed-productivity",
+              "supply-chain-pressure",
+              "policy-rate-direction",
+              "reserve-share",
+              "foreign-treasury-holdings",
+              "offshore-usd-credit"
+            ]
+          },
+          "state": {
+            "enum": [
+              "CORE_INFLATION_ACCELERATING",
+              "CORE_INFLATION_DECELERATING",
+              "LITTLE_CHANGE",
+              "TRANSITION",
+              "INSUFFICIENT_DATA",
+              "OUTPUT_PER_HOUR_GROWING",
+              "OUTPUT_PER_HOUR_CONTRACTING",
+              "SUPPLY_CHAIN_PRESSURE_RISING",
+              "SUPPLY_CHAIN_PRESSURE_FALLING",
+              "POLICY_RATE_RISING",
+              "POLICY_RATE_FALLING",
+              "USD_RESERVE_SHARE_RISING",
+              "USD_RESERVE_SHARE_FALLING",
+              "FOREIGN_TREASURY_HOLDINGS_EXPANDING",
+              "FOREIGN_TREASURY_HOLDINGS_CONTRACTING",
+              "OFFSHORE_USD_CREDIT_EXPANDING",
+              "OFFSHORE_USD_CREDIT_CONTRACTING"
+            ]
+          },
+          "evidenceQuality": {
+            "enum": [
+              "HIGH",
+              "MEDIUM",
+              "LOW",
+              "UNASSESSED"
+            ]
+          },
+          "sensitivity": {
+            "enum": [
+              "THRESHOLD_SENSITIVE",
+              "NOT_SENSITIVE",
+              "NOT_EVALUATED"
+            ]
+          },
+          "observationPeriod": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{4}-(?:0[1-9]|1[0-2]|Q[1-4])$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "confirmationWindow": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "from": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-(?:0[1-9]|1[0-2]|Q[1-4])$"
+                  },
+                  "through": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-(?:0[1-9]|1[0-2]|Q[1-4])$"
+                  },
+                  "periods": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 3
+                  },
+                  "frequency": {
+                    "enum": [
+                      "monthly",
+                      "quarterly"
+                    ]
+                  }
+                },
+                "required": [
+                  "from",
+                  "through",
+                  "periods",
+                  "frequency"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "interpretation": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "zh": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 5000
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 5000
+              }
+            },
+            "required": [
+              "zh",
+              "en"
+            ]
+          }
+        },
+        "required": [
+          "factorId",
+          "state",
+          "evidenceQuality",
+          "sensitivity",
+          "observationPeriod",
+          "confirmationWindow",
+          "interpretation"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "status",
+    "inputSnapshot",
+    "inputSnapshotHash",
+    "ruleVersion",
+    "engineVersion",
+    "evidenceThrough",
+    "factorCount",
+    "validFactorCount",
+    "evidenceQuality",
+    "thresholdSensitiveFactorIds",
+    "brief",
+    "conclusions",
+    "factors"
+  ]
+}

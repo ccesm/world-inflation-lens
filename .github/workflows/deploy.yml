@@ -61,7 +61,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '24.19.0'
           cache: npm
       - uses: actions/configure-pages@v5
       - run: npm ci
@@ -93,6 +93,14 @@ jobs:
         run: |
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           node scripts/status-context.mjs
+      - name: Generate validated public Signal summary
+        # Isolation applies only to engine installation/evaluation. The command
+        # writes UNAVAILABLE first; final economic build/verify still must pass.
+        run: |
+          if ! npm ci --prefix research/signal-engine; then
+            echo 'Isolated Signal dependencies unavailable; generating safe fallback.'
+          fi
+          npm run signal:public -- --snapshot '${{ steps.snapshot.outputs.commit }}' --code-commit '${{ steps.context.outputs.code_commit }}'
       - run: npm run build
       - run: npm run verify
       # GITHUB_TOKEN pushes do not trigger another push workflow. Deploy this build here.

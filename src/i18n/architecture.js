@@ -74,3 +74,5 @@ export const sectionLinks = {
 }
 sectionLinks.dollar.push(['#/research/international-dollar', '国际美元', 'International Dollar'])
 sectionLinks.research.unshift(['#/research/international-dollar', '国际美元', 'International Dollar'], ['#/research/data', '数据工作台', 'Data Workspace'], ['#/research/updates', '更新与修订', 'Updates & Revisions'])
+
+sectionLinks.research.unshift(['#/research/signal-engine', '信号引擎', 'Signal Engine'])
