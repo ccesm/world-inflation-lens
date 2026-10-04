@@ -82,6 +82,38 @@ jobs:
           path: .refresh/check.json
           include-hidden-files: true
           if-no-files-found: ignore
+  signal-shadow:
+    name: Restricted Signal Engine shadow evaluation
+    # This independent job can never reject an accepted economic build or make
+    # deployment/notifications depend on an interpretation. No public artifacts.
+    if: github.ref == 'refs/heads/main' && vars.SIGNAL_SHADOW_ENABLED == 'true'
+    needs: build
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.build.outputs.snapshot_commit }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Install isolated frozen engine dependencies
+        run: npm ci --prefix research/signal-engine
+      - name: Evaluate accepted snapshot into the private shadow archive
+        env:
+          SIGNAL_ARCHIVE_REPOSITORY: ${{ vars.SIGNAL_ARCHIVE_REPOSITORY }}
+          SIGNAL_ARCHIVE_TOKEN: ${{ secrets.SIGNAL_ARCHIVE_TOKEN }}
+        run: >-
+          npm run signal:evaluate -- --private-archive
+          --snapshot '${{ needs.build.outputs.snapshot_commit }}'
+          --code-commit '${{ needs.build.outputs.code_commit }}'
+
   deploy:
     environment:
       name: github-pages

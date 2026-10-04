@@ -143,5 +143,8 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
+# Restricted Signal Engine shadow artifacts are never committed or deployed.
+research/signal-engine/production-artifacts/
+
 # macOS
 .DS_Store
