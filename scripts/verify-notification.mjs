@@ -70,7 +70,10 @@ console.log('PASS: notification success/failure/stale-run handling, Gmail config
 const workflow = await readFile(new URL('../.github/workflows/deploy.yml', import.meta.url), 'utf8')
 assert.match(workflow, /cron: '40 17 \* \* \*'/)
 assert.match(workflow, /timezone: America\/Los_Angeles/)
-assert.match(workflow, /needs: \[build, deploy\]/)
+const notifyJob = workflow.split('  notify:')[1].split('  status:')[0]
+assert.match(notifyJob, /needs: \[build, deploy, signal-shadow\]/)
+assert.match(notifyJob, /always\(\)/)
+assert.match(notifyJob, /needs.signal-shadow.outputs.summary/)
 assert.match(workflow, /always\(\)/)
 assert.match(workflow, /needs.build.outputs.snapshot_commit \|\| github.sha/)
 assert.match(workflow, /secrets.GMAIL_ADDRESS/)

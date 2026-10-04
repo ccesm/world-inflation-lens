@@ -1,11 +1,12 @@
 import { createHash } from 'node:crypto'
 import nodemailer from 'nodemailer'
+import { renderSummary } from './signalShadowSummary.mjs'
 
 const site = 'https://ccesm.github.io/world-inflation-lens/'
 export const runUrl = id => /^\d+$/.test(id || '') ? `https://github.com/ccesm/world-inflation-lens/actions/runs/${id}` : null
 const categories = ['added', 'filled', 'revised', 'withdrawn']
 
-export function createDigest({ ledger, build, deploy, runId, observations = [] }) {
+export function createDigest({ ledger, build, deploy, runId, observations = [], signalSummary }) {
   const url = runUrl(runId)
   if (!url) throw new Error('A valid workflow run ID is required')
   const current = ledger?.runs?.find(r => r.runUrl === url)
@@ -36,6 +37,7 @@ export function createDigest({ ledger, build, deploy, runId, observations = [] }
   lines.push('', '月度、季度和年度数据保留来源频率；每日检查不代表每日产生新观测。',
     'Daily checks preserve original frequencies. Reviewed CBO, SIPRI and stablecoin publication vintages remain manual.',
     '这是数据更新提醒，不是预测或投资信号。This is a data-update notice, not a forecast or investment signal.', '', site, url)
+  if (signalSummary !== undefined) lines.push('', renderSummary(signalSummary, { deploy }))
   return { subject, text: lines.join('\n'), success }
 }
 

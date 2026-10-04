@@ -14,6 +14,7 @@ import { contentHash, serialize, sha256 } from '../../research/signal-engine/eng
 import { evaluate } from '../../research/signal-engine/engine/engine.mjs'
 import { parseArguments } from '../signal-evaluate.mjs'
 import { disclosureCategories } from '../signal-shadow-qualification.mjs'
+import { summaryFromRun } from '../lib/signalShadowSummary.mjs'
 
 const COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
 const ACCEPTED = '2026-10-04T00:20:00.000Z', ASOF = '2026-10-04T00:21:00.000Z'
@@ -62,6 +63,14 @@ test('PIPELINE validated accepted snapshot produces seven isolated factors and n
   assert(!/score|probability|overallVerdict/.test(serialize(first.artifact)))
   assert.equal(validateLedger(baselineStore.readState().ledger), true)
   assert.equal(validateRun(first.run), true)
+})
+test('SUMMARY validated pipeline result yields actual safe quality, sensitivity and short identities', () => {
+  const summary = summaryFromRun(first)
+  assert.equal(summary.status, 'CURRENT'); assert.equal(summary.factorsValid, 7)
+  assert.equal(summary.evidenceQualitySummary.MEDIUM, 7)
+  assert.deepEqual(summary.thresholdSensitiveFactors, ['GSCPI', 'BIS'])
+  assert.equal(summary.lastValidArtifactShort, first.run.artifactHash.slice(0, 10))
+  assert(!JSON.stringify(summary).includes(ROOT)); assert(!Object.hasOwn(summary, 'lineage'))
 })
 test('PIPELINE same immutable request is byte-identical in independent fresh processes', () => {
   const folder = temp('wil-shadow-process-'), receipt = path.join(folder, 'receipt.json')
@@ -428,5 +437,7 @@ test('ISOLATION workflow shadow job cannot gate deployment/notifications; no pub
   assert(!shadow.includes('upload-artifact')); assert(!yml.split('  deploy:')[1].split('  notify:')[0].includes('signal-shadow'))
   assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'))).version, '1.0.0')
   assert(fs.readFileSync(path.join(ROOT, '.gitignore'), 'utf8').includes('research/signal-engine/production-artifacts/'))
-  assert.equal(execFileSync('git', ['diff', COMMIT, '--name-only', '--', 'src', 'data', 'public', 'scripts/notify.mjs', 'scripts/refresh-data.mjs'], { cwd: ROOT }).toString(), '')
+  // Email now intentionally appends safe shadow health; its SMTP/isolation
+  // behavior is independently protected by the notification summary tests.
+  assert.equal(execFileSync('git', ['diff', COMMIT, '--name-only', '--', 'src', 'data', 'public', 'scripts/refresh-data.mjs'], { cwd: ROOT }).toString(), '')
 })
