@@ -96,13 +96,19 @@ jobs:
       - name: Generate validated public Signal summary
         # Isolation applies only to engine installation/evaluation. The command
         # writes UNAVAILABLE first; final economic build/verify still must pass.
+        env:
+          WIL_SIGNAL_EXPECTED_SNAPSHOT: ${{ steps.snapshot.outputs.commit }}
         run: |
           if ! npm ci --prefix research/signal-engine; then
             echo 'Isolated Signal dependencies unavailable; generating safe fallback.'
           fi
           npm run signal:public -- --snapshot '${{ steps.snapshot.outputs.commit }}' --code-commit '${{ steps.context.outputs.code_commit }}'
       - run: npm run build
+        env:
+          WIL_SIGNAL_EXPECTED_SNAPSHOT: ${{ steps.snapshot.outputs.commit }}
       - run: npm run verify
+        env:
+          WIL_SIGNAL_EXPECTED_SNAPSHOT: ${{ steps.snapshot.outputs.commit }}
       # GITHUB_TOKEN pushes do not trigger another push workflow. Deploy this build here.
       - uses: actions/upload-pages-artifact@v3
         with:

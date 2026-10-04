@@ -16,7 +16,8 @@ import { summaryFromRun } from '../lib/signalShadowSummary.mjs'
 import { generateConclusions, generateHomeBrief, FACTOR_TEMPLATES } from '../lib/signalConclusions.mjs'
 import { workingSignalInputHash } from '../lib/signalInputIdentity.mjs'
 import { makePublicSignal, validatePublicAgainstRun, validatePublicSchema } from '../lib/signalPublicProjection.mjs'
-import { validatePublicSignal, unavailableSignal } from '../../src/utils/signalPublicContract.js'
+import { validatePublicSignal, verifyPublicSignalBytes, unavailableSignal } from '../../src/utils/signalPublicContract.js'
+import { validatePublicMeaning, publishPublicIdentity, verifyPublicIdentity, publicSignalSha256 } from '../lib/signalPublicIntegrity.mjs'
 import { signalFactors } from '../../src/data/signalPresentation.js'
 import { generatePublicSignal, parsePublicArguments } from '../signal-public.mjs'
 let root, result, projection, acceptedFixture, server, Brief, Page, Card
@@ -169,4 +170,82 @@ test('public CLI accepts only explicit snapshot/code identity options', () => {
 })
 test('public CLI rejects malformed, duplicate and unsupported options', () => {
  for (const args of [['--private-archive'], ['--snapshot'], ['--snapshot', 'fake'], ['--snapshot', 'a'.repeat(40), '--snapshot', 'b'.repeat(40)]]) assert.throws(() => parsePublicArguments(args))
+})
+
+const encoded = value => Buffer.from(JSON.stringify(value) + '\n')
+const clientOptions = (bytes, status, snapshot) => ({ artifactSha256: publicSignalSha256(bytes), status, snapshotCommit: snapshot, inputHash: workingSignalInputHash(ROOT) })
+test('F1: complete bytes, status and accepted snapshot are independently bound to the build', async () => {
+ const snapshot = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim()
+ const current = makePublicSignal(result, snapshot), currentBytes = encoded(current), fallbackBytes = encoded(unavailableSignal())
+ const currentBuild = clientOptions(currentBytes, 'CURRENT', snapshot), unavailableBuild = clientOptions(fallbackBytes, 'UNAVAILABLE', snapshot)
+ assert.equal((await verifyPublicSignalBytes(currentBytes, currentBuild)).status, 'CURRENT')
+ assert.equal((await verifyPublicSignalBytes(fallbackBytes, unavailableBuild)).status, 'UNAVAILABLE')
+ assert.equal(current.inputSnapshotHash, projection.inputSnapshotHash, 'same economic inputs in both builds')
+ await assert.rejects(verifyPublicSignalBytes(currentBytes, unavailableBuild), /ARTIFACT_MISMATCH/)
+ await assert.rejects(verifyPublicSignalBytes(fallbackBytes, currentBuild), /ARTIFACT_MISMATCH/)
+ for (const mutate of [
+  p => p.inputSnapshot = '0123456789', p => p.status = 'UNAVAILABLE',
+  p => p.conclusions.international.en = 'The dollar is guaranteed to strengthen.',
+  p => p.factors[0].interpretation.zh = '任意解读',
+  p => p.factors[0].evidenceQuality = 'LOW', p => p.factors[2].sensitivity = 'NOT_SENSITIVE',
+ ]) { const changed = structuredClone(current); mutate(changed); await assert.rejects(verifyPublicSignalBytes(encoded(changed), currentBuild), /ARTIFACT_MISMATCH/) }
+ await assert.rejects(verifyPublicSignalBytes(Buffer.alloc(24001), currentBuild), /TOO_LARGE/)
+})
+test('F1/F2: final gate checks exact accepted snapshot, digest and canonical bilingual prose', () => {
+ const snapshot = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim()
+ const file = path.join(root, 'verified-current.json'), identityFile = path.join(root, 'verified-current.identity.json')
+ const current = makePublicSignal(result, snapshot)
+ fs.writeFileSync(file, encoded(current)); const identity = publishPublicIdentity({ repo: ROOT, file, identityFile, snapshotCommit: snapshot })
+ assert.equal(verifyPublicIdentity({ repo: ROOT, file, identityFile, expectedSnapshot: snapshot }).artifactSha256, identity.artifactSha256)
+ assert(validatePublicMeaning(current))
+ const forgedSnapshot = structuredClone(current); forgedSnapshot.inputSnapshot = '0123456789'
+ fs.writeFileSync(file, encoded(forgedSnapshot))
+ assert.throws(() => verifyPublicIdentity({ repo: ROOT, file, identityFile, expectedSnapshot: snapshot }))
+ assert.throws(() => publishPublicIdentity({ repo: ROOT, file, identityFile, snapshotCommit: snapshot }), /SNAPSHOT_COMMIT_MISMATCH/)
+ fs.writeFileSync(file, encoded(current))
+ for (const change of [
+  p => p.brief.domestic.en = 'Arbitrary home interpretation.',
+  p => p.brief.international.zh = '任意解读。',
+  p => p.conclusions.domestic.en = 'Arbitrary domestic conclusion.',
+  p => p.conclusions.international.en = 'The dollar is guaranteed to strengthen.',
+  p => p.conclusions.evidenceQualifier.zh = '任意证据质量说明。',
+  p => p.factors[0].interpretation.en = 'Arbitrary factor interpretation.',
+  p => p.factors[6].interpretation.zh = '任意因素解读。',
+  p => p.brief.domestic.en = 'Workflow run 12345 job restricted-shadow',
+ ]) { const changed = structuredClone(current); change(changed); assert.throws(() => validatePublicMeaning(changed), /SEMANTIC_MISMATCH/) }
+ const fabricated = structuredClone(current)
+ fabricated.conclusions.international.en = 'The dollar is guaranteed to strengthen.'
+ fs.writeFileSync(file, encoded(fabricated))
+ fs.writeFileSync(identityFile, JSON.stringify({ ...identity, artifactSha256: publicSignalSha256(encoded(fabricated)) }) + '\n')
+ assert.throws(() => verifyPublicIdentity({ repo: ROOT, file, identityFile, expectedSnapshot: snapshot }), /SEMANTIC_MISMATCH/, 'even a matching forged digest cannot authenticate unreviewed prose')
+ assert.throws(() => validatePublicSignal({ ...current, brief: { ...current.brief, domestic: { ...current.brief.domestic, en: 'C:\\private\\signal.json' } } }), /UNSAFE_TEXT/)
+ assert.throws(() => validatePublicSignal({ ...current, brief: { ...current.brief, domestic: { ...current.brief.domestic, en: 'D:\\secret\\run.json' } } }), /UNSAFE_TEXT/)
+})
+test('F3: cleanup EACCES cannot alter CURRENT or block an UNAVAILABLE fallback', async () => {
+ const snapshot = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim()
+ const leftovers = []
+ const cleanupTemporary = directory => { leftovers.push(directory); throw Object.assign(Error('private runner path'), { code: 'EACCES' }) }
+ const oldLog = console.log, messages = []
+ console.log = message => messages.push(message)
+ try {
+  const goodFile = path.join(root, 'cleanup-current.json')
+  const good = await generatePublicSignal({ file: goodFile, snapshot, acceptedFactory: () => acceptedFixture,
+   evaluateOptions: { clock: () => '2026-10-04T10:00:00.000Z' }, cleanupTemporary })
+  assert.equal(good.status, 'CURRENT'); assert.equal(JSON.parse(fs.readFileSync(goodFile)).status, 'CURRENT')
+  assert.equal(verifyPublicIdentity({ repo: ROOT, file: goodFile, identityFile: `${goodFile}.build-identity.json`, expectedSnapshot: snapshot }).status, 'CURRENT')
+  const badFile = path.join(root, 'cleanup-unavailable.json')
+  const failed = await generatePublicSignal({ file: badFile, snapshot, acceptedFactory: () => { throw Error('test-only evaluation failure') }, cleanupTemporary })
+  assert.deepEqual(failed, unavailableSignal()); assert.deepEqual(JSON.parse(fs.readFileSync(badFile)), unavailableSignal())
+  assert.equal(verifyPublicIdentity({ repo: ROOT, file: badFile, identityFile: `${badFile}.build-identity.json`, expectedSnapshot: snapshot }).status, 'UNAVAILABLE')
+  assert.equal(messages.filter(m => m.includes('cleanup incomplete')).length, 2)
+  assert(!messages.join(' ').includes('private runner path') && !messages.join(' ').includes(root))
+ } finally { console.log = oldLog; for (const directory of leftovers) fs.rmSync(directory, { recursive: true, force: true }) }
+})
+test('F4/F5: Home heading stays after first brief; policy evidence goes to actual FEDFUNDS chart', () => {
+ const html = render(React.createElement(Brief, { language: 'en', data: projection }))
+ assert(html.startsWith('<section') && html.includes('data-signal-brief'))
+ assert(!/<h[1-6]\b/.test(html), 'Home brief must not precede page H1 with subheadings')
+ const policy = signalFactors.find(f => f.id === 'policy-rate-direction')
+ assert.equal(policy.series, 'FEDFUNDS'); assert.equal(policy.researchLink, '#/drivers?topic=rates')
+ assert.equal(policy.sourceUrl, 'https://fred.stlouisfed.org/series/FEDFUNDS')
 })

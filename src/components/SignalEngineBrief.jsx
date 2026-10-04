@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { signalInputHash } from '../data/buildInfo.js'
+import { signalInputHash, signalPublicArtifactSha256, signalPublicExpectedStatus, signalPublicExpectedSnapshot } from '../data/buildInfo.js'
 import { signalFactors } from '../data/signalPresentation.js'
-import { validatePublicSignal, PUBLIC_SIGNAL_MAX_BYTES } from '../utils/signalPublicContract.js'
+import { verifyPublicSignalBytes } from '../utils/signalPublicContract.js'
 import { signalCopy } from '../i18n/signalEngine.js'
 let pending
 export function usePublicSignal() {
@@ -11,12 +11,10 @@ export function usePublicSignal() {
   pending ||= (async () => {
    const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 8000)
    try {
-    if (!signalInputHash) throw Error('BUILD_IDENTITY_REQUIRED')
-    const response = await fetch(`${import.meta.env.BASE_URL}data/signal-engine/current.json?snapshot=${signalInputHash}`, { signal: controller.signal, cache: 'no-store' })
+    if (!signalInputHash || !signalPublicArtifactSha256 || !signalPublicExpectedStatus || !signalPublicExpectedSnapshot) throw Error('BUILD_IDENTITY_REQUIRED')
+    const response = await fetch(`${import.meta.env.BASE_URL}data/signal-engine/current.json?artifact=${signalPublicArtifactSha256}`, { signal: controller.signal, cache: 'no-store' })
     if (!response.ok || !response.headers.get('content-type')?.includes('application/json')) throw Error('PUBLIC_SIGNAL_UNAVAILABLE')
-    const text = await response.text()
-    if (new TextEncoder().encode(text).length > PUBLIC_SIGNAL_MAX_BYTES) throw Error('PUBLIC_SIGNAL_TOO_LARGE')
-    const data = validatePublicSignal(JSON.parse(text), signalInputHash)
+    const data = await verifyPublicSignalBytes(await response.arrayBuffer(), { artifactSha256: signalPublicArtifactSha256, status: signalPublicExpectedStatus, snapshotCommit: signalPublicExpectedSnapshot, inputHash: signalInputHash })
     return data.status === 'CURRENT' ? data : null
    } catch { return null } finally { clearTimeout(timer) }
   })()
@@ -45,9 +43,9 @@ export function SignalMetadata({ data, language, compact = false }) {
 }
 export function SignalBriefView({ language, data, loading = false }) {
  const t = signalCopy[language]
- return <section className="signal-brief" aria-labelledby="signal-brief-title" data-signal-brief data-signal-status={loading ? 'LOADING' : data ? 'CURRENT' : 'UNAVAILABLE'}>
-  <h2 id="signal-brief-title" className="signal-eyebrow">{t.eyebrow}</h2>
-  {data ? <><div className="signal-brief-columns"><div><h3>{t.domestic}</h3><p>{data.brief.domestic[language]}</p></div><div><h3>{t.international}</h3><p>{data.brief.international[language]}</p></div></div><SignalMetadata data={data} language={language} compact /></> : <SignalAvailability loading={loading} language={language} />}
+  return <section className="signal-brief" aria-label={t.eyebrow} data-signal-brief data-signal-status={loading ? 'LOADING' : data ? 'CURRENT' : 'UNAVAILABLE'}>
+  <p className="signal-eyebrow">{t.eyebrow}</p>
+  {data ? <><div className="signal-brief-columns"><div><p className="signal-brief-label"><strong>{t.domestic}</strong></p><p>{data.brief.domestic[language]}</p></div><div><p className="signal-brief-label"><strong>{t.international}</strong></p><p>{data.brief.international[language]}</p></div></div><SignalMetadata data={data} language={language} compact /></> : <SignalAvailability loading={loading} language={language} />}
   <a className="signal-link" href="#/research/signal-engine">{t.full} <span aria-hidden="true">→</span></a>
  </section>
 }

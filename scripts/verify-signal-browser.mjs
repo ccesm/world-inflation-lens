@@ -29,6 +29,7 @@ try {
   await page.locator('[data-signal-status="CURRENT"]').waitFor()
   assert.equal(await page.locator('[data-page="home"] > :first-child').getAttribute('data-signal-brief'), 'true')
   assert.equal(await page.locator('[data-page="home"] > :nth-child(2)').getAttribute('class'), 'ia-hero')
+  assert.equal(await page.locator('main h1, main h2, main h3').first().evaluate(node => node.tagName), 'H1')
   assert(await page.locator('[data-signal-brief]').textContent().then(t => t.includes(projection.brief.domestic[language])))
   assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1))
   assert.equal(await page.locator('html').getAttribute('data-theme'), theme)
@@ -58,6 +59,9 @@ try {
  const fixtures = [
   ['UNAVAILABLE', JSON.stringify(unavailableSignal())], ['malformed', '{broken'], ['schema mismatch', JSON.stringify({ ...projection, schemaVersion: 'signal-public-shadow/1' })],
   ['restricted field', JSON.stringify({ ...projection, lineage: [] })], ['stale snapshot', JSON.stringify({ ...projection, inputSnapshotHash: '0'.repeat(64) })],
+  ['forged snapshot reference', JSON.stringify({ ...projection, inputSnapshot: '0123456789' })],
+  ['fabricated conclusion', JSON.stringify({ ...projection, conclusions: { ...projection.conclusions, international: { ...projection.conclusions.international, en: 'The dollar is guaranteed to strengthen.' } } })],
+  ['reordered factors', JSON.stringify({ ...projection, factors: [...projection.factors].reverse() })],
  ]
  for (const [name, body] of fixtures) {
   const { context, page } = await newPage(320, 'en', 'light')
@@ -70,7 +74,7 @@ try {
  const { context, page } = await newPage(390, 'zh', 'light')
  let release
  const pause = new Promise(resolve => { release = resolve })
- await page.route('**/data/signal-engine/current.json?*', async route => { await pause; await route.fulfill({ contentType: 'application/json', body: JSON.stringify(projection) }) })
+ await page.route('**/data/signal-engine/current.json?*', async route => { await pause; await route.fulfill({ contentType: 'application/json', body: fs.readFileSync('public/data/signal-engine/current.json') }) })
  await page.goto(url + '#/home'); await page.locator('[data-signal-status="LOADING"]').waitFor(); release(); await page.locator('[data-signal-status="CURRENT"]').waitFor()
  await page.goto(url + '#/research'); await page.locator('.research-map-caption a[href="#/research/signal-engine"]').click(); await page.locator('[data-signal-factor]').first().waitFor()
  report.fixtures.push({ name: 'loading then current', pass: true }, { name: 'Research Map link', pass: true }); await context.close()

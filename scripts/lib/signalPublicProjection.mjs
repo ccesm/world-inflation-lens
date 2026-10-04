@@ -10,7 +10,7 @@ export function validatePublicSchema(projection) {
   if (!validateSchema(projection)) throw Error('PUBLIC_SIGNAL_SCHEMA_FAILED')
   return true
 }
-export function makePublicSignal(result) {
+export function makePublicSignal(result, acceptedSnapshotCommit = result.projection?.inputSnapshotCommit) {
   // summaryFromRun accepts only a successfully validated, persisted interpretation.
   const summary = summaryFromRun(result)
   if (!['CURRENT', 'UNCHANGED'].includes(summary.status) || !result.projection) throw Error('VALIDATED_CURRENT_SIGNAL_REQUIRED')
@@ -30,7 +30,7 @@ export function makePublicSignal(result) {
   })
   ends.sort()
   const projection = {
-    schemaVersion: 'signal-public-summary/1', status: 'CURRENT', inputSnapshot: result.projection.inputSnapshotCommit.slice(0,10), inputSnapshotHash: result.projection.inputSnapshotHash,
+    schemaVersion: 'signal-public-summary/1', status: 'CURRENT', inputSnapshot: acceptedSnapshotCommit.slice(0,10), inputSnapshotHash: result.projection.inputSnapshotHash,
     ruleVersion: result.projection.ruleVersion, engineVersion: result.projection.engineVersion,
     evidenceThrough: { earliest: ends[0] || null, latest: ends.at(-1) || null }, factorCount: 7, validFactorCount: summary.factorsValid,
     evidenceQuality: summary.evidenceQualitySummary, thresholdSensitiveFactorIds: assessments.filter(f => f.sensitivity === 'THRESHOLD_SENSITIVE').map(f => f.factorId),
@@ -40,8 +40,8 @@ export function makePublicSignal(result) {
   validatePublicSchema(projection)
   return projection
 }
-export function validatePublicAgainstRun(projection, result) {
+export function validatePublicAgainstRun(projection, result, acceptedSnapshotCommit = result.projection?.inputSnapshotCommit) {
   validatePublicSchema(projection)
-  if (JSON.stringify(projection) !== JSON.stringify(makePublicSignal(result))) throw Error('PUBLIC_SIGNAL_SEMANTIC_MISMATCH')
+  if (JSON.stringify(projection) !== JSON.stringify(makePublicSignal(result, acceptedSnapshotCommit))) throw Error('PUBLIC_SIGNAL_SEMANTIC_MISMATCH')
   return true
 }

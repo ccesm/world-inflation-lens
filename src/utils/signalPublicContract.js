@@ -7,7 +7,7 @@ function keys(value, names) {
   if (!value || typeof value !== 'object' || Array.isArray(value) || !same(Object.keys(value).sort(), [...names].sort())) throw Error('PUBLIC_SIGNAL_ALLOWLIST')
 }
 const safeText = value => {
-  if (typeof value !== 'string' || !value.length || value.length > 5000 || /[<>\u0000-\u001f]|\/Users\/|\/home\/|\/tmp\/|(?:token|secret|password)\s*[=:]|[\w.+-]+@[\w.-]+\.[a-z]{2,}/i.test(value)) throw Error('PUBLIC_SIGNAL_UNSAFE_TEXT')
+  if (typeof value !== 'string' || !value.length || value.length > 5000 || /[<>\u0000-\u001f]|\/Users\/|\/home\/|\/tmp\/|[a-z]:\\|\\\\[\w.-]+\\|(?:token|secret|password)\s*[=:]|[\w.+-]+@[\w.-]+\.[a-z]{2,}/i.test(value)) throw Error('PUBLIC_SIGNAL_UNSAFE_TEXT')
 }
 function pair(value) { keys(value, ['zh', 'en']); safeText(value.zh); safeText(value.en) }
 function periodLabel(value, frequency) {
@@ -19,14 +19,14 @@ export function unavailableSignal() {
     ruleVersion: 'signal-engine-v0.1-draft.1', engineVersion: 'offline-prototype/0.1.2', evidenceThrough: null,
     factorCount: 7, validFactorCount: null, evidenceQuality: null, thresholdSensitiveFactorIds: [], brief: null, conclusions: null, factors: [] }
 }
-export function validatePublicSignal(value, expectedInputHash = null) {
+export function validatePublicSignal(value, expectedInputHash = null, expectedSnapshot = null) {
   keys(value, topKeys)
   if (new TextEncoder().encode(JSON.stringify(value)).length > PUBLIC_SIGNAL_MAX_BYTES || value.schemaVersion !== PUBLIC_SIGNAL_SCHEMA || value.ruleVersion !== 'signal-engine-v0.1-draft.1' || value.engineVersion !== 'offline-prototype/0.1.2' || value.factorCount !== 7) throw Error('PUBLIC_SIGNAL_VERSION')
   if (value.status === 'UNAVAILABLE') {
     if (!same(value, unavailableSignal())) throw Error('PUBLIC_SIGNAL_FALLBACK')
     return value
   }
-  if (value.status !== 'CURRENT' || !/^[a-f0-9]{10}$/.test(value.inputSnapshot || '') || !/^[a-f0-9]{64}$/.test(value.inputSnapshotHash || '') || expectedInputHash && value.inputSnapshotHash !== expectedInputHash) throw Error('PUBLIC_SIGNAL_SNAPSHOT')
+  if (value.status !== 'CURRENT' || !/^[a-f0-9]{10}$/.test(value.inputSnapshot || '') || !/^[a-f0-9]{64}$/.test(value.inputSnapshotHash || '') || expectedInputHash && value.inputSnapshotHash !== expectedInputHash || expectedSnapshot && value.inputSnapshot !== expectedSnapshot.slice(0, 10)) throw Error('PUBLIC_SIGNAL_SNAPSHOT')
   if (!Array.isArray(value.factors) || value.factors.length !== 7) throw Error('PUBLIC_SIGNAL_COVERAGE')
   const counts = Object.fromEntries(signalQuality.map(q => [q, 0]))
   const sensitive = [], ends = []
@@ -57,5 +57,18 @@ export function validatePublicSignal(value, expectedInputHash = null) {
   if (value.evidenceThrough.earliest !== (ends[0] || null) || value.evidenceThrough.latest !== (ends.at(-1) || null)) throw Error('PUBLIC_SIGNAL_DATE_RANGE')
   keys(value.brief, ['domestic', 'international']); pair(value.brief.domestic); pair(value.brief.international)
   keys(value.conclusions, ['domestic', 'international', 'evidenceQualifier']); Object.values(value.conclusions).forEach(pair)
+  return value
+}
+
+// The expected digest is compiled into the JS build through a separate,
+// validated build record. Check raw bytes before parsing or rendering.
+export async function verifyPublicSignalBytes(bytes, { artifactSha256, status, snapshotCommit, inputHash }) {
+  const raw = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes)
+  if (raw.byteLength > PUBLIC_SIGNAL_MAX_BYTES) throw Error('PUBLIC_SIGNAL_TOO_LARGE')
+  if (!/^[a-f0-9]{64}$/.test(artifactSha256 || '') || !/^[a-f0-9]{40}$/.test(snapshotCommit || '') || !['CURRENT', 'UNAVAILABLE'].includes(status) || !globalThis.crypto?.subtle) throw Error('BUILD_IDENTITY_REQUIRED')
+  const actual = Array.from(new Uint8Array(await globalThis.crypto.subtle.digest('SHA-256', raw)), byte => byte.toString(16).padStart(2, '0')).join('')
+  if (actual !== artifactSha256) throw Error('PUBLIC_SIGNAL_ARTIFACT_MISMATCH')
+  const value = validatePublicSignal(JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(raw)), inputHash, snapshotCommit)
+  if (value.status !== status) throw Error('PUBLIC_SIGNAL_STATUS_MISMATCH')
   return value
 }

@@ -97,7 +97,7 @@ export const signalFactors = [
       "TRANSITION",
       "INSUFFICIENT_DATA"
     ],
-    "researchLink": "#/monitor?group=monetary",
+    "researchLink": "#/drivers?topic=rates",
     "limitation": {
       "zh": "月均有效利率不是目标区间，也不是货币政策松紧的完整度量。",
       "en": "The monthly effective rate is not the target range or a complete measure of monetary restraint."
