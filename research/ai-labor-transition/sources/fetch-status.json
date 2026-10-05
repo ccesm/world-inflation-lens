@@ -1,0 +1,30 @@
+{
+  "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+  "pipelineRunAt": "2026-10-05T22:41:53Z",
+  "providers": {
+    "btos": {
+      "attemptAt": "2026-10-05T22:41:53Z",
+      "failure": null,
+      "manifestHash": "eb44cb456a1787c04d093ea98bdfefc97e54c642abbdefe28a6f9349ec43ec77",
+      "status": "ACCEPTED"
+    },
+    "ces": {
+      "attemptAt": "2026-10-05T22:41:53Z",
+      "failure": null,
+      "manifestHash": "7b277a0dec4edfdbd83549fb8dd140c473d89c0dc388b9670ce6ad9a557533af",
+      "status": "ACCEPTED"
+    },
+    "cps": {
+      "attemptAt": "2026-10-05T22:41:53Z",
+      "failure": null,
+      "manifestHash": "a5acc809506486eb5da5233c666de2d1a0023ca837968caf2038222731d63533",
+      "status": "ACCEPTED"
+    },
+    "jolts": {
+      "attemptAt": "2026-10-05T22:41:53Z",
+      "failure": null,
+      "manifestHash": "46d942cf1901d29aa28b3823b80799eaf39e3a873fa0bfbf261bf360997deca6",
+      "status": "ACCEPTED"
+    }
+  }
+}

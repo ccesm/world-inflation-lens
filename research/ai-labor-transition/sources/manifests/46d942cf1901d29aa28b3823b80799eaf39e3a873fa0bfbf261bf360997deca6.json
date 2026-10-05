@@ -1,0 +1,52 @@
+{
+  "endYear": 2026,
+  "files": [
+    {
+      "rawSha256": "1803ae8d7a4d6e5078a241952300c70c76703d010465966e5edd9b586a25b906",
+      "request": {
+        "body": {
+          "endyear": "2024",
+          "seriesid": [
+            "JTS000000000000000HIL",
+            "JTS000000000000000HIR",
+            "JTS000000000000000JOL",
+            "JTS000000000000000JOR",
+            "JTS000000000000000LDL",
+            "JTS000000000000000LDR",
+            "JTS000000000000000QUL",
+            "JTS000000000000000QUR"
+          ],
+          "startyear": "2015"
+        },
+        "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+      },
+      "role": "jolts"
+    },
+    {
+      "rawSha256": "b0c1fdef81b8583224a941266d0edcdc2317925c15e20347b4f8a4b599a6fc3e",
+      "request": {
+        "body": {
+          "endyear": "2026",
+          "seriesid": [
+            "JTS000000000000000HIL",
+            "JTS000000000000000HIR",
+            "JTS000000000000000JOL",
+            "JTS000000000000000JOR",
+            "JTS000000000000000LDL",
+            "JTS000000000000000LDR",
+            "JTS000000000000000QUL",
+            "JTS000000000000000QUR"
+          ],
+          "startyear": "2025"
+        },
+        "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+      },
+      "role": "jolts"
+    }
+  ],
+  "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+  "provider": "jolts",
+  "retrievedAt": "2026-10-05T22:39:00Z",
+  "schemaVersion": "ai-labor-observed-v1",
+  "startPeriod": "2015-01"
+}

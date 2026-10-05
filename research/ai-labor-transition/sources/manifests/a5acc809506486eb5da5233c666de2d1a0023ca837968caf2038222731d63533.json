@@ -1,0 +1,60 @@
+{
+  "endYear": 2026,
+  "files": [
+    {
+      "rawSha256": "5a51a89744200d0894030899bed9072bcd1ec2f8d9825a442225f3bd231c348c",
+      "request": {
+        "body": {
+          "endyear": "2024",
+          "seriesid": [
+            "LNS14000000",
+            "LNS12300000",
+            "LNS11300000",
+            "LNS14000036",
+            "LNS12300036",
+            "LNS11300036",
+            "LNS14000089",
+            "LNS12300089",
+            "LNS11300089",
+            "LNS14000060",
+            "LNS12300060",
+            "LNS11300060"
+          ],
+          "startyear": "2015"
+        },
+        "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+      },
+      "role": "cps"
+    },
+    {
+      "rawSha256": "3168cdc53f934b48e1d3454b4efcde85e3c96c7ada9594d5b7fd26dac57ec69f",
+      "request": {
+        "body": {
+          "endyear": "2026",
+          "seriesid": [
+            "LNS14000000",
+            "LNS12300000",
+            "LNS11300000",
+            "LNS14000036",
+            "LNS12300036",
+            "LNS11300036",
+            "LNS14000089",
+            "LNS12300089",
+            "LNS11300089",
+            "LNS14000060",
+            "LNS12300060",
+            "LNS11300060"
+          ],
+          "startyear": "2025"
+        },
+        "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+      },
+      "role": "cps"
+    }
+  ],
+  "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+  "provider": "cps",
+  "retrievedAt": "2026-10-05T22:38:57Z",
+  "schemaVersion": "ai-labor-observed-v1",
+  "startPeriod": "2015-01"
+}

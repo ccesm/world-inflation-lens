@@ -1,0 +1,143 @@
+{
+  "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+  "pipelineRunAt": "2026-10-05T22:41:53Z",
+  "providers": {
+    "btos": {
+      "coverageNotes": [
+        "Original and broadened AI questions are separate histories",
+        "No collection for 202521–202523; no synthetic backfill",
+        "Original archive has no publication dates"
+      ],
+      "economicContentHash": "3f3e125e449217e6caf5a598b58cb4b04e8c6303339e4b4d60a7d0ac663582e5",
+      "failure": null,
+      "freshnessPolicy": "Research monitoring allowance; not a publisher release calendar",
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "lastSuccessfulFetch": "2026-10-05T22:39:02Z",
+      "manifestHash": "eb44cb456a1787c04d093ea98bdfefc97e54c642abbdefe28a6f9349ec43ec77",
+      "maxObservationAgeDays": 60,
+      "missingPeriods": {},
+      "observationThrough": "2026-09-06",
+      "officialSourcePage": "https://www.census.gov/hfp/btos/data_downloads",
+      "provider": "btos",
+      "publisher": "U.S. Census Bureau",
+      "releaseLag": "Biweekly; use workbook publication and collection/reference dates",
+      "revisionFlag": "revisable_current_vintage",
+      "schemaValid": true,
+      "snapshotHash": "9287cb03f0b1a5e51e7d3d589d589afc2c6b42333d09c4c9b4147d243440c92b",
+      "sourceChanged": false,
+      "sourceReleaseDate": "2026-09-24",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "ces": {
+      "coverageNotes": [],
+      "economicContentHash": "89234d559e372e3975aba85513d8342d26a1ea76974bcdac28996cdc40fe16d1",
+      "failure": null,
+      "freshnessPolicy": "Research monitoring allowance; not a publisher release calendar",
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "lastSuccessfulFetch": "2026-10-05T22:38:58Z",
+      "manifestHash": "7b277a0dec4edfdbd83549fb8dd140c473d89c0dc388b9670ce6ad9a557533af",
+      "maxObservationAgeDays": 75,
+      "missingPeriods": {},
+      "observationThrough": "2026-09-30",
+      "officialSourcePage": "https://www.bls.gov/ces/",
+      "provider": "ces",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "releaseLag": "Monthly, normally early following month; API omits release dates",
+      "revisionFlag": "revisable_current_vintage",
+      "schemaValid": true,
+      "snapshotHash": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+      "sourceChanged": false,
+      "sourceReleaseDate": null,
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "cps": {
+      "coverageNotes": [
+        "Published subgroup cell sample counts/standard errors are not supplied by API",
+        "October 2025 missing values remain null",
+        "Age is not job seniority"
+      ],
+      "economicContentHash": "1398faf60299b2abde23b135b22ca002c75b2a22d44da2a7c1e1775bee72b41d",
+      "failure": null,
+      "freshnessPolicy": "Research monitoring allowance; not a publisher release calendar",
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "lastSuccessfulFetch": "2026-10-05T22:38:57Z",
+      "manifestHash": "a5acc809506486eb5da5233c666de2d1a0023ca837968caf2038222731d63533",
+      "maxObservationAgeDays": 75,
+      "missingPeriods": {
+        "LNS11300000": [
+          "2025-10"
+        ],
+        "LNS11300036": [
+          "2025-10"
+        ],
+        "LNS11300060": [
+          "2025-10"
+        ],
+        "LNS11300089": [
+          "2025-10"
+        ],
+        "LNS12300000": [
+          "2025-10"
+        ],
+        "LNS12300036": [
+          "2025-10"
+        ],
+        "LNS12300060": [
+          "2025-10"
+        ],
+        "LNS12300089": [
+          "2025-10"
+        ],
+        "LNS14000000": [
+          "2025-10"
+        ],
+        "LNS14000036": [
+          "2025-10"
+        ],
+        "LNS14000060": [
+          "2025-10"
+        ],
+        "LNS14000089": [
+          "2025-10"
+        ]
+      },
+      "observationThrough": "2026-09-30",
+      "officialSourcePage": "https://www.bls.gov/cps/data.htm",
+      "provider": "cps",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "releaseLag": "Monthly, normally early following month; API omits release dates",
+      "revisionFlag": "revisable_current_vintage",
+      "schemaValid": true,
+      "snapshotHash": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+      "sourceChanged": false,
+      "sourceReleaseDate": null,
+      "status": "PARTIAL",
+      "usingLastValid": false
+    },
+    "jolts": {
+      "coverageNotes": [],
+      "economicContentHash": "c0577ee6965719d05325eae4bb9e82bad98e3b590253c5ef0ed3f993bc115d74",
+      "failure": null,
+      "freshnessPolicy": "Research monitoring allowance; not a publisher release calendar",
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "lastSuccessfulFetch": "2026-10-05T22:39:00Z",
+      "manifestHash": "46d942cf1901d29aa28b3823b80799eaf39e3a873fa0bfbf261bf360997deca6",
+      "maxObservationAgeDays": 110,
+      "missingPeriods": {},
+      "observationThrough": "2026-08-31",
+      "officialSourcePage": "https://www.bls.gov/jlt/",
+      "provider": "jolts",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "releaseLag": "Monthly, generally several weeks after reference month; API omits release dates",
+      "revisionFlag": "revisable_current_vintage",
+      "schemaValid": true,
+      "snapshotHash": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+      "sourceChanged": false,
+      "sourceReleaseDate": null,
+      "status": "CURRENT",
+      "usingLastValid": false
+    }
+  }
+}

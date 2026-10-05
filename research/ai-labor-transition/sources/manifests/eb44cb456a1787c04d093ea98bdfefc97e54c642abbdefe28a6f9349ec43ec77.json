@@ -1,0 +1,26 @@
+{
+  "endYear": 2026,
+  "files": [
+    {
+      "rawSha256": "6ae463482daf861f506734dd2f1f7e9dd60163b67bd935a19b5375911e785380",
+      "request": {
+        "role": "current",
+        "url": "https://www.census.gov/hfp/btos/downloads/National.xlsx"
+      },
+      "role": "current"
+    },
+    {
+      "rawSha256": "e058a098af64427b0cf0c1455435023aeb9a84142a55175d322687e61a3da3ce",
+      "request": {
+        "role": "original",
+        "url": "https://www.census.gov/hfp/btos/downloads/AI%20Core%20Questions.xlsx"
+      },
+      "role": "original"
+    }
+  ],
+  "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+  "provider": "btos",
+  "retrievedAt": "2026-10-05T22:39:02Z",
+  "schemaVersion": "ai-labor-observed-v1",
+  "startPeriod": null
+}

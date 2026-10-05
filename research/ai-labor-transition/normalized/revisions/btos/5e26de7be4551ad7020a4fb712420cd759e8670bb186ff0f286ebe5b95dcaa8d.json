@@ -1,0 +1,3656 @@
+{
+  "changes": [
+    {
+      "after": {
+        "collectionEnd": "2025-11-30",
+        "collectionStart": "2025-11-17",
+        "footnotes": [],
+        "period": "202524",
+        "periodEnd": "2025-11-16",
+        "periodStart": "2025-11-03",
+        "releaseDate": "2025-12-04",
+        "responseShares": {
+          "do_not_know": 11.1,
+          "no": 71.6,
+          "yes": 17.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 17.3
+      },
+      "before": null,
+      "period": "202524",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-12-14",
+        "collectionStart": "2025-12-01",
+        "footnotes": [],
+        "period": "202525",
+        "periodEnd": "2025-11-30",
+        "periodStart": "2025-11-17",
+        "releaseDate": "2025-12-18",
+        "responseShares": {
+          "do_not_know": 10.8,
+          "no": 72.0,
+          "yes": 17.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.23,
+        "status": "official",
+        "value": 17.2
+      },
+      "before": null,
+      "period": "202525",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-12-28",
+        "collectionStart": "2025-12-15",
+        "footnotes": [],
+        "period": "202526",
+        "periodEnd": "2025-12-14",
+        "periodStart": "2025-12-01",
+        "releaseDate": "2025-12-31",
+        "responseShares": {
+          "do_not_know": 10.4,
+          "no": 71.8,
+          "yes": 17.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.47,
+        "status": "official",
+        "value": 17.8
+      },
+      "before": null,
+      "period": "202526",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-01-11",
+        "collectionStart": "2025-12-29",
+        "footnotes": [],
+        "period": "202601",
+        "periodEnd": "2025-12-28",
+        "periodStart": "2025-12-15",
+        "releaseDate": "2026-01-15",
+        "responseShares": {
+          "do_not_know": 11.2,
+          "no": 71.1,
+          "yes": 17.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.3,
+        "status": "official",
+        "value": 17.7
+      },
+      "before": null,
+      "period": "202601",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-01-25",
+        "collectionStart": "2026-01-12",
+        "footnotes": [],
+        "period": "202602",
+        "periodEnd": "2026-01-11",
+        "periodStart": "2025-12-29",
+        "releaseDate": "2026-01-29",
+        "responseShares": {
+          "do_not_know": 10.4,
+          "no": 71.4,
+          "yes": 18.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.24,
+        "status": "official",
+        "value": 18.2
+      },
+      "before": null,
+      "period": "202602",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-02-08",
+        "collectionStart": "2026-01-26",
+        "footnotes": [],
+        "period": "202603",
+        "periodEnd": "2026-01-25",
+        "periodStart": "2026-01-12",
+        "releaseDate": "2026-02-12",
+        "responseShares": {
+          "do_not_know": 11.0,
+          "no": 70.1,
+          "yes": 18.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.39,
+        "status": "official",
+        "value": 18.9
+      },
+      "before": null,
+      "period": "202603",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-02-22",
+        "collectionStart": "2026-02-09",
+        "footnotes": [],
+        "period": "202604",
+        "periodEnd": "2026-02-08",
+        "periodStart": "2026-01-26",
+        "releaseDate": "2026-02-26",
+        "responseShares": {
+          "do_not_know": 9.4,
+          "no": 73.1,
+          "yes": 17.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.4,
+        "status": "official",
+        "value": 17.5
+      },
+      "before": null,
+      "period": "202604",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-03-08",
+        "collectionStart": "2026-02-23",
+        "footnotes": [],
+        "period": "202605",
+        "periodEnd": "2026-02-22",
+        "periodStart": "2026-02-09",
+        "releaseDate": "2026-03-12",
+        "responseShares": {
+          "do_not_know": 9.4,
+          "no": 72.4,
+          "yes": 18.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.32,
+        "status": "official",
+        "value": 18.2
+      },
+      "before": null,
+      "period": "202605",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-03-22",
+        "collectionStart": "2026-03-09",
+        "footnotes": [],
+        "period": "202606",
+        "periodEnd": "2026-03-08",
+        "periodStart": "2026-02-23",
+        "releaseDate": "2026-03-26",
+        "responseShares": {
+          "do_not_know": 9.1,
+          "no": 72.0,
+          "yes": 18.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.32,
+        "status": "official",
+        "value": 18.9
+      },
+      "before": null,
+      "period": "202606",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-04-05",
+        "collectionStart": "2026-03-23",
+        "footnotes": [],
+        "period": "202607",
+        "periodEnd": "2026-03-22",
+        "periodStart": "2026-03-09",
+        "releaseDate": "2026-04-09",
+        "responseShares": {
+          "do_not_know": 9.1,
+          "no": 71.8,
+          "yes": 19.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.42,
+        "status": "official",
+        "value": 19.1
+      },
+      "before": null,
+      "period": "202607",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-04-19",
+        "collectionStart": "2026-04-06",
+        "footnotes": [],
+        "period": "202608",
+        "periodEnd": "2026-04-05",
+        "periodStart": "2026-03-23",
+        "releaseDate": "2026-04-23",
+        "responseShares": {
+          "do_not_know": 9.3,
+          "no": 70.9,
+          "yes": 19.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.29,
+        "status": "official",
+        "value": 19.8
+      },
+      "before": null,
+      "period": "202608",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-05-03",
+        "collectionStart": "2026-04-20",
+        "footnotes": [],
+        "period": "202609",
+        "periodEnd": "2026-04-19",
+        "periodStart": "2026-04-06",
+        "releaseDate": "2026-05-07",
+        "responseShares": {
+          "do_not_know": 9.1,
+          "no": 71.1,
+          "yes": 19.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.24,
+        "status": "official",
+        "value": 19.8
+      },
+      "before": null,
+      "period": "202609",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-05-17",
+        "collectionStart": "2026-05-04",
+        "footnotes": [],
+        "period": "202610",
+        "periodEnd": "2026-05-03",
+        "periodStart": "2026-04-20",
+        "releaseDate": "2026-05-21",
+        "responseShares": {
+          "do_not_know": 10.2,
+          "no": 70.3,
+          "yes": 19.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.24,
+        "status": "official",
+        "value": 19.5
+      },
+      "before": null,
+      "period": "202610",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-05-31",
+        "collectionStart": "2026-05-18",
+        "footnotes": [],
+        "period": "202611",
+        "periodEnd": "2026-05-17",
+        "periodStart": "2026-05-04",
+        "releaseDate": "2026-06-04",
+        "responseShares": {
+          "do_not_know": 9.9,
+          "no": 69.6,
+          "yes": 20.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.29,
+        "status": "official",
+        "value": 20.6
+      },
+      "before": null,
+      "period": "202611",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-06-14",
+        "collectionStart": "2026-06-01",
+        "footnotes": [],
+        "period": "202612",
+        "periodEnd": "2026-05-31",
+        "periodStart": "2026-05-18",
+        "releaseDate": "2026-06-18",
+        "responseShares": {
+          "do_not_know": 10.0,
+          "no": 69.4,
+          "yes": 20.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.27,
+        "status": "official",
+        "value": 20.6
+      },
+      "before": null,
+      "period": "202612",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-06-28",
+        "collectionStart": "2026-06-15",
+        "footnotes": [],
+        "period": "202613",
+        "periodEnd": "2026-06-14",
+        "periodStart": "2026-06-01",
+        "releaseDate": "2026-07-02",
+        "responseShares": {
+          "do_not_know": 10.7,
+          "no": 68.7,
+          "yes": 20.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.39,
+        "status": "official",
+        "value": 20.6
+      },
+      "before": null,
+      "period": "202613",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-07-12",
+        "collectionStart": "2026-06-29",
+        "footnotes": [],
+        "period": "202614",
+        "periodEnd": "2026-06-28",
+        "periodStart": "2026-06-15",
+        "releaseDate": "2026-07-16",
+        "responseShares": {
+          "do_not_know": 10.9,
+          "no": 67.5,
+          "yes": 21.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.31,
+        "status": "official",
+        "value": 21.7
+      },
+      "before": null,
+      "period": "202614",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-07-26",
+        "collectionStart": "2026-07-13",
+        "footnotes": [],
+        "period": "202615",
+        "periodEnd": "2026-07-12",
+        "periodStart": "2026-06-29",
+        "releaseDate": "2026-07-30",
+        "responseShares": {
+          "do_not_know": 10.3,
+          "no": 68.1,
+          "yes": 21.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.42,
+        "status": "official",
+        "value": 21.5
+      },
+      "before": null,
+      "period": "202615",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-08-09",
+        "collectionStart": "2026-07-27",
+        "footnotes": [],
+        "period": "202616",
+        "periodEnd": "2026-07-26",
+        "periodStart": "2026-07-13",
+        "releaseDate": "2026-08-13",
+        "responseShares": {
+          "do_not_know": 9.6,
+          "no": 68.6,
+          "yes": 21.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.33,
+        "status": "official",
+        "value": 21.8
+      },
+      "before": null,
+      "period": "202616",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-08-23",
+        "collectionStart": "2026-08-10",
+        "footnotes": [],
+        "period": "202617",
+        "periodEnd": "2026-08-09",
+        "periodStart": "2026-07-27",
+        "releaseDate": "2026-08-27",
+        "responseShares": {
+          "do_not_know": 9.4,
+          "no": 68.2,
+          "yes": 22.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.36,
+        "status": "official",
+        "value": 22.4
+      },
+      "before": null,
+      "period": "202617",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-09-06",
+        "collectionStart": "2026-08-24",
+        "footnotes": [],
+        "period": "202618",
+        "periodEnd": "2026-08-23",
+        "periodStart": "2026-08-10",
+        "releaseDate": "2026-09-10",
+        "responseShares": {
+          "do_not_know": 9.6,
+          "no": 67.2,
+          "yes": 23.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.28,
+        "status": "official",
+        "value": 23.2
+      },
+      "before": null,
+      "period": "202618",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-09-20",
+        "collectionStart": "2026-09-07",
+        "footnotes": [],
+        "period": "202619",
+        "periodEnd": "2026-09-06",
+        "periodStart": "2026-08-24",
+        "releaseDate": "2026-09-24",
+        "responseShares": {
+          "do_not_know": 9.7,
+          "no": 66.5,
+          "yes": 23.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.26,
+        "status": "official",
+        "value": 23.8
+      },
+      "before": null,
+      "period": "202619",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-11-30",
+        "collectionStart": "2025-11-17",
+        "footnotes": [],
+        "period": "202524",
+        "periodEnd": "2025-11-16",
+        "periodStart": "2025-11-03",
+        "releaseDate": "2025-12-04",
+        "responseShares": {
+          "do_not_know": 22.2,
+          "no": 56.8,
+          "yes": 21.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.26,
+        "status": "official",
+        "value": 21.1
+      },
+      "before": null,
+      "period": "202524",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-12-14",
+        "collectionStart": "2025-12-01",
+        "footnotes": [],
+        "period": "202525",
+        "periodEnd": "2025-11-30",
+        "periodStart": "2025-11-17",
+        "releaseDate": "2025-12-18",
+        "responseShares": {
+          "do_not_know": 21.9,
+          "no": 57.2,
+          "yes": 20.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.36,
+        "status": "official",
+        "value": 20.9
+      },
+      "before": null,
+      "period": "202525",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-12-28",
+        "collectionStart": "2025-12-15",
+        "footnotes": [],
+        "period": "202526",
+        "periodEnd": "2025-12-14",
+        "periodStart": "2025-12-01",
+        "releaseDate": "2025-12-31",
+        "responseShares": {
+          "do_not_know": 22.0,
+          "no": 56.7,
+          "yes": 21.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.32,
+        "status": "official",
+        "value": 21.3
+      },
+      "before": null,
+      "period": "202526",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-01-11",
+        "collectionStart": "2025-12-29",
+        "footnotes": [],
+        "period": "202601",
+        "periodEnd": "2025-12-28",
+        "periodStart": "2025-12-15",
+        "releaseDate": "2026-01-15",
+        "responseShares": {
+          "do_not_know": 22.6,
+          "no": 54.9,
+          "yes": 22.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.34,
+        "status": "official",
+        "value": 22.4
+      },
+      "before": null,
+      "period": "202601",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-01-25",
+        "collectionStart": "2026-01-12",
+        "footnotes": [],
+        "period": "202602",
+        "periodEnd": "2026-01-11",
+        "periodStart": "2025-12-29",
+        "releaseDate": "2026-01-29",
+        "responseShares": {
+          "do_not_know": 22.3,
+          "no": 55.6,
+          "yes": 22.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.22,
+        "status": "official",
+        "value": 22.1
+      },
+      "before": null,
+      "period": "202602",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-02-08",
+        "collectionStart": "2026-01-26",
+        "footnotes": [],
+        "period": "202603",
+        "periodEnd": "2026-01-25",
+        "periodStart": "2026-01-12",
+        "releaseDate": "2026-02-12",
+        "responseShares": {
+          "do_not_know": 22.0,
+          "no": 55.9,
+          "yes": 22.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.36,
+        "status": "official",
+        "value": 22.1
+      },
+      "before": null,
+      "period": "202603",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-02-22",
+        "collectionStart": "2026-02-09",
+        "footnotes": [],
+        "period": "202604",
+        "periodEnd": "2026-02-08",
+        "periodStart": "2026-01-26",
+        "releaseDate": "2026-02-26",
+        "responseShares": {
+          "do_not_know": 26.4,
+          "no": 52.7,
+          "yes": 21.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.33,
+        "status": "official",
+        "value": 21.0
+      },
+      "before": null,
+      "period": "202604",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-03-08",
+        "collectionStart": "2026-02-23",
+        "footnotes": [],
+        "period": "202605",
+        "periodEnd": "2026-02-22",
+        "periodStart": "2026-02-09",
+        "releaseDate": "2026-03-12",
+        "responseShares": {
+          "do_not_know": 25.8,
+          "no": 52.4,
+          "yes": 21.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.22,
+        "status": "official",
+        "value": 21.8
+      },
+      "before": null,
+      "period": "202605",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-03-22",
+        "collectionStart": "2026-03-09",
+        "footnotes": [],
+        "period": "202606",
+        "periodEnd": "2026-03-08",
+        "periodStart": "2026-02-23",
+        "releaseDate": "2026-03-26",
+        "responseShares": {
+          "do_not_know": 25.5,
+          "no": 52.2,
+          "yes": 22.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.31,
+        "status": "official",
+        "value": 22.3
+      },
+      "before": null,
+      "period": "202606",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-04-05",
+        "collectionStart": "2026-03-23",
+        "footnotes": [],
+        "period": "202607",
+        "periodEnd": "2026-03-22",
+        "periodStart": "2026-03-09",
+        "releaseDate": "2026-04-09",
+        "responseShares": {
+          "do_not_know": 26.1,
+          "no": 51.4,
+          "yes": 22.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.32,
+        "status": "official",
+        "value": 22.5
+      },
+      "before": null,
+      "period": "202607",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-04-19",
+        "collectionStart": "2026-04-06",
+        "footnotes": [],
+        "period": "202608",
+        "periodEnd": "2026-04-05",
+        "periodStart": "2026-03-23",
+        "releaseDate": "2026-04-23",
+        "responseShares": {
+          "do_not_know": 25.5,
+          "no": 51.5,
+          "yes": 23.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.26,
+        "status": "official",
+        "value": 23.0
+      },
+      "before": null,
+      "period": "202608",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-05-03",
+        "collectionStart": "2026-04-20",
+        "footnotes": [],
+        "period": "202609",
+        "periodEnd": "2026-04-19",
+        "periodStart": "2026-04-06",
+        "releaseDate": "2026-05-07",
+        "responseShares": {
+          "do_not_know": 25.3,
+          "no": 52.0,
+          "yes": 22.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.28,
+        "status": "official",
+        "value": 22.8
+      },
+      "before": null,
+      "period": "202609",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-05-17",
+        "collectionStart": "2026-05-04",
+        "footnotes": [],
+        "period": "202610",
+        "periodEnd": "2026-05-03",
+        "periodStart": "2026-04-20",
+        "releaseDate": "2026-05-21",
+        "responseShares": {
+          "do_not_know": 25.2,
+          "no": 52.1,
+          "yes": 22.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.34,
+        "status": "official",
+        "value": 22.7
+      },
+      "before": null,
+      "period": "202610",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-05-31",
+        "collectionStart": "2026-05-18",
+        "footnotes": [],
+        "period": "202611",
+        "periodEnd": "2026-05-17",
+        "periodStart": "2026-05-04",
+        "releaseDate": "2026-06-04",
+        "responseShares": {
+          "do_not_know": 25.3,
+          "no": 51.0,
+          "yes": 23.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.35,
+        "status": "official",
+        "value": 23.7
+      },
+      "before": null,
+      "period": "202611",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-06-14",
+        "collectionStart": "2026-06-01",
+        "footnotes": [],
+        "period": "202612",
+        "periodEnd": "2026-05-31",
+        "periodStart": "2026-05-18",
+        "releaseDate": "2026-06-18",
+        "responseShares": {
+          "do_not_know": 25.6,
+          "no": 50.5,
+          "yes": 23.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.46,
+        "status": "official",
+        "value": 23.9
+      },
+      "before": null,
+      "period": "202612",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-06-28",
+        "collectionStart": "2026-06-15",
+        "footnotes": [],
+        "period": "202613",
+        "periodEnd": "2026-06-14",
+        "periodStart": "2026-06-01",
+        "releaseDate": "2026-07-02",
+        "responseShares": {
+          "do_not_know": 26.5,
+          "no": 49.8,
+          "yes": 23.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.34,
+        "status": "official",
+        "value": 23.7
+      },
+      "before": null,
+      "period": "202613",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-07-12",
+        "collectionStart": "2026-06-29",
+        "footnotes": [],
+        "period": "202614",
+        "periodEnd": "2026-06-28",
+        "periodStart": "2026-06-15",
+        "releaseDate": "2026-07-16",
+        "responseShares": {
+          "do_not_know": 26.1,
+          "no": 49.4,
+          "yes": 24.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.33,
+        "status": "official",
+        "value": 24.5
+      },
+      "before": null,
+      "period": "202614",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-07-26",
+        "collectionStart": "2026-07-13",
+        "footnotes": [],
+        "period": "202615",
+        "periodEnd": "2026-07-12",
+        "periodStart": "2026-06-29",
+        "releaseDate": "2026-07-30",
+        "responseShares": {
+          "do_not_know": 26.2,
+          "no": 49.5,
+          "yes": 24.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.36,
+        "status": "official",
+        "value": 24.3
+      },
+      "before": null,
+      "period": "202615",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-08-09",
+        "collectionStart": "2026-07-27",
+        "footnotes": [],
+        "period": "202616",
+        "periodEnd": "2026-07-26",
+        "periodStart": "2026-07-13",
+        "releaseDate": "2026-08-13",
+        "responseShares": {
+          "do_not_know": 25.9,
+          "no": 48.2,
+          "yes": 25.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.33,
+        "status": "official",
+        "value": 25.9
+      },
+      "before": null,
+      "period": "202616",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-08-23",
+        "collectionStart": "2026-08-10",
+        "footnotes": [],
+        "period": "202617",
+        "periodEnd": "2026-08-09",
+        "periodStart": "2026-07-27",
+        "releaseDate": "2026-08-27",
+        "responseShares": {
+          "do_not_know": 26.3,
+          "no": 47.8,
+          "yes": 25.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.47,
+        "status": "official",
+        "value": 25.9
+      },
+      "before": null,
+      "period": "202617",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-09-06",
+        "collectionStart": "2026-08-24",
+        "footnotes": [],
+        "period": "202618",
+        "periodEnd": "2026-08-23",
+        "periodStart": "2026-08-10",
+        "releaseDate": "2026-09-10",
+        "responseShares": {
+          "do_not_know": 25.8,
+          "no": 46.9,
+          "yes": 27.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.28,
+        "status": "official",
+        "value": 27.3
+      },
+      "before": null,
+      "period": "202618",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2026-09-20",
+        "collectionStart": "2026-09-07",
+        "footnotes": [],
+        "period": "202619",
+        "periodEnd": "2026-09-06",
+        "periodStart": "2026-08-24",
+        "releaseDate": "2026-09-24",
+        "responseShares": {
+          "do_not_know": 26.1,
+          "no": 46.3,
+          "yes": 27.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.29,
+        "status": "official",
+        "value": 27.6
+      },
+      "before": null,
+      "period": "202619",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-09-24",
+        "collectionStart": "2023-09-11",
+        "footnotes": [],
+        "period": "202319",
+        "periodEnd": "2023-09-10",
+        "periodStart": "2023-08-28",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.9,
+          "no": 89.4,
+          "yes": 3.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.11,
+        "status": "official",
+        "value": 3.7
+      },
+      "before": null,
+      "period": "202319",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-10-08",
+        "collectionStart": "2023-09-25",
+        "footnotes": [],
+        "period": "202320",
+        "periodEnd": "2023-09-24",
+        "periodStart": "2023-09-11",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.0,
+          "no": 89.3,
+          "yes": 3.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.13,
+        "status": "official",
+        "value": 3.7
+      },
+      "before": null,
+      "period": "202320",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-10-22",
+        "collectionStart": "2023-10-09",
+        "footnotes": [],
+        "period": "202321",
+        "periodEnd": "2023-10-08",
+        "periodStart": "2023-09-25",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.7,
+          "no": 89.5,
+          "yes": 3.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.13,
+        "status": "official",
+        "value": 3.8
+      },
+      "before": null,
+      "period": "202321",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-11-05",
+        "collectionStart": "2023-10-23",
+        "footnotes": [],
+        "period": "202322",
+        "periodEnd": "2023-10-22",
+        "periodStart": "2023-10-09",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.4,
+          "no": 89.7,
+          "yes": 3.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 3.9
+      },
+      "before": null,
+      "period": "202322",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-11-19",
+        "collectionStart": "2023-11-06",
+        "footnotes": [],
+        "period": "202323",
+        "periodEnd": "2023-11-05",
+        "periodStart": "2023-10-23",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.2,
+          "no": 88.4,
+          "yes": 4.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.11,
+        "status": "official",
+        "value": 4.4
+      },
+      "before": null,
+      "period": "202323",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-12-03",
+        "collectionStart": "2023-11-20",
+        "footnotes": [],
+        "period": "202324",
+        "periodEnd": "2023-11-19",
+        "periodStart": "2023-11-06",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.7,
+          "no": 87.8,
+          "yes": 4.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.11,
+        "status": "official",
+        "value": 4.6
+      },
+      "before": null,
+      "period": "202324",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-12-17",
+        "collectionStart": "2023-12-04",
+        "footnotes": [],
+        "period": "202325",
+        "periodEnd": "2023-12-03",
+        "periodStart": "2023-11-20",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 11.0,
+          "no": 84.1,
+          "yes": 4.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 4.9
+      },
+      "before": null,
+      "period": "202325",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-12-31",
+        "collectionStart": "2023-12-18",
+        "footnotes": [],
+        "period": "202326",
+        "periodEnd": "2023-12-17",
+        "periodStart": "2023-12-04",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 11.0,
+          "no": 84.1,
+          "yes": 4.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.09,
+        "status": "official",
+        "value": 4.9
+      },
+      "before": null,
+      "period": "202326",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-01-14",
+        "collectionStart": "2024-01-01",
+        "footnotes": [],
+        "period": "202401",
+        "periodEnd": "2023-12-31",
+        "periodStart": "2023-12-18",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 10.4,
+          "no": 85.0,
+          "yes": 4.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.08,
+        "status": "official",
+        "value": 4.6
+      },
+      "before": null,
+      "period": "202401",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-01-28",
+        "collectionStart": "2024-01-15",
+        "footnotes": [],
+        "period": "202402",
+        "periodEnd": "2024-01-14",
+        "periodStart": "2024-01-01",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 10.5,
+          "no": 84.2,
+          "yes": 5.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 5.3
+      },
+      "before": null,
+      "period": "202402",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-02-11",
+        "collectionStart": "2024-01-29",
+        "footnotes": [],
+        "period": "202403",
+        "periodEnd": "2024-01-28",
+        "periodStart": "2024-01-15",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 11.2,
+          "no": 83.8,
+          "yes": 5.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.13,
+        "status": "official",
+        "value": 5.0
+      },
+      "before": null,
+      "period": "202403",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-02-25",
+        "collectionStart": "2024-02-12",
+        "footnotes": [],
+        "period": "202404",
+        "periodEnd": "2024-02-11",
+        "periodStart": "2024-01-29",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 10.8,
+          "no": 83.9,
+          "yes": 5.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.12,
+        "status": "official",
+        "value": 5.4
+      },
+      "before": null,
+      "period": "202404",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-03-10",
+        "collectionStart": "2024-02-26",
+        "footnotes": [],
+        "period": "202405",
+        "periodEnd": "2024-02-25",
+        "periodStart": "2024-02-12",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.8,
+          "no": 87.9,
+          "yes": 4.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.13,
+        "status": "official",
+        "value": 4.3
+      },
+      "before": null,
+      "period": "202405",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-03-24",
+        "collectionStart": "2024-03-11",
+        "footnotes": [],
+        "period": "202406",
+        "periodEnd": "2024-03-10",
+        "periodStart": "2024-02-26",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.7,
+          "no": 87.9,
+          "yes": 4.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.12,
+        "status": "official",
+        "value": 4.4
+      },
+      "before": null,
+      "period": "202406",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-04-07",
+        "collectionStart": "2024-03-25",
+        "footnotes": [],
+        "period": "202407",
+        "periodEnd": "2024-03-24",
+        "periodStart": "2024-03-11",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.6,
+          "no": 88.1,
+          "yes": 4.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.09,
+        "status": "official",
+        "value": 4.2
+      },
+      "before": null,
+      "period": "202407",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-04-21",
+        "collectionStart": "2024-04-08",
+        "footnotes": [],
+        "period": "202408",
+        "periodEnd": "2024-04-07",
+        "periodStart": "2024-03-25",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.5,
+          "no": 87.6,
+          "yes": 4.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.14,
+        "status": "official",
+        "value": 4.8
+      },
+      "before": null,
+      "period": "202408",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-05-05",
+        "collectionStart": "2024-04-22",
+        "footnotes": [],
+        "period": "202409",
+        "periodEnd": "2024-04-21",
+        "periodStart": "2024-04-08",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.6,
+          "no": 87.7,
+          "yes": 4.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 4.7
+      },
+      "before": null,
+      "period": "202409",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-05-19",
+        "collectionStart": "2024-05-06",
+        "footnotes": [],
+        "period": "202410",
+        "periodEnd": "2024-05-05",
+        "periodStart": "2024-04-22",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.6,
+          "no": 87.6,
+          "yes": 4.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.09,
+        "status": "official",
+        "value": 4.8
+      },
+      "before": null,
+      "period": "202410",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-06-02",
+        "collectionStart": "2024-05-20",
+        "footnotes": [],
+        "period": "202411",
+        "periodEnd": "2024-05-19",
+        "periodStart": "2024-05-06",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 8.0,
+          "no": 87.4,
+          "yes": 4.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 4.6
+      },
+      "before": null,
+      "period": "202411",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-06-16",
+        "collectionStart": "2024-06-03",
+        "footnotes": [],
+        "period": "202412",
+        "periodEnd": "2024-06-02",
+        "periodStart": "2024-05-20",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 8.1,
+          "no": 86.9,
+          "yes": 5.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.14,
+        "status": "official",
+        "value": 5.0
+      },
+      "before": null,
+      "period": "202412",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-06-30",
+        "collectionStart": "2024-06-17",
+        "footnotes": [],
+        "period": "202413",
+        "periodEnd": "2024-06-16",
+        "periodStart": "2024-06-03",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 8.5,
+          "no": 86.8,
+          "yes": 4.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.13,
+        "status": "official",
+        "value": 4.7
+      },
+      "before": null,
+      "period": "202413",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-07-14",
+        "collectionStart": "2024-07-01",
+        "footnotes": [],
+        "period": "202414",
+        "periodEnd": "2024-06-30",
+        "periodStart": "2024-06-17",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 8.3,
+          "no": 86.8,
+          "yes": 5.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.16,
+        "status": "official",
+        "value": 5.0
+      },
+      "before": null,
+      "period": "202414",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-07-28",
+        "collectionStart": "2024-07-15",
+        "footnotes": [],
+        "period": "202415",
+        "periodEnd": "2024-07-14",
+        "periodStart": "2024-07-01",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 8.5,
+          "no": 86.4,
+          "yes": 5.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 5.1
+      },
+      "before": null,
+      "period": "202415",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-08-11",
+        "collectionStart": "2024-07-29",
+        "footnotes": [],
+        "period": "202416",
+        "periodEnd": "2024-07-28",
+        "periodStart": "2024-07-15",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 8.5,
+          "no": 86.4,
+          "yes": 5.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.12,
+        "status": "official",
+        "value": 5.1
+      },
+      "before": null,
+      "period": "202416",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-08-25",
+        "collectionStart": "2024-08-12",
+        "footnotes": [],
+        "period": "202417",
+        "periodEnd": "2024-08-11",
+        "periodStart": "2024-07-29",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 5.9,
+          "no": 88.6,
+          "yes": 5.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 5.5
+      },
+      "before": null,
+      "period": "202417",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-09-08",
+        "collectionStart": "2024-08-26",
+        "footnotes": [],
+        "period": "202418",
+        "periodEnd": "2024-08-25",
+        "periodStart": "2024-08-12",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 5.7,
+          "no": 88.6,
+          "yes": 5.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 5.7
+      },
+      "before": null,
+      "period": "202418",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-09-22",
+        "collectionStart": "2024-09-09",
+        "footnotes": [],
+        "period": "202419",
+        "periodEnd": "2024-09-08",
+        "periodStart": "2024-08-26",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 5.8,
+          "no": 88.4,
+          "yes": 5.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.16,
+        "status": "official",
+        "value": 5.9
+      },
+      "before": null,
+      "period": "202419",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-10-06",
+        "collectionStart": "2024-09-23",
+        "footnotes": [],
+        "period": "202420",
+        "periodEnd": "2024-09-22",
+        "periodStart": "2024-09-09",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 5.7,
+          "no": 88.3,
+          "yes": 6.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 6.0
+      },
+      "before": null,
+      "period": "202420",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-10-20",
+        "collectionStart": "2024-10-07",
+        "footnotes": [],
+        "period": "202421",
+        "periodEnd": "2024-10-06",
+        "periodStart": "2024-09-23",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 5.9,
+          "no": 88.1,
+          "yes": 6.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 6.0
+      },
+      "before": null,
+      "period": "202421",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-11-03",
+        "collectionStart": "2024-10-21",
+        "footnotes": [],
+        "period": "202422",
+        "periodEnd": "2024-10-20",
+        "periodStart": "2024-10-07",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 5.8,
+          "no": 88.1,
+          "yes": 6.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.13,
+        "status": "official",
+        "value": 6.0
+      },
+      "before": null,
+      "period": "202422",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-11-17",
+        "collectionStart": "2024-11-04",
+        "footnotes": [],
+        "period": "202423",
+        "periodEnd": "2024-11-03",
+        "periodStart": "2024-10-21",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.5,
+          "no": 87.4,
+          "yes": 6.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 6.1
+      },
+      "before": null,
+      "period": "202423",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-12-01",
+        "collectionStart": "2024-11-18",
+        "footnotes": [],
+        "period": "202424",
+        "periodEnd": "2024-11-17",
+        "periodStart": "2024-11-04",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.1,
+          "no": 87.8,
+          "yes": 6.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.16,
+        "status": "official",
+        "value": 6.1
+      },
+      "before": null,
+      "period": "202424",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-12-15",
+        "collectionStart": "2024-12-02",
+        "footnotes": [],
+        "period": "202425",
+        "periodEnd": "2024-12-01",
+        "periodStart": "2024-11-18",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.2,
+          "no": 87.7,
+          "yes": 6.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 6.1
+      },
+      "before": null,
+      "period": "202425",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-12-29",
+        "collectionStart": "2024-12-16",
+        "footnotes": [],
+        "period": "202426",
+        "periodEnd": "2024-12-15",
+        "periodStart": "2024-12-02",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.3,
+          "no": 87.4,
+          "yes": 6.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 6.3
+      },
+      "before": null,
+      "period": "202426",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-01-12",
+        "collectionStart": "2024-12-30",
+        "footnotes": [],
+        "period": "202501",
+        "periodEnd": "2024-12-29",
+        "periodStart": "2024-12-16",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.4,
+          "no": 87.6,
+          "yes": 6.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.19,
+        "status": "official",
+        "value": 6.0
+      },
+      "before": null,
+      "period": "202501",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-01-26",
+        "collectionStart": "2025-01-13",
+        "footnotes": [],
+        "period": "202502",
+        "periodEnd": "2025-01-12",
+        "periodStart": "2024-12-30",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.3,
+          "no": 87.1,
+          "yes": 6.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 6.7
+      },
+      "before": null,
+      "period": "202502",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-02-09",
+        "collectionStart": "2025-01-27",
+        "footnotes": [],
+        "period": "202503",
+        "periodEnd": "2025-01-26",
+        "periodStart": "2025-01-13",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.2,
+          "no": 86.0,
+          "yes": 6.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.19,
+        "status": "official",
+        "value": 6.8
+      },
+      "before": null,
+      "period": "202503",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-02-23",
+        "collectionStart": "2025-02-10",
+        "footnotes": [],
+        "period": "202504",
+        "periodEnd": "2025-02-09",
+        "periodStart": "2025-01-27",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.7,
+          "no": 86.0,
+          "yes": 7.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.14,
+        "status": "official",
+        "value": 7.3
+      },
+      "before": null,
+      "period": "202504",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-03-09",
+        "collectionStart": "2025-02-24",
+        "footnotes": [],
+        "period": "202505",
+        "periodEnd": "2025-02-23",
+        "periodStart": "2025-02-10",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.8,
+          "no": 85.7,
+          "yes": 7.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 7.4
+      },
+      "before": null,
+      "period": "202505",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-03-23",
+        "collectionStart": "2025-03-10",
+        "footnotes": [],
+        "period": "202506",
+        "periodEnd": "2025-03-09",
+        "periodStart": "2025-02-24",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.7,
+          "no": 85.5,
+          "yes": 7.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.22,
+        "status": "official",
+        "value": 7.8
+      },
+      "before": null,
+      "period": "202506",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-04-06",
+        "collectionStart": "2025-03-24",
+        "footnotes": [],
+        "period": "202507",
+        "periodEnd": "2025-03-23",
+        "periodStart": "2025-03-10",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.3,
+          "no": 84.8,
+          "yes": 8.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.12,
+        "status": "official",
+        "value": 8.0
+      },
+      "before": null,
+      "period": "202507",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-04-20",
+        "collectionStart": "2025-04-07",
+        "footnotes": [],
+        "period": "202508",
+        "periodEnd": "2025-04-06",
+        "periodStart": "2025-03-24",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.8,
+          "no": 84.9,
+          "yes": 8.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.19,
+        "status": "official",
+        "value": 8.3
+      },
+      "before": null,
+      "period": "202508",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-05-04",
+        "collectionStart": "2025-04-21",
+        "footnotes": [],
+        "period": "202509",
+        "periodEnd": "2025-04-20",
+        "periodStart": "2025-04-07",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.3,
+          "no": 84.0,
+          "yes": 8.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.16,
+        "status": "official",
+        "value": 8.7
+      },
+      "before": null,
+      "period": "202509",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-05-18",
+        "collectionStart": "2025-05-05",
+        "footnotes": [],
+        "period": "202510",
+        "periodEnd": "2025-05-04",
+        "periodStart": "2025-04-21",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.2,
+          "no": 84.2,
+          "yes": 8.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.14,
+        "status": "official",
+        "value": 8.7
+      },
+      "before": null,
+      "period": "202510",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-06-01",
+        "collectionStart": "2025-05-19",
+        "footnotes": [],
+        "period": "202511",
+        "periodEnd": "2025-05-18",
+        "periodStart": "2025-05-05",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.4,
+          "no": 83.4,
+          "yes": 9.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.19,
+        "status": "official",
+        "value": 9.2
+      },
+      "before": null,
+      "period": "202511",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-06-15",
+        "collectionStart": "2025-06-02",
+        "footnotes": [],
+        "period": "202512",
+        "periodEnd": "2025-06-01",
+        "periodStart": "2025-05-19",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.1,
+          "no": 83.7,
+          "yes": 9.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.22,
+        "status": "official",
+        "value": 9.2
+      },
+      "before": null,
+      "period": "202512",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-06-29",
+        "collectionStart": "2025-06-16",
+        "footnotes": [],
+        "period": "202513",
+        "periodEnd": "2025-06-15",
+        "periodStart": "2025-06-02",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.8,
+          "no": 82.9,
+          "yes": 9.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 9.3
+      },
+      "before": null,
+      "period": "202513",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-07-13",
+        "collectionStart": "2025-06-30",
+        "footnotes": [],
+        "period": "202514",
+        "periodEnd": "2025-06-29",
+        "periodStart": "2025-06-16",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.5,
+          "no": 83.1,
+          "yes": 9.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.21,
+        "status": "official",
+        "value": 9.3
+      },
+      "before": null,
+      "period": "202514",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-07-27",
+        "collectionStart": "2025-07-14",
+        "footnotes": [],
+        "period": "202515",
+        "periodEnd": "2025-07-13",
+        "periodStart": "2025-06-30",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.8,
+          "no": 83.9,
+          "yes": 9.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 9.4
+      },
+      "before": null,
+      "period": "202515",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-08-10",
+        "collectionStart": "2025-07-28",
+        "footnotes": [],
+        "period": "202516",
+        "periodEnd": "2025-07-27",
+        "periodStart": "2025-07-14",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.0,
+          "no": 84.2,
+          "yes": 8.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.23,
+        "status": "official",
+        "value": 8.8
+      },
+      "before": null,
+      "period": "202516",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-08-24",
+        "collectionStart": "2025-08-11",
+        "footnotes": [],
+        "period": "202517",
+        "periodEnd": "2025-08-10",
+        "periodStart": "2025-07-28",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 6.5,
+          "no": 83.8,
+          "yes": 9.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.16,
+        "status": "official",
+        "value": 9.7
+      },
+      "before": null,
+      "period": "202517",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-09-07",
+        "collectionStart": "2025-08-25",
+        "footnotes": [],
+        "period": "202518",
+        "periodEnd": "2025-08-24",
+        "periodStart": "2025-08-11",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.4,
+          "no": 83.5,
+          "yes": 9.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 9.1
+      },
+      "before": null,
+      "period": "202518",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-09-21",
+        "collectionStart": "2025-09-08",
+        "footnotes": [],
+        "period": "202519",
+        "periodEnd": "2025-09-07",
+        "periodStart": "2025-08-25",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.2,
+          "no": 82.9,
+          "yes": 9.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 9.9
+      },
+      "before": null,
+      "period": "202519",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-10-05",
+        "collectionStart": "2025-09-22",
+        "footnotes": [],
+        "period": "202520",
+        "periodEnd": "2025-09-21",
+        "periodStart": "2025-09-08",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.2,
+          "no": 82.8,
+          "yes": 10.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.22,
+        "status": "official",
+        "value": 10.0
+      },
+      "before": null,
+      "period": "202520",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-09-24",
+        "collectionStart": "2023-09-11",
+        "footnotes": [],
+        "period": "202319",
+        "periodEnd": "2023-09-10",
+        "periodStart": "2023-08-28",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 19.6,
+          "no": 74.1,
+          "yes": 6.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.14,
+        "status": "official",
+        "value": 6.3
+      },
+      "before": null,
+      "period": "202319",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-10-08",
+        "collectionStart": "2023-09-25",
+        "footnotes": [],
+        "period": "202320",
+        "periodEnd": "2023-09-24",
+        "periodStart": "2023-09-11",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 19.7,
+          "no": 74.1,
+          "yes": 6.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 6.3
+      },
+      "before": null,
+      "period": "202320",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-10-22",
+        "collectionStart": "2023-10-09",
+        "footnotes": [],
+        "period": "202321",
+        "periodEnd": "2023-10-08",
+        "periodStart": "2023-09-25",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 19.6,
+          "no": 74.0,
+          "yes": 6.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.21,
+        "status": "official",
+        "value": 6.5
+      },
+      "before": null,
+      "period": "202321",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-11-05",
+        "collectionStart": "2023-10-23",
+        "footnotes": [],
+        "period": "202322",
+        "periodEnd": "2023-10-22",
+        "periodStart": "2023-10-09",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 19.7,
+          "no": 73.8,
+          "yes": 6.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 6.5
+      },
+      "before": null,
+      "period": "202322",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-11-19",
+        "collectionStart": "2023-11-06",
+        "footnotes": [],
+        "period": "202323",
+        "periodEnd": "2023-11-05",
+        "periodStart": "2023-10-23",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 19.5,
+          "no": 73.6,
+          "yes": 6.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 6.9
+      },
+      "before": null,
+      "period": "202323",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-12-03",
+        "collectionStart": "2023-11-20",
+        "footnotes": [],
+        "period": "202324",
+        "periodEnd": "2023-11-19",
+        "periodStart": "2023-11-06",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 20.1,
+          "no": 72.6,
+          "yes": 7.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 7.3
+      },
+      "before": null,
+      "period": "202324",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-12-17",
+        "collectionStart": "2023-12-04",
+        "footnotes": [],
+        "period": "202325",
+        "periodEnd": "2023-12-03",
+        "periodStart": "2023-11-20",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.3,
+          "no": 71.3,
+          "yes": 6.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 6.5
+      },
+      "before": null,
+      "period": "202325",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2023-12-31",
+        "collectionStart": "2023-12-18",
+        "footnotes": [],
+        "period": "202326",
+        "periodEnd": "2023-12-17",
+        "periodStart": "2023-12-04",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.6,
+          "no": 70.7,
+          "yes": 6.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.11,
+        "status": "official",
+        "value": 6.7
+      },
+      "before": null,
+      "period": "202326",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-01-14",
+        "collectionStart": "2024-01-01",
+        "footnotes": [],
+        "period": "202401",
+        "periodEnd": "2023-12-31",
+        "periodStart": "2023-12-18",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.5,
+          "no": 71.1,
+          "yes": 6.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.16,
+        "status": "official",
+        "value": 6.4
+      },
+      "before": null,
+      "period": "202401",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-01-28",
+        "collectionStart": "2024-01-15",
+        "footnotes": [],
+        "period": "202402",
+        "periodEnd": "2024-01-14",
+        "periodStart": "2024-01-01",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.3,
+          "no": 70.3,
+          "yes": 6.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.12,
+        "status": "official",
+        "value": 6.5
+      },
+      "before": null,
+      "period": "202402",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-02-11",
+        "collectionStart": "2024-01-29",
+        "footnotes": [],
+        "period": "202403",
+        "periodEnd": "2024-01-28",
+        "periodStart": "2024-01-15",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.3,
+          "no": 70.1,
+          "yes": 6.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.2,
+        "status": "official",
+        "value": 6.6
+      },
+      "before": null,
+      "period": "202403",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-02-25",
+        "collectionStart": "2024-02-12",
+        "footnotes": [],
+        "period": "202404",
+        "periodEnd": "2024-02-11",
+        "periodStart": "2024-01-29",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.3,
+          "no": 70.1,
+          "yes": 6.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 6.6
+      },
+      "before": null,
+      "period": "202404",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-03-10",
+        "collectionStart": "2024-02-26",
+        "footnotes": [],
+        "period": "202405",
+        "periodEnd": "2024-02-25",
+        "periodStart": "2024-02-12",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.1,
+          "no": 72.5,
+          "yes": 6.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.12,
+        "status": "official",
+        "value": 6.4
+      },
+      "before": null,
+      "period": "202405",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-03-24",
+        "collectionStart": "2024-03-11",
+        "footnotes": [],
+        "period": "202406",
+        "periodEnd": "2024-03-10",
+        "periodStart": "2024-02-26",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 20.9,
+          "no": 72.4,
+          "yes": 6.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.14,
+        "status": "official",
+        "value": 6.7
+      },
+      "before": null,
+      "period": "202406",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-04-07",
+        "collectionStart": "2024-03-25",
+        "footnotes": [],
+        "period": "202407",
+        "periodEnd": "2024-03-24",
+        "periodStart": "2024-03-11",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 20.8,
+          "no": 72.5,
+          "yes": 6.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.14,
+        "status": "official",
+        "value": 6.6
+      },
+      "before": null,
+      "period": "202407",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-04-21",
+        "collectionStart": "2024-04-08",
+        "footnotes": [],
+        "period": "202408",
+        "periodEnd": "2024-04-07",
+        "periodStart": "2024-03-25",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.0,
+          "no": 72.1,
+          "yes": 6.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 6.8
+      },
+      "before": null,
+      "period": "202408",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-05-05",
+        "collectionStart": "2024-04-22",
+        "footnotes": [],
+        "period": "202409",
+        "periodEnd": "2024-04-21",
+        "periodStart": "2024-04-08",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 20.9,
+          "no": 72.1,
+          "yes": 7.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.22,
+        "status": "official",
+        "value": 7.0
+      },
+      "before": null,
+      "period": "202409",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-05-19",
+        "collectionStart": "2024-05-06",
+        "footnotes": [],
+        "period": "202410",
+        "periodEnd": "2024-05-05",
+        "periodStart": "2024-04-22",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.5,
+          "no": 71.6,
+          "yes": 6.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.14,
+        "status": "official",
+        "value": 6.9
+      },
+      "before": null,
+      "period": "202410",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-06-02",
+        "collectionStart": "2024-05-20",
+        "footnotes": [],
+        "period": "202411",
+        "periodEnd": "2024-05-19",
+        "periodStart": "2024-05-06",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.5,
+          "no": 71.9,
+          "yes": 6.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 6.6
+      },
+      "before": null,
+      "period": "202411",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-06-16",
+        "collectionStart": "2024-06-03",
+        "footnotes": [],
+        "period": "202412",
+        "periodEnd": "2024-06-02",
+        "periodStart": "2024-05-20",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.6,
+          "no": 71.6,
+          "yes": 6.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 6.8
+      },
+      "before": null,
+      "period": "202412",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-06-30",
+        "collectionStart": "2024-06-17",
+        "footnotes": [],
+        "period": "202413",
+        "periodEnd": "2024-06-16",
+        "periodStart": "2024-06-03",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.0,
+          "no": 71.2,
+          "yes": 6.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.08,
+        "status": "official",
+        "value": 6.9
+      },
+      "before": null,
+      "period": "202413",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-07-14",
+        "collectionStart": "2024-07-01",
+        "footnotes": [],
+        "period": "202414",
+        "periodEnd": "2024-06-30",
+        "periodStart": "2024-06-17",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.1,
+          "no": 70.9,
+          "yes": 6.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 6.9
+      },
+      "before": null,
+      "period": "202414",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-07-28",
+        "collectionStart": "2024-07-15",
+        "footnotes": [],
+        "period": "202415",
+        "periodEnd": "2024-07-14",
+        "periodStart": "2024-07-01",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.2,
+          "no": 70.6,
+          "yes": 7.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.23,
+        "status": "official",
+        "value": 7.2
+      },
+      "before": null,
+      "period": "202415",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-08-11",
+        "collectionStart": "2024-07-29",
+        "footnotes": [],
+        "period": "202416",
+        "periodEnd": "2024-07-28",
+        "periodStart": "2024-07-15",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.4,
+          "no": 70.6,
+          "yes": 7.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 7.0
+      },
+      "before": null,
+      "period": "202416",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-08-25",
+        "collectionStart": "2024-08-12",
+        "footnotes": [],
+        "period": "202417",
+        "periodEnd": "2024-08-11",
+        "periodStart": "2024-07-29",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.4,
+          "no": 70.6,
+          "yes": 8.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 8.1
+      },
+      "before": null,
+      "period": "202417",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-09-08",
+        "collectionStart": "2024-08-26",
+        "footnotes": [],
+        "period": "202418",
+        "periodEnd": "2024-08-25",
+        "periodStart": "2024-08-12",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.4,
+          "no": 70.1,
+          "yes": 8.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 8.5
+      },
+      "before": null,
+      "period": "202418",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-09-22",
+        "collectionStart": "2024-09-09",
+        "footnotes": [],
+        "period": "202419",
+        "periodEnd": "2024-09-08",
+        "periodStart": "2024-08-26",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.7,
+          "no": 69.6,
+          "yes": 8.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.15,
+        "status": "official",
+        "value": 8.7
+      },
+      "before": null,
+      "period": "202419",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-10-06",
+        "collectionStart": "2024-09-23",
+        "footnotes": [],
+        "period": "202420",
+        "periodEnd": "2024-09-22",
+        "periodStart": "2024-09-09",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.5,
+          "no": 69.4,
+          "yes": 9.1
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 9.1
+      },
+      "before": null,
+      "period": "202420",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-10-20",
+        "collectionStart": "2024-10-07",
+        "footnotes": [],
+        "period": "202421",
+        "periodEnd": "2024-10-06",
+        "periodStart": "2024-09-23",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.1,
+          "no": 68.9,
+          "yes": 9.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 9.0
+      },
+      "before": null,
+      "period": "202421",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-11-03",
+        "collectionStart": "2024-10-21",
+        "footnotes": [],
+        "period": "202422",
+        "periodEnd": "2024-10-20",
+        "periodStart": "2024-10-07",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 21.7,
+          "no": 69.0,
+          "yes": 9.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.19,
+        "status": "official",
+        "value": 9.3
+      },
+      "before": null,
+      "period": "202422",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-11-17",
+        "collectionStart": "2024-11-04",
+        "footnotes": [],
+        "period": "202423",
+        "periodEnd": "2024-11-03",
+        "periodStart": "2024-10-21",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.1,
+          "no": 69.2,
+          "yes": 8.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.21,
+        "status": "official",
+        "value": 8.7
+      },
+      "before": null,
+      "period": "202423",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-12-01",
+        "collectionStart": "2024-11-18",
+        "footnotes": [],
+        "period": "202424",
+        "periodEnd": "2024-11-17",
+        "periodStart": "2024-11-04",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.1,
+          "no": 69.0,
+          "yes": 8.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 8.9
+      },
+      "before": null,
+      "period": "202424",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-12-15",
+        "collectionStart": "2024-12-02",
+        "footnotes": [],
+        "period": "202425",
+        "periodEnd": "2024-12-01",
+        "periodStart": "2024-11-18",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.9,
+          "no": 68.3,
+          "yes": 8.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.13,
+        "status": "official",
+        "value": 8.8
+      },
+      "before": null,
+      "period": "202425",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2024-12-29",
+        "collectionStart": "2024-12-16",
+        "footnotes": [],
+        "period": "202426",
+        "periodEnd": "2024-12-15",
+        "periodStart": "2024-12-02",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.2,
+          "no": 68.6,
+          "yes": 9.2
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.12,
+        "status": "official",
+        "value": 9.2
+      },
+      "before": null,
+      "period": "202426",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-01-12",
+        "collectionStart": "2024-12-30",
+        "footnotes": [],
+        "period": "202501",
+        "periodEnd": "2024-12-29",
+        "periodStart": "2024-12-16",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.5,
+          "no": 68.1,
+          "yes": 9.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.21,
+        "status": "official",
+        "value": 9.5
+      },
+      "before": null,
+      "period": "202501",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-01-26",
+        "collectionStart": "2025-01-13",
+        "footnotes": [],
+        "period": "202502",
+        "periodEnd": "2025-01-12",
+        "periodStart": "2024-12-30",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.1,
+          "no": 67.5,
+          "yes": 9.4
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.25,
+        "status": "official",
+        "value": 9.4
+      },
+      "before": null,
+      "period": "202502",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-02-09",
+        "collectionStart": "2025-01-27",
+        "footnotes": [],
+        "period": "202503",
+        "periodEnd": "2025-01-26",
+        "periodStart": "2025-01-13",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.7,
+          "no": 67.0,
+          "yes": 9.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.21,
+        "status": "official",
+        "value": 9.3
+      },
+      "before": null,
+      "period": "202503",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-02-23",
+        "collectionStart": "2025-02-10",
+        "footnotes": [],
+        "period": "202504",
+        "periodEnd": "2025-02-09",
+        "periodStart": "2025-01-27",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.0,
+          "no": 67.2,
+          "yes": 9.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.17,
+        "status": "official",
+        "value": 9.8
+      },
+      "before": null,
+      "period": "202504",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-03-09",
+        "collectionStart": "2025-02-24",
+        "footnotes": [],
+        "period": "202505",
+        "periodEnd": "2025-02-23",
+        "periodStart": "2025-02-10",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.3,
+          "no": 66.7,
+          "yes": 9.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.19,
+        "status": "official",
+        "value": 9.9
+      },
+      "before": null,
+      "period": "202505",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-03-23",
+        "collectionStart": "2025-03-10",
+        "footnotes": [],
+        "period": "202506",
+        "periodEnd": "2025-03-09",
+        "periodStart": "2025-02-24",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.0,
+          "no": 66.6,
+          "yes": 10.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.13,
+        "status": "official",
+        "value": 10.5
+      },
+      "before": null,
+      "period": "202506",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-04-06",
+        "collectionStart": "2025-03-24",
+        "footnotes": [],
+        "period": "202507",
+        "periodEnd": "2025-03-23",
+        "periodStart": "2025-03-10",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.7,
+          "no": 65.8,
+          "yes": 10.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.18,
+        "status": "official",
+        "value": 10.5
+      },
+      "before": null,
+      "period": "202507",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-04-20",
+        "collectionStart": "2025-04-07",
+        "footnotes": [],
+        "period": "202508",
+        "periodEnd": "2025-04-06",
+        "periodStart": "2025-03-24",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 22.9,
+          "no": 66.2,
+          "yes": 10.9
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.3,
+        "status": "official",
+        "value": 10.9
+      },
+      "before": null,
+      "period": "202508",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-05-04",
+        "collectionStart": "2025-04-21",
+        "footnotes": [],
+        "period": "202509",
+        "periodEnd": "2025-04-20",
+        "periodStart": "2025-04-07",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.6,
+          "no": 65.4,
+          "yes": 11.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.24,
+        "status": "official",
+        "value": 11.0
+      },
+      "before": null,
+      "period": "202509",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-05-18",
+        "collectionStart": "2025-05-05",
+        "footnotes": [],
+        "period": "202510",
+        "periodEnd": "2025-05-04",
+        "periodStart": "2025-04-21",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.8,
+          "no": 65.2,
+          "yes": 11.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.23,
+        "status": "official",
+        "value": 11.0
+      },
+      "before": null,
+      "period": "202510",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-06-01",
+        "collectionStart": "2025-05-19",
+        "footnotes": [],
+        "period": "202511",
+        "periodEnd": "2025-05-18",
+        "periodStart": "2025-05-05",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 24.0,
+          "no": 64.4,
+          "yes": 11.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.16,
+        "status": "official",
+        "value": 11.6
+      },
+      "before": null,
+      "period": "202511",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-06-15",
+        "collectionStart": "2025-06-02",
+        "footnotes": [],
+        "period": "202512",
+        "periodEnd": "2025-06-01",
+        "periodStart": "2025-05-19",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.7,
+          "no": 64.7,
+          "yes": 11.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.27,
+        "status": "official",
+        "value": 11.6
+      },
+      "before": null,
+      "period": "202512",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-06-29",
+        "collectionStart": "2025-06-16",
+        "footnotes": [],
+        "period": "202513",
+        "periodEnd": "2025-06-15",
+        "periodStart": "2025-06-02",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 24.2,
+          "no": 64.2,
+          "yes": 11.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.11,
+        "status": "official",
+        "value": 11.7
+      },
+      "before": null,
+      "period": "202513",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-07-13",
+        "collectionStart": "2025-06-30",
+        "footnotes": [],
+        "period": "202514",
+        "periodEnd": "2025-06-29",
+        "periodStart": "2025-06-16",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 24.1,
+          "no": 63.6,
+          "yes": 12.3
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.2,
+        "status": "official",
+        "value": 12.3
+      },
+      "before": null,
+      "period": "202514",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-07-27",
+        "collectionStart": "2025-07-14",
+        "footnotes": [],
+        "period": "202515",
+        "periodEnd": "2025-07-13",
+        "periodStart": "2025-06-30",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.1,
+          "no": 63.4,
+          "yes": 13.5
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.27,
+        "status": "official",
+        "value": 13.5
+      },
+      "before": null,
+      "period": "202515",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-08-10",
+        "collectionStart": "2025-07-28",
+        "footnotes": [],
+        "period": "202516",
+        "periodEnd": "2025-07-27",
+        "periodStart": "2025-07-14",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.7,
+          "no": 63.3,
+          "yes": 13.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.22,
+        "status": "official",
+        "value": 13.0
+      },
+      "before": null,
+      "period": "202516",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-08-24",
+        "collectionStart": "2025-08-11",
+        "footnotes": [],
+        "period": "202517",
+        "periodEnd": "2025-08-10",
+        "periodStart": "2025-07-28",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.3,
+          "no": 62.9,
+          "yes": 13.7
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.16,
+        "status": "official",
+        "value": 13.7
+      },
+      "before": null,
+      "period": "202517",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-09-07",
+        "collectionStart": "2025-08-25",
+        "footnotes": [],
+        "period": "202518",
+        "periodEnd": "2025-08-24",
+        "periodStart": "2025-08-11",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.6,
+          "no": 62.6,
+          "yes": 13.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.21,
+        "status": "official",
+        "value": 13.8
+      },
+      "before": null,
+      "period": "202518",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-09-21",
+        "collectionStart": "2025-09-08",
+        "footnotes": [],
+        "period": "202519",
+        "periodEnd": "2025-09-07",
+        "periodStart": "2025-08-25",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.4,
+          "no": 62.6,
+          "yes": 14.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.21,
+        "status": "official",
+        "value": 14.0
+      },
+      "before": null,
+      "period": "202519",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    },
+    {
+      "after": {
+        "collectionEnd": "2025-10-05",
+        "collectionStart": "2025-09-22",
+        "footnotes": [],
+        "period": "202520",
+        "periodEnd": "2025-09-21",
+        "periodStart": "2025-09-08",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.4,
+          "no": 62.6,
+          "yes": 14.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.28,
+        "status": "official",
+        "value": 14.0
+      },
+      "before": null,
+      "period": "202520",
+      "reason": "NEW_OBSERVATION",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL"
+    }
+  ],
+  "currentManifestHash": "eb44cb456a1787c04d093ea98bdfefc97e54c642abbdefe28a6f9349ec43ec77",
+  "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+  "previousManifestHash": null,
+  "rawArtifactChanged": false
+}

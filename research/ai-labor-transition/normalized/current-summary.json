@@ -1,0 +1,3765 @@
+{
+  "aggregateLaborMarket": {
+    "CES0000000001": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "CES0000000001",
+              "value": 158882.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES0000000001",
+              "value": 159015.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0000000001",
+              "value": 159044.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 158980.33333333334,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "CES0000000001",
+              "value": 158798.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "CES0000000001",
+              "value": 158861.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "CES0000000001",
+              "value": 158892.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "CES0000000001",
+              "value": 158882.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES0000000001",
+              "value": 159015.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0000000001",
+              "value": 159044.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 158915.33333333334,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "CES0000000001",
+              "value": 158548.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0000000001",
+              "value": 159044.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 496.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 159044.0
+      },
+      "retrievedAt": "2026-10-05T22:38:58Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "CES0000000001",
+      "sourceHealth": "CURRENT",
+      "title": "Total nonfarm payroll employment",
+      "unit": "thousand_jobs",
+      "usingLastValid": false
+    },
+    "CES0500000002": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "CES0500000002",
+              "value": 34.3
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES0500000002",
+              "value": 34.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0500000002",
+              "value": 34.4
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "hours_per_week",
+          "value": 34.36666666666667,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "CES0500000002",
+              "value": 34.3
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "CES0500000002",
+              "value": 34.3
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "CES0500000002",
+              "value": 34.3
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "CES0500000002",
+              "value": 34.3
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES0500000002",
+              "value": 34.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0500000002",
+              "value": 34.4
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "hours_per_week",
+          "value": 34.333333333333336,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "CES0500000002",
+              "value": 34.2
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0500000002",
+              "value": 34.4
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "hours_per_week",
+          "value": 0.19999999999999574,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 34.4
+      },
+      "retrievedAt": "2026-10-05T22:38:58Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "CES0500000002",
+      "sourceHealth": "CURRENT",
+      "title": "Average weekly hours, total private",
+      "unit": "hours_per_week",
+      "usingLastValid": false
+    },
+    "CES0500000003": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "CES0500000003",
+              "value": 37.64
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES0500000003",
+              "value": 37.76
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0500000003",
+              "value": 37.81
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "USD_per_hour_nominal",
+          "value": 37.73666666666667,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "CES0500000003",
+              "value": 37.41
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "CES0500000003",
+              "value": 37.49
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "CES0500000003",
+              "value": 37.59
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "CES0500000003",
+              "value": 37.64
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES0500000003",
+              "value": 37.76
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0500000003",
+              "value": 37.81
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "USD_per_hour_nominal",
+          "value": 37.61666666666667,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "CES0500000003",
+              "value": 36.7
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES0500000003",
+              "value": 37.81
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "USD_per_hour_nominal",
+          "value": 1.1099999999999994,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 37.81
+      },
+      "retrievedAt": "2026-10-05T22:38:58Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "CES0500000003",
+      "sourceHealth": "CURRENT",
+      "title": "Average hourly earnings, total private",
+      "unit": "USD_per_hour_nominal",
+      "usingLastValid": false
+    },
+    "CES5000000001": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "CES5000000001",
+              "value": 2767.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES5000000001",
+              "value": 2749.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES5000000001",
+              "value": 2739.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 2751.6666666666665,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "CES5000000001",
+              "value": 2787.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "CES5000000001",
+              "value": 2782.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "CES5000000001",
+              "value": 2763.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "CES5000000001",
+              "value": 2767.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES5000000001",
+              "value": 2749.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES5000000001",
+              "value": 2739.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 2764.5,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "CES5000000001",
+              "value": 2859.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES5000000001",
+              "value": 2739.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": -120.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 2739.0
+      },
+      "retrievedAt": "2026-10-05T22:38:58Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "CES5000000001",
+      "sourceHealth": "CURRENT",
+      "title": "Payroll employment, Information",
+      "unit": "thousand_jobs",
+      "usingLastValid": false
+    },
+    "CES5500000001": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "CES5500000001",
+              "value": 9098.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES5500000001",
+              "value": 9089.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES5500000001",
+              "value": 9082.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 9089.666666666666,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "CES5500000001",
+              "value": 9126.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "CES5500000001",
+              "value": 9106.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "CES5500000001",
+              "value": 9108.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "CES5500000001",
+              "value": 9098.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES5500000001",
+              "value": 9089.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES5500000001",
+              "value": 9082.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 9101.5,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "CES5500000001",
+              "value": 9189.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES5500000001",
+              "value": 9082.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": -107.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 9082.0
+      },
+      "retrievedAt": "2026-10-05T22:38:58Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "CES5500000001",
+      "sourceHealth": "CURRENT",
+      "title": "Payroll employment, Financial activities",
+      "unit": "thousand_jobs",
+      "usingLastValid": false
+    },
+    "CES6000000001": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "CES6000000001",
+              "value": 22496.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES6000000001",
+              "value": 22491.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES6000000001",
+              "value": 22482.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 22489.666666666668,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "CES6000000001",
+              "value": 22460.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "CES6000000001",
+              "value": 22466.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "CES6000000001",
+              "value": 22502.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "CES6000000001",
+              "value": 22496.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "CES6000000001",
+              "value": 22491.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES6000000001",
+              "value": 22482.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 22482.833333333332,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "CES6000000001",
+              "value": 22359.0
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "CES6000000001",
+              "value": 22482.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 123.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 22482.0
+      },
+      "retrievedAt": "2026-10-05T22:38:58Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "CES6000000001",
+      "sourceHealth": "CURRENT",
+      "title": "Payroll employment, Professional and business services",
+      "unit": "thousand_jobs",
+      "usingLastValid": false
+    },
+    "LNS11300000": {
+      "ageBand": {
+        "max": null,
+        "min": 16
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS11300000",
+              "value": 61.4
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS11300000",
+              "value": 61.6
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300000",
+              "value": 61.8
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 61.6,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS11300000",
+              "value": 61.8
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS11300000",
+              "value": 61.8
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS11300000",
+              "value": 61.5
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS11300000",
+              "value": 61.4
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS11300000",
+              "value": 61.6
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300000",
+              "value": 61.8
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 61.65,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS11300000",
+              "value": 62.5
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300000",
+              "value": 61.8
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": -0.7000000000000028,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 61.8
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS11300000",
+      "sourceHealth": "PARTIAL",
+      "title": "Labor-force participation rate, 16 years and over",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS12300000": {
+      "ageBand": {
+        "max": null,
+        "min": 16
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS12300000",
+              "value": 58.9
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS12300000",
+              "value": 59.1
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300000",
+              "value": 59.2
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 59.06666666666666,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS12300000",
+              "value": 59.1
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS12300000",
+              "value": 59.2
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS12300000",
+              "value": 59.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS12300000",
+              "value": 58.9
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS12300000",
+              "value": 59.1
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300000",
+              "value": 59.2
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 59.083333333333336,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS12300000",
+              "value": 59.7
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300000",
+              "value": 59.2
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": -0.5,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 59.2
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS12300000",
+      "sourceHealth": "PARTIAL",
+      "title": "Employment-population ratio, 16 years and over",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS14000000": {
+      "ageBand": {
+        "max": null,
+        "min": 16
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS14000000",
+              "value": 4.1
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS14000000",
+              "value": 4.1
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000000",
+              "value": 4.2
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 4.133333333333333,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS14000000",
+              "value": 4.3
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS14000000",
+              "value": 4.3
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS14000000",
+              "value": 4.2
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS14000000",
+              "value": 4.1
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS14000000",
+              "value": 4.1
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000000",
+              "value": 4.2
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 4.2,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS14000000",
+              "value": 4.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000000",
+              "value": 4.2
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": -0.20000000000000018,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 4.2
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS14000000",
+      "sourceHealth": "PARTIAL",
+      "title": "Unemployment rate, 16 years and over",
+      "unit": "percent",
+      "usingLastValid": false
+    }
+  },
+  "aiAdoptionContext": {
+    "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS": {
+      "ageBand": null,
+      "derived": [],
+      "evidenceType": "OBSERVED_AI_ADOPTION_CONTEXT",
+      "frequency": "biweekly",
+      "observation": {
+        "collectionEnd": "2026-09-20",
+        "collectionStart": "2026-09-07",
+        "footnotes": [],
+        "period": "202619",
+        "periodEnd": "2026-09-06",
+        "periodStart": "2026-08-24",
+        "releaseDate": "2026-09-24",
+        "responseShares": {
+          "do_not_know": 9.7,
+          "no": 66.5,
+          "yes": 23.8
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.26,
+        "status": "official",
+        "value": 23.8
+      },
+      "retrievedAt": "2026-10-05T22:39:02Z",
+      "seasonalAdjustment": "NSA",
+      "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS",
+      "sourceHealth": "CURRENT",
+      "title": "Business reported AI use",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "BTOS_AI_CURRENT_ORIGINAL": {
+      "ageBand": null,
+      "derived": [],
+      "evidenceType": "OBSERVED_AI_ADOPTION_CONTEXT",
+      "frequency": "biweekly",
+      "observation": {
+        "collectionEnd": "2025-10-05",
+        "collectionStart": "2025-09-22",
+        "footnotes": [],
+        "period": "202520",
+        "periodEnd": "2025-09-21",
+        "periodStart": "2025-09-08",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 7.2,
+          "no": 82.8,
+          "yes": 10.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.22,
+        "status": "official",
+        "value": 10.0
+      },
+      "retrievedAt": "2026-10-05T22:39:02Z",
+      "seasonalAdjustment": "NSA",
+      "seriesId": "BTOS_AI_CURRENT_ORIGINAL",
+      "sourceHealth": "CURRENT",
+      "title": "Business reported AI use",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS": {
+      "ageBand": null,
+      "derived": [],
+      "evidenceType": "SURVEY_EXPECTATION_CONTEXT",
+      "frequency": "biweekly",
+      "observation": {
+        "collectionEnd": "2026-09-20",
+        "collectionStart": "2026-09-07",
+        "footnotes": [],
+        "period": "202619",
+        "periodEnd": "2026-09-06",
+        "periodStart": "2026-08-24",
+        "releaseDate": "2026-09-24",
+        "responseShares": {
+          "do_not_know": 26.1,
+          "no": 46.3,
+          "yes": 27.6
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.29,
+        "status": "official",
+        "value": 27.6
+      },
+      "retrievedAt": "2026-10-05T22:39:02Z",
+      "seasonalAdjustment": "NSA",
+      "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS",
+      "sourceHealth": "CURRENT",
+      "title": "Business expected AI use within six months",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "BTOS_AI_EXPECTED_ORIGINAL": {
+      "ageBand": null,
+      "derived": [],
+      "evidenceType": "SURVEY_EXPECTATION_CONTEXT",
+      "frequency": "biweekly",
+      "observation": {
+        "collectionEnd": "2025-10-05",
+        "collectionStart": "2025-09-22",
+        "footnotes": [],
+        "period": "202520",
+        "periodEnd": "2025-09-21",
+        "periodStart": "2025-09-08",
+        "releaseDate": null,
+        "responseShares": {
+          "do_not_know": 23.4,
+          "no": 62.6,
+          "yes": 14.0
+        },
+        "revisionStatus": "revision_unknown",
+        "standardError": 0.28,
+        "status": "official",
+        "value": 14.0
+      },
+      "retrievedAt": "2026-10-05T22:39:02Z",
+      "seasonalAdjustment": "NSA",
+      "seriesId": "BTOS_AI_EXPECTED_ORIGINAL",
+      "sourceHealth": "CURRENT",
+      "title": "Business expected AI use within six months",
+      "unit": "percent",
+      "usingLastValid": false
+    }
+  },
+  "asOf": "2026-10-05",
+  "confounders": [
+    "business cycle",
+    "interest rates",
+    "industry demand",
+    "post-pandemic normalization",
+    "offshoring",
+    "restructuring",
+    "demographics",
+    "AI adoption",
+    "other technology"
+  ],
+  "dataHealth": {
+    "btos": {
+      "coverageNotes": [
+        "Original and broadened AI questions are separate histories",
+        "No collection for 202521–202523; no synthetic backfill",
+        "Original archive has no publication dates"
+      ],
+      "economicContentHash": "3f3e125e449217e6caf5a598b58cb4b04e8c6303339e4b4d60a7d0ac663582e5",
+      "failure": null,
+      "freshnessPolicy": "Research monitoring allowance; not a publisher release calendar",
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "lastSuccessfulFetch": "2026-10-05T22:39:02Z",
+      "manifestHash": "eb44cb456a1787c04d093ea98bdfefc97e54c642abbdefe28a6f9349ec43ec77",
+      "maxObservationAgeDays": 60,
+      "missingPeriods": {},
+      "observationThrough": "2026-09-06",
+      "officialSourcePage": "https://www.census.gov/hfp/btos/data_downloads",
+      "provider": "btos",
+      "publisher": "U.S. Census Bureau",
+      "releaseLag": "Biweekly; use workbook publication and collection/reference dates",
+      "revisionFlag": "revisable_current_vintage",
+      "schemaValid": true,
+      "snapshotHash": "9287cb03f0b1a5e51e7d3d589d589afc2c6b42333d09c4c9b4147d243440c92b",
+      "sourceChanged": false,
+      "sourceReleaseDate": "2026-09-24",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "ces": {
+      "coverageNotes": [],
+      "economicContentHash": "89234d559e372e3975aba85513d8342d26a1ea76974bcdac28996cdc40fe16d1",
+      "failure": null,
+      "freshnessPolicy": "Research monitoring allowance; not a publisher release calendar",
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "lastSuccessfulFetch": "2026-10-05T22:38:58Z",
+      "manifestHash": "7b277a0dec4edfdbd83549fb8dd140c473d89c0dc388b9670ce6ad9a557533af",
+      "maxObservationAgeDays": 75,
+      "missingPeriods": {},
+      "observationThrough": "2026-09-30",
+      "officialSourcePage": "https://www.bls.gov/ces/",
+      "provider": "ces",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "releaseLag": "Monthly, normally early following month; API omits release dates",
+      "revisionFlag": "revisable_current_vintage",
+      "schemaValid": true,
+      "snapshotHash": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+      "sourceChanged": false,
+      "sourceReleaseDate": null,
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "cps": {
+      "coverageNotes": [
+        "Published subgroup cell sample counts/standard errors are not supplied by API",
+        "October 2025 missing values remain null",
+        "Age is not job seniority"
+      ],
+      "economicContentHash": "1398faf60299b2abde23b135b22ca002c75b2a22d44da2a7c1e1775bee72b41d",
+      "failure": null,
+      "freshnessPolicy": "Research monitoring allowance; not a publisher release calendar",
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "lastSuccessfulFetch": "2026-10-05T22:38:57Z",
+      "manifestHash": "a5acc809506486eb5da5233c666de2d1a0023ca837968caf2038222731d63533",
+      "maxObservationAgeDays": 75,
+      "missingPeriods": {
+        "LNS11300000": [
+          "2025-10"
+        ],
+        "LNS11300036": [
+          "2025-10"
+        ],
+        "LNS11300060": [
+          "2025-10"
+        ],
+        "LNS11300089": [
+          "2025-10"
+        ],
+        "LNS12300000": [
+          "2025-10"
+        ],
+        "LNS12300036": [
+          "2025-10"
+        ],
+        "LNS12300060": [
+          "2025-10"
+        ],
+        "LNS12300089": [
+          "2025-10"
+        ],
+        "LNS14000000": [
+          "2025-10"
+        ],
+        "LNS14000036": [
+          "2025-10"
+        ],
+        "LNS14000060": [
+          "2025-10"
+        ],
+        "LNS14000089": [
+          "2025-10"
+        ]
+      },
+      "observationThrough": "2026-09-30",
+      "officialSourcePage": "https://www.bls.gov/cps/data.htm",
+      "provider": "cps",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "releaseLag": "Monthly, normally early following month; API omits release dates",
+      "revisionFlag": "revisable_current_vintage",
+      "schemaValid": true,
+      "snapshotHash": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+      "sourceChanged": false,
+      "sourceReleaseDate": null,
+      "status": "PARTIAL",
+      "usingLastValid": false
+    },
+    "jolts": {
+      "coverageNotes": [],
+      "economicContentHash": "c0577ee6965719d05325eae4bb9e82bad98e3b590253c5ef0ed3f993bc115d74",
+      "failure": null,
+      "freshnessPolicy": "Research monitoring allowance; not a publisher release calendar",
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "lastSuccessfulFetch": "2026-10-05T22:39:00Z",
+      "manifestHash": "46d942cf1901d29aa28b3823b80799eaf39e3a873fa0bfbf261bf360997deca6",
+      "maxObservationAgeDays": 110,
+      "missingPeriods": {},
+      "observationThrough": "2026-08-31",
+      "officialSourcePage": "https://www.bls.gov/jlt/",
+      "provider": "jolts",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "releaseLag": "Monthly, generally several weeks after reference month; API omits release dates",
+      "revisionFlag": "revisable_current_vintage",
+      "schemaValid": true,
+      "snapshotHash": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+      "sourceChanged": false,
+      "sourceReleaseDate": null,
+      "status": "CURRENT",
+      "usingLastValid": false
+    }
+  },
+  "hiringToOpeningsRatio": {
+    "formula": "monthly hires level / month-end openings level",
+    "inputs": [
+      {
+        "period": "2026-08",
+        "seriesId": "JTS000000000000000HIL",
+        "value": 5192.0
+      },
+      {
+        "period": "2026-08",
+        "seriesId": "JTS000000000000000JOL",
+        "value": 7079.0
+      }
+    ],
+    "minimumRequiredObservations": 2,
+    "period": "2026-08",
+    "sourceHealth": "CURRENT",
+    "status": "AVAILABLE",
+    "unit": "flow_stock_ratio",
+    "usingLastValid": false,
+    "value": 0.7334369261195084
+  },
+  "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+  "laborFlows": {
+    "JTS000000000000000HIL": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5332.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5146.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5192.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 5223.333333333333,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-03",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5535.0
+            },
+            {
+              "period": "2026-04",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5215.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5252.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5332.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5146.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5192.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 5278.666666666667,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-08",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5145.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000HIL",
+              "value": 5192.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 47.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-08",
+        "periodEnd": "2026-08-31",
+        "periodStart": "2026-08-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 5192.0
+      },
+      "retrievedAt": "2026-10-05T22:39:00Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "JTS000000000000000HIL",
+      "sourceHealth": "CURRENT",
+      "title": "Hires, total nonfarm, level",
+      "unit": "thousand_jobs",
+      "usingLastValid": false
+    },
+    "JTS000000000000000HIR": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.4
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.3
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 3.3000000000000003,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-03",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.5
+            },
+            {
+              "period": "2026-04",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.3
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.3
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.4
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.3
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 3.3333333333333335,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-08",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000HIR",
+              "value": 3.3
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": 0.09999999999999964,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-08",
+        "periodEnd": "2026-08-31",
+        "periodStart": "2026-08-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 3.3
+      },
+      "retrievedAt": "2026-10-05T22:39:00Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "JTS000000000000000HIR",
+      "sourceHealth": "CURRENT",
+      "title": "Hires, total nonfarm, rate",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "JTS000000000000000JOL": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7182.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7335.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7079.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 7198.666666666667,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-03",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 6887.0
+            },
+            {
+              "period": "2026-04",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7585.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7537.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7182.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7335.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7079.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 7267.5,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-08",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 6919.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000JOL",
+              "value": 7079.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 160.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-08",
+        "periodEnd": "2026-08-31",
+        "periodStart": "2026-08-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 7079.0
+      },
+      "retrievedAt": "2026-10-05T22:39:00Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "JTS000000000000000JOL",
+      "sourceHealth": "CURRENT",
+      "title": "Job openings, total nonfarm, level",
+      "unit": "thousand_jobs",
+      "usingLastValid": false
+    },
+    "JTS000000000000000JOR": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.3
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.4
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.3
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 4.333333333333333,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-03",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.2
+            },
+            {
+              "period": "2026-04",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.6
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.5
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.3
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.4
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.3
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 4.383333333333334,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-08",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000JOR",
+              "value": 4.3
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": 0.09999999999999964,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-08",
+        "periodEnd": "2026-08-31",
+        "periodStart": "2026-08-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 4.3
+      },
+      "retrievedAt": "2026-10-05T22:39:00Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "JTS000000000000000JOR",
+      "sourceHealth": "CURRENT",
+      "title": "Job openings, total nonfarm, rate",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "JTS000000000000000LDL": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1785.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1702.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1641.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 1709.3333333333333,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-03",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1884.0
+            },
+            {
+              "period": "2026-04",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1667.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1761.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1785.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1702.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1641.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 1740.0,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-08",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1832.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000LDL",
+              "value": 1641.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": -191.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-08",
+        "periodEnd": "2026-08-31",
+        "periodStart": "2026-08-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 1641.0
+      },
+      "retrievedAt": "2026-10-05T22:39:00Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "JTS000000000000000LDL",
+      "sourceHealth": "CURRENT",
+      "title": "Layoffs and discharges, total nonfarm, level",
+      "unit": "thousand_jobs",
+      "usingLastValid": false
+    },
+    "JTS000000000000000LDR": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.1
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.1
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 1.0666666666666667,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-03",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.2
+            },
+            {
+              "period": "2026-04",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.1
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.1
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.1
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 1.0833333333333333,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-08",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000LDR",
+              "value": 1.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": -0.19999999999999996,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-08",
+        "periodEnd": "2026-08-31",
+        "periodStart": "2026-08-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 1.0
+      },
+      "retrievedAt": "2026-10-05T22:39:00Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "JTS000000000000000LDR",
+      "sourceHealth": "CURRENT",
+      "title": "Layoffs and discharges, total nonfarm, rate",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "JTS000000000000000QUL": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3213.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3089.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3066.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 3122.6666666666665,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-03",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3160.0
+            },
+            {
+              "period": "2026-04",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3043.0
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3153.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3213.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3089.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3066.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": 3120.6666666666665,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-08",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3095.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000QUL",
+              "value": 3066.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "thousand_jobs",
+          "value": -29.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-08",
+        "periodEnd": "2026-08-31",
+        "periodStart": "2026-08-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 3066.0
+      },
+      "retrievedAt": "2026-10-05T22:39:00Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "JTS000000000000000QUL",
+      "sourceHealth": "CURRENT",
+      "title": "Quits, total nonfarm, level",
+      "unit": "thousand_jobs",
+      "usingLastValid": false
+    },
+    "JTS000000000000000QUR": {
+      "ageBand": null,
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 2.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 1.9
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 1.9
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 1.9333333333333333,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-03",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 2.0
+            },
+            {
+              "period": "2026-04",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 1.9
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 2.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 2.0
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 1.9
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 1.9
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 1.95,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-08",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 2.0
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "JTS000000000000000QUR",
+              "value": 1.9
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-08",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": -0.10000000000000009,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [
+          {
+            "code": "P",
+            "text": "preliminary"
+          }
+        ],
+        "period": "2026-08",
+        "periodEnd": "2026-08-31",
+        "periodStart": "2026-08-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "preliminary",
+        "standardError": null,
+        "status": "official",
+        "value": 1.9
+      },
+      "retrievedAt": "2026-10-05T22:39:00Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "JTS000000000000000QUR",
+      "sourceHealth": "CURRENT",
+      "title": "Quits, total nonfarm, rate",
+      "unit": "percent",
+      "usingLastValid": false
+    }
+  },
+  "mode": "CURRENT_VINTAGE_DESCRIPTIVE",
+  "pipelineRunAt": "2026-10-05T22:41:53Z",
+  "scope": "RESEARCH_ONLY",
+  "youngWorkerDivergence": [
+    {
+      "comparisonAgeBand": {
+        "max": null,
+        "min": 16
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS14000036",
+          "value": 8.0
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS14000000",
+          "value": 4.2
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "unemployment_rate",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": 3.8
+    },
+    {
+      "comparisonAgeBand": {
+        "max": 34,
+        "min": 25
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS14000036",
+          "value": 8.0
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS14000089",
+          "value": 4.3
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "unemployment_rate",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": 3.7
+    },
+    {
+      "comparisonAgeBand": {
+        "max": 54,
+        "min": 25
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS14000036",
+          "value": 8.0
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS14000060",
+          "value": 3.6
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "unemployment_rate",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": 4.4
+    },
+    {
+      "comparisonAgeBand": {
+        "max": null,
+        "min": 16
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS12300036",
+          "value": 65.8
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS12300000",
+          "value": 59.2
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "employment_population_ratio",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": 6.599999999999994
+    },
+    {
+      "comparisonAgeBand": {
+        "max": 34,
+        "min": 25
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS12300036",
+          "value": 65.8
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS12300089",
+          "value": 79.9
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "employment_population_ratio",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": -14.100000000000009
+    },
+    {
+      "comparisonAgeBand": {
+        "max": 54,
+        "min": 25
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS12300036",
+          "value": 65.8
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS12300060",
+          "value": 80.7
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "employment_population_ratio",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": -14.900000000000006
+    },
+    {
+      "comparisonAgeBand": {
+        "max": null,
+        "min": 16
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS11300036",
+          "value": 71.5
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS11300000",
+          "value": 61.8
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "participation_rate",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": 9.700000000000003
+    },
+    {
+      "comparisonAgeBand": {
+        "max": 34,
+        "min": 25
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS11300036",
+          "value": 71.5
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS11300089",
+          "value": 83.5
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "participation_rate",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": -12.0
+    },
+    {
+      "comparisonAgeBand": {
+        "max": 54,
+        "min": 25
+      },
+      "formula": "20–24 published rate minus comparison-group published rate",
+      "inputs": [
+        {
+          "period": "2026-09",
+          "seriesId": "LNS11300036",
+          "value": 71.5
+        },
+        {
+          "period": "2026-09",
+          "seriesId": "LNS11300060",
+          "value": 83.7
+        }
+      ],
+      "interpretationGuardrail": "Observed labor-market changes are not attributed to AI. Age is not job seniority.",
+      "metric": "participation_rate",
+      "minimumRequiredObservations": 2,
+      "period": "2026-09",
+      "sourceHealth": "PARTIAL",
+      "status": "AVAILABLE",
+      "unit": "percentage_points",
+      "usingLastValid": false,
+      "value": -12.200000000000003
+    }
+  ],
+  "youngWorkerSignals": {
+    "LNS11300036": {
+      "ageBand": {
+        "max": 24,
+        "min": 20
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS11300036",
+              "value": 70.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS11300036",
+              "value": 70.9
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300036",
+              "value": 71.5
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 70.86666666666667,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS11300036",
+              "value": 70.5
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS11300036",
+              "value": 70.5
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS11300036",
+              "value": 70.6
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS11300036",
+              "value": 70.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS11300036",
+              "value": 70.9
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300036",
+              "value": 71.5
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 70.7,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS11300036",
+              "value": 71.1
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300036",
+              "value": 71.5
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": 0.4000000000000057,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 71.5
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS11300036",
+      "sourceHealth": "PARTIAL",
+      "title": "Labor-force participation rate, 20–24 years",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS11300060": {
+      "ageBand": {
+        "max": 54,
+        "min": 25
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS11300060",
+              "value": 83.4
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS11300060",
+              "value": 83.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300060",
+              "value": 83.7
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 83.5,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS11300060",
+              "value": 83.8
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS11300060",
+              "value": 83.9
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS11300060",
+              "value": 83.3
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS11300060",
+              "value": 83.4
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS11300060",
+              "value": 83.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300060",
+              "value": 83.7
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 83.58333333333333,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS11300060",
+              "value": 83.7
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300060",
+              "value": 83.7
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": 0.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 83.7
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS11300060",
+      "sourceHealth": "PARTIAL",
+      "title": "Labor-force participation rate, 25–54 years",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS11300089": {
+      "ageBand": {
+        "max": 34,
+        "min": 25
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS11300089",
+              "value": 83.1
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS11300089",
+              "value": 83.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300089",
+              "value": 83.5
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 83.33333333333333,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS11300089",
+              "value": 83.8
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS11300089",
+              "value": 84.0
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS11300089",
+              "value": 82.4
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS11300089",
+              "value": 83.1
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS11300089",
+              "value": 83.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300089",
+              "value": 83.5
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 83.36666666666666,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS11300089",
+              "value": 83.5
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS11300089",
+              "value": 83.5
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": 0.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 83.5
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS11300089",
+      "sourceHealth": "PARTIAL",
+      "title": "Labor-force participation rate, 25–34 years",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS12300036": {
+      "ageBand": {
+        "max": 24,
+        "min": 20
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS12300036",
+              "value": 65.3
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS12300036",
+              "value": 65.9
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300036",
+              "value": 65.8
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 65.66666666666667,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS12300036",
+              "value": 65.2
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS12300036",
+              "value": 65.4
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS12300036",
+              "value": 65.6
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS12300036",
+              "value": 65.3
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS12300036",
+              "value": 65.9
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300036",
+              "value": 65.8
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 65.53333333333333,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS12300036",
+              "value": 64.6
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300036",
+              "value": 65.8
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": 1.2000000000000028,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 65.8
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS12300036",
+      "sourceHealth": "PARTIAL",
+      "title": "Employment-population ratio, 20–24 years",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS12300060": {
+      "ageBand": {
+        "max": 54,
+        "min": 25
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS12300060",
+              "value": 80.4
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS12300060",
+              "value": 80.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300060",
+              "value": 80.7
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 80.5,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS12300060",
+              "value": 80.7
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS12300060",
+              "value": 80.8
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS12300060",
+              "value": 80.2
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS12300060",
+              "value": 80.4
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS12300060",
+              "value": 80.4
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300060",
+              "value": 80.7
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 80.53333333333335,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS12300060",
+              "value": 80.7
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300060",
+              "value": 80.7
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": 0.0,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 80.7
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS12300060",
+      "sourceHealth": "PARTIAL",
+      "title": "Employment-population ratio, 25–54 years",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS12300089": {
+      "ageBand": {
+        "max": 34,
+        "min": 25
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS12300089",
+              "value": 79.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS12300089",
+              "value": 79.8
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300089",
+              "value": 79.9
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 79.63333333333334,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS12300089",
+              "value": 79.8
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS12300089",
+              "value": 80.1
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS12300089",
+              "value": 78.6
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS12300089",
+              "value": 79.2
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS12300089",
+              "value": 79.8
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300089",
+              "value": 79.9
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 79.56666666666666,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS12300089",
+              "value": 79.5
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS12300089",
+              "value": 79.9
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": 0.4000000000000057,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 79.9
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS12300089",
+      "sourceHealth": "PARTIAL",
+      "title": "Employment-population ratio, 25–34 years",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS14000036": {
+      "ageBand": {
+        "max": 24,
+        "min": 20
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS14000036",
+              "value": 7.1
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS14000036",
+              "value": 7.1
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000036",
+              "value": 8.0
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 7.3999999999999995,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS14000036",
+              "value": 7.6
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS14000036",
+              "value": 7.2
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS14000036",
+              "value": 7.1
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS14000036",
+              "value": 7.1
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS14000036",
+              "value": 7.1
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000036",
+              "value": 8.0
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 7.3500000000000005,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS14000036",
+              "value": 9.2
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000036",
+              "value": 8.0
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": -1.1999999999999993,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 8.0
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS14000036",
+      "sourceHealth": "PARTIAL",
+      "title": "Unemployment rate, 20–24 years",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS14000060": {
+      "ageBand": {
+        "max": 54,
+        "min": 25
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS14000060",
+              "value": 3.6
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS14000060",
+              "value": 3.6
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000060",
+              "value": 3.6
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 3.6,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS14000060",
+              "value": 3.7
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS14000060",
+              "value": 3.8
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS14000060",
+              "value": 3.7
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS14000060",
+              "value": 3.6
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS14000060",
+              "value": 3.6
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000060",
+              "value": 3.6
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 3.6666666666666665,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS14000060",
+              "value": 3.7
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000060",
+              "value": 3.6
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": -0.10000000000000009,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 3.6
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS14000060",
+      "sourceHealth": "PARTIAL",
+      "title": "Unemployment rate, 25–54 years",
+      "unit": "percent",
+      "usingLastValid": false
+    },
+    "LNS14000089": {
+      "ageBand": {
+        "max": 34,
+        "min": 25
+      },
+      "derived": [
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-07",
+              "seriesId": "LNS14000089",
+              "value": 4.6
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS14000089",
+              "value": 4.3
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000089",
+              "value": 4.3
+            }
+          ],
+          "minimumRequiredObservations": 3,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 4.3999999999999995,
+          "windowMonths": 3
+        },
+        {
+          "formula": "sum(values) / window",
+          "inputs": [
+            {
+              "period": "2026-04",
+              "seriesId": "LNS14000089",
+              "value": 4.8
+            },
+            {
+              "period": "2026-05",
+              "seriesId": "LNS14000089",
+              "value": 4.7
+            },
+            {
+              "period": "2026-06",
+              "seriesId": "LNS14000089",
+              "value": 4.6
+            },
+            {
+              "period": "2026-07",
+              "seriesId": "LNS14000089",
+              "value": 4.6
+            },
+            {
+              "period": "2026-08",
+              "seriesId": "LNS14000089",
+              "value": 4.3
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000089",
+              "value": 4.3
+            }
+          ],
+          "minimumRequiredObservations": 6,
+          "operation": "moving_average",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percent",
+          "value": 4.55,
+          "windowMonths": 6
+        },
+        {
+          "formula": "value(t) - value(t-window)",
+          "inputs": [
+            {
+              "period": "2025-09",
+              "seriesId": "LNS14000089",
+              "value": 4.8
+            },
+            {
+              "period": "2026-09",
+              "seriesId": "LNS14000089",
+              "value": 4.3
+            }
+          ],
+          "minimumRequiredObservations": 2,
+          "operation": "change",
+          "period": "2026-09",
+          "status": "AVAILABLE",
+          "unit": "percentage_points",
+          "value": -0.5,
+          "windowMonths": 12
+        }
+      ],
+      "evidenceType": "OBSERVED_LABOR_MARKET",
+      "frequency": "monthly",
+      "observation": {
+        "collectionEnd": null,
+        "collectionStart": null,
+        "footnotes": [],
+        "period": "2026-09",
+        "periodEnd": "2026-09-30",
+        "periodStart": "2026-09-01",
+        "releaseDate": null,
+        "responseShares": null,
+        "revisionStatus": "revision_unknown",
+        "standardError": null,
+        "status": "official",
+        "value": 4.3
+      },
+      "retrievedAt": "2026-10-05T22:38:57Z",
+      "seasonalAdjustment": "SA",
+      "seriesId": "LNS14000089",
+      "sourceHealth": "PARTIAL",
+      "title": "Unemployment rate, 25–34 years",
+      "unit": "percent",
+      "usingLastValid": false
+    }
+  }
+}
