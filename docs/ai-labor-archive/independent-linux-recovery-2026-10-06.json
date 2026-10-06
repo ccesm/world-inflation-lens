@@ -1,0 +1,666 @@
+{
+  "schema": "ai-labor-independent-recovery-v1",
+  "purpose": "Independent second-machine reproduction of PR #10 archive/hydration qualification, plus fail-closed damage scenarios",
+  "stackCommit": "09fcc21aad29c36697f4775048ad87694a1a8b61",
+  "qualificationToolingCommit": "7a95cc9782c380ae082550bd96185191cdd09d0a",
+  "environment": {
+    "os": "Linux",
+    "kernel": "6.18.44-fc-v70",
+    "machine": "x86_64",
+    "python": "3.13.16",
+    "cpus": 2,
+    "notes": "Ephemeral cloud Linux container; separate from the machine that produced qualification.json"
+  },
+  "repack": {
+    "sourceOfBytes": "Git objects of stack commit, via archive.py pack",
+    "archiveSha256": "290a89de982b1249a5209130345eb55c2043639fd0b1c744da1969375c4b4337",
+    "archiveBytes": 112015360,
+    "manifestSha256": "fc74265994b09f873ce5c945f57c3e672fc356d5514eefec74d5195769246e1d",
+    "lockByteIdenticalToReviewed": true
+  },
+  "remoteDownload": {
+    "assetId": 616248295,
+    "assetName": "wil-archive-507.tar",
+    "access": "authenticated (draft release)",
+    "sha256": "290a89de982b1249a5209130345eb55c2043639fd0b1c744da1969375c4b4337",
+    "matchesLock": true,
+    "permanentPublicPlacement": false
+  },
+  "qualificationRun": {
+    "command": "qualify.py --archive <downloaded draft asset> --index docs/ai-labor-archive/stack.lock.json --work <new> --regressions",
+    "regressionsRun": true,
+    "checks": 34,
+    "allExitZero": true,
+    "regressionSuites": {
+      "phase1": {
+        "tests": 71,
+        "result": "OK"
+      },
+      "phase2": {
+        "tests": 77,
+        "result": "OK"
+      },
+      "phase3": {
+        "tests": 94,
+        "result": "OK"
+      },
+      "monitor": {
+        "tests": 82,
+        "result": "OK"
+      }
+    },
+    "regressionTotal": 324,
+    "pinnedHashesMatchQualificationJson": {
+      "archiveSha256": true,
+      "phase1AcceptedHashes": true,
+      "phase2ArtifactMapHash": true,
+      "phase3ArtifactMapHash": true,
+      "monitorResultHash": true,
+      "hydratedFiles": true
+    },
+    "nonRegressionLogsByteIdenticalToQualificationJson": "30 of 30",
+    "report": {
+      "archiveSha256": "290a89de982b1249a5209130345eb55c2043639fd0b1c744da1969375c4b4337",
+      "checks": [
+        {
+          "check": "1-phase1-accepted-validate",
+          "exitCode": 0,
+          "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+        },
+        {
+          "check": "1-phase2-accepted-validate",
+          "exitCode": 0,
+          "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+        },
+        {
+          "check": "1-phase3-accepted-validate",
+          "exitCode": 0,
+          "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+        },
+        {
+          "check": "1-monitor-frozen-replay",
+          "exitCode": 0,
+          "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+        },
+        {
+          "check": "1-phase1-normalize",
+          "exitCode": 0,
+          "logSha256": "c5d174f8a3124fa4ada390e36750984b6de36c0856c692134fa8b2e86ed017f7"
+        },
+        {
+          "check": "1-phase1-rebuilt-validate",
+          "exitCode": 0,
+          "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+        },
+        {
+          "check": "1-phase2-normalize",
+          "exitCode": 0,
+          "logSha256": "739db7cd767adbc7fbd094ec21d211dae2531fd5a83bf4469aeeb6c4cea0e58b"
+        },
+        {
+          "check": "1-phase2-rebuilt-validate",
+          "exitCode": 0,
+          "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+        },
+        {
+          "check": "1-phase3-normalize",
+          "exitCode": 0,
+          "logSha256": "fa3c0cc7f9bf5e113b3356ad70ccded51addc1a7448699aceb756c2437173f13"
+        },
+        {
+          "check": "1-phase3-rebuilt-validate",
+          "exitCode": 0,
+          "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+        },
+        {
+          "check": "1-monitor-dry-run",
+          "exitCode": 0,
+          "logSha256": "32c6d58610afbffb4987199b3f83cfd52efc6b926453f68d7dcd15aa899f611d"
+        },
+        {
+          "check": "1-monitor-validate",
+          "exitCode": 0,
+          "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+        },
+        {
+          "check": "1-monitor-repeat",
+          "exitCode": 0,
+          "logSha256": "94e24d3291fdd115720da709120b4fd54b6898d64ddd9f1f5b03747c6a525e2d"
+        },
+        {
+          "check": "1-monitor-recovery-package",
+          "exitCode": 0,
+          "logSha256": "be3af9e0785568f37a110b1d7e8bb1713cc939fae57a90a9555167c5330196c2"
+        },
+        {
+          "check": "1-monitor-recovered-validate",
+          "exitCode": 0,
+          "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+        },
+        {
+          "check": "phase1-regressions",
+          "exitCode": 0,
+          "logSha256": "29b8f6f7b57499069cb8b944527fa21319917e0d086ce62cd3ea0f07e2dfa1cb"
+        },
+        {
+          "check": "phase2-regressions",
+          "exitCode": 0,
+          "logSha256": "7e9c15be6cd0a70da2936cd1c0934102c51e63b400a3711b3e8be272f9a492d4"
+        },
+        {
+          "check": "phase3-regressions",
+          "exitCode": 0,
+          "logSha256": "7763186446a1fe272cd08c388535dd60bc94a9b15f7c063bf4b7b7803a41ea1c"
+        },
+        {
+          "check": "monitor-regressions",
+          "exitCode": 0,
+          "logSha256": "ea6a81b152bc89027d94c96944db82f0feac7f3af6a98c0d5de3ff8c55a5220e"
+        },
+        {
+          "check": "2-phase1-accepted-validate",
+          "exitCode": 0,
+          "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+        },
+        {
+          "check": "2-phase2-accepted-validate",
+          "exitCode": 0,
+          "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+        },
+        {
+          "check": "2-phase3-accepted-validate",
+          "exitCode": 0,
+          "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+        },
+        {
+          "check": "2-monitor-frozen-replay",
+          "exitCode": 0,
+          "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+        },
+        {
+          "check": "2-phase1-normalize",
+          "exitCode": 0,
+          "logSha256": "c5d174f8a3124fa4ada390e36750984b6de36c0856c692134fa8b2e86ed017f7"
+        },
+        {
+          "check": "2-phase1-rebuilt-validate",
+          "exitCode": 0,
+          "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+        },
+        {
+          "check": "2-phase2-normalize",
+          "exitCode": 0,
+          "logSha256": "739db7cd767adbc7fbd094ec21d211dae2531fd5a83bf4469aeeb6c4cea0e58b"
+        },
+        {
+          "check": "2-phase2-rebuilt-validate",
+          "exitCode": 0,
+          "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+        },
+        {
+          "check": "2-phase3-normalize",
+          "exitCode": 0,
+          "logSha256": "fa3c0cc7f9bf5e113b3356ad70ccded51addc1a7448699aceb756c2437173f13"
+        },
+        {
+          "check": "2-phase3-rebuilt-validate",
+          "exitCode": 0,
+          "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+        },
+        {
+          "check": "2-monitor-dry-run",
+          "exitCode": 0,
+          "logSha256": "32c6d58610afbffb4987199b3f83cfd52efc6b926453f68d7dcd15aa899f611d"
+        },
+        {
+          "check": "2-monitor-validate",
+          "exitCode": 0,
+          "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+        },
+        {
+          "check": "2-monitor-repeat",
+          "exitCode": 0,
+          "logSha256": "94e24d3291fdd115720da709120b4fd54b6898d64ddd9f1f5b03747c6a525e2d"
+        },
+        {
+          "check": "2-monitor-recovery-package",
+          "exitCode": 0,
+          "logSha256": "be3af9e0785568f37a110b1d7e8bb1713cc939fae57a90a9555167c5330196c2"
+        },
+        {
+          "check": "2-monitor-recovered-validate",
+          "exitCode": 0,
+          "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+        }
+      ],
+      "hydratedFiles": 507,
+      "monitorResultHash": "9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747",
+      "network": "socket connections denied in all Python subprocesses",
+      "phase1AcceptedHashes": {
+        "btos": "9287cb03f0b1a5e51e7d3d589d589afc2c6b42333d09c4c9b4147d243440c92b",
+        "ces": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+        "cps": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+        "jolts": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01"
+      },
+      "phase2ArtifactMapHash": "838a31f539e4cf44f952146197da343114a3ccac6f57df28a0b24ba5d57ed4b7",
+      "phase3ArtifactMapHash": "2eff8331d05baffa4db0eb063f95d1ec74f2c31b605252217d1f8c70dc25b57f",
+      "rawCpsZipReconstruction": false,
+      "regressionsRun": true,
+      "remoteDurableQualified": false,
+      "roots": 2,
+      "schema": "ai-labor-archive-qualification-v1",
+      "stackCommit": "09fcc21aad29c36697f4775048ad87694a1a8b61"
+    }
+  },
+  "failClosed": {
+    "results": [
+      {
+        "scenario": "partial-hydration-phase1-only",
+        "hydrated": "phase1",
+        "damage": null,
+        "change": "",
+        "command": "occupational/scripts/cli.py validate",
+        "exitCode": 2,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": null,
+        "logSha256": "73efec1d054487a874835506b15f5c1a95400bfa6d516dec7e59992bde9a7373",
+        "lastLine": "python3.13: can't open file '<work>/partial-hydration-phase1-only/research/ai-labor-transition/occupational/scripts/cli.py': [Errno 2] No such file or directory"
+      },
+      {
+        "scenario": "partial-hydration-phase1-only",
+        "hydrated": "phase1",
+        "damage": null,
+        "change": "",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 2,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": null,
+        "logSha256": "1ee43fdb8491d5c939bb0176498dca26a40e3cbbab17c789e20aa405ef490428",
+        "lastLine": "python3.13: can't open file '<work>/partial-hydration-phase1-only/research/ai-labor-transition/outcomes/scripts/cli.py': [Errno 2] No such file or directory"
+      },
+      {
+        "scenario": "partial-hydration-phase1-only",
+        "hydrated": "phase1",
+        "damage": null,
+        "change": "",
+        "command": "monitor/cli.py validate",
+        "exitCode": 2,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": null,
+        "logSha256": "55c57d4775c60aa89a14dfe15e5abbec66b30824331921d4de2e6a429c2b3a20",
+        "lastLine": "python3.13: can't open file '<work>/partial-hydration-phase1-only/research/ai-labor-transition/monitor/cli.py': [Errno 2] No such file or directory"
+      },
+      {
+        "scenario": "partial-hydration-phase2-only",
+        "hydrated": "phase2",
+        "damage": null,
+        "change": "",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 2,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": null,
+        "logSha256": "60be9d49b1ee7f3ab7c4772831a0d54d1fd4b1df5512f24546abf070a456b1aa",
+        "lastLine": "python3.13: can't open file '<work>/partial-hydration-phase2-only/research/ai-labor-transition/outcomes/scripts/cli.py': [Errno 2] No such file or directory"
+      },
+      {
+        "scenario": "partial-hydration-phase2-only",
+        "hydrated": "phase2",
+        "damage": null,
+        "change": "",
+        "command": "monitor/cli.py validate",
+        "exitCode": 2,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": null,
+        "logSha256": "0c97b99eaa11587c0841cc35caf962263f69ba6e45492dc86218dac3b85d239a",
+        "lastLine": "python3.13: can't open file '<work>/partial-hydration-phase2-only/research/ai-labor-transition/monitor/cli.py': [Errno 2] No such file or directory"
+      },
+      {
+        "scenario": "partial-hydration-phase3-only",
+        "hydrated": "phase3",
+        "damage": null,
+        "change": "",
+        "command": "monitor/cli.py validate",
+        "exitCode": 2,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": null,
+        "logSha256": "ef1031e238519b42929809b4185d3935d0e0d9a8cbb447968284ddb0e4077c42",
+        "lastLine": "python3.13: can't open file '<work>/partial-hydration-phase3-only/research/ai-labor-transition/monitor/cli.py': [Errno 2] No such file or directory"
+      },
+      {
+        "scenario": "code-present-phase2-data-absent",
+        "hydrated": "monitor",
+        "damage": "all phase2 C/D data",
+        "change": "deleted 59 phase2 C/D files; A/B code kept",
+        "command": "occupational/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "7c1e3381c322de53292f715576d74d7ffffa815962a55d87f643829d6717a70f",
+        "lastLine": "Crosswalk error: SourceError: Canonical backbone unavailable; previous projections preserved"
+      },
+      {
+        "scenario": "code-present-phase2-data-absent",
+        "hydrated": "monitor",
+        "damage": "all phase2 C/D data",
+        "change": "deleted 59 phase2 C/D files; A/B code kept",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "9cf3590dce03afb3cf465992007dda5319ef9b4352b649d0a4b3cbfd9527e93c",
+        "lastLine": "Outcome pipeline failed: FileNotFoundError: [Errno 2] No such file or directory: '<work>/code-present-phase2-data-absent/research/ai-labor-transition/normalized/occupations.json'"
+      },
+      {
+        "scenario": "code-present-phase3-data-absent",
+        "hydrated": "monitor",
+        "damage": "all phase3 C/D data",
+        "change": "deleted 303 phase3 C/D files; A/B code kept",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": false,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "a2dc69564cad53c96b93f4ed593ac4005f267274adcb70d062c2fabd7bebeedb",
+        "lastLine": "Outcome pipeline failed: FileNotFoundError: [Errno 2] No such file or directory: '<work>/code-present-phase3-data-absent/research/ai-labor-transition/outcomes/accepted/monthly/2015-01.json.gz'"
+      },
+      {
+        "scenario": "code-present-phase3-data-absent",
+        "hydrated": "monitor",
+        "damage": "all phase3 C/D data",
+        "change": "deleted 303 phase3 C/D files; A/B code kept",
+        "command": "monitor/cli.py dry-run",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "a6ba0874fa72d7835fd496b258cb6a9bbada9d3cd7305b5848b474d026543de8",
+        "lastLine": "Monitor failed closed: FileNotFoundError: [Errno 2] No such file or directory: '<work>/code-present-phase3-data-absent/research/ai-labor-transition/outcomes/cps-occupation-annual.json.gz'"
+      },
+      {
+        "scenario": "code-present-monitor-data-absent",
+        "hydrated": "monitor",
+        "damage": "all monitor C/D data",
+        "change": "deleted 19 monitor C/D files; A/B code kept",
+        "command": "monitor/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "cbbe4439dea15c2a922c7876faf691d65f9e3b52da944360dd0ab0bf9be71bdc",
+        "lastLine": "Monitor failed closed: SourceError: No accepted evaluation"
+      },
+      {
+        "scenario": "missing-D-phase2-superseded-onet-vintage",
+        "hydrated": "monitor",
+        "damage": "occupational/accepted/vintages/onet/c5bfcfe784d72a2253ebc49dd9068641cf2fc978609135ce190b89007c6ecf95.json.gz",
+        "change": "deleted",
+        "command": "occupational/scripts/cli.py validate",
+        "exitCode": 0,
+        "failedClosed": false,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539",
+        "lastLine": "{\"validatedArtifacts\": 12}"
+      },
+      {
+        "scenario": "missing-D-phase1-raw-source",
+        "hydrated": "monitor",
+        "damage": "sources/raw/e058a098af64427b0cf0c1455435023aeb9a84142a55175d322687e61a3da3ce.gz",
+        "change": "deleted",
+        "command": "scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "dc23afb37a570bbdacd11741ce1842e9a3f1b1f46b3d0332926ed7daf5cb76d5",
+        "lastLine": "Pipeline error: FileNotFoundError: [Errno 2] No such file or directory: '<work>/missing-D-phase1-raw-source/research/ai-labor-transition/sources/raw/e058a098af64427b0cf0c1455435023aeb9a84142a55175d322687e61a3da3ce.gz'"
+      },
+      {
+        "scenario": "missing-D-phase1-raw-source-rebuild",
+        "hydrated": "monitor",
+        "damage": "sources/raw/e058a098af64427b0cf0c1455435023aeb9a84142a55175d322687e61a3da3ce.gz",
+        "change": "deleted",
+        "command": "scripts/cli.py normalize",
+        "exitCode": 2,
+        "failedClosed": true,
+        "treeUnchanged": false,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "2c577631b48fa9f55bb6d51f7b4a68875792ca59d0142964f4a6b1d5b925210e",
+        "lastLine": "}"
+      },
+      {
+        "scenario": "missing-D-phase1-raw-source-rebuild",
+        "hydrated": "monitor",
+        "damage": "sources/raw/e058a098af64427b0cf0c1455435023aeb9a84142a55175d322687e61a3da3ce.gz",
+        "change": "deleted",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "2fbff57632bd4e34b3548f1116c05b33e9177338760ea2dbe11795a1fc2e3994",
+        "lastLine": "Outcome pipeline failed: SourceError: Independent analytical reconstruction mismatch: current-research-summary.json"
+      },
+      {
+        "scenario": "missing-D-phase1-raw-source-rebuild",
+        "hydrated": "monitor",
+        "damage": "sources/raw/e058a098af64427b0cf0c1455435023aeb9a84142a55175d322687e61a3da3ce.gz",
+        "change": "deleted",
+        "command": "monitor/cli.py dry-run",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "c3c386d913ce44451e6dec945fe60e1f30edc39154e25b5ce13a104f8c7fcb0e",
+        "lastLine": "Monitor failed closed: FileNotFoundError: [Errno 2] No such file or directory: '<work>/missing-D-phase1-raw-source-rebuild/research/ai-labor-transition/sources/raw/e058a098af64427b0cf0c1455435023aeb9a84142a55175d322687e61a3d"
+      },
+      {
+        "scenario": "missing-D-phase1-cps-vintage",
+        "hydrated": "monitor",
+        "damage": "normalized/vintages/cps/95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689.json",
+        "change": "deleted",
+        "command": "scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "25df6a9d517fae8e873bc9f60302959a6463dd84d128460cce39ff8c75facf99",
+        "lastLine": "Pipeline error: SourceError: Current pointer has no accepted immutable vintage"
+      },
+      {
+        "scenario": "missing-D-phase2-current-onet-vintage",
+        "hydrated": "monitor",
+        "damage": "occupational/accepted/vintages/onet/28a0f4b5f2748502d3a331de6cb788c703b45a26f6f3099174f2060236d467c5.json.gz",
+        "change": "deleted",
+        "command": "occupational/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "fd8bb27a1fe9f8cc06b8a97d7a82bf29fe20fe66697a955dc8a5abbfd26e2040",
+        "lastLine": "Crosswalk error: SourceError: Accepted pointer identity mismatch"
+      },
+      {
+        "scenario": "missing-D-phase2-onet-raw-source-rebuild",
+        "hydrated": "monitor",
+        "damage": "occupational/sources/raw/6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9.gz",
+        "change": "deleted",
+        "command": "occupational/scripts/cli.py normalize",
+        "exitCode": 2,
+        "failedClosed": true,
+        "treeUnchanged": false,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "8bacd701a79ca05d4494af6b1d2bb9e92484a020daa31c267e9d01ed0e646b3f",
+        "lastLine": "}"
+      },
+      {
+        "scenario": "missing-D-phase3-occupation-annual",
+        "hydrated": "monitor",
+        "damage": "outcomes/cps-occupation-annual.json.gz",
+        "change": "deleted",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "50283e8220b2f633032e5c63cde99772bb266139c08c17c92cb198c905c0e6ef",
+        "lastLine": "Outcome pipeline failed: FileNotFoundError: [Errno 2] No such file or directory: '<work>/missing-D-phase3-occupation-annual/research/ai-labor-transition/outcomes/cps-occupation-annual.json.gz'"
+      },
+      {
+        "scenario": "missing-D-phase3-occupation-annual-rebuild",
+        "hydrated": "monitor",
+        "damage": "outcomes/cps-occupation-annual.json.gz",
+        "change": "deleted",
+        "command": "outcomes/scripts/cli.py normalize",
+        "exitCode": 0,
+        "failedClosed": false,
+        "treeUnchanged": false,
+        "deletedFileRegeneratedIdentical": true,
+        "lockCheckDetects": true,
+        "logSha256": "fa3c0cc7f9bf5e113b3356ad70ccded51addc1a7448699aceb756c2437173f13",
+        "lastLine": "}"
+      },
+      {
+        "scenario": "missing-D-monitor-evaluation",
+        "hydrated": "monitor",
+        "damage": "monitor/history/qualification-store/evaluations/9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747.json",
+        "change": "deleted",
+        "command": "monitor/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "0c9857d588cbe96f99b2a3de8e37cd82503740f6578217f567562f2eb5a3686f",
+        "lastLine": "Monitor failed closed: FileNotFoundError: [Errno 2] No such file or directory: 'research/ai-labor-transition/monitor/history/qualification-store/evaluations/9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747.json'"
+      },
+      {
+        "scenario": "missing-C-phase1-provider-alias",
+        "hydrated": "monitor",
+        "damage": "normalized/providers/cps.json",
+        "change": "deleted",
+        "command": "scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "ae87dddf7e2b506bd7fab8f3eff8eb32b21cc4d738a5e06252dd5ef30ee33423",
+        "lastLine": "Pipeline error: SourceError: Derived/view semantic mismatch: labor-aggregate.json"
+      },
+      {
+        "scenario": "missing-C-phase3-monthly-alias",
+        "hydrated": "monitor",
+        "damage": "outcomes/accepted/monthly/2015-01.json.gz",
+        "change": "deleted",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "c659b835e007ca7fbd98c4799ee2ff51be13b60079a173e395959155ee57b38b",
+        "lastLine": "Outcome pipeline failed: FileNotFoundError: [Errno 2] No such file or directory: '<work>/missing-C-phase3-monthly-alias/research/ai-labor-transition/outcomes/accepted/monthly/2015-01.json.gz'"
+      },
+      {
+        "scenario": "altered-D-phase1-cps-vintage",
+        "hydrated": "monitor",
+        "damage": "normalized/vintages/cps/95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689.json",
+        "change": "min: 16 -> 17",
+        "command": "scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "25df6a9d517fae8e873bc9f60302959a6463dd84d128460cce39ff8c75facf99",
+        "lastLine": "Pipeline error: SourceError: Current pointer has no accepted immutable vintage"
+      },
+      {
+        "scenario": "altered-D-phase3-group-outcomes",
+        "hydrated": "monitor",
+        "damage": "outcomes/exposure-group-outcomes.json",
+        "change": "employmentWeightedCoverage: 0.4020184381451991 -> 1.4020184381451992",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "4d652421c6e647730e712df9e5d7a692f24031ee2d094070880d74c13a04048b",
+        "lastLine": "Outcome pipeline failed: SourceError: Independent analytical reconstruction mismatch: exposure-group-outcomes.json"
+      },
+      {
+        "scenario": "altered-D-monitor-store-inputs",
+        "hydrated": "monitor",
+        "damage": "monitor/history/qualification-store/inputs.json",
+        "change": "firstRecordedAt: ...35:38Z -> ...35:380",
+        "command": "monitor/cli.py validate",
+        "exitCode": 0,
+        "failedClosed": false,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1",
+        "lastLine": "PASS: recorded identity, semantic reconstruction and current view"
+      },
+      {
+        "scenario": "altered-C-phase3-monthly-alias",
+        "hydrated": "monitor",
+        "damage": "outcomes/accepted/monthly/2015-01.json.gz",
+        "change": "employedPersonMonths: 62065 -> 62066",
+        "command": "outcomes/scripts/cli.py validate",
+        "exitCode": 1,
+        "failedClosed": true,
+        "treeUnchanged": true,
+        "deletedFileRegeneratedIdentical": null,
+        "lockCheckDetects": true,
+        "logSha256": "cbc9bb9f6b4af812564fff45bb3d035b695a47e1bde3393e2e7e30c948578484",
+        "lastLine": "Outcome pipeline failed: SourceError: Accepted monthly identity mismatch"
+      }
+    ],
+    "summary": {
+      "total": 28,
+      "failedClosed": 25,
+      "exitZero": [
+        "missing-D-phase2-superseded-onet-vintage occupational/scripts/cli.py validate",
+        "missing-D-phase3-occupation-annual-rebuild outcomes/scripts/cli.py normalize",
+        "altered-D-monitor-store-inputs monitor/cli.py validate"
+      ],
+      "treeChangedOnFailure": [
+        "code-present-phase3-data-absent outcomes/scripts/cli.py validate",
+        "missing-D-phase1-raw-source-rebuild scripts/cli.py normalize",
+        "missing-D-phase2-onet-raw-source-rebuild occupational/scripts/cli.py normalize"
+      ],
+      "lockCheckMissedDamage": []
+    }
+  }
+}
