@@ -97,6 +97,17 @@ caseTest('OP-08','interrupted immutable publication preserves old file',()=>{con
 caseTest('OP-09','failed run retains artifact original as-of',()=>{const f=fixture(),o=run(f),dir=fs.mkdtempSync(path.join(os.tmpdir(),'wil-signal-')),target=path.join(dir,'old.json');persistArtifact(repo,o,target,f.validate);const before=fs.readFileSync(target);const bad=clone(o);bad.factors[0].direction='BUY';assert.throws(()=>persistArtifact(repo,bad,target,f.validate));assert.equal(fs.readFileSync(target).toString(),before.toString());fs.rmSync(dir,{recursive:true})})
 caseTest('OP-10','retry identical artifact idempotent',()=>{const f=fixture(),o=run(f),dir=fs.mkdtempSync(path.join(os.tmpdir(),'wil-signal-')),target=path.join(dir,'same.json');const a=persistArtifact(repo,o,target,f.validate),b=persistArtifact(repo,o,target,f.validate);assert.equal(a.payloadSha256,b.payloadSha256);assert.equal(fs.readFileSync(target,'utf8'),serialize(o));fs.rmSync(dir,{recursive:true})})
 caseTest('OP-11','input rollback reproduces pinned interpretation',()=>{const f=fixture(),old=clone(f.archive),a=run(f);mutate(f,'TIC_TOTAL',s=>s.observations.at(-1).value*=2);const b=run(f);assert.notEqual(contentHash(a),contentHash(b));assert.equal(serialize(a),serialize(evaluate(old,f.env,f.request)))})
-caseTest('OP-12','offline path cannot write production',()=>{const before=execFileSync('git',['diff','--binary','HEAD','--','src','data','.github','public','package.json','package-lock.json'],{cwd:repo}).toString();assert.throws(()=>offlinePath(repo,path.join(repo,'data/signals.json')),/OFFLINE/);assert.throws(()=>offlinePath(repo,path.join(repo,'public/signals.json')),/OFFLINE/);assert.equal(JSON.parse(fs.readFileSync(path.join(repo,'package.json'))).version,'1.0.0');assert.equal(execFileSync('git',['diff','--binary','HEAD','--','src','data','.github','public','package.json','package-lock.json'],{cwd:repo}).toString(),before)})
+caseTest('OP-12','offline path cannot write production',()=>{
+  const packagePath=path.join(repo,'package.json')
+  const packageBefore=fs.readFileSync(packagePath)
+  const expectedApplicationVersion=JSON.parse(packageBefore).version
+  const protectedDiff=()=>execFileSync('git',['diff','--binary','HEAD','--','src','data','.github','public','package.json','package-lock.json'],{cwd:repo}).toString()
+  const before=protectedDiff()
+  assert.throws(()=>offlinePath(repo,path.join(repo,'data/signals.json')),/OFFLINE/)
+  assert.throws(()=>offlinePath(repo,path.join(repo,'public/signals.json')),/OFFLINE/)
+  assert.equal(JSON.parse(fs.readFileSync(packagePath)).version,expectedApplicationVersion)
+  assert.deepEqual(fs.readFileSync(packagePath),packageBefore)
+  assert.equal(protectedDiff(),before)
+})
 caseTest('OP-13','network forbidden during evaluation',()=>{const f=fixture(),before=globalThis.fetch;globalThis.fetch=()=>{throw Error('OFFLINE_NETWORK_FORBIDDEN')};try{assert(run(f));assert(!fs.readFileSync(path.join(repo,'research/signal-engine/engine/engine.mjs'),'utf8').includes('fetch('))}finally{globalThis.fetch=before}})
 caseTest('OP-14','corrupt payload hash rejected',()=>{const f=fixture(),manifest=JSON.parse(fs.readFileSync(path.join(repo,'research/signal-engine/fixtures/repository-manifest.json')));manifest.datasets[0].snapshotSha256='1'.repeat(64);assert.throws(()=>loadArchive(repo,manifest,f.env),/MISMATCH/)})
