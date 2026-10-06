@@ -1,0 +1,295 @@
+{
+  "archiveContractTests": {
+    "logSha256": "45f61e151bb437b9c447d0e2842f992f3cc431d04e0f2ce2461698037c262de3",
+    "passed": 14
+  },
+  "archiveSha256": "290a89de982b1249a5209130345eb55c2043639fd0b1c744da1969375c4b4337",
+  "checks": [
+    {
+      "check": "1-phase1-accepted-validate",
+      "exitCode": 0,
+      "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+    },
+    {
+      "check": "1-phase2-accepted-validate",
+      "exitCode": 0,
+      "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+    },
+    {
+      "check": "1-phase3-accepted-validate",
+      "exitCode": 0,
+      "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+    },
+    {
+      "check": "1-monitor-frozen-replay",
+      "exitCode": 0,
+      "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+    },
+    {
+      "check": "1-phase1-normalize",
+      "exitCode": 0,
+      "logSha256": "c5d174f8a3124fa4ada390e36750984b6de36c0856c692134fa8b2e86ed017f7"
+    },
+    {
+      "check": "1-phase1-rebuilt-validate",
+      "exitCode": 0,
+      "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+    },
+    {
+      "check": "1-phase2-normalize",
+      "exitCode": 0,
+      "logSha256": "739db7cd767adbc7fbd094ec21d211dae2531fd5a83bf4469aeeb6c4cea0e58b"
+    },
+    {
+      "check": "1-phase2-rebuilt-validate",
+      "exitCode": 0,
+      "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+    },
+    {
+      "check": "1-phase3-normalize",
+      "exitCode": 0,
+      "logSha256": "fa3c0cc7f9bf5e113b3356ad70ccded51addc1a7448699aceb756c2437173f13"
+    },
+    {
+      "check": "1-phase3-rebuilt-validate",
+      "exitCode": 0,
+      "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+    },
+    {
+      "check": "1-monitor-dry-run",
+      "exitCode": 0,
+      "logSha256": "32c6d58610afbffb4987199b3f83cfd52efc6b926453f68d7dcd15aa899f611d"
+    },
+    {
+      "check": "1-monitor-validate",
+      "exitCode": 0,
+      "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+    },
+    {
+      "check": "1-monitor-repeat",
+      "exitCode": 0,
+      "logSha256": "94e24d3291fdd115720da709120b4fd54b6898d64ddd9f1f5b03747c6a525e2d"
+    },
+    {
+      "check": "1-monitor-recovery-package",
+      "exitCode": 0,
+      "logSha256": "be3af9e0785568f37a110b1d7e8bb1713cc939fae57a90a9555167c5330196c2"
+    },
+    {
+      "check": "1-monitor-recovered-validate",
+      "exitCode": 0,
+      "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+    },
+    {
+      "check": "2-phase1-accepted-validate",
+      "exitCode": 0,
+      "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+    },
+    {
+      "check": "2-phase2-accepted-validate",
+      "exitCode": 0,
+      "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+    },
+    {
+      "check": "2-phase3-accepted-validate",
+      "exitCode": 0,
+      "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+    },
+    {
+      "check": "2-monitor-frozen-replay",
+      "exitCode": 0,
+      "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+    },
+    {
+      "check": "2-phase1-normalize",
+      "exitCode": 0,
+      "logSha256": "c5d174f8a3124fa4ada390e36750984b6de36c0856c692134fa8b2e86ed017f7"
+    },
+    {
+      "check": "2-phase1-rebuilt-validate",
+      "exitCode": 0,
+      "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+    },
+    {
+      "check": "2-phase2-normalize",
+      "exitCode": 0,
+      "logSha256": "739db7cd767adbc7fbd094ec21d211dae2531fd5a83bf4469aeeb6c4cea0e58b"
+    },
+    {
+      "check": "2-phase2-rebuilt-validate",
+      "exitCode": 0,
+      "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+    },
+    {
+      "check": "2-phase3-normalize",
+      "exitCode": 0,
+      "logSha256": "fa3c0cc7f9bf5e113b3356ad70ccded51addc1a7448699aceb756c2437173f13"
+    },
+    {
+      "check": "2-phase3-rebuilt-validate",
+      "exitCode": 0,
+      "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+    },
+    {
+      "check": "2-monitor-dry-run",
+      "exitCode": 0,
+      "logSha256": "32c6d58610afbffb4987199b3f83cfd52efc6b926453f68d7dcd15aa899f611d"
+    },
+    {
+      "check": "2-monitor-validate",
+      "exitCode": 0,
+      "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+    },
+    {
+      "check": "2-monitor-repeat",
+      "exitCode": 0,
+      "logSha256": "94e24d3291fdd115720da709120b4fd54b6898d64ddd9f1f5b03747c6a525e2d"
+    },
+    {
+      "check": "2-monitor-recovery-package",
+      "exitCode": 0,
+      "logSha256": "be3af9e0785568f37a110b1d7e8bb1713cc939fae57a90a9555167c5330196c2"
+    },
+    {
+      "check": "2-monitor-recovered-validate",
+      "exitCode": 0,
+      "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+    }
+  ],
+  "evidenceArchive": {
+    "files": 43,
+    "sha256": "8e6ea5993d9d5ea43150c0c890cf30090603fd6abfd4e6d2b67ccbe890c3863e",
+    "size": 122880
+  },
+  "hydratedFiles": 507,
+  "monitorResultHash": "9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747",
+  "network": "socket connections denied in all Python subprocesses",
+  "originalLocalFilesPreserved": 33,
+  "originalUntrackedDesignDocuments": {
+    "docs/AI_FISCAL_CAPACITY_EQUATIONS.md": "8e535271a60aaa8b97ee04d8c7495fb34e1313779d98cbe0485045f6af9ae54a",
+    "docs/AI_FISCAL_CAPACITY_MODEL_DESIGN.md": "599397f2b7b56d678ea7cd943ec75ee7e15e54d6e61d143f55c97251bdc47c72",
+    "docs/AI_LABOR_TRANSITION_DATA_DESIGN.md": "156ec85b51b816a82c2a0a38085ed845a9755d4a6365899a9c6c8f2e00d6c53e",
+    "docs/AI_LABOR_TRANSITION_MODEL_MATRIX.md": "35a15b469b7988b5d82624e7434fcc9cb510dedf393dec10f23c668b82eae827",
+    "docs/AI_PRODUCTIVITY_MODEL_MATRIX.md": "c0d0152a655fc921bc443a1ced32312007a552af162782d6b780dc4bd40da01e"
+  },
+  "phase1AcceptedHashes": {
+    "btos": "9287cb03f0b1a5e51e7d3d589d589afc2c6b42333d09c4c9b4147d243440c92b",
+    "ces": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+    "cps": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+    "jolts": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01"
+  },
+  "phase2ArtifactMapHash": "838a31f539e4cf44f952146197da343114a3ccac6f57df28a0b24ba5d57ed4b7",
+  "phase3ArtifactMapHash": "2eff8331d05baffa4db0eb063f95d1ec74f2c31b605252217d1f8c70dc25b57f",
+  "preservedBranches": {
+    "codex/ai-labor-continuous-monitor": "09fcc21aad29c36697f4775048ad87694a1a8b61",
+    "codex/observed-ai-labor-market-pipeline": "289f93d99c378e0f8e7f2819d4820a82a0b12672",
+    "codex/observed-labor-outcomes-by-ai-exposure": "57f9b70352999a9464fb164e17df21075d6d61e9",
+    "codex/occupational-ai-exposure-crosswalk": "e09b7c973fae4b219aea1132206f5f06995d3717"
+  },
+  "productionChecks": {
+    "build": {
+      "logSha256": "0615da4be4501ed34aadbc8f269ec32fc1db75c4968bd3c368e3015794c7e842",
+      "result": "PASS"
+    },
+    "verify": {
+      "logSha256": "1c51944c46f948f5a1c978451f13888d8d3e0684b0e6ef9e7d1563ceb015663a",
+      "result": "PASS"
+    }
+  },
+  "rawCpsZipReconstruction": false,
+  "regressionSuites": [
+    {
+      "logSha256": "c4ca0289090ff958366bb4a6da613b1eca2328063c3d34bf8a02c53afefbf0ce",
+      "phase": "phase1",
+      "result": "PASS",
+      "seconds": 0.712,
+      "tests": 71
+    },
+    {
+      "logSha256": "1a55e55a0fbad1080953213fcf94802a073e1a0a6f0336f07a93e49e26c44ea0",
+      "phase": "phase2",
+      "result": "PASS",
+      "seconds": 72.208,
+      "tests": 77
+    },
+    {
+      "logSha256": "57cf1681b2b2f283a364394acdd46101aaae33ebe0a37a29ae89cc8faba791f7",
+      "phase": "phase3",
+      "result": "PASS",
+      "seconds": 61.823,
+      "tests": 94
+    },
+    {
+      "logSha256": "329fc2a68b0e6d75678a041260f98dc70b11ba4126082c4097198a43c6c88d36",
+      "phase": "monitor",
+      "result": "PASS",
+      "seconds": 48.746,
+      "tests": 82
+    }
+  ],
+  "regressionTotal": 324,
+  "regressionsRun": false,
+  "remoteDraftEvidenceArchive": {
+    "files": 6,
+    "sha256": "5cb7d7b6a817dbe22bf54eec7c1daaae18e10d13d4d93c561590412ffdc21c96",
+    "size": 10240
+  },
+  "remoteDraftRoundTrip": {
+    "archiveAssetId": 616248295,
+    "archiveSha256": "290a89de982b1249a5209130345eb55c2043639fd0b1c744da1969375c4b4337",
+    "checkedAt": "2026-10-06T18:02:33.002974+00:00",
+    "checks": [
+      {
+        "check": "phase1",
+        "exitCode": 0,
+        "logSha256": "77e01138c975b51f23c15e69b0d0ffd47914a31c5a2672f43e94488f01eb9c9f"
+      },
+      {
+        "check": "phase2",
+        "exitCode": 0,
+        "logSha256": "0e1e5a6d7bcd925102b84d2e1fb23985cbddd98f0a515221b769c5ae75b26539"
+      },
+      {
+        "check": "phase3",
+        "exitCode": 0,
+        "logSha256": "99387ce6a856ddc443d9132c13d57a7897c7ec9b7d64e89eb2a016d3e6b6ef57"
+      },
+      {
+        "check": "monitor",
+        "exitCode": 0,
+        "logSha256": "8554cd948df9fdb20ef066894ad7f537e11fcaa337d74e4326bfc83eb835d8a1"
+      }
+    ],
+    "hydratedFiles": 507,
+    "immutableRemotePlacementQualified": false,
+    "independentMachineQualified": false,
+    "isDraft": true,
+    "isPrerelease": true,
+    "permanentAnonymousAccessQualified": false,
+    "status": "AUTHENTICATED_DRAFT_SAME_MACHINE_PASS",
+    "tagName": "ai-labor-archive-09fcc21-qualification-20261006",
+    "targetCommitish": "09fcc21aad29c36697f4775048ad87694a1a8b61",
+    "url": "https://github.com/ccesm/world-inflation-lens/releases/tag/untagged-f341417ccdbb57cf5029"
+  },
+  "remoteDurableQualified": false,
+  "repeatPackaging": {
+    "archiveSha256": "290a89de982b1249a5209130345eb55c2043639fd0b1c744da1969375c4b4337",
+    "byteIdentical": true,
+    "independentGitTarHydrationComparison": 507
+  },
+  "roots": 2,
+  "schema": "ai-labor-archive-qualification-v1",
+  "selectedHydrationFiles": {
+    "monitor": 507,
+    "phase1": 60,
+    "phase2": 142,
+    "phase3": 467
+  },
+  "stackCommit": "09fcc21aad29c36697f4775048ad87694a1a8b61",
+  "status": "LOCAL_QUALIFIED_REMOTE_PUBLIC_PLACEMENT_PENDING",
+  "toolingHashes": {
+    "scripts/ai-labor-archive/archive.py": "b719245e2cc117b28a37ee780a788710b0ef73c4d630b924ca7c002cdd1acba3",
+    "scripts/ai-labor-archive/qualify.py": "38536ea0242c752bcb100f9c74ed90f3a491f8c89d1a42e43fa8c5f63dbf87c6",
+    "scripts/ai-labor-archive/test_archive.py": "b47614458057533c45a797ff49d58ad50f8fffcd48a27745b803ce2123b96ea9"
+  }
+}
