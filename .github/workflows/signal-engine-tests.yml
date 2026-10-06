@@ -1,0 +1,30 @@
+name: Signal Engine regression tests
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: signal-tests-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  signal-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+          cache: npm
+      - run: npm ci
+      - name: Install isolated engine dependencies
+        run: npm ci --prefix research/signal-engine --ignore-scripts --no-audit --no-fund
+      - name: Run frozen engine and safeguard regressions
+        run: npm run signal:test
+# PR/manual qualification only. Interpretation failures must not prevent
+# independently valid economic refreshes from building and deploying.
