@@ -1,0 +1,347 @@
+{
+  "causalityStatus": "DESCRIPTIVE_ONLY",
+  "mode": "CURRENT_VINTAGE_RECONSTRUCTION",
+  "pandemicRetained": [
+    2020,
+    2021
+  ],
+  "publisherVintageReplay": false,
+  "realTimeBacktest": false,
+  "referenceYears": [
+    2015,
+    2019
+  ],
+  "rows": [
+    {
+      "endpointYear": 2023,
+      "metrics": {
+        "earnings": {
+          "comparable": false,
+          "coverage": 0.38374875355378485,
+          "latestDifference": -6.362468811804689e-05,
+          "observationPeriod": "2023",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 5.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "employment": {
+          "comparable": true,
+          "coverage": 0.38374875355378485,
+          "latestDifference": -0.9669427061658409,
+          "observationPeriod": "2023",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": 0.20208767800778826,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 5.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "hours": {
+          "comparable": true,
+          "coverage": 0.38374875355378485,
+          "latestDifference": -0.015635021260756332,
+          "observationPeriod": "2023",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 1.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "youngWorkers": {
+          "comparable": true,
+          "coverage": 0.38374875355378485,
+          "latestDifference": -0.10958692648229962,
+          "observationPeriod": "2023",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 2.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        }
+      },
+      "source": "academic"
+    },
+    {
+      "endpointYear": 2024,
+      "metrics": {
+        "earnings": {
+          "comparable": false,
+          "coverage": 0.37768590058172974,
+          "latestDifference": 1.786301293903847,
+          "observationPeriod": "2024",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 5.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "employment": {
+          "comparable": true,
+          "coverage": 0.37768590058172974,
+          "latestDifference": 0.4159371247595356,
+          "observationPeriod": "2024",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": 0.20208767800778826,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 5.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "hours": {
+          "comparable": true,
+          "coverage": 0.37768590058172974,
+          "latestDifference": 0.022887034219635893,
+          "observationPeriod": "2024",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 1.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "youngWorkers": {
+          "comparable": true,
+          "coverage": 0.37768590058172974,
+          "latestDifference": 0.5395313807555382,
+          "observationPeriod": "2024",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 2.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        }
+      },
+      "source": "academic"
+    },
+    {
+      "endpointYear": 2023,
+      "metrics": {
+        "earnings": {
+          "comparable": false,
+          "coverage": 0.47797835175311626,
+          "latestDifference": 0.9465381244522453,
+          "observationPeriod": "2023",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 5.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "employment": {
+          "comparable": true,
+          "coverage": 0.47797835175311626,
+          "latestDifference": 2.472144508911156,
+          "observationPeriod": "2023",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": -1.18475186189016,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 5.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "hours": {
+          "comparable": true,
+          "coverage": 0.47797835175311626,
+          "latestDifference": -0.22816264380552553,
+          "observationPeriod": "2023",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 1.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "youngWorkers": {
+          "comparable": true,
+          "coverage": 0.47797835175311626,
+          "latestDifference": 0.9978576653536075,
+          "observationPeriod": "2023",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 2.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        }
+      },
+      "source": "microsoft"
+    },
+    {
+      "endpointYear": 2024,
+      "metrics": {
+        "earnings": {
+          "comparable": false,
+          "coverage": 0.4755234910957437,
+          "latestDifference": 0.8326029798422452,
+          "observationPeriod": "2024",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 5.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "employment": {
+          "comparable": true,
+          "coverage": 0.4755234910957437,
+          "latestDifference": 0.5621210230050355,
+          "observationPeriod": "2024",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": -1.18475186189016,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 5.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "hours": {
+          "comparable": true,
+          "coverage": 0.4755234910957437,
+          "latestDifference": -0.06273353895687706,
+          "observationPeriod": "2024",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 1.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        },
+        "youngWorkers": {
+          "comparable": true,
+          "coverage": 0.4755234910957437,
+          "latestDifference": 1.2730258204034839,
+          "observationPeriod": "2024",
+          "persistence": {
+            "consecutiveCompleteAnnualEndpoints": 0,
+            "direction": null,
+            "notStatisticalSignificance": true,
+            "required": 2,
+            "satisfied": false
+          },
+          "pretrendGapPpPerYear": null,
+          "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+          "state": "INSUFFICIENT_EVIDENCE",
+          "threshold": 2.0,
+          "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+          "withinSampleThresholdCrossed": false
+        }
+      },
+      "source": "microsoft"
+    }
+  ],
+  "source": "Accepted current-vintage CPS sufficient statistics and fixed exposure groups",
+  "transitionYear": 2022,
+  "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM"
+}

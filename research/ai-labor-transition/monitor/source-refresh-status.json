@@ -1,0 +1,27 @@
+{
+  "emailDelivery": "DISABLED",
+  "mode": "OFFLINE_NO_NETWORK",
+  "monitorRunAt": "2026-10-06T04:35:47Z",
+  "providers": {
+    "btos": {
+      "changes": [],
+      "status": "NO_NEW_OBSERVATION",
+      "usingLastValid": false
+    },
+    "ces": {
+      "changes": [],
+      "status": "NO_NEW_OBSERVATION",
+      "usingLastValid": false
+    },
+    "cps": {
+      "changes": [],
+      "status": "NO_NEW_OBSERVATION",
+      "usingLastValid": false
+    },
+    "jolts": {
+      "changes": [],
+      "status": "NO_NEW_OBSERVATION",
+      "usingLastValid": false
+    }
+  }
+}

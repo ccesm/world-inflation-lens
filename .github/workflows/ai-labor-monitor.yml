@@ -1,0 +1,98 @@
+name: AI labor research monitor (gated)
+run-name: AI labor monitor — research only
+on:
+  schedule:
+    - cron: '37 10 * * 2,5'
+      timezone: America/Los_Angeles
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Research qualification mode (no email)
+        type: choice
+        options: [offline-dry-run, live-dry-run]
+        default: offline-dry-run
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: ai-labor-research-monitor
+  cancel-in-progress: false
+jobs:
+  monitor:
+    if: github.event_name == 'workflow_dispatch' || (github.ref == 'refs/heads/main' && vars.AI_LABOR_MONITOR_ENABLED == 'true' && vars.AI_LABOR_HISTORY_WRITE_ENABLED == 'true')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore durable history for scheduled observation
+        if: github.event_name == 'schedule'
+        uses: actions/checkout@v4
+        with:
+          ref: codex/ai-labor-monitor-history
+          path: monitor-history
+          persist-credentials: false
+      - name: Restore local working history
+        if: github.event_name == 'schedule'
+        run: |
+          mkdir -p "$RUNNER_TEMP/ai-labor/store"
+          cp -a monitor-history/store/. "$RUNNER_TEMP/ai-labor/store/"
+      - name: Research qualification tests
+        run: python3 -m unittest discover -s research/ai-labor-transition/monitor/tests -v
+      - name: Evaluate accepted data (offline)
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'offline-dry-run'
+        run: python3 research/ai-labor-transition/monitor/cli.py dry-run --store "$RUNNER_TEMP/ai-labor/store" --output "$RUNNER_TEMP/ai-labor/output"
+      - name: Discover and independently refresh official sources
+        if: github.event_name == 'schedule' || inputs.mode == 'live-dry-run'
+        run: python3 research/ai-labor-transition/monitor/cli.py refresh --store "$RUNNER_TEMP/ai-labor/store" --output "$RUNNER_TEMP/ai-labor/output"
+      - name: Validate recorded interpretation
+        run: python3 research/ai-labor-transition/monitor/cli.py validate --store "$RUNNER_TEMP/ai-labor/store" --output "$RUNNER_TEMP/ai-labor/output"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ai-labor-research-qualification-${{ github.run_id }}
+          path: ${{ runner.temp }}/ai-labor
+          retention-days: 14
+          if-no-files-found: error
+      - name: Package history for separately gated writer
+        if: github.event_name == 'schedule' && vars.AI_LABOR_HISTORY_WRITE_ENABLED == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-labor-durable-history
+          path: ${{ runner.temp }}/ai-labor/store
+          retention-days: 3
+          if-no-files-found: error
+  history:
+    needs: monitor
+    if: github.event_name == 'schedule' && github.ref == 'refs/heads/main' && vars.AI_LABOR_MONITOR_ENABLED == 'true' && vars.AI_LABOR_HISTORY_WRITE_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: tooling
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: codex/ai-labor-monitor-history
+          path: history-archive
+          fetch-depth: 1
+      - uses: actions/download-artifact@v4
+        with:
+          name: ai-labor-durable-history
+          path: incoming
+      - name: Append research history only
+        run: |
+          python3 tooling/research/ai-labor-transition/monitor/history/package.py incoming history-archive/store --apply
+          cd history-archive
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- store
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record qualified AI labor research monitor history'
+            git push origin HEAD:codex/ai-labor-monitor-history
+          fi

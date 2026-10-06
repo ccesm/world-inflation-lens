@@ -1,0 +1,3315 @@
+{
+  "acceptedInputObject": "eee2ccf10a869e9ca94fc3ecb3381cebad17c733c3c8d2c3a293190b0b22f7a2",
+  "evaluationDate": "2026-10-06T04:35:39Z",
+  "evaluationId": "9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747",
+  "inputSnapshotId": "8f4876b94a1df286b2d73545661d4d0b41598b03d62ffb61b02a863944ce74a7",
+  "methodologyVersion": "ai-labor-monitor-v1.0-draft.1",
+  "microSourceVintageManifest": "798ddfa30fa58e7906e5d14f213a8e1662cef775a2e8c3a0d931081c4cfe95e7",
+  "mode": "CURRENT_SNAPSHOT",
+  "observationThrough": {
+    "btos": "2026-09-06",
+    "ces": "2026-09-30",
+    "cps": "2026-09-30",
+    "jolts": "2026-08-31",
+    "occupational": "2026-08"
+  },
+  "previousEvaluationId": null,
+  "result": {
+    "causality": "NOT_ESTABLISHED",
+    "causalityStatus": "DESCRIPTIVE_ONLY",
+    "emailDelivery": "DISABLED",
+    "implementationIdentity": "2fc08242488189d8af0eed8c280424590307304c99666b73942458381add4da3",
+    "implementationVersion": "0.1.0",
+    "interpretationGuardrail": "Observed differences across AI-exposure groups do not establish that AI caused those differences.",
+    "limitations": [
+      "PARTIAL_OCCUPATIONAL_COVERAGE",
+      "DESIGN_SE_UNAVAILABLE",
+      "AGE_NOT_SENIORITY",
+      "OCCUPATIONAL_HIRING_UNAVAILABLE",
+      "EXPOSURE_NOT_CAUSAL_TREATMENT",
+      "EARNINGS_DISCLOSURE_BREAK",
+      "PANDEMIC_AND_POPULATION_CONTROL_BREAKS",
+      "CURRENT_VINTAGE_RECONSTRUCTION_NOT_REALTIME_BACKTEST"
+    ],
+    "methodologyAgreement": {
+      "earnings": {
+        "adequateCoverageBoth": false,
+        "agreementDoesNotEstablishCausality": true,
+        "commonSample": {
+          "adequateCoverageBoth": false,
+          "agreementDoesNotEstablishCausality": true,
+          "commonSample": null,
+          "gapDifference": null,
+          "status": "INSUFFICIENT_EVIDENCE"
+        },
+        "gapDifference": null,
+        "status": "INSUFFICIENT_EVIDENCE"
+      },
+      "employment": {
+        "adequateCoverageBoth": false,
+        "agreementDoesNotEstablishCausality": true,
+        "commonSample": {
+          "adequateCoverageBoth": false,
+          "agreementDoesNotEstablishCausality": true,
+          "commonSample": null,
+          "gapDifference": 0.21871335188030638,
+          "status": "DESCRIPTIVELY_CONSISTENT"
+        },
+        "gapDifference": 0.14618389824549993,
+        "status": "DESCRIPTIVELY_CONSISTENT"
+      },
+      "hours": {
+        "adequateCoverageBoth": false,
+        "agreementDoesNotEstablishCausality": true,
+        "commonSample": {
+          "adequateCoverageBoth": false,
+          "agreementDoesNotEstablishCausality": true,
+          "commonSample": null,
+          "gapDifference": 0.12190010066626655,
+          "status": "DESCRIPTIVELY_CONSISTENT"
+        },
+        "gapDifference": 0.08562057317651295,
+        "status": "DESCRIPTIVELY_CONSISTENT"
+      },
+      "youngWorkers": {
+        "adequateCoverageBoth": false,
+        "agreementDoesNotEstablishCausality": true,
+        "commonSample": {
+          "adequateCoverageBoth": false,
+          "agreementDoesNotEstablishCausality": true,
+          "commonSample": null,
+          "gapDifference": 0.33181060935984497,
+          "status": "DESCRIPTIVELY_CONSISTENT"
+        },
+        "gapDifference": 0.7334944396479457,
+        "status": "DESCRIPTIVELY_CONSISTENT"
+      }
+    },
+    "methodologyVersion": "ai-labor-monitor-v1.0-draft.1",
+    "observationThrough": {
+      "btos": "2026-09-06",
+      "ces": "2026-09-30",
+      "cps": "2026-09-30",
+      "jolts": "2026-08-31",
+      "occupational": "2026-08"
+    },
+    "occupational": {
+      "benchmarkManifestHash": "fa3c0cc7f9bf5e113b3356ad70ccded51addc1a7448699aceb756c2437173f13",
+      "commonSampleSize": 165,
+      "groupMembershipFixed": true,
+      "sourceResults": {
+        "academic": {
+          "coverageByYear": {
+            "2015": 0.4020184381451991,
+            "2016": 0.39850501142683625,
+            "2017": 0.3990226720894376,
+            "2018": 0.3960226466569471,
+            "2019": 0.3926152989474076,
+            "2020": 0.3855225132033521,
+            "2021": 0.383312711752432,
+            "2022": 0.38096112004632293,
+            "2023": 0.38374875355378485,
+            "2024": 0.37768590058172974,
+            "2025": 0.3794671700870306,
+            "2026": 0.3780791596542904
+          },
+          "employmentCoverage": 0.37768590058172974,
+          "latestCompleteYear": 2024,
+          "metrics": {
+            "earnings": {
+              "comparable": false,
+              "coverage": 0.37768590058172974,
+              "historicalEmploymentPretrendContext": {
+                "gapPpPerYear": 0.20208767800778826,
+                "notMetricSpecificCausalAdjustment": true,
+                "strongPreExistingDifference": false,
+                "years": [
+                  2015,
+                  2019
+                ]
+              },
+              "latestDifference": 1.786301293903847,
+              "observationPeriod": "2024",
+              "persistence": {
+                "consecutiveCompleteAnnualEndpoints": 0,
+                "direction": null,
+                "notStatisticalSignificance": true,
+                "required": 2,
+                "satisfied": false
+              },
+              "pretrendGapPpPerYear": null,
+              "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+              "state": "INSUFFICIENT_EVIDENCE",
+              "threshold": 5.0,
+              "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+              "withinSampleThresholdCrossed": false
+            },
+            "employment": {
+              "comparable": true,
+              "coverage": 0.37768590058172974,
+              "historicalEmploymentPretrendContext": {
+                "gapPpPerYear": 0.20208767800778826,
+                "notMetricSpecificCausalAdjustment": true,
+                "strongPreExistingDifference": false,
+                "years": [
+                  2015,
+                  2019
+                ]
+              },
+              "latestDifference": 0.4159371247595356,
+              "observationPeriod": "2024",
+              "persistence": {
+                "consecutiveCompleteAnnualEndpoints": 0,
+                "direction": null,
+                "notStatisticalSignificance": true,
+                "required": 2,
+                "satisfied": false
+              },
+              "postPeriodTrendDeviationGapPp": 0.01708038041299842,
+              "pretrendGapPpPerYear": 0.20208767800778826,
+              "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+              "state": "INSUFFICIENT_EVIDENCE",
+              "threshold": 5.0,
+              "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+              "withinSampleThresholdCrossed": false
+            },
+            "hours": {
+              "comparable": true,
+              "coverage": 0.37768590058172974,
+              "historicalEmploymentPretrendContext": {
+                "gapPpPerYear": 0.20208767800778826,
+                "notMetricSpecificCausalAdjustment": true,
+                "strongPreExistingDifference": false,
+                "years": [
+                  2015,
+                  2019
+                ]
+              },
+              "latestDifference": 0.022887034219635893,
+              "observationPeriod": "2024",
+              "persistence": {
+                "consecutiveCompleteAnnualEndpoints": 0,
+                "direction": null,
+                "notStatisticalSignificance": true,
+                "required": 2,
+                "satisfied": false
+              },
+              "pretrendGapPpPerYear": null,
+              "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+              "state": "INSUFFICIENT_EVIDENCE",
+              "threshold": 1.0,
+              "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+              "withinSampleThresholdCrossed": false
+            },
+            "youngWorkers": {
+              "comparable": true,
+              "coverage": 0.37768590058172974,
+              "historicalEmploymentPretrendContext": {
+                "gapPpPerYear": 0.20208767800778826,
+                "notMetricSpecificCausalAdjustment": true,
+                "strongPreExistingDifference": false,
+                "years": [
+                  2015,
+                  2019
+                ]
+              },
+              "latestDifference": 0.5395313807555382,
+              "observationPeriod": "2024",
+              "persistence": {
+                "consecutiveCompleteAnnualEndpoints": 0,
+                "direction": null,
+                "notStatisticalSignificance": true,
+                "required": 2,
+                "satisfied": false
+              },
+              "pretrendGapPpPerYear": null,
+              "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+              "state": "INSUFFICIENT_EVIDENCE",
+              "threshold": 2.0,
+              "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+              "withinSampleThresholdCrossed": false
+            }
+          },
+          "observationThrough": "2026-08",
+          "occupationCountCoverage": 0.19261822376009227,
+          "partialYearStatus": "CONTEXT_ONLY_NOT_PERSISTENCE",
+          "pretrends": [
+            {
+              "annualGrowthPct": 0.7325756995788805,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.007299053971945568,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            {
+              "annualGrowthPct": 0.9346633775866687,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.00930322427324306,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            }
+          ],
+          "primarySampleSize": 167,
+          "sampleIdentity": "4e128e7f923ebd12ea7a786b51f9a7f94ab9a9749bc1004643c1daeda3cfe837"
+        },
+        "microsoft": {
+          "coverageByYear": {
+            "2015": 0.4871123874855063,
+            "2016": 0.4865011297632988,
+            "2017": 0.4870445369907924,
+            "2018": 0.4849062107918497,
+            "2019": 0.4816580353410089,
+            "2020": 0.48001777593419936,
+            "2021": 0.4761982927668339,
+            "2022": 0.475477691668991,
+            "2023": 0.47797835175311626,
+            "2024": 0.4755234910957437,
+            "2025": 0.47520258731889026,
+            "2026": 0.4725758860615861
+          },
+          "employmentCoverage": 0.4755234910957437,
+          "latestCompleteYear": 2024,
+          "metrics": {
+            "earnings": {
+              "comparable": false,
+              "coverage": 0.4755234910957437,
+              "historicalEmploymentPretrendContext": {
+                "gapPpPerYear": -1.18475186189016,
+                "notMetricSpecificCausalAdjustment": true,
+                "strongPreExistingDifference": true,
+                "years": [
+                  2015,
+                  2019
+                ]
+              },
+              "latestDifference": 0.8326029798422452,
+              "observationPeriod": "2024",
+              "persistence": {
+                "consecutiveCompleteAnnualEndpoints": 0,
+                "direction": null,
+                "notStatisticalSignificance": true,
+                "required": 2,
+                "satisfied": false
+              },
+              "pretrendGapPpPerYear": null,
+              "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+              "state": "INSUFFICIENT_EVIDENCE",
+              "threshold": 5.0,
+              "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+              "withinSampleThresholdCrossed": false
+            },
+            "employment": {
+              "comparable": true,
+              "coverage": 0.4755234910957437,
+              "historicalEmploymentPretrendContext": {
+                "gapPpPerYear": -1.18475186189016,
+                "notMetricSpecificCausalAdjustment": true,
+                "strongPreExistingDifference": true,
+                "years": [
+                  2015,
+                  2019
+                ]
+              },
+              "latestDifference": 0.5621210230050355,
+              "observationPeriod": "2024",
+              "persistence": {
+                "consecutiveCompleteAnnualEndpoints": 0,
+                "direction": null,
+                "notStatisticalSignificance": true,
+                "required": 2,
+                "satisfied": false
+              },
+              "postPeriodTrendDeviationGapPp": 2.859789979912751,
+              "pretrendGapPpPerYear": -1.18475186189016,
+              "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+              "state": "INSUFFICIENT_EVIDENCE",
+              "threshold": 5.0,
+              "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+              "withinSampleThresholdCrossed": false
+            },
+            "hours": {
+              "comparable": true,
+              "coverage": 0.4755234910957437,
+              "historicalEmploymentPretrendContext": {
+                "gapPpPerYear": -1.18475186189016,
+                "notMetricSpecificCausalAdjustment": true,
+                "strongPreExistingDifference": true,
+                "years": [
+                  2015,
+                  2019
+                ]
+              },
+              "latestDifference": -0.06273353895687706,
+              "observationPeriod": "2024",
+              "persistence": {
+                "consecutiveCompleteAnnualEndpoints": 0,
+                "direction": null,
+                "notStatisticalSignificance": true,
+                "required": 2,
+                "satisfied": false
+              },
+              "pretrendGapPpPerYear": null,
+              "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+              "state": "INSUFFICIENT_EVIDENCE",
+              "threshold": 1.0,
+              "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+              "withinSampleThresholdCrossed": false
+            },
+            "youngWorkers": {
+              "comparable": true,
+              "coverage": 0.4755234910957437,
+              "historicalEmploymentPretrendContext": {
+                "gapPpPerYear": -1.18475186189016,
+                "notMetricSpecificCausalAdjustment": true,
+                "strongPreExistingDifference": true,
+                "years": [
+                  2015,
+                  2019
+                ]
+              },
+              "latestDifference": 1.2730258204034839,
+              "observationPeriod": "2024",
+              "persistence": {
+                "consecutiveCompleteAnnualEndpoints": 0,
+                "direction": null,
+                "notStatisticalSignificance": true,
+                "required": 2,
+                "satisfied": false
+              },
+              "pretrendGapPpPerYear": null,
+              "scope": "STRICT_MATCHED_SAMPLE_ONLY",
+              "state": "INSUFFICIENT_EVIDENCE",
+              "threshold": 2.0,
+              "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM",
+              "withinSampleThresholdCrossed": false
+            }
+          },
+          "observationThrough": "2026-08",
+          "occupationCountCoverage": 0.21914648212226068,
+          "partialYearStatus": "CONTEXT_ONLY_NOT_PERSISTENCE",
+          "pretrends": [
+            {
+              "annualGrowthPct": 1.652037649537921,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.016385399626009444,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            {
+              "annualGrowthPct": 0.467285787647761,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.004661973968909194,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            }
+          ],
+          "primarySampleSize": 190,
+          "sampleIdentity": "834e23d03d2ed50bbf5612dad84b62792560ba65ac23e13f9f11af01ea55fb1d"
+        }
+      }
+    },
+    "officialContext": {
+      "btos": [
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": "2026-09-20",
+            "start": "2026-09-07"
+          },
+          "derived": [],
+          "frequency": "biweekly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "202619",
+          "officialReleaseDate": "2026-09-24",
+          "referencePeriod": {
+            "end": "2026-09-06",
+            "start": "2026-08-24"
+          },
+          "retrievedAt": "2026-10-05T22:39:02Z",
+          "seriesId": "BTOS_AI_CURRENT_BUSINESS_FUNCTIONS",
+          "sourceVintageId": "9287cb03f0b1a5e51e7d3d589d589afc2c6b42333d09c4c9b4147d243440c92b",
+          "title": "Business reported AI use",
+          "unit": "percent",
+          "value": 23.8
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": "2026-09-20",
+            "start": "2026-09-07"
+          },
+          "derived": [],
+          "frequency": "biweekly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "202619",
+          "officialReleaseDate": "2026-09-24",
+          "referencePeriod": {
+            "end": "2026-09-06",
+            "start": "2026-08-24"
+          },
+          "retrievedAt": "2026-10-05T22:39:02Z",
+          "seriesId": "BTOS_AI_EXPECTED_BUSINESS_FUNCTIONS",
+          "sourceVintageId": "9287cb03f0b1a5e51e7d3d589d589afc2c6b42333d09c4c9b4147d243440c92b",
+          "title": "Business expected AI use within six months",
+          "unit": "percent",
+          "value": 27.6
+        }
+      ],
+      "ces": [
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 158980.33333333334,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 158915.33333333334,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 158704.91666666666,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 496.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              340.0,
+              543.0,
+              496.0
+            ],
+            "notExposureDivergence": true,
+            "state": "INCREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:58Z",
+          "seriesId": "CES0000000001",
+          "sourceVintageId": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+          "title": "Total nonfarm payroll employment",
+          "unit": "thousand_jobs",
+          "value": 159044.0
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "hours_per_week",
+              "value": 34.36666666666667,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "hours_per_week",
+              "value": 34.333333333333336,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "hours_per_week",
+              "value": 34.291666666666664,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "hours_per_week",
+              "value": 0.19999999999999574,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              0.09999999999999432,
+              0.19999999999999574,
+              0.19999999999999574
+            ],
+            "notExposureDivergence": true,
+            "state": "INCREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:58Z",
+          "seriesId": "CES0500000002",
+          "sourceVintageId": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+          "title": "Average weekly hours, total private",
+          "unit": "hours_per_week",
+          "value": 34.4
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "USD_per_hour_nominal",
+              "value": 37.73666666666667,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "USD_per_hour_nominal",
+              "value": 37.61666666666667,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "USD_per_hour_nominal",
+              "value": 37.36166666666667,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "USD_per_hour_nominal",
+              "value": 1.1099999999999994,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              1.1700000000000017,
+              1.1400000000000006,
+              1.1099999999999994
+            ],
+            "notExposureDivergence": true,
+            "state": "INCREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:58Z",
+          "seriesId": "CES0500000003",
+          "sourceVintageId": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+          "title": "Average hourly earnings, total private",
+          "unit": "USD_per_hour_nominal",
+          "value": 37.81
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 2751.6666666666665,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 2764.5,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 2794.1666666666665,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": -120.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -94.0,
+              -111.0,
+              -120.0
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:58Z",
+          "seriesId": "CES5000000001",
+          "sourceVintageId": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+          "title": "Payroll employment, Information",
+          "unit": "thousand_jobs",
+          "value": 2739.0
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 9089.666666666666,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 9101.5,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 9132.666666666666,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": -107.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -106.0,
+              -96.0,
+              -107.0
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:58Z",
+          "seriesId": "CES5500000001",
+          "sourceVintageId": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+          "title": "Payroll employment, Financial activities",
+          "unit": "thousand_jobs",
+          "value": 9082.0
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 22489.666666666668,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 22482.833333333332,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 22437.916666666668,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 123.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              93.0,
+              116.0,
+              123.0
+            ],
+            "notExposureDivergence": true,
+            "state": "INCREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:58Z",
+          "seriesId": "CES6000000001",
+          "sourceVintageId": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+          "title": "Payroll employment, Professional and business services",
+          "unit": "thousand_jobs",
+          "value": 22482.0
+        }
+      ],
+      "cps": [
+        {
+          "ageBand": {
+            "max": null,
+            "min": 16
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 4.133333333333333,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 4.2,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": -0.20000000000000018,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.20000000000000018,
+              -0.20000000000000018,
+              -0.20000000000000018
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS14000000",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Unemployment rate, 16 years and over",
+          "unit": "percent",
+          "value": 4.2
+        },
+        {
+          "ageBand": {
+            "max": null,
+            "min": 16
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 59.06666666666666,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 59.083333333333336,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": -0.5,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.7000000000000028,
+              -0.5,
+              -0.5
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS12300000",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Employment-population ratio, 16 years and over",
+          "unit": "percent",
+          "value": 59.2
+        },
+        {
+          "ageBand": {
+            "max": null,
+            "min": 16
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 61.6,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 61.65,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": -0.7000000000000028,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.8000000000000043,
+              -0.6999999999999957,
+              -0.7000000000000028
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS11300000",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Labor-force participation rate, 16 years and over",
+          "unit": "percent",
+          "value": 61.8
+        },
+        {
+          "ageBand": {
+            "max": 24,
+            "min": 20
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 7.3999999999999995,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 7.3500000000000005,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": -1.1999999999999993,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.8000000000000007,
+              -2.0999999999999996,
+              -1.1999999999999993
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS14000036",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Unemployment rate, 20–24 years",
+          "unit": "percent",
+          "value": 8.0
+        },
+        {
+          "ageBand": {
+            "max": 24,
+            "min": 20
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 65.66666666666667,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 65.53333333333333,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": 1.2000000000000028,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.10000000000000853,
+              2.1000000000000085,
+              1.2000000000000028
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS12300036",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Employment-population ratio, 20–24 years",
+          "unit": "percent",
+          "value": 65.8
+        },
+        {
+          "ageBand": {
+            "max": 24,
+            "min": 20
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 70.86666666666667,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 70.7,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": 0.4000000000000057,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.7999999999999972,
+              0.6000000000000085,
+              0.4000000000000057
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS11300036",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Labor-force participation rate, 20–24 years",
+          "unit": "percent",
+          "value": 71.5
+        },
+        {
+          "ageBand": {
+            "max": 34,
+            "min": 25
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 4.3999999999999995,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 4.55,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": -0.5,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              0.2999999999999998,
+              -0.10000000000000053,
+              -0.5
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS14000089",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Unemployment rate, 25–34 years",
+          "unit": "percent",
+          "value": 4.3
+        },
+        {
+          "ageBand": {
+            "max": 34,
+            "min": 25
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 79.63333333333334,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 79.56666666666666,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": 0.4000000000000057,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.5,
+              -0.10000000000000853,
+              0.4000000000000057
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS12300089",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Employment-population ratio, 25–34 years",
+          "unit": "percent",
+          "value": 79.9
+        },
+        {
+          "ageBand": {
+            "max": 34,
+            "min": 25
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 83.33333333333333,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 83.36666666666666,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": 0.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.20000000000000284,
+              -0.19999999999998863,
+              0.0
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS11300089",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Labor-force participation rate, 25–34 years",
+          "unit": "percent",
+          "value": 83.5
+        },
+        {
+          "ageBand": {
+            "max": 54,
+            "min": 25
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 3.6,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 3.6666666666666665,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": -0.10000000000000009,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              0.0,
+              0.0,
+              -0.10000000000000009
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS14000060",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Unemployment rate, 25–54 years",
+          "unit": "percent",
+          "value": 3.6
+        },
+        {
+          "ageBand": {
+            "max": 54,
+            "min": 25
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 80.5,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 80.53333333333335,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": 0.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              0.0,
+              -0.29999999999999716,
+              0.0
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS12300060",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Employment-population ratio, 25–54 years",
+          "unit": "percent",
+          "value": 80.7
+        },
+        {
+          "ageBand": {
+            "max": 54,
+            "min": 25
+          },
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 83.5,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 83.58333333333333,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-09",
+              "status": "UNAVAILABLE",
+              "unit": "percent",
+              "value": null,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-09",
+                "2026-09"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-09",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": 0.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              0.0,
+              -0.29999999999999716,
+              0.0
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-09",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-09-30",
+            "start": "2026-09-01"
+          },
+          "retrievedAt": "2026-10-05T22:38:57Z",
+          "seriesId": "LNS11300060",
+          "sourceVintageId": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+          "title": "Labor-force participation rate, 25–54 years",
+          "unit": "percent",
+          "value": 83.7
+        }
+      ],
+      "jolts": [
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 5223.333333333333,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 5278.666666666667,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 5219.416666666667,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-08",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 47.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              5.0,
+              -79.0,
+              47.0
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-08",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-08-31",
+            "start": "2026-08-01"
+          },
+          "retrievedAt": "2026-10-05T22:39:00Z",
+          "seriesId": "JTS000000000000000HIL",
+          "sourceVintageId": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+          "title": "Hires, total nonfarm, level",
+          "unit": "thousand_jobs",
+          "value": 5192.0
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 3.3000000000000003,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 3.3333333333333335,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 3.3000000000000003,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-08",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": 0.09999999999999964,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              0.0,
+              -0.09999999999999964,
+              0.09999999999999964
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-08",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-08-31",
+            "start": "2026-08-01"
+          },
+          "retrievedAt": "2026-10-05T22:39:00Z",
+          "seriesId": "JTS000000000000000HIR",
+          "sourceVintageId": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+          "title": "Hires, total nonfarm, rate",
+          "unit": "percent",
+          "value": 3.3
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 7198.666666666667,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 7267.5,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 7125.166666666667,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-08",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 160.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -22.0,
+              246.0,
+              160.0
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-08",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-08-31",
+            "start": "2026-08-01"
+          },
+          "retrievedAt": "2026-10-05T22:39:00Z",
+          "seriesId": "JTS000000000000000JOL",
+          "sourceVintageId": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+          "title": "Job openings, total nonfarm, level",
+          "unit": "thousand_jobs",
+          "value": 7079.0
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 4.333333333333333,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 4.383333333333334,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 4.3,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-08",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": 0.09999999999999964,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              0.0,
+              0.10000000000000053,
+              0.09999999999999964
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-08",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-08-31",
+            "start": "2026-08-01"
+          },
+          "retrievedAt": "2026-10-05T22:39:00Z",
+          "seriesId": "JTS000000000000000JOR",
+          "sourceVintageId": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+          "title": "Job openings, total nonfarm, rate",
+          "unit": "percent",
+          "value": 4.3
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 1709.3333333333333,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 1740.0,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 1737.25,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-08",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": -191.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -58.0,
+              -70.0,
+              -191.0
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-08",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-08-31",
+            "start": "2026-08-01"
+          },
+          "retrievedAt": "2026-10-05T22:39:00Z",
+          "seriesId": "JTS000000000000000LDL",
+          "sourceVintageId": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+          "title": "Layoffs and discharges, total nonfarm, level",
+          "unit": "thousand_jobs",
+          "value": 1641.0
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 1.0666666666666667,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 1.0833333333333333,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 1.0833333333333333,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-08",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": -0.19999999999999996,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.09999999999999987,
+              0.0,
+              -0.19999999999999996
+            ],
+            "notExposureDivergence": true,
+            "state": "NO_PERSISTENT_DIRECTION"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-08",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-08-31",
+            "start": "2026-08-01"
+          },
+          "retrievedAt": "2026-10-05T22:39:00Z",
+          "seriesId": "JTS000000000000000LDR",
+          "sourceVintageId": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+          "title": "Layoffs and discharges, total nonfarm, rate",
+          "unit": "percent",
+          "value": 1.0
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 3122.6666666666665,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 3120.6666666666665,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": 3101.25,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-08",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "thousand_jobs",
+              "value": -29.0,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -41.0,
+              -43.0,
+              -29.0
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-08",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-08-31",
+            "start": "2026-08-01"
+          },
+          "retrievedAt": "2026-10-05T22:39:00Z",
+          "seriesId": "JTS000000000000000QUL",
+          "sourceVintageId": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+          "title": "Quits, total nonfarm, level",
+          "unit": "thousand_jobs",
+          "value": 3066.0
+        },
+        {
+          "ageBand": null,
+          "collectionPeriod": {
+            "end": null,
+            "start": null
+          },
+          "derived": [
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 3,
+              "operandPeriods": [
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 1.9333333333333333,
+              "windowMonths": 3
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 6,
+              "operandPeriods": [
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 1.95,
+              "windowMonths": 6
+            },
+            {
+              "formula": "sum(values) / window",
+              "minimumRequiredObservations": 12,
+              "operandPeriods": [
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01",
+                "2026-02",
+                "2026-03",
+                "2026-04",
+                "2026-05",
+                "2026-06",
+                "2026-07",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "moving_average",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percent",
+              "value": 1.95,
+              "windowMonths": 12
+            },
+            {
+              "formula": "value(t) - value(t-window)",
+              "minimumRequiredObservations": 2,
+              "operandPeriods": [
+                "2025-08",
+                "2026-08"
+              ],
+              "operandSource": "ACCEPTED_SOURCE_VINTAGE_SERIES",
+              "operation": "change",
+              "period": "2026-08",
+              "status": "AVAILABLE",
+              "unit": "percentage_points",
+              "value": -0.10000000000000009,
+              "windowMonths": 12
+            }
+          ],
+          "exactMonthlyDirection": {
+            "changes": [
+              -0.10000000000000009,
+              -0.10000000000000009,
+              -0.10000000000000009
+            ],
+            "notExposureDivergence": true,
+            "state": "DECREASING_OVER_THREE_EXACT_YOY_COMPARISONS"
+          },
+          "frequency": "monthly",
+          "interpretation": "CONTEXT_ONLY_NO_AI_ATTRIBUTION",
+          "observationPeriod": "2026-08",
+          "officialReleaseDate": null,
+          "referencePeriod": {
+            "end": "2026-08-31",
+            "start": "2026-08-01"
+          },
+          "retrievedAt": "2026-10-05T22:39:00Z",
+          "seriesId": "JTS000000000000000QUR",
+          "sourceVintageId": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01",
+          "title": "Quits, total nonfarm, rate",
+          "unit": "percent",
+          "value": 1.9
+        }
+      ]
+    },
+    "publicPublication": false,
+    "scope": "RESEARCH_ONLY",
+    "specificationHash": "95379563882affdb1dbec2754d83f6b6d2400e5bd36be9eaba715ff8844e2476"
+  },
+  "resultHash": "9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747",
+  "sourceVintageIds": {
+    "btos": "9287cb03f0b1a5e51e7d3d589d589afc2c6b42333d09c4c9b4147d243440c92b",
+    "ces": "cb13d9b3cd0c74572448682803d1d083adbb8fd4df102df8ecc9d6de9e207399",
+    "cps": "95a367bfc48648c83ea7aa89a9e453cd43ce0a9fa72ad98024865fae16302689",
+    "jolts": "10e804007c38867698b545a191121c35972852e3bc8e07606f8da8d79fdd8e01"
+  },
+  "specificationHash": "95379563882affdb1dbec2754d83f6b6d2400e5bd36be9eaba715ff8844e2476"
+}

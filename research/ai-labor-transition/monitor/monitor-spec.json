@@ -1,0 +1,81 @@
+{
+  "anthropicRole": "CONTEXT_ONLY",
+  "baseCommit": "57f9b70352999a9464fb164e17df21075d6d61e9",
+  "delivery": {
+    "emailEnabled": false,
+    "historyWritesDuringQualification": false,
+    "publicPublication": false
+  },
+  "discovery": {
+    "annualRevisionAudit": "JANUARY_RELEASE_RECENT_TEN_YEARS_AGGREGATE_ONLY",
+    "bls": "OFFICIAL_ICS_RELEASE_EVENTS_WITH_SEVEN_DAY_POST_RELEASE_RETRY",
+    "blsLookbackYears": 2,
+    "cpsCatchupMonths": 3,
+    "cpsRecentHeads": 2,
+    "knownMissing": [
+      "2025-10"
+    ],
+    "microdataAnnualHeads": "JANUARY_ONCE_PER_YEAR",
+    "qualifiedLayoutYears": [
+      2026
+    ],
+    "schedule": "37 10 * * 2,5",
+    "timezone": "America/Los_Angeles"
+  },
+  "earningsPolicy": "NOT_COMPARABLE_ACROSS_2023_2024_DISCLOSURE_BREAK",
+  "eras": {
+    "diffusionStart": 2023,
+    "pandemic": [
+      2020,
+      2021
+    ],
+    "pretrend": [
+      2015,
+      2019
+    ],
+    "reference": 2022
+  },
+  "exposureMethods": [
+    "academic",
+    "microsoft"
+  ],
+  "methodologyVersion": "ai-labor-monitor-v1.0-draft.1",
+  "persistence": {
+    "monthlyContext": "THREE_CONSECUTIVE_EXACT_MONTH_12_MONTH_CHANGES_SAME_SIGN",
+    "monthlyContextWindows": [
+      3,
+      6,
+      12
+    ],
+    "occupational": "TWO_CONSECUTIVE_COMPLETE_ANNUAL_ENDPOINTS_SAME_SIGN",
+    "partialYears": "CONTEXT_ONLY_NO_PERSISTENCE_COUNTER",
+    "quarterly": "UNAVAILABLE_NO_INTERPOLATION"
+  },
+  "phase3OutputManifestHash": "fa3c0cc7f9bf5e113b3356ad70ccded51addc1a7448699aceb756c2437173f13",
+  "phase3SpecHash": "f3429802af3354335d5c724fc5497a24dde41ea11ac8178b2ac88c9416148b5e",
+  "primarySample": "PHASE3_FIXED_STRICT_BALANCED_SOC",
+  "retention": {
+    "archiveBeforeQuota": "REQUIRED_NO_SILENT_DELETION",
+    "maxEvaluations": 2048,
+    "maxStoreBytes": 268435456
+  },
+  "statePriority": [
+    "INSUFFICIENT_EVIDENCE",
+    "METHODOLOGY_DEPENDENT",
+    "PRE_EXISTING_TREND",
+    "PERSISTENT_DESCRIPTIVE_DIVERGENCE",
+    "EARLY_DESCRIPTIVE_WATCH",
+    "NO_CLEAR_DIVERGENCE"
+  ],
+  "thresholds": {
+    "earningsGapPp": 5.0,
+    "employmentGapPp": 5.0,
+    "hoursGap": 1.0,
+    "methodGapPp": 5.0,
+    "minimumCoverage": 0.5,
+    "pretrendGapPpYear": 0.5,
+    "strengthChangePp": 2.0,
+    "youngShareGapPp": 2.0
+  },
+  "uncertainty": "DESIGN_SE_UNAVAILABLE_NO_SIGNIFICANCE_CLAIM"
+}

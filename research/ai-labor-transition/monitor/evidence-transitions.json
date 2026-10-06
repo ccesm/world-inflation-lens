@@ -1,0 +1,12 @@
+{
+  "causalityStatus": "DESCRIPTIVE_ONLY",
+  "economicChange": "NO_ECONOMIC_CHANGE",
+  "evaluationId": "9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747",
+  "newOrRevisedObservations": {
+    "btos": [],
+    "ces": [],
+    "cps": [],
+    "jolts": []
+  },
+  "transitions": []
+}

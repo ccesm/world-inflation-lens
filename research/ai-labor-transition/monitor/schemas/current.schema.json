@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "enum": [
+        "ai-labor-monitor-current-v1"
+      ]
+    },
+    "scope": {
+      "enum": [
+        "RESEARCH_ONLY"
+      ]
+    },
+    "evaluationId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "inputSnapshotId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "specificationHash": {
+      "enum": [
+        "95379563882affdb1dbec2754d83f6b6d2400e5bd36be9eaba715ff8844e2476"
+      ]
+    },
+    "evaluationDate": {
+      "type": "string"
+    },
+    "monitorRunAt": {
+      "type": "string"
+    },
+    "economicChange": {
+      "enum": [
+        "NEW_QUALIFIED_EVALUATION",
+        "NO_ECONOMIC_CHANGE"
+      ]
+    },
+    "isNewEconomicEvaluation": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "dataHealth": {
+      "type": "object"
+    },
+    "emailDelivery": {
+      "enum": [
+        "DISABLED"
+      ]
+    },
+    "historyWrites": {
+      "enum": [
+        "LOCAL_QUALIFICATION_ONLY"
+      ]
+    },
+    "bilingualSummary": {
+      "type": "object",
+      "required": [
+        "EN",
+        "ZH"
+      ],
+      "properties": {
+        "EN": {
+          "type": "string"
+        },
+        "ZH": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "scope",
+    "evaluationId",
+    "inputSnapshotId",
+    "specificationHash",
+    "evaluationDate",
+    "monitorRunAt",
+    "economicChange",
+    "isNewEconomicEvaluation",
+    "evidence",
+    "dataHealth",
+    "emailDelivery",
+    "historyWrites",
+    "bilingualSummary"
+  ],
+  "additionalProperties": false
+}

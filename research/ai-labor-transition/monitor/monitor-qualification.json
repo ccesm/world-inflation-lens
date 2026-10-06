@@ -1,0 +1,11 @@
+{
+  "emailDelivery": "DISABLED",
+  "genuineScheduledExecution": false,
+  "newEconomicEvaluation": false,
+  "noEconomicChangeOnRetrievalOnly": true,
+  "remoteHistoryWrite": "DISABLED_DURING_FEATURE_QUALIFICATION",
+  "resultHash": "9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747",
+  "runtimeSeconds": 2.739,
+  "sourceFailures": [],
+  "specificationHash": "95379563882affdb1dbec2754d83f6b6d2400e5bd36be9eaba715ff8844e2476"
+}

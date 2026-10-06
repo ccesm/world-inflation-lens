@@ -1,0 +1,12 @@
+{
+  "evaluations": [
+    {
+      "evaluationDate": "2026-10-06T04:35:39Z",
+      "evaluationId": "9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747",
+      "inputSnapshotId": "8f4876b94a1df286b2d73545661d4d0b41598b03d62ffb61b02a863944ce74a7",
+      "previousEvaluationId": null
+    }
+  ],
+  "lastEvaluationId": "9c65350db439ee246408614201380bef40971f79a4ea2968084b861ab8c4b747",
+  "schemaVersion": "ai-labor-monitor-history-v1"
+}
