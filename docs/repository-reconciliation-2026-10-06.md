@@ -90,3 +90,45 @@ See [storage audit](ai-labor-storage-reconciliation-2026-10-06.md),
 were removed. Archive/hydration qualification and a slim delivery branch are
 recommended before any main integration. The remote monitor history branch
 is missing; scheduled monitoring and email remain unactivated.
+
+## Approved execution follow-up
+
+The owner subsequently approved #8 → refresh/reconcile → #7 →
+refresh/reconcile → #9. This follow-up supersedes the pending-approval and
+retention statuses recorded above without erasing the original review.
+
+- PR #8 merged at `22e40ad6e5720db20e5514c12308f21ffa9a0207`.
+- PR #7 merged at `d09698f645507684b41ecd36b21e16ff6614472c`.
+- Both reconciliations were conflict-free; the four restored files on main
+  match `139c36e` byte-for-byte. No newer README/test was replaced.
+- All twelve live remote tips matched the audit immediately before an atomic
+  remote deletion. Matching local branches were also deleted.
+- Two pushed annotated recovery tags preserve squashed commit reachability:
+  `archive/signal-engine-prototype-2026-10-06` → `139c36e`, and
+  `archive/signal-engine-production-design-2026-10-06` → `ab4bb11`.
+  These are recovery refs, not production releases.
+
+| Branch | Deleted remote tip | Remote/local deletion |
+|---|---|---|
+| `codex/international-dollar-evidence` | `2ec84f870ee8cb7a20baecc8fa476b788ccc2cc4` | YES / YES |
+| `codex/signal-engine-production-pipeline` | `3e45e33dc989bd3469d13e29afab4e3c8ef44b3b` | YES / YES |
+| `codex/signal-shadow-email-summary` | `75ba5071d8fbb7f5d07e0488960dfe322e1a2ee3` | YES / YES |
+| `codex/signal-shadow-no-private-archive` | `42ee0bf050d4ce27f1790a2d413f717ca5d234d1` | YES / YES |
+| `codex/signal-conclusion-generator` | `a4b4c838ad515ca27c322c1f7c39a23a51c3bf3f` | YES / YES |
+| `codex/public-signal-engine-ui` | `b90edd4f0d48bd690c4ccab740b77d3f99390839` | YES / YES |
+| `codex/v1-dual-dollar-architecture` | `494ae75208ec5b3da249f9ed185ad43f7be62cab` | YES / YES |
+| `codex/signal-engine-spec` | `faaae287f1b144bd8396023a8f134b66ae84404c` | YES / YES |
+| `codex/signal-engine-production-design` | `ab4bb115dd2553fe182eb9606dc3a3012f1bce7f` | YES / YES |
+| `codex/signal-engine-prototype` | `001184482d9a9692edfb064d58fb09837311c196` | YES / YES |
+| `codex/signal-engine-prototype-fixes` | `8eccd2512e90ca71f95d1ef4f4bedbded9158827` | YES / YES |
+| `codex/signal-engine-prototype-fixes-2` | `139c36e5efd642aedcfd2a43194f5b8f09c7831e` | YES / YES |
+
+All four AI-labor branch tips remain unchanged. No AI-labor merge, untracking,
+monitor activation, history write or email enablement occurred. PR #9 retains
+only the approved isolation test, separate PR CI and reconciliation reports.
+After its merge, start archive/hydration qualification separately; do not
+create a slim delivery branch before that qualification.
+
+Post-reconciliation qualification against main after #7: build and full verify
+passed; Signal suite 256 passed, 0 failed, 2 established deferrals. The #9
+feature head is ready for its approved merge.
