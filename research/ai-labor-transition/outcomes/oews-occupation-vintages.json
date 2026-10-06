@@ -1,0 +1,27 @@
+{
+  "binding": {
+    "concordanceSha256": "fca2818d691c32777a4cd733a9ab77c8c5bd47adcacd7ac3aa149bebd45b5f7f",
+    "monthlySnapshotHash": "12ed7cbb314babe30ef970ffba363c31e5a7ad0da9d183f414d05d5a662161fd",
+    "phase2Inputs": {
+      "academic": "6de6538be9ff02f215ed76fe85b7516bd47cc0fa9420bd8139fd42bd30d59284",
+      "anthropic": "67cb0234dafe573651ac1db7a679d79447f6655d3a4a8a09cfb77c5f4c54ab91",
+      "microsoft": "8f77ac5df55f850a7f19665bd983de51223075fa6637086c5352f186065f9c37",
+      "occupation-crosswalk.json": "b3e775a455a413a1aea9c8d10cffb6156dabeded0ffe87e2935c947c8b365c25",
+      "occupations.json": "3d8bf6879ccd745d2658b9a97d678747daedc546ef9bf21d8647e7df7da0c138"
+    },
+    "preanalysisSpecHash": "f3429802af3354335d5c724fc5497a24dde41ea11ac8178b2ac88c9416148b5e",
+    "sourceManifestHash": "87934e3c07e9feb6dc833ccfdbb636cda83b72652e1d74f7ee7dca0025c283a4"
+  },
+  "causalityStatus": "DESCRIPTIVE_ONLY",
+  "contractVersion": "observed-labor-outcomes-v1",
+  "data": {
+    "longitudinalStatus": "NOT_COMPARABLE",
+    "reason": "Official BLS national ZIP/time-series endpoints returned HTTP 403 during source qualification",
+    "status": "UNAVAILABLE",
+    "use": "Cross-sectional context only; no OEWS employment/wage growth series",
+    "vintages": []
+  },
+  "interpretationGuardrail": "Observed differences across AI-exposure groups do not establish that AI caused those differences.",
+  "kind": "oews",
+  "scope": "RESEARCH_ONLY"
+}

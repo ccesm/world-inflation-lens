@@ -1,0 +1,15 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"Research-only descriptive occupational labor outcome",
+ "type":"object","additionalProperties":false,
+ "required":["contractVersion","scope","kind","causalityStatus","interpretationGuardrail","binding","data"],
+ "properties":{
+  "contractVersion":{"type":"string","enum":["observed-labor-outcomes-v1"]},
+  "scope":{"type":"string","enum":["RESEARCH_ONLY"]},
+  "kind":{"type":"string","enum":["cps-annual","concordance","oews","groups","pretrends","young-workers","robustness","summary"]},
+  "causalityStatus":{"type":"string","enum":["DESCRIPTIVE_ONLY"]},
+  "interpretationGuardrail":{"type":"string","enum":["Observed differences across AI-exposure groups do not establish that AI caused those differences."]},
+  "binding":{"type":"object","additionalProperties":false,"required":["preanalysisSpecHash","sourceManifestHash","monthlySnapshotHash","phase2Inputs","concordanceSha256"],"properties":{"preanalysisSpecHash":{"type":"string","pattern":"^[0-9a-f]{64}$"},"sourceManifestHash":{"type":"string","pattern":"^[0-9a-f]{64}$"},"monthlySnapshotHash":{"type":"string","pattern":"^[0-9a-f]{64}$"},"phase2Inputs":{"type":"object"},"concordanceSha256":{"type":"string","pattern":"^[0-9a-f]{64}$"}}},
+  "data":{"type":"object"}
+ }
+}

@@ -1,0 +1,884 @@
+{
+  "binding": {
+    "concordanceSha256": "fca2818d691c32777a4cd733a9ab77c8c5bd47adcacd7ac3aa149bebd45b5f7f",
+    "monthlySnapshotHash": "12ed7cbb314babe30ef970ffba363c31e5a7ad0da9d183f414d05d5a662161fd",
+    "phase2Inputs": {
+      "academic": "6de6538be9ff02f215ed76fe85b7516bd47cc0fa9420bd8139fd42bd30d59284",
+      "anthropic": "67cb0234dafe573651ac1db7a679d79447f6655d3a4a8a09cfb77c5f4c54ab91",
+      "microsoft": "8f77ac5df55f850a7f19665bd983de51223075fa6637086c5352f186065f9c37",
+      "occupation-crosswalk.json": "b3e775a455a413a1aea9c8d10cffb6156dabeded0ffe87e2935c947c8b365c25",
+      "occupations.json": "3d8bf6879ccd745d2658b9a97d678747daedc546ef9bf21d8647e7df7da0c138"
+    },
+    "preanalysisSpecHash": "f3429802af3354335d5c724fc5497a24dde41ea11ac8178b2ac88c9416148b5e",
+    "sourceManifestHash": "87934e3c07e9feb6dc833ccfdbb636cda83b72652e1d74f7ee7dca0025c283a4"
+  },
+  "causalityStatus": "DESCRIPTIVE_ONLY",
+  "contractVersion": "observed-labor-outcomes-v1",
+  "data": {
+    "analysisThrough": "2026-08",
+    "causality": "NOT_ESTABLISHED",
+    "crossSourceRobustness": {
+      "agreementIsNotCausality": true,
+      "methodologyDependentPresentationFlag": false,
+      "noCompositeExposure": true,
+      "q5Q1GapDifferencePp": 0.14618389824549993,
+      "sampleAndConstructDifferencesMatter": true
+    },
+    "decisionTreeLabels": [
+      "DATA COVERAGE INSUFFICIENT",
+      "DIVERGENCE EXISTS BUT PREDATES GENAI",
+      "NO CLEAR EXPOSURE-GROUP DIVERGENCE"
+    ],
+    "latestCompleteYear": 2024,
+    "macroContextReference": {
+      "noOccupationHiringInference": true,
+      "notMergedIntoExposureOutcomes": true,
+      "researchFile": "../normalized/current-summary.json",
+      "role": "MACRO_CONTEXT_ONLY",
+      "sha256": "3530ec4769c1f65b572547305af069d91ad42906b07452afd64a81d98483772b"
+    },
+    "occupationalHiring": "UNAVAILABLE",
+    "occupationalUnemployment": "DEFERRED",
+    "phase4Readiness": "CONTINUED_OBSERVATION_AND_SEPARATELY_REVIEWED_CAUSAL_DESIGN_REQUIRED",
+    "primaryExposureSource": "academic_human_beta",
+    "sourceResults": {
+      "academic": {
+        "detailsArtifact": "exposure-group-outcomes.json",
+        "interpretationLabels": [
+          "NO CLEAR EXPOSURE-GROUP DIVERGENCE",
+          "DATA COVERAGE INSUFFICIENT"
+        ],
+        "latestCompleteCoverage": {
+          "denominator": "All CPS civilian noninstitutional employed age 16+; all class-of-worker types",
+          "employmentWeightedCoverage": 0.37768590058172974,
+          "evidenceQuality": "LIMITED_COVERAGE",
+          "excludedMissingEmploymentShareMeaning": "Known survey employed weight outside the primary sample, not missing employed persons in the survey population",
+          "missingEmploymentShare": 0.6223140994182703,
+          "occupationCountCoverage": 0.19261822376009227,
+          "populationEmployment": 161345529.689725,
+          "primaryOccupationCount": 167,
+          "referenceType": "ANNUAL_12_MONTH",
+          "sourcePopulationNotOEWS": true,
+          "suppressedOutcomeEmploymentShare": 0.009514048500870387,
+          "taxonomyExcludedEmploymentShare": 0.49994562270057286,
+          "unmappedExposureEmploymentShare": 0.11285442821682701,
+          "year": 2024
+        },
+        "latestCompleteYear": 2024,
+        "matchedPartialYears": [
+          {
+            "comparisonYear": 2022,
+            "employmentChangesPct": {
+              "1": 0.9108142293120736,
+              "2": 2.404596353135946,
+              "3": 5.497246859035565,
+              "4": 2.663694877086975,
+              "5": 3.4418732676957386
+            },
+            "limitation": "No extrapolated annual result; 2025 missing October and weighting changes; 2026 revised population controls",
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12
+            ],
+            "referenceType": "IDENTICAL_CALENDAR_MONTHS",
+            "targetYear": 2025
+          },
+          {
+            "comparisonYear": 2022,
+            "employmentChangesPct": {
+              "1": 1.457456202764451,
+              "2": 3.151685625616607,
+              "3": 6.292705408095478,
+              "4": 3.6315690220433794,
+              "5": 2.5408559342328774
+            },
+            "limitation": "No extrapolated annual result; 2025 missing October and weighting changes; 2026 revised population controls",
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "referenceType": "IDENTICAL_CALENDAR_MONTHS",
+            "targetYear": 2026
+          }
+        ],
+        "pretrendStatus": "NO_MATERIAL_PRETREND_GAP",
+        "primarySampleSize": 167,
+        "q5MinusQ1Post2022EmploymentChangeGapPp": 0.4159371247595356,
+        "q5MinusQ1PretrendGapPpPerYear": 0.20208767800778826,
+        "quintileComparisons": {
+          "1": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 6868603.531966667,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 600.0,
+                "personMonths": 26186,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 36.70993626888646,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 7437729.089024999,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 600.0,
+                "personMonths": 28094,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 36.55592808876226,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": -0.003567443506303364,
+                "25–34": 0.011099385419981622,
+                "35–54": -0.01068208763412809,
+                "55+": 0.002678705708550194
+              },
+              "employmentChangePct": -0.7724634254452134,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 10.118683469962075,
+              "pretrendDeviationPct": -2.2104760464472997,
+              "usualHoursChange": -0.4753375569395786,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 0.7325756995788805,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.007299053971945568,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 7729830.872866667,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 653.84,
+              "personMonths": 27548,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 36.70388078333603,
+              "year": 2022
+            }
+          },
+          "2": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 11255477.955066666,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 720.0,
+                "personMonths": 42477,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 37.99883320212993,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 12212367.170166666,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 720.0,
+                "personMonths": 45671,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 37.8738141718036,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": 0.0019306106697969394,
+                "25–34": 0.008983777363510387,
+                "35–54": 0.001140036696185176,
+                "55+": -0.011761151743206522
+              },
+              "employmentChangePct": 0.3923519514696494,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 6.080106080106074,
+              "pretrendDeviationPct": -2.576877828687376,
+              "usualHoursChange": -0.19639188073783487,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 1.5124460411500944,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.015011226071473515,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 12581131.302758334,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 769.23,
+              "personMonths": 44492,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 37.66813819678796,
+              "year": 2022
+            }
+          },
+          "3": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 10589658.703425,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 720.0,
+                "personMonths": 43494,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 37.71097353699286,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 10433046.841458334,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 750.0,
+                "personMonths": 42953,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 37.548949767356724,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": -0.0031767073384583594,
+                "25–34": -0.0007922666341420026,
+                "35–54": 0.01312645481485164,
+                "55+": -0.009220066674158922
+              },
+              "employmentChangePct": 3.119186676694685,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 8.749999999999991,
+              "pretrendDeviationPct": 4.6249068629844565,
+              "usualHoursChange": -0.5652631082677786,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": -0.7221879572426406,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": -0.007248083582395992,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 10735742.438683333,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 800.0,
+              "personMonths": 41674,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 37.804231604437355,
+              "year": 2022
+            }
+          },
+          "4": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 17296325.788733333,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 1038.0,
+                "personMonths": 69316,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 40.59087840757811,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 17441766.931425,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 1046.0,
+                "personMonths": 69400,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 40.60988683857447,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": 0.0019192072031062532,
+                "25–34": -0.001484683546163157,
+                "35–54": 0.00632081491527009,
+                "55+": -0.006287463893872691
+              },
+              "employmentChangePct": 1.9566881964965699,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 8.412836079791841,
+              "pretrendDeviationPct": -1.1817556674278455,
+              "usualHoursChange": -0.36380225338638894,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 1.5755758743106518,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.015632925318908163,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 17938181.140891667,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 1153.0,
+              "personMonths": 67540,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 40.66926246322013,
+              "year": 2022
+            }
+          },
+          "5": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 10968179.191949999,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 903.84,
+                "personMonths": 42130,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 38.86786532085934,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 10961201.0752,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 923.07,
+                "personMonths": 41833,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 38.67357578331863,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": 0.0018278703012520187,
+                "25–34": -0.011311272867159078,
+                "35–54": 0.012123746247172384,
+                "55+": -0.001631771734270565
+              },
+              "employmentChangePct": -0.3565263006856778,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 11.904984763865922,
+              "pretrendDeviationPct": -2.1933956660343013,
+              "usualHoursChange": -0.4524505227199427,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 0.9346633775866687,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.00930322427324306,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 11317882.840824999,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 961.53,
+              "personMonths": 40758,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 38.762169234364585,
+              "year": 2022
+            }
+          }
+        }
+      },
+      "microsoft": {
+        "detailsArtifact": "exposure-group-outcomes.json",
+        "interpretationLabels": [
+          "NO CLEAR EXPOSURE-GROUP DIVERGENCE",
+          "DIVERGENCE EXISTS BUT PREDATES GENAI",
+          "DATA COVERAGE INSUFFICIENT"
+        ],
+        "latestCompleteCoverage": {
+          "denominator": "All CPS civilian noninstitutional employed age 16+; all class-of-worker types",
+          "employmentWeightedCoverage": 0.4755234910957437,
+          "evidenceQuality": "LIMITED_COVERAGE",
+          "excludedMissingEmploymentShareMeaning": "Known survey employed weight outside the primary sample, not missing employed persons in the survey population",
+          "missingEmploymentShare": 0.5244765089042562,
+          "occupationCountCoverage": 0.21914648212226068,
+          "populationEmployment": 161345529.689725,
+          "primaryOccupationCount": 190,
+          "referenceType": "ANNUAL_12_MONTH",
+          "sourcePopulationNotOEWS": true,
+          "suppressedOutcomeEmploymentShare": 0.010075620108809623,
+          "taxonomyExcludedEmploymentShare": 0.49994562270057286,
+          "unmappedExposureEmploymentShare": 0.014455266094873784,
+          "year": 2024
+        },
+        "latestCompleteYear": 2024,
+        "matchedPartialYears": [
+          {
+            "comparisonYear": 2022,
+            "employmentChangesPct": {
+              "1": -0.5917805480443072,
+              "2": 5.87847062997835,
+              "3": 3.0888010612629246,
+              "4": 7.251529937546453,
+              "5": 1.5706115522156727
+            },
+            "limitation": "No extrapolated annual result; 2025 missing October and weighting changes; 2026 revised population controls",
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12
+            ],
+            "referenceType": "IDENTICAL_CALENDAR_MONTHS",
+            "targetYear": 2025
+          },
+          {
+            "comparisonYear": 2022,
+            "employmentChangesPct": {
+              "1": 0.018513035341083395,
+              "2": 4.470443207731134,
+              "3": 4.760661840902469,
+              "4": 7.829055545281394,
+              "5": -0.23859662137097892
+            },
+            "limitation": "No extrapolated annual result; 2025 missing October and weighting changes; 2026 revised population controls",
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "referenceType": "IDENTICAL_CALENDAR_MONTHS",
+            "targetYear": 2026
+          }
+        ],
+        "pretrendStatus": "STRONG_PRETREND_DIFFERENCE",
+        "primarySampleSize": 190,
+        "q5MinusQ1Post2022EmploymentChangeGapPp": 0.5621210230050355,
+        "q5MinusQ1PretrendGapPpPerYear": -1.18475186189016,
+        "quintileComparisons": {
+          "1": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 10870993.257016666,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 610.0,
+                "personMonths": 40921,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 37.036936417735205,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 11666915.926425,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 640.0,
+                "personMonths": 43684,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 37.052151654587234,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": -0.010925223403417561,
+                "25–34": 8.682822491309916e-05,
+                "35–54": 0.0042742000635334065,
+                "55+": 0.0038686170946046483
+              },
+              "employmentChangePct": 0.30409869678842405,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 7.14285714285714,
+              "pretrendDeviationPct": -2.929670783472209,
+              "usualHoursChange": -0.4463441946990301,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 1.652037649537921,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.016385399626009444,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 11940037.609541668,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 700.0,
+              "personMonths": 41912,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 37.108746987145786,
+              "year": 2022
+            }
+          },
+          "2": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 9065126.597308332,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 960.0,
+                "personMonths": 37348,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 41.91501311315023,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 9141017.50625,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 961.53,
+                "personMonths": 37486,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 41.666520708997275,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": 0.006334774029276707,
+                "25–34": 0.006850551618098777,
+                "35–54": 0.005699374059178197,
+                "55+": -0.017535728050243032
+              },
+              "employmentChangePct": 5.413762645855735,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 11.40000000000001,
+              "pretrendDeviationPct": 3.121957701038543,
+              "usualHoursChange": -0.3906377072792253,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 1.1051046554886483,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.010990429915911194,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 9476169.078408333,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 1000.0,
+              "personMonths": 36464,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 41.67792853882307,
+              "year": 2022
+            }
+          },
+          "3": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 22900491.988141667,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 1116.0,
+                "personMonths": 90374,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 40.258479566949894,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 23397679.885125,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 1115.38,
+                "personMonths": 91746,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 40.12058322251975,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": -0.004002859135382272,
+                "25–34": 0.0023691402746934542,
+                "35–54": 0.006083962446995661,
+                "55+": -0.003946560319320225
+              },
+              "employmentChangePct": 1.713084597756942,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 10.820326152744508,
+              "pretrendDeviationPct": -1.7763970077037474,
+              "usualHoursChange": -0.36117396143400526,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 1.7607928932524954,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.01745470537026428,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 24568415.927975,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 1173.07,
+              "personMonths": 90545,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 40.020846970582355,
+              "year": 2022
+            }
+          },
+          "4": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 14334492.019675,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 923.0,
+                "personMonths": 56825,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 38.660300332503304,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 14398851.988641666,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 950.0,
+                "personMonths": 56465,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 38.77033441939014,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": 0.004956744210183994,
+                "25–34": -0.0010411375302979142,
+                "35–54": 0.004476768812841092,
+                "55+": -0.007844198968894378
+              },
+              "employmentChangePct": 2.4742308168915983,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 12.20000000000001,
+              "pretrendDeviationPct": 1.2126153789584375,
+              "usualHoursChange": -0.4708799026364403,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 0.6213199004024257,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.006193976663487888,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 14667682.917416668,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 1000.0,
+              "personMonths": 54507,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 38.92773681791097,
+              "year": 2022
+            }
+          },
+          "5": {
+            "latestCompleteYear": 2024,
+            "pandemicRetained": {
+              "2020": {
+                "employment": 13773055.264716668,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 750.0,
+                "personMonths": 52717,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 36.800876571909114,
+                "year": 2020
+              },
+              "2021": {
+                "employment": 14054190.161899999,
+                "evidenceQuality": [
+                  "DESIGN_SE_UNAVAILABLE",
+                  "ROTATING_PANEL_PERSON_MONTHS"
+                ],
+                "nominalWeeklyEarningsMedian": 769.23,
+                "personMonths": 53635,
+                "referenceType": "ANNUAL_12_MONTH",
+                "usualPrimaryJobHours": 36.502403559291224,
+                "year": 2021
+              }
+            },
+            "post2022": {
+              "ageShareChanges": {
+                "20–24": 0.0018050348006172778,
+                "25–34": 0.00334595656090253,
+                "35–54": 0.0018200726759993735,
+                "55+": -0.0057010030704852666
+              },
+              "employmentChangePct": 0.8662197197934596,
+              "endpointYear": 2024,
+              "nominalWeeklyEarningsMedianChangePct": 7.975460122699385,
+              "pretrendDeviationPct": -0.06988080355945799,
+              "usualHoursChange": -0.5090777336559071,
+              "wageQuality": "LIMITED_COMPARABILITY_PUBLIC_USE_CHANGES_NOT_A_CLEAN_WAGE_EFFECT"
+            },
+            "pretrend": {
+              "annualGrowthPct": 0.467285787647761,
+              "fitMeaning": "Descriptive OLS log employment trend; not causal or a forecast",
+              "slopeLogPerYear": 0.004661973968909194,
+              "years": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+              ]
+            },
+            "transition2022": {
+              "employment": 14611598.588425001,
+              "evidenceQuality": [
+                "DESIGN_SE_UNAVAILABLE",
+                "ROTATING_PANEL_PERSON_MONTHS"
+              ],
+              "nominalWeeklyEarningsMedian": 815.0,
+              "personMonths": 52865,
+              "referenceType": "ANNUAL_12_MONTH",
+              "usualPrimaryJobHours": 36.613753259954755,
+              "year": 2022
+            }
+          }
+        }
+      }
+    },
+    "uncertainty": "DESIGN_SE_UNAVAILABLE; repeated rotation/person-month observations and complex design prevent naive IID intervals; point estimates not exact; no significance claims"
+  },
+  "interpretationGuardrail": "Observed differences across AI-exposure groups do not establish that AI caused those differences.",
+  "kind": "summary",
+  "scope": "RESEARCH_ONLY"
+}

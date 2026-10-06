@@ -1,0 +1,701 @@
+{
+  "evaluatedAt": "2026-10-06T03:19:21Z",
+  "months": {
+    "2015-01": {
+      "contentHash": "7cb321c1a0c1e59d73b84f9a5bb4aa392267ea225be2dc3944fa181026355f20",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-02": {
+      "contentHash": "5e0942d63c49a00c0071fce9ce2822f1a2e5b211843bf9c11146432d452d499c",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-03": {
+      "contentHash": "851e5126f092c750f51bce83b0bfe9c1af0527a27e3b42848666e76aa82cdd75",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-04": {
+      "contentHash": "d277a03d695e8e350eab94687346dc87f4d0446e856b0d3212a2baef13e72971",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-05": {
+      "contentHash": "146b2d26aed29424e2913d487cb4f78eaebf7521095d7920777c8bc7d7661a5d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-06": {
+      "contentHash": "6ff860174ff6bcfe6f3b2e8079f2abe0d902b9c4d7a904c701f06b64281371d0",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-07": {
+      "contentHash": "7ba7941ceb3b5a1ee7bfddff3f6b0dda3cbf2d04055cbe862859ad051dbe9b69",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-08": {
+      "contentHash": "91e37e449bd5ce208127d77884ad38a4d8fabb8a675bb0b27f964aa12f3bb278",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-09": {
+      "contentHash": "9e12431b492b35f718b08b7e7c97c44076f69a5200e5159450590c90f2da865f",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-10": {
+      "contentHash": "15e0e29db6d87520a4e6046b51712737af890b7694f28deabedadedee7f34414",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-11": {
+      "contentHash": "b1926ba6c3a5a45c7c6d4622e4f5fc267fe3944c34b00a0331e52004af3e0631",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2015-12": {
+      "contentHash": "1e87bfd8f767fa997665f96796e4ecd1b8f2cc649a396571226ee95f1e935b40",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-01": {
+      "contentHash": "07e62cc60cfa5549eaa7870a3e70c107285d55f6e364109506161deb5dfcfa3d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-02": {
+      "contentHash": "f8663186df4184f888e29377c5fc465b2ec5ccc12b4552f1695d1be9e409d759",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-03": {
+      "contentHash": "0e1ce7de5255dd8323dcdbb9b214829ad2557d08392c46743be4b21b0de42776",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-04": {
+      "contentHash": "69946c061a7f9c5e8c3de5c055a48b24f556e4e5ca462b00e3d9f448626cd993",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-05": {
+      "contentHash": "52f8f934ec6708fb595a474ddaaf1b9655c1edb28bb454ad4a9844810acbefbf",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-06": {
+      "contentHash": "da2f71cd862a10506fd5b3d253bb1c4d00ad44ae059317388ed6fbad4b5339f2",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-07": {
+      "contentHash": "c3c3bf9c6f062c8072a98807362f80bae1fd8f44b651954883ab384f9197c822",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-08": {
+      "contentHash": "d4cbe162b4a71f2575bc2f30c59685d4020e39608d70947497f25c74b648449f",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-09": {
+      "contentHash": "f440b61c073d5f8eba72e206144f1a0dc5719a6549771e94f2f195bc0b278a90",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-10": {
+      "contentHash": "e1c62b0cd8446a8f127b3560d7095291b841b8cd7c81e4c53d01faa1f193cdc4",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-11": {
+      "contentHash": "114b240b0610316035dddcb1ff11a37b93826846c71816324e2fdb3d09d4381b",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2016-12": {
+      "contentHash": "cd9336ee8004664d1dd69202acd344983233b2c3276f134129cbbd612ea56124",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-01": {
+      "contentHash": "d72b99b2a12e5a38ceb440f232cc03f76ae7199f3b9f144a25636b9c6c64b185",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-02": {
+      "contentHash": "4210a89d44daa7f9fb4e79a4381f06d649f347ba001b3acd2d4f84cb064cda9c",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-03": {
+      "contentHash": "664d18afeef878994183a75347003ef3cb65ceb9dfb35de7c086af77fc105087",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-04": {
+      "contentHash": "110e53b9b6b11be75ee6a3bc8601240baf0544f7ecb966a8e9b0a08cbd814966",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-05": {
+      "contentHash": "0a79a4c3797661ed5a3dd1cc6f3cf45339091bdb59fbefecaa3b6dde82b0eb96",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-06": {
+      "contentHash": "2690eda4474a5874af4ff4f12aae2da4cce885682b69e615d33f35177730c6cd",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-07": {
+      "contentHash": "af4b9fb2badc4aa3ea3313a5944b8cefd830644f8c9e74965e4b391d401eeb4e",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-08": {
+      "contentHash": "eee3c3e5aad7dd89884112c9828546565645d3e739cb0a45500c558a8cbcda51",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-09": {
+      "contentHash": "04f4aec495c4422481a8d602306495dbdf1388d5bb51172ecf715f11e9ba299b",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-10": {
+      "contentHash": "26afbabb9daa0750d268413331a90b097337d3192c41e979fe84fd8691925081",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-11": {
+      "contentHash": "8713011fee75f874d5cf069c05469c59dc94c32d49ba2530b4b1dd7ea23772b7",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2017-12": {
+      "contentHash": "443195ab9029688f2d32218b012ac6984b2d1267178b5feb5a6d8f67511bd04e",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-01": {
+      "contentHash": "a4bc881b45efdc65a2922956c2cbd3def30ac5cdd625220d350c9f861bab00ec",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-02": {
+      "contentHash": "08ffa9c79a4a73e738941cc1d511920ab6f854c8fea0fdd7efe838bc0c004763",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-03": {
+      "contentHash": "94e48b38068ec8db9d7e0305f32da0006946a6275f5e1bb9200835e5e58b97aa",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-04": {
+      "contentHash": "9953690fd2698e0e2b7a27753fc82a2b2e629d49ffdf9261ce2d69a96145b9a2",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-05": {
+      "contentHash": "710f5c5c32168cf3bf80b4f87c559af2ce8b549e21273b9c594464636958fca5",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-06": {
+      "contentHash": "1aa1715972a17974848367fd53cd99fb068d62a32ed9b031bdc2cbb25a0a9cdf",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-07": {
+      "contentHash": "0a167731861f97befb8bf59714d7c21b225347ef9d2ce418a5a1464c294529f4",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-08": {
+      "contentHash": "3cfc15b685b4d51581cbd5132f8e70e07c051e3da4a648b969efe479f73d4f64",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-09": {
+      "contentHash": "2ee05d29676b751fe98ab683a9bffde5a16df18c5d4ec394207ed287432201b3",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-10": {
+      "contentHash": "45133588b5e568ce8fef82d63b61babfd73ca202dc0807dc280306ff8063a60b",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-11": {
+      "contentHash": "6a7b9d91f1963acbdafbe9fcdf0c8d2fa54e419991ac51e7c76e00887f8a9288",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2018-12": {
+      "contentHash": "7cadd04cdb92f341c899b0919af6f5eee8306eacfbad1984a09caf3aa351292d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-01": {
+      "contentHash": "822c0b3ea761dfb4e7260c9d57653315a38271dca880624c17de6edc7bd1b864",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-02": {
+      "contentHash": "402b8557426c3eaa6b21aeb0c71d75c50b2794af003f4155fad30de04a4f26ba",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-03": {
+      "contentHash": "e00983cf3012946336292c507b3ceed7a280d9e0d3607a920cce74136b1ee12a",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-04": {
+      "contentHash": "8a3e31c7b89dd824a9e24a1c4fb3f58543d04fdfa9aa4ae944d9486de44bfa40",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-05": {
+      "contentHash": "f7fd4041a142dd05c755741f583c5d8aff9b02dbf06740180446a80b06d6a02c",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-06": {
+      "contentHash": "f1c1d401b858bdd8ee2d0ba7f5ba3a17c5c9200104e45f47cbb8611c5dc32da7",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-07": {
+      "contentHash": "acba6b60738e560b9502bd5bb9e2f41afd8e6a5f7fb178b0ebbdcdaaf3fbe608",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-08": {
+      "contentHash": "14a05a7c49f7e0ff3332341d71687feb3c0d0de894b99ae7d29453effbd37637",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-09": {
+      "contentHash": "ae366428aefab762257dbe9e6240e029e6b7622c3d995a5a3dba77285e747ff5",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-10": {
+      "contentHash": "233146f4e862665290dc1f866b0a3cdb987278208100483217ed6e2206339826",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-11": {
+      "contentHash": "dba97acc862af84bc8394fade75f76701d68f835535cbf860a2c3e6be28fd742",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2019-12": {
+      "contentHash": "14535441ec73498f5d23b3fed2aa00809e4bd915c8678a76bc8d3d2489179dce",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-01": {
+      "contentHash": "2bd691362fb61ccae562b6b0d5d14f40c80dd2f0ff7b926976811657ae8a2a1b",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-02": {
+      "contentHash": "55efe5bd8574595528dc674b9105e9fff92ba25275fbaefb8100a6b58d8a6f9d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-03": {
+      "contentHash": "acaac92614fe433386bb07bc3e9ccbade60a5b00d075ae6f60bba124c4390dca",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-04": {
+      "contentHash": "2c65b51c2b9b39641555bb581d5025fd837634cc70980c00549c1c3733bb3590",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-05": {
+      "contentHash": "7ccbaba8f7b546956887dc1d1ec8d73fbe8b09f5330bd052710cb2b426069cd5",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-06": {
+      "contentHash": "f153843128d79cb0d5e206ae36d42f5cc671c2262d732f305f3ae5af2c48d7f9",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-07": {
+      "contentHash": "d6feefef9d7ba0cdc9a585496ba4e10dabed6ea0dc2a6fcae87a4600367e358d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-08": {
+      "contentHash": "c1fa6769f14adddef17dfde41ab33e880f673009e567b652960073bb309659eb",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-09": {
+      "contentHash": "de5c1f2cf7e93fcf488249ad4c48beed14f6ff21d7cfbf09df7e8a0234a0fbd9",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-10": {
+      "contentHash": "699536e41d41f86fa5ff2f096008e3d6408a3ec2f24f86f5486fc1484e0df251",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-11": {
+      "contentHash": "946848710b4c6ceb2afd29f8a9099abdff7606b7482fa69250693266833231bf",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2020-12": {
+      "contentHash": "5155344970e42e2334a7605910cadd8c417f940b0d5b5912283109dd3fc57d0b",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-01": {
+      "contentHash": "17d7c276a6992c5eea954249d783b7145dd4902c92d2d496fc9a959b6cabcbfe",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-02": {
+      "contentHash": "dfa942219c765d8d9c94a2c024fff3d3f1f7c360bd6849411ea6ef36abbef64d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-03": {
+      "contentHash": "a3f4ea7aa9d6a9602b1465848884c6d019082eb1cf8a5186813246feca0b693d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-04": {
+      "contentHash": "431d61bb3cabc6c4dfee53df2efc8466855d8f8ef7730458b8b3b35007a54dd4",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-05": {
+      "contentHash": "2cd0ca3db13cf19457a447b3ae928a5666dca1a569b79825c95dee5c2b04f373",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-06": {
+      "contentHash": "6802ae2a2a7059b14bf977a476b8ec3360ce975512691243c0a01a56f7ba9618",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-07": {
+      "contentHash": "3a41ca5ec4b0100cb14255fbedc7e1c97693595b98fa8bf3060de1d49290b5ea",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-08": {
+      "contentHash": "e9509bc8d7db89332b3d27e3c67abf652c0a17ba77335fa0737775704254bb82",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-09": {
+      "contentHash": "a05fa00dc1afbc9e1e7a05cb3f77b3d55057ea816eab69fde9d04e5276e651d1",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-10": {
+      "contentHash": "aee42b8e5f003a95efaa9d721094113556d14482332de63d2166511475bcd855",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-11": {
+      "contentHash": "5267629426f8b7842b1ae1a24f7af24738894f019a6ea467c09d902bc84d26ec",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2021-12": {
+      "contentHash": "3844b9c4a1dd6f5dd4606331cd7e0281e6c8bd54b15e359975f642e333fb8c46",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-01": {
+      "contentHash": "43a1e8e352712107d74d497728da9c068431c8f8a0a635a417da0e493d2f701c",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-02": {
+      "contentHash": "0c06a169758a86219fa63ec999e54a86836870f8ad8ed2edfd287c4b0a22b51c",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-03": {
+      "contentHash": "d323eaa681920cd6817c0e80a5376170a79dbd28524e8139d3fb081f9f534317",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-04": {
+      "contentHash": "23701a87d3b0881f7d953d4957dd16b6286d14e4564bd06af6347018e6e5e6b9",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-05": {
+      "contentHash": "7b7c3e0ed2171835b010bdbf11b75c3c1a177a605e4ba5855b1630add9908dd0",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-06": {
+      "contentHash": "361a91b6c2176e7b00e60052686f785475ad68a68744ee0daa5f8b4be6ce125c",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-07": {
+      "contentHash": "0b1b09edf24fd6c29ec776a6a64f9e2867eec2bf34f667e6c8239043f9c387d5",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-08": {
+      "contentHash": "4767be9b51957af02c866d870d885e5e9edd7cd2fd7f4f6bcfb7cf734e314f5e",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-09": {
+      "contentHash": "d66bc6ebef74820f07498c3d57ea595eed156965f8e6720623ce4e17e089fa79",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-10": {
+      "contentHash": "ba7d92401bd5c39989d19727471b67bc6961d527871ddfd5a57fd03c52bd9f89",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-11": {
+      "contentHash": "d77dae6cc0f3917c11e9291a457c7a8d949a7881ddb30827df3a9840182a03a1",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2022-12": {
+      "contentHash": "1c32d37325b35fe79fb2113dde44762ce6e066bf180823731ce9f05b89730895",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-01": {
+      "contentHash": "aa188723f9d2b07681a69d6905427624e5736eb559857cc06c2aa9e808bf7d98",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-02": {
+      "contentHash": "e5d0aeb0dd3d3bf77f350e159c2d622d929112468ca2ccd75b0f5f2d6f1ebc08",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-03": {
+      "contentHash": "5c168169f047ad94ce4979a816cb4a08640ff52e3963b368ecef3db8b2b76a88",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-04": {
+      "contentHash": "b367f13ab4463324b8e6b850f7b23c64acc9cfa600f99a3202d3b9dedd8d351b",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-05": {
+      "contentHash": "d3d55eac37da19e9538caee04247a1d95bb7c0df09f521e0e735beab1748bf42",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-06": {
+      "contentHash": "d3d753c546a2cf19fd16d1f9e81d38e881521a178c6851a897809995788c67d7",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-07": {
+      "contentHash": "7145ac409e743d4c4ab33914c87d2e797ffc65b762b732b6014f0cd155165076",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-08": {
+      "contentHash": "58c0d66735b8080f6d2c90725adcba505f6e9f3597525c8b280d5abef9860a0f",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-09": {
+      "contentHash": "ca1c065715e5cbb6cce5aa8ac0091cb93b400267d96995b1462ab76cbaddcb30",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-10": {
+      "contentHash": "9044490ad44de678e55b0ee681c3b86343a00f36c545a77f14736d386fc6d81d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-11": {
+      "contentHash": "9a0ecb2921ae1b76484dc20da9b9e3f8e776545c0795efdde8add7aeae099ac1",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2023-12": {
+      "contentHash": "4835a5fd07023a0a3210d0f3c274dc0fbb2cb01f32a576f8ed6b2a45c97ab05f",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-01": {
+      "contentHash": "3f6bb56ba07d38f044fac2dfc2f731c70a7208526310f827664495868abf20b3",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-02": {
+      "contentHash": "116679586402a7851e46c4ce4bc39cf1340ee18c1602a6e192a6de59f19d99bd",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-03": {
+      "contentHash": "2ffc92990ed3b968c98018372fe7f3124547754562439458c947f9ba691896fa",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-04": {
+      "contentHash": "aacde1e3fafdfc349bccb12c7d245f591cb0f59ce14b1d547e7f75a688429d07",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-05": {
+      "contentHash": "bdd18d1a1fe7dd61e6324cbd8fdb6622a5d6e5af41075e6943c51d8920fe8f22",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-06": {
+      "contentHash": "7fbbe185c060cb675b37b092506f621aef289bd1df82ce2b3e8a80c8786a1edc",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-07": {
+      "contentHash": "f0a76e8568a69c4fd3dcc6a098a7029c7b19af618d7651e4d628f1c1a802e2c1",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-08": {
+      "contentHash": "d5c86fc9ac749a12026e1e6cd2a9323704261884617484dd0361bdd2d35ceaf5",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-09": {
+      "contentHash": "3538addfa7d700b88bda73f50f1e9c16b0909ca14b04b03671f4f708e6db508f",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-10": {
+      "contentHash": "06c0ccff0294bd8743dd7d49c1df361ecb5e9a81fa289b85f6870a98cc13d99a",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-11": {
+      "contentHash": "d6f0815b3d28722b3482ab818043c50036da29898aae5e28e1a31d28cb61f4a4",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2024-12": {
+      "contentHash": "d231a8c8fe936cede687f3af46f3a788301d027c44c81361fe5d25827787afe6",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-01": {
+      "contentHash": "87cedc08cb35b0c7936a533ff6e4424b866754ff5941e01239ab539671185187",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-02": {
+      "contentHash": "38b29646eb3be415bec2eb9bc64e7db4370722d9122e20de266479acb5a32ec0",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-03": {
+      "contentHash": "7405feb1c875e9034628081f2f3b90a03afba34b3def08230f72373b6ace0f97",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-04": {
+      "contentHash": "6e64f1ee33386e45b7a91358bf598279df6919d091558737784884fa10d35516",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-05": {
+      "contentHash": "39e5962539f5e70554ae82960ca7ba74606d9e200aeaec8fcb21d1dd7ee2806b",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-06": {
+      "contentHash": "1284bb07b2f5ad58c5cf0336a26dadf1381a34a66cdfcd8b964a54494db8aa54",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-07": {
+      "contentHash": "d604aba7cb993605520265745fd2a392c806f4cd980c3b20f4d68cd52865e123",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-08": {
+      "contentHash": "801b7f6846dbee2bbc0acb7fa56fded20c6bd8a1b2f9d765bf1cf946be289608",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-09": {
+      "contentHash": "bae8ed75dc75f1a839883e4c270054c191cc2caf29cc0c5e9351ea2dc0ba48d3",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-11": {
+      "contentHash": "0fb258e396af604a98d0ff457778052651cc114020a357b335a7cc406c27fbb1",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2025-12": {
+      "contentHash": "fdb8c82b7d1f46e4ecbf2d830b027ce48ffd9eab2f7a6f911e5f4879d36919b8",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2026-01": {
+      "contentHash": "5080c17df804983ce72709cc36a76fc0c9dd9dcc3831f788ce6ec67a56768881",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2026-02": {
+      "contentHash": "44814a108e092ae8ae6392e91627440771d286310b4321303da87c9385b6e81d",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2026-03": {
+      "contentHash": "d9ff969ed3fd96d1b937296deaa871bf220658496713093a2ad1d3b9df8b465e",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2026-04": {
+      "contentHash": "e24c3cb23bcb4e682cf6c3f07d0ba4eaf62e67f6cfb4c17a6780adae1a47177e",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2026-05": {
+      "contentHash": "255f31d50579cadc45b007ffd3177f86666d729c23bd68a7b10b06238c401d07",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2026-06": {
+      "contentHash": "a7475382c067067e8b028d60e1381aaf3caab558e80fdc1f009231559dc36ddf",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2026-07": {
+      "contentHash": "f49420a108680f1b4dd34cc2df6158dfc982439e7a98ad3f5286eb0fa40a30fa",
+      "status": "CURRENT",
+      "usingLastValid": false
+    },
+    "2026-08": {
+      "contentHash": "51d7f148b8a0e9e43d44005a963df104e09a91d326f48704b7bebbd6b81183da",
+      "status": "CURRENT",
+      "usingLastValid": false
+    }
+  },
+  "sourceFailureIsolated": true
+}

@@ -1,0 +1,53 @@
+{
+  "causalityStatus": "DESCRIPTIVE_ONLY",
+  "economicSourceFailureIsolated": true,
+  "evaluatedAt": "2026-10-06T03:31:56Z",
+  "interpretationGuardrail": "Observed differences across AI-exposure groups do not establish that AI caused those differences.",
+  "preanalysisSpecHash": "f3429802af3354335d5c724fc5497a24dde41ea11ac8178b2ac88c9416148b5e",
+  "providers": {
+    "academic": {
+      "reason": "Fixed historical methodology; not current capability; incomplete canonical coverage",
+      "status": "PARTIAL",
+      "usingLastValid": false
+    },
+    "anthropic": {
+      "reason": "Task-use context only; platform sample, no occupational employment explanation",
+      "status": "PARTIAL",
+      "usingLastValid": false
+    },
+    "cps": {
+      "monthIntakeStates": {
+        "CURRENT": 139
+      },
+      "observationThrough": "2026-08",
+      "reason": "2025 lacks October; 2026 incomplete; population-control breaks; no design SE",
+      "status": "PARTIAL",
+      "usingLastValidMonths": []
+    },
+    "cpsConcordance": {
+      "reason": "Only conservative exact detailed stable bijections enter primary sample; other expressions retained",
+      "status": "PARTIAL"
+    },
+    "microsoft": {
+      "reason": "Fixed historical methodology; not current capability; incomplete canonical coverage",
+      "status": "PARTIAL",
+      "usingLastValid": false
+    },
+    "oews": {
+      "reason": "Official BLS national ZIP/time-series endpoints returned HTTP 403 during source qualification",
+      "status": "UNAVAILABLE"
+    }
+  },
+  "scope": "RESEARCH_ONLY",
+  "supportedStates": [
+    "CURRENT",
+    "STALE",
+    "PARTIAL",
+    "FAILED",
+    "UNAVAILABLE",
+    "VERSION_MISMATCH",
+    "INSUFFICIENT_SAMPLE",
+    "NOT_COMPARABLE",
+    "LICENSE_RESTRICTED"
+  ]
+}

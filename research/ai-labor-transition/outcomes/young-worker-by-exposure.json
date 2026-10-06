@@ -1,0 +1,3391 @@
+{
+  "binding": {
+    "concordanceSha256": "fca2818d691c32777a4cd733a9ab77c8c5bd47adcacd7ac3aa149bebd45b5f7f",
+    "monthlySnapshotHash": "12ed7cbb314babe30ef970ffba363c31e5a7ad0da9d183f414d05d5a662161fd",
+    "phase2Inputs": {
+      "academic": "6de6538be9ff02f215ed76fe85b7516bd47cc0fa9420bd8139fd42bd30d59284",
+      "anthropic": "67cb0234dafe573651ac1db7a679d79447f6655d3a4a8a09cfb77c5f4c54ab91",
+      "microsoft": "8f77ac5df55f850a7f19665bd983de51223075fa6637086c5352f186065f9c37",
+      "occupation-crosswalk.json": "b3e775a455a413a1aea9c8d10cffb6156dabeded0ffe87e2935c947c8b365c25",
+      "occupations.json": "3d8bf6879ccd745d2658b9a97d678747daedc546ef9bf21d8647e7df7da0c138"
+    },
+    "preanalysisSpecHash": "f3429802af3354335d5c724fc5497a24dde41ea11ac8178b2ac88c9416148b5e",
+    "sourceManifestHash": "87934e3c07e9feb6dc833ccfdbb636cda83b72652e1d74f7ee7dca0025c283a4"
+  },
+  "causalityStatus": "DESCRIPTIVE_ONLY",
+  "contractVersion": "observed-labor-outcomes-v1",
+  "data": {
+    "ageIsNotSeniority": true,
+    "careerLadderCompression": "NOT_ESTABLISHED",
+    "sourceSpecificResults": {
+      "academic": [
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 952008.0256583333,
+              "employmentShare": 0.11970150247801084,
+              "personMonths": 4248
+            },
+            "25–34": {
+              "employment": 1647542.9039333332,
+              "employmentShare": 0.2071551454216239,
+              "personMonths": 7670
+            },
+            "35–54": {
+              "employment": 3366205.683125,
+              "employmentShare": 0.4232526061336931,
+              "personMonths": 16373
+            },
+            "55+": {
+              "employment": 1507393.6244416665,
+              "employmentShare": 0.18953336191327355,
+              "personMonths": 7808
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1559546.1727,
+              "employmentShare": 0.13411580282360755,
+              "personMonths": 6517
+            },
+            "25–34": {
+              "employment": 2775926.7286333335,
+              "employmentShare": 0.23872049978848958,
+              "personMonths": 12707
+            },
+            "35–54": {
+              "employment": 4665484.232008333,
+              "employmentShare": 0.40121618345765037,
+              "personMonths": 22861
+            },
+            "55+": {
+              "employment": 2087119.9152833333,
+              "employmentShare": 0.17948539641038871,
+              "personMonths": 10904
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1401119.478525,
+              "employmentShare": 0.11875216333789018,
+              "personMonths": 5912
+            },
+            "25–34": {
+              "employment": 2341397.2983500003,
+              "employmentShare": 0.19844559916136575,
+              "personMonths": 10925
+            },
+            "35–54": {
+              "employment": 4405254.151266667,
+              "employmentShare": 0.3733682020228968,
+              "personMonths": 22521
+            },
+            "55+": {
+              "employment": 3139355.169225,
+              "employmentShare": 0.2660766790737362,
+              "personMonths": 17854
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1111083.8814666667,
+              "employmentShare": 0.06489132228214593,
+              "personMonths": 4866
+            },
+            "25–34": {
+              "employment": 3711213.3148083333,
+              "employmentShare": 0.21674829712327495,
+              "personMonths": 18071
+            },
+            "35–54": {
+              "employment": 7800515.539466667,
+              "employmentShare": 0.45557835576755673,
+              "personMonths": 39167
+            },
+            "55+": {
+              "employment": 4324460.281375,
+              "employmentShare": 0.2525641407421168,
+              "personMonths": 23221
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1038032.6362583333,
+              "employmentShare": 0.09160696807114672,
+              "personMonths": 4391
+            },
+            "25–34": {
+              "employment": 2653893.3248833334,
+              "employmentShare": 0.23420758903414027,
+              "personMonths": 12198
+            },
+            "35–54": {
+              "employment": 4857872.6433999995,
+              "employmentShare": 0.42871001218394333,
+              "personMonths": 23749
+            },
+            "55+": {
+              "employment": 2559922.275475,
+              "employmentShare": 0.22591459070049347,
+              "personMonths": 13440
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 985021.212225,
+              "employmentShare": 0.1207925852688596,
+              "personMonths": 4305
+            },
+            "25–34": {
+              "employment": 1762590.5596833334,
+              "employmentShare": 0.21614546756177191,
+              "personMonths": 7907
+            },
+            "35–54": {
+              "employment": 3385273.58265,
+              "employmentShare": 0.4151341542858701,
+              "personMonths": 16114
+            },
+            "55+": {
+              "employment": 1525180.9750499998,
+              "employmentShare": 0.18703206661207142,
+              "personMonths": 8047
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1542335.8432,
+              "employmentShare": 0.1314679610126089,
+              "personMonths": 6507
+            },
+            "25–34": {
+              "employment": 2800432.8821583334,
+              "employmentShare": 0.23870754388107565,
+              "personMonths": 12581
+            },
+            "35–54": {
+              "employment": 4615656.802291666,
+              "employmentShare": 0.39343635253413267,
+              "personMonths": 22364
+            },
+            "55+": {
+              "employment": 2169513.9662083336,
+              "employmentShare": 0.18492832075666288,
+              "personMonths": 11328
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1360057.981175,
+              "employmentShare": 0.11591625056141347,
+              "personMonths": 5803
+            },
+            "25–34": {
+              "employment": 2310730.726766667,
+              "employmentShare": 0.1969410463460067,
+              "personMonths": 10711
+            },
+            "35–54": {
+              "employment": 4385517.574883333,
+              "employmentShare": 0.3737728546046807,
+              "personMonths": 22249
+            },
+            "55+": {
+              "employment": 3130757.8478916665,
+              "employmentShare": 0.26683105879779884,
+              "personMonths": 17611
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1080471.0327083333,
+              "employmentShare": 0.06282802997162693,
+              "personMonths": 4652
+            },
+            "25–34": {
+              "employment": 3793555.5950249997,
+              "employmentShare": 0.2205904808255999,
+              "personMonths": 17858
+            },
+            "35–54": {
+              "employment": 7752891.34485,
+              "employmentShare": 0.4508208688945872,
+              "personMonths": 38622
+            },
+            "55+": {
+              "employment": 4401877.718266667,
+              "employmentShare": 0.2559636462640373,
+              "personMonths": 23401
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1041188.222875,
+              "employmentShare": 0.0902924561393562,
+              "personMonths": 4309
+            },
+            "25–34": {
+              "employment": 2729806.2308,
+              "employmentShare": 0.23673040469363968,
+              "personMonths": 12332
+            },
+            "35–54": {
+              "employment": 4851995.616133333,
+              "employmentShare": 0.4207679185501732,
+              "personMonths": 23447
+            },
+            "55+": {
+              "employment": 2641947.5508583332,
+              "employmentShare": 0.2291112482041535,
+              "personMonths": 13721
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 989372.6549416668,
+              "employmentShare": 0.11831482291820494,
+              "personMonths": 4164
+            },
+            "25–34": {
+              "employment": 1862726.503425,
+              "employmentShare": 0.22275545548686101,
+              "personMonths": 7964
+            },
+            "35–54": {
+              "employment": 3337027.73375,
+              "employmentShare": 0.39906080223639145,
+              "personMonths": 15638
+            },
+            "55+": {
+              "employment": 1653051.1760666666,
+              "employmentShare": 0.19768128439186494,
+              "personMonths": 8415
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1515718.3304416668,
+              "employmentShare": 0.1276626309481218,
+              "personMonths": 6312
+            },
+            "25–34": {
+              "employment": 2858417.9265916664,
+              "employmentShare": 0.24075261579216703,
+              "personMonths": 12196
+            },
+            "35–54": {
+              "employment": 4663835.353858333,
+              "employmentShare": 0.3928153929555803,
+              "personMonths": 22187
+            },
+            "55+": {
+              "employment": 2240293.163441667,
+              "employmentShare": 0.18869054599129606,
+              "personMonths": 11407
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1286928.1511916667,
+              "employmentShare": 0.11211731805922452,
+              "personMonths": 5331
+            },
+            "25–34": {
+              "employment": 2284989.659325,
+              "employmentShare": 0.19906854330551146,
+              "personMonths": 10105
+            },
+            "35–54": {
+              "employment": 4253929.456275,
+              "employmentShare": 0.3706027888262862,
+              "personMonths": 21262
+            },
+            "55+": {
+              "employment": 3116814.9247416668,
+              "employmentShare": 0.27153724932150836,
+              "personMonths": 17501
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1089483.6914583333,
+              "employmentShare": 0.061410459925451584,
+              "personMonths": 4537
+            },
+            "25–34": {
+              "employment": 3906686.5765,
+              "employmentShare": 0.22020652656701853,
+              "personMonths": 17719
+            },
+            "35–54": {
+              "employment": 7912305.273108333,
+              "employmentShare": 0.4459895175133436,
+              "personMonths": 38813
+            },
+            "55+": {
+              "employment": 4650084.109016667,
+              "employmentShare": 0.2621092964177413,
+              "personMonths": 24338
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1060538.5684749999,
+              "employmentShare": 0.09040749018679185,
+              "personMonths": 4354
+            },
+            "25–34": {
+              "employment": 2762715.9207166666,
+              "employmentShare": 0.23551261586859815,
+              "personMonths": 11861
+            },
+            "35–54": {
+              "employment": 4892965.2425833335,
+              "employmentShare": 0.41710949540407405,
+              "personMonths": 23032
+            },
+            "55+": {
+              "employment": 2744993.8980833334,
+              "employmentShare": 0.23400187063505415,
+              "personMonths": 13958
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 975281.0973499999,
+              "employmentShare": 0.11753834384262987,
+              "personMonths": 3955
+            },
+            "25–34": {
+              "employment": 1879789.0365833333,
+              "employmentShare": 0.2265472905543726,
+              "personMonths": 7701
+            },
+            "35–54": {
+              "employment": 3298361.546508333,
+              "employmentShare": 0.3975099636650462,
+              "personMonths": 14806
+            },
+            "55+": {
+              "employment": 1661580.0118083332,
+              "employmentShare": 0.2002493058469292,
+              "personMonths": 8112
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1569169.7374583334,
+              "employmentShare": 0.1298007834359565,
+              "personMonths": 6102
+            },
+            "25–34": {
+              "employment": 2863193.986291667,
+              "employmentShare": 0.2368416963940117,
+              "personMonths": 11974
+            },
+            "35–54": {
+              "employment": 4671585.3602,
+              "employmentShare": 0.38643075071284716,
+              "personMonths": 21209
+            },
+            "55+": {
+              "employment": 2351442.765925,
+              "employmentShare": 0.1945099411082557,
+              "personMonths": 11243
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1260592.213375,
+              "employmentShare": 0.11026502575485145,
+              "personMonths": 4839
+            },
+            "25–34": {
+              "employment": 2329932.489875,
+              "employmentShare": 0.20380108910501943,
+              "personMonths": 9868
+            },
+            "35–54": {
+              "employment": 4159094.4053916666,
+              "employmentShare": 0.36379936894862125,
+              "personMonths": 19904
+            },
+            "55+": {
+              "employment": 3163696.584308333,
+              "employmentShare": 0.27673111228834774,
+              "personMonths": 17057
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1043912.6811583334,
+              "employmentShare": 0.05793788428563156,
+              "personMonths": 4118
+            },
+            "25–34": {
+              "employment": 3949747.908883333,
+              "employmentShare": 0.21921377279216034,
+              "personMonths": 16962
+            },
+            "35–54": {
+              "employment": 8092843.928491667,
+              "employmentShare": 0.4491585010255368,
+              "personMonths": 38119
+            },
+            "55+": {
+              "employment": 4763649.2541166665,
+              "employmentShare": 0.26438586698276295,
+              "personMonths": 23632
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1145346.4000083334,
+              "employmentShare": 0.09666913662409762,
+              "personMonths": 4350
+            },
+            "25–34": {
+              "employment": 2783913.2696083332,
+              "employmentShare": 0.2349668992781994,
+              "personMonths": 11539
+            },
+            "35–54": {
+              "employment": 4874187.873475,
+              "employmentShare": 0.41138954421915186,
+              "personMonths": 22338
+            },
+            "55+": {
+              "employment": 2758423.221475,
+              "employmentShare": 0.2328154969203292,
+              "personMonths": 13504
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 993406.4781833333,
+              "employmentShare": 0.1214811101659307,
+              "personMonths": 3785
+            },
+            "25–34": {
+              "employment": 1795728.4963,
+              "employmentShare": 0.21959499568198135,
+              "personMonths": 7064
+            },
+            "35–54": {
+              "employment": 3269542.253808333,
+              "employmentShare": 0.3998238701376321,
+              "personMonths": 13810
+            },
+            "55+": {
+              "employment": 1581198.0132833335,
+              "employmentShare": 0.19336061749576586,
+              "personMonths": 7463
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1654421.334025,
+              "employmentShare": 0.1339825280153149,
+              "personMonths": 6016
+            },
+            "25–34": {
+              "employment": 2959815.194191667,
+              "employmentShare": 0.23969923139902352,
+              "personMonths": 11780
+            },
+            "35–54": {
+              "employment": 4683661.521283333,
+              "employmentShare": 0.3793041095903288,
+              "personMonths": 20277
+            },
+            "55+": {
+              "employment": 2442689.3771416666,
+              "employmentShare": 0.1978200420743909,
+              "personMonths": 11403
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1299787.4157416667,
+              "employmentShare": 0.11275597638550922,
+              "personMonths": 4791
+            },
+            "25–34": {
+              "employment": 2288018.99855,
+              "employmentShare": 0.19848462375125459,
+              "personMonths": 9511
+            },
+            "35–54": {
+              "employment": 4233231.801358334,
+              "employmentShare": 0.3672309635002766,
+              "personMonths": 19257
+            },
+            "55+": {
+              "employment": 3205245.9295666665,
+              "employmentShare": 0.2780536493636888,
+              "personMonths": 16752
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1034994.560375,
+              "employmentShare": 0.05722058657732824,
+              "personMonths": 3854
+            },
+            "25–34": {
+              "employment": 4079823.3519666665,
+              "employmentShare": 0.22555663021729352,
+              "personMonths": 16589
+            },
+            "35–54": {
+              "employment": 7963975.899608334,
+              "employmentShare": 0.4402954275413616,
+              "personMonths": 35747
+            },
+            "55+": {
+              "employment": 4831263.273858334,
+              "employmentShare": 0.26710064866380967,
+              "personMonths": 23445
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1020047.5769250001,
+              "employmentShare": 0.08710074157104389,
+              "personMonths": 3689
+            },
+            "25–34": {
+              "employment": 2861650.0428333334,
+              "employmentShare": 0.24435315223136828,
+              "personMonths": 11108
+            },
+            "35–54": {
+              "employment": 4755448.071825,
+              "employmentShare": 0.40606248466095124,
+              "personMonths": 20863
+            },
+            "55+": {
+              "employment": 2747963.7417166666,
+              "employmentShare": 0.23464560391917935,
+              "personMonths": 12945
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 776032.3194166668,
+              "employmentShare": 0.11298254671491684,
+              "personMonths": 2585
+            },
+            "25–34": {
+              "employment": 1485045.6677333333,
+              "employmentShare": 0.21620780131243428,
+              "personMonths": 5107
+            },
+            "35–54": {
+              "employment": 2694678.9481083336,
+              "employmentShare": 0.3923183126769837,
+              "personMonths": 10327
+            },
+            "55+": {
+              "employment": 1491084.0125749998,
+              "employmentShare": 0.21708692394828943,
+              "personMonths": 6474
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1411422.9930999998,
+              "employmentShare": 0.12539876127291832,
+              "personMonths": 4673
+            },
+            "25–34": {
+              "employment": 2636015.6983166668,
+              "employmentShare": 0.23419846841155786,
+              "personMonths": 9104
+            },
+            "35–54": {
+              "employment": 4486586.122016666,
+              "employmentShare": 0.39861355865363535,
+              "personMonths": 17119
+            },
+            "55+": {
+              "employment": 2158884.5313083334,
+              "employmentShare": 0.191807450552245,
+              "personMonths": 9404
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1024664.42075,
+              "employmentShare": 0.09676085409802622,
+              "personMonths": 3438
+            },
+            "25–34": {
+              "employment": 2141572.487575,
+              "employmentShare": 0.20223243709283603,
+              "personMonths": 7609
+            },
+            "35–54": {
+              "employment": 4022042.107133333,
+              "employmentShare": 0.37980847350939545,
+              "personMonths": 16355
+            },
+            "55+": {
+              "employment": 2960537.4314666665,
+              "employmentShare": 0.2795687296805084,
+              "personMonths": 14393
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 950016.5557083334,
+              "employmentShare": 0.054925917059631554,
+              "personMonths": 3146
+            },
+            "25–34": {
+              "employment": 3822812.1066166665,
+              "employmentShare": 0.22101873850611736,
+              "personMonths": 13703
+            },
+            "35–54": {
+              "employment": 7670991.689391666,
+              "employmentShare": 0.4435041166019479,
+              "personMonths": 30886
+            },
+            "55+": {
+              "employment": 4702422.341541667,
+              "employmentShare": 0.2718740615191685,
+              "personMonths": 20975
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 940033.117625,
+              "employmentShare": 0.08570548503756477,
+              "personMonths": 2952
+            },
+            "25–34": {
+              "employment": 2685536.2656416665,
+              "employmentShare": 0.24484795686167243,
+              "personMonths": 9185
+            },
+            "35–54": {
+              "employment": 4416991.873550001,
+              "employmentShare": 0.40270967461872004,
+              "personMonths": 17509
+            },
+            "55+": {
+              "employment": 2650409.6091333334,
+              "employmentShare": 0.24164535997721284,
+              "personMonths": 11439
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 790874.3404416667,
+              "employmentShare": 0.10633277052382412,
+              "personMonths": 2760
+            },
+            "25–34": {
+              "employment": 1648244.3451416667,
+              "employmentShare": 0.22160585918271627,
+              "personMonths": 5712
+            },
+            "35–54": {
+              "employment": 2854126.057025,
+              "employmentShare": 0.38373622148143377,
+              "personMonths": 10798
+            },
+            "55+": {
+              "employment": 1631751.2543166669,
+              "employmentShare": 0.21938836905534165,
+              "personMonths": 6813
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1675128.261275,
+              "employmentShare": 0.1371665491164674,
+              "personMonths": 5513
+            },
+            "25–34": {
+              "employment": 2940407.207691666,
+              "employmentShare": 0.24077291214063112,
+              "personMonths": 10312
+            },
+            "35–54": {
+              "employment": 4611653.472266667,
+              "employmentShare": 0.3776215870361626,
+              "personMonths": 17713
+            },
+            "55+": {
+              "employment": 2316375.1865749997,
+              "employmentShare": 0.18967454501643416,
+              "personMonths": 9580
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1116878.6785416666,
+              "employmentShare": 0.10705201419238995,
+              "personMonths": 3723
+            },
+            "25–34": {
+              "employment": 2098987.879716667,
+              "employmentShare": 0.20118647137438422,
+              "personMonths": 7693
+            },
+            "35–54": {
+              "employment": 3791629.896225,
+              "employmentShare": 0.36342498541825824,
+              "personMonths": 15576
+            },
+            "55+": {
+              "employment": 2920333.9084416665,
+              "employmentShare": 0.2799118946573676,
+              "personMonths": 13972
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1022081.8586333334,
+              "employmentShare": 0.05859967414149071,
+              "personMonths": 3410
+            },
+            "25–34": {
+              "employment": 3824193.198841667,
+              "employmentShare": 0.2192549191763124,
+              "personMonths": 13855
+            },
+            "35–54": {
+              "employment": 7816772.101616667,
+              "employmentShare": 0.44816400381621385,
+              "personMonths": 31228
+            },
+            "55+": {
+              "employment": 4614396.794333333,
+              "employmentShare": 0.2645601682716864,
+              "personMonths": 20244
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1000533.8364749999,
+              "employmentShare": 0.09127958055059619,
+              "personMonths": 3244
+            },
+            "25–34": {
+              "employment": 2654414.2935083336,
+              "employmentShare": 0.24216454705078025,
+              "personMonths": 9186
+            },
+            "35–54": {
+              "employment": 4408976.041616666,
+              "employmentShare": 0.40223475615205057,
+              "personMonths": 17286
+            },
+            "55+": {
+              "employment": 2587279.07405,
+              "employmentShare": 0.23603974202277755,
+              "personMonths": 10944
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 892519.6623083333,
+              "employmentShare": 0.11546431959349399,
+              "personMonths": 2847
+            },
+            "25–34": {
+              "employment": 1554012.6506166665,
+              "employmentShare": 0.20104096404897787,
+              "personMonths": 5306
+            },
+            "35–54": {
+              "employment": 3079380.9203,
+              "employmentShare": 0.39837623499749203,
+              "personMonths": 10937
+            },
+            "55+": {
+              "employment": 1668832.0116916664,
+              "employmentShare": 0.2158950226905505,
+              "personMonths": 6489
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1705896.8038583333,
+              "employmentShare": 0.13559168589905157,
+              "personMonths": 5372
+            },
+            "25–34": {
+              "employment": 2954370.3348666667,
+              "employmentShare": 0.23482549094920738,
+              "personMonths": 9974
+            },
+            "35–54": {
+              "employment": 4754954.405741666,
+              "employmentShare": 0.37794330981182694,
+              "personMonths": 17153
+            },
+            "55+": {
+              "employment": 2483444.696091667,
+              "employmentShare": 0.1973943865880477,
+              "personMonths": 9519
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1112918.23595,
+              "employmentShare": 0.10366476676451376,
+              "personMonths": 3556
+            },
+            "25–34": {
+              "employment": 2112781.564725,
+              "employmentShare": 0.1967988312677999,
+              "personMonths": 7265
+            },
+            "35–54": {
+              "employment": 3934898.7398583335,
+              "employmentShare": 0.3665232062274514,
+              "personMonths": 15308
+            },
+            "55+": {
+              "employment": 3034944.33305,
+              "employmentShare": 0.2826953375962525,
+              "personMonths": 13622
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 943322.4997083334,
+              "employmentShare": 0.05258741074689822,
+              "personMonths": 3048
+            },
+            "25–34": {
+              "employment": 3773469.78305,
+              "employmentShare": 0.21035966542048362,
+              "personMonths": 13203
+            },
+            "35–54": {
+              "employment": 8305401.039191667,
+              "employmentShare": 0.46300129171172055,
+              "personMonths": 31153
+            },
+            "55+": {
+              "employment": 4719920.9794499995,
+              "employmentShare": 0.2631214916595152,
+              "personMonths": 19418
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 976115.7095499999,
+              "employmentShare": 0.08624543329155433,
+              "personMonths": 3007
+            },
+            "25–34": {
+              "employment": 2695008.8307416667,
+              "employmentShare": 0.2381195201120511,
+              "personMonths": 8946
+            },
+            "35–54": {
+              "employment": 4592507.439041667,
+              "employmentShare": 0.4057744282769853,
+              "personMonths": 16722
+            },
+            "55+": {
+              "employment": 2711941.2153416667,
+              "employmentShare": 0.239615593612558,
+              "personMonths": 10832
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 974049.96865,
+              "employmentShare": 0.12397037436628651,
+              "personMonths": 2910
+            },
+            "25–34": {
+              "employment": 1650032.8977583332,
+              "employmentShare": 0.21000482791996355,
+              "personMonths": 5299
+            },
+            "35–54": {
+              "employment": 3015141.749433333,
+              "employmentShare": 0.383746484754502,
+              "personMonths": 10514
+            },
+            "55+": {
+              "employment": 1655815.2324166668,
+              "employmentShare": 0.21074076366800146,
+              "personMonths": 6344
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1854491.7742583333,
+              "employmentShare": 0.1455560545778548,
+              "personMonths": 5475
+            },
+            "25–34": {
+              "employment": 2932553.6869583335,
+              "employmentShare": 0.23017138735064327,
+              "personMonths": 9778
+            },
+            "35–54": {
+              "employment": 4935394.91205,
+              "employmentShare": 0.3873711499577382,
+              "personMonths": 17054
+            },
+            "55+": {
+              "employment": 2312668.160533333,
+              "employmentShare": 0.18151757676557098,
+              "personMonths": 8856
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1191888.4843416668,
+              "employmentShare": 0.10738819816867429,
+              "personMonths": 3510
+            },
+            "25–34": {
+              "employment": 2204717.749083333,
+              "employmentShare": 0.1986433040128985,
+              "personMonths": 7306
+            },
+            "35–54": {
+              "employment": 4036666.061858333,
+              "employmentShare": 0.36370038026757245,
+              "personMonths": 15016
+            },
+            "55+": {
+              "employment": 3112505.667225,
+              "employmentShare": 0.28043426862849447,
+              "personMonths": 13369
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1103173.5962416667,
+              "employmentShare": 0.05897428648709898,
+              "personMonths": 3269
+            },
+            "25–34": {
+              "employment": 3950193.069675,
+              "employmentShare": 0.2111724016637297,
+              "personMonths": 13100
+            },
+            "35–54": {
+              "employment": 8662816.595216667,
+              "employmentShare": 0.46310338591496386,
+              "personMonths": 31388
+            },
+            "55+": {
+              "employment": 4824578.284691666,
+              "employmentShare": 0.25791594623926556,
+              "personMonths": 19377
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1067188.7554833333,
+              "employmentShare": 0.09365561879952386,
+              "personMonths": 3097
+            },
+            "25–34": {
+              "employment": 2664222.327391667,
+              "employmentShare": 0.23380998854168591,
+              "personMonths": 8452
+            },
+            "35–54": {
+              "employment": 4630892.8192,
+              "employmentShare": 0.40640339428990635,
+              "personMonths": 16345
+            },
+            "55+": {
+              "employment": 2685919.120725,
+              "employmentShare": 0.23571408151039264,
+              "personMonths": 10621
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 858262.5518666668,
+              "employmentShare": 0.11189687608719062,
+              "personMonths": 2725
+            },
+            "25–34": {
+              "employment": 1627142.0977583332,
+              "employmentShare": 0.2121403494689595,
+              "personMonths": 5269
+            },
+            "35–54": {
+              "employment": 2973660.9268750004,
+              "employmentShare": 0.38769414736336394,
+              "personMonths": 10131
+            },
+            "55+": {
+              "employment": 1676486.891025,
+              "employmentShare": 0.2185737283991007,
+              "personMonths": 6307
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1736974.489,
+              "employmentShare": 0.1375222965688485,
+              "personMonths": 5278
+            },
+            "25–34": {
+              "employment": 3079431.4071750003,
+              "employmentShare": 0.24380926831271776,
+              "personMonths": 9947
+            },
+            "35–54": {
+              "employment": 4788009.7883583335,
+              "employmentShare": 0.3790833465080121,
+              "personMonths": 16578
+            },
+            "55+": {
+              "employment": 2344639.3878,
+              "employmentShare": 0.18563323484484118,
+              "personMonths": 8907
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1112464.14435,
+              "employmentShare": 0.1004880594260554,
+              "personMonths": 3333
+            },
+            "25–34": {
+              "employment": 2169912.29065,
+              "employmentShare": 0.1960065646336579,
+              "personMonths": 7270
+            },
+            "35–54": {
+              "employment": 4202953.442791667,
+              "employmentShare": 0.379649661042303,
+              "personMonths": 15311
+            },
+            "55+": {
+              "employment": 3027538.1473666667,
+              "employmentShare": 0.27347527092209356,
+              "personMonths": 12985
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 996881.0969083334,
+              "employmentShare": 0.05450661795000447,
+              "personMonths": 3157
+            },
+            "25–34": {
+              "employment": 3820151.183083333,
+              "employmentShare": 0.20887498187432046,
+              "personMonths": 12757
+            },
+            "35–54": {
+              "employment": 8583514.333741667,
+              "employmentShare": 0.46932210662699064,
+              "personMonths": 30788
+            },
+            "55+": {
+              "employment": 4697282.5860749995,
+              "employmentShare": 0.2568340277656425,
+              "personMonths": 18807
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 993249.4654250001,
+              "employmentShare": 0.08807330359280635,
+              "personMonths": 2969
+            },
+            "25–34": {
+              "employment": 2557837.178125,
+              "employmentShare": 0.22680824724489201,
+              "personMonths": 7994
+            },
+            "35–54": {
+              "employment": 4712859.873716666,
+              "employmentShare": 0.4178981745241577,
+              "personMonths": 16292
+            },
+            "55+": {
+              "employment": 2683870.0743333334,
+              "employmentShare": 0.23798382187828743,
+              "personMonths": 10258
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 955891.4445363637,
+              "employmentShare": 0.1228698168100219,
+              "personMonths": 2490
+            },
+            "25–34": {
+              "employment": 1587641.2824545456,
+              "employmentShare": 0.20407463070227044,
+              "personMonths": 4361
+            },
+            "35–54": {
+              "employment": 3038683.8497272725,
+              "employmentShare": 0.39059092964332814,
+              "personMonths": 8848
+            },
+            "55+": {
+              "employment": 1685938.2719363638,
+              "employmentShare": 0.21670967745328068,
+              "personMonths": 5733
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1795575.0009363636,
+              "employmentShare": 0.13930988915179818,
+              "personMonths": 4689
+            },
+            "25–34": {
+              "employment": 3173713.639272727,
+              "employmentShare": 0.24623293098649182,
+              "personMonths": 8855
+            },
+            "35–54": {
+              "employment": 4862921.502881818,
+              "employmentShare": 0.3772903137808674,
+              "personMonths": 14459
+            },
+            "55+": {
+              "employment": 2389680.826,
+              "employmentShare": 0.1854036566585257,
+              "personMonths": 8037
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1104970.5449818182,
+              "employmentShare": 0.09756769919686037,
+              "personMonths": 2811
+            },
+            "25–34": {
+              "employment": 2315306.4641,
+              "employmentShare": 0.20443904651012418,
+              "personMonths": 6465
+            },
+            "35–54": {
+              "employment": 4347237.193972727,
+              "employmentShare": 0.383856323415312,
+              "personMonths": 13493
+            },
+            "55+": {
+              "employment": 2990946.310927273,
+              "employmentShare": 0.26409731128472125,
+              "personMonths": 11555
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1000228.9325090909,
+              "employmentShare": 0.05421452279232556,
+              "personMonths": 2572
+            },
+            "25–34": {
+              "employment": 3835156.7663818183,
+              "employmentShare": 0.20787360489720577,
+              "personMonths": 10810
+            },
+            "35–54": {
+              "employment": 8666991.890827272,
+              "employmentShare": 0.46976928394528855,
+              "personMonths": 26872
+            },
+            "55+": {
+              "employment": 4746834.930536363,
+              "employmentShare": 0.2572884888336619,
+              "personMonths": 16833
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 961445.5978727273,
+              "employmentShare": 0.08218021637981222,
+              "personMonths": 2425
+            },
+            "25–34": {
+              "employment": 2707354.5803454546,
+              "employmentShare": 0.23141297409020717,
+              "personMonths": 7128
+            },
+            "35–54": {
+              "employment": 4961273.090563636,
+              "employmentShare": 0.42406819169380777,
+              "personMonths": 14732
+            },
+            "55+": {
+              "employment": 2717611.2019545455,
+              "employmentShare": 0.23228966579801247,
+              "personMonths": 9330
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 977294.9408375,
+              "employmentShare": 0.1258701430203582,
+              "personMonths": 1681
+            },
+            "25–34": {
+              "employment": 1667841.569,
+              "employmentShare": 0.2148087010922479,
+              "personMonths": 3128
+            },
+            "35–54": {
+              "employment": 2911821.1211375,
+              "employmentShare": 0.37502633611629294,
+              "personMonths": 5902
+            },
+            "55+": {
+              "employment": 1675347.230975,
+              "employmentShare": 0.21577538853406164,
+              "personMonths": 4062
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1925388.2671125,
+              "employmentShare": 0.1476893820937062,
+              "personMonths": 3324
+            },
+            "25–34": {
+              "employment": 3303332.361275,
+              "employmentShare": 0.25338635516798974,
+              "personMonths": 6218
+            },
+            "35–54": {
+              "employment": 4840615.9360375,
+              "employmentShare": 0.3713056679307965,
+              "personMonths": 10228
+            },
+            "55+": {
+              "employment": 2313753.0405,
+              "employmentShare": 0.1774794012749183,
+              "personMonths": 5593
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1152976.3916625,
+              "employmentShare": 0.10069329322051394,
+              "personMonths": 1992
+            },
+            "25–34": {
+              "employment": 2284706.9887875,
+              "employmentShare": 0.1995311199852208,
+              "personMonths": 4421
+            },
+            "35–54": {
+              "employment": 4313306.8005625,
+              "employmentShare": 0.3766955416951949,
+              "personMonths": 9551
+            },
+            "55+": {
+              "employment": 3156242.0692375,
+              "employmentShare": 0.27564520006727383,
+              "personMonths": 8276
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 990552.4597375,
+              "employmentShare": 0.053172071182124456,
+              "personMonths": 1725
+            },
+            "25–34": {
+              "employment": 3927652.2892125,
+              "employmentShare": 0.21083326283999623,
+              "personMonths": 7767
+            },
+            "35–54": {
+              "employment": 8721937.7277125,
+              "employmentShare": 0.46818670646366867,
+              "personMonths": 19251
+            },
+            "55+": {
+              "employment": 4837025.8880625,
+              "employmentShare": 0.2596477170911226,
+              "personMonths": 12174
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 916053.2778,
+              "employmentShare": 0.07980381106984169,
+              "personMonths": 1515
+            },
+            "25–34": {
+              "employment": 2645871.738825,
+              "employmentShare": 0.23050040153485907,
+              "personMonths": 4838
+            },
+            "35–54": {
+              "employment": 4945424.757125,
+              "employmentShare": 0.4308305559754651,
+              "personMonths": 10433
+            },
+            "55+": {
+              "employment": 2673217.900375,
+              "employmentShare": 0.23288271702098742,
+              "personMonths": 6458
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        }
+      ],
+      "microsoft": [
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1338511.0129083332,
+              "employmentShare": 0.11622103899825122,
+              "personMonths": 5774
+            },
+            "25–34": {
+              "employment": 2617165.2616083333,
+              "employmentShare": 0.22724479888540242,
+              "personMonths": 11888
+            },
+            "35–54": {
+              "employment": 4841664.3494833335,
+              "employmentShare": 0.4203949431503716,
+              "personMonths": 23337
+            },
+            "55+": {
+              "employment": 2204870.1242,
+              "employmentShare": 0.19144578880523294,
+              "personMonths": 11536
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 665276.2647083333,
+              "employmentShare": 0.07306114787919044,
+              "personMonths": 3015
+            },
+            "25–34": {
+              "employment": 1960620.6472166667,
+              "employmentShare": 0.21531685803354447,
+              "personMonths": 9296
+            },
+            "35–54": {
+              "employment": 4174312.960575,
+              "employmentShare": 0.45842623987239195,
+              "personMonths": 21247
+            },
+            "55+": {
+              "employment": 2187984.837841667,
+              "employmentShare": 0.24028616722867754,
+              "personMonths": 12590
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1505532.9828833332,
+              "employmentShare": 0.06789884533087381,
+              "personMonths": 6567
+            },
+            "25–34": {
+              "employment": 4521403.217091667,
+              "employmentShare": 0.20391320629048765,
+              "personMonths": 21747
+            },
+            "35–54": {
+              "employment": 10295284.77245,
+              "employmentShare": 0.46431260978627975,
+              "personMonths": 51466
+            },
+            "55+": {
+              "employment": 5418081.077775001,
+              "employmentShare": 0.24435296554275932,
+              "personMonths": 28486
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1194376.2597999999,
+              "employmentShare": 0.08108235219442882,
+              "personMonths": 5115
+            },
+            "25–34": {
+              "employment": 3228757.378091667,
+              "employmentShare": 0.21918992506149365,
+              "personMonths": 15263
+            },
+            "35–54": {
+              "employment": 6316323.810283333,
+              "employmentShare": 0.42879485217263846,
+              "personMonths": 31686
+            },
+            "55+": {
+              "employment": 3799707.586391667,
+              "employmentShare": 0.25794989328341317,
+              "personMonths": 20381
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 2276462.4362916667,
+              "employmentShare": 0.15204410547621652,
+              "personMonths": 9516
+            },
+            "25–34": {
+              "employment": 3482658.6647166666,
+              "employmentShare": 0.23260551675011124,
+              "personMonths": 16215
+            },
+            "35–54": {
+              "employment": 5293225.539166667,
+              "employmentShare": 0.3535326256019742,
+              "personMonths": 26084
+            },
+            "55+": {
+              "employment": 2990802.633275,
+              "employmentShare": 0.1997546297196834,
+              "personMonths": 15896
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2015
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1342677.7395833333,
+              "employmentShare": 0.11420065513651816,
+              "personMonths": 5605
+            },
+            "25–34": {
+              "employment": 2729820.2994333333,
+              "employmentShare": 0.2321832390674741,
+              "personMonths": 12072
+            },
+            "35–54": {
+              "employment": 4955915.57135,
+              "employmentShare": 0.42152244605252487,
+              "personMonths": 23555
+            },
+            "55+": {
+              "employment": 2199861.4359333334,
+              "employmentShare": 0.18710790369631797,
+              "personMonths": 11663
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 666019.2483583334,
+              "employmentShare": 0.07321201681389754,
+              "personMonths": 2956
+            },
+            "25–34": {
+              "employment": 2026113.1054,
+              "employmentShare": 0.2227200296463428,
+              "personMonths": 9376
+            },
+            "35–54": {
+              "employment": 3994022.2986999997,
+              "employmentShare": 0.4390420072817215,
+              "personMonths": 20606
+            },
+            "55+": {
+              "employment": 2286450.3932000003,
+              "employmentShare": 0.2513375477416208,
+              "personMonths": 13070
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1530608.0595000002,
+              "employmentShare": 0.06724970556134222,
+              "personMonths": 6698
+            },
+            "25–34": {
+              "employment": 4685406.802833334,
+              "employmentShare": 0.20586081849626603,
+              "personMonths": 21651
+            },
+            "35–54": {
+              "employment": 10448673.407116666,
+              "employmentShare": 0.4590791259551853,
+              "personMonths": 51499
+            },
+            "55+": {
+              "employment": 5610348.003958333,
+              "employmentShare": 0.24649958493365814,
+              "personMonths": 29292
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1182805.6318666667,
+              "employmentShare": 0.07933872122350338,
+              "personMonths": 5066
+            },
+            "25–34": {
+              "employment": 3334661.058833333,
+              "employmentShare": 0.22367812343277227,
+              "personMonths": 15523
+            },
+            "35–54": {
+              "employment": 6284471.778316666,
+              "employmentShare": 0.4215417487232984,
+              "personMonths": 30945
+            },
+            "55+": {
+              "employment": 3873574.6856583334,
+              "employmentShare": 0.25982668144626303,
+              "personMonths": 20585
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 2260826.108591667,
+              "employmentShare": 0.14921901487385528,
+              "personMonths": 9468
+            },
+            "25–34": {
+              "employment": 3506520.049175,
+              "employmentShare": 0.23143728984059586,
+              "personMonths": 16103
+            },
+            "35–54": {
+              "employment": 5342323.879525,
+              "employmentShare": 0.3526039899355095,
+              "personMonths": 25854
+            },
+            "55+": {
+              "employment": 3042586.280175,
+              "employmentShare": 0.20081673936401867,
+              "personMonths": 15783
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2016
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1349700.0006833333,
+              "employmentShare": 0.11385047224379972,
+              "personMonths": 5503
+            },
+            "25–34": {
+              "employment": 2791971.683966667,
+              "employmentShare": 0.23550959068681204,
+              "personMonths": 11880
+            },
+            "35–54": {
+              "employment": 4844341.829,
+              "employmentShare": 0.4086319957492855,
+              "personMonths": 22743
+            },
+            "55+": {
+              "employment": 2318791.687041667,
+              "employmentShare": 0.1955957090249935,
+              "personMonths": 11910
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 650911.925175,
+              "employmentShare": 0.07044935183760627,
+              "personMonths": 2778
+            },
+            "25–34": {
+              "employment": 2076163.7013666667,
+              "employmentShare": 0.22470687878505763,
+              "personMonths": 9317
+            },
+            "35–54": {
+              "employment": 4015168.2215833333,
+              "employmentShare": 0.4345687761880389,
+              "personMonths": 20238
+            },
+            "55+": {
+              "employment": 2353264.1419833335,
+              "employmentShare": 0.2546979508185141,
+              "personMonths": 13292
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1571819.6869333333,
+              "employmentShare": 0.06737975216671825,
+              "personMonths": 6651
+            },
+            "25–34": {
+              "employment": 4936055.812266666,
+              "employmentShare": 0.2115956557081369,
+              "personMonths": 21927
+            },
+            "35–54": {
+              "employment": 10549622.703925,
+              "employmentShare": 0.45223441922253993,
+              "personMonths": 50993
+            },
+            "55+": {
+              "employment": 5785036.354075,
+              "employmentShare": 0.24798920579340053,
+              "personMonths": 29762
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1152941.4655416666,
+              "employmentShare": 0.07706380810158737,
+              "personMonths": 4771
+            },
+            "25–34": {
+              "employment": 3307816.6632333337,
+              "employmentShare": 0.22109791016223476,
+              "personMonths": 14781
+            },
+            "35–54": {
+              "employment": 6294887.749283333,
+              "employmentShare": 0.42075685195682866,
+              "personMonths": 30304
+            },
+            "55+": {
+              "employment": 3997070.662791667,
+              "employmentShare": 0.26716836520503273,
+              "personMonths": 20706
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 2218836.8342333334,
+              "employmentShare": 0.14503088747967127,
+              "personMonths": 9071
+            },
+            "25–34": {
+              "employment": 3597976.4496666663,
+              "employmentShare": 0.23517624620938624,
+              "personMonths": 15595
+            },
+            "35–54": {
+              "employment": 5322461.169266666,
+              "employmentShare": 0.3478945612607665,
+              "personMonths": 25402
+            },
+            "55+": {
+              "employment": 3153914.3074999996,
+              "employmentShare": 0.20615080117398846,
+              "personMonths": 16241
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2017
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1359357.7781583334,
+              "employmentShare": 0.11153938203120282,
+              "personMonths": 5299
+            },
+            "25–34": {
+              "employment": 2915842.2042,
+              "employmentShare": 0.23925359664884818,
+              "personMonths": 11807
+            },
+            "35–54": {
+              "employment": 4964440.381358334,
+              "employmentShare": 0.40734722025694753,
+              "personMonths": 22028
+            },
+            "55+": {
+              "employment": 2411122.5206999998,
+              "employmentShare": 0.19783983310468056,
+              "personMonths": 11497
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 670003.8334833334,
+              "employmentShare": 0.07144298652652181,
+              "personMonths": 2685
+            },
+            "25–34": {
+              "employment": 2081886.2307083334,
+              "employmentShare": 0.2219930133190001,
+              "personMonths": 9084
+            },
+            "35–54": {
+              "employment": 4055390.452633333,
+              "employmentShare": 0.4324291757570602,
+              "personMonths": 19463
+            },
+            "55+": {
+              "employment": 2432925.0858333334,
+              "employmentShare": 0.25942453675759675,
+              "personMonths": 13100
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1525993.513425,
+              "employmentShare": 0.0648603922064894,
+              "personMonths": 6173
+            },
+            "25–34": {
+              "employment": 5052562.128025,
+              "employmentShare": 0.21475265680247116,
+              "personMonths": 21408
+            },
+            "35–54": {
+              "employment": 10638617.2973,
+              "employmentShare": 0.4521807493721917,
+              "personMonths": 49441
+            },
+            "55+": {
+              "employment": 5839745.285,
+              "employmentShare": 0.24821086475064694,
+              "personMonths": 28903
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1173634.8768333334,
+              "employmentShare": 0.07735570635789611,
+              "personMonths": 4452
+            },
+            "25–34": {
+              "employment": 3395966.0490666665,
+              "employmentShare": 0.22383226476856913,
+              "personMonths": 14446
+            },
+            "35–54": {
+              "employment": 6342573.216758333,
+              "employmentShare": 0.41804673752779814,
+              "personMonths": 29531
+            },
+            "55+": {
+              "employment": 4045087.050116667,
+              "employmentShare": 0.2666166217599455,
+              "personMonths": 20060
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 2229341.629991667,
+              "employmentShare": 0.14604445875803926,
+              "personMonths": 8558
+            },
+            "25–34": {
+              "employment": 3598456.1716416664,
+              "employmentShare": 0.23573532960665958,
+              "personMonths": 15001
+            },
+            "35–54": {
+              "employment": 5223395.3782750005,
+              "employmentShare": 0.34218530737357994,
+              "personMonths": 24235
+            },
+            "55+": {
+              "employment": 3183433.148208333,
+              "employmentShare": 0.20854711761885725,
+              "personMonths": 15702
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2018
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1412990.47035,
+              "employmentShare": 0.11508607243000618,
+              "personMonths": 5306
+            },
+            "25–34": {
+              "employment": 2923285.4214999997,
+              "employmentShare": 0.23809745699770787,
+              "personMonths": 11254
+            },
+            "35–54": {
+              "employment": 4930170.246683333,
+              "employmentShare": 0.401555383428393,
+              "personMonths": 20801
+            },
+            "55+": {
+              "employment": 2445815.0819916665,
+              "employmentShare": 0.19920817414060238,
+              "personMonths": 11319
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 661035.7447166666,
+              "employmentShare": 0.06976709323884875,
+              "personMonths": 2543
+            },
+            "25–34": {
+              "employment": 2092685.5855916666,
+              "employmentShare": 0.22086640780998523,
+              "personMonths": 8561
+            },
+            "35–54": {
+              "employment": 4151818.006733333,
+              "employmentShare": 0.4381915445595909,
+              "personMonths": 18664
+            },
+            "55+": {
+              "employment": 2433958.94005,
+              "employmentShare": 0.2568851104758063,
+              "personMonths": 12652
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1580397.5023833334,
+              "employmentShare": 0.06641035354018418,
+              "personMonths": 5920
+            },
+            "25–34": {
+              "employment": 5090166.740541667,
+              "employmentShare": 0.21389541068501752,
+              "personMonths": 20829
+            },
+            "35–54": {
+              "employment": 10592999.141683334,
+              "employmentShare": 0.4451315678423693,
+              "personMonths": 47154
+            },
+            "55+": {
+              "employment": 5982802.612291667,
+              "employmentShare": 0.2514051281682265,
+              "personMonths": 28803
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1142544.1124833333,
+              "employmentShare": 0.07586026151867375,
+              "personMonths": 4236
+            },
+            "25–34": {
+              "employment": 3432314.844825,
+              "employmentShare": 0.22789168391662323,
+              "personMonths": 13740
+            },
+            "35–54": {
+              "employment": 6168737.245908334,
+              "employmentShare": 0.40957895244628095,
+              "personMonths": 27537
+            },
+            "55+": {
+              "employment": 4078622.7775333333,
+              "employmentShare": 0.27080389033487895,
+              "personMonths": 19574
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 2196679.5686666667,
+              "employmentShare": 0.14387215135234208,
+              "personMonths": 7875
+            },
+            "25–34": {
+              "employment": 3658225.347258333,
+              "employmentShare": 0.2395965066316828,
+              "personMonths": 14741
+            },
+            "35–54": {
+              "employment": 5220982.5343,
+              "employmentShare": 0.3419497318121264,
+              "personMonths": 22903
+            },
+            "55+": {
+              "employment": 3201481.937783333,
+              "employmentShare": 0.2096819674906564,
+              "personMonths": 15345
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2019
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1232199.2110333333,
+              "employmentShare": 0.11334743586912006,
+              "personMonths": 4101
+            },
+            "25–34": {
+              "employment": 2556225.917383333,
+              "employmentShare": 0.23514189154090598,
+              "personMonths": 8583
+            },
+            "35–54": {
+              "employment": 4360874.331316667,
+              "employmentShare": 0.401147735833793,
+              "personMonths": 16632
+            },
+            "55+": {
+              "employment": 2236030.607908333,
+              "employmentShare": 0.20568779273826618,
+              "personMonths": 9685
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 598928.4796583334,
+              "employmentShare": 0.06606951080376201,
+              "personMonths": 2067
+            },
+            "25–34": {
+              "employment": 1956474.8183416666,
+              "employmentShare": 0.215824323834881,
+              "personMonths": 7103
+            },
+            "35–54": {
+              "employment": 4065580.8859916665,
+              "employmentShare": 0.44848583661245733,
+              "personMonths": 16355
+            },
+            "55+": {
+              "employment": 2294220.2975666667,
+              "employmentShare": 0.25308199206482995,
+              "personMonths": 11228
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1412289.388575,
+              "employmentShare": 0.061670700756399105,
+              "personMonths": 4712
+            },
+            "25–34": {
+              "employment": 4851118.306249999,
+              "employmentShare": 0.2118346762489647,
+              "personMonths": 17352
+            },
+            "35–54": {
+              "employment": 10430428.185858333,
+              "employmentShare": 0.4554674280037048,
+              "personMonths": 41000
+            },
+            "55+": {
+              "employment": 5781801.097016666,
+              "employmentShare": 0.2524749730272432,
+              "personMonths": 25562
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1020780.5486333333,
+              "employmentShare": 0.07121149094312147,
+              "personMonths": 3369
+            },
+            "25–34": {
+              "employment": 3283961.331275,
+              "employmentShare": 0.22909506153183207,
+              "personMonths": 11596
+            },
+            "35–54": {
+              "employment": 5942993.947575,
+              "employmentShare": 0.4145939695259423,
+              "personMonths": 23800
+            },
+            "55+": {
+              "employment": 3896760.163991667,
+              "employmentShare": 0.27184501262012745,
+              "personMonths": 17329
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1810817.8694749998,
+              "employmentShare": 0.13147539414249576,
+              "personMonths": 5784
+            },
+            "25–34": {
+              "employment": 3336030.814225,
+              "employmentShare": 0.24221429088222188,
+              "personMonths": 11604
+            },
+            "35–54": {
+              "employment": 4745500.238533334,
+              "employmentShare": 0.34454956778473045,
+              "personMonths": 18905
+            },
+            "55+": {
+              "employment": 3025736.4703166666,
+              "employmentShare": 0.2196852050734083,
+              "personMonths": 13106
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2020
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1405565.0619666667,
+              "employmentShare": 0.12047443136048747,
+              "personMonths": 4725
+            },
+            "25–34": {
+              "employment": 2801614.0607249998,
+              "employmentShare": 0.24013321758661857,
+              "personMonths": 9699
+            },
+            "35–54": {
+              "employment": 4519748.301583334,
+              "employmentShare": 0.3873987204575909,
+              "personMonths": 17101
+            },
+            "55+": {
+              "employment": 2363411.214675,
+              "employmentShare": 0.20257377610153066,
+              "personMonths": 9918
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 707081.2632416667,
+              "employmentShare": 0.07735257729877588,
+              "personMonths": 2443
+            },
+            "25–34": {
+              "employment": 2077399.3293916667,
+              "employmentShare": 0.2272612789518545,
+              "personMonths": 7528
+            },
+            "35–54": {
+              "employment": 3870323.11015,
+              "employmentShare": 0.4234017829529086,
+              "personMonths": 15842
+            },
+            "55+": {
+              "employment": 2319723.5794666666,
+              "employmentShare": 0.25377082779686166,
+              "personMonths": 10996
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1475405.54185,
+              "employmentShare": 0.06305777107361761,
+              "personMonths": 4913
+            },
+            "25–34": {
+              "employment": 4922238.8109,
+              "employmentShare": 0.21037294445716806,
+              "personMonths": 17712
+            },
+            "35–54": {
+              "employment": 10617688.951875,
+              "employmentShare": 0.45379238471525385,
+              "personMonths": 41730
+            },
+            "55+": {
+              "employment": 5904197.268333334,
+              "employmentShare": 0.25234114225517323,
+              "personMonths": 25515
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1123311.2395,
+              "employmentShare": 0.0780139444718307,
+              "personMonths": 3652
+            },
+            "25–34": {
+              "employment": 3330699.9739750004,
+              "employmentShare": 0.2313170505955875,
+              "personMonths": 11947
+            },
+            "35–54": {
+              "employment": 5964722.989124999,
+              "employmentShare": 0.41424989949408386,
+              "personMonths": 23601
+            },
+            "55+": {
+              "employment": 3785857.5456166663,
+              "employmentShare": 0.26292773539189707,
+              "personMonths": 16483
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1897837.4813416665,
+              "employmentShare": 0.13503712839225565,
+              "personMonths": 6285
+            },
+            "25–34": {
+              "employment": 3365267.704391666,
+              "employmentShare": 0.23944942153370669,
+              "personMonths": 11765
+            },
+            "35–54": {
+              "employment": 4762178.512966666,
+              "employmentShare": 0.3388440357009417,
+              "personMonths": 18857
+            },
+            "55+": {
+              "employment": 3020364.964958333,
+              "employmentShare": 0.2149085027429291,
+              "personMonths": 12878
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2021
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1542699.9517,
+              "employmentShare": 0.1292039440870085,
+              "personMonths": 4883
+            },
+            "25–34": {
+              "employment": 2770356.689658333,
+              "employmentShare": 0.23202244249586387,
+              "personMonths": 9135
+            },
+            "35–54": {
+              "employment": 4681603.956475,
+              "employmentShare": 0.3920928986633828,
+              "personMonths": 16595
+            },
+            "55+": {
+              "employment": 2404555.008983333,
+              "employmentShare": 0.20138588232433843,
+              "personMonths": 9315
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 673351.2328583334,
+              "employmentShare": 0.07105732572802857,
+              "personMonths": 2198
+            },
+            "25–34": {
+              "employment": 2029354.5686166666,
+              "employmentShare": 0.2141534782489896,
+              "personMonths": 7124
+            },
+            "35–54": {
+              "employment": 4091942.0845583337,
+              "employmentShare": 0.4318139588583235,
+              "personMonths": 15501
+            },
+            "55+": {
+              "employment": 2497760.023283333,
+              "employmentShare": 0.26358331121112394,
+              "personMonths": 10962
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1594714.6335583332,
+              "employmentShare": 0.06490913529929702,
+              "personMonths": 5085
+            },
+            "25–34": {
+              "employment": 5036007.743066667,
+              "employmentShare": 0.2049789354686226,
+              "personMonths": 17332
+            },
+            "35–54": {
+              "employment": 11241469.968466667,
+              "employmentShare": 0.45755778481698883,
+              "personMonths": 41274
+            },
+            "55+": {
+              "employment": 6165691.572133333,
+              "employmentShare": 0.25096007777663537,
+              "personMonths": 24931
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1068066.1678250001,
+              "employmentShare": 0.07281764773880947,
+              "personMonths": 3342
+            },
+            "25–34": {
+              "employment": 3344067.69675,
+              "employmentShare": 0.2279888183824314,
+              "personMonths": 11365
+            },
+            "35–54": {
+              "employment": 6098505.22395,
+              "employmentShare": 0.4157783651505397,
+              "personMonths": 22885
+            },
+            "55+": {
+              "employment": 3927304.3398,
+              "employmentShare": 0.26775219793827487,
+              "personMonths": 16088
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1855393.1539416667,
+              "employmentShare": 0.12698084625808637,
+              "personMonths": 5807
+            },
+            "25–34": {
+              "employment": 3369501.812233333,
+              "employmentShare": 0.23060459756282803,
+              "personMonths": 11517
+            },
+            "35–54": {
+              "employment": 5095155.266791667,
+              "employmentShare": 0.3487062169109916,
+              "personMonths": 18742
+            },
+            "55+": {
+              "employment": 3196158.1216,
+              "employmentShare": 0.21874116663264545,
+              "personMonths": 12844
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2022
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1499253.9415666666,
+              "employmentShare": 0.12596523520056177,
+              "personMonths": 4541
+            },
+            "25–34": {
+              "employment": 2771941.9110333333,
+              "employmentShare": 0.23289471189966668,
+              "personMonths": 8771
+            },
+            "35–54": {
+              "employment": 4680139.604408333,
+              "employmentShare": 0.3932188335117645,
+              "personMonths": 16021
+            },
+            "55+": {
+              "employment": 2372484.0792083335,
+              "employmentShare": 0.19933281931863914,
+              "personMonths": 8994
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 817249.3979666666,
+              "employmentShare": 0.08274016125680701,
+              "personMonths": 2479
+            },
+            "25–34": {
+              "employment": 2059659.5354333334,
+              "employmentShare": 0.2085245489563824,
+              "personMonths": 7084
+            },
+            "35–54": {
+              "employment": 4395296.76295,
+              "employmentShare": 0.44498969817881456,
+              "personMonths": 15961
+            },
+            "55+": {
+              "employment": 2445540.1399666667,
+              "employmentShare": 0.24759196647225853,
+              "personMonths": 10429
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1726524.0220166666,
+              "employmentShare": 0.06833006267530209,
+              "personMonths": 5050
+            },
+            "25–34": {
+              "employment": 5303375.091108333,
+              "employmentShare": 0.20988989886326076,
+              "personMonths": 17630
+            },
+            "35–54": {
+              "employment": 11464412.279616667,
+              "employmentShare": 0.45372320315978076,
+              "personMonths": 41307
+            },
+            "55+": {
+              "employment": 6243555.700683333,
+              "employmentShare": 0.24709911180159272,
+              "personMonths": 24529
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1203346.7793916666,
+              "employmentShare": 0.08023002255309022,
+              "personMonths": 3631
+            },
+            "25–34": {
+              "employment": 3329870.70485,
+              "employmentShare": 0.22201048469506546,
+              "personMonths": 10953
+            },
+            "35–54": {
+              "employment": 6195908.265858334,
+              "employmentShare": 0.41309609866408775,
+              "personMonths": 22353
+            },
+            "55+": {
+              "employment": 4043918.322583333,
+              "employmentShare": 0.2696177558955475,
+              "personMonths": 16148
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1995971.8893833335,
+              "employmentShare": 0.1337207140251757,
+              "personMonths": 5743
+            },
+            "25–34": {
+              "employment": 3504605.498275,
+              "employmentShare": 0.2347920589957197,
+              "personMonths": 11371
+            },
+            "35–54": {
+              "employment": 5163726.6067,
+              "employmentShare": 0.3459453575230735,
+              "personMonths": 18434
+            },
+            "55+": {
+              "employment": 3142918.804841667,
+              "employmentShare": 0.21056075435833185,
+              "personMonths": 12559
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2023
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1416547.0144333334,
+              "employmentShare": 0.11827872068359094,
+              "personMonths": 4367
+            },
+            "25–34": {
+              "employment": 2779821.1932083336,
+              "employmentShare": 0.23210927072077697,
+              "personMonths": 8874
+            },
+            "35–54": {
+              "employment": 4747029.956666666,
+              "employmentShare": 0.3963670987269162,
+              "personMonths": 16103
+            },
+            "55+": {
+              "employment": 2458199.1305833333,
+              "employmentShare": 0.20525449941894308,
+              "personMonths": 9208
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 773084.1088333334,
+              "employmentShare": 0.07739209975730528,
+              "personMonths": 2424
+            },
+            "25–34": {
+              "employment": 2207650.445125,
+              "employmentShare": 0.22100402986708836,
+              "personMonths": 7391
+            },
+            "35–54": {
+              "employment": 4370402.22635,
+              "employmentShare": 0.4375133329175017,
+              "personMonths": 15869
+            },
+            "55+": {
+              "employment": 2457815.1666,
+              "employmentShare": 0.2460475831608809,
+              "personMonths": 10376
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1522004.8218416667,
+              "employmentShare": 0.06090627616391475,
+              "personMonths": 4810
+            },
+            "25–34": {
+              "employment": 5181481.958141667,
+              "employmentShare": 0.20734807574331604,
+              "personMonths": 17203
+            },
+            "35–54": {
+              "employment": 11586079.783366667,
+              "employmentShare": 0.4636417472639845,
+              "personMonths": 40805
+            },
+            "55+": {
+              "employment": 6172693.329966667,
+              "employmentShare": 0.24701351745731515,
+              "personMonths": 23940
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1168995.4060666666,
+              "employmentShare": 0.07777439194899347,
+              "personMonths": 3534
+            },
+            "25–34": {
+              "employment": 3411158.733425,
+              "employmentShare": 0.2269476808521335,
+              "personMonths": 11141
+            },
+            "35–54": {
+              "employment": 6316684.819616667,
+              "employmentShare": 0.42025513396338077,
+              "personMonths": 22702
+            },
+            "55+": {
+              "employment": 3906571.9343,
+              "employmentShare": 0.2599079989693805,
+              "personMonths": 15634
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1898067.8399,
+              "employmentShare": 0.12878588105870364,
+              "personMonths": 5671
+            },
+            "25–34": {
+              "employment": 3448002.3684166665,
+              "employmentShare": 0.23395055412373056,
+              "personMonths": 10984
+            },
+            "35–54": {
+              "employment": 5166115.041766667,
+              "employmentShare": 0.35052628958699095,
+              "personMonths": 18040
+            },
+            "55+": {
+              "employment": 3139821.537425,
+              "employmentShare": 0.21304016356216018,
+              "personMonths": 12204
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "ANNUAL_12_MONTH",
+          "year": 2024
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1445019.643409091,
+              "employmentShare": 0.12160337643248917,
+              "personMonths": 3721
+            },
+            "25–34": {
+              "employment": 2754770.314836364,
+              "employmentShare": 0.23182340330667475,
+              "personMonths": 7393
+            },
+            "35–54": {
+              "employment": 4602330.76230909,
+              "employmentShare": 0.3873019738579813,
+              "personMonths": 13443
+            },
+            "55+": {
+              "employment": 2490834.4203818184,
+              "employmentShare": 0.20961228937905912,
+              "personMonths": 8438
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 746517.0340636363,
+              "employmentShare": 0.0743865942710077,
+              "personMonths": 2000
+            },
+            "25–34": {
+              "employment": 2180797.328072727,
+              "employmentShare": 0.2173052705141824,
+              "personMonths": 6270
+            },
+            "35–54": {
+              "employment": 4483682.994872727,
+              "employmentShare": 0.4467760179079625,
+              "personMonths": 14020
+            },
+            "55+": {
+              "employment": 2432610.2605363633,
+              "employmentShare": 0.24239713792596934,
+              "personMonths": 9239
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1685674.7052545457,
+              "employmentShare": 0.06655696536217914,
+              "personMonths": 4407
+            },
+            "25–34": {
+              "employment": 5232519.397681818,
+              "employmentShare": 0.20660012944540812,
+              "personMonths": 14692
+            },
+            "35–54": {
+              "employment": 11718009.81649091,
+              "employmentShare": 0.46267240710127966,
+              "personMonths": 35373
+            },
+            "55+": {
+              "employment": 6176487.820263636,
+              "employmentShare": 0.2438716584117763,
+              "personMonths": 21204
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1106179.4406181818,
+              "employmentShare": 0.07033909729487405,
+              "personMonths": 2815
+            },
+            "25–34": {
+              "employment": 3617094.5283272727,
+              "employmentShare": 0.23000171094355695,
+              "personMonths": 9970
+            },
+            "35–54": {
+              "employment": 6636937.8685818175,
+              "employmentShare": 0.42202575941686443,
+              "personMonths": 20407
+            },
+            "55+": {
+              "employment": 4113744.1259727273,
+              "employmentShare": 0.2615823777752611,
+              "personMonths": 14576
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1912941.7938090907,
+              "employmentShare": 0.12905373419558314,
+              "personMonths": 4846
+            },
+            "25–34": {
+              "employment": 3427275.183809091,
+              "employmentShare": 0.2312159533645267,
+              "personMonths": 9285
+            },
+            "35–54": {
+              "employment": 5388367.0092,
+              "employmentShare": 0.3635180568504768,
+              "personMonths": 16083
+            },
+            "55+": {
+              "employment": 3025529.574772727,
+              "employmentShare": 0.20411279151683495,
+              "personMonths": 10520
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2025
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1516850.7258625,
+              "employmentShare": 0.12660527830692686,
+              "personMonths": 2557
+            },
+            "25–34": {
+              "employment": 2810023.3205375,
+              "employmentShare": 0.23454106490492876,
+              "personMonths": 5183
+            },
+            "35–54": {
+              "employment": 4612554.6209375,
+              "employmentShare": 0.3849909233208423,
+              "personMonths": 9323
+            },
+            "55+": {
+              "employment": 2479064.0062625,
+              "employmentShare": 0.20691725500878325,
+              "personMonths": 5992
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 1,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 832653.5333,
+              "employmentShare": 0.08481074351079906,
+              "personMonths": 1465
+            },
+            "25–34": {
+              "employment": 2260664.609475,
+              "employmentShare": 0.23026221434293284,
+              "personMonths": 4521
+            },
+            "35–54": {
+              "employment": 4233046.8013375,
+              "employmentShare": 0.4311611398736415,
+              "personMonths": 9630
+            },
+            "55+": {
+              "employment": 2325631.4355125,
+              "employmentShare": 0.23687947422284972,
+              "personMonths": 6315
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 2,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1746406.2352625,
+              "employmentShare": 0.06780880733406643,
+              "personMonths": 3073
+            },
+            "25–34": {
+              "employment": 5295726.1607125,
+              "employmentShare": 0.20562047230194058,
+              "personMonths": 10302
+            },
+            "35–54": {
+              "employment": 11792208.7919375,
+              "employmentShare": 0.4578634671991909,
+              "personMonths": 25437
+            },
+            "55+": {
+              "employment": 6359912.2031625,
+              "employmentShare": 0.24694028945733928,
+              "personMonths": 15307
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 3,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1098957.39925,
+              "employmentShare": 0.06994388137993951,
+              "personMonths": 1895
+            },
+            "25–34": {
+              "employment": 3614529.9242375,
+              "employmentShare": 0.23004918337839694,
+              "personMonths": 6977
+            },
+            "35–54": {
+              "employment": 6693229.4847375,
+              "employmentShare": 0.42599508356619614,
+              "personMonths": 14455
+            },
+            "55+": {
+              "employment": 4101825.827,
+              "employmentShare": 0.2610634582201802,
+              "personMonths": 10303
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 4,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        },
+        {
+          "ageGroups": {
+            "20–24": {
+              "employment": 1887424.2301,
+              "employmentShare": 0.1299187280766284,
+              "personMonths": 3207
+            },
+            "25–34": {
+              "employment": 3356406.29965,
+              "employmentShare": 0.23103445977050296,
+              "personMonths": 6211
+            },
+            "35–54": {
+              "employment": 5312253.8144375,
+              "employmentShare": 0.365663027837346,
+              "personMonths": 11374
+            },
+            "55+": {
+              "employment": 2958985.3906625,
+              "employmentShare": 0.203678437640821,
+              "personMonths": 7186
+            }
+          },
+          "ageIsNotSeniority": true,
+          "quintile": 5,
+          "referenceType": "PARTIAL_YEAR_AVAILABLE_MONTHS",
+          "year": 2026
+        }
+      ]
+    },
+    "trueOccupationalHiring": "UNAVAILABLE"
+  },
+  "interpretationGuardrail": "Observed differences across AI-exposure groups do not establish that AI caused those differences.",
+  "kind": "young-workers",
+  "scope": "RESEARCH_ONLY"
+}

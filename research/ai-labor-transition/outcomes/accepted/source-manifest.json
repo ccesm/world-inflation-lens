@@ -1,0 +1,1494 @@
+{
+  "dataset": "CPS Basic Monthly public-use microdata; Census 2018 occupation code list and 2010→2018 concordance",
+  "files": [
+    {
+      "bytes": 108124,
+      "kind": "layout",
+      "name": "2015_January_2015_Record_Layout.txt",
+      "sha256": "8ccf5ac8232a61588c68764fe945fe251613db3f1259b4feb066876431e31a65",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/January_2015_Record_Layout.txt"
+    },
+    {
+      "bytes": 104678,
+      "kind": "layout",
+      "name": "2017_January_2017_Record_Layout.txt",
+      "sha256": "b5d977f86f2745d8d692612c8a3debf024f4be29a12b8cfc07664d8a6116e7a3",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/January_2017_Record_Layout.txt"
+    },
+    {
+      "bytes": 164654,
+      "kind": "layout",
+      "name": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "sha256": "6980896b1529b6f6832d4261503eb1d1db2e86984a0e8d2506d24ba81102e5bf",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt"
+    },
+    {
+      "bytes": 166302,
+      "kind": "layout",
+      "name": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "sha256": "f3f98e2ce21370e2912a5694d5552a50a5c8756328ac26f5bf81f063a79f2281",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt"
+    },
+    {
+      "bytes": 166302,
+      "kind": "layout",
+      "name": "2022_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "sha256": "f0f7e9cd13a2fcc69a3434f028d9b625a07c9169f7d5cd1356832065fd2461a1",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt"
+    },
+    {
+      "bytes": 166305,
+      "kind": "layout",
+      "name": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "sha256": "ed98d01f7d301f32e750a2ba6c1e32756179c74f703a0703170997f1d514898f",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt"
+    },
+    {
+      "bytes": 166444,
+      "kind": "layout",
+      "name": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "sha256": "4895273cf2aa25db259a2f1432c130da3e10212dc92fad1aea96c728fc41d071",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt"
+    },
+    {
+      "bytes": 167364,
+      "kind": "layout",
+      "name": "2024_2024_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "sha256": "7065678e6e62562183c1076d6846efea74f3fdb7f323f42f50cdfd5250a49a9d",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/2024_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt"
+    },
+    {
+      "bytes": 166656,
+      "kind": "layout",
+      "name": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "sha256": "a6ab8a5e1bacf66f318754ad9677c8285d687317993de3fa2b0292e0771633d1",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/May_2024_Basic_CPS_Public_Use_Record_Layout.txt"
+    },
+    {
+      "bytes": 167459,
+      "kind": "layout",
+      "name": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "sha256": "f846661ba077f89d5ccd5e28d385f78b22d8986a8cadcf73bfa7a70bac007470",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt"
+    },
+    {
+      "bytes": 167001,
+      "kind": "layout",
+      "name": "2026_2026_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "sha256": "0c1acfbe3a669c204d32d36a458a12972c6a41c3311f02d4ff7b84e4b2885017",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/2026_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt"
+    },
+    {
+      "bytes": 171900,
+      "kind": "layout",
+      "name": "2026_cps_dd_record_layout.txt",
+      "sha256": "b6ada4b0fc1f288e47794e73ea2165674ee571924eec55239fbebd4a97994940",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/cps_dd_record_layout.txt"
+    },
+    {
+      "bytes": 13011028,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "apr15pub.zip",
+      "period": "2015-04",
+      "sha256": "0f049da6da380ba6f9fa67cd036fc502ee2fc6262f2434ead69b32d5df2f5f68",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/apr15pub.zip"
+    },
+    {
+      "bytes": 12651295,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "apr16pub.zip",
+      "period": "2016-04",
+      "sha256": "880bbfde72825c963231cf1752a2cfaba1f0c31cb4328069398be8ed5b4453d2",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/apr16pub.zip"
+    },
+    {
+      "bytes": 13019893,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "apr17pub.zip",
+      "period": "2017-04",
+      "sha256": "9633760f2d8fb1e7b8f6d12ad6b3930dead459c617ce9a29e82fe6fd262246e4",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/apr17pub.zip"
+    },
+    {
+      "bytes": 12566751,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "apr18pub.zip",
+      "period": "2018-04",
+      "sha256": "bd4e415606f1e277c2e0e9b05f82922df42f13dfcb08c0b34b132026dd72a9ab",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/apr18pub.zip"
+    },
+    {
+      "bytes": 12149816,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "apr19pub.zip",
+      "period": "2019-04",
+      "sha256": "e16cb7ef71185fc62bd7edccb71aa656e508134ce088422c1c5e5fd56db98d7a",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/apr19pub.zip"
+    },
+    {
+      "bytes": 10863420,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "apr20pub.zip",
+      "period": "2020-04",
+      "sha256": "16efd1b6b9b74da45fcc40144a7fea1f42b2f5059cd4e10de5c32e2f3d5069ec",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/apr20pub.zip"
+    },
+    {
+      "bytes": 11408870,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "apr21pub.zip",
+      "period": "2021-04",
+      "sha256": "b3e68a876cb79db0f51a654fd4345c5d0c320aafa421023b80562b6f6adceb02",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/apr21pub.zip"
+    },
+    {
+      "bytes": 10848927,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "apr22pub.zip",
+      "period": "2022-04",
+      "sha256": "fd886b2a54114e3e4820dc5b145bab644a897640fa7fa0f45c1b61c20364b20b",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/apr22pub.zip"
+    },
+    {
+      "bytes": 9927023,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "apr23pub.zip",
+      "period": "2023-04",
+      "sha256": "be52165b2cbc508f09c6cce54d9cf1e34083260cc4e23f6801d5ab3c4a204d1f",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/apr23pub.zip"
+    },
+    {
+      "bytes": 10437637,
+      "kind": "cps",
+      "layoutName": "2024_2024_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "apr24pub.zip",
+      "period": "2024-04",
+      "sha256": "448814c2a60227247b52c34971884b89724dfe5ada7c7dc2fde037725c3afa1e",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/apr24pub.zip"
+    },
+    {
+      "bytes": 10234104,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "apr25pub.zip",
+      "period": "2025-04",
+      "sha256": "d98e2795b23477bbc77af02f41238df7b0b3859e5500d145f8a8d108c94488b9",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/apr25pub.zip"
+    },
+    {
+      "bytes": 9590904,
+      "kind": "cps",
+      "layoutName": "2026_cps_dd_record_layout.txt",
+      "name": "apr26pub.zip",
+      "period": "2026-04",
+      "sha256": "a33452a8dd608588f9b05eb688b73dc832926a13564a364f17ee9314d17e5ed8",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/apr26pub.zip"
+    },
+    {
+      "bytes": 12800944,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "aug15pub.zip",
+      "period": "2015-08",
+      "sha256": "e93b9cc32bc7bc78e31027849e88aead758d1295fc6781219e007c5997013d9b",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/aug15pub.zip"
+    },
+    {
+      "bytes": 13013997,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "aug16pub.zip",
+      "period": "2016-08",
+      "sha256": "c39c2090de08d60b7de6c72df6b51d60ef14abb04cf13a38eccd05e1339e7a13",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/aug16pub.zip"
+    },
+    {
+      "bytes": 12871940,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "aug17pub.zip",
+      "period": "2017-08",
+      "sha256": "2cefe59f2728b17bfc14212d94fe812bfbf09c9ecfc148ffac5d211e30ddfcec",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/aug17pub.zip"
+    },
+    {
+      "bytes": 12421028,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "aug18pub.zip",
+      "period": "2018-08",
+      "sha256": "e4defe09e6de0a80c65461311e0e69abf546e2a5546688b4c8fc63f9ca388098",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/aug18pub.zip"
+    },
+    {
+      "bytes": 12103364,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "aug19pub.zip",
+      "period": "2019-08",
+      "sha256": "7dcee80aa4a499e77450bdeec68fe74bc167ceb8ce5af2db8534369b3d645230",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/aug19pub.zip"
+    },
+    {
+      "bytes": 10619233,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "aug20pub.zip",
+      "period": "2020-08",
+      "sha256": "925b26fc7cce2ac636337141981c8d09c8c9fc729b0352aa8d1c866d3faecb5a",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/aug20pub.zip"
+    },
+    {
+      "bytes": 11051111,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "aug21pub.zip",
+      "period": "2021-08",
+      "sha256": "3c621606d84038675b6e2e2b043a74b45776ef629075e18493394d1e3383be9d",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/aug21pub.zip"
+    },
+    {
+      "bytes": 10793610,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "aug22pub.zip",
+      "period": "2022-08",
+      "sha256": "b1d4014c01dbda463f656fc69caee621bded02cc172c0be59d04d752b417b0a2",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/aug22pub.zip"
+    },
+    {
+      "bytes": 10150794,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "aug23pub.zip",
+      "period": "2023-08",
+      "sha256": "c434943cb7d4ea3a51645e21ae6027bfdbf8ca19a050a75e63d0092c4f313f1d",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/aug23pub.zip"
+    },
+    {
+      "bytes": 10660712,
+      "kind": "cps",
+      "layoutName": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "name": "aug24pub.zip",
+      "period": "2024-08",
+      "sha256": "34b2d654d55d4d7ef8ec876f55886c83092aafb9695dfd468b1a7b1301263297",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/aug24pub.zip"
+    },
+    {
+      "bytes": 10022432,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "aug25pub.zip",
+      "period": "2025-08",
+      "sha256": "f8c0ccd066878c8bfae6c1c28c05bf1dfe2390cf02c464ac52634b0b9b09e304",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/aug25pub.zip"
+    },
+    {
+      "bytes": 9579712,
+      "kind": "cps",
+      "layoutName": "2026_cps_dd_record_layout.txt",
+      "name": "aug26pub.zip",
+      "period": "2026-08",
+      "sha256": "2b39b4825b03ead5ffb5c22afb3134d556c4b028b146127355f71a4d68632b2c",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/aug26pub.zip"
+    },
+    {
+      "bytes": 160312,
+      "kind": "concordance",
+      "name": "census2018.xlsx",
+      "sha256": "fca2818d691c32777a4cd733a9ab77c8c5bd47adcacd7ac3aa149bebd45b5f7f",
+      "url": "https://www2.census.gov/programs-surveys/demo/guidance/industry-occupation/2018-occupation-code-list-and-crosswalk.xlsx"
+    },
+    {
+      "bytes": 12753141,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "dec15pub.zip",
+      "period": "2015-12",
+      "sha256": "1a1a5659040edc851aa6fa6fd2479539e7a67c615be5c676525628f3a1ee997a",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/dec15pub.zip"
+    },
+    {
+      "bytes": 12754125,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "dec16pub.zip",
+      "period": "2016-12",
+      "sha256": "9d4b08a66cedf6429031cfb7f5917469d3e761c4878678f13479f7e2910495b5",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/dec16pub.zip"
+    },
+    {
+      "bytes": 12707013,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "dec17pub.zip",
+      "period": "2017-12",
+      "sha256": "c557110c4bf9f82c8f2967c5c3694bd338af5bc5244810f83e7aabfe8436a9de",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/dec17pub.zip"
+    },
+    {
+      "bytes": 12265027,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "dec18pub.zip",
+      "period": "2018-12",
+      "sha256": "dbc3669aaa70775828351467a68f920d94fb16d887af7c77344320fd2f90f810",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/dec18pub.zip"
+    },
+    {
+      "bytes": 11979982,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "dec19pub.zip",
+      "period": "2019-12",
+      "sha256": "4900258838fff3f0f113f16b63ab7638029f1dbf956690d1383ce11b77271361",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/dec19pub.zip"
+    },
+    {
+      "bytes": 11236846,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "dec20pub.zip",
+      "period": "2020-12",
+      "sha256": "9052f57d9d87d34f85a4d6f0e539000217f6277904c782093eb366118b30e542",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/dec20pub.zip"
+    },
+    {
+      "bytes": 10678609,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "dec21pub.zip",
+      "period": "2021-12",
+      "sha256": "2aedc8a664e56e19ea814e3db6cf8239f588e0ef3d0eef4430e252f6866cbd8b",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/dec21pub.zip"
+    },
+    {
+      "bytes": 10418693,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "dec22pub.zip",
+      "period": "2022-12",
+      "sha256": "6c73d2fa4d1ecc3f16677e87f8475205cf83afbf2743eb7a8821c6d5da820487",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/dec22pub.zip"
+    },
+    {
+      "bytes": 9947069,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "dec23pub.zip",
+      "period": "2023-12",
+      "sha256": "45520bf1e5fb6a3f0950b2c1649d9673c036734778bcc7a3a41bb86144231ecb",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/dec23pub.zip"
+    },
+    {
+      "bytes": 10526140,
+      "kind": "cps",
+      "layoutName": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "name": "dec24pub.zip",
+      "period": "2024-12",
+      "sha256": "204c4044957f68c34f507130d2c93c664451618fd02ae8821ef6807d76ec63d5",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/dec24pub.zip"
+    },
+    {
+      "bytes": 9489559,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "dec25pub.zip",
+      "period": "2025-12",
+      "sha256": "143dc842a9cac93c7299d3deb40f1f45df345eaa920e862958e669a3b4149667",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/dec25pub.zip"
+    },
+    {
+      "bytes": 13044245,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "feb15pub.zip",
+      "period": "2015-02",
+      "sha256": "6e546b2ffdd034515d849000cd1b73233264a881539a3a5c1d36fb78bb247948",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/feb15pub.zip"
+    },
+    {
+      "bytes": 12756944,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "feb16pub.zip",
+      "period": "2016-02",
+      "sha256": "b95e8f9937802a36b07c5b85c253719212c31603a974701637f7e72b58f5305d",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/feb16pub.zip"
+    },
+    {
+      "bytes": 13126718,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "feb17pub.zip",
+      "period": "2017-02",
+      "sha256": "616aaeadece977dd390b7c80aa618227b9fa52ba355637499f7697a2d24535a2",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/feb17pub.zip"
+    },
+    {
+      "bytes": 12640684,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "feb18pub.zip",
+      "period": "2018-02",
+      "sha256": "3cfbceb699125026ee0976f19e0d31cfba0c321bd8b822ce9e1fd6557fc76b2e",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/feb18pub.zip"
+    },
+    {
+      "bytes": 12213954,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "feb19pub.zip",
+      "period": "2019-02",
+      "sha256": "40b1021b5425157152b7272cf998dac2b26dd46490e101fa3c5fd59e72c687da",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/feb19pub.zip"
+    },
+    {
+      "bytes": 12031535,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "feb20pub.zip",
+      "period": "2020-02",
+      "sha256": "15849634ac1dce614e103227c44649fae06fce917428c70b215e5ef6eb68f9fd",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/feb20pub.zip"
+    },
+    {
+      "bytes": 11321871,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "feb21pub.zip",
+      "period": "2021-02",
+      "sha256": "4bc11d5fe2b879135ec2dd399be73f8d5521d0ae436ba6c6e85b4af9a695e752",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/feb21pub.zip"
+    },
+    {
+      "bytes": 10804472,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "feb22pub.zip",
+      "period": "2022-02",
+      "sha256": "a2059eb95b772945a5181c9ab46c8389ea4dc694dbf8c6771a32cf8683c4467d",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/feb22pub.zip"
+    },
+    {
+      "bytes": 9758358,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "feb23pub.zip",
+      "period": "2023-02",
+      "sha256": "0b827f07d6c94fe828d492d779bc7f8fc900a2a54bbd5f74f08980280680d849",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/feb23pub.zip"
+    },
+    {
+      "bytes": 10488203,
+      "kind": "cps",
+      "layoutName": "2024_2024_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "feb24pub.zip",
+      "period": "2024-02",
+      "sha256": "69855648c50cdadbd1cf35749435d2a35de7fa2727b58d5769d757b9026e81bd",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/feb24pub.zip"
+    },
+    {
+      "bytes": 10414069,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "feb25pub.zip",
+      "period": "2025-02",
+      "sha256": "7c8b44665d5ec96cc2357dd6b42c7e4bd7e3017bf47ac21357355f8bda9c4515",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/feb25pub.zip"
+    },
+    {
+      "bytes": 9611240,
+      "kind": "cps",
+      "layoutName": "2026_cps_dd_record_layout.txt",
+      "name": "feb26pub.zip",
+      "period": "2026-02",
+      "sha256": "7dee00d43a58e1e7a85f2d209c492d860b09cd393bbbe588e542fec15e77b720",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/feb26pub.zip"
+    },
+    {
+      "bytes": 13232165,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "jan15pub.zip",
+      "period": "2015-01",
+      "sha256": "d180ca00d0807c2f41594bd6b1bda7a9839b9d311120c977b894470d4e631bba",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/jan15pub.zip"
+    },
+    {
+      "bytes": 12833620,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "jan16pub.zip",
+      "period": "2016-01",
+      "sha256": "d91cf7c3c48f8e36f98f2f8176c4f192c0b0157857eee0605c5652788aeba059",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/jan16pub.zip"
+    },
+    {
+      "bytes": 13129352,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jan17pub.zip",
+      "period": "2017-01",
+      "sha256": "0255d1940acd739096aaca6e65caf623d06ef8d66aef9785df382fac7de99668",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/jan17pub.zip"
+    },
+    {
+      "bytes": 12727864,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jan18pub.zip",
+      "period": "2018-01",
+      "sha256": "145a37496add04dbb97287a04a0ee7dc37d5ff39f9f10ec0bc10b3be0b76c48c",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/jan18pub.zip"
+    },
+    {
+      "bytes": 12329372,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jan19pub.zip",
+      "period": "2019-01",
+      "sha256": "e33eeec4f14d168210c5eca66ace2ed6bc98927a7908cd8aab643aac99924020",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/jan19pub.zip"
+    },
+    {
+      "bytes": 11973512,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jan20pub.zip",
+      "period": "2020-01",
+      "sha256": "0fe905dede6b719a4a6beac591d3ee539e99de074e682951a229775a646f4a94",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/jan20pub.zip"
+    },
+    {
+      "bytes": 11401854,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jan21pub.zip",
+      "period": "2021-01",
+      "sha256": "759e95149af8a1bdebb5a8ad45d5205af8e0b234c8823d897ad473cad11005aa",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/jan21pub.zip"
+    },
+    {
+      "bytes": 10793823,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jan22pub.zip",
+      "period": "2022-01",
+      "sha256": "541d4084e8fd73ecaf2fb8ff0a989867390815aa5d298552576a6416edf2f792",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/jan22pub.zip"
+    },
+    {
+      "bytes": 9928914,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jan23pub.zip",
+      "period": "2023-01",
+      "sha256": "e987ed466d19a9a958650f19858091385130acd82996ecf3e2b11cb123273747",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/jan23pub.zip"
+    },
+    {
+      "bytes": 10494185,
+      "kind": "cps",
+      "layoutName": "2024_2024_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jan24pub.zip",
+      "period": "2024-01",
+      "sha256": "3429f6f1265c3a5e6a72d18fa134e5adc670084f0454a117f09d7bd45ee51e54",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/jan24pub.zip"
+    },
+    {
+      "bytes": 10479098,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jan25pub.zip",
+      "period": "2025-01",
+      "sha256": "cdb338ac3b6b8ed1c21eb4a6bd4271848e93d5f7b63f8b141d80e45a149a1be9",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/jan25pub.zip"
+    },
+    {
+      "bytes": 9469451,
+      "kind": "cps",
+      "layoutName": "2026_cps_dd_record_layout.txt",
+      "name": "jan26pub.zip",
+      "period": "2026-01",
+      "sha256": "91d11a2248671a9dae10595d42763bf6d4e9b645ba204a67331cb24ed740a143",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/jan26pub.zip"
+    },
+    {
+      "bytes": 12781608,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "jul15pub.zip",
+      "period": "2015-07",
+      "sha256": "5d180471de3c00955b54e03b54c6130ada9a8738ea264ae0eec174472655306e",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/jul15pub.zip"
+    },
+    {
+      "bytes": 12867263,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "jul16pub.zip",
+      "period": "2016-07",
+      "sha256": "21065d818275c63877875888450f18086bbae0af3beb3fc4792bc265eb205f72",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/jul16pub.zip"
+    },
+    {
+      "bytes": 12877463,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jul17pub.zip",
+      "period": "2017-07",
+      "sha256": "7a9f6e29c1f66b10c23aac8e1cdbc0d0203e71271d3a93351a6a717ffc19b333",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/jul17pub.zip"
+    },
+    {
+      "bytes": 12442775,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jul18pub.zip",
+      "period": "2018-07",
+      "sha256": "fd8a1c384e5345e4146d7b335cd1fb3f4ebd9ce87d85a050fe4ebdaedf131d1e",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/jul18pub.zip"
+    },
+    {
+      "bytes": 12037916,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jul19pub.zip",
+      "period": "2019-07",
+      "sha256": "87ab5f5f958bc9350ab4ca0862fff334704c6dfa5cde41d0d2326cde1a18c8e8",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/jul19pub.zip"
+    },
+    {
+      "bytes": 10351744,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jul20pub.zip",
+      "period": "2020-07",
+      "sha256": "7878583f875f7cb466b8a89e500f906509ab4fef06799739f28217a785a91f29",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/jul20pub.zip"
+    },
+    {
+      "bytes": 11072787,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jul21pub.zip",
+      "period": "2021-07",
+      "sha256": "d4b128dc203431cab485e25faccd46474795a7262fd3b2a7a0677f9f3eeb6f11",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/jul21pub.zip"
+    },
+    {
+      "bytes": 10717753,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jul22pub.zip",
+      "period": "2022-07",
+      "sha256": "56c0dd8987cf0aafbd719cf5c9a2cdd05e600f6a6aa4d98c79224e118c3ebf2b",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/jul22pub.zip"
+    },
+    {
+      "bytes": 10089732,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jul23pub.zip",
+      "period": "2023-07",
+      "sha256": "f3bf101584cc398e6903fcf081d2e676ab9704f48e9f7ae7ca372d5a6b5caa3d",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/jul23pub.zip"
+    },
+    {
+      "bytes": 10601505,
+      "kind": "cps",
+      "layoutName": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "name": "jul24pub.zip",
+      "period": "2024-07",
+      "sha256": "b1e0e8d1e7249724c92c4a774119296dd153e999cac59669b420e1a6cba5cb2d",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/jul24pub.zip"
+    },
+    {
+      "bytes": 10126055,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jul25pub.zip",
+      "period": "2025-07",
+      "sha256": "8aa086ef593e25d7cc3964a00c527fde489f17f94622e549b8a8d5680a1adc6b",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/jul25pub.zip"
+    },
+    {
+      "bytes": 9502765,
+      "kind": "cps",
+      "layoutName": "2026_cps_dd_record_layout.txt",
+      "name": "jul26pub.zip",
+      "period": "2026-07",
+      "sha256": "75a411524cd1fd1eff0a9d5c55a20ef3166db1fa51db1927f365a3a33403c9ec",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/jul26pub.zip"
+    },
+    {
+      "bytes": 12847585,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "jun15pub.zip",
+      "period": "2015-06",
+      "sha256": "06e1bc5f0daa64cfd6721c637ec7a44fca28d03786224deafd6a050f171126d4",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/jun15pub.zip"
+    },
+    {
+      "bytes": 12767906,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "jun16pub.zip",
+      "period": "2016-06",
+      "sha256": "14c0de68c16d89c22ad1b6540ff0b4924a5b7b4c2689a86d30554efb2661b983",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/jun16pub.zip"
+    },
+    {
+      "bytes": 12869109,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jun17pub.zip",
+      "period": "2017-06",
+      "sha256": "7e0a60469d65ff1661332d59257e45df7b95b2f47787c4642aa4e96de1937e60",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/jun17pub.zip"
+    },
+    {
+      "bytes": 12492711,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jun18pub.zip",
+      "period": "2018-06",
+      "sha256": "3b5a98f909fd2c0fd8bff2b6a5154218ad6c084a619f13c559342e8d608973dc",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/jun18pub.zip"
+    },
+    {
+      "bytes": 12089855,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "jun19pub.zip",
+      "period": "2019-06",
+      "sha256": "acf4147ef601140a003e2471f50d08e6a19700b2c88b76970e95eeb2d824b4de",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/jun19pub.zip"
+    },
+    {
+      "bytes": 10195966,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jun20pub.zip",
+      "period": "2020-06",
+      "sha256": "25e789fdc8f69366af136236fd9fc6f1b079f7a25ad25c54da0c6868408e1148",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/jun20pub.zip"
+    },
+    {
+      "bytes": 11051888,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jun21pub.zip",
+      "period": "2021-06",
+      "sha256": "ec7509352e7065d2fe8af1ebeb237be795f50ff71a14b1975abc0d3fa68cc083",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/jun21pub.zip"
+    },
+    {
+      "bytes": 10773700,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jun22pub.zip",
+      "period": "2022-06",
+      "sha256": "235dddea7ebe8a1ad8349df1a275d24e1c0e26a53deff40c345108c1a693e743",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/jun22pub.zip"
+    },
+    {
+      "bytes": 10032393,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jun23pub.zip",
+      "period": "2023-06",
+      "sha256": "c2a1ebef7f9ef4c7bf46b613065ebc5978fc578effd0172e358d51cce1941716",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/jun23pub.zip"
+    },
+    {
+      "bytes": 10518654,
+      "kind": "cps",
+      "layoutName": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "name": "jun24pub.zip",
+      "period": "2024-06",
+      "sha256": "026df8110d6dfd24722cbc4281b926b0632d595ee55a2a5282a2bf8fe3977721",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/jun24pub.zip"
+    },
+    {
+      "bytes": 10182693,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "jun25pub.zip",
+      "period": "2025-06",
+      "sha256": "4a668c0556a84ad4a7fc8c3f394dbf8f7d4324e4f5be57693bf2e2c80bb20864",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/jun25pub.zip"
+    },
+    {
+      "bytes": 9559556,
+      "kind": "cps",
+      "layoutName": "2026_cps_dd_record_layout.txt",
+      "name": "jun26pub.zip",
+      "period": "2026-06",
+      "sha256": "942c775982b825c18b118e18ab308da189b9806b4757751954938fd6cbc7ecf5",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/jun26pub.zip"
+    },
+    {
+      "bytes": 12895295,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "mar15pub.zip",
+      "period": "2015-03",
+      "sha256": "1541e489bc990306ef7de366b22f75760e362c9b6da1f3ab8c6bb9a5e9cf6ff4",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/mar15pub.zip"
+    },
+    {
+      "bytes": 12539080,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "mar16pub.zip",
+      "period": "2016-03",
+      "sha256": "3bcb5b86dc3dba96adf2fe99ea67b8b3edc83d6bd542a4cf42dbd7e815461022",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/mar16pub.zip"
+    },
+    {
+      "bytes": 13020660,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "mar17pub.zip",
+      "period": "2017-03",
+      "sha256": "936ab1595e3ffdc6478d0b98b39d3c2dfce6198ea0c3827c69d674168120e586",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/mar17pub.zip"
+    },
+    {
+      "bytes": 12525542,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "mar18pub.zip",
+      "period": "2018-03",
+      "sha256": "44f0af9fbe4f5cea1636f350d45df2945e6663cb75a1fd76562387e15a2cfa3b",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/mar18pub.zip"
+    },
+    {
+      "bytes": 12106506,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "mar19pub.zip",
+      "period": "2019-03",
+      "sha256": "17194f077cb274d1ee802e7b10a01c2b74dba90aad064a66a5f76b302091e85a",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/mar19pub.zip"
+    },
+    {
+      "bytes": 11094474,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "mar20pub.zip",
+      "period": "2020-03",
+      "sha256": "7ce6d8fcbb0c6168918171467874ca77e4a625adc63579b524b21805bb8ec772",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/mar20pub.zip"
+    },
+    {
+      "bytes": 11163373,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "mar21pub.zip",
+      "period": "2021-03",
+      "sha256": "4f8209220c131fc784ec46c29834aea7e60432622dd3d2653695ce7c4043fc02",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/mar21pub.zip"
+    },
+    {
+      "bytes": 10602135,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "mar22pub.zip",
+      "period": "2022-03",
+      "sha256": "089ed6c57588927d725b9aaeefddc15fe45606a7743af0100d7b96e3d90d883f",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/mar22pub.zip"
+    },
+    {
+      "bytes": 9698484,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "mar23pub.zip",
+      "period": "2023-03",
+      "sha256": "d126d7f1483cf2b32288eaf234c0051db6ce347a59058ee6b83406c85721dc7f",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/mar23pub.zip"
+    },
+    {
+      "bytes": 10231860,
+      "kind": "cps",
+      "layoutName": "2024_2024_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "mar24pub.zip",
+      "period": "2024-03",
+      "sha256": "31da6ab601f9ce58abc4bba6016e449a3f571d7e43e15ef38477a4499fb53ef1",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/mar24pub.zip"
+    },
+    {
+      "bytes": 10202310,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "mar25pub.zip",
+      "period": "2025-03",
+      "sha256": "972db21bbe95f2373c63866ba9e34e3500136887e8cb06c4241244445ca761f3",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/mar25pub.zip"
+    },
+    {
+      "bytes": 9388769,
+      "kind": "cps",
+      "layoutName": "2026_cps_dd_record_layout.txt",
+      "name": "mar26pub.zip",
+      "period": "2026-03",
+      "sha256": "bd6c8da5059168898b172d47a81c770f54679b705f72e4299a35f95ede0b71e2",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/mar26pub.zip"
+    },
+    {
+      "bytes": 12958429,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "may15pub.zip",
+      "period": "2015-05",
+      "sha256": "21f379cbcaa5788b9148f31e41abf0120031b7a0726488404a05a4e3c7f646e8",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/may15pub.zip"
+    },
+    {
+      "bytes": 12716326,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "may16pub.zip",
+      "period": "2016-05",
+      "sha256": "d6a1d36d9e450bbb72c4155ea68c8e91bc39e860109365b6a1b4166b951030e5",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/may16pub.zip"
+    },
+    {
+      "bytes": 12869690,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "may17pub.zip",
+      "period": "2017-05",
+      "sha256": "24c323d123498e213d1c21ead51ad617decf49e2ee719294904d0da079ced4bc",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/may17pub.zip"
+    },
+    {
+      "bytes": 12487801,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "may18pub.zip",
+      "period": "2018-05",
+      "sha256": "c624c056f69ded03b66dbaf981954481e993a5a01795718b3378ede135373258",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/may18pub.zip"
+    },
+    {
+      "bytes": 12015775,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "may19pub.zip",
+      "period": "2019-05",
+      "sha256": "c4cc3a25ac65e90b4454a085e8670d363ec30e420e0f7bb6e79e71ad1ae748fb",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/may19pub.zip"
+    },
+    {
+      "bytes": 10563770,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "may20pub.zip",
+      "period": "2020-05",
+      "sha256": "1f5a50e91bb8e4a589f398e9b6f6e71a59f7a0d6fd112c64fc64b0c46ff4e4ed",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/may20pub.zip"
+    },
+    {
+      "bytes": 11312553,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "may21pub.zip",
+      "period": "2021-05",
+      "sha256": "53bd6d6181a51ba87ac956b6a7e4dfa4e0102bd67bcee589714ef7cffe632845",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/may21pub.zip"
+    },
+    {
+      "bytes": 10956281,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "may22pub.zip",
+      "period": "2022-05",
+      "sha256": "98a49d52aa19084f699f3437b215d35021756fd2f094c8db6e3a5747d5484518",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/may22pub.zip"
+    },
+    {
+      "bytes": 10015716,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "may23pub.zip",
+      "period": "2023-05",
+      "sha256": "6838bdde7e2ad7c5f37d4895a2a291ecf14fa7698815fdaf3eabb1bd7df52359",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/may23pub.zip"
+    },
+    {
+      "bytes": 10480985,
+      "kind": "cps",
+      "layoutName": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "name": "may24pub.zip",
+      "period": "2024-05",
+      "sha256": "61ef229a58bf6d51ff513a513c64c03777512b95c9347ed245d05dd8662cf2c8",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/may24pub.zip"
+    },
+    {
+      "bytes": 10221138,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "may25pub.zip",
+      "period": "2025-05",
+      "sha256": "fcd1ecb10726c2a5eb0b4ee70e0a63c57a4c40d489b042732d7286891ef63e54",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/may25pub.zip"
+    },
+    {
+      "bytes": 9626340,
+      "kind": "cps",
+      "layoutName": "2026_cps_dd_record_layout.txt",
+      "name": "may26pub.zip",
+      "period": "2026-05",
+      "sha256": "fa379f5184dce886db825cd4d953d8d72c2ed2918c8a29e67ebeda63d543c920",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2026/basic/may26pub.zip"
+    },
+    {
+      "bytes": 12840099,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "nov15pub.zip",
+      "period": "2015-11",
+      "sha256": "11b348d49dda61e300457450b85139a3fed62fef4adc8d9f686ddb338eac4808",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/nov15pub.zip"
+    },
+    {
+      "bytes": 12939803,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "nov16pub.zip",
+      "period": "2016-11",
+      "sha256": "6aa8faaf054b165bd451aab4366e92f9d7c265271ea7246ef778d98d1d3ef85b",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/nov16pub.zip"
+    },
+    {
+      "bytes": 12856829,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "nov17pub.zip",
+      "period": "2017-11",
+      "sha256": "f2f7e0b83cf97e6a2ea1a490c60c6c78b0371ebeac0787452b068bfa34d39f31",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/nov17pub.zip"
+    },
+    {
+      "bytes": 12363587,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "nov18pub.zip",
+      "period": "2018-11",
+      "sha256": "a98f7c67b3dde5df2c79785694ba94408977bcfcbca5e04dca2fd82850c5e627",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/nov18pub.zip"
+    },
+    {
+      "bytes": 11963057,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "nov19pub.zip",
+      "period": "2019-11",
+      "sha256": "08ed0e803ba3c781d9a61d24fda545bd70b1ffdd904d7b01032b48831775816c",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/nov19pub.zip"
+    },
+    {
+      "bytes": 11518334,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "nov20pub.zip",
+      "period": "2020-11",
+      "sha256": "1fae2f26f96d8bba7c85cc35dd588d7a4a22f54985559fbdbc2843df159bbeed",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/nov20pub.zip"
+    },
+    {
+      "bytes": 10715998,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "nov21pub.zip",
+      "period": "2021-11",
+      "sha256": "4815da6987519025ea80c4380ff7dc1236e51bfaf3ecb893cec9d96cfbe96ead",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/nov21pub.zip"
+    },
+    {
+      "bytes": 10526869,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "nov22pub.zip",
+      "period": "2022-11",
+      "sha256": "97fd511bde70ecb5133ce764291aeb1f62a6c2ecc3c85b4fa861e03020eb7795",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/nov22pub.zip"
+    },
+    {
+      "bytes": 10019000,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "nov23pub.zip",
+      "period": "2023-11",
+      "sha256": "d4e06e7f27dead0a0cd5166433196be2dde8ddc07f7e43aeb52e3c3bad1141ac",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/nov23pub.zip"
+    },
+    {
+      "bytes": 10546151,
+      "kind": "cps",
+      "layoutName": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "name": "nov24pub.zip",
+      "period": "2024-11",
+      "sha256": "52da422e5971e4b942088a6c7cad92ef47daaa59dfadb0e91c0a0e79c3b07841",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/nov24pub.zip"
+    },
+    {
+      "bytes": 9499778,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "nov25pub.zip",
+      "period": "2025-11",
+      "sha256": "0cc0d2d69fd6e8f35ac580b24398a0c9071be99735ee613e7172eebc61d9910b",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/nov25pub.zip"
+    },
+    {
+      "bytes": 12845787,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "oct15pub.zip",
+      "period": "2015-10",
+      "sha256": "b82effce6d9ebc70cd93a61ab7254f8030709a8bdb79f3d8b9bf2b39822d8f89",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/oct15pub.zip"
+    },
+    {
+      "bytes": 12991789,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "oct16pub.zip",
+      "period": "2016-10",
+      "sha256": "2314c55de5a72955157b1c600051e0e7ffcfcf05463d028d5638afbfec50ce45",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/oct16pub.zip"
+    },
+    {
+      "bytes": 12868963,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "oct17pub.zip",
+      "period": "2017-10",
+      "sha256": "9c5158e239e3250cc2ba2fca65616f1be7b17190c51556e7be2e0e3b3dc90de4",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/oct17pub.zip"
+    },
+    {
+      "bytes": 12448028,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "oct18pub.zip",
+      "period": "2018-10",
+      "sha256": "673e2a122f57900fe1ef710e57205e402d3636243548aeabe5e092e29d2e8b43",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/oct18pub.zip"
+    },
+    {
+      "bytes": 12017846,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "oct19pub.zip",
+      "period": "2019-10",
+      "sha256": "22780b1f61e4b228ce2f1d4acc783398b48ffe88ab11ff441a0d40b06c998b6c",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/oct19pub.zip"
+    },
+    {
+      "bytes": 11675085,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "oct20pub.zip",
+      "period": "2020-10",
+      "sha256": "9c532fc63e64c6e4c884f75b657856ecb3a58e71dcf24cdd5319132a56f5bfd6",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/oct20pub.zip"
+    },
+    {
+      "bytes": 10955713,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "oct21pub.zip",
+      "period": "2021-10",
+      "sha256": "bc7e2c55c2d9b512287bee4e24e743740ede91835ac4247f3f4cd10319844c65",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/oct21pub.zip"
+    },
+    {
+      "bytes": 10622961,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "oct22pub.zip",
+      "period": "2022-10",
+      "sha256": "1ed7d23e88f8cc29ed4f03896f177f301e20eb3d6f94238471f3df431e8889ab",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/oct22pub.zip"
+    },
+    {
+      "bytes": 10155785,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "oct23pub.zip",
+      "period": "2023-10",
+      "sha256": "6d87e7c393fa374184598489dd5068a2af2b5f1e987c25519458c12fbf88b09d",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/oct23pub.zip"
+    },
+    {
+      "bytes": 10553649,
+      "kind": "cps",
+      "layoutName": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "name": "oct24pub.zip",
+      "period": "2024-10",
+      "sha256": "cbc31df91a90aa6246c145f7ed4c6144e72519b48365c2b7568626b81b1fdf76",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/oct24pub.zip"
+    },
+    {
+      "bytes": 12814348,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "sep15pub.zip",
+      "period": "2015-09",
+      "sha256": "2fcabc01a318a27b8d79922eaebba60597d7ad1228d342b30214a05452720f11",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2015/basic/sep15pub.zip"
+    },
+    {
+      "bytes": 13019377,
+      "kind": "cps",
+      "layoutName": "2015_January_2015_Record_Layout.txt",
+      "name": "sep16pub.zip",
+      "period": "2016-09",
+      "sha256": "e42ca543fba9799ef5b9bdb4bdf679343a0193430970eec060b319d8485fe166",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2016/basic/sep16pub.zip"
+    },
+    {
+      "bytes": 12895444,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "sep17pub.zip",
+      "period": "2017-09",
+      "sha256": "651c2a35bd8f405296437dcee6a84291cc736d0c36bd08f00d12a44692bd5902",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2017/basic/sep17pub.zip"
+    },
+    {
+      "bytes": 12477420,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "sep18pub.zip",
+      "period": "2018-09",
+      "sha256": "69d70a230551c24a11435e09dad50d98e0c001b09c7ec3b9c0c8d51027a6783e",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2018/basic/sep18pub.zip"
+    },
+    {
+      "bytes": 12021882,
+      "kind": "cps",
+      "layoutName": "2017_January_2017_Record_Layout.txt",
+      "name": "sep19pub.zip",
+      "period": "2019-09",
+      "sha256": "50779be97a7a4510015d542292064a14419d8709855be18d8005987f4ec6b408",
+      "taxonomy": "Census 2010",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2019/basic/sep19pub.zip"
+    },
+    {
+      "bytes": 11527237,
+      "kind": "cps",
+      "layoutName": "2020_2020_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "sep20pub.zip",
+      "period": "2020-09",
+      "sha256": "b293393299a623d13a91fad95f0c7ac232f1b5dfb07390f3cf999455568e22d1",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2020/basic/sep20pub.zip"
+    },
+    {
+      "bytes": 10822553,
+      "kind": "cps",
+      "layoutName": "2021_2021_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "sep21pub.zip",
+      "period": "2021-09",
+      "sha256": "debae49fc32bfb34353b6fda9f585f743f4a74519d1420358044561e8c34c233",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2021/basic/sep21pub.zip"
+    },
+    {
+      "bytes": 10681366,
+      "kind": "cps",
+      "layoutName": "2022_2022_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "sep22pub.zip",
+      "period": "2022-09",
+      "sha256": "497c0eb4869932547b1dea130206d20e1d5d522c32e347a299ff175eeee675a0",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2022/basic/sep22pub.zip"
+    },
+    {
+      "bytes": 10009825,
+      "kind": "cps",
+      "layoutName": "2023_2023_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "sep23pub.zip",
+      "period": "2023-09",
+      "sha256": "0ee72447d5bb8ad3fd0312a1281e15108d5b8ab2c14f4ec7a063cb6aa41aa40a",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2023/basic/sep23pub.zip"
+    },
+    {
+      "bytes": 10597677,
+      "kind": "cps",
+      "layoutName": "2024_May_2024_Basic_CPS_Public_Use_Record_Layout.txt",
+      "name": "sep24pub.zip",
+      "period": "2024-09",
+      "sha256": "1a3b4e107e03530577bfb3dba62b48ee7733eac68ef2f3f24f92024711aa2aa6",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2024/basic/sep24pub.zip"
+    },
+    {
+      "bytes": 9936918,
+      "kind": "cps",
+      "layoutName": "2025_2025_Basic_CPS_Public_Use_Record_Layout_plus_IO_Code_list.txt",
+      "name": "sep25pub.zip",
+      "period": "2025-09",
+      "sha256": "bb99b19ea30ad86934238c7660a45b6db23a966b97eddd94c9316be01e30e12c",
+      "taxonomy": "Census 2018",
+      "url": "https://www2.census.gov/programs-surveys/cps/datasets/2025/basic/sep25pub.zip"
+    }
+  ],
+  "license": "PUBLIC_DOMAIN_US_FEDERAL",
+  "observationMonths": "2015-01 through 2026-08, excluding nonexistent 2025-10",
+  "oews": "UNAVAILABLE: official BLS ZIP/time-series endpoints HTTP 403; no alternate unverified dataset accepted",
+  "publisher": "US Census Bureau / Bureau of Labor Statistics",
+  "rawArchiveStorage": "Temporary external cache; not redistributed person records in Git. Exact URLs/hash/bytes pinned; retrieval command reconstructs archives. Only sufficient-statistic aggregates retained.",
+  "scope": "RESEARCH_ONLY",
+  "selectionAsOf": "2026-10-05",
+  "sourceReleaseDates": "Exact publisher release timestamp not supplied with ZIPs; not inferred from retrieval"
+}

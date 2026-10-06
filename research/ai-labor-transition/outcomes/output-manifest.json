@@ -1,0 +1,14 @@
+{
+  "artifacts": {
+    "cps-occupation-annual.json.gz": "8a21d15289cfe512cba3c27412709e5381539ae615090ebee7a164cbe42687ed",
+    "cps-soc-concordance.json": "6b558b12ac0043967c6f6e39f4f5717c37605a9d3a2329680a54c484efad35f8",
+    "cross-source-robustness.json": "ce0d89f5fa87a72ce1798684ffc601bc30b36cbc2f9a9987cc86e8618919aee1",
+    "current-research-summary.json": "02fed7cd1dbff109978fbc0caf09b7da86fcd3de95f432dd933a468786c944a1",
+    "exposure-group-outcomes.json": "715028af978c058a790a30fbcb70910616980c51685739e782def604c2af0c95",
+    "oews-occupation-vintages.json": "87e0358a23c43cea73f5086145de74336807b0fee6364f4473123505a5f79310",
+    "pretrend-analysis.json": "b26b25bcd1f36782d81031f4177a730cfa38724599608f6cf1fcbc513f7d8a4a",
+    "young-worker-by-exposure.json": "1f2faf821f27a292c0a771e91fee1e0cf92f8974354a77336b4f8b55b8a935e9"
+  },
+  "preanalysisSpecHash": "f3429802af3354335d5c724fc5497a24dde41ea11ac8178b2ac88c9416148b5e",
+  "runtimeExcluded": true
+}
