@@ -1,0 +1,950 @@
+{
+  "schemaVersion": "offline-second-corrective-results/0.1",
+  "purpose": "Compact evidence for the second corrective pass; independent final safeguard re-review remains required",
+  "status": "READY FOR FINAL SAFEGUARD RE-REVIEW",
+  "startingCommit": "8eccd2512e90ca71f95d1ef4f4bedbded9158827",
+  "branch": "codex/signal-engine-prototype-fixes-2",
+  "frozenSpecCommit": "faaae287f1b144bd8396023a8f134b66ae84404c",
+  "inputCommit": "b3d2fc295b0378c7d29ae6fe8d36e275a55753a9",
+  "originMainAtStart": "21cdb441befc2e3b3a52011093603911a67d9a5f",
+  "engineVersion": "offline-prototype/0.1.2",
+  "ruleVersion": "signal-engine-v0.1-draft.1",
+  "ruleSha256": "a7d0c169ff2aa8ebe946f28baa6c6ebed385d912c70561ba04907a7603d67a3f",
+  "outputSchemaSha256": "0ac9ae006cf263afbc1231128a359ad78cb7e8c6f6c359ea939cfac65f966f58",
+  "evaluatedAt": "2026-10-03T15:55:16.403Z",
+  "findingsAddressed": {
+    "R2": {
+      "economicComparison": "exact native periods and canonical values only",
+      "operationalComparison": "identity-bound revision evidence eligible at AS-OF",
+      "testedFactors": [
+        "TIC_TOTAL",
+        "GSCPI"
+      ],
+      "earlierBytesAndHashUnchanged": true,
+      "eligibleAtCutoff": true,
+      "metadataOnlyReason": "STATUS_CHANGE",
+      "economicRevisionReason": "REVISION_DRIVEN_CHANGE"
+    },
+    "R3": {
+      "factorAvailabilityDerived": true,
+      "pinnedSemanticValidation": true,
+      "unsupportedPublisherVintageFails": true,
+      "validControls": 3,
+      "falseClaimsRejected": 16
+    },
+    "R4": {
+      "publicationLowerBound": "completed native observation period; no invented release lag",
+      "fullWindowBackdatingPreventsHigh": true,
+      "monthlyQuarterlyDailyBoundaries": true,
+      "invalidProofsRejectedForHigh": 9,
+      "validControls": 7
+    },
+    "R5": {
+      "relevantInputIdentitiesAudited": true,
+      "rawHashOnlyReason": "STATUS_CHANGE",
+      "equivalentArithmeticUnchanged": true,
+      "unrelatedInputDoesNotChangeFactor": true,
+      "executionTimestampsSeparate": true
+    }
+  },
+  "remainingHighOrMediumFromAddressedScope": [],
+  "testAccounting": {
+    "existing": {
+      "total": 206,
+      "passed": 204,
+      "failed": 0,
+      "deferred": 2,
+      "originalCatalogue": {
+        "total": 83,
+        "passed": 81,
+        "deferred": 2
+      },
+      "originalSupplementaryPassed": 24,
+      "firstCorrectivePassed": 99
+    },
+    "new": {
+      "R2": 8,
+      "R3": 19,
+      "R4": 16,
+      "R5": 8,
+      "freshProcessAndFrozenOutput": 1,
+      "total": 52,
+      "passed": 52
+    },
+    "R1R6RegressionSubsetOfExisting": {
+      "R1": 10,
+      "R6": 7,
+      "total": 17,
+      "passed": 17
+    },
+    "overall": {
+      "total": 258,
+      "passed": 256,
+      "failed": 0,
+      "deferred": 2,
+      "durationMs": 58853.332792
+    },
+    "deferredReasons": [
+      "successful publisher-vintage replay",
+      "future adopted-rule execution"
+    ]
+  },
+  "miniSuite": {
+    "groups": [
+      {
+        "id": "A",
+        "scope": "future revisions and annotations",
+        "probes": 6,
+        "blockedOrCorrect": 6,
+        "unexpectedPasses": 0
+      },
+      {
+        "id": "B",
+        "scope": "factor availability fabrication",
+        "probes": 16,
+        "blockedOrCorrect": 16,
+        "unexpectedPasses": 0
+      },
+      {
+        "id": "C",
+        "scope": "coherent publication backdating and invalid proof",
+        "probes": 9,
+        "blockedOrCorrect": 9,
+        "unexpectedPasses": 0
+      },
+      {
+        "id": "D",
+        "scope": "artifact identity, economic revision and execution-clock classification",
+        "probes": 8,
+        "blockedOrCorrect": 8,
+        "unexpectedPasses": 0
+      }
+    ],
+    "total": 39,
+    "blockedOrCorrect": 39,
+    "unexpectedPasses": 0,
+    "supportingControls": 13
+  },
+  "current": {
+    "payloadSha256": "da3f364259bc43083d0ab1621706172283716d735493fd4d97278573bb5fe883",
+    "bytes": 186703,
+    "allOtherContentIdenticalToFirstCorrective": true,
+    "factors": [
+      {
+        "id": "inflation-persistence",
+        "state": "TRANSITION",
+        "confidence": "MEDIUM",
+        "dataStatus": "READY",
+        "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT"
+      },
+      {
+        "id": "observed-productivity",
+        "state": "OUTPUT_PER_HOUR_GROWING",
+        "confidence": "MEDIUM",
+        "dataStatus": "READY",
+        "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT"
+      },
+      {
+        "id": "supply-chain-pressure",
+        "state": "TRANSITION",
+        "confidence": "MEDIUM",
+        "dataStatus": "READY",
+        "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT"
+      },
+      {
+        "id": "policy-rate-direction",
+        "state": "TRANSITION",
+        "confidence": "MEDIUM",
+        "dataStatus": "READY",
+        "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT"
+      },
+      {
+        "id": "reserve-share",
+        "state": "USD_RESERVE_SHARE_FALLING",
+        "confidence": "MEDIUM",
+        "dataStatus": "READY",
+        "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT"
+      },
+      {
+        "id": "foreign-treasury-holdings",
+        "state": "TRANSITION",
+        "confidence": "MEDIUM",
+        "dataStatus": "READY",
+        "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT"
+      },
+      {
+        "id": "offshore-usd-credit",
+        "state": "OFFSHORE_USD_CREDIT_EXPANDING",
+        "confidence": "MEDIUM",
+        "dataStatus": "READY",
+        "availabilityBasis": "PROJECT_ACCEPTED_SNAPSHOT"
+      }
+    ]
+  },
+  "reproducibility": {
+    "freshProcesses": 3,
+    "identicalBytes": true,
+    "identicalHashes": true,
+    "timeZones": [
+      "UTC",
+      "America/Los_Angeles",
+      "Asia/Shanghai"
+    ],
+    "generationTimestampOutsidePayload": true
+  },
+  "sensitivity": {
+    "variants": 9,
+    "selection": "NONE — preregistered grid; no optimization",
+    "unchangedExceptPayloadHashes": true,
+    "changedByScenario": [
+      {
+        "scenario": "bands-0.5_persistence--1",
+        "changedFactorIds": [
+          "supply-chain-pressure"
+        ]
+      },
+      {
+        "scenario": "bands-0.5_persistence-0",
+        "changedFactorIds": []
+      },
+      {
+        "scenario": "bands-0.5_persistence-1",
+        "changedFactorIds": []
+      },
+      {
+        "scenario": "bands-1_persistence--1",
+        "changedFactorIds": []
+      },
+      {
+        "scenario": "bands-1_persistence-0",
+        "changedFactorIds": []
+      },
+      {
+        "scenario": "bands-1_persistence-1",
+        "changedFactorIds": []
+      },
+      {
+        "scenario": "bands-1.5_persistence--1",
+        "changedFactorIds": [
+          "offshore-usd-credit"
+        ]
+      },
+      {
+        "scenario": "bands-1.5_persistence-0",
+        "changedFactorIds": [
+          "offshore-usd-credit"
+        ]
+      },
+      {
+        "scenario": "bands-1.5_persistence-1",
+        "changedFactorIds": [
+          "offshore-usd-credit"
+        ]
+      }
+    ],
+    "runtimeMs": 619.3054589999999
+  },
+  "historical": {
+    "monthlyEndpoints": 660,
+    "sensitivityVariants": 5940,
+    "mode": "CURRENT_VINTAGE_RECONSTRUCTION",
+    "historicalAvailabilityClaim": false,
+    "allChronologyRowsLabeledCorrectly": true,
+    "chronologyAndConfidenceUnchangedExceptPayloadHashes": true,
+    "episodeCoverageAndStateCountsUnchanged": true,
+    "sensitivityStatesUnchangedExceptPayloadHashes": true,
+    "runtimeMs": 145212.42333299998,
+    "episodes": [
+      {
+        "id": "inflation-and-disinflation-1970-1984",
+        "start": "1970-01",
+        "end": "1984-12",
+        "monthlyEvaluations": 180,
+        "factors": [
+          {
+            "factorId": "inflation-persistence",
+            "usableMonthlyAssessments": 180,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "1970-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 120,
+              "LITTLE_CHANGE": 1,
+              "CORE_INFLATION_DECELERATING": 33,
+              "CORE_INFLATION_ACCELERATING": 26
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "observed-productivity",
+            "usableMonthlyAssessments": 180,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "1970-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 50,
+              "OUTPUT_PER_HOUR_GROWING": 112,
+              "OUTPUT_PER_HOUR_CONTRACTING": 18
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "supply-chain-pressure",
+            "usableMonthlyAssessments": 0,
+            "unavailableMonthlyAssessments": 180,
+            "firstUsablePeriod": null,
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 180
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "policy-rate-direction",
+            "usableMonthlyAssessments": 180,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "1970-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 56,
+              "POLICY_RATE_FALLING": 56,
+              "POLICY_RATE_RISING": 68
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "reserve-share",
+            "usableMonthlyAssessments": 0,
+            "unavailableMonthlyAssessments": 180,
+            "firstUsablePeriod": null,
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 180
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "foreign-treasury-holdings",
+            "usableMonthlyAssessments": 0,
+            "unavailableMonthlyAssessments": 180,
+            "firstUsablePeriod": null,
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 180
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "offshore-usd-credit",
+            "usableMonthlyAssessments": 0,
+            "unavailableMonthlyAssessments": 180,
+            "firstUsablePeriod": null,
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 180
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "commodity-cycle-2000-2007",
+        "start": "2000-01",
+        "end": "2007-12",
+        "monthlyEvaluations": 96,
+        "factors": [
+          {
+            "factorId": "inflation-persistence",
+            "usableMonthlyAssessments": 96,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2000-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 93,
+              "LITTLE_CHANGE": 3
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "observed-productivity",
+            "usableMonthlyAssessments": 96,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2000-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "OUTPUT_PER_HOUR_GROWING": 90,
+              "TRANSITION": 6
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "supply-chain-pressure",
+            "usableMonthlyAssessments": 96,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2000-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 82,
+              "LITTLE_CHANGE": 5,
+              "SUPPLY_CHAIN_PRESSURE_FALLING": 4,
+              "SUPPLY_CHAIN_PRESSURE_RISING": 5
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "policy-rate-direction",
+            "usableMonthlyAssessments": 96,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2000-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 18,
+              "POLICY_RATE_RISING": 32,
+              "LITTLE_CHANGE": 28,
+              "POLICY_RATE_FALLING": 18
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "reserve-share",
+            "usableMonthlyAssessments": 67,
+            "unavailableMonthlyAssessments": 29,
+            "firstUsablePeriod": "2002-06-30T23:59:59.999Z",
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 29,
+              "TRANSITION": 30,
+              "USD_RESERVE_SHARE_FALLING": 34,
+              "LITTLE_CHANGE": 3
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "foreign-treasury-holdings",
+            "usableMonthlyAssessments": 0,
+            "unavailableMonthlyAssessments": 96,
+            "firstUsablePeriod": null,
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 96
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "offshore-usd-credit",
+            "usableMonthlyAssessments": 79,
+            "unavailableMonthlyAssessments": 17,
+            "firstUsablePeriod": "2001-06-30T23:59:59.999Z",
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 17,
+              "OFFSHORE_USD_CREDIT_EXPANDING": 61,
+              "TRANSITION": 18
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "financial-crisis-2008-2009",
+        "start": "2008-01",
+        "end": "2009-12",
+        "monthlyEvaluations": 24,
+        "factors": [
+          {
+            "factorId": "inflation-persistence",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2008-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 18,
+              "CORE_INFLATION_DECELERATING": 4,
+              "LITTLE_CHANGE": 1,
+              "CORE_INFLATION_ACCELERATING": 1
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "observed-productivity",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2008-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "OUTPUT_PER_HOUR_GROWING": 18,
+              "TRANSITION": 6
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "supply-chain-pressure",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2008-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 17,
+              "LITTLE_CHANGE": 1,
+              "SUPPLY_CHAIN_PRESSURE_FALLING": 3,
+              "SUPPLY_CHAIN_PRESSURE_RISING": 3
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "policy-rate-direction",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2008-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "POLICY_RATE_FALLING": 10,
+              "TRANSITION": 7,
+              "LITTLE_CHANGE": 7
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "reserve-share",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2008-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "USD_RESERVE_SHARE_FALLING": 11,
+              "TRANSITION": 13
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "foreign-treasury-holdings",
+            "usableMonthlyAssessments": 0,
+            "unavailableMonthlyAssessments": 24,
+            "firstUsablePeriod": null,
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 24
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "offshore-usd-credit",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2008-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "OFFSHORE_USD_CREDIT_EXPANDING": 11,
+              "TRANSITION": 13
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pandemic-2020",
+        "start": "2020-01",
+        "end": "2020-12",
+        "monthlyEvaluations": 12,
+        "factors": [
+          {
+            "factorId": "inflation-persistence",
+            "usableMonthlyAssessments": 12,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2020-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 11,
+              "CORE_INFLATION_DECELERATING": 1
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "observed-productivity",
+            "usableMonthlyAssessments": 12,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2020-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "OUTPUT_PER_HOUR_GROWING": 12
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "supply-chain-pressure",
+            "usableMonthlyAssessments": 12,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2020-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 5,
+              "SUPPLY_CHAIN_PRESSURE_RISING": 3,
+              "SUPPLY_CHAIN_PRESSURE_FALLING": 4
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "policy-rate-direction",
+            "usableMonthlyAssessments": 12,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2020-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "POLICY_RATE_FALLING": 4,
+              "TRANSITION": 3,
+              "LITTLE_CHANGE": 5
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "reserve-share",
+            "usableMonthlyAssessments": 12,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2020-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "USD_RESERVE_SHARE_FALLING": 3,
+              "TRANSITION": 9
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "foreign-treasury-holdings",
+            "usableMonthlyAssessments": 0,
+            "unavailableMonthlyAssessments": 12,
+            "firstUsablePeriod": null,
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 12
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "offshore-usd-credit",
+            "usableMonthlyAssessments": 12,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2020-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 5,
+              "OFFSHORE_USD_CREDIT_EXPANDING": 7
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "inflation-2021-2022",
+        "start": "2021-01",
+        "end": "2022-12",
+        "monthlyEvaluations": 24,
+        "factors": [
+          {
+            "factorId": "inflation-persistence",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2021-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 16,
+              "CORE_INFLATION_ACCELERATING": 8
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "observed-productivity",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2021-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "OUTPUT_PER_HOUR_GROWING": 8,
+              "TRANSITION": 9,
+              "OUTPUT_PER_HOUR_CONTRACTING": 7
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "supply-chain-pressure",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2021-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 9,
+              "SUPPLY_CHAIN_PRESSURE_RISING": 9,
+              "SUPPLY_CHAIN_PRESSURE_FALLING": 6
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "policy-rate-direction",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2021-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "LITTLE_CHANGE": 14,
+              "TRANSITION": 2,
+              "POLICY_RATE_RISING": 8
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "reserve-share",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2021-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "USD_RESERVE_SHARE_FALLING": 20,
+              "TRANSITION": 4
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "foreign-treasury-holdings",
+            "usableMonthlyAssessments": 22,
+            "unavailableMonthlyAssessments": 2,
+            "firstUsablePeriod": "2021-03-31T23:59:59.999Z",
+            "stateCounts": {
+              "INSUFFICIENT_DATA": 2,
+              "TRANSITION": 12,
+              "FOREIGN_TREASURY_HOLDINGS_EXPANDING": 9,
+              "FOREIGN_TREASURY_HOLDINGS_CONTRACTING": 1
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "offshore-usd-credit",
+            "usableMonthlyAssessments": 24,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2021-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "OFFSHORE_USD_CREDIT_EXPANDING": 5,
+              "TRANSITION": 19
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tightening-2022-2024",
+        "start": "2022-01",
+        "end": "2024-12",
+        "monthlyEvaluations": 36,
+        "factors": [
+          {
+            "factorId": "inflation-persistence",
+            "usableMonthlyAssessments": 36,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2022-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "CORE_INFLATION_ACCELERATING": 3,
+              "TRANSITION": 23,
+              "CORE_INFLATION_DECELERATING": 7,
+              "LITTLE_CHANGE": 3
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "observed-productivity",
+            "usableMonthlyAssessments": 36,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2022-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "TRANSITION": 11,
+              "OUTPUT_PER_HOUR_CONTRACTING": 9,
+              "OUTPUT_PER_HOUR_GROWING": 16
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "supply-chain-pressure",
+            "usableMonthlyAssessments": 36,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2022-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "SUPPLY_CHAIN_PRESSURE_RISING": 4,
+              "TRANSITION": 23,
+              "SUPPLY_CHAIN_PRESSURE_FALLING": 9
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "policy-rate-direction",
+            "usableMonthlyAssessments": 36,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2022-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "LITTLE_CHANGE": 11,
+              "TRANSITION": 6,
+              "POLICY_RATE_RISING": 17,
+              "POLICY_RATE_FALLING": 2
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "reserve-share",
+            "usableMonthlyAssessments": 36,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2022-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "USD_RESERVE_SHARE_FALLING": 11,
+              "TRANSITION": 19,
+              "LITTLE_CHANGE": 6
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "foreign-treasury-holdings",
+            "usableMonthlyAssessments": 36,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2022-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "FOREIGN_TREASURY_HOLDINGS_EXPANDING": 16,
+              "TRANSITION": 19,
+              "FOREIGN_TREASURY_HOLDINGS_CONTRACTING": 1
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          },
+          {
+            "factorId": "offshore-usd-credit",
+            "usableMonthlyAssessments": 36,
+            "unavailableMonthlyAssessments": 0,
+            "firstUsablePeriod": "2022-01-31T23:59:59.999Z",
+            "stateCounts": {
+              "OFFSHORE_USD_CREDIT_EXPANDING": 2,
+              "TRANSITION": 34
+            },
+            "limitations": [
+              "Quarterly readings retained at native frequency; monthly evaluations are not independent observations",
+              "Coverage/warmup exclusions retained; no target-answer tuning"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "productionIsolation": {
+    "fiveAuthoritativeFilesUnchanged": true,
+    "productionSourceRoutesUnchanged": true,
+    "workflowsUnchanged": true,
+    "economicSnapshotsUnchanged": true,
+    "notificationSemanticsUnchanged": true,
+    "publicVersion": "1.0.0",
+    "noPrototypeMarkersInBuiltProductionAssets": true,
+    "build": "PASS",
+    "verify": "PASS",
+    "buildWarning": "existing large-chunk warning",
+    "rebase": false,
+    "merge": false,
+    "deploy": false,
+    "productionEmail": false
+  },
+  "implementationHashes": {
+    "alignment.mjs": "d9c7530109a30a255dec17d17fb3857acb1b31e34e1935e963967e254465fa46",
+    "audit.mjs": "49137d175fed8dd669dfc0853c86cb9589b22fe99d401d9b455e6ddac3cfe194",
+    "comparison.mjs": "1d97f388c91589edf35d1392d4ef38b8da2d0f4256e12170afd7de3baf86e8a6",
+    "core.mjs": "f247c749cb9c4448669a808855789c1eb0dd65a06874d4c9bf1cd076ae21eb4d",
+    "engine.mjs": "a3428d80456d69fccd2343477e78d9cd5f8003c84208e13f836de1c7c8e7febb",
+    "metadata.mjs": "5bf45e24e62b983e0c8ca13a0bcda7060955313ef9c8a62bf03566e309641609",
+    "validation.mjs": "f651e09db338696f26fac7a9a7310b927aaa5c740cc9d3ac4c6a592dce543ee2"
+  },
+  "limitations": [
+    "Publisher-vintage archives remain unsupported",
+    "Current-vintage reconstruction is not a real-time backtest",
+    "Frozen provisional methodology remains unchanged",
+    "This is corrective implementation evidence, not an independent final re-review"
+  ]
+}
