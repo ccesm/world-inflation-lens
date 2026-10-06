@@ -1,0 +1,130 @@
+{
+  "files": {
+    "anthro_modes": {
+      "retrievedAt": "2026-10-06T00:27:12Z",
+      "sha256": "d1e264882b17618db4f4a00b6f87f48134222bc5c15eefb3d46aae9519e89d11",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10/automation_vs_augmentation.csv"
+    },
+    "anthro_readme": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "27b0c2df5bb4563e006a208189b8031b5a7cd20110a76ac3486cb19293f7a0ac",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10/README.md"
+    },
+    "anthro_root": {
+      "retrievedAt": "2026-10-06T00:29:49Z",
+      "sha256": "7f3a9c7c8fb2c04c55794810671926466698f171294cd2641075eb7bc403a9f0",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/README.md"
+    },
+    "anthro_task_statements": {
+      "retrievedAt": "2026-10-06T00:27:13Z",
+      "sha256": "82e4c418dc08475ef1263ad1e8c66ffa3357291370cd35ee1065ecea590597ec",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10/onet_task_statements.csv"
+    },
+    "anthro_tasks": {
+      "retrievedAt": "2026-10-06T00:27:13Z",
+      "sha256": "8de89c99f762146c9e46b2202c3501e2a14f11c5b44c61c8007021127b6c676e",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10/onet_task_mappings.csv"
+    },
+    "gpt_full": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "f169a9581462188ae4be77361c3355c443a16d6901df7964a317f3ad060d9f43",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/data/full_onet_data.tsv"
+    },
+    "gpt_license": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "d831db55645e47ca8e491c5a0e37f1ee744d7b10bf5aa8d50146c795ac0176c0",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/LICENSE"
+    },
+    "gpt_occ": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "40c74f53de40aec91c0017d80690cbba915f83a8bb414bcf2f884692f1749acb",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/data/occ_level.csv"
+    },
+    "gpt_readme": {
+      "retrievedAt": "2026-10-06T00:29:49Z",
+      "sha256": "fb8ae66d02142a9b7178d8cbd59b90a6c5bd80bf088107cae126f4276c8d68c6",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/README.md"
+    },
+    "gpt_task": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "094378905e1f3349e50a9a83dc69643a2ef227954d611c8316a46da08cb3d8de",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/data/full_labelset.tsv"
+    },
+    "ms_iwa": {
+      "retrievedAt": "2026-10-06T00:27:13Z",
+      "sha256": "524f718dba31c987f0d04b55d81fac84f95533a143dfb780e04e63fb831abcf2",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/iwa_metrics.csv"
+    },
+    "ms_license": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "7482bb7c074d6d966bb94e54f3393f089d576e8be9dc9e92e239a40a56df8a41",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/LICENSE.txt"
+    },
+    "ms_mapping": {
+      "retrievedAt": "2026-10-06T00:29:49Z",
+      "sha256": "6b4fb16f36f099bbb4dd3ffb99659bbbf791389ceab4d6b23399c7a263f77246",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/soc_to_iwas.csv"
+    },
+    "ms_nonphysical": {
+      "retrievedAt": "2026-10-06T00:29:49Z",
+      "sha256": "42093a295d59e54ae48a23f8075269006b394b231e525ae89b71d9cc170ecd8c",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/soc_iwa_nonphysical_weights.csv"
+    },
+    "ms_physical": {
+      "retrievedAt": "2026-10-06T00:29:49Z",
+      "sha256": "d731c6f7794d87f927359696ae317e69bf642cb19aa227448b114f778408a7d5",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/physical_tasks.csv"
+    },
+    "ms_readme": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "ed76f6402b12b845127cb5a289a02453f0d4f9602afcfdd98ae4c8564cbb9bde",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/README.md"
+    },
+    "ms_scores": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "204c7e6a5ec704156212f88a6282dba7508c8b90e5df7c0d590088b2b44aa7d2",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/ai_applicability_scores.csv"
+    },
+    "ms_socmetrics": {
+      "retrievedAt": "2026-10-06T00:29:49Z",
+      "sha256": "c452eb71acf0cca7cfd236025a124802d148fed6c31f5e1baa342dd7d1babbfa",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/soc_metrics.csv"
+    },
+    "ms_weights": {
+      "retrievedAt": "2026-10-06T00:27:13Z",
+      "sha256": "f6467d16e4af622eca06ce07b3d9b12519998ca9504743e7f08c629592771891",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/soc_iwa_weights.csv"
+    },
+    "onet_legacy": {
+      "retrievedAt": "2026-10-06T00:28:43Z",
+      "sha256": "8f026a33134bfde5770308d1c6117cf70d9dd41c2b3467e6dd271d65bdeecc5a",
+      "url": "https://www.onetcenter.org/taxonomy/2019/walk/2010_to_2019_Crosswalk.csv?fmt=csv"
+    },
+    "onet_license": {
+      "retrievedAt": "2026-10-06T00:26:28Z",
+      "sha256": "7e9d1d0185578cb8f6119afc69efa909904ed2e55727a7772d0cbe03febf53e6",
+      "url": "https://www.onetcenter.org/license_db.html"
+    },
+    "onet_resource_license": {
+      "retrievedAt": "2026-10-06T00:29:49Z",
+      "sha256": "edd4b0a39114aae7996d20d3c65f46938a755c9450c47896064e359e6461a434",
+      "url": "https://www.onetcenter.org/license.html"
+    },
+    "onet_soc_map": {
+      "retrievedAt": "2026-10-06T00:27:59Z",
+      "sha256": "bfc6722a92c2d607e5a99dee88b7826cf5aa91f7c0453182e0c8268e32a20a19",
+      "url": "https://www.onetcenter.org/taxonomy/2019/soc/2019_to_SOC_Crosswalk.xlsx?fmt=xlsx"
+    },
+    "onet_zip": {
+      "retrievedAt": "2026-10-06T00:27:23Z",
+      "sha256": "6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9",
+      "url": "https://www.onetcenter.org/dl_files/database/db_31_0_text.zip"
+    },
+    "soc_census": {
+      "retrievedAt": "2026-10-06T00:26:53Z",
+      "sha256": "ade08af40923266f3a854842e888ca3e93c15b26a147c20a2b12a61f4c4f4077",
+      "url": "https://www2.census.gov/programs-surveys/demo/guidance/industry-occupation/soc_structure_2018.xlsx"
+    }
+  },
+  "note": "Actual capture timestamps; kept outside deterministic methodological outputs"
+}

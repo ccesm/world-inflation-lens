@@ -1,0 +1,17 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"Research occupational crosswalk output envelope; source-specific records are independently validated against pinned licensed artifacts",
+ "type":"object",
+ "required":["contractVersion","scope","kind","interpretationGuardrail","configurationHash","sourceVersions","pinnedInputs","data"],
+ "additionalProperties":false,
+ "properties":{
+  "contractVersion":{"type":"string","enum":["occupational-ai-crosswalk-v1"]},
+  "scope":{"type":"string","enum":["RESEARCH_ONLY"]},
+  "kind":{"type":"string","enum":["methodology-metadata","occupations","crosswalk","current-tasks","current-descriptors","academic-exposure","academic-tasks","platform-applicability","platform-applicability-lineage","observed-usage-context","historical-usage-tasks","methodology-comparison"]},
+  "interpretationGuardrail":{"type":"string","minLength":1},
+  "configurationHash":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+  "sourceVersions":{"type":"object"},
+  "pinnedInputs":{"type":"object"},
+  "data":{"type":"object"}
+ }
+}

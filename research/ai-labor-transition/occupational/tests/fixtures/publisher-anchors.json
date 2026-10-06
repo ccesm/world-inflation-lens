@@ -1,0 +1,68 @@
+{
+  "academic": [
+    {
+      "O*NET-SOC Code": "11-1011.00",
+      "Title": "Chief Executives",
+      "dv_rating_alpha": "0.1",
+      "dv_rating_beta": "0.46",
+      "dv_rating_gamma": "0.8200000000000001",
+      "human_rating_alpha": "0.18",
+      "human_rating_beta": "0.35",
+      "human_rating_gamma": "0.52"
+    },
+    {
+      "O*NET-SOC Code": "11-1011.03",
+      "Title": "Chief Sustainability Officers",
+      "dv_rating_alpha": "0.16666666666666666",
+      "dv_rating_beta": "0.5555555555555556",
+      "dv_rating_gamma": "0.9444444444444444",
+      "human_rating_alpha": "0.05555555555555555",
+      "human_rating_beta": "0.38888888888888884",
+      "human_rating_gamma": "0.7222222222222222"
+    }
+  ],
+  "anthropicModes": [
+    {
+      "interaction_type": "directive",
+      "pct": "22.563272409918948"
+    },
+    {
+      "interaction_type": "feedback loop",
+      "pct": "12.036303266190515"
+    },
+    {
+      "interaction_type": "learning",
+      "pct": "18.917648061953294"
+    },
+    {
+      "interaction_type": "none",
+      "pct": "2.9013020624347967"
+    },
+    {
+      "interaction_type": "task iteration",
+      "pct": "25.47648663831153"
+    },
+    {
+      "interaction_type": "validation",
+      "pct": "2.314220367546746"
+    }
+  ],
+  "microsoft": [
+    {
+      "SOC Code": "11-1011",
+      "ai_applicability_score": "0.155502898114603",
+      "title": "Chief Executives"
+    },
+    {
+      "SOC Code": "11-1021",
+      "ai_applicability_score": "0.10984321957888558",
+      "title": "General and Operations Managers"
+    }
+  ],
+  "note": "Verbatim selected publisher records, not invented anchor scores or current-vintage employment observations",
+  "rawInputHashes": {
+    "anthro_modes": "d1e264882b17618db4f4a00b6f87f48134222bc5c15eefb3d46aae9519e89d11",
+    "gpt_occ": "40c74f53de40aec91c0017d80690cbba915f83a8bb414bcf2f884692f1749acb",
+    "ms_scores": "204c7e6a5ec704156212f88a6282dba7508c8b90e5df7c0d590088b2b44aa7d2"
+  }
+}

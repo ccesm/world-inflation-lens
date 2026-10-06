@@ -1,0 +1,19 @@
+{
+  "artifacts": {
+    "ai-applicability-microsoft-lineage.json.gz": "f654c9dd9cabb9894696c5929bad4d8914c3b0c14afede02af098739b67654b6",
+    "ai-applicability-microsoft.json": "8f77ac5df55f850a7f19665bd983de51223075fa6637086c5352f186065f9c37",
+    "ai-usage-context.json": "67cb0234dafe573651ac1db7a679d79447f6655d3a4a8a09cfb77c5f4c54ab91",
+    "ai-usage-historical-tasks.json.gz": "592ce9f0a3ffa810266cea307a6849d0bd25bf231a6463fbe5dfc996e99aef5b",
+    "exposure-academic-tasks.json.gz": "ee584ad7131355b8305f30a45b81495e7b5e1041c1f2adba3dd155a54972ed94",
+    "exposure-academic.json": "6de6538be9ff02f215ed76fe85b7516bd47cc0fa9420bd8139fd42bd30d59284",
+    "exposure-agreement.json": "4ab3e1448904e167b49c11e916700799162d801b0e3c6192727218250dcfa554",
+    "exposure-methodologies.json": "cbc8f2f918ac13d8f921a5c566f569fb05a1acacc1e28536d8a7ef6fa8985a34",
+    "occupation-crosswalk.json": "b3e775a455a413a1aea9c8d10cffb6156dabeded0ffe87e2935c947c8b365c25",
+    "occupation-descriptors.json.gz": "678dc9f8455c8666486b899bffa5a0c1c0c7202e4d082a9825211f34c5151900",
+    "occupation-tasks.json.gz": "427dc9bc5f919c591abe08537e88b786d91759ad2d976b89de4443b02a38dc4e",
+    "occupations.json": "3d8bf6879ccd745d2658b9a97d678747daedc546ef9bf21d8647e7df7da0c138"
+  },
+  "contractVersion": "occupational-ai-crosswalk-v1",
+  "interpretationGuardrail": "Exposure is not adoption, task automation, job loss or causal AI attribution. Platform usage is not national adoption. Age is not job seniority.",
+  "runtimeExcluded": true
+}

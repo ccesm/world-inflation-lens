@@ -1,0 +1,16 @@
+{
+ "contractId":"occupational-outcomes-design-v1",
+ "status":"DESIGN_ONLY_NOT_EXECUTED",
+ "phase1SummaryCoupling":false,
+ "requiredOccupationKey":["taxonomySystem","taxonomyVersion","fullCode","hierarchyOrReportingLevel"],
+ "requiredOutcomeKey":["publisher","datasetId","datasetVintage","geography","referencePeriod","unit","population","adjustmentBasis"],
+ "futureSources":{
+  "OEWS":{"reference":"annual May vintage","required":["employment","wageDefinition","suppressionCodes","methodsVersion","reportingAggregateCrosswalk"],"employmentWeighting":"Only accepted exact compatible weights; report numerator and missing-weight denominator"},
+  "CPS":{"required":["CensusOccupationCodeVersion","officialSOCConcordanceVersion","personWeights","ageBand","uncertaintyProcedure"],"exactSOCEquivalence":false},
+  "industryOccupation":{"required":["SOCVersion","SOCCode","NAICSVersion","NAICSCode","staffingPatternVintage"],"industryIsExposureProxy":false}
+ },
+ "prohibited":["automaticSplitScoreCloning","implicitMergeScoreAveraging","ageAsSeniority","aggregateJOLTSAsOccupationHiring","correlationAsCausation","currentExposureAsHistoricalAvailabilityProof"],
+ "empiricalControls":["preTrends","industry","education","age","businessCycle","interestRateSensitivity","remoteWork","offshoring","geography","occupationFixedEffects"],
+ "entryLevelPrerequisites":["occupationByAgeOutcomes","actualHiringData","seniorityOrJobPostingEvidenceIfLicensed"],
+ "interpretationGuardrail":"Exposure and descriptive labor outcomes do not establish causal AI displacement."
+}

@@ -1,0 +1,474 @@
+{
+  "contractVersion": "occupational-ai-crosswalk-v1",
+  "files": {
+    "anthro_modes": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY_VERSION_UNSPECIFIED",
+      "modification": true,
+      "provider": "anthropic",
+      "redistribution": true,
+      "sha256": "d1e264882b17618db4f4a00b6f87f48134222bc5c15eefb3d46aae9519e89d11",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10/automation_vs_augmentation.csv"
+    },
+    "anthro_readme": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY_VERSION_UNSPECIFIED",
+      "modification": true,
+      "provider": "anthropic",
+      "redistribution": true,
+      "sha256": "27b0c2df5bb4563e006a208189b8031b5a7cd20110a76ac3486cb19293f7a0ac",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10/README.md"
+    },
+    "anthro_root": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY_VERSION_UNSPECIFIED",
+      "modification": true,
+      "provider": "anthropic",
+      "redistribution": true,
+      "sha256": "7f3a9c7c8fb2c04c55794810671926466698f171294cd2641075eb7bc403a9f0",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/README.md"
+    },
+    "anthro_task_statements": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY_VERSION_UNSPECIFIED",
+      "modification": true,
+      "provider": "anthropic",
+      "redistribution": true,
+      "sha256": "82e4c418dc08475ef1263ad1e8c66ffa3357291370cd35ee1065ecea590597ec",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10/onet_task_statements.csv"
+    },
+    "anthro_tasks": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY_VERSION_UNSPECIFIED",
+      "modification": true,
+      "provider": "anthropic",
+      "redistribution": true,
+      "sha256": "8de89c99f762146c9e46b2202c3501e2a14f11c5b44c61c8007021127b6c676e",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10/onet_task_mappings.csv"
+    },
+    "gpt_full": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "MIT",
+      "modification": true,
+      "provider": "academic",
+      "redistribution": true,
+      "sha256": "f169a9581462188ae4be77361c3355c443a16d6901df7964a317f3ad060d9f43",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/data/full_onet_data.tsv"
+    },
+    "gpt_license": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "MIT",
+      "modification": true,
+      "provider": "academic",
+      "redistribution": true,
+      "sha256": "d831db55645e47ca8e491c5a0e37f1ee744d7b10bf5aa8d50146c795ac0176c0",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/LICENSE"
+    },
+    "gpt_occ": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "MIT",
+      "modification": true,
+      "provider": "academic",
+      "redistribution": true,
+      "sha256": "40c74f53de40aec91c0017d80690cbba915f83a8bb414bcf2f884692f1749acb",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/data/occ_level.csv"
+    },
+    "gpt_readme": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "MIT",
+      "modification": true,
+      "provider": "academic",
+      "redistribution": true,
+      "sha256": "fb8ae66d02142a9b7178d8cbd59b90a6c5bd80bf088107cae126f4276c8d68c6",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/README.md"
+    },
+    "gpt_task": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "MIT",
+      "modification": true,
+      "provider": "academic",
+      "redistribution": true,
+      "sha256": "094378905e1f3349e50a9a83dc69643a2ef227954d611c8316a46da08cb3d8de",
+      "url": "https://raw.githubusercontent.com/openai/GPTs-are-GPTs/0471612fef3cc22b74fb884d27bff9dbd3770582/data/full_labelset.tsv"
+    },
+    "ms_iwa": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "524f718dba31c987f0d04b55d81fac84f95533a143dfb780e04e63fb831abcf2",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/iwa_metrics.csv"
+    },
+    "ms_license": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "7482bb7c074d6d966bb94e54f3393f089d576e8be9dc9e92e239a40a56df8a41",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/LICENSE.txt"
+    },
+    "ms_mapping": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "6b4fb16f36f099bbb4dd3ffb99659bbbf791389ceab4d6b23399c7a263f77246",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/soc_to_iwas.csv"
+    },
+    "ms_nonphysical": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "42093a295d59e54ae48a23f8075269006b394b231e525ae89b71d9cc170ecd8c",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/soc_iwa_nonphysical_weights.csv"
+    },
+    "ms_physical": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "d731c6f7794d87f927359696ae317e69bf642cb19aa227448b114f778408a7d5",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/physical_tasks.csv"
+    },
+    "ms_readme": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "ed76f6402b12b845127cb5a289a02453f0d4f9602afcfdd98ae4c8564cbb9bde",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/README.md"
+    },
+    "ms_scores": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "204c7e6a5ec704156212f88a6282dba7508c8b90e5df7c0d590088b2b44aa7d2",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/ai_applicability_scores.csv"
+    },
+    "ms_socmetrics": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "c452eb71acf0cca7cfd236025a124802d148fed6c31f5e1baa342dd7d1babbfa",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/soc_metrics.csv"
+    },
+    "ms_weights": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "microsoft",
+      "redistribution": true,
+      "sha256": "f6467d16e4af622eca06ce07b3d9b12519998ca9504743e7f08c629592771891",
+      "url": "https://raw.githubusercontent.com/microsoft/working-with-ai/c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe/soc_iwa_weights.csv"
+    },
+    "onet_legacy": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "onet",
+      "redistribution": true,
+      "sha256": "8f026a33134bfde5770308d1c6117cf70d9dd41c2b3467e6dd271d65bdeecc5a",
+      "url": "https://www.onetcenter.org/taxonomy/2019/walk/2010_to_2019_Crosswalk.csv?fmt=csv"
+    },
+    "onet_license": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "onet",
+      "redistribution": true,
+      "sha256": "7e9d1d0185578cb8f6119afc69efa909904ed2e55727a7772d0cbe03febf53e6",
+      "url": "https://www.onetcenter.org/license_db.html"
+    },
+    "onet_resource_license": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "onet",
+      "redistribution": true,
+      "sha256": "edd4b0a39114aae7996d20d3c65f46938a755c9450c47896064e359e6461a434",
+      "url": "https://www.onetcenter.org/license.html"
+    },
+    "onet_soc_map": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "onet",
+      "redistribution": true,
+      "sha256": "bfc6722a92c2d607e5a99dee88b7826cf5aa91f7c0453182e0c8268e32a20a19",
+      "url": "https://www.onetcenter.org/taxonomy/2019/soc/2019_to_SOC_Crosswalk.xlsx?fmt=xlsx"
+    },
+    "onet_zip": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "CC-BY-4.0",
+      "modification": true,
+      "provider": "onet",
+      "redistribution": true,
+      "sha256": "6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9",
+      "url": "https://www.onetcenter.org/dl_files/database/db_31_0_text.zip"
+    },
+    "soc_census": {
+      "attributionRequired": true,
+      "commercialUse": true,
+      "license": "PUBLIC_DOMAIN_US_FEDERAL",
+      "modification": true,
+      "provider": "soc",
+      "redistribution": true,
+      "sha256": "ade08af40923266f3a854842e888ca3e93c15b26a147c20a2b12a61f4c4f4077",
+      "url": "https://www2.census.gov/programs-surveys/demo/guidance/industry-occupation/soc_structure_2018.xlsx"
+    }
+  },
+  "methodologyMetadata": {
+    "anthropic": {
+      "authorsInstitution": "Kunal Handa et al. / Anthropic",
+      "higherMeansMoreExposure": null,
+      "humanValidation": "Clio framework validation in publisher paper; no per-user occupation verification",
+      "interpretation": "Observed platform task-use context and global interaction modes, not exposure, national adoption or occupational automation",
+      "limitations": [
+        "December 2024/January 2025 Free/Pro Claude.ai sample",
+        "Nonrepresentative platform population; not US-only",
+        "Task-text ambiguity and legacy taxonomy splits are retained",
+        "Published interaction shares total 84.209%; no renormalization or headline reconstruction",
+        "Data README explicitly permits CC-BY but does not specify version; MIT card refers to code"
+      ],
+      "llmGenerationInvolved": true,
+      "measurementLevel": "task usage and global interaction categories",
+      "modeledCapability": false,
+      "observedBehavior": true,
+      "publication": "Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations",
+      "publicationDate": "2025-02-10",
+      "scale": "percent of source-classified conversations 0–100",
+      "sourceQuality": "PLATFORM OBSERVATIONAL DATA",
+      "sourceTaxonomy": "Historical O*NET-SOC 2010 code membership verified; exact task database version not supplied",
+      "sourceUrl": "https://www.anthropic.com/news/the-anthropic-economic-index",
+      "targetTaxonomy": "SOC 2018; explicit relations only",
+      "unit": "percent of source-classified conversations 0–100"
+    },
+    "felten": {
+      "authorsInstitution": "Edward Felten, Manav Raj, Robert Seamans",
+      "higherMeansMoreExposure": true,
+      "humanValidation": true,
+      "interpretation": "General AI application/ability overlap, not exclusively LLM exposure",
+      "limitations": [
+        "Deferred: repository has no explicit data license; article CC-BY not assumed to license separately hosted files",
+        "Historical capabilities differ from GenAI task rubric"
+      ],
+      "llmGenerationInvolved": false,
+      "measurementLevel": "ability and occupation",
+      "modeledCapability": true,
+      "observedBehavior": false,
+      "publication": "Occupational, industry, and geographic exposure to artificial intelligence: A novel dataset and its potential uses",
+      "publicationDate": "2021-05-08",
+      "scale": "standardized source AIOE score",
+      "sourceQuality": "PEER-REVIEWED",
+      "sourceTaxonomy": "SOC study vintage; explicit mapping required",
+      "sourceUrl": "https://doi.org/10.1002/smj.3286",
+      "targetTaxonomy": "SOC 2018; explicit relations only",
+      "unit": "standardized source AIOE score"
+    },
+    "gpts_are_gpts": {
+      "authorsInstitution": "Tyna Eloundou, Sam Manning, Pamela Mishkin, Daniel Rock",
+      "higherMeansMoreExposure": true,
+      "humanValidation": true,
+      "interpretation": "Potential same-quality task time savings under explicit LLM/software rubric; not a displacement probability",
+      "limitations": [
+        "Static early-LLM capability vintage",
+        "Subjective human/model classifications",
+        "Adoption, demand expansion and job loss not identified",
+        "Core weight is 2; not time share or current task importance",
+        "Multiple O*NET children remain separate canonical records"
+      ],
+      "llmGenerationInvolved": true,
+      "measurementLevel": "task and native O*NET occupation",
+      "modeledCapability": true,
+      "observedBehavior": false,
+      "publication": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+      "publicationDate": "2023-03-17",
+      "scale": "fraction 0–1",
+      "sourceQuality": "ACADEMIC WORKING PAPER",
+      "sourceTaxonomy": "O*NET-SOC 2019; authors task snapshot 27.1 and rating references 27.2",
+      "sourceUrl": "https://arxiv.org/abs/2303.10130",
+      "targetTaxonomy": "SOC 2018; explicit relations only",
+      "unit": "fraction 0–1"
+    },
+    "ilo": {
+      "authorsInstitution": "Pawel Gmyrek et al. / ILO and NASK",
+      "higherMeansMoreExposure": true,
+      "humanValidation": true,
+      "interpretation": "Task automation potential/exposure gradients; not observed job loss",
+      "limitations": [
+        "Not integrated: no accepted score download plus verified licensed SOC mapping",
+        "Many-to-many ISCO/SOC relations require independent review"
+      ],
+      "llmGenerationInvolved": true,
+      "measurementLevel": "task and ISCO occupation",
+      "modeledCapability": true,
+      "observedBehavior": false,
+      "publication": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure",
+      "publicationDate": "2025-05-20",
+      "scale": "source exposure gradients",
+      "sourceQuality": "INSTITUTIONAL RESEARCH",
+      "sourceTaxonomy": "ISCO-08 / Polish task input",
+      "sourceUrl": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure",
+      "targetTaxonomy": "SOC 2018; explicit relations only",
+      "unit": "source exposure gradients"
+    },
+    "imf": {
+      "authorsInstitution": "Mauro Cazzaniga et al. / IMF",
+      "higherMeansMoreExposure": true,
+      "humanValidation": "Study-specific methodology",
+      "interpretation": "Exposure and complementarity are separate methodological concepts",
+      "limitations": [
+        "Not integrated: no independently cleared pinned occupational data artifact",
+        "AIPI country preparedness is not occupational exposure"
+      ],
+      "llmGenerationInvolved": false,
+      "measurementLevel": "occupation",
+      "modeledCapability": true,
+      "observedBehavior": false,
+      "publication": "Gen-AI: Artificial Intelligence and the Future of Work",
+      "publicationDate": "2024-01-14",
+      "scale": "source-specific indices",
+      "sourceQuality": "INSTITUTIONAL RESEARCH",
+      "sourceTaxonomy": "Study-specific occupational exposure/complementarity inputs",
+      "sourceUrl": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379",
+      "targetTaxonomy": "SOC 2018; explicit relations only",
+      "unit": "source-specific indices"
+    },
+    "microsoft": {
+      "authorsInstitution": "Kiran Tomlinson, Sonia Jaffe, Will Wang, Scott Counts, Siddharth Suri",
+      "higherMeansMoreExposure": null,
+      "humanValidation": "Published validation; platform classification remains model-mediated",
+      "interpretation": "Platform-derived applicability from user-goal and AI-action completion/scope, source IWA weighting; not national adoption or automation",
+      "limitations": [
+        "US Bing Copilot sample January–September 2024",
+        "Selected users/activities, not representative workers",
+        "Seven broad aggregates and five unmapped reporting hybrids retained",
+        "Native percentile population mixes reporting levels",
+        "Nonphysical AI-side definition pinned to v1.1; cannot silently compare prior versions"
+      ],
+      "llmGenerationInvolved": true,
+      "measurementLevel": "IWA and occupation",
+      "modeledCapability": false,
+      "observedBehavior": true,
+      "publication": "Working with AI: Measuring the Applicability of Generative AI to Occupations",
+      "publicationDate": "2025-07-10",
+      "scale": "fraction 0–1",
+      "sourceQuality": "PLATFORM OBSERVATIONAL DATA",
+      "sourceTaxonomy": "Publisher SOC 2018 with mixed OEWS reporting aggregates; accepted exact detailed/broad matches only",
+      "sourceUrl": "https://arxiv.org/abs/2507.07935",
+      "targetTaxonomy": "SOC 2018; explicit relations only",
+      "unit": "fraction 0–1"
+    },
+    "nber_task_framework": {
+      "authorsInstitution": "Erik Brynjolfsson, Tom Mitchell, Daniel Rock",
+      "higherMeansMoreExposure": true,
+      "humanValidation": true,
+      "interpretation": "Historical task-based general machine-learning suitability, not current LLM usage",
+      "limitations": [
+        "Reviewed conceptual benchmark; no additional licensed pinned numeric table accepted",
+        "Do not treat historical machine-learning suitability as current GenAI capability"
+      ],
+      "llmGenerationInvolved": false,
+      "measurementLevel": "task and occupation",
+      "modeledCapability": true,
+      "observedBehavior": false,
+      "publication": "What Can Machines Learn, and What Does It Mean for Occupations and the Economy?",
+      "publicationDate": "2018-05",
+      "scale": "source SML rubric",
+      "sourceQuality": "PEER-REVIEWED",
+      "sourceTaxonomy": "O*NET tasks / suitability-for-machine-learning rubric",
+      "sourceUrl": "https://www.aeaweb.org/articles?id=10.1257/pandp.20181019",
+      "targetTaxonomy": "SOC 2018; explicit relations only",
+      "unit": "source SML rubric"
+    },
+    "stanford": {
+      "authorsInstitution": "Erik Brynjolfsson, Bharat Chandar, Ruyu Chen / Stanford Digital Economy Lab",
+      "higherMeansMoreExposure": null,
+      "humanValidation": "Study-specific controls; not independent exposure validation",
+      "interpretation": "Empirical employment comparator, not a new distributable task backbone",
+      "limitations": [
+        "Deferred: underlying ADP panel not licensed for redistribution",
+        "Public dashboard viewing does not establish raw-data permissions",
+        "Uses academic exposure constructs already reviewed here"
+      ],
+      "llmGenerationInvolved": false,
+      "measurementLevel": "occupation and age",
+      "modeledCapability": false,
+      "observedBehavior": true,
+      "publication": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+      "publicationDate": "2026-08-12",
+      "publicationVintageNote": "Revised 2026-08-12; original working paper published 2025",
+      "scale": "study-specific exposure groups/outcomes",
+      "sourceQuality": "ACADEMIC WORKING PAPER",
+      "sourceTaxonomy": "Study exposure measures and proprietary ADP occupational employment",
+      "sourceUrl": "https://digitaleconomy.stanford.edu/project/indicators/canaries-dashboard/",
+      "targetTaxonomy": "SOC 2018; explicit relations only",
+      "unit": "study-specific exposure groups/outcomes"
+    }
+  },
+  "onetTaxonomy": "O*NET-SOC 2019",
+  "onetVersion": "31.0",
+  "providers": {
+    "academic": {
+      "publisher": "Tyna Eloundou, Sam Manning, Pamela Mishkin and Daniel Rock",
+      "sourceQuality": "ACADEMIC WORKING PAPER",
+      "version": "0471612fef3cc22b74fb884d27bff9dbd3770582"
+    },
+    "anthropic": {
+      "publisher": "Anthropic Economic Index / Kunal Handa et al.",
+      "sourceQuality": "PLATFORM OBSERVATIONAL DATA",
+      "version": "4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6/release_2025_02_10"
+    },
+    "microsoft": {
+      "publisher": "Kiran Tomlinson, Sonia Jaffe, Will Wang, Scott Counts and Siddharth Suri / Microsoft Research",
+      "sourceQuality": "PLATFORM OBSERVATIONAL DATA",
+      "version": "c94a07c52fb1d88ca5d221388f06d10e1bd6d2fe"
+    },
+    "onet": {
+      "publisher": "U.S. Department of Labor, Employment and Training Administration / National Center for O*NET Development",
+      "sourceQuality": "OFFICIAL PUBLIC DATA",
+      "version": "31.0 / August 2026 / O*NET-SOC 2019"
+    },
+    "soc": {
+      "publisher": "U.S. Bureau of Labor Statistics / OMB; official Census-hosted copy",
+      "sourceQuality": "OFFICIAL PUBLIC DATA",
+      "version": "SOC 2018 final November 2017"
+    }
+  },
+  "socVersion": "2018"
+}

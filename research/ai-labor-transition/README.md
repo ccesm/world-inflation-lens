@@ -63,3 +63,38 @@ Read [the methodology and limitations](../../docs/AI_LABOR_MARKET_PIPELINE.md), 
 ## Interpretation boundary
 
 Observed changes may reflect the business cycle, interest rates, industry demand, post-pandemic normalization, offshoring, restructuring, demographics, AI adoption or other technology. They are not labeled AI-driven. BTOS expected use is a reported expectation, not observed future adoption. This phase cannot measure true entry-level hiring or occupational AI exposure.
+
+## Phase 2 — separate occupational AI exposure crosswalk
+
+Phase 2 is under `occupational/`, with its own pinned sources, accepted configurations/vintages, schemas, scripts and tests. It adds occupational research files to `normalized/` but **does not alter or join into Phase 1's monthly summary**. No production source imports either pipeline.
+
+```sh
+# Offline normalization from the checked-in licensed raw archive.
+python3 research/ai-labor-transition/occupational/scripts/cli.py normalize
+
+# Independently reparse raw inputs and validate all 12 deterministic views,
+# their schema/provenance, native task aggregation and output manifest.
+python3 research/ai-labor-transition/occupational/scripts/cli.py validate
+
+# Explicit live refresh of the selected pinned versions; no credentials.
+python3 research/ai-labor-transition/occupational/scripts/cli.py refresh
+
+# One provider can be refreshed independently.
+python3 research/ai-labor-transition/occupational/scripts/cli.py refresh --providers academic
+
+# Offline Phase 2 tests (separate from Phase 1 discovery).
+python3 -m unittest discover -s research/ai-labor-transition/occupational/tests -v
+
+# Isolated live qualification in a temporary directory.
+python3 research/ai-labor-transition/occupational/tests/live_integration.py
+```
+
+CLI `--root` selects an independent source/accepted archive; `--output` selects a separate research output directory. Network is required only for `refresh`/live qualification. Exit `2` exposes source failures/unavailability/license/version mismatch while other accepted sources remain usable; unexpected core errors exit `1`. Repeated offline normalization produces the same canonical methodology payload; health runtime metadata may differ.
+
+Versions are deliberately pinned: SOC 2018, O*NET 31.0 with O*NET-SOC 2019, explicit legacy O*NET-SOC 2010 mappings, and immutable publisher repository commits for the academic/Microsoft/Anthropic releases. `occupational/config/sources.json` is the retrieval inventory with exact URLs, hashes and permissions. A changed upstream body fails the expected hash; it is not silently adopted. Updating a source requires a reviewed registry/version/methodology change and new validation, not editing archived bytes.
+
+The archived academic annotations are separate from the current O*NET task text. Native academic measures remain separate records when several O*NET occupations map to one SOC occupation. Microsoft applicability is a platform-derived construct. Anthropic conversation/task use is context, not exposure or national adoption. No split or merge clones/averages scores. Broad/hybrid reporting rows and ambiguous text links remain inspectable.
+
+Redistribution is limited to accepted public federal/CC-BY/MIT inputs with attribution. See [license notices](occupational/sources/ATTRIBUTION.md). ILO/IMF numerical SOC mapping, Felten repository data and proprietary ADP are deferred; do not copy them into this repository without the recorded prerequisites. No confidential conversations are included.
+
+Read [Phase 2 methodology](../../docs/AI_OCCUPATIONAL_EXPOSURE_CROSSWALK.md), [qualification](occupational/qualification.md) and [fixture notes](occupational/tests/fixtures/README.md). Next-phase occupational outcomes must have their own accepted data vintage and join contract; aggregate age-band weakness does not demonstrate AI-caused entry-level displacement.

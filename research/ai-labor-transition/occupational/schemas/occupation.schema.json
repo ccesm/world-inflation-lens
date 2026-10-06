@@ -1,0 +1,19 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"Canonical SOC occupation; native exposure references stay separate",
+ "type":"object","additionalProperties":false,
+ "required":["socCode","socVersion","title","hierarchyLevel","parentCode","taxonomy","taxonomyReleaseYear","onet","exposureStatus","exposureMeasures","augmentationMeasures","automationMeasures","complementarityMeasures","observedUsageMeasures","missingMeasureMeaning","provenance"],
+ "properties":{
+  "socCode":{"type":"string","pattern":"^[0-9]{2}-[0-9]{4}$"},
+  "socVersion":{"type":"string","enum":["2018"]},
+  "title":{"type":"string","minLength":1},
+  "hierarchyLevel":{"type":"string","enum":["major","minor","broad","detailed"]},
+  "parentCode":{"type":["string","null"]},
+  "taxonomy":{"type":"object"},
+  "taxonomyReleaseYear":{"type":"integer","enum":[2018]},
+  "onet":{"type":"object","required":["version","taxonomyVersion","relations"],"additionalProperties":false,"properties":{"version":{"type":"string","enum":["31.0"]},"taxonomyVersion":{"type":"string","enum":["O*NET-SOC 2019"]},"relations":{"type":"array","items":{"type":"object"}}}},
+  "exposureStatus":{"type":"string","enum":["AVAILABLE_SOURCE_RECORDS","UNAVAILABLE"]},
+  "exposureMeasures":{"type":"object"},"augmentationMeasures":{"type":"object"},"automationMeasures":{"type":"object"},"complementarityMeasures":{"type":"object"},"observedUsageMeasures":{"type":"object"},
+  "missingMeasureMeaning":{"type":"string","minLength":1},"provenance":{"type":"object"}
+ }
+}
