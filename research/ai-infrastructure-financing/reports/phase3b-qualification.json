@@ -1,0 +1,1061 @@
+{
+  "implementationVersion": "ai-infrastructure-financing-phase3b-v0.1.0",
+  "baseBranch": "codex/ai-infrastructure-financing-foundation",
+  "baseSha": "81b546b847e39b0314a61cbad357a62a9495a18c",
+  "branch": "codex/ai-infrastructure-financing-phase3b",
+  "implementationSha": "5c9ab3540207484f6b3ec34c4fd78b8b84cfe128",
+  "finalSha": null,
+  "finalShaResolution": "Resolve the report-containing commit from origin/codex/ai-infrastructure-financing-phase3b. Its SHA is recorded in the delivery response; a commit cannot embed its own SHA.",
+  "qualifiedAsOf": "2026-10-07",
+  "productionMainObserved": "be9dde341cfb32a53b7a3fca76e04d631a926bcd",
+  "rawSources": {
+    "registered": 30,
+    "primarySourceRecords": 27,
+    "secondarySourceRecords": 3,
+    "archived": 21,
+    "archivedPrimary": 20,
+    "archivedSecondary": 1,
+    "archivedBytes": 10917294,
+    "hashMatches": 21,
+    "archiveObjectsCommitted": false,
+    "cacheEnvironment": "WIL_AI_INFRA_CACHE",
+    "defaultCache": "~/Public/wil-ai-infrastructure-cache",
+    "layout": "objects/<sha-prefix>/<sha256>",
+    "sourceRecords": [
+      {
+        "sourceId": "brookings-article",
+        "sourceType": "SECONDARY_RESEARCH",
+        "primaryOrSecondary": "SECONDARY",
+        "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "brookings-paper",
+        "sourceType": "SECONDARY_RESEARCH",
+        "primaryOrSecondary": "SECONDARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": "bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4",
+        "byteSize": 991052
+      },
+      {
+        "sourceId": "meta-jv",
+        "sourceType": "PRIMARY_TRANSACTION",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "UNQUALIFIED",
+        "retrievalStatus": "ACCESS_BLOCKED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "meta-2025k",
+        "sourceType": "PRIMARY_ACCOUNTING",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+        "retrievalStatus": "ACCESS_BLOCKED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "meta-2026q2",
+        "sourceType": "PRIMARY_ACCOUNTING",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+        "retrievalStatus": "ACCESS_BLOCKED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "cc-pimco",
+        "sourceType": "PRIMARY_TRANSACTION",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "bf5d7ba6ad5abb85e13d61504b73da27806aad0422b04ebcdd146fc9a4d2f65e",
+        "byteSize": 247566
+      },
+      {
+        "sourceId": "meta-engineering",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "c93b2e23bd2c3cfcadb5fb98deb417c1623c67407237343086dea2f325b47076",
+        "byteSize": 133318
+      },
+      {
+        "sourceId": "meta-expansion",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "eeab6bdf49ccf9875114d30a14cf7118aacb41675c7a287c476cd417d439f1ff",
+        "byteSize": 383724
+      },
+      {
+        "sourceId": "entergy-substation",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "bd22659bb91eacb932cc45fb7790bf80c69b8f9e14ea9774c43f8fb23c5057d1",
+        "byteSize": 99505
+      },
+      {
+        "sourceId": "entergy-approval",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "ac56b7876c50ca14992b17631876686728e64ffd634d113bd0a8f5957a8c432a",
+        "byteSize": 102738
+      },
+      {
+        "sourceId": "entergy-expansion",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "4ee950b702576c79b41fb6600434948e0ed81bdb73c2f2e5f7d612b0fa00baea",
+        "byteSize": 107499
+      },
+      {
+        "sourceId": "sp-webinar",
+        "sourceType": "SECONDARY_RESEARCH",
+        "primaryOrSecondary": "SECONDARY",
+        "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+        "retrievalStatus": "ACCESS_BLOCKED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "meta-jv-pdf",
+        "sourceType": "PRIMARY_TRANSACTION",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": "5dca08e7eee961316ccea1149c785b72951bc0e1744cc7038a0cfa18f7192b61",
+        "byteSize": 100543
+      },
+      {
+        "sourceId": "laidley-letter",
+        "sourceType": "PRIMARY_REGULATORY",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "UNQUALIFIED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "entergy-reply",
+        "sourceType": "PRIMARY_REGULATORY",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": "d79e563d94438ad86adbfecdfa5d6d8a8b0a3a0cbd3790b9cd8d302e39af9fa3",
+        "byteSize": 2306971
+      },
+      {
+        "sourceId": "fairwater-build",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "bfb2f61bdb6537896e89b27218f941c305178558da12eacc80d999af1b25c3f4",
+        "byteSize": 144731
+      },
+      {
+        "sourceId": "fairwater-investment",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "b68194156766ac5ccbeb0e042f4972d8842af5e7ebd412e91234fdcb010d0e76",
+        "byteSize": 169596
+      },
+      {
+        "sourceId": "fairwater-tid",
+        "sourceType": "PRIMARY_REGULATORY",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": "2414d4045470bd1823751a35043a0348e48e0894f11ebad0aad1130e1e1e1a2f",
+        "byteSize": 392198
+      },
+      {
+        "sourceId": "fairwater-land",
+        "sourceType": "PRIMARY_REGULATORY",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": "df567f13c01ac56549dd106943c2334613e0d62c4bd07a4135994aaab81bf212",
+        "byteSize": 113995
+      },
+      {
+        "sourceId": "fairwater-current",
+        "sourceType": "PRIMARY_REGULATORY",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "065274437ddd5133e8911a8d47ce882d10638af5ae190e45f74e3b88ebe6bc93",
+        "byteSize": 122706
+      },
+      {
+        "sourceId": "pf1-2025q1",
+        "sourceType": "PRIMARY_ACCOUNTING",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "2b8105eb29244dc416082fbd94dc7f63ed514be5fff37b0d1665250a60188b53",
+        "byteSize": 1392279
+      },
+      {
+        "sourceId": "pf1-2025q2",
+        "sourceType": "PRIMARY_ACCOUNTING",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": "2b8d3175a389a884d23c34ec96b289e252baf101ab2338388a91aa3f6a26d7fe",
+        "byteSize": 599490
+      },
+      {
+        "sourceId": "pf1-2026release",
+        "sourceType": "PRIMARY_ACCOUNTING",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "23e2360ad4415bbd56f2e696090cf2e36b3b64bf291aaf707fcd4431da45db45",
+        "byteSize": 485049
+      },
+      {
+        "sourceId": "pf1-presentation",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "UNQUALIFIED",
+        "retrievalStatus": "ACCESS_BLOCKED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "pf1-rfs",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "UNQUALIFIED",
+        "retrievalStatus": "ACCESS_BLOCKED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "pf1-current",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+        "retrievalStatus": "ACCESS_BLOCKED",
+        "SHA256": null,
+        "byteSize": 0
+      },
+      {
+        "sourceId": "lpsc-order",
+        "sourceType": "PRIMARY_REGULATORY",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "REVIEW_REQUIRED",
+        "SHA256": "9185ef7e4130785574b53f0a0cff7216390428399d2aaac0265eebb7da838aaf",
+        "byteSize": 2456110
+      },
+      {
+        "sourceId": "fairwater-online",
+        "sourceType": "PRIMARY_PROJECT",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "5d4fcbaad417ead3fca5ab44272bfc5a4f46f805ba3182c06b4e21e9d13bab02",
+        "byteSize": 195353
+      },
+      {
+        "sourceId": "pf1-initial-leases",
+        "sourceType": "PRIMARY_TRANSACTION",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "c18bd6a600e0cf8b5440c8c1b712361152fac32db81c25bcaee503a9eae3bfe8",
+        "byteSize": 19770
+      },
+      {
+        "sourceId": "pf1-macquarie",
+        "sourceType": "PRIMARY_TRANSACTION",
+        "primaryOrSecondary": "PRIMARY",
+        "qualificationStatus": "ARCHIVED_REVIEWED",
+        "retrievalStatus": "CONTENT_VALIDATED",
+        "SHA256": "271eabba21da46526d40eaa05d9e0ce4cf33aad9f465aaf81c553f0ea00e3965",
+        "byteSize": 353101
+      }
+    ]
+  },
+  "hyperion": {
+    "scopeDefinitions": [
+      {
+        "scopeId": "hyperion-asset",
+        "caseId": "hyperion",
+        "definition": "Campus identity umbrella; not a harmonized MW denominator",
+        "entityId": "hyperion-jv",
+        "period": null,
+        "sourceIds": [
+          "meta-jv-pdf"
+        ],
+        "comparableTo": [],
+        "notComparableTo": [],
+        "notes": "No cross-scope total; comparisons require explicit compatibility."
+      },
+      {
+        "scopeId": "hyperion-jv-original",
+        "caseId": "hyperion",
+        "definition": "Original JV buildings and long-lived power/cooling/connectivity; no GPU allocation",
+        "entityId": "hyperion-jv",
+        "period": "2025-10",
+        "sourceIds": [
+          "meta-jv-pdf"
+        ],
+        "comparableTo": [],
+        "notComparableTo": [
+          "hyperion-expansion"
+        ],
+        "notes": "No cross-scope total; comparisons require explicit compatibility."
+      },
+      {
+        "scopeId": "hyperion-financing-original",
+        "caseId": "hyperion",
+        "definition": "Original private securities transaction / rating description",
+        "entityId": "beignet-investor",
+        "period": "2025-10",
+        "sourceIds": [
+          "cc-pimco",
+          "sp-webinar"
+        ],
+        "comparableTo": [],
+        "notComparableTo": [
+          "hyperion-expansion"
+        ],
+        "notes": "No cross-scope total; comparisons require explicit compatibility."
+      },
+      {
+        "scopeId": "hyperion-expansion",
+        "caseId": "hyperion",
+        "definition": "Later Louisiana regional investment and planned scalable campus; exact overlap unresolved",
+        "entityId": "meta",
+        "period": "2026-07",
+        "sourceIds": [
+          "meta-expansion"
+        ],
+        "comparableTo": [],
+        "notComparableTo": [
+          "hyperion-jv-original",
+          "hyperion-financing-original"
+        ],
+        "notes": "No cross-scope total; comparisons require explicit compatibility."
+      },
+      {
+        "scopeId": "hyperion-grid-original",
+        "caseId": "hyperion",
+        "definition": "2025 utility generation/transmission approval and customer service agreements",
+        "entityId": "entergy-la",
+        "period": "2025-08",
+        "sourceIds": [
+          "lpsc-order"
+        ],
+        "comparableTo": [],
+        "notComparableTo": [
+          "hyperion-grid-expanded"
+        ],
+        "notes": "No cross-scope total; comparisons require explicit compatibility."
+      },
+      {
+        "scopeId": "hyperion-grid-expanded",
+        "caseId": "hyperion",
+        "definition": "Later utility system generation/transmission plans; not campus IT load",
+        "entityId": "entergy-la",
+        "period": "2026-03",
+        "sourceIds": [
+          "entergy-expansion"
+        ],
+        "comparableTo": [],
+        "notComparableTo": [
+          "hyperion-grid-original"
+        ],
+        "notes": "No cross-scope total; comparisons require explicit compatibility."
+      },
+      {
+        "scopeId": "hyperion-accounting-2025",
+        "caseId": "hyperion",
+        "definition": "Meta venture-specific reporting snapshot; nonconsolidated VIE exposure",
+        "entityId": "meta",
+        "period": "2025-12-31",
+        "sourceIds": [
+          "meta-2025k"
+        ],
+        "comparableTo": [],
+        "notComparableTo": [],
+        "notes": "No cross-scope total; comparisons require explicit compatibility."
+      },
+      {
+        "scopeId": "hyperion-accounting-2026",
+        "caseId": "hyperion",
+        "definition": "Meta venture-specific reporting snapshot; nonconsolidated VIE exposure",
+        "entityId": "meta",
+        "period": "2026-06-30",
+        "sourceIds": [
+          "meta-2026q2"
+        ],
+        "comparableTo": [],
+        "notComparableTo": [],
+        "notes": "No cross-scope total; comparisons require explicit compatibility."
+      }
+    ],
+    "headlineValues": [
+      {
+        "claimId": "hyperion:cost",
+        "value": 27,
+        "unit": "USD_BILLION",
+        "operator": "EQ",
+        "scopeId": "hyperion-jv-original",
+        "entityId": "hyperion-jv",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "PROJECT_ESTIMATE",
+        "effectiveDate": "2025-10-21",
+        "sourceIds": [
+          "meta-jv-pdf"
+        ],
+        "definition": "Approximate JV development estimate, buildings and long-lived infrastructure"
+      },
+      {
+        "claimId": "hyperion:regional-plan",
+        "value": 50,
+        "unit": "USD_BILLION",
+        "operator": "GT",
+        "scopeId": "hyperion-expansion",
+        "entityId": "meta",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "MANAGEMENT_GUIDANCE",
+        "effectiveDate": "2026-07-13",
+        "sourceIds": [
+          "meta-expansion"
+        ],
+        "definition": "More than50bn regional plan; lower bound, not project realized spending"
+      },
+      {
+        "claimId": "hyperion:financed-capacity",
+        "value": 2.064,
+        "unit": "GW",
+        "operator": "EQ",
+        "scopeId": "hyperion-financing-original",
+        "entityId": "beignet-investor",
+        "evidenceClass": "SECONDARY_ONLY",
+        "observedOrEstimated": "SECONDARY_ESTIMATE",
+        "effectiveDate": "2025-10-23",
+        "sourceIds": [
+          "sp-webinar"
+        ],
+        "definition": "Rating-related scope; native load definition unresolved"
+      },
+      {
+        "claimId": "hyperion:planned-capacity",
+        "value": 5,
+        "unit": "GW",
+        "operator": "EQ",
+        "scopeId": "hyperion-expansion",
+        "entityId": "meta",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "MANAGEMENT_GUIDANCE",
+        "effectiveDate": "2026-07-13",
+        "sourceIds": [
+          "meta-expansion"
+        ],
+        "definition": "Campus scalability plan, not operational capacity"
+      }
+    ],
+    "fourHeadlineValuesDirectlyComparable": false,
+    "legalTitleHolder": "UNAVAILABLE; Laidley is primary-supported dated developer/customer, not proven post-JV title holder",
+    "jvLegalEntity": "Project Beignet Holdings LLC: SECONDARY_ONLY; issuer umbrella JV is primary-supported",
+    "borrowerOrIssuer": "Beignet Investor LLC: SECONDARY_ONLY; participant adviser verifies transaction principal but not legal issuer chain",
+    "debtPrincipal": {
+      "claimId": "hyperion:offering",
+      "value": 27.3,
+      "unit": "USD_BILLION",
+      "operator": "EQ",
+      "scopeId": "hyperion-financing-original",
+      "entityId": null,
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "TRANSACTION_VALUE",
+      "effectiveDate": "2025-10-27",
+      "sourceIds": [
+        "cc-pimco"
+      ],
+      "definition": "Private securities offering principal reported by participant adviser, not project cost; legal issuer not primary-verified"
+    },
+    "unavailableDebtTerms": [
+      "maturity",
+      "coupon",
+      "yield",
+      "security",
+      "collateral",
+      "recourse",
+      "ranking",
+      "amortization",
+      "precise issuance date",
+      "qualified use of proceeds"
+    ],
+    "equity": {
+      "metaPercent": 20,
+      "managedFundsPercent": 80,
+      "fundManagerIsNotLegalOwner": true
+    },
+    "lease": {
+      "counterparty": "venture/property-lessor umbrella; exact legal lessor subsidiary UNAVAILABLE",
+      "beginningYear": 2029,
+      "initialTermYears": 4,
+      "optionalTotalTermYears": 20,
+      "initialCommitmentUSD_BILLION": 12.31,
+      "classification": "FUTURE_OPERATING_LEASE_COMMENCEMENT",
+      "currentRecognizedProjectLeaseLiability": "UNAVAILABLE; do not equate future commitments with current debt",
+      "paymentSchedule": "UNAVAILABLE"
+    },
+    "residualValueSupport": {
+      "aggregateDecliningThresholdUSD_BILLION": 28,
+      "trigger": "Termination/nonrenewal plus other conditions; fair-value shortfall against property threshold",
+      "recognition": "NO_LIABILITY_RECORDED_PAYMENTS_NOT_PROBABLE",
+      "guaranteeIsNotExpectedLoss": true,
+      "exactPropertySchedule": "UNAVAILABLE"
+    },
+    "accountingVersions": [
+      {
+        "claimId": "hyperion:equity-2025",
+        "value": 1.83,
+        "unit": "USD_BILLION",
+        "operator": "EQ",
+        "scopeId": "hyperion-accounting-2025",
+        "entityId": "meta",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "OBSERVED_REPORTED",
+        "effectiveDate": "2025-12-31",
+        "sourceIds": [
+          "meta-2025k"
+        ],
+        "definition": "Equity-method investment carrying value"
+      },
+      {
+        "claimId": "hyperion:maximum-exposure-2025",
+        "value": 45.95,
+        "unit": "USD_BILLION",
+        "operator": "EQ",
+        "scopeId": "hyperion-accounting-2025",
+        "entityId": "meta",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "OBSERVED_REPORTED",
+        "effectiveDate": "2025-12-31",
+        "sourceIds": [
+          "meta-2025k"
+        ],
+        "definition": "Issuer maximum exposure includes equity, leases, estimated fundings and RVG; not debt or expected loss"
+      },
+      {
+        "claimId": "hyperion:treatment-2025",
+        "value": "UNCONSOLIDATED_VIE_EQUITY_METHOD",
+        "unit": "TEXT",
+        "operator": "EQ",
+        "scopeId": "hyperion-accounting-2025",
+        "entityId": "meta",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "OBSERVED_REPORTED",
+        "effectiveDate": "2025-12-31",
+        "sourceIds": [
+          "meta-2025k"
+        ],
+        "definition": "Issuer not primary beneficiary; not an inference about legal debt recourse"
+      },
+      {
+        "claimId": "hyperion:equity-2026",
+        "value": 2.92,
+        "unit": "USD_BILLION",
+        "operator": "EQ",
+        "scopeId": "hyperion-accounting-2026",
+        "entityId": "meta",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "OBSERVED_REPORTED",
+        "effectiveDate": "2026-06-30",
+        "sourceIds": [
+          "meta-2026q2"
+        ],
+        "definition": "Equity-method investment carrying value"
+      },
+      {
+        "claimId": "hyperion:maximum-exposure-2026",
+        "value": 46.03,
+        "unit": "USD_BILLION",
+        "operator": "EQ",
+        "scopeId": "hyperion-accounting-2026",
+        "entityId": "meta",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "OBSERVED_REPORTED",
+        "effectiveDate": "2026-06-30",
+        "sourceIds": [
+          "meta-2026q2"
+        ],
+        "definition": "Issuer maximum exposure includes equity, leases, estimated fundings and RVG; not debt or expected loss"
+      },
+      {
+        "claimId": "hyperion:treatment-2026",
+        "value": "UNCONSOLIDATED_VIE_EQUITY_METHOD",
+        "unit": "TEXT",
+        "operator": "EQ",
+        "scopeId": "hyperion-accounting-2026",
+        "entityId": "meta",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "observedOrEstimated": "OBSERVED_REPORTED",
+        "effectiveDate": "2026-06-30",
+        "sourceIds": [
+          "meta-2026q2"
+        ],
+        "definition": "Issuer not primary beneficiary; not an inference about legal debt recourse"
+      }
+    ],
+    "power": {
+      "counterparties": [
+        "Entergy Louisiana LLC",
+        "Laidley LLC (dated regulator customer)"
+      ],
+      "originalApproval": "LPSC U37425 order Aug29,2025; subject to conditions; does not approve later expanded plan",
+      "expandedGeneration": ">5200MW across7 planned gas plants, not IT load",
+      "expandedTransmission": "240miles planned",
+      "renewableOption": "up to2500MW; not operational",
+      "costRecovery": "CIAC offsets specified transmission plant-in-service costs; confidential remaining terms not obtained",
+      "utilityCapitalNotIncludedInProjectCost": true,
+      "projectPowerInvestmentDollarTotal": null
+    },
+    "unresolvedHigh": [
+      {
+        "id": "HYPERION_LEGAL_DEBT",
+        "caseId": "hyperion",
+        "fields": [
+          "post-JV registered property owner",
+          "primary-verified JV/issuer legal chain",
+          "security documents",
+          "coupon",
+          "maturity",
+          "recourse",
+          "collateral",
+          "ranking",
+          "amortization"
+        ],
+        "status": "UNAVAILABLE_OR_SECONDARY_ONLY",
+        "implication": "No legal-debt, hidden leverage or project-return conclusion; obtain primary transaction documents before instrument-level panel qualification."
+      },
+      {
+        "id": "RAW_VINTAGE_GAPS",
+        "caseId": null,
+        "fields": [
+          "Meta2025K raw publisher response",
+          "Meta2026Q2 raw publisher response",
+          "PF1 October2 capacity release raw publisher response"
+        ],
+        "status": "WEB_REVIEWED_NOT_ARCHIVED",
+        "implication": "Live source claims have locators but exact raw-vintage replay is incomplete; source status and null hashes retained."
+      },
+      {
+        "id": "POWER_CONTRACT_GAPS",
+        "caseId": "hyperion",
+        "fields": [
+          "confidential customer agreements",
+          "parent guarantee terms",
+          "full service duration",
+          "project-specific cost allocation",
+          "expanded plan approvals"
+        ],
+        "status": "UNAVAILABLE_OR_PARTIAL",
+        "implication": "Public regulatory order improves evidence but does not qualify all utility liabilities or future customer rate effects."
+      },
+      {
+        "id": "PROJECT_ACCOUNTING_ALLOCATION",
+        "caseId": null,
+        "fields": [
+          "Fairwater exact deed/title chain and site PP&E",
+          "PF1 registered property title/utility contracts",
+          "project-attributable invested capital and operating cash flows"
+        ],
+        "status": "UNAVAILABLE_OR_PRIMARY_PARTIAL",
+        "implication": "Structural case comparison is qualified with gaps; project balance-sheet reconciliation or returns are not."
+      }
+    ],
+    "unresolvedMedium": [
+      {
+        "id": "NATIVE_CAPACITY",
+        "caseId": "hyperion",
+        "status": "SECONDARY_ONLY",
+        "detail": "2.064GW native load definition is unresolved; do not convert into the5GW campus plan denominator."
+      },
+      {
+        "id": "EXTERNAL_RETENTION",
+        "caseId": null,
+        "status": "LOCAL_CACHE_VERIFIED",
+        "detail": "Objects and receipts require external backup for durable recovery; local content addressing alone is not an offsite archival guarantee."
+      }
+    ]
+  },
+  "selection": {
+    "screening": {
+      "dimensions": [
+        "primarySourceAvailability",
+        "legalEntityVisibility",
+        "assetSpecificity",
+        "financingVisibility",
+        "leaseVisibility",
+        "powerVisibility",
+        "accountingVisibility",
+        "scopeClarity"
+      ],
+      "scale": {
+        "0": "not identified in screening",
+        "1": "partial/context",
+        "2": "direct primary evidence"
+      },
+      "gate": "At least direct primary asset/developer evidence and independently documented funding/contract structure; no unresolved missingness concealed. MW/title-ledger exactness may remain unavailable.",
+      "candidates": [
+        {
+          "caseId": "fairwater",
+          "archetype": "CORPORATE_OWNED",
+          "scores": [
+            2,
+            1,
+            2,
+            1,
+            0,
+            2,
+            1,
+            2
+          ],
+          "sourceIds": [
+            "fairwater-build",
+            "fairwater-tid",
+            "fairwater-investment"
+          ],
+          "selected": true,
+          "reason": "Specific site, government acquisition/development trail, company funding and power statement; title/PP&E allocation remains explicit gap."
+        },
+        {
+          "caseId": "aws-madison",
+          "archetype": "CORPORATE_OWNED",
+          "scores": [
+            2,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "sourceUrls": [
+            "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi"
+          ],
+          "selected": false,
+          "reason": "Primary announced two-campus program, less site/legal specificity than Fairwater in this bounded screening; not a finding that sources do not exist."
+        },
+        {
+          "caseId": "google-texas",
+          "archetype": "CORPORATE_OWNED",
+          "scores": [
+            2,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "sourceUrls": [
+            "https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/"
+          ],
+          "selected": false,
+          "reason": "40bn multiyear multi-campus program; unsuitable site-cost denominator. Not exhaustively researched."
+        },
+        {
+          "caseId": "polaris-forge-1",
+          "archetype": "DEVELOPER_LEASE_FINANCED",
+          "scores": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            2,
+            2
+          ],
+          "sourceIds": [
+            "pf1-2025q1",
+            "pf1-2025q2",
+            "pf1-2026release"
+          ],
+          "selected": true,
+          "reason": "Issuer filings identify lessors, tenant, subsidiary notes and guarantees with separate scopes; site utility remains gap."
+        },
+        {
+          "caseId": "digital-realty-oracle",
+          "archetype": "DEVELOPER_LEASE_FINANCED",
+          "scores": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "sourceUrls": [
+            "https://www.digitalrealty.com/about/newsroom/press-releases/123332/digital-realty-teams-with-oracle-solution-centers-to-help-organizations-accelerate-ai-and-cloud-innovation"
+          ],
+          "selected": false,
+          "reason": "Official collaboration does not identify a site-specific financing/lease contract. Does not qualify this case."
+        }
+      ]
+    },
+    "selectedCases": [
+      "fairwater",
+      "polaris-forge-1"
+    ],
+    "rejectedOrDeferredCases": [
+      "aws-madison",
+      "google-texas",
+      "digital-realty-oracle"
+    ],
+    "corporateOwnedCase": "Microsoft Fairwater1, MountPleasantWI: primary project/land-development trail plus corporate investment/power statements; title/site accounting remain partial.",
+    "developerLeaseCase": "Applied Digital PolarisForge1, EllendaleND/CoreWeave: primary lessor, lease, subsidiary-note and support disclosures; stronger transaction trail than broad collaboration announcements.",
+    "sourceReadinessNotFinancialAttractiveness": true
+  },
+  "counts": {
+    "projects": 3,
+    "entities": 22,
+    "financing": 7,
+    "ownership": 2,
+    "obligations": 8,
+    "power": 6,
+    "sources": 30,
+    "claims": 159,
+    "relationships": 16,
+    "accounting-bridges": 4,
+    "scopes": 20,
+    "doNotAddPairs": 62
+  },
+  "archetypeComparison": {
+    "status": "STRUCTURAL_COMPARISON_QUALIFIED_WITH_EXPLICIT_GAPS",
+    "cases": {
+      "fairwater": "CORPORATE_OWNED with exact title/site financing caveats",
+      "hyperion": "JV_PROJECT_FINANCED",
+      "polarisForge1": "DEVELOPER_LEASE_FINANCED"
+    },
+    "compatibleDollarTotalComparison": false,
+    "capitalStacksSummed": false,
+    "attributableProjectRevenueUtilizationCashFlows": "UNAVAILABLE"
+  },
+  "conflicts": [
+    {
+      "id": "fairwater-opening-dates",
+      "caseId": "fairwater",
+      "sourceIds": [
+        "fairwater-investment",
+        "fairwater-tid"
+      ],
+      "claimIds": [
+        "fairwater:status"
+      ],
+      "definitions": [
+        "early2026 company expectation",
+        "mid2026 municipality expectation"
+      ],
+      "publicationDates": [
+        "2025-09-18",
+        "2025-11-10"
+      ],
+      "scopes": [
+        "samephase expectedcompletion, potentially different construction/operation milestones"
+      ],
+      "possibleExplanation": "Different dated expectations and completion versus operational readiness; not averaged",
+      "resolutionStatus": "CONFLICT_REQUIRES_REVIEW",
+      "laterEvidence": "fairwater-online shows equipment coming online July20; exact full operational milestone remains unqualified"
+    }
+  ],
+  "unresolvedConflictCount": 1,
+  "scopeWarnings": [
+    "27bn development estimate is not50bn+ regional plan growth",
+    "2.064GW financing scope is secondary/native-definition unresolved;5GW is planned campus expansion",
+    "27.3bn private securities is not project cost",
+    "lease commitment/conditional RVG/maximum exposure are not debt or expected loss",
+    "fund contribution is not automatically unlevered equity",
+    "Fairwater first and second facility pledges are separate",
+    "PF1 platform preferred ceilings are not funded campus cash",
+    "PF1 refinanced debt must not be counted alongside replacement securities",
+    "utility investment is separate from hyperscaler/project investment"
+  ],
+  "tests": {
+    "phase3a": {
+      "passed": 59,
+      "failed": 0
+    },
+    "phase3b": {
+      "passed": 60,
+      "failed": 0
+    },
+    "total": {
+      "passed": 119,
+      "failed": 0
+    },
+    "command": "node --test research/ai-infrastructure-financing/tests/*.test.mjs",
+    "offlineFixtures": true,
+    "archiveHashVerification": {
+      "passed": 21,
+      "failed": 0
+    },
+    "build": {
+      "command": "npm run build",
+      "result": "PASS",
+      "limitation": "Inherited Vite bundle-size advisory remains unchanged."
+    },
+    "verify": {
+      "command": "npm run verify",
+      "result": "PASS"
+    },
+    "diffWhitespaceCheck": "PASS"
+  },
+  "determinism": {
+    "result": "PASS",
+    "freshProcessAndDifferentCwd": "BYTE_IDENTICAL_SUMMARY",
+    "retrievalClocksExcluded": true,
+    "economicContentSHA256": "2ef909d4d9f603e672a15e83457e994673f9e2185e95cc0de7b1d6c24a99e0b3",
+    "specificationSHA256": "4aaffb33c4607ad0f48b75413b868f9c6ee05f3313a56a1ce860749b3fafee31",
+    "specificationFiles": [
+      "phase3b/schemas/accounting-bridges.schema.json",
+      "phase3b/schemas/claims.schema.json",
+      "phase3b/schemas/entities.schema.json",
+      "phase3b/schemas/financing.schema.json",
+      "phase3b/schemas/methodology.schema.json",
+      "phase3b/schemas/obligations.schema.json",
+      "phase3b/schemas/overlaps.schema.json",
+      "phase3b/schemas/ownership.schema.json",
+      "phase3b/schemas/power.schema.json",
+      "phase3b/schemas/projects.schema.json",
+      "phase3b/schemas/record-fields.json",
+      "phase3b/schemas/relationships.schema.json",
+      "phase3b/schemas/scope-map.schema.json",
+      "phase3b/schemas/sources.schema.json",
+      "scripts/validate-phase3b.mjs",
+      "hydration/archive.mjs",
+      "hydration/source-plan.json",
+      "data/phase3b/methodology.json"
+    ]
+  },
+  "protection": {
+    "protectedPathDiffFromResearchBase": [],
+    "productionMainChanged": false,
+    "applicationVersionChanged": false,
+    "productionSnapshotChanged": false,
+    "productionSnapshotSHA256": "8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a",
+    "productionSnapshotIdentityBasis": "Read-only origin/main blob; snapshot is absent from this earlier research application lineage.",
+    "phase3aFrozenRegistriesSchemasValidatorTestsPreserved": true,
+    "aiCapexMethodologyOrRefreshChanged": false,
+    "aiLaborChanged": false,
+    "signalEngineChanged": false,
+    "pagesEmailWorkflowsFrontendChanged": false,
+    "aiRoiCalculated": false,
+    "hiddenLeverageCreated": false,
+    "systemicRiskScoreCreated": false,
+    "aggregateInvestmentCreated": false,
+    "productionPrOpened": false,
+    "mergeOrDeploymentPerformed": false
+  },
+  "remainingHigh": [
+    {
+      "id": "HYPERION_LEGAL_DEBT",
+      "caseId": "hyperion",
+      "fields": [
+        "post-JV registered property owner",
+        "primary-verified JV/issuer legal chain",
+        "security documents",
+        "coupon",
+        "maturity",
+        "recourse",
+        "collateral",
+        "ranking",
+        "amortization"
+      ],
+      "status": "UNAVAILABLE_OR_SECONDARY_ONLY",
+      "implication": "No legal-debt, hidden leverage or project-return conclusion; obtain primary transaction documents before instrument-level panel qualification."
+    },
+    {
+      "id": "RAW_VINTAGE_GAPS",
+      "caseId": null,
+      "fields": [
+        "Meta2025K raw publisher response",
+        "Meta2026Q2 raw publisher response",
+        "PF1 October2 capacity release raw publisher response"
+      ],
+      "status": "WEB_REVIEWED_NOT_ARCHIVED",
+      "implication": "Live source claims have locators but exact raw-vintage replay is incomplete; source status and null hashes retained."
+    },
+    {
+      "id": "POWER_CONTRACT_GAPS",
+      "caseId": "hyperion",
+      "fields": [
+        "confidential customer agreements",
+        "parent guarantee terms",
+        "full service duration",
+        "project-specific cost allocation",
+        "expanded plan approvals"
+      ],
+      "status": "UNAVAILABLE_OR_PARTIAL",
+      "implication": "Public regulatory order improves evidence but does not qualify all utility liabilities or future customer rate effects."
+    },
+    {
+      "id": "PROJECT_ACCOUNTING_ALLOCATION",
+      "caseId": null,
+      "fields": [
+        "Fairwater exact deed/title chain and site PP&E",
+        "PF1 registered property title/utility contracts",
+        "project-attributable invested capital and operating cash flows"
+      ],
+      "status": "UNAVAILABLE_OR_PRIMARY_PARTIAL",
+      "implication": "Structural case comparison is qualified with gaps; project balance-sheet reconciliation or returns are not."
+    }
+  ],
+  "remainingMedium": [
+    {
+      "id": "NATIVE_CAPACITY",
+      "caseId": "hyperion",
+      "status": "SECONDARY_ONLY",
+      "detail": "2.064GW native load definition is unresolved; do not convert into the5GW campus plan denominator."
+    },
+    {
+      "id": "FAIRWATER_MILESTONE",
+      "caseId": "fairwater",
+      "status": "CONFLICT_REQUIRES_REVIEW",
+      "detail": "Early versus mid2026 completion expectations may concern different milestones. July equipment-online evidence does not qualify full operational date."
+    },
+    {
+      "id": "PF1_EVOLVING_TERMS",
+      "caseId": "polaris-forge-1",
+      "status": "PRIMARY_PARTIAL",
+      "detail": "Original MAM preferred terms, later UPA structures, lease building labels and guarantee/assignment milestones retain separate vintages; no inferred current capital-stack total."
+    },
+    {
+      "id": "EXTERNAL_RETENTION",
+      "caseId": null,
+      "status": "LOCAL_CACHE_VERIFIED",
+      "detail": "Objects and receipts require external backup for durable recovery; local content addressing alone is not an offsite archival guarantee."
+    }
+  ],
+  "recommendedPhase3c": "Build a long-form cross-company infrastructure panel keyed by physical asset, legal entity, layer, native definition, scope, source vintage and period. Preserve original/current source versions and field-level qualification; hydrate primary contracts and deeds before promoting those fields. Compare structural exposure and coverage only, with no cross-layer headline dollar total, ROI or systemic-risk score. Do not implement Phase3C automatically.",
+  "finalDecision": "READY FOR CROSS-COMPANY INFRASTRUCTURE FINANCING PANEL",
+  "decisionBoundary": "Ready for further research panel expansion, not public release, automatic refresh, complete legal transaction reconciliation, project returns or credit-risk conclusions."
+}
