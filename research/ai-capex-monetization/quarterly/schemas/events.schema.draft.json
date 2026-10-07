@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sparse disclosures; never quarterly AI revenue",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "events"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "ai-capex-events-v0.1"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "eventId",
+          "company",
+          "date",
+          "observationPeriod",
+          "quarter",
+          "kind",
+          "evidenceLevel",
+          "evidenceClass",
+          "nativeWordingSummary",
+          "value",
+          "scope",
+          "limitations",
+          "source"
+        ],
+        "properties": {
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "evidenceLevel": {
+            "enum": [
+              "RAW_HASH_QUALIFIED",
+              "PHASE1_MANUAL_REVIEWED"
+            ]
+          },
+          "evidenceClass": {
+            "enum": [
+              "OBSERVED",
+              "MANAGEMENT_ATTRIBUTION",
+              "FORWARD_GUIDANCE"
+            ]
+          },
+          "monetizationEvidenceLevel": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1,
+            "maximum": 5
+          },
+          "recognizedRevenue": {
+            "const": false
+          }
+        }
+      }
+    }
+  },
+  "$comment": "Semantic validator checks official source URLs and source/sha/date binding, stock/run-rate timing and non-numeric capacity evidence. Phase 1 manual policy/event references remain explicitly unarchived."
+}

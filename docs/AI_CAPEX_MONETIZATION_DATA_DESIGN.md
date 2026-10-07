@@ -112,3 +112,7 @@ No ROI, payback, cohort simulation, scheduled workflow, UI, email or Signal Engi
 - Latest fetched `origin/main` remains the starting base `e790bd03fe8549fc5008ae2fa43237daf826438c`; no reconciliation was required.
 
 Final qualification decision: **MORE ACCOUNTING / SOURCE QUALIFICATION REQUIRED**. This does not negate the verified descriptive anchors or completed accounting foundation; it prevents premature claims of automated quarterly ingestion or attributable AI returns.
+
+## Additive Phase 2A implementation
+
+The research-only [official quarterly panel](AI_CAPEX_QUARTERLY_PANEL.md) implements a separate accepted-input/source-vintage/selection contract with externally retained raw identities. It does not change this Phase 1 fixture, evidence ladder or sparse qualification conclusions. Source/accounting gaps remain explicit and public monitoring is not activated.

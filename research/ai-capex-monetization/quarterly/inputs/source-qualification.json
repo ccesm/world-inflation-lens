@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "ai-capex-source-qualification-v0.1",
+  "researchOnly": true,
+  "normalizationPolicy": "Independent per-source qualification; candidate discovery cannot change accepted observations.",
+  "sec": {
+    "status": "ACCESS_BLOCKED",
+    "liveQualified": false,
+    "candidateAdapterQualifiedOffline": true,
+    "companyFactsEndpoint": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+    "firstResponse": 403,
+    "structuredScopeLimitation": "Standard whole-entity USD facts cannot establish custom CapEx/leases, cloud dimensions or management monetization.",
+    "policyURL": "https://www.sec.gov/about/developer-resources",
+    "requestsPerSecond": 1,
+    "automaticRetries": 0,
+    "stopOn": [
+      403,
+      429
+    ]
+  },
+  "companies": [
+    {
+      "company": "MSFT",
+      "irStatus": "CURRENT",
+      "acceptedRawSources": 18,
+      "acceptedRawBytes": 9648907,
+      "formats": {
+        "manual": 1,
+        "html": 16,
+        "xlsx": 1
+      },
+      "periodThrough": "2026-06-30",
+      "latestPublication": "2026-07-29",
+      "historyLimit": null
+    },
+    {
+      "company": "GOOG",
+      "irStatus": "PARTIAL",
+      "acceptedRawSources": 12,
+      "acceptedRawBytes": 1610789,
+      "formats": {
+        "pdf": 12
+      },
+      "periodThrough": "2026-06-30",
+      "latestPublication": "2026-07-22",
+      "historyLimit": "Alphabet 2019\u20132020 missing"
+    },
+    {
+      "company": "AMZN",
+      "irStatus": "CURRENT",
+      "acceptedRawSources": 16,
+      "acceptedRawBytes": 7140308,
+      "formats": {
+        "pdf": 16
+      },
+      "periodThrough": "2026-06-30",
+      "latestPublication": "2026-07-30",
+      "historyLimit": null
+    },
+    {
+      "company": "META",
+      "irStatus": "CURRENT",
+      "acceptedRawSources": 16,
+      "acceptedRawBytes": 3025660,
+      "formats": {
+        "html": 5,
+        "pdf": 11
+      },
+      "periodThrough": "2026-06-30",
+      "latestPublication": "2026-07-29",
+      "historyLimit": null
+    }
+  ],
+  "blockedPaths": [
+    {
+      "company": "GOOG",
+      "family": "SEC_ARCHIVE",
+      "status": "ACCESS_BLOCKED",
+      "response": 403
+    },
+    {
+      "company": "AMZN",
+      "family": "CURRENT_IR_HTML",
+      "status": "ACCESS_BLOCKED",
+      "response": 403,
+      "fallback": "Official delegated PDFs qualified"
+    },
+    {
+      "company": "META",
+      "family": "CURRENT_IR_HTML",
+      "status": "ACCESS_BLOCKED",
+      "response": 403,
+      "fallback": "Official delegated PDFs plus distinct published legacy HTML paths qualified"
+    },
+    {
+      "company": "GOOG",
+      "family": "LEGACY_2020_PDF",
+      "status": "ACCESS_BLOCKED",
+      "response": 403,
+      "fallback": null,
+      "limitation": "Relocated official links found; first post-redirect qualification blocked, remaining requests suppressed. No third-party mirror accepted."
+    }
+  ],
+  "operationalReceipts": "External cache receipts/runs, excluded from economic hashes",
+  "remainingGates": [
+    "SEC access unresolved; no live Company Facts acceptance.",
+    "Alphabet 2019\u20132020 raw source gap.",
+    "Full native accounting-note/policy and original/restated segment archive remains incomplete."
+  ]
+}

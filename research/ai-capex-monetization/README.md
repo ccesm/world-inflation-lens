@@ -18,3 +18,7 @@ node research/ai-capex-monetization/scripts/normalize.mjs > /tmp/wil-ai-capex-an
 Run from the repository root, Node >=22.12. No network or extra dependencies are required by these commands. Normalization emits stdout, writes no files and never changes snapshots. The JSON Schema is a draft structural contract; `contract.mjs` implements additional semantic/period/accounting validation. This is not a live source adapter or a proof of source authenticity.
 
 Never add generated normalization output, downloaded HTML/PDF or large historical archives to normal Git history. Small reviewed fixtures and tests belong in Git. Future raw retention must preserve byte identities, retrieval receipts and recovery independently. Never treat run-rate or backlog as recognized revenue; lease additions are distinct from principal; operating lease cash may already be in CFO.
+
+## Phase 2A official quarterly panel
+
+The additive [quarterly research namespace](quarterly/README.md) qualifies native quarterly history and raw identities outside Git. See [qualification report](../../docs/AI_CAPEX_QUARTERLY_PANEL.md). The Phase 1 sparse fixture and conclusions remain unchanged; four-company monitor readiness is still blocked by the documented source/accounting gaps.

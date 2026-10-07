@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed one-selection-or-unavailable grid",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "reviewed",
+    "policy",
+    "selections"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "ai-capex-quarterly-panel-v0.1"
+    },
+    "reviewed": {
+      "const": true
+    },
+    "policy": {
+      "const": "LATEST_ACCEPTED_OFFICIAL_VINTAGE_WITH_SCOPE_REVIEW"
+    },
+    "selections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "company",
+          "metric",
+          "periodEnd",
+          "scope",
+          "definitionVersion",
+          "observationId"
+        ],
+        "properties": {
+          "company": {
+            "enum": [
+              "MSFT",
+              "GOOG",
+              "AMZN",
+              "META"
+            ]
+          },
+          "metric": {
+            "type": "string"
+          },
+          "periodEnd": {
+            "type": "string",
+            "format": "date"
+          },
+          "scope": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "definitionVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "observationId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "reviewReason": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$comment": "Semantic validator requires exact full company/metric/30-quarter coverage, uniqueness and a pinned observation matching company, scope, metric, native definition and period."
+}

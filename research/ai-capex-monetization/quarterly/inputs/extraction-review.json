@@ -1,0 +1,528 @@
+{
+  "schemaVersion": "ai-capex-extraction-review-v0.1",
+  "sourceSetHash": "a58f9c93013e00e39147f284f3d82a151cd5b7bce459998314deaa71850ddf98",
+  "sourceReports": [
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2020q1-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2020q2-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2020q3-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2020q4-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2022q1-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2022q2-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2022q3-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2022q4-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2024q1-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2024q2-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2024q3-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2024q4-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2026q1-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2026q2-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2026q3-ir"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "msft-fy2026q4-ir"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "financeLeaseAdditions",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "amzn-2026q2-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "amzn-2026q1-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "amzn-2025q4-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "financeLeaseAdditions",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "amzn-2025q3-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "amzn-2024q4-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "financeLeaseAdditions",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "amzn-2024q3-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "financeLeaseAdditions",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "amzn-2024q2-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "amzn-2024q1-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "netIncome",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "amzn-2022q4-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "netIncome",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "financeLeaseAdditions",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "amzn-2022q3-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "netIncome",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "financeLeaseAdditions",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "amzn-2022q2-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "netIncome",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "amzn-2022q1-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "amzn-2020q4-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "amzn-2020q3-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "amzn-2020q2-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "amzn-2020q1-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeNet",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2026q2-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeNet",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2026q1-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeNet",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2025q4-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeNet",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2025q3-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeNet",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2024q4-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeGross",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2024q3-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeGross",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2024q2-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeGross",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2024q1-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "meta-2022q4-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "meta-2022q3-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "meta-2022q2-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2026q2-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2026q1-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2025q4-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2025q3-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2024q4-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2024q3-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2024q2-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2024q1-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationPpe",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2022q4-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationPpe",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2022q3-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationPpe",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2022q2-pdf"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "depreciationPpe",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "depreciationAmortizationOther",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        },
+        {
+          "matches": 0,
+          "metric": "fcfReported",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "goog-2022q1-pdf"
+    },
+    {
+      "metricIssues": [],
+      "sourceId": "meta-2022q1-ir"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeNet",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2020q4-ir"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeGross",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2020q3-ir"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeGross",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2020q2-ir"
+    },
+    {
+      "metricIssues": [
+        {
+          "matches": 0,
+          "metric": "cashPpeGross",
+          "reason": "MISSING_OR_AMBIGUOUS_NATIVE_QUARTER"
+        }
+      ],
+      "sourceId": "meta-2020q1-ir"
+    }
+  ]
+}

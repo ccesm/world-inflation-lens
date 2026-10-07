@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-capex-quarterly-input-v0.1",
+  "title": "Accepted native observations and raw source identities",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "sources",
+    "observations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "ai-capex-quarterly-input-v0.1"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    }
+  },
+  "$comment": "CLI semantic validators additionally enforce exact dates, native fiscal boundaries, publisher/URL/CIK/accession, unit/scope/definition, duplicates and pinned selection. JSON Schema alone is not source qualification.",
+  "$defs": {
+    "source": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "company",
+        "publisher",
+        "url",
+        "publicationDate",
+        "periodEnd",
+        "accession",
+        "amendmentStatus",
+        "sha256",
+        "byteSize",
+        "mimeType",
+        "locator",
+        "documentType",
+        "retrievedAt"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "company": {
+          "enum": [
+            "MSFT",
+            "GOOG",
+            "AMZN",
+            "META"
+          ]
+        },
+        "publisher": {
+          "enum": [
+            "Microsoft",
+            "Alphabet",
+            "Amazon",
+            "Meta"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "publicationDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "periodEnd": {
+          "type": "string",
+          "format": "date"
+        },
+        "accession": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{10}-[0-9]{2}-[0-9]{6}$"
+        },
+        "amendmentStatus": {
+          "enum": [
+            "ORIGINAL",
+            "AMENDED",
+            "UNKNOWN"
+          ]
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "byteSize": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "mimeType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "documentType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retrievedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "observationId",
+        "sourceId",
+        "company",
+        "metric",
+        "scope",
+        "periodStart",
+        "periodEnd",
+        "periodType",
+        "unit",
+        "value",
+        "precision",
+        "evidenceClass",
+        "definitionVersion",
+        "restatementBasis",
+        "revisionStatus",
+        "nativeLabel",
+        "locator",
+        "comparabilityStatus"
+      ],
+      "properties": {
+        "observationId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "company": {
+          "enum": [
+            "MSFT",
+            "GOOG",
+            "AMZN",
+            "META"
+          ]
+        },
+        "metric": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "periodStart": {
+          "type": "string",
+          "format": "date"
+        },
+        "periodEnd": {
+          "type": "string",
+          "format": "date"
+        },
+        "periodType": {
+          "enum": [
+            "Q",
+            "YTD",
+            "FY",
+            "POINT"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "USD_MILLIONS",
+            "PERCENT"
+          ]
+        },
+        "value": {
+          "type": "number"
+        },
+        "precision": {
+          "enum": [
+            "EXACT",
+            "ROUNDED"
+          ]
+        },
+        "evidenceClass": {
+          "enum": [
+            "OBSERVED",
+            "CALCULATED_FROM_DISCLOSED_VALUES"
+          ]
+        },
+        "definitionVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "restatementBasis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revisionStatus": {
+          "enum": [
+            "ORIGINAL_RELEASE_VINTAGE",
+            "COMPARATIVE_VINTAGE",
+            "RESTATED",
+            "CURRENT_HISTORICAL_WORKBOOK_VINTAGE"
+          ]
+        },
+        "nativeLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "comparabilityStatus": {
+          "enum": [
+            "COMPARABLE",
+            "LIMITED_COMPARABILITY",
+            "NOT_COMPARABLE"
+          ]
+        }
+      }
+    }
+  }
+}

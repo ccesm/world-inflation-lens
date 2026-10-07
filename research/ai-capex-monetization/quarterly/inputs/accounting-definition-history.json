@@ -1,0 +1,1164 @@
+{
+  "schemaVersion": "ai-capex-definitions-v0.1",
+  "definitions": [
+    {
+      "definitionVersion": "AMZN_cashPpeGross_V1",
+      "company": "AMZN",
+      "metrics": [
+        "cashPpeGross"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Purchases of property and equipment; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_cfo_V1",
+      "company": "AMZN",
+      "metrics": [
+        "cfo"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Net cash provided by (used in) operating activities; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_costRevenue_V1",
+      "company": "AMZN",
+      "metrics": [
+        "costRevenue"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Cost of sales; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_depreciationAmortizationOther_V1",
+      "company": "AMZN",
+      "metrics": [
+        "depreciationAmortizationOther"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Depreciation and amortization of property and equipment and capitalized content costs, operating lease assets, and other; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_financeLeaseAdditions_V1",
+      "company": "AMZN",
+      "metrics": [
+        "financeLeaseAdditions"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Property and equipment acquired under finance leases; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_financeLeasePrincipal_V1",
+      "company": "AMZN",
+      "metrics": [
+        "financeLeasePrincipal"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Principal repayments of finance leases; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_netIncome_V1",
+      "company": "AMZN",
+      "metrics": [
+        "netIncome"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Net income; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_operatingIncome_V1",
+      "company": "AMZN",
+      "metrics": [
+        "operatingIncome"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Operating income; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_operatingLeaseCash_V1",
+      "company": "AMZN",
+      "metrics": [
+        "operatingLeaseCash"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Cash paid for operating leases; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_ppeProceedsIncentives_V1",
+      "company": "AMZN",
+      "metrics": [
+        "ppeProceedsIncentives"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Proceeds from property and equipment sales and incentives; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_revenue_V1",
+      "company": "AMZN",
+      "metrics": [
+        "revenue"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN Total net sales; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_segmentOperatingIncome_V1",
+      "company": "AMZN",
+      "metrics": [
+        "segmentOperatingIncome"
+      ],
+      "scopes": [
+        "AWS"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN AWS Operating income; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_segmentRevenue_V1",
+      "company": "AMZN",
+      "metrics": [
+        "segmentRevenue"
+      ],
+      "scopes": [
+        "AWS"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native AMZN AWS Net sales; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_cashPpeGross_V1",
+      "company": "GOOG",
+      "metrics": [
+        "cashPpeGross"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native GOOG Purchases of property and equipment; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_cfo_V1",
+      "company": "GOOG",
+      "metrics": [
+        "cfo"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native GOOG Net cash provided by operating activities; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_CLOUD_SEGMENT_V1",
+      "company": "GOOG",
+      "metrics": [
+        "segmentOperatingIncome",
+        "segmentRevenue"
+      ],
+      "scopes": [
+        "Google Cloud"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Google Cloud includes GCP, Workspace and enterprise offerings. Corporate cost allocations and useful-life changes limit long-run comparability; not an AI-only segment.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "GOOG_costRevenue_V1",
+      "company": "GOOG",
+      "metrics": [
+        "costRevenue"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native GOOG Cost of revenues; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_depreciationPpe_V1",
+      "company": "GOOG",
+      "metrics": [
+        "depreciationPpe"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native GOOG Depreciation of property and equipment; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_netIncome_V1",
+      "company": "GOOG",
+      "metrics": [
+        "netIncome"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native GOOG Net income; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_operatingIncome_V1",
+      "company": "GOOG",
+      "metrics": [
+        "operatingIncome"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native GOOG Income from operations; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_revenue_V1",
+      "company": "GOOG",
+      "metrics": [
+        "revenue"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native GOOG Revenues; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_CASH_PPE_NET_LABEL_V1",
+      "company": "META",
+      "metrics": [
+        "cashPpeNet"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native purchases of property and equipment, net. Retain net label separately; do not claim gross purchases or infer missing proceeds.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_cashPpeGross_V1",
+      "company": "META",
+      "metrics": [
+        "cashPpeGross"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Purchases of property and equipment; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_cfo_V1",
+      "company": "META",
+      "metrics": [
+        "cfo"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Net cash provided by operating activities; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_costRevenue_V1",
+      "company": "META",
+      "metrics": [
+        "costRevenue"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Cost of revenue; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_depreciationAmortizationOther_V1",
+      "company": "META",
+      "metrics": [
+        "depreciationAmortizationOther"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Depreciation and amortization; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_fcfReported_V1",
+      "company": "META",
+      "metrics": [
+        "fcfReported"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Free cash flow; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_financeLeasePrincipal_V1",
+      "company": "META",
+      "metrics": [
+        "financeLeasePrincipal"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Principal payments on finance leases; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_netIncome_V1",
+      "company": "META",
+      "metrics": [
+        "netIncome"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Net income; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_operatingIncome_V1",
+      "company": "META",
+      "metrics": [
+        "operatingIncome"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Income from operations; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_revenue_V1",
+      "company": "META",
+      "metrics": [
+        "revenue"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native META Revenue; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MICROSOFT_CAPEX_V1",
+      "company": "MSFT",
+      "metrics": [
+        "nativeCapex"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native workbook capital expenditures including assets acquired under capital leases; USD billions rounded then scaled to millions. Not cash PP&E plus lease principal.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "MICROSOFT_COMMERCIAL_RPO_V1",
+      "company": "MSFT",
+      "metrics": [
+        "rpo"
+      ],
+      "scopes": [
+        "COMMERCIAL"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Commercial remaining performance obligation including OpenAI; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "MSFT_azureGrowth_V1",
+      "company": "MSFT",
+      "metrics": [
+        "azureGrowth"
+      ],
+      "scopes": [
+        "Azure and other cloud services"
+      ],
+      "unit": "PERCENT",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Azure and other cloud services revenue increased 43%; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "MSFT_cashPpeGross_V1",
+      "company": "MSFT",
+      "metrics": [
+        "cashPpeGross"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Additions to property and equipment; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_cfo_V1",
+      "company": "MSFT",
+      "metrics": [
+        "cfo"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Net cash from operations; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_costRevenue_V1",
+      "company": "MSFT",
+      "metrics": [
+        "costRevenue"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Total cost of revenue; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_depreciationAmortizationOther_V1",
+      "company": "MSFT",
+      "metrics": [
+        "depreciationAmortizationOther"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Depreciation, amortization, and other; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_INTELLIGENT_CLOUD_FY2025_V2",
+      "company": "MSFT",
+      "metrics": [
+        "segmentOperatingIncome",
+        "segmentRevenue"
+      ],
+      "scopes": [
+        "Intelligent Cloud"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2024-09-30",
+      "effectiveTo": null,
+      "changeReason": "FY2025 reporting realignment: selected FY2026 current/comparative disclosures are on new scope; older scope remains distinct. Do not calculate growth across versions.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "MSFT_microsoftCloudRevenue_V1",
+      "company": "MSFT",
+      "metrics": [
+        "microsoftCloudRevenue"
+      ],
+      "scopes": [
+        "Microsoft Cloud"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Microsoft Cloud revenue of $59.3 billion; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "MSFT_netIncome_V1",
+      "company": "MSFT",
+      "metrics": [
+        "netIncome"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Net income; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_operatingIncome_V1",
+      "company": "MSFT",
+      "metrics": [
+        "operatingIncome"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Operating income; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_revenue_V1",
+      "company": "MSFT",
+      "metrics": [
+        "revenue"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "changeReason": "Native MSFT Total revenue; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_segmentOperatingIncome_V1",
+      "company": "MSFT",
+      "metrics": [
+        "segmentOperatingIncome"
+      ],
+      "scopes": [
+        "Intelligent Cloud"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": "2024-06-30",
+      "changeReason": "Native MSFT Intelligent Cloud segmentOperatingIncome; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "MSFT_segmentRevenue_V1",
+      "company": "MSFT",
+      "metrics": [
+        "segmentRevenue"
+      ],
+      "scopes": [
+        "Intelligent Cloud"
+      ],
+      "unit": "USD_MILLIONS",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": "2024-06-30",
+      "changeReason": "Native MSFT Intelligent Cloud segmentRevenue; retained as disclosed, not harmonized into an AI measure.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    }
+  ],
+  "derivedDefinitions": [
+    {
+      "definitionVersion": "AMAZON_NET_CASH_PPE_V1",
+      "company": "AMZN",
+      "metrics": [
+        "cashPpeNet"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "gross cash PP&E - proceeds/incentives",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_cashInvestmentBridge_CALC_V1",
+      "company": "AMZN",
+      "metrics": [
+        "cashInvestmentBridge"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E (lease principal excluded)",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_cashInvestmentIntensity_CALC_V1",
+      "company": "AMZN",
+      "metrics": [
+        "cashInvestmentIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native cash PP&E / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_cashInvestmentToCfoIntensity_CALC_V1",
+      "company": "AMZN",
+      "metrics": [
+        "cashInvestmentToCfoIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native cash PP&E / CFO",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_FCF_CONVENTION_V1",
+      "company": "AMZN",
+      "metrics": [
+        "fcfCompanyConvention"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_fcfMargin_CALC_V1",
+      "company": "AMZN",
+      "metrics": [
+        "fcfMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * company-convention FCF / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_grossMargin_CALC_V1",
+      "company": "AMZN",
+      "metrics": [
+        "grossMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * (revenue - native cost of revenue) / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_grossProfit_CALC_V1",
+      "company": "AMZN",
+      "metrics": [
+        "grossProfit"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "revenue - native cost of revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_operatingMargin_CALC_V1",
+      "company": "AMZN",
+      "metrics": [
+        "operatingMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * operating income / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "AMZN_SEGMENT_MARGIN_CALC_V1",
+      "company": "AMZN",
+      "metrics": [
+        "segmentOperatingMargin"
+      ],
+      "scope": "AWS",
+      "unit": "PERCENT",
+      "formula": "100 * native segment operating income / segment revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_cashInvestmentBridge_CALC_V1",
+      "company": "GOOG",
+      "metrics": [
+        "cashInvestmentBridge"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E (lease principal excluded)",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_cashInvestmentIntensity_CALC_V1",
+      "company": "GOOG",
+      "metrics": [
+        "cashInvestmentIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native cash PP&E / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_cashInvestmentToCfoIntensity_CALC_V1",
+      "company": "GOOG",
+      "metrics": [
+        "cashInvestmentToCfoIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native cash PP&E / CFO",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_FCF_CONVENTION_V1",
+      "company": "GOOG",
+      "metrics": [
+        "fcfCompanyConvention"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_fcfMargin_CALC_V1",
+      "company": "GOOG",
+      "metrics": [
+        "fcfMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * company-convention FCF / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_grossMargin_CALC_V1",
+      "company": "GOOG",
+      "metrics": [
+        "grossMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * (revenue - native cost of revenue) / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_grossProfit_CALC_V1",
+      "company": "GOOG",
+      "metrics": [
+        "grossProfit"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "revenue - native cost of revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_operatingMargin_CALC_V1",
+      "company": "GOOG",
+      "metrics": [
+        "operatingMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * operating income / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "GOOG_SEGMENT_MARGIN_CALC_V1",
+      "company": "GOOG",
+      "metrics": [
+        "segmentOperatingMargin"
+      ],
+      "scope": "Google Cloud",
+      "unit": "PERCENT",
+      "formula": "100 * native segment operating income / segment revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "META_CAPEX_GROSS_CASH_V2",
+      "company": "META",
+      "metrics": [
+        "nativeCapex"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "native cash PP&E + finance lease principal",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_CAPEX_NET_CASH_V1",
+      "company": "META",
+      "metrics": [
+        "nativeCapex"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "native cash PP&E + finance lease principal",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_cashInvestmentBridge_CALC_V1",
+      "company": "META",
+      "metrics": [
+        "cashInvestmentBridge"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E (lease principal excluded)",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_cashInvestmentIntensity_CALC_V1",
+      "company": "META",
+      "metrics": [
+        "cashInvestmentIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native cash PP&E / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_cashInvestmentToCfoIntensity_CALC_V1",
+      "company": "META",
+      "metrics": [
+        "cashInvestmentToCfoIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native cash PP&E / CFO",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_FCF_GROSS_CASH_V2",
+      "company": "META",
+      "metrics": [
+        "fcfCompanyConvention"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E - finance lease principal",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_FCF_NET_CASH_V1",
+      "company": "META",
+      "metrics": [
+        "fcfCompanyConvention"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E - finance lease principal",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_fcfMargin_CALC_V1",
+      "company": "META",
+      "metrics": [
+        "fcfMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * company-convention FCF / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_grossMargin_CALC_V1",
+      "company": "META",
+      "metrics": [
+        "grossMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * (revenue - native cost of revenue) / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_grossProfit_CALC_V1",
+      "company": "META",
+      "metrics": [
+        "grossProfit"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "revenue - native cost of revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_nativeCapexIntensity_CALC_V1",
+      "company": "META",
+      "metrics": [
+        "nativeCapexIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native company CapEx / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "META_operatingMargin_CALC_V1",
+      "company": "META",
+      "metrics": [
+        "operatingMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * operating income / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "definitionVersion": "MSFT_cashInvestmentBridge_CALC_V1",
+      "company": "MSFT",
+      "metrics": [
+        "cashInvestmentBridge"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E (lease principal excluded)",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_cashInvestmentIntensity_CALC_V1",
+      "company": "MSFT",
+      "metrics": [
+        "cashInvestmentIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native cash PP&E / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_cashInvestmentToCfoIntensity_CALC_V1",
+      "company": "MSFT",
+      "metrics": [
+        "cashInvestmentToCfoIntensity"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * native cash PP&E / CFO",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_FCF_CONVENTION_V1",
+      "company": "MSFT",
+      "metrics": [
+        "fcfCompanyConvention"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "CFO - native cash PP&E",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_fcfMargin_CALC_V1",
+      "company": "MSFT",
+      "metrics": [
+        "fcfMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * company-convention FCF / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_grossMargin_CALC_V1",
+      "company": "MSFT",
+      "metrics": [
+        "grossMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * (revenue - native cost of revenue) / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_grossProfit_CALC_V1",
+      "company": "MSFT",
+      "metrics": [
+        "grossProfit"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "USD_MILLIONS",
+      "formula": "revenue - native cost of revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_operatingMargin_CALC_V1",
+      "company": "MSFT",
+      "metrics": [
+        "operatingMargin"
+      ],
+      "scope": "CONSOLIDATED",
+      "unit": "PERCENT",
+      "formula": "100 * operating income / revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    },
+    {
+      "definitionVersion": "MSFT_SEGMENT_MARGIN_CALC_V1",
+      "company": "MSFT",
+      "metrics": [
+        "segmentOperatingMargin"
+      ],
+      "scope": "Intelligent Cloud",
+      "unit": "PERCENT",
+      "formula": "100 * native segment operating income / segment revenue",
+      "changeReason": "Exact arithmetic from same reviewed statement basis; native gross/net and lease conventions retained.",
+      "comparabilityStatus": "COMPARABLE"
+    }
+  ]
+}

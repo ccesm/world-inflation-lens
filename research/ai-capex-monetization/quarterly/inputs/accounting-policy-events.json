@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "ai-capex-policies-v0.1",
+  "policies": [
+    {
+      "company": "MSFT",
+      "effectiveDate": "2026-07-01",
+      "policy": "Datacenter/office-building estimated life changes from 15 to 25 years, prospective FY2027. Finance-vs-operating lease classification may change.",
+      "effectScope": "BUILDINGS_AND_LEASE_CLASSIFICATION",
+      "source": {
+        "sourceId": "msft-call-fy2026q4",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+        "sha256": "993f2e524d29598be32dbef75e38da359a5de2892052b53ac733a8b847135361",
+        "locator": "CFO remarks: useful-life update FY27; 15 to 25 years"
+      },
+      "impact": "Never apply to 2026Q2 or earlier depreciation or CapEx retrospectively."
+    },
+    {
+      "company": "AMZN",
+      "effectiveDate": "2024-01-01",
+      "policy": "Server life from five to six years.",
+      "effectScope": "SERVERS",
+      "source": {
+        "sourceId": "amznk24",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041036/tm263815d4_ars.pdf",
+        "publicationDate": null,
+        "sha256": null,
+        "locator": "FY2025 annual report PP&E accounting policy",
+        "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+        "reviewReference": "docs/AI_CAPEX_ACCOUNTING_BRIDGE.md",
+        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel."
+      },
+      "impact": "Mechanical depreciation reduction; not a cash return or measured AI attribution."
+    },
+    {
+      "company": "AMZN",
+      "effectiveDate": "2025-01-01",
+      "policy": "A subset of server/network lives from six to five years.",
+      "effectScope": "SUBSET_SERVER_NETWORK",
+      "source": {
+        "sourceId": "amznk25",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041036/tm263815d4_ars.pdf",
+        "publicationDate": null,
+        "sha256": null,
+        "locator": "FY2025 annual report subset server/network accounting estimate",
+        "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+        "reviewReference": "docs/AI_CAPEX_ACCOUNTING_BRIDGE.md",
+        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel."
+      },
+      "impact": "Mechanical depreciation increase; source-specific subset, not the whole fleet."
+    },
+    {
+      "company": "META",
+      "effectiveDate": "2025-01-01",
+      "policy": "Most server and network asset lives extended to 5.5 years.",
+      "effectScope": "MOST_SERVER_NETWORK_ASSETS",
+      "source": {
+        "sourceId": "metak24",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/R14.htm",
+        "publicationDate": null,
+        "sha256": null,
+        "locator": "September 2025 PP&E note",
+        "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+        "reviewReference": "docs/AI_CAPEX_ACCOUNTING_BRIDGE.md",
+        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel."
+      },
+      "impact": "Depreciation growth is not comparable without the policy qualification."
+    }
+  ],
+  "rpoDefinitionHistory": [
+    {
+      "definitionVersion": "ALPHABET_RPO_V1",
+      "effectiveFrom": null,
+      "effectiveTo": "2025-12-31",
+      "scope": "Google Cloud obligations excluding short-term contracts",
+      "status": "HISTORICAL_VALUES_UNQUALIFIED"
+    },
+    {
+      "definitionVersion": "ALPHABET_RPO_SHORT_TERM_INCLUDED_V2",
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": null,
+      "scope": "Google Cloud obligations including short-term contracts",
+      "changeReason": "Phase 1 official 10-Q review identified inclusion beginning Q1 2026.",
+      "comparabilityStatus": "NOT_COMPARABLE",
+      "source": {
+        "sourceId": "googq26",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "publicationDate": "2026-07-23",
+        "sha256": null,
+        "locator": "Note 2: remaining performance obligations and inclusion of short-term contracts",
+        "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+        "reviewReference": "docs/AI_CAPEX_ACCOUNTING_BRIDGE.md",
+        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel."
+      }
+    }
+  ],
+  "limitations": [
+    "Manual policy anchors are not a complete automatically qualified historical accounting-note archive."
+  ]
+}

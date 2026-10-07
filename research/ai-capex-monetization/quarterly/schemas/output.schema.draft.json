@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deterministic native panel result",
+  "type": "object",
+  "required": [
+    "content",
+    "resultHash"
+  ],
+  "properties": {
+    "resultHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "content": {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "inputHash",
+        "sourceManifestHash",
+        "selectionHash",
+        "definitionHash",
+        "rows",
+        "completeness",
+        "reconciliation",
+        "qualification",
+        "limitations",
+        "policyContextHash"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": "ai-capex-quarterly-panel-v0.1"
+        },
+        "rows": {
+          "type": "array"
+        },
+        "completeness": {
+          "type": "array"
+        },
+        "reconciliation": {
+          "type": "array"
+        },
+        "qualification": {
+          "type": "array"
+        }
+      }
+    }
+  },
+  "$comment": "validateGenerated rebuilds the complete result against pinned accepted input, selection and definition files; an internally rehashed fabricated output still fails."
+}
