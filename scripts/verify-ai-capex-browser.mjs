@@ -34,6 +34,14 @@ try{
   if(width<680){assert(await table.evaluate(el=>el.scrollWidth>el.clientWidth));await page.keyboard.press('ArrowRight');await page.waitForFunction(()=>document.querySelector('.ac-table-scroll').scrollLeft>0)}
   for(const svg of await content.locator('svg').all()){assert(await svg.getAttribute('aria-labelledby'));assert(await svg.getAttribute('aria-describedby'));assert.equal(await svg.locator('title').count(),1)}
   const company=content.getByLabel(t.chartCompany,{exact:true});await company.focus();await company.selectOption('META');assert.equal(await company.inputValue(),'META')
+  for(const id of ['MSFT','GOOG','AMZN','META']){
+   await company.selectOption(id)
+   for(const [metric,note] of Object.entries({cashInvestmentIntensity:t.nativeCash[id],operatingMargin:t.chartAccountingNotes.operatingMargin,fcfMargin:t.chartAccountingNotes.fcfMargin[id]})){
+    const chartNote=content.locator(`[data-chart="${metric}"] [data-chart-accounting-note]`)
+    assert.equal(await chartNote.textContent(),note,`${language} ${id} ${metric} accounting note`)
+   }
+  }
+  await company.selectOption('META')
   const chart=content.locator('[data-chart="fcfMargin"]');await chart.locator('summary').focus();await page.keyboard.press('Enter')
   assert.equal(await chart.locator('tbody tr').count(),30);assert((await chart.textContent()).includes('11 / 30'))
   assert.equal(await chart.locator('[data-segment]').count(),4,'Meta gaps and definition changes retain four disconnected segments')

@@ -67,7 +67,7 @@ test('pure depreciation is never replaced by broad D&A',()=>{
  for(const id of ['MSFT','AMZN','META']){assert.equal(m(id,'depreciationPpe').value,null);assert.equal(m(id,'pureDepreciationToRevenue').value,null)}
 })
 test('native boundaries visible in both languages',()=>{
- for(const lang of ['en','zh']){const t=aiCapexCopy[lang];assert(t.boundaries.MSFT.join().includes('UNRECONCILED_NATIVE_CAPEX_SCOPE'));assert(t.boundaries.META.join().includes('5.5'));assert(t.nativeCash.AMZN.includes(lang==='en'?'Net':'净'));assert(t.boundaries.META.length===3)}
+ for(const lang of ['en','zh']){const t=aiCapexCopy[lang];assert(t.boundaries.MSFT.join().includes('UNRECONCILED_NATIVE_CAPEX_SCOPE'));assert(t.boundaries.META.join().includes('5.5'));assert(t.nativeCash.AMZN.includes(lang==='en'?'Net':'净'));assert(t.boundaries.META.length===3);assert(t.chartAccountingNotes.operatingMargin.includes(lang==='en'?'operating income':'营业利润'));for(const id of ['MSFT','GOOG','AMZN','META']){assert(t.chartAccountingNotes.fcfMargin[id].includes(lang==='en'?'quarterly FCF':'季度自由现金流'));assert.notEqual(t.chartAccountingNotes.fcfMargin[id],t.nativeCash[id])};assert(t.chartAccountingNotes.fcfMargin.META.includes(lang==='en'?'finance-lease principal':'融资租赁本金'))}
  assert.equal(m('AMZN','cashPpeNative').value,53076)
 })
 test('all histories exact quarterly; Meta definition changes create disconnected paths',()=>{
