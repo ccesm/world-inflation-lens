@@ -2,6 +2,26 @@
 
 World Inflation Lens studies **domestic dollar purchasing power and the international dollar role over the next 20–30 years**. These outcomes interact but are not interchangeable. Historical observations, official conditional projections and hypothetical scenarios remain visibly distinct. Global inflation provides supporting context. Both Chinese and English are supported.
 
+## V1.2.0 — AI Labor Interim Conclusion / Observation Mode
+
+The strict Phase 3 and expanded Phase 3.5 research are preserved as complementary
+fixed benchmarks. Evidence is **EARLY / INCONCLUSIVE / SAMPLE-SENSITIVE** and
+**DESCRIPTIVE_ONLY**: occupational composition, exposure methods and historical
+pretrends materially affect estimates; causal identification is not established.
+Active expansion is paused pending more mature evidence, not abandoned.
+
+A compact bilingual interim conclusion is prepared for `#/research/ai-labor`,
+linked from Research and AI & Productivity. See [phase closure, accepted metrics
+and reopening conditions](AI_LABOR_PHASE_CLOSURE.md). Research mode is
+**OBSERVATION MODE / 长期观察模式**. Preserve methods, accumulate qualified official
+observations, and reassess through human research review. The Continuous Monitor
+is prepared but **not activated**; no scheduled/history/email operation is enabled.
+Productivity, AI investment returns and labor outcomes remain separate research layers.
+This feature does not merge the large research branches or add Signal Engine factors.
+The owner-approved minor release preparation uses application version **1.2.0**.
+See [release notes](v1.2-ai-labor-interim-conclusion.md). Merge and deployment have
+not occurred as part of preparation; monitor activation remains separately gated.
+
 ## Delivered V0.1
 
 Educational homepage; a 1900–2026 historical timeline; official U.S. CPI since 1913; purchasing-power calculator; bilingual UI and cited sources. Static snapshots are bundled for GitHub Pages. Light/dark themes persist across visits.

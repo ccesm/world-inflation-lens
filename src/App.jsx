@@ -27,6 +27,7 @@ import { ResearchContext } from './components/ResearchContext.jsx'
 import './research-map.css'
 import './treasury-pricing.css'
 
+const AiLabor = lazy(() => import('./pages/AiLabor.jsx').then(m => ({default:m.AiLabor})))
 const SignalEngine = lazy(() => import('./pages/SignalEngine.jsx').then(m => ({default:m.SignalEngine})))
 const InternationalDollar = lazy(() => import('./pages/InternationalDollar.jsx').then(m => ({default:m.InternationalDollar})))
 const Sources = lazy(() => import('./pages/Sources.jsx').then(m => ({default:m.Sources})))
@@ -144,6 +145,7 @@ export default function App() {
       {route === 'drivers' && <Drivers language={language} navigationKey={navigationKey} />}
       {route === 'research/digital-money' && <DigitalMoney language={language} />}
       {route === 'research/ai-productivity' && <AiProductivity language={language} />}
+      {route === 'research/ai-labor' && <AiLabor language={language} />}
       {route === 'external-shocks' && <ExternalShocks language={language} />}
       {route === 'sources' && <Sources t={t} language={language} />}
       {route === 'research/signal-engine' && <SignalEngine language={language} />}

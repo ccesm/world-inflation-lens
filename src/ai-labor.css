@@ -1,0 +1,21 @@
+/* Neutral descriptive evidence; signs carry no good/bad or causal coloring. */
+.ai-labor-page { min-width: 0; }
+.ai-labor-status { border: 1px solid var(--global-border); background: var(--global-bg); padding: clamp(18px,3vw,30px); margin-bottom: 22px; }
+.ai-labor-status > strong { display: block; font-size: clamp(20px,2.6vw,30px); line-height: 1.5; font-weight: 500; }
+.ai-labor-status p { font-size: 14px; line-height: 1.8; }
+.ai-labor-scope { font-weight: 600; }
+.ai-labor-page li { font-size: 14px; line-height: 1.9; margin-bottom: 8px; }
+.ai-labor-page ul { padding-left: 22px; }
+.ai-labor-table-scroll { overflow-x: auto; max-width: 100%; border: 1px solid var(--global-border); }
+.ai-labor-table-scroll:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.ai-labor-table-scroll table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+.ai-labor-table-scroll caption { text-align: left; padding: 16px; font-weight: 600; }
+.ai-labor-table-scroll th,.ai-labor-table-scroll td { padding: 14px; text-align: left; border-top: 1px solid var(--global-border); line-height: 1.6; }
+.ai-labor-table-scroll tbody th { font-weight: 500; }
+.ai-labor-path { padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.ai-labor-path li { padding: 15px; border: 1px solid var(--global-border); }
+.ai-labor-path li:not(:last-child)::after { content: ' →'; }
+.ai-labor-provenance code { overflow-wrap: anywhere; font-size: 12px; }
+.ai-labor-page a { text-underline-offset: 3px; }
+.ai-labor-page .ia-grid article h2 { font-size: clamp(23px,2.5vw,31px); }
+@media(max-width:600px) { .ai-labor-path { grid-template-columns: 1fr; } }
