@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-capex-recast-review-v0.1",
+  "title": "Reviewed native observation/reporting-basis bindings",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "reviewed",
+    "annotations",
+    "pairs"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "ai-capex-recast-review-v0.1"
+    },
+    "reviewed": {
+      "const": true
+    },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "pairs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "$comment": "Archival/manual review registries, not candidate auto-acceptance. notes.mjs/recasts.mjs enforce pinned raw identity, period, reporting-basis and native-value bindings. verify-notes.py/reextract.mjs reproduce native source evidence."
+}

@@ -1,0 +1,302 @@
+{
+  "annualObservations": [
+    {
+      "company": "GOOG",
+      "definitionVersion": "GOOG_depreciationPpe_V1",
+      "evidenceClass": "OBSERVED",
+      "frequency": "ANNUAL",
+      "metric": "depreciationPpe",
+      "noteId": "goog-annual-pure-depreciation",
+      "observationId": "goog-2023-annual:depreciationPpe:2021",
+      "periodEnd": "2021-12-31",
+      "periodStart": "2021-01-01",
+      "periodType": "FY",
+      "revisionStatus": "COMPARATIVE_VINTAGE",
+      "scope": "CONSOLIDATED",
+      "source": {
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "locator": "Consolidated Statements of Cash Flows / depreciation row / 2021",
+        "page": 56,
+        "publicationDate": "2024-01-31",
+        "sha256": "1950a82ce1d443a9c8fc10e051acbed517bf5c0bbbab584be1812f5eb79c06e4",
+        "sourceId": "goog-2023q4-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf"
+      },
+      "unit": "USD_MILLIONS",
+      "value": 10273
+    },
+    {
+      "company": "GOOG",
+      "definitionVersion": "GOOG_depreciationPpe_V1",
+      "evidenceClass": "OBSERVED",
+      "frequency": "ANNUAL",
+      "metric": "depreciationPpe",
+      "noteId": "goog-annual-pure-depreciation",
+      "observationId": "goog-2023-annual:depreciationPpe:2022",
+      "periodEnd": "2022-12-31",
+      "periodStart": "2022-01-01",
+      "periodType": "FY",
+      "revisionStatus": "COMPARATIVE_VINTAGE",
+      "scope": "CONSOLIDATED",
+      "source": {
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "locator": "Consolidated Statements of Cash Flows / depreciation row / 2022",
+        "page": 56,
+        "publicationDate": "2024-01-31",
+        "sha256": "1950a82ce1d443a9c8fc10e051acbed517bf5c0bbbab584be1812f5eb79c06e4",
+        "sourceId": "goog-2023q4-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf"
+      },
+      "unit": "USD_MILLIONS",
+      "value": 13475
+    },
+    {
+      "company": "GOOG",
+      "definitionVersion": "GOOG_depreciationPpe_V1",
+      "evidenceClass": "OBSERVED",
+      "frequency": "ANNUAL",
+      "metric": "depreciationPpe",
+      "noteId": "goog-annual-pure-depreciation",
+      "observationId": "goog-2023-annual:depreciationPpe:2023",
+      "periodEnd": "2023-12-31",
+      "periodStart": "2023-01-01",
+      "periodType": "FY",
+      "revisionStatus": "ORIGINAL_RELEASE_VINTAGE",
+      "scope": "CONSOLIDATED",
+      "source": {
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "locator": "Consolidated Statements of Cash Flows / depreciation row / 2023",
+        "page": 56,
+        "publicationDate": "2024-01-31",
+        "sha256": "1950a82ce1d443a9c8fc10e051acbed517bf5c0bbbab584be1812f5eb79c06e4",
+        "sourceId": "goog-2023q4-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf"
+      },
+      "unit": "USD_MILLIONS",
+      "value": 11946
+    }
+  ],
+  "limitations": [
+    "Native note anchors are hash-qualified archival review, not quarterly economic operands.",
+    "Annual values stay annual; no division into quarters.",
+    "No AI-attributed depreciation, return or capital allocation."
+  ],
+  "notes": [
+    {
+      "anchors": [
+        "Depreciation of property and equipment",
+        "10,273",
+        "13,475",
+        "11,946"
+      ],
+      "company": "GOOG",
+      "conclusion": "Annual pure PP&E depreciation for 2021/2022/2023; not amortization or stock compensation.",
+      "noteId": "goog-annual-pure-depreciation",
+      "source": {
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "locator": "Consolidated Statements of Cash Flows",
+        "page": 56,
+        "publicationDate": "2024-01-31",
+        "sha256": "1950a82ce1d443a9c8fc10e051acbed517bf5c0bbbab584be1812f5eb79c06e4",
+        "sourceId": "goog-2023q4-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf"
+      }
+    },
+    {
+      "anchors": [
+        "four years to six years",
+        "five years to six years"
+      ],
+      "company": "GOOG",
+      "conclusion": "Prospective FY2023 estimate change, not measured AI productivity.",
+      "noteId": "goog-useful-lives",
+      "source": {
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "locator": "Note 1",
+        "page": 57,
+        "publicationDate": "2024-01-31",
+        "sha256": "1950a82ce1d443a9c8fc10e051acbed517bf5c0bbbab584be1812f5eb79c06e4",
+        "sourceId": "goog-2023q4-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf"
+      }
+    },
+    {
+      "anchors": [
+        "$519.5 billion",
+        "$513.9 billion",
+        "one year or less"
+      ],
+      "company": "GOOG",
+      "conclusion": "Google Cloud 513.9bn point stock; short-term-contract definition break retained. Alphabet total 519.5bn and recognition horizon must not be misattributed to Cloud.",
+      "noteId": "goog-rpo-break",
+      "source": {
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "locator": "Note 2 / Revenue Backlog",
+        "page": 15,
+        "publicationDate": "2026-07-23",
+        "sha256": "7e6e292bd04d1a09f658e5af6a56aca8bc9c2b547b993ae8d26b9fac2314fd58",
+        "sourceId": "goog-2026q2-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/GOOG-10-Q-Q2-2026.pdf"
+      }
+    },
+    {
+      "anchors": [
+        "five to six years",
+        "six to five years",
+        "Assets acquired under finance leases"
+      ],
+      "company": "AMZN",
+      "conclusion": "2024 server extension and 2025 subset reduction; asset lease additions differ from cash principal.",
+      "noteId": "amzn-life-lease",
+      "source": {
+        "delegatedBy": "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
+        "locator": "Note 1 / Property and Equipment and Leases",
+        "page": 58,
+        "publicationDate": "2026-02-06",
+        "sha256": "63196177ef83756ddfaff5aacda547f0eabac4669c0f6144bcee8401cd8cfbfc",
+        "sourceId": "amzn-annual-2025-repair",
+        "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf"
+      }
+    },
+    {
+      "anchors": [
+        "5.5 years"
+      ],
+      "company": "META",
+      "conclusion": "Release wording retained separately from six-year annual-report wording.",
+      "noteId": "meta-release-life",
+      "source": {
+        "delegatedBy": "https://investor.atmeta.com/financials/default.aspx",
+        "locator": "CFO outlook",
+        "page": 2,
+        "publicationDate": "2025-01-29",
+        "sha256": "3545390d15b026e415518149bf2904d20cf18d37f551cccb60f9f001bcfdfc5f",
+        "sourceId": "meta-2024q4-pdf",
+        "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-Final.pdf"
+      }
+    },
+    {
+      "anchors": [
+        "6 years",
+        "Finance lease right-of-use assets"
+      ],
+      "company": "META",
+      "conclusion": "RESTATEMENT_REVIEW_REQUIRED: no forced reconciliation of asset-life wording.",
+      "noteId": "meta-annual-life-lease",
+      "source": {
+        "delegatedBy": "https://investor.atmeta.com/financials/",
+        "locator": "Note 1 / Property and Equipment",
+        "page": 98,
+        "publicationDate": "2025-01-30",
+        "sha256": "9b81ad9b6ecb9e23b1d810b9cecabcad05e00386d24dd64b4cd44a5bab54a13f",
+        "sourceId": "meta-annual-2024-repair",
+        "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2024/ar/Meta-12-31-2024-10K-ARS.pdf"
+      }
+    },
+    {
+      "anchors": [
+        "four years to six years"
+      ],
+      "company": "MSFT",
+      "conclusion": "FY2023 change retained; publication posting date uncertain, audited-report date recorded explicitly.",
+      "noteId": "msft-life",
+      "source": {
+        "delegatedBy": null,
+        "locator": "Note 1 / Property and Equipment",
+        "page": null,
+        "publicationDate": "2024-07-30",
+        "sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+        "sourceId": "msft-annual-fy2024",
+        "url": "https://www.microsoft.com/investor/reports/ar24/index.html"
+      }
+    },
+    {
+      "anchors": [
+        "Prior period segment information has been recast"
+      ],
+      "company": "MSFT",
+      "conclusion": "FY2025 IC realignment; recast comparative vintages selected only with reviewed metadata.",
+      "noteId": "msft-realignment",
+      "source": {
+        "delegatedBy": null,
+        "locator": "Note 1 / Reportable Segments",
+        "page": null,
+        "publicationDate": "2025-07-30",
+        "sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca",
+        "sourceId": "msft-annual-fy2025",
+        "url": "https://www.microsoft.com/investor/reports/ar25/index.html"
+      }
+    },
+    {
+      "anchors": [
+        "finance lease",
+        "principal"
+      ],
+      "company": "MSFT",
+      "conclusion": "Lease asset/cash-flow categories are distinct; does not establish a quarterly native CapEx arithmetic identity.",
+      "noteId": "msft-lease-policy",
+      "source": {
+        "delegatedBy": null,
+        "locator": "Note 13 / Leases",
+        "page": null,
+        "publicationDate": "2025-07-30",
+        "sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca",
+        "sourceId": "msft-annual-fy2025",
+        "url": "https://www.microsoft.com/investor/reports/ar25/index.html"
+      }
+    },
+    {
+      "anchors": [
+        "41 billion",
+        "5.6 billion"
+      ],
+      "company": "MSFT",
+      "conclusion": "Rounded native CapEx and total finance leases are not cash PP&E plus lease principal; UNRECONCILED_NATIVE_CAPEX_SCOPE.",
+      "noteId": "msft-capex-call",
+      "source": {
+        "delegatedBy": null,
+        "locator": "CFO remarks",
+        "page": null,
+        "publicationDate": "2026-07-29",
+        "sha256": "993f2e524d29598be32dbef75e38da359a5de2892052b53ac733a8b847135361",
+        "sourceId": "msft-call-fy2026q4",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+      }
+    },
+    {
+      "anchors": [
+        "Note 4. Leases",
+        "operating leases"
+      ],
+      "company": "GOOG",
+      "conclusion": "Native operating lease context archived; annual lease values are not quarterly CapEx or AI capital.",
+      "noteId": "goog-lease-archive",
+      "source": {
+        "locator": "Note 4 / Leases",
+        "page": 72,
+        "publicationDate": "2024-01-31",
+        "sha256": "1950a82ce1d443a9c8fc10e051acbed517bf5c0bbbab584be1812f5eb79c06e4",
+        "sourceId": "goog-2023q4-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf"
+      }
+    },
+    {
+      "anchors": [
+        "Future finance lease payments"
+      ],
+      "company": "GOOG",
+      "conclusion": "Finance lease payment obligations appear within debt; not a new quarterly cash PP&E or AI capital series.",
+      "noteId": "goog-finance-lease-debt",
+      "source": {
+        "locator": "Note 5 / Long-Term Debt",
+        "page": 74,
+        "publicationDate": "2024-01-31",
+        "sha256": "1950a82ce1d443a9c8fc10e051acbed517bf5c0bbbab584be1812f5eb79c06e4",
+        "sourceId": "goog-2023q4-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf"
+      }
+    }
+  ],
+  "reviewed": true,
+  "schemaVersion": "ai-capex-accounting-notes-v0.1"
+}

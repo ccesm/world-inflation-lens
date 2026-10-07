@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-capex-accounting-notes-v0.1",
+  "title": "Annual observations and accounting-note archive anchors",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "reviewed",
+    "notes",
+    "annualObservations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "ai-capex-accounting-notes-v0.1"
+    },
+    "reviewed": {
+      "const": true
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "annualObservations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "$comment": "Archival/manual review registries, not candidate auto-acceptance. notes.mjs/recasts.mjs enforce pinned raw identity, period, reporting-basis and native-value bindings. verify-notes.py/reextract.mjs reproduce native source evidence."
+}

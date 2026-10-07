@@ -140,7 +140,7 @@
       "observationPeriod": "2026-06-30",
       "quarter": "2026Q2",
       "kind": "BACKLOG",
-      "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+      "evidenceLevel": "RAW_HASH_QUALIFIED",
       "evidenceClass": "OBSERVED",
       "nativeWordingSummary": "Google Cloud RPO; includes short-term contracts since Q1 2026",
       "metric": "rpo",
@@ -153,19 +153,28 @@
       "recognizedRevenue": false,
       "definitionVersion": "ALPHABET_RPO_SHORT_TERM_INCLUDED_V2",
       "source": {
-        "sourceId": "googq26",
-        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
-        "sha256": null,
-        "locator": "Note 2: remaining performance obligations and inclusion of short-term contracts"
+        "sourceId": "goog-2026q2-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/GOOG-10-Q-Q2-2026.pdf",
+        "sha256": "7e6e292bd04d1a09f658e5af6a56aca8bc9c2b547b993ae8d26b9fac2314fd58",
+        "locator": "PDF page[15]/Note 2/Revenue Backlog",
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "publicationDate": "2026-07-23"
       },
       "limitations": [
         "No allocation to AI infrastructure or attributable AI cash return.",
         "Sparse milestone; not an attributable quarterly AI cash return.",
-        "Inherited Phase 1 manual review; raw filing identity is not qualified in Phase 2A."
+        "Inherited Phase 1 manual review; raw filing identity is not qualified in Phase 2A.",
+        "The just-over-50%-in-24-months recognition horizon is for Alphabet total backlog, not a Google Cloud-only conversion schedule."
       ],
       "sourceQualificationLevel": "PHASE1_MANUAL_REVIEWED",
       "monetizationEvidenceLevel": null,
-      "observationPeriodBasis": "DISCLOSED_QUARTER_BALANCE"
+      "observationPeriodBasis": "DISCLOSED_QUARTER_BALANCE",
+      "priorManualReference": {
+        "locator": "Note 2: remaining performance obligations and inclusion of short-term contracts",
+        "sha256": null,
+        "sourceId": "googq26",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+      }
     },
     {
       "eventId": "amzn26:aiRevenueRunRate:AWS_AI:RUN_RATE:2026-06-30",
@@ -337,7 +346,7 @@
       "sourceQualificationLevel": "RAW_HASH_QUALIFIED",
       "monetizationEvidenceLevel": null,
       "evidenceClass": "FORWARD_GUIDANCE",
-      "nativeWordingSummary": "Annual CapEx guidance, including finance-lease principal, narrowed to a $130\u2013145 billion range.",
+      "nativeWordingSummary": "Annual CapEx guidance, including finance-lease principal, narrowed to a $130–145 billion range.",
       "value": null,
       "rangeLower": 130000,
       "rangeUpper": 145000,

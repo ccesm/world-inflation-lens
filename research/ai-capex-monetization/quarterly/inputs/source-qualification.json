@@ -21,11 +21,11 @@
     {
       "company": "MSFT",
       "irStatus": "CURRENT",
-      "acceptedRawSources": 18,
-      "acceptedRawBytes": 9648907,
+      "acceptedRawSources": 24,
+      "acceptedRawBytes": 12825169,
       "formats": {
-        "manual": 1,
-        "html": 16,
+        "manual": 3,
+        "html": 20,
         "xlsx": 1
       },
       "periodThrough": "2026-06-30",
@@ -34,23 +34,25 @@
     },
     {
       "company": "GOOG",
-      "irStatus": "PARTIAL",
-      "acceptedRawSources": 12,
-      "acceptedRawBytes": 1610789,
+      "irStatus": "CURRENT",
+      "acceptedRawSources": 26,
+      "acceptedRawBytes": 7565183,
       "formats": {
-        "pdf": 12
+        "pdf": 24,
+        "manual": 2
       },
       "periodThrough": "2026-06-30",
-      "latestPublication": "2026-07-22",
-      "historyLimit": "Alphabet 2019\u20132020 missing"
+      "latestPublication": "2026-07-23",
+      "historyLimit": null
     },
     {
       "company": "AMZN",
       "irStatus": "CURRENT",
-      "acceptedRawSources": 16,
-      "acceptedRawBytes": 7140308,
+      "acceptedRawSources": 17,
+      "acceptedRawBytes": 8774559,
       "formats": {
-        "pdf": 16
+        "pdf": 16,
+        "manual": 1
       },
       "periodThrough": "2026-06-30",
       "latestPublication": "2026-07-30",
@@ -59,11 +61,12 @@
     {
       "company": "META",
       "irStatus": "CURRENT",
-      "acceptedRawSources": 16,
-      "acceptedRawBytes": 3025660,
+      "acceptedRawSources": 17,
+      "acceptedRawBytes": 4917805,
       "formats": {
         "html": 5,
-        "pdf": 11
+        "pdf": 11,
+        "manual": 1
       },
       "periodThrough": "2026-06-30",
       "latestPublication": "2026-07-29",
@@ -102,8 +105,75 @@
   ],
   "operationalReceipts": "External cache receipts/runs, excluded from economic hashes",
   "remainingGates": [
-    "SEC access unresolved; no live Company Facts acceptance.",
-    "Alphabet 2019\u20132020 raw source gap.",
-    "Full native accounting-note/policy and original/restated segment archive remains incomplete."
-  ]
+    "Microsoft native CapEx remains unreconciled; exclude unsupported lease bridges.",
+    "Historical note/recast coverage is not exhaustive.",
+    "Meta release 5.5-year versus annual-report six-year asset-life wording requires review; no inferred depreciation adjustment.",
+    "SEC raw download still blocked; official IR alternative raw sources qualified."
+  ],
+  "repairAccessAttempts": [
+    {
+      "sourceId": "goog-2020q1-official-pdf",
+      "company": "GOOG",
+      "url": "https://abc.xyz/assets/investor/static/pdf/2020Q1_alphabet_earnings_release.pdf",
+      "periodEnd": "2020-03-31",
+      "status": "ACCESS_BLOCKED",
+      "httpStatus": 403,
+      "attempted": true
+    },
+    {
+      "sourceId": "goog-2020q2-official-pdf",
+      "company": "GOOG",
+      "url": "https://abc.xyz/assets/investor/static/pdf/2020Q2_alphabet_earnings_release.pdf",
+      "periodEnd": "2020-06-30",
+      "status": "ACCESS_BLOCKED",
+      "attempted": false
+    },
+    {
+      "sourceId": "goog-2020q3-official-pdf",
+      "company": "GOOG",
+      "url": "https://abc.xyz/assets/investor/static/pdf/2020Q3_alphabet_earnings_release.pdf",
+      "periodEnd": "2020-09-30",
+      "status": "ACCESS_BLOCKED",
+      "attempted": false
+    },
+    {
+      "sourceId": "goog-2020q4-official-pdf",
+      "company": "GOOG",
+      "url": "https://abc.xyz/assets/investor/static/pdf/2020Q4_alphabet_earnings_release.pdf",
+      "periodEnd": "2020-12-31",
+      "status": "ACCESS_BLOCKED",
+      "attempted": false
+    },
+    {
+      "sourceId": "goog-2020q1-sec-exhibit",
+      "company": "GOOG",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000018/googexhibit991q12020.htm",
+      "periodEnd": "2020-03-31",
+      "status": "ACCESS_BLOCKED",
+      "httpStatus": 403,
+      "attempted": true
+    }
+  ],
+  "earlyAlphabetDiscovery": {
+    "targetQuarters": [
+      "2019Q1",
+      "2019Q2",
+      "2019Q3",
+      "2019Q4",
+      "2020Q1",
+      "2020Q2",
+      "2020Q3",
+      "2020Q4"
+    ],
+    "officialFormsReviewed": [
+      "SEC 10-Q/10-K and exhibits",
+      "legacy official IR earnings PDFs",
+      "2021 comparative release/2020 annual report links",
+      "current official IR delegated PDF feed"
+    ],
+    "acceptedEarlyQuarterSources": 8,
+    "status": "RAW_OFFICIAL_CDN_QUALIFIED",
+    "limitation": "Legacy abc.xyz and SEC 403 failures are retained. Eight alternate official CDN releases are raw-qualified; no proxy or third-party economic evidence was used.",
+    "recoveryPath": "Company-controlled legacy IR news feed /feed/PressRelease.svc/GetPressReleaseList on alphabet2025ir.q4web.com, discovered via the branded 2019Q4 IR news page; exact document links use the same 479360582 Alphabet tenant already delegated by abc.xyz."
+  }
 }

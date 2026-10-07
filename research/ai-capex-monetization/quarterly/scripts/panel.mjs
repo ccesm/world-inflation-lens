@@ -1,5 +1,7 @@
 import {bytes,hash,date,fiscalQuarter,companies} from '../../scripts/contract.mjs';
 import {validateSource,officialURL} from './retrieve.mjs';
+import {validateRecasts} from './recasts.mjs';
+import {validateNotes} from './notes.mjs';
 export const version='ai-capex-quarterly-panel-v0.1';
 export const metricFamilies={
  financials:['revenue','costRevenue','grossProfit','operatingIncome','netIncome'],
@@ -14,7 +16,7 @@ const fail=m=>{throw Error(m)};
 export function quarters(){const result=[];for(let y=2019;y<=2026;y++)for(let q=1;q<=4;q++){if(y===2026&&q>2)continue;const end=new Date(Date.UTC(y,q*3,0)).toISOString().slice(0,10);result.push({calendarQuarter:`${y}Q${q}`,periodStart:`${y}-${String(q*3-2).padStart(2,'0')}-01`,periodEnd:end});}return result;}
 export function validateInputs(input,definitions){
  if(input.schemaVersion!=='ai-capex-quarterly-input-v0.1'||!Array.isArray(input.sources)||!Array.isArray(input.observations))fail('INPUT_SCHEMA');
- for(const p of input.policies?.policies||[]){if(!companies.includes(p.company)||!p.policy||!p.impact||!p.source?.sourceId||!p.source.locator)fail('POLICY_PROVENANCE');date(p.effectiveDate);officialURL(p.company,p.source.url);}
+ for(const p of input.policies?.policies||[]){if(!companies.includes(p.company)||!p.policy||!p.impact||!p.source?.sourceId||!p.source.locator)fail('POLICY_PROVENANCE');date(p.effectiveDate);officialURL(p.company,p.source.url,p.source.delegatedBy);}
  const sources=new Map(),defs=new Map();
  for(const d of definitions){if(defs.has(d.definitionVersion)||!d.scopes?.length||!d.metrics?.length||!companies.includes(d.company)||!d.changeReason)fail('DEFINITION_REGISTRY');date(d.effectiveFrom);if(d.effectiveTo)date(d.effectiveTo);defs.set(d.definitionVersion,d);}
  for(const s of input.sources){validateSource(s);if(sources.has(s.sourceId))fail('DUPLICATE_SOURCE');sources.set(s.sourceId,s);}
@@ -40,7 +42,7 @@ export function validateInputs(input,definitions){
   if(!['COMPARABLE','LIMITED_COMPARABILITY','NOT_COMPARABLE'].includes(o.comparabilityStatus)||!['ORIGINAL_RELEASE_VINTAGE','COMPARATIVE_VINTAGE','RESTATED','CURRENT_HISTORICAL_WORKBOOK_VINTAGE'].includes(o.revisionStatus))fail('COMPARABILITY');
   const key=[o.company,o.metric,o.scope,o.periodStart,o.periodEnd,o.periodType,o.sourceId].join('|');if(contexts.has(key))fail('DUPLICATE_CONTEXT');contexts.add(key);
  }
- return true;
+ validateRecasts(input);validateNotes(input);return true;
 }
 export function subtractDuration(long,short,proof){
  if(!proof?.reviewed||!proof.reason||!proof.sourceIds?.includes(long.sourceId)||!proof.sourceIds?.includes(short.sourceId)||proof.restatementBasis!==long.restatementBasis||long.restatementBasis!==short.restatementBasis)fail('INCOMPATIBLE_VINTAGE');
@@ -130,6 +132,6 @@ export function build(input,manifest,definitions){
   reconciliation.push({company,calendarQuarter:q.calendarQuarter,capexStatus:company==='MSFT'?'UNRECONCILED_NATIVE_CAPEX_SCOPE':company==='AMZN'&&get('cashPpeNet')?'GROSS_MINUS_PROCEEDS_QUALIFIED':company==='META'&&get('nativeCapex')?'CASH_PLUS_PRINCIPAL_QUALIFIED':nativeCash?'CASH_PPE_ONLY':'UNAVAILABLE',fcfStatus:reported&&fcf?reported.value===fcf.value?'REPORTED_AND_CALCULATED_MATCH':'RECONCILIATION_REVIEW_REQUIRED':fcf?'CALCULATED_COMPANY_CONVENTION':'UNAVAILABLE',operandIds:fcf?.calculation?.operandIds||[],limitations:company==='MSFT'?['Native capital-lease-inclusive CapEx is not cash PP&E plus lease principal; rounded workbook values are not forced to reconcile.']:[]});
  }
  const qualification=companies.map(company=>{const core=['revenue','operatingIncome','cfo','fcfCompanyConvention'].map(metric=>completeness.find(r=>r.company===company&&r.metric===metric));const cash=quarters().filter(q=>rows.some(r=>r.company===company&&r.periodEnd===q.periodEnd&&['cashPpeGross','cashPpeNet'].includes(r.metric)&&r.value!==null)).length;const mismatches=reconciliation.filter(r=>r.company===company&&r.fcfStatus==='RECONCILIATION_REVIEW_REQUIRED');return{company,status:core.every(r=>r.availableQuarters===30)&&cash===30&&!mismatches.length?'CORE_PANEL_QUALIFIED':'PARTIAL',nativeCashPpeQuarters:cash,core,reconciliationMismatchCount:mismatches.length,limitations:['Qualification is for native consolidated arithmetic, not every metric family or AI return.','Native cash PP&E gross/net labels remain distinct; no AI-specific capital denominator.']};});
- const content={schemaVersion:version,inputHash:hash([...input.observations].sort((a,b)=>a.observationId.localeCompare(b.observationId))),sourceManifestHash:hash(input.sources.map(({retrievedAt,status,...s})=>s).sort((a,b)=>a.sourceId.localeCompare(b.sourceId))),policyContextHash:hash(input.policies||{}),selectionHash:hash(manifest),definitionHash:hash(definitions),rows,completeness,reconciliation,qualification,limitations:['CURRENT_ACCEPTED_OFFICIAL_VINTAGES, not a publisher-vintage backtest.','No interpolation, synthetic AI revenue, AI CapEx allocation, or composite score.']};return{content,resultHash:hash(content)};
+ const content={schemaVersion:version,inputHash:hash([...input.observations].sort((a,b)=>a.observationId.localeCompare(b.observationId))),sourceManifestHash:hash(input.sources.map(({retrievedAt,status,...s})=>s).sort((a,b)=>a.sourceId.localeCompare(b.sourceId))),policyContextHash:hash(input.policies||{}),recastReviewHash:hash(input.recasts||{}),accountingNotesHash:hash(input.notes||{}),selectionHash:hash(manifest),definitionHash:hash(definitions),rows,completeness,reconciliation,qualification,limitations:['CURRENT_ACCEPTED_OFFICIAL_VINTAGES, not a publisher-vintage backtest.','No interpolation, synthetic AI revenue, AI CapEx allocation, or composite score.']};return{content,resultHash:hash(content)};
 }
 export function validateGenerated(actual,input,manifest,definitions){if(bytes(actual)!==bytes(build(input,manifest,definitions)))fail('GENERATED_PROVENANCE_MISMATCH');return true;}

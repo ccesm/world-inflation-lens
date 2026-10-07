@@ -93,6 +93,45 @@ patterns={
  'GOOG':{'revenue':r'^Revenues$','costRevenue':r'^Cost of revenues$','operatingIncome':r'^Income from operations$','netIncome':r'^Net income$','cfo':r'^Net cash provided by operating activities$','cashPpeGross':r'^Purchases of property and equipment$','depreciationPpe':r'^Depreciation(?: of property and equipment)?$','depreciationAmortizationOther':r'^Depreciation and amortization$','fcfReported':r'^Free cash flow(?:\s*\(\d+\))?$'}
 }
 
+def early_alphabet(s,tables):
+ """Explicit legacy native layouts: single-quarter FCF and eight-column segment history.
+ No annual/YTD column can be selected as a quarter. Unknown layouts fail closed.
+ """
+ if s['company']!='GOOG' or not '2019-03-31'<=s['periodEnd']<='2020-12-31':return []
+ end=s['periodEnd'];year=int(end[:4]);month=int(end[5:7]);out=[]
+ def append(metric,value,pe,locator,label):
+  y=int(pe[:4]);m=int(pe[5:7]);out.append({'observationId':f"{s['sourceId']}:{metric}:{pe}",'sourceId':s['sourceId'],'company':'GOOG','metric':metric,'scope':'Google Cloud' if metric.startswith('segment') else 'CONSOLIDATED','periodStart':f'{y}-{m-2:02d}-01','periodEnd':pe,'periodType':'Q','unit':'USD_MILLIONS','value':value,'precision':'EXACT','evidenceClass':'OBSERVED','definitionVersion':'GOOG_CLOUD_SEGMENT_V1' if metric.startswith('segment') else 'GOOG_fcfReported_V1','restatementBasis':s['sourceId'],'revisionStatus':'COMPARATIVE_VINTAGE' if pe!=end else 'ORIGINAL_RELEASE_VINTAGE','nativeLabel':label,'locator':locator,'comparabilityStatus':'LIMITED_COMPARABILITY' if metric.startswith('segment') else 'COMPARABLE'})
+ for loc,rows in tables:
+  joined=' '.join(r[2] for r in rows)
+  title=' '.join(r[2] for r in rows[:4])
+  fcf_start=next((i for i,r in enumerate(rows) if 'Reconciliation from net cash provided by operating activities to free cash flow' in r[2]),None)
+  if fcf_start is not None:
+   fcf_rows=rows[fcf_start:]
+   header=' '.join(r[2] for r in fcf_rows[:9])
+   fcf_title=fcf_rows[0][2]
+   native_date=re.search(r'(?:Quarter|Three Months)\s+Ended\s+'+calendar.month_name[month]+r'\s+'+str(int(end[8:]))+r',?\s+'+str(year),header)
+   cells=[(i+fcf_start,r) for i,r in enumerate(fcf_rows) if r[0]=='Free cash flow' and len(r[1])==1]
+   if native_date and 'in millions' in fcf_title.lower() and len(cells)==1:
+    ri,r=cells[0];append('fcfReported',r[1][0],end,f'{loc}/row[{ri+1}]/numericColumn[1]',r[0])
+  # Early revenue detail has no Cloud operating income: qualify revenue independently.
+  clouds=[(i,r) for i,r in enumerate(rows) if r[0]=='Google Cloud' and len(r[1])==2]
+  if len(clouds)==1 and quarter_header(rows,'GOOG',end) and re.search(r'(in millions|revenues)',joined,re.I):
+   ri,r=clouds[0]
+   for i,y in enumerate([year-1,year]):
+    pe=f'{y}-{month:02d}-{calendar.monthrange(y,month)[1]}'
+    if pe>='2019-03-31':append('segmentRevenue',r[1][i],pe,f'{loc}/row[{ri+1}]/numericColumn[{i+1}]','Google Cloud revenue')
+  # First separately reported segment operating history: five exact quarters, then three FYs.
+  if end=='2020-12-31' and 'Segment results' in joined and 'revenues and operating income' in joined.lower() and any(r[0]=='Google Cloud' and len(r[1])==8 for r in rows):
+   header='Q4 2019 Q1 2020 Q2 2020 Q3 2020 Q4 2020 2018 2019 2020'
+   clouds=[(i,r) for i,r in enumerate(rows) if r[0]=='Google Cloud' and len(r[1])==8]
+   if joined.count(header)!=2 or len(clouds)!=2 or 'in millions' not in joined.lower():raise ValueError('EARLY_CLOUD_COLUMN_IDENTITY')
+   for metric,(ri,r) in zip(['segmentRevenue','segmentOperatingIncome'],clouds):
+    prior=' '.join(x[2] for x in rows[:ri])
+    required='Revenues' if metric=='segmentRevenue' else 'Operating income (loss)'
+    if required not in prior:raise ValueError('EARLY_CLOUD_METRIC_IDENTITY')
+    for i,pe in enumerate(['2019-12-31','2020-03-31','2020-06-30','2020-09-30','2020-12-31']):append(metric,r[1][i],pe,f'{loc}/row[{ri+1}]/numericColumn[{i+1}]','Google Cloud '+metric)
+ return out
+
 def extract(s,cache):
  path=Path(cache)/'objects'/s['sha256'][:2]/s['sha256'];raw=path.read_bytes()
  if hashlib.sha256(raw).hexdigest()!=s['sha256']:raise ValueError('RAW_HASH')
@@ -186,6 +225,7 @@ def extract(s,cache):
      if not '2019-03-31'<=pe<='2026-06-30' or any(o['metric']==metric and o['periodEnd']==pe for o in out):continue
      dv='MSFT_INTELLIGENT_CLOUD_FY2025_V2' if pe>='2024-09-30' else 'MSFT_'+metric+'_V1'
      out.append({'observationId':f"{s['sourceId']}:{metric}:{pe}",'sourceId':s['sourceId'],'company':'MSFT','metric':metric,'scope':'Intelligent Cloud','periodStart':f'{y}-{month-2:02d}-01','periodEnd':pe,'periodType':'Q','unit':'USD_MILLIONS','value':r[1][i],'precision':'EXACT','evidenceClass':'OBSERVED','definitionVersion':dv,'restatementBasis':s['sourceId'],'revisionStatus':'COMPARATIVE_VINTAGE' if y!=year else 'ORIGINAL_RELEASE_VINTAGE','nativeLabel':'Intelligent Cloud '+metric,'locator':f'{locator}/row[{ri+1}]/numericColumn[{i+1}]','comparabilityStatus':'LIMITED_COMPARABILITY'})
+ out.extend(early_alphabet(s,tables))
  # A release may repeat the identical segment table in its highlights and notes.
  # Verify equality before consolidating these citations; conflicting duplicates
  # remain unqualified, never selected by first-match preference.

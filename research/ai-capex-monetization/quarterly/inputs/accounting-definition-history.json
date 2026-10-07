@@ -583,10 +583,11 @@
         "Intelligent Cloud"
       ],
       "unit": "USD_MILLIONS",
-      "effectiveFrom": "2024-09-30",
+      "effectiveFrom": "2023-09-30",
       "effectiveTo": null,
-      "changeReason": "FY2025 reporting realignment: selected FY2026 current/comparative disclosures are on new scope; older scope remains distinct. Do not calculate growth across versions.",
-      "comparabilityStatus": "LIMITED_COMPARABILITY"
+      "changeReason": "FY2025 reporting realignment; official FY2024 quarterly comparatives recast on this basis. Effective analytical coverage is earlier than adoption date.",
+      "comparabilityStatus": "LIMITED_COMPARABILITY",
+      "reportingAdoptionDate": "2024-07-01"
     },
     {
       "definitionVersion": "MSFT_microsoftCloudRevenue_V1",
@@ -677,6 +678,68 @@
       "effectiveTo": "2024-06-30",
       "changeReason": "Native MSFT Intelligent Cloud segmentRevenue; retained as disclosed, not harmonized into an AI measure.",
       "comparabilityStatus": "LIMITED_COMPARABILITY"
+    },
+    {
+      "changeReason": "2023 cost allocation presentation; explicitly recast 2022 comparatives retained separately from original reporting.",
+      "company": "GOOG",
+      "comparabilityStatus": "LIMITED_COMPARABILITY",
+      "definitionVersion": "GOOG_segmentRevenue_COST_ALLOCATION_2023_V2",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "metrics": [
+        "segmentRevenue"
+      ],
+      "reportingAdoptionDate": "2023-01-01",
+      "scopes": [
+        "Google Cloud"
+      ],
+      "unit": "USD_MILLIONS"
+    },
+    {
+      "changeReason": "2023 cost allocation presentation; explicitly recast 2022 comparatives retained separately from original reporting.",
+      "company": "GOOG",
+      "comparabilityStatus": "LIMITED_COMPARABILITY",
+      "definitionVersion": "GOOG_segmentOperatingIncome_COST_ALLOCATION_2023_V2",
+      "effectiveFrom": "2022-01-01",
+      "effectiveTo": null,
+      "metrics": [
+        "segmentOperatingIncome"
+      ],
+      "reportingAdoptionDate": "2023-01-01",
+      "scopes": [
+        "Google Cloud"
+      ],
+      "unit": "USD_MILLIONS"
+    },
+    {
+      "changeReason": "Revenue backlog includes contracts of one year or less beginning Q1 2026; official Q2 10-Q archived.",
+      "company": "GOOG",
+      "comparabilityStatus": "NOT_COMPARABLE",
+      "definitionVersion": "ALPHABET_RPO_SHORT_TERM_INCLUDED_V2",
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": null,
+      "metrics": [
+        "rpo"
+      ],
+      "scopes": [
+        "Google Cloud"
+      ],
+      "unit": "USD_MILLIONS"
+    },
+    {
+      "changeReason": "Native Alphabet reconciliation defines free cash flow as CFO less purchases of property and equipment; standalone quarter, not annual/YTD allocation.",
+      "company": "GOOG",
+      "comparabilityStatus": "COMPARABLE",
+      "definitionVersion": "GOOG_fcfReported_V1",
+      "effectiveFrom": "2019-01-01",
+      "effectiveTo": null,
+      "metrics": [
+        "fcfReported"
+      ],
+      "scopes": [
+        "CONSOLIDATED"
+      ],
+      "unit": "USD_MILLIONS"
     }
   ],
   "derivedDefinitions": [

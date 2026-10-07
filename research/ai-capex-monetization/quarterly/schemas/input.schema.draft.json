@@ -23,6 +23,12 @@
       "items": {
         "$ref": "#/$defs/observation"
       }
+    },
+    "recasts": {
+      "$ref": "recast-review.schema.draft.json"
+    },
+    "notes": {
+      "$ref": "accounting-notes.schema.draft.json"
     }
   },
   "$comment": "CLI semantic validators additionally enforce exact dates, native fiscal boundaries, publisher/URL/CIK/accession, unit/scope/definition, duplicates and pinned selection. JSON Schema alone is not source qualification.",
@@ -231,6 +237,51 @@
             "LIMITED_COMPARABILITY",
             "NOT_COMPARABLE"
           ]
+        },
+        "reportingVersion": {
+          "enum": [
+            "ORIGINAL_REPORTED",
+            "RECAST_REPORTED",
+            "COMPARATIVE_REPORTED"
+          ]
+        },
+        "originalSourceId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recastSourceId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recastPublicationDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportingBasisVersion": {
+          "type": "string"
+        },
+        "effectivePeriod": {
+          "type": "object",
+          "required": [
+            "start",
+            "end"
+          ],
+          "properties": {
+            "start": {
+              "type": "string",
+              "format": "date"
+            },
+            "end": {
+              "type": "string",
+              "format": "date"
+            }
+          }
         }
       }
     }

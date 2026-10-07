@@ -1,69 +1,148 @@
 {
-  "schemaVersion": "ai-capex-policies-v0.1",
+  "limitations": [
+    "Raw policies do not constitute a complete historical note archive. Meta 5.5/six-year wording remains under review; no lifetime assumption is used to manufacture quarterly values."
+  ],
   "policies": [
     {
       "company": "MSFT",
-      "effectiveDate": "2026-07-01",
-      "policy": "Datacenter/office-building estimated life changes from 15 to 25 years, prospective FY2027. Finance-vs-operating lease classification may change.",
       "effectScope": "BUILDINGS_AND_LEASE_CLASSIFICATION",
+      "effectiveDate": "2026-07-01",
+      "impact": "Never apply to 2026Q2 or earlier depreciation or CapEx retrospectively.",
+      "policy": "Datacenter/office-building estimated life changes from 15 to 25 years, prospective FY2027. Finance-vs-operating lease classification may change.",
       "source": {
-        "sourceId": "msft-call-fy2026q4",
-        "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+        "locator": "CFO remarks: useful-life update FY27; 15 to 25 years",
         "sha256": "993f2e524d29598be32dbef75e38da359a5de2892052b53ac733a8b847135361",
-        "locator": "CFO remarks: useful-life update FY27; 15 to 25 years"
-      },
-      "impact": "Never apply to 2026Q2 or earlier depreciation or CapEx retrospectively."
+        "sourceId": "msft-call-fy2026q4",
+        "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+      }
     },
     {
       "company": "AMZN",
-      "effectiveDate": "2024-01-01",
-      "policy": "Server life from five to six years.",
       "effectScope": "SERVERS",
-      "source": {
-        "sourceId": "amznk24",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041036/tm263815d4_ars.pdf",
-        "publicationDate": null,
-        "sha256": null,
-        "locator": "FY2025 annual report PP&E accounting policy",
+      "effectiveDate": "2024-01-01",
+      "impact": "Mechanical depreciation reduction; not a cash return or measured AI attribution.",
+      "policy": "Server life from five to six years.",
+      "priorManualReference": {
         "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel.",
+        "locator": "FY2025 annual report PP&E accounting policy",
+        "publicationDate": null,
         "reviewReference": "docs/AI_CAPEX_ACCOUNTING_BRIDGE.md",
-        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel."
+        "sha256": null,
+        "sourceId": "amznk24",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041036/tm263815d4_ars.pdf"
       },
-      "impact": "Mechanical depreciation reduction; not a cash return or measured AI attribution."
+      "source": {
+        "delegatedBy": "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
+        "evidenceLevel": "RAW_HASH_QUALIFIED",
+        "locator": "PDF page[58]/Note 1/Property and Equipment",
+        "publicationDate": "2026-02-06",
+        "sha256": "63196177ef83756ddfaff5aacda547f0eabac4669c0f6144bcee8401cd8cfbfc",
+        "sourceId": "amzn-annual-2025-repair",
+        "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf"
+      }
     },
     {
       "company": "AMZN",
-      "effectiveDate": "2025-01-01",
-      "policy": "A subset of server/network lives from six to five years.",
       "effectScope": "SUBSET_SERVER_NETWORK",
-      "source": {
-        "sourceId": "amznk25",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041036/tm263815d4_ars.pdf",
-        "publicationDate": null,
-        "sha256": null,
-        "locator": "FY2025 annual report subset server/network accounting estimate",
+      "effectiveDate": "2025-01-01",
+      "impact": "Mechanical depreciation increase; source-specific subset, not the whole fleet.",
+      "policy": "A subset of server/network lives from six to five years.",
+      "priorManualReference": {
         "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel.",
+        "locator": "FY2025 annual report subset server/network accounting estimate",
+        "publicationDate": null,
         "reviewReference": "docs/AI_CAPEX_ACCOUNTING_BRIDGE.md",
-        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel."
+        "sha256": null,
+        "sourceId": "amznk25",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041036/tm263815d4_ars.pdf"
       },
-      "impact": "Mechanical depreciation increase; source-specific subset, not the whole fleet."
+      "source": {
+        "delegatedBy": "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx",
+        "evidenceLevel": "RAW_HASH_QUALIFIED",
+        "locator": "PDF page[58]/Note 1/Property and Equipment",
+        "publicationDate": "2026-02-06",
+        "sha256": "63196177ef83756ddfaff5aacda547f0eabac4669c0f6144bcee8401cd8cfbfc",
+        "sourceId": "amzn-annual-2025-repair",
+        "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf"
+      }
     },
     {
       "company": "META",
-      "effectiveDate": "2025-01-01",
-      "policy": "Most server and network asset lives extended to 5.5 years.",
       "effectScope": "MOST_SERVER_NETWORK_ASSETS",
-      "source": {
-        "sourceId": "metak24",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/R14.htm",
-        "publicationDate": null,
-        "sha256": null,
-        "locator": "September 2025 PP&E note",
+      "effectiveDate": "2025-01-01",
+      "impact": "Depreciation growth is not comparable without the policy qualification. Annual report states six years for certain assets; preserve conflicting native wording without applying a depreciation adjustment.",
+      "policy": "Certain server and network asset lives extended to 5.5 years (earnings-release wording).",
+      "priorManualReference": {
         "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel.",
+        "locator": "September 2025 PP&E note",
+        "publicationDate": null,
         "reviewReference": "docs/AI_CAPEX_ACCOUNTING_BRIDGE.md",
-        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel."
+        "sha256": null,
+        "sourceId": "metak24",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/R14.htm"
       },
-      "impact": "Depreciation growth is not comparable without the policy qualification."
+      "reviewStatus": "RESTATEMENT_REVIEW_REQUIRED",
+      "source": {
+        "delegatedBy": "https://investor.atmeta.com/financials/default.aspx",
+        "evidenceLevel": "RAW_HASH_QUALIFIED",
+        "locator": "PDF page[2]/CFO outlook",
+        "publicationDate": "2025-01-29",
+        "sha256": "3545390d15b026e415518149bf2904d20cf18d37f551cccb60f9f001bcfdfc5f",
+        "sourceId": "meta-2024q4-pdf",
+        "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-Final.pdf"
+      }
+    },
+    {
+      "company": "META",
+      "effectScope": "CERTAIN_SERVER_NETWORK_ASSETS",
+      "effectiveDate": "2025-01-01",
+      "impact": "Conflicts with 5.5-year earnings-release wording. No automatic fleet-wide lifetime or depreciation recast.",
+      "policy": "Certain servers and network asset useful lives extended to six years (annual-report wording).",
+      "reviewStatus": "RESTATEMENT_REVIEW_REQUIRED",
+      "source": {
+        "delegatedBy": "https://investor.atmeta.com/financials/",
+        "evidenceLevel": "RAW_HASH_QUALIFIED",
+        "locator": "PDF page[98]/Note 1/Property and Equipment",
+        "publicationDate": "2025-01-30",
+        "sha256": "9b81ad9b6ecb9e23b1d810b9cecabcad05e00386d24dd64b4cd44a5bab54a13f",
+        "sourceId": "meta-annual-2024-repair",
+        "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2024/ar/Meta-12-31-2024-10K-ARS.pdf"
+      }
+    },
+    {
+      "company": "MSFT",
+      "effectScope": "SERVER_NETWORK_EQUIPMENT",
+      "effectiveDate": "2022-07-01",
+      "impact": "Mechanical depreciation reduction; not attributed to AI, no retroactive economic adjustment.",
+      "policy": "Server and network equipment estimated useful lives from four to six years, beginning FY2023.",
+      "source": {
+        "delegatedBy": null,
+        "evidenceLevel": "RAW_HASH_QUALIFIED",
+        "locator": "HTML/Note 1/Property and Equipment",
+        "publicationDate": "2024-07-30",
+        "sha256": "2b49e38b25f3bea8634b603ad5db64ba0803f27e27f93cc406884e6990974065",
+        "sourceId": "msft-annual-fy2024",
+        "url": "https://www.microsoft.com/investor/reports/ar24/index.html"
+      }
+    },
+    {
+      "company": "GOOG",
+      "effectScope": "SERVER_CERTAIN_NETWORK_EQUIPMENT",
+      "effectiveDate": "2023-01-01",
+      "impact": "Mechanical depreciation reduction, prospective FY2023. Native pure depreciation remains observed, not corrected by an invented counterfactual.",
+      "policy": "Server lives from four to six years; certain network equipment from five to six years.",
+      "source": {
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "evidenceLevel": "RAW_HASH_QUALIFIED",
+        "locator": "PDF page[57]/Note 1",
+        "publicationDate": "2024-01-31",
+        "sha256": "1950a82ce1d443a9c8fc10e051acbed517bf5c0bbbab584be1812f5eb79c06e4",
+        "sourceId": "goog-2023q4-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf"
+      }
     }
   ],
   "rpoDefinitionHistory": [
@@ -75,25 +154,32 @@
       "status": "HISTORICAL_VALUES_UNQUALIFIED"
     },
     {
+      "changeReason": "Official 10-Q: from Q1 2026, includes contracts with original expected term of one year or less.",
+      "comparabilityStatus": "NOT_COMPARABLE",
       "definitionVersion": "ALPHABET_RPO_SHORT_TERM_INCLUDED_V2",
       "effectiveFrom": "2026-01-01",
       "effectiveTo": null,
-      "scope": "Google Cloud obligations including short-term contracts",
-      "changeReason": "Phase 1 official 10-Q review identified inclusion beginning Q1 2026.",
-      "comparabilityStatus": "NOT_COMPARABLE",
-      "source": {
-        "sourceId": "googq26",
-        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
-        "publicationDate": "2026-07-23",
-        "sha256": null,
-        "locator": "Note 2: remaining performance obligations and inclusion of short-term contracts",
+      "priorManualReference": {
         "evidenceLevel": "PHASE1_MANUAL_REVIEWED",
+        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel.",
+        "locator": "Note 2: remaining performance obligations and inclusion of short-term contracts",
+        "publicationDate": "2026-07-23",
         "reviewReference": "docs/AI_CAPEX_ACCOUNTING_BRIDGE.md",
-        "limitation": "Raw policy-note archive and exact publication date not qualified in this panel."
+        "sha256": null,
+        "sourceId": "googq26",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+      },
+      "scope": "Google Cloud obligations including short-term contracts",
+      "source": {
+        "delegatedBy": "https://abc.xyz/investor/earnings/",
+        "evidenceLevel": "RAW_HASH_QUALIFIED",
+        "locator": "PDF page[15]/Note 2/Revenue Backlog",
+        "publicationDate": "2026-07-23",
+        "sha256": "7e6e292bd04d1a09f658e5af6a56aca8bc9c2b547b993ae8d26b9fac2314fd58",
+        "sourceId": "goog-2026q2-accounting-notes",
+        "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/GOOG-10-Q-Q2-2026.pdf"
       }
     }
   ],
-  "limitations": [
-    "Manual policy anchors are not a complete automatically qualified historical accounting-note archive."
-  ]
+  "schemaVersion": "ai-capex-policies-v0.1"
 }

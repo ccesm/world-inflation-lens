@@ -140,3 +140,93 @@ Remaining HIGH: Alphabet's eight missing early core quarters prevent the target 
 Remaining MEDIUM: SEC live access is blocked; original/recast segment pairs and allocation changes need further review before homogeneous trend use; pure/narrow depreciation, leases/additions, construction commitments and historical RPO/guidance are incomplete; several policy/manual event references lack archived raw notes; Amazon net-income extraction still has eight unqualified quarters; IR presentation changes still require controlled qualification. Native Microsoft CapEx reconciliation remains unresolved. These limitations are explicit rather than patched with synthetic numbers.
 
 Next work should repair the official early Alphabet archive and qualify original/recast and native-note vintages, then independently review this accounting panel. Public descriptive monitoring requires a separate approval. No return model, score, forecast, buy/sell recommendation, public UI, workflow, email or deployment belongs to this phase.
+
+## Phase 2A.1 Source & Accounting Repair
+
+Qualification date: 2026-10-07. Base: `aaa8aa7a3c056ce790c2ea76c28bc3c750ec5cb9`; branch: `codex/ai-capex-source-accounting-repair`. The preceding Phase 2A results and its `reports/qualification-summary.json` remain an unchanged historical benchmark. Current repair evidence is in `quarterly/reports/source-accounting-repair.json`.
+
+**READY FOR DESCRIPTIVE AI CAPEX MONETIZATION MONITOR**, restricted to the qualified native descriptive accounting panel. This is data-layer readiness for the next separately reviewed research phase, not monitor activation, public publication, homogeneous cross-company accounting, or AI-return readiness. No production code, Signal Engine, economic snapshot, AI-labor observation mode, workflow, email, application version or Phase 1 conclusion is changed. The frozen research base retains app version 1.1.0; newer production main is recorded separately and is not rebased into this task.
+
+### Alphabet recovery and exact periods
+
+SEC and legacy `abc.xyz` raw retrieval returned 403; remaining requests to each blocked host were suppressed. No proxy, unofficial mirror or cached-web-text economic value was accepted. A further official-source discovery found the company-controlled [legacy IR 2019Q4 news page](https://alphabet2025ir.q4web.com/investor/news/news-details/2020/Alphabet-Announces-Fourth-Quarter-and-Fiscal-Year-2019-Results-02-03-2020/default.aspx) and its public `PressRelease.svc/GetPressReleaseList` widget feed. Those dated news records link to exact PDFs on the **same Alphabet 479360582 tenant** already delegated by its official IR website. The news archive supplied eight live [official CDN release PDFs](https://s206.q4cdn.com/479360582/files/doc_financials/2019q4-alphabet-earnings-release.pdf); document issuer, native dateline, exact quarter columns, raw hashes and retrieval receipts were independently checked. The initial failed URLs and successful alternative paths remain recorded, rather than rewriting the access failures as success.
+
+All eight missing core quarters were recovered. Units below are USD millions. These are native disclosed consolidated quarterly values; they are not estimates or AI-attributed amounts.
+
+| Calendar quarter | Revenue | Operating income | CFO | Cash PP&E | Reported FCF = calculated FCF |
+|---|---:|---:|---:|---:|---:|
+| 2019Q1 | 36,339 | 6,608 | 12,000 | 4,638 | 7,362 |
+| 2019Q2 | 38,944 | 9,180 | 12,627 | 6,126 | 6,501 |
+| 2019Q3 | 40,499 | 9,177 | 15,466 | 6,732 | 8,734 |
+| 2019Q4 | 46,075 | 9,266 | 14,427 | 6,052 | 8,375 |
+| 2020Q1 | 41,159 | 7,977 | 11,451 | 6,005 | 5,446 |
+| 2020Q2 | 38,297 | 6,383 | 13,993 | 5,391 | 8,602 |
+| 2020Q3 | 46,173 | 11,213 | 17,003 | 5,406 | 11,597 |
+| 2020Q4 | 56,898 | 15,651 | 22,677 | 5,479 | 17,198 |
+
+Original 2019 releases and 2020 comparative releases both remain accepted. Deterministic latest-official-vintage selection uses 2020 comparative statements for the selected 2019 revenue/income/CFO/PP&E cells. Later disclosure never becomes contemporaneous economic availability. Every source has its native publication date, economic period, source vintage and retrieval time. The new single-quarter FCF parser requires the exact native month/end/year and one FCF column; the multiquarter segment parser maps five expressly labeled quarters and excludes the three annual columns. Changed or ambiguous layouts do not qualify. Eight directly reported FCF values match CFO minus cash PP&E exactly. Calculated company-convention FCF retains formula and operand IDs rather than being relabeled observed.
+
+**Reconstructed quarters: 0; accepted YTD subtractions: 0.** The tested YTD subtraction contract still requires same fiscal start, definition, scope, unit, exact precision, contiguous endpoints and reviewed restatement/vintage proof. Annual division, unrelated investing purchases and invented finance leases are excluded.
+
+### Coverage and native accounting definitions
+
+| Company | Core revenue / operating income / CFO / native cash PP&E / company-convention FCF | Native segment revenue / operating income | Core status |
+|---|---|---|---|
+| Microsoft | 30 / 30 / 30 / 30 / 30 | IC 30 / 30 | CORE_PANEL_QUALIFIED |
+| Alphabet | 30 / 30 / 30 / 30 / 30 | Cloud 30 / 27 | CORE_PANEL_QUALIFIED |
+| Amazon | 30 / 30 / 30 / 30 / 30 | AWS 30 / 30 | CORE_PANEL_QUALIFIED |
+| Meta | 30 / 30 / 30 / 30 / 30 | No invented cloud segment | CORE_PANEL_QUALIFIED |
+
+Meta's cash gross/net labels remain distinct; “30 native cash PP&E” does not mean 30 gross-only observations. There are no core arithmetic conflicts. All 120 quarterly recognized-AI-revenue cells remain null.
+
+The native [2019Q4 release](https://s206.q4cdn.com/479360582/files/doc_financials/2019q4-alphabet-earnings-release.pdf) introduces granular Cloud revenue disclosure (including earlier annual comparisons). The [2020Q4 release](https://s206.q4cdn.com/479360582/files/doc_financials/2020q4-alphabet-earnings-release.pdf), published February 2, 2021, introduces separate Cloud segment operating history, including 2019Q4 and 2020 quarters. Later exact revenue comparisons support the full 2019–2026 panel; **2019Q1–Q3 Cloud operating income remains unavailable**. No annual operating loss is divided into missing quarters.
+
+Alphabet pure PP&E depreciation increases from 14 to **15 quarterly observations**, adding directly disclosed 2022Q4 = 3,602m from the 2023Q4 comparative release. The [2023 annual report](https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog-10-k-2023-final.pdf), PDF page 56, separately supplies annual 2021/2022/2023 pure depreciation of 10,273 / 13,475 / 11,946m. Those three annual records live in `accounting-note-evidence.json`, outside quarterly selection and arithmetic. Mixed D&A, stock compensation and other noncash charges never substitute for pure depreciation.
+
+### Original/recast qualification
+
+`recast-review.json` binds reporting annotations to observation ID, native value, scope, period, original/raw source hash and a raw-qualified methodology note. It records `reportingVersion`, `reportingBasisVersion`, `originalSourceId`, `recastSourceId`, exact effective economic period, recast publication date and comparability. Reporting adoption date is distinct from the earlier periods retrospectively presented on the new basis. An original source can be null when no contemporaneous observation of that metric was disclosed; a later comparative is never falsely labeled original.
+
+There are **16 original/recast metric-quarter pairs**: eight Microsoft IC FY2024 comparisons (four quarters × revenue/operating income) from the FY2025 releases, and eight Google Cloud 2022 comparisons from the 2023 releases. Original histories survive, while reviewed later recast vintages are selected. Pairs across reporting bases are NOT_COMPARABLE; selected segment observations remain LIMITED_COMPARABILITY and the existing growth gate rejects them. This deliberately does not fabricate a homogeneous long-run growth series.
+
+Microsoft IC quarterly revenue changes from 24,259 / 25,880 / 26,708 / 28,515m to 20,013 / 21,525 / 22,141 / 23,785m on the FY2025 basis. The [FY2025 annual report](https://www.microsoft.com/investor/reports/ar25/index.html), Notes 1/18, explicitly describes segment realignment and prior-period recasting. Its reporting adoption is July 1, 2024; qualified comparative coverage includes FY2024, not just post-adoption observations.
+
+Google Cloud 2022 revenue is unchanged in the paired disclosures; quarterly operating losses change from −931 / −858 / −699 / −480m to −706 / −590 / −440 / −186m. The [2023Q1 release](https://s206.q4cdn.com/479360582/files/doc_financials/2023/q1/goog-exhibit-99-1-q1-2023-19.pdf), pages 2–3, explains cost allocation and corporate reporting changes. These are presentation changes, not newly measured economic growth or AI profit.
+
+Targeted Amazon/Meta review: **NO_MATERIAL_RECAST_FOUND for the reviewed consolidated core/AWS scope**, not “never restated.” Meta's annual report identifies an ARPP presentation change outside accepted core metrics; no new ARPP series is introduced. Meta asset-life wording requires the separate review below.
+
+### Raw accounting notes, RPO and unresolved CapEx
+
+New annual raw archives cover Microsoft FY2024/FY2025, Amazon FY2025, Meta FY2024 and Alphabet FY2023; a new Alphabet Q2 2026 10-Q replaces the manual RPO anchor. Twelve reviewed note/page anchors plus three annual depreciation cells and the Cloud RPO cell can be reproduced with `verify-notes.py`. Native publication/signature/filing dates remain separate. Microsoft annual report dates are explicitly the auditor-report dates: exact IR posting time is **not established**. SEC index dates for the company-hosted PDFs are separately reviewed provenance; they are not raw SEC download qualification.
+
+Amazon's [FY2025 annual report](https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf), page 58, qualifies server life 5→6 years effective 2024 and subset server/network 6→5 effective 2025; finance-lease assets and cash principal remain distinct. Earlier manual policy references are preserved as audit references.
+
+Meta's [2024Q4 release](https://s21.q4cdn.com/399680738/files/doc_financials/2024/q4/Meta-12-31-2024-Exhibit-99-1-Final.pdf) states 5.5 years; the accepted [FY2024 annual report](https://s21.q4cdn.com/399680738/files/doc_financials/2024/ar/Meta-12-31-2024-10K-ARS.pdf), page 98, states six years for certain assets, both effective FY2025. Both raw-qualified native statements are retained with **RESTATEMENT_REVIEW_REQUIRED**. No whole-fleet lifetime is inferred, no expense is overwritten, and Phase 1 conclusions remain unchanged.
+
+Microsoft's [FY2024 annual report](https://www.microsoft.com/investor/reports/ar24/index.html), Note 1, qualifies server/network 4→6 years beginning FY2023. FY2025 Note 13 distinguishes lease assets and cash-flow classifications. The existing FY2026Q4 call describes rounded native CapEx 41bn and total finance leases 5.6bn; it does not identify the latter as principal or establish 41 = 35.802 + 5.6. The rounded sum is 41.402bn and these are different accounting concepts. **UNRECONCILED_NATIVE_CAPEX_SCOPE remains for all Microsoft quarters**; no new synthetic bridge or falsely exact native-CapEx/revenue ratio is generated. The FY2027 building-policy change stays prospective and outside this June-ending panel.
+
+Alphabet's [2026Q2 10-Q](https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/GOOG-10-Q-Q2-2026.pdf), Note 2/page 15, qualifies Cloud backlog 513,900m. The prior manual reference survives. From Q1 2026 the definition includes contracts with original expected terms of one year or less. The 519.5bn total and just-over-50%-over-24-months recognition horizon refer to **Alphabet total backlog**, not a Cloud-only conversion schedule. This is POINT_IN_TIME, not recognized revenue, cash flow or AI revenue; cross-break growth remains unavailable. Alphabet lease context is archived separately in Notes 4/5.
+
+### Reproduction, regression and next gate
+
+84 accepted source identities reference **34,082,716 raw bytes**; **22 new accepted artifacts** add 12,657,052 bytes. Four additional Microsoft FY2024 reretrieval artifacts have different raw HTML bytes but analytically identical native values and remain external, unselected receipts. The physical object cache therefore has 88 objects / 36,651,432 bytes. Large raw bytes and complete generated panel bodies remain outside Git/ignored; only reviewed inputs, compact bindings, code, schemas, small controlled fixtures and the focused report are tracked.
+
+The 1,203 pre-repair observations remain present with identical economic values. There are 236 additional accepted observations, for 1,439 total. Raw re-extraction matches **1,405 table observations**, **30 workbook observations** and separately identifies **four manual raw-bound points**. New manual RPO is independently reproduced from the native PDF; three older manual points retain their original Phase 2A status. A raw artifact's changed hash is not treated as an economic value change or silently substituted under its old identity.
+
+Commands from repository root:
+
+```sh
+node --test research/ai-capex-monetization/tests/foundation.test.mjs research/ai-capex-monetization/quarterly/tests/*.test.mjs
+$WIL_AI_CAPEX_PYTHON -m unittest discover -s research/ai-capex-monetization/quarterly/tests -p '*_test.py'
+WIL_AI_CAPEX_CACHE="$HOME/Public/wil-ai-capex-cache" node research/ai-capex-monetization/quarterly/scripts/run.mjs --verify-raw
+WIL_AI_CAPEX_CACHE="$HOME/Public/wil-ai-capex-cache" node research/ai-capex-monetization/quarterly/scripts/reextract.mjs
+WIL_AI_CAPEX_CACHE="$HOME/Public/wil-ai-capex-cache" $WIL_AI_CAPEX_PYTHON research/ai-capex-monetization/quarterly/scripts/verify-notes.py
+npm run build
+npm run verify
+```
+
+**181 tests passed, 0 failed:** 48 Phase 1; 65 Phase 2A Node tests (missing-core negative case retained with an explicit controlled missing selection, rather than expecting a now-repaired gap); 19 original Python extraction tests; 40 new repair Node tests; nine new legacy-layout Python tests. Recast selection, forged metadata/raw identity, exact comparative labeling, single-quarter preference, compatible/invalid YTD subtraction, native scope breaks, missing Cloud history, annual isolation, 403/429 suppression, official-host enforcement and run-rate/no-ROI boundaries are covered. No live internet is needed for unit tests.
+
+Three fresh processes produce byte-identical panel output; economic content and serialized output hashes are recorded in the repair report. Build and full verify pass; the existing large-chunk warning is unchanged. Production paths and the frozen Phase 1 inputs are byte-for-byte unchanged relative to the requested base. Restricted/new research markers are absent from `dist/`. No public UI, email, workflow or schedule is activated.
+
+Remaining HIGH: **none identified within this source/accounting repair scope**. Remaining MEDIUM: Microsoft native CapEx scope; Meta conflicting asset-life wording; incomplete pure-depreciation/lease/additions/commitment and historical RPO disclosure; unrecovered early Cloud operating income; non-exhaustive original/recast history; fragile IR presentation/blocked SEC access. These do not become qualified values merely because core coverage is complete. Next: independent review of repaired descriptive evidence and controlled monitor design; any activation or public publication requires separate approval. AI ROI/ROIC/payback remains out of scope and unsupported.
