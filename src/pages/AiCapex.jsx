@@ -20,6 +20,7 @@ function CompanyChart({metric,company,window,data,t}){
  const y=v=>218-(v-min)/span*188,x=period=>58+points.findIndex(p=>p.period===period)/(points.length-1||1)*(right-58)
  const path=segment=>segment.map((p,i)=>`${i?'L':'M'}${x(p.period).toFixed(2)},${y(p.value).toFixed(2)}`).join(' ')
  const title=`${t.names[company.id]} · ${t.metrics[metric]}`
+ const accountingNote={cashInvestmentIntensity:t.nativeCash[company.id],operatingMargin:t.chartAccountingNotes.operatingMargin,fcfMargin:t.chartAccountingNotes.fcfMargin[company.id]}[metric]
  return <article className="ac-chart" data-chart={metric}>
   <h3 id={id}>{title}</h3>
   <svg ref={svg} viewBox={`0 0 ${width} 260`} role="img" aria-labelledby={id} aria-describedby={`${id}-note`}>
@@ -30,7 +31,7 @@ function CompanyChart({metric,company,window,data,t}){
    {points.filter(p=>Number.isFinite(p.value)&&(p.breakBefore||chartSegments(points).some(s=>s.length===1&&s[0]===p))).map(p=><circle key={p.period} cx={x(p.period)} cy={y(p.value)} r="3.5" fill="var(--global-accent)"/>)}
    <text x="58" y="248">{range[0]}</text><text x={right} y="248" textAnchor="end">{range[1]}</text>
   </svg>
-  <p id={`${id}-note`}>{t.chartNote}</p><p>{t.chartCoverage}: {available.length} / {points.length}</p><p>{t.nativeCash[company.id]}</p>
+  <p id={`${id}-note`}>{t.chartNote}</p><p>{t.chartCoverage}: {available.length} / {points.length}</p><p data-chart-accounting-note={metric}>{accountingNote}</p>
   <details><summary>{t.table}</summary><ScrollTable caption={`${title} · % · ${range.join('–')}`} t={t}>
    <thead><tr>{[t.period,`${t.value} · %`,t.basis,t.sources].map(h=><th scope="col" key={h}>{h}</th>)}</tr></thead>
    <tbody>{points.map(p=><tr key={p.period}><th scope="row">{p.period}</th><td>{formatCapex(p.value)}%</td><td>{p.gapReason?t.limited:p.breakBefore?t.break:t.noBreak}<br/><code>{data.definitions[p.basis].definitionVersion}</code></td><td><SourceLinks ids={p.sourceIds} data={data} t={t}/></td></tr>)}</tbody>
