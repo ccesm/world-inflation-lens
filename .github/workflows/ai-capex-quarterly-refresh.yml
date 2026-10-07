@@ -1,0 +1,75 @@
+name: AI CapEx Quarterly Refresh
+run-name: AI CapEx candidate review - ${{ inputs.mode }} / ${{ inputs.company }}
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Candidate discovery or official source identity
+        type: choice
+        options: [check, manual_seed]
+        default: check
+        required: true
+      company:
+        description: Company (manual_seed requires one issuer)
+        type: choice
+        options: [ALL, MSFT, GOOG, AMZN, META]
+        default: ALL
+        required: true
+      official_url:
+        description: Official financial document URL (manual_seed only)
+        type: string
+      expected_quarter:
+        description: Calendar quarter YYYYQn (manual_seed only)
+        type: string
+permissions:
+  contents: read
+jobs:
+  candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Checkout pinned research runtime
+        uses: actions/checkout@v4
+        with:
+          ref: 6b45185cd25f65ca5df4e77bb6702dae08ddc936
+          path: research-runtime
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify runtime pin
+        run: test "$(git -C research-runtime rev-parse HEAD)" = "6b45185cd25f65ca5df4e77bb6702dae08ddc936"
+      - name: Install deterministic document parsers
+        run: python -m pip install -r research-runtime/research/ai-capex-monetization/refresh/operator/requirements.txt
+      - name: Research safeguard tests
+        working-directory: research-runtime
+        run: node --test --test-concurrency=1 research/ai-capex-monetization/refresh/tests/*.test.mjs
+      - name: Prepare candidate for human review
+        working-directory: research-runtime
+        env:
+          AI_CAPEX_MODE: ${{ inputs.mode }}
+          AI_CAPEX_COMPANY: ${{ inputs.company }}
+          AI_CAPEX_OFFICIAL_URL: ${{ inputs.official_url }}
+          AI_CAPEX_EXPECTED_QUARTER: ${{ inputs.expected_quarter }}
+          AI_CAPEX_RESEARCH_SHA: 6b45185cd25f65ca5df4e77bb6702dae08ddc936
+          AI_CAPEX_OUTPUT: ${{ runner.temp }}/operator-report
+          WIL_AI_CAPEX_CACHE: ${{ runner.temp }}/operator-raw-cache
+        run: node research/ai-capex-monetization/refresh/operator/run.mjs
+      - name: Confirm both checkouts remain unchanged
+        run: |
+          git diff --exit-code
+          git -C research-runtime diff --exit-code
+      - name: Upload compact candidate only
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-capex-quarterly-candidate-${{ github.run_id }}
+          path: ${{ runner.temp }}/operator-report/operator-candidate.json
+          retention-days: 30
+          if-no-files-found: error

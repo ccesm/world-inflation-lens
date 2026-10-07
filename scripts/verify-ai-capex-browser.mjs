@@ -52,6 +52,8 @@ try{
    await content.locator('h2').first().scrollIntoViewIfNeeded();await page.screenshot({path:path.join(output,file.replace('.png','-current.png'))})
    await content.locator('[data-chart]').first().scrollIntoViewIfNeeded();await page.screenshot({path:path.join(output,file.replace('.png','-chart.png'))})
   }
+  const maintenance=content.locator('[data-capex-maintenance]');assert((await maintenance.textContent()).includes(t.maintenance.boundary))
+  const control=maintenance.getByRole('link',{name:t.maintenance.button,exact:false});assert.equal(await control.getAttribute('href'),'https://github.com/ccesm/world-inflation-lens/actions/workflows/ai-capex-quarterly-refresh.yml');assert.equal(await control.getAttribute('target'),'_blank');await control.focus();assert(await control.evaluate(el=>el===document.activeElement));assert(await control.evaluate(el=>el.getBoundingClientRect().width<=innerWidth));
   assert.equal(await page.locator('.desktop-nav a').count(),6)
   assert(requests.every(u=>{const target=new URL(u);return target.origin===new URL(url).origin||['https://fonts.googleapis.com','https://fonts.gstatic.com'].includes(target.origin)||target.origin==='https://raw.githubusercontent.com'&&target.pathname==='/ccesm/world-inflation-lens/system-status/system-status.json'}),'No new runtime external API requests; existing font assets and status-only fetch preserved')
   report.surfaces.push({width,language,theme,overflow:false,keyboardTables:true,accessibleChartFallback:true,metaGap:true})
