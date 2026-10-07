@@ -1,0 +1,99 @@
+{
+  "automaticAcceptance": false,
+  "build": {
+    "production": "PASS",
+    "research": "PASS"
+  },
+  "decision": "OPERATOR REFRESH NEEDS REPAIR",
+  "defaultBranchRegistration": "PENDING_OWNER_APPROVED_CONTROL_PR_MERGE",
+  "determinism": "PASS: fresh native fixture processes produce identical content bytes; operational audit excluded",
+  "emailEnabled": false,
+  "implementationVersion": "ai-capex-operator-refresh-v0.1.0",
+  "limitations": [
+    "Official discovery remains unqualified; blocked access is not absence of a release.",
+    "Known Alphabet PDF passed issuer/MIME/period/hash retrieval controls; native core extraction did not qualify. No new-quarter accounting qualification is claimed.",
+    "Microsoft workbook extraction remains layout review required.",
+    "New CDN URLs require explicit issuer delegation review before fetching.",
+    "No genuine new quarter qualified."
+  ],
+  "pilots": [
+    {
+      "bytes": 4024,
+      "companies": [
+        {
+          "company": "MSFT",
+          "status": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "GOOG",
+          "status": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "AMZN",
+          "status": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "META",
+          "status": "ACCESS_BLOCKED"
+        }
+      ],
+      "contentHash": "76a8d3d2b91b99f7e3137b0bcfdcdc3c8a1516d4bbddb8b1f8f82f3aeb88b270",
+      "mode": "check",
+      "newQuarterAccepted": false,
+      "result": "OFFICIAL URL REQUIRED",
+      "runId": "37683755970",
+      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/37683755970",
+      "workflowConclusion": "success"
+    },
+    {
+      "bytes": 3716,
+      "companies": [
+        {
+          "company": "GOOG",
+          "status": "KNOWN_ACCEPTED_SOURCE_UNCHANGED"
+        }
+      ],
+      "contentHash": "9948ceda9882cea0b1d2724af6bee3f414bcfa2184cc676fd195356c3ef54256",
+      "mode": "manual_seed",
+      "newQuarterAccepted": false,
+      "result": "NO ACTION NEEDED",
+      "runId": "37683995554",
+      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/37683995554",
+      "workflowConclusion": "success"
+    }
+  ],
+  "productionBase": "4b28c278d99c39d022f5336d634aff4a9b5a4a41",
+  "productionChanges": false,
+  "publicSnapshotSha256": "8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a",
+  "researchBase": "49dbd388a9a1eac84322fcecd37bff97130ee7ef",
+  "scheduleEnabled": false,
+  "testedExecutionSha": "6b45185cd25f65ca5df4e77bb6702dae08ddc936",
+  "tests": {
+    "browserSurfaces": 12,
+    "newOperator": {
+      "failed": 0,
+      "passed": 36
+    },
+    "nodeAllResearch": {
+      "execution": "serial; inherited negative tests mutate input fixtures",
+      "failed": 0,
+      "passed": 370
+    },
+    "productionContracts": {
+      "failed": 0,
+      "passed": 39
+    },
+    "pythonQuarterly": {
+      "failed": 0,
+      "passed": 28
+    },
+    "pythonRefresh": {
+      "failed": 0,
+      "passed": 7
+    }
+  },
+  "verify": {
+    "production": "PASS",
+    "research": "PASS"
+  }
+}

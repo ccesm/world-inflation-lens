@@ -22,3 +22,11 @@ Outputs are bounded to 1 MB. Upload only operator-candidate.json, never internal
 The research-only qualification bridge uses an already-registered manual workflow, gated to this exact branch. The separate production PR registers a dedicated workflow with a fixed research SHA, read-only permissions and no scheduled or autonomous effects. Qualification via the bridge does not establish default-branch registration. Owner approval to merge the small control PR is still required. No email, Pages action, accepted-data promotion, API secret or runtime LLM is included.
 
 Human results: NO ACTION NEEDED, OFFICIAL URL REQUIRED, REVIEW REQUIRED, or QUALIFIED CANDIDATE READY FOR REVIEW. All stop at human review. This is not AI ROI measurement.
+
+## Qualification result
+
+405 research tests passed (370 Node, 35 Python); 36 new operator tests are included in the Node total. Fresh native fixture processes reproduce identical deterministic bytes. Both research and clean production builds/verification pass. Production contracts: 39; browser: 12 EN/ZH/mobile/desktop/theme surfaces.
+
+CHECK bridge run 37683755970 succeeded: OFFICIAL URL REQUIRED, all four aggregate company discovery statuses ACCESS_BLOCKED (Microsoft IR independently NO_STATIC_LINK). MANUAL_SEED bridge run 37683995554 succeeded: Alphabet known official Q2 PDF PASS_EXISTING_HASH, KNOWN_ACCEPTED_SOURCE_UNCHANGED / NO ACTION NEEDED. The latter proves bounded source retrieval and no-new-data behavior; its native core extraction did not qualify. It does not prove a new quarter is parsable. The compact reports were 4,024 and 3,716 bytes. No new quarter, public preview or accepted economic output was created by live pilots. Controlled synthetic native-table candidates cover successful accounting qualification and candidate-monitor generation separately.
+
+The production workflow pins tested runtime 6b45185cd25f65ca5df4e77bb6702dae08ddc936. This later report-only commit does not change executable code. A small production control PR still requires explicit owner merge approval and default-branch manual qualification. Therefore end-to-end activation readiness remains OPERATOR REFRESH NEEDS REPAIR.
