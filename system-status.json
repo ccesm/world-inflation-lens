@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T17:49:31.629Z",
+  "updatedAt": "2026-10-07T05:02:24.031Z",
   "application": {
-    "version": "1.1.0",
-    "codeCommit": "e790bd03fe8549fc5008ae2fa43237daf826438c",
-    "snapshotCommit": "e790bd03fe8549fc5008ae2fa43237daf826438c"
+    "version": "1.2.0",
+    "codeCommit": "a80aa5cf66e5e4e3424696758b71d6e945b7958c",
+    "snapshotCommit": "a80aa5cf66e5e4e3424696758b71d6e945b7958c"
   },
   "lastAttempt": {
-    "runId": "37506230391",
+    "runId": "37574177409",
     "attempt": "1",
-    "startedAt": "2026-10-06T17:47:13Z",
-    "completedAt": "2026-10-06T17:49:31.629Z",
+    "startedAt": "2026-10-07T05:00:20Z",
+    "completedAt": "2026-10-07T05:02:24.031Z",
     "refreshResult": "NOT_REQUESTED",
     "buildResult": "success",
     "deploymentResult": "success",
     "notificationResult": "NOT_REQUESTED",
-    "codeCommit": "e790bd03fe8549fc5008ae2fa43237daf826438c",
-    "snapshotCommit": "e790bd03fe8549fc5008ae2fa43237daf826438c",
-    "version": "1.1.0"
+    "codeCommit": "a80aa5cf66e5e4e3424696758b71d6e945b7958c",
+    "snapshotCommit": "a80aa5cf66e5e4e3424696758b71d6e945b7958c",
+    "version": "1.2.0"
   },
   "data": {
     "checkStartedAt": "2026-10-06T06:48:36.651Z",
@@ -29,21 +29,21 @@
     "result": "SUCCESS_CHANGED"
   },
   "deployment": {
-    "lastSuccessfulAt": "2026-10-06T17:48:48Z",
-    "codeCommit": "e790bd03fe8549fc5008ae2fa43237daf826438c",
-    "snapshotCommit": "e790bd03fe8549fc5008ae2fa43237daf826438c",
-    "version": "1.1.0",
+    "lastSuccessfulAt": "2026-10-07T05:01:43Z",
+    "codeCommit": "a80aa5cf66e5e4e3424696758b71d6e945b7958c",
+    "snapshotCommit": "a80aa5cf66e5e4e3424696758b71d6e945b7958c",
+    "version": "1.2.0",
     "result": "success"
   },
   "notification": {
     "result": "NOT_REQUESTED",
-    "updatedAt": "2026-10-06T17:49:31.629Z"
+    "updatedAt": "2026-10-07T05:02:24.031Z"
   },
   "freshness": {
-    "asOf": "2026-10-06T17:49:31.629Z",
+    "asOf": "2026-10-07T05:02:24.031Z",
     "counts": {
       "CURRENT": 62,
-      "WAITING_FOR_EXPECTED_RELEASE": 2,
+      "STALE": 2,
       "MANUAL_REVIEWED": 8,
       "FIXED_VINTAGE": 3
     }
