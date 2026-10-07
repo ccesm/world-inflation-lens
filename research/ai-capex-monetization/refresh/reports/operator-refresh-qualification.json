@@ -4,8 +4,8 @@
     "production": "PASS",
     "research": "PASS"
   },
-  "decision": "OPERATOR REFRESH NEEDS REPAIR",
-  "defaultBranchRegistration": "PENDING_OWNER_APPROVED_CONTROL_PR_MERGE",
+  "decision": "READY FOR OPERATOR-TRIGGERED QUARTERLY REFRESH",
+  "defaultBranchRegistration": "REGISTERED_AND_MAIN_CHECK_QUALIFIED",
   "determinism": "PASS: fresh native fixture processes produce identical content bytes; operational audit excluded",
   "emailEnabled": false,
   "implementationVersion": "ai-capex-operator-refresh-v0.1.0",
@@ -62,6 +62,65 @@
       "workflowConclusion": "success"
     }
   ],
+  "postMergeQualification": {
+    "cachedKnownControls": {
+      "AMZN": "PASS_EXISTING_HASH",
+      "GOOG": "PASS_EXISTING_HASH",
+      "META": "PASS_EXISTING_HASH",
+      "MSFT": "PASS_EXISTING_HASH"
+    },
+    "checkContentHash": "76a8d3d2b91b99f7e3137b0bcfdcdc3c8a1516d4bbddb8b1f8f82f3aeb88b270",
+    "checkResult": "OFFICIAL URL REQUIRED",
+    "checkRunConclusion": "success",
+    "checkRunId": "37685381960",
+    "dailyEmail": "SKIPPED",
+    "economicAcceptance": false,
+    "liveBrowser": {
+      "errors": [],
+      "surfaces": [
+        {
+          "controlPresent": true,
+          "laborObservationMode": true,
+          "language": "zh",
+          "overflow": false,
+          "signalRoute": true,
+          "theme": "dark",
+          "version": "1.3.0",
+          "width": 390
+        },
+        {
+          "controlPresent": true,
+          "laborObservationMode": true,
+          "language": "en",
+          "overflow": false,
+          "signalRoute": true,
+          "theme": "light",
+          "version": "1.3.0",
+          "width": 1280
+        }
+      ]
+    },
+    "mainSha": "be9dde341cfb32a53b7a3fca76e04d631a926bcd",
+    "matchesPreMergeCheckContentHash": true,
+    "mergeMethod": "merge commit",
+    "mergedAt": "2026-10-07T20:52:31Z",
+    "ownerExplicitApproval": true,
+    "pagesConclusion": "success",
+    "pagesRunId": "37685323110",
+    "permissions": {
+      "contents": "read"
+    },
+    "pr": 15,
+    "productionDataWrite": false,
+    "productionEconomicRefresh": "SKIPPED",
+    "productionTreeMatchesReviewedFeature": true,
+    "publicVersion": "1.3.0",
+    "researchExecutionSha": "6b45185cd25f65ca5df4e77bb6702dae08ddc936",
+    "trigger": "workflow_dispatch only",
+    "workflow": "AI CapEx Quarterly Refresh"
+  },
+  "preMergeDecision": "OPERATOR REFRESH NEEDS REPAIR",
+  "preMergeDefaultBranchRegistration": "PENDING_OWNER_APPROVED_CONTROL_PR_MERGE",
   "productionBase": "4b28c278d99c39d022f5336d634aff4a9b5a4a41",
   "productionChanges": false,
   "publicSnapshotSha256": "8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a",
