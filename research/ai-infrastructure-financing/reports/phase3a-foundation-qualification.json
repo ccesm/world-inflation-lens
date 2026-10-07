@@ -1,0 +1,295 @@
+{
+  "implementationVersion": "ai-infrastructure-financing-v0.1.0",
+  "baseBranch": "codex/ai-capex-operator-refresh",
+  "baseSha": "d7666b129eb834cfd70fdcc204b930f5bd67ba7e",
+  "branch": "codex/ai-infrastructure-financing-foundation",
+  "implementationSha": "ef7cbf19b9c18f8c2955825db6fe522df4c11992",
+  "qualificationDate": "2026-10-07",
+  "productionMainObserved": "be9dde341cfb32a53b7a3fca76e04d631a926bcd",
+  "qualificationSummary": {
+    "methodologyVersion": "ai-infrastructure-financing-v0.1.0",
+    "contentHash": "4b99d6d12498e0df6f3afd241e19365a0ab8e614a74b2c2c892f3b5672fb45fc",
+    "specificationHash": "d0752c5909bbb836e0dd9eab44c8f0c05d501ce4168d6050ab0a16df4a3ddf81",
+    "valid": true,
+    "counts": {
+      "projects": 1,
+      "entities": 8,
+      "financing": 3,
+      "ownership": 2,
+      "obligations": 4,
+      "power": 4,
+      "sources": 12,
+      "claims": 51,
+      "observations": 30,
+      "relationships": 12,
+      "accounting-bridges": 6
+    },
+    "errors": [],
+    "overlapWarnings": [
+      {
+        "assetIdentity": "hyperion-campus",
+        "status": "SAME_ASSET_DIFFERENT_LAYER",
+        "decision": "DO_NOT_ADD",
+        "records": [
+          {
+            "id": "hyperion",
+            "kind": "projects"
+          },
+          {
+            "id": "private-securities",
+            "kind": "financing"
+          },
+          {
+            "id": "fund-cash",
+            "kind": "financing"
+          },
+          {
+            "id": "meta-capital-interest",
+            "kind": "financing"
+          },
+          {
+            "id": "meta-membership",
+            "kind": "ownership"
+          },
+          {
+            "id": "fund-membership",
+            "kind": "ownership"
+          },
+          {
+            "id": "campus-lease",
+            "kind": "obligations"
+          },
+          {
+            "id": "campus-rvg",
+            "kind": "obligations"
+          },
+          {
+            "id": "development-funding",
+            "kind": "obligations"
+          },
+          {
+            "id": "power-service",
+            "kind": "obligations"
+          },
+          {
+            "id": "smalling",
+            "kind": "power"
+          },
+          {
+            "id": "expanded-generation",
+            "kind": "power"
+          },
+          {
+            "id": "expanded-renewables",
+            "kind": "power"
+          },
+          {
+            "id": "expanded-grid",
+            "kind": "power"
+          },
+          {
+            "id": "rel-meta-share",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-fund-share",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-jv-owner",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-meta-lease",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-meta-develop",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-meta-operations",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-fund-funding",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-pimco-offering",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-rvg-support",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-utility-support",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-secondary-laidley-owner",
+            "kind": "relationships"
+          },
+          {
+            "id": "rel-secondary-beignet-ownership",
+            "kind": "relationships"
+          },
+          {
+            "id": "bridge-equity-2025",
+            "kind": "accounting-bridges"
+          },
+          {
+            "id": "bridge-equity-2026",
+            "kind": "accounting-bridges"
+          },
+          {
+            "id": "bridge-exposure-2025",
+            "kind": "accounting-bridges"
+          },
+          {
+            "id": "bridge-exposure-2026",
+            "kind": "accounting-bridges"
+          },
+          {
+            "id": "bridge-lease",
+            "kind": "accounting-bridges"
+          },
+          {
+            "id": "bridge-rvg",
+            "kind": "accounting-bridges"
+          }
+        ]
+      }
+    ],
+    "decision": "READY FOR AI INFRASTRUCTURE FINANCING EXPANSION"
+  },
+  "sourceReview": {
+    "brookingsArticleReviewed": true,
+    "brookingsUnderlyingPaperReviewed": true,
+    "sourceCounts": {
+      "primary": 9,
+      "secondaryResearch": 3
+    },
+    "primarySourceIds": [
+      "meta-jv",
+      "meta-2025k",
+      "meta-2026q2",
+      "cc-pimco",
+      "meta-engineering",
+      "meta-expansion",
+      "entergy-substation",
+      "entergy-approval",
+      "entergy-expansion"
+    ],
+    "rawDocumentArchival": "NOT_PERFORMED_NO_RAW_HASH_CLAIM",
+    "unavailableAccess": [
+      "Full S&P rating article",
+      "LPSC document fetch"
+    ],
+    "sourceVerificationMethod": "Human public-document review, curated typed assertions; not a qualified automated financial fetch."
+  },
+  "verifiedHyperionFacts": [
+    "Richland Parish Louisiana; campus under construction",
+    "Meta 20%, Blue Owl-managed funds 80% JV interests",
+    "Primary adviser reports USD 27.3bn private securities offering; precise legal issuer terms not primary verified",
+    "Initial operating lease term four years; commencement 2029; optional total up to twenty years",
+    "Conditional residual-value guarantee; first sixteen years of operations in transaction announcement",
+    "Meta reports unconsolidated VIE and equity-method investment",
+    "Original and June 2026 carrying-value / maximum-exposure disclosures retained separately",
+    "Utility substation and expanded generation plans source-linked"
+  ],
+  "sourceEstimates": [
+    "Approximate USD 27bn JV development estimate is not realized CapEx",
+    "5GW planned expanded campus, not operating capacity",
+    "More than USD 50bn regional expansion scope unresolved versus original JV",
+    "Brookings USD 10.3tn scenario and benchmark unit cost classified MODEL_DERIVED"
+  ],
+  "secondaryOnlyHyperionFacts": [
+    "Laidley / Project Beignet Holdings legal structure",
+    "Beignet Investor LLC borrower identity and 2.064GW financed-campus description"
+  ],
+  "unavailableHyperionFields": [
+    "Primary verified title-holder and subsidiary chain",
+    "Full debt offering/security documents, coupon, maturity, recourse",
+    "Project-specific Meta cash PP&E and IT equipment cost",
+    "Current project lease liability and remaining funding schedule",
+    "Firm energization, exact power contract value/term, detailed interconnection",
+    "Attributable project revenue, utilization, costs and cash flow"
+  ],
+  "doubleCountControls": [
+    "No additive financial aggregate function",
+    "Unique asset/instrument/obligation identities",
+    "Same-asset financing/lease/guarantee DO_NOT_ADD warning",
+    "Issuer maximum exposure distinguished from investment and expected loss",
+    "Successive-period stocks not summed",
+    "Financed subset and expanded regional cost not reconciled or summed"
+  ],
+  "tests": {
+    "phase3a": {
+      "passed": 59,
+      "failed": 0,
+      "skipped": 0
+    },
+    "priorCapexNode": {
+      "passed": 370,
+      "failed": 0
+    },
+    "priorQuarterlyPython": {
+      "passed": 28,
+      "failed": 0
+    },
+    "priorRefreshPython": {
+      "passed": 7,
+      "failed": 0
+    },
+    "totalPassed": 464,
+    "totalFailed": 0,
+    "initialEnvironmentIssue": "System Python caused one native-parser failure; using the existing qualified Python runtime resolved it without code changes."
+  },
+  "build": {
+    "result": "PASS",
+    "scope": "Inherited research application tree; no app modifications",
+    "warning": "Existing Vite large-chunk warning"
+  },
+  "verify": {
+    "result": "PASS",
+    "scope": "Existing repository verification suite"
+  },
+  "determinism": "PASS: fresh processes and different working directories produce byte-identical summaries; no implicit runtime clock",
+  "productionProtection": {
+    "changed": false,
+    "protectedPathsDiff": "EMPTY versus qualified research base",
+    "productionVersion": "1.3.0",
+    "inheritedResearchVersion": "1.1.0_UNCHANGED",
+    "productionSnapshotSha256": "8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a",
+    "productionMainUnchanged": true,
+    "workflowChanged": false,
+    "emailChanged": false,
+    "signalEngineChanged": false,
+    "aiLaborChanged": false,
+    "mergeOrDeployPerformed": false
+  },
+  "remainingHighLimitations": [
+    {
+      "limitation": "Exact legal title chain and full debt/security/recourse contracts not primary verified",
+      "blocks": "Legal financing-risk or recourse conclusions, not foundation schema expansion"
+    },
+    {
+      "limitation": "Original JV versus expanded campus/regional boundaries unresolved",
+      "blocks": "Asset-cost reconciliation and any aggregate investment conclusion"
+    }
+  ],
+  "remainingMediumLimitations": [
+    "Raw source bytes not immutably archived; normalized content/specification identities available",
+    "Power regulatory order, tariff and agreement detail incomplete",
+    "Project monetization and funding/payment schedules unavailable",
+    "Other company candidates remain source plans, not qualified projects",
+    "Non-USD/FX extension must be separately qualified before use"
+  ],
+  "recommendedPhase3b": "Primary transaction / power-contract hydration and scope reconciliation, then two additional independently scoped case studies",
+  "aiRoiCalculated": false,
+  "crossLayerInvestmentAggregateCreated": false,
+  "systemicRiskScoreCreated": false,
+  "decision": "READY FOR AI INFRASTRUCTURE FINANCING EXPANSION"
+}
