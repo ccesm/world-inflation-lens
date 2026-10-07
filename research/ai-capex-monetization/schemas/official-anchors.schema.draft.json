@@ -1,0 +1,422 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:world-inflation-lens:ai-capex-foundation-v0.1",
+  "title": "Manually reviewed AI CapEx foundation anchors (draft)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "researchOnly",
+    "reviewedOn",
+    "coveragePolicy",
+    "interpretationGuardrail",
+    "sources",
+    "observations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "ai-capex-foundation-v0.1"
+    },
+    "researchOnly": {
+      "const": true
+    },
+    "reviewedOn": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "coveragePolicy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interpretationGuardrail": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/observation"
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceId",
+        "company",
+        "publisher",
+        "title",
+        "sourceDate",
+        "sourceDatePrecision",
+        "url",
+        "retrievedOn",
+        "verificationMethod",
+        "rawSha256",
+        "locator",
+        "identityLimitation"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "company": {
+          "enum": [
+            "MSFT",
+            "GOOG",
+            "AMZN",
+            "META"
+          ]
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceDate": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "sourceDatePrecision": {
+          "const": "DATE"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrievedOn": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "verificationMethod": {
+          "const": "MANUAL_OFFICIAL_PAGE_REVIEW"
+        },
+        "rawSha256": {
+          "type": "null"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identityLimitation": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observationId",
+        "company",
+        "metric",
+        "domain",
+        "value",
+        "unit",
+        "fiscalQuarter",
+        "calendarQuarter",
+        "periodStart",
+        "periodEnd",
+        "periodType",
+        "scope",
+        "nativeLabel",
+        "definition",
+        "sourceId",
+        "locator",
+        "accountingBasis",
+        "evidenceClass",
+        "precision",
+        "revisionStatus",
+        "limitations",
+        "frequency"
+      ],
+      "properties": {
+        "observationId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "company": {
+          "enum": [
+            "MSFT",
+            "GOOG",
+            "AMZN",
+            "META"
+          ]
+        },
+        "metric": {
+          "enum": [
+            "adImpressionsGrowth",
+            "adPriceGrowth",
+            "aiRevenueRecognized",
+            "aiRevenueRunRate",
+            "capexGuidance",
+            "cashPpeGross",
+            "cashPpeNet",
+            "cfo",
+            "cloudGrossMargin",
+            "cloudGrowth",
+            "costRevenue",
+            "depreciationAmortizationOther",
+            "depreciationPpe",
+            "fcfReported",
+            "financeLeaseAdditions",
+            "financeLeasePrincipal",
+            "investmentGain",
+            "nativeCapex",
+            "operatingIncome",
+            "operatingLeaseCash",
+            "paidAiSeats",
+            "ppeDepreciationAmortization",
+            "ppeProceedsIncentives",
+            "revenue",
+            "rpo",
+            "segmentOperatingIncome",
+            "segmentRevenue",
+            "shortLivedShare"
+          ]
+        },
+        "domain": {
+          "enum": [
+            "financials",
+            "capex",
+            "capexComposition",
+            "monetization",
+            "cloud",
+            "backlogCapacity",
+            "depreciation",
+            "cashFlow",
+            "guidance",
+            "investmentContext"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "USD_MILLIONS",
+            "PERCENT",
+            "MILLION_SEATS"
+          ]
+        },
+        "fiscalQuarter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calendarQuarter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "periodStart": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "periodEnd": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "periodType": {
+          "enum": [
+            "Q",
+            "YTD",
+            "FY",
+            "TTM",
+            "POINT",
+            "RUN_RATE",
+            "GUIDANCE"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nativeLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "accountingBasis": {
+          "enum": [
+            "GAAP",
+            "NON_GAAP",
+            "COMPANY_DEFINED"
+          ]
+        },
+        "evidenceClass": {
+          "enum": [
+            "OBSERVED",
+            "CALCULATED_FROM_DISCLOSED_VALUES",
+            "MANAGEMENT_ATTRIBUTION",
+            "MODEL_DERIVED",
+            "UNAVAILABLE"
+          ]
+        },
+        "precision": {
+          "enum": [
+            "EXACT",
+            "ROUNDED",
+            "LOWER_BOUND",
+            "APPROXIMATE",
+            "RANGE_LOWER_BOUND"
+          ]
+        },
+        "revisionStatus": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "unavailableReason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "calculation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "formula",
+            "inputs"
+          ],
+          "properties": {
+            "formula": {
+              "type": "string",
+              "minLength": 1
+            },
+            "inputs": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "frequency": {
+          "enum": [
+            "QUARTERLY",
+            "YEAR_TO_DATE",
+            "ANNUAL",
+            "TRAILING_TWELVE_MONTHS",
+            "POINT_IN_TIME",
+            "ANNUALIZED_RATE",
+            "GUIDANCE"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "evidenceClass": {
+                "const": "UNAVAILABLE"
+              }
+            },
+            "required": [
+              "evidenceClass"
+            ]
+          },
+          "then": {
+            "required": [
+              "unavailableReason"
+            ],
+            "properties": {
+              "value": {
+                "type": "null"
+              },
+              "unavailableReason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "evidenceClass": {
+                "const": "CALCULATED_FROM_DISCLOSED_VALUES"
+              }
+            },
+            "required": [
+              "evidenceClass"
+            ]
+          },
+          "then": {
+            "required": [
+              "calculation"
+            ],
+            "properties": {
+              "calculation": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "formula",
+                  "inputs"
+                ],
+                "properties": {
+                  "formula": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "inputs": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
