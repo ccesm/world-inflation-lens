@@ -167,10 +167,11 @@ and durable monitor-history qualification remain separate work. No archive packa
 Zenodo operation or history write is performed for this page.
 
 Public snapshot: `src/data/ai-labor/interim-conclusion.json`. It is a manual fixed
-research vintage, not a new refreshed economic data contract. Application remains
-1.1.0 during preparation; recommend **1.2.0** for an owner-approved public minor
-feature release. Do not change Signal rule/engine versions. No merge/deployment is
-authorized by this document.
+research vintage, not a new refreshed economic data contract. Initial preparation
+used 1.1.0 and recommended an owner-approved 1.2.0 minor feature release. The owner
+has now approved **1.2.0 — AI Labor Interim Conclusion** preparation for PR #12;
+see [release notes](v1.2-ai-labor-interim-conclusion.md). Signal rule/engine versions
+remain unchanged. This document does not activate monitoring or authorize deployment.
 
 ## Delivery acceptance and handoff
 
@@ -202,5 +203,15 @@ untouched and excluded from this delivery.
 No newly confirmed HIGH/MEDIUM implementation finding remains for this page.
 The scientific limitations above remain material and visible; they constrain claims,
 not the publication of this explicitly inconclusive descriptive summary. Monitor
-activation and release version approval remain separate. Final recommendation:
+activation remains separate; release-version preparation is now approved. Initial recommendation:
 **READY FOR PUBLIC AI LABOR INTERIM CONCLUSION**. Do not merge automatically.
+
+### Owner-approved v1.2.0 preparation
+
+PR #12 is finalized as **World Inflation Lens v1.2.0 — AI Labor Interim Conclusion**.
+Package/lockfile versions, shared agent guide, README and roadmap follow the approved
+minor version. Build, full verification and all twelve EN/ZH production-browser
+surfaces passed again, including keyboard/table accessibility checks. No feature
+implementation or accepted scientific value changed during this release preparation.
+See [v1.2.0 acceptance and scope](v1.2-ai-labor-interim-conclusion.md).
+Merge readiness does not activate monitoring, history writes or AI Labor email.

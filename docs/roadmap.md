@@ -2,7 +2,7 @@
 
 World Inflation Lens studies **domestic dollar purchasing power and the international dollar role over the next 20–30 years**. These outcomes interact but are not interchangeable. Historical observations, official conditional projections and hypothetical scenarios remain visibly distinct. Global inflation provides supporting context. Both Chinese and English are supported.
 
-## AI Labor — interim phase closed / Observation Mode
+## V1.2.0 — AI Labor Interim Conclusion / Observation Mode
 
 The strict Phase 3 and expanded Phase 3.5 research are preserved as complementary
 fixed benchmarks. Evidence is **EARLY / INCONCLUSIVE / SAMPLE-SENSITIVE** and
@@ -18,8 +18,9 @@ observations, and reassess through human research review. The Continuous Monitor
 is prepared but **not activated**; no scheduled/history/email operation is enabled.
 Productivity, AI investment returns and labor outcomes remain separate research layers.
 This feature does not merge the large research branches or add Signal Engine factors.
-Application version remains 1.1.0 in preparation; recommend a separately approved
-1.2.0 minor release before public deployment.
+The owner-approved minor release preparation uses application version **1.2.0**.
+See [release notes](v1.2-ai-labor-interim-conclusion.md). Merge and deployment have
+not occurred as part of preparation; monitor activation remains separately gated.
 
 ## Delivered V0.1
 

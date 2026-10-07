@@ -2,6 +2,12 @@
 
 A bilingual Vite + React research site studying two related questions over the next 20–30 years: the U.S. dollar’s domestic purchasing power and its international role in reserves, finance, trade and payments. Observations, official conditional projections and hypothetical scenarios remain distinct. Global inflation provides supporting context.
 
+## V1.2.0 — AI Labor Interim Conclusion
+
+**Research → AI & Labor Transition** (`#/research/ai-labor`) presents a bilingual, fixed-vintage interim conclusion: **EARLY / INCONCLUSIVE / SAMPLE-SENSITIVE**, in **OBSERVATION MODE**. It compares accepted strict and expanded occupational samples, exposure methods, coverage and historical pretrends. The evidence does not establish AI-caused job losses or the absence of future AI labor effects. The monitor and AI Labor email remain disabled; no large research history is imported. See [v1.2.0 release notes](docs/v1.2-ai-labor-interim-conclusion.md).
+
+**研究 → AI 与劳动力转型**提供固定研究版本的中英文阶段性结论：**早期 / 结论未定 / 对样本和方法敏感**，维持**长期观察模式**。就业变化不归因为 AI；本次不启用监测或 AI 劳动力邮件。
+
 ## V1.1.0 — Public Signal Engine
 
 A current macro interpretation appears at the top of Home, with seven independent factor assessments on **Research → Signal Engine** (`#/research/signal-engine`). Deterministic English/Chinese conclusions show Evidence Quality, Threshold Sensitivity and dated monthly/quarterly evidence. There is no aggregate score or investment signal. See [v1.1.0 release notes](docs/v1.1-public-signal-engine.md).
@@ -413,4 +419,4 @@ Verification runs every page in both languages and checks emitted asset paths. B
 
 ## Public Signal Engine feature
 
-The first public presentation adds a compact Home brief and `#/research/signal-engine`, using a strict pre-generated public summary. Local review requires `npm ci --prefix research/signal-engine`, then `npm run signal:public`, `npm run build` and `npm run verify`. The committed public JSON is an unavailable bootstrap; internal shadow artifacts are never browser inputs. See [feature review and lifecycle](docs/public-signal-engine-ui.md) and [public schema](docs/signal-public-summary.schema.json). The daily shadow/email pipeline remains independent. The application release candidate is 1.1.0 following the passed independent release review; see [release notes](docs/v1.1-public-signal-engine.md).
+The first public presentation adds a compact Home brief and `#/research/signal-engine`, using a strict pre-generated public summary. Local review requires `npm ci --prefix research/signal-engine`, then `npm run signal:public`, `npm run build` and `npm run verify`. The committed public JSON is an unavailable bootstrap; internal shadow artifacts are never browser inputs. See [feature review and lifecycle](docs/public-signal-engine-ui.md) and [public schema](docs/signal-public-summary.schema.json). The daily shadow/email pipeline remains independent. Public Signal Engine was introduced in 1.1.0; see [its release notes](docs/v1.1-public-signal-engine.md). The current 1.2.0 preparation adds the [AI Labor interim conclusion](docs/v1.2-ai-labor-interim-conclusion.md) without changing Signal methodology or behavior.

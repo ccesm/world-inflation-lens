@@ -6,7 +6,7 @@ Shared instructions for every coding agent working in this repo (Codex, Claude C
 
 A bilingual (English / 中文) Vite + React research site on two related questions over the next 20–30 years: the U.S. dollar's **domestic purchasing power**, and its **international role** (reserves, finance, trade, payments). Global inflation is supporting context. Published at https://ccesm.github.io/world-inflation-lens/ via GitHub Pages.
 
-Current application version: see `package.json` (the version source of truth; currently 1.1.0, "Public Signal Engine"). Product history and next steps: `docs/roadmap.md`. Per-release detail: `docs/v*.md`. Start with `README.md` for the full feature and methodology record.
+Current application version: see `package.json` (the version source of truth; currently 1.2.0, "AI Labor Interim Conclusion"). Product history and next steps: `docs/roadmap.md`. Per-release detail: `docs/v*.md`. Start with `README.md` for the full feature and methodology record.
 
 ## Commands
 
