@@ -2,6 +2,12 @@
 
 A bilingual Vite + React research site studying two related questions over the next 20–30 years: the U.S. dollar’s domestic purchasing power and its international role in reserves, finance, trade and payments. Observations, official conditional projections and hypothetical scenarios remain distinct. Global inflation provides supporting context.
 
+## V1.3.0 — AI CapEx & Monetization
+
+Research → **AI CapEx & Monetization** (`#/research/ai-capex`) adds compact fixed-vintage evidence through 2026Q2, using the qualified July 30 disclosure basis. Three quarterly charts, native cloud economics, sparse run-rate/paid-seat milestones, pure depreciation, backlog and separate guidance retain company accounting limits. It does not identify AI ROI or recognized quarterly AI-only revenue. The historical research stack is not imported. Owner-approved release preparation uses application version 1.3.0; merge and deployment remain pending. See [v1.3.0 release notes](docs/v1.3-ai-capex-monetization.md) and [Phase 2C methodology and acceptance](docs/AI_CAPEX_PUBLIC_INTEGRATION.md).
+
+**研究 → AI 资本支出与商业化**展示截至 2026Q2 的固定版本证据，披露依据截至 7 月 30 日。公司会计观察、年化 run-rate、积压与指引分开列示；不推算 AI 回报，不把研究历史引入生产。
+
 ## V1.2.0 — AI Labor Interim Conclusion
 
 **Research → AI & Labor Transition** (`#/research/ai-labor`) presents a bilingual, fixed-vintage interim conclusion: **EARLY / INCONCLUSIVE / SAMPLE-SENSITIVE**, in **OBSERVATION MODE**. It compares accepted strict and expanded occupational samples, exposure methods, coverage and historical pretrends. The evidence does not establish AI-caused job losses or the absence of future AI labor effects. The monitor and AI Labor email remain disabled; no large research history is imported. See [v1.2.0 release notes](docs/v1.2-ai-labor-interim-conclusion.md).
@@ -419,4 +425,4 @@ Verification runs every page in both languages and checks emitted asset paths. B
 
 ## Public Signal Engine feature
 
-The first public presentation adds a compact Home brief and `#/research/signal-engine`, using a strict pre-generated public summary. Local review requires `npm ci --prefix research/signal-engine`, then `npm run signal:public`, `npm run build` and `npm run verify`. The committed public JSON is an unavailable bootstrap; internal shadow artifacts are never browser inputs. See [feature review and lifecycle](docs/public-signal-engine-ui.md) and [public schema](docs/signal-public-summary.schema.json). The daily shadow/email pipeline remains independent. Public Signal Engine was introduced in 1.1.0; see [its release notes](docs/v1.1-public-signal-engine.md). The current 1.2.0 preparation adds the [AI Labor interim conclusion](docs/v1.2-ai-labor-interim-conclusion.md) without changing Signal methodology or behavior.
+The first public presentation adds a compact Home brief and `#/research/signal-engine`, using a strict pre-generated public summary. Local review requires `npm ci --prefix research/signal-engine`, then `npm run signal:public`, `npm run build` and `npm run verify`. The committed public JSON is an unavailable bootstrap; internal shadow artifacts are never browser inputs. See [feature review and lifecycle](docs/public-signal-engine-ui.md) and [public schema](docs/signal-public-summary.schema.json). The daily shadow/email pipeline remains independent. Public Signal Engine was introduced in 1.1.0; see [its release notes](docs/v1.1-public-signal-engine.md). Version 1.2.0 added the [AI Labor interim conclusion](docs/v1.2-ai-labor-interim-conclusion.md). The current 1.3.0 preparation adds [AI CapEx & Monetization](docs/v1.3-ai-capex-monetization.md) without changing Signal methodology or behavior.

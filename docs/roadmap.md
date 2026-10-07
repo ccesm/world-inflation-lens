@@ -2,6 +2,18 @@
 
 World Inflation Lens studies **domestic dollar purchasing power and the international dollar role over the next 20–30 years**. These outcomes interact but are not interchangeable. Historical observations, official conditional projections and hypothetical scenarios remain visibly distinct. Global inflation provides supporting context. Both Chinese and English are supported.
 
+## V1.3.0 — AI CapEx & Monetization
+
+Owner-approved release preparation adds `#/research/ai-capex`: compact fixed-vintage
+company evidence for 2019Q1–2026Q2, with disclosure basis 2026-07-30. Microsoft,
+Alphabet, Amazon and Meta retain five independent evidence layers: investment,
+monetization, operating economics, depreciation/accounting and cash conversion.
+AI ROI remains **NOT IDENTIFIED**; recognized quarterly AI-only revenue remains
+**UNAVAILABLE**. No ranking, composite score, scheduled refresh or runtime economic
+API is added. AI investment, monetization, observed productivity and labor effects
+remain separate questions. Application version is **1.3.0**; merge and deployment
+are pending. See [release notes](v1.3-ai-capex-monetization.md).
+
 ## V1.2.0 — AI Labor Interim Conclusion / Observation Mode
 
 The strict Phase 3 and expanded Phase 3.5 research are preserved as complementary

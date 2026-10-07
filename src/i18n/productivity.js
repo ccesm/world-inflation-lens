@@ -1,6 +1,7 @@
 import { seriesTitles } from '../data/seriesRegistry.js'
 export const aiCopy={
  en:{
+ capexResearchLink:'AI CapEx & Monetization',capexResearchNote:'AI investment, productivity and labor effects are empirically distinct; their conclusions are not combined.',
  laborResearchLink:'AI & Labor Transition',laborResearchNote:'Productivity and labor-market effects are related but separate empirical questions. Higher productivity does not automatically imply either higher employment or job displacement. AI investment, productivity and income distribution require distinct evidence.',
  nav:'AI & Productivity',title:'Will AI Be Inflationary or Disinflationary?',subtitle:'AI may raise investment, electricity and infrastructure demand in the short run while increasing productive capacity and lowering unit costs over the longer run.',principle:'The inflation effect of AI depends on whether demand grows faster than productive capacity.',central:'Will the U.S. dollar preserve its purchasing power over the next 20–30 years?',preview:'AI may be both inflationary and disinflationary.',explore:'Explore AI & Productivity',
  groups:['Productivity','Labor Costs','AI / Technology Investment','Data Centers and Electricity','Long-Term Growth / Fiscal Effects'],
@@ -26,6 +27,7 @@ export const aiCopy={
  metric:'Measure',series:'Series',range:'Range',full:'Full history',inspect:'Inspect period',table:'Data table',csv:'Download CSV',coverage:'Coverage',definition:'Definition and methodology',license:'Usage',raw:'Original value',revisions:'Recorded site revisions',old:'Older observation; check source',flag:'Source flag',all:'All available observations',
  },
  zh:{
+ capexResearchLink:'AI 资本支出与商业化',capexResearchNote:'AI 投资、生产率和劳动效应在实证上是不同问题；不合并它们的结论。',
  laborResearchLink:'AI 与劳动力转型',laborResearchNote:'生产率与劳动力市场效应相关，但属于不同实证问题。更高生产率不自动意味着更多就业或岗位替代。AI 投资、生产率与收入分配需要不同证据。',
  nav:'人工智能与生产率',title:'人工智能最终会推高还是压低通胀？',subtitle:'人工智能短期可能通过投资、电力和基础设施需求推高成本，但长期也可能通过提高生产率和降低单位成本缓解通胀压力。',principle:'AI 对通胀的最终影响，取决于需求增长是否快于生产能力的提升。',central:'未来20–30年，美元还能保存多少购买力？',preview:'AI 可能同时具有短期通胀效应和长期反通胀效应。',explore:'查看 AI 与生产率',
  groups:['生产率','劳动成本','AI / 技术投资','数据中心与电力','长期增长与财政影响'],
