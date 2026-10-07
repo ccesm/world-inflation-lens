@@ -74,5 +74,11 @@ export function AiCapex({language,data=snapshot}){
    <details><summary>{t.inspectSource}</summary><dl>{[[t.monitorHash,data.provenance.monitorHash],[t.projectionHash,data.provenance.publicProjectionHash],[t.snapshotHash,snapshotSha256],[t.inputHash,data.provenance.inputSnapshotHash]].map(([label,value])=><div key={label}><dt>{label}</dt><dd><code>{value}</code></dd></div>)}</dl><ul className="ac-source-list">{Object.entries(data.sources).map(([id,s])=><li key={id}><a href={s.url}>{s.publisher||t.source}</a> · {t.sourceDate}: {s.publicationDate}<br/><code>{id}</code> · <code>{s.sha256}</code></li>)}</ul></details>
    <h3>{t.related}</h3><p>{t.relatedNote}</p><p className="ac-related"><a href="#/research/ai-productivity">{t.productivityLink} →</a><a href="#/research/ai-labor">{t.laborLink} →</a></p>
   </Section>
+  <aside className="ac-maintenance" aria-labelledby="ac-maintenance-title" data-capex-maintenance>
+   <h3 id="ac-maintenance-title">{t.maintenance.title}</h3>
+   <dl className="ac-dates">{[[t.maintenance.through,data.dataThrough.replace('Q',' Q')],[t.maintenance.mode,t.maintenance.modeValue],[t.maintenance.publication,t.maintenance.disabled],[t.maintenance.accepted,t.maintenance.acceptedValue]].map(([label,value])=><div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
+   <p>{t.maintenance.help}</p><p>{t.maintenance.boundary}</p>
+   <p className="ac-maintenance-links"><a href={`${repository}/actions/workflows/ai-capex-quarterly-refresh.yml`} target="_blank" rel="noopener noreferrer">{t.maintenance.button} ↗</a><a href={`${repository}/blob/main/docs/AI_CAPEX_OPERATOR_REFRESH.md`} target="_blank" rel="noopener noreferrer">{t.maintenance.instructions} ↗</a></p>
+  </aside>
  </div></>
 }
