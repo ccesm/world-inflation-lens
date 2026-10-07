@@ -1,0 +1,194 @@
+[
+  {
+    "id": "bridge-equity-2025",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "equity-2025-claim"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-01-29",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": "2025-12-31",
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "campus-lease",
+      "campus-rvg",
+      "development-funding",
+      "private-securities"
+    ],
+    "entityId": "meta",
+    "accountingType": "EQUITY_METHOD_INVESTMENT",
+    "observationId": "equity-2025",
+    "balanceSheetLocation": "Non-marketable equity investments",
+    "recognition": "RECOGNIZED",
+    "aggregateOrigin": null
+  },
+  {
+    "id": "bridge-equity-2026",
+    "revision": 2,
+    "previousVersion": "bridge-equity-2025",
+    "changeType": "PERIOD_UPDATE",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "equity-2026-claim"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-07-30",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": "2026-06-30",
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "campus-lease",
+      "campus-rvg",
+      "development-funding",
+      "private-securities"
+    ],
+    "entityId": "meta",
+    "accountingType": "EQUITY_METHOD_INVESTMENT",
+    "observationId": "equity-2026",
+    "balanceSheetLocation": "Non-marketable equity investments",
+    "recognition": "RECOGNIZED",
+    "aggregateOrigin": null
+  },
+  {
+    "id": "bridge-exposure-2025",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "max-exposure-2025-claim"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-01-29",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": "2025-12-31",
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "campus-lease",
+      "campus-rvg",
+      "development-funding",
+      "private-securities"
+    ],
+    "entityId": "meta",
+    "accountingType": "ISSUER_REPORTED_MAXIMUM_EXPOSURE",
+    "observationId": "max-exposure-2025",
+    "balanceSheetLocation": "Disclosure only; not an additional recognized liability",
+    "recognition": "ISSUER_DISCLOSED_MAXIMUM_EXPOSURE",
+    "aggregateOrigin": "ISSUER_REPORTED"
+  },
+  {
+    "id": "bridge-exposure-2026",
+    "revision": 2,
+    "previousVersion": "bridge-exposure-2025",
+    "changeType": "PERIOD_UPDATE",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "max-exposure-2026-claim"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-07-30",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": "2026-06-30",
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "campus-lease",
+      "campus-rvg",
+      "development-funding",
+      "private-securities"
+    ],
+    "entityId": "meta",
+    "accountingType": "ISSUER_REPORTED_MAXIMUM_EXPOSURE",
+    "observationId": "max-exposure-2026",
+    "balanceSheetLocation": "Disclosure only; not an additional recognized liability",
+    "recognition": "ISSUER_DISCLOSED_MAXIMUM_EXPOSURE",
+    "aggregateOrigin": "ISSUER_REPORTED"
+  },
+  {
+    "id": "bridge-lease",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "initial-lease-claim"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-07-30",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": "2026-06-30",
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "campus-lease",
+      "campus-rvg",
+      "development-funding",
+      "private-securities"
+    ],
+    "entityId": "meta",
+    "accountingType": "LEASE_LIABILITY",
+    "observationId": "initial-lease",
+    "balanceSheetLocation": "Disclosure only; not an additional recognized liability",
+    "recognition": "NOT_COMMENCED",
+    "aggregateOrigin": null
+  },
+  {
+    "id": "bridge-rvg",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "rvg-threshold-claim"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-07-30",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": "2026-06-30",
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "campus-lease",
+      "campus-rvg",
+      "development-funding",
+      "private-securities"
+    ],
+    "entityId": "meta",
+    "accountingType": "RESIDUAL_VALUE_GUARANTEE",
+    "observationId": "rvg-threshold",
+    "balanceSheetLocation": "Disclosure only; not an additional recognized liability",
+    "recognition": "NO_RVG_LIABILITY_RECORDED",
+    "aggregateOrigin": null
+  }
+]

@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "const": "ai-infrastructure-financing-v0.1.0"
+    },
+    "asOf": {
+      "const": "2026-10-07"
+    },
+    "researchOnly": {
+      "const": true
+    },
+    "baseBranch": {
+      "const": "codex/ai-capex-operator-refresh"
+    },
+    "baseSha": {
+      "const": "d7666b129eb834cfd70fdcc204b930f5bd67ba7e"
+    },
+    "productionMainObserved": {
+      "const": "be9dde341cfb32a53b7a3fca76e04d631a926bcd"
+    },
+    "layers": {
+      "const": [
+        "PHYSICAL",
+        "ACCOUNTING",
+        "FINANCING",
+        "OBLIGATION",
+        "MONETIZATION"
+      ]
+    },
+    "evidenceClasses": {
+      "const": [
+        "PRIMARY_ACCOUNTING",
+        "PRIMARY_TRANSACTION",
+        "PRIMARY_PROJECT",
+        "PRIMARY_REGULATORY",
+        "SECONDARY_RESEARCH",
+        "SECONDARY_MEDIA",
+        "MODEL_ESTIMATE"
+      ]
+    },
+    "valueClasses": {
+      "const": [
+        "OBSERVED_REPORTED",
+        "MANAGEMENT_GUIDANCE",
+        "CONTRACTUAL_COMMITMENT",
+        "TRANSACTION_VALUE",
+        "PROJECT_ESTIMATE",
+        "SECONDARY_ESTIMATE",
+        "MODEL_DERIVED",
+        "UNAVAILABLE"
+      ]
+    },
+    "overlapStates": {
+      "const": [
+        "NO_KNOWN_OVERLAP",
+        "POSSIBLE_OVERLAP",
+        "KNOWN_OVERLAP",
+        "SAME_ASSET_DIFFERENT_LAYER",
+        "UNRESOLVED"
+      ]
+    },
+    "qualificationStates": {
+      "const": [
+        "PRIMARY_SUPPORTED",
+        "SECONDARY_REPORTED",
+        "REVIEW_REQUIRED",
+        "UNAVAILABLE"
+      ]
+    },
+    "relationshipTypes": {
+      "const": [
+        "OWNS",
+        "PARTIALLY_OWNS",
+        "LEASES",
+        "OPERATES",
+        "DEVELOPS",
+        "FINANCES",
+        "LENDS_TO",
+        "GUARANTEES",
+        "SUPPLIES_POWER_TO",
+        "PURCHASES_CAPACITY_FROM",
+        "BUYS_EQUIPMENT_FROM"
+      ]
+    },
+    "physicalTypes": {
+      "const": [
+        "DATA_CENTER",
+        "CAMPUS",
+        "GPU_CLUSTER",
+        "SERVERS",
+        "NETWORK",
+        "SUBSTATION",
+        "TRANSMISSION",
+        "GENERATION",
+        "BATTERY",
+        "BACKUP_POWER",
+        "LAND_BUILDING"
+      ]
+    },
+    "accountingTypes": {
+      "const": [
+        "CASH_PPE",
+        "CAPITALIZED_ASSET",
+        "FINANCE_LEASE_ROU",
+        "OPERATING_LEASE_ROU",
+        "LEASE_LIABILITY",
+        "EQUITY_METHOD_INVESTMENT",
+        "PURCHASE_COMMITMENT",
+        "CAPACITY_COMMITMENT",
+        "CONSTRUCTION_COMMITMENT",
+        "GUARANTEE",
+        "RESIDUAL_VALUE_GUARANTEE",
+        "ISSUER_REPORTED_MAXIMUM_EXPOSURE"
+      ]
+    },
+    "financingTypes": {
+      "const": [
+        "SPONSOR_EQUITY",
+        "HYPERSCALER_EQUITY",
+        "INFRASTRUCTURE_FUND_EQUITY",
+        "DEVELOPER_EQUITY",
+        "PROJECT_DEBT",
+        "BANK_DEBT",
+        "PRIVATE_CREDIT",
+        "CORPORATE_DEBT",
+        "ASSET_BACKED_SECURITIES",
+        "LEASE_FINANCING",
+        "VENDOR_FINANCING",
+        "JV_FUNDING",
+        "OTHER"
+      ]
+    },
+    "obligationTypes": {
+      "const": [
+        "OPERATING_LEASE",
+        "FINANCE_LEASE",
+        "FUTURE_LEASE",
+        "PARENT_GUARANTEE",
+        "RESIDUAL_VALUE_GUARANTEE",
+        "MINIMUM_REVENUE_GUARANTEE",
+        "DEBT_GUARANTEE",
+        "COMPLETION_GUARANTEE",
+        "CREDIT_SUPPORT",
+        "GPU_PURCHASE",
+        "SERVER_PURCHASE",
+        "EQUIPMENT_PURCHASE",
+        "CLOUD_CAPACITY",
+        "DATA_CENTER_CAPACITY",
+        "POWER_CAPACITY",
+        "TAKE_OR_PAY",
+        "CONSTRUCTION_FUNDING",
+        "PPA",
+        "POWER_SERVICE"
+      ]
+    },
+    "capacityDefinitions": {
+      "const": [
+        "SITE_ELECTRICAL",
+        "IT_LOAD",
+        "CRITICAL_LOAD",
+        "UTILITY_INTERCONNECTION",
+        "CAMPUS_PLANNED_COMPUTE",
+        "GENERATION_REPORTED_CAPACITY",
+        "UNKNOWN"
+      ]
+    },
+    "prohibitedOutputs": {
+      "const": [
+        "AI_ROI",
+        "AI_ROIC",
+        "AI_IRR",
+        "AI_NPV",
+        "AI_PAYBACK",
+        "AI_INVESTMENT_TOTAL",
+        "HIDDEN_LEVERAGE_SCORE",
+        "SYSTEMIC_RISK_SCORE"
+      ]
+    },
+    "aggregationPolicy": {
+      "const": "DO_NOT_ADD_LAYERS"
+    },
+    "unknownPolicy": {
+      "const": "NULL_WITH_REASON"
+    },
+    "monetizationPolicy": {
+      "const": "NO_PROJECT_ALLOCATION"
+    }
+  },
+  "required": [
+    "version",
+    "asOf",
+    "researchOnly",
+    "baseBranch",
+    "baseSha",
+    "productionMainObserved",
+    "layers",
+    "evidenceClasses",
+    "valueClasses",
+    "overlapStates",
+    "qualificationStates",
+    "relationshipTypes",
+    "physicalTypes",
+    "accountingTypes",
+    "financingTypes",
+    "obligationTypes",
+    "capacityDefinitions",
+    "prohibitedOutputs",
+    "aggregationPolicy",
+    "unknownPolicy",
+    "monetizationPolicy"
+  ],
+  "additionalProperties": false
+}

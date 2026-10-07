@@ -1,0 +1,2944 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:wil:ai-infrastructure:records:v0.1.0",
+  "$defs": {
+    "entity": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entityType": {
+          "enum": [
+            "PUBLIC_COMPANY",
+            "SUBSIDIARY",
+            "JV",
+            "SPV",
+            "DEVELOPER",
+            "INFRASTRUCTURE_FUND",
+            "BANK",
+            "PRIVATE_CREDIT_FUND",
+            "UTILITY",
+            "EQUIPMENT_SUPPLIER",
+            "GOVERNMENT",
+            "FUND_GROUP"
+          ]
+        },
+        "legalName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "legalIdentityStatus": {
+          "enum": [
+            "ISSUER_IDENTIFIED",
+            "UNVERIFIED_DETAIL"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "name",
+        "entityType",
+        "legalName",
+        "legalIdentityStatus",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "project": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "projectName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "anchorTenantId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "otherTenantIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "country": {
+              "type": "string",
+              "minLength": 1
+            },
+            "state": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "region": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "coordinates": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "country",
+            "state",
+            "region",
+            "coordinates"
+          ],
+          "additionalProperties": false
+        },
+        "status": {
+          "enum": [
+            "ANNOUNCED",
+            "PLANNED",
+            "PERMITTED",
+            "UNDER_CONSTRUCTION",
+            "PARTIALLY_OPERATIONAL",
+            "OPERATIONAL",
+            "DELAYED",
+            "CANCELLED",
+            "UNKNOWN"
+          ]
+        },
+        "physicalTypes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "DATA_CENTER",
+              "CAMPUS",
+              "GPU_CLUSTER",
+              "SERVERS",
+              "NETWORK",
+              "SUBSTATION",
+              "TRANSMISSION",
+              "GENERATION",
+              "BATTERY",
+              "BACKUP_POWER",
+              "LAND_BUILDING"
+            ]
+          }
+        },
+        "legalAssetOwnerId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ownerUmbrellaId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "economicUserId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "developerId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "constructionStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOpening": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "operationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "capacityObservationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "costObservationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "accountingBridgeIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "financingIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "obligationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "powerIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "monetizationObservationIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "unavailableFields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "definitionNotes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "corporateCapexObservationId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "corporateDebtLinkage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "jvExposureEntityId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "leaseExposureIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "guaranteeExposureIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "purchaseCommitmentIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "capacityCommitmentIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "costComponentObservationIds": {
+          "type": "object",
+          "properties": {
+            "IT": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "LAND": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "BUILDING": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "POWER": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "NETWORK": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "OTHER": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "IT",
+            "LAND",
+            "BUILDING",
+            "POWER",
+            "NETWORK",
+            "OTHER"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "projectName",
+        "anchorTenantId",
+        "otherTenantIds",
+        "location",
+        "status",
+        "physicalTypes",
+        "legalAssetOwnerId",
+        "ownerUmbrellaId",
+        "economicUserId",
+        "developerId",
+        "constructionStart",
+        "expectedOpening",
+        "operationalDate",
+        "capacityObservationIds",
+        "costObservationIds",
+        "accountingBridgeIds",
+        "financingIds",
+        "obligationIds",
+        "powerIds",
+        "monetizationObservationIds",
+        "unavailableFields",
+        "definitionNotes",
+        "corporateCapexObservationId",
+        "corporateDebtLinkage",
+        "jvExposureEntityId",
+        "leaseExposureIds",
+        "guaranteeExposureIds",
+        "purchaseCommitmentIds",
+        "capacityCommitmentIds",
+        "costComponentObservationIds"
+      ],
+      "additionalProperties": false
+    },
+    "ownership": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "ownerId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "ownedEntityId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "percentageObservationId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "ownershipBasis": {
+          "enum": [
+            "JV_MEMBERSHIP",
+            "LEGAL_EQUITY",
+            "BENEFICIAL_EQUITY"
+          ]
+        },
+        "ownershipGroup": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "groupCoverage": {
+          "enum": [
+            "COMPLETE",
+            "PARTIAL"
+          ]
+        },
+        "excessExplanation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "ownerId",
+        "ownedEntityId",
+        "percentageObservationId",
+        "ownershipBasis",
+        "ownershipGroup",
+        "groupCoverage",
+        "excessExplanation"
+      ],
+      "additionalProperties": false
+    },
+    "financing": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "financingIdentity": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "financingType": {
+          "enum": [
+            "SPONSOR_EQUITY",
+            "HYPERSCALER_EQUITY",
+            "INFRASTRUCTURE_FUND_EQUITY",
+            "DEVELOPER_EQUITY",
+            "PROJECT_DEBT",
+            "BANK_DEBT",
+            "PRIVATE_CREDIT",
+            "CORPORATE_DEBT",
+            "ASSET_BACKED_SECURITIES",
+            "LEASE_FINANCING",
+            "VENDOR_FINANCING",
+            "JV_FUNDING",
+            "OTHER"
+          ]
+        },
+        "issuerId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "funderIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "recipientId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "amountObservationId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "commitmentDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fundingDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interestRate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "security": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recourse": {
+          "enum": [
+            "RECOURSE",
+            "NON_RECOURSE",
+            "LIMITED_RECOURSE",
+            "UNKNOWN"
+          ]
+        },
+        "secondaryIssuerId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "termEvidence": {
+          "type": "object",
+          "required": [
+            "interestRate",
+            "maturityDate",
+            "recourse",
+            "security",
+            "fundingDate",
+            "commitmentDate"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "interestRate": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "maturityDate": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "recourse": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "security": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "fundingDate": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "commitmentDate": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "financingIdentity",
+        "financingType",
+        "issuerId",
+        "funderIds",
+        "recipientId",
+        "amountObservationId",
+        "commitmentDate",
+        "fundingDate",
+        "interestRate",
+        "security",
+        "recourse",
+        "secondaryIssuerId",
+        "notes",
+        "termEvidence"
+      ],
+      "additionalProperties": false
+    },
+    "obligation": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "obligationIdentity": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "obligationType": {
+          "enum": [
+            "OPERATING_LEASE",
+            "FINANCE_LEASE",
+            "FUTURE_LEASE",
+            "PARENT_GUARANTEE",
+            "RESIDUAL_VALUE_GUARANTEE",
+            "MINIMUM_REVENUE_GUARANTEE",
+            "DEBT_GUARANTEE",
+            "COMPLETION_GUARANTEE",
+            "CREDIT_SUPPORT",
+            "GPU_PURCHASE",
+            "SERVER_PURCHASE",
+            "EQUIPMENT_PURCHASE",
+            "CLOUD_CAPACITY",
+            "DATA_CENTER_CAPACITY",
+            "POWER_CAPACITY",
+            "TAKE_OR_PAY",
+            "CONSTRUCTION_FUNDING",
+            "PPA",
+            "POWER_SERVICE"
+          ]
+        },
+        "obligorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "beneficiaryId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "amountObservationId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recognition": {
+          "enum": [
+            "NOT_COMMENCED",
+            "RECOGNIZED",
+            "NO_RVG_LIABILITY_RECORDED",
+            "NOT_SEPARATELY_IDENTIFIED"
+          ]
+        },
+        "commencementYear": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "initialTermYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxTermYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "renewalOptional": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "guaranteeDurationYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "trigger": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fixedPayment": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "amountBasis": {
+          "enum": [
+            "INITIAL_LEASE_PAYMENT_COMMITMENT",
+            "DECLINING_RVG_THRESHOLD",
+            "TOTAL_PROJECT_ESTIMATED_COST",
+            "UNAVAILABLE"
+          ]
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "obligationIdentity",
+        "obligationType",
+        "obligorId",
+        "beneficiaryId",
+        "amountObservationId",
+        "recognition",
+        "commencementYear",
+        "initialTermYears",
+        "maxTermYears",
+        "renewalOptional",
+        "guaranteeDurationYears",
+        "trigger",
+        "fixedPayment",
+        "notes",
+        "amountBasis"
+      ],
+      "additionalProperties": false
+    },
+    "lease": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "obligationIdentity": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "obligationType": {
+          "enum": [
+            "OPERATING_LEASE",
+            "FINANCE_LEASE",
+            "FUTURE_LEASE"
+          ]
+        },
+        "obligorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "beneficiaryId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "amountObservationId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recognition": {
+          "enum": [
+            "NOT_COMMENCED",
+            "RECOGNIZED",
+            "NO_RVG_LIABILITY_RECORDED",
+            "NOT_SEPARATELY_IDENTIFIED"
+          ]
+        },
+        "commencementYear": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "initialTermYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxTermYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "renewalOptional": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "guaranteeDurationYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "trigger": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fixedPayment": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "amountBasis": {
+          "enum": [
+            "INITIAL_LEASE_PAYMENT_COMMITMENT",
+            "DECLINING_RVG_THRESHOLD",
+            "TOTAL_PROJECT_ESTIMATED_COST",
+            "UNAVAILABLE"
+          ]
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "obligationIdentity",
+        "obligationType",
+        "obligorId",
+        "beneficiaryId",
+        "amountObservationId",
+        "recognition",
+        "commencementYear",
+        "initialTermYears",
+        "maxTermYears",
+        "renewalOptional",
+        "guaranteeDurationYears",
+        "trigger",
+        "fixedPayment",
+        "notes",
+        "amountBasis"
+      ],
+      "additionalProperties": false
+    },
+    "guarantee": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "obligationIdentity": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "obligationType": {
+          "enum": [
+            "PARENT_GUARANTEE",
+            "RESIDUAL_VALUE_GUARANTEE",
+            "MINIMUM_REVENUE_GUARANTEE",
+            "DEBT_GUARANTEE",
+            "COMPLETION_GUARANTEE",
+            "CREDIT_SUPPORT"
+          ]
+        },
+        "obligorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "beneficiaryId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "amountObservationId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recognition": {
+          "enum": [
+            "NOT_COMMENCED",
+            "RECOGNIZED",
+            "NO_RVG_LIABILITY_RECORDED",
+            "NOT_SEPARATELY_IDENTIFIED"
+          ]
+        },
+        "commencementYear": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "initialTermYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxTermYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "renewalOptional": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "guaranteeDurationYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "trigger": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fixedPayment": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "amountBasis": {
+          "enum": [
+            "INITIAL_LEASE_PAYMENT_COMMITMENT",
+            "DECLINING_RVG_THRESHOLD",
+            "TOTAL_PROJECT_ESTIMATED_COST",
+            "UNAVAILABLE"
+          ]
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "obligationIdentity",
+        "obligationType",
+        "obligorId",
+        "beneficiaryId",
+        "amountObservationId",
+        "recognition",
+        "commencementYear",
+        "initialTermYears",
+        "maxTermYears",
+        "renewalOptional",
+        "guaranteeDurationYears",
+        "trigger",
+        "fixedPayment",
+        "notes",
+        "amountBasis"
+      ],
+      "additionalProperties": false
+    },
+    "commitment": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "obligationIdentity": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "obligationType": {
+          "enum": [
+            "GPU_PURCHASE",
+            "SERVER_PURCHASE",
+            "EQUIPMENT_PURCHASE",
+            "CLOUD_CAPACITY",
+            "DATA_CENTER_CAPACITY",
+            "POWER_CAPACITY",
+            "TAKE_OR_PAY",
+            "CONSTRUCTION_FUNDING",
+            "PPA",
+            "POWER_SERVICE"
+          ]
+        },
+        "obligorId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "beneficiaryId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "amountObservationId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recognition": {
+          "enum": [
+            "NOT_COMMENCED",
+            "RECOGNIZED",
+            "NO_RVG_LIABILITY_RECORDED",
+            "NOT_SEPARATELY_IDENTIFIED"
+          ]
+        },
+        "commencementYear": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "initialTermYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxTermYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "renewalOptional": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "guaranteeDurationYears": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "trigger": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fixedPayment": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "amountBasis": {
+          "enum": [
+            "INITIAL_LEASE_PAYMENT_COMMITMENT",
+            "DECLINING_RVG_THRESHOLD",
+            "TOTAL_PROJECT_ESTIMATED_COST",
+            "UNAVAILABLE"
+          ]
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "obligationIdentity",
+        "obligationType",
+        "obligorId",
+        "beneficiaryId",
+        "amountObservationId",
+        "recognition",
+        "commencementYear",
+        "initialTermYears",
+        "maxTermYears",
+        "renewalOptional",
+        "guaranteeDurationYears",
+        "trigger",
+        "fixedPayment",
+        "notes",
+        "amountBasis"
+      ],
+      "additionalProperties": false
+    },
+    "power": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "powerType": {
+          "enum": [
+            "SUBSTATION",
+            "TRANSMISSION",
+            "GENERATION",
+            "BATTERY",
+            "BACKUP_POWER",
+            "PPA",
+            "GRID_CONNECTION"
+          ]
+        },
+        "utilityId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "gridRegion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gridRegionQualification": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "interconnectionStatus": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "ANNOUNCED",
+            "PLANNED",
+            "PERMITTED",
+            "UNDER_CONSTRUCTION",
+            "OPERATIONAL",
+            "UNKNOWN"
+          ]
+        },
+        "capacityObservationId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "powerContractValue": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "powerContractDuration": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "energizationDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resourceDescription": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "powerType",
+        "utilityId",
+        "gridRegion",
+        "gridRegionQualification",
+        "interconnectionStatus",
+        "status",
+        "capacityObservationId",
+        "powerContractValue",
+        "powerContractDuration",
+        "energizationDate",
+        "resourceDescription"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "publicationDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidenceClass": {
+          "enum": [
+            "PRIMARY_ACCOUNTING",
+            "PRIMARY_TRANSACTION",
+            "PRIMARY_PROJECT",
+            "PRIMARY_REGULATORY",
+            "SECONDARY_RESEARCH",
+            "SECONDARY_MEDIA",
+            "MODEL_ESTIMATE"
+          ]
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retrievalMethod": {
+          "enum": [
+            "PUBLIC_WEB_DOCUMENT_REVIEW",
+            "RAW_ARCHIVE_REVIEW"
+          ]
+        },
+        "rawSha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "rawIdentityStatus": {
+          "enum": [
+            "NOT_ARCHIVED",
+            "HASH_VALIDATED"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "publisher",
+        "url",
+        "publicationDate",
+        "evidenceClass",
+        "locator",
+        "retrievedAt",
+        "retrievalMethod",
+        "rawSha256",
+        "rawIdentityStatus",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "sourceId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "subject": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "predicate": {
+          "type": "string",
+          "minLength": 1
+        },
+        "object": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "FACT",
+            "QUANTITY"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "classification": {
+          "enum": [
+            "OBSERVED_REPORTED",
+            "MANAGEMENT_GUIDANCE",
+            "CONTRACTUAL_COMMITMENT",
+            "TRANSACTION_VALUE",
+            "PROJECT_ESTIMATE",
+            "SECONDARY_ESTIMATE",
+            "MODEL_DERIVED",
+            "UNAVAILABLE"
+          ]
+        },
+        "capacityDefinition": {
+          "enum": [
+            "SITE_ELECTRICAL",
+            "IT_LOAD",
+            "CRITICAL_LOAD",
+            "UTILITY_INTERCONNECTION",
+            "CAMPUS_PLANNED_COMPUTE",
+            "GENERATION_REPORTED_CAPACITY",
+            "UNKNOWN",
+            null
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "sourceId",
+        "subject",
+        "predicate",
+        "object",
+        "kind"
+      ],
+      "additionalProperties": false
+    },
+    "observation": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "USD_BILLION",
+            "USD_TRILLION",
+            "USD_MILLION_PER_MW",
+            "PERCENT",
+            "GW",
+            "MW",
+            "UNKNOWN"
+          ]
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "classification": {
+          "enum": [
+            "OBSERVED_REPORTED",
+            "MANAGEMENT_GUIDANCE",
+            "CONTRACTUAL_COMMITMENT",
+            "TRANSACTION_VALUE",
+            "PROJECT_ESTIMATE",
+            "SECONDARY_ESTIMATE",
+            "MODEL_DERIVED",
+            "UNAVAILABLE"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "capacityDefinition": {
+          "enum": [
+            "SITE_ELECTRICAL",
+            "IT_LOAD",
+            "CRITICAL_LOAD",
+            "UTILITY_INTERCONNECTION",
+            "CAMPUS_PLANNED_COMPUTE",
+            "GENERATION_REPORTED_CAPACITY",
+            "UNKNOWN",
+            null
+          ]
+        },
+        "precision": {
+          "enum": [
+            "AS_REPORTED",
+            "APPROXIMATE",
+            "LOWER_BOUND",
+            "UPPER_BOUND"
+          ]
+        },
+        "operator": {
+          "enum": [
+            "EQ",
+            "GT",
+            "LTE"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "unavailableReason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "value",
+        "unit",
+        "currency",
+        "classification",
+        "scope",
+        "periodEnd",
+        "capacityDefinition",
+        "precision",
+        "operator",
+        "evidence",
+        "unavailableReason"
+      ],
+      "additionalProperties": false
+    },
+    "relationship": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "fromId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "toId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "relationshipType": {
+          "enum": [
+            "OWNS",
+            "PARTIALLY_OWNS",
+            "LEASES",
+            "OPERATES",
+            "DEVELOPS",
+            "FINANCES",
+            "LENDS_TO",
+            "GUARANTEES",
+            "SUPPLIES_POWER_TO",
+            "PURCHASES_CAPACITY_FROM",
+            "BUYS_EQUIPMENT_FROM"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "fromId",
+        "toId",
+        "relationshipType",
+        "scope"
+      ],
+      "additionalProperties": false
+    },
+    "accounting-bridge": {
+      "type": "object",
+      "properties": {
+        "previousVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetIdentity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "announcedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "effectiveAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reportedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodStart": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "periodEnd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maturityDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expectedOperationalDate": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changeType": {
+          "enum": [
+            "ORIGINAL",
+            "PERIOD_UPDATE",
+            "AMENDMENT",
+            "REFINANCING",
+            "OWNERSHIP_CHANGE",
+            "LEASE_COMMENCEMENT",
+            "CAPACITY_EXPANSION",
+            "CANCELLATION",
+            "RESTATEMENT"
+          ]
+        },
+        "retrievedAt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "qualificationStatus": {
+          "enum": [
+            "PRIMARY_SUPPORTED",
+            "SECONDARY_REPORTED",
+            "REVIEW_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "overlapStatus": {
+          "enum": [
+            "NO_KNOWN_OVERLAP",
+            "POSSIBLE_OVERLAP",
+            "KNOWN_OVERLAP",
+            "SAME_ASSET_DIFFERENT_LAYER",
+            "UNRESOLVED"
+          ]
+        },
+        "possibleOverlapWith": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "entityId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "accountingType": {
+          "enum": [
+            "CASH_PPE",
+            "CAPITALIZED_ASSET",
+            "FINANCE_LEASE_ROU",
+            "OPERATING_LEASE_ROU",
+            "LEASE_LIABILITY",
+            "EQUITY_METHOD_INVESTMENT",
+            "PURCHASE_COMMITMENT",
+            "CAPACITY_COMMITMENT",
+            "CONSTRUCTION_COMMITMENT",
+            "GUARANTEE",
+            "RESIDUAL_VALUE_GUARANTEE",
+            "ISSUER_REPORTED_MAXIMUM_EXPOSURE"
+          ]
+        },
+        "observationId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "balanceSheetLocation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recognition": {
+          "enum": [
+            "RECOGNIZED",
+            "NOT_COMMENCED",
+            "NO_RVG_LIABILITY_RECORDED",
+            "ISSUER_DISCLOSED_MAXIMUM_EXPOSURE"
+          ]
+        },
+        "aggregateOrigin": {
+          "enum": [
+            "ISSUER_REPORTED",
+            null
+          ]
+        }
+      },
+      "required": [
+        "previousVersion",
+        "assetIdentity",
+        "announcedAt",
+        "effectiveAt",
+        "reportedAt",
+        "periodStart",
+        "periodEnd",
+        "maturityDate",
+        "expectedOperationalDate",
+        "id",
+        "revision",
+        "changeType",
+        "retrievedAt",
+        "evidence",
+        "qualificationStatus",
+        "overlapStatus",
+        "possibleOverlapWith",
+        "entityId",
+        "accountingType",
+        "observationId",
+        "balanceSheetLocation",
+        "recognition",
+        "aggregateOrigin"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

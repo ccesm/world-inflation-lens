@@ -1,0 +1,530 @@
+[
+  {
+    "id": "meta-share",
+    "sourceId": "meta-jv",
+    "subject": "meta",
+    "predicate": "PARTIALLY_OWNS",
+    "object": "hyperion-jv",
+    "kind": "FACT"
+  },
+  {
+    "id": "fund-share",
+    "sourceId": "meta-jv",
+    "subject": "blue-owl-funds",
+    "predicate": "PARTIALLY_OWNS",
+    "object": "hyperion-jv",
+    "kind": "FACT"
+  },
+  {
+    "id": "jv-owner",
+    "sourceId": "meta-jv",
+    "subject": "hyperion-jv",
+    "predicate": "OWNS",
+    "object": "hyperion",
+    "kind": "FACT"
+  },
+  {
+    "id": "meta-lease",
+    "sourceId": "meta-jv",
+    "subject": "meta",
+    "predicate": "LEASES",
+    "object": "hyperion-jv",
+    "kind": "FACT"
+  },
+  {
+    "id": "meta-develop",
+    "sourceId": "meta-jv",
+    "subject": "meta",
+    "predicate": "DEVELOPS",
+    "object": "hyperion",
+    "kind": "FACT"
+  },
+  {
+    "id": "meta-operations",
+    "sourceId": "meta-jv",
+    "subject": "meta",
+    "predicate": "OPERATES",
+    "object": "hyperion",
+    "kind": "FACT"
+  },
+  {
+    "id": "fund-funding",
+    "sourceId": "meta-jv",
+    "subject": "blue-owl-funds",
+    "predicate": "FINANCES",
+    "object": "hyperion-jv",
+    "kind": "FACT"
+  },
+  {
+    "id": "pimco-offering",
+    "sourceId": "cc-pimco",
+    "subject": "pimco-funds",
+    "predicate": "FINANCES",
+    "object": "blue-owl-funds",
+    "kind": "FACT"
+  },
+  {
+    "id": "rvg-support",
+    "sourceId": "meta-jv",
+    "subject": "meta",
+    "predicate": "GUARANTEES",
+    "object": "hyperion-jv",
+    "kind": "FACT"
+  },
+  {
+    "id": "utility-support",
+    "sourceId": "entergy-expansion",
+    "subject": "entergy-la",
+    "predicate": "SUPPLIES_POWER_TO",
+    "object": "hyperion",
+    "kind": "FACT"
+  },
+  {
+    "id": "secondary-laidley-owner",
+    "sourceId": "brookings-paper",
+    "subject": "laidley",
+    "predicate": "OWNS",
+    "object": "hyperion",
+    "kind": "FACT"
+  },
+  {
+    "id": "secondary-beignet-ownership",
+    "sourceId": "brookings-paper",
+    "subject": "beignet-investor",
+    "predicate": "PARTIALLY_OWNS",
+    "object": "project-beignet-holdings",
+    "kind": "FACT"
+  },
+  {
+    "id": "not-consolidated",
+    "sourceId": "meta-2026q2",
+    "subject": "meta",
+    "predicate": "ACCOUNTING",
+    "object": "UNCONSOLIDATED_VIE",
+    "kind": "FACT"
+  },
+  {
+    "id": "lease-class",
+    "sourceId": "meta-jv",
+    "subject": "meta",
+    "predicate": "LEASE_CLASS",
+    "object": "OPERATING_LEASE",
+    "kind": "FACT"
+  },
+  {
+    "id": "rvg-unrecognized",
+    "sourceId": "meta-2026q2",
+    "subject": "meta",
+    "predicate": "RECOGNITION",
+    "object": "NO_RVG_LIABILITY_RECORDED",
+    "kind": "FACT"
+  },
+  {
+    "id": "construction",
+    "sourceId": "meta-jv",
+    "subject": "hyperion",
+    "predicate": "STATUS",
+    "object": "UNDER_CONSTRUCTION",
+    "kind": "FACT"
+  },
+  {
+    "id": "identity",
+    "sourceId": "meta-jv",
+    "subject": "hyperion",
+    "predicate": "LOCATION",
+    "object": "Richland Parish, Louisiana, US",
+    "kind": "FACT"
+  },
+  {
+    "id": "first-operation",
+    "sourceId": "meta-engineering",
+    "subject": "hyperion",
+    "predicate": "EXPECTED_OPERATIONAL",
+    "object": "2028",
+    "kind": "FACT"
+  },
+  {
+    "id": "power-plan",
+    "sourceId": "entergy-expansion",
+    "subject": "hyperion",
+    "predicate": "POWER_PLAN",
+    "object": "GAS_TRANSMISSION_BATTERY_NUCLEAR_SOLAR",
+    "kind": "FACT"
+  },
+  {
+    "id": "jv-development-claim",
+    "sourceId": "meta-jv",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "jv-development",
+    "kind": "QUANTITY",
+    "value": 27,
+    "unit": "USD_BILLION",
+    "classification": "PROJECT_ESTIMATE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "blue-fund-cash-claim",
+    "sourceId": "meta-jv",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "blue-fund-cash",
+    "kind": "QUANTITY",
+    "value": 7,
+    "unit": "USD_BILLION",
+    "classification": "TRANSACTION_VALUE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "meta-distribution-claim",
+    "sourceId": "meta-jv",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "meta-distribution",
+    "kind": "QUANTITY",
+    "value": 3,
+    "unit": "USD_BILLION",
+    "classification": "TRANSACTION_VALUE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "private-offering-claim",
+    "sourceId": "cc-pimco",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "private-offering",
+    "kind": "QUANTITY",
+    "value": 27.3,
+    "unit": "USD_BILLION",
+    "classification": "TRANSACTION_VALUE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "meta-equity-percent-claim",
+    "sourceId": "meta-jv",
+    "subject": "meta",
+    "predicate": "MEASUREMENT",
+    "object": "meta-equity-percent",
+    "kind": "QUANTITY",
+    "value": 20,
+    "unit": "PERCENT",
+    "classification": "OBSERVED_REPORTED",
+    "capacityDefinition": null
+  },
+  {
+    "id": "fund-equity-percent-claim",
+    "sourceId": "meta-jv",
+    "subject": "blue-owl-funds",
+    "predicate": "MEASUREMENT",
+    "object": "fund-equity-percent",
+    "kind": "QUANTITY",
+    "value": 80,
+    "unit": "PERCENT",
+    "classification": "OBSERVED_REPORTED",
+    "capacityDefinition": null
+  },
+  {
+    "id": "initial-lease-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "initial-lease",
+    "kind": "QUANTITY",
+    "value": 12.31,
+    "unit": "USD_BILLION",
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "capacityDefinition": null
+  },
+  {
+    "id": "rvg-threshold-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "rvg-threshold",
+    "kind": "QUANTITY",
+    "value": 28,
+    "unit": "USD_BILLION",
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "capacityDefinition": null
+  },
+  {
+    "id": "equity-2025-claim",
+    "sourceId": "meta-2025k",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "equity-2025",
+    "kind": "QUANTITY",
+    "value": 1.83,
+    "unit": "USD_BILLION",
+    "classification": "OBSERVED_REPORTED",
+    "capacityDefinition": null
+  },
+  {
+    "id": "equity-2026-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "equity-2026",
+    "kind": "QUANTITY",
+    "value": 2.92,
+    "unit": "USD_BILLION",
+    "classification": "OBSERVED_REPORTED",
+    "capacityDefinition": null
+  },
+  {
+    "id": "max-exposure-2025-claim",
+    "sourceId": "meta-2025k",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "max-exposure-2025",
+    "kind": "QUANTITY",
+    "value": 45.95,
+    "unit": "USD_BILLION",
+    "classification": "OBSERVED_REPORTED",
+    "capacityDefinition": null
+  },
+  {
+    "id": "max-exposure-2026-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "max-exposure-2026",
+    "kind": "QUANTITY",
+    "value": 46.03,
+    "unit": "USD_BILLION",
+    "classification": "OBSERVED_REPORTED",
+    "capacityDefinition": null
+  },
+  {
+    "id": "planned-campus-claim",
+    "sourceId": "meta-expansion",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "planned-campus",
+    "kind": "QUANTITY",
+    "value": 5,
+    "unit": "GW",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "capacityDefinition": "CAMPUS_PLANNED_COMPUTE"
+  },
+  {
+    "id": "regional-investment-claim",
+    "sourceId": "meta-expansion",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "regional-investment",
+    "kind": "QUANTITY",
+    "value": 50,
+    "unit": "USD_BILLION",
+    "classification": "PROJECT_ESTIMATE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "financed-campus-claim",
+    "sourceId": "sp-webinar",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "financed-campus",
+    "kind": "QUANTITY",
+    "value": 2.064,
+    "unit": "GW",
+    "classification": "SECONDARY_ESTIMATE",
+    "capacityDefinition": "UNKNOWN"
+  },
+  {
+    "id": "gas-generation-claim",
+    "sourceId": "entergy-expansion",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "gas-generation",
+    "kind": "QUANTITY",
+    "value": 5200,
+    "unit": "MW",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "capacityDefinition": "GENERATION_REPORTED_CAPACITY"
+  },
+  {
+    "id": "solar-option-claim",
+    "sourceId": "entergy-expansion",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "solar-option",
+    "kind": "QUANTITY",
+    "value": 2500,
+    "unit": "MW",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "capacityDefinition": "GENERATION_REPORTED_CAPACITY"
+  },
+  {
+    "id": "brookings-investment-claim",
+    "sourceId": "brookings-paper",
+    "subject": "us-buildout",
+    "predicate": "MEASUREMENT",
+    "object": "brookings-investment",
+    "kind": "QUANTITY",
+    "value": 10.3,
+    "unit": "USD_TRILLION",
+    "classification": "MODEL_DERIVED",
+    "capacityDefinition": null
+  },
+  {
+    "id": "brookings-unit-cost-claim",
+    "sourceId": "brookings-paper",
+    "subject": "us-buildout",
+    "predicate": "MEASUREMENT",
+    "object": "brookings-unit-cost",
+    "kind": "QUANTITY",
+    "value": 41,
+    "unit": "USD_MILLION_PER_MW",
+    "classification": "MODEL_DERIVED",
+    "capacityDefinition": null
+  },
+  {
+    "id": "project-opex-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "project-opex",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "project-ai-revenue-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "project-ai-revenue",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "project-equipment-cost-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "project-equipment-cost",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "meta-project-cash-ppe-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "meta-project-cash-ppe",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "loan-rate-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "loan-rate",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "loan-maturity-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "loan-maturity",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "loan-recourse-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "loan-recourse",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "lease-current-liability-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "lease-current-liability",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "funding-meta-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "funding-meta",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "power-contract-value-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "power-contract-value",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "power-energization-claim",
+    "sourceId": "meta-2026q2",
+    "subject": "hyperion",
+    "predicate": "MEASUREMENT",
+    "object": "power-energization",
+    "kind": "QUANTITY",
+    "value": null,
+    "unit": "UNKNOWN",
+    "classification": "UNAVAILABLE",
+    "capacityDefinition": null
+  },
+  {
+    "id": "smalling-build",
+    "sourceId": "entergy-substation",
+    "subject": "smalling",
+    "predicate": "STATUS",
+    "object": "UNDER_CONSTRUCTION",
+    "kind": "FACT"
+  },
+  {
+    "id": "rvg-kind",
+    "sourceId": "meta-jv",
+    "subject": "meta",
+    "predicate": "GUARANTEE_CLASS",
+    "object": "RESIDUAL_VALUE_GUARANTEE",
+    "kind": "FACT"
+  }
+]

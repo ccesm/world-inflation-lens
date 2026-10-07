@@ -1,0 +1,58 @@
+[
+  {
+    "id": "meta-membership",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "meta-share"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2025-10-21",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [],
+    "ownerId": "meta",
+    "ownedEntityId": "hyperion-jv",
+    "percentageObservationId": "meta-equity-percent",
+    "ownershipBasis": "JV_MEMBERSHIP",
+    "ownershipGroup": "hyperion-jv-2025",
+    "groupCoverage": "COMPLETE",
+    "excessExplanation": null
+  },
+  {
+    "id": "fund-membership",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "fund-share"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2025-10-21",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [],
+    "ownerId": "blue-owl-funds",
+    "ownedEntityId": "hyperion-jv",
+    "percentageObservationId": "fund-equity-percent",
+    "ownershipBasis": "JV_MEMBERSHIP",
+    "ownershipGroup": "hyperion-jv-2025",
+    "groupCoverage": "COMPLETE",
+    "excessExplanation": null
+  }
+]

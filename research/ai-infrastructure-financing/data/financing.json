@@ -1,0 +1,146 @@
+[
+  {
+    "id": "private-securities",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "pimco-offering"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2025-10-27",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "jv-development",
+      "campus-lease",
+      "campus-rvg"
+    ],
+    "financingIdentity": "private-securities",
+    "financingType": "PROJECT_DEBT",
+    "issuerId": null,
+    "funderIds": [
+      "pimco-funds"
+    ],
+    "recipientId": "blue-owl-funds",
+    "amountObservationId": "private-offering",
+    "commitmentDate": null,
+    "fundingDate": null,
+    "interestRate": null,
+    "security": null,
+    "recourse": "UNKNOWN",
+    "secondaryIssuerId": "beignet-investor",
+    "notes": "Offering amount primary-supported; precise borrowing entity and legal terms remain secondary/unavailable.",
+    "termEvidence": {
+      "interestRate": null,
+      "maturityDate": null,
+      "recourse": null,
+      "security": null,
+      "fundingDate": null,
+      "commitmentDate": null
+    }
+  },
+  {
+    "id": "fund-cash",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "fund-funding"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2025-10-21",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "jv-development",
+      "campus-lease",
+      "campus-rvg"
+    ],
+    "financingIdentity": "fund-cash",
+    "financingType": "JV_FUNDING",
+    "issuerId": "blue-owl-funds",
+    "funderIds": [
+      "blue-owl-funds"
+    ],
+    "recipientId": "hyperion-jv",
+    "amountObservationId": "blue-fund-cash",
+    "commitmentDate": null,
+    "fundingDate": null,
+    "interestRate": null,
+    "security": null,
+    "recourse": "UNKNOWN",
+    "secondaryIssuerId": null,
+    "notes": "Do not treat partly debt-funded contribution as separately additive unlevered equity.",
+    "termEvidence": {
+      "interestRate": null,
+      "maturityDate": null,
+      "recourse": null,
+      "security": null,
+      "fundingDate": null,
+      "commitmentDate": null
+    }
+  },
+  {
+    "id": "meta-capital-interest",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "meta-share"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2025-10-21",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "jv-development",
+      "campus-lease",
+      "campus-rvg"
+    ],
+    "financingIdentity": "meta-capital-interest",
+    "financingType": "HYPERSCALER_EQUITY",
+    "issuerId": "meta",
+    "funderIds": [
+      "meta"
+    ],
+    "recipientId": "hyperion-jv",
+    "amountObservationId": null,
+    "commitmentDate": null,
+    "fundingDate": null,
+    "interestRate": null,
+    "security": null,
+    "recourse": "UNKNOWN",
+    "secondaryIssuerId": null,
+    "notes": "Membership is not a measured funded cash amount.",
+    "termEvidence": {
+      "interestRate": null,
+      "maturityDate": null,
+      "recourse": null,
+      "security": null,
+      "fundingDate": null,
+      "commitmentDate": null
+    }
+  }
+]

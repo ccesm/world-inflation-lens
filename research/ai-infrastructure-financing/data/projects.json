@@ -1,0 +1,119 @@
+[
+  {
+    "id": "hyperion",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "identity",
+      "construction",
+      "first-operation"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2025-10-21",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "private-securities",
+      "campus-lease",
+      "campus-rvg",
+      "development-funding"
+    ],
+    "projectName": "Hyperion",
+    "anchorTenantId": "meta",
+    "otherTenantIds": [],
+    "location": {
+      "country": "US",
+      "state": "LA",
+      "region": "Richland Parish",
+      "coordinates": null
+    },
+    "status": "UNDER_CONSTRUCTION",
+    "physicalTypes": [
+      "CAMPUS",
+      "DATA_CENTER",
+      "GPU_CLUSTER",
+      "NETWORK",
+      "LAND_BUILDING"
+    ],
+    "legalAssetOwnerId": null,
+    "ownerUmbrellaId": "hyperion-jv",
+    "economicUserId": "meta",
+    "developerId": "meta",
+    "constructionStart": "2024-12",
+    "expectedOpening": "2028",
+    "operationalDate": null,
+    "capacityObservationIds": [
+      "planned-campus",
+      "financed-campus"
+    ],
+    "costObservationIds": [
+      "jv-development",
+      "regional-investment"
+    ],
+    "accountingBridgeIds": [
+      "bridge-equity-2025",
+      "bridge-equity-2026",
+      "bridge-exposure-2025",
+      "bridge-exposure-2026",
+      "bridge-lease",
+      "bridge-rvg"
+    ],
+    "financingIds": [
+      "private-securities",
+      "fund-cash",
+      "meta-capital-interest"
+    ],
+    "obligationIds": [
+      "campus-lease",
+      "campus-rvg",
+      "development-funding",
+      "power-service"
+    ],
+    "powerIds": [
+      "smalling",
+      "expanded-generation",
+      "expanded-renewables",
+      "expanded-grid"
+    ],
+    "monetizationObservationIds": [
+      "project-ai-revenue",
+      "project-opex"
+    ],
+    "unavailableFields": [
+      "Exact primary-verified title-holder and subsidiary ownership chain",
+      "Full offering memorandum, security package, coupon, maturity and legal recourse",
+      "IT equipment / project-specific Meta cash PP&E",
+      "Lease payment schedule and current recognized project lease liability",
+      "Project attributable revenue/cash flow/utilization",
+      "Firm energization and full expanded capacity boundary"
+    ],
+    "definitionNotes": "Umbrella campus identity; 2025 financing subset versus expanded campus remains unresolved; no capacity conversion.",
+    "corporateCapexObservationId": "meta-project-cash-ppe",
+    "corporateDebtLinkage": null,
+    "leaseExposureIds": [
+      "campus-lease"
+    ],
+    "jvExposureEntityId": "hyperion-jv",
+    "guaranteeExposureIds": [
+      "campus-rvg"
+    ],
+    "purchaseCommitmentIds": [],
+    "capacityCommitmentIds": [],
+    "costComponentObservationIds": {
+      "IT": "project-equipment-cost",
+      "LAND": null,
+      "BUILDING": null,
+      "POWER": null,
+      "NETWORK": null,
+      "OTHER": null
+    }
+  }
+]

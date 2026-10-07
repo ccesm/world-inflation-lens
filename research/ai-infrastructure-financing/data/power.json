@@ -1,0 +1,142 @@
+[
+  {
+    "id": "smalling",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "smalling-build"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2025-06-27",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "regional-investment",
+      "jv-development"
+    ],
+    "powerType": "SUBSTATION",
+    "utilityId": "entergy-la",
+    "gridRegion": null,
+    "gridRegionQualification": "REVIEW_REQUIRED",
+    "interconnectionStatus": "NOT_SEPARATELY_QUALIFIED",
+    "status": "UNDER_CONSTRUCTION",
+    "capacityObservationId": null,
+    "powerContractValue": null,
+    "powerContractDuration": null,
+    "energizationDate": null,
+    "resourceDescription": "Smalling; groundbreaking reported; Meta-funded"
+  },
+  {
+    "id": "expanded-generation",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "power-plan"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-03-27",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "regional-investment",
+      "jv-development"
+    ],
+    "powerType": "GENERATION",
+    "utilityId": "entergy-la",
+    "gridRegion": null,
+    "gridRegionQualification": "REVIEW_REQUIRED",
+    "interconnectionStatus": "NOT_SEPARATELY_QUALIFIED",
+    "status": "PLANNED",
+    "capacityObservationId": "gas-generation",
+    "powerContractValue": null,
+    "powerContractDuration": null,
+    "energizationDate": null,
+    "resourceDescription": "Seven combined-cycle gas plants; planned, broader utility system scope"
+  },
+  {
+    "id": "expanded-renewables",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "power-plan"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-03-27",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "regional-investment",
+      "jv-development"
+    ],
+    "powerType": "GENERATION",
+    "utilityId": "entergy-la",
+    "gridRegion": null,
+    "gridRegionQualification": "REVIEW_REQUIRED",
+    "interconnectionStatus": "NOT_SEPARATELY_QUALIFIED",
+    "status": "PLANNED",
+    "capacityObservationId": "solar-option",
+    "powerContractValue": null,
+    "powerContractDuration": null,
+    "energizationDate": null,
+    "resourceDescription": "Up to new solar; not actual generation delivered"
+  },
+  {
+    "id": "expanded-grid",
+    "revision": 1,
+    "previousVersion": null,
+    "changeType": "ORIGINAL",
+    "assetIdentity": "hyperion-campus",
+    "evidence": [
+      "power-plan"
+    ],
+    "qualificationStatus": "PRIMARY_SUPPORTED",
+    "announcedAt": null,
+    "effectiveAt": null,
+    "reportedAt": "2026-03-27",
+    "retrievedAt": "2026-10-07",
+    "periodStart": null,
+    "periodEnd": null,
+    "maturityDate": null,
+    "expectedOperationalDate": null,
+    "overlapStatus": "SAME_ASSET_DIFFERENT_LAYER",
+    "possibleOverlapWith": [
+      "regional-investment",
+      "jv-development"
+    ],
+    "powerType": "TRANSMISSION",
+    "utilityId": "entergy-la",
+    "gridRegion": null,
+    "gridRegionQualification": "REVIEW_REQUIRED",
+    "interconnectionStatus": "NOT_SEPARATELY_QUALIFIED",
+    "status": "PLANNED",
+    "capacityObservationId": null,
+    "powerContractValue": null,
+    "powerContractDuration": null,
+    "energizationDate": null,
+    "resourceDescription": "Transmission, batteries, nuclear uprates; terms not extracted"
+  }
+]

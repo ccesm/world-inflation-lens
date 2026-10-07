@@ -1,0 +1,482 @@
+[
+  {
+    "id": "jv-development",
+    "value": 27,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "PROJECT_ESTIMATE",
+    "scope": "JV buildings, long-lived power/cooling/connectivity; not GPUs",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "APPROXIMATE",
+    "operator": "EQ",
+    "evidence": [
+      "jv-development-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "blue-fund-cash",
+    "value": 7,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "TRANSACTION_VALUE",
+    "scope": "Fund cash contribution at closing; partly financed with securities, not unlevered equity",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "APPROXIMATE",
+    "operator": "EQ",
+    "evidence": [
+      "blue-fund-cash-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "meta-distribution",
+    "value": 3,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "TRANSACTION_VALUE",
+    "scope": "One-time distribution to Meta; not project cost",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "APPROXIMATE",
+    "operator": "EQ",
+    "evidence": [
+      "meta-distribution-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "private-offering",
+    "value": 27.3,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "TRANSACTION_VALUE",
+    "scope": "Private securities offering by Blue Owl-managed funds; not Meta corporate borrowing",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "private-offering-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "meta-equity-percent",
+    "value": 20,
+    "unit": "PERCENT",
+    "currency": null,
+    "classification": "OBSERVED_REPORTED",
+    "scope": "JV economic membership",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "meta-equity-percent-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "fund-equity-percent",
+    "value": 80,
+    "unit": "PERCENT",
+    "currency": null,
+    "classification": "OBSERVED_REPORTED",
+    "scope": "JV membership held by managed funds; not Blue Owl parent directly",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "fund-equity-percent-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "initial-lease",
+    "value": 12.31,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "scope": "Initial four-year property leases commencing 2029",
+    "periodEnd": "2026-06-30",
+    "capacityDefinition": null,
+    "precision": "APPROXIMATE",
+    "operator": "EQ",
+    "evidence": [
+      "initial-lease-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "rvg-threshold",
+    "value": 28,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "scope": "Declining aggregate RVG threshold, conditional fair-value shortfall, not fixed cash payment",
+    "periodEnd": "2026-06-30",
+    "capacityDefinition": null,
+    "precision": "APPROXIMATE",
+    "operator": "EQ",
+    "evidence": [
+      "rvg-threshold-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "equity-2025",
+    "value": 1.83,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "OBSERVED_REPORTED",
+    "scope": "Equity-method carrying value",
+    "periodEnd": "2025-12-31",
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "equity-2025-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "equity-2026",
+    "value": 2.92,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "OBSERVED_REPORTED",
+    "scope": "Equity-method carrying value",
+    "periodEnd": "2026-06-30",
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "equity-2026-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "max-exposure-2025",
+    "value": 45.95,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "OBSERVED_REPORTED",
+    "scope": "Issuer-reported maximum VIE exposure; includes other rows; not expected loss",
+    "periodEnd": "2025-12-31",
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "max-exposure-2025-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "max-exposure-2026",
+    "value": 46.03,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "OBSERVED_REPORTED",
+    "scope": "Issuer-reported maximum VIE exposure; includes other rows; not expected loss",
+    "periodEnd": "2026-06-30",
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "max-exposure-2026-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "planned-campus",
+    "value": 5,
+    "unit": "GW",
+    "currency": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "scope": "Expanded campus compute capacity, not operational IT load",
+    "periodEnd": "2026-07-13",
+    "capacityDefinition": "CAMPUS_PLANNED_COMPUTE",
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "planned-campus-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "regional-investment",
+    "value": 50,
+    "unit": "USD_BILLION",
+    "currency": "USD",
+    "classification": "PROJECT_ESTIMATE",
+    "scope": "Regional expanded buildout; inclusion of equipment and JV boundaries unresolved",
+    "periodEnd": "2026-07-13",
+    "capacityDefinition": null,
+    "precision": "LOWER_BOUND",
+    "operator": "GT",
+    "evidence": [
+      "regional-investment-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "financed-campus",
+    "value": 2.064,
+    "unit": "GW",
+    "currency": null,
+    "classification": "SECONDARY_ESTIMATE",
+    "scope": "Rating agency financing campus scope; electrical/IT basis not established",
+    "periodEnd": "2025-10-23",
+    "capacityDefinition": "UNKNOWN",
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "financed-campus-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "gas-generation",
+    "value": 5200,
+    "unit": "MW",
+    "currency": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "scope": "Seven planned combined-cycle plants for project and broader system",
+    "periodEnd": "2026-03-27",
+    "capacityDefinition": "GENERATION_REPORTED_CAPACITY",
+    "precision": "LOWER_BOUND",
+    "operator": "GT",
+    "evidence": [
+      "gas-generation-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "solar-option",
+    "value": 2500,
+    "unit": "MW",
+    "currency": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "scope": "Up to additional solar resources; not guaranteed dedicated operational supply",
+    "periodEnd": "2026-03-27",
+    "capacityDefinition": "GENERATION_REPORTED_CAPACITY",
+    "precision": "UPPER_BOUND",
+    "operator": "LTE",
+    "evidence": [
+      "solar-option-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "brookings-investment",
+    "value": 10.3,
+    "unit": "USD_TRILLION",
+    "currency": "USD",
+    "classification": "MODEL_DERIVED",
+    "scope": "Scenario investment incurred 2025\u20132032, including projects completed later",
+    "periodEnd": "2032-12-31",
+    "capacityDefinition": null,
+    "precision": "APPROXIMATE",
+    "operator": "EQ",
+    "evidence": [
+      "brookings-investment-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "brookings-unit-cost",
+    "value": 41,
+    "unit": "USD_MILLION_PER_MW",
+    "currency": "USD",
+    "classification": "MODEL_DERIVED",
+    "scope": "2025 benchmark facility + power + IT cost; not project accounting",
+    "periodEnd": "2025-12-31",
+    "capacityDefinition": null,
+    "precision": "APPROXIMATE",
+    "operator": "EQ",
+    "evidence": [
+      "brookings-unit-cost-claim"
+    ],
+    "unavailableReason": null
+  },
+  {
+    "id": "project-opex",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Project attributable operating cash flows",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "project-opex-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "project-ai-revenue",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Recognized project AI revenue",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "project-ai-revenue-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "project-equipment-cost",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Attributable IT equipment investment",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "project-equipment-cost-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "meta-project-cash-ppe",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Project-specific current Meta cash PP&E",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "meta-project-cash-ppe-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "loan-rate",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Primary-verified coupon",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "loan-rate-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "loan-maturity",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Primary-verified maturity",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "loan-maturity-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "loan-recourse",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Legal recourse provisions",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "loan-recourse-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "lease-current-liability",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Current project recognized lease liability",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "lease-current-liability-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "funding-meta",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Meta remaining funding schedule",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "funding-meta-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "power-contract-value",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Power contract value",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "power-contract-value-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  },
+  {
+    "id": "power-energization",
+    "value": null,
+    "unit": "UNKNOWN",
+    "currency": null,
+    "classification": "UNAVAILABLE",
+    "scope": "Confirmed energization date",
+    "periodEnd": null,
+    "capacityDefinition": null,
+    "precision": "AS_REPORTED",
+    "operator": "EQ",
+    "evidence": [
+      "power-energization-claim"
+    ],
+    "unavailableReason": "NOT_IDENTIFIED_IN_REVIEWED_PRIMARY_SOURCES"
+  }
+]
