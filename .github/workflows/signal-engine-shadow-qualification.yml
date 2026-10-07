@@ -9,6 +9,22 @@ on:
         options: [normal, failure-injection]
         default: normal
         required: true
+      operator_mode:
+        description: Research operator pilot mode
+        type: choice
+        options: [check, manual_seed]
+        default: check
+      company:
+        description: Research company scope
+        type: choice
+        options: [ALL, MSFT, GOOG, AMZN, META]
+        default: ALL
+      official_url:
+        description: Official source URL only (manual_seed)
+        type: string
+      expected_quarter:
+        description: Calendar quarter YYYYQn (manual_seed)
+        type: string
 permissions:
   contents: read
 jobs:
@@ -55,5 +71,41 @@ jobs:
         with:
           name: ai-capex-runner-access
           path: ${{ runner.temp }}/ai-capex-access-report/access-report.json
+          retention-days: 30
+          if-no-files-found: error
+  ai-capex-operator:
+    name: AI CapEx operator refresh (research qualification bridge)
+    if: github.ref == 'refs/heads/codex/ai-capex-operator-refresh'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install bounded document parsers
+        run: python -m pip install -r research/ai-capex-monetization/refresh/operator/requirements.txt
+      - name: Operator safeguards
+        run: node --test --test-concurrency=1 research/ai-capex-monetization/refresh/tests/operator.test.mjs
+      - name: Candidate qualification only
+        env:
+          AI_CAPEX_MODE: ${{ inputs.operator_mode }}
+          AI_CAPEX_COMPANY: ${{ inputs.company }}
+          AI_CAPEX_OFFICIAL_URL: ${{ inputs.official_url }}
+          AI_CAPEX_EXPECTED_QUARTER: ${{ inputs.expected_quarter }}
+          AI_CAPEX_RESEARCH_SHA: ${{ github.sha }}
+          AI_CAPEX_OUTPUT: ${{ runner.temp }}/operator-report
+          WIL_AI_CAPEX_CACHE: ${{ runner.temp }}/operator-raw-cache
+        run: node research/ai-capex-monetization/refresh/operator/run.mjs
+      - name: Upload compact candidate report only
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-capex-operator-candidate
+          path: ${{ runner.temp }}/operator-report/operator-candidate.json
           retention-days: 30
           if-no-files-found: error
