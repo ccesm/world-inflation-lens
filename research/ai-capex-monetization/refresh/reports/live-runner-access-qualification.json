@@ -1,0 +1,1552 @@
+{
+  "accountingBase": "ad6ebf96e2bf59145f31120dd02cdcc3fbca24b7",
+  "baseSHA": "05623ffa6cbe0d4ba9f5c2fc0a5d3986c5ac5c13",
+  "decision": "LIVE RUNNER ACCESS STILL REQUIRES REPAIR",
+  "determinism": {
+    "economicIdentityGenerated": false,
+    "fixedClockFixtureAccessIdentity": true,
+    "freshProcessCompactContentBytes": true,
+    "mutableHtml": "Microsoft release/call/IR bytes may change and are not claimed byte-stable.",
+    "rawDocumentRepeatability": "Four matching financial-control hashes across two local runs and one hosted network run."
+  },
+  "discovery": {
+    "actualCandidateQuarters": [],
+    "findings": "Both environments reproduce blocked SEC/three issuer archives and Microsoft no static links. This does not identify network, geography, TLS fingerprint or server-policy causes.",
+    "noDisclosureAbsenceInferenceFrom403": true,
+    "noNewDisclosureConfirmed": false,
+    "qualifiedFamilies": [],
+    "status": "DISCOVERY_UNQUALIFIED / DISCOVERY_ACCESS_BLOCKED"
+  },
+  "documentFetch": {
+    "acceptedRawObjectsReplaced": false,
+    "changedControls": [
+      "MSFT_RELEASE",
+      "MSFT_CALL"
+    ],
+    "knownFinancialControls": 6,
+    "matchingControlsPerSuccessfulRun": 4,
+    "qualifiedFamilies": [
+      "MSFT_WORKBOOK",
+      "GOOG_CDN",
+      "AMZN_CDN",
+      "META_CDN"
+    ]
+  },
+  "manualSourceSeeding": {
+    "explicitLogged": true,
+    "implemented": true,
+    "knownIssuerAndDelegatedControlUrlsValidated": true,
+    "liveNewQuarterQualified": false,
+    "newCdnUrlsRequireSeparateQualifiedDelegationManifest": "Current seed implementation reuses delegation only for existing qualified source URLs; extending to a newly seeded CDN document requires explicit delegation qualification.",
+    "newDocumentsRemainReviewRequired": true,
+    "wrongHostTenantQuarterRejected": true
+  },
+  "productionIsolation": {
+    "acceptedDataPromotion": false,
+    "build": "PASS (research checkout)",
+    "changed": false,
+    "comparisonBase": "05623ffa6cbe0d4ba9f5c2fc0a5d3986c5ac5c13",
+    "email": false,
+    "pathsChecked": [
+      "src",
+      "public",
+      "data",
+      "package.json",
+      "package-lock.json",
+      "research/signal-engine",
+      "research/ai-capex-monetization/quarterly",
+      "research/ai-capex-monetization/monitor",
+      "research/ai-capex-monetization/refresh/scripts",
+      ".github/workflows/deploy.yml"
+    ],
+    "publicApplicationVersion": "1.3.0",
+    "publicSnapshotSha256": "8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a",
+    "repositoryWritePermission": false,
+    "researchApplicationVersion": "1.1.0 inherited, unchanged",
+    "schedule": false,
+    "verify": "PASS (research checkout)"
+  },
+  "productionMainObserved": "4b28c278d99c39d022f5336d634aff4a9b5a4a41",
+  "qualifiedResearchBase": "afbc5da5b718d86c48d0e48d31a1eba456a26e09",
+  "recommendedStrategy": {
+    "environments": [
+      {
+        "runner": "LOCAL_MAC",
+        "status": "PARTIALLY_QUALIFIED"
+      },
+      {
+        "runner": "GITHUB_ACTIONS",
+        "status": "PARTIALLY_QUALIFIED"
+      }
+    ],
+    "operationalRecommendation": "GitHub Actions is suitable for controlled known-document fetch diagnostics, not yet a qualified quarterly refresh primary. Keep official workbook/PDF routes as independently validated fetch routes; separately qualify official discovery adapters or a reviewed operator-seeding policy. SEC remains blocked fallback. Do not run scheduled publication.",
+    "preferredDocumentRoutes": {
+      "AMZN": {
+        "coreFinancialDocumentStatus": "QUALIFIED",
+        "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+        "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+        "managementEventStatus": "UNQUALIFIED",
+        "qualifiedDiscoveryRoutes": [],
+        "qualifiedDocumentRoutes": [
+          "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf"
+        ],
+        "secStatus": "ACCESS_BLOCKED",
+        "workbookStatus": "NOT_QUALIFIED"
+      },
+      "GOOG": {
+        "coreFinancialDocumentStatus": "QUALIFIED",
+        "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+        "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+        "managementEventStatus": "UNQUALIFIED",
+        "qualifiedDiscoveryRoutes": [],
+        "qualifiedDocumentRoutes": [
+          "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf"
+        ],
+        "secStatus": "ACCESS_BLOCKED",
+        "workbookStatus": "NOT_QUALIFIED"
+      },
+      "META": {
+        "coreFinancialDocumentStatus": "QUALIFIED",
+        "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+        "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+        "managementEventStatus": "UNQUALIFIED",
+        "qualifiedDiscoveryRoutes": [],
+        "qualifiedDocumentRoutes": [
+          "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf"
+        ],
+        "secStatus": "ACCESS_BLOCKED",
+        "workbookStatus": "NOT_QUALIFIED"
+      },
+      "MSFT": {
+        "coreFinancialDocumentStatus": "QUALIFIED",
+        "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+        "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+        "managementEventStatus": "UNQUALIFIED",
+        "qualifiedDiscoveryRoutes": [],
+        "qualifiedDocumentRoutes": [
+          "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/FinancialStatementFY26Q4.xlsx"
+        ],
+        "secStatus": "ACCESS_BLOCKED",
+        "workbookStatus": "QUALIFIED"
+      }
+    },
+    "primaryRunner": null,
+    "secondaryRunner": null,
+    "splitRunnerQualified": false
+  },
+  "remainingLimitations": [
+    {
+      "detail": "No company has a qualified automatic discovery path in either tested environment; neither a primary nor split-runner strategy satisfies the pilot gate.",
+      "id": "ACCESS-DISCOVERY",
+      "severity": "HIGH"
+    },
+    {
+      "detail": "Microsoft release/call HTML differs from pinned bytes; preserve existing objects and review changes before use as new qualified evidence.",
+      "id": "MSFT-HTML-IDENTITY",
+      "severity": "MEDIUM"
+    },
+    {
+      "detail": "New standalone workflow cannot dispatch before default-branch registration; successful qualification used exact-ref research bridge in registered manual Signal workflow, without modifying main or executing Signal job.",
+      "id": "DISPATCH-REGISTRATION",
+      "severity": "MEDIUM"
+    },
+    {
+      "detail": "Operator seeding is prepared/tested for known official controls; new CDN source URLs need explicit delegation/provenance qualification, not blind URL templates.",
+      "id": "NEW-SEED-DELEGATION",
+      "severity": "MEDIUM"
+    }
+  ],
+  "repeatability": {
+    "github": {
+      "attempts": 2,
+      "firstRun": {
+        "conclusion": "failure",
+        "id": 37670921561,
+        "officialRequests": 0,
+        "reason": "Output directory guard rejected GitHub RUNNER_TEMP before any official request.",
+        "signalJob": "skipped"
+      },
+      "successfulRun": {
+        "conclusion": "success",
+        "event": "workflow_dispatch",
+        "headSha": "f65d6a2532c17293a52d0d63a3abbcab649778d6",
+        "id": 37671307858,
+        "node": "24.19.0",
+        "python": "3.12.14",
+        "retentionDays": 30,
+        "runnerImage": "ubuntu-24.04",
+        "signalJob": "skipped",
+        "uploadedFiles": [
+          "access-report.json"
+        ],
+        "uploadedRawDocuments": 0,
+        "url": "https://github.com/ccesm/world-inflation-lens/actions/runs/37671307858"
+      }
+    },
+    "local": {
+      "controlShaMatchesStable": true,
+      "firstCallContentValidator": "Strict fiscal label check lacked native Fiscal Year 2026 Fourth Quarter wording; second run recognizes that native label and correctly identifies changed bytes.",
+      "firstRun": {
+        "endedAt": "2026-10-07T18:54:59.627Z",
+        "os": "darwin",
+        "osVersion": "25.6.0",
+        "runtime": "v24.19.0",
+        "startedAt": "2026-10-07T18:54:48.047Z",
+        "type": "LOCAL_MAC"
+      },
+      "matchingFinancialControlsPerRun": 4,
+      "mutableMicrosoftHtmlRemainsReviewRequired": true,
+      "results": [
+        {
+          "actualHash": "b2da35c918d5e83f062b53ed6a0d11809d96e2831983f300df4555c3c499eb03",
+          "company": "MSFT",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "expectedHash": "a31cd0deb391820e45e33f5769ff41ac45fe1d230fb8bd5fc55ef34328fe962e",
+          "family": "MSFT_RELEASE",
+          "requestAttempted": true,
+          "result": "REVIEW_REQUIRED"
+        },
+        {
+          "actualHash": "f98d2f3b5f10658e682a857f925af4c901d936387028d6a5c566a71297e457dd",
+          "company": "MSFT",
+          "detail": "PASS_EXISTING_HASH",
+          "expectedHash": "f98d2f3b5f10658e682a857f925af4c901d936387028d6a5c566a71297e457dd",
+          "family": "MSFT_WORKBOOK",
+          "requestAttempted": true,
+          "result": "PASS"
+        },
+        {
+          "actualHash": "30fb5eb615a3249a50d1156fcaf121109f4e205a308b4f5ad16dedf493cf589a",
+          "company": "MSFT",
+          "detail": "PERIOD_MISMATCH",
+          "expectedHash": "993f2e524d29598be32dbef75e38da359a5de2892052b53ac733a8b847135361",
+          "family": "MSFT_CALL",
+          "requestAttempted": true,
+          "result": "REVIEW_REQUIRED"
+        },
+        {
+          "actualHash": "65f35a2e9c287112121f736321c7526d603ba8e0dae27acac56c7d7357602aa8",
+          "company": "GOOG",
+          "detail": "PASS_EXISTING_HASH",
+          "expectedHash": "65f35a2e9c287112121f736321c7526d603ba8e0dae27acac56c7d7357602aa8",
+          "family": "GOOG_CDN",
+          "requestAttempted": true,
+          "result": "PASS"
+        },
+        {
+          "actualHash": "ea73fa991786fdb5e6e8bcd980f94d1f3bc4ca84f2d138c77a7a99d6b961e3c4",
+          "company": "AMZN",
+          "detail": "PASS_EXISTING_HASH",
+          "expectedHash": "ea73fa991786fdb5e6e8bcd980f94d1f3bc4ca84f2d138c77a7a99d6b961e3c4",
+          "family": "AMZN_CDN",
+          "requestAttempted": true,
+          "result": "PASS"
+        },
+        {
+          "actualHash": "b3b181046d78b553af6547e45e5907496fb343ecbc7ffad4003ba74b08db8564",
+          "company": "META",
+          "detail": "PASS_EXISTING_HASH",
+          "expectedHash": "b3b181046d78b553af6547e45e5907496fb343ecbc7ffad4003ba74b08db8564",
+          "family": "META_CDN",
+          "requestAttempted": true,
+          "result": "PASS"
+        },
+        {
+          "actualHash": null,
+          "company": "GOOG",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "expectedHash": null,
+          "family": "SEC_FILING_ARCHIVE",
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "actualHash": null,
+          "company": "META",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "expectedHash": null,
+          "family": "SEC_FILING_ARCHIVE",
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "actualHash": null,
+          "company": "MSFT",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "expectedHash": null,
+          "family": "SEC_SUBMISSIONS",
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "actualHash": null,
+          "company": "GOOG",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "expectedHash": null,
+          "family": "SEC_SUBMISSIONS",
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "actualHash": null,
+          "company": "AMZN",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "expectedHash": null,
+          "family": "SEC_SUBMISSIONS",
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "actualHash": null,
+          "company": "META",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "expectedHash": null,
+          "family": "SEC_SUBMISSIONS",
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "actualHash": "93e51533f66c6b0d1fea46a46693939cab573b462f26db2a0a02332bf8bcb9c6",
+          "company": "MSFT",
+          "detail": "NO_QUALIFIED_STATIC_FINANCIAL_LINK",
+          "expectedHash": null,
+          "family": "MSFT_IR",
+          "requestAttempted": true,
+          "result": "NO_STATIC_LINK"
+        },
+        {
+          "actualHash": null,
+          "company": "GOOG",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "expectedHash": null,
+          "family": "GOOG_IR",
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "actualHash": null,
+          "company": "AMZN",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "expectedHash": null,
+          "family": "AMZN_IR",
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "actualHash": null,
+          "company": "META",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "expectedHash": null,
+          "family": "META_IR",
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "secondRun": {
+        "endedAt": "2026-10-07T18:57:14.326Z",
+        "os": "darwin",
+        "osVersion": "25.6.0",
+        "runtime": "v24.19.0",
+        "startedAt": "2026-10-07T18:57:03.101Z",
+        "type": "LOCAL_MAC"
+      }
+    }
+  },
+  "reportContentHash": "20a90f1e97288456c19c0e9aeb6bef87e83877ea6dfd53e5b903b0f775995709",
+  "runners": [
+    {
+      "accessIdentity": "4f6e4d5dcc64caf4894600df146c11586783f5dddfa1e4db07ac70dbbb3f8246",
+      "classification": "PARTIALLY_QUALIFIED",
+      "companies": {
+        "AMZN": {
+          "coreFinancialDocumentStatus": "QUALIFIED",
+          "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+          "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+          "managementEventStatus": "UNQUALIFIED",
+          "qualifiedDiscoveryRoutes": [],
+          "qualifiedDocumentRoutes": [
+            "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf"
+          ],
+          "secStatus": "ACCESS_BLOCKED",
+          "workbookStatus": "NOT_QUALIFIED"
+        },
+        "GOOG": {
+          "coreFinancialDocumentStatus": "QUALIFIED",
+          "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+          "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+          "managementEventStatus": "UNQUALIFIED",
+          "qualifiedDiscoveryRoutes": [],
+          "qualifiedDocumentRoutes": [
+            "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf"
+          ],
+          "secStatus": "ACCESS_BLOCKED",
+          "workbookStatus": "NOT_QUALIFIED"
+        },
+        "META": {
+          "coreFinancialDocumentStatus": "QUALIFIED",
+          "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+          "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+          "managementEventStatus": "UNQUALIFIED",
+          "qualifiedDiscoveryRoutes": [],
+          "qualifiedDocumentRoutes": [
+            "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf"
+          ],
+          "secStatus": "ACCESS_BLOCKED",
+          "workbookStatus": "NOT_QUALIFIED"
+        },
+        "MSFT": {
+          "coreFinancialDocumentStatus": "QUALIFIED",
+          "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+          "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+          "managementEventStatus": "UNQUALIFIED",
+          "qualifiedDiscoveryRoutes": [],
+          "qualifiedDocumentRoutes": [
+            "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/FinancialStatementFY26Q4.xlsx"
+          ],
+          "secStatus": "ACCESS_BLOCKED",
+          "workbookStatus": "QUALIFIED"
+        }
+      },
+      "results": [
+        {
+          "actualHash": "b2da35c918d5e83f062b53ed6a0d11809d96e2831983f300df4555c3c499eb03",
+          "byteCount": 808860,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "text/html; charset=utf-8",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": "a31cd0deb391820e45e33f5769ff41ac45fe1d230fb8bd5fc55ef34328fe962e",
+          "expectedPeriod": "2026-06-30",
+          "family": "MSFT_RELEASE",
+          "httpStatus": 200,
+          "kind": "html",
+          "latencyMs": 385,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "REVIEW_REQUIRED",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast"
+        },
+        {
+          "actualHash": "f98d2f3b5f10658e682a857f925af4c901d936387028d6a5c566a71297e457dd",
+          "byteCount": 78844,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "detail": "PASS_EXISTING_HASH",
+          "discoveryQualified": false,
+          "documentQualified": true,
+          "expectedHash": "f98d2f3b5f10658e682a857f925af4c901d936387028d6a5c566a71297e457dd",
+          "expectedPeriod": "2026-06-30",
+          "family": "MSFT_WORKBOOK",
+          "httpStatus": 200,
+          "kind": "xlsx",
+          "latencyMs": 1148,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "PASS",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/FinancialStatementFY26Q4.xlsx"
+        },
+        {
+          "actualHash": "e10e690ce1729f1b8ff56a8dd29c0a4bc451a2139bbbed1baa96ebda32c1088a",
+          "byteCount": 272203,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "text/html; charset=utf-8",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": "993f2e524d29598be32dbef75e38da359a5de2892052b53ac733a8b847135361",
+          "expectedPeriod": "2026-06-30",
+          "family": "MSFT_CALL",
+          "httpStatus": 200,
+          "kind": "html",
+          "latencyMs": 835,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "REVIEW_REQUIRED",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "actualHash": "65f35a2e9c287112121f736321c7526d603ba8e0dae27acac56c7d7357602aa8",
+          "byteCount": 140593,
+          "candidateDiscovery": [],
+          "company": "GOOG",
+          "contentType": "application/pdf",
+          "detail": "PASS_EXISTING_HASH",
+          "discoveryQualified": false,
+          "documentQualified": true,
+          "expectedHash": "65f35a2e9c287112121f736321c7526d603ba8e0dae27acac56c7d7357602aa8",
+          "expectedPeriod": "2026-06-30",
+          "family": "GOOG_CDN",
+          "httpStatus": 200,
+          "kind": "pdf",
+          "latencyMs": 1050,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "PASS",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf"
+        },
+        {
+          "actualHash": "ea73fa991786fdb5e6e8bcd980f94d1f3bc4ca84f2d138c77a7a99d6b961e3c4",
+          "byteCount": 542687,
+          "candidateDiscovery": [],
+          "company": "AMZN",
+          "contentType": "application/pdf",
+          "detail": "PASS_EXISTING_HASH",
+          "discoveryQualified": false,
+          "documentQualified": true,
+          "expectedHash": "ea73fa991786fdb5e6e8bcd980f94d1f3bc4ca84f2d138c77a7a99d6b961e3c4",
+          "expectedPeriod": "2026-06-30",
+          "family": "AMZN_CDN",
+          "httpStatus": 200,
+          "kind": "pdf",
+          "latencyMs": 1049,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "PASS",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf"
+        },
+        {
+          "actualHash": "b3b181046d78b553af6547e45e5907496fb343ecbc7ffad4003ba74b08db8564",
+          "byteCount": 166342,
+          "candidateDiscovery": [],
+          "company": "META",
+          "contentType": "application/pdf",
+          "detail": "PASS_EXISTING_HASH",
+          "discoveryQualified": false,
+          "documentQualified": true,
+          "expectedHash": "b3b181046d78b553af6547e45e5907496fb343ecbc7ffad4003ba74b08db8564",
+          "expectedPeriod": "2026-06-30",
+          "family": "META_CDN",
+          "httpStatus": 200,
+          "kind": "pdf",
+          "latencyMs": 911,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "PASS",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "GOOG",
+          "contentType": "text/html",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": "2026-06-30",
+          "family": "SEC_FILING_ARCHIVE",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 988,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "META",
+          "contentType": null,
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_FILING_ARCHIVE",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 0,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SEC_INDEX",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/0001326801-25-000017-index.html"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "text/html",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_SUBMISSIONS",
+          "httpStatus": 403,
+          "kind": "json",
+          "latencyMs": 816,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SUBMISSIONS",
+          "url": "https://data.sec.gov/submissions/CIK0000789019.json"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "GOOG",
+          "contentType": null,
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_SUBMISSIONS",
+          "httpStatus": 403,
+          "kind": "json",
+          "latencyMs": 0,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SUBMISSIONS",
+          "url": "https://data.sec.gov/submissions/CIK0001652044.json"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "AMZN",
+          "contentType": null,
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_SUBMISSIONS",
+          "httpStatus": 403,
+          "kind": "json",
+          "latencyMs": 0,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SUBMISSIONS",
+          "url": "https://data.sec.gov/submissions/CIK0001018724.json"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "META",
+          "contentType": null,
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_SUBMISSIONS",
+          "httpStatus": 403,
+          "kind": "json",
+          "latencyMs": 0,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SUBMISSIONS",
+          "url": "https://data.sec.gov/submissions/CIK0001326801.json"
+        },
+        {
+          "actualHash": "93e51533f66c6b0d1fea46a46693939cab573b462f26db2a0a02332bf8bcb9c6",
+          "byteCount": 114527,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "text/html; charset=utf-8",
+          "currentDiscovery": "DISCOVERY_UNQUALIFIED",
+          "detail": "NO_QUALIFIED_STATIC_FINANCIAL_LINK",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "MSFT_IR",
+          "httpStatus": 200,
+          "kind": "html",
+          "latencyMs": 1118,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "NO_STATIC_LINK",
+          "retryAfter": null,
+          "role": "DISCOVERY",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/default"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "GOOG",
+          "contentType": "text/html; charset=UTF-8",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "GOOG_IR",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 857,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "DISCOVERY",
+          "url": "https://abc.xyz/investor/earnings/"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "AMZN",
+          "contentType": "text/html; charset=UTF-8",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "AMZN_IR",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 1008,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "DISCOVERY",
+          "url": "https://ir.aboutamazon.com/quarterly-results/default.aspx"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "META",
+          "contentType": "text/html; charset=UTF-8",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "META_IR",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 1049,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "DISCOVERY",
+          "url": "https://investor.atmeta.com/financials/default.aspx"
+        }
+      ],
+      "runner": {
+        "endedAt": "2026-10-07T18:57:14.326Z",
+        "os": "darwin",
+        "osVersion": "25.6.0",
+        "runtime": "v24.19.0",
+        "startedAt": "2026-10-07T18:57:03.101Z",
+        "type": "LOCAL_MAC"
+      }
+    },
+    {
+      "accessIdentity": "8b99b477f083c028db824d8d5377641434bfaf93e4aeea842088a45f4004f553",
+      "classification": "PARTIALLY_QUALIFIED",
+      "companies": {
+        "AMZN": {
+          "coreFinancialDocumentStatus": "QUALIFIED",
+          "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+          "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+          "managementEventStatus": "UNQUALIFIED",
+          "qualifiedDiscoveryRoutes": [],
+          "qualifiedDocumentRoutes": [
+            "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf"
+          ],
+          "secStatus": "ACCESS_BLOCKED",
+          "workbookStatus": "NOT_QUALIFIED"
+        },
+        "GOOG": {
+          "coreFinancialDocumentStatus": "QUALIFIED",
+          "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+          "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+          "managementEventStatus": "UNQUALIFIED",
+          "qualifiedDiscoveryRoutes": [],
+          "qualifiedDocumentRoutes": [
+            "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf"
+          ],
+          "secStatus": "ACCESS_BLOCKED",
+          "workbookStatus": "NOT_QUALIFIED"
+        },
+        "META": {
+          "coreFinancialDocumentStatus": "QUALIFIED",
+          "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+          "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+          "managementEventStatus": "UNQUALIFIED",
+          "qualifiedDiscoveryRoutes": [],
+          "qualifiedDocumentRoutes": [
+            "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf"
+          ],
+          "secStatus": "ACCESS_BLOCKED",
+          "workbookStatus": "NOT_QUALIFIED"
+        },
+        "MSFT": {
+          "coreFinancialDocumentStatus": "QUALIFIED",
+          "discoveryStatus": "DISCOVERY_ACCESS_BLOCKED",
+          "documentFetchStatus": "DOCUMENT_FETCH_QUALIFIED",
+          "managementEventStatus": "UNQUALIFIED",
+          "qualifiedDiscoveryRoutes": [],
+          "qualifiedDocumentRoutes": [
+            "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/FinancialStatementFY26Q4.xlsx"
+          ],
+          "secStatus": "ACCESS_BLOCKED",
+          "workbookStatus": "QUALIFIED"
+        }
+      },
+      "results": [
+        {
+          "actualHash": "efcf274d82d82fe464bd7908e418d8b4662d789b9e4ab182c83846e8cf43b45a",
+          "byteCount": 808869,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "text/html; charset=utf-8",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": "a31cd0deb391820e45e33f5769ff41ac45fe1d230fb8bd5fc55ef34328fe962e",
+          "expectedPeriod": "2026-06-30",
+          "family": "MSFT_RELEASE",
+          "httpStatus": 200,
+          "kind": "html",
+          "latencyMs": 316,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "REVIEW_REQUIRED",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast"
+        },
+        {
+          "actualHash": "f98d2f3b5f10658e682a857f925af4c901d936387028d6a5c566a71297e457dd",
+          "byteCount": 78844,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "detail": "PASS_EXISTING_HASH",
+          "discoveryQualified": false,
+          "documentQualified": true,
+          "expectedHash": "f98d2f3b5f10658e682a857f925af4c901d936387028d6a5c566a71297e457dd",
+          "expectedPeriod": "2026-06-30",
+          "family": "MSFT_WORKBOOK",
+          "httpStatus": 200,
+          "kind": "xlsx",
+          "latencyMs": 992,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "PASS",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/FinancialStatementFY26Q4.xlsx"
+        },
+        {
+          "actualHash": "bf0852645376c68110d409e4b9cc18bfe305e176a12bab48aedf4525c0bd43da",
+          "byteCount": 272144,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "text/html; charset=utf-8",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": "993f2e524d29598be32dbef75e38da359a5de2892052b53ac733a8b847135361",
+          "expectedPeriod": "2026-06-30",
+          "family": "MSFT_CALL",
+          "httpStatus": 200,
+          "kind": "html",
+          "latencyMs": 875,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "REVIEW_REQUIRED",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "actualHash": "65f35a2e9c287112121f736321c7526d603ba8e0dae27acac56c7d7357602aa8",
+          "byteCount": 140593,
+          "candidateDiscovery": [],
+          "company": "GOOG",
+          "contentType": "application/pdf",
+          "detail": "PASS_EXISTING_HASH",
+          "discoveryQualified": false,
+          "documentQualified": true,
+          "expectedHash": "65f35a2e9c287112121f736321c7526d603ba8e0dae27acac56c7d7357602aa8",
+          "expectedPeriod": "2026-06-30",
+          "family": "GOOG_CDN",
+          "httpStatus": 200,
+          "kind": "pdf",
+          "latencyMs": 2064,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "PASS",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf"
+        },
+        {
+          "actualHash": "ea73fa991786fdb5e6e8bcd980f94d1f3bc4ca84f2d138c77a7a99d6b961e3c4",
+          "byteCount": 542687,
+          "candidateDiscovery": [],
+          "company": "AMZN",
+          "contentType": "application/pdf",
+          "detail": "PASS_EXISTING_HASH",
+          "discoveryQualified": false,
+          "documentQualified": true,
+          "expectedHash": "ea73fa991786fdb5e6e8bcd980f94d1f3bc4ca84f2d138c77a7a99d6b961e3c4",
+          "expectedPeriod": "2026-06-30",
+          "family": "AMZN_CDN",
+          "httpStatus": 200,
+          "kind": "pdf",
+          "latencyMs": 874,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "PASS",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf"
+        },
+        {
+          "actualHash": "b3b181046d78b553af6547e45e5907496fb343ecbc7ffad4003ba74b08db8564",
+          "byteCount": 166342,
+          "candidateDiscovery": [],
+          "company": "META",
+          "contentType": "application/pdf",
+          "detail": "PASS_EXISTING_HASH",
+          "discoveryQualified": false,
+          "documentQualified": true,
+          "expectedHash": "b3b181046d78b553af6547e45e5907496fb343ecbc7ffad4003ba74b08db8564",
+          "expectedPeriod": "2026-06-30",
+          "family": "META_CDN",
+          "httpStatus": 200,
+          "kind": "pdf",
+          "latencyMs": 608,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "PASS",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "GOOG",
+          "contentType": "text/html",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": "2026-06-30",
+          "family": "SEC_FILING_ARCHIVE",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 652,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "CONTROL",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "META",
+          "contentType": null,
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_FILING_ARCHIVE",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 0,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SEC_INDEX",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/0001326801-25-000017-index.html"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "text/html",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_SUBMISSIONS",
+          "httpStatus": 403,
+          "kind": "json",
+          "latencyMs": 1023,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SUBMISSIONS",
+          "url": "https://data.sec.gov/submissions/CIK0000789019.json"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "GOOG",
+          "contentType": null,
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_SUBMISSIONS",
+          "httpStatus": 403,
+          "kind": "json",
+          "latencyMs": 0,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SUBMISSIONS",
+          "url": "https://data.sec.gov/submissions/CIK0001652044.json"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "AMZN",
+          "contentType": null,
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_SUBMISSIONS",
+          "httpStatus": 403,
+          "kind": "json",
+          "latencyMs": 0,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SUBMISSIONS",
+          "url": "https://data.sec.gov/submissions/CIK0001018724.json"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "META",
+          "contentType": null,
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "SEC_SUBMISSIONS",
+          "httpStatus": 403,
+          "kind": "json",
+          "latencyMs": 0,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": false,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "SUBMISSIONS",
+          "url": "https://data.sec.gov/submissions/CIK0001326801.json"
+        },
+        {
+          "actualHash": "950d835b65ce5dcdf4afeee27f2cfada80e51259097b873710dbc3fda4b2e962",
+          "byteCount": 114521,
+          "candidateDiscovery": [],
+          "company": "MSFT",
+          "contentType": "text/html; charset=utf-8",
+          "currentDiscovery": "DISCOVERY_UNQUALIFIED",
+          "detail": "NO_QUALIFIED_STATIC_FINANCIAL_LINK",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "MSFT_IR",
+          "httpStatus": 200,
+          "kind": "html",
+          "latencyMs": 1039,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "NO_STATIC_LINK",
+          "retryAfter": null,
+          "role": "DISCOVERY",
+          "url": "https://www.microsoft.com/en-us/investor/earnings/default"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "GOOG",
+          "contentType": "text/html; charset=UTF-8",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "GOOG_IR",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 913,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "DISCOVERY",
+          "url": "https://abc.xyz/investor/earnings/"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "AMZN",
+          "contentType": "text/html; charset=UTF-8",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "AMZN_IR",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 1053,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "DISCOVERY",
+          "url": "https://ir.aboutamazon.com/quarterly-results/default.aspx"
+        },
+        {
+          "actualHash": null,
+          "byteCount": null,
+          "candidateDiscovery": [],
+          "company": "META",
+          "contentType": "text/html; charset=UTF-8",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "discoveryQualified": false,
+          "documentQualified": false,
+          "expectedHash": null,
+          "expectedPeriod": null,
+          "family": "META_IR",
+          "httpStatus": 403,
+          "kind": "html",
+          "latencyMs": 1067,
+          "manualSeed": false,
+          "redirects": [],
+          "requestAttempted": true,
+          "result": "ACCESS_BLOCKED",
+          "retryAfter": null,
+          "role": "DISCOVERY",
+          "url": "https://investor.atmeta.com/financials/default.aspx"
+        }
+      ],
+      "runner": {
+        "endedAt": "2026-10-07T19:01:59.942Z",
+        "os": "linux",
+        "osVersion": "6.17.0-1022-azure",
+        "runtime": "v24.19.0",
+        "startedAt": "2026-10-07T19:01:48.463Z",
+        "type": "GITHUB_ACTIONS"
+      }
+    }
+  ],
+  "schemaVersion": "ai-capex-live-access-v0.1.0",
+  "security": {
+    "cache": {
+      "after": {
+        "bytes": 38233814,
+        "objects": 93
+      },
+      "before": {
+        "bytes": 36766021,
+        "objects": 89
+      },
+      "newObjects": 4
+    },
+    "credentialsOrTokensFound": false,
+    "emailAddressesFound": false,
+    "personalLocalPathsFoundInSuccessfulActionsLogs": false,
+    "rawFilesCommitted": false,
+    "rawFilesInActionsArtifact": false,
+    "reportsContainLocalPaths": false
+  },
+  "sourceMatrix": [
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "MSFT",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "GOOG",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "AMZN",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "META",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "MSFT",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "GOOG",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "AMZN",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "META",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "family": "SEC_SUBMISSIONS"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "GOOG",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "META",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "GOOG",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        },
+        {
+          "company": "META",
+          "detail": "HOST_ALREADY_BLOCKED_NO_REPEAT",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "family": "SEC_FILING_ARCHIVE"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "MSFT",
+          "detail": "NO_QUALIFIED_STATIC_FINANCIAL_LINK",
+          "result": "NO_STATIC_LINK"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "MSFT",
+          "detail": "NO_QUALIFIED_STATIC_FINANCIAL_LINK",
+          "result": "NO_STATIC_LINK"
+        }
+      ],
+      "family": "MSFT_IR"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "MSFT",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "result": "REVIEW_REQUIRED"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "MSFT",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "result": "REVIEW_REQUIRED"
+        }
+      ],
+      "family": "MSFT_RELEASE"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "MSFT",
+          "detail": "PASS_EXISTING_HASH",
+          "result": "PASS"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "MSFT",
+          "detail": "PASS_EXISTING_HASH",
+          "result": "PASS"
+        }
+      ],
+      "family": "MSFT_WORKBOOK"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "MSFT",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "result": "REVIEW_REQUIRED"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "MSFT",
+          "detail": "CHANGED_BYTES_REVIEW_REQUIRED",
+          "result": "REVIEW_REQUIRED"
+        }
+      ],
+      "family": "MSFT_CALL"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "GOOG",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "GOOG",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "family": "GOOG_IR"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "GOOG",
+          "detail": "PASS_EXISTING_HASH",
+          "result": "PASS"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "GOOG",
+          "detail": "PASS_EXISTING_HASH",
+          "result": "PASS"
+        }
+      ],
+      "family": "GOOG_CDN"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "AMZN",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "AMZN",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "family": "AMZN_IR"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "AMZN",
+          "detail": "PASS_EXISTING_HASH",
+          "result": "PASS"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "AMZN",
+          "detail": "PASS_EXISTING_HASH",
+          "result": "PASS"
+        }
+      ],
+      "family": "AMZN_CDN"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "META",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "META",
+          "detail": "HTTP_ACCESS_BLOCKED",
+          "result": "ACCESS_BLOCKED"
+        }
+      ],
+      "family": "META_IR"
+    },
+    {
+      "GITHUB_ACTIONS": [
+        {
+          "company": "META",
+          "detail": "PASS_EXISTING_HASH",
+          "result": "PASS"
+        }
+      ],
+      "LOCAL_MAC": [
+        {
+          "company": "META",
+          "detail": "PASS_EXISTING_HASH",
+          "result": "PASS"
+        }
+      ],
+      "family": "META_CDN"
+    }
+  ],
+  "tests": {
+    "failed": 0,
+    "hostedRegression": {
+      "failed": 0,
+      "passed": 43,
+      "tests": 43
+    },
+    "passed": 369,
+    "skipped": 0,
+    "suites": [
+      {
+        "exitCode": 0,
+        "name": "phase1",
+        "passed": true,
+        "tests": 48
+      },
+      {
+        "exitCode": 0,
+        "name": "phase2a",
+        "passed": true,
+        "tests": 65
+      },
+      {
+        "exitCode": 0,
+        "name": "phase2a1",
+        "passed": true,
+        "tests": 40
+      },
+      {
+        "exitCode": 0,
+        "name": "phase2b",
+        "passed": true,
+        "tests": 73
+      },
+      {
+        "exitCode": 0,
+        "name": "phase2d",
+        "passed": true,
+        "tests": 65
+      },
+      {
+        "exitCode": 0,
+        "name": "phase2aPython",
+        "passed": true,
+        "tests": 28
+      },
+      {
+        "exitCode": 0,
+        "name": "phase2dPython",
+        "passed": true,
+        "tests": 7
+      },
+      {
+        "exitCode": 0,
+        "name": "phase2d1",
+        "passed": true,
+        "tests": 43
+      }
+    ],
+    "total": 369,
+    "yaml": "Both workflows parsed; workflow_dispatch only; contents: read; original Signal job byte-identical"
+  }
+}

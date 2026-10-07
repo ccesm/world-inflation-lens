@@ -57,8 +57,54 @@ gh workflow run signal-engine-shadow-qualification.yml \
 
 ## Access results and recommended routes
 
-Final local/Actions observations, repeatability, company routes and unresolved discovery gates are recorded below after live qualification. Official issuer releases may be operational primaries when SEC is blocked, but accounting and provenance standards are unchanged. No source-order recommendation is inferred from institution reputation alone.
+Final local/Actions observations, repeatability, company routes and unresolved discovery gates are recorded below and in the committed JSON report. Official issuer releases may be operational primaries when SEC is blocked, but accounting and provenance standards are unchanged. No source-order recommendation is inferred from institution reputation alone.
 
 ## Remaining boundaries
 
 No schedule, email, production write or unattended promotion is implemented. Current discovery links are candidates only; blocked or unsupported discovery never means `NO_NEW_DISCLOSURE_CONFIRMED`. Unknown publication dates remain unknown. Manual seeding is a fallback requiring human review, not a repaired automatic discovery adapter. Access qualification does not qualify a new quarter or AI ROI.
+
+## Completed live qualification — 2026-10-07
+
+Two separated local network runs completed. GitHub attempt [37670921561](https://github.com/ccesm/world-inflation-lens/actions/runs/37670921561) passed its tests but stopped before any source request because the output guard did not recognize GitHub's runner temporary directory. The guard was repaired, with tests rejecting checkout writes and symlink escapes. The second attempt, [37671307858](https://github.com/ccesm/world-inflation-lens/actions/runs/37671307858), completed successfully on Ubuntu 24.04 / Node 24.19.0 / Python 3.12.14. The original Signal job was skipped in both runs. No more access runs were made.
+
+| Source family | Local Mac | GitHub Actions |
+|---|---|---|
+| SEC submissions | ACCESS_BLOCKED, 403 | ACCESS_BLOCKED, 403 |
+| SEC filing document/archive | ACCESS_BLOCKED, 403 | ACCESS_BLOCKED, 403 |
+| Microsoft archive | NO_STATIC_LINK | NO_STATIC_LINK |
+| Microsoft known release | REVIEW_REQUIRED: changed bytes | REVIEW_REQUIRED: changed bytes |
+| Microsoft workbook | PASS_EXISTING_HASH | PASS_EXISTING_HASH |
+| Microsoft earnings call | REVIEW_REQUIRED: changed bytes | REVIEW_REQUIRED: changed bytes |
+| Alphabet archive | ACCESS_BLOCKED, 403 | ACCESS_BLOCKED, 403 |
+| Alphabet issuer q4cdn PDF | PASS_EXISTING_HASH | PASS_EXISTING_HASH |
+| Amazon archive | ACCESS_BLOCKED, 403 | ACCESS_BLOCKED, 403 |
+| Amazon issuer q4cdn PDF | PASS_EXISTING_HASH | PASS_EXISTING_HASH |
+| Meta archive | ACCESS_BLOCKED, 403 | ACCESS_BLOCKED, 403 |
+| Meta issuer q4cdn PDF | PASS_EXISTING_HASH | PASS_EXISTING_HASH |
+
+These four matching financial controls had the same accepted hashes across both local runs and the hosted network run. Microsoft HTML changed, including across runners; this may include mutable page delivery but has not been reviewed as immaterial. No accepted object or source manifest was replaced. The first local call check did not recognize the native “Fiscal Year 2026 Fourth Quarter” wording; the second run recognizes that period label and still correctly requires review of changed bytes.
+
+Both environments are **PARTIALLY_QUALIFIED**. There are **zero qualified discovery families**. Neither a primary runner nor a qualified split-runner solution exists yet. Blocked discovery is not evidence of absence: no `NO_NEW_DISCLOSURE_CONFIRMED` claim was made, and no candidate quarter was discovered or accepted. Similar failures in both environments do not identify their root cause (network, geography, server policy or client behavior). There is no basis to claim GitHub fixes the access problem.
+
+Recommended independently qualified document paths, based on observed results:
+
+- Microsoft: official financial workbook; release/call HTML requires identity review; SEC currently blocked.
+- Alphabet: existing issuer-bound q4cdn release PDF; archive discovery and SEC unqualified.
+- Amazon: existing issuer-bound q4cdn release PDF; archive discovery and SEC unqualified.
+- Meta: existing issuer-bound q4cdn release PDF; archive discovery and SEC unqualified.
+
+GitHub is practical for controlled known-document diagnostics, with no personal-session dependency. Neither runner is recommended as a quarterly-refresh primary or secondary yet. Do not implement orchestration to hide missing discovery coverage. The next repair should qualify official static/embedded-source discovery adapters or a reviewed operator-seeding policy, separately for each issuer. The present manual seed accepts known delegated URLs; new CDN URLs need an explicit qualified delegation record before use. This deliberately restrictive fallback has not qualified a new quarter.
+
+## Validation and protection
+
+Local regressions: **369 passed, 0 failed**: Phase 1 48; Phase 2A 65; Phase 2A.1 40; Phase 2B 73; Phase 2D 65 + 7 Python; prior Python 28; Phase 2D.1 43. Hosted safeguards: 43 passed again. Tests distinguish discovery/fetch asymmetry, 200 challenges, MIME/issuer/period mismatch, changed hashes, blocked SEC with issuer success, CDN/seed rejection, explicit clocks, source isolation, runner classification, split-runner completeness, temporary-path/symlink guards and fresh-process deterministic content. YAML syntax was parsed separately.
+
+`npm run build` and `npm run verify` pass on the inherited research checkout. Its application version remains the inherited 1.1.0; it was not rebased onto the production app. Production main remains `4b28c278d99c39d022f5336d634aff4a9b5a4a41`, version 1.3.0, with public snapshot SHA `8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a`. All production paths, existing Pages workflow, Signal code and accepted research inputs are unchanged relative to the specified research base.
+
+The successful Actions artifact is one 22,130-byte JSON report (compressed upload approximately 2.9 KB), retained 30 days. No raw filings were uploaded. Successful logs contain no detected credential/token pattern, personal Mac path or email address. Standard GitHub runner paths appear in workflow operational logs; none appear in the report. The external local cache grew from 89 objects / 36,766,021 bytes to 93 objects / 38,233,814 bytes, preserving existing objects.
+
+Fixed-input tests produce identical access content and company decisions across fresh processes. Real network HTML is explicitly not claimed deterministic. Operational clocks and latencies never create economic identity. No production snapshot, schedule, email, API secret, AI-return calculation or accepted quarter was added.
+
+A successful diagnostic workflow means the checks completed; it does not mean source access passed. The machine-readable qualification decision remains fail-closed.
+
+Final decision: **LIVE RUNNER ACCESS STILL REQUIRES REPAIR**.
