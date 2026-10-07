@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "projectId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "fromId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "toId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "relationshipType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "claimId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "relationshipState": {
+        "type": "string",
+        "minLength": 1
+      },
+      "condition": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      }
+    },
+    "required": [
+      "id",
+      "projectId",
+      "fromId",
+      "toId",
+      "relationshipType",
+      "claimId",
+      "relationshipState",
+      "condition"
+    ],
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}

@@ -1,0 +1,390 @@
+[
+  {
+    "claimIds": [
+      "hyperion:entity-meta"
+    ],
+    "entityType": "PUBLIC_COMPANY",
+    "id": "meta",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "Meta Platforms, Inc.",
+    "name": "Meta Platforms, Inc."
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-blue-owl-funds"
+    ],
+    "entityType": "FUND_GROUP",
+    "id": "blue-owl-funds",
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "legalName": null,
+    "name": "Funds managed by Blue Owl Capital"
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-blue-owl-manager"
+    ],
+    "entityType": "FUND_MANAGER",
+    "id": "blue-owl-manager",
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "legalName": null,
+    "name": "Blue Owl Capital"
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-pimco-funds"
+    ],
+    "entityType": "FUND_GROUP",
+    "id": "pimco-funds",
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "legalName": null,
+    "name": "PIMCO-managed funds/accounts"
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-hyperion-jv"
+    ],
+    "entityType": "JV",
+    "id": "hyperion-jv",
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "legalName": null,
+    "name": "Hyperion venture (issuer-described umbrella)"
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-laidley"
+    ],
+    "entityType": "SPV",
+    "id": "laidley",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "Laidley LLC",
+    "name": "Laidley LLC"
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-project-beignet-holdings"
+    ],
+    "entityType": "SPV",
+    "id": "project-beignet-holdings",
+    "identityStatus": "SECONDARY_REPORTED_NOT_PRIMARY_VERIFIED",
+    "legalName": "Project Beignet Holdings LLC",
+    "name": "Project Beignet Holdings LLC"
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-beignet-investor"
+    ],
+    "entityType": "SPV",
+    "id": "beignet-investor",
+    "identityStatus": "SECONDARY_REPORTED_NOT_PRIMARY_VERIFIED",
+    "legalName": "Beignet Investor LLC",
+    "name": "Beignet Investor LLC"
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-iris-crossing"
+    ],
+    "entityType": "SPV",
+    "id": "iris-crossing",
+    "identityStatus": "SECONDARY_REPORTED_NOT_PRIMARY_VERIFIED",
+    "legalName": "Iris Crossing LLC",
+    "name": "Iris Crossing LLC"
+  },
+  {
+    "claimIds": [
+      "hyperion:entity-entergy-la"
+    ],
+    "entityType": "UTILITY",
+    "id": "entergy-la",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "Entergy Louisiana, LLC",
+    "name": "Entergy Louisiana, LLC"
+  },
+  {
+    "claimIds": [
+      "fairwater:entity-msft"
+    ],
+    "entityType": "PUBLIC_COMPANY",
+    "id": "msft",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "Microsoft Corporation",
+    "name": "Microsoft Corporation"
+  },
+  {
+    "claimIds": [
+      "fairwater:entity-we-energies"
+    ],
+    "entityType": "UTILITY",
+    "id": "we-energies",
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "legalName": null,
+    "name": "WE Energies (service brand)"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-apld"
+    ],
+    "entityType": "PUBLIC_COMPANY",
+    "id": "apld",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "Applied Digital Corporation",
+    "name": "Applied Digital Corporation"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-eln02"
+    ],
+    "entityType": "SUBSIDIARY",
+    "id": "eln02",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "APLD ELN-02 LLC",
+    "name": "APLD ELN-02 LLC"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-eln03"
+    ],
+    "entityType": "SUBSIDIARY",
+    "id": "eln03",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "APLD ELN-03 LLC",
+    "name": "APLD ELN-03 LLC"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-eln02c"
+    ],
+    "entityType": "SUBSIDIARY",
+    "id": "eln02c",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "APLD ELN-02 C LLC",
+    "name": "APLD ELN-02 C LLC"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-hpc-holdings"
+    ],
+    "entityType": "SUBSIDIARY",
+    "id": "hpc-holdings",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "APLD HPC Holdings LLC",
+    "name": "APLD HPC Holdings LLC"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-mip-funds"
+    ],
+    "entityType": "FUND_VEHICLE",
+    "id": "mip-funds",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "MIP VI HPC Holdings, LLC",
+    "name": "MIP VI HPC Holdings, LLC"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-coreweave"
+    ],
+    "entityType": "PUBLIC_COMPANY",
+    "id": "coreweave",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "CoreWeave, Inc.",
+    "name": "CoreWeave, Inc."
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-computeco"
+    ],
+    "entityType": "SUBSIDIARY",
+    "id": "computeco",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "APLD ComputeCo LLC",
+    "name": "APLD ComputeCo LLC"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-computeco3"
+    ],
+    "entityType": "SUBSIDIARY",
+    "id": "computeco3",
+    "identityStatus": "IDENTIFIED",
+    "legalName": "APLD ComputeCo 3 LLC",
+    "name": "APLD ComputeCo 3 LLC"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:entity-macquarie-manager"
+    ],
+    "entityType": "FUND_MANAGER",
+    "id": "macquarie-manager",
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "legalName": null,
+    "name": "Macquarie Asset Management"
+  },
+  {
+    "claimIds": [],
+    "entityType": "PUBLIC_COMPANY",
+    "id": "goog",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "Alphabet / Google corporate group"
+  },
+  {
+    "claimIds": [],
+    "entityType": "PUBLIC_COMPANY",
+    "id": "amzn",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "Amazon corporate group"
+  },
+  {
+    "claimIds": [],
+    "entityType": "PUBLIC_COMPANY",
+    "id": "orcl",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "Oracle Corporation"
+  },
+  {
+    "claimIds": [],
+    "entityType": "SUBSIDIARY",
+    "id": "google",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "Google (project operator umbrella)"
+  },
+  {
+    "claimIds": [],
+    "entityType": "SUBSIDIARY",
+    "id": "aws",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "Amazon Web Services (operator umbrella)"
+  },
+  {
+    "claimIds": [],
+    "entityType": "DEVELOPER",
+    "id": "crusoe",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "Crusoe (developer umbrella)"
+  },
+  {
+    "claimIds": [],
+    "entityType": "JV",
+    "id": "el-paso-venture",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "El Paso venture (legal name unavailable)"
+  },
+  {
+    "claimIds": [],
+    "entityType": "FUND_GROUP",
+    "id": "blackrock-funds",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "Funds managed by BlackRock"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UTILITY",
+    "id": "el-paso-electric",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "El Paso Electric (named utility)"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UTILITY",
+    "id": "ercot",
+    "identityStatus": "NAMED_UMBRELLA",
+    "legalName": null,
+    "name": "ERCOT grid/operator umbrella"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:hyperion",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for hyperion"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:fairwater",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for fairwater"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:polaris-forge-1",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for polaris-forge-1"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:quincy",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for quincy"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:google-midlothian",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for google-midlothian"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:google-red-oak",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for google-red-oak"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:aws-canton",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for aws-canton"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:aws-warren",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for aws-warren"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:el-paso",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for el-paso"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:abilene",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for abilene"
+  },
+  {
+    "claimIds": [],
+    "entityType": "UNKNOWN",
+    "id": "unknown:jupiter",
+    "identityStatus": "UNAVAILABLE_PLACEHOLDER_NOT_LEGAL_ENTITY",
+    "legalName": null,
+    "name": "Unidentified reporting/contract entity for jupiter"
+  }
+]

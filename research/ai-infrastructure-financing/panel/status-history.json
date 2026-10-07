@@ -1,0 +1,291 @@
+[
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "google-midlothian:3c:project-status:2026-10-07",
+    "effectiveAt": null,
+    "id": "status:obs:0967cd6d3f40485383da9647",
+    "observationId": "obs:0967cd6d3f40485383da9647",
+    "projectId": "google-midlothian",
+    "qualificationStatus": "UNAVAILABLE",
+    "recordState": "CURRENT",
+    "reportedAt": null,
+    "scopeId": "google-midlothian-site",
+    "sourceIds": [
+      "google-texas-locations"
+    ],
+    "status": "UNKNOWN",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "abilene:3c:project-status:2026-10-07",
+    "effectiveAt": null,
+    "id": "status:obs:245dec60f0b3f7d9f0dcdbc4",
+    "observationId": "obs:245dec60f0b3f7d9f0dcdbc4",
+    "projectId": "abilene",
+    "qualificationStatus": "PARTIAL",
+    "recordState": "CURRENT",
+    "reportedAt": null,
+    "scopeId": "abilene-site",
+    "sourceIds": [
+      "oracle-tracker"
+    ],
+    "status": "PARTIALLY_OPERATIONAL",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "aws-canton:3c:project-status:2026-04-09",
+    "effectiveAt": null,
+    "id": "status:obs:7d08b14c56baca1c4d108cf7",
+    "observationId": "obs:7d08b14c56baca1c4d108cf7",
+    "projectId": "aws-canton",
+    "qualificationStatus": "UNAVAILABLE",
+    "recordState": "CURRENT",
+    "reportedAt": "2026-04-09",
+    "scopeId": "aws-canton-site",
+    "sourceIds": [
+      "amazon-mississippi-current"
+    ],
+    "status": "UNKNOWN",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "google-red-oak:3c:project-status:2026-10-07",
+    "effectiveAt": null,
+    "id": "status:obs:964256f52894c47d0667a783",
+    "observationId": "obs:964256f52894c47d0667a783",
+    "projectId": "google-red-oak",
+    "qualificationStatus": "UNAVAILABLE",
+    "recordState": "CURRENT",
+    "reportedAt": null,
+    "scopeId": "google-red-oak-site",
+    "sourceIds": [
+      "google-texas-locations"
+    ],
+    "status": "UNKNOWN",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2025-06-02",
+    "claimId": "polaris-forge-1:3c:project-status:2025-06-02",
+    "effectiveAt": "2025-06-02",
+    "id": "status:obs:697465549f4578a0e4df7a67",
+    "observationId": "obs:697465549f4578a0e4df7a67",
+    "projectId": "polaris-forge-1",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "CURRENT",
+    "reportedAt": "2025-06-02",
+    "scopeId": "polaris-forge-1-asset",
+    "sourceIds": [
+      "pf1-initial-leases"
+    ],
+    "status": "UNDER_CONSTRUCTION",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2025-09-18",
+    "claimId": "fairwater:3c:project-status:2025-09-18",
+    "effectiveAt": "2025-09-18",
+    "id": "status:obs:48de31ef9c78dda3917e98ac",
+    "observationId": "obs:48de31ef9c78dda3917e98ac",
+    "projectId": "fairwater",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "SUPERSEDED",
+    "reportedAt": "2025-09-18",
+    "scopeId": "fairwater-asset",
+    "sourceIds": [
+      "fairwater-build"
+    ],
+    "status": "UNDER_CONSTRUCTION",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2025-09-29",
+    "claimId": "hyperion:3c:project-status:2025-09-29",
+    "effectiveAt": "2025-09-29",
+    "id": "status:obs:2eaac33fb1b05f10af9c4f5d",
+    "observationId": "obs:2eaac33fb1b05f10af9c4f5d",
+    "projectId": "hyperion",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "SUPERSEDED",
+    "reportedAt": "2025-09-29",
+    "scopeId": "hyperion-jv-original",
+    "sourceIds": [
+      "meta-engineering"
+    ],
+    "status": "UNDER_CONSTRUCTION",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "el-paso:3c:project-status:2025-10-15",
+    "effectiveAt": "2025-10-15",
+    "id": "status:obs:6835c5ec1f0ec1babae4bf23",
+    "observationId": "obs:6835c5ec1f0ec1babae4bf23",
+    "projectId": "el-paso",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "SUPERSEDED",
+    "reportedAt": "2025-10-15",
+    "scopeId": "el-paso-site",
+    "sourceIds": [
+      "el-paso-groundbreaking"
+    ],
+    "status": "UNDER_CONSTRUCTION",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2025-10-21",
+    "claimId": "hyperion:status",
+    "effectiveAt": "2025-10-21",
+    "id": "status:obs:a9d8b4bebb53c2abd10a02f4",
+    "observationId": "obs:a9d8b4bebb53c2abd10a02f4",
+    "projectId": "hyperion",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "CURRENT",
+    "reportedAt": "2025-10-21",
+    "scopeId": "hyperion-jv-original",
+    "sourceIds": [
+      "meta-jv-pdf"
+    ],
+    "status": "UNDER_CONSTRUCTION",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "aws-warren:3c:project-status:2025-11-20",
+    "effectiveAt": "2025-11-20",
+    "id": "status:obs:51e9d817e0ed858fe2b88a56",
+    "observationId": "obs:51e9d817e0ed858fe2b88a56",
+    "projectId": "aws-warren",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "CURRENT",
+    "reportedAt": "2025-11-20",
+    "scopeId": "aws-warren-site",
+    "sourceIds": [
+      "amazon-warren"
+    ],
+    "status": "PLANNED",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "quincy:3c:project-status:2026-01-13",
+    "effectiveAt": "2026-01-13",
+    "id": "status:obs:8cb63736ffed884f749f979c",
+    "observationId": "obs:8cb63736ffed884f749f979c",
+    "projectId": "quincy",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "CURRENT",
+    "reportedAt": "2026-01-13",
+    "scopeId": "quincy-site",
+    "sourceIds": [
+      "quincy-community"
+    ],
+    "status": "OPERATIONAL",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "jupiter:3c:project-status:2026-03-03",
+    "effectiveAt": "2026-03-03",
+    "id": "status:obs:28b82f4605480f3ee59d2f87",
+    "observationId": "obs:28b82f4605480f3ee59d2f87",
+    "projectId": "jupiter",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "SUPERSEDED",
+    "reportedAt": "2026-03-03",
+    "scopeId": "jupiter-site",
+    "sourceIds": [
+      "jupiter-march-power"
+    ],
+    "status": "PLANNED",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-07-27",
+    "claimId": "polaris-forge-1:status",
+    "effectiveAt": "2026-06-30",
+    "id": "status:obs:1d7989f425761585426d9afb",
+    "observationId": "obs:1d7989f425761585426d9afb",
+    "projectId": "polaris-forge-1",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "SUPERSEDED",
+    "reportedAt": "2026-07-27",
+    "scopeId": "pf1-live",
+    "sourceIds": [
+      "pf1-2026release"
+    ],
+    "status": "PARTIALLY_OPERATIONAL",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-07-20",
+    "claimId": "fairwater:status",
+    "effectiveAt": "2026-07-20",
+    "id": "status:obs:268f4ea0e4a10ea1ed16593a",
+    "observationId": "obs:268f4ea0e4a10ea1ed16593a",
+    "projectId": "fairwater",
+    "qualificationStatus": "CONFLICTING",
+    "recordState": "CONFLICT_REQUIRES_REVIEW",
+    "reportedAt": "2026-07-20",
+    "scopeId": "fairwater-asset",
+    "sourceIds": [
+      "fairwater-online"
+    ],
+    "status": "PARTIALLY_OPERATIONAL",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "el-paso:3c:project-status:2026-07-28",
+    "effectiveAt": "2026-07-28",
+    "id": "status:obs:a998c04caf6741297e611062",
+    "observationId": "obs:a998c04caf6741297e611062",
+    "projectId": "el-paso",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "CURRENT",
+    "reportedAt": "2026-07-28",
+    "scopeId": "el-paso-site",
+    "sourceIds": [
+      "el-paso-jv"
+    ],
+    "status": "UNDER_CONSTRUCTION",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-07",
+    "claimId": "jupiter:3c:project-status:2026-10-07",
+    "effectiveAt": "2026-08-27",
+    "id": "status:obs:1a978859922c99702689aa35",
+    "observationId": "obs:1a978859922c99702689aa35",
+    "projectId": "jupiter",
+    "qualificationStatus": "QUALIFIED",
+    "recordState": "CURRENT",
+    "reportedAt": null,
+    "scopeId": "jupiter-site",
+    "sourceIds": [
+      "oracle-tracker"
+    ],
+    "status": "UNDER_CONSTRUCTION",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  },
+  {
+    "availableFrom": "2026-10-02",
+    "claimId": "polaris-forge-1:3c:project-status:2026-10-02",
+    "effectiveAt": "2026-10-02",
+    "id": "status:obs:611f835aa3694b7cbab2d800",
+    "observationId": "obs:611f835aa3694b7cbab2d800",
+    "projectId": "polaris-forge-1",
+    "qualificationStatus": "PARTIAL",
+    "recordState": "CURRENT",
+    "reportedAt": "2026-10-02",
+    "scopeId": "pf1-live",
+    "sourceIds": [
+      "pf1-current"
+    ],
+    "status": "PARTIALLY_OPERATIONAL",
+    "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+  }
+]

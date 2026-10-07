@@ -1,0 +1,1115 @@
+[
+  {
+    "phase3bClaimId": "hyperion:entity-meta",
+    "panelObservationIds": [
+      "obs:74385321c69e525ac32ecc6f"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-blue-owl-funds",
+    "panelObservationIds": [
+      "obs:0358b92d9cc36fa099e45822"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-blue-owl-manager",
+    "panelObservationIds": [
+      "obs:ce1908b6b485b420e3a8b2a9"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-pimco-funds",
+    "panelObservationIds": [
+      "obs:394ccb0e984ed444525324fe"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-hyperion-jv",
+    "panelObservationIds": [
+      "obs:880eca41b02214e9ed93e1b6"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-laidley",
+    "panelObservationIds": [
+      "obs:885f1dfd8dac88f573f39b91"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-project-beignet-holdings",
+    "panelObservationIds": [
+      "obs:41cde671d9858e4b828860b8"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-beignet-investor",
+    "panelObservationIds": [
+      "obs:1b0e5d1a842c747d4a469501"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-iris-crossing",
+    "panelObservationIds": [
+      "obs:89f626524406ceae1b3473e4"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:entity-entergy-la",
+    "panelObservationIds": [
+      "obs:60bf5c5c4dba721a74fce0dd"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:entity-msft",
+    "panelObservationIds": [
+      "obs:db11eeb14f5260a4c721990e"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:entity-we-energies",
+    "panelObservationIds": [
+      "obs:9cf5b8fc898b7c4d0aa2ff87"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-apld",
+    "panelObservationIds": [
+      "obs:17a97645b1291f069d10835c"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-eln02",
+    "panelObservationIds": [
+      "obs:0dc335d2c9b12446e7574a5d"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-eln03",
+    "panelObservationIds": [
+      "obs:1883713739688a874e5310a1"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-eln02c",
+    "panelObservationIds": [
+      "obs:2efe989b64bb216ed6b0a328"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-hpc-holdings",
+    "panelObservationIds": [
+      "obs:ab5469422a8548099a4a4fe3"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-mip-funds",
+    "panelObservationIds": [
+      "obs:911d2f3a2a97230bd9366df4"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-coreweave",
+    "panelObservationIds": [
+      "obs:6b3b5ccf46c3db4de5616c03"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-computeco",
+    "panelObservationIds": [
+      "obs:76efa0743838f8bd668d367d"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-computeco3",
+    "panelObservationIds": [
+      "obs:121a6a1485d3bbb80eab5977"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:entity-macquarie-manager",
+    "panelObservationIds": [
+      "obs:932f91dcd63afc17e4c9ff7e"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:location",
+    "panelObservationIds": [
+      "obs:9dfc8256e7d4de02a8d93db6"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:status",
+    "panelObservationIds": [
+      "obs:a9d8b4bebb53c2abd10a02f4"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:cost",
+    "panelObservationIds": [
+      "obs:455e78147bae28874cb1f399"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:regional-plan",
+    "panelObservationIds": [
+      "obs:9030c292f3409b9122d11ade"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:financed-capacity",
+    "panelObservationIds": [
+      "obs:1355446ea97cf0dc21727546"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:planned-capacity",
+    "panelObservationIds": [
+      "obs:33952241b3b9ae8efad42443"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:original-developer",
+    "panelObservationIds": [
+      "obs:9dbd76be97fe46aaf901b1b9"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:legal-title-holder",
+    "panelObservationIds": [
+      "obs:ec8f4813583b0c99e9b0279e"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:legal-jv",
+    "panelObservationIds": [
+      "obs:ca97f8170070c10cba85c507"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:ownership-meta",
+    "panelObservationIds": [
+      "obs:2b87d378b03ca79b8e49485e"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:ownership-blue-owl-funds",
+    "panelObservationIds": [
+      "obs:0f274c9be46e1ca2fd1cfb1d"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:offering",
+    "panelObservationIds": [
+      "obs:1293dda8c551e24110bdf7e7"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:issuer",
+    "panelObservationIds": [
+      "obs:2cf5c476d3e86866cd38777a"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-maturity",
+    "panelObservationIds": [
+      "obs:e3aa3f01275f009e0af2c000"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-coupon",
+    "panelObservationIds": [
+      "obs:077e9a8853d3eaeff1124037"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-yield",
+    "panelObservationIds": [
+      "obs:d6deee6bc52c91e861afaa86"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-security",
+    "panelObservationIds": [
+      "obs:21fca008e61e0f5b165b8604"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-collateral",
+    "panelObservationIds": [
+      "obs:fefe89aa606f6af7f780baee"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-recourse",
+    "panelObservationIds": [
+      "obs:19b319b7e4cedf79b480075b"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-ranking",
+    "panelObservationIds": [
+      "obs:4332504f534700c6eded58bb"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-amortization",
+    "panelObservationIds": [
+      "obs:68f22b2a70ae4693fe28d959"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-issuance-date",
+    "panelObservationIds": [
+      "obs:74b999c6eb66bf05c2a798ad"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:debt-use-of-proceeds",
+    "panelObservationIds": [
+      "obs:007bb2059b4f9496ceed2f4e"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:fund-cash",
+    "panelObservationIds": [
+      "obs:1af6032582e04ab5ead8f6e2"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:lease-commencement",
+    "panelObservationIds": [
+      "obs:9af9af52dce1c858d48c0353"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:lease-initial-term",
+    "panelObservationIds": [
+      "obs:0c6d4a9ba4522c9d01cf1708"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:lease-max-term",
+    "panelObservationIds": [
+      "obs:65d18881737b36e23aca8d80"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:lease-commitment",
+    "panelObservationIds": [
+      "obs:2d3de13042e760079a7aefdd"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:lease-classification",
+    "panelObservationIds": [
+      "obs:c5336a1007f90bb1d84b86be"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:lease-recognition",
+    "panelObservationIds": [
+      "obs:3d111a79acf3ec133cacbe4b"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:lease-schedule",
+    "panelObservationIds": [
+      "obs:facf580196d80b9d1f2f0265"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:rvg-threshold",
+    "panelObservationIds": [
+      "obs:46544d0e29b984adf3987d03"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:rvg-trigger",
+    "panelObservationIds": [
+      "obs:52bb3115c6179ad54c937e01"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:rvg-recognition",
+    "panelObservationIds": [
+      "obs:ed6ec3c8a2174ca32e23bf83"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:equity-2025",
+    "panelObservationIds": [
+      "obs:8f9d76e0e19f0eefaa88f624"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:maximum-exposure-2025",
+    "panelObservationIds": [
+      "obs:acd3c20ec0d503c77766a834"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:treatment-2025",
+    "panelObservationIds": [
+      "obs:66a809b3fefc8bb6b62aac16"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:equity-2026",
+    "panelObservationIds": [
+      "obs:21f5e63730d3d79172a6efed"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:maximum-exposure-2026",
+    "panelObservationIds": [
+      "obs:44b9b820fa4feacd50c56d41"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:treatment-2026",
+    "panelObservationIds": [
+      "obs:eeef4ba5ff50b7e7a93aaaef"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:utility",
+    "panelObservationIds": [
+      "obs:545c8a2e69fc3b2a5272fb6c"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:grid-approval",
+    "panelObservationIds": [
+      "obs:9325319cdff72a4b76461708"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:cost-recovery",
+    "panelObservationIds": [
+      "obs:9bdd56b76e8761f8a3d5f4c2"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:power-support",
+    "panelObservationIds": [
+      "obs:bfc75d0bf209581f695ec834"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:power-gas",
+    "panelObservationIds": [
+      "obs:abe1d307016592ebe1f82e09"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:power-transmission",
+    "panelObservationIds": [
+      "obs:99753a4e8f06c872d9e60842"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:power-solar",
+    "panelObservationIds": [
+      "obs:afdc757b6d4c534218119b31"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:location",
+    "panelObservationIds": [
+      "obs:b5f5ea627d93664bf0fe1642"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:site-area",
+    "panelObservationIds": [
+      "obs:cec9a484061a5959fe735444"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:building-area",
+    "panelObservationIds": [
+      "obs:68510810fb20a6599307f0a7"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:status",
+    "panelObservationIds": [
+      "obs:268f4ea0e4a10ea1ed16593a"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:owner",
+    "panelObservationIds": [
+      "obs:d5f51b8f6b9298a7744dc956"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:pledge",
+    "panelObservationIds": [
+      "obs:682a13958a7a842514ed144d"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:second-pledge",
+    "panelObservationIds": [
+      "obs:330f4f55b2a0449649abd80f"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:IT-MW",
+    "panelObservationIds": [
+      "obs:d965f36743f74ffd23fdf7d6"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:realized-cost",
+    "panelObservationIds": [
+      "obs:f44a6d5872920aaaae4eccda"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:site-PP&E",
+    "panelObservationIds": [
+      "obs:24e3bce5609367caedc5537f"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:project-debt",
+    "panelObservationIds": [
+      "obs:d811eb987d0d4a1d0ee9b152"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:equity-funding-mix",
+    "panelObservationIds": [
+      "obs:0132c4fc835022bbfb5e42c6"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:lease-amount",
+    "panelObservationIds": [
+      "obs:6ed4283aa05288dc99df4580"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:guarantee-amount",
+    "panelObservationIds": [
+      "obs:fa9a4cc8a0a9fbbe010942a0"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:project-cash-flow",
+    "panelObservationIds": [
+      "obs:eab8bc8401411ad323a223e1"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:AI-revenue",
+    "panelObservationIds": [
+      "obs:923dd4406b19571e1d62547d"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:utility",
+    "panelObservationIds": [
+      "obs:1ca94bacfef0b84dc6439640"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:solar",
+    "panelObservationIds": [
+      "obs:331bbe3d7f81b1122a04dd05"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:cost-recovery",
+    "panelObservationIds": [
+      "obs:9e3d0e917f3a54719ee32bb9"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:accounting-interpretation",
+    "panelObservationIds": [
+      "obs:3242b4309287793cbf1431b9"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:location",
+    "panelObservationIds": [
+      "obs:934c04e104c3de892ff1b5f2"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:status",
+    "panelObservationIds": [
+      "obs:1d7989f425761585426d9afb"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:contracted-capacity",
+    "panelObservationIds": [
+      "obs:20efbef08dd05d9a1560c38e"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:live-capacity",
+    "panelObservationIds": [
+      "obs:6d1c9345a2d34596bd40e242"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:tenant",
+    "panelObservationIds": [
+      "obs:d828dc926b7d47ba979dccb4"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:registered-title-holder",
+    "panelObservationIds": [
+      "obs:9e22378187b4508b960ee6a1"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:project-cost",
+    "panelObservationIds": [
+      "obs:2bca905d0e0aa7ec105b9c67"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:utility",
+    "panelObservationIds": [
+      "obs:4627bc8a1696f67d851a95cd"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:PPA-value",
+    "panelObservationIds": [
+      "obs:1e12b6bbf0c295a2ecf39cd2"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:grid-cost",
+    "panelObservationIds": [
+      "obs:9e012a89b03671b5744f6ea8"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:AI-revenue",
+    "panelObservationIds": [
+      "obs:350eb504e2bacd3c4187ce60"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:project-cash-flow",
+    "panelObservationIds": [
+      "obs:22eda25030eeb44429da47ab"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:utilization",
+    "panelObservationIds": [
+      "obs:ef6a4c08c6935d83a84ee9a2"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes250-principal",
+    "panelObservationIds": [
+      "obs:e952f019f9ff432c270dbabc"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes250-coupon",
+    "panelObservationIds": [
+      "obs:9c98ab5f8e3e5ab5e414d1b6"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes250-maturity",
+    "panelObservationIds": [
+      "obs:3f43d7e6e3a2c5c6738e7b86"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes250-issuer",
+    "panelObservationIds": [
+      "obs:328cc37adaaf601f6482aaf6"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes250-security",
+    "panelObservationIds": [
+      "obs:9d0d7eb5a0bee7fa696d3355"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes250-recourse",
+    "panelObservationIds": [
+      "obs:3f733d779fa8d183f752c376"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes150-principal",
+    "panelObservationIds": [
+      "obs:5d8423940ba1bcae09fdbc53"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes150-coupon",
+    "panelObservationIds": [
+      "obs:d5bfc37ff2d06a8d57b2c6c7"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes150-maturity",
+    "panelObservationIds": [
+      "obs:ca795fc410152f76bc10bb21"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes150-issuer",
+    "panelObservationIds": [
+      "obs:61806a027a2902c08344e6e1"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes150-security",
+    "panelObservationIds": [
+      "obs:cc2c2b31137058a96d4cf6ec"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-notes150-recourse",
+    "panelObservationIds": [
+      "obs:13e21f6e51cfc41f162d67d3"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-preferred-original",
+    "panelObservationIds": [
+      "obs:8a7544205e36e5b1ee1f34b6"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-platform-preferred",
+    "panelObservationIds": [
+      "obs:588ad7b399650a37667d95f2"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease100-capacity",
+    "panelObservationIds": [
+      "obs:70caf58eaa637097af266834"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease100-term",
+    "panelObservationIds": [
+      "obs:2e7ce20b15af0de85f44b975"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease100-payments",
+    "panelObservationIds": [
+      "obs:4d914d8b1e47faf104a6822c"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease150-capacity",
+    "panelObservationIds": [
+      "obs:b4496f70208080aeeef34ab9"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease150-term",
+    "panelObservationIds": [
+      "obs:ad397a01218376d6a6c9c828"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease150-payments",
+    "panelObservationIds": [
+      "obs:c7ca7a35b5ccbce9a632652c"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease4-capacity",
+    "panelObservationIds": [
+      "obs:16e3d28a03f343c81469ab43"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease4-term",
+    "panelObservationIds": [
+      "obs:8f3d9ab8206541fa1061c52b"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:p-lease4-payments",
+    "panelObservationIds": [
+      "obs:364c4a282605822a6aa1f78b"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:completion-guarantee",
+    "panelObservationIds": [
+      "obs:bb6f62578f1a23415ce35118"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:lessor-guarantee",
+    "panelObservationIds": [
+      "obs:73aade0ac8063641edea68e6"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:tenant-support",
+    "panelObservationIds": [
+      "obs:68806ce70e7c0e0434a47ab0"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:accounting",
+    "panelObservationIds": [
+      "obs:6d725afad23142864846d0e4"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:attributable-revenue",
+    "panelObservationIds": [
+      "obs:22d3da3582e7667b22fc7771"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:attributable-operating-cash-flow",
+    "panelObservationIds": [
+      "obs:c7e0faa05769ed3c18f312ee"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:attributable-AI-revenue",
+    "panelObservationIds": [
+      "obs:25cf0ff235dcdf42371ea0f9"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:attributable-utilization",
+    "panelObservationIds": [
+      "obs:3c3e2722adc7544e7a303b9f"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:attributable-revenue",
+    "panelObservationIds": [
+      "obs:03c30babdee80ea7cfe80d45"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:attributable-operating-cash-flow",
+    "panelObservationIds": [
+      "obs:db63b7746438c92d45addd0a"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:attributable-AI-revenue",
+    "panelObservationIds": [
+      "obs:ee7b0cc352cba3e4dd54533b"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:attributable-utilization",
+    "panelObservationIds": [
+      "obs:486540e3e02ac3e5eb13f793"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:attributable-revenue",
+    "panelObservationIds": [
+      "obs:f7a920f5616a0be77f11fcf2"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:attributable-operating-cash-flow",
+    "panelObservationIds": [
+      "obs:0efba3bd44f512745a858a73"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:attributable-AI-revenue",
+    "panelObservationIds": [
+      "obs:922a03983a4b6cb6e28cc9cf"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:attributable-utilization",
+    "panelObservationIds": [
+      "obs:2fe091019dd3486e76750b72"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:edge-meta-PARTIALLY_OWNS-hyperion-jv",
+    "panelObservationIds": [
+      "obs:62f42b00424e7c7206a87add"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:edge-blue-owl-funds-PARTIALLY_OWNS-hyperion-jv",
+    "panelObservationIds": [
+      "obs:7db616bb05ac3fb33b6e1c58"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:edge-hyperion-jv-OWNS-hyperion",
+    "panelObservationIds": [
+      "obs:713fbae82477570c693d7a14"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:edge-meta-LEASES-hyperion-jv",
+    "panelObservationIds": [
+      "obs:19c6d857ce0be0da5caf9858"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:edge-laidley-PURCHASES_POWER_FROM-entergy-la",
+    "panelObservationIds": [
+      "obs:d93e31549da2b1a02747e868"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:edge-meta-DEVELOPS-hyperion",
+    "panelObservationIds": [
+      "obs:0d1a566c6ab5d746d9b9b14b"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:edge-project-beignet-holdings-OWNS-laidley",
+    "panelObservationIds": [
+      "obs:8527ef89d0acc8788b4e2145"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:edge-msft-DEVELOPS-fairwater",
+    "panelObservationIds": [
+      "obs:36cea468c16a95ba3eb2beab"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "fairwater:edge-msft-OPERATES-fairwater",
+    "panelObservationIds": [
+      "obs:ece688521e70767d86509bc2"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:edge-coreweave-LEASES-eln02",
+    "panelObservationIds": [
+      "obs:69aa601cee50513025f0fff3"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:edge-coreweave-LEASES-eln03",
+    "panelObservationIds": [
+      "obs:19809f5831fcef2c4daa34a9"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:edge-coreweave-LEASES-eln02c",
+    "panelObservationIds": [
+      "obs:f4fa2261b94bbc6ab5941651"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:edge-apld-DEVELOPS-polaris-forge-1",
+    "panelObservationIds": [
+      "obs:2d1ac81c5c2b003443dafc79"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:edge-computeco-FINANCES-polaris-forge-1",
+    "panelObservationIds": [
+      "obs:b036f74404af76fbee764ad3"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:edge-computeco3-FINANCES-polaris-forge-1",
+    "panelObservationIds": [
+      "obs:dddfa9d5b2c31858ed9a9861"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:edge-mip-funds-FINANCES-hpc-holdings",
+    "panelObservationIds": [
+      "obs:c5828d777f57a086f1b13882"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "polaris-forge-1:live-capacity-2026-10",
+    "panelObservationIds": [
+      "obs:9846ed4987039df831999725"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  },
+  {
+    "phase3bClaimId": "hyperion:meta-distribution",
+    "panelObservationIds": [
+      "obs:0c5e9e3b1c3b315829137ade"
+    ],
+    "transformation": "ADDITIVE_LAYER/VINTAGE_MAPPING; ORIGINAL_VALUE_RETAINED"
+  }
+]

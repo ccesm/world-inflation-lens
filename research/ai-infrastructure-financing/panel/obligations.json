@@ -1,0 +1,192 @@
+[
+  {
+    "beneficiaryId": "hyperion-jv",
+    "claimIds": [
+      "hyperion:lease-commencement",
+      "hyperion:lease-initial-term",
+      "hyperion:lease-max-term",
+      "hyperion:lease-commitment",
+      "hyperion:lease-classification",
+      "hyperion:lease-recognition",
+      "hyperion:lease-schedule"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "h-lease",
+    "instrumentType": "OPERATING_LEASE",
+    "issuerId": null,
+    "maturity": null,
+    "obligationIdentity": "h-lease",
+    "obligorId": "meta",
+    "projectId": "hyperion",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": "hyperion-jv",
+    "claimIds": [
+      "hyperion:rvg-threshold",
+      "hyperion:rvg-trigger",
+      "hyperion:rvg-recognition"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "h-rvg",
+    "instrumentType": "RESIDUAL_VALUE_GUARANTEE",
+    "issuerId": null,
+    "maturity": null,
+    "obligationIdentity": "h-rvg",
+    "obligorId": "meta",
+    "projectId": "hyperion",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": "eln02",
+    "claimIds": [
+      "polaris-forge-1:p-lease100-capacity",
+      "polaris-forge-1:p-lease100-term",
+      "polaris-forge-1:p-lease100-payments"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-lease100",
+    "instrumentType": "CAPACITY_LEASE",
+    "issuerId": null,
+    "maturity": null,
+    "obligationIdentity": "p-lease100",
+    "obligorId": "coreweave",
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": "eln03",
+    "claimIds": [
+      "polaris-forge-1:p-lease150-capacity",
+      "polaris-forge-1:p-lease150-term",
+      "polaris-forge-1:p-lease150-payments"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-lease150",
+    "instrumentType": "CAPACITY_LEASE",
+    "issuerId": null,
+    "maturity": null,
+    "obligationIdentity": "p-lease150",
+    "obligorId": "coreweave",
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": "eln02c",
+    "claimIds": [
+      "polaris-forge-1:p-lease4-capacity",
+      "polaris-forge-1:p-lease4-term",
+      "polaris-forge-1:p-lease4-payments"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-lease4",
+    "instrumentType": "CAPACITY_LEASE",
+    "issuerId": null,
+    "maturity": null,
+    "obligationIdentity": "p-lease4",
+    "obligorId": "coreweave",
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": "computeco",
+    "claimIds": [
+      "polaris-forge-1:completion-guarantee"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-completion",
+    "instrumentType": "COMPLETION_GUARANTEE",
+    "issuerId": null,
+    "maturity": null,
+    "obligationIdentity": "p-completion",
+    "obligorId": "apld",
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": "coreweave",
+    "claimIds": [
+      "polaris-forge-1:lessor-guarantee"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-lease-guarantee",
+    "instrumentType": "PARENT_PERFORMANCE_GUARANTEE",
+    "issuerId": null,
+    "maturity": null,
+    "obligationIdentity": "p-lease-guarantee",
+    "obligorId": "apld",
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": "apld",
+    "claimIds": [
+      "polaris-forge-1:tenant-support"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-tenant-support-2026",
+    "instrumentType": "TENANT_CREDIT_SUPPORT",
+    "issuerId": null,
+    "maturity": null,
+    "obligationIdentity": "p-tenant-support-2026",
+    "obligorId": "coreweave",
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": "el-paso-venture",
+    "claimIds": [
+      "el-paso:3c:lease-initial-term:2026-07-28"
+    ],
+    "id": "el-paso-lease-initial-term",
+    "obligationIdentity": "el-paso-lease-initial-term",
+    "obligationType": "FUTURE_OPERATING_LEASE",
+    "obligorId": "meta",
+    "projectId": "el-paso",
+    "status": "FUTURE_CONDITIONAL_NOT_CURRENT_DEBT"
+  },
+  {
+    "beneficiaryId": "el-paso-venture",
+    "claimIds": [
+      "el-paso:3c:rvg-threshold:2026-07-28"
+    ],
+    "id": "el-paso-rvg-threshold",
+    "obligationIdentity": "el-paso-rvg-threshold",
+    "obligationType": "RESIDUAL_VALUE_GUARANTEE",
+    "obligorId": "meta",
+    "projectId": "el-paso",
+    "status": "FUTURE_CONDITIONAL_NOT_CURRENT_DEBT"
+  }
+]

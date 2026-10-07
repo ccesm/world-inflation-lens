@@ -1,0 +1,226 @@
+[
+  {
+    "accessError": null,
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "retrievedAt": "2026-10-07T22:04:08.169Z",
+    "sourceId": "brookings-paper",
+    "sourceVersion": "brookings-paper@bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4"
+  },
+  {
+    "accessError": "ACCESS_BLOCKED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "retrievedAt": "2026-10-07T22:04:10.822Z",
+    "sourceId": "meta-2025k",
+    "sourceVersion": "meta-2025k@WEB_REVIEW_20261007"
+  },
+  {
+    "accessError": "ACCESS_BLOCKED_HOST_STOP",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "retrievedAt": "2026-10-07T22:04:12.127Z",
+    "sourceId": "meta-2026q2",
+    "sourceVersion": "meta-2026q2@WEB_REVIEW_20261007"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:04:13.230Z",
+    "sourceId": "cc-pimco",
+    "sourceVersion": "cc-pimco@bf5d7ba6ad5abb85e13d61504b73da27806aad0422b04ebcdd146fc9a4d2f65e"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:04:15.391Z",
+    "sourceId": "meta-engineering",
+    "sourceVersion": "meta-engineering@c93b2e23bd2c3cfcadb5fb98deb417c1623c67407237343086dea2f325b47076"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:04:16.671Z",
+    "sourceId": "meta-expansion",
+    "sourceVersion": "meta-expansion@eeab6bdf49ccf9875114d30a14cf7118aacb41675c7a287c476cd417d439f1ff"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:04:20.641Z",
+    "sourceId": "entergy-expansion",
+    "sourceVersion": "entergy-expansion@4ee950b702576c79b41fb6600434948e0ed81bdb73c2f2e5f7d612b0fa00baea"
+  },
+  {
+    "accessError": "ACCESS_BLOCKED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "retrievedAt": "2026-10-07T22:04:21.824Z",
+    "sourceId": "sp-webinar",
+    "sourceVersion": "sp-webinar@WEB_REVIEW_20261007"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "retrievedAt": "2026-10-07T22:04:23.143Z",
+    "sourceId": "meta-jv-pdf",
+    "sourceVersion": "meta-jv-pdf@5dca08e7eee961316ccea1149c785b72951bc0e1744cc7038a0cfa18f7192b61"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:04:28.335Z",
+    "sourceId": "fairwater-build",
+    "sourceVersion": "fairwater-build@bfb2f61bdb6537896e89b27218f941c305178558da12eacc80d999af1b25c3f4"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:04:29.660Z",
+    "sourceId": "fairwater-investment",
+    "sourceVersion": "fairwater-investment@b68194156766ac5ccbeb0e042f4972d8842af5e7ebd412e91234fdcb010d0e76"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "retrievedAt": "2026-10-07T22:04:30.878Z",
+    "sourceId": "fairwater-tid",
+    "sourceVersion": "fairwater-tid@2414d4045470bd1823751a35043a0348e48e0894f11ebad0aad1130e1e1e1a2f"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:04:35.884Z",
+    "sourceId": "pf1-2025q1",
+    "sourceVersion": "pf1-2025q1@2b8105eb29244dc416082fbd94dc7f63ed514be5fff37b0d1665250a60188b53"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "retrievedAt": "2026-10-07T22:04:37.979Z",
+    "sourceId": "pf1-2025q2",
+    "sourceVersion": "pf1-2025q2@2b8d3175a389a884d23c34ec96b289e252baf101ab2338388a91aa3f6a26d7fe"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:04:39.844Z",
+    "sourceId": "pf1-2026release",
+    "sourceVersion": "pf1-2026release@23e2360ad4415bbd56f2e696090cf2e36b3b64bf291aaf707fcd4431da45db45"
+  },
+  {
+    "accessError": "ACCESS_BLOCKED_HOST_STOP",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "retrievedAt": "2026-10-07T22:04:43.915Z",
+    "sourceId": "pf1-current",
+    "sourceVersion": "pf1-current@WEB_REVIEW_20261007"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "retrievedAt": "2026-10-07T22:06:17.262Z",
+    "sourceId": "lpsc-order",
+    "sourceVersion": "lpsc-order@9185ef7e4130785574b53f0a0cff7216390428399d2aaac0265eebb7da838aaf"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:06:19.076Z",
+    "sourceId": "fairwater-online",
+    "sourceVersion": "fairwater-online@5d4fcbaad417ead3fca5ab44272bfc5a4f46f805ba3182c06b4e21e9d13bab02"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:06:20.452Z",
+    "sourceId": "pf1-initial-leases",
+    "sourceVersion": "pf1-initial-leases@c18bd6a600e0cf8b5440c8c1b712361152fac32db81c25bcaee503a9eae3bfe8"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T22:07:59.586Z",
+    "sourceId": "pf1-macquarie",
+    "sourceVersion": "pf1-macquarie@271eabba21da46526d40eaa05d9e0ce4cf33aad9f465aaf81c553f0ea00e3965"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:40.199Z",
+    "sourceId": "quincy-water",
+    "sourceVersion": "quincy-water@86cd1727d0b4a1e46b7f12ecb8a641586fe437d9b1d87dcca9148f3b4d85488d"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:41.657Z",
+    "sourceId": "quincy-community",
+    "sourceVersion": "quincy-community@0aed37166aafadf3cb34ede888d9c41c8f84684e8f176b35f922ddc227f888c9"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:42.994Z",
+    "sourceId": "google-texas-locations",
+    "sourceVersion": "google-texas-locations@1da281c3868960d682c172a8a4e02f33df18d9ab22fc38cb1f9e57bf15c63d73"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:46.249Z",
+    "sourceId": "amazon-warren",
+    "sourceVersion": "amazon-warren@676ca73200f5522bb5a83c704f67e58ca88a7807f0eb677b5cb035a7a73afdf8"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:47.787Z",
+    "sourceId": "amazon-mississippi-current",
+    "sourceVersion": "amazon-mississippi-current@c6a510ddaa8fdcc79a529b2d6f3982b4a87cc82d90a1d47b94e8342fdbf663ec"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:51.075Z",
+    "sourceId": "el-paso-groundbreaking",
+    "sourceVersion": "el-paso-groundbreaking@c12f4bd741e2fc52c74c7a980e2b837e3a5031f1757b0cbda46bc90ad0b1d5c6"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:53.375Z",
+    "sourceId": "el-paso-jv",
+    "sourceVersion": "el-paso-jv@a45dc02473ab49ea9ee1b369857bb6a3acc0025931acfd754bba7d11ae1f91b3"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:54.550Z",
+    "sourceId": "abilene-jv",
+    "sourceVersion": "abilene-jv@0f2b8b39e62634c6b22aaeabd06069a489e70375a3b265adc02486d6fee59405"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:57.109Z",
+    "sourceId": "oracle-abilene",
+    "sourceVersion": "oracle-abilene@b93f5cfdbbd1ad6bc61c92cbdf2412d42b0564221811ef866a17dd168772a99d"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:58.619Z",
+    "sourceId": "oracle-tracker",
+    "sourceVersion": "oracle-tracker@d562664ffee92c645fe415cd2614800c5a63e1fd491fea08086a60f31876e8d6"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:23:59.815Z",
+    "sourceId": "jupiter-march-power",
+    "sourceVersion": "jupiter-march-power@f4e0866256b48592c79cc7fef69d4a1624688dafb908b37b7654adf49f399e28"
+  },
+  {
+    "accessError": null,
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "retrievedAt": "2026-10-07T23:24:01.003Z",
+    "sourceId": "oracle-jupiter",
+    "sourceVersion": "oracle-jupiter@62973ff79d15a569f581907fa2f4ef962741998e5e259a8918f9ad9adc1e613b"
+  }
+]

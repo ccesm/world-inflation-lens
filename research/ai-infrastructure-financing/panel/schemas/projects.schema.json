@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "projectName": {
+        "type": "string",
+        "minLength": 1
+      },
+      "companyIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "assetIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "primaryArchetype": {
+        "type": "string",
+        "minLength": 1
+      },
+      "secondaryFeatures": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "candidateState": {
+        "type": "string",
+        "minLength": 1
+      },
+      "locationClaimId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "statusClaimIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "materialClaimIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "relationshipClaimIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "admissionSourceIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "announcedAt": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "expectedOperationalDate": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "actualOperationalDate": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "coverageRole": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "id",
+      "projectName",
+      "companyIds",
+      "assetIdentity",
+      "primaryArchetype",
+      "secondaryFeatures",
+      "candidateState",
+      "locationClaimId",
+      "statusClaimIds",
+      "materialClaimIds",
+      "relationshipClaimIds",
+      "admissionSourceIds",
+      "announcedAt",
+      "expectedOperationalDate",
+      "actualOperationalDate",
+      "coverageRole"
+    ],
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "el-paso-lease-initial-term",
+    "projectId": "el-paso",
+    "obligationIdentity": "el-paso-lease-initial-term",
+    "obligationType": "FUTURE_OPERATING_LEASE",
+    "obligorId": "meta",
+    "beneficiaryId": "el-paso-venture",
+    "claimIds": [
+      "el-paso:3c:lease-initial-term:2026-07-28"
+    ],
+    "status": "FUTURE_CONDITIONAL_NOT_CURRENT_DEBT"
+  },
+  {
+    "id": "el-paso-rvg-threshold",
+    "projectId": "el-paso",
+    "obligationIdentity": "el-paso-rvg-threshold",
+    "obligationType": "RESIDUAL_VALUE_GUARANTEE",
+    "obligorId": "meta",
+    "beneficiaryId": "el-paso-venture",
+    "claimIds": [
+      "el-paso:3c:rvg-threshold:2026-07-28"
+    ],
+    "status": "FUTURE_CONDITIONAL_NOT_CURRENT_DEBT"
+  }
+]

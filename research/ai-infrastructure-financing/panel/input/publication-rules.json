@@ -1,0 +1,21 @@
+{
+  "version": "field-eligibility-v1",
+  "safeFamilies": [
+    "physical",
+    "status",
+    "capacity"
+  ],
+  "requires": [
+    "PRIMARY_VERIFIED",
+    "QUALIFIED",
+    "ARCHIVED_REVIEWED",
+    "clear native definition",
+    "explicit scope",
+    "no unresolved conflict",
+    "NO_KNOWN_OVERLAP",
+    "no conditional contract assertion"
+  ],
+  "financialFields": "RESEARCH_ONLY",
+  "noExporter": true,
+  "publicReadyIsNotPublicationApproval": true
+}

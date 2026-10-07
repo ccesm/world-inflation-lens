@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "claimId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "caseId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "field": {
+        "type": "string",
+        "minLength": 1
+      },
+      "value": {
+        "type": [
+          "number",
+          "string",
+          "object",
+          "null"
+        ],
+        "properties": {
+          "fromId": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "toId": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1
+          }
+        },
+        "required": [
+          "fromId",
+          "type",
+          "toId"
+        ],
+        "additionalProperties": false
+      },
+      "unit": {
+        "type": "string",
+        "minLength": 1
+      },
+      "definition": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "sourceLocator": {
+        "type": "string",
+        "minLength": 1
+      },
+      "evidenceClass": {
+        "type": "string",
+        "minLength": 1,
+        "enum": [
+          "PRIMARY_VERIFIED",
+          "PRIMARY_PARTIAL",
+          "SECONDARY_CORROBORATED",
+          "SECONDARY_ONLY",
+          "CONFLICTING_EVIDENCE",
+          "UNAVAILABLE"
+        ]
+      },
+      "observedOrEstimated": {
+        "type": "string",
+        "minLength": 1,
+        "enum": [
+          "OBSERVED_REPORTED",
+          "SECONDARY_REPORTED",
+          "PROJECT_ESTIMATE",
+          "MANAGEMENT_GUIDANCE",
+          "SECONDARY_ESTIMATE",
+          "UNAVAILABLE",
+          "TRANSACTION_VALUE",
+          "CONTRACTUAL_COMMITMENT",
+          "MODEL_DERIVED"
+        ]
+      },
+      "effectiveDate": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "confidenceStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "reviewStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "scopeId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "entityId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "previousClaimId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "currency": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "operator": {
+        "type": "string",
+        "minLength": 1,
+        "enum": [
+          "EQ",
+          "GT",
+          "GTE",
+          "LT",
+          "LTE"
+        ]
+      },
+      "capacityDefinition": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "panelLayer": {
+        "type": "string",
+        "minLength": 1
+      },
+      "recordState": {
+        "type": "string",
+        "minLength": 1,
+        "enum": [
+          "CURRENT",
+          "SUPERSEDED",
+          "RESTATED",
+          "CONFLICT_REQUIRES_REVIEW"
+        ]
+      },
+      "condition": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "periodOverride": {
+        "type": "object",
+        "properties": {
+          "basis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start": {
+            "type": "string",
+            "minLength": 1
+          },
+          "end": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "basis",
+          "start",
+          "end"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "claimId",
+      "caseId",
+      "field",
+      "value",
+      "unit",
+      "definition",
+      "sourceIds",
+      "sourceLocator",
+      "evidenceClass",
+      "observedOrEstimated",
+      "effectiveDate",
+      "confidenceStatus",
+      "reviewStatus",
+      "scopeId",
+      "entityId",
+      "previousClaimId",
+      "currency",
+      "operator",
+      "capacityDefinition",
+      "panelLayer",
+      "recordState",
+      "condition"
+    ],
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}

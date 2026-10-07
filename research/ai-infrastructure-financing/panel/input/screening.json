@@ -1,0 +1,42 @@
+[
+  {
+    "projectId": "google-haskell",
+    "companyId": "GOOG",
+    "state": "CANDIDATE_PROJECT",
+    "sourceUrls": [
+      "https://www.datacenters.google/locations/texas/"
+    ],
+    "reason": "Additional campus requires site-specific admission; Texas40bn program is not a site cost",
+    "availableFrom": "2026-10-07"
+  },
+  {
+    "projectId": "aws-ridgeland",
+    "companyId": "AMZN",
+    "state": "CANDIDATE_PROJECT",
+    "sourceUrls": [
+      "https://madisoncountyeda.com/amazon-web-services-to-invest-record-shattering-10-billion/"
+    ],
+    "reason": "Government page content mismatch; do not force site entity/parcel split",
+    "availableFrom": "2026-10-07"
+  },
+  {
+    "projectId": "oracle-shackelford",
+    "companyId": "ORCL",
+    "state": "CANDIDATE_PROJECT",
+    "sourceUrls": [
+      "https://www.oracle.com/data-centers/"
+    ],
+    "reason": "Named site but detailed developer/asset scope intentionally deferred; enough qualified sites without forced expansion",
+    "availableFrom": "2026-10-07"
+  },
+  {
+    "projectId": "google-texas-program",
+    "companyId": "GOOG",
+    "state": "REJECTED_PROJECT",
+    "sourceUrls": [
+      "https://www.datacenters.google/locations/texas/"
+    ],
+    "reason": "Multi-campus investment program is not an identifiable single asset; retain discovery context only",
+    "availableFrom": "2026-10-07"
+  }
+]

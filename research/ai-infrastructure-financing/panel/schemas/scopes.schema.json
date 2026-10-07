@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "scopeId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "caseId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "definition": {
+        "type": "string",
+        "minLength": 1
+      },
+      "entityId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "period": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "minLength": 1
+      },
+      "sourceIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "comparableTo": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "notComparableTo": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "notes": {
+        "type": "string",
+        "minLength": 1
+      },
+      "comparisonGroup": {
+        "type": "null"
+      },
+      "scopeType": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "scopeId",
+      "caseId",
+      "definition",
+      "entityId",
+      "period",
+      "sourceIds",
+      "comparableTo",
+      "notComparableTo",
+      "notes",
+      "comparisonGroup",
+      "scopeType"
+    ],
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}

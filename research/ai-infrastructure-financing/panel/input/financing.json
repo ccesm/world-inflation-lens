@@ -1,0 +1,19 @@
+[
+  {
+    "id": "el-paso-debt",
+    "projectId": "el-paso",
+    "instrumentIdentity": "el-paso-debt-financing-announced-2026",
+    "instrumentType": "PROJECT_FINANCING_SOURCE_REPORTED",
+    "issuerId": null,
+    "providerIds": [],
+    "claimIds": [
+      "el-paso:3c:debt-financing:2026-07-28"
+    ],
+    "maturity": null,
+    "coupon": null,
+    "security": null,
+    "recourse": null,
+    "fundingDate": null,
+    "status": "REVIEW_REQUIRED"
+  }
+]

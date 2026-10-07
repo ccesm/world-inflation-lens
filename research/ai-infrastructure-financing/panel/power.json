@@ -1,0 +1,112 @@
+[
+  {
+    "claimIds": [
+      "hyperion:utility",
+      "hyperion:grid-approval",
+      "hyperion:cost-recovery",
+      "hyperion:power-support"
+    ],
+    "id": "h-grid-original",
+    "projectId": "hyperion",
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS",
+    "utilityId": "entergy-la"
+  },
+  {
+    "claimIds": [
+      "hyperion:power-gas"
+    ],
+    "id": "h-gas",
+    "projectId": "hyperion",
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS",
+    "utilityId": "entergy-la"
+  },
+  {
+    "claimIds": [
+      "hyperion:power-transmission"
+    ],
+    "id": "h-transmission",
+    "projectId": "hyperion",
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS",
+    "utilityId": "entergy-la"
+  },
+  {
+    "claimIds": [
+      "hyperion:power-solar"
+    ],
+    "id": "h-solar",
+    "projectId": "hyperion",
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS",
+    "utilityId": "entergy-la"
+  },
+  {
+    "claimIds": [
+      "fairwater:utility",
+      "fairwater:solar",
+      "fairwater:cost-recovery"
+    ],
+    "id": "f-service",
+    "projectId": "fairwater",
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS",
+    "utilityId": "we-energies"
+  },
+  {
+    "claimIds": [
+      "polaris-forge-1:utility",
+      "polaris-forge-1:grid-cost"
+    ],
+    "id": "p-power-unavailable",
+    "projectId": "polaris-forge-1",
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS",
+    "utilityId": null
+  },
+  {
+    "claimIds": [
+      "quincy:3c:water-infrastructure:2021-08-27",
+      "quincy:3c:power-source:2026-10-07"
+    ],
+    "id": "quincy-power",
+    "projectId": "quincy",
+    "status": "PARTIAL",
+    "utilityId": null
+  },
+  {
+    "claimIds": [
+      "aws-canton:3c:power-source:2026-10-07"
+    ],
+    "id": "aws-canton-power",
+    "projectId": "aws-canton",
+    "status": "PARTIAL",
+    "utilityId": null
+  },
+  {
+    "claimIds": [
+      "el-paso:3c:power-counterparty:2026-03-26",
+      "el-paso:3c:power-source:2026-10-07"
+    ],
+    "id": "el-paso-power",
+    "projectId": "el-paso",
+    "status": "PARTIAL",
+    "utilityId": null
+  },
+  {
+    "claimIds": [
+      "abilene:3c:grid-region:2026-10-07",
+      "abilene:3c:power-source:2026-10-07"
+    ],
+    "id": "abilene-power",
+    "projectId": "abilene",
+    "status": "PARTIAL",
+    "utilityId": null
+  },
+  {
+    "claimIds": [
+      "jupiter:3c:power-design:2026-03-03",
+      "jupiter:3c:power-design:2026-10-07",
+      "jupiter:3c:power-source:2026-10-07"
+    ],
+    "id": "jupiter-power",
+    "projectId": "jupiter",
+    "status": "PARTIAL",
+    "utilityId": null
+  }
+]

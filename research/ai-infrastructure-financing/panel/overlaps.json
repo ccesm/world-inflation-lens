@@ -1,0 +1,699 @@
+{
+  "DO_NOT_ADD_PAIRS": [
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:712c5ab5b2b49e0e1f79",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:1293dda8c551e24110bdf7e7"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:b07d7e019f8f60ff09ef",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:1af6032582e04ab5ead8f6e2"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:33ab8b14278c5faba303",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:21f5e63730d3d79172a6efed"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:69d3f7559fc75a6f6be7",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:2d3de13042e760079a7aefdd"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:63e092774c0181157ccf",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:44b9b820fa4feacd50c56d41"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:e0afc50c93e8718af51f",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:455e78147bae28874cb1f399"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:76142e7ea58fdceb6d93",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:46544d0e29b984adf3987d03"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:01db3e4e1c95b5fa53f3",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8f9d76e0e19f0eefaa88f624"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:321d0becf7b3e007e5b1",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:fc063e3ef5ab57848b02",
+      "leftObservationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:6df0dae1a5f4921eb2b3",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:1af6032582e04ab5ead8f6e2"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:743e24f52b4b65b61719",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:21f5e63730d3d79172a6efed"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:25623c70c9e4c62d1dbd",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:2d3de13042e760079a7aefdd"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:281672311835d340391a",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:44b9b820fa4feacd50c56d41"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:9706ec45bc4f388e5a73",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:455e78147bae28874cb1f399"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:10d65d6e450af6b447d4",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:46544d0e29b984adf3987d03"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:fc2def62c5df89c368bc",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8f9d76e0e19f0eefaa88f624"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:7acc1c61d1fd8dffd450",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:30cec6796063b66b53da",
+      "leftObservationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:82386d414a9911645d5d",
+      "leftObservationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:21f5e63730d3d79172a6efed"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:a47975e03e6a5fdeae51",
+      "leftObservationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:2d3de13042e760079a7aefdd"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:e6b48b68c0fd86196c17",
+      "leftObservationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:44b9b820fa4feacd50c56d41"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:c039c0d4a31b6362b542",
+      "leftObservationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:455e78147bae28874cb1f399"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:485c6248e578d2bcf010",
+      "leftObservationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:46544d0e29b984adf3987d03"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:fd47b6c011f0f7f4dcfe",
+      "leftObservationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8f9d76e0e19f0eefaa88f624"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:bdac0f512357d3ed168a",
+      "leftObservationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:3880acae2e9ceb62fc40",
+      "leftObservationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:868489ecb5963e0a0b30",
+      "leftObservationId": "obs:21f5e63730d3d79172a6efed",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:2d3de13042e760079a7aefdd"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:75455e40fefd55ffbca9",
+      "leftObservationId": "obs:21f5e63730d3d79172a6efed",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:44b9b820fa4feacd50c56d41"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:e00cd53ce358ff60cf98",
+      "leftObservationId": "obs:21f5e63730d3d79172a6efed",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:455e78147bae28874cb1f399"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:d5f4d60ad7621bea0b6a",
+      "leftObservationId": "obs:21f5e63730d3d79172a6efed",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:46544d0e29b984adf3987d03"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:7ced56b53c3dc695e5c8",
+      "leftObservationId": "obs:21f5e63730d3d79172a6efed",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8f9d76e0e19f0eefaa88f624"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:536971b14e3363818c74",
+      "leftObservationId": "obs:21f5e63730d3d79172a6efed",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:40a8209d19b73e54477e",
+      "leftObservationId": "obs:21f5e63730d3d79172a6efed",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:ecece6239cfc978c35e6",
+      "leftObservationId": "obs:2d3de13042e760079a7aefdd",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:44b9b820fa4feacd50c56d41"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:d59d87db8cba73c38364",
+      "leftObservationId": "obs:2d3de13042e760079a7aefdd",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:455e78147bae28874cb1f399"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:1f796458655679dc6ab3",
+      "leftObservationId": "obs:2d3de13042e760079a7aefdd",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:46544d0e29b984adf3987d03"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:a6b02c62f23954a35c67",
+      "leftObservationId": "obs:2d3de13042e760079a7aefdd",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8f9d76e0e19f0eefaa88f624"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:fb7ba86f2f64b0255e4e",
+      "leftObservationId": "obs:2d3de13042e760079a7aefdd",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:5049c7c62e6cbd62c740",
+      "leftObservationId": "obs:2d3de13042e760079a7aefdd",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:61941c89a1933959a669",
+      "leftObservationId": "obs:44b9b820fa4feacd50c56d41",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:455e78147bae28874cb1f399"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:96824afa3a17d2547a58",
+      "leftObservationId": "obs:44b9b820fa4feacd50c56d41",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:46544d0e29b984adf3987d03"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:e69d949addba6cb3e60a",
+      "leftObservationId": "obs:44b9b820fa4feacd50c56d41",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8f9d76e0e19f0eefaa88f624"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:0ea926fabb785f453f1c",
+      "leftObservationId": "obs:44b9b820fa4feacd50c56d41",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:5879dfb39e273888b67a",
+      "leftObservationId": "obs:44b9b820fa4feacd50c56d41",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:aece686eefcc0109ae95",
+      "leftObservationId": "obs:455e78147bae28874cb1f399",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:46544d0e29b984adf3987d03"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:4b6e4f92bd217d664d0d",
+      "leftObservationId": "obs:455e78147bae28874cb1f399",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8f9d76e0e19f0eefaa88f624"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:7a25797694493ce52af1",
+      "leftObservationId": "obs:455e78147bae28874cb1f399",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:176c09f983053da66a6c",
+      "leftObservationId": "obs:455e78147bae28874cb1f399",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:71d8719e17dd03edff77",
+      "leftObservationId": "obs:46544d0e29b984adf3987d03",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8f9d76e0e19f0eefaa88f624"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:ca01fc539fd3e8046c23",
+      "leftObservationId": "obs:46544d0e29b984adf3987d03",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:d59c08c6d21b17b48a2a",
+      "leftObservationId": "obs:46544d0e29b984adf3987d03",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:5c7004acb7832488e60f",
+      "leftObservationId": "obs:8f9d76e0e19f0eefaa88f624",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:9030c292f3409b9122d11ade"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:eac91f969ada0eac22e1",
+      "leftObservationId": "obs:8f9d76e0e19f0eefaa88f624",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:b1c88c0c59f9b58b9598",
+      "leftObservationId": "obs:9030c292f3409b9122d11ade",
+      "projectId": "hyperion",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:acd3c20ec0d503c77766a834"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:c1932b28970541ef3c10",
+      "leftObservationId": "obs:330f4f55b2a0449649abd80f",
+      "projectId": "fairwater",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:682a13958a7a842514ed144d"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:f6bc12f987ef70500f3a",
+      "leftObservationId": "obs:588ad7b399650a37667d95f2",
+      "projectId": "polaris-forge-1",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:5d8423940ba1bcae09fdbc53"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:6d111a046f7c9e92dbd0",
+      "leftObservationId": "obs:588ad7b399650a37667d95f2",
+      "projectId": "polaris-forge-1",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8a7544205e36e5b1ee1f34b6"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:68c0859994a314237e72",
+      "leftObservationId": "obs:588ad7b399650a37667d95f2",
+      "projectId": "polaris-forge-1",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:e952f019f9ff432c270dbabc"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:3cd7b140f5f3044cf2da",
+      "leftObservationId": "obs:5d8423940ba1bcae09fdbc53",
+      "projectId": "polaris-forge-1",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:8a7544205e36e5b1ee1f34b6"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:6715c4d92d31c657ef60",
+      "leftObservationId": "obs:5d8423940ba1bcae09fdbc53",
+      "projectId": "polaris-forge-1",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:e952f019f9ff432c270dbabc"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:a05f208a47c7c46e5c1c",
+      "leftObservationId": "obs:8a7544205e36e5b1ee1f34b6",
+      "projectId": "polaris-forge-1",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:e952f019f9ff432c270dbabc"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:2db3d3bfa1ee05504e48",
+      "leftObservationId": "obs:075250e0a32d03d5e05c3acd",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:b8f49cd81cbfb41c27da1492"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:89b30d944b6800651181",
+      "leftObservationId": "obs:075250e0a32d03d5e05c3acd",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:d12fca4b5eee4cc76e3567c5"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:98cc6787b76a9eb3f03c",
+      "leftObservationId": "obs:075250e0a32d03d5e05c3acd",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:d4860ed506672b52014d78a3"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:cb25a3ac169681c4c673",
+      "leftObservationId": "obs:075250e0a32d03d5e05c3acd",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:d5e493220c3af762cd40eb7c"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:50094a0d7e75521b428a",
+      "leftObservationId": "obs:075250e0a32d03d5e05c3acd",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:e4fb560a88dec105278e0618"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:507319c81384f64e26b5",
+      "leftObservationId": "obs:b8f49cd81cbfb41c27da1492",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:d12fca4b5eee4cc76e3567c5"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:dea20221a1ae0d06ab15",
+      "leftObservationId": "obs:b8f49cd81cbfb41c27da1492",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:d4860ed506672b52014d78a3"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:1e9a03ca598f90b992ce",
+      "leftObservationId": "obs:b8f49cd81cbfb41c27da1492",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:d5e493220c3af762cd40eb7c"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:b3bf68966bc9cfaf7027",
+      "leftObservationId": "obs:b8f49cd81cbfb41c27da1492",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:e4fb560a88dec105278e0618"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:e038c28b845e3caaf4b4",
+      "leftObservationId": "obs:d12fca4b5eee4cc76e3567c5",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:d4860ed506672b52014d78a3"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:8ef94e6be815619bcb37",
+      "leftObservationId": "obs:d12fca4b5eee4cc76e3567c5",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:d5e493220c3af762cd40eb7c"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:e34ee3888f048d582ede",
+      "leftObservationId": "obs:d12fca4b5eee4cc76e3567c5",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:e4fb560a88dec105278e0618"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:7c68690292019fd3482c",
+      "leftObservationId": "obs:d4860ed506672b52014d78a3",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:d5e493220c3af762cd40eb7c"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:a46d9b30cfe0a52da18e",
+      "leftObservationId": "obs:d4860ed506672b52014d78a3",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "UNRESOLVED",
+      "rightObservationId": "obs:e4fb560a88dec105278e0618"
+    },
+    {
+      "decision": "DO_NOT_ADD",
+      "id": "dna:42a8a15df42c24e44df3",
+      "leftObservationId": "obs:d5e493220c3af762cd40eb7c",
+      "projectId": "el-paso",
+      "reason": "Different concepts, sources or vintages may represent overlapping assets; non-overlap not qualified",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "rightObservationId": "obs:e4fb560a88dec105278e0618"
+    }
+  ],
+  "aggregationAllowed": false,
+  "legacyPairCount": 62
+}

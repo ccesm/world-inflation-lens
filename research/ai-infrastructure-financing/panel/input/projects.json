@@ -1,0 +1,258 @@
+[
+  {
+    "id": "quincy",
+    "projectName": "Microsoft Quincy campus",
+    "companyIds": [
+      "MSFT"
+    ],
+    "assetIdentity": "quincy-asset",
+    "primaryArchetype": "CORPORATE_OWNED",
+    "secondaryFeatures": [
+      "CORPORATE_DEVELOPED",
+      "WATER_REUSE"
+    ],
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "locationClaimId": "quincy:3c:location:2026-01-13",
+    "statusClaimIds": [
+      "quincy:3c:project-status:2026-01-13"
+    ],
+    "materialClaimIds": [
+      "quincy:3c:asset-type:2026-01-13"
+    ],
+    "relationshipClaimIds": [
+      "quincy:3c:edge-msft-DEVELOPS-quincy:2026-01-13"
+    ],
+    "admissionSourceIds": [
+      "quincy-community"
+    ],
+    "announcedAt": null,
+    "expectedOperationalDate": null,
+    "actualOperationalDate": null,
+    "coverageRole": "CORE_COMPANY_PROJECT"
+  },
+  {
+    "id": "google-midlothian",
+    "projectName": "Google Midlothian data center",
+    "companyIds": [
+      "GOOG"
+    ],
+    "assetIdentity": "google-midlothian-asset",
+    "primaryArchetype": "UNKNOWN",
+    "secondaryFeatures": [
+      "CORPORATE_BRANDED_SITE_TITLE_UNQUALIFIED"
+    ],
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "locationClaimId": "google-midlothian:3c:location:2026-10-07",
+    "statusClaimIds": [
+      "google-midlothian:3c:project-status:2026-10-07"
+    ],
+    "materialClaimIds": [
+      "google-midlothian:3c:asset-type:2026-10-07"
+    ],
+    "relationshipClaimIds": [
+      "google-midlothian:3c:edge-goog-OPERATES-google-midlothian:2026-10-07",
+      "google-midlothian:3c:edge-google-OPERATES-google-midlothian:2026-10-07"
+    ],
+    "admissionSourceIds": [
+      "google-texas-locations"
+    ],
+    "announcedAt": null,
+    "expectedOperationalDate": null,
+    "actualOperationalDate": null,
+    "coverageRole": "CORE_COMPANY_PROJECT"
+  },
+  {
+    "id": "google-red-oak",
+    "projectName": "Google Red Oak data center",
+    "companyIds": [
+      "GOOG"
+    ],
+    "assetIdentity": "google-red-oak-asset",
+    "primaryArchetype": "UNKNOWN",
+    "secondaryFeatures": [
+      "CORPORATE_BRANDED_SITE_TITLE_UNQUALIFIED"
+    ],
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "locationClaimId": "google-red-oak:3c:location:2026-10-07",
+    "statusClaimIds": [
+      "google-red-oak:3c:project-status:2026-10-07"
+    ],
+    "materialClaimIds": [
+      "google-red-oak:3c:asset-type:2026-10-07"
+    ],
+    "relationshipClaimIds": [
+      "google-red-oak:3c:edge-goog-OPERATES-google-red-oak:2026-10-07",
+      "google-red-oak:3c:edge-google-OPERATES-google-red-oak:2026-10-07"
+    ],
+    "admissionSourceIds": [
+      "google-texas-locations"
+    ],
+    "announcedAt": null,
+    "expectedOperationalDate": null,
+    "actualOperationalDate": null,
+    "coverageRole": "CORE_COMPANY_PROJECT"
+  },
+  {
+    "id": "aws-canton",
+    "projectName": "AWS Canton campus",
+    "companyIds": [
+      "AMZN"
+    ],
+    "assetIdentity": "aws-canton-asset",
+    "primaryArchetype": "UNKNOWN",
+    "secondaryFeatures": [
+      "CORPORATE_DEVELOPMENT",
+      "OWNERSHIP_UNQUALIFIED"
+    ],
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "locationClaimId": "aws-canton:3c:location:2026-04-09",
+    "statusClaimIds": [
+      "aws-canton:3c:project-status:2026-04-09"
+    ],
+    "materialClaimIds": [
+      "aws-canton:3c:asset-type:2026-04-09"
+    ],
+    "relationshipClaimIds": [
+      "aws-canton:3c:edge-amzn-OPERATES-aws-canton:2026-04-09"
+    ],
+    "admissionSourceIds": [
+      "amazon-mississippi-current"
+    ],
+    "announcedAt": null,
+    "expectedOperationalDate": null,
+    "actualOperationalDate": null,
+    "coverageRole": "CORE_COMPANY_PROJECT"
+  },
+  {
+    "id": "aws-warren",
+    "projectName": "AWS Warren County campus",
+    "companyIds": [
+      "AMZN"
+    ],
+    "assetIdentity": "aws-warren-asset",
+    "primaryArchetype": "UNKNOWN",
+    "secondaryFeatures": [
+      "CORPORATE_DEVELOPMENT",
+      "OWNERSHIP_UNQUALIFIED"
+    ],
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "locationClaimId": "aws-warren:3c:location:2025-11-20",
+    "statusClaimIds": [
+      "aws-warren:3c:project-status:2025-11-20"
+    ],
+    "materialClaimIds": [
+      "aws-warren:3c:asset-type:2025-11-20"
+    ],
+    "relationshipClaimIds": [
+      "aws-warren:3c:edge-amzn-OPERATES-aws-warren:2025-11-20"
+    ],
+    "admissionSourceIds": [
+      "amazon-warren"
+    ],
+    "announcedAt": "2025-11-20",
+    "expectedOperationalDate": null,
+    "actualOperationalDate": null,
+    "coverageRole": "CORE_COMPANY_PROJECT"
+  },
+  {
+    "id": "el-paso",
+    "projectName": "Meta El Paso campus",
+    "companyIds": [
+      "META"
+    ],
+    "assetIdentity": "el-paso-asset",
+    "primaryArchetype": "JV_PROJECT_FINANCED",
+    "secondaryFeatures": [
+      "PROPOSED_JV_AT_CLOSE",
+      "FUTURE_LEASE",
+      "CONDITIONAL_RVG"
+    ],
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "locationClaimId": "el-paso:3c:location:2025-10-15",
+    "statusClaimIds": [
+      "el-paso:3c:project-status:2025-10-15",
+      "el-paso:3c:project-status:2026-07-28"
+    ],
+    "materialClaimIds": [
+      "el-paso:3c:asset-type:2025-10-15"
+    ],
+    "relationshipClaimIds": [
+      "el-paso:3c:edge-meta-DEVELOPS-el-paso:2025-10-15",
+      "el-paso:3c:edge-meta-LEASES-el-paso-venture:2026-07-28",
+      "el-paso:3c:edge-blackrock-funds-PARTIALLY_OWNS-el-paso-venture:2026-07-28"
+    ],
+    "admissionSourceIds": [
+      "el-paso-groundbreaking",
+      "el-paso-jv"
+    ],
+    "announcedAt": "2025-10-15",
+    "expectedOperationalDate": null,
+    "actualOperationalDate": null,
+    "coverageRole": "CORE_COMPANY_PROJECT"
+  },
+  {
+    "id": "abilene",
+    "projectName": "Abilene Stargate campus",
+    "companyIds": [
+      "ORCL"
+    ],
+    "assetIdentity": "abilene-asset",
+    "primaryArchetype": "MIXED",
+    "secondaryFeatures": [
+      "DEVELOPER_JV",
+      "LEASE_TERMS_UNQUALIFIED"
+    ],
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "locationClaimId": "abilene:3c:location:2026-10-07",
+    "statusClaimIds": [
+      "abilene:3c:project-status:2026-10-07"
+    ],
+    "materialClaimIds": [
+      "abilene:3c:asset-type:2026-10-07"
+    ],
+    "relationshipClaimIds": [
+      "abilene:3c:edge-orcl-OPERATES-abilene:2026-10-07",
+      "abilene:3c:edge-crusoe-DEVELOPS-abilene:2025-05-21"
+    ],
+    "admissionSourceIds": [
+      "oracle-abilene"
+    ],
+    "announcedAt": null,
+    "expectedOperationalDate": null,
+    "actualOperationalDate": null,
+    "coverageRole": "CORE_COMPANY_PROJECT"
+  },
+  {
+    "id": "jupiter",
+    "projectName": "Project Jupiter",
+    "companyIds": [
+      "ORCL"
+    ],
+    "assetIdentity": "jupiter-asset",
+    "primaryArchetype": "MIXED",
+    "secondaryFeatures": [
+      "DEVELOPER_SITE",
+      "OFF_GRID_POWER_PLAN",
+      "LEGAL_FINANCING_UNAVAILABLE"
+    ],
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "locationClaimId": "jupiter:3c:location:2026-03-03",
+    "statusClaimIds": [
+      "jupiter:3c:project-status:2026-03-03",
+      "jupiter:3c:project-status:2026-10-07"
+    ],
+    "materialClaimIds": [
+      "jupiter:3c:asset-type:2026-03-03"
+    ],
+    "relationshipClaimIds": [
+      "jupiter:3c:edge-orcl-OPERATES-jupiter:2026-03-03"
+    ],
+    "admissionSourceIds": [
+      "jupiter-march-power"
+    ],
+    "announcedAt": null,
+    "expectedOperationalDate": null,
+    "actualOperationalDate": null,
+    "coverageRole": "CORE_COMPANY_PROJECT"
+  }
+]

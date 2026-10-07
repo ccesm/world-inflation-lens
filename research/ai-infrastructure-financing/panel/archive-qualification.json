@@ -1,0 +1,246 @@
+{
+  "valid": true,
+  "objectCount": 34,
+  "rawBytes": 13716694,
+  "manifestHash": "ba51b114e8cef048d781ce0ef5e74d50e5474e88c928adf3d2233ae2cc15aff9",
+  "results": [
+    {
+      "sourceId": "brookings-paper",
+      "sourceVersion": "brookings-paper@bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4",
+      "sourceHash": "bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4",
+      "status": "HASH_MATCH",
+      "byteSize": 991052
+    },
+    {
+      "sourceId": "cc-pimco",
+      "sourceVersion": "cc-pimco@bf5d7ba6ad5abb85e13d61504b73da27806aad0422b04ebcdd146fc9a4d2f65e",
+      "sourceHash": "bf5d7ba6ad5abb85e13d61504b73da27806aad0422b04ebcdd146fc9a4d2f65e",
+      "status": "HASH_MATCH",
+      "byteSize": 247566
+    },
+    {
+      "sourceId": "meta-engineering",
+      "sourceVersion": "meta-engineering@c93b2e23bd2c3cfcadb5fb98deb417c1623c67407237343086dea2f325b47076",
+      "sourceHash": "c93b2e23bd2c3cfcadb5fb98deb417c1623c67407237343086dea2f325b47076",
+      "status": "HASH_MATCH",
+      "byteSize": 133318
+    },
+    {
+      "sourceId": "meta-expansion",
+      "sourceVersion": "meta-expansion@eeab6bdf49ccf9875114d30a14cf7118aacb41675c7a287c476cd417d439f1ff",
+      "sourceHash": "eeab6bdf49ccf9875114d30a14cf7118aacb41675c7a287c476cd417d439f1ff",
+      "status": "HASH_MATCH",
+      "byteSize": 383724
+    },
+    {
+      "sourceId": "entergy-substation",
+      "sourceVersion": "entergy-substation@bd22659bb91eacb932cc45fb7790bf80c69b8f9e14ea9774c43f8fb23c5057d1",
+      "sourceHash": "bd22659bb91eacb932cc45fb7790bf80c69b8f9e14ea9774c43f8fb23c5057d1",
+      "status": "HASH_MATCH",
+      "byteSize": 99505
+    },
+    {
+      "sourceId": "entergy-approval",
+      "sourceVersion": "entergy-approval@ac56b7876c50ca14992b17631876686728e64ffd634d113bd0a8f5957a8c432a",
+      "sourceHash": "ac56b7876c50ca14992b17631876686728e64ffd634d113bd0a8f5957a8c432a",
+      "status": "HASH_MATCH",
+      "byteSize": 102738
+    },
+    {
+      "sourceId": "entergy-expansion",
+      "sourceVersion": "entergy-expansion@4ee950b702576c79b41fb6600434948e0ed81bdb73c2f2e5f7d612b0fa00baea",
+      "sourceHash": "4ee950b702576c79b41fb6600434948e0ed81bdb73c2f2e5f7d612b0fa00baea",
+      "status": "HASH_MATCH",
+      "byteSize": 107499
+    },
+    {
+      "sourceId": "meta-jv-pdf",
+      "sourceVersion": "meta-jv-pdf@5dca08e7eee961316ccea1149c785b72951bc0e1744cc7038a0cfa18f7192b61",
+      "sourceHash": "5dca08e7eee961316ccea1149c785b72951bc0e1744cc7038a0cfa18f7192b61",
+      "status": "HASH_MATCH",
+      "byteSize": 100543
+    },
+    {
+      "sourceId": "entergy-reply",
+      "sourceVersion": "entergy-reply@d79e563d94438ad86adbfecdfa5d6d8a8b0a3a0cbd3790b9cd8d302e39af9fa3",
+      "sourceHash": "d79e563d94438ad86adbfecdfa5d6d8a8b0a3a0cbd3790b9cd8d302e39af9fa3",
+      "status": "HASH_MATCH",
+      "byteSize": 2306971
+    },
+    {
+      "sourceId": "fairwater-build",
+      "sourceVersion": "fairwater-build@bfb2f61bdb6537896e89b27218f941c305178558da12eacc80d999af1b25c3f4",
+      "sourceHash": "bfb2f61bdb6537896e89b27218f941c305178558da12eacc80d999af1b25c3f4",
+      "status": "HASH_MATCH",
+      "byteSize": 144731
+    },
+    {
+      "sourceId": "fairwater-investment",
+      "sourceVersion": "fairwater-investment@b68194156766ac5ccbeb0e042f4972d8842af5e7ebd412e91234fdcb010d0e76",
+      "sourceHash": "b68194156766ac5ccbeb0e042f4972d8842af5e7ebd412e91234fdcb010d0e76",
+      "status": "HASH_MATCH",
+      "byteSize": 169596
+    },
+    {
+      "sourceId": "fairwater-tid",
+      "sourceVersion": "fairwater-tid@2414d4045470bd1823751a35043a0348e48e0894f11ebad0aad1130e1e1e1a2f",
+      "sourceHash": "2414d4045470bd1823751a35043a0348e48e0894f11ebad0aad1130e1e1e1a2f",
+      "status": "HASH_MATCH",
+      "byteSize": 392198
+    },
+    {
+      "sourceId": "fairwater-land",
+      "sourceVersion": "fairwater-land@df567f13c01ac56549dd106943c2334613e0d62c4bd07a4135994aaab81bf212",
+      "sourceHash": "df567f13c01ac56549dd106943c2334613e0d62c4bd07a4135994aaab81bf212",
+      "status": "HASH_MATCH",
+      "byteSize": 113995
+    },
+    {
+      "sourceId": "fairwater-current",
+      "sourceVersion": "fairwater-current@065274437ddd5133e8911a8d47ce882d10638af5ae190e45f74e3b88ebe6bc93",
+      "sourceHash": "065274437ddd5133e8911a8d47ce882d10638af5ae190e45f74e3b88ebe6bc93",
+      "status": "HASH_MATCH",
+      "byteSize": 122706
+    },
+    {
+      "sourceId": "pf1-2025q1",
+      "sourceVersion": "pf1-2025q1@2b8105eb29244dc416082fbd94dc7f63ed514be5fff37b0d1665250a60188b53",
+      "sourceHash": "2b8105eb29244dc416082fbd94dc7f63ed514be5fff37b0d1665250a60188b53",
+      "status": "HASH_MATCH",
+      "byteSize": 1392279
+    },
+    {
+      "sourceId": "pf1-2025q2",
+      "sourceVersion": "pf1-2025q2@2b8d3175a389a884d23c34ec96b289e252baf101ab2338388a91aa3f6a26d7fe",
+      "sourceHash": "2b8d3175a389a884d23c34ec96b289e252baf101ab2338388a91aa3f6a26d7fe",
+      "status": "HASH_MATCH",
+      "byteSize": 599490
+    },
+    {
+      "sourceId": "pf1-2026release",
+      "sourceVersion": "pf1-2026release@23e2360ad4415bbd56f2e696090cf2e36b3b64bf291aaf707fcd4431da45db45",
+      "sourceHash": "23e2360ad4415bbd56f2e696090cf2e36b3b64bf291aaf707fcd4431da45db45",
+      "status": "HASH_MATCH",
+      "byteSize": 485049
+    },
+    {
+      "sourceId": "lpsc-order",
+      "sourceVersion": "lpsc-order@9185ef7e4130785574b53f0a0cff7216390428399d2aaac0265eebb7da838aaf",
+      "sourceHash": "9185ef7e4130785574b53f0a0cff7216390428399d2aaac0265eebb7da838aaf",
+      "status": "HASH_MATCH",
+      "byteSize": 2456110
+    },
+    {
+      "sourceId": "fairwater-online",
+      "sourceVersion": "fairwater-online@5d4fcbaad417ead3fca5ab44272bfc5a4f46f805ba3182c06b4e21e9d13bab02",
+      "sourceHash": "5d4fcbaad417ead3fca5ab44272bfc5a4f46f805ba3182c06b4e21e9d13bab02",
+      "status": "HASH_MATCH",
+      "byteSize": 195353
+    },
+    {
+      "sourceId": "pf1-initial-leases",
+      "sourceVersion": "pf1-initial-leases@c18bd6a600e0cf8b5440c8c1b712361152fac32db81c25bcaee503a9eae3bfe8",
+      "sourceHash": "c18bd6a600e0cf8b5440c8c1b712361152fac32db81c25bcaee503a9eae3bfe8",
+      "status": "HASH_MATCH",
+      "byteSize": 19770
+    },
+    {
+      "sourceId": "pf1-macquarie",
+      "sourceVersion": "pf1-macquarie@271eabba21da46526d40eaa05d9e0ce4cf33aad9f465aaf81c553f0ea00e3965",
+      "sourceHash": "271eabba21da46526d40eaa05d9e0ce4cf33aad9f465aaf81c553f0ea00e3965",
+      "status": "HASH_MATCH",
+      "byteSize": 353101
+    },
+    {
+      "sourceId": "quincy-water",
+      "sourceVersion": "quincy-water@86cd1727d0b4a1e46b7f12ecb8a641586fe437d9b1d87dcca9148f3b4d85488d",
+      "sourceHash": "86cd1727d0b4a1e46b7f12ecb8a641586fe437d9b1d87dcca9148f3b4d85488d",
+      "status": "HASH_MATCH",
+      "byteSize": 198980
+    },
+    {
+      "sourceId": "quincy-community",
+      "sourceVersion": "quincy-community@0aed37166aafadf3cb34ede888d9c41c8f84684e8f176b35f922ddc227f888c9",
+      "sourceHash": "0aed37166aafadf3cb34ede888d9c41c8f84684e8f176b35f922ddc227f888c9",
+      "status": "HASH_MATCH",
+      "byteSize": 193410
+    },
+    {
+      "sourceId": "google-texas-locations",
+      "sourceVersion": "google-texas-locations@1da281c3868960d682c172a8a4e02f33df18d9ab22fc38cb1f9e57bf15c63d73",
+      "sourceHash": "1da281c3868960d682c172a8a4e02f33df18d9ab22fc38cb1f9e57bf15c63d73",
+      "status": "HASH_MATCH",
+      "byteSize": 188439
+    },
+    {
+      "sourceId": "amazon-madison",
+      "sourceVersion": "amazon-madison@f8953a09b8c4ab75262f94c706180eae6f29531d13173abf1e82157152acaf45",
+      "sourceHash": "f8953a09b8c4ab75262f94c706180eae6f29531d13173abf1e82157152acaf45",
+      "status": "HASH_MATCH",
+      "byteSize": 212917
+    },
+    {
+      "sourceId": "amazon-warren",
+      "sourceVersion": "amazon-warren@676ca73200f5522bb5a83c704f67e58ca88a7807f0eb677b5cb035a7a73afdf8",
+      "sourceHash": "676ca73200f5522bb5a83c704f67e58ca88a7807f0eb677b5cb035a7a73afdf8",
+      "status": "HASH_MATCH",
+      "byteSize": 232251
+    },
+    {
+      "sourceId": "amazon-mississippi-current",
+      "sourceVersion": "amazon-mississippi-current@c6a510ddaa8fdcc79a529b2d6f3982b4a87cc82d90a1d47b94e8342fdbf663ec",
+      "sourceHash": "c6a510ddaa8fdcc79a529b2d6f3982b4a87cc82d90a1d47b94e8342fdbf663ec",
+      "status": "HASH_MATCH",
+      "byteSize": 242332
+    },
+    {
+      "sourceId": "el-paso-groundbreaking",
+      "sourceVersion": "el-paso-groundbreaking@c12f4bd741e2fc52c74c7a980e2b837e3a5031f1757b0cbda46bc90ad0b1d5c6",
+      "sourceHash": "c12f4bd741e2fc52c74c7a980e2b837e3a5031f1757b0cbda46bc90ad0b1d5c6",
+      "status": "HASH_MATCH",
+      "byteSize": 768799
+    },
+    {
+      "sourceId": "el-paso-jv",
+      "sourceVersion": "el-paso-jv@a45dc02473ab49ea9ee1b369857bb6a3acc0025931acfd754bba7d11ae1f91b3",
+      "sourceHash": "a45dc02473ab49ea9ee1b369857bb6a3acc0025931acfd754bba7d11ae1f91b3",
+      "status": "HASH_MATCH",
+      "byteSize": 338200
+    },
+    {
+      "sourceId": "abilene-jv",
+      "sourceVersion": "abilene-jv@0f2b8b39e62634c6b22aaeabd06069a489e70375a3b265adc02486d6fee59405",
+      "sourceHash": "0f2b8b39e62634c6b22aaeabd06069a489e70375a3b265adc02486d6fee59405",
+      "status": "HASH_MATCH",
+      "byteSize": 248936
+    },
+    {
+      "sourceId": "oracle-abilene",
+      "sourceVersion": "oracle-abilene@b93f5cfdbbd1ad6bc61c92cbdf2412d42b0564221811ef866a17dd168772a99d",
+      "sourceHash": "b93f5cfdbbd1ad6bc61c92cbdf2412d42b0564221811ef866a17dd168772a99d",
+      "status": "HASH_MATCH",
+      "byteSize": 31667
+    },
+    {
+      "sourceId": "oracle-tracker",
+      "sourceVersion": "oracle-tracker@d562664ffee92c645fe415cd2614800c5a63e1fd491fea08086a60f31876e8d6",
+      "sourceHash": "d562664ffee92c645fe415cd2614800c5a63e1fd491fea08086a60f31876e8d6",
+      "status": "HASH_MATCH",
+      "byteSize": 76497
+    },
+    {
+      "sourceId": "jupiter-march-power",
+      "sourceVersion": "jupiter-march-power@f4e0866256b48592c79cc7fef69d4a1624688dafb908b37b7654adf49f399e28",
+      "sourceHash": "f4e0866256b48592c79cc7fef69d4a1624688dafb908b37b7654adf49f399e28",
+      "status": "HASH_MATCH",
+      "byteSize": 34289
+    },
+    {
+      "sourceId": "oracle-jupiter",
+      "sourceVersion": "oracle-jupiter@62973ff79d15a569f581907fa2f4ef962741998e5e259a8918f9ad9adc1e613b",
+      "sourceHash": "62973ff79d15a569f581907fa2f4ef962741998e5e259a8918f9ad9adc1e613b",
+      "status": "HASH_MATCH",
+      "byteSize": 32683
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "sourceId": "quincy-water",
+    "url": "https://local.microsoft.com/blog/partnering-with-the-city-of-quincy-to-open-washingtons-first-industrial-water-reuse-center/",
+    "resolvedURL": "https://local.microsoft.com/blog/partnering-with-the-city-of-quincy-to-open-washingtons-first-industrial-water-reuse-center/",
+    "publisher": "Microsoft",
+    "title": "Quincy water reuse facility",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2021-08-27",
+    "modifiedAt": "2026-03-18",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:40.199Z",
+    "MIME": "text/html",
+    "byteSize": 198980,
+    "sourceHash": "86cd1727d0b4a1e46b7f12ecb8a641586fe437d9b1d87dcca9148f3b4d85488d",
+    "sourceVersion": "quincy-water@86cd1727d0b4a1e46b7f12ecb8a641586fe437d9b1d87dcca9148f3b4d85488d",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "local.microsoft.com",
+        "prefix": "/blog/partnering-with-the-city-of-quincy-to-open-washingtons-first-industrial-water-reuse-center/"
+      }
+    ]
+  },
+  {
+    "sourceId": "quincy-community",
+    "url": "https://blogs.microsoft.com/on-the-issues/2026/01/13/community-first-ai-infrastructure/",
+    "resolvedURL": "https://blogs.microsoft.com/on-the-issues/2026/01/13/community-first-ai-infrastructure/",
+    "publisher": "Microsoft",
+    "title": "Community-first AI infrastructure",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-01-13",
+    "modifiedAt": "2026-01-15",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:41.657Z",
+    "MIME": "text/html",
+    "byteSize": 193410,
+    "sourceHash": "0aed37166aafadf3cb34ede888d9c41c8f84684e8f176b35f922ddc227f888c9",
+    "sourceVersion": "quincy-community@0aed37166aafadf3cb34ede888d9c41c8f84684e8f176b35f922ddc227f888c9",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "blogs.microsoft.com",
+        "prefix": "/on-the-issues/2026/01/13/community-first-ai-infrastructure/"
+      }
+    ]
+  },
+  {
+    "sourceId": "google-texas-locations",
+    "url": "https://www.datacenters.google/locations/texas/",
+    "resolvedURL": "https://www.datacenters.google/locations/texas/",
+    "publisher": "Google",
+    "title": "Texas data center locations",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:42.994Z",
+    "MIME": "text/html",
+    "byteSize": 188439,
+    "sourceHash": "1da281c3868960d682c172a8a4e02f33df18d9ab22fc38cb1f9e57bf15c63d73",
+    "sourceVersion": "google-texas-locations@1da281c3868960d682c172a8a4e02f33df18d9ab22fc38cb1f9e57bf15c63d73",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.datacenters.google",
+        "prefix": "/locations/texas/"
+      }
+    ]
+  },
+  {
+    "sourceId": "amazon-madison",
+    "url": "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi",
+    "resolvedURL": "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi",
+    "publisher": "Amazon",
+    "title": "Madison County two-campus program",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2024-01-25",
+    "modifiedAt": "2024-01-25",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:44.604Z",
+    "MIME": "text/html",
+    "byteSize": 212917,
+    "sourceHash": "f8953a09b8c4ab75262f94c706180eae6f29531d13173abf1e82157152acaf45",
+    "sourceVersion": "amazon-madison@f8953a09b8c4ab75262f94c706180eae6f29531d13173abf1e82157152acaf45",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.aboutamazon.com",
+        "prefix": "/news/aws/aws-10-billion-investment-mississippi"
+      }
+    ]
+  },
+  {
+    "sourceId": "amazon-warren",
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-3-billion-mississippi-data-center-investment",
+    "resolvedURL": "https://www.aboutamazon.com/news/company-news/amazon-3-billion-mississippi-data-center-investment",
+    "publisher": "Amazon",
+    "title": "Warren County campus",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-11-20",
+    "modifiedAt": "2025-11-20",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:46.249Z",
+    "MIME": "text/html",
+    "byteSize": 232251,
+    "sourceHash": "676ca73200f5522bb5a83c704f67e58ca88a7807f0eb677b5cb035a7a73afdf8",
+    "sourceVersion": "amazon-warren@676ca73200f5522bb5a83c704f67e58ca88a7807f0eb677b5cb035a7a73afdf8",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.aboutamazon.com",
+        "prefix": "/news/company-news/amazon-3-billion-mississippi-data-center-investment"
+      }
+    ]
+  },
+  {
+    "sourceId": "amazon-mississippi-current",
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-25-billion-mississippi-data-centers",
+    "resolvedURL": "https://www.aboutamazon.com/news/company-news/amazon-25-billion-mississippi-data-centers",
+    "publisher": "Amazon",
+    "title": "Mississippi current context",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-04-09",
+    "modifiedAt": "2026-04-09",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:47.787Z",
+    "MIME": "text/html",
+    "byteSize": 242332,
+    "sourceHash": "c6a510ddaa8fdcc79a529b2d6f3982b4a87cc82d90a1d47b94e8342fdbf663ec",
+    "sourceVersion": "amazon-mississippi-current@c6a510ddaa8fdcc79a529b2d6f3982b4a87cc82d90a1d47b94e8342fdbf663ec",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.aboutamazon.com",
+        "prefix": "/news/company-news/amazon-25-billion-mississippi-data-centers"
+      }
+    ]
+  },
+  {
+    "sourceId": "madison-eda",
+    "url": "https://madisoncountyeda.com/amazon-web-services-to-invest-record-shattering-10-billion/",
+    "resolvedURL": null,
+    "publisher": "Madison County Economic Development Authority",
+    "title": "AWS project locations",
+    "sourceType": "PRIMARY_REGULATORY",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2024-01-25",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:49.356Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "madison-eda@WEB_REVIEW_20261007",
+    "qualificationStatus": "UNQUALIFIED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": "CONTENT_MISMATCH",
+    "reviewMethod": "Public text review only; raw source gap retained",
+    "allowedRoutes": [
+      {
+        "host": "madisoncountyeda.com",
+        "prefix": "/amazon-web-services-to-invest-record-shattering-10-billion/"
+      }
+    ]
+  },
+  {
+    "sourceId": "el-paso-groundbreaking",
+    "url": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+    "resolvedURL": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+    "publisher": "Meta",
+    "title": "El Paso groundbreaking and dated update",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-10-15",
+    "modifiedAt": "2026-03-26",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:51.075Z",
+    "MIME": "text/html",
+    "byteSize": 768799,
+    "sourceHash": "c12f4bd741e2fc52c74c7a980e2b837e3a5031f1757b0cbda46bc90ad0b1d5c6",
+    "sourceVersion": "el-paso-groundbreaking@c12f4bd741e2fc52c74c7a980e2b837e3a5031f1757b0cbda46bc90ad0b1d5c6",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "about.fb.com",
+        "prefix": "/news/2025/10/metas-new-ai-optimized-data-center-el-paso/"
+      }
+    ]
+  },
+  {
+    "sourceId": "el-paso-jv",
+    "url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+    "resolvedURL": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+    "publisher": "Meta",
+    "title": "El Paso venture announcement",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-07-28",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:53.375Z",
+    "MIME": "text/html",
+    "byteSize": 338200,
+    "sourceHash": "a45dc02473ab49ea9ee1b369857bb6a3acc0025931acfd754bba7d11ae1f91b3",
+    "sourceVersion": "el-paso-jv@a45dc02473ab49ea9ee1b369857bb6a3acc0025931acfd754bba7d11ae1f91b3",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "about.fb.com",
+        "prefix": "/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+      }
+    ]
+  },
+  {
+    "sourceId": "abilene-jv",
+    "url": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+    "resolvedURL": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+    "publisher": "Crusoe",
+    "title": "Abilene JV phase two",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-05-21",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:54.550Z",
+    "MIME": "text/html",
+    "byteSize": 248936,
+    "sourceHash": "0f2b8b39e62634c6b22aaeabd06069a489e70375a3b265adc02486d6fee59405",
+    "sourceVersion": "abilene-jv@0f2b8b39e62634c6b22aaeabd06069a489e70375a3b265adc02486d6fee59405",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.crusoe.ai",
+        "prefix": "/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+      }
+    ]
+  },
+  {
+    "sourceId": "abilene-adviser",
+    "url": "https://www.nmrk.com/insights/press-releases/newmark-facilitates-7-1-billion-construction-loan-to-develop-ai-data-center",
+    "resolvedURL": null,
+    "publisher": "Newmark",
+    "title": "Abilene construction financing",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:55.833Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "abilene-adviser@WEB_REVIEW_20261007",
+    "qualificationStatus": "UNQUALIFIED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED",
+    "reviewMethod": "Public text review only; raw source gap retained",
+    "allowedRoutes": [
+      {
+        "host": "www.nmrk.com",
+        "prefix": "/insights/press-releases/newmark-facilitates-7-1-billion-construction-loan-to-develop-ai-data-center"
+      }
+    ]
+  },
+  {
+    "sourceId": "oracle-abilene",
+    "url": "https://www.oracle.com/data-centers/abilene/",
+    "resolvedURL": "https://www.oracle.com/data-centers/abilene/",
+    "publisher": "Oracle",
+    "title": "Abilene data center facts",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:57.109Z",
+    "MIME": "text/html",
+    "byteSize": 31667,
+    "sourceHash": "b93f5cfdbbd1ad6bc61c92cbdf2412d42b0564221811ef866a17dd168772a99d",
+    "sourceVersion": "oracle-abilene@b93f5cfdbbd1ad6bc61c92cbdf2412d42b0564221811ef866a17dd168772a99d",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.oracle.com",
+        "prefix": "/data-centers/abilene/"
+      }
+    ]
+  },
+  {
+    "sourceId": "oracle-tracker",
+    "url": "https://www.oracle.com/data-centers/",
+    "resolvedURL": "https://www.oracle.com/data-centers/",
+    "publisher": "Oracle",
+    "title": "Oracle project tracker",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:58.619Z",
+    "MIME": "text/html",
+    "byteSize": 76497,
+    "sourceHash": "d562664ffee92c645fe415cd2614800c5a63e1fd491fea08086a60f31876e8d6",
+    "sourceVersion": "oracle-tracker@d562664ffee92c645fe415cd2614800c5a63e1fd491fea08086a60f31876e8d6",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.oracle.com",
+        "prefix": "/data-centers/"
+      }
+    ]
+  },
+  {
+    "sourceId": "jupiter-march-power",
+    "url": "https://www.oracle.com/news/announcement/blog/building-a-sustainable-future-in-new-mexico-2026-03-03/",
+    "resolvedURL": "https://www.oracle.com/news/announcement/blog/building-a-sustainable-future-in-new-mexico-2026-03-03/",
+    "publisher": "Oracle",
+    "title": "Project Jupiter initial power plan",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-03-03",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:59.815Z",
+    "MIME": "text/html",
+    "byteSize": 34289,
+    "sourceHash": "f4e0866256b48592c79cc7fef69d4a1624688dafb908b37b7654adf49f399e28",
+    "sourceVersion": "jupiter-march-power@f4e0866256b48592c79cc7fef69d4a1624688dafb908b37b7654adf49f399e28",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.oracle.com",
+        "prefix": "/news/announcement/blog/building-a-sustainable-future-in-new-mexico-2026-03-03/"
+      }
+    ]
+  },
+  {
+    "sourceId": "oracle-jupiter",
+    "url": "https://www.oracle.com/data-centers/dona-ana-county/",
+    "resolvedURL": "https://www.oracle.com/data-centers/dona-ana-county/",
+    "publisher": "Oracle",
+    "title": "Project Jupiter current facts",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:24:01.003Z",
+    "MIME": "text/html",
+    "byteSize": 32683,
+    "sourceHash": "62973ff79d15a569f581907fa2f4ef962741998e5e259a8918f9ad9adc1e613b",
+    "sourceVersion": "oracle-jupiter@62973ff79d15a569f581907fa2f4ef962741998e5e259a8918f9ad9adc1e613b",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.oracle.com",
+        "prefix": "/data-centers/dona-ana-county/"
+      }
+    ]
+  }
+]

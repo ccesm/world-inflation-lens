@@ -1,0 +1,52 @@
+[
+  {
+    "id": "quincy-power",
+    "projectId": "quincy",
+    "claimIds": [
+      "quincy:3c:water-infrastructure:2021-08-27",
+      "quincy:3c:power-source:2026-10-07"
+    ],
+    "utilityId": null,
+    "status": "PARTIAL"
+  },
+  {
+    "id": "aws-canton-power",
+    "projectId": "aws-canton",
+    "claimIds": [
+      "aws-canton:3c:power-source:2026-10-07"
+    ],
+    "utilityId": null,
+    "status": "PARTIAL"
+  },
+  {
+    "id": "el-paso-power",
+    "projectId": "el-paso",
+    "claimIds": [
+      "el-paso:3c:power-counterparty:2026-03-26",
+      "el-paso:3c:power-source:2026-10-07"
+    ],
+    "utilityId": null,
+    "status": "PARTIAL"
+  },
+  {
+    "id": "abilene-power",
+    "projectId": "abilene",
+    "claimIds": [
+      "abilene:3c:grid-region:2026-10-07",
+      "abilene:3c:power-source:2026-10-07"
+    ],
+    "utilityId": null,
+    "status": "PARTIAL"
+  },
+  {
+    "id": "jupiter-power",
+    "projectId": "jupiter",
+    "claimIds": [
+      "jupiter:3c:power-design:2026-03-03",
+      "jupiter:3c:power-design:2026-10-07",
+      "jupiter:3c:power-source:2026-10-07"
+    ],
+    "utilityId": null,
+    "status": "PARTIAL"
+  }
+]

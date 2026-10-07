@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "sourceId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "url": {
+        "type": "string",
+        "minLength": 1
+      },
+      "resolvedURL": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "minLength": 1
+      },
+      "publisher": {
+        "type": "string",
+        "minLength": 1
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "primaryOrSecondary": {
+        "type": "string",
+        "minLength": 1
+      },
+      "documentDate": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "modifiedAt": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "availableFrom": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "availabilityBasis": {
+        "type": "string",
+        "minLength": 1
+      },
+      "retrievedAt": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "MIME": {
+        "type": [
+          "null",
+          "string"
+        ],
+        "minLength": 1
+      },
+      "byteSize": {
+        "type": "number"
+      },
+      "sourceHash": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "sourceVersion": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "qualificationStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "retrievalStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "accessError": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "reviewMethod": {
+        "type": "string",
+        "minLength": 1
+      },
+      "allowedRoutes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "host": {
+              "type": "string",
+              "minLength": 1
+            },
+            "prefix": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "host",
+            "prefix"
+          ],
+          "additionalProperties": false
+        },
+        "uniqueItems": true
+      },
+      "sourceFamilyId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "previousSourceVersion": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      }
+    },
+    "required": [
+      "sourceId",
+      "url",
+      "resolvedURL",
+      "publisher",
+      "title",
+      "sourceType",
+      "primaryOrSecondary",
+      "documentDate",
+      "modifiedAt",
+      "availableFrom",
+      "availabilityBasis",
+      "retrievedAt",
+      "MIME",
+      "byteSize",
+      "sourceHash",
+      "sourceVersion",
+      "qualificationStatus",
+      "retrievalStatus",
+      "accessError",
+      "reviewMethod",
+      "allowedRoutes",
+      "sourceFamilyId",
+      "previousSourceVersion"
+    ],
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}

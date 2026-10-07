@@ -1,0 +1,449 @@
+[
+  {
+    "caseId": "hyperion",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Campus identity umbrella; not a harmonized MW denominator",
+    "entityId": "hyperion-jv",
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": null,
+    "scopeId": "hyperion-asset",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "meta-jv-pdf"
+    ]
+  },
+  {
+    "caseId": "hyperion",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Original JV buildings and long-lived power/cooling/connectivity; no GPU allocation",
+    "entityId": "hyperion-jv",
+    "notComparableTo": [
+      "hyperion-expansion"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-10",
+    "scopeId": "hyperion-jv-original",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "meta-jv-pdf"
+    ]
+  },
+  {
+    "caseId": "hyperion",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Original private securities transaction / rating description",
+    "entityId": "beignet-investor",
+    "notComparableTo": [
+      "hyperion-expansion"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-10",
+    "scopeId": "hyperion-financing-original",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "cc-pimco",
+      "sp-webinar"
+    ]
+  },
+  {
+    "caseId": "hyperion",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Later Louisiana regional investment and planned scalable campus; exact overlap unresolved",
+    "entityId": "meta",
+    "notComparableTo": [
+      "hyperion-jv-original",
+      "hyperion-financing-original"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2026-07",
+    "scopeId": "hyperion-expansion",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "meta-expansion"
+    ]
+  },
+  {
+    "caseId": "hyperion",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "2025 utility generation/transmission approval and customer service agreements",
+    "entityId": "entergy-la",
+    "notComparableTo": [
+      "hyperion-grid-expanded"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-08",
+    "scopeId": "hyperion-grid-original",
+    "scopeType": "UTILITY_SYSTEM",
+    "sourceIds": [
+      "lpsc-order"
+    ]
+  },
+  {
+    "caseId": "hyperion",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Later utility system generation/transmission plans; not campus IT load",
+    "entityId": "entergy-la",
+    "notComparableTo": [
+      "hyperion-grid-original"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2026-03",
+    "scopeId": "hyperion-grid-expanded",
+    "scopeType": "UTILITY_SYSTEM",
+    "sourceIds": [
+      "entergy-expansion"
+    ]
+  },
+  {
+    "caseId": "hyperion",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Meta venture-specific reporting snapshot; nonconsolidated VIE exposure",
+    "entityId": "meta",
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-12-31",
+    "scopeId": "hyperion-accounting-2025",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "meta-2025k"
+    ]
+  },
+  {
+    "caseId": "hyperion",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Meta venture-specific reporting snapshot; nonconsolidated VIE exposure",
+    "entityId": "meta",
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2026-06-30",
+    "scopeId": "hyperion-accounting-2026",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "meta-2026q2"
+    ]
+  },
+  {
+    "caseId": "fairwater",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "First Fairwater facility on 315-acre site; excludes second facility",
+    "entityId": "msft",
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": null,
+    "scopeId": "fairwater-asset",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "fairwater-build",
+      "fairwater-tid"
+    ]
+  },
+  {
+    "caseId": "fairwater",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Initial Microsoft investment pledge; not measured quarterly cash PP&E",
+    "entityId": "msft",
+    "notComparableTo": [
+      "fairwater-phase2"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-09",
+    "scopeId": "fairwater-phase1",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "fairwater-investment"
+    ]
+  },
+  {
+    "caseId": "fairwater",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Separate additional Wisconsin facility investment pledge",
+    "entityId": "msft",
+    "notComparableTo": [
+      "fairwater-phase1"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-09",
+    "scopeId": "fairwater-phase2",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "fairwater-investment"
+    ]
+  },
+  {
+    "caseId": "fairwater",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Renewable matching and service infrastructure, not datacenter IT load",
+    "entityId": "we-energies",
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-09",
+    "scopeId": "fairwater-power",
+    "scopeType": "UTILITY_SYSTEM",
+    "sourceIds": [
+      "fairwater-investment"
+    ]
+  },
+  {
+    "caseId": "polaris-forge-1",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Ellendale HPC campus; excludes crypto co-hosting and all other AI campuses",
+    "entityId": "apld",
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": null,
+    "scopeId": "polaris-forge-1-asset",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "pf1-2025q1"
+    ]
+  },
+  {
+    "caseId": "polaris-forge-1",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Three CoreWeave leases: 400MW contracted critical IT load, not energized capacity",
+    "entityId": "coreweave",
+    "notComparableTo": [
+      "pf1-live"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-08",
+    "scopeId": "pf1-contract",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "pf1-2025q1"
+    ]
+  },
+  {
+    "caseId": "polaris-forge-1",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "175MW reported live as of June 30 2026; later unarchived event not silently adopted",
+    "entityId": "apld",
+    "notComparableTo": [
+      "pf1-contract"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2026-06-30",
+    "scopeId": "pf1-live",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "pf1-2026release"
+    ]
+  },
+  {
+    "caseId": "polaris-forge-1",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "100MW ELN02 and 150MW ELN03 financing plus old loan refinance/reserves/expenses",
+    "entityId": "computeco",
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-11",
+    "scopeId": "pf1-debt250",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "pf1-2025q2"
+    ]
+  },
+  {
+    "caseId": "polaris-forge-1",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Building4 150MW financing and bridge refinance; separate instrument",
+    "entityId": "computeco3",
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2026-07",
+    "scopeId": "pf1-debt150",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "pf1-2026release"
+    ]
+  },
+  {
+    "caseId": "polaris-forge-1",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Original up-to900m campus preferred financing plan, not actual funded equity",
+    "entityId": "hpc-holdings",
+    "notComparableTo": [
+      "apld-platform-preferred"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-01",
+    "scopeId": "pf1-preferred-original",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "pf1-macquarie"
+    ]
+  },
+  {
+    "caseId": "polaris-forge-1",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Up-to5bn HPC platform preferred facility; not PF1 cost or funded amount",
+    "entityId": "hpc-holdings",
+    "notComparableTo": [
+      "pf1-preferred-original"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility.",
+    "period": "2025-01",
+    "scopeId": "apld-platform-preferred",
+    "scopeType": "CORPORATE_PROGRAM",
+    "sourceIds": [
+      "pf1-macquarie"
+    ]
+  },
+  {
+    "caseId": "polaris-forge-1",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "250MW issuer-reported operational critical IT load October2, rawsourcepending",
+    "entityId": "apld",
+    "notComparableTo": [
+      "pf1-contract"
+    ],
+    "notes": "Successive operational milestone, not contract capacity or synthetic change.",
+    "period": "2026-10-02",
+    "scopeId": "pf1-live-2026-10",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "pf1-current"
+    ]
+  },
+  {
+    "caseId": "quincy",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Distinct named site; no allocation of company-wide financial values",
+    "entityId": "msft",
+    "notComparableTo": [],
+    "notes": "No cross-layer addition",
+    "period": null,
+    "scopeId": "quincy-site",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "quincy-community"
+    ]
+  },
+  {
+    "caseId": "google-midlothian",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Distinct named site; no allocation of company-wide financial values",
+    "entityId": "goog",
+    "notComparableTo": [],
+    "notes": "No cross-layer addition",
+    "period": null,
+    "scopeId": "google-midlothian-site",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "google-texas-locations"
+    ]
+  },
+  {
+    "caseId": "google-red-oak",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Distinct named site; no allocation of company-wide financial values",
+    "entityId": "goog",
+    "notComparableTo": [],
+    "notes": "No cross-layer addition",
+    "period": null,
+    "scopeId": "google-red-oak-site",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "google-texas-locations"
+    ]
+  },
+  {
+    "caseId": "aws-canton",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Distinct named site; no allocation of company-wide financial values",
+    "entityId": "amzn",
+    "notComparableTo": [],
+    "notes": "No cross-layer addition",
+    "period": null,
+    "scopeId": "aws-canton-site",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "amazon-mississippi-current"
+    ]
+  },
+  {
+    "caseId": "aws-warren",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Distinct named site; no allocation of company-wide financial values",
+    "entityId": "amzn",
+    "notComparableTo": [],
+    "notes": "No cross-layer addition",
+    "period": null,
+    "scopeId": "aws-warren-site",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "amazon-warren"
+    ]
+  },
+  {
+    "caseId": "el-paso",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Distinct named site; no allocation of company-wide financial values",
+    "entityId": "meta",
+    "notComparableTo": [],
+    "notes": "No cross-layer addition",
+    "period": null,
+    "scopeId": "el-paso-site",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "el-paso-groundbreaking"
+    ]
+  },
+  {
+    "caseId": "abilene",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Distinct named site; no allocation of company-wide financial values",
+    "entityId": "orcl",
+    "notComparableTo": [],
+    "notes": "No cross-layer addition",
+    "period": null,
+    "scopeId": "abilene-site",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "oracle-abilene"
+    ]
+  },
+  {
+    "caseId": "jupiter",
+    "comparableTo": [],
+    "comparisonGroup": null,
+    "definition": "Distinct named site; no allocation of company-wide financial values",
+    "entityId": "orcl",
+    "notComparableTo": [],
+    "notes": "No cross-layer addition",
+    "period": null,
+    "scopeId": "jupiter-site",
+    "scopeType": "PROJECT_NATIVE_SCOPE",
+    "sourceIds": [
+      "jupiter-march-power"
+    ]
+  }
+]

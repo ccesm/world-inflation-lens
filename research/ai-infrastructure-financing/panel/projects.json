@@ -1,0 +1,452 @@
+[
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "meta-jv-pdf",
+      "meta-expansion",
+      "sp-webinar",
+      "lpsc-order",
+      "brookings-paper"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "hyperion-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "META"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "hyperion",
+    "locationClaimId": "hyperion:location",
+    "materialClaimIds": [
+      "hyperion:cost",
+      "hyperion:regional-plan",
+      "hyperion:financed-capacity",
+      "hyperion:planned-capacity",
+      "hyperion:original-developer",
+      "hyperion:legal-title-holder",
+      "hyperion:legal-jv",
+      "hyperion:meta-distribution"
+    ],
+    "primaryArchetype": "JV_PROJECT_FINANCED",
+    "projectName": "Meta Hyperion",
+    "relationshipClaimIds": [
+      "hyperion:edge-meta-PARTIALLY_OWNS-hyperion-jv",
+      "hyperion:edge-blue-owl-funds-PARTIALLY_OWNS-hyperion-jv",
+      "hyperion:edge-hyperion-jv-OWNS-hyperion",
+      "hyperion:edge-meta-LEASES-hyperion-jv",
+      "hyperion:edge-laidley-PURCHASES_POWER_FROM-entergy-la",
+      "hyperion:edge-meta-DEVELOPS-hyperion",
+      "hyperion:edge-project-beignet-holdings-OWNS-laidley"
+    ],
+    "secondaryFeatures": [
+      "CORPORATE_CONTRIBUTION",
+      "OPERATING_LEASE",
+      "CONDITIONAL_GUARANTEE"
+    ],
+    "statusClaimIds": [
+      "hyperion:status",
+      "hyperion:3c:project-status:2025-09-29"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "fairwater-build",
+      "fairwater-online",
+      "fairwater-tid",
+      "fairwater-investment"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "fairwater-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "MSFT"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "fairwater",
+    "locationClaimId": "fairwater:location",
+    "materialClaimIds": [
+      "fairwater:site-area",
+      "fairwater:building-area",
+      "fairwater:owner",
+      "fairwater:pledge",
+      "fairwater:second-pledge",
+      "fairwater:IT-MW",
+      "fairwater:realized-cost",
+      "fairwater:site-PP&E",
+      "fairwater:project-debt",
+      "fairwater:equity-funding-mix",
+      "fairwater:lease-amount",
+      "fairwater:guarantee-amount",
+      "fairwater:project-cash-flow",
+      "fairwater:AI-revenue"
+    ],
+    "primaryArchetype": "CORPORATE_OWNED",
+    "projectName": "Microsoft Fairwater1",
+    "relationshipClaimIds": [
+      "fairwater:edge-msft-DEVELOPS-fairwater",
+      "fairwater:edge-msft-OPERATES-fairwater"
+    ],
+    "secondaryFeatures": [
+      "PUBLIC_INFRASTRUCTURE",
+      "ENERGY_MATCHING"
+    ],
+    "statusClaimIds": [
+      "fairwater:status",
+      "fairwater:3c:project-status:2025-09-18"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "pf1-2025q1",
+      "pf1-2026release",
+      "pf1-current"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "polaris-forge-1-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [],
+    "coverageRole": "COMPARATIVE_REFERENCE_CASE",
+    "expectedOperationalDate": null,
+    "id": "polaris-forge-1",
+    "locationClaimId": "polaris-forge-1:location",
+    "materialClaimIds": [
+      "polaris-forge-1:contracted-capacity",
+      "polaris-forge-1:live-capacity",
+      "polaris-forge-1:tenant",
+      "polaris-forge-1:registered-title-holder",
+      "polaris-forge-1:project-cost",
+      "polaris-forge-1:utility",
+      "polaris-forge-1:PPA-value",
+      "polaris-forge-1:grid-cost",
+      "polaris-forge-1:AI-revenue",
+      "polaris-forge-1:project-cash-flow",
+      "polaris-forge-1:utilization",
+      "polaris-forge-1:live-capacity-2026-10"
+    ],
+    "primaryArchetype": "DEVELOPER_LEASE_FINANCED",
+    "projectName": "Applied Digital PolarisForge1 / CoreWeave",
+    "relationshipClaimIds": [
+      "polaris-forge-1:edge-coreweave-LEASES-eln02",
+      "polaris-forge-1:edge-coreweave-LEASES-eln03",
+      "polaris-forge-1:edge-coreweave-LEASES-eln02c",
+      "polaris-forge-1:edge-apld-DEVELOPS-polaris-forge-1",
+      "polaris-forge-1:edge-computeco-FINANCES-polaris-forge-1",
+      "polaris-forge-1:edge-computeco3-FINANCES-polaris-forge-1",
+      "polaris-forge-1:edge-mip-funds-FINANCES-hpc-holdings"
+    ],
+    "secondaryFeatures": [
+      "PROJECT_NOTES",
+      "PREFERRED_CAPITAL",
+      "COMPLETION_SUPPORT"
+    ],
+    "statusClaimIds": [
+      "polaris-forge-1:status",
+      "polaris-forge-1:3c:project-status:2025-06-02",
+      "polaris-forge-1:3c:project-status:2026-10-02"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "quincy-community"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "quincy-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "MSFT"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "quincy",
+    "locationClaimId": "quincy:3c:location:2026-01-13",
+    "materialClaimIds": [
+      "quincy:3c:asset-type:2026-01-13"
+    ],
+    "primaryArchetype": "CORPORATE_OWNED",
+    "projectName": "Microsoft Quincy campus",
+    "relationshipClaimIds": [
+      "quincy:3c:edge-msft-DEVELOPS-quincy:2026-01-13"
+    ],
+    "secondaryFeatures": [
+      "CORPORATE_DEVELOPED",
+      "WATER_REUSE"
+    ],
+    "statusClaimIds": [
+      "quincy:3c:project-status:2026-01-13"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "google-texas-locations"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "google-midlothian-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "GOOG"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "google-midlothian",
+    "locationClaimId": "google-midlothian:3c:location:2026-10-07",
+    "materialClaimIds": [
+      "google-midlothian:3c:asset-type:2026-10-07"
+    ],
+    "primaryArchetype": "UNKNOWN",
+    "projectName": "Google Midlothian data center",
+    "relationshipClaimIds": [
+      "google-midlothian:3c:edge-goog-OPERATES-google-midlothian:2026-10-07",
+      "google-midlothian:3c:edge-google-OPERATES-google-midlothian:2026-10-07"
+    ],
+    "secondaryFeatures": [
+      "CORPORATE_BRANDED_SITE_TITLE_UNQUALIFIED"
+    ],
+    "statusClaimIds": [
+      "google-midlothian:3c:project-status:2026-10-07"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "google-texas-locations"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "google-red-oak-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "GOOG"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "google-red-oak",
+    "locationClaimId": "google-red-oak:3c:location:2026-10-07",
+    "materialClaimIds": [
+      "google-red-oak:3c:asset-type:2026-10-07"
+    ],
+    "primaryArchetype": "UNKNOWN",
+    "projectName": "Google Red Oak data center",
+    "relationshipClaimIds": [
+      "google-red-oak:3c:edge-goog-OPERATES-google-red-oak:2026-10-07",
+      "google-red-oak:3c:edge-google-OPERATES-google-red-oak:2026-10-07"
+    ],
+    "secondaryFeatures": [
+      "CORPORATE_BRANDED_SITE_TITLE_UNQUALIFIED"
+    ],
+    "statusClaimIds": [
+      "google-red-oak:3c:project-status:2026-10-07"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "amazon-mississippi-current"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "aws-canton-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "AMZN"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "aws-canton",
+    "locationClaimId": "aws-canton:3c:location:2026-04-09",
+    "materialClaimIds": [
+      "aws-canton:3c:asset-type:2026-04-09"
+    ],
+    "primaryArchetype": "UNKNOWN",
+    "projectName": "AWS Canton campus",
+    "relationshipClaimIds": [
+      "aws-canton:3c:edge-amzn-OPERATES-aws-canton:2026-04-09"
+    ],
+    "secondaryFeatures": [
+      "CORPORATE_DEVELOPMENT",
+      "OWNERSHIP_UNQUALIFIED"
+    ],
+    "statusClaimIds": [
+      "aws-canton:3c:project-status:2026-04-09"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "amazon-warren"
+    ],
+    "announcedAt": "2025-11-20",
+    "assetIdentity": "aws-warren-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "AMZN"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "aws-warren",
+    "locationClaimId": "aws-warren:3c:location:2025-11-20",
+    "materialClaimIds": [
+      "aws-warren:3c:asset-type:2025-11-20"
+    ],
+    "primaryArchetype": "UNKNOWN",
+    "projectName": "AWS Warren County campus",
+    "relationshipClaimIds": [
+      "aws-warren:3c:edge-amzn-OPERATES-aws-warren:2025-11-20"
+    ],
+    "secondaryFeatures": [
+      "CORPORATE_DEVELOPMENT",
+      "OWNERSHIP_UNQUALIFIED"
+    ],
+    "statusClaimIds": [
+      "aws-warren:3c:project-status:2025-11-20"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "el-paso-groundbreaking",
+      "el-paso-jv"
+    ],
+    "announcedAt": "2025-10-15",
+    "assetIdentity": "el-paso-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "META"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "el-paso",
+    "locationClaimId": "el-paso:3c:location:2025-10-15",
+    "materialClaimIds": [
+      "el-paso:3c:asset-type:2025-10-15"
+    ],
+    "primaryArchetype": "JV_PROJECT_FINANCED",
+    "projectName": "Meta El Paso campus",
+    "relationshipClaimIds": [
+      "el-paso:3c:edge-meta-DEVELOPS-el-paso:2025-10-15",
+      "el-paso:3c:edge-meta-LEASES-el-paso-venture:2026-07-28",
+      "el-paso:3c:edge-blackrock-funds-PARTIALLY_OWNS-el-paso-venture:2026-07-28"
+    ],
+    "secondaryFeatures": [
+      "PROPOSED_JV_AT_CLOSE",
+      "FUTURE_LEASE",
+      "CONDITIONAL_RVG"
+    ],
+    "statusClaimIds": [
+      "el-paso:3c:project-status:2025-10-15",
+      "el-paso:3c:project-status:2026-07-28"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "oracle-abilene"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "abilene-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "ORCL"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "abilene",
+    "locationClaimId": "abilene:3c:location:2026-10-07",
+    "materialClaimIds": [
+      "abilene:3c:asset-type:2026-10-07"
+    ],
+    "primaryArchetype": "MIXED",
+    "projectName": "Abilene Stargate campus",
+    "relationshipClaimIds": [
+      "abilene:3c:edge-orcl-OPERATES-abilene:2026-10-07",
+      "abilene:3c:edge-crusoe-DEVELOPS-abilene:2025-05-21"
+    ],
+    "secondaryFeatures": [
+      "DEVELOPER_JV",
+      "LEASE_TERMS_UNQUALIFIED"
+    ],
+    "statusClaimIds": [
+      "abilene:3c:project-status:2026-10-07"
+    ]
+  },
+  {
+    "actualOperationalDate": null,
+    "admission": {
+      "reason": "Primary site/company relationship/status-or-explicit-unknown/material attribute/scope/provenance gate satisfied",
+      "state": "QUALIFIED_PROJECT"
+    },
+    "admissionSourceIds": [
+      "jupiter-march-power"
+    ],
+    "announcedAt": null,
+    "assetIdentity": "jupiter-asset",
+    "candidateState": "QUALIFICATION_CANDIDATE",
+    "companyIds": [
+      "ORCL"
+    ],
+    "coverageRole": "CORE_COMPANY_PROJECT",
+    "expectedOperationalDate": null,
+    "id": "jupiter",
+    "locationClaimId": "jupiter:3c:location:2026-03-03",
+    "materialClaimIds": [
+      "jupiter:3c:asset-type:2026-03-03"
+    ],
+    "primaryArchetype": "MIXED",
+    "projectName": "Project Jupiter",
+    "relationshipClaimIds": [
+      "jupiter:3c:edge-orcl-OPERATES-jupiter:2026-03-03"
+    ],
+    "secondaryFeatures": [
+      "DEVELOPER_SITE",
+      "OFF_GRID_POWER_PLAN",
+      "LEGAL_FINANCING_UNAVAILABLE"
+    ],
+    "statusClaimIds": [
+      "jupiter:3c:project-status:2026-03-03",
+      "jupiter:3c:project-status:2026-10-07"
+    ]
+  }
+]

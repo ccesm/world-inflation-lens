@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "entityType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "legalName": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "identityStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "claimIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "entityType",
+      "legalName",
+      "identityStatus",
+      "claimIds"
+    ],
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}

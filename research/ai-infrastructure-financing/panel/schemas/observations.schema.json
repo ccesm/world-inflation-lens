@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "observationId",
+      "projectId",
+      "entityId",
+      "layer",
+      "metricId",
+      "definitionId",
+      "scopeId",
+      "sourceVintage",
+      "claimId",
+      "availableFrom",
+      "sourceLocator",
+      "unit",
+      "operator",
+      "nativeDefinition",
+      "observedOrEstimated",
+      "evidenceClass",
+      "qualificationStatus",
+      "recordState",
+      "fieldFamily",
+      "overlapStatus",
+      "comparabilityStatus",
+      "publicationEligibility",
+      "sourceIds",
+      "sourceVersions",
+      "sourceHashes",
+      "documentDates",
+      "value",
+      "currency",
+      "capacityDefinition",
+      "previousClaimId",
+      "condition",
+      "period"
+    ],
+    "properties": {
+      "observationId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "projectId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "entityId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "layer": {
+        "enum": [
+          "PHYSICAL_ASSET",
+          "ACCOUNTING_EXPOSURE",
+          "FINANCING_EXPOSURE",
+          "ECONOMIC_OBLIGATION",
+          "POWER_INFRASTRUCTURE",
+          "MONETIZATION_EVIDENCE"
+        ]
+      },
+      "metricId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "definitionId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceVintage": {
+        "type": "string",
+        "minLength": 1
+      },
+      "claimId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "availableFrom": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceLocator": {
+        "type": "string",
+        "minLength": 1
+      },
+      "unit": {
+        "type": "string",
+        "minLength": 1
+      },
+      "operator": {
+        "type": "string",
+        "minLength": 1
+      },
+      "nativeDefinition": {
+        "type": "string",
+        "minLength": 1
+      },
+      "observedOrEstimated": {
+        "type": "string",
+        "minLength": 1
+      },
+      "evidenceClass": {
+        "enum": [
+          "PRIMARY_VERIFIED",
+          "PRIMARY_PARTIAL",
+          "SECONDARY_CORROBORATED",
+          "SECONDARY_ONLY",
+          "CONFLICTING_EVIDENCE",
+          "UNAVAILABLE"
+        ]
+      },
+      "qualificationStatus": {
+        "enum": [
+          "QUALIFIED",
+          "PARTIAL",
+          "REVIEW_REQUIRED",
+          "CONFLICTING",
+          "UNAVAILABLE"
+        ]
+      },
+      "recordState": {
+        "enum": [
+          "CURRENT",
+          "SUPERSEDED",
+          "RESTATED",
+          "CONFLICT_REQUIRES_REVIEW"
+        ]
+      },
+      "fieldFamily": {
+        "type": "string",
+        "minLength": 1
+      },
+      "overlapStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "comparabilityStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "publicationEligibility": {
+        "enum": [
+          "PUBLIC_READY",
+          "RESEARCH_ONLY",
+          "REVIEW_REQUIRED",
+          "NOT_PUBLIC"
+        ]
+      },
+      "sourceIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "sourceVersions": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "sourceHashes": {
+        "type": "array",
+        "items": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "documentDates": {
+        "type": "array",
+        "items": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "value": {
+        "type": [
+          "string",
+          "number",
+          "object",
+          "null"
+        ]
+      },
+      "currency": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "capacityDefinition": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "previousClaimId": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "condition": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "period": {
+        "type": "object",
+        "required": [
+          "basis",
+          "start",
+          "end"
+        ],
+        "properties": {
+          "basis": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "end": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  }
+}

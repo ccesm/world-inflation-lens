@@ -1,0 +1,2052 @@
+[
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Cooling-water reuse facility; not electricity-generation capacity",
+    "definitionId": "def:00c90ff45d60aabb0d3b",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "WATER_INFRASTRUCTURE",
+    "nativeDefinition": "Cooling-water reuse facility; not electricity-generation capacity",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:0102b8eea7c102f5ac3a",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_GOOG_OPERATES_GOOGLE_MIDLOTHIAN",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:0536de5a08edbf0cf844",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_COLLATERAL",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:056a4dd168baf417f3e0",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "175MW live milestone; 400MW contracts not all operational",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Order requires executed/enforced support; confidential terms and amounts not obtained",
+    "definitionId": "def:070d2d169c9c8fc34268",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "POWER_SUPPORT",
+    "nativeDefinition": "Order requires executed/enforced support; confidential terms and amounts not obtained",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:086e3e454cafc0753c8b",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_MIP_FUNDS",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:08c6ac0fb6d44407335b",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_MSFT",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:08e11369909929a22d1e",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_META_LEASES_HYPERION_JV",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Platform financing ceiling; not PF1 investment",
+    "definitionId": "def:092b1e9bfb9e13adb811",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_PLATFORM_PREFERRED",
+    "nativeDefinition": "Platform financing ceiling; not PF1 investment",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:0956217c050b30badb15",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "EQUITY_FUNDING_MIX",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Identifiable data center site; no inference that all workloads are AI",
+    "definitionId": "def:09ea72e71ab37c692e6e",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ASSET_TYPE",
+    "nativeDefinition": "Identifiable data center site; no inference that all workloads are AI",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Campus location",
+    "definitionId": "def:09fa10bb2e8ffb7b0528",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LOCATION",
+    "nativeDefinition": "Campus location",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "SECONDARY_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:0a5e0f98ac47359d5da1",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_IRIS_CROSSING",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Planned expanded transmission, not campus length",
+    "definitionId": "def:0a6e52d2ce55eb166ce7",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "POWER_TRANSMISSION",
+    "nativeDefinition": "Planned expanded transmission, not campus length",
+    "unit": "MILES"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Approximate original base lease term",
+    "definitionId": "def:0bb5241626a6c67c6a5b",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE100_TERM",
+    "nativeDefinition": "Approximate original base lease term",
+    "unit": "YEARS"
+  },
+  {
+    "capacityDefinition": "CRITICAL_IT_LOAD_CONTRACTED",
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Native contracted critical IT load; building numbering differs between releases, do not normalize labels",
+    "definitionId": "def:0bf24cbb87292fde27e9",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE150_CAPACITY",
+    "nativeDefinition": "Native contracted critical IT load; building numbering differs between releases, do not normalize labels",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Corporate balance-sheet archetype does not allocate aggregate Microsoft cash PP&E to this site",
+    "definitionId": "def:0c2fa2dec117ddf0e2f0",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "ACCOUNTING_INTERPRETATION",
+    "nativeDefinition": "Corporate balance-sheet archetype does not allocate aggregate Microsoft cash PP&E to this site",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "definitionId": "def:0cea4eaff8bfd2f20676",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "PROJECT_DEBT_TERMS",
+    "nativeDefinition": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Separate credit-enhancement version, not proof all leases already assigned",
+    "definitionId": "def:0ddd7e382a17b32a2518",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "TENANT_SUPPORT",
+    "nativeDefinition": "Separate credit-enhancement version, not proof all leases already assigned",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Three buildings combined roof area",
+    "definitionId": "def:106ce5cfce233cc01eda",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "BUILDING_AREA",
+    "nativeDefinition": "Three buildings combined roof area",
+    "unit": "MILLION_SQ_FT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Venture interest contemplated at close",
+    "definitionId": "def:10bafd61328e8be50092",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "META_INTEREST",
+    "nativeDefinition": "Venture interest contemplated at close",
+    "unit": "PERCENT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified; no allocation from other campuses or company totals",
+    "definitionId": "def:141c72fe06f9e9f34d5e",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "UTILIZATION",
+    "nativeDefinition": "Not separately qualified; no allocation from other campuses or company totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:157587a767d18fbdf1c2",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_HPC_HOLDINGS",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Native contractual coupon, not AI return",
+    "definitionId": "def:18ebdcfd76fed14aee6b",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES150_COUPON",
+    "nativeDefinition": "Native contractual coupon, not AI return",
+    "unit": "PERCENT"
+  },
+  {
+    "capacityDefinition": "CRITICAL_IT_LOAD_CONTRACTED",
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Native contracted critical IT load; building numbering differs between releases, do not normalize labels",
+    "definitionId": "def:1a1eb0a35a34f461fffb",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE100_CAPACITY",
+    "nativeDefinition": "Native contracted critical IT load; building numbering differs between releases, do not normalize labels",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified; no allocation from other campuses or company totals",
+    "definitionId": "def:1b55353538d54c351faf",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "REGISTERED_TITLE_HOLDER",
+    "nativeDefinition": "Not separately qualified; no allocation from other campuses or company totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Separate second similar facility commitment over nextthree years",
+    "definitionId": "def:1bc1a312f2d55b36034b",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "SECOND_PLEDGE",
+    "nativeDefinition": "Separate second similar facility commitment over nextthree years",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PF1 excludes PF2/othercampuses",
+    "definitionId": "def:1bf13df3ccd751d0f9ce",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LOCATION",
+    "nativeDefinition": "PF1 excludes PF2/othercampuses",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:1c89fd619dd02e59dd99",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_COREWEAVE",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Native maturity precision",
+    "definitionId": "def:1cc2605f37aff9a45ebe",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES150_MATURITY",
+    "nativeDefinition": "Native maturity precision",
+    "unit": "YEAR_TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:1ceaa4d93a8da3600655",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Company says expected opening in2026; current construction stage, not operational",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:1e61a23c223ce56dc21f",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Partial delivery indicated by tracker; exact date/denominator unqualified, footer vintage inconsistent",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified; no allocation from other campuses or company totals",
+    "definitionId": "def:1e96b595f4c5c6d7a74f",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "PPA_VALUE",
+    "nativeDefinition": "Not separately qualified; no allocation from other campuses or company totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": "GENERATION_NAMEPLATE",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "More than5200MW planned utility generation across seven gas plants; native generation nameplate, not IT load",
+    "definitionId": "def:1fb85ba1200ef32a552f",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "POWER_GAS",
+    "nativeDefinition": "More than5200MW planned utility generation across seven gas plants; native generation nameplate, not IT load",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Company partnership named service brand",
+    "definitionId": "def:208b2dc4c668b5b7cdd8",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "UTILITY",
+    "nativeDefinition": "Company partnership named service brand",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer not primary beneficiary; not an inference about legal debt recourse",
+    "definitionId": "def:2182de513ac8edeab693",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "TREATMENT_2025",
+    "nativeDefinition": "Issuer not primary beneficiary; not an inference about legal debt recourse",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Reported debt financing funding part of investor investment; exact borrower and terms unavailable",
+    "definitionId": "def:23e8d1d4ac015bec826f",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_FINANCING",
+    "nativeDefinition": "Reported debt financing funding part of investor investment; exact borrower and terms unavailable",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Order pp6-7; public settlement p13; not all utility spending exempted from customer exposure",
+    "definitionId": "def:25f35e647f4b789ef755",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "COST_RECOVERY",
+    "nativeDefinition": "Order pp6-7; public settlement p13; not all utility spending exempted from customer exposure",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No defensible project AI cash-flow/capital attribution; no return calculation",
+    "definitionId": "def:265920c8b1c0cc0d48f0",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "ATTRIBUTABLE_OPERATING_CASH_FLOW",
+    "nativeDefinition": "No defensible project AI cash-flow/capital attribution; no return calculation",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "definitionId": "def:27834b342e4082edc9af",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "RECOGNIZED_AI_REVENUE",
+    "nativeDefinition": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Company assertion; tariff/regulated allocation not independently qualified",
+    "definitionId": "def:290062b12dfb6224c632",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "COST_RECOVERY",
+    "nativeDefinition": "Company assertion; tariff/regulated allocation not independently qualified",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "First Fairwater campus",
+    "definitionId": "def:2b22e540739b723801b6",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LOCATION",
+    "nativeDefinition": "First Fairwater campus",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:2d0f7250a37abf86f104",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_APLD_DEVELOPS_POLARIS_FORGE_1",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "definitionId": "def:2da0c752b459f2d5ef2a",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_DETAILS",
+    "nativeDefinition": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Private securities offering principal reported by participant adviser, not project cost; legal issuer not primary-verified",
+    "definitionId": "def:30ecd2f3996f8658b709",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "OFFERING",
+    "nativeDefinition": "Private securities offering principal reported by participant adviser, not project cost; legal issuer not primary-verified",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:3180791da4c951004d00",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_HYPERION_JV_OWNS_HYPERION",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Campus footprint, not electrical capacity",
+    "definitionId": "def:31eaf757507d525d2e82",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "SITE_AREA",
+    "nativeDefinition": "Campus footprint, not electrical capacity",
+    "unit": "ACRES"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified; no allocation from other campuses or company totals",
+    "definitionId": "def:3957b7654f22375c6e9e",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "PROJECT_CASH_FLOW",
+    "nativeDefinition": "Not separately qualified; no allocation from other campuses or company totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:3a0216aeab9d570798df",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_ELN02",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": "CRITICAL_IT_LOAD_CONTRACTED",
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Native contracted critical IT load; building numbering differs between releases, do not normalize labels",
+    "definitionId": "def:3ea37fed0210bb4dbfba",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE4_CAPACITY",
+    "nativeDefinition": "Native contracted critical IT load; building numbering differs between releases, do not normalize labels",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "PROJECT_ESTIMATE",
+    "comparisonBasis": "Approximate JV development estimate, buildings and long-lived infrastructure",
+    "definitionId": "def:402a8500fe95fd77c99e",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "COST",
+    "nativeDefinition": "Approximate JV development estimate, buildings and long-lived infrastructure",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:40d3ca676d5ba3325564",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_MSFT_DEVELOPS_FAIRWATER",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:42238c740bb6b031ee49",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_BLUE_OWL_MANAGER",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Managed funds interest contemplated at close; manager is not owner",
+    "definitionId": "def:449066ee9eaf152d3f47",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "FUND_INTEREST",
+    "nativeDefinition": "Managed funds interest contemplated at close; manager is not owner",
+    "unit": "PERCENT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Do not infer annual schedule or quarterly revenue from contract totals",
+    "definitionId": "def:450bc4f26129933150bd",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE150_PAYMENTS",
+    "nativeDefinition": "Do not infer annual schedule or quarterly revenue from contract totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:45a7c46f731b8a868f20",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_USE_OF_PROCEEDS",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:46dfda836b8f78a19eb9",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_MACQUARIE_MANAGER",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": "GENERATION_NAMEPLATE",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Portage County solar project supporting matching commitment; not site IT capacity",
+    "definitionId": "def:478d15d9cdabe9528d4b",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "SOLAR",
+    "nativeDefinition": "Portage County solar project supporting matching commitment; not site IT capacity",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:4848fa1cd282d1dabb38",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_ELN03",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Post-JV registered property title has not been independently verified",
+    "definitionId": "def:4a761500e00690559568",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LEGAL_TITLE_HOLDER",
+    "nativeDefinition": "Post-JV registered property title has not been independently verified",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer disclosed operating lease, commencement later",
+    "definitionId": "def:4cb9b15a4d9049f11a14",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_CLASSIFICATION",
+    "nativeDefinition": "Issuer disclosed operating lease, commencement later",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "definitionId": "def:4eda6397272f20bccff7",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "ATTRIBUTABLE_OPERATING_CASH_FLOW",
+    "nativeDefinition": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:513e890affa7027ceef8",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "PROJECT_DEBT",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Conditional RVG; exact property schedule unavailable",
+    "definitionId": "def:5200b5273256a48e341d",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "RVG_TRIGGER",
+    "nativeDefinition": "Conditional RVG; exact property schedule unavailable",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:520af3b629964679b8f1",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_AMZN_OPERATES_AWS_CANTON",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Native maturity precision",
+    "definitionId": "def:534b48479ec8a2aeda4a",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES250_MATURITY",
+    "nativeDefinition": "Native maturity precision",
+    "unit": "DATE"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer accounting conclusion at reported date, not risk-free conclusion",
+    "definitionId": "def:53602e9bb86141516fb4",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "RVG_RECOGNITION",
+    "nativeDefinition": "Issuer accounting conclusion at reported date, not risk-free conclusion",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No defensible project AI cash-flow/capital attribution; no return calculation",
+    "definitionId": "def:53f1d73e73bf301ce200",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "ATTRIBUTABLE_REVENUE",
+    "nativeDefinition": "No defensible project AI cash-flow/capital attribution; no return calculation",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Not reclassified as a currently recognized project lease liability",
+    "definitionId": "def:53f33e71375adabf0560",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_RECOGNITION",
+    "nativeDefinition": "Not reclassified as a currently recognized project lease liability",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified; no allocation from other campuses or company totals",
+    "definitionId": "def:547b86b534762e195ac5",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "AI_REVENUE",
+    "nativeDefinition": "Not separately qualified; no allocation from other campuses or company totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:552b88bc260038417425",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_META_PARTIALLY_OWNS_HYPERION_JV",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": "CRITICAL_IT_LOAD_LIVE_REPORTED",
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Reported live June30 capacity; distinct from contract and later events",
+    "definitionId": "def:5603833180f64b25a9d5",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LIVE_CAPACITY",
+    "nativeDefinition": "Reported live June30 capacity; distinct from contract and later events",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Campus with four data-center buildings, warehouse and microgrids",
+    "definitionId": "def:56520f8909c06167a1ae",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "SITE_AREA",
+    "nativeDefinition": "Campus with four data-center buildings, warehouse and microgrids",
+    "unit": "ACRES"
+  },
+  {
+    "capacityDefinition": "CRITICAL_IT_LOAD_LIVE_REPORTED",
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer reports fully operational critical IT load October2; archival gap remains, not400MW operational",
+    "definitionId": "def:56f7008fb6a1378ffa75",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LIVE_CAPACITY_2026_10",
+    "nativeDefinition": "Issuer reports fully operational critical IT load October2; archival gap remains, not400MW operational",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Native contractual coupon, not AI return",
+    "definitionId": "def:58c89ce13318fdb7e0b3",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES250_COUPON",
+    "nativeDefinition": "Native contractual coupon, not AI return",
+    "unit": "PERCENT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:5b6a96272e7a2c501a36",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_META",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:5fa17bacbd1f75347f5b",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Company equipment-online update; no qualified full-campus energization denominator",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:60ac650fe89c8d80f34e",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "250MW live versus400MW contracted; raw archive pending",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:60ca9dac1ad2b99188ef",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_BLACKROCK_FUNDS_PARTIALLY_OWNS_EL_PASO_VENTURE",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": "UNKNOWN",
+    "classification": "SECONDARY_ESTIMATE",
+    "comparisonBasis": "Rating-related scope; native load definition unresolved",
+    "definitionId": "def:610eb243fa024d6a462a",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "FINANCED_CAPACITY",
+    "nativeDefinition": "Rating-related scope; native load definition unresolved",
+    "unit": "GW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Completion support, not automatically unlimited parent debt guarantee",
+    "definitionId": "def:61d15adb7c198b358b3b",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "COMPLETION_GUARANTEE",
+    "nativeDefinition": "Completion support, not automatically unlimited parent debt guarantee",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "PROJECT_ESTIMATE",
+    "comparisonBasis": "Approximately14bn buildings and long-lived infrastructure development estimate",
+    "definitionId": "def:62bbb548d01c5410e634",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "DEVELOPMENT_ESTIMATE",
+    "nativeDefinition": "Approximately14bn buildings and long-lived infrastructure development estimate",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Updated proposed design; actual fuel source and regulatory approval not qualified",
+    "definitionId": "def:65c585eba32e3583fbb2",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "POWER_DESIGN",
+    "nativeDefinition": "Updated proposed design; actual fuel source and regulatory approval not qualified",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:666f1db21f3b3fd8817e",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_APLD",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Native classification; collateral details not harmonized",
+    "definitionId": "def:6694f4d2506bf34957d0",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES150_SECURITY",
+    "nativeDefinition": "Native classification; collateral details not harmonized",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": "UNKNOWN",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Announced campus1.2GW, exact native load denominator not harmonized",
+    "definitionId": "def:68fcb770b7ef525fb6af",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PLANNED_CAPACITY",
+    "nativeDefinition": "Announced campus1.2GW, exact native load denominator not harmonized",
+    "unit": "GW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Not interchangeable with tenant credit support",
+    "definitionId": "def:69a9e3e6d8df025182ee",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LESSOR_GUARANTEE",
+    "nativeDefinition": "Not interchangeable with tenant credit support",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Do not infer nonrecourse from subsidiary issuer",
+    "definitionId": "def:69b3e8425cef381010ce",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES250_RECOURSE",
+    "nativeDefinition": "Do not infer nonrecourse from subsidiary issuer",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:6ac2c32783cde2abeeef",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "AI_REVENUE",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer maximum exposure includes equity, leases, estimated fundings and RVG; not debt or expected loss",
+    "definitionId": "def:6c8a16fa5867c02e7d8d",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "MAXIMUM_EXPOSURE_2026",
+    "nativeDefinition": "Issuer maximum exposure includes equity, leases, estimated fundings and RVG; not debt or expected loss",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:6d982a07943ac58f99f4",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_RECOURSE",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Regulator identifies Laidley as then Meta subsidiary and service customer",
+    "definitionId": "def:6f84f626d81bba7293c5",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ORIGINAL_DEVELOPER",
+    "nativeDefinition": "Regulator identifies Laidley as then Meta subsidiary and service customer",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Utility counterparty identified in order",
+    "definitionId": "def:7351d313d871311c97a0",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "UTILITY",
+    "nativeDefinition": "Utility counterparty identified in order",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Native classification; collateral details not harmonized",
+    "definitionId": "def:76437b99f321a438edcd",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES250_SECURITY",
+    "nativeDefinition": "Native classification; collateral details not harmonized",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:7914efb27f0028aa13ce",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_COMPUTECO3",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Expected beginning capacity-online year; native year precision, not actual opening date",
+    "definitionId": "def:79de8f0da8ebb3c1a48c",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EXPECTED_ONLINE_YEAR",
+    "nativeDefinition": "Expected beginning capacity-online year; native year precision, not actual opening date",
+    "unit": "YEAR"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:7a04053f1d0aa7a1e058",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_COREWEAVE_LEASES_ELN03",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Approximate original base lease term",
+    "definitionId": "def:7bbcb182baeb3a7d0764",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE4_TERM",
+    "nativeDefinition": "Approximate original base lease term",
+    "unit": "YEARS"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer maximum exposure includes equity, leases, estimated fundings and RVG; not debt or expected loss",
+    "definitionId": "def:7d256f06bdf8fd0760c5",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "MAXIMUM_EXPOSURE_2025",
+    "nativeDefinition": "Issuer maximum exposure includes equity, leases, estimated fundings and RVG; not debt or expected loss",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:7d27c199e8f754e6c2a3",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_ENTERGY_LA",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": "CAMPUS_PLANNED_COMPUTE",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Campus scalability plan, not operational capacity",
+    "definitionId": "def:7d7b52fe253a3a8a90c7",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PLANNED_CAPACITY",
+    "nativeDefinition": "Campus scalability plan, not operational capacity",
+    "unit": "GW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "SECONDARY_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:7e43855c3d22de3baa3e",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_PROJECT_BEIGNET_HOLDINGS_OWNS_LAIDLEY",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Do not infer nonrecourse from subsidiary issuer",
+    "definitionId": "def:7f70e97e40f23940f4aa",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES150_RECOURSE",
+    "nativeDefinition": "Do not infer nonrecourse from subsidiary issuer",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": "CAMPUS_COMPUTE_CAPACITY_PLANNED",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Future campus compute capacity; not operational IT load",
+    "definitionId": "def:853e35faa8895e06b16e",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PLANNED_CAPACITY",
+    "nativeDefinition": "Future campus compute capacity; not operational IT load",
+    "unit": "GW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Do not infer annual schedule or quarterly revenue from contract totals",
+    "definitionId": "def:8672b8322b2f3906e2e9",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE100_PAYMENTS",
+    "nativeDefinition": "Do not infer annual schedule or quarterly revenue from contract totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:871e04a2516a27a46338",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_COREWEAVE_LEASES_ELN02C",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Approximate one-time JV distribution to Meta, not fresh construction investment",
+    "definitionId": "def:877e1bbc3dbfe7939636",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "META_DISTRIBUTION",
+    "nativeDefinition": "Approximate one-time JV distribution to Meta, not fresh construction investment",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:888188627b017614a53a",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Source-dated stage; UNKNOWN means no precise stage qualified",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:88fcb59fa450c100c75b",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_COMPUTECO",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Potential total term if extensions exercised",
+    "definitionId": "def:89342ef89c86cd02edbf",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_OPTIONAL_TOTAL_TERM",
+    "nativeDefinition": "Potential total term if extensions exercised",
+    "unit": "YEARS"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "location",
+    "definitionId": "def:8aa17daeb16e8d48afac",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LOCATION",
+    "nativeDefinition": "location",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:8abc3c37c7fc91264b2b",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_META_DEVELOPS_HYPERION",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Equity-method investment carrying value",
+    "definitionId": "def:8d8fe0b65d729078a2a6",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "EQUITY_2025",
+    "nativeDefinition": "Equity-method investment carrying value",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Named electric utility and grid-infrastructure agreement; legal contract terms not obtained",
+    "definitionId": "def:8db1c4501339490ca0d7",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "POWER_COUNTERPARTY",
+    "nativeDefinition": "Named electric utility and grid-infrastructure agreement; legal contract terms not obtained",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "definitionId": "def:8dc43c82c753b0f43216",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "PROJECT_ACCOUNTING",
+    "nativeDefinition": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "definitionId": "def:8e83db177f9ed42b3258",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LEGAL_OWNER",
+    "nativeDefinition": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Principal; proceeds include refinancing/reserves, not additive campus cost",
+    "definitionId": "def:8f98481a0ed7f03cd5a7",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES250_PRINCIPAL",
+    "nativeDefinition": "Principal; proceeds include refinancing/reserves, not additive campus cost",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:9226e976c378165a540d",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Source describes construction underway; does not turn expanded5GW plan operational",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:925489383e97a9a4dd23",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_GOOGLE_OPERATES_GOOGLE_RED_OAK",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:935e639d666b4c678bac",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_LAIDLEY_PURCHASES_POWER_FROM_ENTERGY_LA",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Initial term per leased property",
+    "definitionId": "def:945cb00b62b79dbbca4e",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_INITIAL_TERM",
+    "nativeDefinition": "Initial term per leased property",
+    "unit": "YEARS"
+  },
+  {
+    "capacityDefinition": "GENERATION_NAMEPLATE",
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Up to2500MW renewable option, not operational output",
+    "definitionId": "def:961ab1e79355659d27f1",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "POWER_SOLAR",
+    "nativeDefinition": "Up to2500MW renewable option, not operational output",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Original JV equity interest; manager is not owner",
+    "definitionId": "def:96baf7464e764799af9f",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "OWNERSHIP_BLUE_OWL_FUNDS",
+    "nativeDefinition": "Original JV equity interest; manager is not owner",
+    "unit": "PERCENT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No defensible project AI cash-flow/capital attribution; no return calculation",
+    "definitionId": "def:96e5ebe3606e0d663ceb",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "ATTRIBUTABLE_UTILIZATION",
+    "nativeDefinition": "No defensible project AI cash-flow/capital attribution; no return calculation",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "SECONDARY_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:96f6f39bf525c3625db1",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_BEIGNET_INVESTOR",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:97489cae2f324646e337",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_META_LEASES_EL_PASO_VENTURE",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:9a401a338cc2427ecc5b",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_RANKING",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:9c89bb91b1892b410d5f",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_META_DEVELOPS_EL_PASO",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Total two-phaseJV scope, not project debt or Oracle cash PP&E",
+    "definitionId": "def:9d7cc95d0c1f1991ed03",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEVELOPMENT_JV_VALUE",
+    "nativeDefinition": "Total two-phaseJV scope, not project debt or Oracle cash PP&E",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:9d9a8d63226673b40c1f",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_ORCL_OPERATES_JUPITER",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Approximate one-time distribution at close; not construction investment",
+    "definitionId": "def:a05f9e7930ce3ebcfa75",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "META_DISTRIBUTION",
+    "nativeDefinition": "Approximate one-time distribution at close; not construction investment",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Approximate contribution at financial close; not all unlevered equity",
+    "definitionId": "def:a2343bd420e53d860308",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "FUND_CASH_CONTRIBUTION",
+    "nativeDefinition": "Approximate contribution at financial close; not all unlevered equity",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Property-level payment schedule not obtained",
+    "definitionId": "def:a345eabe9e3d452696d6",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_SCHEDULE",
+    "nativeDefinition": "Property-level payment schedule not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:a5d5cee95a228a5fbf64",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_BLUE_OWL_FUNDS",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:a67447684824658bf190",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_CRUSOE_DEVELOPS_ABILENE",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:a6b26d40f1ec06d8ad98",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Construction in explicitly dated August27 photo; not operational milestone",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:aa1d428be135c9698216",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_PIMCO_FUNDS",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:ab4b3c64c17dfbfd71f1",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_MATURITY",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:ac1ac62d5a9c7a819ea9",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "REALIZED_COST",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:acde233c9e3b68eddc49",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_MSFT_OPERATES_FAIRWATER",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Equity-method investment carrying value",
+    "definitionId": "def:adb3af46a4795a89c28f",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "EQUITY_2026",
+    "nativeDefinition": "Equity-method investment carrying value",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:aeb13228e4ff9ca864da",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_ELN02C",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:aff554c1ac5fc28bddcf",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "IT_MW",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:b03e74bd3f13b8a6dcba",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "PROJECT_CASH_FLOW",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:b218183183d00a8aff44",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Under construction at venture announcement; closing expected, not confirmed",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No defensible project AI cash-flow/capital attribution; no return calculation",
+    "definitionId": "def:b4553be81420810bb1ae",
+    "layer": "MONETIZATION_EVIDENCE",
+    "metricId": "ATTRIBUTABLE_AI_REVENUE",
+    "nativeDefinition": "No defensible project AI cash-flow/capital attribution; no return calculation",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Original JV equity interest; manager is not owner",
+    "definitionId": "def:b720b55f4ea279b8ee13",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "OWNERSHIP_META",
+    "nativeDefinition": "Original JV equity interest; manager is not owner",
+    "unit": "PERCENT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:b866fdae068231dbcf81",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_MSFT_DEVELOPS_QUINCY",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:b8beedbd55218ac749af",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "JV developing campus; expanded scope remains planned",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": "CRITICAL_IT_LOAD_CONTRACTED",
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Contracted critical IT load; no utility-load conversion",
+    "definitionId": "def:ba3183952569c2e76dcb",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "CONTRACTED_CAPACITY",
+    "nativeDefinition": "Contracted critical IT load; no utility-load conversion",
+    "unit": "MW"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Target year for100% recycled wastewater cooling; not operational or energization date",
+    "definitionId": "def:bac331239400c8584670",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "WATER_TRANSITION_TARGET",
+    "nativeDefinition": "Target year for100% recycled wastewater cooling; not operational or energization date",
+    "unit": "YEAR"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:bb5e4539aeb1a4856ae2",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_AMZN_OPERATES_AWS_WARREN",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:bd9398cf38b285ba87b8",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_YIELD",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Applied filing describes consolidated assets/debt and ASC842 rent; no tenant liability allocation supplied",
+    "definitionId": "def:be681e431e9769bf589e",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "ACCOUNTING",
+    "nativeDefinition": "Applied filing describes consolidated assets/debt and ASC842 rent; no tenant liability allocation supplied",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "SECONDARY_REPORTED",
+    "comparisonBasis": "Secondary legal JV chain; issuer announcement uses venture umbrella",
+    "definitionId": "def:be8412f78182c8713fb2",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "LEGAL_JV",
+    "nativeDefinition": "Secondary legal JV chain; issuer announcement uses venture umbrella",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:beff0f5e1b2fc74abb31",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_ORCL_OPERATES_ABILENE",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:c2c08b3fcb14b194a023",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_HYPERION_JV",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer identified by company",
+    "definitionId": "def:c3bfdba7561592dd6a11",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES250_ISSUER",
+    "nativeDefinition": "Issuer identified by company",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:c3ea09d80c122d904c27",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_BLUE_OWL_FUNDS_PARTIALLY_OWNS_HYPERION_JV",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:c5a7d2296decb87f185c",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_COMPUTECO_FINANCES_POLARIS_FORGE_1",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "More than50bn regional plan; lower bound, not project realized spending",
+    "definitionId": "def:c5ab334f2ec7c4c51fa6",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "REGIONAL_PLAN",
+    "nativeDefinition": "More than50bn regional plan; lower bound, not project realized spending",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Company describes direct ERCOT-grid connection, not a qualified tariff or PPA",
+    "definitionId": "def:c6b6ba5af82ad8cb527c",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "GRID_REGION",
+    "nativeDefinition": "Company describes direct ERCOT-grid connection, not a qualified tariff or PPA",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Original up-to900m campus commitment, not funded equity",
+    "definitionId": "def:c7c555df07e7bb5725c7",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_PREFERRED_ORIGINAL",
+    "nativeDefinition": "Original up-to900m campus commitment, not funded equity",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "2025 order; not approval of later seven-plant plan",
+    "definitionId": "def:c9075d4458b63ac1b0c8",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "GRID_APPROVAL",
+    "nativeDefinition": "2025 order; not approval of later seven-plant plan",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "SECONDARY_REPORTED",
+    "comparisonBasis": "Secondary identified issuer; primary public offering docs unavailable",
+    "definitionId": "def:cab6caf30133dbc76ece",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "ISSUER",
+    "nativeDefinition": "Secondary identified issuer; primary public offering docs unavailable",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified; no allocation from other campuses or company totals",
+    "definitionId": "def:ce863567fc712ad64619",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "PROJECT_COST",
+    "nativeDefinition": "Not separately qualified; no allocation from other campuses or company totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Approximate initial aggregate lease commitments; not current debt",
+    "definitionId": "def:cf87ed10f860e85a93ba",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_COMMITMENT",
+    "nativeDefinition": "Approximate initial aggregate lease commitments; not current debt",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "definitionId": "def:d014e1f952b954b5abf7",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "POWER_SOURCE",
+    "nativeDefinition": "Not separately qualified in bounded primary-source review; absence of disclosure is not zero exposure",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Declining contractual threshold conditional on fair-value shortfall; not expected loss",
+    "definitionId": "def:d0f6263ec3fb0217901e",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "RVG_THRESHOLD",
+    "nativeDefinition": "Declining contractual threshold conditional on fair-value shortfall; not expected loss",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Approximate fund cash contribution; may include debt-funded amounts, not unlevered equity",
+    "definitionId": "def:d17df3ca9eb36344ca51",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "FUND_CASH",
+    "nativeDefinition": "Approximate fund cash contribution; may include debt-funded amounts, not unlevered equity",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:d2495c6f17d2968a73b6",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_COMPUTECO3_FINANCES_POLARIS_FORGE_1",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Land and construction-in-progress contributed at close; transaction value, not new spend",
+    "definitionId": "def:d282e1bb7996f2108993",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "META_ASSET_CONTRIBUTION",
+    "nativeDefinition": "Land and construction-in-progress contributed at close; transaction value, not new spend",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "PROJECT_ESTIMATE",
+    "comparisonBasis": "At least3bn announced campus investment, not realized cash PP&E",
+    "definitionId": "def:d98beb3888b096359bc8",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "DEVELOPMENT_PLAN",
+    "nativeDefinition": "At least3bn announced campus investment, not realized cash PP&E",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "TRANSACTION_VALUE",
+    "comparisonBasis": "Principal; proceeds include refinancing/reserves, not additive campus cost",
+    "definitionId": "def:db040daa54a95a9d7b9c",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES150_PRINCIPAL",
+    "nativeDefinition": "Principal; proceeds include refinancing/reserves, not additive campus cost",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:dd0e1062fba497386aaa",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_ISSUANCE_DATE",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer not primary beneficiary; not an inference about legal debt recourse",
+    "definitionId": "def:df98251f1e04d5efca3b",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "TREATMENT_2026",
+    "nativeDefinition": "Issuer not primary beneficiary; not an inference about legal debt recourse",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:e051c0e8add437d774ba",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_AMOUNT",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Corporate developer/purchaser in government record; registered title chain not independently audited",
+    "definitionId": "def:e4e786886d01fc33666a",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "OWNER",
+    "nativeDefinition": "Corporate developer/purchaser in government record; registered title chain not independently audited",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified; no allocation from other campuses or company totals",
+    "definitionId": "def:e56d5c828038c6807d04",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "GRID_COST",
+    "nativeDefinition": "Not separately qualified; no allocation from other campuses or company totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:e593d986c9bdbbee8480",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_AMORTIZATION",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:e5f23e536044e175d31f",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_GOOG_OPERATES_GOOGLE_RED_OAK",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Do not infer annual schedule or quarterly revenue from contract totals",
+    "definitionId": "def:e80d2d4f8934167e4269",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE4_PAYMENTS",
+    "nativeDefinition": "Do not infer annual schedule or quarterly revenue from contract totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Approximate original base lease term",
+    "definitionId": "def:e8848c8532c326d975e2",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "P_LEASE150_TERM",
+    "nativeDefinition": "Approximate original base lease term",
+    "unit": "YEARS"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:e92f9f31f8e4f30baf99",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_MIP_FUNDS_FINANCES_HPC_HOLDINGS",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:e951a94a4f7b1cd5cab9",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_COUPON",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:e9d106b282ba16150530",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Original lease announcement schedules initial capacity; does not imply whole campus live",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Full primary transaction terms not obtained",
+    "definitionId": "def:ea00e26e0dbca5657626",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "DEBT_SECURITY",
+    "nativeDefinition": "Full primary transaction terms not obtained",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:ea5d3a0cf9154cafae9b",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_WE_ENERGIES",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship within its dated evidence scope",
+    "definitionId": "def:eaae0a80217f5096e5f6",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_COREWEAVE_LEASES_ELN02",
+    "nativeDefinition": "Typed relationship within its dated evidence scope",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "PREDECLARED_STATUS_VOCABULARY",
+    "definitionId": "def:ece7fdc1924220ab1be4",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "PROJECT_STATUS",
+    "nativeDefinition": "Source-dated stage; UNKNOWN means no precise stage qualified",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Approximate declining aggregate threshold, not fixed payment or expected loss",
+    "definitionId": "def:ed3d52ea4c709cc04a69",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "RVG_THRESHOLD",
+    "nativeDefinition": "Approximate declining aggregate threshold, not fixed payment or expected loss",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Initial lease term; not recognized liability",
+    "definitionId": "def:f08df7a34616062400b8",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_INITIAL_TERM",
+    "nativeDefinition": "Initial lease term; not recognized liability",
+    "unit": "YEARS"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:f27505aa58a9fb10dec3",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "GUARANTEE_AMOUNT",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Source says75% total capacity delivered as ofSeptember2026; no conversion to MW",
+    "definitionId": "def:f48ea8e5763607cc21b6",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "DELIVERED_SHARE",
+    "nativeDefinition": "Source says75% total capacity delivered as ofSeptember2026; no conversion to MW",
+    "unit": "PERCENT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Named lessee at original lease dates; later assignments remain separately reviewed",
+    "definitionId": "def:f506e45a1d6f35e44a78",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "TENANT",
+    "nativeDefinition": "Named lessee at original lease dates; later assignments remain separately reviewed",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Initial investment pledge; not realized site PP&E balance",
+    "definitionId": "def:f54dc74c67628f300084",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "PLEDGE",
+    "nativeDefinition": "Initial investment pledge; not realized site PP&E balance",
+    "unit": "USD_BILLION"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "definitionId": "def:f824ce9d761dc4e98554",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "metricId": "SITE_PP_E",
+    "nativeDefinition": "No attributable site financial/IT-load figure qualified; absence is not zero",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Total if extension options exercised",
+    "definitionId": "def:f8722116beeb433953d4",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_MAX_TERM",
+    "nativeDefinition": "Total if extension options exercised",
+    "unit": "YEARS"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Issuer identified by company",
+    "definitionId": "def:f8e039bfd80bf0ae088a",
+    "layer": "FINANCING_EXPOSURE",
+    "metricId": "P_NOTES150_ISSUER",
+    "nativeDefinition": "Issuer identified by company",
+    "unit": "ENTITY"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "UNAVAILABLE",
+    "comparisonBasis": "Not separately qualified; no allocation from other campuses or company totals",
+    "definitionId": "def:fa80970110edafef206d",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "UTILITY",
+    "nativeDefinition": "Not separately qualified; no allocation from other campuses or company totals",
+    "unit": "UNKNOWN"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Typed relationship expressly described by source; no legal title inference",
+    "definitionId": "def:fb10bfe5359781acda76",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "EDGE_GOOGLE_OPERATES_GOOGLE_MIDLOTHIAN",
+    "nativeDefinition": "Typed relationship expressly described by source; no legal title inference",
+    "unit": "RELATIONSHIP"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "OBSERVED_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:fd539a3ded53edb7885a",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_LAIDLEY",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "SECONDARY_REPORTED",
+    "comparisonBasis": "Entity name and role; brand is not a legal subsidiary chain",
+    "definitionId": "def:fdf5ac45c92493b4c7e6",
+    "layer": "PHYSICAL_ASSET",
+    "metricId": "ENTITY_PROJECT_BEIGNET_HOLDINGS",
+    "nativeDefinition": "Entity name and role; brand is not a legal subsidiary chain",
+    "unit": "TEXT"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "CONTRACTUAL_COMMITMENT",
+    "comparisonBasis": "Expected commencement year",
+    "definitionId": "def:ff49e1edc574d4eb5a5b",
+    "layer": "ECONOMIC_OBLIGATION",
+    "metricId": "LEASE_COMMENCEMENT",
+    "nativeDefinition": "Expected commencement year",
+    "unit": "YEAR"
+  },
+  {
+    "capacityDefinition": null,
+    "classification": "MANAGEMENT_GUIDANCE",
+    "comparisonBasis": "Original permit-dependent microgrid design; not operational generation",
+    "definitionId": "def:ffdd49d0cdd6795185ee",
+    "layer": "POWER_INFRASTRUCTURE",
+    "metricId": "POWER_DESIGN",
+    "nativeDefinition": "Original permit-dependent microgrid design; not operational generation",
+    "unit": "TEXT"
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "edge:quincy:3c:edge-msft-DEVELOPS-quincy:2026-01-13",
+    "projectId": "quincy",
+    "fromId": "msft",
+    "toId": "quincy",
+    "relationshipType": "DEVELOPS",
+    "claimId": "quincy:3c:edge-msft-DEVELOPS-quincy:2026-01-13",
+    "relationshipState": "REPORTED",
+    "condition": null
+  },
+  {
+    "id": "edge:google-midlothian:3c:edge-goog-OPERATES-google-midlothian:2026-10-07",
+    "projectId": "google-midlothian",
+    "fromId": "google",
+    "toId": "google-midlothian",
+    "relationshipType": "OPERATES",
+    "claimId": "google-midlothian:3c:edge-goog-OPERATES-google-midlothian:2026-10-07",
+    "relationshipState": "PROPOSED",
+    "condition": "PLANNED_OR_DEVELOPING"
+  },
+  {
+    "id": "edge:google-red-oak:3c:edge-goog-OPERATES-google-red-oak:2026-10-07",
+    "projectId": "google-red-oak",
+    "fromId": "google",
+    "toId": "google-red-oak",
+    "relationshipType": "OPERATES",
+    "claimId": "google-red-oak:3c:edge-goog-OPERATES-google-red-oak:2026-10-07",
+    "relationshipState": "PROPOSED",
+    "condition": "PLANNED_OR_DEVELOPING"
+  },
+  {
+    "id": "edge:google-midlothian:3c:edge-google-OPERATES-google-midlothian:2026-10-07",
+    "projectId": "google-midlothian",
+    "fromId": "google",
+    "toId": "google-midlothian",
+    "relationshipType": "OPERATES",
+    "claimId": "google-midlothian:3c:edge-google-OPERATES-google-midlothian:2026-10-07",
+    "relationshipState": "PROPOSED",
+    "condition": "LOCATION_PAGE_IDENTIFIES_SITE; FULL_OPERATIONAL_STAGE_UNKNOWN"
+  },
+  {
+    "id": "edge:google-red-oak:3c:edge-google-OPERATES-google-red-oak:2026-10-07",
+    "projectId": "google-red-oak",
+    "fromId": "google",
+    "toId": "google-red-oak",
+    "relationshipType": "OPERATES",
+    "claimId": "google-red-oak:3c:edge-google-OPERATES-google-red-oak:2026-10-07",
+    "relationshipState": "PROPOSED",
+    "condition": "LOCATION_PAGE_IDENTIFIES_SITE; FULL_OPERATIONAL_STAGE_UNKNOWN"
+  },
+  {
+    "id": "edge:aws-canton:3c:edge-amzn-OPERATES-aws-canton:2026-04-09",
+    "projectId": "aws-canton",
+    "fromId": "aws",
+    "toId": "aws-canton",
+    "relationshipType": "OPERATES",
+    "claimId": "aws-canton:3c:edge-amzn-OPERATES-aws-canton:2026-04-09",
+    "relationshipState": "PROPOSED",
+    "condition": "PLANNED_OR_DEVELOPING"
+  },
+  {
+    "id": "edge:aws-warren:3c:edge-amzn-OPERATES-aws-warren:2025-11-20",
+    "projectId": "aws-warren",
+    "fromId": "aws",
+    "toId": "aws-warren",
+    "relationshipType": "OPERATES",
+    "claimId": "aws-warren:3c:edge-amzn-OPERATES-aws-warren:2025-11-20",
+    "relationshipState": "PROPOSED",
+    "condition": "PLANNED_OR_DEVELOPING"
+  },
+  {
+    "id": "edge:el-paso:3c:edge-meta-DEVELOPS-el-paso:2025-10-15",
+    "projectId": "el-paso",
+    "fromId": "meta",
+    "toId": "el-paso",
+    "relationshipType": "DEVELOPS",
+    "claimId": "el-paso:3c:edge-meta-DEVELOPS-el-paso:2025-10-15",
+    "relationshipState": "PROPOSED",
+    "condition": "PLANNED_OR_DEVELOPING"
+  },
+  {
+    "id": "edge:el-paso:3c:edge-meta-LEASES-el-paso-venture:2026-07-28",
+    "projectId": "el-paso",
+    "fromId": "meta",
+    "toId": "el-paso-venture",
+    "relationshipType": "LEASES",
+    "claimId": "el-paso:3c:edge-meta-LEASES-el-paso-venture:2026-07-28",
+    "relationshipState": "PROPOSED",
+    "condition": "FUTURE_LEASES_AT_CLOSE"
+  },
+  {
+    "id": "edge:el-paso:3c:edge-blackrock-funds-PARTIALLY_OWNS-el-paso-venture:2026-07-28",
+    "projectId": "el-paso",
+    "fromId": "blackrock-funds",
+    "toId": "el-paso-venture",
+    "relationshipType": "PARTIALLY_OWNS",
+    "claimId": "el-paso:3c:edge-blackrock-funds-PARTIALLY_OWNS-el-paso-venture:2026-07-28",
+    "relationshipState": "PROPOSED",
+    "condition": "AT_CLOSE; EXACT_FUND_LEGAL_VEHICLES_UNKNOWN"
+  },
+  {
+    "id": "edge:abilene:3c:edge-orcl-OPERATES-abilene:2026-10-07",
+    "projectId": "abilene",
+    "fromId": "orcl",
+    "toId": "abilene",
+    "relationshipType": "OPERATES",
+    "claimId": "abilene:3c:edge-orcl-OPERATES-abilene:2026-10-07",
+    "relationshipState": "REPORTED",
+    "condition": null
+  },
+  {
+    "id": "edge:abilene:3c:edge-crusoe-DEVELOPS-abilene:2025-05-21",
+    "projectId": "abilene",
+    "fromId": "crusoe",
+    "toId": "abilene",
+    "relationshipType": "DEVELOPS",
+    "claimId": "abilene:3c:edge-crusoe-DEVELOPS-abilene:2025-05-21",
+    "relationshipState": "REPORTED",
+    "condition": null
+  },
+  {
+    "id": "edge:jupiter:3c:edge-orcl-OPERATES-jupiter:2026-03-03",
+    "projectId": "jupiter",
+    "fromId": "orcl",
+    "toId": "jupiter",
+    "relationshipType": "OPERATES",
+    "claimId": "jupiter:3c:edge-orcl-OPERATES-jupiter:2026-03-03",
+    "relationshipState": "PROPOSED",
+    "condition": "PLANNED_OR_DEVELOPING"
+  }
+]

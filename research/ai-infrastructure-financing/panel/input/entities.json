@@ -1,0 +1,106 @@
+[
+  {
+    "id": "goog",
+    "name": "Alphabet / Google corporate group",
+    "entityType": "PUBLIC_COMPANY",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "amzn",
+    "name": "Amazon corporate group",
+    "entityType": "PUBLIC_COMPANY",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "orcl",
+    "name": "Oracle Corporation",
+    "entityType": "PUBLIC_COMPANY",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "google",
+    "name": "Google (project operator umbrella)",
+    "entityType": "SUBSIDIARY",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "aws",
+    "name": "Amazon Web Services (operator umbrella)",
+    "entityType": "SUBSIDIARY",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "crusoe",
+    "name": "Crusoe (developer umbrella)",
+    "entityType": "DEVELOPER",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "primary-digital",
+    "name": "Primary Digital Infrastructure",
+    "entityType": "INFRASTRUCTURE_FUND",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "el-paso-venture",
+    "name": "El Paso venture (legal name unavailable)",
+    "entityType": "JV",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "blackrock-funds",
+    "name": "Funds managed by BlackRock",
+    "entityType": "FUND_GROUP",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "blackrock-manager",
+    "name": "BlackRock (manager)",
+    "entityType": "FUND_MANAGER",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "el-paso-electric",
+    "name": "El Paso Electric (named utility)",
+    "entityType": "UTILITY",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "bloom",
+    "name": "Bloom Energy (equipment supplier)",
+    "entityType": "EQUIPMENT_SUPPLIER",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  },
+  {
+    "id": "ercot",
+    "name": "ERCOT grid/operator umbrella",
+    "entityType": "UTILITY",
+    "legalName": null,
+    "identityStatus": "NAMED_UMBRELLA",
+    "claimIds": []
+  }
+]

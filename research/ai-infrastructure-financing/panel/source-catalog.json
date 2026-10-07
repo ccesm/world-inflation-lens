@@ -1,0 +1,1352 @@
+[
+  {
+    "sourceId": "brookings-article",
+    "url": "https://www.brookings.edu/articles/financing-the-ai-buildout/",
+    "resolvedURL": null,
+    "publisher": "Brookings Institution",
+    "title": "Financing the AI buildout",
+    "sourceType": "SECONDARY_RESEARCH",
+    "primaryOrSecondary": "SECONDARY",
+    "documentDate": "2026-09-23",
+    "modifiedAt": null,
+    "availableFrom": "2026-09-23",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:06.895Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "brookings-article@WEB_REVIEW_20261007",
+    "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": "CONTENT_MISMATCH",
+    "reviewMethod": "Public web text review; raw retrieval not qualified",
+    "allowedRoutes": [
+      {
+        "host": "www.brookings.edu",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "brookings-article",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "brookings-paper",
+    "url": "https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf",
+    "resolvedURL": "https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf",
+    "publisher": "Stijn Van Nieuwerburgh / Brookings",
+    "title": "Financing the AI Buildout, BPEA conference draft",
+    "sourceType": "SECONDARY_RESEARCH",
+    "primaryOrSecondary": "SECONDARY",
+    "documentDate": "2026-09-04",
+    "modifiedAt": null,
+    "availableFrom": "2026-09-04",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:08.169Z",
+    "MIME": "application/pdf",
+    "byteSize": 991052,
+    "sourceHash": "bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4",
+    "sourceVersion": "brookings-paper@bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "www.brookings.edu",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "brookings-paper",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "meta-jv",
+    "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/",
+    "resolvedURL": null,
+    "publisher": "Meta Platforms",
+    "title": "Hyperion joint venture announcement",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-10-21",
+    "modifiedAt": null,
+    "availableFrom": "2025-10-21",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:09.559Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "meta-jv@WEB_REVIEW_20261007",
+    "qualificationStatus": "UNQUALIFIED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED",
+    "reviewMethod": "Public web text review; raw retrieval not qualified",
+    "allowedRoutes": [
+      {
+        "host": "investor.atmeta.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "meta-jv",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "meta-2025k",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+    "resolvedURL": null,
+    "publisher": "Meta Platforms",
+    "title": "2025 Form 10-K",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-01-29",
+    "modifiedAt": null,
+    "availableFrom": "2026-01-29",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:10.822Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "meta-2025k@WEB_REVIEW_20261007",
+    "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED",
+    "reviewMethod": "Public web text review; raw retrieval not qualified",
+    "allowedRoutes": [
+      {
+        "host": "www.sec.gov",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "meta-2025k",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "meta-2026q2",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+    "resolvedURL": null,
+    "publisher": "Meta Platforms",
+    "title": "2026 Q2 Form 10-Q",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-07-30",
+    "modifiedAt": null,
+    "availableFrom": "2026-07-30",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:12.127Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "meta-2026q2@WEB_REVIEW_20261007",
+    "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED_HOST_STOP",
+    "reviewMethod": "Public web text review; raw retrieval not qualified",
+    "allowedRoutes": [
+      {
+        "host": "www.sec.gov",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "meta-2026q2",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "cc-pimco",
+    "url": "https://www.cliffordchance.com/news/news/2025/10/clifford-chance-advises-pimco-funds-on-investment-to-develop-metas-hyperion-data-center.html",
+    "resolvedURL": "https://www.cliffordchance.com/news/news/2025/10/clifford-chance-advises-pimco-funds-on-investment-to-develop-metas-hyperion-data-center.html",
+    "publisher": "Clifford Chance",
+    "title": "PIMCO investment to develop Hyperion",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-10-27",
+    "modifiedAt": null,
+    "availableFrom": "2025-10-27",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:13.230Z",
+    "MIME": "text/html",
+    "byteSize": 247566,
+    "sourceHash": "bf5d7ba6ad5abb85e13d61504b73da27806aad0422b04ebcdd146fc9a4d2f65e",
+    "sourceVersion": "cc-pimco@bf5d7ba6ad5abb85e13d61504b73da27806aad0422b04ebcdd146fc9a4d2f65e",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "www.cliffordchance.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "cc-pimco",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "meta-engineering",
+    "url": "https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/",
+    "resolvedURL": "https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/",
+    "publisher": "Meta Engineering",
+    "title": "Infrastructure evolution and AI",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-09-29",
+    "modifiedAt": null,
+    "availableFrom": "2025-09-29",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:15.391Z",
+    "MIME": "text/html",
+    "byteSize": 133318,
+    "sourceHash": "c93b2e23bd2c3cfcadb5fb98deb417c1623c67407237343086dea2f325b47076",
+    "sourceVersion": "meta-engineering@c93b2e23bd2c3cfcadb5fb98deb417c1623c67407237343086dea2f325b47076",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "engineering.fb.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "meta-engineering",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "meta-expansion",
+    "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+    "resolvedURL": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+    "publisher": "Meta",
+    "title": "Louisiana data center expansion",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-07-13",
+    "modifiedAt": null,
+    "availableFrom": "2026-07-13",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:16.671Z",
+    "MIME": "text/html",
+    "byteSize": 383724,
+    "sourceHash": "eeab6bdf49ccf9875114d30a14cf7118aacb41675c7a287c476cd417d439f1ff",
+    "sourceVersion": "meta-expansion@eeab6bdf49ccf9875114d30a14cf7118aacb41675c7a287c476cd417d439f1ff",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "about.fb.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "meta-expansion",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "entergy-substation",
+    "url": "https://www.entergy.com/news/entergy-louisiana-breaks-ground-on-key-substation-to-power-data-center-in-richland-parish",
+    "resolvedURL": "https://www.entergy.com/news/entergy-louisiana-breaks-ground-on-key-substation-to-power-data-center-in-richland-parish",
+    "publisher": "Entergy Louisiana",
+    "title": "Smalling Substation groundbreaking",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-06-27",
+    "modifiedAt": null,
+    "availableFrom": "2025-06-27",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:18.042Z",
+    "MIME": "text/html",
+    "byteSize": 99505,
+    "sourceHash": "bd22659bb91eacb932cc45fb7790bf80c69b8f9e14ea9774c43f8fb23c5057d1",
+    "sourceVersion": "entergy-substation@bd22659bb91eacb932cc45fb7790bf80c69b8f9e14ea9774c43f8fb23c5057d1",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "www.entergy.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "entergy-substation",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "entergy-approval",
+    "url": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+    "resolvedURL": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+    "publisher": "Entergy Louisiana",
+    "title": "LPSC infrastructure approval announcement",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-08-20",
+    "modifiedAt": null,
+    "availableFrom": "2025-08-20",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:19.414Z",
+    "MIME": "text/html",
+    "byteSize": 102738,
+    "sourceHash": "ac56b7876c50ca14992b17631876686728e64ffd634d113bd0a8f5957a8c432a",
+    "sourceVersion": "entergy-approval@ac56b7876c50ca14992b17631876686728e64ffd634d113bd0a8f5957a8c432a",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "www.entergy.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "entergy-approval",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "entergy-expansion",
+    "url": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings",
+    "resolvedURL": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings",
+    "publisher": "Entergy Louisiana",
+    "title": "Additional Meta power agreement",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-03-27",
+    "modifiedAt": null,
+    "availableFrom": "2026-03-27",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:20.641Z",
+    "MIME": "text/html",
+    "byteSize": 107499,
+    "sourceHash": "4ee950b702576c79b41fb6600434948e0ed81bdb73c2f2e5f7d612b0fa00baea",
+    "sourceVersion": "entergy-expansion@4ee950b702576c79b41fb6600434948e0ed81bdb73c2f2e5f7d612b0fa00baea",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "www.entergy.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "entergy-expansion",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "sp-webinar",
+    "url": "https://www.spglobal.com/ratings/en/events/webinars/ifr-largescale-pf-102325",
+    "resolvedURL": null,
+    "publisher": "S&P Global Ratings",
+    "title": "Beignet rating webinar summary",
+    "sourceType": "SECONDARY_RESEARCH",
+    "primaryOrSecondary": "SECONDARY",
+    "documentDate": "2025-10-23",
+    "modifiedAt": null,
+    "availableFrom": "2025-10-23",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:21.824Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "sp-webinar@WEB_REVIEW_20261007",
+    "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED",
+    "reviewMethod": "Public web text review; raw retrieval not qualified",
+    "allowedRoutes": [
+      {
+        "host": "www.spglobal.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "sp-webinar",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "meta-jv-pdf",
+    "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center-2025.pdf",
+    "resolvedURL": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center-2025.pdf",
+    "publisher": "Meta",
+    "title": "Hyperion JV announcement (official issuer PDF)",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-10-21",
+    "modifiedAt": null,
+    "availableFrom": "2025-10-21",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:23.143Z",
+    "MIME": "application/pdf",
+    "byteSize": 100543,
+    "sourceHash": "5dca08e7eee961316ccea1149c785b72951bc0e1744cc7038a0cfa18f7192b61",
+    "sourceVersion": "meta-jv-pdf@5dca08e7eee961316ccea1149c785b72951bc0e1744cc7038a0cfa18f7192b61",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "s21.q4cdn.com",
+        "prefix": "/399680738/"
+      }
+    ],
+    "sourceFamilyId": "meta-jv-pdf",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "laidley-letter",
+    "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=tegXEb8UbKE%3D",
+    "resolvedURL": null,
+    "publisher": "Meta / LPSC",
+    "title": "Meta letter to Entergy filed in U-37425",
+    "sourceType": "PRIMARY_REGULATORY",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-04-02",
+    "modifiedAt": null,
+    "availableFrom": "2025-04-02",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:24.416Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "laidley-letter@WEB_REVIEW_20261007",
+    "qualificationStatus": "UNQUALIFIED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": "SIZE_REJECTED",
+    "reviewMethod": "Public web text review; raw retrieval not qualified",
+    "allowedRoutes": [
+      {
+        "host": "lpscpubvalence.lpsc.louisiana.gov",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "laidley-letter",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "entergy-reply",
+    "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=ZgYuul9mQ60%3D",
+    "resolvedURL": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=ZgYuul9mQ60%3D",
+    "publisher": "Entergy / LPSC",
+    "title": "Entergy omnibus reply U-37425",
+    "sourceType": "PRIMARY_REGULATORY",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-08-18",
+    "modifiedAt": null,
+    "availableFrom": "2025-08-18",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:26.478Z",
+    "MIME": "application/pdf",
+    "byteSize": 2306971,
+    "sourceHash": "d79e563d94438ad86adbfecdfa5d6d8a8b0a3a0cbd3790b9cd8d302e39af9fa3",
+    "sourceVersion": "entergy-reply@d79e563d94438ad86adbfecdfa5d6d8a8b0a3a0cbd3790b9cd8d302e39af9fa3",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "lpscpubvalence.lpsc.louisiana.gov",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "entergy-reply",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "fairwater-build",
+    "url": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+    "resolvedURL": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+    "publisher": "Microsoft",
+    "title": "Inside Fairwater",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-09-18",
+    "modifiedAt": null,
+    "availableFrom": "2025-09-18",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:28.335Z",
+    "MIME": "text/html",
+    "byteSize": 144731,
+    "sourceHash": "bfb2f61bdb6537896e89b27218f941c305178558da12eacc80d999af1b25c3f4",
+    "sourceVersion": "fairwater-build@bfb2f61bdb6537896e89b27218f941c305178558da12eacc80d999af1b25c3f4",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "blogs.microsoft.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "fairwater-build",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "fairwater-investment",
+    "url": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+    "resolvedURL": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+    "publisher": "Microsoft",
+    "title": "Made in Wisconsin",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-09-18",
+    "modifiedAt": null,
+    "availableFrom": "2025-09-18",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:29.660Z",
+    "MIME": "text/html",
+    "byteSize": 169596,
+    "sourceHash": "b68194156766ac5ccbeb0e042f4972d8842af5e7ebd412e91234fdcb010d0e76",
+    "sourceVersion": "fairwater-investment@b68194156766ac5ccbeb0e042f4972d8842af5e7ebd412e91234fdcb010d0e76",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "blogs.microsoft.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "fairwater-investment",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "fairwater-tid",
+    "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878",
+    "resolvedURL": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10?bidId=",
+    "publisher": "Village of Mount Pleasant",
+    "title": "Annual TID No.5 report",
+    "sourceType": "PRIMARY_REGULATORY",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-11-10",
+    "modifiedAt": null,
+    "availableFrom": "2025-11-10",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:30.878Z",
+    "MIME": "application/pdf",
+    "byteSize": 392198,
+    "sourceHash": "2414d4045470bd1823751a35043a0348e48e0894f11ebad0aad1130e1e1e1a2f",
+    "sourceVersion": "fairwater-tid@2414d4045470bd1823751a35043a0348e48e0894f11ebad0aad1130e1e1e1a2f",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "www.mtpleasantwi.gov",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "fairwater-tid",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "fairwater-land",
+    "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/3142/_Microsoft-News-Release_Village_March-30-2023?bidId=",
+    "resolvedURL": "https://www.mtpleasantwi.gov/DocumentCenter/View/3142/_Microsoft-News-Release_Village_March-30-2023?bidId=",
+    "publisher": "Village of Mount Pleasant",
+    "title": "2023 land purchase agreements",
+    "sourceType": "PRIMARY_REGULATORY",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2023-03-30",
+    "modifiedAt": null,
+    "availableFrom": "2023-03-30",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:33.019Z",
+    "MIME": "application/pdf",
+    "byteSize": 113995,
+    "sourceHash": "df567f13c01ac56549dd106943c2334613e0d62c4bd07a4135994aaab81bf212",
+    "sourceVersion": "fairwater-land@df567f13c01ac56549dd106943c2334613e0d62c4bd07a4135994aaab81bf212",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "www.mtpleasantwi.gov",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "fairwater-land",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "fairwater-current",
+    "url": "https://www.mtpleasantwi.gov/2793/Tax-Incremental-District-No-5",
+    "resolvedURL": "https://www.mtpleasantwi.gov/2793/Tax-Incremental-District-No-5",
+    "publisher": "Village of Mount Pleasant",
+    "title": "TID No.5 current official project status",
+    "sourceType": "PRIMARY_REGULATORY",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_UNDATED_CONTENT",
+    "retrievedAt": "2026-10-07T22:04:34.473Z",
+    "MIME": "text/html",
+    "byteSize": 122706,
+    "sourceHash": "065274437ddd5133e8911a8d47ce882d10638af5ae190e45f74e3b88ebe6bc93",
+    "sourceVersion": "fairwater-current@065274437ddd5133e8911a8d47ce882d10638af5ae190e45f74e3b88ebe6bc93",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "www.mtpleasantwi.gov",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "fairwater-current",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "pf1-2025q1",
+    "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000069/apld-20250831.htm",
+    "resolvedURL": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000069/apld-20250831.htm",
+    "publisher": "Applied Digital",
+    "title": "Applied Digital 10-Q August 31 2025",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-10-09",
+    "modifiedAt": null,
+    "availableFrom": "2025-10-09",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:35.884Z",
+    "MIME": "text/html",
+    "byteSize": 1392279,
+    "sourceHash": "2b8105eb29244dc416082fbd94dc7f63ed514be5fff37b0d1665250a60188b53",
+    "sourceVersion": "pf1-2025q1@2b8105eb29244dc416082fbd94dc7f63ed514be5fff37b0d1665250a60188b53",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "pf1-2025q1",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "pf1-2025q2",
+    "url": "https://ir.applieddigital.com/sec-filings/quarterly-reports/content/0001144879-26-000006/0001144879-26-000006.pdf",
+    "resolvedURL": "https://ir.applieddigital.com/sec-filings/quarterly-reports/content/0001144879-26-000006/0001144879-26-000006.pdf",
+    "publisher": "Applied Digital",
+    "title": "Applied Digital 10-Q November 30 2025",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-01-08",
+    "modifiedAt": null,
+    "availableFrom": "2026-01-08",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:37.979Z",
+    "MIME": "application/pdf",
+    "byteSize": 599490,
+    "sourceHash": "2b8d3175a389a884d23c34ec96b289e252baf101ab2338388a91aa3f6a26d7fe",
+    "sourceVersion": "pf1-2025q2@2b8d3175a389a884d23c34ec96b289e252baf101ab2338388a91aa3f6a26d7fe",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "pf1-2025q2",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "pf1-2026release",
+    "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000044/apldq426earningsreleaseasf.htm",
+    "resolvedURL": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000044/apldq426earningsreleaseasf.htm",
+    "publisher": "Applied Digital",
+    "title": "Applied Digital FY2026 Q4 release",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-07-27",
+    "modifiedAt": null,
+    "availableFrom": "2026-07-27",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:39.844Z",
+    "MIME": "text/html",
+    "byteSize": 485049,
+    "sourceHash": "23e2360ad4415bbd56f2e696090cf2e36b3b64bf291aaf707fcd4431da45db45",
+    "sourceVersion": "pf1-2026release@23e2360ad4415bbd56f2e696090cf2e36b3b64bf291aaf707fcd4431da45db45",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "pf1-2026release",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "pf1-presentation",
+    "url": "https://ir.applieddigital.com/_assets/_2b270afc37018352de7ef24c16a6e485/appliedblockchaininc/db/2905/27266/pdf/APLD_INV_InvestorPresentation_Final_04.24.26.pdf",
+    "resolvedURL": null,
+    "publisher": "Applied Digital",
+    "title": "Applied Digital April investor presentation",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-04-24",
+    "modifiedAt": null,
+    "availableFrom": "2026-04-24",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:41.509Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "pf1-presentation@WEB_REVIEW_20261007",
+    "qualificationStatus": "UNQUALIFIED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED",
+    "reviewMethod": "Public web text review; raw retrieval not qualified",
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "pf1-presentation",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "pf1-rfs",
+    "url": "https://ir.applieddigital.com/_assets/_e3064005ec46aabd44724bb789f39af6/appliedblockchaininc/news/2025-11-24_Applied_Digital_Completes_Phase_II_Ready_for_137.pdf",
+    "resolvedURL": null,
+    "publisher": "Applied Digital",
+    "title": "PF1 first building fully energized",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-11-24",
+    "modifiedAt": null,
+    "availableFrom": "2025-11-24",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:42.815Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "pf1-rfs@WEB_REVIEW_20261007",
+    "qualificationStatus": "UNQUALIFIED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED_HOST_STOP",
+    "reviewMethod": "Public web text review; raw retrieval not qualified",
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "pf1-rfs",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "pf1-current",
+    "url": "https://ir.applieddigital.com/news-events/press-releases/detail/161/applied-digital-brings-an-additional-75-mw-of-ai",
+    "resolvedURL": null,
+    "publisher": "Applied Digital",
+    "title": "Additional 75MW online PF1",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-10-02",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-02",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:04:43.915Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "pf1-current@WEB_REVIEW_20261007",
+    "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED_HOST_STOP",
+    "reviewMethod": "Agent-assisted official release review; direct rawaccess stopped after host403",
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "pf1-current",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "lpsc-order",
+    "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn%2Fjuc2%2BA%3D",
+    "resolvedURL": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn%2Fjuc2%2BA%3D",
+    "publisher": "LPSC",
+    "title": "LPSC Order U-37425 and public settlement",
+    "sourceType": "PRIMARY_REGULATORY",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-08-29",
+    "modifiedAt": null,
+    "availableFrom": "2025-08-29",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:06:17.262Z",
+    "MIME": "application/pdf",
+    "byteSize": 2456110,
+    "sourceHash": "9185ef7e4130785574b53f0a0cff7216390428399d2aaac0265eebb7da838aaf",
+    "sourceVersion": "lpsc-order@9185ef7e4130785574b53f0a0cff7216390428399d2aaac0265eebb7da838aaf",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "lpscpubvalence.lpsc.louisiana.gov",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "lpsc-order",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "fairwater-online",
+    "url": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/",
+    "resolvedURL": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/",
+    "publisher": "Microsoft",
+    "title": "Fairwater 1 equipment coming online",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-07-20",
+    "modifiedAt": null,
+    "availableFrom": "2026-07-20",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:06:19.076Z",
+    "MIME": "text/html",
+    "byteSize": 195353,
+    "sourceHash": "5d4fcbaad417ead3fca5ab44272bfc5a4f46f805ba3182c06b4e21e9d13bab02",
+    "sourceVersion": "fairwater-online@5d4fcbaad417ead3fca5ab44272bfc5a4f46f805ba3182c06b4e21e9d13bab02",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "local.microsoft.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "fairwater-online",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "pf1-initial-leases",
+    "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001641172-25-013199/ex99-2.htm",
+    "resolvedURL": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001641172-25-013199/ex99-2.htm",
+    "publisher": "Applied Digital",
+    "title": "Initial CoreWeave leases",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-06-02",
+    "modifiedAt": null,
+    "availableFrom": "2025-06-02",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:06:20.452Z",
+    "MIME": "text/html",
+    "byteSize": 19770,
+    "sourceHash": "c18bd6a600e0cf8b5440c8c1b712361152fac32db81c25bcaee503a9eae3bfe8",
+    "sourceVersion": "pf1-initial-leases@c18bd6a600e0cf8b5440c8c1b712361152fac32db81c25bcaee503a9eae3bfe8",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "pf1-initial-leases",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "pf1-macquarie",
+    "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000005/apldq225earningsrelease.htm",
+    "resolvedURL": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000005/apldq225earningsrelease.htm",
+    "publisher": "Applied Digital",
+    "title": "Original Macquarie preferred capital agreement",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-01-14",
+    "modifiedAt": null,
+    "availableFrom": "2025-01-14",
+    "availabilityBasis": "DATED_DISCLOSURE_RECONSTRUCTION_NOT_REAL_TIME_VINTAGE",
+    "retrievedAt": "2026-10-07T22:07:59.586Z",
+    "MIME": "text/html",
+    "byteSize": 353101,
+    "sourceHash": "271eabba21da46526d40eaa05d9e0ce4cf33aad9f465aaf81c553f0ea00e3965",
+    "sourceVersion": "pf1-macquarie@271eabba21da46526d40eaa05d9e0ce4cf33aad9f465aaf81c553f0ea00e3965",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ],
+    "sourceFamilyId": "pf1-macquarie",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "quincy-water",
+    "url": "https://local.microsoft.com/blog/partnering-with-the-city-of-quincy-to-open-washingtons-first-industrial-water-reuse-center/",
+    "resolvedURL": "https://local.microsoft.com/blog/partnering-with-the-city-of-quincy-to-open-washingtons-first-industrial-water-reuse-center/",
+    "publisher": "Microsoft",
+    "title": "Quincy water reuse facility",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2021-08-27",
+    "modifiedAt": "2026-03-18",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:40.199Z",
+    "MIME": "text/html",
+    "byteSize": 198980,
+    "sourceHash": "86cd1727d0b4a1e46b7f12ecb8a641586fe437d9b1d87dcca9148f3b4d85488d",
+    "sourceVersion": "quincy-water@86cd1727d0b4a1e46b7f12ecb8a641586fe437d9b1d87dcca9148f3b4d85488d",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "local.microsoft.com",
+        "prefix": "/blog/partnering-with-the-city-of-quincy-to-open-washingtons-first-industrial-water-reuse-center/"
+      }
+    ],
+    "sourceFamilyId": "quincy-water",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "quincy-community",
+    "url": "https://blogs.microsoft.com/on-the-issues/2026/01/13/community-first-ai-infrastructure/",
+    "resolvedURL": "https://blogs.microsoft.com/on-the-issues/2026/01/13/community-first-ai-infrastructure/",
+    "publisher": "Microsoft",
+    "title": "Community-first AI infrastructure",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-01-13",
+    "modifiedAt": "2026-01-15",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:41.657Z",
+    "MIME": "text/html",
+    "byteSize": 193410,
+    "sourceHash": "0aed37166aafadf3cb34ede888d9c41c8f84684e8f176b35f922ddc227f888c9",
+    "sourceVersion": "quincy-community@0aed37166aafadf3cb34ede888d9c41c8f84684e8f176b35f922ddc227f888c9",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "blogs.microsoft.com",
+        "prefix": "/on-the-issues/2026/01/13/community-first-ai-infrastructure/"
+      }
+    ],
+    "sourceFamilyId": "quincy-community",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "google-texas-locations",
+    "url": "https://www.datacenters.google/locations/texas/",
+    "resolvedURL": "https://www.datacenters.google/locations/texas/",
+    "publisher": "Google",
+    "title": "Texas data center locations",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:42.994Z",
+    "MIME": "text/html",
+    "byteSize": 188439,
+    "sourceHash": "1da281c3868960d682c172a8a4e02f33df18d9ab22fc38cb1f9e57bf15c63d73",
+    "sourceVersion": "google-texas-locations@1da281c3868960d682c172a8a4e02f33df18d9ab22fc38cb1f9e57bf15c63d73",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.datacenters.google",
+        "prefix": "/locations/texas/"
+      }
+    ],
+    "sourceFamilyId": "google-texas-locations",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "amazon-madison",
+    "url": "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi",
+    "resolvedURL": "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi",
+    "publisher": "Amazon",
+    "title": "Madison County two-campus program",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2024-01-25",
+    "modifiedAt": "2024-01-25",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:44.604Z",
+    "MIME": "text/html",
+    "byteSize": 212917,
+    "sourceHash": "f8953a09b8c4ab75262f94c706180eae6f29531d13173abf1e82157152acaf45",
+    "sourceVersion": "amazon-madison@f8953a09b8c4ab75262f94c706180eae6f29531d13173abf1e82157152acaf45",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.aboutamazon.com",
+        "prefix": "/news/aws/aws-10-billion-investment-mississippi"
+      }
+    ],
+    "sourceFamilyId": "amazon-madison",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "amazon-warren",
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-3-billion-mississippi-data-center-investment",
+    "resolvedURL": "https://www.aboutamazon.com/news/company-news/amazon-3-billion-mississippi-data-center-investment",
+    "publisher": "Amazon",
+    "title": "Warren County campus",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-11-20",
+    "modifiedAt": "2025-11-20",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:46.249Z",
+    "MIME": "text/html",
+    "byteSize": 232251,
+    "sourceHash": "676ca73200f5522bb5a83c704f67e58ca88a7807f0eb677b5cb035a7a73afdf8",
+    "sourceVersion": "amazon-warren@676ca73200f5522bb5a83c704f67e58ca88a7807f0eb677b5cb035a7a73afdf8",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.aboutamazon.com",
+        "prefix": "/news/company-news/amazon-3-billion-mississippi-data-center-investment"
+      }
+    ],
+    "sourceFamilyId": "amazon-warren",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "amazon-mississippi-current",
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-25-billion-mississippi-data-centers",
+    "resolvedURL": "https://www.aboutamazon.com/news/company-news/amazon-25-billion-mississippi-data-centers",
+    "publisher": "Amazon",
+    "title": "Mississippi current context",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-04-09",
+    "modifiedAt": "2026-04-09",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:47.787Z",
+    "MIME": "text/html",
+    "byteSize": 242332,
+    "sourceHash": "c6a510ddaa8fdcc79a529b2d6f3982b4a87cc82d90a1d47b94e8342fdbf663ec",
+    "sourceVersion": "amazon-mississippi-current@c6a510ddaa8fdcc79a529b2d6f3982b4a87cc82d90a1d47b94e8342fdbf663ec",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.aboutamazon.com",
+        "prefix": "/news/company-news/amazon-25-billion-mississippi-data-centers"
+      }
+    ],
+    "sourceFamilyId": "amazon-mississippi-current",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "madison-eda",
+    "url": "https://madisoncountyeda.com/amazon-web-services-to-invest-record-shattering-10-billion/",
+    "resolvedURL": null,
+    "publisher": "Madison County Economic Development Authority",
+    "title": "AWS project locations",
+    "sourceType": "PRIMARY_REGULATORY",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2024-01-25",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:49.356Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "madison-eda@WEB_REVIEW_20261007",
+    "qualificationStatus": "UNQUALIFIED",
+    "retrievalStatus": "REVIEW_REQUIRED",
+    "accessError": "CONTENT_MISMATCH",
+    "reviewMethod": "Public text review only; raw source gap retained",
+    "allowedRoutes": [
+      {
+        "host": "madisoncountyeda.com",
+        "prefix": "/amazon-web-services-to-invest-record-shattering-10-billion/"
+      }
+    ],
+    "sourceFamilyId": "madison-eda",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "el-paso-groundbreaking",
+    "url": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+    "resolvedURL": "https://about.fb.com/news/2025/10/metas-new-ai-optimized-data-center-el-paso/",
+    "publisher": "Meta",
+    "title": "El Paso groundbreaking and dated update",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-10-15",
+    "modifiedAt": "2026-03-26",
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:51.075Z",
+    "MIME": "text/html",
+    "byteSize": 768799,
+    "sourceHash": "c12f4bd741e2fc52c74c7a980e2b837e3a5031f1757b0cbda46bc90ad0b1d5c6",
+    "sourceVersion": "el-paso-groundbreaking@c12f4bd741e2fc52c74c7a980e2b837e3a5031f1757b0cbda46bc90ad0b1d5c6",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "about.fb.com",
+        "prefix": "/news/2025/10/metas-new-ai-optimized-data-center-el-paso/"
+      }
+    ],
+    "sourceFamilyId": "el-paso-groundbreaking",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "el-paso-jv",
+    "url": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+    "resolvedURL": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+    "publisher": "Meta",
+    "title": "El Paso venture announcement",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-07-28",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:53.375Z",
+    "MIME": "text/html",
+    "byteSize": 338200,
+    "sourceHash": "a45dc02473ab49ea9ee1b369857bb6a3acc0025931acfd754bba7d11ae1f91b3",
+    "sourceVersion": "el-paso-jv@a45dc02473ab49ea9ee1b369857bb6a3acc0025931acfd754bba7d11ae1f91b3",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "about.fb.com",
+        "prefix": "/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/"
+      }
+    ],
+    "sourceFamilyId": "el-paso-jv",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "abilene-jv",
+    "url": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+    "resolvedURL": "https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture",
+    "publisher": "Crusoe",
+    "title": "Abilene JV phase two",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2025-05-21",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:54.550Z",
+    "MIME": "text/html",
+    "byteSize": 248936,
+    "sourceHash": "0f2b8b39e62634c6b22aaeabd06069a489e70375a3b265adc02486d6fee59405",
+    "sourceVersion": "abilene-jv@0f2b8b39e62634c6b22aaeabd06069a489e70375a3b265adc02486d6fee59405",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.crusoe.ai",
+        "prefix": "/resources/newsroom/crusoe-blue-owl-capital-and-primary-digital-infrastructure-enter-joint-venture"
+      }
+    ],
+    "sourceFamilyId": "abilene-jv",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "abilene-adviser",
+    "url": "https://www.nmrk.com/insights/press-releases/newmark-facilitates-7-1-billion-construction-loan-to-develop-ai-data-center",
+    "resolvedURL": null,
+    "publisher": "Newmark",
+    "title": "Abilene construction financing",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:55.833Z",
+    "MIME": null,
+    "byteSize": 0,
+    "sourceHash": null,
+    "sourceVersion": "abilene-adviser@WEB_REVIEW_20261007",
+    "qualificationStatus": "UNQUALIFIED",
+    "retrievalStatus": "ACCESS_BLOCKED",
+    "accessError": "ACCESS_BLOCKED",
+    "reviewMethod": "Public text review only; raw source gap retained",
+    "allowedRoutes": [
+      {
+        "host": "www.nmrk.com",
+        "prefix": "/insights/press-releases/newmark-facilitates-7-1-billion-construction-loan-to-develop-ai-data-center"
+      }
+    ],
+    "sourceFamilyId": "abilene-adviser",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "oracle-abilene",
+    "url": "https://www.oracle.com/data-centers/abilene/",
+    "resolvedURL": "https://www.oracle.com/data-centers/abilene/",
+    "publisher": "Oracle",
+    "title": "Abilene data center facts",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:57.109Z",
+    "MIME": "text/html",
+    "byteSize": 31667,
+    "sourceHash": "b93f5cfdbbd1ad6bc61c92cbdf2412d42b0564221811ef866a17dd168772a99d",
+    "sourceVersion": "oracle-abilene@b93f5cfdbbd1ad6bc61c92cbdf2412d42b0564221811ef866a17dd168772a99d",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.oracle.com",
+        "prefix": "/data-centers/abilene/"
+      }
+    ],
+    "sourceFamilyId": "oracle-abilene",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "oracle-tracker",
+    "url": "https://www.oracle.com/data-centers/",
+    "resolvedURL": "https://www.oracle.com/data-centers/",
+    "publisher": "Oracle",
+    "title": "Oracle project tracker",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:58.619Z",
+    "MIME": "text/html",
+    "byteSize": 76497,
+    "sourceHash": "d562664ffee92c645fe415cd2614800c5a63e1fd491fea08086a60f31876e8d6",
+    "sourceVersion": "oracle-tracker@d562664ffee92c645fe415cd2614800c5a63e1fd491fea08086a60f31876e8d6",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.oracle.com",
+        "prefix": "/data-centers/"
+      }
+    ],
+    "sourceFamilyId": "oracle-tracker",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "jupiter-march-power",
+    "url": "https://www.oracle.com/news/announcement/blog/building-a-sustainable-future-in-new-mexico-2026-03-03/",
+    "resolvedURL": "https://www.oracle.com/news/announcement/blog/building-a-sustainable-future-in-new-mexico-2026-03-03/",
+    "publisher": "Oracle",
+    "title": "Project Jupiter initial power plan",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": "2026-03-03",
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:23:59.815Z",
+    "MIME": "text/html",
+    "byteSize": 34289,
+    "sourceHash": "f4e0866256b48592c79cc7fef69d4a1624688dafb908b37b7654adf49f399e28",
+    "sourceVersion": "jupiter-march-power@f4e0866256b48592c79cc7fef69d4a1624688dafb908b37b7654adf49f399e28",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.oracle.com",
+        "prefix": "/news/announcement/blog/building-a-sustainable-future-in-new-mexico-2026-03-03/"
+      }
+    ],
+    "sourceFamilyId": "jupiter-march-power",
+    "previousSourceVersion": null
+  },
+  {
+    "sourceId": "oracle-jupiter",
+    "url": "https://www.oracle.com/data-centers/dona-ana-county/",
+    "resolvedURL": "https://www.oracle.com/data-centers/dona-ana-county/",
+    "publisher": "Oracle",
+    "title": "Project Jupiter current facts",
+    "sourceType": "PRIMARY_PROJECT",
+    "primaryOrSecondary": "PRIMARY",
+    "documentDate": null,
+    "modifiedAt": null,
+    "availableFrom": "2026-10-07",
+    "availabilityBasis": "FIRST_REVIEWED_CONTENT_VINTAGE; undated/updated HTML not backdated",
+    "retrievedAt": "2026-10-07T23:24:01.003Z",
+    "MIME": "text/html",
+    "byteSize": 32683,
+    "sourceHash": "62973ff79d15a569f581907fa2f4ef962741998e5e259a8918f9ad9adc1e613b",
+    "sourceVersion": "oracle-jupiter@62973ff79d15a569f581907fa2f4ef962741998e5e259a8918f9ad9adc1e613b",
+    "qualificationStatus": "ARCHIVED_REVIEWED",
+    "retrievalStatus": "CONTENT_VALIDATED",
+    "accessError": null,
+    "reviewMethod": "Agent-assisted issuer/section review; immutable response retained",
+    "allowedRoutes": [
+      {
+        "host": "www.oracle.com",
+        "prefix": "/data-centers/dona-ana-county/"
+      }
+    ],
+    "sourceFamilyId": "oracle-jupiter",
+    "previousSourceVersion": null
+  }
+]

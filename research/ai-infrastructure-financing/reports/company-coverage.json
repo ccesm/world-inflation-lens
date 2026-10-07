@@ -1,0 +1,905 @@
+{
+  "asOfDate": "2026-10-07",
+  "panelHash": "b54975f22d5fbceceb44216665c37233511a9d088016255bdb09328ef91706ff",
+  "coverageBasis": "Admitted research project identity, not complete legal/financial qualification; curated non-exhaustive sample",
+  "companies": [
+    {
+      "companyId": "MSFT",
+      "qualifiedProjects": [
+        "fairwater",
+        "quincy"
+      ],
+      "candidateProjects": [],
+      "rejectedProjects": [],
+      "primarySources": [
+        "fairwater-investment",
+        "quincy-community",
+        "fairwater-online",
+        "fairwater-tid",
+        "fairwater-build",
+        "quincy-water"
+      ],
+      "secondarySources": [],
+      "qualifiedObservations": 17,
+      "unavailableObservations": 20,
+      "statuses": [
+        {
+          "projectId": "fairwater",
+          "history": [
+            {
+              "id": "status:obs:48de31ef9c78dda3917e98ac",
+              "projectId": "fairwater",
+              "scopeId": "fairwater-asset",
+              "status": "UNDER_CONSTRUCTION",
+              "effectiveAt": "2025-09-18",
+              "reportedAt": "2025-09-18",
+              "availableFrom": "2025-09-18",
+              "sourceIds": [
+                "fairwater-build"
+              ],
+              "claimId": "fairwater:3c:project-status:2025-09-18",
+              "observationId": "obs:48de31ef9c78dda3917e98ac",
+              "recordState": "SUPERSEDED",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            },
+            {
+              "id": "status:obs:268f4ea0e4a10ea1ed16593a",
+              "projectId": "fairwater",
+              "scopeId": "fairwater-asset",
+              "status": "PARTIALLY_OPERATIONAL",
+              "effectiveAt": "2026-07-20",
+              "reportedAt": "2026-07-20",
+              "availableFrom": "2026-07-20",
+              "sourceIds": [
+                "fairwater-online"
+              ],
+              "claimId": "fairwater:status",
+              "observationId": "obs:268f4ea0e4a10ea1ed16593a",
+              "recordState": "CONFLICT_REQUIRES_REVIEW",
+              "qualificationStatus": "CONFLICTING",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        },
+        {
+          "projectId": "quincy",
+          "history": [
+            {
+              "id": "status:obs:8cb63736ffed884f749f979c",
+              "projectId": "quincy",
+              "scopeId": "quincy-site",
+              "status": "OPERATIONAL",
+              "effectiveAt": "2026-01-13",
+              "reportedAt": "2026-01-13",
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "quincy-community"
+              ],
+              "claimId": "quincy:3c:project-status:2026-01-13",
+              "observationId": "obs:8cb63736ffed884f749f979c",
+              "recordState": "CURRENT",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        }
+      ],
+      "archetypes": [
+        "CORPORATE_OWNED"
+      ],
+      "knownLeaseExposureProjects": [],
+      "knownDebtDisclosureProjects": [],
+      "knownGuaranteeProjects": [],
+      "sourceCoverage": [
+        {
+          "family": "physical",
+          "observations": 14,
+          "primaryVerified": 12,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "status",
+          "observations": 3,
+          "primaryVerified": 2,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "legalOwner",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 1,
+          "secondaryOnly": 0,
+          "unavailable": 1
+        },
+        {
+          "family": "capacity",
+          "observations": 1,
+          "primaryVerified": 1,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "financing",
+          "observations": 4,
+          "primaryVerified": 1,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 3
+        },
+        {
+          "family": "obligations",
+          "observations": 3,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 3
+        },
+        {
+          "family": "accounting",
+          "observations": 3,
+          "primaryVerified": 0,
+          "primaryPartial": 1,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "power",
+          "observations": 3,
+          "primaryVerified": 1,
+          "primaryPartial": 1,
+          "secondaryOnly": 0,
+          "unavailable": 1
+        },
+        {
+          "family": "monetization",
+          "observations": 8,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 8
+        }
+      ],
+      "majorSourceGaps": [
+        "legalOwner",
+        "obligations",
+        "accounting",
+        "monetization"
+      ],
+      "minimumTwoProjectTargetMet": true
+    },
+    {
+      "companyId": "GOOG",
+      "qualifiedProjects": [
+        "google-midlothian",
+        "google-red-oak"
+      ],
+      "candidateProjects": [
+        "google-haskell"
+      ],
+      "rejectedProjects": [
+        "google-texas-program"
+      ],
+      "primarySources": [
+        "google-texas-locations"
+      ],
+      "secondarySources": [],
+      "qualifiedObservations": 8,
+      "unavailableObservations": 16,
+      "statuses": [
+        {
+          "projectId": "google-midlothian",
+          "history": [
+            {
+              "id": "status:obs:0967cd6d3f40485383da9647",
+              "projectId": "google-midlothian",
+              "scopeId": "google-midlothian-site",
+              "status": "UNKNOWN",
+              "effectiveAt": null,
+              "reportedAt": null,
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "google-texas-locations"
+              ],
+              "claimId": "google-midlothian:3c:project-status:2026-10-07",
+              "observationId": "obs:0967cd6d3f40485383da9647",
+              "recordState": "CURRENT",
+              "qualificationStatus": "UNAVAILABLE",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        },
+        {
+          "projectId": "google-red-oak",
+          "history": [
+            {
+              "id": "status:obs:964256f52894c47d0667a783",
+              "projectId": "google-red-oak",
+              "scopeId": "google-red-oak-site",
+              "status": "UNKNOWN",
+              "effectiveAt": null,
+              "reportedAt": null,
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "google-texas-locations"
+              ],
+              "claimId": "google-red-oak:3c:project-status:2026-10-07",
+              "observationId": "obs:964256f52894c47d0667a783",
+              "recordState": "CURRENT",
+              "qualificationStatus": "UNAVAILABLE",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        }
+      ],
+      "archetypes": [
+        "UNKNOWN"
+      ],
+      "knownLeaseExposureProjects": [],
+      "knownDebtDisclosureProjects": [],
+      "knownGuaranteeProjects": [],
+      "sourceCoverage": [
+        {
+          "family": "physical",
+          "observations": 8,
+          "primaryVerified": 8,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "status",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "legalOwner",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "capacity",
+          "observations": 0,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "financing",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "obligations",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "accounting",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "power",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "monetization",
+          "observations": 4,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 4
+        }
+      ],
+      "majorSourceGaps": [
+        "status",
+        "legalOwner",
+        "capacity",
+        "financing",
+        "obligations",
+        "accounting",
+        "power",
+        "monetization"
+      ],
+      "minimumTwoProjectTargetMet": true
+    },
+    {
+      "companyId": "AMZN",
+      "qualifiedProjects": [
+        "aws-canton",
+        "aws-warren"
+      ],
+      "candidateProjects": [
+        "aws-ridgeland"
+      ],
+      "rejectedProjects": [],
+      "primarySources": [
+        "amazon-warren",
+        "amazon-mississippi-current"
+      ],
+      "secondarySources": [],
+      "qualifiedObservations": 9,
+      "unavailableObservations": 15,
+      "statuses": [
+        {
+          "projectId": "aws-canton",
+          "history": [
+            {
+              "id": "status:obs:7d08b14c56baca1c4d108cf7",
+              "projectId": "aws-canton",
+              "scopeId": "aws-canton-site",
+              "status": "UNKNOWN",
+              "effectiveAt": null,
+              "reportedAt": "2026-04-09",
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "amazon-mississippi-current"
+              ],
+              "claimId": "aws-canton:3c:project-status:2026-04-09",
+              "observationId": "obs:7d08b14c56baca1c4d108cf7",
+              "recordState": "CURRENT",
+              "qualificationStatus": "UNAVAILABLE",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        },
+        {
+          "projectId": "aws-warren",
+          "history": [
+            {
+              "id": "status:obs:51e9d817e0ed858fe2b88a56",
+              "projectId": "aws-warren",
+              "scopeId": "aws-warren-site",
+              "status": "PLANNED",
+              "effectiveAt": "2025-11-20",
+              "reportedAt": "2025-11-20",
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "amazon-warren"
+              ],
+              "claimId": "aws-warren:3c:project-status:2025-11-20",
+              "observationId": "obs:51e9d817e0ed858fe2b88a56",
+              "recordState": "CURRENT",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        }
+      ],
+      "archetypes": [
+        "UNKNOWN"
+      ],
+      "knownLeaseExposureProjects": [],
+      "knownDebtDisclosureProjects": [],
+      "knownGuaranteeProjects": [],
+      "sourceCoverage": [
+        {
+          "family": "physical",
+          "observations": 8,
+          "primaryVerified": 8,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "status",
+          "observations": 2,
+          "primaryVerified": 1,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 1
+        },
+        {
+          "family": "legalOwner",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "capacity",
+          "observations": 0,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "financing",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "obligations",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "accounting",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "power",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "monetization",
+          "observations": 4,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 4
+        }
+      ],
+      "majorSourceGaps": [
+        "legalOwner",
+        "capacity",
+        "financing",
+        "obligations",
+        "accounting",
+        "power",
+        "monetization"
+      ],
+      "minimumTwoProjectTargetMet": true
+    },
+    {
+      "companyId": "META",
+      "qualifiedProjects": [
+        "hyperion",
+        "el-paso"
+      ],
+      "candidateProjects": [],
+      "rejectedProjects": [],
+      "primarySources": [
+        "cc-pimco",
+        "meta-jv-pdf",
+        "el-paso-jv",
+        "meta-2026q2",
+        "el-paso-groundbreaking",
+        "meta-engineering",
+        "meta-expansion",
+        "lpsc-order",
+        "meta-2025k",
+        "entergy-expansion"
+      ],
+      "secondarySources": [
+        "sp-webinar",
+        "brookings-paper"
+      ],
+      "qualifiedObservations": 50,
+      "unavailableObservations": 23,
+      "statuses": [
+        {
+          "projectId": "hyperion",
+          "history": [
+            {
+              "id": "status:obs:2eaac33fb1b05f10af9c4f5d",
+              "projectId": "hyperion",
+              "scopeId": "hyperion-jv-original",
+              "status": "UNDER_CONSTRUCTION",
+              "effectiveAt": "2025-09-29",
+              "reportedAt": "2025-09-29",
+              "availableFrom": "2025-09-29",
+              "sourceIds": [
+                "meta-engineering"
+              ],
+              "claimId": "hyperion:3c:project-status:2025-09-29",
+              "observationId": "obs:2eaac33fb1b05f10af9c4f5d",
+              "recordState": "SUPERSEDED",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            },
+            {
+              "id": "status:obs:a9d8b4bebb53c2abd10a02f4",
+              "projectId": "hyperion",
+              "scopeId": "hyperion-jv-original",
+              "status": "UNDER_CONSTRUCTION",
+              "effectiveAt": "2025-10-21",
+              "reportedAt": "2025-10-21",
+              "availableFrom": "2025-10-21",
+              "sourceIds": [
+                "meta-jv-pdf"
+              ],
+              "claimId": "hyperion:status",
+              "observationId": "obs:a9d8b4bebb53c2abd10a02f4",
+              "recordState": "CURRENT",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        },
+        {
+          "projectId": "el-paso",
+          "history": [
+            {
+              "id": "status:obs:6835c5ec1f0ec1babae4bf23",
+              "projectId": "el-paso",
+              "scopeId": "el-paso-site",
+              "status": "UNDER_CONSTRUCTION",
+              "effectiveAt": "2025-10-15",
+              "reportedAt": "2025-10-15",
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "el-paso-groundbreaking"
+              ],
+              "claimId": "el-paso:3c:project-status:2025-10-15",
+              "observationId": "obs:6835c5ec1f0ec1babae4bf23",
+              "recordState": "SUPERSEDED",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            },
+            {
+              "id": "status:obs:a998c04caf6741297e611062",
+              "projectId": "el-paso",
+              "scopeId": "el-paso-site",
+              "status": "UNDER_CONSTRUCTION",
+              "effectiveAt": "2026-07-28",
+              "reportedAt": "2026-07-28",
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "el-paso-jv"
+              ],
+              "claimId": "el-paso:3c:project-status:2026-07-28",
+              "observationId": "obs:a998c04caf6741297e611062",
+              "recordState": "CURRENT",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        }
+      ],
+      "archetypes": [
+        "JV_PROJECT_FINANCED"
+      ],
+      "knownLeaseExposureProjects": [
+        "hyperion",
+        "el-paso"
+      ],
+      "knownDebtDisclosureProjects": [
+        "hyperion",
+        "el-paso"
+      ],
+      "knownGuaranteeProjects": [
+        "hyperion",
+        "el-paso"
+      ],
+      "sourceCoverage": [
+        {
+          "family": "physical",
+          "observations": 30,
+          "primaryVerified": 24,
+          "primaryPartial": 1,
+          "secondaryOnly": 5,
+          "unavailable": 0
+        },
+        {
+          "family": "status",
+          "observations": 4,
+          "primaryVerified": 4,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "legalOwner",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "capacity",
+          "observations": 5,
+          "primaryVerified": 4,
+          "primaryPartial": 0,
+          "secondaryOnly": 1,
+          "unavailable": 0
+        },
+        {
+          "family": "financing",
+          "observations": 22,
+          "primaryVerified": 9,
+          "primaryPartial": 1,
+          "secondaryOnly": 1,
+          "unavailable": 11
+        },
+        {
+          "family": "obligations",
+          "observations": 14,
+          "primaryVerified": 12,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "accounting",
+          "observations": 7,
+          "primaryVerified": 6,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 1
+        },
+        {
+          "family": "power",
+          "observations": 7,
+          "primaryVerified": 6,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 1
+        },
+        {
+          "family": "monetization",
+          "observations": 6,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 6
+        }
+      ],
+      "majorSourceGaps": [
+        "legalOwner",
+        "accounting",
+        "monetization"
+      ],
+      "minimumTwoProjectTargetMet": true
+    },
+    {
+      "companyId": "ORCL",
+      "qualifiedProjects": [
+        "abilene",
+        "jupiter"
+      ],
+      "candidateProjects": [
+        "oracle-shackelford"
+      ],
+      "rejectedProjects": [],
+      "primarySources": [
+        "jupiter-march-power",
+        "oracle-tracker",
+        "oracle-jupiter",
+        "abilene-jv",
+        "oracle-abilene"
+      ],
+      "secondarySources": [],
+      "qualifiedObservations": 15,
+      "unavailableObservations": 14,
+      "statuses": [
+        {
+          "projectId": "abilene",
+          "history": [
+            {
+              "id": "status:obs:245dec60f0b3f7d9f0dcdbc4",
+              "projectId": "abilene",
+              "scopeId": "abilene-site",
+              "status": "PARTIALLY_OPERATIONAL",
+              "effectiveAt": null,
+              "reportedAt": null,
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "oracle-tracker"
+              ],
+              "claimId": "abilene:3c:project-status:2026-10-07",
+              "observationId": "obs:245dec60f0b3f7d9f0dcdbc4",
+              "recordState": "CURRENT",
+              "qualificationStatus": "PARTIAL",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        },
+        {
+          "projectId": "jupiter",
+          "history": [
+            {
+              "id": "status:obs:28b82f4605480f3ee59d2f87",
+              "projectId": "jupiter",
+              "scopeId": "jupiter-site",
+              "status": "PLANNED",
+              "effectiveAt": "2026-03-03",
+              "reportedAt": "2026-03-03",
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "jupiter-march-power"
+              ],
+              "claimId": "jupiter:3c:project-status:2026-03-03",
+              "observationId": "obs:28b82f4605480f3ee59d2f87",
+              "recordState": "SUPERSEDED",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            },
+            {
+              "id": "status:obs:1a978859922c99702689aa35",
+              "projectId": "jupiter",
+              "scopeId": "jupiter-site",
+              "status": "UNDER_CONSTRUCTION",
+              "effectiveAt": "2026-08-27",
+              "reportedAt": null,
+              "availableFrom": "2026-10-07",
+              "sourceIds": [
+                "oracle-tracker"
+              ],
+              "claimId": "jupiter:3c:project-status:2026-10-07",
+              "observationId": "obs:1a978859922c99702689aa35",
+              "recordState": "CURRENT",
+              "qualificationStatus": "QUALIFIED",
+              "statusSeries": "SOURCE_SCOPE_STAGE_NOT_NATIONAL_OR_FULL_CAMPUS_TOTAL"
+            }
+          ]
+        }
+      ],
+      "archetypes": [
+        "MIXED"
+      ],
+      "knownLeaseExposureProjects": [],
+      "knownDebtDisclosureProjects": [],
+      "knownGuaranteeProjects": [],
+      "sourceCoverage": [
+        {
+          "family": "physical",
+          "observations": 9,
+          "primaryVerified": 8,
+          "primaryPartial": 1,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "status",
+          "observations": 3,
+          "primaryVerified": 2,
+          "primaryPartial": 1,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "legalOwner",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "capacity",
+          "observations": 1,
+          "primaryVerified": 1,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 0
+        },
+        {
+          "family": "financing",
+          "observations": 3,
+          "primaryVerified": 1,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "obligations",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "accounting",
+          "observations": 2,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "power",
+          "observations": 5,
+          "primaryVerified": 3,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 2
+        },
+        {
+          "family": "monetization",
+          "observations": 4,
+          "primaryVerified": 0,
+          "primaryPartial": 0,
+          "secondaryOnly": 0,
+          "unavailable": 4
+        }
+      ],
+      "majorSourceGaps": [
+        "legalOwner",
+        "obligations",
+        "accounting",
+        "monetization"
+      ],
+      "minimumTwoProjectTargetMet": true
+    }
+  ],
+  "comparativeReferenceProjects": [
+    "polaris-forge-1"
+  ],
+  "missingness": [
+    {
+      "fieldFamily": "legalOwner",
+      "definition": "Projects with at least one qualified disclosed field in this family; not proof of complete contract/terms",
+      "denominator": 11,
+      "withAtLeastOneQualifiedField": 0,
+      "withoutQualifiedField": 11,
+      "coveragePercent": 0
+    },
+    {
+      "fieldFamily": "financing",
+      "definition": "Projects with at least one qualified disclosed field in this family; not proof of complete contract/terms",
+      "denominator": 11,
+      "withAtLeastOneQualifiedField": 5,
+      "withoutQualifiedField": 6,
+      "coveragePercent": 45.45454545454545
+    },
+    {
+      "fieldFamily": "power",
+      "definition": "Projects with at least one qualified disclosed field in this family; not proof of complete contract/terms",
+      "denominator": 11,
+      "withAtLeastOneQualifiedField": 5,
+      "withoutQualifiedField": 6,
+      "coveragePercent": 45.45454545454545
+    },
+    {
+      "fieldFamily": "obligations",
+      "definition": "Projects with at least one qualified disclosed field in this family; not proof of complete contract/terms",
+      "denominator": 11,
+      "withAtLeastOneQualifiedField": 2,
+      "withoutQualifiedField": 9,
+      "coveragePercent": 18.181818181818183
+    },
+    {
+      "fieldFamily": "monetization",
+      "definition": "Projects with at least one qualified disclosed field in this family; not proof of complete contract/terms",
+      "denominator": 11,
+      "withAtLeastOneQualifiedField": 0,
+      "withoutQualifiedField": 11,
+      "coveragePercent": 0
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+[
+  {
+    "beneficiaryId": null,
+    "claimIds": [
+      "hyperion:offering",
+      "hyperion:issuer",
+      "hyperion:debt-maturity",
+      "hyperion:debt-coupon",
+      "hyperion:debt-yield",
+      "hyperion:debt-security",
+      "hyperion:debt-collateral",
+      "hyperion:debt-recourse",
+      "hyperion:debt-ranking",
+      "hyperion:debt-amortization",
+      "hyperion:debt-issuance-date",
+      "hyperion:debt-use-of-proceeds"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "h-private-securities",
+    "instrumentIdentity": "hyperion-private-offering-2025",
+    "instrumentType": "SOURCE_NATIVE_INSTRUMENT",
+    "issuerId": "beignet-investor",
+    "maturity": null,
+    "obligorId": null,
+    "projectId": "hyperion",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": null,
+    "claimIds": [
+      "hyperion:fund-cash"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "h-fund-cash",
+    "instrumentIdentity": "hyperion-fund-cash-contribution",
+    "instrumentType": "SOURCE_NATIVE_INSTRUMENT",
+    "issuerId": "blue-owl-funds",
+    "maturity": null,
+    "obligorId": null,
+    "projectId": "hyperion",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": null,
+    "claimIds": [
+      "fairwater:pledge",
+      "fairwater:equity-funding-mix"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "f-corporate-funding",
+    "instrumentIdentity": "fairwater-corporate-pledge-not-security",
+    "instrumentType": "SOURCE_NATIVE_INSTRUMENT",
+    "issuerId": "msft",
+    "maturity": null,
+    "obligorId": null,
+    "projectId": "fairwater",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": null,
+    "claimIds": [
+      "polaris-forge-1:p-notes250-principal",
+      "polaris-forge-1:p-notes250-coupon",
+      "polaris-forge-1:p-notes250-maturity",
+      "polaris-forge-1:p-notes250-issuer",
+      "polaris-forge-1:p-notes250-security",
+      "polaris-forge-1:p-notes250-recourse"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-notes250",
+    "instrumentIdentity": "p-notes250",
+    "instrumentType": "SOURCE_NATIVE_INSTRUMENT",
+    "issuerId": "computeco",
+    "maturity": null,
+    "obligorId": null,
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": null,
+    "claimIds": [
+      "polaris-forge-1:p-notes150-principal",
+      "polaris-forge-1:p-notes150-coupon",
+      "polaris-forge-1:p-notes150-maturity",
+      "polaris-forge-1:p-notes150-issuer",
+      "polaris-forge-1:p-notes150-security",
+      "polaris-forge-1:p-notes150-recourse"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-notes150",
+    "instrumentIdentity": "p-notes150",
+    "instrumentType": "SOURCE_NATIVE_INSTRUMENT",
+    "issuerId": "computeco3",
+    "maturity": null,
+    "obligorId": null,
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": null,
+    "claimIds": [
+      "polaris-forge-1:p-preferred-original"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-preferred-original",
+    "instrumentIdentity": "p-preferred-original",
+    "instrumentType": "SOURCE_NATIVE_INSTRUMENT",
+    "issuerId": "hpc-holdings",
+    "maturity": null,
+    "obligorId": null,
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "beneficiaryId": null,
+    "claimIds": [
+      "polaris-forge-1:p-platform-preferred"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "p-platform-preferred",
+    "instrumentIdentity": "p-platform-preferred",
+    "instrumentType": "SOURCE_NATIVE_INSTRUMENT",
+    "issuerId": "hpc-holdings",
+    "maturity": null,
+    "obligorId": null,
+    "projectId": "polaris-forge-1",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REFER_TO_QUALIFIED_FIELD_CLAIMS"
+  },
+  {
+    "claimIds": [
+      "el-paso:3c:debt-financing:2026-07-28"
+    ],
+    "coupon": null,
+    "fundingDate": null,
+    "id": "el-paso-debt",
+    "instrumentIdentity": "el-paso-debt-financing-announced-2026",
+    "instrumentType": "PROJECT_FINANCING_SOURCE_REPORTED",
+    "issuerId": null,
+    "maturity": null,
+    "projectId": "el-paso",
+    "providerIds": [],
+    "recourse": null,
+    "security": null,
+    "status": "REVIEW_REQUIRED"
+  }
+]

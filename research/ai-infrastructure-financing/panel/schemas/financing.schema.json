@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "projectId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "instrumentIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "claimIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "issuerId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "providerIds": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "obligorId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "beneficiaryId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "instrumentType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maturity": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "coupon": {
+        "type": [
+          "number",
+          "null"
+        ]
+      },
+      "security": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "recourse": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "fundingDate": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "minLength": 1
+      },
+      "status": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "id",
+      "projectId",
+      "instrumentIdentity",
+      "claimIds",
+      "issuerId",
+      "providerIds",
+      "instrumentType",
+      "maturity",
+      "coupon",
+      "security",
+      "recourse",
+      "fundingDate",
+      "status"
+    ],
+    "additionalProperties": false
+  },
+  "uniqueItems": true
+}

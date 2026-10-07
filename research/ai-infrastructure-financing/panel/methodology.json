@@ -1,0 +1,26 @@
+{
+  "aggregationPolicy": "DO_NOT_ADD",
+  "asOfDate": "2026-10-07",
+  "baseSha": "940be50f61a1516482da936a38f10a62cf262b5a",
+  "clockPolicy": "EXPLICIT_AS_OF",
+  "companyUniverse": [
+    "MSFT",
+    "GOOG",
+    "AMZN",
+    "META",
+    "ORCL"
+  ],
+  "implementationHash": "35273bc6eb693a1ab65b5cf57c5ca411b823a6dbb947f6522c7dc3d0d1330e52",
+  "implementationVersion": "ai-infrastructure-panel-v0.1.0",
+  "layers": [
+    "PHYSICAL_ASSET",
+    "ACCOUNTING_EXPOSURE",
+    "FINANCING_EXPOSURE",
+    "ECONOMIC_OBLIGATION",
+    "POWER_INFRASTRUCTURE",
+    "MONETIZATION_EVIDENCE"
+  ],
+  "panelHash": "b54975f22d5fbceceb44216665c37233511a9d088016255bdb09328ef91706ff",
+  "publicationPolicy": "FIELD_LEVEL_ONLY_NO_EXPORT",
+  "snapshotType": "RECONSTRUCTED_DISCLOSURE_SNAPSHOT_NOT_PUBLISHER_VINTAGE_REPLAY"
+}
