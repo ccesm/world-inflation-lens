@@ -76,7 +76,7 @@ export const structuralThemes = [
     description: label('Productivity, investment and infrastructure shape supply. Technology investment proxies are not direct AI spending, and observed gains are not proof of AI causation.', '生产率、投资与基础设施塑造供给能力。技术投资代理指标不等于 AI 直接支出，观测到的改善也不能证明由 AI 导致。'),
     existingEvidence: ['OPHNFB', 'ULCNFB', 'COMPNFB', 'PNFIC1', 'A679RC1Q027SBEA', 'B985RC1Q027SBEA', 'B935RC1Q027SBEA', 'GDPC1', 'REAL_GDP_WORKER', 'CE16OV', 'IPG3344S', 'CENSUS_DATACENTER', 'CENSUS_NONRES', 'CENSUS_ELECTRONIC', 'IPN22112CS'],
     plannedEvidence: [planned('firm-ai-adoption', 'Firm-level AI adoption', '企业层面的 AI 应用'), planned('tfp-decomposition', 'Total factor productivity decomposition', '全要素生产率分解')],
-    routes: [route('#/research/ai-productivity', 'AI & Productivity', '人工智能与生产率'), route('#/research/ai-labor', 'AI & Labor Transition · descriptive interim conclusion', 'AI 与劳动力转型 · 描述性阶段结论')],
+    routes: [route('#/research/ai-productivity', 'AI & Productivity', '人工智能与生产率'), route('#/research/ai-labor', 'AI & Labor Transition · descriptive interim conclusion', 'AI 与劳动力转型 · 描述性阶段结论'), route('#/research/ai-capex', 'AI CapEx & Monetization · fixed-vintage accounting', 'AI 资本支出与商业化 · 固定会计版本')],
   },
   {
     id: 'external', stage: 'structural', label: label('External Supply Shocks', '外部供给冲击'), evidenceState: 'EXISTING',
@@ -146,6 +146,7 @@ export const pageResearchContext = {
   'research/signal-engine': context('outcomes', null, 'Signal Engine', '信号引擎'),
   'research/international-dollar': context('structural', 'dollar-system', 'International Dollar Lens', '国际美元透视'),
   fiscal: context('structural', 'fiscal', 'Fiscal Outlook', '财政展望'),
+  'research/ai-capex': context('structural', 'capacity', 'AI CapEx & Monetization', 'AI 资本支出与商业化'),
   'research/ai-labor': context('structural', 'capacity', 'AI & Labor Transition', 'AI 与劳动力转型'),
   'research/ai-productivity': context('structural', 'capacity', 'AI & Productivity', '人工智能与生产率'),
   'external-shocks': context('structural', 'external', 'External Shocks', '外部冲击'),

@@ -1,5 +1,6 @@
 export const aiLaborCopy = {
  en: {
+ capexResearchLink:'AI CapEx & Monetization',capexResearchNote:'AI investment, productivity and labor effects are empirically distinct; their conclusions are not combined.',
   title: 'AI & Labor Transition', eyebrow: 'RESEARCH / FIXED-VINTAGE INTERIM CONCLUSION',
   subtitle: 'What does the evidence currently show about AI exposure and employment — and why is it still too early for a structural conclusion?',
   evidence: 'Evidence status', status: 'EARLY / INCONCLUSIVE / SAMPLE-SENSITIVE', mode: 'OBSERVATION MODE', modeLabel: 'Research mode',
@@ -42,6 +43,7 @@ export const aiLaborCopy = {
   provenanceTitle: 'Methodology and provenance', strictCommit: 'Phase 3 commit', expandedCommit: 'Phase 3.5 commit', spec: 'Specification SHA-256', report: 'Accepted methodology report', closure: 'Phase-closure documentation', methodsSources: 'CPS source documentation', monitor: 'Monitor prepared; not activated',
  },
  zh: {
+ capexResearchLink:'AI 资本支出与商业化',capexResearchNote:'AI 投资、生产率和劳动效应在实证上是不同问题；不合并它们的结论。',
   title: 'AI 与劳动力转型', eyebrow: '研究 / 固定版本阶段性结论',
   subtitle: '当前数据如何反映 AI 暴露与就业之间的关系——以及为什么现在仍然不足以得出结构性结论？',
   evidence: '证据状态', status: '早期 / 结论未定 / 对样本和方法敏感', mode: '长期观察模式', modeLabel: '研究状态',

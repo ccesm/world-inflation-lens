@@ -2,6 +2,12 @@
 
 A bilingual Vite + React research site studying two related questions over the next 20–30 years: the U.S. dollar’s domestic purchasing power and its international role in reserves, finance, trade and payments. Observations, official conditional projections and hypothetical scenarios remain distinct. Global inflation provides supporting context.
 
+## AI CapEx & Monetization — feature branch
+
+Research → **AI CapEx & Monetization** (`#/research/ai-capex`) adds compact fixed-vintage evidence through 2026Q2, using the qualified July 30 disclosure basis. Three quarterly charts, native cloud economics, sparse run-rate/paid-seat milestones, pure depreciation, backlog and separate guidance retain company accounting limits. It does not identify AI ROI or recognized quarterly AI-only revenue. The historical research stack is not imported. Application version stays 1.2.0 pending release approval. See [Phase 2C methodology and acceptance](docs/AI_CAPEX_PUBLIC_INTEGRATION.md).
+
+**研究 → AI 资本支出与商业化**展示截至 2026Q2 的固定版本证据，披露依据截至 7 月 30 日。公司会计观察、年化 run-rate、积压与指引分开列示；不推算 AI 回报，不把研究历史引入生产。
+
 ## V1.2.0 — AI Labor Interim Conclusion
 
 **Research → AI & Labor Transition** (`#/research/ai-labor`) presents a bilingual, fixed-vintage interim conclusion: **EARLY / INCONCLUSIVE / SAMPLE-SENSITIVE**, in **OBSERVATION MODE**. It compares accepted strict and expanded occupational samples, exposure methods, coverage and historical pretrends. The evidence does not establish AI-caused job losses or the absence of future AI labor effects. The monitor and AI Labor email remain disabled; no large research history is imported. See [v1.2.0 release notes](docs/v1.2-ai-labor-interim-conclusion.md).

@@ -22,6 +22,7 @@ export function AiLabor({ language }) {
     <p>{t.timeNote}</p>
    </section>
    <section className="ia-section"><h2>{t.studyTitle}</h2><p>{t.study}</p><p>{t.layers}</p><a className="ia-more" href="#/research/ai-productivity">{t.productivityLink} →</a></section>
+   <section className="ia-section"><h2>{t.capexResearchLink}</h2><p>{t.capexResearchNote}</p><a className="ia-more" href="#/research/ai-capex">{t.capexResearchLink} →</a></section>
    <section className="ia-section"><h2>{t.methodsTitle}</h2><div className="ia-grid two">
     <article><h3>{t.academic}</h3><p>{t.academicText}</p><a href="https://arxiv.org/abs/2303.10130">{t.paper}: GPTs are GPTs</a></article>
     <article><h3>{t.microsoft}</h3><p>{t.microsoftText}</p><a href="https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/">{t.paper}: Microsoft</a></article>
