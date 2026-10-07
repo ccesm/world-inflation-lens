@@ -1,0 +1,11 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"Phase 2D candidate research envelope — semantic validation requires frozen accepted rebuild",
+ "type":"object","additionalProperties":false,"required":["content","resultHash"],
+ "properties":{
+  "resultHash":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+  "content":{"type":"object","required":["schemaVersion","status","notice","acceptedMonitorHash","acceptedInputHash","acceptedDataThrough","proposedHeadlineQuarter","sharedPublicQuarter","implementationHash","sourceIdentities","candidateHash","records","qualification","recognizedAiRevenue","aiReturns","acceptedHistoryModified"],
+   "properties":{"schemaVersion":{"const":"ai-capex-quarterly-refresh-v0.1.0"},"status":{"const":"CANDIDATE_MONITOR"},"notice":{"const":"NOT FOR PRODUCTION"},"acceptedDataThrough":{"const":"2026Q2"},"sharedPublicQuarter":{"const":"2026Q2"},"proposedHeadlineQuarter":{"type":["string","null"]},"acceptedHistoryModified":{"const":false},"recognizedAiRevenue":{"type":"object","properties":{"status":{"const":"UNAVAILABLE"}},"required":["status"]},"aiReturns":{"type":"object","properties":{"status":{"const":"NOT_IDENTIFIED"}},"required":["status"]},"records":{"type":"array"},"qualification":{"type":"array"},"sourceIdentities":{"type":"array"}}
+  }
+ }
+}

@@ -1,0 +1,13 @@
+import {companies} from '../../scripts/contract.mjs';
+export {companies};
+export const baseCommit='afbc5da5b718d86c48d0e48d31a1eba456a26e09';
+export const accountingBase='ad6ebf96e2bf59145f31120dd02cdcc3fbca24b7';
+export const version='ai-capex-quarterly-refresh-v0.1.0';
+export const acceptedThrough='2026Q2';
+export const issuers={MSFT:{cik:'0000789019',name:'Microsoft',archive:'https://www.microsoft.com/en-us/investor/earnings/default'},GOOG:{cik:'0001652044',name:'Alphabet',archive:'https://abc.xyz/investor/earnings/'},AMZN:{cik:'0001018724',name:'Amazon',archive:'https://ir.aboutamazon.com/quarterly-results/default.aspx'},META:{cik:'0001326801',name:'Meta',archive:'https://investor.atmeta.com/financials/default.aspx'}};
+export const limits={maxBytes:25000000,timeoutMs:30000,redirects:3,minIntervalMs:1000,maxDocuments:12,maxDiscoveryLinks:40};
+export const lifecycle=['DISCOVERED','FETCHED','PARSED','VALIDATED','QUALIFIED_CANDIDATE','REVIEW_REQUIRED','REJECTED','ACCESS_BLOCKED','NO_NEW_DISCLOSURE'];
+export const healthStates=['CURRENT_ACCEPTED','QUALIFIED_CANDIDATE','NO_NEW_DISCLOSURE','PARTIAL','REVIEW_REQUIRED','FAILED_WITH_LAST_VALID','ACCESS_BLOCKED','DEFINITION_BREAK','UNAVAILABLE'];
+export const sourceFamilies=['SEC_FILINGS','IR_ARCHIVE','FINANCIAL_WORKBOOK','EARNINGS_TRANSCRIPT'];
+export const optionalFamilies={depreciation:['depreciationPpe'],cloud:['segmentRevenue','segmentOperatingIncome'],leases:['financeLeasePrincipal','financeLeaseAdditions'],backlog:['rpo'],guidance:['capexGuidance'],monetization:['aiRevenueRecognized'],capacity:[],usefulLife:[]};
+export const userAgent='WorldInflationLens/Phase2D public research (contact: https://github.com/ccesm/world-inflation-lens/issues)';

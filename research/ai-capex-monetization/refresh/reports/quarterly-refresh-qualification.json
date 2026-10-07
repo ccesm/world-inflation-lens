@@ -1,0 +1,383 @@
+{
+  "acceptedInputHash": "3ebf93ae4d434cf41d33c228b7f585a95f7694c3669fe269d93edacfc8707ce7",
+  "accountingBase": "ad6ebf96e2bf59145f31120dd02cdcc3fbca24b7",
+  "aiReturns": "NOT_IDENTIFIED",
+  "baseCommit": "afbc5da5b718d86c48d0e48d31a1eba456a26e09",
+  "cacheQualification": {
+    "bytesAfter": 36766021,
+    "bytesBefore": 36651432,
+    "newDiscoveryIndexObjects": 1,
+    "newFinancialDocuments": 0,
+    "rawDocumentsCommitted": false,
+    "rawObjectsAfter": 89,
+    "rawObjectsBefore": 88
+  },
+  "controlledCandidate": {
+    "companies": [
+      {
+        "company": "MSFT",
+        "core": {
+          "missing": [],
+          "reconciliation": "CALCULATED_COMPANY_CONVENTION"
+        },
+        "optionalFamilies": {
+          "backlog": {
+            "status": "UNAVAILABLE"
+          },
+          "capacity": {
+            "status": "UNAVAILABLE"
+          },
+          "cloud": {
+            "status": "UNAVAILABLE"
+          },
+          "depreciation": {
+            "status": "UNAVAILABLE"
+          },
+          "guidance": {
+            "status": "UNAVAILABLE"
+          },
+          "leases": {
+            "status": "UNAVAILABLE"
+          },
+          "monetization": {
+            "status": "UNAVAILABLE"
+          },
+          "usefulLife": {
+            "status": "UNAVAILABLE"
+          }
+        },
+        "status": "QUALIFIED_CANDIDATE"
+      },
+      {
+        "company": "GOOG",
+        "core": {
+          "missing": [],
+          "reconciliation": "CALCULATED_COMPANY_CONVENTION"
+        },
+        "optionalFamilies": {
+          "backlog": {
+            "status": "UNAVAILABLE"
+          },
+          "capacity": {
+            "status": "UNAVAILABLE"
+          },
+          "cloud": {
+            "status": "UNAVAILABLE"
+          },
+          "depreciation": {
+            "status": "UNAVAILABLE"
+          },
+          "guidance": {
+            "status": "UNAVAILABLE"
+          },
+          "leases": {
+            "status": "UNAVAILABLE"
+          },
+          "monetization": {
+            "status": "UNAVAILABLE"
+          },
+          "usefulLife": {
+            "status": "UNAVAILABLE"
+          }
+        },
+        "status": "QUALIFIED_CANDIDATE"
+      },
+      {
+        "company": "AMZN",
+        "core": {
+          "missing": [],
+          "reconciliation": "CALCULATED_COMPANY_CONVENTION"
+        },
+        "optionalFamilies": {
+          "backlog": {
+            "status": "UNAVAILABLE"
+          },
+          "capacity": {
+            "status": "UNAVAILABLE"
+          },
+          "cloud": {
+            "status": "UNAVAILABLE"
+          },
+          "depreciation": {
+            "status": "UNAVAILABLE"
+          },
+          "guidance": {
+            "status": "UNAVAILABLE"
+          },
+          "leases": {
+            "status": "UNAVAILABLE"
+          },
+          "monetization": {
+            "status": "UNAVAILABLE"
+          },
+          "usefulLife": {
+            "status": "UNAVAILABLE"
+          }
+        },
+        "status": "QUALIFIED_CANDIDATE"
+      },
+      {
+        "company": "META",
+        "core": {
+          "missing": [],
+          "reconciliation": "CALCULATED_COMPANY_CONVENTION"
+        },
+        "optionalFamilies": {
+          "backlog": {
+            "status": "UNAVAILABLE"
+          },
+          "capacity": {
+            "status": "UNAVAILABLE"
+          },
+          "cloud": {
+            "status": "UNAVAILABLE"
+          },
+          "depreciation": {
+            "status": "UNAVAILABLE"
+          },
+          "guidance": {
+            "status": "UNAVAILABLE"
+          },
+          "leases": {
+            "status": "PARTIAL"
+          },
+          "monetization": {
+            "status": "UNAVAILABLE"
+          },
+          "usefulLife": {
+            "status": "UNAVAILABLE"
+          }
+        },
+        "status": "QUALIFIED_CANDIDATE"
+      }
+    ],
+    "evidenceClass": "SYNTHETIC_TEST_FIXTURE_NOT_DISCOVERED",
+    "monitorHash": "41d5c61f568aebe848a9e1bcaa99a7e6fd2c1fe1f5b0ce304b55792a2a2225bf",
+    "previewHash": "4e54f8edf87451b0a7d355267fa446d5ab57acd3ef7d8e24412a9250893913e0",
+    "proposedQuarter": "2026Q3",
+    "sharedPublicQuarter": "2026Q2"
+  },
+  "determinism": {
+    "economicIdentityExcludesRuntimeClockAndPaths": true,
+    "freshProcess": "phase2d regression",
+    "sameInputByteStable": true
+  },
+  "emailEnabled": false,
+  "healthStates": [
+    "CURRENT_ACCEPTED",
+    "QUALIFIED_CANDIDATE",
+    "NO_NEW_DISCLOSURE",
+    "PARTIAL",
+    "REVIEW_REQUIRED",
+    "FAILED_WITH_LAST_VALID",
+    "ACCESS_BLOCKED",
+    "DEFINITION_BREAK",
+    "UNAVAILABLE"
+  ],
+  "implementationVersion": "ai-capex-quarterly-refresh-v0.1.0",
+  "knownLimitations": [
+    "Current network SEC and three IR hosts denied access; no claim of complete live discovery or live candidate qualification.",
+    "Microsoft archive static response has no qualified links; JavaScript/API layout requires separately qualified discovery adapter.",
+    "Native quarterly HTML/PDF maps only; unsupported YTD/SEC custom contexts and workbook layouts require native extraction review.",
+    "Events/policy snippets are discovery candidates, not automatic financial measurements or approved definition changes.",
+    "Explicit same-vintage proof required for YTD subtraction; no inferred cross-filing compatibility.",
+    "Source schema supports recognized AI revenue only as a future separately qualified extension; current default remains unavailable."
+  ],
+  "liveDiscovery": {
+    "asOf": "2026-10-07",
+    "companyResults": [
+      {
+        "acceptedLatestQuarter": "2026Q2",
+        "candidateLatestQuarter": null,
+        "company": "MSFT",
+        "metricFamilies": {},
+        "reviewItems": [],
+        "sourceFamilies": {
+          "IR_ARCHIVE": {
+            "count": 0,
+            "rawHash": "e8f3081ddf2da12df96cc77dec68893d36e84af061b2d9071348345646ece61c",
+            "status": "REVIEW_REQUIRED"
+          },
+          "SEC_FILINGS": {
+            "detail": 403,
+            "status": "ACCESS_BLOCKED"
+          }
+        },
+        "status": "ACCESS_BLOCKED"
+      },
+      {
+        "acceptedLatestQuarter": "2026Q2",
+        "candidateLatestQuarter": null,
+        "company": "GOOG",
+        "metricFamilies": {},
+        "reviewItems": [],
+        "sourceFamilies": {
+          "IR_ARCHIVE": {
+            "detail": 403,
+            "status": "ACCESS_BLOCKED"
+          },
+          "SEC_FILINGS": {
+            "detail": 403,
+            "status": "ACCESS_BLOCKED"
+          }
+        },
+        "status": "ACCESS_BLOCKED"
+      },
+      {
+        "acceptedLatestQuarter": "2026Q2",
+        "candidateLatestQuarter": null,
+        "company": "AMZN",
+        "metricFamilies": {},
+        "reviewItems": [],
+        "sourceFamilies": {
+          "IR_ARCHIVE": {
+            "detail": 403,
+            "status": "ACCESS_BLOCKED"
+          },
+          "SEC_FILINGS": {
+            "detail": 403,
+            "status": "ACCESS_BLOCKED"
+          }
+        },
+        "status": "ACCESS_BLOCKED"
+      },
+      {
+        "acceptedLatestQuarter": "2026Q2",
+        "candidateLatestQuarter": null,
+        "company": "META",
+        "metricFamilies": {},
+        "reviewItems": [],
+        "sourceFamilies": {
+          "IR_ARCHIVE": {
+            "detail": 403,
+            "status": "ACCESS_BLOCKED"
+          },
+          "SEC_FILINGS": {
+            "detail": 403,
+            "status": "ACCESS_BLOCKED"
+          }
+        },
+        "status": "ACCESS_BLOCKED"
+      }
+    ],
+    "disclosures": [],
+    "economicChange": false,
+    "endedAt": "2026-10-07T17:53:56.032Z",
+    "resultHash": null,
+    "startedAt": "2026-10-07T17:53:51.497Z"
+  },
+  "noWorkflowAdded": true,
+  "productionIsolation": {
+    "productionMain": "4b28c278d99c39d022f5336d634aff4a9b5a4a41",
+    "productionVersion": "1.3.0 (unchanged)",
+    "protectedPathsUnchangedRelativeToResearchBase": true,
+    "publicSnapshotSha256": "8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a",
+    "researchApplicationVersion": "1.1.0 (inherited)"
+  },
+  "productionMainReferenceObserved": "4b28c278d99c39d022f5336d634aff4a9b5a4a41",
+  "productionModified": false,
+  "promotionReadiness": {
+    "allFourRequiredForHeadline": true,
+    "decision": "READY FOR CONTROLLED QUARTERLY REFRESH PILOT",
+    "productionPromotionImplemented": false,
+    "researchOnly": true,
+    "status": "CONTROLLED_HUMAN_REVIEW_ONLY"
+  },
+  "recognizedAiRevenue": "UNAVAILABLE",
+  "scheduleEnabled": false,
+  "secretsRequired": false,
+  "sourceAdapters": [
+    "SEC issuer submissions / direct filing",
+    "official IR static links / delegated CDN",
+    "Phase 2A native HTML/PDF helpers; ambiguous layouts review-only"
+  ],
+  "testTotals": {
+    "failed": 0,
+    "passed": 326,
+    "phase2d": 72,
+    "skipped": 0
+  },
+  "tests": [
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "phase1",
+      "passed": true,
+      "runtimeSeconds": 0.15,
+      "skipped": 0,
+      "tests": 48
+    },
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "phase2a",
+      "passed": true,
+      "runtimeSeconds": 1.37,
+      "skipped": 0,
+      "tests": 65
+    },
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "phase2a1",
+      "passed": true,
+      "runtimeSeconds": 0.48,
+      "skipped": 0,
+      "tests": 40
+    },
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "phase2b",
+      "passed": true,
+      "runtimeSeconds": 7.85,
+      "skipped": 0,
+      "tests": 73
+    },
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "phase2d",
+      "passed": true,
+      "runtimeSeconds": 44.96,
+      "skipped": 0,
+      "tests": 65
+    },
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "phase2aPython",
+      "passed": true,
+      "runtimeSeconds": 0.23,
+      "skipped": 0,
+      "tests": 28
+    },
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "phase2dPython",
+      "passed": true,
+      "runtimeSeconds": 0.12,
+      "skipped": 0,
+      "tests": 7
+    },
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "build",
+      "passed": true,
+      "runtimeSeconds": 0.84,
+      "skipped": 0,
+      "tests": 0
+    },
+    {
+      "exitCode": 0,
+      "failures": 0,
+      "name": "verify",
+      "passed": true,
+      "runtimeSeconds": 8.25,
+      "skipped": 0,
+      "tests": 0
+    }
+  ]
+}
