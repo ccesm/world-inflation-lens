@@ -24,3 +24,36 @@ jobs:
       - uses: ./.github/actions/signal-shadow-qualification
         with:
           mode: ${{ inputs.mode }}
+  ai-capex-access:
+    name: AI CapEx Refresh Access Qualification (research bridge)
+    if: github.ref == 'refs/heads/codex/ai-capex-live-runner-access'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document validators
+        run: python -m pip install pypdf==6.10.0 openpyxl==3.1.5
+      - name: Safeguard tests
+        run: node --test research/ai-capex-monetization/refresh/tests/access.test.mjs
+      - name: Official-source access qualification
+        env:
+          WIL_AI_CAPEX_CACHE: ${{ runner.temp }}/ai-capex-access-cache
+        run: >-
+          node research/ai-capex-monetization/refresh/access/qualification.mjs
+          --runner GITHUB_ACTIONS --as-of "$(date -u +%F)"
+          --out "${{ runner.temp }}/ai-capex-access-report"
+      - name: Upload compact diagnostics only
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-capex-runner-access
+          path: ${{ runner.temp }}/ai-capex-access-report/access-report.json
+          retention-days: 30
+          if-no-files-found: error

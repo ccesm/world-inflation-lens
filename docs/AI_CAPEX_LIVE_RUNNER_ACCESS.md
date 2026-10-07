@@ -47,7 +47,13 @@ Seed use is explicit in the receipt. An issuer-host URL must pass normal officia
 
 The added `AI CapEx Refresh Access Qualification` workflow is dispatch-only, exact-research-branch gated, `contents: read`, credential persistence disabled. It uploads only `access-report.json` with 30-day retention. It cannot commit, deploy, email, schedule, update production or promote data.
 
-GitHub requires a dispatch workflow to be registered on the default branch before dispatching a different ref. See [GitHub's manual workflow documentation](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow). Availability is checked in the actual qualification; this constraint does not authorize any production merge.
+GitHub requires a dispatch workflow to be registered on the default branch before dispatching a different ref. See [GitHub's manual workflow documentation](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/manually-run-a-workflow). Direct dispatch of the new filename returned HTTP 404 on 2026-10-07. Actual GitHub-hosted qualification therefore uses the already-registered `signal-engine-shadow-qualification.yml` dispatch endpoint with this research ref. Only the research copy gains an independent `ai-capex-access` job gated to this exact branch. The original Signal job is byte-for-byte unchanged and its branch condition excludes this branch, so it does not run. Production main and its workflow files remain untouched. The standalone access workflow remains dispatch-only and prepared for a future separately approved registration. This bootstrap does not authorize a production merge.
+
+```sh
+gh workflow run signal-engine-shadow-qualification.yml \
+  --repo ccesm/world-inflation-lens --ref codex/ai-capex-live-runner-access -f mode=normal
+```
+
 
 ## Access results and recommended routes
 
