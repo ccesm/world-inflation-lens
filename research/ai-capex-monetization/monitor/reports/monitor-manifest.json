@@ -1,0 +1,60 @@
+{
+  "baseCommit": "ad6ebf96e2bf59145f31120dd02cdcc3fbca24b7",
+  "configHash": "9738e9ce8a59c23280a37d2999f5b1e9516a482bfb707759e4f42d6ce91a976a",
+  "dataThrough": "2026Q2",
+  "disclosureThrough": "2026-07-30",
+  "implementationHash": "f258a18cd879f4960bc2c6f2ab5d876043fdf94da54e3c45ab11835304f3327e",
+  "inputHash": "3ebf93ae4d434cf41d33c228b7f585a95f7694c3669fe269d93edacfc8707ce7",
+  "inputs": [
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/accepted-observations.json",
+      "sha256": "e35b700f3a5b1d15cee7281976b4f08b95bb7c0f316c85a4303db896d3b46a44"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/accounting-definition-history.json",
+      "sha256": "92c2ceebbb4488a072ad549f7b252865dc4b839578e5ea7d9d1407dfa7efce32"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/accounting-note-evidence.json",
+      "sha256": "01701456227ac4de999ad6524e5c7e3162ad8dda8c56344fef3c7bebb041ff8b"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/accounting-policy-events.json",
+      "sha256": "110e570fbad0606bdca339e7ca87ea1e0f4c2c90427b1b3b497411366823b810"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/extraction-review.json",
+      "sha256": "a5886dff77067925299a851d0c3da9bcc2add43902d421b7cd6e569e216734bd"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/monetization-events.json",
+      "sha256": "5d4a0170ccbf2dd952808dbfcd0b4d57eacd85df65a5bfccc0f3436f72d12d6f"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/quarterly-selection-manifest.json",
+      "sha256": "53366438e56eba4153e651a97757706245e4fb25327792029f13b86fb14d3a34"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/recast-review.json",
+      "sha256": "021b032fd6badcd54ff88dd7c3c2dd0dab9384eab11faba76f27c2aaa96ab4ed"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/source-qualification.json",
+      "sha256": "a0929212bca9091f468b90b8c1a7be76c54bd31af26c0e9a1bb691910eb5ae06"
+    },
+    {
+      "path": "research/ai-capex-monetization/quarterly/inputs/source-vintage-manifest.json",
+      "sha256": "831565ecf607ffb8fdf9216c298c2417c89f003086bf0bfbc5719cdc0e38ad91"
+    }
+  ],
+  "panelHash": "4fa9e344811871c397d81ae74832d1c35d687c7ec194e35154a4891f46b2b304",
+  "publicProjectionHash": "1e74e04a1f32ae2d60c3429c14b215560ec085234d783bc52d9bbbe2d7079a2e",
+  "resultHash": "51a55bb8b9c585026ab37898746695060b3dbb3a7c6aaa83efb5645cbe91a2d4",
+  "ruleVersion": "ai-capex-descriptive-monitor-v0.1",
+  "schemaHashes": {
+    "monitor": "8a23d082a082fab5a641e3896f895317599cd4c64836f1ed3d83eb5e1d696a3a",
+    "public-snapshot": "acfc8dda251c55a910f26073a71b997f77d75d3f62d4534d173b7d616646547c"
+  },
+  "schemaVersion": "ai-capex-monitor-manifest-v0.1",
+  "storage": "Full output files ignored; compact manifest, summaries and qualification retained in Git. No raw cache writes."
+}

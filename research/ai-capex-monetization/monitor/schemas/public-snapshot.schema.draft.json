@@ -1,0 +1,733 @@
+{
+  "type": "object",
+  "properties": {
+    "content": {
+      "type": "object",
+      "properties": {
+        "asOf": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "companies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "company": {
+                "type": "string"
+              },
+              "eventReferences": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "latestEconomicQuarter": {
+                "type": "string",
+                "pattern": "^\\d{4}Q[1-4]$"
+              },
+              "latestFinancialFiling": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "publicationDate": {
+                      "type": "string",
+                      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                    },
+                    "sourceHash": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "sourceId": {
+                      "type": "string"
+                    },
+                    "sourceUrl": {
+                      "type": "string",
+                      "pattern": "^https://"
+                    }
+                  },
+                  "required": [
+                    "publicationDate",
+                    "sourceHash",
+                    "sourceId",
+                    "sourceUrl"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "metrics": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "company": {
+                      "type": "string"
+                    },
+                    "comparability": {
+                      "type": "string"
+                    },
+                    "definitionVersion": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "evidenceClass": {
+                      "type": "string"
+                    },
+                    "frequency": {
+                      "type": "string"
+                    },
+                    "limitations": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "lineageReference": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "metric": {
+                      "type": "string"
+                    },
+                    "nativeLabel": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "period": {
+                      "type": "string",
+                      "pattern": "^\\d{4}Q[1-4]$"
+                    },
+                    "policyAffected": {
+                      "type": "boolean"
+                    },
+                    "scope": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "sourceId": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "sourceUrl": {
+                      "type": [
+                        "null",
+                        "string"
+                      ],
+                      "pattern": "^https://"
+                    },
+                    "sources": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "publicationDate": {
+                            "type": "string",
+                            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                          },
+                          "publisher": {
+                            "type": "string"
+                          },
+                          "retrievedAt": {
+                            "type": "string"
+                          },
+                          "sourceHash": {
+                            "type": "string",
+                            "pattern": "^[a-f0-9]{64}$"
+                          },
+                          "sourceId": {
+                            "type": "string"
+                          },
+                          "sourceUrl": {
+                            "type": "string",
+                            "pattern": "^https://"
+                          }
+                        },
+                        "required": [
+                          "publicationDate",
+                          "publisher",
+                          "retrievedAt",
+                          "sourceHash",
+                          "sourceId",
+                          "sourceUrl"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "unit": {
+                      "type": [
+                        "null",
+                        "string"
+                      ]
+                    },
+                    "value": {
+                      "type": [
+                        "null",
+                        "number"
+                      ]
+                    },
+                    "yoy": {
+                      "type": [
+                        "null",
+                        "object"
+                      ],
+                      "properties": {
+                        "currentValue": {
+                          "type": "number"
+                        },
+                        "delta": {
+                          "type": [
+                            "null",
+                            "number"
+                          ]
+                        },
+                        "deltaUnit": {
+                          "type": "string"
+                        },
+                        "percentChange": {
+                          "type": [
+                            "null",
+                            "number"
+                          ]
+                        },
+                        "priorPeriod": {
+                          "type": "string"
+                        },
+                        "priorValue": {
+                          "type": [
+                            "null",
+                            "number"
+                          ]
+                        },
+                        "reason": {
+                          "type": "string"
+                        },
+                        "state": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "currentValue",
+                        "delta",
+                        "deltaUnit",
+                        "percentChange",
+                        "priorPeriod",
+                        "priorValue",
+                        "reason",
+                        "state"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "company",
+                    "comparability",
+                    "definitionVersion",
+                    "evidenceClass",
+                    "frequency",
+                    "limitations",
+                    "lineageReference",
+                    "metric",
+                    "nativeLabel",
+                    "period",
+                    "policyAffected",
+                    "scope",
+                    "sourceId",
+                    "sourceUrl",
+                    "sources",
+                    "unit",
+                    "value",
+                    "yoy"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "company",
+              "eventReferences",
+              "latestEconomicQuarter",
+              "latestFinancialFiling",
+              "limitations",
+              "metrics"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "configHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "dataThrough": {
+          "type": "string",
+          "pattern": "^\\d{4}Q[1-4]$"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "company": {
+                "type": "string"
+              },
+              "definitionVersion": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "eventDate": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "eventId": {
+                "type": "string"
+              },
+              "eventType": {
+                "type": "string"
+              },
+              "evidenceClass": {
+                "type": "string"
+              },
+              "evidenceLevel": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              },
+              "frequency": {
+                "type": "string"
+              },
+              "guidanceHorizon": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "nativeValue": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              },
+              "periodType": {
+                "type": "string"
+              },
+              "precision": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "qualificationClarification": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "rangeLower": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              },
+              "rangeUpper": {
+                "type": [
+                  "null",
+                  "number"
+                ]
+              },
+              "recognizedRevenue": {
+                "type": "boolean"
+              },
+              "referencePeriod": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "referencePeriodBasis": {
+                "type": "string"
+              },
+              "reportingQuarter": {
+                "type": "string",
+                "pattern": "^\\d{4}Q[1-4]$"
+              },
+              "scope": {
+                "type": "string"
+              },
+              "sourceHash": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              "sourceId": {
+                "type": "string"
+              },
+              "sourceQualificationLevel": {
+                "type": "string"
+              },
+              "sourceUrl": {
+                "type": "string",
+                "pattern": "^https://"
+              },
+              "statement": {
+                "type": "string"
+              },
+              "unit": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              }
+            },
+            "required": [
+              "company",
+              "definitionVersion",
+              "eventDate",
+              "eventId",
+              "eventType",
+              "evidenceClass",
+              "evidenceLevel",
+              "frequency",
+              "guidanceHorizon",
+              "limitations",
+              "nativeValue",
+              "periodType",
+              "precision",
+              "qualificationClarification",
+              "rangeLower",
+              "rangeUpper",
+              "recognizedRevenue",
+              "referencePeriod",
+              "referencePeriodBasis",
+              "reportingQuarter",
+              "scope",
+              "sourceHash",
+              "sourceId",
+              "sourceQualificationLevel",
+              "sourceUrl",
+              "statement",
+              "unit"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "guardrail": {
+          "type": "object",
+          "properties": {
+            "en": {
+              "type": "string"
+            },
+            "zh": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "en",
+            "zh"
+          ],
+          "additionalProperties": false
+        },
+        "health": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "aiReturnIdentifiability": {
+                "type": "string"
+              },
+              "backlogEvidence": {
+                "type": "string"
+              },
+              "capexEvidence": {
+                "type": "string"
+              },
+              "cashFlowEvidence": {
+                "type": "string"
+              },
+              "cloudEvidence": {
+                "type": "string"
+              },
+              "company": {
+                "type": "string"
+              },
+              "depreciationEvidence": {
+                "type": "string"
+              },
+              "directAiMonetizationEvidence": {
+                "type": "string"
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "scope": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "aiReturnIdentifiability",
+              "backlogEvidence",
+              "capexEvidence",
+              "cashFlowEvidence",
+              "cloudEvidence",
+              "company",
+              "depreciationEvidence",
+              "directAiMonetizationEvidence",
+              "limitations",
+              "scope"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "inputSnapshotHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "mode": {
+          "type": "string"
+        },
+        "monitorHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "publicationStatus": {
+          "type": "string",
+          "const": "RESEARCH_ONLY_NOT_PUBLISHED"
+        },
+        "ruleVersion": {
+          "type": "string",
+          "const": "ai-capex-descriptive-monitor-v0.1"
+        },
+        "schemaVersion": {
+          "type": "string",
+          "const": "ai-capex-public-draft-v0.1"
+        },
+        "summaries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "company": {
+                "type": "string"
+              },
+              "en": {
+                "type": "string"
+              },
+              "limitations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "zh": {
+                "type": "string"
+              },
+              "period": {
+                "type": "string",
+                "pattern": "^\\d{4}Q[1-4]$"
+              },
+              "layers": {
+                "type": "object",
+                "required": [
+                  "investment",
+                  "cash",
+                  "operating",
+                  "accounting",
+                  "monetization"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "investment": {
+                    "type": "object",
+                    "required": [
+                      "en",
+                      "zh"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "en": {
+                        "type": "string"
+                      },
+                      "zh": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "cash": {
+                    "type": "object",
+                    "required": [
+                      "en",
+                      "zh"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "en": {
+                        "type": "string"
+                      },
+                      "zh": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "operating": {
+                    "type": "object",
+                    "required": [
+                      "en",
+                      "zh"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "en": {
+                        "type": "string"
+                      },
+                      "zh": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "accounting": {
+                    "type": "object",
+                    "required": [
+                      "en",
+                      "zh"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "en": {
+                        "type": "string"
+                      },
+                      "zh": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "monetization": {
+                    "type": "object",
+                    "required": [
+                      "en",
+                      "zh"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "en": {
+                        "type": "string"
+                      },
+                      "zh": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "company",
+              "en",
+              "limitations",
+              "zh",
+              "layers",
+              "period"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "asOfBasis": {
+          "type": "string",
+          "const": "LATEST_ACCEPTED_DISCLOSURE_DATE_NOT_HISTORICAL_AVAILABILITY"
+        },
+        "metricCatalog": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "family",
+              "label"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "family": {
+                "type": "string"
+              },
+              "label": {
+                "type": "object",
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "en": {
+                    "type": "string"
+                  },
+                  "zh": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "asOf",
+        "companies",
+        "configHash",
+        "dataThrough",
+        "events",
+        "guardrail",
+        "health",
+        "inputSnapshotHash",
+        "mode",
+        "monitorHash",
+        "publicationStatus",
+        "ruleVersion",
+        "schemaVersion",
+        "summaries",
+        "asOfBasis",
+        "metricCatalog"
+      ],
+      "additionalProperties": false
+    },
+    "resultHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "content",
+    "resultHash"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/wil/ai-capex-public-draft-v0.1",
+  "description": "Draft structural contract; mandatory semantic rebuild validation binds to frozen accepted archive. Not published."
+}

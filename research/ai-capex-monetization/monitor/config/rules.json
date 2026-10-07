@@ -1,0 +1,331 @@
+{
+  "version": "ai-capex-descriptive-monitor-v0.1",
+  "direction": "Exact sign of change; no economic materiality threshold. STABLE means numerically equal.",
+  "companyOrder": [
+    "MSFT",
+    "GOOG",
+    "AMZN",
+    "META"
+  ],
+  "timeWindows": [
+    {
+      "id": "FULL_HISTORY",
+      "start": "2019Q1",
+      "end": "2026Q2"
+    },
+    {
+      "id": "PRE_GENAI_CONTEXT",
+      "start": "2019Q1",
+      "end": "2022Q4"
+    },
+    {
+      "id": "INFRASTRUCTURE_CONTEXT",
+      "start": "2023Q1",
+      "end": "2026Q2"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "cashPpeNative",
+      "family": "investment",
+      "label": {
+        "en": "Native cash PP&E",
+        "zh": "原生现金 PP&E"
+      }
+    },
+    {
+      "id": "nativeCapex",
+      "family": "investment",
+      "native": "nativeCapex",
+      "label": {
+        "en": "Native CapEx",
+        "zh": "原生 CapEx"
+      }
+    },
+    {
+      "id": "cashInvestmentIntensity",
+      "family": "investment",
+      "native": "cashInvestmentIntensity",
+      "label": {
+        "en": "Native cash PP&E / revenue",
+        "zh": "原生现金 PP&E／收入"
+      }
+    },
+    {
+      "id": "cashInvestmentToCfoIntensity",
+      "family": "investment",
+      "native": "cashInvestmentToCfoIntensity",
+      "label": {
+        "en": "Native cash PP&E / CFO",
+        "zh": "原生现金 PP&E／CFO"
+      }
+    },
+    {
+      "id": "nativeCapexIntensity",
+      "family": "investment",
+      "native": "nativeCapexIntensity",
+      "label": {
+        "en": "Native CapEx / revenue",
+        "zh": "原生 CapEx／收入"
+      }
+    },
+    {
+      "id": "cfo",
+      "family": "cash",
+      "native": "cfo",
+      "label": {
+        "en": "Operating cash flow",
+        "zh": "经营现金流"
+      }
+    },
+    {
+      "id": "fcfCompanyConvention",
+      "family": "cash",
+      "native": "fcfCompanyConvention",
+      "label": {
+        "en": "Company-convention free cash flow",
+        "zh": "公司口径自由现金流"
+      }
+    },
+    {
+      "id": "fcfMargin",
+      "family": "cash",
+      "native": "fcfMargin",
+      "label": {
+        "en": "Company-convention FCF margin",
+        "zh": "公司口径 FCF 利润率"
+      }
+    },
+    {
+      "id": "revenue",
+      "family": "operating",
+      "native": "revenue",
+      "label": {
+        "en": "Revenue",
+        "zh": "收入"
+      }
+    },
+    {
+      "id": "operatingIncome",
+      "family": "operating",
+      "native": "operatingIncome",
+      "label": {
+        "en": "Operating income",
+        "zh": "营业利润"
+      }
+    },
+    {
+      "id": "operatingMargin",
+      "family": "operating",
+      "native": "operatingMargin",
+      "label": {
+        "en": "Operating margin",
+        "zh": "营业利润率"
+      }
+    },
+    {
+      "id": "grossMargin",
+      "family": "operating",
+      "native": "grossMargin",
+      "label": {
+        "en": "Native gross margin",
+        "zh": "原生毛利率"
+      }
+    },
+    {
+      "id": "depreciationPpe",
+      "family": "accounting",
+      "native": "depreciationPpe",
+      "label": {
+        "en": "Pure PP&E depreciation",
+        "zh": "纯 PP&E 折旧"
+      }
+    },
+    {
+      "id": "depreciationAmortizationOther",
+      "family": "accounting",
+      "native": "depreciationAmortizationOther",
+      "label": {
+        "en": "Broader D&A and other",
+        "zh": "较广口径折旧摊销及其他"
+      }
+    },
+    {
+      "id": "pureDepreciationToRevenue",
+      "family": "accounting",
+      "label": {
+        "en": "Pure PP&E depreciation / revenue",
+        "zh": "纯 PP&E 折旧／收入"
+      }
+    },
+    {
+      "id": "broadDaToRevenue",
+      "family": "accounting",
+      "label": {
+        "en": "Broader D&A and other / revenue",
+        "zh": "较广口径折旧摊销及其他／收入"
+      }
+    },
+    {
+      "id": "cashPpeToPureDepreciation",
+      "family": "accounting",
+      "label": {
+        "en": "Cash PP&E / pure PP&E depreciation",
+        "zh": "现金 PP&E／纯 PP&E 折旧"
+      }
+    },
+    {
+      "id": "segmentRevenue",
+      "family": "cloud",
+      "native": "segmentRevenue",
+      "label": {
+        "en": "Native cloud segment revenue",
+        "zh": "原生云分部收入"
+      }
+    },
+    {
+      "id": "segmentOperatingIncome",
+      "family": "cloud",
+      "native": "segmentOperatingIncome",
+      "label": {
+        "en": "Native cloud segment operating income",
+        "zh": "原生云分部营业利润"
+      }
+    },
+    {
+      "id": "segmentOperatingMargin",
+      "family": "cloud",
+      "native": "segmentOperatingMargin",
+      "label": {
+        "en": "Native cloud segment margin",
+        "zh": "原生云分部营业利润率"
+      }
+    },
+    {
+      "id": "microsoftCloudRevenue",
+      "family": "cloud",
+      "native": "microsoftCloudRevenue",
+      "label": {
+        "en": "Separately disclosed Microsoft Cloud",
+        "zh": "单独披露的 Microsoft Cloud"
+      }
+    },
+    {
+      "id": "azureGrowth",
+      "family": "cloud",
+      "native": "azureGrowth",
+      "label": {
+        "en": "Disclosed Azure growth",
+        "zh": "披露的 Azure 增速"
+      }
+    },
+    {
+      "id": "aiRevenueRecognized",
+      "family": "monetization",
+      "native": "aiRevenueRecognized",
+      "label": {
+        "en": "Recognized AI revenue",
+        "zh": "已确认 AI 收入"
+      }
+    }
+  ],
+  "charts": [
+    {
+      "chartId": 1,
+      "metric": "cashInvestmentIntensity",
+      "unit": "PERCENT",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    },
+    {
+      "chartId": 2,
+      "metric": "cashInvestmentToCfoIntensity",
+      "unit": "PERCENT",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    },
+    {
+      "chartId": 3,
+      "metric": "fcfMargin",
+      "unit": "PERCENT",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    },
+    {
+      "chartId": 4,
+      "metric": "operatingMargin",
+      "unit": "PERCENT",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    },
+    {
+      "chartId": 5,
+      "metric": "segmentRevenue",
+      "unit": "YOY_PERCENT",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    },
+    {
+      "chartId": 6,
+      "metric": "segmentOperatingMargin",
+      "unit": "PERCENT",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    },
+    {
+      "chartId": 7,
+      "metric": "pureDepreciationToRevenue",
+      "unit": "PERCENT",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    },
+    {
+      "chartId": 8,
+      "metric": "MONETIZATION_EVENTS",
+      "unit": "SPARSE_EVENTS",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    },
+    {
+      "chartId": 9,
+      "metric": "CAPACITY_BACKLOG",
+      "unit": "SPARSE_EVENTS",
+      "missing": "gap; never zero/interpolated",
+      "comparison": "Company-native labeled series, no ranking. YOY requires exact compatible periods.",
+      "guidance": "Separate sparse layer; excluded from realized lines."
+    }
+  ],
+  "comparability": {
+    "conceptuallyComparable": [
+      "revenue growth",
+      "operating margin",
+      "company-convention FCF margin (native lease notes)",
+      "native cash PP&E / revenue (gross/net notes)",
+      "native cash PP&E / CFO (gross/net notes)"
+    ],
+    "notHarmonized": [
+      "native absolute CapEx",
+      "lease-inclusive CapEx",
+      "depreciation definitions",
+      "cloud segment margins",
+      "RPO",
+      "AI run-rate",
+      "gross margin"
+    ],
+    "rules": [
+      "No totals or rankings.",
+      "LIMITED_COMPARABILITY leaves block automated growth.",
+      "Operand definition changes block derived growth.",
+      "Annual/YTD/POINT/RUN_RATE/GUIDANCE are never inserted as quarterly realized observations."
+    ]
+  },
+  "frozenAcceptedInputHash": "3ebf93ae4d434cf41d33c228b7f585a95f7694c3669fe269d93edacfc8707ce7"
+}

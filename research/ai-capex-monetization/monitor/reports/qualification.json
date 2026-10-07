@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "ai-capex-monitor-qualification-v0.1",
+  "baseCommit": "ad6ebf96e2bf59145f31120dd02cdcc3fbca24b7",
+  "branch": "codex/ai-capex-descriptive-monitor",
+  "productionMainInspected": "9382a73cdf967aa2e79ea500a09e1cf8aa71ae64",
+  "panelHash": "4fa9e344811871c397d81ae74832d1c35d687c7ec194e35154a4891f46b2b304",
+  "resultHash": "51a55bb8b9c585026ab37898746695060b3dbb3a7c6aaa83efb5645cbe91a2d4",
+  "publicProjectionHash": "1e74e04a1f32ae2d60c3429c14b215560ec085234d783bc52d9bbbe2d7079a2e",
+  "checks": {
+    "frozenPanel": "PASS",
+    "fourCorePanels": "CORE_PANEL_QUALIFIED",
+    "recognizedAiRevenueUnavailableCells": 120,
+    "availableMetricCells": 1780,
+    "missingMetricCells": 980,
+    "sparseBusinessEvents": 11,
+    "accountingPolicyEvents": 7,
+    "nodeRegressionCases": 153,
+    "pythonRegressionCases": 28,
+    "monitorCases": 73,
+    "totalPassed": 254,
+    "totalFailed": 0,
+    "totalDeferred": 0,
+    "independentPublicFieldMutationProbes": 11,
+    "freshProcessesCompared": 3,
+    "deterministicBytes": "IDENTICAL",
+    "failureWithLastValid": "PASS",
+    "corruptPriorUnavailable": "PASS",
+    "noNewDisclosureRun": "PASS",
+    "build": "PASS",
+    "verify": "PASS",
+    "productionLeakage": "NONE",
+    "protectedSourceAndInputsChanged": false
+  },
+  "rawCacheImpact": {
+    "newObjects": 0,
+    "downloadedBytes": 0,
+    "modifiedObjects": 0
+  },
+  "storage": {
+    "rawSources": "External WIL_AI_CAPEX_CACHE, unchanged",
+    "fullExports": "Ignored monitor/outputs; no large exports added to Git",
+    "trackedCurrentOutput": "Compact numerical summary and identity manifest only"
+  },
+  "remainingHigh": [],
+  "remainingResearchLimitations": [
+    "Microsoft native CapEx scope reconciliation remains unresolved.",
+    "Meta useful-life wording conflict and historical gross/net breaks remain.",
+    "Pure depreciation coverage incomplete; cloud recasts limit automated comparisons.",
+    "Management-defined run-rates are not recognized AI revenue; AI capital returns unidentifiable."
+  ],
+  "decision": "READY FOR PUBLIC AI CAPEX MONETIZATION INTEGRATION"
+}

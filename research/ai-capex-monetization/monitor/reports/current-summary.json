@@ -1,0 +1,2984 @@
+{
+  "dataThrough": "2026Q2",
+  "disclosureThrough": "2026-07-30",
+  "guardrail": {
+    "en": "Consolidated and segment accounting observations, management attribution and forward guidance remain separate. No attributable AI capital return or investment ranking can be inferred.",
+    "zh": "公司整体及分部会计观察、管理层归因和前瞻指引分别列示。不能据此推断可归因的 AI 资本回报或投资排名。"
+  },
+  "health": [
+    {
+      "aiReturnIdentifiability": "UNAVAILABLE",
+      "backlogEvidence": "PARTIAL",
+      "capexEvidence": "CURRENT",
+      "cashFlowEvidence": "CURRENT",
+      "cloudEvidence": "LIMITED_COMPARABILITY",
+      "company": "MSFT",
+      "depreciationEvidence": "LIMITED_COMPARABILITY",
+      "directAiMonetizationEvidence": "PARTIAL",
+      "limitations": [
+        "UNRECONCILED_NATIVE_CAPEX_SCOPE",
+        "Intelligent Cloud is not Azure or AI-only; historical segment recasts limit growth comparisons."
+      ],
+      "scope": "FROZEN_QUALIFIED_PANEL_NOT_LIVE_FRESHNESS"
+    },
+    {
+      "aiReturnIdentifiability": "UNAVAILABLE",
+      "backlogEvidence": "DEFINITION_BREAK",
+      "capexEvidence": "CURRENT",
+      "cashFlowEvidence": "CURRENT",
+      "cloudEvidence": "LIMITED_COMPARABILITY",
+      "company": "GOOG",
+      "depreciationEvidence": "PARTIAL",
+      "directAiMonetizationEvidence": "UNAVAILABLE",
+      "limitations": [
+        "Historical pure depreciation incomplete (quarterly coverage begins 2022Q4).",
+        "ALPHABET_RPO_SHORT_TERM_INCLUDED_V2: definition break from 2026Q1.",
+        "Google Cloud historical recasts limit growth comparisons."
+      ],
+      "scope": "FROZEN_QUALIFIED_PANEL_NOT_LIVE_FRESHNESS"
+    },
+    {
+      "aiReturnIdentifiability": "UNAVAILABLE",
+      "backlogEvidence": "UNAVAILABLE",
+      "capexEvidence": "CURRENT",
+      "cashFlowEvidence": "CURRENT",
+      "cloudEvidence": "CURRENT",
+      "company": "AMZN",
+      "depreciationEvidence": "LIMITED_COMPARABILITY",
+      "directAiMonetizationEvidence": "PARTIAL",
+      "limitations": [
+        "Gross/net PP&E, finance leases and operating leases remain separate.",
+        "Native cost of sales is not a harmonized cross-company gross-margin definition."
+      ],
+      "scope": "FROZEN_QUALIFIED_PANEL_NOT_LIVE_FRESHNESS"
+    },
+    {
+      "aiReturnIdentifiability": "UNAVAILABLE",
+      "backlogEvidence": "UNAVAILABLE",
+      "capexEvidence": "CURRENT",
+      "cashFlowEvidence": "CURRENT",
+      "cloudEvidence": "UNAVAILABLE",
+      "company": "META",
+      "depreciationEvidence": "LIMITED_COMPARABILITY",
+      "directAiMonetizationEvidence": "UNAVAILABLE",
+      "limitations": [
+        "RESTATEMENT_REVIEW_REQUIRED: 5.5-year release / six-year annual useful-life wording conflict.",
+        "AI monetization embedded in advertising/recommendations; no separate recognized AI revenue.",
+        "Native cash PP&E/FCF gross-net basis changes remain visible."
+      ],
+      "scope": "FROZEN_QUALIFIED_PANEL_NOT_LIVE_FRESHNESS"
+    }
+  ],
+  "latest": [
+    {
+      "company": "MSFT",
+      "latestEconomicQuarter": "2026Q2",
+      "latestFinancialFiling": [
+        {
+          "publicationDate": "2026-07-29",
+          "publisher": "Microsoft",
+          "retrievedAt": "2026-10-07T05:12:32.960Z",
+          "sha256": "a31cd0deb391820e45e33f5769ff41ac45fe1d230fb8bd5fc55ef34328fe962e",
+          "sourceId": "msft-fy2026q4-ir",
+          "sourceUrl": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast"
+        }
+      ],
+      "metrics": {
+        "aiRevenueRecognized": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "azureGrowth": {
+          "baseline2019": {
+            "currentValue": 43,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "baseline2022": {
+            "currentValue": 43,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "definitionVersion": "MSFT_azureGrowth_V1",
+          "nativeLabel": "Azure and other cloud services revenue increased 43%",
+          "scope": "Azure and other cloud services",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "PERCENT",
+          "value": 43,
+          "yoy": {
+            "currentValue": 43,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          }
+        },
+        "broadDaToRevenue": {
+          "baseline2019": {
+            "currentValue": 12.24571422222716,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 9.571162212554382,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "baseline2022": {
+            "currentValue": 12.24571422222716,
+            "delta": 5.329681082901701,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 6.916033139325459,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_broadDaToRevenue_MONITOR_V1",
+          "nativeLabel": "broadDaToRevenue",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "PERCENT",
+          "value": 12.24571422222716,
+          "yoy": {
+            "currentValue": 12.24571422222716,
+            "delta": 0.05722898524700604,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 12.188485236980155,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashInvestmentIntensity": {
+          "baseline2019": {
+            "currentValue": 39.77690624062573,
+            "delta": 31.386601703646235,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 8.39030453697949,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 39.77690624062573,
+            "delta": 27.88239091273978,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 11.894515327885946,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_cashInvestmentIntensity_CALC_V1",
+          "nativeLabel": "cashInvestmentIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "PERCENT",
+          "value": 39.77690624062573,
+          "yoy": {
+            "currentValue": 39.77690624062573,
+            "delta": 17.434184402868503,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 22.342721837757225,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashInvestmentToCfoIntensity": {
+          "baseline2019": {
+            "currentValue": 64.57675727349795,
+            "delta": 45.604863782373684,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 18.97189349112426,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 64.57675727349795,
+            "delta": 8.42353074526023,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 56.15322652823772,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_cashInvestmentToCfoIntensity_CALC_V1",
+          "nativeLabel": "cashInvestmentToCfoIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "PERCENT",
+          "value": 64.57675727349795,
+          "yoy": {
+            "currentValue": 64.57675727349795,
+            "delta": 24.529391690924726,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 40.04736558257322,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashPpeNative": {
+          "baseline2019": {
+            "currentValue": 35802,
+            "delta": 33237,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 1295.7894736842106,
+            "priorPeriod": "2019Q1",
+            "priorValue": 2565,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 35802,
+            "delta": 29528,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 470.64073956008923,
+            "priorPeriod": "2022Q4",
+            "priorValue": 6274,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_cashPpeGross_V1",
+          "nativeLabel": "Additions to property and equipment",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 35802,
+          "yoy": {
+            "currentValue": 35802,
+            "delta": 18723,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 109.62585631477253,
+            "priorPeriod": "2025Q2",
+            "priorValue": 17079,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashPpeToPureDepreciation": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "cfo": {
+          "baseline2019": {
+            "currentValue": 55441,
+            "delta": 41921,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 310.0665680473373,
+            "priorPeriod": "2019Q1",
+            "priorValue": 13520,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 55441,
+            "delta": 44268,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 396.20513738476683,
+            "priorPeriod": "2022Q4",
+            "priorValue": 11173,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_cfo_V1",
+          "nativeLabel": "Net cash from operations",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 55441,
+          "yoy": {
+            "currentValue": 55441,
+            "delta": 12794,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 29.999765516917954,
+            "priorPeriod": "2025Q2",
+            "priorValue": 42647,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "depreciationAmortizationOther": {
+          "baseline2019": {
+            "currentValue": 11022,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 2926,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "baseline2022": {
+            "currentValue": 11022,
+            "delta": 7374,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 202.13815789473685,
+            "priorPeriod": "2022Q4",
+            "priorValue": 3648,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_depreciationAmortizationOther_V1",
+          "nativeLabel": "Depreciation, amortization, and other",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 11022,
+          "yoy": {
+            "currentValue": 11022,
+            "delta": 1705,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 18.299881936245573,
+            "priorPeriod": "2025Q2",
+            "priorValue": 9317,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "depreciationPpe": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "fcfCompanyConvention": {
+          "baseline2019": {
+            "currentValue": 19639,
+            "delta": 8684,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 79.26973984481971,
+            "priorPeriod": "2019Q1",
+            "priorValue": 10955,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 19639,
+            "delta": 14740,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 300.87773014901,
+            "priorPeriod": "2022Q4",
+            "priorValue": 4899,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_FCF_CONVENTION_V1",
+          "nativeLabel": "fcfCompanyConvention",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 19639,
+          "yoy": {
+            "currentValue": 19639,
+            "delta": -5929,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": -23.189142678347935,
+            "priorPeriod": "2025Q2",
+            "priorValue": 25568,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "fcfMargin": {
+          "baseline2019": {
+            "currentValue": 21.819414045574234,
+            "delta": -14.01520045836741,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 35.834614503941644,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "baseline2022": {
+            "currentValue": 21.819414045574234,
+            "delta": 12.531682041858383,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 9.28773200371585,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_fcfMargin_CALC_V1",
+          "nativeLabel": "fcfMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "PERCENT",
+          "value": 21.819414045574234,
+          "yoy": {
+            "currentValue": 21.819414045574234,
+            "delta": -11.628604687827995,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 33.44801873340223,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "grossMargin": {
+          "baseline2019": {
+            "currentValue": 67.19699578921639,
+            "delta": 0.46381728671401845,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 66.73317850250237,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 67.19699578921639,
+            "delta": 0.35148798782483937,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 66.84550780139155,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_grossMargin_CALC_V1",
+          "nativeLabel": "grossMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "PERCENT",
+          "value": 67.19699578921639,
+          "yoy": {
+            "currentValue": 67.19699578921639,
+            "delta": -1.3879259151045886,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 68.58492170432098,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "microsoftCloudRevenue": {
+          "baseline2019": {
+            "currentValue": 59300,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "baseline2022": {
+            "currentValue": 59300,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "definitionVersion": "MSFT_microsoftCloudRevenue_V1",
+          "nativeLabel": "Microsoft Cloud revenue of $59.3 billion",
+          "scope": "Microsoft Cloud",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 59300,
+          "yoy": {
+            "currentValue": 59300,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          }
+        },
+        "nativeCapex": {
+          "baseline2019": {
+            "currentValue": 41000,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 3400,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "baseline2022": {
+            "currentValue": 41000,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 6800,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "MICROSOFT_CAPEX_V1",
+          "nativeLabel": "Capital expenditures including assets acquired under capital leases",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-workbook-fy2026q4",
+          "unit": "USD_MILLIONS",
+          "value": 41000,
+          "yoy": {
+            "currentValue": 41000,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 24200,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        },
+        "nativeCapexIntensity": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "operatingIncome": {
+          "baseline2019": {
+            "currentValue": 40603,
+            "delta": 30262,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 292.64094381587853,
+            "priorPeriod": "2019Q1",
+            "priorValue": 10341,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 40603,
+            "delta": 20204,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 99.04407078778371,
+            "priorPeriod": "2022Q4",
+            "priorValue": 20399,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_operatingIncome_V1",
+          "nativeLabel": "Operating income",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 40603,
+          "yoy": {
+            "currentValue": 40603,
+            "delta": 6280,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 18.296768930454796,
+            "priorPeriod": "2025Q2",
+            "priorValue": 34323,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "operatingMargin": {
+          "baseline2019": {
+            "currentValue": 45.11093581610319,
+            "delta": 11.284760682806933,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 33.82617513329626,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 45.11093581610319,
+            "delta": 6.437646339924456,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 38.67328947617874,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_operatingMargin_CALC_V1",
+          "nativeLabel": "operatingMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "PERCENT",
+          "value": 45.11093581610319,
+          "yoy": {
+            "currentValue": 45.11093581610319,
+            "delta": 0.20963939140963816,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 44.901296424693555,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "pureDepreciationToRevenue": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "revenue": {
+          "baseline2019": {
+            "currentValue": 90007,
+            "delta": 59436,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 194.4195479375879,
+            "priorPeriod": "2019Q1",
+            "priorValue": 30571,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 90007,
+            "delta": 37260,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 70.63908847896563,
+            "priorPeriod": "2022Q4",
+            "priorValue": 52747,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "MSFT_revenue_V1",
+          "nativeLabel": "Total revenue",
+          "scope": "CONSOLIDATED",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 90007,
+          "yoy": {
+            "currentValue": 90007,
+            "delta": 13566,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 17.74702057796209,
+            "priorPeriod": "2025Q2",
+            "priorValue": 76441,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "segmentOperatingIncome": {
+          "baseline2019": {
+            "currentValue": 15955,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 3208,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 15955,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 8904,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "MSFT_INTELLIGENT_CLOUD_FY2025_V2",
+          "nativeLabel": "Intelligent Cloud Operating income",
+          "scope": "Intelligent Cloud",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 15955,
+          "yoy": {
+            "currentValue": 15955,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 12140,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        },
+        "segmentOperatingMargin": {
+          "baseline2019": {
+            "currentValue": 40.59176716022999,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 33.24696859778216,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 40.59176716022999,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 41.39854937697601,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "MSFT_SEGMENT_MARGIN_CALC_V1",
+          "nativeLabel": "segmentOperatingMargin",
+          "scope": "Intelligent Cloud",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "PERCENT",
+          "value": 40.59176716022999,
+          "yoy": {
+            "currentValue": 40.59176716022999,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 40.631903072494815,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        },
+        "segmentRevenue": {
+          "baseline2019": {
+            "currentValue": 39306,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 9649,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 39306,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 21508,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "MSFT_INTELLIGENT_CLOUD_FY2025_V2",
+          "nativeLabel": "Intelligent Cloud Revenue",
+          "scope": "Intelligent Cloud",
+          "sourceId": "msft-fy2026q4-ir",
+          "unit": "USD_MILLIONS",
+          "value": 39306,
+          "yoy": {
+            "currentValue": 39306,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 29878,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        }
+      }
+    },
+    {
+      "company": "GOOG",
+      "latestEconomicQuarter": "2026Q2",
+      "latestFinancialFiling": [
+        {
+          "publicationDate": "2026-07-22",
+          "publisher": "Alphabet",
+          "retrievedAt": "2026-10-07T05:14:37.746Z",
+          "sha256": "65f35a2e9c287112121f736321c7526d603ba8e0dae27acac56c7d7357602aa8",
+          "sourceId": "goog-2026q2-pdf",
+          "sourceUrl": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf"
+        }
+      ],
+      "metrics": {
+        "aiRevenueRecognized": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "azureGrowth": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "broadDaToRevenue": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "cashInvestmentIntensity": {
+          "baseline2019": {
+            "currentValue": 37.500417376206215,
+            "delta": 24.737270344091957,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 12.763147032114258,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 37.500417376206215,
+            "delta": 27.51330397414436,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 9.987113402061855,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "GOOG_cashInvestmentIntensity_CALC_V1",
+          "nativeLabel": "cashInvestmentIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 37.500417376206215,
+          "yoy": {
+            "currentValue": 37.500417376206215,
+            "delta": 14.22294610230237,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 23.277471273903846,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashInvestmentToCfoIntensity": {
+          "baseline2019": {
+            "currentValue": 114.98630627863524,
+            "delta": 76.33630627863525,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 38.65,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 114.98630627863524,
+            "delta": 82.82318270787214,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 32.163123570763105,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "GOOG_cashInvestmentToCfoIntensity_CALC_V1",
+          "nativeLabel": "cashInvestmentToCfoIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 114.98630627863524,
+          "yoy": {
+            "currentValue": 114.98630627863524,
+            "delta": 34.09107436167125,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 80.895231916964,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashPpeNative": {
+          "baseline2019": {
+            "currentValue": 44924,
+            "delta": 40286,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 868.6071582578697,
+            "priorPeriod": "2019Q1",
+            "priorValue": 4638,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 44924,
+            "delta": 37329,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 491.4944042132982,
+            "priorPeriod": "2022Q4",
+            "priorValue": 7595,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "GOOG_cashPpeGross_V1",
+          "nativeLabel": "Purchases of property and equipment",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 44924,
+          "yoy": {
+            "currentValue": 44924,
+            "delta": 22478,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 100.14256437672637,
+            "priorPeriod": "2025Q2",
+            "priorValue": 22446,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashPpeToPureDepreciation": {
+          "baseline2019": {
+            "currentValue": 6.323761261261262,
+            "delta": null,
+            "deltaUnit": "MULTIPLE",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "baseline2022": {
+            "currentValue": 6.323761261261262,
+            "delta": null,
+            "deltaUnit": "MULTIPLE",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 2.108550805108273,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "GOOG_cashPpeToPureDepreciation_MONITOR_V1",
+          "nativeLabel": "cashPpeToPureDepreciation",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "MULTIPLE",
+          "value": 6.323761261261262,
+          "yoy": {
+            "currentValue": 6.323761261261262,
+            "delta": 1.832764862701838,
+            "deltaUnit": "MULTIPLE",
+            "percentChange": 40.80976024139618,
+            "priorPeriod": "2025Q2",
+            "priorValue": 4.490996398559424,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cfo": {
+          "baseline2019": {
+            "currentValue": 39069,
+            "delta": 27069,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 225.575,
+            "priorPeriod": "2019Q1",
+            "priorValue": 12000,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 39069,
+            "delta": 15455,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 65.44846277631913,
+            "priorPeriod": "2022Q4",
+            "priorValue": 23614,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "GOOG_cfo_V1",
+          "nativeLabel": "Net cash provided by operating activities",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 39069,
+          "yoy": {
+            "currentValue": 39069,
+            "delta": 11322,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 40.80441128770678,
+            "priorPeriod": "2025Q2",
+            "priorValue": 27747,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "depreciationAmortizationOther": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "depreciationPpe": {
+          "baseline2019": {
+            "currentValue": 7104,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "baseline2022": {
+            "currentValue": 7104,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 3602,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "GOOG_depreciationPpe_V1",
+          "nativeLabel": "Depreciation of property and equipment",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 7104,
+          "yoy": {
+            "currentValue": 7104,
+            "delta": 2106,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 42.136854741896755,
+            "priorPeriod": "2025Q2",
+            "priorValue": 4998,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "fcfCompanyConvention": {
+          "baseline2019": {
+            "currentValue": -5855,
+            "delta": -13217,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": -179.53001901657157,
+            "priorPeriod": "2019Q1",
+            "priorValue": 7362,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "baseline2022": {
+            "currentValue": -5855,
+            "delta": -21874,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": -136.5503464635745,
+            "priorPeriod": "2022Q4",
+            "priorValue": 16019,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "definitionVersion": "GOOG_FCF_CONVENTION_V1",
+          "nativeLabel": "fcfCompanyConvention",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": -5855,
+          "yoy": {
+            "currentValue": -5855,
+            "delta": -11156,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": -210.45085832861724,
+            "priorPeriod": "2025Q2",
+            "priorValue": 5301,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "fcfMargin": {
+          "baseline2019": {
+            "currentValue": -4.8874753748038335,
+            "delta": -25.146701000165017,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 20.259225625361182,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "baseline2022": {
+            "currentValue": -4.8874753748038335,
+            "delta": -25.951803167776692,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 21.064327792972858,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "definitionVersion": "GOOG_fcfMargin_CALC_V1",
+          "nativeLabel": "fcfMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": -4.8874753748038335,
+          "yoy": {
+            "currentValue": -4.8874753748038335,
+            "delta": -10.38484128512034,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 5.497365910316506,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "grossMargin": {
+          "baseline2019": {
+            "currentValue": 61.648969915523054,
+            "delta": 5.711822498147782,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 55.93714741737527,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 61.648969915523054,
+            "delta": 8.122249949186006,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 53.52671996633705,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "GOOG_grossMargin_CALC_V1",
+          "nativeLabel": "grossMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 61.648969915523054,
+          "yoy": {
+            "currentValue": 61.648969915523054,
+            "delta": 2.134098716286317,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 59.51487119923674,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "microsoftCloudRevenue": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "nativeCapex": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "nativeCapexIntensity": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "operatingIncome": {
+          "baseline2019": {
+            "currentValue": 40770,
+            "delta": 34162,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 516.9794188861986,
+            "priorPeriod": "2019Q1",
+            "priorValue": 6608,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 40770,
+            "delta": 22610,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 124.50440528634361,
+            "priorPeriod": "2022Q4",
+            "priorValue": 18160,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "GOOG_operatingIncome_V1",
+          "nativeLabel": "Income from operations",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 40770,
+          "yoy": {
+            "currentValue": 40770,
+            "delta": 9499,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 30.376387067890377,
+            "priorPeriod": "2025Q2",
+            "priorValue": 31271,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "operatingMargin": {
+          "baseline2019": {
+            "currentValue": 34.03285585495342,
+            "delta": 15.848535978236942,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 18.184319876716476,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 34.03285585495342,
+            "delta": 10.153200900188008,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 23.87965495476541,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "GOOG_operatingMargin_CALC_V1",
+          "nativeLabel": "operatingMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 34.03285585495342,
+          "yoy": {
+            "currentValue": 34.03285585495342,
+            "delta": 1.6034784956801786,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 32.42937735927324,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "pureDepreciationToRevenue": {
+          "baseline2019": {
+            "currentValue": 5.930081137934488,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "baseline2022": {
+            "currentValue": 5.930081137934488,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 4.736482221754681,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "GOOG_pureDepreciationToRevenue_MONITOR_V1",
+          "nativeLabel": "pureDepreciationToRevenue",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 5.930081137934488,
+          "yoy": {
+            "currentValue": 5.930081137934488,
+            "delta": 0.7469393119088528,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 5.1831418260256354,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "revenue": {
+          "baseline2019": {
+            "currentValue": 119796,
+            "delta": 83457,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 229.66234623957732,
+            "priorPeriod": "2019Q1",
+            "priorValue": 36339,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 119796,
+            "delta": 43748,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 57.526825163054916,
+            "priorPeriod": "2022Q4",
+            "priorValue": 76048,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "GOOG_revenue_V1",
+          "nativeLabel": "Revenues",
+          "scope": "CONSOLIDATED",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 119796,
+          "yoy": {
+            "currentValue": 119796,
+            "delta": 23368,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 24.23362508814867,
+            "priorPeriod": "2025Q2",
+            "priorValue": 96428,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "segmentOperatingIncome": {
+          "baseline2019": {
+            "currentValue": 8814,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "baseline2022": {
+            "currentValue": 8814,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": -186,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "GOOG_segmentOperatingIncome_COST_ALLOCATION_2023_V2",
+          "nativeLabel": "Google Cloud segmentOperatingIncome",
+          "scope": "Google Cloud",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 8814,
+          "yoy": {
+            "currentValue": 8814,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 2826,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        },
+        "segmentOperatingMargin": {
+          "baseline2019": {
+            "currentValue": 35.58624031007752,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": null,
+            "reason": "EXACT_PERIOD_OR_DISCLOSURE_MISSING",
+            "state": "UNAVAILABLE"
+          },
+          "baseline2022": {
+            "currentValue": 35.58624031007752,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": -2.5427204374572794,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "GOOG_SEGMENT_MARGIN_CALC_V1",
+          "nativeLabel": "segmentOperatingMargin",
+          "scope": "Google Cloud",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 35.58624031007752,
+          "yoy": {
+            "currentValue": 35.58624031007752,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 20.7428068115091,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        },
+        "segmentRevenue": {
+          "baseline2019": {
+            "currentValue": 24768,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 1825,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 24768,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 7315,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "GOOG_segmentRevenue_COST_ALLOCATION_2023_V2",
+          "nativeLabel": "Google Cloud segmentRevenue",
+          "scope": "Google Cloud",
+          "sourceId": "goog-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 24768,
+          "yoy": {
+            "currentValue": 24768,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 13624,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        }
+      }
+    },
+    {
+      "company": "AMZN",
+      "latestEconomicQuarter": "2026Q2",
+      "latestFinancialFiling": [
+        {
+          "publicationDate": "2026-07-30",
+          "publisher": "Amazon",
+          "retrievedAt": "2026-10-07T05:12:48.457Z",
+          "sha256": "ea73fa991786fdb5e6e8bcd980f94d1f3bc4ca84f2d138c77a7a99d6b961e3c4",
+          "sourceId": "amzn-2026q2-pdf",
+          "sourceUrl": "https://s2.q4cdn.com/299287126/files/doc_earnings/2026/q2/earnings-result/AMZN-Q2-2026-Earnings-Release.pdf"
+        }
+      ],
+      "metrics": {
+        "aiRevenueRecognized": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "azureGrowth": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "broadDaToRevenue": {
+          "baseline2019": {
+            "currentValue": 9.963809656740077,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 8.130653266331658,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "baseline2022": {
+            "currentValue": 9.963809656740077,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 8.501782794026969,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "AMZN_broadDaToRevenue_MONITOR_V1",
+          "nativeLabel": "broadDaToRevenue",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 9.963809656740077,
+          "yoy": {
+            "currentValue": 9.963809656740077,
+            "delta": 0.8840133513889175,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 9.07979630535116,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashInvestmentIntensity": {
+          "baseline2019": {
+            "currentValue": 26.457832766716848,
+            "delta": 21.90004382199323,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 4.557788944723618,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 26.457832766716848,
+            "delta": 16.10958473047117,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 10.348248036245677,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_cashInvestmentIntensity_CALC_V1",
+          "nativeLabel": "cashInvestmentIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 26.457832766716848,
+          "yoy": {
+            "currentValue": 26.457832766716848,
+            "delta": 7.753225785285501,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 18.704606981431347,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashInvestmentToCfoIntensity": {
+          "baseline2019": {
+            "currentValue": 116.94097428779166,
+            "delta": -30.458809027484605,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 147.39978331527627,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "baseline2022": {
+            "currentValue": 116.94097428779166,
+            "delta": 64.01532385759936,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 52.9256504301923,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_cashInvestmentToCfoIntensity_CALC_V1",
+          "nativeLabel": "cashInvestmentToCfoIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 116.94097428779166,
+          "yoy": {
+            "currentValue": 116.94097428779166,
+            "delta": 20.468576932724773,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 96.47239735506689,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashPpeNative": {
+          "baseline2019": {
+            "currentValue": 53076,
+            "delta": 50355,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 1850.606394707828,
+            "priorPeriod": "2019Q1",
+            "priorValue": 2721,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 53076,
+            "delta": 37636,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 243.75647668393782,
+            "priorPeriod": "2022Q4",
+            "priorValue": 15440,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMAZON_NET_CASH_PPE_V1",
+          "nativeLabel": "Net cash PP&E (gross less proceeds/incentives)",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 53076,
+          "yoy": {
+            "currentValue": 53076,
+            "delta": 21708,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 69.20428462127009,
+            "priorPeriod": "2025Q2",
+            "priorValue": 31368,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashPpeToPureDepreciation": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "cfo": {
+          "baseline2019": {
+            "currentValue": 45387,
+            "delta": 43541,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 2358.667388949079,
+            "priorPeriod": "2019Q1",
+            "priorValue": 1846,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 45387,
+            "delta": 16214,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 55.578788605902716,
+            "priorPeriod": "2022Q4",
+            "priorValue": 29173,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_cfo_V1",
+          "nativeLabel": "Net cash provided by (used in) operating activities",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 45387,
+          "yoy": {
+            "currentValue": 45387,
+            "delta": 12872,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 39.587882515761954,
+            "priorPeriod": "2025Q2",
+            "priorValue": 32515,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "depreciationAmortizationOther": {
+          "baseline2019": {
+            "currentValue": 19988,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 4854,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "baseline2022": {
+            "currentValue": 19988,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 12685,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "AMZN_depreciationAmortizationOther_V1",
+          "nativeLabel": "Depreciation and amortization of property and equipment and capitalized content costs, operating lease assets, and other",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 19988,
+          "yoy": {
+            "currentValue": 19988,
+            "delta": 4761,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 31.266828659617783,
+            "priorPeriod": "2025Q2",
+            "priorValue": 15227,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "depreciationPpe": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "fcfCompanyConvention": {
+          "baseline2019": {
+            "currentValue": -7689,
+            "delta": -6814,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": -875,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "baseline2022": {
+            "currentValue": -7689,
+            "delta": -21422,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": -155.98922303939415,
+            "priorPeriod": "2022Q4",
+            "priorValue": 13733,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "definitionVersion": "AMZN_FCF_CONVENTION_V1",
+          "nativeLabel": "fcfCompanyConvention",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": -7689,
+          "yoy": {
+            "currentValue": -7689,
+            "delta": -8836,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": -770.357454228422,
+            "priorPeriod": "2025Q2",
+            "priorValue": 1147,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "fcfMargin": {
+          "baseline2019": {
+            "currentValue": -3.8328863543463307,
+            "delta": -2.3672247128052923,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": -1.4656616415410386,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "baseline2022": {
+            "currentValue": -3.8328863543463307,
+            "delta": -13.037063186066659,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 9.204176831720329,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          },
+          "definitionVersion": "AMZN_fcfMargin_CALC_V1",
+          "nativeLabel": "fcfMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": -3.8328863543463307,
+          "yoy": {
+            "currentValue": -3.8328863543463307,
+            "delta": -4.516837648904535,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 0.6839512945582045,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "grossMargin": {
+          "baseline2019": {
+            "currentValue": 52.255665334037865,
+            "delta": 9.073085769548754,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 43.18257956448911,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 52.255665334037865,
+            "delta": 9.653590322644071,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 42.602075011393794,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_grossMargin_CALC_V1",
+          "nativeLabel": "grossMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 52.255665334037865,
+          "yoy": {
+            "currentValue": 52.255665334037865,
+            "delta": 0.44173347872308,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 51.813931855314785,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "microsoftCloudRevenue": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "nativeCapex": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "nativeCapexIntensity": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "operatingIncome": {
+          "baseline2019": {
+            "currentValue": 27461,
+            "delta": 23041,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 521.289592760181,
+            "priorPeriod": "2019Q1",
+            "priorValue": 4420,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 27461,
+            "delta": 24724,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 903.3248081841432,
+            "priorPeriod": "2022Q4",
+            "priorValue": 2737,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_operatingIncome_V1",
+          "nativeLabel": "Operating income",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 27461,
+          "yoy": {
+            "currentValue": 27461,
+            "delta": 8290,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 43.242397371029156,
+            "priorPeriod": "2025Q2",
+            "priorValue": 19171,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "operatingMargin": {
+          "baseline2019": {
+            "currentValue": 13.68902226254449,
+            "delta": 6.285337170417187,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 7.403685092127303,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 13.68902226254449,
+            "delta": 11.854621040057157,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 1.8344012224873327,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_operatingMargin_CALC_V1",
+          "nativeLabel": "operatingMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 13.68902226254449,
+          "yoy": {
+            "currentValue": 13.68902226254449,
+            "delta": 2.257435280874624,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 11.431586981669867,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "pureDepreciationToRevenue": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "revenue": {
+          "baseline2019": {
+            "currentValue": 200606,
+            "delta": 140906,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 236.02345058626466,
+            "priorPeriod": "2019Q1",
+            "priorValue": 59700,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 200606,
+            "delta": 51402,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 34.450819012895096,
+            "priorPeriod": "2022Q4",
+            "priorValue": 149204,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_revenue_V1",
+          "nativeLabel": "Total net sales",
+          "scope": "CONSOLIDATED",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 200606,
+          "yoy": {
+            "currentValue": 200606,
+            "delta": 32904,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 19.620517346245126,
+            "priorPeriod": "2025Q2",
+            "priorValue": 167702,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "segmentOperatingIncome": {
+          "baseline2019": {
+            "currentValue": 16621,
+            "delta": 14398,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 647.6833108412055,
+            "priorPeriod": "2019Q1",
+            "priorValue": 2223,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 16621,
+            "delta": 11416,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 219.32756964457252,
+            "priorPeriod": "2022Q4",
+            "priorValue": 5205,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_segmentOperatingIncome_V1",
+          "nativeLabel": "AWS Operating income",
+          "scope": "AWS",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 16621,
+          "yoy": {
+            "currentValue": 16621,
+            "delta": 6461,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 63.59251968503937,
+            "priorPeriod": "2025Q2",
+            "priorValue": 10160,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "segmentOperatingMargin": {
+          "baseline2019": {
+            "currentValue": 39.356412199280165,
+            "delta": 10.471277064145028,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 28.885135135135137,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 39.356412199280165,
+            "delta": 15.008952193666918,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 24.347460005613247,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_SEGMENT_MARGIN_CALC_V1",
+          "nativeLabel": "segmentOperatingMargin",
+          "scope": "AWS",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 39.356412199280165,
+          "yoy": {
+            "currentValue": 39.356412199280165,
+            "delta": 6.447397850172528,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 32.909014349107636,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "segmentRevenue": {
+          "baseline2019": {
+            "currentValue": 42232,
+            "delta": 34536,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 448.7525987525988,
+            "priorPeriod": "2019Q1",
+            "priorValue": 7696,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 42232,
+            "delta": 20854,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 97.54888202825335,
+            "priorPeriod": "2022Q4",
+            "priorValue": 21378,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "AMZN_segmentRevenue_V1",
+          "nativeLabel": "AWS Net sales",
+          "scope": "AWS",
+          "sourceId": "amzn-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 42232,
+          "yoy": {
+            "currentValue": 42232,
+            "delta": 11359,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 36.79266673144819,
+            "priorPeriod": "2025Q2",
+            "priorValue": 30873,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        }
+      }
+    },
+    {
+      "company": "META",
+      "latestEconomicQuarter": "2026Q2",
+      "latestFinancialFiling": [
+        {
+          "publicationDate": "2026-07-29",
+          "publisher": "Meta",
+          "retrievedAt": "2026-10-07T05:13:04.377Z",
+          "sha256": "b3b181046d78b553af6547e45e5907496fb343ecbc7ffad4003ba74b08db8564",
+          "sourceId": "meta-2026q2-pdf",
+          "sourceUrl": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf"
+        }
+      ],
+      "metrics": {
+        "aiRevenueRecognized": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "azureGrowth": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "broadDaToRevenue": {
+          "baseline2019": {
+            "currentValue": 10.453775431325143,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 8.987199044902832,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "baseline2022": {
+            "currentValue": 10.453775431325143,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 7.386911238924297,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "META_broadDaToRevenue_MONITOR_V1",
+          "nativeLabel": "broadDaToRevenue",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 10.453775431325143,
+          "yoy": {
+            "currentValue": 10.453775431325143,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 9.137974576984595,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        },
+        "cashInvestmentIntensity": {
+          "baseline2019": {
+            "currentValue": 49.53208006447262,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 25.449359952245143,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 49.53208006447262,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 27.94341675734494,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "META_cashInvestmentIntensity_CALC_V1",
+          "nativeLabel": "cashInvestmentIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 49.53208006447262,
+          "yoy": {
+            "currentValue": 49.53208006447262,
+            "delta": 14.726961788523468,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 34.805118275949155,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashInvestmentToCfoIntensity": {
+          "baseline2019": {
+            "currentValue": 94.52011800891344,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 41.222604211431026,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 94.52011800891344,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 61.93921852387844,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "META_cashInvestmentToCfoIntensity_CALC_V1",
+          "nativeLabel": "cashInvestmentToCfoIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 94.52011800891344,
+          "yoy": {
+            "currentValue": 94.52011800891344,
+            "delta": 29.819988905983195,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 64.70012910293025,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashPpeNative": {
+          "baseline2019": {
+            "currentValue": 30116,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 3837,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 30116,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 8988,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "META_cashPpeGross_V1",
+          "nativeLabel": "Purchases of property and equipment",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 30116,
+          "yoy": {
+            "currentValue": 30116,
+            "delta": 13578,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 82.10182609747248,
+            "priorPeriod": "2025Q2",
+            "priorValue": 16538,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "cashPpeToPureDepreciation": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "cfo": {
+          "baseline2019": {
+            "currentValue": 31862,
+            "delta": 22554,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 242.30769230769232,
+            "priorPeriod": "2019Q1",
+            "priorValue": 9308,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 31862,
+            "delta": 17351,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 119.57135965819033,
+            "priorPeriod": "2022Q4",
+            "priorValue": 14511,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "META_cfo_V1",
+          "nativeLabel": "Net cash provided by operating activities",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 31862,
+          "yoy": {
+            "currentValue": 31862,
+            "delta": 6301,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 24.650835256836586,
+            "priorPeriod": "2025Q2",
+            "priorValue": 25561,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "depreciationAmortizationOther": {
+          "baseline2019": {
+            "currentValue": 6356,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 1355,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "baseline2022": {
+            "currentValue": 6356,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 2376,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          },
+          "definitionVersion": "META_depreciationAmortizationOther_V1",
+          "nativeLabel": "Depreciation and amortization",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 6356,
+          "yoy": {
+            "currentValue": 6356,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 4342,
+            "reason": "SOURCE_OR_ACCOUNTING_POLICY_QUALIFICATION",
+            "state": "LIMITED_COMPARABILITY"
+          }
+        },
+        "depreciationPpe": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "fcfCompanyConvention": {
+          "baseline2019": {
+            "currentValue": 784,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 5346,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 784,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 5288,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "META_FCF_GROSS_CASH_V2",
+          "nativeLabel": "fcfCompanyConvention",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 784,
+          "yoy": {
+            "currentValue": 784,
+            "delta": -7765,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": -90.82933676453386,
+            "priorPeriod": "2025Q2",
+            "priorValue": 8549,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "fcfMargin": {
+          "baseline2019": {
+            "currentValue": 1.2894524761105903,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 35.45798235723287,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 1.2894524761105903,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 16.44023006373387,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "META_fcfMargin_CALC_V1",
+          "nativeLabel": "fcfMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 1.2894524761105903,
+          "yoy": {
+            "currentValue": 1.2894524761105903,
+            "delta": -16.702381853378423,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 17.991834329489013,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "grossMargin": {
+          "baseline2019": {
+            "currentValue": 81.36543806845282,
+            "delta": 0.04289379571952168,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 81.3225442727333,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 81.36543806845282,
+            "delta": 7.281806792220891,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 74.08363127623193,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "META_grossMargin_CALC_V1",
+          "nativeLabel": "grossMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 81.36543806845282,
+          "yoy": {
+            "currentValue": 81.36543806845282,
+            "delta": -0.7647917488718718,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 82.13022981732469,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "microsoftCloudRevenue": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "nativeCapex": {
+          "baseline2019": {
+            "currentValue": 31078,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 3962,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 31078,
+            "delta": null,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 9223,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "META_CAPEX_GROSS_CASH_V2",
+          "nativeLabel": "nativeCapex",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 31078,
+          "yoy": {
+            "currentValue": 31078,
+            "delta": 14066,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 82.68281213261227,
+            "priorPeriod": "2025Q2",
+            "priorValue": 17012,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "nativeCapexIntensity": {
+          "baseline2019": {
+            "currentValue": 51.11429088337363,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 26.278437354911453,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "baseline2022": {
+            "currentValue": 51.11429088337363,
+            "delta": null,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 28.674024560858076,
+            "reason": "OPERAND_DEFINITION_OR_SCOPE_CHANGED",
+            "state": "DEFINITION_BREAK"
+          },
+          "definitionVersion": "META_nativeCapexIntensity_CALC_V1",
+          "nativeLabel": "nativeCapexIntensity",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 51.11429088337363,
+          "yoy": {
+            "currentValue": 51.11429088337363,
+            "delta": 15.311613890360746,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 35.80267699301288,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "operatingIncome": {
+          "baseline2019": {
+            "currentValue": 18775,
+            "delta": 15458,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 466.02351522460054,
+            "priorPeriod": "2019Q1",
+            "priorValue": 3317,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 18775,
+            "delta": 12376,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 193.40521956555713,
+            "priorPeriod": "2022Q4",
+            "priorValue": 6399,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "META_operatingIncome_V1",
+          "nativeLabel": "Income from operations",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 18775,
+          "yoy": {
+            "currentValue": 18775,
+            "delta": -1666,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": -8.150286189521061,
+            "priorPeriod": "2025Q2",
+            "priorValue": 20441,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "operatingMargin": {
+          "baseline2019": {
+            "currentValue": 30.879426325224912,
+            "delta": 8.879028368071634,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2019Q1",
+            "priorValue": 22.00039795715328,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 30.879426325224912,
+            "delta": 10.98513128403107,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2022Q4",
+            "priorValue": 19.894295041193843,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "META_operatingMargin_CALC_V1",
+          "nativeLabel": "operatingMargin",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "PERCENT",
+          "value": 30.879426325224912,
+          "yoy": {
+            "currentValue": 30.879426325224912,
+            "delta": -12.139767209584413,
+            "deltaUnit": "PERCENTAGE_POINTS",
+            "percentChange": null,
+            "priorPeriod": "2025Q2",
+            "priorValue": 43.019193534809325,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "FALLING"
+          }
+        },
+        "pureDepreciationToRevenue": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "revenue": {
+          "baseline2019": {
+            "currentValue": 60801,
+            "delta": 45724,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 303.26988127611594,
+            "priorPeriod": "2019Q1",
+            "priorValue": 15077,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "baseline2022": {
+            "currentValue": 60801,
+            "delta": 28636,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 89.02844706979636,
+            "priorPeriod": "2022Q4",
+            "priorValue": 32165,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          },
+          "definitionVersion": "META_revenue_V1",
+          "nativeLabel": "Revenue",
+          "scope": "CONSOLIDATED",
+          "sourceId": "meta-2026q2-pdf",
+          "unit": "USD_MILLIONS",
+          "value": 60801,
+          "yoy": {
+            "currentValue": 60801,
+            "delta": 13285,
+            "deltaUnit": "USD_MILLIONS",
+            "percentChange": 27.95900328310464,
+            "priorPeriod": "2025Q2",
+            "priorValue": 47516,
+            "reason": "EXACT_NUMERICAL_DIRECTION_ONLY",
+            "state": "RISING"
+          }
+        },
+        "segmentOperatingIncome": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "segmentOperatingMargin": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        },
+        "segmentRevenue": {
+          "baseline2019": null,
+          "baseline2022": null,
+          "definitionVersion": null,
+          "nativeLabel": null,
+          "scope": null,
+          "sourceId": null,
+          "unit": null,
+          "value": null,
+          "yoy": null
+        }
+      }
+    }
+  ],
+  "monitorHash": "51a55bb8b9c585026ab37898746695060b3dbb3a7c6aaa83efb5645cbe91a2d4",
+  "summaries": [
+    {
+      "company": "MSFT",
+      "en": "Microsoft (2026Q2). Native cash PP&E / revenue 39.78%; YoY +17.43 pp. Company-convention FCF margin 21.82%; YoY -11.63 pp. Operating margin 45.11%; YoY +0.21 pp. Pure PP&E depreciation / revenue unavailable; YoY UNAVAILABLE. Broad D&A is separate. Direct AI financial disclosure: 37 billion USD (lower-bound annualized run-rate; 2026Q1). Native cloud margin 40.59%; YoY LIMITED_COMPARABILITY. Cloud is not AI revenue. AI-specific capital returns remain unidentifiable.",
+      "layers": {
+        "accounting": {
+          "en": "Pure PP&E depreciation / revenue unavailable; YoY UNAVAILABLE. Broad D&A is separate.",
+          "zh": "纯 PP&E 折旧／收入 缺失；同比 UNAVAILABLE。较广口径折旧摊销单独列示。"
+        },
+        "cash": {
+          "en": "Company-convention FCF margin 21.82%; YoY -11.63 pp.",
+          "zh": "公司口径 FCF 利润率 21.82%；同比 -11.63 个百分点。"
+        },
+        "investment": {
+          "en": "Native cash PP&E / revenue 39.78%; YoY +17.43 pp.",
+          "zh": "原生现金 PP&E／收入 39.78%；同比 +17.43 个百分点。"
+        },
+        "monetization": {
+          "en": "Direct AI financial disclosure: 37 billion USD (lower-bound annualized run-rate; 2026Q1). Native cloud margin 40.59%; YoY LIMITED_COMPARABILITY. Cloud is not AI revenue.",
+          "zh": "直接 AI 财务披露：超过 37 十亿美元的年化 run-rate（2026Q1）。原生云分部利润率 40.59%；同比 LIMITED_COMPARABILITY。云收入不等于 AI 收入。"
+        },
+        "operating": {
+          "en": "Operating margin 45.11%; YoY +0.21 pp.",
+          "zh": "营业利润率 45.11%；同比 +0.21 个百分点。"
+        }
+      },
+      "limitations": [
+        "UNRECONCILED_NATIVE_CAPEX_SCOPE",
+        "Intelligent Cloud is not Azure or AI-only; historical segment recasts limit growth comparisons."
+      ],
+      "period": "2026Q2",
+      "zh": "Microsoft（2026Q2）。原生现金 PP&E／收入 39.78%；同比 +17.43 个百分点。公司口径 FCF 利润率 21.82%；同比 -11.63 个百分点。营业利润率 45.11%；同比 +0.21 个百分点。纯 PP&E 折旧／收入 缺失；同比 UNAVAILABLE。较广口径折旧摊销单独列示。直接 AI 财务披露：超过 37 十亿美元的年化 run-rate（2026Q1）。原生云分部利润率 40.59%；同比 LIMITED_COMPARABILITY。云收入不等于 AI 收入。AI 专属资本回报仍不可识别。"
+    },
+    {
+      "company": "GOOG",
+      "en": "Alphabet (2026Q2). Native cash PP&E / revenue 37.50%; YoY +14.22 pp. Company-convention FCF margin -4.89%; YoY -10.38 pp. Operating margin 34.03%; YoY +1.60 pp. Pure PP&E depreciation / revenue 5.93%; YoY +0.75 pp. Broad D&A is separate. Direct AI financial disclosure: unavailable. Native cloud margin 35.59%; YoY LIMITED_COMPARABILITY. Cloud is not AI revenue. AI-specific capital returns remain unidentifiable.",
+      "layers": {
+        "accounting": {
+          "en": "Pure PP&E depreciation / revenue 5.93%; YoY +0.75 pp. Broad D&A is separate.",
+          "zh": "纯 PP&E 折旧／收入 5.93%；同比 +0.75 个百分点。较广口径折旧摊销单独列示。"
+        },
+        "cash": {
+          "en": "Company-convention FCF margin -4.89%; YoY -10.38 pp.",
+          "zh": "公司口径 FCF 利润率 -4.89%；同比 -10.38 个百分点。"
+        },
+        "investment": {
+          "en": "Native cash PP&E / revenue 37.50%; YoY +14.22 pp.",
+          "zh": "原生现金 PP&E／收入 37.50%；同比 +14.22 个百分点。"
+        },
+        "monetization": {
+          "en": "Direct AI financial disclosure: unavailable. Native cloud margin 35.59%; YoY LIMITED_COMPARABILITY. Cloud is not AI revenue.",
+          "zh": "直接 AI 财务披露：缺失。原生云分部利润率 35.59%；同比 LIMITED_COMPARABILITY。云收入不等于 AI 收入。"
+        },
+        "operating": {
+          "en": "Operating margin 34.03%; YoY +1.60 pp.",
+          "zh": "营业利润率 34.03%；同比 +1.60 个百分点。"
+        }
+      },
+      "limitations": [
+        "Historical pure depreciation incomplete (quarterly coverage begins 2022Q4).",
+        "ALPHABET_RPO_SHORT_TERM_INCLUDED_V2: definition break from 2026Q1.",
+        "Google Cloud historical recasts limit growth comparisons."
+      ],
+      "period": "2026Q2",
+      "zh": "Alphabet（2026Q2）。原生现金 PP&E／收入 37.50%；同比 +14.22 个百分点。公司口径 FCF 利润率 -4.89%；同比 -10.38 个百分点。营业利润率 34.03%；同比 +1.60 个百分点。纯 PP&E 折旧／收入 5.93%；同比 +0.75 个百分点。较广口径折旧摊销单独列示。直接 AI 财务披露：缺失。原生云分部利润率 35.59%；同比 LIMITED_COMPARABILITY。云收入不等于 AI 收入。AI 专属资本回报仍不可识别。"
+    },
+    {
+      "company": "AMZN",
+      "en": "Amazon (2026Q2). Native cash PP&E / revenue 26.46%; YoY +7.75 pp. Company-convention FCF margin -3.83%; YoY -4.52 pp. Operating margin 13.69%; YoY +2.26 pp. Pure PP&E depreciation / revenue unavailable; YoY UNAVAILABLE. Broad D&A is separate. Direct AI financial disclosure: 25 billion USD (lower-bound annualized run-rate; 2026Q2). Native cloud margin 39.36%; YoY +6.45 pp. Cloud is not AI revenue. AI-specific capital returns remain unidentifiable.",
+      "layers": {
+        "accounting": {
+          "en": "Pure PP&E depreciation / revenue unavailable; YoY UNAVAILABLE. Broad D&A is separate.",
+          "zh": "纯 PP&E 折旧／收入 缺失；同比 UNAVAILABLE。较广口径折旧摊销单独列示。"
+        },
+        "cash": {
+          "en": "Company-convention FCF margin -3.83%; YoY -4.52 pp.",
+          "zh": "公司口径 FCF 利润率 -3.83%；同比 -4.52 个百分点。"
+        },
+        "investment": {
+          "en": "Native cash PP&E / revenue 26.46%; YoY +7.75 pp.",
+          "zh": "原生现金 PP&E／收入 26.46%；同比 +7.75 个百分点。"
+        },
+        "monetization": {
+          "en": "Direct AI financial disclosure: 25 billion USD (lower-bound annualized run-rate; 2026Q2). Native cloud margin 39.36%; YoY +6.45 pp. Cloud is not AI revenue.",
+          "zh": "直接 AI 财务披露：超过 25 十亿美元的年化 run-rate（2026Q2）。原生云分部利润率 39.36%；同比 +6.45 个百分点。云收入不等于 AI 收入。"
+        },
+        "operating": {
+          "en": "Operating margin 13.69%; YoY +2.26 pp.",
+          "zh": "营业利润率 13.69%；同比 +2.26 个百分点。"
+        }
+      },
+      "limitations": [
+        "Gross/net PP&E, finance leases and operating leases remain separate.",
+        "Native cost of sales is not a harmonized cross-company gross-margin definition."
+      ],
+      "period": "2026Q2",
+      "zh": "Amazon（2026Q2）。原生现金 PP&E／收入 26.46%；同比 +7.75 个百分点。公司口径 FCF 利润率 -3.83%；同比 -4.52 个百分点。营业利润率 13.69%；同比 +2.26 个百分点。纯 PP&E 折旧／收入 缺失；同比 UNAVAILABLE。较广口径折旧摊销单独列示。直接 AI 财务披露：超过 25 十亿美元的年化 run-rate（2026Q2）。原生云分部利润率 39.36%；同比 +6.45 个百分点。云收入不等于 AI 收入。AI 专属资本回报仍不可识别。"
+    },
+    {
+      "company": "META",
+      "en": "Meta (2026Q2). Native cash PP&E / revenue 49.53%; YoY +14.73 pp. Company-convention FCF margin 1.29%; YoY -16.70 pp. Operating margin 30.88%; YoY -12.14 pp. Pure PP&E depreciation / revenue unavailable; YoY UNAVAILABLE. Broad D&A is separate. Direct AI financial disclosure: unavailable. Native cloud margin unavailable; YoY UNAVAILABLE. Cloud is not AI revenue. AI-specific capital returns remain unidentifiable.",
+      "layers": {
+        "accounting": {
+          "en": "Pure PP&E depreciation / revenue unavailable; YoY UNAVAILABLE. Broad D&A is separate.",
+          "zh": "纯 PP&E 折旧／收入 缺失；同比 UNAVAILABLE。较广口径折旧摊销单独列示。"
+        },
+        "cash": {
+          "en": "Company-convention FCF margin 1.29%; YoY -16.70 pp.",
+          "zh": "公司口径 FCF 利润率 1.29%；同比 -16.70 个百分点。"
+        },
+        "investment": {
+          "en": "Native cash PP&E / revenue 49.53%; YoY +14.73 pp.",
+          "zh": "原生现金 PP&E／收入 49.53%；同比 +14.73 个百分点。"
+        },
+        "monetization": {
+          "en": "Direct AI financial disclosure: unavailable. Native cloud margin unavailable; YoY UNAVAILABLE. Cloud is not AI revenue.",
+          "zh": "直接 AI 财务披露：缺失。原生云分部利润率 缺失；同比 UNAVAILABLE。云收入不等于 AI 收入。"
+        },
+        "operating": {
+          "en": "Operating margin 30.88%; YoY -12.14 pp.",
+          "zh": "营业利润率 30.88%；同比 -12.14 个百分点。"
+        }
+      },
+      "limitations": [
+        "RESTATEMENT_REVIEW_REQUIRED: 5.5-year release / six-year annual useful-life wording conflict.",
+        "AI monetization embedded in advertising/recommendations; no separate recognized AI revenue.",
+        "Native cash PP&E/FCF gross-net basis changes remain visible."
+      ],
+      "period": "2026Q2",
+      "zh": "Meta（2026Q2）。原生现金 PP&E／收入 49.53%；同比 +14.73 个百分点。公司口径 FCF 利润率 1.29%；同比 -16.70 个百分点。营业利润率 30.88%；同比 -12.14 个百分点。纯 PP&E 折旧／收入 缺失；同比 UNAVAILABLE。较广口径折旧摊销单独列示。直接 AI 财务披露：缺失。原生云分部利润率 缺失；同比 UNAVAILABLE。云收入不等于 AI 收入。AI 专属资本回报仍不可识别。"
+    }
+  ]
+}

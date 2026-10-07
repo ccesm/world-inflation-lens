@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Research monitor envelope. All nested semantics independently rebuilt from pinned archive.",
+  "type": "object",
+  "required": [
+    "content",
+    "resultHash"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "resultHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "content": {
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "ruleVersion",
+        "baseCommit",
+        "configHash",
+        "inputHash",
+        "panelHash",
+        "sourceManifestHash",
+        "dataThrough",
+        "disclosureThrough",
+        "asOfMode",
+        "timeWindows",
+        "metricCatalog",
+        "records",
+        "missing",
+        "latest",
+        "events",
+        "accounting",
+        "health",
+        "chartContract",
+        "comparability",
+        "guardrail"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "schemaVersion": {
+          "type": "string",
+          "const": "ai-capex-monitor-v0.1"
+        },
+        "ruleVersion": {
+          "type": "string"
+        },
+        "baseCommit": {
+          "type": "string"
+        },
+        "configHash": {
+          "type": "string"
+        },
+        "inputHash": {
+          "type": "string"
+        },
+        "panelHash": {
+          "type": "string"
+        },
+        "sourceManifestHash": {
+          "type": "string"
+        },
+        "dataThrough": {
+          "type": "string"
+        },
+        "disclosureThrough": {
+          "type": "string"
+        },
+        "asOfMode": {
+          "type": "string"
+        },
+        "timeWindows": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "metricCatalog": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "missing": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "latest": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "accounting": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "health": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "chartContract": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "comparability": {
+          "type": "object"
+        },
+        "guardrail": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}
