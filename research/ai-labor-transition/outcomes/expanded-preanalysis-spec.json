@@ -1,0 +1,58 @@
+{
+  "version": "occupational-coverage-expansion-v1",
+  "scope": "RESEARCH_ONLY",
+  "baseCommit": "57f9b70352999a9464fb164e17df21075d6d61e9",
+  "strictSpecificationSha256": "f3429802af3354335d5c724fc5497a24dde41ea11ac8178b2ac88c9416148b5e",
+  "strictPopulationSizes": {"academic": 167, "microsoft": 190, "common": 165},
+  "inputs": "Only hash-qualified Phase 2 inputs and Phase 3 official Census crosswalk and accepted CPS sufficient statistics. No new source bytes.",
+  "cellConstruction": {
+    "closure": "Connected components of all official Census 2010-to-2018 edges, joined additionally by shared current SOC members. Retain entire components; never split workers.",
+    "socResolution": "Exact SOC 2018 detailed codes and exact official hierarchy nodes resolved through published parent links. Wildcards, unknown expressions and empty member sets fail closed. Hierarchy aggregates are cells, never detailed outcome observations.",
+    "multiplicity": "Count unique Census source and target nodes in the complete component, not individual edge labels.",
+    "manyToMany": "EXCLUDE in version 1, even when graph closure appears complete.",
+    "incompleteComponents": "EXCLUDE if any current code is unresolved, any side is empty, or any declared node has no edge.",
+    "strictIsolation": "Retain strict cells exactly; reject any added component overlapping a strict cell rather than reallocating its workers.",
+    "identity": "Content-addressed taxonomy/code/member sets; sorted nodes and edges. No title matching."
+  },
+  "exposure": {
+    "quintiles": "Frozen Phase 3 source-native ranks. Never recompute cutoffs using outcomes or weights.",
+    "cellAssignment": "All detailed SOC members must have valid source-specific assignment and the same native quintile. No combined continuous score.",
+    "academicConsensus": "All official current O*NET children must have accepted human Beta values and agree on frozen native quintile. Preserve all values; label CONSENSUS_CHILD_ASSIGNMENT; scalar null.",
+    "microsoft": "Exact detailed SOC only. No broad or hybrid cloning.",
+    "missing": "UNAVAILABLE, not zero; disagreement EXPOSURE_AMBIGUOUS."
+  },
+  "samples": {
+    "inheritUnchanged": ["minimumSamples", "universes", "ageBands", "eras", "pretrend", "comparisons", "uncertainty", "materialityPresentationOnly"],
+    "balancedPanel": "All complete 2015-2024 years; cell employment >=120 person-months and observed in >=6 months in each year; group suppression unchanged.",
+    "pooling": "Sum original integer sufficient statistics and earnings-weight histograms before estimating; never average precomputed outcomes.",
+    "partialYears": "Existing matched calendar months in 2022 and incomplete 2025/2026 only; no extrapolation or annual index.",
+    "denominator": "All 2024 CPS civilian noninstitutional employed age 16+, all class-of-worker types, original composited survey weight. No renormalization to mapped occupations."
+  },
+  "waterfall": {
+    "primaryLossPriority": ["A_EXPOSURE_UNAVAILABLE", "B_EXPOSURE_MAPPING_AMBIGUOUS", "C_CPS_SOC_MAPPING_UNAVAILABLE", "D_TEMPORAL_MAPPING_AMBIGUOUS", "E_INSUFFICIENT_SAMPLE", "G_STRICT_ELIGIBLE"],
+    "F": "Metric-only hours/earnings suppression diagnostic, not employment exclusion; count separately without adding to waterfall total.",
+    "H": "Potential expanded eligibility is a separate recovery annotation on primary loss, not a second mutually exclusive exclusion count.",
+    "unidentifiedWeights": "Never allocate a Census cell's weight across constituent SOC occupations. Report exact detailed weights where identified; otherwise null and separate complete native-Census-weight partition with unallocated/ambiguous reasons.",
+    "majorGroups": "Assign cell weight only when every member belongs to same official major; otherwise explicit cross-major/unresolved category."
+  },
+  "sensitivities": {
+    "A": "Original frozen strict sample",
+    "B": "Strict plus complete temporal/hierarchy aggregation cells, exact scalar exposure assignments only",
+    "C": "B plus categorical O*NET-child consensus; same cell closure and sample rules",
+    "common": "Intersection of eligible cell IDs separately for B/C; source-native quintile groups retained independently; no source averaging."
+  },
+  "comparisons": {
+    "metrics": ["employment", "employmentShare", "employmentIndices", "usualHours", "nominalMedianWeeklyEarnings", "youngWorkerComposition"],
+    "pretrend": "Unchanged Phase 3 log-OLS 2015-2019; show 2022-2024 Q5-minus-Q1 and added-cell trend contributions.",
+    "labelsNonexclusive": {
+      "MAGNITUDE_SENSITIVE": "Absolute strict-to-expanded post Q5-Q1 gap change >= inherited 5 pp presentation threshold",
+      "PRETREND_SENSITIVE": "Absolute pretrend-gap change >= inherited 0.5 pp/year OR strong-pretrend flag changes",
+      "SAMPLE_SENSITIVE": "Post-gap sign changes OR expanded full-source versus common-source gap differs >= inherited 5 pp",
+      "INSUFFICIENT_EXPANDED_COVERAGE": "Expanded employment coverage < inherited 50% broad-description threshold OR required extreme-group estimates absent",
+      "DIRECTIONALLY_CONSISTENT": "Required gaps present and same sign and neither magnitude/pretrend/sample sensitivity is flagged; coverage limitation remains an independent label"
+    },
+    "finalDecision": "Methodology/test defect => COVERAGE EXPANSION METHODOLOGY NEEDS FIXES; otherwise positive gain with sensitivity => EXPANDED SAMPLE IS MATERIAL BUT RESULT-SENSITIVE; otherwise either source <50% => EXPANSION DOES NOT YET RESOLVE COVERAGE LIMITATION; otherwise EXPANDED SAMPLE ADDS ROBUST DESCRIPTIVE COVERAGE",
+    "industry": "Within-vintage native composition only; cross-era differences NOT_COMPARABLE without qualified industry concordance."
+  },
+  "boundaries": ["Exposure is not adoption", "Exposure is not automation probability", "DESCRIPTIVE_ONLY", "NOT_ESTABLISHED", "No naive IID uncertainty", "No public UI", "No Signal Engine", "No monitor activation", "No email", "No merge or deployment"]
+}
