@@ -77,3 +77,58 @@ Smalling Substation groundbreaking and Meta funding are reported by Entergy. The
 ## UNAVAILABLE and next verification
 
 No project-attributable recognized AI revenue, utilization, invested IT capital, operating cash flow, operating costs or return is identified. No AI ROI is calculated. Current project lease liability, remaining sponsor funding schedule, complete payment schedule and exact guarantee enforcement terms require further documents. Legal title, borrower, security and recourse require primary contracts; entity branding is insufficient. Scope reconciliation between original JV facilities and expanded campus is unresolved. The next phase should hydrate those documents and establish field-level evidence, rather than estimate missing numbers.
+
+## Phase 3B hydration supplement — 2026-10-07
+
+The Phase3A assertions above remain the historical benchmark. The new reviewed view is `data/phase3b/`, indexed by `cases/hyperion.json`; original registries are not overwritten. The machine scope report is `reports/hyperion-scope-reconciliation.json`, and the raw-source manifest is `hydration/hyperion-manifest.json`.
+
+### Verified source scopes
+
+| Disclosure | Native amount/capacity | Scope and status |
+|---|---|---|
+| Original development plan | Approximately $27bn | Original JV buildings and long-lived power/cooling/connectivity, not GPU allocation or realized Meta PP&E |
+| Later Louisiana plan | >$50bn | Broader regional/campus expansion, scope overlap unresolved; not simple growth from $27bn |
+| Rating-related campus | 2.064GW | Secondary rating summary; native electrical/IT-load definition unknown |
+| Expanded campus plan | Up to/scalable 5GW | Planned campus capability, not operating capacity or original financed footprint |
+| Securities offering | $27.3bn | Transaction participant adviser reports private offering; not construction cost |
+| Initial leases | Approximately $12.31bn | Initial aggregate future operating lease commitments starting2029, four years/property, optional total up to20years |
+| RVG threshold | Approximately $28bn, declining | Conditional property fair-value support; not fixed rent, debt principal or expected payment |
+| Meta maximum exposure | $45.95bn at2025-12-31; $46.03bn at2026-06-30 | Issuer exposure includes investment, leases, estimated future funding and RVG; not debt or expected loss |
+| Equity carrying value | $1.83bn; $2.92bn, respectively | Equity-method investment carrying value, not original equity-funded project cost |
+
+[Meta’s original official issuer PDF](https://s21.q4cdn.com/399680738/files/doc_news/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center-2025.pdf) and [the investor-side lawyer’s transaction statement](https://www.cliffordchance.com/news/news/2025/10/clifford-chance-advises-pimco-funds-on-investment-to-develop-metas-hyperion-data-center.html) are now archived byte-for-byte externally. Meta’s [2025 annual filing](https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm) and [June2026 filing](https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm) were re-read; SEC raw retrieval was blocked, so their raw archival gaps remain explicit. No digest of extracted web text is misrepresented as a publisher document hash.
+
+### Legal entities and support
+
+The primary issuer describes a20% Meta/80% Blue Owl-managed-funds venture that owns/develops the campus. It does not name all legal entities. The managed funds are owners; Blue Owl Capital as fund manager is a separate entity record. PIMCO-managed accounts are investor-side participants, not inferred owners of the whole campus.
+
+The [LPSC order U-37425](https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn%2Fjuc2%2BA%3D), issued August29,2025, identifies Laidley LLC as the then Meta subsidiary/developer and electricity customer. This improves primary verification of that dated role. It does **not** prove the post-October JV registered-property-title chain. Project Beignet Holdings, Iris Crossing and Beignet Investor remain secondary legal-chain records; the primary legal title owner and public debt offering/indenture remain unavailable. Maturity, coupon, yield, collateral, ranking, amortization and recourse have not been primary-qualified. They remain null rather than copied from market summaries.
+
+The lease counterparty is the issuer-described venture umbrella; exact property-level lessor subsidiaries and payment schedule remain unavailable. Meta reports equity-method treatment and an unconsolidated VIE because it is not the primary beneficiary. Its RVG payments were not probable and no RVG liability had been recorded at the reporting date. This accounting conclusion is not a finding that conditional exposure is risk-free. Remarketing decisions are discussed as economically significant activities; residual risk cannot be assigned as a single quantified loss to one party from these disclosures.
+
+### Power and grid: primary regulatory improvement
+
+The44-page public order and settlement are archived. They distinguish original generation/transmission approval from future grid expansion and reference the ESA, CIAC, parental-guaranty and collateral-support framework. Public settlement sectionIII specifies how certain customer contributions offset specified transmission plant-in-service costs. Confidential attachments and contract amounts are not publicly available in this record; no blanket claim that every utility cost is paid by Meta, or by other customers, is made.
+
+The subsequently announced seven-gas-plant plan (>5,200MW generation), transmission expansion and renewable options stay in `hyperion-grid-expanded`. They are plans for utility assets, not Meta campus IT load or automatically approved/operational infrastructure. Utility capital investment must not be added to JV development cost. Firm energization, precise cost allocation for all resources, service/guarantee duration and full payment schedules remain gaps.
+
+### Transaction graph
+
+```mermaid
+flowchart LR
+  M[Meta] -->|20% issuer-described interest| V[Hyperion venture umbrella]
+  F[Blue Owl-managed funds] -->|80% issuer-described interest| V
+  V -->|owns/develops, issuer umbrella| A[Original campus assets]
+  M -->|future operating leases| V
+  M -->|conditional RVG| V
+  L[Laidley LLC, August2025 role] -->|electric service customer| E[Entergy Louisiana]
+  P[PIMCO-managed funds/accounts] -->|participant in private offering| S[Financing transaction; legal terms incomplete]
+```
+
+The graph deliberately does not join Laidley to the post-JV legal owner through an unsupported primary edge. Secondary legal-chain edges are separately marked in structured data. No direct “PIMCO lends to Meta” edge is invented.
+
+### DO NOT ADD and remaining gaps
+
+All62 Phase3B pairwise monetary guards include Hyperion cost/debt/lease/guarantee/equity/max-exposure relationships. These are conservative non-addition protections, not proof of exact footprint equality. The $7bn fund cash contribution may be debt-funded; multiplying $27bn by ownership percentages does not establish funded equity. Successive-period carrying values and maximum exposures are not cumulative investments.
+
+HIGH gaps: exact post-JV title/borrower chain and debt/security/recourse contracts; complete original-versus-regional asset overlap; full utility service/support agreements. MEDIUM gaps: blocked SEC raw vintages, property payment/RVG schedules, project PP&E/equipment allocation, later power-approval state and energization. Attributable AI revenue, utilization and operating cash flow remain unavailable. No project ROI or systemic-risk conclusion is calculated.

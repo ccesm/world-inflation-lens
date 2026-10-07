@@ -1,0 +1,177 @@
+{
+  "hyperion": [
+    "cost",
+    "distribution",
+    "financed-capacity",
+    "legal-jv",
+    "legal-title-holder",
+    "location",
+    "original-developer",
+    "planned-capacity",
+    "regional-plan",
+    "status"
+  ],
+  "fairwater": [
+    "AI-revenue",
+    "IT-MW",
+    "building-area",
+    "equity-funding-mix",
+    "guarantee-amount",
+    "lease-amount",
+    "location",
+    "owner",
+    "pledge",
+    "project-cash-flow",
+    "project-debt",
+    "realized-cost",
+    "second-pledge",
+    "site-PP&E",
+    "site-area",
+    "status"
+  ],
+  "polaris-forge-1": [
+    "AI-revenue",
+    "PPA-value",
+    "contracted-capacity",
+    "grid-cost",
+    "live-capacity",
+    "live-capacity-current",
+    "location",
+    "project-cash-flow",
+    "project-cost",
+    "registered-title-holder",
+    "status",
+    "tenant",
+    "utility",
+    "utilization"
+  ],
+  "h-private-securities": [
+    "amortization",
+    "collateral",
+    "coupon",
+    "issuance-date",
+    "issuer",
+    "maturity",
+    "principal",
+    "ranking",
+    "recourse",
+    "security",
+    "use-of-proceeds",
+    "yield"
+  ],
+  "h-fund-cash": [
+    "amount"
+  ],
+  "f-corporate-funding": [
+    "amount",
+    "funding-mix"
+  ],
+  "p-notes250": [
+    "coupon",
+    "issuer",
+    "maturity",
+    "principal",
+    "recourse",
+    "security"
+  ],
+  "p-notes150": [
+    "coupon",
+    "issuer",
+    "maturity",
+    "principal",
+    "recourse",
+    "security"
+  ],
+  "p-preferred-original": [
+    "amount"
+  ],
+  "p-platform-preferred": [
+    "amount"
+  ],
+  "h-own-meta": [
+    "percentage"
+  ],
+  "h-own-blue-owl-funds": [
+    "percentage"
+  ],
+  "h-lease": [
+    "classification",
+    "commencement",
+    "commitment",
+    "initial-term",
+    "max-term",
+    "recognition",
+    "schedule"
+  ],
+  "h-rvg": [
+    "recognition",
+    "threshold",
+    "trigger"
+  ],
+  "p-lease100": [
+    "capacity",
+    "payments",
+    "term"
+  ],
+  "p-lease150": [
+    "capacity",
+    "payments",
+    "term"
+  ],
+  "p-lease4": [
+    "capacity",
+    "payments",
+    "term"
+  ],
+  "p-completion": [
+    "trigger"
+  ],
+  "p-lease-guarantee": [
+    "trigger"
+  ],
+  "p-tenant-support-2026": [
+    "trigger"
+  ],
+  "h-grid-original": [
+    "cost-recovery",
+    "grid-approval",
+    "power-support",
+    "utility"
+  ],
+  "h-gas": [
+    "capacity"
+  ],
+  "h-transmission": [
+    "capacity"
+  ],
+  "h-solar": [
+    "capacity"
+  ],
+  "f-service": [
+    "cost-recovery",
+    "solar",
+    "utility"
+  ],
+  "p-power-unavailable": [
+    "cost-recovery",
+    "utility"
+  ],
+  "h-accounting-2025": [
+    "equity",
+    "maximum-exposure",
+    "treatment"
+  ],
+  "h-accounting-2026": [
+    "equity",
+    "maximum-exposure",
+    "treatment"
+  ],
+  "f-accounting": [
+    "interpretation",
+    "site-PP&E"
+  ],
+  "p-accounting": [
+    "site-cost",
+    "treatment"
+  ]
+}

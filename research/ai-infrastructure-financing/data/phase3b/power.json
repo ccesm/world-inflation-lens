@@ -1,0 +1,74 @@
+[
+  {
+    "id": "h-grid-original",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "POWER",
+    "scopeId": "hyperion-grid-original",
+    "fieldClaims": {
+      "utility": "hyperion:utility",
+      "grid-approval": "hyperion:grid-approval",
+      "cost-recovery": "hyperion:cost-recovery",
+      "power-support": "hyperion:power-support"
+    },
+    "utilityId": "entergy-la"
+  },
+  {
+    "id": "h-gas",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "POWER",
+    "scopeId": "hyperion-grid-expanded",
+    "fieldClaims": {
+      "capacity": "hyperion:power-gas"
+    },
+    "utilityId": "entergy-la"
+  },
+  {
+    "id": "h-transmission",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "POWER",
+    "scopeId": "hyperion-grid-expanded",
+    "fieldClaims": {
+      "capacity": "hyperion:power-transmission"
+    },
+    "utilityId": "entergy-la"
+  },
+  {
+    "id": "h-solar",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "POWER",
+    "scopeId": "hyperion-grid-expanded",
+    "fieldClaims": {
+      "capacity": "hyperion:power-solar"
+    },
+    "utilityId": "entergy-la"
+  },
+  {
+    "id": "f-service",
+    "caseId": "fairwater",
+    "assetIdentity": "fairwater-asset",
+    "layer": "POWER",
+    "scopeId": "fairwater-power",
+    "fieldClaims": {
+      "utility": "fairwater:utility",
+      "solar": "fairwater:solar",
+      "cost-recovery": "fairwater:cost-recovery"
+    },
+    "utilityId": "we-energies"
+  },
+  {
+    "id": "p-power-unavailable",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "POWER",
+    "scopeId": "polaris-forge-1-asset",
+    "fieldClaims": {
+      "utility": "polaris-forge-1:utility",
+      "cost-recovery": "polaris-forge-1:grid-cost"
+    },
+    "utilityId": null
+  }
+]

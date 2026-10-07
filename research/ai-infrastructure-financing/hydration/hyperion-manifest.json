@@ -1,0 +1,655 @@
+{
+  "caseId": "hyperion",
+  "sources": [
+    {
+      "sourceId": "brookings-article",
+      "url": "https://www.brookings.edu/articles/financing-the-ai-buildout/",
+      "resolvedURL": null,
+      "publisher": "Brookings Institution",
+      "title": "Financing the AI buildout",
+      "sourceType": "SECONDARY_RESEARCH",
+      "documentDate": "2026-09-23",
+      "retrievedAt": "2026-10-07T22:04:06.895Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [],
+      "primaryOrSecondary": "SECONDARY",
+      "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.brookings.edu",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Public web text review; raw retrieval not qualified",
+      "accessError": "CONTENT_MISMATCH"
+    },
+    {
+      "sourceId": "brookings-paper",
+      "url": "https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf",
+      "resolvedURL": "https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf",
+      "publisher": "Stijn Van Nieuwerburgh / Brookings",
+      "title": "Financing the AI Buildout, BPEA conference draft",
+      "sourceType": "SECONDARY_RESEARCH",
+      "documentDate": "2026-09-04",
+      "retrievedAt": "2026-10-07T22:04:08.169Z",
+      "MIME": "application/pdf",
+      "byteSize": 991052,
+      "SHA256": "bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "iris-crossing",
+        "project-beignet-holdings"
+      ],
+      "primaryOrSecondary": "SECONDARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": "brookings-paper@bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "www.brookings.edu",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "meta-jv",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/",
+      "resolvedURL": null,
+      "publisher": "Meta Platforms",
+      "title": "Hyperion joint venture announcement",
+      "sourceType": "PRIMARY_TRANSACTION",
+      "documentDate": "2025-10-21",
+      "retrievedAt": "2026-10-07T22:04:09.559Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "UNQUALIFIED",
+      "retrievalStatus": "ACCESS_BLOCKED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "investor.atmeta.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Public web text review; raw retrieval not qualified",
+      "accessError": "ACCESS_BLOCKED"
+    },
+    {
+      "sourceId": "meta-2025k",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+      "resolvedURL": null,
+      "publisher": "Meta Platforms",
+      "title": "2025 Form 10-K",
+      "sourceType": "PRIMARY_ACCOUNTING",
+      "documentDate": "2026-01-29",
+      "retrievedAt": "2026-10-07T22:04:10.822Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "meta"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+      "retrievalStatus": "ACCESS_BLOCKED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.sec.gov",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Public web text review; raw retrieval not qualified",
+      "accessError": "ACCESS_BLOCKED"
+    },
+    {
+      "sourceId": "meta-2026q2",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+      "resolvedURL": null,
+      "publisher": "Meta Platforms",
+      "title": "2026 Q2 Form 10-Q",
+      "sourceType": "PRIMARY_ACCOUNTING",
+      "documentDate": "2026-07-30",
+      "retrievedAt": "2026-10-07T22:04:12.127Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "meta"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+      "retrievalStatus": "ACCESS_BLOCKED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.sec.gov",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Public web text review; raw retrieval not qualified",
+      "accessError": "ACCESS_BLOCKED_HOST_STOP"
+    },
+    {
+      "sourceId": "cc-pimco",
+      "url": "https://www.cliffordchance.com/news/news/2025/10/clifford-chance-advises-pimco-funds-on-investment-to-develop-metas-hyperion-data-center.html",
+      "resolvedURL": "https://www.cliffordchance.com/news/news/2025/10/clifford-chance-advises-pimco-funds-on-investment-to-develop-metas-hyperion-data-center.html",
+      "publisher": "Clifford Chance",
+      "title": "PIMCO investment to develop Hyperion",
+      "sourceType": "PRIMARY_TRANSACTION",
+      "documentDate": "2025-10-27",
+      "retrievedAt": "2026-10-07T22:04:13.230Z",
+      "MIME": "text/html",
+      "byteSize": 247566,
+      "SHA256": "bf5d7ba6ad5abb85e13d61504b73da27806aad0422b04ebcdd146fc9a4d2f65e",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "pimco-funds"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "cc-pimco@bf5d7ba6ad5abb85e13d61504b73da27806aad0422b04ebcdd146fc9a4d2f65e",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.cliffordchance.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "meta-engineering",
+      "url": "https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/",
+      "resolvedURL": "https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/",
+      "publisher": "Meta Engineering",
+      "title": "Infrastructure evolution and AI",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2025-09-29",
+      "retrievedAt": "2026-10-07T22:04:15.391Z",
+      "MIME": "text/html",
+      "byteSize": 133318,
+      "SHA256": "c93b2e23bd2c3cfcadb5fb98deb417c1623c67407237343086dea2f325b47076",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "meta-engineering@c93b2e23bd2c3cfcadb5fb98deb417c1623c67407237343086dea2f325b47076",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "engineering.fb.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "meta-expansion",
+      "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+      "resolvedURL": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+      "publisher": "Meta",
+      "title": "Louisiana data center expansion",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2026-07-13",
+      "retrievedAt": "2026-10-07T22:04:16.671Z",
+      "MIME": "text/html",
+      "byteSize": 383724,
+      "SHA256": "eeab6bdf49ccf9875114d30a14cf7118aacb41675c7a287c476cd417d439f1ff",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "meta"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "meta-expansion@eeab6bdf49ccf9875114d30a14cf7118aacb41675c7a287c476cd417d439f1ff",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "about.fb.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "entergy-substation",
+      "url": "https://www.entergy.com/news/entergy-louisiana-breaks-ground-on-key-substation-to-power-data-center-in-richland-parish",
+      "resolvedURL": "https://www.entergy.com/news/entergy-louisiana-breaks-ground-on-key-substation-to-power-data-center-in-richland-parish",
+      "publisher": "Entergy Louisiana",
+      "title": "Smalling Substation groundbreaking",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2025-06-27",
+      "retrievedAt": "2026-10-07T22:04:18.042Z",
+      "MIME": "text/html",
+      "byteSize": 99505,
+      "SHA256": "bd22659bb91eacb932cc45fb7790bf80c69b8f9e14ea9774c43f8fb23c5057d1",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "entergy-substation@bd22659bb91eacb932cc45fb7790bf80c69b8f9e14ea9774c43f8fb23c5057d1",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.entergy.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "entergy-approval",
+      "url": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+      "resolvedURL": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+      "publisher": "Entergy Louisiana",
+      "title": "LPSC infrastructure approval announcement",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2025-08-20",
+      "retrievedAt": "2026-10-07T22:04:19.414Z",
+      "MIME": "text/html",
+      "byteSize": 102738,
+      "SHA256": "ac56b7876c50ca14992b17631876686728e64ffd634d113bd0a8f5957a8c432a",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "entergy-approval@ac56b7876c50ca14992b17631876686728e64ffd634d113bd0a8f5957a8c432a",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.entergy.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "entergy-expansion",
+      "url": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings",
+      "resolvedURL": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings",
+      "publisher": "Entergy Louisiana",
+      "title": "Additional Meta power agreement",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2026-03-27",
+      "retrievedAt": "2026-10-07T22:04:20.641Z",
+      "MIME": "text/html",
+      "byteSize": 107499,
+      "SHA256": "4ee950b702576c79b41fb6600434948e0ed81bdb73c2f2e5f7d612b0fa00baea",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "entergy-la"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "entergy-expansion@4ee950b702576c79b41fb6600434948e0ed81bdb73c2f2e5f7d612b0fa00baea",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.entergy.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "sp-webinar",
+      "url": "https://www.spglobal.com/ratings/en/events/webinars/ifr-largescale-pf-102325",
+      "resolvedURL": null,
+      "publisher": "S&P Global Ratings",
+      "title": "Beignet rating webinar summary",
+      "sourceType": "SECONDARY_RESEARCH",
+      "documentDate": "2025-10-23",
+      "retrievedAt": "2026-10-07T22:04:21.824Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "beignet-investor"
+      ],
+      "primaryOrSecondary": "SECONDARY",
+      "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+      "retrievalStatus": "ACCESS_BLOCKED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.spglobal.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Public web text review; raw retrieval not qualified",
+      "accessError": "ACCESS_BLOCKED"
+    },
+    {
+      "sourceId": "meta-jv-pdf",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center-2025.pdf",
+      "resolvedURL": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center-2025.pdf",
+      "publisher": "Meta",
+      "title": "Hyperion JV announcement (official issuer PDF)",
+      "sourceType": "PRIMARY_TRANSACTION",
+      "documentDate": "2025-10-21",
+      "retrievedAt": "2026-10-07T22:04:23.143Z",
+      "MIME": "application/pdf",
+      "byteSize": 100543,
+      "SHA256": "5dca08e7eee961316ccea1149c785b72951bc0e1744cc7038a0cfa18f7192b61",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "blue-owl-funds",
+        "blue-owl-manager",
+        "hyperion-jv",
+        "meta"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": "meta-jv-pdf@5dca08e7eee961316ccea1149c785b72951bc0e1744cc7038a0cfa18f7192b61",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "s21.q4cdn.com",
+          "prefix": "/399680738/"
+        }
+      ],
+      "delegatedBy": "https://investor.atmeta.com/financials/",
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "laidley-letter",
+      "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=tegXEb8UbKE%3D",
+      "resolvedURL": null,
+      "publisher": "Meta / LPSC",
+      "title": "Meta letter to Entergy filed in U-37425",
+      "sourceType": "PRIMARY_REGULATORY",
+      "documentDate": "2025-04-02",
+      "retrievedAt": "2026-10-07T22:04:24.416Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "UNQUALIFIED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "lpscpubvalence.lpsc.louisiana.gov",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Public web text review; raw retrieval not qualified",
+      "accessError": "SIZE_REJECTED"
+    },
+    {
+      "sourceId": "entergy-reply",
+      "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=ZgYuul9mQ60%3D",
+      "resolvedURL": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=ZgYuul9mQ60%3D",
+      "publisher": "Entergy / LPSC",
+      "title": "Entergy omnibus reply U-37425",
+      "sourceType": "PRIMARY_REGULATORY",
+      "documentDate": "2025-08-18",
+      "retrievedAt": "2026-10-07T22:04:26.478Z",
+      "MIME": "application/pdf",
+      "byteSize": 2306971,
+      "SHA256": "d79e563d94438ad86adbfecdfa5d6d8a8b0a3a0cbd3790b9cd8d302e39af9fa3",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": "entergy-reply@d79e563d94438ad86adbfecdfa5d6d8a8b0a3a0cbd3790b9cd8d302e39af9fa3",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "lpscpubvalence.lpsc.louisiana.gov",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "lpsc-order",
+      "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn%2Fjuc2%2BA%3D",
+      "resolvedURL": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn%2Fjuc2%2BA%3D",
+      "publisher": "LPSC",
+      "title": "LPSC Order U-37425 and public settlement",
+      "sourceType": "PRIMARY_REGULATORY",
+      "documentDate": "2025-08-29",
+      "retrievedAt": "2026-10-07T22:06:17.262Z",
+      "MIME": "application/pdf",
+      "byteSize": 2456110,
+      "SHA256": "9185ef7e4130785574b53f0a0cff7216390428399d2aaac0265eebb7da838aaf",
+      "caseId": "hyperion",
+      "projectId": "hyperion",
+      "entityIds": [
+        "entergy-la",
+        "laidley"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": "lpsc-order@9185ef7e4130785574b53f0a0cff7216390428399d2aaac0265eebb7da838aaf",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "lpscpubvalence.lpsc.louisiana.gov",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    }
+  ],
+  "claimCoverage": {
+    "brookings-article": [],
+    "brookings-paper": [
+      "hyperion:entity-project-beignet-holdings",
+      "hyperion:entity-iris-crossing",
+      "hyperion:legal-title-holder",
+      "hyperion:legal-jv",
+      "hyperion:edge-project-beignet-holdings-OWNS-laidley"
+    ],
+    "meta-jv": [],
+    "meta-2025k": [
+      "hyperion:lease-classification",
+      "hyperion:equity-2025",
+      "hyperion:maximum-exposure-2025",
+      "hyperion:treatment-2025"
+    ],
+    "meta-2026q2": [
+      "hyperion:lease-commencement",
+      "hyperion:lease-initial-term",
+      "hyperion:lease-max-term",
+      "hyperion:lease-commitment",
+      "hyperion:lease-recognition",
+      "hyperion:lease-schedule",
+      "hyperion:rvg-threshold",
+      "hyperion:rvg-trigger",
+      "hyperion:rvg-recognition",
+      "hyperion:equity-2026",
+      "hyperion:maximum-exposure-2026",
+      "hyperion:treatment-2026",
+      "hyperion:attributable-revenue",
+      "hyperion:attributable-operating-cash-flow",
+      "hyperion:attributable-AI-revenue",
+      "hyperion:attributable-utilization"
+    ],
+    "cc-pimco": [
+      "hyperion:entity-pimco-funds",
+      "hyperion:offering",
+      "hyperion:debt-maturity",
+      "hyperion:debt-coupon",
+      "hyperion:debt-yield",
+      "hyperion:debt-security",
+      "hyperion:debt-collateral",
+      "hyperion:debt-recourse",
+      "hyperion:debt-ranking",
+      "hyperion:debt-amortization",
+      "hyperion:debt-issuance-date",
+      "hyperion:debt-use-of-proceeds"
+    ],
+    "meta-engineering": [],
+    "meta-expansion": [
+      "hyperion:regional-plan",
+      "hyperion:planned-capacity"
+    ],
+    "entergy-substation": [],
+    "entergy-approval": [],
+    "entergy-expansion": [
+      "hyperion:power-gas",
+      "hyperion:power-transmission",
+      "hyperion:power-solar"
+    ],
+    "sp-webinar": [
+      "hyperion:entity-beignet-investor",
+      "hyperion:financed-capacity",
+      "hyperion:issuer"
+    ],
+    "meta-jv-pdf": [
+      "hyperion:entity-meta",
+      "hyperion:entity-blue-owl-funds",
+      "hyperion:entity-blue-owl-manager",
+      "hyperion:entity-hyperion-jv",
+      "hyperion:location",
+      "hyperion:status",
+      "hyperion:cost",
+      "hyperion:ownership-meta",
+      "hyperion:ownership-blue-owl-funds",
+      "hyperion:fund-cash",
+      "hyperion:edge-meta-PARTIALLY_OWNS-hyperion-jv",
+      "hyperion:edge-blue-owl-funds-PARTIALLY_OWNS-hyperion-jv",
+      "hyperion:edge-hyperion-jv-OWNS-hyperion",
+      "hyperion:edge-meta-LEASES-hyperion-jv",
+      "hyperion:edge-meta-DEVELOPS-hyperion",
+      "hyperion:meta-distribution"
+    ],
+    "laidley-letter": [],
+    "entergy-reply": [],
+    "lpsc-order": [
+      "hyperion:entity-laidley",
+      "hyperion:entity-entergy-la",
+      "hyperion:original-developer",
+      "hyperion:utility",
+      "hyperion:grid-approval",
+      "hyperion:cost-recovery",
+      "hyperion:power-support",
+      "hyperion:edge-laidley-PURCHASES_POWER_FROM-entergy-la"
+    ]
+  },
+  "unresolvedClaims": [
+    "hyperion:entity-hyperion-jv",
+    "hyperion:entity-project-beignet-holdings",
+    "hyperion:entity-beignet-investor",
+    "hyperion:entity-iris-crossing",
+    "hyperion:financed-capacity",
+    "hyperion:legal-title-holder",
+    "hyperion:legal-jv",
+    "hyperion:issuer",
+    "hyperion:debt-maturity",
+    "hyperion:debt-coupon",
+    "hyperion:debt-yield",
+    "hyperion:debt-security",
+    "hyperion:debt-collateral",
+    "hyperion:debt-recourse",
+    "hyperion:debt-ranking",
+    "hyperion:debt-amortization",
+    "hyperion:debt-issuance-date",
+    "hyperion:debt-use-of-proceeds",
+    "hyperion:lease-schedule",
+    "hyperion:attributable-revenue",
+    "hyperion:attributable-operating-cash-flow",
+    "hyperion:attributable-AI-revenue",
+    "hyperion:attributable-utilization",
+    "hyperion:edge-project-beignet-holdings-OWNS-laidley"
+  ],
+  "missingDocuments": [
+    "brookings-article",
+    "meta-jv",
+    "meta-2025k",
+    "meta-2026q2",
+    "sp-webinar",
+    "laidley-letter"
+  ],
+  "archivePolicy": "External content addressed objects; never raw Git; no raw archive availability claim for blocked sources"
+}

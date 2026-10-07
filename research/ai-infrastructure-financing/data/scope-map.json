@@ -1,0 +1,289 @@
+[
+  {
+    "scopeId": "hyperion-asset",
+    "caseId": "hyperion",
+    "definition": "Campus identity umbrella; not a harmonized MW denominator",
+    "entityId": "hyperion-jv",
+    "period": null,
+    "sourceIds": [
+      "meta-jv-pdf"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "hyperion-jv-original",
+    "caseId": "hyperion",
+    "definition": "Original JV buildings and long-lived power/cooling/connectivity; no GPU allocation",
+    "entityId": "hyperion-jv",
+    "period": "2025-10",
+    "sourceIds": [
+      "meta-jv-pdf"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "hyperion-expansion"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "hyperion-financing-original",
+    "caseId": "hyperion",
+    "definition": "Original private securities transaction / rating description",
+    "entityId": "beignet-investor",
+    "period": "2025-10",
+    "sourceIds": [
+      "cc-pimco",
+      "sp-webinar"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "hyperion-expansion"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "hyperion-expansion",
+    "caseId": "hyperion",
+    "definition": "Later Louisiana regional investment and planned scalable campus; exact overlap unresolved",
+    "entityId": "meta",
+    "period": "2026-07",
+    "sourceIds": [
+      "meta-expansion"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "hyperion-jv-original",
+      "hyperion-financing-original"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "hyperion-grid-original",
+    "caseId": "hyperion",
+    "definition": "2025 utility generation/transmission approval and customer service agreements",
+    "entityId": "entergy-la",
+    "period": "2025-08",
+    "sourceIds": [
+      "lpsc-order"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "hyperion-grid-expanded"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "hyperion-grid-expanded",
+    "caseId": "hyperion",
+    "definition": "Later utility system generation/transmission plans; not campus IT load",
+    "entityId": "entergy-la",
+    "period": "2026-03",
+    "sourceIds": [
+      "entergy-expansion"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "hyperion-grid-original"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "hyperion-accounting-2025",
+    "caseId": "hyperion",
+    "definition": "Meta venture-specific reporting snapshot; nonconsolidated VIE exposure",
+    "entityId": "meta",
+    "period": "2025-12-31",
+    "sourceIds": [
+      "meta-2025k"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "hyperion-accounting-2026",
+    "caseId": "hyperion",
+    "definition": "Meta venture-specific reporting snapshot; nonconsolidated VIE exposure",
+    "entityId": "meta",
+    "period": "2026-06-30",
+    "sourceIds": [
+      "meta-2026q2"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "fairwater-asset",
+    "caseId": "fairwater",
+    "definition": "First Fairwater facility on 315-acre site; excludes second facility",
+    "entityId": "msft",
+    "period": null,
+    "sourceIds": [
+      "fairwater-build",
+      "fairwater-tid"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "fairwater-phase1",
+    "caseId": "fairwater",
+    "definition": "Initial Microsoft investment pledge; not measured quarterly cash PP&E",
+    "entityId": "msft",
+    "period": "2025-09",
+    "sourceIds": [
+      "fairwater-investment"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "fairwater-phase2"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "fairwater-phase2",
+    "caseId": "fairwater",
+    "definition": "Separate additional Wisconsin facility investment pledge",
+    "entityId": "msft",
+    "period": "2025-09",
+    "sourceIds": [
+      "fairwater-investment"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "fairwater-phase1"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "fairwater-power",
+    "caseId": "fairwater",
+    "definition": "Renewable matching and service infrastructure, not datacenter IT load",
+    "entityId": "we-energies",
+    "period": "2025-09",
+    "sourceIds": [
+      "fairwater-investment"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "polaris-forge-1-asset",
+    "caseId": "polaris-forge-1",
+    "definition": "Ellendale HPC campus; excludes crypto co-hosting and all other AI campuses",
+    "entityId": "apld",
+    "period": null,
+    "sourceIds": [
+      "pf1-2025q1"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "pf1-contract",
+    "caseId": "polaris-forge-1",
+    "definition": "Three CoreWeave leases: 400MW contracted critical IT load, not energized capacity",
+    "entityId": "coreweave",
+    "period": "2025-08",
+    "sourceIds": [
+      "pf1-2025q1"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "pf1-live"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "pf1-live",
+    "caseId": "polaris-forge-1",
+    "definition": "175MW reported live as of June 30 2026; later unarchived event not silently adopted",
+    "entityId": "apld",
+    "period": "2026-06-30",
+    "sourceIds": [
+      "pf1-2026release"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "pf1-contract"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "pf1-debt250",
+    "caseId": "polaris-forge-1",
+    "definition": "100MW ELN02 and 150MW ELN03 financing plus old loan refinance/reserves/expenses",
+    "entityId": "computeco",
+    "period": "2025-11",
+    "sourceIds": [
+      "pf1-2025q2"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "pf1-debt150",
+    "caseId": "polaris-forge-1",
+    "definition": "Building4 150MW financing and bridge refinance; separate instrument",
+    "entityId": "computeco3",
+    "period": "2026-07",
+    "sourceIds": [
+      "pf1-2026release"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "pf1-preferred-original",
+    "caseId": "polaris-forge-1",
+    "definition": "Original up-to900m campus preferred financing plan, not actual funded equity",
+    "entityId": "hpc-holdings",
+    "period": "2025-01",
+    "sourceIds": [
+      "pf1-macquarie"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "apld-platform-preferred"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "apld-platform-preferred",
+    "caseId": "polaris-forge-1",
+    "definition": "Up-to5bn HPC platform preferred facility; not PF1 cost or funded amount",
+    "entityId": "hpc-holdings",
+    "period": "2025-01",
+    "sourceIds": [
+      "pf1-macquarie"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "pf1-preferred-original"
+    ],
+    "notes": "No cross-scope total; comparisons require explicit compatibility."
+  },
+  {
+    "scopeId": "pf1-live-2026-10",
+    "caseId": "polaris-forge-1",
+    "definition": "250MW issuer-reported operational critical IT load October2, rawsourcepending",
+    "entityId": "apld",
+    "period": "2026-10-02",
+    "sourceIds": [
+      "pf1-current"
+    ],
+    "comparableTo": [],
+    "notComparableTo": [
+      "pf1-contract"
+    ],
+    "notes": "Successive operational milestone, not contract capacity or synthetic change."
+  }
+]

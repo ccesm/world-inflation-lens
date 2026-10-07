@@ -1,0 +1,72 @@
+{
+  "caseId": "fairwater",
+  "projectId": "fairwater",
+  "primaryArchetype": "CORPORATE_OWNED",
+  "secondaryFeatures": [
+    "PUBLIC_INFRASTRUCTURE",
+    "ENERGY_MATCHING"
+  ],
+  "entityIds": [
+    "msft",
+    "we-energies"
+  ],
+  "claimIds": [
+    "fairwater:entity-msft",
+    "fairwater:entity-we-energies",
+    "fairwater:location",
+    "fairwater:site-area",
+    "fairwater:building-area",
+    "fairwater:status",
+    "fairwater:owner",
+    "fairwater:pledge",
+    "fairwater:second-pledge",
+    "fairwater:IT-MW",
+    "fairwater:realized-cost",
+    "fairwater:site-PP&E",
+    "fairwater:project-debt",
+    "fairwater:equity-funding-mix",
+    "fairwater:lease-amount",
+    "fairwater:guarantee-amount",
+    "fairwater:project-cash-flow",
+    "fairwater:AI-revenue",
+    "fairwater:utility",
+    "fairwater:solar",
+    "fairwater:cost-recovery",
+    "fairwater:accounting-interpretation",
+    "fairwater:attributable-revenue",
+    "fairwater:attributable-operating-cash-flow",
+    "fairwater:attributable-AI-revenue",
+    "fairwater:attributable-utilization",
+    "fairwater:edge-msft-DEVELOPS-fairwater",
+    "fairwater:edge-msft-OPERATES-fairwater"
+  ],
+  "financingIds": [
+    "f-corporate-funding"
+  ],
+  "obligationIds": [],
+  "powerIds": [
+    "f-service"
+  ],
+  "accountingBridgeIds": [
+    "f-accounting"
+  ],
+  "unavailableClaimIds": [
+    "fairwater:IT-MW",
+    "fairwater:realized-cost",
+    "fairwater:site-PP&E",
+    "fairwater:project-debt",
+    "fairwater:equity-funding-mix",
+    "fairwater:lease-amount",
+    "fairwater:guarantee-amount",
+    "fairwater:project-cash-flow",
+    "fairwater:AI-revenue",
+    "fairwater:attributable-revenue",
+    "fairwater:attributable-operating-cash-flow",
+    "fairwater:attributable-AI-revenue",
+    "fairwater:attributable-utilization"
+  ],
+  "doNotAddPairIds": [
+    "do-not-add:fairwater:pledge|fairwater:second-pledge"
+  ],
+  "qualificationStatus": "QUALIFIED_WITH_EXPLICIT_GAPS"
+}

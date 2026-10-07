@@ -1,0 +1,151 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "claimId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "field": {
+        "type": "string",
+        "minLength": 1
+      },
+      "unit": {
+        "type": "string",
+        "minLength": 1
+      },
+      "definition": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceLocator": {
+        "type": "string",
+        "minLength": 1
+      },
+      "effectiveDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "entityId": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "previousClaimId": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "currency": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "capacityDefinition": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "sourceIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "value": {
+        "type": [
+          "number",
+          "string",
+          "object",
+          "null"
+        ]
+      },
+      "operator": {
+        "enum": [
+          "EQ",
+          "GT",
+          "LTE"
+        ]
+      },
+      "evidenceClass": {
+        "enum": [
+          "PRIMARY_VERIFIED",
+          "PRIMARY_PARTIAL",
+          "SECONDARY_CORROBORATED",
+          "SECONDARY_ONLY",
+          "CONFLICTING_EVIDENCE",
+          "UNAVAILABLE"
+        ]
+      },
+      "confidenceStatus": {
+        "enum": [
+          "PRIMARY_VERIFIED",
+          "PRIMARY_PARTIAL",
+          "SECONDARY_CORROBORATED",
+          "SECONDARY_ONLY",
+          "CONFLICTING_EVIDENCE",
+          "UNAVAILABLE"
+        ]
+      },
+      "reviewStatus": {
+        "enum": [
+          "REVIEWED",
+          "REVIEWED_WITH_LIMITATIONS",
+          "CONFLICT_REQUIRES_REVIEW"
+        ]
+      },
+      "observedOrEstimated": {
+        "enum": [
+          "OBSERVED_REPORTED",
+          "MANAGEMENT_GUIDANCE",
+          "CONTRACTUAL_COMMITMENT",
+          "TRANSACTION_VALUE",
+          "PROJECT_ESTIMATE",
+          "SECONDARY_ESTIMATE",
+          "MODEL_DERIVED",
+          "UNAVAILABLE",
+          "SECONDARY_REPORTED"
+        ]
+      }
+    },
+    "required": [
+      "claimId",
+      "caseId",
+      "field",
+      "unit",
+      "definition",
+      "sourceLocator",
+      "effectiveDate",
+      "scopeId",
+      "entityId",
+      "previousClaimId",
+      "currency",
+      "capacityDefinition",
+      "sourceIds",
+      "value",
+      "operator",
+      "evidenceClass",
+      "confidenceStatus",
+      "reviewStatus",
+      "observedOrEstimated"
+    ],
+    "additionalProperties": false
+  }
+}

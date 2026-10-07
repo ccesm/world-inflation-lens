@@ -1,0 +1,47 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "claimIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "entityType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "identityStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "legalName": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "claimIds",
+      "entityType",
+      "id",
+      "identityStatus",
+      "legalName",
+      "name"
+    ],
+    "additionalProperties": false
+  }
+}

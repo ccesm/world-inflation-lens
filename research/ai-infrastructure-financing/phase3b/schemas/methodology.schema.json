@@ -1,0 +1,17 @@
+{
+  "const": {
+    "version": "ai-infrastructure-financing-phase3b-v0.1.0",
+    "baseSha": "81b546b847e39b0314a61cbad357a62a9495a18c",
+    "baseBranch": "codex/ai-infrastructure-financing-foundation",
+    "branch": "codex/ai-infrastructure-financing-phase3b",
+    "asOf": "2026-10-07",
+    "researchOnly": true,
+    "productionMainObserved": "be9dde341cfb32a53b7a3fca76e04d631a926bcd",
+    "aggregationPolicy": "DO_NOT_ADD_LAYERS",
+    "monetizationPolicy": "NO_PROJECT_ALLOCATION",
+    "acceptedFoundationNamespace": "data/*.json (unchanged); Phase3B effective view=data/phase3b/*.json plus root scope-map/overlaps",
+    "candidateSelectionPolicy": "SOURCE_READINESS_ONLY",
+    "rawCachePolicy": "EXTERNAL_IMMUTABLE_HASH_OBJECTS",
+    "capacityComparisonPolicy": "NATIVE_SCOPE_ONLY"
+  }
+}

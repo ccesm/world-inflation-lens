@@ -1,0 +1,380 @@
+{
+  "caseId": "polaris-forge-1",
+  "sources": [
+    {
+      "sourceId": "pf1-2025q1",
+      "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000069/apld-20250831.htm",
+      "resolvedURL": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000069/apld-20250831.htm",
+      "publisher": "Applied Digital",
+      "title": "Applied Digital 10-Q August 31 2025",
+      "sourceType": "PRIMARY_ACCOUNTING",
+      "documentDate": "2025-10-09",
+      "retrievedAt": "2026-10-07T22:04:35.884Z",
+      "MIME": "text/html",
+      "byteSize": 1392279,
+      "SHA256": "2b8105eb29244dc416082fbd94dc7f63ed514be5fff37b0d1665250a60188b53",
+      "caseId": "polaris-forge-1",
+      "projectId": "polaris-forge-1",
+      "entityIds": [
+        "apld",
+        "coreweave",
+        "eln02",
+        "eln02c",
+        "eln03",
+        "hpc-holdings",
+        "mip-funds"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "pf1-2025q1@2b8105eb29244dc416082fbd94dc7f63ed514be5fff37b0d1665250a60188b53",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "ir.applieddigital.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "pf1-2025q2",
+      "url": "https://ir.applieddigital.com/sec-filings/quarterly-reports/content/0001144879-26-000006/0001144879-26-000006.pdf",
+      "resolvedURL": "https://ir.applieddigital.com/sec-filings/quarterly-reports/content/0001144879-26-000006/0001144879-26-000006.pdf",
+      "publisher": "Applied Digital",
+      "title": "Applied Digital 10-Q November 30 2025",
+      "sourceType": "PRIMARY_ACCOUNTING",
+      "documentDate": "2026-01-08",
+      "retrievedAt": "2026-10-07T22:04:37.979Z",
+      "MIME": "application/pdf",
+      "byteSize": 599490,
+      "SHA256": "2b8d3175a389a884d23c34ec96b289e252baf101ab2338388a91aa3f6a26d7fe",
+      "caseId": "polaris-forge-1",
+      "projectId": "polaris-forge-1",
+      "entityIds": [
+        "apld",
+        "computeco"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": "pf1-2025q2@2b8d3175a389a884d23c34ec96b289e252baf101ab2338388a91aa3f6a26d7fe",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "ir.applieddigital.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "pf1-2026release",
+      "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000044/apldq426earningsreleaseasf.htm",
+      "resolvedURL": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000044/apldq426earningsreleaseasf.htm",
+      "publisher": "Applied Digital",
+      "title": "Applied Digital FY2026 Q4 release",
+      "sourceType": "PRIMARY_ACCOUNTING",
+      "documentDate": "2026-07-27",
+      "retrievedAt": "2026-10-07T22:04:39.844Z",
+      "MIME": "text/html",
+      "byteSize": 485049,
+      "SHA256": "23e2360ad4415bbd56f2e696090cf2e36b3b64bf291aaf707fcd4431da45db45",
+      "caseId": "polaris-forge-1",
+      "projectId": "polaris-forge-1",
+      "entityIds": [
+        "apld",
+        "computeco3",
+        "coreweave"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "pf1-2026release@23e2360ad4415bbd56f2e696090cf2e36b3b64bf291aaf707fcd4431da45db45",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "ir.applieddigital.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "pf1-presentation",
+      "url": "https://ir.applieddigital.com/_assets/_2b270afc37018352de7ef24c16a6e485/appliedblockchaininc/db/2905/27266/pdf/APLD_INV_InvestorPresentation_Final_04.24.26.pdf",
+      "resolvedURL": null,
+      "publisher": "Applied Digital",
+      "title": "Applied Digital April investor presentation",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2026-04-24",
+      "retrievedAt": "2026-10-07T22:04:41.509Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "polaris-forge-1",
+      "projectId": "polaris-forge-1",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "UNQUALIFIED",
+      "retrievalStatus": "ACCESS_BLOCKED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "ir.applieddigital.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Public web text review; raw retrieval not qualified",
+      "accessError": "ACCESS_BLOCKED"
+    },
+    {
+      "sourceId": "pf1-rfs",
+      "url": "https://ir.applieddigital.com/_assets/_e3064005ec46aabd44724bb789f39af6/appliedblockchaininc/news/2025-11-24_Applied_Digital_Completes_Phase_II_Ready_for_137.pdf",
+      "resolvedURL": null,
+      "publisher": "Applied Digital",
+      "title": "PF1 first building fully energized",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2025-11-24",
+      "retrievedAt": "2026-10-07T22:04:42.815Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "polaris-forge-1",
+      "projectId": "polaris-forge-1",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "UNQUALIFIED",
+      "retrievalStatus": "ACCESS_BLOCKED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "ir.applieddigital.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Public web text review; raw retrieval not qualified",
+      "accessError": "ACCESS_BLOCKED_HOST_STOP"
+    },
+    {
+      "sourceId": "pf1-current",
+      "url": "https://ir.applieddigital.com/news-events/press-releases/detail/161/applied-digital-brings-an-additional-75-mw-of-ai",
+      "resolvedURL": null,
+      "publisher": "Applied Digital",
+      "title": "Additional 75MW online PF1",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2026-10-02",
+      "retrievedAt": "2026-10-07T22:04:43.915Z",
+      "MIME": null,
+      "byteSize": 0,
+      "SHA256": null,
+      "caseId": "polaris-forge-1",
+      "projectId": "polaris-forge-1",
+      "entityIds": [
+        "apld"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "WEB_REVIEWED_NOT_ARCHIVED",
+      "retrievalStatus": "ACCESS_BLOCKED",
+      "sourceVersionId": null,
+      "identityState": null,
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "ir.applieddigital.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted official release review; direct rawaccess stopped after host403",
+      "accessError": "ACCESS_BLOCKED_HOST_STOP"
+    },
+    {
+      "sourceId": "pf1-initial-leases",
+      "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001641172-25-013199/ex99-2.htm",
+      "resolvedURL": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001641172-25-013199/ex99-2.htm",
+      "publisher": "Applied Digital",
+      "title": "Initial CoreWeave leases",
+      "sourceType": "PRIMARY_TRANSACTION",
+      "documentDate": "2025-06-02",
+      "retrievedAt": "2026-10-07T22:06:20.452Z",
+      "MIME": "text/html",
+      "byteSize": 19770,
+      "SHA256": "c18bd6a600e0cf8b5440c8c1b712361152fac32db81c25bcaee503a9eae3bfe8",
+      "caseId": "polaris-forge-1",
+      "projectId": "polaris-forge-1",
+      "entityIds": [
+        "eln02",
+        "eln03"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "pf1-initial-leases@c18bd6a600e0cf8b5440c8c1b712361152fac32db81c25bcaee503a9eae3bfe8",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "ir.applieddigital.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "pf1-macquarie",
+      "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000005/apldq225earningsrelease.htm",
+      "resolvedURL": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000005/apldq225earningsrelease.htm",
+      "publisher": "Applied Digital",
+      "title": "Original Macquarie preferred capital agreement",
+      "sourceType": "PRIMARY_TRANSACTION",
+      "documentDate": "2025-01-14",
+      "retrievedAt": "2026-10-07T22:07:59.586Z",
+      "MIME": "text/html",
+      "byteSize": 353101,
+      "SHA256": "271eabba21da46526d40eaa05d9e0ce4cf33aad9f465aaf81c553f0ea00e3965",
+      "caseId": "polaris-forge-1",
+      "projectId": "polaris-forge-1",
+      "entityIds": [
+        "macquarie-manager",
+        "mip-funds"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "pf1-macquarie@271eabba21da46526d40eaa05d9e0ce4cf33aad9f465aaf81c553f0ea00e3965",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "ir.applieddigital.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    }
+  ],
+  "claimCoverage": {
+    "pf1-2025q1": [
+      "polaris-forge-1:entity-apld",
+      "polaris-forge-1:entity-eln02",
+      "polaris-forge-1:entity-eln03",
+      "polaris-forge-1:entity-eln02c",
+      "polaris-forge-1:entity-hpc-holdings",
+      "polaris-forge-1:entity-mip-funds",
+      "polaris-forge-1:entity-coreweave",
+      "polaris-forge-1:location",
+      "polaris-forge-1:contracted-capacity",
+      "polaris-forge-1:tenant",
+      "polaris-forge-1:p-lease100-capacity",
+      "polaris-forge-1:p-lease100-payments",
+      "polaris-forge-1:p-lease150-capacity",
+      "polaris-forge-1:p-lease150-payments",
+      "polaris-forge-1:p-lease4-capacity",
+      "polaris-forge-1:p-lease4-term",
+      "polaris-forge-1:p-lease4-payments",
+      "polaris-forge-1:lessor-guarantee",
+      "polaris-forge-1:edge-coreweave-LEASES-eln02",
+      "polaris-forge-1:edge-coreweave-LEASES-eln03",
+      "polaris-forge-1:edge-coreweave-LEASES-eln02c",
+      "polaris-forge-1:edge-mip-funds-FINANCES-hpc-holdings"
+    ],
+    "pf1-2025q2": [
+      "polaris-forge-1:entity-computeco",
+      "polaris-forge-1:p-notes250-principal",
+      "polaris-forge-1:p-notes250-coupon",
+      "polaris-forge-1:p-notes250-maturity",
+      "polaris-forge-1:p-notes250-issuer",
+      "polaris-forge-1:p-notes250-security",
+      "polaris-forge-1:p-notes250-recourse",
+      "polaris-forge-1:completion-guarantee",
+      "polaris-forge-1:accounting",
+      "polaris-forge-1:edge-computeco-FINANCES-polaris-forge-1"
+    ],
+    "pf1-2026release": [
+      "polaris-forge-1:entity-computeco3",
+      "polaris-forge-1:status",
+      "polaris-forge-1:live-capacity",
+      "polaris-forge-1:registered-title-holder",
+      "polaris-forge-1:project-cost",
+      "polaris-forge-1:utility",
+      "polaris-forge-1:PPA-value",
+      "polaris-forge-1:grid-cost",
+      "polaris-forge-1:AI-revenue",
+      "polaris-forge-1:project-cash-flow",
+      "polaris-forge-1:utilization",
+      "polaris-forge-1:p-notes150-principal",
+      "polaris-forge-1:p-notes150-coupon",
+      "polaris-forge-1:p-notes150-maturity",
+      "polaris-forge-1:p-notes150-issuer",
+      "polaris-forge-1:p-notes150-security",
+      "polaris-forge-1:p-notes150-recourse",
+      "polaris-forge-1:tenant-support",
+      "polaris-forge-1:attributable-revenue",
+      "polaris-forge-1:attributable-operating-cash-flow",
+      "polaris-forge-1:attributable-AI-revenue",
+      "polaris-forge-1:attributable-utilization",
+      "polaris-forge-1:edge-apld-DEVELOPS-polaris-forge-1",
+      "polaris-forge-1:edge-computeco3-FINANCES-polaris-forge-1"
+    ],
+    "pf1-presentation": [],
+    "pf1-rfs": [],
+    "pf1-current": [
+      "polaris-forge-1:live-capacity-2026-10"
+    ],
+    "pf1-initial-leases": [
+      "polaris-forge-1:p-lease100-term",
+      "polaris-forge-1:p-lease150-term"
+    ],
+    "pf1-macquarie": [
+      "polaris-forge-1:entity-macquarie-manager",
+      "polaris-forge-1:p-preferred-original",
+      "polaris-forge-1:p-platform-preferred"
+    ]
+  },
+  "unresolvedClaims": [
+    "polaris-forge-1:registered-title-holder",
+    "polaris-forge-1:project-cost",
+    "polaris-forge-1:utility",
+    "polaris-forge-1:PPA-value",
+    "polaris-forge-1:grid-cost",
+    "polaris-forge-1:AI-revenue",
+    "polaris-forge-1:project-cash-flow",
+    "polaris-forge-1:utilization",
+    "polaris-forge-1:p-notes250-recourse",
+    "polaris-forge-1:p-notes150-recourse",
+    "polaris-forge-1:p-lease100-payments",
+    "polaris-forge-1:p-lease150-payments",
+    "polaris-forge-1:p-lease4-payments",
+    "polaris-forge-1:attributable-revenue",
+    "polaris-forge-1:attributable-operating-cash-flow",
+    "polaris-forge-1:attributable-AI-revenue",
+    "polaris-forge-1:attributable-utilization",
+    "polaris-forge-1:live-capacity-2026-10"
+  ],
+  "missingDocuments": [
+    "pf1-presentation",
+    "pf1-rfs",
+    "pf1-current"
+  ],
+  "archivePolicy": "External content addressed objects; never raw Git; no raw archive availability claim for blocked sources"
+}

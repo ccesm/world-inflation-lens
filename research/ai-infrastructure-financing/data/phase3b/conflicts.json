@@ -1,0 +1,27 @@
+[
+  {
+    "id": "fairwater-opening-dates",
+    "caseId": "fairwater",
+    "sourceIds": [
+      "fairwater-investment",
+      "fairwater-tid"
+    ],
+    "claimIds": [
+      "fairwater:status"
+    ],
+    "definitions": [
+      "early2026 company expectation",
+      "mid2026 municipality expectation"
+    ],
+    "publicationDates": [
+      "2025-09-18",
+      "2025-11-10"
+    ],
+    "scopes": [
+      "samephase expectedcompletion, potentially different construction/operation milestones"
+    ],
+    "possibleExplanation": "Different dated expectations and completion versus operational readiness; not averaged",
+    "resolutionStatus": "CONFLICT_REQUIRES_REVIEW",
+    "laterEvidence": "fairwater-online shows equipment coming online July20; exact full operational milestone remains unqualified"
+  }
+]

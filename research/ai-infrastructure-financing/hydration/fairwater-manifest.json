@@ -1,0 +1,260 @@
+{
+  "caseId": "fairwater",
+  "sources": [
+    {
+      "sourceId": "fairwater-build",
+      "url": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+      "resolvedURL": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+      "publisher": "Microsoft",
+      "title": "Inside Fairwater",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2025-09-18",
+      "retrievedAt": "2026-10-07T22:04:28.335Z",
+      "MIME": "text/html",
+      "byteSize": 144731,
+      "SHA256": "bfb2f61bdb6537896e89b27218f941c305178558da12eacc80d999af1b25c3f4",
+      "caseId": "fairwater",
+      "projectId": "fairwater",
+      "entityIds": [
+        "msft"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "fairwater-build@bfb2f61bdb6537896e89b27218f941c305178558da12eacc80d999af1b25c3f4",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "blogs.microsoft.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "fairwater-investment",
+      "url": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+      "resolvedURL": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+      "publisher": "Microsoft",
+      "title": "Made in Wisconsin",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2025-09-18",
+      "retrievedAt": "2026-10-07T22:04:29.660Z",
+      "MIME": "text/html",
+      "byteSize": 169596,
+      "SHA256": "b68194156766ac5ccbeb0e042f4972d8842af5e7ebd412e91234fdcb010d0e76",
+      "caseId": "fairwater",
+      "projectId": "fairwater",
+      "entityIds": [
+        "msft",
+        "we-energies"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "fairwater-investment@b68194156766ac5ccbeb0e042f4972d8842af5e7ebd412e91234fdcb010d0e76",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "blogs.microsoft.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "fairwater-tid",
+      "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878",
+      "resolvedURL": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878/Mount-Pleasant-TID-No-5-JRB-Supplemental-Report_FINAL_2025-11-10?bidId=",
+      "publisher": "Village of Mount Pleasant",
+      "title": "Annual TID No.5 report",
+      "sourceType": "PRIMARY_REGULATORY",
+      "documentDate": "2025-11-10",
+      "retrievedAt": "2026-10-07T22:04:30.878Z",
+      "MIME": "application/pdf",
+      "byteSize": 392198,
+      "SHA256": "2414d4045470bd1823751a35043a0348e48e0894f11ebad0aad1130e1e1e1a2f",
+      "caseId": "fairwater",
+      "projectId": "fairwater",
+      "entityIds": [
+        "msft"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": "fairwater-tid@2414d4045470bd1823751a35043a0348e48e0894f11ebad0aad1130e1e1e1a2f",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "www.mtpleasantwi.gov",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "fairwater-land",
+      "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/3142/_Microsoft-News-Release_Village_March-30-2023?bidId=",
+      "resolvedURL": "https://www.mtpleasantwi.gov/DocumentCenter/View/3142/_Microsoft-News-Release_Village_March-30-2023?bidId=",
+      "publisher": "Village of Mount Pleasant",
+      "title": "2023 land purchase agreements",
+      "sourceType": "PRIMARY_REGULATORY",
+      "documentDate": "2023-03-30",
+      "retrievedAt": "2026-10-07T22:04:33.019Z",
+      "MIME": "application/pdf",
+      "byteSize": 113995,
+      "SHA256": "df567f13c01ac56549dd106943c2334613e0d62c4bd07a4135994aaab81bf212",
+      "caseId": "fairwater",
+      "projectId": "fairwater",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "REVIEW_REQUIRED",
+      "sourceVersionId": "fairwater-land@df567f13c01ac56549dd106943c2334613e0d62c4bd07a4135994aaab81bf212",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "PDF",
+      "allowedRoutes": [
+        {
+          "host": "www.mtpleasantwi.gov",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "fairwater-current",
+      "url": "https://www.mtpleasantwi.gov/2793/Tax-Incremental-District-No-5",
+      "resolvedURL": "https://www.mtpleasantwi.gov/2793/Tax-Incremental-District-No-5",
+      "publisher": "Village of Mount Pleasant",
+      "title": "TID No.5 current official project status",
+      "sourceType": "PRIMARY_REGULATORY",
+      "documentDate": null,
+      "retrievedAt": "2026-10-07T22:04:34.473Z",
+      "MIME": "text/html",
+      "byteSize": 122706,
+      "SHA256": "065274437ddd5133e8911a8d47ce882d10638af5ae190e45f74e3b88ebe6bc93",
+      "caseId": "fairwater",
+      "projectId": "fairwater",
+      "entityIds": [],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "fairwater-current@065274437ddd5133e8911a8d47ce882d10638af5ae190e45f74e3b88ebe6bc93",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "www.mtpleasantwi.gov",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    },
+    {
+      "sourceId": "fairwater-online",
+      "url": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/",
+      "resolvedURL": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/",
+      "publisher": "Microsoft",
+      "title": "Fairwater 1 equipment coming online",
+      "sourceType": "PRIMARY_PROJECT",
+      "documentDate": "2026-07-20",
+      "retrievedAt": "2026-10-07T22:06:19.076Z",
+      "MIME": "text/html",
+      "byteSize": 195353,
+      "SHA256": "5d4fcbaad417ead3fca5ab44272bfc5a4f46f805ba3182c06b4e21e9d13bab02",
+      "caseId": "fairwater",
+      "projectId": "fairwater",
+      "entityIds": [
+        "msft"
+      ],
+      "primaryOrSecondary": "PRIMARY",
+      "qualificationStatus": "ARCHIVED_REVIEWED",
+      "retrievalStatus": "CONTENT_VALIDATED",
+      "sourceVersionId": "fairwater-online@5d4fcbaad417ead3fca5ab44272bfc5a4f46f805ba3182c06b4e21e9d13bab02",
+      "identityState": "FIRST_ARCHIVE",
+      "documentType": "HTML",
+      "allowedRoutes": [
+        {
+          "host": "local.microsoft.com",
+          "prefix": "/"
+        }
+      ],
+      "delegatedBy": null,
+      "reviewMethod": "Agent-assisted issuer/period/section review; raw identity hash verified",
+      "accessError": null
+    }
+  ],
+  "claimCoverage": {
+    "fairwater-build": [
+      "fairwater:location",
+      "fairwater:site-area",
+      "fairwater:building-area",
+      "fairwater:edge-msft-DEVELOPS-fairwater"
+    ],
+    "fairwater-investment": [
+      "fairwater:entity-we-energies",
+      "fairwater:pledge",
+      "fairwater:second-pledge",
+      "fairwater:IT-MW",
+      "fairwater:realized-cost",
+      "fairwater:site-PP&E",
+      "fairwater:project-debt",
+      "fairwater:equity-funding-mix",
+      "fairwater:lease-amount",
+      "fairwater:guarantee-amount",
+      "fairwater:project-cash-flow",
+      "fairwater:AI-revenue",
+      "fairwater:utility",
+      "fairwater:solar",
+      "fairwater:cost-recovery",
+      "fairwater:attributable-revenue",
+      "fairwater:attributable-operating-cash-flow",
+      "fairwater:attributable-AI-revenue",
+      "fairwater:attributable-utilization"
+    ],
+    "fairwater-tid": [
+      "fairwater:entity-msft",
+      "fairwater:owner",
+      "fairwater:accounting-interpretation"
+    ],
+    "fairwater-land": [],
+    "fairwater-current": [],
+    "fairwater-online": [
+      "fairwater:status",
+      "fairwater:edge-msft-OPERATES-fairwater"
+    ]
+  },
+  "unresolvedClaims": [
+    "fairwater:owner",
+    "fairwater:IT-MW",
+    "fairwater:realized-cost",
+    "fairwater:site-PP&E",
+    "fairwater:project-debt",
+    "fairwater:equity-funding-mix",
+    "fairwater:lease-amount",
+    "fairwater:guarantee-amount",
+    "fairwater:project-cash-flow",
+    "fairwater:AI-revenue",
+    "fairwater:cost-recovery",
+    "fairwater:accounting-interpretation",
+    "fairwater:attributable-revenue",
+    "fairwater:attributable-operating-cash-flow",
+    "fairwater:attributable-AI-revenue",
+    "fairwater:attributable-utilization"
+  ],
+  "missingDocuments": [],
+  "archivePolicy": "External content addressed objects; never raw Git; no raw archive availability claim for blocked sources"
+}

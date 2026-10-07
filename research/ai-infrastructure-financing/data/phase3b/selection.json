@@ -1,0 +1,119 @@
+{
+  "dimensions": [
+    "primarySourceAvailability",
+    "legalEntityVisibility",
+    "assetSpecificity",
+    "financingVisibility",
+    "leaseVisibility",
+    "powerVisibility",
+    "accountingVisibility",
+    "scopeClarity"
+  ],
+  "scale": {
+    "0": "not identified in screening",
+    "1": "partial/context",
+    "2": "direct primary evidence"
+  },
+  "gate": "At least direct primary asset/developer evidence and independently documented funding/contract structure; no unresolved missingness concealed. MW/title-ledger exactness may remain unavailable.",
+  "candidates": [
+    {
+      "caseId": "fairwater",
+      "archetype": "CORPORATE_OWNED",
+      "scores": [
+        2,
+        1,
+        2,
+        1,
+        0,
+        2,
+        1,
+        2
+      ],
+      "sourceIds": [
+        "fairwater-build",
+        "fairwater-tid",
+        "fairwater-investment"
+      ],
+      "selected": true,
+      "reason": "Specific site, government acquisition/development trail, company funding and power statement; title/PP&E allocation remains explicit gap."
+    },
+    {
+      "caseId": "aws-madison",
+      "archetype": "CORPORATE_OWNED",
+      "scores": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "sourceUrls": [
+        "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi"
+      ],
+      "selected": false,
+      "reason": "Primary announced two-campus program, less site/legal specificity than Fairwater in this bounded screening; not a finding that sources do not exist."
+    },
+    {
+      "caseId": "google-texas",
+      "archetype": "CORPORATE_OWNED",
+      "scores": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "sourceUrls": [
+        "https://blog.google/company-news/inside-google/company-announcements/google-american-innovation-texas/"
+      ],
+      "selected": false,
+      "reason": "40bn multiyear multi-campus program; unsuitable site-cost denominator. Not exhaustively researched."
+    },
+    {
+      "caseId": "polaris-forge-1",
+      "archetype": "DEVELOPER_LEASE_FINANCED",
+      "scores": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        0,
+        2,
+        2
+      ],
+      "sourceIds": [
+        "pf1-2025q1",
+        "pf1-2025q2",
+        "pf1-2026release"
+      ],
+      "selected": true,
+      "reason": "Issuer filings identify lessors, tenant, subsidiary notes and guarantees with separate scopes; site utility remains gap."
+    },
+    {
+      "caseId": "digital-realty-oracle",
+      "archetype": "DEVELOPER_LEASE_FINANCED",
+      "scores": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "sourceUrls": [
+        "https://www.digitalrealty.com/about/newsroom/press-releases/123332/digital-realty-teams-with-oracle-solution-centers-to-help-organizations-accelerate-ai-and-cloud-innovation"
+      ],
+      "selected": false,
+      "reason": "Official collaboration does not identify a site-specific financing/lease contract. Does not qualify this case."
+    }
+  ]
+}

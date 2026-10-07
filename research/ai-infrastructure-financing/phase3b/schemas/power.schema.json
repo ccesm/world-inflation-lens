@@ -1,0 +1,74 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "assetIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "fieldClaims": {
+        "type": "object",
+        "properties": {
+          "capacity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cost-recovery": {
+            "type": "string",
+            "minLength": 1
+          },
+          "grid-approval": {
+            "type": "string",
+            "minLength": 1
+          },
+          "power-support": {
+            "type": "string",
+            "minLength": 1
+          },
+          "solar": {
+            "type": "string",
+            "minLength": 1
+          },
+          "utility": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "layer": {
+        "type": "string",
+        "minLength": 1
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "utilityId": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "required": [
+      "assetIdentity",
+      "caseId",
+      "fieldClaims",
+      "id",
+      "layer",
+      "scopeId",
+      "utilityId"
+    ],
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "assetIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "completeSet": {
+        "type": "boolean"
+      },
+      "fieldClaims": {
+        "type": "object",
+        "properties": {
+          "percentage": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "layer": {
+        "type": "string",
+        "minLength": 1
+      },
+      "ownedEntityId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "ownerId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "assetIdentity",
+      "caseId",
+      "completeSet",
+      "fieldClaims",
+      "id",
+      "layer",
+      "ownedEntityId",
+      "ownerId",
+      "scopeId"
+    ],
+    "additionalProperties": false
+  }
+}

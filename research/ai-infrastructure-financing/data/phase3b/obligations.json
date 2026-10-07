@@ -1,0 +1,120 @@
+[
+  {
+    "id": "h-lease",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "ECONOMIC_OBLIGATION",
+    "scopeId": "hyperion-accounting-2026",
+    "fieldClaims": {
+      "commencement": "hyperion:lease-commencement",
+      "initial-term": "hyperion:lease-initial-term",
+      "max-term": "hyperion:lease-max-term",
+      "commitment": "hyperion:lease-commitment",
+      "classification": "hyperion:lease-classification",
+      "recognition": "hyperion:lease-recognition",
+      "schedule": "hyperion:lease-schedule"
+    },
+    "obligationType": "OPERATING_LEASE",
+    "obligorId": "meta",
+    "beneficiaryId": "hyperion-jv"
+  },
+  {
+    "id": "h-rvg",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "ECONOMIC_OBLIGATION",
+    "scopeId": "hyperion-accounting-2026",
+    "fieldClaims": {
+      "threshold": "hyperion:rvg-threshold",
+      "trigger": "hyperion:rvg-trigger",
+      "recognition": "hyperion:rvg-recognition"
+    },
+    "obligationType": "RESIDUAL_VALUE_GUARANTEE",
+    "obligorId": "meta",
+    "beneficiaryId": "hyperion-jv"
+  },
+  {
+    "id": "p-lease100",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "ECONOMIC_OBLIGATION",
+    "scopeId": "pf1-contract",
+    "fieldClaims": {
+      "capacity": "polaris-forge-1:p-lease100-capacity",
+      "term": "polaris-forge-1:p-lease100-term",
+      "payments": "polaris-forge-1:p-lease100-payments"
+    },
+    "obligationType": "CAPACITY_LEASE",
+    "obligorId": "coreweave",
+    "beneficiaryId": "eln02"
+  },
+  {
+    "id": "p-lease150",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "ECONOMIC_OBLIGATION",
+    "scopeId": "pf1-contract",
+    "fieldClaims": {
+      "capacity": "polaris-forge-1:p-lease150-capacity",
+      "term": "polaris-forge-1:p-lease150-term",
+      "payments": "polaris-forge-1:p-lease150-payments"
+    },
+    "obligationType": "CAPACITY_LEASE",
+    "obligorId": "coreweave",
+    "beneficiaryId": "eln03"
+  },
+  {
+    "id": "p-lease4",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "ECONOMIC_OBLIGATION",
+    "scopeId": "pf1-contract",
+    "fieldClaims": {
+      "capacity": "polaris-forge-1:p-lease4-capacity",
+      "term": "polaris-forge-1:p-lease4-term",
+      "payments": "polaris-forge-1:p-lease4-payments"
+    },
+    "obligationType": "CAPACITY_LEASE",
+    "obligorId": "coreweave",
+    "beneficiaryId": "eln02c"
+  },
+  {
+    "id": "p-completion",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "ECONOMIC_OBLIGATION",
+    "scopeId": "pf1-debt250",
+    "fieldClaims": {
+      "trigger": "polaris-forge-1:completion-guarantee"
+    },
+    "obligationType": "COMPLETION_GUARANTEE",
+    "obligorId": "apld",
+    "beneficiaryId": "computeco"
+  },
+  {
+    "id": "p-lease-guarantee",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "ECONOMIC_OBLIGATION",
+    "scopeId": "pf1-contract",
+    "fieldClaims": {
+      "trigger": "polaris-forge-1:lessor-guarantee"
+    },
+    "obligationType": "PARENT_PERFORMANCE_GUARANTEE",
+    "obligorId": "apld",
+    "beneficiaryId": "coreweave"
+  },
+  {
+    "id": "p-tenant-support-2026",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "ECONOMIC_OBLIGATION",
+    "scopeId": "pf1-contract",
+    "fieldClaims": {
+      "trigger": "polaris-forge-1:tenant-support"
+    },
+    "obligationType": "TENANT_CREDIT_SUPPORT",
+    "obligorId": "coreweave",
+    "beneficiaryId": "apld"
+  }
+]

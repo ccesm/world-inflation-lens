@@ -1,0 +1,115 @@
+[
+  {
+    "id": "h-private-securities",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "FINANCING_EXPOSURE",
+    "scopeId": "hyperion-financing-original",
+    "fieldClaims": {
+      "principal": "hyperion:offering",
+      "issuer": "hyperion:issuer",
+      "maturity": "hyperion:debt-maturity",
+      "coupon": "hyperion:debt-coupon",
+      "yield": "hyperion:debt-yield",
+      "security": "hyperion:debt-security",
+      "collateral": "hyperion:debt-collateral",
+      "recourse": "hyperion:debt-recourse",
+      "ranking": "hyperion:debt-ranking",
+      "amortization": "hyperion:debt-amortization",
+      "issuance-date": "hyperion:debt-issuance-date",
+      "use-of-proceeds": "hyperion:debt-use-of-proceeds"
+    },
+    "instrumentIdentity": "hyperion-private-offering-2025",
+    "issuerId": "beignet-investor",
+    "issuerStatus": "SECONDARY_ONLY"
+  },
+  {
+    "id": "h-fund-cash",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "FINANCING_EXPOSURE",
+    "scopeId": "hyperion-jv-original",
+    "fieldClaims": {
+      "amount": "hyperion:fund-cash"
+    },
+    "instrumentIdentity": "hyperion-fund-cash-contribution",
+    "issuerId": "blue-owl-funds",
+    "issuerStatus": "PRIMARY_VERIFIED"
+  },
+  {
+    "id": "f-corporate-funding",
+    "caseId": "fairwater",
+    "assetIdentity": "fairwater-asset",
+    "layer": "FINANCING_EXPOSURE",
+    "scopeId": "fairwater-phase1",
+    "fieldClaims": {
+      "amount": "fairwater:pledge",
+      "funding-mix": "fairwater:equity-funding-mix"
+    },
+    "instrumentIdentity": "fairwater-corporate-pledge-not-security",
+    "issuerId": "msft",
+    "issuerStatus": "PRIMARY_PARTIAL"
+  },
+  {
+    "id": "p-notes250",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "FINANCING_EXPOSURE",
+    "scopeId": "pf1-debt250",
+    "fieldClaims": {
+      "principal": "polaris-forge-1:p-notes250-principal",
+      "coupon": "polaris-forge-1:p-notes250-coupon",
+      "maturity": "polaris-forge-1:p-notes250-maturity",
+      "issuer": "polaris-forge-1:p-notes250-issuer",
+      "security": "polaris-forge-1:p-notes250-security",
+      "recourse": "polaris-forge-1:p-notes250-recourse"
+    },
+    "instrumentIdentity": "p-notes250",
+    "issuerId": "computeco",
+    "issuerStatus": "PRIMARY_VERIFIED"
+  },
+  {
+    "id": "p-notes150",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "FINANCING_EXPOSURE",
+    "scopeId": "pf1-debt150",
+    "fieldClaims": {
+      "principal": "polaris-forge-1:p-notes150-principal",
+      "coupon": "polaris-forge-1:p-notes150-coupon",
+      "maturity": "polaris-forge-1:p-notes150-maturity",
+      "issuer": "polaris-forge-1:p-notes150-issuer",
+      "security": "polaris-forge-1:p-notes150-security",
+      "recourse": "polaris-forge-1:p-notes150-recourse"
+    },
+    "instrumentIdentity": "p-notes150",
+    "issuerId": "computeco3",
+    "issuerStatus": "PRIMARY_VERIFIED"
+  },
+  {
+    "id": "p-preferred-original",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "FINANCING_EXPOSURE",
+    "scopeId": "pf1-preferred-original",
+    "fieldClaims": {
+      "amount": "polaris-forge-1:p-preferred-original"
+    },
+    "instrumentIdentity": "p-preferred-original",
+    "issuerId": "hpc-holdings",
+    "issuerStatus": "PRIMARY_VERIFIED"
+  },
+  {
+    "id": "p-platform-preferred",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "FINANCING_EXPOSURE",
+    "scopeId": "apld-platform-preferred",
+    "fieldClaims": {
+      "amount": "polaris-forge-1:p-platform-preferred"
+    },
+    "instrumentIdentity": "p-platform-preferred",
+    "issuerId": "hpc-holdings",
+    "issuerStatus": "PRIMARY_VERIFIED"
+  }
+]

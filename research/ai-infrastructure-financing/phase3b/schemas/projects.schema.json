@@ -1,0 +1,197 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "assetIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "classificationCaveat": {
+        "type": "string",
+        "minLength": 1
+      },
+      "fieldClaims": {
+        "type": "object",
+        "properties": {
+          "AI-revenue": {
+            "type": "string",
+            "minLength": 1
+          },
+          "IT-MW": {
+            "type": "string",
+            "minLength": 1
+          },
+          "PPA-value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "building-area": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contracted-capacity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cost": {
+            "type": "string",
+            "minLength": 1
+          },
+          "equity-funding-mix": {
+            "type": "string",
+            "minLength": 1
+          },
+          "financed-capacity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "grid-cost": {
+            "type": "string",
+            "minLength": 1
+          },
+          "guarantee-amount": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lease-amount": {
+            "type": "string",
+            "minLength": 1
+          },
+          "legal-jv": {
+            "type": "string",
+            "minLength": 1
+          },
+          "legal-title-holder": {
+            "type": "string",
+            "minLength": 1
+          },
+          "live-capacity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original-developer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "owner": {
+            "type": "string",
+            "minLength": 1
+          },
+          "planned-capacity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pledge": {
+            "type": "string",
+            "minLength": 1
+          },
+          "project-cash-flow": {
+            "type": "string",
+            "minLength": 1
+          },
+          "project-cost": {
+            "type": "string",
+            "minLength": 1
+          },
+          "project-debt": {
+            "type": "string",
+            "minLength": 1
+          },
+          "realized-cost": {
+            "type": "string",
+            "minLength": 1
+          },
+          "regional-plan": {
+            "type": "string",
+            "minLength": 1
+          },
+          "registered-title-holder": {
+            "type": "string",
+            "minLength": 1
+          },
+          "second-pledge": {
+            "type": "string",
+            "minLength": 1
+          },
+          "site-PP&E": {
+            "type": "string",
+            "minLength": 1
+          },
+          "site-area": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tenant": {
+            "type": "string",
+            "minLength": 1
+          },
+          "utility": {
+            "type": "string",
+            "minLength": 1
+          },
+          "utilization": {
+            "type": "string",
+            "minLength": 1
+          },
+          "live-capacity-current": {
+            "type": "string",
+            "minLength": 1
+          },
+          "distribution": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "layer": {
+        "type": "string",
+        "minLength": 1
+      },
+      "primaryArchetype": {
+        "type": "string",
+        "minLength": 1
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "secondaryFeatures": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      }
+    },
+    "required": [
+      "assetIdentity",
+      "caseId",
+      "fieldClaims",
+      "id",
+      "layer",
+      "primaryArchetype",
+      "scopeId",
+      "secondaryFeatures"
+    ],
+    "additionalProperties": false
+  }
+}

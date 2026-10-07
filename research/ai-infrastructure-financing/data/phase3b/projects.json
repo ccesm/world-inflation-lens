@@ -1,0 +1,87 @@
+[
+  {
+    "id": "hyperion",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "PHYSICAL_ASSET",
+    "scopeId": "hyperion-asset",
+    "fieldClaims": {
+      "location": "hyperion:location",
+      "status": "hyperion:status",
+      "cost": "hyperion:cost",
+      "regional-plan": "hyperion:regional-plan",
+      "financed-capacity": "hyperion:financed-capacity",
+      "planned-capacity": "hyperion:planned-capacity",
+      "original-developer": "hyperion:original-developer",
+      "legal-title-holder": "hyperion:legal-title-holder",
+      "legal-jv": "hyperion:legal-jv",
+      "distribution": "hyperion:meta-distribution"
+    },
+    "primaryArchetype": "JV_PROJECT_FINANCED",
+    "secondaryFeatures": [
+      "CORPORATE_CONTRIBUTION",
+      "OPERATING_LEASE",
+      "CONDITIONAL_GUARANTEE"
+    ]
+  },
+  {
+    "id": "fairwater",
+    "caseId": "fairwater",
+    "assetIdentity": "fairwater-asset",
+    "layer": "PHYSICAL_ASSET",
+    "scopeId": "fairwater-asset",
+    "fieldClaims": {
+      "location": "fairwater:location",
+      "site-area": "fairwater:site-area",
+      "building-area": "fairwater:building-area",
+      "status": "fairwater:status",
+      "owner": "fairwater:owner",
+      "pledge": "fairwater:pledge",
+      "second-pledge": "fairwater:second-pledge",
+      "IT-MW": "fairwater:IT-MW",
+      "realized-cost": "fairwater:realized-cost",
+      "site-PP&E": "fairwater:site-PP&E",
+      "project-debt": "fairwater:project-debt",
+      "equity-funding-mix": "fairwater:equity-funding-mix",
+      "lease-amount": "fairwater:lease-amount",
+      "guarantee-amount": "fairwater:guarantee-amount",
+      "project-cash-flow": "fairwater:project-cash-flow",
+      "AI-revenue": "fairwater:AI-revenue"
+    },
+    "primaryArchetype": "CORPORATE_OWNED",
+    "secondaryFeatures": [
+      "PUBLIC_INFRASTRUCTURE",
+      "ENERGY_MATCHING"
+    ],
+    "classificationCaveat": "Corporate-developed/owned archetype; exact legal-title and site PP&E bridge PRIMARY_PARTIAL"
+  },
+  {
+    "id": "polaris-forge-1",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "PHYSICAL_ASSET",
+    "scopeId": "polaris-forge-1-asset",
+    "fieldClaims": {
+      "location": "polaris-forge-1:location",
+      "status": "polaris-forge-1:status",
+      "contracted-capacity": "polaris-forge-1:contracted-capacity",
+      "live-capacity": "polaris-forge-1:live-capacity",
+      "tenant": "polaris-forge-1:tenant",
+      "registered-title-holder": "polaris-forge-1:registered-title-holder",
+      "project-cost": "polaris-forge-1:project-cost",
+      "utility": "polaris-forge-1:utility",
+      "PPA-value": "polaris-forge-1:PPA-value",
+      "grid-cost": "polaris-forge-1:grid-cost",
+      "AI-revenue": "polaris-forge-1:AI-revenue",
+      "project-cash-flow": "polaris-forge-1:project-cash-flow",
+      "utilization": "polaris-forge-1:utilization",
+      "live-capacity-current": "polaris-forge-1:live-capacity-2026-10"
+    },
+    "primaryArchetype": "DEVELOPER_LEASE_FINANCED",
+    "secondaryFeatures": [
+      "PROJECT_NOTES",
+      "PREFERRED_CAPITAL",
+      "COMPLETION_SUPPORT"
+    ]
+  }
+]

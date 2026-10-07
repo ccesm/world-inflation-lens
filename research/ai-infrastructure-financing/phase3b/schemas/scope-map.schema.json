@@ -1,0 +1,70 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "definition": {
+        "type": "string",
+        "minLength": 1
+      },
+      "entityId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "period": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "sourceIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "comparableTo": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "notComparableTo": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "notes": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "scopeId",
+      "caseId",
+      "definition",
+      "entityId",
+      "period",
+      "sourceIds",
+      "comparableTo",
+      "notComparableTo",
+      "notes"
+    ],
+    "additionalProperties": false
+  }
+}

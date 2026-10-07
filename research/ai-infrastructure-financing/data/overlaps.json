@@ -1,0 +1,563 @@
+{
+  "DO_NOT_ADD_PAIRS": [
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:regional-plan",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:regional-plan",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:offering",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:offering",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:fund-cash",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:fund-cash",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:lease-commitment",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:lease-commitment",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:rvg-threshold",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:rvg-threshold",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:equity-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:equity-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:maximum-exposure-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:equity-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:equity-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:cost|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:cost",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:offering",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:offering",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:fund-cash",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:fund-cash",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:lease-commitment",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:lease-commitment",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:rvg-threshold",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:rvg-threshold",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:equity-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:equity-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:maximum-exposure-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:equity-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:equity-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:regional-plan|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:regional-plan",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:offering|hyperion:fund-cash",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:offering",
+      "rightClaimId": "hyperion:fund-cash",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:offering|hyperion:lease-commitment",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:offering",
+      "rightClaimId": "hyperion:lease-commitment",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:offering|hyperion:rvg-threshold",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:offering",
+      "rightClaimId": "hyperion:rvg-threshold",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:offering|hyperion:equity-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:offering",
+      "rightClaimId": "hyperion:equity-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:offering|hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:offering",
+      "rightClaimId": "hyperion:maximum-exposure-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:offering|hyperion:equity-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:offering",
+      "rightClaimId": "hyperion:equity-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:offering|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:offering",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:offering|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:offering",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:fund-cash|hyperion:lease-commitment",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:fund-cash",
+      "rightClaimId": "hyperion:lease-commitment",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:fund-cash|hyperion:rvg-threshold",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:fund-cash",
+      "rightClaimId": "hyperion:rvg-threshold",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:fund-cash|hyperion:equity-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:fund-cash",
+      "rightClaimId": "hyperion:equity-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:fund-cash|hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:fund-cash",
+      "rightClaimId": "hyperion:maximum-exposure-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:fund-cash|hyperion:equity-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:fund-cash",
+      "rightClaimId": "hyperion:equity-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:fund-cash|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:fund-cash",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:fund-cash|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:fund-cash",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:lease-commitment|hyperion:rvg-threshold",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:lease-commitment",
+      "rightClaimId": "hyperion:rvg-threshold",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:lease-commitment|hyperion:equity-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:lease-commitment",
+      "rightClaimId": "hyperion:equity-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:lease-commitment|hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:lease-commitment",
+      "rightClaimId": "hyperion:maximum-exposure-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:lease-commitment|hyperion:equity-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:lease-commitment",
+      "rightClaimId": "hyperion:equity-2026",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:lease-commitment|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:lease-commitment",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:lease-commitment|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:lease-commitment",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:rvg-threshold|hyperion:equity-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:rvg-threshold",
+      "rightClaimId": "hyperion:equity-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:rvg-threshold|hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:rvg-threshold",
+      "rightClaimId": "hyperion:maximum-exposure-2025",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:rvg-threshold|hyperion:equity-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:rvg-threshold",
+      "rightClaimId": "hyperion:equity-2026",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:rvg-threshold|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:rvg-threshold",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:rvg-threshold|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:rvg-threshold",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:equity-2025|hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:equity-2025",
+      "rightClaimId": "hyperion:maximum-exposure-2025",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:equity-2025|hyperion:equity-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:equity-2025",
+      "rightClaimId": "hyperion:equity-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:equity-2025|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:equity-2025",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:equity-2025|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:equity-2025",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:maximum-exposure-2025|hyperion:equity-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:maximum-exposure-2025",
+      "rightClaimId": "hyperion:equity-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:maximum-exposure-2025|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:maximum-exposure-2025",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:maximum-exposure-2025|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:maximum-exposure-2025",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:equity-2026|hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:equity-2026",
+      "rightClaimId": "hyperion:maximum-exposure-2026",
+      "relation": "SAME_ASSET_DIFFERENT_LAYER",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:equity-2026|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:equity-2026",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:hyperion:maximum-exposure-2026|hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "leftClaimId": "hyperion:maximum-exposure-2026",
+      "rightClaimId": "hyperion:meta-distribution",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:fairwater:pledge|fairwater:second-pledge",
+      "caseId": "fairwater",
+      "leftClaimId": "fairwater:pledge",
+      "rightClaimId": "fairwater:second-pledge",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:polaris-forge-1:p-notes250-principal|polaris-forge-1:p-notes150-principal",
+      "caseId": "polaris-forge-1",
+      "leftClaimId": "polaris-forge-1:p-notes250-principal",
+      "rightClaimId": "polaris-forge-1:p-notes150-principal",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:polaris-forge-1:p-notes250-principal|polaris-forge-1:p-preferred-original",
+      "caseId": "polaris-forge-1",
+      "leftClaimId": "polaris-forge-1:p-notes250-principal",
+      "rightClaimId": "polaris-forge-1:p-preferred-original",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:polaris-forge-1:p-notes250-principal|polaris-forge-1:p-platform-preferred",
+      "caseId": "polaris-forge-1",
+      "leftClaimId": "polaris-forge-1:p-notes250-principal",
+      "rightClaimId": "polaris-forge-1:p-platform-preferred",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:polaris-forge-1:p-notes150-principal|polaris-forge-1:p-preferred-original",
+      "caseId": "polaris-forge-1",
+      "leftClaimId": "polaris-forge-1:p-notes150-principal",
+      "rightClaimId": "polaris-forge-1:p-preferred-original",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:polaris-forge-1:p-notes150-principal|polaris-forge-1:p-platform-preferred",
+      "caseId": "polaris-forge-1",
+      "leftClaimId": "polaris-forge-1:p-notes150-principal",
+      "rightClaimId": "polaris-forge-1:p-platform-preferred",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    },
+    {
+      "id": "do-not-add:polaris-forge-1:p-preferred-original|polaris-forge-1:p-platform-preferred",
+      "caseId": "polaris-forge-1",
+      "leftClaimId": "polaris-forge-1:p-preferred-original",
+      "rightClaimId": "polaris-forge-1:p-platform-preferred",
+      "relation": "NOT_COMPARABLE",
+      "decision": "DO_NOT_ADD",
+      "reason": "Different layers/versions or unresolved overlapping scopes. No additive investment interpretation."
+    }
+  ],
+  "aggregationAllowed": false
+}

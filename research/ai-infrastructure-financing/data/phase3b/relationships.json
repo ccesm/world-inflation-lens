@@ -1,0 +1,146 @@
+[
+  {
+    "id": "hyperion:edge-meta-PARTIALLY_OWNS-hyperion-jv",
+    "caseId": "hyperion",
+    "fromId": "meta",
+    "toId": "hyperion-jv",
+    "relationshipType": "PARTIALLY_OWNS",
+    "claimId": "hyperion:edge-meta-PARTIALLY_OWNS-hyperion-jv",
+    "scopeId": "hyperion-jv-original"
+  },
+  {
+    "id": "hyperion:edge-blue-owl-funds-PARTIALLY_OWNS-hyperion-jv",
+    "caseId": "hyperion",
+    "fromId": "blue-owl-funds",
+    "toId": "hyperion-jv",
+    "relationshipType": "PARTIALLY_OWNS",
+    "claimId": "hyperion:edge-blue-owl-funds-PARTIALLY_OWNS-hyperion-jv",
+    "scopeId": "hyperion-jv-original"
+  },
+  {
+    "id": "hyperion:edge-hyperion-jv-OWNS-hyperion",
+    "caseId": "hyperion",
+    "fromId": "hyperion-jv",
+    "toId": "hyperion",
+    "relationshipType": "OWNS",
+    "claimId": "hyperion:edge-hyperion-jv-OWNS-hyperion",
+    "scopeId": "hyperion-jv-original"
+  },
+  {
+    "id": "hyperion:edge-meta-LEASES-hyperion-jv",
+    "caseId": "hyperion",
+    "fromId": "meta",
+    "toId": "hyperion-jv",
+    "relationshipType": "LEASES",
+    "claimId": "hyperion:edge-meta-LEASES-hyperion-jv",
+    "scopeId": "hyperion-jv-original"
+  },
+  {
+    "id": "hyperion:edge-laidley-PURCHASES_POWER_FROM-entergy-la",
+    "caseId": "hyperion",
+    "fromId": "laidley",
+    "toId": "entergy-la",
+    "relationshipType": "PURCHASES_POWER_FROM",
+    "claimId": "hyperion:edge-laidley-PURCHASES_POWER_FROM-entergy-la",
+    "scopeId": "hyperion-grid-original"
+  },
+  {
+    "id": "hyperion:edge-meta-DEVELOPS-hyperion",
+    "caseId": "hyperion",
+    "fromId": "meta",
+    "toId": "hyperion",
+    "relationshipType": "DEVELOPS",
+    "claimId": "hyperion:edge-meta-DEVELOPS-hyperion",
+    "scopeId": "hyperion-jv-original"
+  },
+  {
+    "id": "hyperion:edge-project-beignet-holdings-OWNS-laidley",
+    "caseId": "hyperion",
+    "fromId": "project-beignet-holdings",
+    "toId": "laidley",
+    "relationshipType": "OWNS",
+    "claimId": "hyperion:edge-project-beignet-holdings-OWNS-laidley",
+    "scopeId": "hyperion-asset"
+  },
+  {
+    "id": "fairwater:edge-msft-DEVELOPS-fairwater",
+    "caseId": "fairwater",
+    "fromId": "msft",
+    "toId": "fairwater",
+    "relationshipType": "DEVELOPS",
+    "claimId": "fairwater:edge-msft-DEVELOPS-fairwater",
+    "scopeId": "fairwater-asset"
+  },
+  {
+    "id": "fairwater:edge-msft-OPERATES-fairwater",
+    "caseId": "fairwater",
+    "fromId": "msft",
+    "toId": "fairwater",
+    "relationshipType": "OPERATES",
+    "claimId": "fairwater:edge-msft-OPERATES-fairwater",
+    "scopeId": "fairwater-asset"
+  },
+  {
+    "id": "polaris-forge-1:edge-coreweave-LEASES-eln02",
+    "caseId": "polaris-forge-1",
+    "fromId": "coreweave",
+    "toId": "eln02",
+    "relationshipType": "LEASES",
+    "claimId": "polaris-forge-1:edge-coreweave-LEASES-eln02",
+    "scopeId": "pf1-contract"
+  },
+  {
+    "id": "polaris-forge-1:edge-coreweave-LEASES-eln03",
+    "caseId": "polaris-forge-1",
+    "fromId": "coreweave",
+    "toId": "eln03",
+    "relationshipType": "LEASES",
+    "claimId": "polaris-forge-1:edge-coreweave-LEASES-eln03",
+    "scopeId": "pf1-contract"
+  },
+  {
+    "id": "polaris-forge-1:edge-coreweave-LEASES-eln02c",
+    "caseId": "polaris-forge-1",
+    "fromId": "coreweave",
+    "toId": "eln02c",
+    "relationshipType": "LEASES",
+    "claimId": "polaris-forge-1:edge-coreweave-LEASES-eln02c",
+    "scopeId": "pf1-contract"
+  },
+  {
+    "id": "polaris-forge-1:edge-apld-DEVELOPS-polaris-forge-1",
+    "caseId": "polaris-forge-1",
+    "fromId": "apld",
+    "toId": "polaris-forge-1",
+    "relationshipType": "DEVELOPS",
+    "claimId": "polaris-forge-1:edge-apld-DEVELOPS-polaris-forge-1",
+    "scopeId": "polaris-forge-1-asset"
+  },
+  {
+    "id": "polaris-forge-1:edge-computeco-FINANCES-polaris-forge-1",
+    "caseId": "polaris-forge-1",
+    "fromId": "computeco",
+    "toId": "polaris-forge-1",
+    "relationshipType": "FINANCES",
+    "claimId": "polaris-forge-1:edge-computeco-FINANCES-polaris-forge-1",
+    "scopeId": "pf1-debt250"
+  },
+  {
+    "id": "polaris-forge-1:edge-computeco3-FINANCES-polaris-forge-1",
+    "caseId": "polaris-forge-1",
+    "fromId": "computeco3",
+    "toId": "polaris-forge-1",
+    "relationshipType": "FINANCES",
+    "claimId": "polaris-forge-1:edge-computeco3-FINANCES-polaris-forge-1",
+    "scopeId": "pf1-debt150"
+  },
+  {
+    "id": "polaris-forge-1:edge-mip-funds-FINANCES-hpc-holdings",
+    "caseId": "polaris-forge-1",
+    "fromId": "mip-funds",
+    "toId": "hpc-holdings",
+    "relationshipType": "FINANCES",
+    "claimId": "polaris-forge-1:edge-mip-funds-FINANCES-hpc-holdings",
+    "scopeId": "pf1-preferred-original"
+  }
+]

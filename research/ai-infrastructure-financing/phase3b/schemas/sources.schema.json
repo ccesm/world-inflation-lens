@@ -1,0 +1,165 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "MIME": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "SHA256": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "accessError": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "allowedRoutes": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "host": {
+              "type": "string"
+            },
+            "prefix": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "host",
+            "prefix"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "byteSize": {
+        "type": "integer"
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "delegatedBy": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "documentDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "documentType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "entityIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "identityState": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "primaryOrSecondary": {
+        "type": "string",
+        "minLength": 1
+      },
+      "projectId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "publisher": {
+        "type": "string",
+        "minLength": 1
+      },
+      "qualificationStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "resolvedURL": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "retrievalStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "retrievedAt": {
+        "type": "string",
+        "minLength": 1
+      },
+      "reviewMethod": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceVersionId": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "url": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "MIME",
+      "SHA256",
+      "accessError",
+      "allowedRoutes",
+      "byteSize",
+      "caseId",
+      "delegatedBy",
+      "documentDate",
+      "documentType",
+      "entityIds",
+      "identityState",
+      "primaryOrSecondary",
+      "projectId",
+      "publisher",
+      "qualificationStatus",
+      "resolvedURL",
+      "retrievalStatus",
+      "retrievedAt",
+      "reviewMethod",
+      "sourceId",
+      "sourceType",
+      "sourceVersionId",
+      "title",
+      "url"
+    ],
+    "additionalProperties": false
+  }
+}

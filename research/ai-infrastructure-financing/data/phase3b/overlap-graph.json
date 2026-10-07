@@ -1,0 +1,602 @@
+{
+  "nodes": [
+    {
+      "nodeId": "hyperion-asset",
+      "caseId": "hyperion",
+      "nodeType": "PHYSICAL_ASSET_UMBRELLA",
+      "claimId": null
+    },
+    {
+      "nodeId": "fairwater-asset",
+      "caseId": "fairwater",
+      "nodeType": "PHYSICAL_ASSET_UMBRELLA",
+      "claimId": null
+    },
+    {
+      "nodeId": "polaris-forge-1-asset",
+      "caseId": "polaris-forge-1",
+      "nodeType": "PHYSICAL_ASSET_UMBRELLA",
+      "claimId": null
+    },
+    {
+      "nodeId": "hyperion:cost",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:cost"
+    },
+    {
+      "nodeId": "hyperion:regional-plan",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:regional-plan"
+    },
+    {
+      "nodeId": "hyperion:offering",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:offering"
+    },
+    {
+      "nodeId": "hyperion:fund-cash",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:fund-cash"
+    },
+    {
+      "nodeId": "hyperion:lease-commitment",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:lease-commitment"
+    },
+    {
+      "nodeId": "hyperion:rvg-threshold",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:rvg-threshold"
+    },
+    {
+      "nodeId": "hyperion:equity-2025",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:equity-2025"
+    },
+    {
+      "nodeId": "hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:maximum-exposure-2025"
+    },
+    {
+      "nodeId": "hyperion:equity-2026",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:equity-2026"
+    },
+    {
+      "nodeId": "hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:maximum-exposure-2026"
+    },
+    {
+      "nodeId": "fairwater:pledge",
+      "caseId": "fairwater",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "fairwater:pledge"
+    },
+    {
+      "nodeId": "fairwater:second-pledge",
+      "caseId": "fairwater",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "fairwater:second-pledge"
+    },
+    {
+      "nodeId": "polaris-forge-1:p-notes250-principal",
+      "caseId": "polaris-forge-1",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "polaris-forge-1:p-notes250-principal"
+    },
+    {
+      "nodeId": "polaris-forge-1:p-notes150-principal",
+      "caseId": "polaris-forge-1",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "polaris-forge-1:p-notes150-principal"
+    },
+    {
+      "nodeId": "polaris-forge-1:p-preferred-original",
+      "caseId": "polaris-forge-1",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "polaris-forge-1:p-preferred-original"
+    },
+    {
+      "nodeId": "polaris-forge-1:p-platform-preferred",
+      "caseId": "polaris-forge-1",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "polaris-forge-1:p-platform-preferred"
+    },
+    {
+      "nodeId": "hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "nodeType": "MONETARY_DISCLOSURE",
+      "claimId": "hyperion:meta-distribution"
+    }
+  ],
+  "edges": [
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:cost"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:regional-plan"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:offering"
+    },
+    {
+      "fromId": "hyperion:fund-cash",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:fund-cash"
+    },
+    {
+      "fromId": "hyperion:lease-commitment",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:lease-commitment"
+    },
+    {
+      "fromId": "hyperion:rvg-threshold",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:rvg-threshold"
+    },
+    {
+      "fromId": "hyperion:equity-2025",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:equity-2025"
+    },
+    {
+      "fromId": "hyperion:maximum-exposure-2025",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:maximum-exposure-2025"
+    },
+    {
+      "fromId": "hyperion:equity-2026",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:maximum-exposure-2026",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "fairwater:pledge",
+      "toId": "fairwater-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "fairwater:pledge"
+    },
+    {
+      "fromId": "fairwater:second-pledge",
+      "toId": "fairwater-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "fairwater:second-pledge"
+    },
+    {
+      "fromId": "polaris-forge-1:p-notes250-principal",
+      "toId": "polaris-forge-1-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "polaris-forge-1:p-notes250-principal"
+    },
+    {
+      "fromId": "polaris-forge-1:p-notes150-principal",
+      "toId": "polaris-forge-1-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "polaris-forge-1:p-notes150-principal"
+    },
+    {
+      "fromId": "polaris-forge-1:p-preferred-original",
+      "toId": "polaris-forge-1-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "polaris-forge-1:p-preferred-original"
+    },
+    {
+      "fromId": "polaris-forge-1:p-platform-preferred",
+      "toId": "polaris-forge-1-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "polaris-forge-1:p-platform-preferred"
+    },
+    {
+      "fromId": "hyperion:meta-distribution",
+      "toId": "hyperion-asset",
+      "relationship": "MAY_OVERLAP",
+      "evidenceClaimId": "hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:regional-plan",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:regional-plan"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:offering",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:offering"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:fund-cash",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:fund-cash"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:lease-commitment",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:lease-commitment"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:rvg-threshold",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:rvg-threshold"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:equity-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:equity-2025"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:maximum-exposure-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:maximum-exposure-2025"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:equity-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:cost",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:cost|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:offering",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:offering"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:fund-cash",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:fund-cash"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:lease-commitment",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:lease-commitment"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:rvg-threshold",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:rvg-threshold"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:equity-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:equity-2025"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:maximum-exposure-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:maximum-exposure-2025"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:equity-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:regional-plan",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:regional-plan|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion:fund-cash",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:offering|hyperion:fund-cash"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion:lease-commitment",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:offering|hyperion:lease-commitment"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion:rvg-threshold",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:offering|hyperion:rvg-threshold"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion:equity-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:offering|hyperion:equity-2025"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion:maximum-exposure-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:offering|hyperion:maximum-exposure-2025"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion:equity-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:offering|hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:offering|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:offering",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:offering|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:fund-cash",
+      "toId": "hyperion:lease-commitment",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:fund-cash|hyperion:lease-commitment"
+    },
+    {
+      "fromId": "hyperion:fund-cash",
+      "toId": "hyperion:rvg-threshold",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:fund-cash|hyperion:rvg-threshold"
+    },
+    {
+      "fromId": "hyperion:fund-cash",
+      "toId": "hyperion:equity-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:fund-cash|hyperion:equity-2025"
+    },
+    {
+      "fromId": "hyperion:fund-cash",
+      "toId": "hyperion:maximum-exposure-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:fund-cash|hyperion:maximum-exposure-2025"
+    },
+    {
+      "fromId": "hyperion:fund-cash",
+      "toId": "hyperion:equity-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:fund-cash|hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:fund-cash",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:fund-cash|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:fund-cash",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:fund-cash|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:lease-commitment",
+      "toId": "hyperion:rvg-threshold",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:lease-commitment|hyperion:rvg-threshold"
+    },
+    {
+      "fromId": "hyperion:lease-commitment",
+      "toId": "hyperion:equity-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:lease-commitment|hyperion:equity-2025"
+    },
+    {
+      "fromId": "hyperion:lease-commitment",
+      "toId": "hyperion:maximum-exposure-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:lease-commitment|hyperion:maximum-exposure-2025"
+    },
+    {
+      "fromId": "hyperion:lease-commitment",
+      "toId": "hyperion:equity-2026",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:lease-commitment|hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:lease-commitment",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:lease-commitment|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:lease-commitment",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:lease-commitment|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:rvg-threshold",
+      "toId": "hyperion:equity-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:rvg-threshold|hyperion:equity-2025"
+    },
+    {
+      "fromId": "hyperion:rvg-threshold",
+      "toId": "hyperion:maximum-exposure-2025",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:rvg-threshold|hyperion:maximum-exposure-2025"
+    },
+    {
+      "fromId": "hyperion:rvg-threshold",
+      "toId": "hyperion:equity-2026",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:rvg-threshold|hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:rvg-threshold",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:rvg-threshold|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:rvg-threshold",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:rvg-threshold|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:equity-2025",
+      "toId": "hyperion:maximum-exposure-2025",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:equity-2025|hyperion:maximum-exposure-2025"
+    },
+    {
+      "fromId": "hyperion:equity-2025",
+      "toId": "hyperion:equity-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:equity-2025|hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:equity-2025",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:equity-2025|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:equity-2025",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:equity-2025|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:maximum-exposure-2025",
+      "toId": "hyperion:equity-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:maximum-exposure-2025|hyperion:equity-2026"
+    },
+    {
+      "fromId": "hyperion:maximum-exposure-2025",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:maximum-exposure-2025|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:maximum-exposure-2025",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:maximum-exposure-2025|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:equity-2026",
+      "toId": "hyperion:maximum-exposure-2026",
+      "relationship": "SAME_ASSET_DIFFERENT_LAYER",
+      "evidencePairId": "do-not-add:hyperion:equity-2026|hyperion:maximum-exposure-2026"
+    },
+    {
+      "fromId": "hyperion:equity-2026",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:equity-2026|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "hyperion:maximum-exposure-2026",
+      "toId": "hyperion:meta-distribution",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:hyperion:maximum-exposure-2026|hyperion:meta-distribution"
+    },
+    {
+      "fromId": "fairwater:pledge",
+      "toId": "fairwater:second-pledge",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:fairwater:pledge|fairwater:second-pledge"
+    },
+    {
+      "fromId": "polaris-forge-1:p-notes250-principal",
+      "toId": "polaris-forge-1:p-notes150-principal",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:polaris-forge-1:p-notes250-principal|polaris-forge-1:p-notes150-principal"
+    },
+    {
+      "fromId": "polaris-forge-1:p-notes250-principal",
+      "toId": "polaris-forge-1:p-preferred-original",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:polaris-forge-1:p-notes250-principal|polaris-forge-1:p-preferred-original"
+    },
+    {
+      "fromId": "polaris-forge-1:p-notes250-principal",
+      "toId": "polaris-forge-1:p-platform-preferred",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:polaris-forge-1:p-notes250-principal|polaris-forge-1:p-platform-preferred"
+    },
+    {
+      "fromId": "polaris-forge-1:p-notes150-principal",
+      "toId": "polaris-forge-1:p-preferred-original",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:polaris-forge-1:p-notes150-principal|polaris-forge-1:p-preferred-original"
+    },
+    {
+      "fromId": "polaris-forge-1:p-notes150-principal",
+      "toId": "polaris-forge-1:p-platform-preferred",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:polaris-forge-1:p-notes150-principal|polaris-forge-1:p-platform-preferred"
+    },
+    {
+      "fromId": "polaris-forge-1:p-preferred-original",
+      "toId": "polaris-forge-1:p-platform-preferred",
+      "relationship": "NOT_COMPARABLE",
+      "evidencePairId": "do-not-add:polaris-forge-1:p-preferred-original|polaris-forge-1:p-platform-preferred"
+    }
+  ],
+  "typedTransactionEdges": "data/phase3b/relationships.json; capital stacks link financingIds without summation",
+  "policy": "Umbrella asset identity does not establish scope equality; MAY_OVERLAP is a guard, not a causal/legal claim."
+}

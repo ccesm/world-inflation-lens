@@ -1,0 +1,79 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "assetIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "entityId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "fieldClaims": {
+        "type": "object",
+        "properties": {
+          "equity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "interpretation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "maximum-exposure": {
+            "type": "string",
+            "minLength": 1
+          },
+          "site-PP&E": {
+            "type": "string",
+            "minLength": 1
+          },
+          "site-cost": {
+            "type": "string",
+            "minLength": 1
+          },
+          "treatment": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "layer": {
+        "type": "string",
+        "minLength": 1
+      },
+      "previousVersion": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "assetIdentity",
+      "caseId",
+      "entityId",
+      "fieldClaims",
+      "id",
+      "layer",
+      "previousVersion",
+      "scopeId"
+    ],
+    "additionalProperties": false
+  }
+}

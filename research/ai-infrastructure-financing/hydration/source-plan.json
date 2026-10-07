@@ -1,0 +1,557 @@
+[
+  {
+    "id": "brookings-article",
+    "title": "Financing the AI buildout",
+    "publisher": "Brookings Institution",
+    "url": "https://www.brookings.edu/articles/financing-the-ai-buildout/",
+    "documentDate": "2026-09-23",
+    "sourceType": "SECONDARY_RESEARCH",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "www.brookings.edu",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "brookings-paper",
+    "title": "Financing the AI Buildout, BPEA conference draft",
+    "publisher": "Stijn Van Nieuwerburgh / Brookings",
+    "url": "https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf",
+    "documentDate": "2026-09-04",
+    "sourceType": "SECONDARY_RESEARCH",
+    "caseId": "hyperion",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "www.brookings.edu",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "meta-jv",
+    "title": "Hyperion joint venture announcement",
+    "publisher": "Meta Platforms",
+    "url": "https://investor.atmeta.com/investor-news/press-release-details/2025/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center/",
+    "documentDate": "2025-10-21",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Meta"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "investor.atmeta.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "meta-2025k",
+    "title": "2025 Form 10-K",
+    "publisher": "Meta Platforms",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+    "documentDate": "2026-01-29",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Meta"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "www.sec.gov",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "meta-2026q2",
+    "title": "2026 Q2 Form 10-Q",
+    "publisher": "Meta Platforms",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+    "documentDate": "2026-07-30",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Meta"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "www.sec.gov",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "cc-pimco",
+    "title": "PIMCO investment to develop Hyperion",
+    "publisher": "Clifford Chance",
+    "url": "https://www.cliffordchance.com/news/news/2025/10/clifford-chance-advises-pimco-funds-on-investment-to-develop-metas-hyperion-data-center.html",
+    "documentDate": "2025-10-27",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Hyperion"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "www.cliffordchance.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "meta-engineering",
+    "title": "Infrastructure evolution and AI",
+    "publisher": "Meta Engineering",
+    "url": "https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/",
+    "documentDate": "2025-09-29",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Meta"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "engineering.fb.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "meta-expansion",
+    "title": "Louisiana data center expansion",
+    "publisher": "Meta",
+    "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+    "documentDate": "2026-07-13",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Meta"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "about.fb.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "entergy-substation",
+    "title": "Smalling Substation groundbreaking",
+    "publisher": "Entergy Louisiana",
+    "url": "https://www.entergy.com/news/entergy-louisiana-breaks-ground-on-key-substation-to-power-data-center-in-richland-parish",
+    "documentDate": "2025-06-27",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Entergy"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "www.entergy.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "entergy-approval",
+    "title": "LPSC infrastructure approval announcement",
+    "publisher": "Entergy Louisiana",
+    "url": "https://www.entergy.com/news/entergy-louisiana-receives-lpsc-approval-for-major-infrastructure-investments-to-support-metas-data-center-and-improve-reliability",
+    "documentDate": "2025-08-20",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Entergy"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "www.entergy.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "entergy-expansion",
+    "title": "Additional Meta power agreement",
+    "publisher": "Entergy Louisiana",
+    "url": "https://www.entergy.com/news/entergy-louisiana-announces-a-new-agreement-with-meta-that-will-deliver-an-additional-2b-in-customer-savings",
+    "documentDate": "2026-03-27",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Entergy"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "www.entergy.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "sp-webinar",
+    "title": "Beignet rating webinar summary",
+    "publisher": "S&P Global Ratings",
+    "url": "https://www.spglobal.com/ratings/en/events/webinars/ifr-largescale-pf-102325",
+    "documentDate": "2025-10-23",
+    "sourceType": "SECONDARY_RESEARCH",
+    "caseId": "hyperion",
+    "documentType": "HTML",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "www.spglobal.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "meta-jv-pdf",
+    "title": "Hyperion JV announcement (official issuer PDF)",
+    "publisher": "Meta",
+    "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Announces-Joint-Venture-with-Funds-Managed-by-Blue-Owl-Capital-to-Develop-Hyperion-Data-Center-2025.pdf",
+    "documentDate": "2025-10-21",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "caseId": "hyperion",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "s21.q4cdn.com",
+        "prefix": "/399680738/"
+      }
+    ]
+  },
+  {
+    "id": "laidley-letter",
+    "title": "Meta letter to Entergy filed in U-37425",
+    "publisher": "Meta / LPSC",
+    "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=tegXEb8UbKE%3D",
+    "documentDate": "2025-04-02",
+    "sourceType": "PRIMARY_REGULATORY",
+    "caseId": "hyperion",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "lpscpubvalence.lpsc.louisiana.gov",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "entergy-reply",
+    "title": "Entergy omnibus reply U-37425",
+    "publisher": "Entergy / LPSC",
+    "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=ZgYuul9mQ60%3D",
+    "documentDate": "2025-08-18",
+    "sourceType": "PRIMARY_REGULATORY",
+    "caseId": "hyperion",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "lpscpubvalence.lpsc.louisiana.gov",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "fairwater-build",
+    "title": "Inside Fairwater",
+    "publisher": "Microsoft",
+    "url": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+    "documentDate": "2025-09-18",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "fairwater",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Fairwater",
+      "Microsoft"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "blogs.microsoft.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "fairwater-investment",
+    "title": "Made in Wisconsin",
+    "publisher": "Microsoft",
+    "url": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+    "documentDate": "2025-09-18",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "fairwater",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Fairwater",
+      "Microsoft"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "blogs.microsoft.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "fairwater-tid",
+    "title": "Annual TID No.5 report",
+    "publisher": "Village of Mount Pleasant",
+    "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/4878",
+    "documentDate": "2025-11-10",
+    "sourceType": "PRIMARY_REGULATORY",
+    "caseId": "fairwater",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "www.mtpleasantwi.gov",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "fairwater-land",
+    "title": "2023 land purchase agreements",
+    "publisher": "Village of Mount Pleasant",
+    "url": "https://www.mtpleasantwi.gov/DocumentCenter/View/3142/_Microsoft-News-Release_Village_March-30-2023?bidId=",
+    "documentDate": "2023-03-30",
+    "sourceType": "PRIMARY_REGULATORY",
+    "caseId": "fairwater",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "www.mtpleasantwi.gov",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "fairwater-current",
+    "title": "TID No.5 current official project status",
+    "publisher": "Village of Mount Pleasant",
+    "url": "https://www.mtpleasantwi.gov/2793/Tax-Incremental-District-No-5",
+    "documentDate": null,
+    "sourceType": "PRIMARY_REGULATORY",
+    "caseId": "fairwater",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Microsoft",
+      "2026"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "www.mtpleasantwi.gov",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "pf1-2025q1",
+    "title": "Applied Digital 10-Q August 31 2025",
+    "publisher": "Applied Digital",
+    "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000069/apld-20250831.htm",
+    "documentDate": "2025-10-09",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "caseId": "polaris-forge-1",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Applied",
+      "APLD ELN-02 C"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "pf1-2025q2",
+    "title": "Applied Digital 10-Q November 30 2025",
+    "publisher": "Applied Digital",
+    "url": "https://ir.applieddigital.com/sec-filings/quarterly-reports/content/0001144879-26-000006/0001144879-26-000006.pdf",
+    "documentDate": "2026-01-08",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "caseId": "polaris-forge-1",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "pf1-2026release",
+    "title": "Applied Digital FY2026 Q4 release",
+    "publisher": "Applied Digital",
+    "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-26-000044/apldq426earningsreleaseasf.htm",
+    "documentDate": "2026-07-27",
+    "sourceType": "PRIMARY_ACCOUNTING",
+    "caseId": "polaris-forge-1",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Polaris",
+      "APLD ComputeCo 3"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "pf1-presentation",
+    "title": "Applied Digital April investor presentation",
+    "publisher": "Applied Digital",
+    "url": "https://ir.applieddigital.com/_assets/_2b270afc37018352de7ef24c16a6e485/appliedblockchaininc/db/2905/27266/pdf/APLD_INV_InvestorPresentation_Final_04.24.26.pdf",
+    "documentDate": "2026-04-24",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "polaris-forge-1",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "pf1-rfs",
+    "title": "PF1 first building fully energized",
+    "publisher": "Applied Digital",
+    "url": "https://ir.applieddigital.com/_assets/_e3064005ec46aabd44724bb789f39af6/appliedblockchaininc/news/2025-11-24_Applied_Digital_Completes_Phase_II_Ready_for_137.pdf",
+    "documentDate": "2025-11-24",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "polaris-forge-1",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "pf1-current",
+    "title": "Additional 75MW online PF1",
+    "publisher": "Applied Digital",
+    "url": "https://ir.applieddigital.com/news-events/press-releases/detail/161/applied-digital-brings-an-additional-75-mw-of-ai",
+    "documentDate": "2026-10-02",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "polaris-forge-1",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Polaris",
+      "75"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "lpsc-order",
+    "title": "LPSC Order U-37425 and public settlement",
+    "publisher": "LPSC",
+    "url": "https://lpscpubvalence.lpsc.louisiana.gov/portal/PSC/ViewFile?fileId=nDWn%2Fjuc2%2BA%3D",
+    "documentDate": "2025-08-29",
+    "sourceType": "PRIMARY_REGULATORY",
+    "caseId": "hyperion",
+    "documentType": "PDF",
+    "identityMarkers": [],
+    "allowedRoutes": [
+      {
+        "host": "lpscpubvalence.lpsc.louisiana.gov",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "fairwater-online",
+    "title": "Fairwater 1 equipment coming online",
+    "publisher": "Microsoft",
+    "url": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/",
+    "documentDate": "2026-07-20",
+    "sourceType": "PRIMARY_PROJECT",
+    "caseId": "fairwater",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Fairwater",
+      "Microsoft"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "local.microsoft.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "pf1-initial-leases",
+    "title": "Initial CoreWeave leases",
+    "publisher": "Applied Digital",
+    "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001641172-25-013199/ex99-2.htm",
+    "documentDate": "2025-06-02",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "caseId": "polaris-forge-1",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "CoreWeave",
+      "250"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ]
+  },
+  {
+    "id": "pf1-macquarie",
+    "title": "Original Macquarie preferred capital agreement",
+    "publisher": "Applied Digital",
+    "url": "https://ir.applieddigital.com/sec-filings/all-sec-filings/content/0001144879-25-000005/apldq225earningsrelease.htm",
+    "documentDate": "2025-01-14",
+    "sourceType": "PRIMARY_TRANSACTION",
+    "caseId": "polaris-forge-1",
+    "documentType": "HTML",
+    "identityMarkers": [
+      "Macquarie",
+      "900"
+    ],
+    "allowedRoutes": [
+      {
+        "host": "ir.applieddigital.com",
+        "prefix": "/"
+      }
+    ]
+  }
+]

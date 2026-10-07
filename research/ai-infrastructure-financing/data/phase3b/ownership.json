@@ -1,0 +1,28 @@
+[
+  {
+    "id": "h-own-meta",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "OWNERSHIP",
+    "scopeId": "hyperion-jv-original",
+    "fieldClaims": {
+      "percentage": "hyperion:ownership-meta"
+    },
+    "ownerId": "meta",
+    "ownedEntityId": "hyperion-jv",
+    "completeSet": true
+  },
+  {
+    "id": "h-own-blue-owl-funds",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "OWNERSHIP",
+    "scopeId": "hyperion-jv-original",
+    "fieldClaims": {
+      "percentage": "hyperion:ownership-blue-owl-funds"
+    },
+    "ownerId": "blue-owl-funds",
+    "ownedEntityId": "hyperion-jv",
+    "completeSet": true
+  }
+]

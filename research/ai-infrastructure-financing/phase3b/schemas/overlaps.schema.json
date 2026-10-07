@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "aggregationAllowed": {
+      "const": false
+    },
+    "DO_NOT_ADD_PAIRS": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "caseId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "leftClaimId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rightClaimId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "decision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "caseId",
+          "leftClaimId",
+          "rightClaimId",
+          "relation",
+          "decision",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "aggregationAllowed",
+    "DO_NOT_ADD_PAIRS"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "h-accounting-2025",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "scopeId": "hyperion-accounting-2025",
+    "fieldClaims": {
+      "equity": "hyperion:equity-2025",
+      "maximum-exposure": "hyperion:maximum-exposure-2025",
+      "treatment": "hyperion:treatment-2025"
+    },
+    "entityId": "meta",
+    "previousVersion": null
+  },
+  {
+    "id": "h-accounting-2026",
+    "caseId": "hyperion",
+    "assetIdentity": "hyperion-asset",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "scopeId": "hyperion-accounting-2026",
+    "fieldClaims": {
+      "equity": "hyperion:equity-2026",
+      "maximum-exposure": "hyperion:maximum-exposure-2026",
+      "treatment": "hyperion:treatment-2026"
+    },
+    "entityId": "meta",
+    "previousVersion": "h-accounting-2025"
+  },
+  {
+    "id": "f-accounting",
+    "caseId": "fairwater",
+    "assetIdentity": "fairwater-asset",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "scopeId": "fairwater-asset",
+    "fieldClaims": {
+      "site-PP&E": "fairwater:site-PP&E",
+      "interpretation": "fairwater:accounting-interpretation"
+    },
+    "entityId": "msft",
+    "previousVersion": null
+  },
+  {
+    "id": "p-accounting",
+    "caseId": "polaris-forge-1",
+    "assetIdentity": "polaris-forge-1-asset",
+    "layer": "ACCOUNTING_EXPOSURE",
+    "scopeId": "polaris-forge-1-asset",
+    "fieldClaims": {
+      "treatment": "polaris-forge-1:accounting",
+      "site-cost": "polaris-forge-1:project-cost"
+    },
+    "entityId": "apld",
+    "previousVersion": null
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "meta",
+    "name": "Meta Platforms, Inc.",
+    "entityType": "PUBLIC_COMPANY",
+    "legalName": "Meta Platforms, Inc.",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "hyperion:entity-meta"
+    ]
+  },
+  {
+    "id": "blue-owl-funds",
+    "name": "Funds managed by Blue Owl Capital",
+    "entityType": "FUND_GROUP",
+    "legalName": null,
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "claimIds": [
+      "hyperion:entity-blue-owl-funds"
+    ]
+  },
+  {
+    "id": "blue-owl-manager",
+    "name": "Blue Owl Capital",
+    "entityType": "FUND_MANAGER",
+    "legalName": null,
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "claimIds": [
+      "hyperion:entity-blue-owl-manager"
+    ]
+  },
+  {
+    "id": "pimco-funds",
+    "name": "PIMCO-managed funds/accounts",
+    "entityType": "FUND_GROUP",
+    "legalName": null,
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "claimIds": [
+      "hyperion:entity-pimco-funds"
+    ]
+  },
+  {
+    "id": "hyperion-jv",
+    "name": "Hyperion venture (issuer-described umbrella)",
+    "entityType": "JV",
+    "legalName": null,
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "claimIds": [
+      "hyperion:entity-hyperion-jv"
+    ]
+  },
+  {
+    "id": "laidley",
+    "name": "Laidley LLC",
+    "entityType": "SPV",
+    "legalName": "Laidley LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "hyperion:entity-laidley"
+    ]
+  },
+  {
+    "id": "project-beignet-holdings",
+    "name": "Project Beignet Holdings LLC",
+    "entityType": "SPV",
+    "legalName": "Project Beignet Holdings LLC",
+    "identityStatus": "SECONDARY_REPORTED_NOT_PRIMARY_VERIFIED",
+    "claimIds": [
+      "hyperion:entity-project-beignet-holdings"
+    ]
+  },
+  {
+    "id": "beignet-investor",
+    "name": "Beignet Investor LLC",
+    "entityType": "SPV",
+    "legalName": "Beignet Investor LLC",
+    "identityStatus": "SECONDARY_REPORTED_NOT_PRIMARY_VERIFIED",
+    "claimIds": [
+      "hyperion:entity-beignet-investor"
+    ]
+  },
+  {
+    "id": "iris-crossing",
+    "name": "Iris Crossing LLC",
+    "entityType": "SPV",
+    "legalName": "Iris Crossing LLC",
+    "identityStatus": "SECONDARY_REPORTED_NOT_PRIMARY_VERIFIED",
+    "claimIds": [
+      "hyperion:entity-iris-crossing"
+    ]
+  },
+  {
+    "id": "entergy-la",
+    "name": "Entergy Louisiana, LLC",
+    "entityType": "UTILITY",
+    "legalName": "Entergy Louisiana, LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "hyperion:entity-entergy-la"
+    ]
+  },
+  {
+    "id": "msft",
+    "name": "Microsoft Corporation",
+    "entityType": "PUBLIC_COMPANY",
+    "legalName": "Microsoft Corporation",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "fairwater:entity-msft"
+    ]
+  },
+  {
+    "id": "we-energies",
+    "name": "WE Energies (service brand)",
+    "entityType": "UTILITY",
+    "legalName": null,
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "claimIds": [
+      "fairwater:entity-we-energies"
+    ]
+  },
+  {
+    "id": "apld",
+    "name": "Applied Digital Corporation",
+    "entityType": "PUBLIC_COMPANY",
+    "legalName": "Applied Digital Corporation",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-apld"
+    ]
+  },
+  {
+    "id": "eln02",
+    "name": "APLD ELN-02 LLC",
+    "entityType": "SUBSIDIARY",
+    "legalName": "APLD ELN-02 LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-eln02"
+    ]
+  },
+  {
+    "id": "eln03",
+    "name": "APLD ELN-03 LLC",
+    "entityType": "SUBSIDIARY",
+    "legalName": "APLD ELN-03 LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-eln03"
+    ]
+  },
+  {
+    "id": "eln02c",
+    "name": "APLD ELN-02 C LLC",
+    "entityType": "SUBSIDIARY",
+    "legalName": "APLD ELN-02 C LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-eln02c"
+    ]
+  },
+  {
+    "id": "hpc-holdings",
+    "name": "APLD HPC Holdings LLC",
+    "entityType": "SUBSIDIARY",
+    "legalName": "APLD HPC Holdings LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-hpc-holdings"
+    ]
+  },
+  {
+    "id": "mip-funds",
+    "name": "MIP VI HPC Holdings, LLC",
+    "entityType": "FUND_VEHICLE",
+    "legalName": "MIP VI HPC Holdings, LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-mip-funds"
+    ]
+  },
+  {
+    "id": "coreweave",
+    "name": "CoreWeave, Inc.",
+    "entityType": "PUBLIC_COMPANY",
+    "legalName": "CoreWeave, Inc.",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-coreweave"
+    ]
+  },
+  {
+    "id": "computeco",
+    "name": "APLD ComputeCo LLC",
+    "entityType": "SUBSIDIARY",
+    "legalName": "APLD ComputeCo LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-computeco"
+    ]
+  },
+  {
+    "id": "computeco3",
+    "name": "APLD ComputeCo 3 LLC",
+    "entityType": "SUBSIDIARY",
+    "legalName": "APLD ComputeCo 3 LLC",
+    "identityStatus": "IDENTIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-computeco3"
+    ]
+  },
+  {
+    "id": "macquarie-manager",
+    "name": "Macquarie Asset Management",
+    "entityType": "FUND_MANAGER",
+    "legalName": null,
+    "identityStatus": "GROUP_OR_UNVERIFIED",
+    "claimIds": [
+      "polaris-forge-1:entity-macquarie-manager"
+    ]
+  }
+]

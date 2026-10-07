@@ -1,0 +1,459 @@
+{
+  "scopeDefinitions": [
+    {
+      "scopeId": "hyperion-asset",
+      "caseId": "hyperion",
+      "definition": "Campus identity umbrella; not a harmonized MW denominator",
+      "entityId": "hyperion-jv",
+      "period": null,
+      "sourceIds": [
+        "meta-jv-pdf"
+      ],
+      "comparableTo": [],
+      "notComparableTo": [],
+      "notes": "No cross-scope total; comparisons require explicit compatibility."
+    },
+    {
+      "scopeId": "hyperion-jv-original",
+      "caseId": "hyperion",
+      "definition": "Original JV buildings and long-lived power/cooling/connectivity; no GPU allocation",
+      "entityId": "hyperion-jv",
+      "period": "2025-10",
+      "sourceIds": [
+        "meta-jv-pdf"
+      ],
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-expansion"
+      ],
+      "notes": "No cross-scope total; comparisons require explicit compatibility."
+    },
+    {
+      "scopeId": "hyperion-financing-original",
+      "caseId": "hyperion",
+      "definition": "Original private securities transaction / rating description",
+      "entityId": "beignet-investor",
+      "period": "2025-10",
+      "sourceIds": [
+        "cc-pimco",
+        "sp-webinar"
+      ],
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-expansion"
+      ],
+      "notes": "No cross-scope total; comparisons require explicit compatibility."
+    },
+    {
+      "scopeId": "hyperion-expansion",
+      "caseId": "hyperion",
+      "definition": "Later Louisiana regional investment and planned scalable campus; exact overlap unresolved",
+      "entityId": "meta",
+      "period": "2026-07",
+      "sourceIds": [
+        "meta-expansion"
+      ],
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-jv-original",
+        "hyperion-financing-original"
+      ],
+      "notes": "No cross-scope total; comparisons require explicit compatibility."
+    },
+    {
+      "scopeId": "hyperion-grid-original",
+      "caseId": "hyperion",
+      "definition": "2025 utility generation/transmission approval and customer service agreements",
+      "entityId": "entergy-la",
+      "period": "2025-08",
+      "sourceIds": [
+        "lpsc-order"
+      ],
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-grid-expanded"
+      ],
+      "notes": "No cross-scope total; comparisons require explicit compatibility."
+    },
+    {
+      "scopeId": "hyperion-grid-expanded",
+      "caseId": "hyperion",
+      "definition": "Later utility system generation/transmission plans; not campus IT load",
+      "entityId": "entergy-la",
+      "period": "2026-03",
+      "sourceIds": [
+        "entergy-expansion"
+      ],
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-grid-original"
+      ],
+      "notes": "No cross-scope total; comparisons require explicit compatibility."
+    },
+    {
+      "scopeId": "hyperion-accounting-2025",
+      "caseId": "hyperion",
+      "definition": "Meta venture-specific reporting snapshot; nonconsolidated VIE exposure",
+      "entityId": "meta",
+      "period": "2025-12-31",
+      "sourceIds": [
+        "meta-2025k"
+      ],
+      "comparableTo": [],
+      "notComparableTo": [],
+      "notes": "No cross-scope total; comparisons require explicit compatibility."
+    },
+    {
+      "scopeId": "hyperion-accounting-2026",
+      "caseId": "hyperion",
+      "definition": "Meta venture-specific reporting snapshot; nonconsolidated VIE exposure",
+      "entityId": "meta",
+      "period": "2026-06-30",
+      "sourceIds": [
+        "meta-2026q2"
+      ],
+      "comparableTo": [],
+      "notComparableTo": [],
+      "notes": "No cross-scope total; comparisons require explicit compatibility."
+    }
+  ],
+  "matrix": [
+    {
+      "claimId": "hyperion:cost",
+      "caseId": "hyperion",
+      "metric": "cost",
+      "value": 27,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-jv-original",
+      "period": "2025-10-21",
+      "entity": "hyperion-jv",
+      "source": [
+        "meta-jv-pdf"
+      ],
+      "definition": "Approximate JV development estimate, buildings and long-lived infrastructure",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-expansion"
+      ],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "PROJECT_ESTIMATE"
+    },
+    {
+      "claimId": "hyperion:regional-plan",
+      "caseId": "hyperion",
+      "metric": "regional-plan",
+      "value": 50,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-expansion",
+      "period": "2026-07-13",
+      "entity": "meta",
+      "source": [
+        "meta-expansion"
+      ],
+      "definition": "More than50bn regional plan; lower bound, not project realized spending",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-jv-original",
+        "hyperion-financing-original"
+      ],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "GT",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "MANAGEMENT_GUIDANCE"
+    },
+    {
+      "claimId": "hyperion:financed-capacity",
+      "caseId": "hyperion",
+      "metric": "financed-capacity",
+      "value": 2.064,
+      "unit": "GW",
+      "scope": "hyperion-financing-original",
+      "period": "2025-10-23",
+      "entity": "beignet-investor",
+      "source": [
+        "sp-webinar"
+      ],
+      "definition": "Rating-related scope; native load definition unresolved",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-expansion"
+      ],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "SECONDARY_ONLY",
+      "observedOrEstimated": "SECONDARY_ESTIMATE"
+    },
+    {
+      "claimId": "hyperion:planned-capacity",
+      "caseId": "hyperion",
+      "metric": "planned-capacity",
+      "value": 5,
+      "unit": "GW",
+      "scope": "hyperion-expansion",
+      "period": "2026-07-13",
+      "entity": "meta",
+      "source": [
+        "meta-expansion"
+      ],
+      "definition": "Campus scalability plan, not operational capacity",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-jv-original",
+        "hyperion-financing-original"
+      ],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "MANAGEMENT_GUIDANCE"
+    },
+    {
+      "claimId": "hyperion:offering",
+      "caseId": "hyperion",
+      "metric": "offering",
+      "value": 27.3,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-financing-original",
+      "period": "2025-10-27",
+      "entity": null,
+      "source": [
+        "cc-pimco"
+      ],
+      "definition": "Private securities offering principal reported by participant adviser, not project cost",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-expansion"
+      ],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "TRANSACTION_VALUE"
+    },
+    {
+      "claimId": "hyperion:fund-cash",
+      "caseId": "hyperion",
+      "metric": "fund-cash",
+      "value": 7,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-jv-original",
+      "period": "2025-10",
+      "entity": "blue-owl-funds",
+      "source": [
+        "meta-jv-pdf"
+      ],
+      "definition": "Approximate fund cash contribution; may include debt-funded amounts, not unlevered equity",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-expansion"
+      ],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "TRANSACTION_VALUE"
+    },
+    {
+      "claimId": "hyperion:lease-commitment",
+      "caseId": "hyperion",
+      "metric": "lease-commitment",
+      "value": 12.31,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-accounting-2026",
+      "period": "2026-06-30",
+      "entity": "meta",
+      "source": [
+        "meta-2026q2"
+      ],
+      "definition": "Approximate initial aggregate lease commitments; not current debt",
+      "comparableTo": [],
+      "notComparableTo": [],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "CONTRACTUAL_COMMITMENT"
+    },
+    {
+      "claimId": "hyperion:rvg-threshold",
+      "caseId": "hyperion",
+      "metric": "rvg-threshold",
+      "value": 28,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-accounting-2026",
+      "period": "2026-06-30",
+      "entity": "meta",
+      "source": [
+        "meta-2026q2"
+      ],
+      "definition": "Approximate declining aggregate threshold, not fixed payment or expected loss",
+      "comparableTo": [],
+      "notComparableTo": [],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "CONTRACTUAL_COMMITMENT"
+    },
+    {
+      "claimId": "hyperion:equity-2025",
+      "caseId": "hyperion",
+      "metric": "equity-2025",
+      "value": 1.83,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-accounting-2025",
+      "period": "2025-12-31",
+      "entity": "meta",
+      "source": [
+        "meta-2025k"
+      ],
+      "definition": "Equity-method investment carrying value",
+      "comparableTo": [],
+      "notComparableTo": [],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "OBSERVED_REPORTED"
+    },
+    {
+      "claimId": "hyperion:maximum-exposure-2025",
+      "caseId": "hyperion",
+      "metric": "maximum-exposure-2025",
+      "value": 45.95,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-accounting-2025",
+      "period": "2025-12-31",
+      "entity": "meta",
+      "source": [
+        "meta-2025k"
+      ],
+      "definition": "Issuer maximum exposure includes equity, leases, estimated fundings and RVG; not debt or expected loss",
+      "comparableTo": [],
+      "notComparableTo": [],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "OBSERVED_REPORTED"
+    },
+    {
+      "claimId": "hyperion:equity-2026",
+      "caseId": "hyperion",
+      "metric": "equity-2026",
+      "value": 2.92,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-accounting-2026",
+      "period": "2026-06-30",
+      "entity": "meta",
+      "source": [
+        "meta-2026q2"
+      ],
+      "definition": "Equity-method investment carrying value",
+      "comparableTo": [],
+      "notComparableTo": [],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "OBSERVED_REPORTED"
+    },
+    {
+      "claimId": "hyperion:maximum-exposure-2026",
+      "caseId": "hyperion",
+      "metric": "maximum-exposure-2026",
+      "value": 46.03,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-accounting-2026",
+      "period": "2026-06-30",
+      "entity": "meta",
+      "source": [
+        "meta-2026q2"
+      ],
+      "definition": "Issuer maximum exposure includes equity, leases, estimated fundings and RVG; not debt or expected loss",
+      "comparableTo": [],
+      "notComparableTo": [],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "OBSERVED_REPORTED"
+    },
+    {
+      "claimId": "hyperion:power-gas",
+      "caseId": "hyperion",
+      "metric": "power-gas",
+      "value": 5200,
+      "unit": "MW",
+      "scope": "hyperion-grid-expanded",
+      "period": "2026-03-27",
+      "entity": "entergy-la",
+      "source": [
+        "entergy-expansion"
+      ],
+      "definition": "More than5200MW planned utility generation across seven gas plants; native generation nameplate, not IT load",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-grid-original"
+      ],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "GT",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "MANAGEMENT_GUIDANCE"
+    },
+    {
+      "claimId": "hyperion:power-solar",
+      "caseId": "hyperion",
+      "metric": "power-solar",
+      "value": 2500,
+      "unit": "MW",
+      "scope": "hyperion-grid-expanded",
+      "period": "2026-03-27",
+      "entity": "entergy-la",
+      "source": [
+        "entergy-expansion"
+      ],
+      "definition": "Up to2500MW renewable option, not operational output",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-grid-original"
+      ],
+      "overlapRisk": "UNRESOLVED",
+      "notes": "DO NOT ADD; no implied capacity or cost conversion",
+      "operator": "LTE",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "MANAGEMENT_GUIDANCE"
+    },
+    {
+      "claimId": "hyperion:meta-distribution",
+      "caseId": "hyperion",
+      "metric": "meta-distribution",
+      "value": 3,
+      "unit": "USD_BILLION",
+      "scope": "hyperion-jv-original",
+      "period": null,
+      "entity": "meta",
+      "source": [
+        "meta-jv-pdf"
+      ],
+      "definition": "Approximate one-time JV distribution to Meta, not fresh construction investment",
+      "comparableTo": [],
+      "notComparableTo": [
+        "hyperion-expansion"
+      ],
+      "overlapRisk": "SAME_ASSET_DIFFERENT_LAYER",
+      "notes": "DO NOT ADD; transaction distribution is not investment",
+      "operator": "EQ",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "observedOrEstimated": "TRANSACTION_VALUE"
+    }
+  ],
+  "fourHeadlineValuesDirectlyComparable": false,
+  "decision": "SCOPE_SEPARATED_NOT_FULLY_RECONCILED"
+}

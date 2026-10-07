@@ -1,0 +1,106 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "assetIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "beneficiaryId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "fieldClaims": {
+        "type": "object",
+        "properties": {
+          "capacity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "classification": {
+            "type": "string",
+            "minLength": 1
+          },
+          "commencement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "commitment": {
+            "type": "string",
+            "minLength": 1
+          },
+          "initial-term": {
+            "type": "string",
+            "minLength": 1
+          },
+          "max-term": {
+            "type": "string",
+            "minLength": 1
+          },
+          "payments": {
+            "type": "string",
+            "minLength": 1
+          },
+          "recognition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "schedule": {
+            "type": "string",
+            "minLength": 1
+          },
+          "term": {
+            "type": "string",
+            "minLength": 1
+          },
+          "threshold": {
+            "type": "string",
+            "minLength": 1
+          },
+          "trigger": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "layer": {
+        "type": "string",
+        "minLength": 1
+      },
+      "obligationType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "obligorId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "assetIdentity",
+      "beneficiaryId",
+      "caseId",
+      "fieldClaims",
+      "id",
+      "layer",
+      "obligationType",
+      "obligorId",
+      "scopeId"
+    ],
+    "additionalProperties": false
+  }
+}

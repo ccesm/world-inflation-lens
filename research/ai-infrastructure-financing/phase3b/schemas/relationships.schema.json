@@ -1,0 +1,46 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "claimId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "fromId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "relationshipType": {
+        "type": "string",
+        "minLength": 1
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "toId": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "caseId",
+      "claimId",
+      "fromId",
+      "id",
+      "relationshipType",
+      "scopeId",
+      "toId"
+    ],
+    "additionalProperties": false
+  }
+}

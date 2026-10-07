@@ -1,0 +1,114 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "assetIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "caseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "fieldClaims": {
+        "type": "object",
+        "properties": {
+          "amortization": {
+            "type": "string",
+            "minLength": 1
+          },
+          "amount": {
+            "type": "string",
+            "minLength": 1
+          },
+          "collateral": {
+            "type": "string",
+            "minLength": 1
+          },
+          "coupon": {
+            "type": "string",
+            "minLength": 1
+          },
+          "funding-mix": {
+            "type": "string",
+            "minLength": 1
+          },
+          "issuance-date": {
+            "type": "string",
+            "minLength": 1
+          },
+          "issuer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "maturity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "principal": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ranking": {
+            "type": "string",
+            "minLength": 1
+          },
+          "recourse": {
+            "type": "string",
+            "minLength": 1
+          },
+          "security": {
+            "type": "string",
+            "minLength": 1
+          },
+          "use-of-proceeds": {
+            "type": "string",
+            "minLength": 1
+          },
+          "yield": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "instrumentIdentity": {
+        "type": "string",
+        "minLength": 1
+      },
+      "issuerId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "issuerStatus": {
+        "type": "string",
+        "minLength": 1
+      },
+      "layer": {
+        "type": "string",
+        "minLength": 1
+      },
+      "scopeId": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required": [
+      "assetIdentity",
+      "caseId",
+      "fieldClaims",
+      "id",
+      "instrumentIdentity",
+      "issuerId",
+      "issuerStatus",
+      "layer",
+      "scopeId"
+    ],
+    "additionalProperties": false
+  }
+}
