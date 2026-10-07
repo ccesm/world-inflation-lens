@@ -1,0 +1,59 @@
+{
+  "artifacts": {
+    "coverage-gain-attribution.json": {
+      "bytes": 2133,
+      "sha256": "d88afaa6908eb445176f75103b71c8e6664e77d6224f7b572c6e3122d9b1bd56",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "coverage-waterfall.json": {
+      "bytes": 776158,
+      "sha256": "99d533cfee701eff6e37a26e94294688bc48be3d8da0d3e84f33c9dde476a277",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "expanded-crosswalk.json": {
+      "bytes": 274397,
+      "sha256": "fbddc498b4a85c00076350b9c842ac82e1ab78188370e058b6e4d6c93f1e29ba",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "expanded-exposure-assignments.json": {
+      "bytes": 1558714,
+      "sha256": "cf8ab72dfa5bf40e714ec1e58d7dd63cc9c7cb45112657bc1ecf3f977b634158",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "expanded-pretrends.json": {
+      "bytes": 624496,
+      "sha256": "81451feddb1130f197dc1649ad404e999ae85724d000ff552989a6f74b8fa55e",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "expanded-sample-health.json": {
+      "bytes": 207472,
+      "sha256": "cb446339c0a3e9caf3e41783b879076cd9a5c94387d42d60a343a2cfb04b79e6",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "harmonized-occupation-cells.json": {
+      "bytes": 531604,
+      "sha256": "a62cbe845a2758d4256a872d6a5123a745fc4ba5287f397067489d2d2883635b",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "qualification.json": {
+      "bytes": 2995,
+      "sha256": "107585b51dbccbd26b4f5e7d0c6d7b45fc866a7d6fd4a8addd7034bb514703bd",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "strict-vs-expanded-coverage.json": {
+      "bytes": 196972,
+      "sha256": "a821a71823b2adcc595b33e1d8feb51cc02fcf1d85d720968e4222c2d29da071",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    },
+    "strict-vs-expanded-outcomes.json": {
+      "bytes": 3196197,
+      "sha256": "75d139e86d671d20c94a6671048e5b9a335bbc351f5949823218b63c2b105315",
+      "storageClass": "C_REPRODUCIBLE_GENERATED"
+    }
+  },
+  "contractVersion": "occupational-coverage-expansion-v1",
+  "expandedSpecificationSha256": "d40e6468ccc27fbc7c0f262acd1954e1eb5e18b28590af184411da71e76f9e8c",
+  "historicalEvidence": "D: existing Phase 1–3 accepted archive; no duplicated raw inputs",
+  "researchOnly": true,
+  "volatileMetadataExcluded": true
+}
