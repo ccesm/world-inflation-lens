@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "researchStatus": "OBSERVATION_MODE",
+  "evidenceStatus": ["EARLY", "INCONCLUSIVE", "SAMPLE_SENSITIVE"],
+  "interpretation": "DESCRIPTIVE_ONLY",
+  "causalityStatus": "NOT_ESTABLISHED",
+  "asOf": {"researchVintage": "2026-10-06", "comparisonPeriod": "2022–2024", "pretrendPeriod": "2015–2019", "coverageReferenceYear": 2024, "latestCompleteOutcomeYear": 2024, "partialObservationsThrough": "2026-08", "missingMonth": "2025-10"},
+  "sourceCommits": {
+    "strict": "57f9b70352999a9464fb164e17df21075d6d61e9",
+    "expanded": "e7aa773c66a898f10a883a0862462fefc42381ee"
+  },
+  "specificationHashes": {
+    "strict": "f3429802af3354335d5c724fc5497a24dde41ea11ac8178b2ac88c9416148b5e",
+    "expanded": "d40e6468ccc27fbc7c0f262acd1954e1eb5e18b28590af184411da71e76f9e8c"
+  },
+  "metricDefinitions": {"coveragePercent": "Share of all 2024 CPS civilian noninstitutional employed people age 16+, all class-of-worker types", "employmentChangeGapPp": "Q5 minus Q1 difference in cumulative employment percentage change, 2022–2024", "pretrendGapPpPerYear": "Q5 minus Q1 difference in annualized growth from log-OLS over 2015–2019; 100 × (exp(slope) − 1)"},
+  "strict": {
+    "academic": {"coveragePercent": 37.77, "employmentChangeGapPp": 0.4159, "pretrendGapPpPerYear": 0.2021},
+    "microsoft": {"coveragePercent": 47.55, "employmentChangeGapPp": 0.5621, "pretrendGapPpPerYear": -1.1848}
+  },
+  "expanded": {
+    "academic": {"coveragePercent": 55.02, "employmentChangeGapPp": -0.8480, "pretrendGapPpPerYear": -0.7122},
+    "microsoft": {"coveragePercent": 55.23, "employmentChangeGapPp": 0.0300, "pretrendGapPpPerYear": -1.0058}
+  },
+  "common": {"expandedCoveragePercent": 47.80},
+  "limitations": ["NO_VALIDATED_SURVEY_DESIGN_UNCERTAINTY", "NO_IID_INTERVALS", "NO_CAUSAL_IDENTIFICATION", "EXPOSURE_IS_NOT_ADOPTION", "AGE_IS_NOT_SENIORITY", "PARTIAL_COMMON_COVERAGE", "SAMPLE_AND_PRETREND_SENSITIVITY", "SHORT_POST_GENAI_WINDOW"],
+  "monitorActivated": false
+}
