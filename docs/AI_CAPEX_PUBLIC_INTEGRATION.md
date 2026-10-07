@@ -1,6 +1,6 @@
 # AI CapEx & Monetization — Phase 2C public integration
 
-This feature branch starts from production `9382a73cdf967aa2e79ea500a09e1cf8aa71ae64`, not the research stack. It adds a fixed-vintage research page at `#/research/ai-capex`. Application version remains **1.2.0**; **1.3.0** is recommended for a separately approved minor feature release. No merge, deployment or operational activation is included.
+This feature branch starts from production `9382a73cdf967aa2e79ea500a09e1cf8aa71ae64`, not the research stack. It adds a fixed-vintage research page at `#/research/ai-capex`. Initial feature qualification used application version **1.2.0**. Owner-approved release preparation now uses **1.3.0**; see [release notes](v1.3-ai-capex-monetization.md). No merge, deployment or operational activation is included.
 
 ## Qualified source and reproducibility
 
@@ -96,11 +96,11 @@ node scripts/verify-ai-capex-browser.mjs
 
 The browser matrix covers 320/390/1280px × EN/ZH × light/dark, single H1, neutral order, chart descriptions/table fallback, keyboard navigation and table scrolling, definition gaps, related links, legacy Fiscal and Signal routes, Home lazy-loading and no new economic runtime API requests (existing font assets and status-only service preserved). Local screenshots/reports remain in ignored `.refresh/ai-capex-browser/`.
 
-Production economic snapshots, public Signal artifact/engine/conclusions, workflows, email behavior, monitor activation and application version are unchanged. AI Labor remains **OBSERVATION MODE**. Existing AI Labor and productivity pages receive only contextual links. No public file or route depends on the research stack being present.
+Production economic snapshots, public Signal artifact/engine/conclusions, workflows, email behavior and monitor activation are unchanged. Release preparation changes only application version metadata and release documentation. AI Labor remains **OBSERVATION MODE**. Existing AI Labor and productivity pages receive only contextual links. No public file or route depends on the research stack being present.
 
 ## Release handoff
 
-See the PR for final commit and acceptance results. This is fixed-vintage public evidence, not an operational refresh. Phase 2D needs separate source/refresh qualification before any filing automation, schedule, email or live API is considered. Version 1.3.0 requires owner approval. Known inherited dependency audit: the unchanged lockfile includes the development dependency `source-map-js` below 1.2.2 with GHSA-68fv-2mgg-jv7q; no dependency upgrade is included in this feature.
+See the PR for final commit and acceptance results. This is fixed-vintage public evidence, not an operational refresh. Phase 2D needs separate source/refresh qualification before any filing automation, schedule, email or live API is considered. The owner approved 1.3.0 version preparation; merge and deployment remain pending. Known inherited dependency audit: the unchanged lockfile includes the development dependency `source-map-js` below 1.2.2 with GHSA-68fv-2mgg-jv7q; no dependency upgrade is included in this feature.
 
 ### Completed local qualification
 
@@ -112,7 +112,7 @@ See the PR for final commit and acceptance results. This is fixed-vintage public
 - Protected-path comparison against the recorded production base: no changes to `data/`, `public/`, `research/signal-engine/`, `.github/` or `package-lock.json`. AI Labor's public snapshot remains observation-only with monitor disabled.
 - Vite retains its existing large-chunk warning for other bundles. The AI CapEx page/data is a separate lazy route chunk; browser requests confirm it is absent from Home loading.
 
-No feature-specific HIGH or MEDIUM issue is known after these checks. The inherited development-dependency advisory above remains outside this feature's scope. Separate owner release review/version approval and Phase 2D operational qualification remain required.
+No feature-specific HIGH or MEDIUM issue is known after these checks. The inherited development-dependency advisory above remains outside this feature's scope. Merge/deployment approval and any separate Phase 2D operational qualification remain required.
 
 Additional protected regressions: the existing AI Labor browser suite passed all 12 surfaces. An optional `npm run signal:test:public` run exposed an **inherited clock fixture** issue: all 84 tests failed in the shared initialization hook because it sets acceptance to `2026-10-04T18:00:00Z`, before the latest main snapshot's retrieval metadata. The independent engine reports `METADATA_AFTER_SNAPSHOT_ACCEPTANCE:retrievedAt`. Both controls targeted unchanged main `9382a73...`: the old clock failed closed; a chronologically valid October 7 acceptance produced `SUCCESS_NEW` and a validated artifact. No Signal source/test was changed. Maintaining that fixture in a separate task is recommended; the ordinary public-binding verification and full `npm run verify` pass.
 
