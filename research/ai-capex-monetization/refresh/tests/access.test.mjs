@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import {createHash} from 'node:crypto';import {execFileSync} from 'node:child_process';
-import {plan,families,validateDocument,manualSeed,companyStates,classify,compare,qualify} from '../access/qualification.mjs';
+import {plan,families,validateDocument,manualSeed,companyStates,classify,compare,qualify,outputDirectory} from '../access/qualification.mjs';
 import {bytes} from '../../scripts/contract.mjs';
 const raw=Buffer.from('<html><body>Microsoft financial results Revenue quarter ended June 30, 2026</body></html>');
 const digest=b=>createHash('sha256').update(b).digest('hex');
@@ -56,3 +56,9 @@ test('workflow uploads only compact report, no cache or raw documents',()=>asser
 test('no accepted promotion, production writes, email or LLM dependency',()=>{const source=fs.readFileSync('research/ai-capex-monetization/refresh/access/qualification.mjs','utf8');assert.doesNotMatch(source,/nodemailer|openai|anthropic|sendMail|--promote/);assert.match(source,/economicIdentityGenerated:false/);assert.match(source,/acceptedDataPromotion:false/);assert.doesNotMatch(workflow,/git push|deploy-pages|notify|npm run data:refresh/);});
 
 test('research dispatch bridge excludes Signal job and grants no extra permissions',()=>{const bridge=fs.readFileSync('.github/workflows/signal-engine-shadow-qualification.yml','utf8');const original=bridge.split('  ai-capex-access:')[0];assert.match(original,/refs\/heads\/codex\/signal-engine-production-pipeline/);assert.doesNotMatch(original,/refs\/heads\/codex\/ai-capex-live-runner-access/);assert.match(bridge,/ai-capex-access:[\s\S]*if: github.ref == 'refs\/heads\/codex\/ai-capex-live-runner-access'/);assert.doesNotMatch(bridge,/schedule:|contents: write|deploy-pages|sendMail|git push/);});
+
+test('manual known document cannot be seeded as a different quarter',()=>{const p=plan().find(p=>p.family==='GOOG_CDN');assert.throws(()=>manualSeed({company:'GOOG',url:p.url,expectedQuarter:'2026Q3'}),/SEED_PERIOD_MISMATCH/);});
+
+test('GitHub RUNNER_TEMP supported without allowing checkout writes',()=>{const r=temp();assert.equal(outputDirectory(path.join(r,'report'),{runnerTemp:r}),path.join(r,'report'));assert.throws(()=>outputDirectory('src/forbidden',{runnerTemp:process.cwd()}),/OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY/);});
+test('symlink into production cannot bypass output guard',()=>{const r=temp();fs.symlinkSync(path.join(process.cwd(),'src'),path.join(r,'linked'));assert.throws(()=>outputDirectory(path.join(r,'linked','forbidden')),/OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY/);});
+test('output guard rejects non-temporary operator paths before creation',()=>assert.throws(()=>outputDirectory(path.join(os.homedir(),'Public','forbidden-report')),/OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY/));

@@ -38,6 +38,7 @@ function hashRaw(raw){return createHash('sha256').update(raw).digest('hex');}
 export function manualSeed({company,url,expectedQuarter},data=load()){
  if(!companies.includes(company)||!/^20\d{2}Q[1-4]$/.test(expectedQuarter))throw Error('SEED_IDENTITY');
  const known=data.input.sources.find(s=>s.company===company&&s.url===url);
+ if(known?.periodEnd&&`${known.periodEnd.slice(0,4)}Q${Math.ceil(Number(known.periodEnd.slice(5,7))/3)}`!==expectedQuarter)throw Error('SEED_PERIOD_MISMATCH');
  // Delegation must already be in the qualified manifest; operator cannot self-delegate a CDN.
  permitted(company,url,known?.delegatedBy);
  return {...known,company,url,sourceId:known?.sourceId??'manual-'+hash({company,url,expectedQuarter}).slice(0,16),role:'CONTROL',family:company+'_MANUAL',kind:/\.pdf(?:\?|$)/i.test(url)?'pdf':/\.xlsx(?:\?|$)/i.test(url)?'xlsx':'html',manualSeed:true,expectedQuarter,periodEnd:known?.periodEnd??`${expectedQuarter.slice(0,4)}-${['03-31','06-30','09-30','12-31'][Number(expectedQuarter.at(-1))-1]}`};
@@ -63,13 +64,28 @@ export function compare(reports){
  const ready=strategy.every(c=>c.runners.length);
  return {strategy,primary:reports.find(r=>r.classification==='QUALIFIED_PRIMARY_RUNNER')?.runner.type??null,secondary:null,splitRunnerQualified:ready&&!reports.some(r=>r.classification==='QUALIFIED_PRIMARY_RUNNER'),decision:ready?'READY FOR LIVE CONTROLLED QUARTERLY REFRESH PILOT':'LIVE RUNNER ACCESS STILL REQUIRES REPAIR'};
 }
+function physicalTarget(target){
+ let current=path.resolve(target),tail=[];
+ while(!fs.existsSync(current)){tail.unshift(path.basename(current));const parent=path.dirname(current);if(parent===current)throw Error('PATH_ROOT');current=parent;}
+ return path.join(fs.realpathSync(current),...tail);
+}
+export function outputDirectory(target,{runnerTemp=process.env.GITHUB_ACTIONS==='true'?process.env.RUNNER_TEMP:null}={}){
+ const resolved=physicalTarget(target),gitRoot=fs.realpathSync(execFileSync('git',['rev-parse','--show-toplevel'],{encoding:'utf8'}).trim());
+ const research=physicalTarget(path.resolve(here,'../outputs'));
+ const inRoot=(p,r)=>p===r||p.startsWith(r+path.sep);
+ if(inRoot(resolved,gitRoot)&&!inRoot(resolved,research))throw Error('OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY');
+ const roots=[fs.realpathSync(os.tmpdir())];
+ if(runnerTemp){const r=physicalTarget(runnerTemp);if(inRoot(r,gitRoot))throw Error('RUNNER_TEMP_INSIDE_CHECKOUT');roots.push(r);}
+ if(!(inRoot(resolved,research)||roots.some(r=>inRoot(resolved,r))))throw Error('OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY');
+ return resolved;
+}
 export async function qualify({runner,asOf,cache,fetcher=fetch,clock=()=>Date.now(),sleep,validator=validateDocument,seeds=[],data=load(),sources=plan(data)}={}){
  if(!['LOCAL_MAC','GITHUB_ACTIONS'].includes(runner))throw Error('RUNNER'); date(asOf);
  const start=new Date(clock()).toISOString();if(start.slice(0,10)!==asOf)throw Error('EXPLICIT_CURRENT_RUN_CLOCK');
  // Never allow raw caches in any checkout. This function only writes content-addressed cache objects.
- const gitRoot=execFileSync('git',['rev-parse','--show-toplevel'],{encoding:'utf8'}).trim();
- fs.mkdirSync(cache,{recursive:true});cache=fs.realpathSync(cache);
- if(cache===gitRoot||cache.startsWith(gitRoot+path.sep))throw Error('EXTERNAL_CACHE_REQUIRED');
+ const gitRoot=fs.realpathSync(execFileSync('git',['rev-parse','--show-toplevel'],{encoding:'utf8'}).trim());
+ cache=physicalTarget(cache);if(cache===gitRoot||cache.startsWith(gitRoot+path.sep))throw Error('EXTERNAL_CACHE_REQUIRED');
+ fs.mkdirSync(cache,{recursive:true});
  let exchanges=[];
  const instrumented=async(url,options)=>{
   const begin=performance.now();
@@ -109,21 +125,21 @@ export async function qualify({runner,asOf,cache,fetcher=fetch,clock=()=>Date.no
   }else if(fetched.status==='ACCESS_BLOCKED')assessment={...assessment,result:'ACCESS_BLOCKED',detail:fetched.attempted===false?'HOST_ALREADY_BLOCKED_NO_REPEAT':'HTTP_ACCESS_BLOCKED'};
   else if(fetched.status==='REJECTED'||/OFFICIAL|DELEGATION|REDIRECT|SEC_ISSUER/.test(fetched.error??''))assessment={...assessment,result:'REDIRECT_REJECTED',detail:'OFFICIAL_HOST_POLICY_REJECTED'};
   else if(/abort|timeout/i.test(fetched.error??''))assessment={...assessment,result:'TIMEOUT',detail:'BOUNDED_TIMEOUT'};
-  probes.push({company:source.company,family:source.family,role:source.role,kind:source.kind,url:source.url,expectedHash:source.sha256??null,actualHash:fetched.receipt?.sha256??null,byteCount:fetched.receipt?.byteSize??null,expectedPeriod:source.periodEnd??null,...assessment,manualSeed:source.manualSeed??false,candidates:candidates.map(({company,url,sourceId,publicationDate,periodEnd,status})=>({company,url,sourceId,publicationDate,periodEnd,status})),http:{attempted:exchanges.length>0,exchanges,latencyMs:Math.round(performance.now()-begin),retryAfter:fetched.retryAfter??null},newRawObject:fetched.receipt?.rawArtifactNew??false});
+  probes.push({company:source.company,family:source.family,role:source.role,kind:source.kind,url:source.url,expectedHash:source.sha256??null,actualHash:fetched.receipt?.sha256??null,byteCount:fetched.receipt?.byteSize??null,expectedPeriod:source.periodEnd??null,...assessment,manualSeed:source.manualSeed??false,candidates:candidates.map(({company,url,sourceId,publicationDate,periodEnd,status})=>({company,url,sourceId,publicationDate,periodEnd,status})),http:{attempted:exchanges.length>0,httpStatus:exchanges.at(-1)?.httpStatus??fetched.httpStatus??null,contentType:exchanges.at(-1)?.contentType??null,exchanges,latencyMs:Math.round(performance.now()-begin),retryAfter:fetched.retryAfter??null},newRawObject:fetched.receipt?.rawArtifactNew??false});
  }
  const states=companyStates(probes);
  const identity=probes.map(({http,newRawObject,...p})=>p);
  return {schemaVersion:version,baseSHA,asOf,runner:{type:runner,os:os.platform(),osVersion:os.release(),runtime:process.version,startedAt:start,endedAt:new Date(clock()).toISOString()},accessIdentity:hash(identity),economicIdentityGenerated:false,probes,companies:states,classification:classify(states),matrix:families.map(family=>({family,results:probes.filter(r=>r.family===family).map(({company,result,detail})=>({company,result,detail}))})),acceptedDataPromotion:false,productionModified:false,recognizedAiRevenue:'UNAVAILABLE',aiReturns:'NOT_IDENTIFIED'};
 }
 // CLI output can only go into the ignored refresh output directory or a system temporary directory.
-if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
+async function cli(){
  const args=process.argv.slice(2);const get=k=>args[args.indexOf(k)+1];
  for(const required of ['--runner','--as-of','--out'])if(!args.includes(required))throw Error('REQUIRED:'+required);
- const out=path.resolve(get('--out'));fs.mkdirSync(out,{recursive:true});const resolved=fs.realpathSync(out);
- const allowed=fs.realpathSync(os.tmpdir()),research=path.resolve(here,'../outputs');
- if(!(resolved.startsWith(allowed+path.sep)||resolved===research||resolved.startsWith(research+path.sep)))throw Error('OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY');
+ const resolved=outputDirectory(get('--out'));fs.mkdirSync(resolved,{recursive:true});
  const seeds=args.includes('--seed-file')?JSON.parse(fs.readFileSync(get('--seed-file'))):[];
  const report=await qualify({runner:get('--runner'),asOf:get('--as-of'),cache:args.includes('--cache')?get('--cache'):process.env.WIL_AI_CAPEX_CACHE??path.join(os.homedir(),'Public/wil-ai-capex-cache'),seeds});
  fs.writeFileSync(path.join(resolved,'access-report.json'),bytes(report));
  console.log(JSON.stringify({runner:report.runner.type,classification:report.classification,companies:report.companies},null,2));
 }
+
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))cli().catch(()=>{console.error('ACCESS_QUALIFICATION_FAILED: invalid configuration or report generation; no data promoted');process.exitCode=1;});
