@@ -59,6 +59,10 @@ test('research dispatch bridge excludes Signal job and grants no extra permissio
 
 test('manual known document cannot be seeded as a different quarter',()=>{const p=plan().find(p=>p.family==='GOOG_CDN');assert.throws(()=>manualSeed({company:'GOOG',url:p.url,expectedQuarter:'2026Q3'}),/SEED_PERIOD_MISMATCH/);});
 
-test('GitHub RUNNER_TEMP supported without allowing checkout writes',()=>{const r=temp();assert.equal(outputDirectory(path.join(r,'report'),{runnerTemp:r}),path.join(r,'report'));assert.throws(()=>outputDirectory('src/forbidden',{runnerTemp:process.cwd()}),/OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY/);});
+test('GitHub RUNNER_TEMP supported without allowing checkout writes',()=>{const r=temp();assert.equal(outputDirectory(path.join(r,'report'),{runnerTemp:r}),path.join(fs.realpathSync(r),'report'));assert.throws(()=>outputDirectory('src/forbidden',{runnerTemp:process.cwd()}),/OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY/);});
 test('symlink into production cannot bypass output guard',()=>{const r=temp();fs.symlinkSync(path.join(process.cwd(),'src'),path.join(r,'linked'));assert.throws(()=>outputDirectory(path.join(r,'linked','forbidden')),/OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY/);});
 test('output guard rejects non-temporary operator paths before creation',()=>assert.throws(()=>outputDirectory(path.join(os.homedir(),'Public','forbidden-report')),/OUTPUT_MUST_BE_IGNORED_OR_TEMPORARY/));
+test('fresh-process fixture access content and company decisions reproduce',()=>{
+ const code="import fs from 'node:fs'; import os from 'node:os'; import path from 'node:path'; import {qualify} from './research/ai-capex-monetization/refresh/access/qualification.mjs'; import {bytes} from './research/ai-capex-monetization/scripts/contract.mjs'; const r=await qualify({runner:'LOCAL_MAC',asOf:'2026-10-07',clock:()=>Date.parse('2026-10-07T12:00:00Z'),cache:fs.mkdtempSync(path.join(os.tmpdir(),'wil-fresh-access-')),sleep:async()=>{},fetcher:async()=>new Response('',{status:403})});console.log(bytes({accessIdentity:r.accessIdentity,companies:r.companies,classification:r.classification,economicIdentityGenerated:r.economicIdentityGenerated}));";
+ const a=execFileSync(process.execPath,['--input-type=module','-e',code],{encoding:'utf8'}),b=execFileSync(process.execPath,['--input-type=module','-e',code],{encoding:'utf8'});assert.equal(a,b);
+});
