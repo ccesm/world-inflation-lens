@@ -1,6 +1,31 @@
 // Editorial copy cites the frozen conference draft, separately from our project evidence.
 const pair = (en, zh) => ({en, zh})
 export const paperCopy = {
+  shortIntro: pair('The paper’s argument, our evidence, then the qualified projects.', '论文论点、我们的证据，再到独立核验的项目。'),
+  compactHero: pair('Academic paper + independent evidence', '学术论文 + 独立证据'),
+  polish: {
+    bottomLine: pair('BOTTOM LINE', '核心结论'),
+    paperLabel: pair('What the paper argues', '论文的论点'),
+    evidenceLabel: pair('What our evidence currently shows', '我们的证据目前说明什么'),
+    paper: pair('The paper argues that AI needs a historically large physical buildout. Capital needs may increasingly exceed internal cash flow, making external financing structures more important.', '论文认为，AI 需要历史尺度的大规模实物建设。资金需求可能越来越难仅靠内部现金流满足，外部融资结构因而更为重要。'),
+    evidence: pair('Our qualified projects support the direction of physical buildout and show power-planning needs. They do not independently verify financing structures, ownership shares, industry-wide financing or systemic financial risk.', '我们的合格项目证据支持实物建设的方向，并显示电力规划需求，但尚未独立核验融资结构、持有比例、全行业融资或系统性金融风险。'),
+    part: pair('PART', '部分'),
+    paperPart: pair('What the paper says', '论文怎么说'),
+    comparisonPart: pair('Paper vs. our evidence', '论文与我们的证据'),
+    evidencePart: pair('Our independent evidence', '我们的独立证据'),
+    evidenceKicker: pair('Independently qualified evidence', '独立核验的证据'),
+    readingBoundary: pair('Selective reading; not a full reproduction or an endorsement by the author.', '选择性解读，并非完整复现论文，也不代表作者认可本网站。'),
+    campusTotal: pair('≈ $8.2B', '≈ 82 亿美元'),
+    campusBasis: pair('Paper estimate · illustrative 200 MW total electrical load AI training campus', '论文估计 · 示范 200 MW 总电力负荷 AI 训练园区'),
+    mixed: pair('2026: mixed reported results / guidance / Wall Street estimates', '2026：混合报告结果 / 指引 / 华尔街估计'),
+    scenario: pair('AI 2025–2032: paper scenario; historical cycles: approximate comparisons', 'AI 2025–2032：论文情景；历史周期：近似比较'),
+    quick: {
+      physical: pair('Physical buildout', '实物建设'),
+      power: pair('Power infrastructure', '电力基础设施'),
+      funding: pair('External financing structures', '外部融资结构'),
+      aggregate: pair('Aggregate investment / financial risk', '总量投资 / 金融风险')
+    }
+  },
   hero: pair('Academic framework + independently qualified project evidence', '学术框架 + 独立核验的项目证据'),
   intro: pair('We begin with the paper that motivated this research, then ask which parts our independently qualified project evidence can support. This is a selective reading, not a reproduction of the paper or an endorsement by its author.', '本页先介绍启发这项研究的论文，再考察我们的独立核验项目证据能够支持哪些论点。这是选择性解读，并非完整复现论文，也不代表作者认可本网站。'),
   origin: pair('The financing question starts with a physical one: what must be built, who owns it, and which contracts support it? The paper supplies an economic framework; our project evidence provides a narrower, independently qualified view.', '融资问题始于实物问题：需要建设什么、由谁持有、由哪些合同提供支持？论文提供经济分析框架；我们的项目证据则提供范围更窄、经过独立核验的观察。'),
