@@ -1,5 +1,5 @@
 export const primaryRoutes = ['home', 'dollar', 'fiscal', 'history', 'scenarios', 'research']
-export const referenceRoutes = ['purchasing-power', 'monitor', 'regimes', 'since-1971', 'drivers', 'us-cpi', 'timeline', 'overview', 'map', 'sources', 'external-shocks', 'research/ai-productivity', 'research/ai-labor', 'research/ai-capex', 'research/digital-money', 'research/data', 'research/updates', 'research/international-dollar', 'research/signal-engine']
+export const referenceRoutes = ['purchasing-power', 'monitor', 'regimes', 'since-1971', 'drivers', 'us-cpi', 'timeline', 'overview', 'map', 'sources', 'external-shocks', 'research/ai-productivity', 'research/ai-labor', 'research/ai-capex', 'research/ai-infrastructure', 'research/digital-money', 'research/data', 'research/updates', 'research/international-dollar', 'research/signal-engine']
 export const routes = [...primaryRoutes, ...referenceRoutes]
 export const routeSection = route => route.startsWith('research/') ? 'research' : ({ monitor: 'dollar', 'purchasing-power': 'dollar', 'us-cpi': 'dollar', 'since-1971': 'dollar', regimes: 'history', timeline: 'history', drivers: 'research', overview: 'research', map: 'research', sources: 'research', 'external-shocks': 'research' })[route] || route
 export function routeFromHash(hash = window.location.hash) {
