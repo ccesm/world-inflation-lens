@@ -10,7 +10,7 @@ def load(company):
 def write_csv(name,rows,fields=None):
  if fields is None: fields=list(rows[0]) if rows else []
  with (ROOT/name).open('w',newline='') as f:
-  w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(rows)
+  w=csv.DictWriter(f,fieldnames=fields,lineterminator="\n");w.writeheader();w.writerows(rows)
 def dump(name,data): (ROOT/name).write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n')
 def end_date(start,q):
  month=start.month+q*3-1; year=start.year+(month-1)//12;month=(month-1)%12+1

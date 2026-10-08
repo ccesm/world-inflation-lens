@@ -1,0 +1,2 @@
+# Unmodified public source captures retain original whitespace.
+sources/*.html -whitespace

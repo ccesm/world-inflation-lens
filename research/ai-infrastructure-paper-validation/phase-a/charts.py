@@ -12,6 +12,8 @@ def read(name):
 def number(x):return float(x) if x else float('nan')
 def save(fig,name):
  for ext in ['svg','png']:fig.savefig(ROOT/f'{name}.{ext}',dpi=190,facecolor=fig.get_facecolor(),metadata={'Creator':'World Inflation Lens Phase A independent research','Date':'2026-10-08'} if ext=='svg' else {'Software':'World Inflation Lens Phase A independent research'})
+ p=ROOT/f"{name}.svg"
+ p.write_text("\n".join(line.rstrip() for line in p.read_text().splitlines())+"\n")
  plt.close(fig)
 def charts():
  a=read('five-company-aggregate.csv');years=[int(x['calendar_year']) for x in a]

@@ -31,5 +31,6 @@
   "chart_visual_review": "Both final PNGs inspected; text, axes, units, source and proxy labels legible; footer overlap fixed",
   "protected_files_changed": [],
   "base_rechecked_before_push": "a7899729f36217cf1d4142f1203e11c32984ad9d",
-  "primary_observation_ledger_sha256": "d1f2079f66c76d4fbc5d4605a93828a025f5766b905fd1d660ef252a55cd5361"
+  "primary_observation_ledger_sha256": "dff2eee9030247756b0cd1c9cd6563581d81c473ddbbb9c4c38b9774ba8a7411",
+  "diff_whitespace_check": "PASS; raw unmodified HTML captures exempted through scoped attributes"
 }
