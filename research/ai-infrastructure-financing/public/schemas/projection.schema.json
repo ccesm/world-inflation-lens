@@ -1,0 +1,1301 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "ai-infrastructure-public-projection-v1"
+    },
+    "asOf": {
+      "const": "2026-10-07"
+    },
+    "researchPanelHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "projectionHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "copyVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "copyHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "projectId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "companyId": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "MSFT",
+              "GOOG",
+              "AMZN",
+              "META",
+              "ORCL",
+              null
+            ]
+          },
+          "companyName": {
+            "type": "object",
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "zh": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "en",
+              "zh"
+            ],
+            "additionalProperties": false
+          },
+          "companyRelationship": {
+            "const": "REPORTED_ASSOCIATION_NOT_LEGAL_OWNERSHIP"
+          },
+          "projectName": {
+            "type": "object",
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "zh": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "en",
+              "zh"
+            ],
+            "additionalProperties": false
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "CORE_COMPANY_PROJECT",
+              "COMPARATIVE_REFERENCE"
+            ]
+          },
+          "location": {
+            "type": "object",
+            "properties": {
+              "country": {
+                "type": "object",
+                "properties": {
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "zh": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "additionalProperties": false
+              },
+              "stateRegion": {
+                "type": "object",
+                "properties": {
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "zh": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "additionalProperties": false
+              },
+              "cityArea": {
+                "type": "object",
+                "properties": {
+                  "en": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "zh": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "country",
+              "stateRegion",
+              "cityArea"
+            ],
+            "additionalProperties": false
+          },
+          "projectStatus": {
+            "type": "string",
+            "enum": [
+              "ANNOUNCED",
+              "PLANNED",
+              "PERMITTED",
+              "UNDER_CONSTRUCTION",
+              "PARTIALLY_OPERATIONAL",
+              "OPERATIONAL",
+              "DELAYED",
+              "CANCELLED",
+              "UNKNOWN"
+            ]
+          },
+          "statusEffectiveDate": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "statusSourceDate": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "statusAvailableFrom": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "statusHistory": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "enum": [
+                    "ANNOUNCED",
+                    "PLANNED",
+                    "PERMITTED",
+                    "UNDER_CONSTRUCTION",
+                    "PARTIALLY_OPERATIONAL",
+                    "OPERATIONAL",
+                    "DELAYED",
+                    "CANCELLED",
+                    "UNKNOWN"
+                  ]
+                },
+                "effectiveDate": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "sourceDate": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "availableFrom": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "scope": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                },
+                "sourceRefs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "ANNOUNCED",
+                    "PLANNED",
+                    "PERMITTED",
+                    "UNDER_CONSTRUCTION",
+                    "PARTIALLY_OPERATIONAL",
+                    "OPERATIONAL",
+                    "DELAYED",
+                    "CANCELLED",
+                    "UNKNOWN"
+                  ]
+                }
+              },
+              "required": [
+                "value",
+                "effectiveDate",
+                "sourceDate",
+                "availableFrom",
+                "scope",
+                "sourceRefs",
+                "status"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "capacityDisplay": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "unit": {
+                  "type": "string",
+                  "enum": [
+                    "MW",
+                    "GW"
+                  ]
+                },
+                "operator": {
+                  "type": "string",
+                  "enum": [
+                    "EQ",
+                    "GT",
+                    "GTE",
+                    "LT",
+                    "LTE"
+                  ]
+                },
+                "capacityDefinition": {
+                  "type": "string",
+                  "enum": [
+                    "CAMPUS_PLANNED_COMPUTE",
+                    "CAMPUS_COMPUTE_CAPACITY_PLANNED",
+                    "CRITICAL_IT_LOAD_CONTRACTED",
+                    "CRITICAL_IT_LOAD_LIVE_REPORTED",
+                    "GENERATION_NAMEPLATE"
+                  ]
+                },
+                "shortDefinition": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "PLANNED",
+                    "CONTRACTED",
+                    "LIVE_REPORTED"
+                  ]
+                },
+                "classification": {
+                  "type": "string",
+                  "enum": [
+                    "OBSERVED_REPORTED",
+                    "MANAGEMENT_GUIDANCE",
+                    "CONTRACTUAL_COMMITMENT"
+                  ]
+                },
+                "scope": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                },
+                "effectiveDate": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "sourceDate": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "availableFrom": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "sourceRefs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "comparabilityStatus": {
+                  "type": "string",
+                  "enum": [
+                    "COMPARABLE",
+                    "LIMITED_COMPARABILITY",
+                    "NOT_COMPARABLE",
+                    "UNKNOWN"
+                  ]
+                },
+                "comparabilityNote": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "value",
+                "unit",
+                "operator",
+                "capacityDefinition",
+                "shortDefinition",
+                "status",
+                "classification",
+                "scope",
+                "effectiveDate",
+                "sourceDate",
+                "availableFrom",
+                "sourceRefs",
+                "comparabilityStatus",
+                "comparabilityNote"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "primaryArchetype": {
+            "const": "UNKNOWN"
+          },
+          "secondaryFeatures": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maxItems": 0
+          },
+          "financingFeatures": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maxItems": 0
+          },
+          "ownershipStatus": {
+            "const": "NOT_YET_QUALIFIED"
+          },
+          "powerSummary": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "unit": {
+                  "type": "string",
+                  "enum": [
+                    "MW",
+                    "GW"
+                  ]
+                },
+                "operator": {
+                  "type": "string",
+                  "enum": [
+                    "EQ",
+                    "GT",
+                    "GTE",
+                    "LT",
+                    "LTE"
+                  ]
+                },
+                "capacityDefinition": {
+                  "type": "string",
+                  "enum": [
+                    "CAMPUS_PLANNED_COMPUTE",
+                    "CAMPUS_COMPUTE_CAPACITY_PLANNED",
+                    "CRITICAL_IT_LOAD_CONTRACTED",
+                    "CRITICAL_IT_LOAD_LIVE_REPORTED",
+                    "GENERATION_NAMEPLATE"
+                  ]
+                },
+                "shortDefinition": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "PLANNED",
+                    "CONTRACTED",
+                    "LIVE_REPORTED"
+                  ]
+                },
+                "classification": {
+                  "type": "string",
+                  "enum": [
+                    "OBSERVED_REPORTED",
+                    "MANAGEMENT_GUIDANCE",
+                    "CONTRACTUAL_COMMITMENT"
+                  ]
+                },
+                "scope": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                },
+                "effectiveDate": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "sourceDate": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "availableFrom": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                },
+                "sourceRefs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "comparabilityStatus": {
+                  "type": "string",
+                  "enum": [
+                    "COMPARABLE",
+                    "LIMITED_COMPARABILITY",
+                    "NOT_COMPARABLE",
+                    "UNKNOWN"
+                  ]
+                },
+                "comparabilityNote": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                },
+                "powerType": {
+                  "type": "string",
+                  "enum": [
+                    "SOLAR",
+                    "POWER_GAS",
+                    "POWER_SOLAR"
+                  ]
+                },
+                "label": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                },
+                "scopeNote": {
+                  "type": "object",
+                  "properties": {
+                    "en": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "zh": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "en",
+                    "zh"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "value",
+                "unit",
+                "operator",
+                "capacityDefinition",
+                "shortDefinition",
+                "status",
+                "classification",
+                "scope",
+                "effectiveDate",
+                "sourceDate",
+                "availableFrom",
+                "sourceRefs",
+                "comparabilityStatus",
+                "comparabilityNote",
+                "powerType",
+                "label",
+                "scopeNote"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "publicSourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "scopeNotes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "publicNotes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "lastQualifiedAsOf": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "publicationStatus": {
+            "const": "QUALIFIED_FOR_REVIEW_NOT_DEPLOYED"
+          }
+        },
+        "required": [
+          "projectId",
+          "companyId",
+          "companyName",
+          "companyRelationship",
+          "projectName",
+          "role",
+          "location",
+          "projectStatus",
+          "statusEffectiveDate",
+          "statusSourceDate",
+          "statusAvailableFrom",
+          "statusHistory",
+          "capacityDisplay",
+          "primaryArchetype",
+          "secondaryFeatures",
+          "financingFeatures",
+          "ownershipStatus",
+          "powerSummary",
+          "publicSourceRefs",
+          "scopeNotes",
+          "publicNotes",
+          "lastQualifiedAsOf",
+          "publicationStatus"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "archetypeSummary": {
+      "type": "object",
+      "properties": {
+        "UNKNOWN": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "UNKNOWN"
+      ],
+      "additionalProperties": false
+    },
+    "powerSummary": {
+      "type": "object",
+      "properties": {
+        "projectsWithQualifiedPowerEvidence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "disclosedFactCount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "projectsWithQualifiedPowerEvidence",
+        "disclosedFactCount"
+      ],
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "representedCompanies": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "MSFT",
+              "GOOG",
+              "AMZN",
+              "META",
+              "ORCL"
+            ]
+          }
+        },
+        "companyCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "projectCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coreCompanyProjectCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "comparativeProjectCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "statusCounts": {
+          "type": "object",
+          "properties": {
+            "ANNOUNCED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "PLANNED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "PERMITTED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "UNDER_CONSTRUCTION": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "PARTIALLY_OPERATIONAL": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "OPERATIONAL": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "DELAYED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "CANCELLED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "UNKNOWN": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        "factCount": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "representedCompanies",
+        "companyCount",
+        "projectCount",
+        "coreCompanyProjectCount",
+        "comparativeProjectCount",
+        "statusCounts",
+        "factCount"
+      ],
+      "additionalProperties": false
+    },
+    "methodology": {
+      "type": "object",
+      "properties": {
+        "implementationVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "implementationHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "publicationRulesHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "uiContractVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publicationMode": {
+          "const": "FROZEN_REVIEW_PROJECTION_NO_PRODUCTION_WRITE"
+        },
+        "moneyPolicy": {
+          "const": "NO_AMOUNTS_OR_AGGREGATION"
+        },
+        "financingPolicy": {
+          "const": "UNKNOWN_UNTIL_PUBLIC_READY_STRUCTURE_CLAIMS_EXIST"
+        },
+        "capacityPolicy": {
+          "const": "NATIVE_UNITS_SCOPES_NO_RANKING_OR_CONVERSION"
+        },
+        "sourceClockPolicy": {
+          "const": "DATED_DISCLOSURES_AND_KNOWN_BYTE_VINTAGES_NOT_REAL_TIME_REPLAY"
+        },
+        "disclosures": {
+          "type": "object",
+          "properties": {
+            "doubleCount": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "comparability": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "missingness": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "statusVintage": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "fairwater": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "polaris": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "utility": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "financing": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "guarantee": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "maximumExposure": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "returns": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "counts": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            },
+            "clock": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "zh": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "en",
+                "zh"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "doubleCount",
+            "comparability",
+            "missingness",
+            "statusVintage",
+            "fairwater",
+            "polaris",
+            "utility",
+            "financing",
+            "guarantee",
+            "maximumExposure",
+            "returns",
+            "counts",
+            "clock"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "implementationVersion",
+        "implementationHash",
+        "publicationRulesHash",
+        "uiContractVersion",
+        "publicationMode",
+        "moneyPolicy",
+        "financingPolicy",
+        "capacityPolicy",
+        "sourceClockPolicy",
+        "disclosures"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sourceId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "object",
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "zh": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "en",
+              "zh"
+            ],
+            "additionalProperties": false
+          },
+          "documentTitle": {
+            "type": "object",
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "zh": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "en",
+              "zh"
+            ],
+            "additionalProperties": false
+          },
+          "documentDate": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": [
+              "PRIMARY_PROJECT",
+              "PRIMARY_TRANSACTION",
+              "PRIMARY_ACCOUNTING"
+            ]
+          },
+          "publicURL": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceVintage": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "availableFrom": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          }
+        },
+        "required": [
+          "sourceId",
+          "publisher",
+          "documentTitle",
+          "documentDate",
+          "sourceType",
+          "publicURL",
+          "sourceVintage",
+          "availableFrom"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "asOf",
+    "researchPanelHash",
+    "projectionHash",
+    "copyVersion",
+    "copyHash",
+    "projects",
+    "archetypeSummary",
+    "powerSummary",
+    "summary",
+    "methodology",
+    "sources"
+  ],
+  "additionalProperties": false
+}

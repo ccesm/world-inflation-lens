@@ -1,0 +1,4282 @@
+{
+  "observations": [
+    {
+      "claimId": "google-midlothian:3c:recognized-ai-revenue:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:00461877b1757ad35e65ef73",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-use-of-proceeds",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:007bb2059b4f9496ceed2f4e",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:equity-funding-mix",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:0132c4fc835022bbfb5e42c6",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-blue-owl-funds",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:0358b92d9cc36fa099e45822",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "fairwater:attributable-revenue",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:03c30babdee80ea7cfe80d45",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:edge-goog-OPERATES-google-midlothian:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:070acc21ec7c6ec2c123099d",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:debt-financing:2026-07-28",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:075250e0a32d03d5e05c3acd",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "UNRESOLVED_OVERLAP",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-coupon",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:077e9a8853d3eaeff1124037",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:project-status:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:0967cd6d3f40485383da9647",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "UNDATED_STATUS"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:edge-orcl-OPERATES-jupiter:2026-03-03",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:0980fb25a906fb33c10330e7",
+      "projectId": "jupiter",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:project-accounting:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:0b2b16b9d1883227004a9ebc",
+      "projectId": "quincy",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:meta-distribution",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:0c5e9e3b1c3b315829137ade",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:lease-initial-term",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:0c6d4a9ba4522c9d01cf1708",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:edge-meta-DEVELOPS-hyperion",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:0d1a566c6ab5d746d9b9b14b",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:legal-owner:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:0da64057f940a227b573e48e",
+      "projectId": "aws-warren",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-eln02",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:0dc335d2c9b12446e7574a5d",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:attributable-operating-cash-flow",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:0efba3bd44f512745a858a73",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:ownership-blue-owl-funds",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:0f274c9be46e1ca2fd1cfb1d",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-computeco3",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:121a6a1485d3bbb80eab5977",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:offering",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:1293dda8c551e24110bdf7e7",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:financed-capacity",
+      "evidenceClass": "SECONDARY_ONLY",
+      "included": false,
+      "observationId": "obs:1355446ea97cf0dc21727546",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "EVIDENCE_SECONDARY_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_UNQUALIFIED",
+        "CAPACITY_DEFINITION"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes150-recourse",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:13e21f6e51cfc41f162d67d3",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:asset-type:2025-10-15",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:1455a6cdc7a59103abaf8bdf",
+      "projectId": "el-paso",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:edge-google-OPERATES-google-midlothian:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:158c8e2930716c0d7bb3bd96",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease4-capacity",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:16e3d28a03f343c81469ab43",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-apld",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:17a97645b1291f069d10835c",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:project-debt-terms:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:18278a4e96fb560324194d54",
+      "projectId": "el-paso",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-eln03",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:1883713739688a874e5310a1",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:water-transition-target:2026-04-09",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:18a057d55f8d16640533836f",
+      "projectId": "aws-canton",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:edge-coreweave-LEASES-eln03",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:19809f5831fcef2c4daa34a9",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-recourse",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:19b319b7e4cedf79b480075b",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:edge-meta-LEASES-hyperion-jv",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:19c6d857ce0be0da5caf9858",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:project-status:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:1a978859922c99702689aa35",
+      "projectId": "jupiter",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "hyperion:fund-cash",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:1af6032582e04ab5ead8f6e2",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-beignet-investor",
+      "evidenceClass": "SECONDARY_ONLY",
+      "included": false,
+      "observationId": "obs:1b0e5d1a842c747d4a469501",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "EVIDENCE_SECONDARY_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "fairwater:utility",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:1ca94bacfef0b84dc6439640",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:status",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:1d7989f425761585426d9afb",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "polaris-forge-1:PPA-value",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:1e12b6bbf0c295a2ecf39cd2",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:contracted-capacity",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:20efbef08dd05d9a1560c38e",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "aws-warren:3c:asset-type:2025-11-20",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:211723dfe78b4776004ec339",
+      "projectId": "aws-warren",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:equity-2026",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:21f5e63730d3d79172a6efed",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-security",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:21fca008e61e0f5b165b8604",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:power-design:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:22b7fc3cf6e9b36b16e42836",
+      "projectId": "jupiter",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:attributable-revenue",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:22d3da3582e7667b22fc7771",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:project-cash-flow",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:22eda25030eeb44429da47ab",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:edge-msft-DEVELOPS-quincy:2026-01-13",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:237f5dd357baceccb6a12645",
+      "projectId": "quincy",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:project-status:2026-10-07",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:245dec60f0b3f7d9f0dcdbc4",
+      "projectId": "abilene",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "UNDATED_STATUS"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:development-jv-value:2025-05-21",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2480b85dc8eaf40fd0806542",
+      "projectId": "abilene",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:recognized-ai-revenue:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:24c41a94d86f01226e27732d",
+      "projectId": "aws-warren",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:site-PP&E",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:24e3bce5609367caedc5537f",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:attributable-AI-revenue",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:25cf0ff235dcdf42371ea0f9",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "fairwater:status",
+      "evidenceClass": "CONFLICTING_EVIDENCE",
+      "included": false,
+      "observationId": "obs:268f4ea0e4a10ea1ed16593a",
+      "projectId": "fairwater",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "CONFLICTING",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_CONFLICTING",
+        "EVIDENCE_CONFLICTING_EVIDENCE",
+        "CONFLICT",
+        "CLAIM_PROVENANCE"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:project-status:2026-03-03",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:28b82f4605480f3ee59d2f87",
+      "projectId": "jupiter",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "abilene:3c:edge-orcl-OPERATES-abilene:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2a120018e00eeb20b42aeeb0",
+      "projectId": "abilene",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:edge-meta-DEVELOPS-el-paso:2025-10-15",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2b19c765ab147e77dd925edf",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:project-accounting:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:2b54a05d7ece8a3de8b6d2f6",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:ownership-meta",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2b87d378b03ca79b8e49485e",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:project-cost",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:2bca905d0e0aa7ec105b9c67",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:issuer",
+      "evidenceClass": "SECONDARY_ONLY",
+      "included": false,
+      "observationId": "obs:2cf5c476d3e86866cd38777a",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "EVIDENCE_SECONDARY_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:edge-apld-DEVELOPS-polaris-forge-1",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2d1ac81c5c2b003443dafc79",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:lease-commitment",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2d3de13042e760079a7aefdd",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease100-term",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2e7ce20b15af0de85f44b975",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:3c:project-status:2025-09-29",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2eaac33fb1b05f10af9c4f5d",
+      "projectId": "hyperion",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "REDUNDANT_STATUS_EVENT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-eln02c",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:2efe989b64bb216ed6b0a328",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:attributable-utilization",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:2fe091019dd3486e76750b72",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:location:2026-03-03",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:30b16c30387e568e56d6e8c5",
+      "projectId": "jupiter",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "el-paso:3c:attributable-operating-cash-flow:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:317e6ff19bb5b93566db9078",
+      "projectId": "el-paso",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:accounting-interpretation",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:3242b4309287793cbf1431b9",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes250-issuer",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:328cc37adaaf601f6482aaf6",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:second-pledge",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:330f4f55b2a0449649abd80f",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:solar",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:331bbe3d7f81b1122a04dd05",
+      "projectId": "fairwater",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "google-midlothian:3c:lease-details:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:3384bb3d10841ec21b294704",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:planned-capacity",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:33952241b3b9ae8efad42443",
+      "projectId": "hyperion",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "el-paso:3c:power-source:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:34addadc457d01f0d7a36888",
+      "projectId": "el-paso",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:asset-type:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:34e0de5a4eea76c498529182",
+      "projectId": "abilene",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:AI-revenue",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:350eb504e2bacd3c4187ce60",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:delivered-share:2026-09-30",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:361a77f6a0ac6d3dbf13f663",
+      "projectId": "abilene",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease4-payments",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:364c4a282605822a6aa1f78b",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:edge-msft-DEVELOPS-fairwater",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:36cea468c16a95ba3eb2beab",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:project-accounting:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:374013654e4766b83573cd4f",
+      "projectId": "jupiter",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:location:2026-01-13",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:387001cb29fc62c7bc0283d8",
+      "projectId": "quincy",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "hyperion:entity-pimco-funds",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:394ccb0e984ed444525324fe",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:attributable-utilization",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:3c3e2722adc7544e7a303b9f",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:lease-recognition",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:3d111a79acf3ec133cacbe4b",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:edge-crusoe-DEVELOPS-abilene:2025-05-21",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:3eaabf3f62d6c2cc9b53a27a",
+      "projectId": "abilene",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:power-source:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:3efc238576bd706023a4138d",
+      "projectId": "aws-canton",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:recognized-ai-revenue:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:3f32e76df25c9d1117dbc545",
+      "projectId": "el-paso",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes250-maturity",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:3f43d7e6e3a2c5c6738e7b86",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes250-recourse",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:3f733d779fa8d183f752c376",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-project-beignet-holdings",
+      "evidenceClass": "SECONDARY_ONLY",
+      "included": false,
+      "observationId": "obs:41cde671d9858e4b828860b8",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "EVIDENCE_SECONDARY_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:power-source:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:429562c55514edb5fca03acb",
+      "projectId": "jupiter",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-ranking",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:4332504f534700c6eded58bb",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:location:2025-11-20",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:437c993cd602a3cf4a9a4875",
+      "projectId": "aws-warren",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "hyperion:maximum-exposure-2026",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:44b9b820fa4feacd50c56d41",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:cost",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:455e78147bae28874cb1f399",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:utility",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:4627bc8a1696f67d851a95cd",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:rvg-threshold",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:46544d0e29b984adf3987d03",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "fairwater:attributable-utilization",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:486540e3e02ac3e5eb13f793",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:power-counterparty:2026-03-26",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:48864be2a9334e950422e464",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:3c:project-status:2025-09-18",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:48de31ef9c78dda3917e98ac",
+      "projectId": "fairwater",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "google-red-oak:3c:legal-owner:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:491745cfa1e814e245c0880e",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:project-accounting:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:49c6ac310dada768e80e1d8e",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:grid-region:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:4bbc46cc959cc75acb3c3071",
+      "projectId": "abilene",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease100-payments",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:4d914d8b1e47faf104a6822c",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:project-status:2025-11-20",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:51e9d817e0ed858fe2b88a56",
+      "projectId": "aws-warren",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "hyperion:rvg-trigger",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:52bb3115c6179ad54c937e01",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:utility",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:545c8a2e69fc3b2a5272fb6c",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_URL_OR_CLOCK"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:lease-optional-total-term:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:55f189483eb36150d58898fd",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:edge-amzn-OPERATES-aws-canton:2026-04-09",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:5719b11db343268861900255",
+      "projectId": "aws-canton",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:planned-capacity:2025-05-21",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:5762d1c4b3b7494d48b02132",
+      "projectId": "abilene",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "CAPACITY_DEFINITION"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-platform-preferred",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:588ad7b399650a37667d95f2",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:legal-owner:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:5a864bc8a3423bcff4a9a545",
+      "projectId": "jupiter",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:edge-meta-LEASES-el-paso-venture:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:5bf37cb44fa0fa35b7b4021c",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes150-principal",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:5d8423940ba1bcae09fdbc53",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:power-source:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:5e37778cda220757bccc5b45",
+      "projectId": "aws-warren",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:meta-interest:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:5e6031de4662b3cb67580da0",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-entergy-la",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:60bf5c5c4dba721a74fce0dd",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_URL_OR_CLOCK"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:3c:project-status:2026-10-02",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:611f835aa3694b7cbab2d800",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes150-issuer",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:61806a027a2902c08344e6e1",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:lease-details:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:628ab741859f14c84c8ccfb3",
+      "projectId": "el-paso",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:edge-meta-PARTIALLY_OWNS-hyperion-jv",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:62f42b00424e7c7206a87add",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:recognized-ai-revenue:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:630e09a987e0ce0cff564711",
+      "projectId": "abilene",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:lease-max-term",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:65d18881737b36e23aca8d80",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:treatment-2025",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:66a809b3fefc8bb6b62aac16",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "fairwater:pledge",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:682a13958a7a842514ed144d",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:project-status:2025-10-15",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:6835c5ec1f0ec1babae4bf23",
+      "projectId": "el-paso",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "REDUNDANT_STATUS_EVENT"
+      ]
+    },
+    {
+      "claimId": "fairwater:building-area",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:68510810fb20a6599307f0a7",
+      "projectId": "fairwater",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:tenant-support",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:68806ce70e7c0e0434a47ab0",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-amortization",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:68f22b2a70ae4693fe28d959",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:lease-initial-term:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:6919ebdae94eb2388976bb3a",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:3c:project-status:2025-06-02",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:697465549f4578a0e4df7a67",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "polaris-forge-1:edge-coreweave-LEASES-eln02",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:69aa601cee50513025f0fff3",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:edge-google-OPERATES-google-red-oak:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:6ac9565f18cf7487536f4f8e",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-coreweave",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:6b3b5ccf46c3db4de5616c03",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:live-capacity",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:6d1c9345a2d34596bd40e242",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "polaris-forge-1:accounting",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:6d725afad23142864846d0e4",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:lease-amount",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:6ed4283aa05288dc99df4580",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease100-capacity",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:70caf58eaa637097af266834",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:edge-hyperion-jv-OWNS-hyperion",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:713fbae82477570c693d7a14",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:recognized-ai-revenue:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:725e8fcedf7ab7b18cd88497",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:legal-owner:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:72fe56f06073c0b33b9514d8",
+      "projectId": "aws-canton",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:lessor-guarantee",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:73aade0ac8063641edea68e6",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:lease-details:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:74035bf2aeaceafb8675d91a",
+      "projectId": "aws-warren",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-meta",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:74385321c69e525ac32ecc6f",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-issuance-date",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:74b999c6eb66bf05c2a798ad",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-computeco",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:76efa0743838f8bd668d367d",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:expected-online-year:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:79299f8849b4046040036665",
+      "projectId": "el-paso",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:development-plan:2025-11-20",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:7a375496ce51f386c1b2400d",
+      "projectId": "aws-warren",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:recognized-ai-revenue:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:7aa8f312943808abaf7f68b7",
+      "projectId": "aws-canton",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:project-status:2026-04-09",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:7d08b14c56baca1c4d108cf7",
+      "projectId": "aws-canton",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "UNDATED_STATUS"
+      ]
+    },
+    {
+      "claimId": "hyperion:edge-blue-owl-funds-PARTIALLY_OWNS-hyperion-jv",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:7db616bb05ac3fb33b6e1c58",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:legal-owner:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:83e75982c087d40149a03d00",
+      "projectId": "quincy",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:edge-project-beignet-holdings-OWNS-laidley",
+      "evidenceClass": "SECONDARY_ONLY",
+      "included": false,
+      "observationId": "obs:8527ef89d0acc8788b4e2145",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "EVIDENCE_SECONDARY_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:project-debt-terms:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:8695e26902d6f5e39374ff57",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:project-debt-terms:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:86dc132ab771c056c3c8b119",
+      "projectId": "jupiter",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-hyperion-jv",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:880eca41b02214e9ed93e1b6",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-laidley",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:885f1dfd8dac88f573f39b91",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_URL_OR_CLOCK"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-iris-crossing",
+      "evidenceClass": "SECONDARY_ONLY",
+      "included": false,
+      "observationId": "obs:89f626524406ceae1b3473e4",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "EVIDENCE_SECONDARY_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-preferred-original",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:8a7544205e36e5b1ee1f34b6",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:project-status:2026-01-13",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:8cb63736ffed884f749f979c",
+      "projectId": "quincy",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "aws-canton:3c:project-accounting:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:8e626f2a4e85ce278d6030c8",
+      "projectId": "aws-canton",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease4-term",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:8f3d9ab8206541fa1061c52b",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:equity-2025",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:8f9d76e0e19f0eefaa88f624",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:regional-plan",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9030c292f3409b9122d11ade",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:edge-amzn-OPERATES-aws-warren:2025-11-20",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:90f048828c4afc095718041b",
+      "projectId": "aws-warren",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-mip-funds",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:911d2f3a2a97230bd9366df4",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:attributable-AI-revenue",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:922a03983a4b6cb6e28cc9cf",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:AI-revenue",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:923dd4406b19571e1d62547d",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:site-area:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:927f727b194ba4564d49d786",
+      "projectId": "jupiter",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:grid-approval",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9325319cdff72a4b76461708",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_URL_OR_CLOCK"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:entity-macquarie-manager",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:932f91dcd63afc17e4c9ff7e",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:location",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:934c04e104c3de892ff1b5f2",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "quincy:3c:lease-details:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:95d48bb7d39badae4e9aa7d6",
+      "projectId": "quincy",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:project-status:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:964256f52894c47d0667a783",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "UNDATED_STATUS"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:location:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:97ace16578a6cd8778501779",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:live-capacity-2026-10",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:9846ed4987039df831999725",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:power-transmission",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:99753a4e8f06c872d9e60842",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:lease-commencement",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9af9af52dce1c858d48c0353",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "hyperion:cost-recovery",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9bdd56b76e8761f8a3d5f4c2",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_URL_OR_CLOCK"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:edge-goog-OPERATES-google-red-oak:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9bde20b91731a383e0462a66",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes250-coupon",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9c98ab5f8e3e5ab5e414d1b6",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:entity-we-energies",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9cf5b8fc898b7c4d0aa2ff87",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes250-security",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9d0d7eb5a0bee7fa696d3355",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:original-developer",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:9dbd76be97fe46aaf901b1b9",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_URL_OR_CLOCK"
+      ]
+    },
+    {
+      "claimId": "hyperion:location",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:9dfc8256e7d4de02a8d93db6",
+      "projectId": "hyperion",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "polaris-forge-1:grid-cost",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:9e012a89b03671b5744f6ea8",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:registered-title-holder",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:9e22378187b4508b960ee6a1",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:cost-recovery",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:9e3d0e917f3a54719ee32bb9",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:attributable-operating-cash-flow:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:9e5b167f792548ccc04511da",
+      "projectId": "quincy",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:project-accounting:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:9f58b98318597e51c8c7eb5c",
+      "projectId": "abilene",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:legal-owner:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:a2647a080bd8bf930829d63f",
+      "projectId": "el-paso",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:project-accounting:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:a55d71b3425d10b3d0e2c04f",
+      "projectId": "aws-warren",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:lease-details:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:a6e291edc67fa2b49ada96c1",
+      "projectId": "jupiter",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:fund-interest:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:a7a81a7eb63f84746b677bc9",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:attributable-operating-cash-flow:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:a8359b4454f0eeabcfe487a6",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:location:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:a923b5c1f9a87d7d43481f3e",
+      "projectId": "abilene",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:project-status:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:a998c04caf6741297e611062",
+      "projectId": "el-paso",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "quincy:3c:asset-type:2026-01-13",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:a9b3b58b813c40718ca11408",
+      "projectId": "quincy",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:status",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:a9d8b4bebb53c2abd10a02f4",
+      "projectId": "hyperion",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "aws-warren:3c:attributable-operating-cash-flow:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:aab624f7c69bc4cf56fc8751",
+      "projectId": "aws-warren",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:planned-capacity:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:aae58c5513e9ce0c2b85af82",
+      "projectId": "el-paso",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "polaris-forge-1:entity-hpc-holdings",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:ab5469422a8548099a4a4fe3",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:power-gas",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:abe1d307016592ebe1f82e09",
+      "projectId": "hyperion",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "hyperion:maximum-exposure-2025",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:acd3c20ec0d503c77766a834",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease150-term",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:ad397a01218376d6a6c9c828",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:power-design:2026-03-03",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:aee42f844d55d3a3c4bc3b1b",
+      "projectId": "jupiter",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "SUPERSEDED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:power-solar",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:afdc757b6d4c534218119b31",
+      "projectId": "hyperion",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "polaris-forge-1:edge-computeco-FINANCES-polaris-forge-1",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:b036f74404af76fbee764ad3",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:project-debt-terms:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:b0e6b46f1d27f0d3567d293c",
+      "projectId": "quincy",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:project-debt-terms:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:b19694df38cf6ab3d5685702",
+      "projectId": "abilene",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:recognized-ai-revenue:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:b2aeef47fcffa62337d065a1",
+      "projectId": "jupiter",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease150-capacity",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:b4496f70208080aeeef34ab9",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:attributable-operating-cash-flow:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:b50bb993cdb4c1f6c6f488e7",
+      "projectId": "abilene",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:location",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:b5f5ea627d93664bf0fe1642",
+      "projectId": "fairwater",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "aws-canton:3c:asset-type:2026-04-09",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:b6f350af464ad6b38fa8f322",
+      "projectId": "aws-canton",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:rvg-threshold:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:b8f49cd81cbfb41c27da1492",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:project-debt-terms:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:ba358f5f5d57a426922725ba",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:completion-guarantee",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:bb6f62578f1a23415ce35118",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:power-support",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:bfc75d0bf209581f695ec834",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "SOURCE_URL_OR_CLOCK"
+      ]
+    },
+    {
+      "claimId": "hyperion:lease-classification",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:c5336a1007f90bb1d84b86be",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:edge-mip-funds-FINANCES-hpc-holdings",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:c5828d777f57a086f1b13882",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-warren:3c:project-debt-terms:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:c6c37a1c950d46bddd43ef75",
+      "projectId": "aws-warren",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:recognized-ai-revenue:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:c7612cbea25a3a577fc8947c",
+      "projectId": "quincy",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-lease150-payments",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:c7ca7a35b5ccbce9a632652c",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:attributable-operating-cash-flow",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:c7e0faa05769ed3c18f312ee",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:lease-details:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:c95607f5ab59fc4e84e7dd61",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes150-maturity",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:ca795fc410152f76bc10bb21",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:legal-jv",
+      "evidenceClass": "SECONDARY_ONLY",
+      "included": false,
+      "observationId": "obs:ca97f8170070c10cba85c507",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "EVIDENCE_SECONDARY_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:asset-type:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:caa7c3a02432c41208b96578",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes150-security",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:cc2c2b31137058a96d4cf6ec",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:lease-details:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:ccd62835ea8312b24da83211",
+      "projectId": "aws-canton",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:entity-blue-owl-manager",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:ce1908b6b485b420e3a8b2a9",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "fairwater:site-area",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:cec9a484061a5959fe735444",
+      "projectId": "fairwater",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:meta-distribution:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:d12fca4b5eee4cc76e3567c5",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:lease-details:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:d1ca592afbf45b267ca00b0d",
+      "projectId": "abilene",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:meta-asset-contribution:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:d4860ed506672b52014d78a3",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes150-coupon",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:d5bfc37ff2d06a8d57b2c6c7",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:development-estimate:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:d5e493220c3af762cd40eb7c",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:owner",
+      "evidenceClass": "PRIMARY_PARTIAL",
+      "included": false,
+      "observationId": "obs:d5f51b8f6b9298a7744dc956",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "PARTIAL",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "QUALIFICATION_PARTIAL",
+        "EVIDENCE_PRIMARY_PARTIAL",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-yield",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:d6deee6bc52c91e861afaa86",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:project-debt",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:d811eb987d0d4a1d0ee9b152",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:tenant",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:d828dc926b7d47ba979dccb4",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:power-source:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:d8ec9d7f57565c899ce60833",
+      "projectId": "abilene",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:edge-laidley-PURCHASES_POWER_FROM-entergy-la",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:d93e31549da2b1a02747e868",
+      "projectId": "hyperion",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_URL_OR_CLOCK"
+      ]
+    },
+    {
+      "claimId": "fairwater:IT-MW",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:d965f36743f74ffd23fdf7d6",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "quincy:3c:power-source:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:da0fbf0f7f05770c24c9544a",
+      "projectId": "quincy",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:legal-owner:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:daebc1c9b6ae8f86bbe8a4b0",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:entity-msft",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:db11eeb14f5260a4c721990e",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "fairwater:attributable-operating-cash-flow",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:db63b7746438c92d45addd0a",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:edge-computeco3-FINANCES-polaris-forge-1",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:dddfa9d5b2c31858ed9a9861",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:attributable-operating-cash-flow:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:e0486c4e0f12872ebf6c374e",
+      "projectId": "aws-canton",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:asset-type:2026-03-03",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:e0e58fd618e20175f5817fc7",
+      "projectId": "jupiter",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-maturity",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:e3aa3f01275f009e0af2c000",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:asset-type:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:e40f60663849264ef7430963",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:fund-cash-contribution:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:e4fb560a88dec105278e0618",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:project-debt-terms:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:e68290916de0cc0f1bf14f2f",
+      "projectId": "aws-canton",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:attributable-operating-cash-flow:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:e75a2e6e0634cc53e36232e2",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:p-notes250-principal",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:e952f019f9ff432c270dbabc",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "UNRESOLVED_OVERLAP",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "fairwater:project-cash-flow",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:eab8bc8401411ad323a223e1",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:legal-title-holder",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:ec8f4813583b0c99e9b0279e",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "fairwater:edge-msft-OPERATES-fairwater",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:ece688521e70767d86509bc2",
+      "projectId": "fairwater",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:rvg-recognition",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:ed6ec3c8a2174ca32e23bf83",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "fairwater:attributable-AI-revenue",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:ee7b0cc352cba3e4dd54533b",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-red-oak:3c:power-source:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:ee82cf95cf71c85aa66eeca9",
+      "projectId": "google-red-oak",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:treatment-2026",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:eeef4ba5ff50b7e7a93aaaef",
+      "projectId": "hyperion",
+      "publicationEligibility": "REVIEW_REQUIRED",
+      "qualificationStatus": "REVIEW_REQUIRED",
+      "reasons": [
+        "PUBLICATION_REVIEW_REQUIRED",
+        "QUALIFICATION_REVIEW_REQUIRED",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:project-accounting:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:ef5e20f9165431a6850ef072",
+      "projectId": "el-paso",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:utilization",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:ef6a4c08c6935d83a84ee9a2",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "jupiter:3c:attributable-operating-cash-flow:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:efee36633c8bda4faa0b7abf",
+      "projectId": "jupiter",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:location:2026-10-07",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:f1209a8d624e56e75cb330b1",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT"
+      ]
+    },
+    {
+      "claimId": "google-midlothian:3c:power-source:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:f158d740b0d9f1e2df884e00",
+      "projectId": "google-midlothian",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:location:2025-10-15",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": true,
+      "observationId": "obs:f18fffed7be4f6912729215b",
+      "projectId": "el-paso",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": []
+    },
+    {
+      "claimId": "quincy:3c:water-infrastructure:2021-08-27",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:f1cc38d4426d767b83d19249",
+      "projectId": "quincy",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+      ]
+    },
+    {
+      "claimId": "fairwater:realized-cost",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:f44a6d5872920aaaae4eccda",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:edge-coreweave-LEASES-eln02c",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:f4fa2261b94bbc6ab5941651",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "polaris-forge-1:attributable-revenue",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:f7a920f5616a0be77f11fcf2",
+      "projectId": "polaris-forge-1",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "aws-canton:3c:location:2026-04-09",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:f9cd08b61a42145d5fd55d6a",
+      "projectId": "aws-canton",
+      "publicationEligibility": "PUBLIC_READY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT"
+      ]
+    },
+    {
+      "claimId": "fairwater:guarantee-amount",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:fa9a4cc8a0a9fbbe010942a0",
+      "projectId": "fairwater",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:lease-schedule",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:facf580196d80b9d1f2f0265",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT",
+        "SOURCE_UNQUALIFIED"
+      ]
+    },
+    {
+      "claimId": "abilene:3c:legal-owner:2026-10-07",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:fbb5a3b7d11661ecc1a18bd1",
+      "projectId": "abilene",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "el-paso:3c:edge-blackrock-funds-PARTIALLY_OWNS-el-paso-venture:2026-07-28",
+      "evidenceClass": "PRIMARY_VERIFIED",
+      "included": false,
+      "observationId": "obs:fdf128310136141b7474bc19",
+      "projectId": "el-paso",
+      "publicationEligibility": "RESEARCH_ONLY",
+      "qualificationStatus": "QUALIFIED",
+      "reasons": [
+        "PUBLICATION_RESEARCH_ONLY",
+        "CONDITIONAL_LEGAL_ASSERTION",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    },
+    {
+      "claimId": "hyperion:debt-collateral",
+      "evidenceClass": "UNAVAILABLE",
+      "included": false,
+      "observationId": "obs:fefe89aa606f6af7f780baee",
+      "projectId": "hyperion",
+      "publicationEligibility": "NOT_PUBLIC",
+      "qualificationStatus": "UNAVAILABLE",
+      "reasons": [
+        "PUBLICATION_NOT_PUBLIC",
+        "QUALIFICATION_UNAVAILABLE",
+        "EVIDENCE_UNAVAILABLE",
+        "UNAVAILABLE",
+        "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+        "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+      ]
+    }
+  ],
+  "projectAudit": [
+    {
+      "included": true,
+      "projectId": "fairwater",
+      "reason": "QUALIFIED_LOCATION_AND_MEANINGFUL_DATED_STATUS_OR_NATIVE_CAPACITY_OR_POWER"
+    },
+    {
+      "included": true,
+      "projectId": "quincy",
+      "reason": "QUALIFIED_LOCATION_AND_MEANINGFUL_DATED_STATUS_OR_NATIVE_CAPACITY_OR_POWER"
+    },
+    {
+      "included": false,
+      "projectId": "google-midlothian",
+      "reason": "INSUFFICIENT_MEANINGFUL_PUBLIC_CONTEXT"
+    },
+    {
+      "included": false,
+      "projectId": "google-red-oak",
+      "reason": "INSUFFICIENT_MEANINGFUL_PUBLIC_CONTEXT"
+    },
+    {
+      "included": false,
+      "projectId": "aws-canton",
+      "reason": "INSUFFICIENT_MEANINGFUL_PUBLIC_CONTEXT"
+    },
+    {
+      "included": true,
+      "projectId": "aws-warren",
+      "reason": "QUALIFIED_LOCATION_AND_MEANINGFUL_DATED_STATUS_OR_NATIVE_CAPACITY_OR_POWER"
+    },
+    {
+      "included": true,
+      "projectId": "el-paso",
+      "reason": "QUALIFIED_LOCATION_AND_MEANINGFUL_DATED_STATUS_OR_NATIVE_CAPACITY_OR_POWER"
+    },
+    {
+      "included": true,
+      "projectId": "hyperion",
+      "reason": "QUALIFIED_LOCATION_AND_MEANINGFUL_DATED_STATUS_OR_NATIVE_CAPACITY_OR_POWER"
+    },
+    {
+      "included": false,
+      "projectId": "abilene",
+      "reason": "INSUFFICIENT_MEANINGFUL_PUBLIC_CONTEXT"
+    },
+    {
+      "included": true,
+      "projectId": "jupiter",
+      "reason": "QUALIFIED_LOCATION_AND_MEANINGFUL_DATED_STATUS_OR_NATIVE_CAPACITY_OR_POWER"
+    },
+    {
+      "included": true,
+      "projectId": "polaris-forge-1",
+      "reason": "QUALIFIED_LOCATION_AND_MEANINGFUL_DATED_STATUS_OR_NATIVE_CAPACITY_OR_POWER"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "version": "public-projection-gates-v1",
+  "expectedBaseSha": "9075c9a5325a63e35770323e2cc3e0e164bbc823",
+  "expectedPanelHash": "b54975f22d5fbceceb44216665c37233511a9d088016255bdb09328ef91706ff",
+  "asOf": "2026-10-07",
+  "allowedMetrics": [
+    "LOCATION",
+    "PROJECT_STATUS",
+    "PLANNED_CAPACITY",
+    "CONTRACTED_CAPACITY",
+    "LIVE_CAPACITY",
+    "SOLAR",
+    "POWER_GAS",
+    "POWER_SOLAR"
+  ],
+  "allowedLayers": [
+    "PHYSICAL_ASSET",
+    "POWER_INFRASTRUCTURE"
+  ],
+  "monetaryFields": "EXCLUDED_WITHOUT_EXCEPTION_IN_V1",
+  "financingAndOwnershipFields": "NO_ELIGIBLE_OBSERVATIONS_IN_FROZEN_PANEL",
+  "archetypeDefault": "UNKNOWN",
+  "companyOrder": [
+    "MSFT",
+    "GOOG",
+    "AMZN",
+    "META",
+    "ORCL"
+  ],
+  "entityCompanyMap": {
+    "msft": "MSFT",
+    "meta": "META",
+    "amzn": "AMZN",
+    "orcl": "ORCL",
+    "goog": "GOOG"
+  },
+  "capacityStatus": {
+    "CAMPUS_PLANNED_COMPUTE": "PLANNED",
+    "CAMPUS_COMPUTE_CAPACITY_PLANNED": "PLANNED",
+    "CRITICAL_IT_LOAD_CONTRACTED": "CONTRACTED",
+    "CRITICAL_IT_LOAD_LIVE_REPORTED": "LIVE_REPORTED",
+    "GENERATION_NAMEPLATE": "PLANNED"
+  },
+  "projectGate": "PUBLIC_READY_LOCATION_AND_MEANINGFUL_DATED_STATUS_OR_CAPACITY_OR_POWER",
+  "statusSelection": "KEEP_LATEST_ELIGIBLE_DATED_STATUS_AND_DISTINCT_SAFE_HISTORICAL_STAGES",
+  "sourceURLPolicy": "FROZEN_OFFICIAL_HTTPS_HOST_PATH; NO_CREDENTIAL_QUERY_FRAGMENT_OR_EXPIRING_LINK",
+  "coordinates": "NOT_SUPPLIED",
+  "crossProjectCapacityCharts": "FORBIDDEN",
+  "dollarAggregation": "FORBIDDEN",
+  "rankings": "FORBIDDEN",
+  "publication": "REVIEW_ONLY_NO_PRODUCTION_EXPORT"
+}

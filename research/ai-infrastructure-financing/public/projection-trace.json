@@ -1,0 +1,346 @@
+[
+  {
+    "claimId": "fairwater:location",
+    "observationId": "obs:b5f5ea627d93664bf0fe1642",
+    "projectId": "fairwater",
+    "publicField": "projects[0].location",
+    "sourceId": "fairwater-build",
+    "sourceRef": "source-ef69e75c2402"
+  },
+  {
+    "claimId": "fairwater:location",
+    "observationId": "obs:b5f5ea627d93664bf0fe1642",
+    "projectId": "fairwater",
+    "publicField": "projects[0].projectName",
+    "sourceId": "fairwater-build",
+    "sourceRef": "source-ef69e75c2402"
+  },
+  {
+    "claimId": "fairwater:location",
+    "observationId": "obs:b5f5ea627d93664bf0fe1642",
+    "projectId": "fairwater",
+    "publicField": "projects[0].companyId",
+    "sourceId": "fairwater-build",
+    "sourceRef": "source-ef69e75c2402"
+  },
+  {
+    "claimId": "fairwater:3c:project-status:2025-09-18",
+    "observationId": "obs:48de31ef9c78dda3917e98ac",
+    "projectId": "fairwater",
+    "publicField": "projects[0].statusHistory[0]",
+    "sourceId": "fairwater-build",
+    "sourceRef": "source-ef69e75c2402"
+  },
+  {
+    "claimId": "fairwater:3c:project-status:2025-09-18",
+    "observationId": "obs:48de31ef9c78dda3917e98ac",
+    "projectId": "fairwater",
+    "publicField": "projects[0].projectStatus",
+    "sourceId": "fairwater-build",
+    "sourceRef": "source-ef69e75c2402"
+  },
+  {
+    "claimId": "fairwater:solar",
+    "observationId": "obs:331bbe3d7f81b1122a04dd05",
+    "projectId": "fairwater",
+    "publicField": "projects[0].powerSummary[0]",
+    "sourceId": "fairwater-investment",
+    "sourceRef": "source-108a5f966463"
+  },
+  {
+    "claimId": "quincy:3c:location:2026-01-13",
+    "observationId": "obs:387001cb29fc62c7bc0283d8",
+    "projectId": "quincy",
+    "publicField": "projects[1].location",
+    "sourceId": "quincy-community",
+    "sourceRef": "source-333f341749cf"
+  },
+  {
+    "claimId": "quincy:3c:location:2026-01-13",
+    "observationId": "obs:387001cb29fc62c7bc0283d8",
+    "projectId": "quincy",
+    "publicField": "projects[1].projectName",
+    "sourceId": "quincy-community",
+    "sourceRef": "source-333f341749cf"
+  },
+  {
+    "claimId": "quincy:3c:location:2026-01-13",
+    "observationId": "obs:387001cb29fc62c7bc0283d8",
+    "projectId": "quincy",
+    "publicField": "projects[1].companyId",
+    "sourceId": "quincy-community",
+    "sourceRef": "source-333f341749cf"
+  },
+  {
+    "claimId": "quincy:3c:project-status:2026-01-13",
+    "observationId": "obs:8cb63736ffed884f749f979c",
+    "projectId": "quincy",
+    "publicField": "projects[1].statusHistory[0]",
+    "sourceId": "quincy-community",
+    "sourceRef": "source-333f341749cf"
+  },
+  {
+    "claimId": "quincy:3c:project-status:2026-01-13",
+    "observationId": "obs:8cb63736ffed884f749f979c",
+    "projectId": "quincy",
+    "publicField": "projects[1].projectStatus",
+    "sourceId": "quincy-community",
+    "sourceRef": "source-333f341749cf"
+  },
+  {
+    "claimId": "aws-warren:3c:location:2025-11-20",
+    "observationId": "obs:437c993cd602a3cf4a9a4875",
+    "projectId": "aws-warren",
+    "publicField": "projects[2].location",
+    "sourceId": "amazon-warren",
+    "sourceRef": "source-f56032606519"
+  },
+  {
+    "claimId": "aws-warren:3c:location:2025-11-20",
+    "observationId": "obs:437c993cd602a3cf4a9a4875",
+    "projectId": "aws-warren",
+    "publicField": "projects[2].projectName",
+    "sourceId": "amazon-warren",
+    "sourceRef": "source-f56032606519"
+  },
+  {
+    "claimId": "aws-warren:3c:location:2025-11-20",
+    "observationId": "obs:437c993cd602a3cf4a9a4875",
+    "projectId": "aws-warren",
+    "publicField": "projects[2].companyId",
+    "sourceId": "amazon-warren",
+    "sourceRef": "source-f56032606519"
+  },
+  {
+    "claimId": "aws-warren:3c:project-status:2025-11-20",
+    "observationId": "obs:51e9d817e0ed858fe2b88a56",
+    "projectId": "aws-warren",
+    "publicField": "projects[2].statusHistory[0]",
+    "sourceId": "amazon-warren",
+    "sourceRef": "source-f56032606519"
+  },
+  {
+    "claimId": "aws-warren:3c:project-status:2025-11-20",
+    "observationId": "obs:51e9d817e0ed858fe2b88a56",
+    "projectId": "aws-warren",
+    "publicField": "projects[2].projectStatus",
+    "sourceId": "amazon-warren",
+    "sourceRef": "source-f56032606519"
+  },
+  {
+    "claimId": "el-paso:3c:location:2025-10-15",
+    "observationId": "obs:f18fffed7be4f6912729215b",
+    "projectId": "el-paso",
+    "publicField": "projects[3].location",
+    "sourceId": "el-paso-groundbreaking",
+    "sourceRef": "source-5382b58ec9ce"
+  },
+  {
+    "claimId": "el-paso:3c:location:2025-10-15",
+    "observationId": "obs:f18fffed7be4f6912729215b",
+    "projectId": "el-paso",
+    "publicField": "projects[3].projectName",
+    "sourceId": "el-paso-groundbreaking",
+    "sourceRef": "source-5382b58ec9ce"
+  },
+  {
+    "claimId": "el-paso:3c:location:2025-10-15",
+    "observationId": "obs:f18fffed7be4f6912729215b",
+    "projectId": "el-paso",
+    "publicField": "projects[3].companyId",
+    "sourceId": "el-paso-groundbreaking",
+    "sourceRef": "source-5382b58ec9ce"
+  },
+  {
+    "claimId": "el-paso:3c:project-status:2026-07-28",
+    "observationId": "obs:a998c04caf6741297e611062",
+    "projectId": "el-paso",
+    "publicField": "projects[3].statusHistory[0]",
+    "sourceId": "el-paso-jv",
+    "sourceRef": "source-2a14e46e75e7"
+  },
+  {
+    "claimId": "el-paso:3c:project-status:2026-07-28",
+    "observationId": "obs:a998c04caf6741297e611062",
+    "projectId": "el-paso",
+    "publicField": "projects[3].projectStatus",
+    "sourceId": "el-paso-jv",
+    "sourceRef": "source-2a14e46e75e7"
+  },
+  {
+    "claimId": "el-paso:3c:planned-capacity:2026-07-28",
+    "observationId": "obs:aae58c5513e9ce0c2b85af82",
+    "projectId": "el-paso",
+    "publicField": "projects[3].capacityDisplay[0]",
+    "sourceId": "el-paso-jv",
+    "sourceRef": "source-2a14e46e75e7"
+  },
+  {
+    "claimId": "hyperion:location",
+    "observationId": "obs:9dfc8256e7d4de02a8d93db6",
+    "projectId": "hyperion",
+    "publicField": "projects[4].location",
+    "sourceId": "meta-jv-pdf",
+    "sourceRef": "source-ec632e053d28"
+  },
+  {
+    "claimId": "hyperion:location",
+    "observationId": "obs:9dfc8256e7d4de02a8d93db6",
+    "projectId": "hyperion",
+    "publicField": "projects[4].projectName",
+    "sourceId": "meta-jv-pdf",
+    "sourceRef": "source-ec632e053d28"
+  },
+  {
+    "claimId": "hyperion:location",
+    "observationId": "obs:9dfc8256e7d4de02a8d93db6",
+    "projectId": "hyperion",
+    "publicField": "projects[4].companyId",
+    "sourceId": "meta-jv-pdf",
+    "sourceRef": "source-ec632e053d28"
+  },
+  {
+    "claimId": "hyperion:status",
+    "observationId": "obs:a9d8b4bebb53c2abd10a02f4",
+    "projectId": "hyperion",
+    "publicField": "projects[4].statusHistory[0]",
+    "sourceId": "meta-jv-pdf",
+    "sourceRef": "source-ec632e053d28"
+  },
+  {
+    "claimId": "hyperion:status",
+    "observationId": "obs:a9d8b4bebb53c2abd10a02f4",
+    "projectId": "hyperion",
+    "publicField": "projects[4].projectStatus",
+    "sourceId": "meta-jv-pdf",
+    "sourceRef": "source-ec632e053d28"
+  },
+  {
+    "claimId": "hyperion:planned-capacity",
+    "observationId": "obs:33952241b3b9ae8efad42443",
+    "projectId": "hyperion",
+    "publicField": "projects[4].capacityDisplay[0]",
+    "sourceId": "meta-expansion",
+    "sourceRef": "source-ae22e600d57e"
+  },
+  {
+    "claimId": "hyperion:power-gas",
+    "observationId": "obs:abe1d307016592ebe1f82e09",
+    "projectId": "hyperion",
+    "publicField": "projects[4].powerSummary[0]",
+    "sourceId": "entergy-expansion",
+    "sourceRef": "source-1e34ef8d7aa5"
+  },
+  {
+    "claimId": "hyperion:power-solar",
+    "observationId": "obs:afdc757b6d4c534218119b31",
+    "projectId": "hyperion",
+    "publicField": "projects[4].powerSummary[1]",
+    "sourceId": "entergy-expansion",
+    "sourceRef": "source-1e34ef8d7aa5"
+  },
+  {
+    "claimId": "jupiter:3c:location:2026-03-03",
+    "observationId": "obs:30b16c30387e568e56d6e8c5",
+    "projectId": "jupiter",
+    "publicField": "projects[5].location",
+    "sourceId": "jupiter-march-power",
+    "sourceRef": "source-6822ebc200d7"
+  },
+  {
+    "claimId": "jupiter:3c:location:2026-03-03",
+    "observationId": "obs:30b16c30387e568e56d6e8c5",
+    "projectId": "jupiter",
+    "publicField": "projects[5].projectName",
+    "sourceId": "jupiter-march-power",
+    "sourceRef": "source-6822ebc200d7"
+  },
+  {
+    "claimId": "jupiter:3c:location:2026-03-03",
+    "observationId": "obs:30b16c30387e568e56d6e8c5",
+    "projectId": "jupiter",
+    "publicField": "projects[5].companyId",
+    "sourceId": "jupiter-march-power",
+    "sourceRef": "source-6822ebc200d7"
+  },
+  {
+    "claimId": "jupiter:3c:project-status:2026-03-03",
+    "observationId": "obs:28b82f4605480f3ee59d2f87",
+    "projectId": "jupiter",
+    "publicField": "projects[5].statusHistory[0]",
+    "sourceId": "jupiter-march-power",
+    "sourceRef": "source-6822ebc200d7"
+  },
+  {
+    "claimId": "jupiter:3c:project-status:2026-10-07",
+    "observationId": "obs:1a978859922c99702689aa35",
+    "projectId": "jupiter",
+    "publicField": "projects[5].statusHistory[1]",
+    "sourceId": "oracle-tracker",
+    "sourceRef": "source-4f386cfebd3c"
+  },
+  {
+    "claimId": "jupiter:3c:project-status:2026-10-07",
+    "observationId": "obs:1a978859922c99702689aa35",
+    "projectId": "jupiter",
+    "publicField": "projects[5].projectStatus",
+    "sourceId": "oracle-tracker",
+    "sourceRef": "source-4f386cfebd3c"
+  },
+  {
+    "claimId": "polaris-forge-1:location",
+    "observationId": "obs:934c04e104c3de892ff1b5f2",
+    "projectId": "polaris-forge-1",
+    "publicField": "projects[6].location",
+    "sourceId": "pf1-2025q1",
+    "sourceRef": "source-640b322f86c3"
+  },
+  {
+    "claimId": "polaris-forge-1:location",
+    "observationId": "obs:934c04e104c3de892ff1b5f2",
+    "projectId": "polaris-forge-1",
+    "publicField": "projects[6].projectName",
+    "sourceId": "pf1-2025q1",
+    "sourceRef": "source-640b322f86c3"
+  },
+  {
+    "claimId": "polaris-forge-1:3c:project-status:2025-06-02",
+    "observationId": "obs:697465549f4578a0e4df7a67",
+    "projectId": "polaris-forge-1",
+    "publicField": "projects[6].statusHistory[0]",
+    "sourceId": "pf1-initial-leases",
+    "sourceRef": "source-aa4f3250bf94"
+  },
+  {
+    "claimId": "polaris-forge-1:status",
+    "observationId": "obs:1d7989f425761585426d9afb",
+    "projectId": "polaris-forge-1",
+    "publicField": "projects[6].statusHistory[1]",
+    "sourceId": "pf1-2026release",
+    "sourceRef": "source-3889881223e4"
+  },
+  {
+    "claimId": "polaris-forge-1:status",
+    "observationId": "obs:1d7989f425761585426d9afb",
+    "projectId": "polaris-forge-1",
+    "publicField": "projects[6].projectStatus",
+    "sourceId": "pf1-2026release",
+    "sourceRef": "source-3889881223e4"
+  },
+  {
+    "claimId": "polaris-forge-1:contracted-capacity",
+    "observationId": "obs:20efbef08dd05d9a1560c38e",
+    "projectId": "polaris-forge-1",
+    "publicField": "projects[6].capacityDisplay[0]",
+    "sourceId": "pf1-2025q1",
+    "sourceRef": "source-640b322f86c3"
+  },
+  {
+    "claimId": "polaris-forge-1:live-capacity",
+    "observationId": "obs:6d1c9345a2d34596bd40e242",
+    "projectId": "polaris-forge-1",
+    "publicField": "projects[6].capacityDisplay[1]",
+    "sourceId": "pf1-2026release",
+    "sourceRef": "source-3889881223e4"
+  }
+]

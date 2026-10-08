@@ -1,0 +1,153 @@
+{
+  "version": "ai-infrastructure-ui-contract-v1",
+  "productionImplemented": false,
+  "copyVersion": "ai-infrastructure-public-copy-v1",
+  "pagePurpose": "DESCRIPTIVE_PROJECT_EVIDENCE_NOT_FINANCIAL_ASSESSMENT",
+  "sectionOrder": [
+    "landscape",
+    "financing",
+    "power",
+    "boundaries"
+  ],
+  "coreDisclosure": {
+    "copyKey": "disclosures.doubleCount",
+    "placement": "BEFORE_PROJECT_CARDS_AND_REPEATED_IN_BOUNDARIES",
+    "visibility": "ALWAYS_VISIBLE_NOT_COLLAPSED_FOOTNOTE"
+  },
+  "projectCards": {
+    "source": "projects",
+    "displayFields": [
+      "companyName",
+      "projectName",
+      "location",
+      "projectStatus",
+      "statusEffectiveDate",
+      "statusSourceDate",
+      "statusAvailableFrom",
+      "capacityDisplay",
+      "primaryArchetype",
+      "powerSummary",
+      "publicNotes",
+      "publicSourceRefs",
+      "lastQualifiedAsOf"
+    ],
+    "statusDateRequired": true,
+    "archetypeNotRanking": true,
+    "missingValueTreatment": "LABELED_NULL_NEVER_ZERO",
+    "companyRelationship": "ASSOCIATION_NOT_LEGAL_OWNERSHIP"
+  },
+  "filters": {
+    "company": {
+      "copyKey": "labels.filterCompany",
+      "kind": "CATEGORICAL"
+    },
+    "status": {
+      "copyKey": "labels.filterStatus",
+      "kind": "DATED_STATUS_CATEGORY"
+    },
+    "archetype": {
+      "copyKey": "labels.filterArchetype",
+      "kind": "DESCRIPTIVE_CATEGORY",
+      "disableWhenAllUnknown": true
+    }
+  },
+  "table": {
+    "semanticElement": "table",
+    "captionCopyKey": "labels.table",
+    "columnCopyKeys": [
+      "labels.company",
+      "labels.project",
+      "labels.location",
+      "labels.status",
+      "labels.capacity",
+      "labels.definition",
+      "labels.archetype",
+      "labels.power",
+      "labels.asOf"
+    ],
+    "headerScope": "col",
+    "sourceLinksInCells": true,
+    "noInvestmentDollarColumn": true,
+    "mobileAlternative": "ALL_FACTS_IN_STACKED_CARDS"
+  },
+  "map": {
+    "optional": true,
+    "coordinates": "QUALIFIED_ONLY_NONE_IN_THIS_VINTAGE",
+    "fields": [
+      "projectId",
+      "companyName",
+      "projectName",
+      "location",
+      "projectStatus",
+      "primaryArchetype"
+    ],
+    "navigationFallback": "PROJECT_LIST",
+    "noGeocoding": true
+  },
+  "financing": {
+    "badgeCopyGroup": "financingFeatures",
+    "presenceOnly": true,
+    "emptyMeans": "NOT_QUALIFIED_NOT_ABSENT",
+    "currentProjectBadges": false,
+    "educationSeparateFromProjectFacts": true,
+    "noAmounts": true
+  },
+  "power": {
+    "source": "projects.powerSummary",
+    "utilityInvestmentSeparate": true,
+    "noCapacityDemandInference": true,
+    "noInflationConclusion": true
+  },
+  "mobile": {
+    "width": 390,
+    "cards": "SINGLE_COLUMN_STACK",
+    "filters": "WRAP_WITH_LABELS",
+    "sourceText": "OVERFLOW_WRAP_ANYWHERE",
+    "table": "OPTIONAL_CONTAINED_SCROLL_WITH_EQUIVALENT_CARD_CONTENT",
+    "pageHorizontalOverflow": "FORBIDDEN"
+  },
+  "desktop": {
+    "width": 1280,
+    "cards": "LIMITED_TWO_OR_THREE_COLUMN_GRID",
+    "sectionOrder": [
+      "landscape",
+      "financing",
+      "power",
+      "boundaries"
+    ],
+    "map": "OPTIONAL_TEXT_PARITY_REQUIRED"
+  },
+  "accessibility": {
+    "keyboard": true,
+    "nativeLinksButtonsSelects": true,
+    "focusVisible": true,
+    "filterLabels": "EN_ZH_COPY_KEYS",
+    "semanticTables": true,
+    "textAlternative": "ALL_MAP_AND_CAPACITY_FACTS_IN_CARDS_AND_TABLE",
+    "chartOnlyFacts": false,
+    "statusNotColorOnly": true,
+    "newTabAnnouncement": true,
+    "zeroResultAnnouncement": "labels.noResults",
+    "mapRequired": false
+  },
+  "forbiddenViews": [
+    "COMPANY_RANKING",
+    "CROSS_PROJECT_CAPACITY_BAR_CHART",
+    "DOLLAR_TOTAL",
+    "RETURN_MODEL",
+    "RISK_SCORE"
+  ],
+  "sources": {
+    "officialPublicLinks": true,
+    "sourcePublicationAndAvailabilitySeparate": true,
+    "noResearchGraph": true
+  },
+  "protection": {
+    "noRoute": true,
+    "noProductionData": true,
+    "noWorkflow": true,
+    "noEmail": true,
+    "noRuntimeAPI": true,
+    "noSchedule": true
+  }
+}
