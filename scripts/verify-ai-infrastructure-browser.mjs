@@ -5,6 +5,7 @@ import path from 'node:path'
 import {pathToFileURL} from 'node:url'
 import {infrastructureCopy as copy} from '../src/i18n/aiInfrastructure.js'
 import {routes} from '../src/utils/routing.js'
+import packageMetadata from '../package.json' with {type:'json'}
 const {chromium}=await import(process.env.WIL_PLAYWRIGHT_MODULE?pathToFileURL(process.env.WIL_PLAYWRIGHT_MODULE):'playwright')
 const url=process.env.WIL_BROWSER_URL||'http://127.0.0.1:5187/world-inflation-lens/'
 assert(['localhost','127.0.0.1'].includes(new URL(url).hostname),'Local acceptance only')
@@ -45,6 +46,7 @@ try{
   await page.locator('main a[href="#/research/ai-infrastructure"]').click();await content.waitFor();await page.goBack();await page.locator('[data-page="ai-capex"]').waitFor();await page.goForward();await content.waitFor()
   await page.goto(url+'#/research/ai-labor');await page.locator('[data-page="ai-labor"]').waitFor();assert((await page.locator('main').textContent()).includes(language==='zh'?'观察模式':'OBSERVATION MODE'))
   await page.goto(url+'#/research/signal-engine');await page.locator('main h1').filter({hasText:language==='zh'?'信号引擎':'Signal Engine'}).waitFor()
+  await page.goto(url+'#/sources');await page.locator('.system-status').waitFor();assert.equal(await page.locator('.system-status article').first().locator('dd').first().textContent(),`V${packageMetadata.version}`)
   report.surfaces.push({width,language,theme,projectCards:7,unknownStructures:7,overflow:false,keyboard:true,tableFallback:true,relatedNavigation:true,labor:true,signal:true})
   report.requests.push(...requests.filter(u=>!u.startsWith(new URL(url).origin)))
   await context.close()

@@ -104,5 +104,5 @@ test('runtime component has no API, automation, scores or economic calculations'
 })
 test('AI CapEx identity, version and workflows preserved',()=>{
  assert.equal(hash(read('src/data/ai-capex/monitor.json')),'8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a')
- assert.equal(JSON.parse(read('package.json')).version,'1.3.0');assert.match(read('src/pages/AiCapex.jsx'),/href="#\/research\/ai-infrastructure"/)
+ assert.equal(JSON.parse(read('package.json')).version,'1.4.0');assert.match(read('src/pages/AiCapex.jsx'),/href="#\/research\/ai-infrastructure"/)
 })
