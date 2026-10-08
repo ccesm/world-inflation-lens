@@ -4,6 +4,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import {pathToFileURL} from 'node:url'
 import {infrastructureCopy as copy} from '../src/i18n/aiInfrastructure.js'
+import {paperCopy} from '../src/i18n/aiInfrastructurePaper.js'
 import {routes} from '../src/utils/routing.js'
 import packageMetadata from '../package.json' with {type:'json'}
 const {chromium}=await import(process.env.WIL_PLAYWRIGHT_MODULE?pathToFileURL(process.env.WIL_PLAYWRIGHT_MODULE):'playwright')
@@ -24,6 +25,28 @@ try{
   assert.equal(await page.locator('.research-map a[href="#/research/ai-infrastructure"]').count(),1)
   const navigation=page.locator('.research-tool-directory a[href="#/research/ai-infrastructure"]');await navigation.focus();await page.keyboard.press('Enter')
   const content=page.locator('[data-page="ai-infrastructure"]');await content.waitFor()
+  const paper=page.locator('[data-infrastructure-paper]');await paper.waitFor()
+  assert.equal(await paper.locator('[data-paper-chart]').count(),3)
+  assert.equal(await paper.locator('[data-paper-comparison]').count(),5)
+  assert.equal(await paper.locator('[data-paper-finding]').count(),4)
+  assert.deepEqual(await paper.locator('[data-paper-section]').evaluateAll(els=>els.map(e=>e.dataset.paperSection)),['paper','findings','charts','comparison'])
+  assert.equal(await paper.locator('[data-bottom-evidence]').count(),2)
+  assert.deepEqual(await page.locator('[data-macro-part]').evaluateAll(els=>els.map(e=>e.dataset.macroPart)),['1','2','3'])
+  assert.equal(await paper.locator('[data-quick-assessment]').count(),4)
+  assert.deepEqual(await paper.locator('[data-paper-chart]').evaluateAll(els=>els.map(e=>e.dataset.paperChart)),['campus','cash','booms'])
+  assert(await page.evaluate(()=>Boolean(document.querySelector('[data-bottom-line]').compareDocumentPosition(document.querySelector('[data-macro-part="1"]'))&Node.DOCUMENT_POSITION_FOLLOWING)))
+  for(const value of [paperCopy.polish.paper,paperCopy.polish.evidence,paperCopy.polish.campusTotal,paperCopy.polish.mixed,paperCopy.polish.scenario])assert((await paper.textContent()).includes(value[language]))
+  assert((await paper.locator('[data-paper-chart="cash"] [role="img"]').getAttribute('aria-label')).includes(paperCopy.polish.mixed[language]))
+  assert((await paper.locator('[data-paper-chart="booms"] [role="img"]').getAttribute('aria-label')).includes(paperCopy.polish.scenario[language]))
+  assert(await page.evaluate(()=>Boolean(document.querySelector('[data-infrastructure-paper]').compareDocumentPosition(document.querySelector('[data-independent-divider]'))&Node.DOCUMENT_POSITION_FOLLOWING)))
+  assert(await page.evaluate(()=>Boolean(document.querySelector('[data-independent-divider]').compareDocumentPosition(document.querySelector('[data-page="ai-infrastructure"]'))&Node.DOCUMENT_POSITION_FOLLOWING)))
+  for(const value of [paperCopy.labels.version,paperCopy.comparisons.funding.evidence,paperCopy.comparisons.scale.boundary,paperCopy.charts.cash.note,paperCopy.charts.booms.note])assert((await paper.textContent()).includes(value[language]))
+  for(const chart of await paper.locator('[data-paper-chart]').all()){
+   assert.equal(await chart.getAttribute('data-provenance'),'ACADEMIC_PAPER');assert(await chart.locator('[role="img"]').getAttribute('aria-label'))
+   const toggle=chart.locator('summary');await toggle.focus();await page.keyboard.press('Enter');assert(await toggle.evaluate(el=>el.parentElement.open));assert(await chart.locator('th[scope="row"]').count()>0);await page.keyboard.press('Enter')
+  }
+  const paperLink=paper.getByRole('link',{name:paperCopy.labels.read[language],exact:false});await paperLink.focus();assert(await paperLink.evaluate(el=>el===document.activeElement));assert.equal(await paperLink.getAttribute('href'),'https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf')
+  if(theme===(language==='en'?'light':'dark')){await page.locator('main h1').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(output,`paper-${width}-${language}-${theme}-top.png`)});await paper.locator('[data-paper-chart="campus"]').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(output,`paper-${width}-${language}-${theme}-charts.png`)});await paper.locator('[data-paper-comparison="funding"]').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(output,`paper-${width}-${language}-${theme}-comparison.png`)})}
   assert.equal(await page.locator('main h1').textContent(),copy.page.title[language]);assert.equal(await content.locator('h2').count(),4)
   assert.deepEqual(await content.locator('h2').allTextContents(),Object.values(copy.sections).map(v=>v[language]))
   assert.equal(await page.locator('html').getAttribute('lang'),language==='zh'?'zh-CN':'en');assert.equal(await page.locator('html').getAttribute('data-theme'),theme)
@@ -47,7 +70,7 @@ try{
   await page.goto(url+'#/research/ai-labor');await page.locator('[data-page="ai-labor"]').waitFor();assert((await page.locator('main').textContent()).includes(language==='zh'?'观察模式':'OBSERVATION MODE'))
   await page.goto(url+'#/research/signal-engine');await page.locator('main h1').filter({hasText:language==='zh'?'信号引擎':'Signal Engine'}).waitFor()
   await page.goto(url+'#/sources');await page.locator('.system-status').waitFor();assert.equal(await page.locator('.system-status article').first().locator('dd').first().textContent(),`V${packageMetadata.version}`)
-  report.surfaces.push({width,language,theme,projectCards:7,unknownStructures:7,overflow:false,keyboard:true,tableFallback:true,relatedNavigation:true,labor:true,signal:true})
+  report.surfaces.push({width,language,theme,paperFirst:true,paperCharts:3,comparisonRows:5,projectCards:7,unknownStructures:7,overflow:false,keyboard:true,tableFallback:true,relatedNavigation:true,labor:true,signal:true})
   report.requests.push(...requests.filter(u=>!u.startsWith(new URL(url).origin)))
   await context.close()
  }
