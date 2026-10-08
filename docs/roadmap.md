@@ -2,6 +2,18 @@
 
 World Inflation Lens studies **domestic dollar purchasing power and the international dollar role over the next 20–30 years**. These outcomes interact but are not interchangeable. Historical observations, official conditional projections and hypothetical scenarios remain visibly distinct. Global inflation provides supporting context. Both Chinese and English are supported.
 
+## V1.4.0 — AI Infrastructure (release preparation)
+
+The public `#/research/ai-infrastructure` view is a curated fixed vintage as of
+2026-10-07: seven source-linked project/case cards, native capacity, dated status
+and separate power/grid facts. Coverage is asymmetric; Alphabet has no qualified
+card, and Polaris is an independent comparison. Financing structures remain
+UNKNOWN, not absent. No aggregate dollars, ownership percentages, AI ROI, score,
+live refresh or research-history import is added. Company-level AI CapEx and
+project-level infrastructure remain separate. Application version **1.4.0** is
+prepared; merge and deployment remain pending owner approval.
+See [release notes](v1.4-ai-infrastructure.md).
+
 ## V1.3.0 — AI CapEx & Monetization
 
 Owner-approved release preparation adds `#/research/ai-capex`: compact fixed-vintage
@@ -11,8 +23,7 @@ monetization, operating economics, depreciation/accounting and cash conversion.
 AI ROI remains **NOT IDENTIFIED**; recognized quarterly AI-only revenue remains
 **UNAVAILABLE**. No ranking, composite score, scheduled refresh or runtime economic
 API is added. AI investment, monetization, observed productivity and labor effects
-remain separate questions. Application version is **1.3.0**; merge and deployment
-are pending. See [release notes](v1.3-ai-capex-monetization.md).
+remain separate questions. This feature was introduced in application version **1.3.0**. See [release notes](v1.3-ai-capex-monetization.md).
 
 ## V1.2.0 — AI Labor Interim Conclusion / Observation Mode
 

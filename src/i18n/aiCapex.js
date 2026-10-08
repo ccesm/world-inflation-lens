@@ -1,7 +1,7 @@
 export const aiCapexCopy = {
  en: {
   maintenance:{title:'AI CapEx data maintenance',button:'Check for New Reports',through:'AI CapEx data through',mode:'Refresh mode',modeValue:'Manual / operator-triggered',publication:'Automatic publication',disabled:'Disabled',accepted:'Latest accepted status',acceptedValue:'Production accepted',help:'Quarterly financial data is refreshed manually after official company disclosures become available.',boundary:'No data is published automatically. GitHub authentication and repository permissions are required to run the workflow.',instructions:'Refresh instructions'},
-  title:'AI CapEx & Monetization',eyebrow:'RESEARCH / FIXED-VINTAGE EVIDENCE',
+  title:'AI CapEx & Monetization',infrastructureLink:'AI Infrastructure & Financing',infrastructureNote:'Project-level status, native capacity and power are separate from company-level CapEx and monetization; project values do not reconcile directly to corporate CapEx.',eyebrow:'RESEARCH / FIXED-VINTAGE EVIDENCE',
   subtitle:'Tracking how major technology companies are investing in AI-era infrastructure, what monetization evidence is visible, and what cannot yet be attributed to AI.',
   sections:['Current picture','Capital intensity','Cash conversion','Cloud / operating monetization','Direct AI monetization milestones','Depreciation pressure','Capacity, backlog and guidance','Company accounting boundaries','What we can / cannot conclude','Methodology / provenance'],
   conclusion:['AI-era infrastructure investment has risen sharply across Microsoft, Alphabet, Amazon and Meta. At the same time, free-cash-flow margins have compressed in the latest comparable year.','This does not establish poor AI investment returns.','Direct AI financial monetization remains limited to sparse, management-defined disclosures such as annualized run-rates. AI-specific invested capital, recognized quarterly AI-only revenue and attributable AI cash returns remain unavailable.'],
@@ -40,7 +40,7 @@ export const aiCapexCopy = {
  },
  zh: {
   maintenance:{title:'AI 资本支出数据维护',button:'检查最新财报',through:'AI 资本支出数据截至',mode:'刷新方式',modeValue:'人工触发',publication:'自动发布',disabled:'已禁用',accepted:'最新已接受状态',acceptedValue:'生产版本已接受',help:'季度财务数据会在公司官方财报发布后由人工触发刷新。',boundary:'系统不会自动发布候选数据。运行工作流需要 GitHub 身份认证及仓库权限。',instructions:'刷新说明'},
-  title:'AI 资本支出与商业化',eyebrow:'研究 / 固定版本证据',subtitle:'跟踪大型科技公司的 AI 时代基础设施投入、可观察的商业化证据，以及目前仍无法归因于 AI 的部分。',
+  title:'AI 资本支出与商业化',infrastructureLink:'AI 基础设施与融资',infrastructureNote:'项目层面的状态、原始定义容量与电力独立于公司层面的资本支出和商业化；项目数值不能直接与公司资本支出对账。',eyebrow:'研究 / 固定版本证据',subtitle:'跟踪大型科技公司的 AI 时代基础设施投入、可观察的商业化证据，以及目前仍无法归因于 AI 的部分。',
   sections:['当前图景','资本投入强度','现金转换','云业务与经营商业化','直接 AI 商业化里程碑','折旧压力','容量、积压与指引','公司会计边界','能够与不能得出的结论','方法与来源'],
   conclusion:['Microsoft、Alphabet、Amazon 和 Meta 的 AI 时代基础设施投资均明显上升；与此同时，在最近可比年度中，四家公司的自由现金流利润率均出现下降。','这并不能证明 AI 投资回报不佳。','目前直接的 AI 财务商业化证据仍主要来自少量管理层定义的年化 run-rate 等披露。AI 专属投入资本、季度确认的 AI 专属收入及可归属的 AI 现金回报目前仍无法识别。'],
   fixed:'固定研究版本 — 不是实时监控',through:'最新经济季度',asOf:'披露依据截至',window:'历史图表范围',vintageNote:'披露依据日期不是处理时间。历史图表使用已核验的当前版本会计面板，包括后来披露的比较数值；不是真实实时历史回测。',

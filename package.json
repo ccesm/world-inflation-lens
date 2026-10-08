@@ -1,13 +1,13 @@
 {
   "name": "world-inflation-lens",
   "private": true,
-  "version": "1.3.0",
+  "version": "1.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "verify": "node scripts/verify-status.mjs && node scripts/verify-status-publication.mjs && node scripts/verify-workspace.mjs && node scripts/verify-notification.mjs && node scripts/verify-digital-money.mjs && node scripts/verify-productivity.mjs && node scripts/verify-external.mjs && node scripts/verify-cbo.mjs && node scripts/verify-dollar.mjs && node scripts/verify-refresh.mjs && node scripts/verify-international.mjs && node scripts/verify-research-architecture.mjs && node scripts/verify.mjs && node scripts/verify-signal-public.mjs && node scripts/verify-ai-labor.mjs && node scripts/verify-ai-capex.mjs",
+    "verify": "node scripts/verify-status.mjs && node scripts/verify-status-publication.mjs && node scripts/verify-workspace.mjs && node scripts/verify-notification.mjs && node scripts/verify-digital-money.mjs && node scripts/verify-productivity.mjs && node scripts/verify-external.mjs && node scripts/verify-cbo.mjs && node scripts/verify-dollar.mjs && node scripts/verify-refresh.mjs && node scripts/verify-international.mjs && node scripts/verify-research-architecture.mjs && node scripts/verify.mjs && node scripts/verify-signal-public.mjs && node scripts/verify-ai-labor.mjs && node scripts/verify-ai-capex.mjs && node scripts/verify-ai-infrastructure.mjs",
     "data:refresh": "node scripts/refresh-data.mjs",
     "notify:preview": "node scripts/notify.mjs --dry-run",
     "verify:browser": "node scripts/verify-v1-browser.mjs",
