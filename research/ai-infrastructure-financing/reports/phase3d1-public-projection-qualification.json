@@ -1,0 +1,753 @@
+{
+  "implementationVersion": "ai-infrastructure-public-projection-v1",
+  "baseBranch": "codex/ai-infrastructure-financing-phase3c",
+  "baseSha": "9075c9a5325a63e35770323e2cc3e0e164bbc823",
+  "branch": "codex/ai-infrastructure-public-projection",
+  "implementationSha": "87f60c2839c26aced05a4f76cb3a9b768dc12ced",
+  "finalSha": null,
+  "finalShaResolution": "Resolve the report-containing commit from origin/codex/ai-infrastructure-public-projection. The delivery response records its exact SHA; a commit cannot embed its own SHA.",
+  "productionMainObserved": "be9dde341cfb32a53b7a3fca76e04d631a926bcd",
+  "asOf": "2026-10-07",
+  "researchPanelHash": "b54975f22d5fbceceb44216665c37233511a9d088016255bdb09328ef91706ff",
+  "projectionHash": "cc57c96477fc42cf074a9dcf2c78c4f0cb46cbf4223fdfd73db9d8fa57412695",
+  "projectionFileSha256": "3fc59a0c52f097cbbd4f4f187ace5813d02cd2de03cfd274ac9e12700199b6f5",
+  "projectionByteSize": 31650,
+  "copyHash": "619a884f7f875d20f42e7ab0036ea5ec0c700ae15b3ce054f4fb2303fdb1b8ea",
+  "implementationHash": "29de5173f225595443d9b3dce2c4a72f7b85f22512f0740c90876914e0d86fe2",
+  "projectsConsidered": 11,
+  "projectsIncluded": 7,
+  "projectsExcluded": [
+    {
+      "projectId": "google-midlothian",
+      "included": false,
+      "reason": "INSUFFICIENT_MEANINGFUL_PUBLIC_CONTEXT"
+    },
+    {
+      "projectId": "google-red-oak",
+      "included": false,
+      "reason": "INSUFFICIENT_MEANINGFUL_PUBLIC_CONTEXT"
+    },
+    {
+      "projectId": "aws-canton",
+      "included": false,
+      "reason": "INSUFFICIENT_MEANINGFUL_PUBLIC_CONTEXT"
+    },
+    {
+      "projectId": "abilene",
+      "included": false,
+      "reason": "INSUFFICIENT_MEANINGFUL_PUBLIC_CONTEXT"
+    }
+  ],
+  "companyCoverage": [
+    {
+      "companyId": "MSFT",
+      "publicProjects": [
+        "fairwater",
+        "quincy"
+      ],
+      "projectCount": 2
+    },
+    {
+      "companyId": "GOOG",
+      "publicProjects": [],
+      "projectCount": 0
+    },
+    {
+      "companyId": "AMZN",
+      "publicProjects": [
+        "aws-warren"
+      ],
+      "projectCount": 1
+    },
+    {
+      "companyId": "META",
+      "publicProjects": [
+        "el-paso",
+        "hyperion"
+      ],
+      "projectCount": 2
+    },
+    {
+      "companyId": "ORCL",
+      "publicProjects": [
+        "jupiter"
+      ],
+      "projectCount": 1
+    }
+  ],
+  "companiesRepresentedPublicly": [
+    "MSFT",
+    "AMZN",
+    "META",
+    "ORCL"
+  ],
+  "comparativeProjects": [
+    "polaris-forge-1"
+  ],
+  "publicFacts": {
+    "uniqueObservationCount": 23,
+    "locationFacts": 7,
+    "statusFacts": 9,
+    "capacityFacts": 4,
+    "financingStructureFacts": 0,
+    "powerFacts": 3,
+    "ownershipFacts": 0,
+    "unknownStructureLabels": 7,
+    "note": "Unknown is an explicitly permitted qualification label, not a financing or ownership observation. Counts do not measure economic size."
+  },
+  "sourceCount": 14,
+  "publicReady": {
+    "considered": 46,
+    "included": 23,
+    "excludedByStricterGate": 23,
+    "excludedRecords": [
+      {
+        "observationId": "obs:1455a6cdc7a59103abaf8bdf",
+        "claimId": "el-paso:3c:asset-type:2025-10-15",
+        "projectId": "el-paso",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:16e3d28a03f343c81469ab43",
+        "claimId": "polaris-forge-1:p-lease4-capacity",
+        "projectId": "polaris-forge-1",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+          "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+        ]
+      },
+      {
+        "observationId": "obs:18a057d55f8d16640533836f",
+        "claimId": "aws-canton:3c:water-transition-target:2026-04-09",
+        "projectId": "aws-canton",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+          "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+        ]
+      },
+      {
+        "observationId": "obs:211723dfe78b4776004ec339",
+        "claimId": "aws-warren:3c:asset-type:2025-11-20",
+        "projectId": "aws-warren",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:2eaac33fb1b05f10af9c4f5d",
+        "claimId": "hyperion:3c:project-status:2025-09-29",
+        "projectId": "hyperion",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "REDUNDANT_STATUS_EVENT"
+        ]
+      },
+      {
+        "observationId": "obs:34e0de5a4eea76c498529182",
+        "claimId": "abilene:3c:asset-type:2026-10-07",
+        "projectId": "abilene",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:6835c5ec1f0ec1babae4bf23",
+        "claimId": "el-paso:3c:project-status:2025-10-15",
+        "projectId": "el-paso",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "REDUNDANT_STATUS_EVENT"
+        ]
+      },
+      {
+        "observationId": "obs:68510810fb20a6599307f0a7",
+        "claimId": "fairwater:building-area",
+        "projectId": "fairwater",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+          "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+        ]
+      },
+      {
+        "observationId": "obs:70caf58eaa637097af266834",
+        "claimId": "polaris-forge-1:p-lease100-capacity",
+        "projectId": "polaris-forge-1",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+          "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+        ]
+      },
+      {
+        "observationId": "obs:79299f8849b4046040036665",
+        "claimId": "el-paso:3c:expected-online-year:2026-07-28",
+        "projectId": "el-paso",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+          "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+        ]
+      },
+      {
+        "observationId": "obs:927f727b194ba4564d49d786",
+        "claimId": "jupiter:3c:site-area:2026-10-07",
+        "projectId": "jupiter",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+          "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+        ]
+      },
+      {
+        "observationId": "obs:97ace16578a6cd8778501779",
+        "claimId": "google-red-oak:3c:location:2026-10-07",
+        "projectId": "google-red-oak",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT"
+        ]
+      },
+      {
+        "observationId": "obs:a923b5c1f9a87d7d43481f3e",
+        "claimId": "abilene:3c:location:2026-10-07",
+        "projectId": "abilene",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT"
+        ]
+      },
+      {
+        "observationId": "obs:a9b3b58b813c40718ca11408",
+        "claimId": "quincy:3c:asset-type:2026-01-13",
+        "projectId": "quincy",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:b4496f70208080aeeef34ab9",
+        "claimId": "polaris-forge-1:p-lease150-capacity",
+        "projectId": "polaris-forge-1",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+          "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+        ]
+      },
+      {
+        "observationId": "obs:b6f350af464ad6b38fa8f322",
+        "claimId": "aws-canton:3c:asset-type:2026-04-09",
+        "projectId": "aws-canton",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:caa7c3a02432c41208b96578",
+        "claimId": "google-red-oak:3c:asset-type:2026-10-07",
+        "projectId": "google-red-oak",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:cec9a484061a5959fe735444",
+        "claimId": "fairwater:site-area",
+        "projectId": "fairwater",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY",
+          "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT"
+        ]
+      },
+      {
+        "observationId": "obs:e0e58fd618e20175f5817fc7",
+        "claimId": "jupiter:3c:asset-type:2026-03-03",
+        "projectId": "jupiter",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:e40f60663849264ef7430963",
+        "claimId": "google-midlothian:3c:asset-type:2026-10-07",
+        "projectId": "google-midlothian",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:f1209a8d624e56e75cb330b1",
+        "claimId": "google-midlothian:3c:location:2026-10-07",
+        "projectId": "google-midlothian",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT"
+        ]
+      },
+      {
+        "observationId": "obs:f1cc38d4426d767b83d19249",
+        "claimId": "quincy:3c:water-infrastructure:2021-08-27",
+        "projectId": "quincy",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY"
+        ]
+      },
+      {
+        "observationId": "obs:f9cd08b61a42145d5fd55d6a",
+        "claimId": "aws-canton:3c:location:2026-04-09",
+        "projectId": "aws-canton",
+        "publicationEligibility": "PUBLIC_READY",
+        "qualificationStatus": "QUALIFIED",
+        "evidenceClass": "PRIMARY_VERIFIED",
+        "included": false,
+        "reasons": [
+          "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT"
+        ]
+      }
+    ]
+  },
+  "excludedFieldCounts": {
+    "byPublicationState": {
+      "NOT_PUBLIC": 105,
+      "PUBLIC_READY": 23,
+      "RESEARCH_ONLY": 107,
+      "REVIEW_REQUIRED": 23
+    },
+    "byQualificationState": {
+      "CONFLICTING": 1,
+      "PARTIAL": 9,
+      "QUALIFIED": 121,
+      "REVIEW_REQUIRED": 22,
+      "UNAVAILABLE": 105
+    },
+    "byEvidenceClass": {
+      "CONFLICTING_EVIDENCE": 1,
+      "PRIMARY_PARTIAL": 9,
+      "PRIMARY_VERIFIED": 136,
+      "SECONDARY_ONLY": 7,
+      "UNAVAILABLE": 105
+    },
+    "byReason": {
+      "PUBLICATION_NOT_PUBLIC": 105,
+      "QUALIFICATION_UNAVAILABLE": 105,
+      "EVIDENCE_UNAVAILABLE": 105,
+      "UNAVAILABLE": 105,
+      "NO_PUBLIC_SLOT_OR_LEGAL_COMPLEXITY": 245,
+      "FINANCIAL_OR_UNSUPPORTED_LAYER_UNIT": 208,
+      "PUBLICATION_RESEARCH_ONLY": 107,
+      "CONDITIONAL_LEGAL_ASSERTION": 21,
+      "QUALIFICATION_PARTIAL": 9,
+      "EVIDENCE_PRIMARY_PARTIAL": 9,
+      "UNRESOLVED_OVERLAP": 27,
+      "UNDATED_STATUS": 4,
+      "PUBLICATION_REVIEW_REQUIRED": 23,
+      "QUALIFICATION_REVIEW_REQUIRED": 22,
+      "SOURCE_UNQUALIFIED": 30,
+      "EVIDENCE_SECONDARY_ONLY": 7,
+      "CAPACITY_DEFINITION": 2,
+      "QUALIFICATION_CONFLICTING": 1,
+      "EVIDENCE_CONFLICTING_EVIDENCE": 1,
+      "CONFLICT": 1,
+      "CLAIM_PROVENANCE": 1,
+      "REDUNDANT_STATUS_EVENT": 2,
+      "SOURCE_URL_OR_CLOCK": 8,
+      "PROJECT_EXCLUDED_INSUFFICIENT_CONTEXT": 4,
+      "SUPERSEDED": 1
+    },
+    "reasonCountsNotExclusive": true
+  },
+  "leakCounts": {
+    "researchOnly": 0,
+    "reviewRequired": 0,
+    "notPublic": 0,
+    "conflicting": 0,
+    "unavailable": 0,
+    "localPath": 0
+  },
+  "archetypeSummary": {
+    "UNKNOWN": 7
+  },
+  "statusSummary": {
+    "OPERATIONAL": 1,
+    "PARTIALLY_OPERATIONAL": 1,
+    "PLANNED": 1,
+    "UNDER_CONSTRUCTION": 4
+  },
+  "projectFields": [
+    {
+      "projectId": "fairwater",
+      "status": "UNDER_CONSTRUCTION",
+      "statusEffectiveDate": "2025-09-18",
+      "statusSourceDate": "2025-09-18",
+      "statusAvailableFrom": "2025-09-18",
+      "statusHistoryCount": 1,
+      "capacity": [],
+      "power": [
+        {
+          "value": 250,
+          "unit": "MW",
+          "operator": "EQ",
+          "powerType": "SOLAR"
+        }
+      ],
+      "archetype": "UNKNOWN"
+    },
+    {
+      "projectId": "quincy",
+      "status": "OPERATIONAL",
+      "statusEffectiveDate": "2026-01-13",
+      "statusSourceDate": "2026-01-13",
+      "statusAvailableFrom": "2026-10-07",
+      "statusHistoryCount": 1,
+      "capacity": [],
+      "power": [],
+      "archetype": "UNKNOWN"
+    },
+    {
+      "projectId": "aws-warren",
+      "status": "PLANNED",
+      "statusEffectiveDate": "2025-11-20",
+      "statusSourceDate": "2025-11-20",
+      "statusAvailableFrom": "2026-10-07",
+      "statusHistoryCount": 1,
+      "capacity": [],
+      "power": [],
+      "archetype": "UNKNOWN"
+    },
+    {
+      "projectId": "el-paso",
+      "status": "UNDER_CONSTRUCTION",
+      "statusEffectiveDate": "2026-07-28",
+      "statusSourceDate": "2026-07-28",
+      "statusAvailableFrom": "2026-10-07",
+      "statusHistoryCount": 1,
+      "capacity": [
+        {
+          "value": 1,
+          "unit": "GW",
+          "operator": "EQ",
+          "status": "PLANNED",
+          "capacityDefinition": "CAMPUS_COMPUTE_CAPACITY_PLANNED"
+        }
+      ],
+      "power": [],
+      "archetype": "UNKNOWN"
+    },
+    {
+      "projectId": "hyperion",
+      "status": "UNDER_CONSTRUCTION",
+      "statusEffectiveDate": "2025-10-21",
+      "statusSourceDate": "2025-10-21",
+      "statusAvailableFrom": "2025-10-21",
+      "statusHistoryCount": 1,
+      "capacity": [
+        {
+          "value": 5,
+          "unit": "GW",
+          "operator": "EQ",
+          "status": "PLANNED",
+          "capacityDefinition": "CAMPUS_PLANNED_COMPUTE"
+        }
+      ],
+      "power": [
+        {
+          "value": 5200,
+          "unit": "MW",
+          "operator": "GT",
+          "powerType": "POWER_GAS"
+        },
+        {
+          "value": 2500,
+          "unit": "MW",
+          "operator": "LTE",
+          "powerType": "POWER_SOLAR"
+        }
+      ],
+      "archetype": "UNKNOWN"
+    },
+    {
+      "projectId": "jupiter",
+      "status": "UNDER_CONSTRUCTION",
+      "statusEffectiveDate": "2026-08-27",
+      "statusSourceDate": null,
+      "statusAvailableFrom": "2026-10-07",
+      "statusHistoryCount": 2,
+      "capacity": [],
+      "power": [],
+      "archetype": "UNKNOWN"
+    },
+    {
+      "projectId": "polaris-forge-1",
+      "status": "PARTIALLY_OPERATIONAL",
+      "statusEffectiveDate": "2026-06-30",
+      "statusSourceDate": "2026-07-27",
+      "statusAvailableFrom": "2026-07-27",
+      "statusHistoryCount": 2,
+      "capacity": [
+        {
+          "value": 400,
+          "unit": "MW",
+          "operator": "EQ",
+          "status": "CONTRACTED",
+          "capacityDefinition": "CRITICAL_IT_LOAD_CONTRACTED"
+        },
+        {
+          "value": 175,
+          "unit": "MW",
+          "operator": "EQ",
+          "status": "LIVE_REPORTED",
+          "capacityDefinition": "CRITICAL_IT_LOAD_LIVE_REPORTED"
+        }
+      ],
+      "power": [],
+      "archetype": "UNKNOWN"
+    }
+  ],
+  "caseBoundaries": {
+    "hyperion": {
+      "included": [
+        "location",
+        "eligible dated construction status",
+        "5GW planned campus scalability",
+        "separately scoped utility gas-generation plan and renewable option"
+      ],
+      "excluded": [
+        "secondary2.064GW",
+        "Beignet legal entities",
+        "borrower/issuer/recourse/coupon/maturity",
+        "20%/80% ownership",
+        "financing amounts",
+        "development/regional investment amounts",
+        "lease/support amounts",
+        "maximum exposure"
+      ],
+      "structuralBadges": "NOT_YET_QUALIFIED"
+    },
+    "fairwater": {
+      "included": [
+        "location",
+        "2025-09-18 construction disclosure",
+        "solar matching power context",
+        "explicit milestone-change warning"
+      ],
+      "excluded": [
+        "unsafe later partial-operation claim",
+        "disputed full completion date",
+        "legal title",
+        "site PP&E",
+        "corporate funding pledge",
+        "legal ownership/archetype badge"
+      ]
+    },
+    "polaris": {
+      "decision": "INCLUDED_COMPARATIVE_REFERENCE_NOT_ASSIGNED_TO_CORE_COMPANY",
+      "included": [
+        "location",
+        "dated construction and partial-operation disclosures",
+        "400MW contracted critical IT load",
+        "175MW reported live critical IT load"
+      ],
+      "excluded": [
+        "later partially-qualified October status",
+        "lease component capacities",
+        "tenant/legal-entity assertions",
+        "financing amounts and structure badge"
+      ]
+    }
+  },
+  "comparability": {
+    "capacity": "NATIVE_UNITS_DEFINITIONS_OPERATORS_SCOPES_PRESERVED; NO_RANKING_OR_COMMON_BAR_CHART",
+    "dollarValues": "NONE_PUBLISHED; NO_ADDITION_OR_CROSS_COMPANY_DOLLAR_COMPARISON",
+    "doubleCountDisclosure": "VISIBLE_BEFORE_CARDS_AND_IN_BOUNDARIES_EN_ZH",
+    "maximumExposure": "AMOUNTS_EXCLUDED; EDUCATIONAL_NON_DEBT_NON_EXPECTED_LOSS_WARNING",
+    "guarantees": "AMOUNTS_AND_PRESENCE_BADGES_EXCLUDED; EDUCATION_ONLY",
+    "missingness": "NOT_DISCLOSED_UNAVAILABLE_NOT_YET_QUALIFIED; NO_ZERO_FILL"
+  },
+  "copy": {
+    "en": "COMPLETE_PAIRED_DISPLAY_COPY",
+    "zh": "COMPLETE_PAIRED_DISPLAY_COPY",
+    "sourceTitlesAndNativeLabels": "BILINGUAL",
+    "properNames": "PRESERVED_IN_BOTH_LANGUAGES"
+  },
+  "uiContract": {
+    "mobile": "390PX_STACKED_CARDS_WRAP_FILTERS_NO_PAGE_OVERFLOW_TABLE_NOT_REQUIRED",
+    "desktop": "1280PX_RESTRAINED_CARD_LAYOUT_FOUR_SECTIONS",
+    "accessibility": "KEYBOARD_VISIBLE_FOCUS_SEMANTIC_TABLE_TEXT_PARITY_EN_ZH_LABELS_OPTIONAL_MAP",
+    "implemented": false,
+    "browserAcceptance": "NOT_APPLICABLE_NO_PUBLIC_PAGE_IMPLEMENTED"
+  },
+  "tests": {
+    "phase3a": {
+      "passed": 59,
+      "failed": 0
+    },
+    "phase3b": {
+      "passed": 60,
+      "failed": 0
+    },
+    "phase3c": {
+      "passed": 64,
+      "failed": 0
+    },
+    "phase3d1": {
+      "passed": 64,
+      "failed": 0
+    },
+    "total": {
+      "passed": 247,
+      "failed": 0
+    },
+    "command": "node --test research/ai-infrastructure-financing/tests/*.test.mjs",
+    "build": "PASS",
+    "verify": "PASS",
+    "inheritedBuildAdvisory": "Research-lineage Vite chunk-size advisory retained; no unrelated fix.",
+    "diffWhitespace": "PASS"
+  },
+  "determinism": {
+    "freshProcessDifferentCwd": "BYTE_IDENTICAL_COMPLETE_PAYLOAD",
+    "repeatBuild": "BYTE_IDENTICAL",
+    "repeatFrozenWrites": "BYTE_IDENTICAL",
+    "modifiedCandidateWrite": "REJECTED_WITH_EXISTING_BYTES_PRESERVED",
+    "rehashedPlausibleValueMutation": "REJECTED_BY_REGENERATED_SOURCE_MAPPING",
+    "runtimeClockAndPathsExcluded": true,
+    "explicitAsOf": "2026-10-07",
+    "projectionHashBasis": "SHA256_CANONICAL_CONTENT_EXCLUDING_SELF_HASH_FIELD",
+    "fileHashBasis": "SHA256_EXACT_COMPACT_UTF8_WITH_FINAL_NEWLINE"
+  },
+  "protection": {
+    "productionMainChanged": false,
+    "productionVersionChanged": false,
+    "productionSnapshotChanged": false,
+    "productionSnapshotSha256": "8891e6b7dca9317e3d2400bdd3749c54425ff1c0385c1f2151e2593c92227c3a",
+    "productionSnapshotBasis": "Read-only origin/main blob; inherited research application version is intentionally unchanged.",
+    "phase3cPanelChanged": false,
+    "productionFrontendChanged": false,
+    "workflowChanged": false,
+    "emailChanged": false,
+    "aiLaborChanged": false,
+    "signalEngineChanged": false,
+    "aiCapexChanged": false,
+    "productionPrOpened": false,
+    "merged": false,
+    "deployed": false,
+    "scheduledRefresh": false,
+    "runtimeApi": false,
+    "aggregateInvestmentCreated": false,
+    "hiddenLeverageCreated": false,
+    "aiRoiCreated": false,
+    "systemicRiskScoreCreated": false
+  },
+  "remainingHigh": [
+    {
+      "id": "PROJECT_FINANCING_PUBLIC_EVIDENCE",
+      "type": "EVIDENCE_LIMITATION_NOT_IMPLEMENTATION_DEFECT",
+      "detail": "No PUBLIC_READY structural financing/ownership observations exist in the frozen panel. Archetypes and badges remain unknown/empty. Broader financial publication needs primary contract/legal scope evidence and separate qualification."
+    }
+  ],
+  "remainingMedium": [
+    {
+      "id": "UNEQUAL_COVERAGE",
+      "detail": "Alphabet, Abilene and Canton lack sufficient eligible context for cards. Seven projects are curated, not a comprehensive census."
+    },
+    {
+      "id": "STATUS_VINTAGE",
+      "detail": "Fairwater milestone differences remain unresolved; public statuses are safe dated observations, not synchronized current full-campus operation."
+    },
+    {
+      "id": "CAPACITY_DEFINITIONS",
+      "detail": "Native campus, contracted/live IT-load and utility-generation definitions remain incompatible; no ranking or harmonization."
+    },
+    {
+      "id": "UNDATED_SOURCES",
+      "detail": "Jupiter photo effective date differs from unknown page publication date. First-reviewed source vintages are not real-time historical snapshots."
+    },
+    {
+      "id": "IMPLEMENTATION_ACCEPTANCE_PENDING",
+      "detail": "Mobile/desktop/accessibility are contracts only. Phase3D.2 must implement and browser-test them; no browser acceptance claimed here."
+    }
+  ],
+  "recommendedPhase3d2": "Start a clean branch from latest production main. Import ONLY frozen public JSON plus the reviewed EN/ZH copy necessary for rendering; verify projection/file/copy hashes. Implement four-section cards/table, source/date/native-scope displays, visible DO NOT ADD, and truthful UNKNOWN financing messaging. Add navigation and production tests/browser acceptance. Do not import this research lineage, trace/audit, internal legal evidence or raw archive. No automation, sums, rankings or return/risk model.",
+  "finalDecision": "READY FOR AI INFRASTRUCTURE PUBLIC INTEGRATION",
+  "decisionBoundary": "Ready for a separately reviewed clean production integration of the conservative frozen projection and contract; not deployed, not approved to merge and not a qualified financing/return assessment."
+}
