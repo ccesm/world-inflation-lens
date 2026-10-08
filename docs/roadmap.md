@@ -2,7 +2,15 @@
 
 World Inflation Lens studies **domestic dollar purchasing power and the international dollar role over the next 20–30 years**. These outcomes interact but are not interchangeable. Historical observations, official conditional projections and hypothetical scenarios remain visibly distinct. Global inflation provides supporting context. Both Chinese and English are supported.
 
-## V1.4.0 — AI Infrastructure (release preparation)
+## V1.4.1 — AI Infrastructure paper-first
+
+Paper-first reading order adds Bottom Line, three academic-paper charts and a
+Paper vs. our evidence comparison before the unchanged seven-project evidence.
+Paper estimates/scenarios and qualified project facts retain separate provenance.
+No financing qualification, ownership inference, return metric or automation is added.
+See [release notes](v1.4.1-ai-infrastructure-paper-first.md).
+
+## V1.4.0 — AI Infrastructure
 
 The public `#/research/ai-infrastructure` view is a curated fixed vintage as of
 2026-10-07: seven source-linked project/case cards, native capacity, dated status
@@ -10,8 +18,8 @@ and separate power/grid facts. Coverage is asymmetric; Alphabet has no qualified
 card, and Polaris is an independent comparison. Financing structures remain
 UNKNOWN, not absent. No aggregate dollars, ownership percentages, AI ROI, score,
 live refresh or research-history import is added. Company-level AI CapEx and
-project-level infrastructure remain separate. Application version **1.4.0** is
-prepared; merge and deployment remain pending owner approval.
+project-level infrastructure remain separate. Application version **1.4.0** was
+released to production.
 See [release notes](v1.4-ai-infrastructure.md).
 
 ## V1.3.0 — AI CapEx & Monetization

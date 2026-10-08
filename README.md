@@ -2,11 +2,17 @@
 
 A bilingual Vite + React research site studying two related questions over the next 20–30 years: the U.S. dollar’s domestic purchasing power and its international role in reserves, finance, trade and payments. Observations, official conditional projections and hypothetical scenarios remain distinct. Global inflation provides supporting context.
 
-## V1.4.0 — AI Infrastructure (release preparation)
+## V1.4.1 — AI Infrastructure paper-first
 
-Research → **AI Infrastructure & Financing** (`#/research/ai-infrastructure`) adds a fixed-vintage, source-linked project view as of **2026-10-07**: seven cards/cases, asymmetric company coverage, dated status, native capacity definitions and separate power evidence. All seven financing structures remain **UNKNOWN / not yet publicly qualified**. Project cost, CapEx, debt, leases, guarantees and maximum exposure must not be added without proven non-overlap. No aggregate dollars, ownership percentages, AI ROI, score or live refresh is introduced; the research history is not imported. Application version **1.4.0** is prepared; merge/deployment require separate approval. See [v1.4.0 release notes](docs/v1.4-ai-infrastructure.md).
+The AI Infrastructure page now starts with the academic paper, Bottom Line, three key charts and conclusions, then compares those claims with World Inflation Lens qualified evidence before showing detailed project data. Paper estimates and scenarios remain separate from the unchanged seven-project evidence; financing remains UNKNOWN where unqualified. No new project facts, return calculations or automation are introduced. See [v1.4.1 release notes](docs/v1.4.1-ai-infrastructure-paper-first.md).
 
-**研究 → AI 基础设施与融资**展示截至 **2026-10-07** 的七个固定版本项目／对照案例。容量保留原始定义，电力证据独立展示；融资结构均尚未完成公开核验。不同会计／融资层次不能直接相加，不计算 AI 回报、评分或投资总额，不启用实时刷新。**1.4.0** 仅完成发布准备，尚未合并或部署。
+AI 基础设施页面现在先呈现学术论文、核心结论和三张关键图表，再将论文论点与 World Inflation Lens 的合格证据比较，最后展示详细项目数据。论文估计与情景不转化为项目事实；七个项目证据保持不变，未核验的融资结构仍为 UNKNOWN，不新增回报计算或自动化。
+
+## V1.4.0 — AI Infrastructure
+
+Research → **AI Infrastructure & Financing** (`#/research/ai-infrastructure`) adds a fixed-vintage, source-linked project view as of **2026-10-07**: seven cards/cases, asymmetric company coverage, dated status, native capacity definitions and separate power evidence. All seven financing structures remain **UNKNOWN / not yet publicly qualified**. Project cost, CapEx, debt, leases, guarantees and maximum exposure must not be added without proven non-overlap. No aggregate dollars, ownership percentages, AI ROI, score or live refresh is introduced; the research history is not imported. Application version **1.4.0** was released to production. See [v1.4.0 release notes](docs/v1.4-ai-infrastructure.md).
+
+**研究 → AI 基础设施与融资**展示截至 **2026-10-07** 的七个固定版本项目／对照案例。容量保留原始定义，电力证据独立展示；融资结构均尚未完成公开核验。不同会计／融资层次不能直接相加，不计算 AI 回报、评分或投资总额，不启用实时刷新。**1.4.0** 已合并并部署至生产。
 
 ## V1.3.0 — AI CapEx & Monetization
 
@@ -431,4 +437,4 @@ Verification runs every page in both languages and checks emitted asset paths. B
 
 ## Public Signal Engine feature
 
-The first public presentation adds a compact Home brief and `#/research/signal-engine`, using a strict pre-generated public summary. Local review requires `npm ci --prefix research/signal-engine`, then `npm run signal:public`, `npm run build` and `npm run verify`. The committed public JSON is an unavailable bootstrap; internal shadow artifacts are never browser inputs. See [feature review and lifecycle](docs/public-signal-engine-ui.md) and [public schema](docs/signal-public-summary.schema.json). The daily shadow/email pipeline remains independent. Public Signal Engine was introduced in 1.1.0; see [its release notes](docs/v1.1-public-signal-engine.md). Version 1.2.0 added the [AI Labor interim conclusion](docs/v1.2-ai-labor-interim-conclusion.md). Version 1.3.0 added [AI CapEx & Monetization](docs/v1.3-ai-capex-monetization.md). The current 1.4.0 preparation adds [AI Infrastructure](docs/v1.4-ai-infrastructure.md) without changing Signal methodology or behavior.
+The first public presentation adds a compact Home brief and `#/research/signal-engine`, using a strict pre-generated public summary. Local review requires `npm ci --prefix research/signal-engine`, then `npm run signal:public`, `npm run build` and `npm run verify`. The committed public JSON is an unavailable bootstrap; internal shadow artifacts are never browser inputs. See [feature review and lifecycle](docs/public-signal-engine-ui.md) and [public schema](docs/signal-public-summary.schema.json). The daily shadow/email pipeline remains independent. Public Signal Engine was introduced in 1.1.0; see [its release notes](docs/v1.1-public-signal-engine.md). Version 1.2.0 added the [AI Labor interim conclusion](docs/v1.2-ai-labor-interim-conclusion.md). Version 1.3.0 added [AI CapEx & Monetization](docs/v1.3-ai-capex-monetization.md). Version 1.4.0 added [AI Infrastructure](docs/v1.4-ai-infrastructure.md) without changing Signal methodology or behavior.

@@ -71,7 +71,7 @@ test('layout and provenance boundary, semantic fallback, source accessibility an
  assert.match(component,/scope="col"/);assert.match(component,/scope="row"/);assert.match(component,/role="img" aria-label/);assert.match(component,/target="_blank" rel="noopener noreferrer"/)
  assert.doesNotMatch(component,/fetch\(|XMLHttpRequest|api.github|VITE_|setInterval|monitor.json/)
  assert.doesNotMatch(read('src/data/ai-infrastructure/paper.js'),/\/Users\/|file:\/\/|cache\/objects|totalAIInvestment|aiROI|riskScore|leverageScore/)
- assert.equal(JSON.parse(read('package.json')).version,'1.4.0')
+ assert.equal(JSON.parse(read('package.json')).version,'1.4.1')
 })
 test('polish preserves numeric file identity and detailed comparison copy',()=>{
  assert.equal(createHash('sha256').update(read('src/data/ai-infrastructure/paper.js')).digest('hex'),'b8d8db448d0a6843fcbc6e5b3d05791099f8cc9b4248b6133c65a30e0c7a10f9')
