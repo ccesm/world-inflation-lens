@@ -1,0 +1,19 @@
+{
+  "scheduled_start_utc": "2026-10-08T10:40:00Z",
+  "scheduled_start_local": "2026-10-08 03:40:00 America/Los_Angeles (PDT)",
+  "actual_start_utc": "2026-10-08T10:40:25Z",
+  "actual_start_local": "2026-10-08 03:40:25 America/Los_Angeles (PDT)",
+  "research_cutoff": "2026-10-08",
+  "expected_main_sha": "58011bee60221159e2614350e5d3fa2c8155911c",
+  "repo_base_sha": "a7899729f36217cf1d4142f1203e11c32984ad9d",
+  "branch": "codex/ai-infra-paper-validation-phase-a",
+  "worktree": "/private/tmp/wil-phase-a",
+  "git_repository": "/private/tmp/wil-phase-a-origin.git",
+  "remote": "https://github.com/ccesm/world-inflation-lens.git",
+  "base_drift": "One bot data-refresh commit; 15 existing snapshot/history files changed. No scope conflict; proceeded.",
+  "shared_state": "Untracked work present and malformed unrelated local ref. No shared files or refs repaired. Independent bare clone and linked Git worktree used.",
+  "run_policy": "Exactly one research run; no new schedule, retry automation, recurring task or automatic continuation created.",
+  "production_files_changed": false,
+  "application_version_changed": false,
+  "production_pr_merge_deployment": "None authorized or performed"
+}

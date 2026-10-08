@@ -1,0 +1,23 @@
+{
+  "retrieved_date": "2026-10-08",
+  "capture_method": "Manual structured transcription of primary financial-statement cells viewed with web tool; original URLs retained. Not paper-derived. Downloaded unmodified documents retained where access succeeded.",
+  "excerpts": [
+    {"source_id":"amazon-q2-2026","publication_date":"2026-07-30","reporting_period":"2026-01-01/2026-06-30","native_unit":"USD_MILLION","classification":"OBSERVED","original_line_item_label":"Proceeds from property and equipment sales and incentives","value":2101},
+    {"source_id":"amazon-q2-2026","publication_date":"2026-07-30","reporting_period":"2025-01-01/2025-12-31","native_unit":"USD_MILLION","classification":"OBSERVED","original_line_item_label":"Purchases of property and equipment, net of proceeds from sales and incentives -- TTM","value":128320,"locator":"Supplemental financial information; Q4 2025 TTM column"},
+    {"source_id":"oracle-q1-fy2027","publication_date":"2026-09-10","reporting_period":"2026-06-01/2026-08-31","native_unit":"USD_MILLION","classification":"OBSERVED_GAAP","original_line_item_label":"Capital expenditures","value":28499},
+    {"source_id":"oracle-q1-fy2027","publication_date":"2026-09-10","reporting_period":"2026-06-01/2026-08-31","native_unit":"USD_MILLION","classification":"OBSERVED_GAAP","original_line_item_label":"Net cash provided by operating activities","value":23103},
+    {"source_id":"oracle-q1-fy2027","publication_date":"2026-09-10","reporting_period":"2026-06-01/2026-08-31","native_unit":"USD_MILLION","classification":"OBSERVED_GAAP","metric":"customer_prepayments_with_significant_financing_component_in_ocf","value":11363},
+    {"source_id":"oracle-q1-fy2027","publication_date":"2026-09-10","reporting_period":"2026-06-01/2026-08-31","native_unit":"USD_MILLION","classification":"OBSERVED_GAAP","metric":"net_common_stock_atm_proceeds","value":19909},
+    {"source_id":"oracle-q1-fy2027","publication_date":"2026-09-10","reporting_period":"2026-06-01/2026-08-31","native_unit":"USD_MILLION","classification":"COMPANY_SUPPLEMENTAL_NON_GAAP","metric":"net_cash_outlay_for_capital_expenditures","value":17966,"adjustment_note":"GAAP CapEx minus customer prepayments plus 830 of short-term financing repayments; keep separate from cash purchases and OCF."},
+    {"source_id":"meta-2025-10k","publication_date":"2026-01-29","reporting_period":"2025-01-01/2025-12-31","native_unit":"USD_MILLION","classification":"OBSERVED_GAAP","original_line_item_label":"Payments for held-for-sale assets","value":2432}
+  ],
+  "guidance": [
+    {"company":"microsoft","classification":"COMPANY_GUIDANCE","publication_date":"2026-07-29","reporting_period":"2026-01-01/2026-12-31","value_low":175,"value_high":175,"unit":"USD_BILLION","source_id":"microsoft-fy2026-q4-call","definition":"Company capital expenditures including finance leases, excluding operating leases; reported approximately. Revised from approximately 190 after lease classification change. Not cash-PP&E guidance."},
+    {"company":"meta","classification":"COMPANY_GUIDANCE","publication_date":"2026-07-29","reporting_period":"2026-01-01/2026-12-31","value_low":130,"value_high":145,"unit":"USD_BILLION","source_id":"meta-q2-2026","definition":"Capital expenditures including finance lease principal payments; not cash PP&E alone."},
+    {"company":"amazon","classification":"GUIDANCE_UNVERIFIED","publication_date":null,"reporting_period":"2026-01-01/2026-12-31","value_low":null,"value_high":null,"unit":"USD_BILLION","source_id":"amazon-q2-2026","definition":"Release viewed but did not contain numerical annual CapEx guidance; official call transcript not captured. No secondary figure accepted."},
+    {"company":"alphabet","classification":"GUIDANCE_UNVERIFIED","publication_date":null,"reporting_period":"2026-01-01/2026-12-31","value_low":null,"value_high":null,"unit":"USD_BILLION","source_id":"alphabet-q2-2026","definition":"Official release captured but numeric annual guidance absent; official transcript endpoint inaccessible. No secondary figure accepted."},
+    {"company":"oracle","classification":"GUIDANCE_UNVERIFIED","publication_date":null,"reporting_period":null,"value_low":null,"value_high":null,"unit":"USD_BILLION","source_id":"oracle-q1-fy2027","definition":"Numeric annual CapEx guidance not independently verified; fiscal guidance and net cash outlay must not be calendarized into cash PP&E."}
+  ],
+  "independent_estimates": [],
+  "note": "No five-company 2026 full-year estimate constructed. All estimates remain absent rather than filled from paper or secondary reporting."
+}

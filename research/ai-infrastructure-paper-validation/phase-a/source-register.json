@@ -1,0 +1,2253 @@
+{
+  "schema_version": "1.0",
+  "research_cutoff": "2026-10-08",
+  "sources": [
+    {
+      "id": "microsoft-companyfacts",
+      "company": "microsoft",
+      "type": "SEC_COMPANYFACTS_PRIMARY",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "retrieved_date": "2026-10-08",
+      "cutoff_filed_date": "2026-10-08",
+      "path": "sources/microsoft-companyfacts.json.gz",
+      "raw_sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f",
+      "captured_sha256": "54d8361b5df26cae9880252ab47e7a4eda850b6549b24a792b4f4f7ed73dbcb3",
+      "native_unit": "USD",
+      "extraction": "Unmodified SEC response, lossless deterministic gzip; contexts filed after cutoff are excluded"
+    },
+    {
+      "id": "amazon-companyfacts",
+      "company": "amazon",
+      "type": "SEC_COMPANYFACTS_PRIMARY",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+      "retrieved_date": "2026-10-08",
+      "cutoff_filed_date": "2026-10-08",
+      "path": "sources/amazon-companyfacts.json.gz",
+      "raw_sha256": "7549fb68446eee40e1f50a166fa06b2d2ee6349e07c8553a4828757e032d3cd4",
+      "captured_sha256": "159cac13ba156cde55a974510ddbd74c94d5c6a494662261618435f70e23ddb7",
+      "native_unit": "USD",
+      "extraction": "Unmodified SEC response, lossless deterministic gzip; contexts filed after cutoff are excluded"
+    },
+    {
+      "id": "alphabet-companyfacts",
+      "company": "alphabet",
+      "type": "SEC_COMPANYFACTS_PRIMARY",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+      "retrieved_date": "2026-10-08",
+      "cutoff_filed_date": "2026-10-08",
+      "path": "sources/alphabet-companyfacts.json.gz",
+      "raw_sha256": "a017f26ee88cb4a639d1c1ddb06d53b4afe22f0ac89cabec7cd67c88919fe1c5",
+      "captured_sha256": "76768be758fc2509519904e8b630af480e5a2dcf8677b8439776db2dc463ffa6",
+      "native_unit": "USD",
+      "extraction": "Unmodified SEC response, lossless deterministic gzip; contexts filed after cutoff are excluded"
+    },
+    {
+      "id": "meta-companyfacts",
+      "company": "meta",
+      "type": "SEC_COMPANYFACTS_PRIMARY",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+      "retrieved_date": "2026-10-08",
+      "cutoff_filed_date": "2026-10-08",
+      "path": "sources/meta-companyfacts.json.gz",
+      "raw_sha256": "7518e76d6dac2d016e1a3d1dec1cc55ff9ea3bdd58a151b16fcaa067a6c9d94e",
+      "captured_sha256": "213fc6813d08fd5f6d1981f743241de27d35ab39af734071d835123222501347",
+      "native_unit": "USD",
+      "extraction": "Unmodified SEC response, lossless deterministic gzip; contexts filed after cutoff are excluded"
+    },
+    {
+      "id": "oracle-companyfacts",
+      "company": "oracle",
+      "type": "SEC_COMPANYFACTS_PRIMARY",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json",
+      "retrieved_date": "2026-10-08",
+      "cutoff_filed_date": "2026-10-08",
+      "path": "sources/oracle-companyfacts.json.gz",
+      "raw_sha256": "65523545f040abaea1dfcf321da2a5aec85e7f34387244b0ffcb26e4c8707f7d",
+      "captured_sha256": "2def07e243e4ec1e3554333b51a11f64503b58cafd1164014c16bde206068165",
+      "native_unit": "USD",
+      "extraction": "Unmodified SEC response, lossless deterministic gzip; contexts filed after cutoff are excluded"
+    }
+  ],
+  "filings": [
+    {
+      "id": "alphabet:0001652044-19-000015",
+      "company": "alphabet",
+      "accession": "0001652044-19-000015",
+      "filing_date": "2019-04-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204419000015/0001652044-19-000015-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-03-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-19-000023",
+      "company": "alphabet",
+      "accession": "0001652044-19-000023",
+      "filing_date": "2019-07-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204419000023/0001652044-19-000023-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-06-30",
+        "2019-04-01/2019-06-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-19-000032",
+      "company": "alphabet",
+      "accession": "0001652044-19-000032",
+      "filing_date": "2019-10-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204419000032/0001652044-19-000032-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-09-30",
+        "2019-07-01/2019-09-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-20-000008",
+      "company": "alphabet",
+      "accession": "0001652044-20-000008",
+      "filing_date": "2020-02-04",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000008/0001652044-20-000008-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-20-000021",
+      "company": "alphabet",
+      "accession": "0001652044-20-000021",
+      "filing_date": "2020-04-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000021/0001652044-20-000021-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-03-31",
+        "2020-01-01/2020-03-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-20-000032",
+      "company": "alphabet",
+      "accession": "0001652044-20-000032",
+      "filing_date": "2020-07-31",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000032/0001652044-20-000032-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-06-30",
+        "2019-04-01/2019-06-30",
+        "2020-01-01/2020-06-30",
+        "2020-04-01/2020-06-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-20-000050",
+      "company": "alphabet",
+      "accession": "0001652044-20-000050",
+      "filing_date": "2020-10-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000050/0001652044-20-000050-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-09-30",
+        "2019-07-01/2019-09-30",
+        "2020-01-01/2020-09-30",
+        "2020-07-01/2020-09-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-21-000010",
+      "company": "alphabet",
+      "accession": "0001652044-21-000010",
+      "filing_date": "2021-02-03",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204421000010/0001652044-21-000010-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31",
+        "2020-01-01/2020-12-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-21-000020",
+      "company": "alphabet",
+      "accession": "0001652044-21-000020",
+      "filing_date": "2021-04-28",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204421000020/0001652044-21-000020-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-03-31",
+        "2021-01-01/2021-03-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-21-000047",
+      "company": "alphabet",
+      "accession": "0001652044-21-000047",
+      "filing_date": "2021-07-28",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204421000047/0001652044-21-000047-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-06-30",
+        "2021-01-01/2021-06-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-21-000057",
+      "company": "alphabet",
+      "accession": "0001652044-21-000057",
+      "filing_date": "2021-10-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204421000057/0001652044-21-000057-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-09-30",
+        "2021-01-01/2021-09-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-22-000019",
+      "company": "alphabet",
+      "accession": "0001652044-22-000019",
+      "filing_date": "2022-02-02",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/0001652044-22-000019-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31",
+        "2020-01-01/2020-12-31",
+        "2021-01-01/2021-12-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-22-000029",
+      "company": "alphabet",
+      "accession": "0001652044-22-000029",
+      "filing_date": "2022-04-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000029/0001652044-22-000029-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-03-31",
+        "2022-01-01/2022-03-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-22-000071",
+      "company": "alphabet",
+      "accession": "0001652044-22-000071",
+      "filing_date": "2022-07-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000071/0001652044-22-000071-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-06-30",
+        "2022-01-01/2022-06-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-22-000090",
+      "company": "alphabet",
+      "accession": "0001652044-22-000090",
+      "filing_date": "2022-10-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000090/0001652044-22-000090-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-09-30",
+        "2022-01-01/2022-09-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-23-000016",
+      "company": "alphabet",
+      "accession": "0001652044-23-000016",
+      "filing_date": "2023-02-03",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/0001652044-23-000016-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-12-31",
+        "2021-01-01/2021-12-31",
+        "2022-01-01/2022-12-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-23-000045",
+      "company": "alphabet",
+      "accession": "0001652044-23-000045",
+      "filing_date": "2023-04-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000045/0001652044-23-000045-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-03-31",
+        "2023-01-01/2023-03-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-23-000070",
+      "company": "alphabet",
+      "accession": "0001652044-23-000070",
+      "filing_date": "2023-07-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000070/0001652044-23-000070-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-06-30",
+        "2023-01-01/2023-06-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-23-000094",
+      "company": "alphabet",
+      "accession": "0001652044-23-000094",
+      "filing_date": "2023-10-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000094/0001652044-23-000094-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-09-30",
+        "2023-01-01/2023-09-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-24-000022",
+      "company": "alphabet",
+      "accession": "0001652044-24-000022",
+      "filing_date": "2024-01-31",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/0001652044-24-000022-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-12-31",
+        "2022-01-01/2022-12-31",
+        "2023-01-01/2023-12-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-24-000053",
+      "company": "alphabet",
+      "accession": "0001652044-24-000053",
+      "filing_date": "2024-04-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000053/0001652044-24-000053-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-03-31",
+        "2024-01-01/2024-03-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-24-000079",
+      "company": "alphabet",
+      "accession": "0001652044-24-000079",
+      "filing_date": "2024-07-24",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000079/0001652044-24-000079-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-06-30",
+        "2024-01-01/2024-06-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-24-000118",
+      "company": "alphabet",
+      "accession": "0001652044-24-000118",
+      "filing_date": "2024-10-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/0001652044-24-000118-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-09-30",
+        "2024-01-01/2024-09-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-25-000014",
+      "company": "alphabet",
+      "accession": "0001652044-25-000014",
+      "filing_date": "2025-02-05",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/0001652044-25-000014-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-12-31",
+        "2023-01-01/2023-12-31",
+        "2024-01-01/2024-12-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-25-000043",
+      "company": "alphabet",
+      "accession": "0001652044-25-000043",
+      "filing_date": "2025-04-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000043/0001652044-25-000043-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-01-01/2024-03-31",
+        "2025-01-01/2025-03-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-25-000062",
+      "company": "alphabet",
+      "accession": "0001652044-25-000062",
+      "filing_date": "2025-07-24",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/0001652044-25-000062-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-01-01/2024-06-30",
+        "2025-01-01/2025-06-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-25-000091",
+      "company": "alphabet",
+      "accession": "0001652044-25-000091",
+      "filing_date": "2025-10-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/0001652044-25-000091-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-01-01/2024-09-30",
+        "2025-01-01/2025-09-30"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-26-000018",
+      "company": "alphabet",
+      "accession": "0001652044-26-000018",
+      "filing_date": "2026-02-05",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-12-31",
+        "2024-01-01/2024-12-31",
+        "2025-01-01/2025-12-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-26-000048",
+      "company": "alphabet",
+      "accession": "0001652044-26-000048",
+      "filing_date": "2026-04-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2025-01-01/2025-03-31",
+        "2026-01-01/2026-03-31"
+      ]
+    },
+    {
+      "id": "alphabet:0001652044-26-000071",
+      "company": "alphabet",
+      "accession": "0001652044-26-000071",
+      "filing_date": "2026-07-23",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.html",
+      "captured_in": "sources/alphabet-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2025-01-01/2025-06-30",
+        "2026-01-01/2026-06-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-19-000043",
+      "company": "amazon",
+      "accession": "0001018724-19-000043",
+      "filing_date": "2019-04-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872419000043/0001018724-19-000043-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-03-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-19-000071",
+      "company": "amazon",
+      "accession": "0001018724-19-000071",
+      "filing_date": "2019-07-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872419000071/0001018724-19-000071-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-06-30",
+        "2019-04-01/2019-06-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-19-000089",
+      "company": "amazon",
+      "accession": "0001018724-19-000089",
+      "filing_date": "2019-10-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872419000089/0001018724-19-000089-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-09-30",
+        "2019-07-01/2019-09-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-20-000004",
+      "company": "amazon",
+      "accession": "0001018724-20-000004",
+      "filing_date": "2020-01-31",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000004/0001018724-20-000004-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-20-000010",
+      "company": "amazon",
+      "accession": "0001018724-20-000010",
+      "filing_date": "2020-05-01",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000010/0001018724-20-000010-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-03-31",
+        "2019-04-01/2020-03-31",
+        "2020-01-01/2020-03-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-20-000021",
+      "company": "amazon",
+      "accession": "0001018724-20-000021",
+      "filing_date": "2020-07-31",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000021/0001018724-20-000021-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-06-30",
+        "2019-04-01/2019-06-30",
+        "2019-07-01/2020-06-30",
+        "2020-01-01/2020-06-30",
+        "2020-04-01/2020-06-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-20-000030",
+      "company": "amazon",
+      "accession": "0001018724-20-000030",
+      "filing_date": "2020-10-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000030/0001018724-20-000030-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-09-30",
+        "2019-07-01/2019-09-30",
+        "2019-10-01/2020-09-30",
+        "2020-01-01/2020-09-30",
+        "2020-07-01/2020-09-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-21-000004",
+      "company": "amazon",
+      "accession": "0001018724-21-000004",
+      "filing_date": "2021-02-03",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872421000004/0001018724-21-000004-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31",
+        "2020-01-01/2020-12-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-21-000010",
+      "company": "amazon",
+      "accession": "0001018724-21-000010",
+      "filing_date": "2021-04-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872421000010/0001018724-21-000010-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-04-01/2020-03-31",
+        "2020-01-01/2020-03-31",
+        "2020-04-01/2021-03-31",
+        "2021-01-01/2021-03-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-21-000020",
+      "company": "amazon",
+      "accession": "0001018724-21-000020",
+      "filing_date": "2021-07-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872421000020/0001018724-21-000020-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2020-06-30",
+        "2020-01-01/2020-06-30",
+        "2020-04-01/2020-06-30",
+        "2020-07-01/2021-06-30",
+        "2021-01-01/2021-06-30",
+        "2021-04-01/2021-06-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-21-000028",
+      "company": "amazon",
+      "accession": "0001018724-21-000028",
+      "filing_date": "2021-10-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872421000028/0001018724-21-000028-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-10-01/2020-09-30",
+        "2020-01-01/2020-09-30",
+        "2020-07-01/2020-09-30",
+        "2020-10-01/2021-09-30",
+        "2021-01-01/2021-09-30",
+        "2021-07-01/2021-09-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-22-000005",
+      "company": "amazon",
+      "accession": "0001018724-22-000005",
+      "filing_date": "2022-02-04",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000005/0001018724-22-000005-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31",
+        "2020-01-01/2020-12-31",
+        "2021-01-01/2021-12-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-22-000013",
+      "company": "amazon",
+      "accession": "0001018724-22-000013",
+      "filing_date": "2022-04-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000013/0001018724-22-000013-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-04-01/2021-03-31",
+        "2021-01-01/2021-03-31",
+        "2021-04-01/2022-03-31",
+        "2022-01-01/2022-03-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-22-000019",
+      "company": "amazon",
+      "accession": "0001018724-22-000019",
+      "filing_date": "2022-07-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000019/0001018724-22-000019-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-07-01/2021-06-30",
+        "2021-01-01/2021-06-30",
+        "2021-04-01/2021-06-30",
+        "2021-07-01/2022-06-30",
+        "2022-01-01/2022-06-30",
+        "2022-04-01/2022-06-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-22-000023",
+      "company": "amazon",
+      "accession": "0001018724-22-000023",
+      "filing_date": "2022-10-28",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000023/0001018724-22-000023-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-10-01/2021-09-30",
+        "2021-01-01/2021-09-30",
+        "2021-07-01/2021-09-30",
+        "2021-10-01/2022-09-30",
+        "2022-01-01/2022-09-30",
+        "2022-07-01/2022-09-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-23-000004",
+      "company": "amazon",
+      "accession": "0001018724-23-000004",
+      "filing_date": "2023-02-03",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/0001018724-23-000004-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-12-31",
+        "2021-01-01/2021-12-31",
+        "2022-01-01/2022-12-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-23-000008",
+      "company": "amazon",
+      "accession": "0001018724-23-000008",
+      "filing_date": "2023-04-28",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000008/0001018724-23-000008-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-04-01/2022-03-31",
+        "2022-01-01/2022-03-31",
+        "2022-04-01/2023-03-31",
+        "2023-01-01/2023-03-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-23-000012",
+      "company": "amazon",
+      "accession": "0001018724-23-000012",
+      "filing_date": "2023-08-04",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000012/0001018724-23-000012-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-07-01/2022-06-30",
+        "2022-01-01/2022-06-30",
+        "2022-04-01/2022-06-30",
+        "2022-07-01/2023-06-30",
+        "2023-01-01/2023-06-30",
+        "2023-04-01/2023-06-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-23-000018",
+      "company": "amazon",
+      "accession": "0001018724-23-000018",
+      "filing_date": "2023-10-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000018/0001018724-23-000018-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-10-01/2022-09-30",
+        "2022-01-01/2022-09-30",
+        "2022-07-01/2022-09-30",
+        "2022-10-01/2023-09-30",
+        "2023-01-01/2023-09-30",
+        "2023-07-01/2023-09-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-24-000008",
+      "company": "amazon",
+      "accession": "0001018724-24-000008",
+      "filing_date": "2024-02-02",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/0001018724-24-000008-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-12-31",
+        "2022-01-01/2022-12-31",
+        "2023-01-01/2023-12-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-24-000083",
+      "company": "amazon",
+      "accession": "0001018724-24-000083",
+      "filing_date": "2024-05-01",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000083/0001018724-24-000083-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-04-01/2023-03-31",
+        "2023-01-01/2023-03-31",
+        "2023-04-01/2024-03-31",
+        "2024-01-01/2024-03-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-24-000130",
+      "company": "amazon",
+      "accession": "0001018724-24-000130",
+      "filing_date": "2024-08-02",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000130/0001018724-24-000130-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-07-01/2023-06-30",
+        "2023-01-01/2023-06-30",
+        "2023-04-01/2023-06-30",
+        "2023-07-01/2024-06-30",
+        "2024-01-01/2024-06-30",
+        "2024-04-01/2024-06-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-24-000161",
+      "company": "amazon",
+      "accession": "0001018724-24-000161",
+      "filing_date": "2024-11-01",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000161/0001018724-24-000161-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-10-01/2023-09-30",
+        "2023-01-01/2023-09-30",
+        "2023-07-01/2023-09-30",
+        "2023-10-01/2024-09-30",
+        "2024-01-01/2024-09-30",
+        "2024-07-01/2024-09-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-25-000004",
+      "company": "amazon",
+      "accession": "0001018724-25-000004",
+      "filing_date": "2025-02-07",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/0001018724-25-000004-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-12-31",
+        "2023-01-01/2023-12-31",
+        "2024-01-01/2024-12-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-25-000036",
+      "company": "amazon",
+      "accession": "0001018724-25-000036",
+      "filing_date": "2025-05-02",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000036/0001018724-25-000036-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-04-01/2024-03-31",
+        "2024-01-01/2024-03-31",
+        "2024-04-01/2025-03-31",
+        "2025-01-01/2025-03-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-25-000086",
+      "company": "amazon",
+      "accession": "0001018724-25-000086",
+      "filing_date": "2025-08-01",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000086/0001018724-25-000086-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-07-01/2024-06-30",
+        "2024-01-01/2024-06-30",
+        "2024-04-01/2024-06-30",
+        "2024-07-01/2025-06-30",
+        "2025-01-01/2025-06-30",
+        "2025-04-01/2025-06-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-25-000123",
+      "company": "amazon",
+      "accession": "0001018724-25-000123",
+      "filing_date": "2025-10-31",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/0001018724-25-000123-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-10-01/2024-09-30",
+        "2024-01-01/2024-09-30",
+        "2024-07-01/2024-09-30",
+        "2024-10-01/2025-09-30",
+        "2025-01-01/2025-09-30",
+        "2025-07-01/2025-09-30"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-26-000004",
+      "company": "amazon",
+      "accession": "0001018724-26-000004",
+      "filing_date": "2026-02-06",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-12-31",
+        "2024-01-01/2024-12-31",
+        "2025-01-01/2025-12-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-26-000014",
+      "company": "amazon",
+      "accession": "0001018724-26-000014",
+      "filing_date": "2026-04-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-04-01/2025-03-31",
+        "2025-01-01/2025-03-31",
+        "2025-04-01/2026-03-31",
+        "2026-01-01/2026-03-31"
+      ]
+    },
+    {
+      "id": "amazon:0001018724-26-000026",
+      "company": "amazon",
+      "accession": "0001018724-26-000026",
+      "filing_date": "2026-07-31",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.html",
+      "captured_in": "sources/amazon-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-07-01/2025-06-30",
+        "2025-01-01/2025-06-30",
+        "2025-04-01/2025-06-30",
+        "2025-07-01/2026-06-30",
+        "2026-01-01/2026-06-30",
+        "2026-04-01/2026-06-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-19-000037",
+      "company": "meta",
+      "accession": "0001326801-19-000037",
+      "filing_date": "2019-04-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680119000037/0001326801-19-000037-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-03-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-19-000055",
+      "company": "meta",
+      "accession": "0001326801-19-000055",
+      "filing_date": "2019-07-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680119000055/0001326801-19-000055-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-06-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-19-000069",
+      "company": "meta",
+      "accession": "0001326801-19-000069",
+      "filing_date": "2019-10-31",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680119000069/0001326801-19-000069-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-09-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-20-000013",
+      "company": "meta",
+      "accession": "0001326801-20-000013",
+      "filing_date": "2020-01-30",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000013/0001326801-20-000013-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-20-000048",
+      "company": "meta",
+      "accession": "0001326801-20-000048",
+      "filing_date": "2020-04-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000048/0001326801-20-000048-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-03-31",
+        "2020-01-01/2020-03-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-20-000076",
+      "company": "meta",
+      "accession": "0001326801-20-000076",
+      "filing_date": "2020-07-31",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000076/0001326801-20-000076-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-06-30",
+        "2020-01-01/2020-06-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-20-000084",
+      "company": "meta",
+      "accession": "0001326801-20-000084",
+      "filing_date": "2020-10-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000084/0001326801-20-000084-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-09-30",
+        "2020-01-01/2020-09-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-21-000014",
+      "company": "meta",
+      "accession": "0001326801-21-000014",
+      "filing_date": "2021-01-28",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000014/0001326801-21-000014-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31",
+        "2020-01-01/2020-12-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-21-000033",
+      "company": "meta",
+      "accession": "0001326801-21-000033",
+      "filing_date": "2021-04-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000033/0001326801-21-000033-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-03-31",
+        "2021-01-01/2021-03-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-21-000049",
+      "company": "meta",
+      "accession": "0001326801-21-000049",
+      "filing_date": "2021-07-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000049/0001326801-21-000049-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-06-30",
+        "2021-01-01/2021-06-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-21-000065",
+      "company": "meta",
+      "accession": "0001326801-21-000065",
+      "filing_date": "2021-10-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000065/0001326801-21-000065-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-09-30",
+        "2021-01-01/2021-09-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-22-000018",
+      "company": "meta",
+      "accession": "0001326801-22-000018",
+      "filing_date": "2022-02-03",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000018/0001326801-22-000018-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-12-31",
+        "2020-01-01/2020-12-31",
+        "2021-01-01/2021-12-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-22-000057",
+      "company": "meta",
+      "accession": "0001326801-22-000057",
+      "filing_date": "2022-04-28",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000057/0001326801-22-000057-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-03-31",
+        "2022-01-01/2022-03-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-22-000082",
+      "company": "meta",
+      "accession": "0001326801-22-000082",
+      "filing_date": "2022-07-28",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000082/0001326801-22-000082-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-06-30",
+        "2022-01-01/2022-06-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-22-000108",
+      "company": "meta",
+      "accession": "0001326801-22-000108",
+      "filing_date": "2022-10-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000108/0001326801-22-000108-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-09-30",
+        "2022-01-01/2022-09-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-23-000013",
+      "company": "meta",
+      "accession": "0001326801-23-000013",
+      "filing_date": "2023-02-02",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000013/0001326801-23-000013-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-01-01/2020-12-31",
+        "2021-01-01/2021-12-31",
+        "2022-01-01/2022-12-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-23-000067",
+      "company": "meta",
+      "accession": "0001326801-23-000067",
+      "filing_date": "2023-04-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000067/0001326801-23-000067-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-03-31",
+        "2023-01-01/2023-03-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-23-000093",
+      "company": "meta",
+      "accession": "0001326801-23-000093",
+      "filing_date": "2023-07-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000093/0001326801-23-000093-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-06-30",
+        "2023-01-01/2023-06-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-23-000103",
+      "company": "meta",
+      "accession": "0001326801-23-000103",
+      "filing_date": "2023-10-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000103/0001326801-23-000103-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-09-30",
+        "2023-01-01/2023-09-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-24-000012",
+      "company": "meta",
+      "accession": "0001326801-24-000012",
+      "filing_date": "2024-02-02",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/0001326801-24-000012-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-01-01/2021-12-31",
+        "2022-01-01/2022-12-31",
+        "2023-01-01/2023-12-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-24-000049",
+      "company": "meta",
+      "accession": "0001326801-24-000049",
+      "filing_date": "2024-04-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000049/0001326801-24-000049-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-03-31",
+        "2024-01-01/2024-03-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-24-000069",
+      "company": "meta",
+      "accession": "0001326801-24-000069",
+      "filing_date": "2024-08-01",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/0001326801-24-000069-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-06-30",
+        "2024-01-01/2024-06-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-24-000081",
+      "company": "meta",
+      "accession": "0001326801-24-000081",
+      "filing_date": "2024-10-31",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000081/0001326801-24-000081-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-09-30",
+        "2024-01-01/2024-09-30"
+      ]
+    },
+    {
+      "id": "meta:0001326801-25-000017",
+      "company": "meta",
+      "accession": "0001326801-25-000017",
+      "filing_date": "2025-01-30",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/0001326801-25-000017-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-01-01/2022-12-31",
+        "2023-01-01/2023-12-31",
+        "2024-01-01/2024-12-31"
+      ]
+    },
+    {
+      "id": "meta:0001326801-25-000054",
+      "company": "meta",
+      "accession": "0001326801-25-000054",
+      "filing_date": "2025-05-01",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000054/0001326801-25-000054-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-01-01/2024-03-31",
+        "2025-01-01/2025-03-31"
+      ]
+    },
+    {
+      "id": "meta:0001628280-25-036791",
+      "company": "meta",
+      "accession": "0001628280-25-036791",
+      "filing_date": "2025-07-31",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/0001628280-25-036791-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-01-01/2024-06-30",
+        "2025-01-01/2025-06-30"
+      ]
+    },
+    {
+      "id": "meta:0001628280-25-047240",
+      "company": "meta",
+      "accession": "0001628280-25-047240",
+      "filing_date": "2025-10-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/0001628280-25-047240-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-01-01/2024-09-30",
+        "2025-01-01/2025-09-30"
+      ]
+    },
+    {
+      "id": "meta:0001628280-26-003942",
+      "company": "meta",
+      "accession": "0001628280-26-003942",
+      "filing_date": "2026-01-29",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-01-01/2023-12-31",
+        "2024-01-01/2024-12-31",
+        "2025-01-01/2025-12-31"
+      ]
+    },
+    {
+      "id": "meta:0001628280-26-028526",
+      "company": "meta",
+      "accession": "0001628280-26-028526",
+      "filing_date": "2026-04-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2025-01-01/2025-03-31",
+        "2026-01-01/2026-03-31"
+      ]
+    },
+    {
+      "id": "meta:0001628280-26-050705",
+      "company": "meta",
+      "accession": "0001628280-26-050705",
+      "filing_date": "2026-07-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.html",
+      "captured_in": "sources/meta-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2025-01-01/2025-06-30",
+        "2026-01-01/2026-06-30"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-23-014423",
+      "company": "microsoft",
+      "accession": "0000950170-23-014423",
+      "filing_date": "2023-04-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023014423/0000950170-23-014423-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-07-01/2022-03-31",
+        "2022-01-01/2022-03-31",
+        "2022-07-01/2023-03-31",
+        "2023-01-01/2023-03-31"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-23-035122",
+      "company": "microsoft",
+      "accession": "0000950170-23-035122",
+      "filing_date": "2023-07-27",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023035122/0000950170-23-035122-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-07-01/2021-06-30",
+        "2021-07-01/2022-06-30",
+        "2022-07-01/2023-06-30"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-23-054855",
+      "company": "microsoft",
+      "accession": "0000950170-23-054855",
+      "filing_date": "2023-10-24",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023054855/0000950170-23-054855-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-07-01/2022-09-30",
+        "2023-07-01/2023-09-30"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-24-008814",
+      "company": "microsoft",
+      "accession": "0000950170-24-008814",
+      "filing_date": "2024-01-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024008814/0000950170-24-008814-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-07-01/2022-12-31",
+        "2022-10-01/2022-12-31",
+        "2023-07-01/2023-12-31",
+        "2023-10-01/2023-12-31"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-24-048288",
+      "company": "microsoft",
+      "accession": "0000950170-24-048288",
+      "filing_date": "2024-04-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024048288/0000950170-24-048288-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-07-01/2023-03-31",
+        "2023-01-01/2023-03-31",
+        "2023-07-01/2024-03-31",
+        "2024-01-01/2024-03-31"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-24-087843",
+      "company": "microsoft",
+      "accession": "0000950170-24-087843",
+      "filing_date": "2024-07-30",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/0000950170-24-087843-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-07-01/2022-06-30",
+        "2022-07-01/2023-06-30",
+        "2023-07-01/2024-06-30"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-24-118967",
+      "company": "microsoft",
+      "accession": "0000950170-24-118967",
+      "filing_date": "2024-10-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/0000950170-24-118967-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-07-01/2023-09-30",
+        "2024-07-01/2024-09-30"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-25-010491",
+      "company": "microsoft",
+      "accession": "0000950170-25-010491",
+      "filing_date": "2025-01-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010491/0000950170-25-010491-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-07-01/2023-12-31",
+        "2023-10-01/2023-12-31",
+        "2024-07-01/2024-12-31",
+        "2024-10-01/2024-12-31"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-25-061046",
+      "company": "microsoft",
+      "accession": "0000950170-25-061046",
+      "filing_date": "2025-04-30",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/0000950170-25-061046-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-07-01/2024-03-31",
+        "2024-01-01/2024-03-31",
+        "2024-07-01/2025-03-31",
+        "2025-01-01/2025-03-31"
+      ]
+    },
+    {
+      "id": "microsoft:0000950170-25-100235",
+      "company": "microsoft",
+      "accession": "0000950170-25-100235",
+      "filing_date": "2025-07-30",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-07-01/2023-06-30",
+        "2023-07-01/2024-06-30",
+        "2024-07-01/2025-06-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001193125-25-256321",
+      "company": "microsoft",
+      "accession": "0001193125-25-256321",
+      "filing_date": "2025-10-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/0001193125-25-256321-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-07-01/2024-09-30",
+        "2025-07-01/2025-09-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001193125-26-027207",
+      "company": "microsoft",
+      "accession": "0001193125-26-027207",
+      "filing_date": "2026-01-28",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-07-01/2024-12-31",
+        "2024-10-01/2024-12-31",
+        "2025-07-01/2025-12-31",
+        "2025-10-01/2025-12-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001193125-26-191507",
+      "company": "microsoft",
+      "accession": "0001193125-26-191507",
+      "filing_date": "2026-04-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-07-01/2025-03-31",
+        "2025-01-01/2025-03-31",
+        "2025-07-01/2026-03-31",
+        "2026-01-01/2026-03-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001193125-26-323660",
+      "company": "microsoft",
+      "accession": "0001193125-26-323660",
+      "filing_date": "2026-07-29",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-07-01/2024-06-30",
+        "2024-07-01/2025-06-30",
+        "2025-07-01/2026-06-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-19-012709",
+      "company": "microsoft",
+      "accession": "0001564590-19-012709",
+      "filing_date": "2019-04-24",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019012709/0001564590-19-012709-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-03-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-19-037549",
+      "company": "microsoft",
+      "accession": "0001564590-19-037549",
+      "filing_date": "2019-10-23",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019037549/0001564590-19-037549-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2019-09-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-20-002450",
+      "company": "microsoft",
+      "accession": "0001564590-20-002450",
+      "filing_date": "2020-01-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020002450/0001564590-20-002450-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2019-12-31",
+        "2019-10-01/2019-12-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-20-019706",
+      "company": "microsoft",
+      "accession": "0001564590-20-019706",
+      "filing_date": "2020-04-29",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020019706/0001564590-20-019706-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-01-01/2019-03-31",
+        "2019-07-01/2020-03-31",
+        "2020-01-01/2020-03-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-20-034944",
+      "company": "microsoft",
+      "accession": "0001564590-20-034944",
+      "filing_date": "2020-07-30",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020034944/0001564590-20-034944-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2020-06-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-20-047996",
+      "company": "microsoft",
+      "accession": "0001564590-20-047996",
+      "filing_date": "2020-10-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020047996/0001564590-20-047996-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2019-09-30",
+        "2020-07-01/2020-09-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-21-002316",
+      "company": "microsoft",
+      "accession": "0001564590-21-002316",
+      "filing_date": "2021-01-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021002316/0001564590-21-002316-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2019-12-31",
+        "2019-10-01/2019-12-31",
+        "2020-07-01/2020-12-31",
+        "2020-10-01/2020-12-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-21-020891",
+      "company": "microsoft",
+      "accession": "0001564590-21-020891",
+      "filing_date": "2021-04-27",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021020891/0001564590-21-020891-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2020-03-31",
+        "2020-01-01/2020-03-31",
+        "2020-07-01/2021-03-31",
+        "2021-01-01/2021-03-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-21-039151",
+      "company": "microsoft",
+      "accession": "0001564590-21-039151",
+      "filing_date": "2021-07-29",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021039151/0001564590-21-039151-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2020-06-30",
+        "2020-07-01/2021-06-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-21-051992",
+      "company": "microsoft",
+      "accession": "0001564590-21-051992",
+      "filing_date": "2021-10-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021051992/0001564590-21-051992-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-07-01/2020-09-30",
+        "2021-07-01/2021-09-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-22-002324",
+      "company": "microsoft",
+      "accession": "0001564590-22-002324",
+      "filing_date": "2022-01-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022002324/0001564590-22-002324-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-07-01/2020-12-31",
+        "2020-10-01/2020-12-31",
+        "2021-07-01/2021-12-31",
+        "2021-10-01/2021-12-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-22-015675",
+      "company": "microsoft",
+      "accession": "0001564590-22-015675",
+      "filing_date": "2022-04-26",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022015675/0001564590-22-015675-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-07-01/2021-03-31",
+        "2021-01-01/2021-03-31",
+        "2021-07-01/2022-03-31",
+        "2022-01-01/2022-03-31"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-22-026876",
+      "company": "microsoft",
+      "accession": "0001564590-22-026876",
+      "filing_date": "2022-07-28",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022026876/0001564590-22-026876-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-07-01/2020-06-30",
+        "2020-07-01/2021-06-30",
+        "2021-07-01/2022-06-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-22-035087",
+      "company": "microsoft",
+      "accession": "0001564590-22-035087",
+      "filing_date": "2022-10-25",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022035087/0001564590-22-035087-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-07-01/2021-09-30",
+        "2022-07-01/2022-09-30"
+      ]
+    },
+    {
+      "id": "microsoft:0001564590-23-000733",
+      "company": "microsoft",
+      "accession": "0001564590-23-000733",
+      "filing_date": "2023-01-24",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459023000733/0001564590-23-000733-index.html",
+      "captured_in": "sources/microsoft-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-07-01/2021-12-31",
+        "2021-10-01/2021-12-31",
+        "2022-07-01/2022-12-31",
+        "2022-10-01/2022-12-31"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-23-028914",
+      "company": "oracle",
+      "accession": "0000950170-23-028914",
+      "filing_date": "2023-06-20",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023028914/0000950170-23-028914-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-06-01/2021-05-31",
+        "2021-06-01/2022-05-31",
+        "2022-06-01/2023-05-31"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-23-047713",
+      "company": "oracle",
+      "accession": "0000950170-23-047713",
+      "filing_date": "2023-09-12",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023047713/0000950170-23-047713-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-06-01/2022-08-31",
+        "2023-06-01/2023-08-31"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-23-069682",
+      "company": "oracle",
+      "accession": "0000950170-23-069682",
+      "filing_date": "2023-12-12",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023069682/0000950170-23-069682-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-06-01/2022-11-30",
+        "2023-06-01/2023-11-30"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-24-029904",
+      "company": "oracle",
+      "accession": "0000950170-24-029904",
+      "filing_date": "2024-03-12",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024029904/0000950170-24-029904-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-06-01/2023-02-28",
+        "2023-06-01/2024-02-29"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-24-075605",
+      "company": "oracle",
+      "accession": "0000950170-24-075605",
+      "filing_date": "2024-06-20",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024075605/0000950170-24-075605-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-06-01/2022-05-31",
+        "2022-06-01/2023-05-31",
+        "2023-06-01/2024-05-31"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-24-104905",
+      "company": "oracle",
+      "accession": "0000950170-24-104905",
+      "filing_date": "2024-09-10",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024104905/0000950170-24-104905-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-06-01/2023-08-31",
+        "2024-06-01/2024-08-31"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-24-134973",
+      "company": "oracle",
+      "accession": "0000950170-24-134973",
+      "filing_date": "2024-12-10",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017024134973/0000950170-24-134973-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-06-01/2023-11-30",
+        "2024-06-01/2024-11-30"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-25-037143",
+      "company": "oracle",
+      "accession": "0000950170-25-037143",
+      "filing_date": "2025-03-11",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025037143/0000950170-25-037143-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-06-01/2024-02-29",
+        "2024-06-01/2025-02-28"
+      ]
+    },
+    {
+      "id": "oracle:0000950170-25-087926",
+      "company": "oracle",
+      "accession": "0000950170-25-087926",
+      "filing_date": "2025-06-18",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017025087926/0000950170-25-087926-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2022-06-01/2023-05-31",
+        "2023-06-01/2024-05-31",
+        "2024-06-01/2025-05-31"
+      ]
+    },
+    {
+      "id": "oracle:0001193125-25-200095",
+      "company": "oracle",
+      "accession": "0001193125-25-200095",
+      "filing_date": "2025-09-10",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525200095/0001193125-25-200095-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-06-01/2024-08-31",
+        "2025-06-01/2025-08-31"
+      ]
+    },
+    {
+      "id": "oracle:0001193125-25-315925",
+      "company": "oracle",
+      "accession": "0001193125-25-315925",
+      "filing_date": "2025-12-11",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312525315925/0001193125-25-315925-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-06-01/2024-11-30",
+        "2025-06-01/2025-11-30"
+      ]
+    },
+    {
+      "id": "oracle:0001193125-26-101045",
+      "company": "oracle",
+      "accession": "0001193125-26-101045",
+      "filing_date": "2026-03-11",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/0001193125-26-101045-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2024-06-01/2025-02-28",
+        "2025-06-01/2026-02-28"
+      ]
+    },
+    {
+      "id": "oracle:0001193125-26-277521",
+      "company": "oracle",
+      "accession": "0001193125-26-277521",
+      "filing_date": "2026-06-22",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/0001193125-26-277521-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2023-06-01/2024-05-31",
+        "2024-06-01/2025-05-31",
+        "2025-06-01/2026-05-31"
+      ]
+    },
+    {
+      "id": "oracle:0001193125-26-389274",
+      "company": "oracle",
+      "accession": "0001193125-26-389274",
+      "filing_date": "2026-09-11",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2025-06-01/2025-08-31",
+        "2026-06-01/2026-08-31"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-19-034717",
+      "company": "oracle",
+      "accession": "0001564590-19-034717",
+      "filing_date": "2019-09-13",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459019034717/0001564590-19-034717-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2019-08-31"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-19-045966",
+      "company": "oracle",
+      "accession": "0001564590-19-045966",
+      "filing_date": "2019-12-13",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459019045966/0001564590-19-045966-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2019-11-30"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-20-010833",
+      "company": "oracle",
+      "accession": "0001564590-20-010833",
+      "filing_date": "2020-03-13",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459020010833/0001564590-20-010833-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2020-02-29"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-20-030125",
+      "company": "oracle",
+      "accession": "0001564590-20-030125",
+      "filing_date": "2020-06-22",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459020030125/0001564590-20-030125-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2020-05-31"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-20-043448",
+      "company": "oracle",
+      "accession": "0001564590-20-043448",
+      "filing_date": "2020-09-15",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459020043448/0001564590-20-043448-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2019-08-31",
+        "2020-06-01/2020-08-31"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-20-056896",
+      "company": "oracle",
+      "accession": "0001564590-20-056896",
+      "filing_date": "2020-12-11",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459020056896/0001564590-20-056896-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2019-11-30",
+        "2020-06-01/2020-11-30"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-21-012539",
+      "company": "oracle",
+      "accession": "0001564590-21-012539",
+      "filing_date": "2021-03-11",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459021012539/0001564590-21-012539-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2020-02-29",
+        "2020-06-01/2021-02-28"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-21-033616",
+      "company": "oracle",
+      "accession": "0001564590-21-033616",
+      "filing_date": "2021-06-21",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459021033616/0001564590-21-033616-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2020-05-31",
+        "2020-06-01/2021-05-31"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-21-047772",
+      "company": "oracle",
+      "accession": "0001564590-21-047772",
+      "filing_date": "2021-09-13",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459021047772/0001564590-21-047772-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-06-01/2020-08-31",
+        "2021-06-01/2021-08-31"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-21-060022",
+      "company": "oracle",
+      "accession": "0001564590-21-060022",
+      "filing_date": "2021-12-10",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459021060022/0001564590-21-060022-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-06-01/2020-11-30",
+        "2021-06-01/2021-11-30"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-22-009859",
+      "company": "oracle",
+      "accession": "0001564590-22-009859",
+      "filing_date": "2022-03-11",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459022009859/0001564590-22-009859-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2020-06-01/2021-02-28",
+        "2021-06-01/2022-02-28"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-22-023675",
+      "company": "oracle",
+      "accession": "0001564590-22-023675",
+      "filing_date": "2022-06-21",
+      "form": "10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459022023675/0001564590-22-023675-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2019-06-01/2020-05-31",
+        "2020-06-01/2021-05-31",
+        "2021-06-01/2022-05-31"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-22-031545",
+      "company": "oracle",
+      "accession": "0001564590-22-031545",
+      "filing_date": "2022-09-13",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459022031545/0001564590-22-031545-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-06-01/2021-08-31",
+        "2022-06-01/2022-08-31"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-22-039278",
+      "company": "oracle",
+      "accession": "0001564590-22-039278",
+      "filing_date": "2022-12-13",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459022039278/0001564590-22-039278-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-06-01/2021-11-30",
+        "2022-06-01/2022-11-30"
+      ]
+    },
+    {
+      "id": "oracle:0001564590-23-003413",
+      "company": "oracle",
+      "accession": "0001564590-23-003413",
+      "filing_date": "2023-03-10",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000156459023003413/0001564590-23-003413-index.html",
+      "captured_in": "sources/oracle-companyfacts.json.gz",
+      "capture_type": "SEC extracted XBRL facts; filing HTML not archived",
+      "reporting_periods": [
+        "2021-06-01/2022-02-28",
+        "2022-06-01/2023-02-28"
+      ]
+    }
+  ],
+  "supplemental_register": "supplemental-source-register.json",
+  "limitations": [
+    "Companyfacts captures standard XBRL consolidated contexts, not every custom tag or original filing HTML.",
+    "Native labels checked against representative official financial statements; historical per-vintage rendered labels unverified.",
+    "Oracle exact January-December observations unavailable; quarter-end buckets cover December-November."
+  ]
+}

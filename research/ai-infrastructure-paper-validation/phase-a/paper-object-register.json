@@ -1,0 +1,12 @@
+{
+  "role": "OBJECT_OF_VALIDATION_ONLY",
+  "title": "Financing the AI Buildout",
+  "author": "Stijn Van Nieuwerburgh",
+  "version_date": "2026-09-04",
+  "canonical_page": "https://www.brookings.edu/articles/financing-the-ai-buildout/",
+  "pdf_url": "https://www.brookings.edu/wp-content/uploads/2026/09/4c_Van-Nieuwerburgh.pdf",
+  "sha256": "bf96f1e528b10dcd8cb1ab52bfad45f100efa1d7462b2af75f9bb4bda668bbc4",
+  "captured_path": "sources/paper-validation-object.pdf",
+  "figure_locator": "Figure 1, printed page 6, PDF page 7",
+  "input_boundary": "Paper values appear only in compare.py / paper-comparison.csv, not independent construction."
+}

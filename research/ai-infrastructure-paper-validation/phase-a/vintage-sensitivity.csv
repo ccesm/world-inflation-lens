@@ -1,0 +1,7 @@
+year,classification,first_vintage_cash_capex_usd,annual_revision_usd,latest_annual_vintage_cash_capex_usd,ocf_usd,note
+2020,LATEST_REPORTED_ANNUAL_VINTAGE_SENSITIVITY_WITH_ORACLE_PROXY,96961000000,48000000,97009000000,251930000000,"Direct reported annual revisions only, not reallocated to standalone quarters. Exact Oracle calendar totals remain unavailable."
+2021,LATEST_REPORTED_ANNUAL_VINTAGE_SENSITIVITY_WITH_ORACLE_PROXY,130594000000,123000000,130717000000,289826000000,"Direct reported annual revisions only, not reallocated to standalone quarters. Exact Oracle calendar totals remain unavailable."
+2022,LATEST_REPORTED_ANNUAL_VINTAGE_SENSITIVITY_WITH_ORACLE_PROXY,158007000000,-245000000,157762000000,288181000000,"Direct reported annual revisions only, not reallocated to standalone quarters. Exact Oracle calendar totals remain unavailable."
+2023,LATEST_REPORTED_ANNUAL_VINTAGE_SENSITIVITY_WITH_ORACLE_PROXY,154383000000,-221000000,154162000000,377491000000,"Direct reported annual revisions only, not reallocated to standalone quarters. Exact Oracle calendar totals remain unavailable."
+2024,LATEST_REPORTED_ANNUAL_VINTAGE_SENSITIVITY_WITH_ORACLE_PROXY,239087000000,0,239087000000,478374000000,"Direct reported annual revisions only, not reallocated to standalone quarters. Exact Oracle calendar totals remain unavailable."
+2025,LATEST_REPORTED_ANNUAL_VINTAGE_SENSITIVITY_WITH_ORACLE_PROXY,411528000000,0,411528000000,602829000000,"Direct reported annual revisions only, not reallocated to standalone quarters. Exact Oracle calendar totals remain unavailable."

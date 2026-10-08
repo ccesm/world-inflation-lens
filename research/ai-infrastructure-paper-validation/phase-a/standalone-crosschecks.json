@@ -1,0 +1,26 @@
+[
+  {
+    "company": "amazon",
+    "metric": "ocf",
+    "start": "2019-04-01",
+    "end": "2019-06-30",
+    "derived_usd": 9117000000,
+    "direct_usd": 9118000000,
+    "difference_usd": -1000000,
+    "derived_filing_date": "2019-07-26",
+    "direct_filing_date": "2019-07-26",
+    "note": "Disclosure-precision or revision difference; dates and values retained; not forced to match"
+  },
+  {
+    "company": "amazon",
+    "metric": "ocf",
+    "start": "2020-04-01",
+    "end": "2020-06-30",
+    "derived_usd": 20605000000,
+    "direct_usd": 20606000000,
+    "difference_usd": -1000000,
+    "derived_filing_date": "2020-07-31",
+    "direct_filing_date": "2020-07-31",
+    "note": "Disclosure-precision or revision difference; dates and values retained; not forced to match"
+  }
+]

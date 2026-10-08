@@ -1,0 +1,79 @@
+[
+  {
+    "id": "microsoft-fy2026-q4-call",
+    "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+    "publication_date": "2026-07-29",
+    "retrieved_date": "2026-10-08",
+    "primary_source": true,
+    "captured_path": "sources/microsoft-fy2026-q4-call.html",
+    "sha256": "5088dcdcfc0b9cea21388292a376db90662536efd8c430eeae0bf07653a4edf2",
+    "extracted_observations": "supplemental-evidence.json",
+    "capture_method": "Unmodified downloaded source"
+  },
+  {
+    "id": "microsoft-fy2026-q4-release",
+    "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+    "publication_date": "2026-07-29",
+    "retrieved_date": "2026-10-08",
+    "primary_source": true,
+    "captured_path": "sources/microsoft-fy2026-q4-release.html",
+    "sha256": "fad664a1df52b71671729f07451bb94dea146cda59e4091ef8347e8d94439963",
+    "extracted_observations": "supplemental-evidence.json",
+    "capture_method": "Unmodified downloaded source"
+  },
+  {
+    "id": "alphabet-q2-2026",
+    "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+    "publication_date": "2026-07-22",
+    "retrieved_date": "2026-10-08",
+    "primary_source": true,
+    "captured_path": "sources/alphabet-2026-q2-release.pdf",
+    "sha256": "65f35a2e9c287112121f736321c7526d603ba8e0dae27acac56c7d7357602aa8",
+    "extracted_observations": "supplemental-evidence.json",
+    "capture_method": "Unmodified downloaded source"
+  },
+  {
+    "id": "amazon-q2-2026",
+    "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/",
+    "publication_date": "2026-07-30",
+    "retrieved_date": "2026-10-08",
+    "primary_source": true,
+    "captured_path": null,
+    "sha256": null,
+    "extracted_observations": "supplemental-evidence.json",
+    "capture_method": "Primary page viewed with web tool; structured cells retained, full HTML download blocked by host"
+  },
+  {
+    "id": "meta-q2-2026",
+    "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/",
+    "publication_date": "2026-07-29",
+    "retrieved_date": "2026-10-08",
+    "primary_source": true,
+    "captured_path": null,
+    "sha256": null,
+    "extracted_observations": "supplemental-evidence.json",
+    "capture_method": "Primary page viewed with web tool; structured cells retained, full HTML download blocked by host"
+  },
+  {
+    "id": "oracle-q1-fy2027",
+    "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
+    "publication_date": "2026-09-10",
+    "retrieved_date": "2026-10-08",
+    "primary_source": true,
+    "captured_path": null,
+    "sha256": null,
+    "extracted_observations": "supplemental-evidence.json",
+    "capture_method": "Primary page viewed with web tool; structured cells retained, full HTML download blocked by host"
+  },
+  {
+    "id": "meta-2025-10k",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+    "publication_date": "2026-01-29",
+    "retrieved_date": "2026-10-08",
+    "primary_source": true,
+    "captured_path": null,
+    "sha256": null,
+    "extracted_observations": "supplemental-evidence.json",
+    "capture_method": "Primary page viewed with web tool; structured cells retained, full HTML download blocked by host"
+  }
+]

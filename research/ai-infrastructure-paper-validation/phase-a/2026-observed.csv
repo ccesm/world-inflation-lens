@@ -1,0 +1,11 @@
+company,metric,classification,reporting_start,reporting_end,value_usd,quarters_available,annualized,source_documents,note
+microsoft,cash_capex,OBSERVED_YTD,2026-01-01,2026-06-30,66678000000,2,False,microsoft:0001193125-26-191507|microsoft:0001193125-26-323660,Not a common five-company period; not comparable to paper full-year mixed estimate
+microsoft,ocf,OBSERVED_YTD,2026-01-01,2026-06-30,102120000000,2,False,microsoft:0001193125-26-191507|microsoft:0001193125-26-323660,Not a common five-company period; not comparable to paper full-year mixed estimate
+amazon,cash_capex,OBSERVED_YTD,2026-01-01,2026-06-30,98411000000,2,False,amazon:0001018724-26-000014|amazon:0001018724-26-000026,Not a common five-company period; not comparable to paper full-year mixed estimate
+amazon,ocf,OBSERVED_YTD,2026-01-01,2026-06-30,71419000000,2,False,amazon:0001018724-26-000014|amazon:0001018724-26-000026,Not a common five-company period; not comparable to paper full-year mixed estimate
+alphabet,cash_capex,OBSERVED_YTD,2026-01-01,2026-06-30,80598000000,2,False,alphabet:0001652044-26-000048|alphabet:0001652044-26-000071,Not a common five-company period; not comparable to paper full-year mixed estimate
+alphabet,ocf,OBSERVED_YTD,2026-01-01,2026-06-30,84859000000,2,False,alphabet:0001652044-26-000048|alphabet:0001652044-26-000071,Not a common five-company period; not comparable to paper full-year mixed estimate
+meta,cash_capex,OBSERVED_YTD,2026-01-01,2026-06-30,49113000000,2,False,meta:0001628280-26-028526|meta:0001628280-26-050705,Not a common five-company period; not comparable to paper full-year mixed estimate
+meta,ocf,OBSERVED_YTD,2026-01-01,2026-06-30,64088000000,2,False,meta:0001628280-26-028526|meta:0001628280-26-050705,Not a common five-company period; not comparable to paper full-year mixed estimate
+oracle,cash_capex,OBSERVED_ORACLE_SHIFTED_QUARTERS,2025-12-01,2026-08-31,63627000000,3,False,oracle:0001193125-26-101045|oracle:0001193125-26-277521|oracle:0001193125-26-389274,Not a common five-company period; not comparable to paper full-year mixed estimate
+oracle,ocf,OBSERVED_ORACLE_SHIFTED_QUARTERS,2025-12-01,2026-08-31,44874000000,3,False,oracle:0001193125-26-101045|oracle:0001193125-26-277521|oracle:0001193125-26-389274,Not a common five-company period; not comparable to paper full-year mixed estimate

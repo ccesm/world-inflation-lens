@@ -1,0 +1,35 @@
+{
+  "research_tests": {
+    "command": "python3 research/ai-infrastructure-paper-validation/phase-a/test_phase_a.py",
+    "passed": 13,
+    "failed": 0,
+    "network_required": false
+  },
+  "production_build": {
+    "command": "npm run build",
+    "result": "PASS"
+  },
+  "full_repository_verification": {
+    "command": "npm run verify",
+    "result": "PASS",
+    "initial_attempt": "Missing dist/index.html before build; resolved by normal production build"
+  },
+  "fiscal_reconciliation": {
+    "rows": 77,
+    "differences_nonzero": 0
+  },
+  "standalone_crosschecks": {
+    "unresolved_count": 2,
+    "amount_each_usd": 1000000,
+    "company": "amazon",
+    "periods": [
+      "2019-Q2",
+      "2020-Q2"
+    ],
+    "same_filings": true
+  },
+  "chart_visual_review": "Both final PNGs inspected; text, axes, units, source and proxy labels legible; footer overlap fixed",
+  "protected_files_changed": [],
+  "base_rechecked_before_push": "a7899729f36217cf1d4142f1203e11c32984ad9d",
+  "primary_observation_ledger_sha256": "d1f2079f66c76d4fbc5d4605a93828a025f5766b905fd1d660ef252a55cd5361"
+}
