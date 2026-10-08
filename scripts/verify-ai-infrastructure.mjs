@@ -8,8 +8,9 @@ import React from 'react'
 import {renderToReadableStream} from 'react-dom/server'
 import snapshot from '../src/data/ai-infrastructure/monitor.json' with {type:'json'}
 import {infrastructureCopy as copy} from '../src/i18n/aiInfrastructure.js'
+import {paperCopy} from '../src/i18n/aiInfrastructurePaper.js'
 const root=resolve(import.meta.dirname,'..')
-const tests=spawnSync(process.execPath,['--test','scripts/tests/ai-infrastructure-public.test.mjs'],{cwd:root,encoding:'utf8'})
+const tests=spawnSync(process.execPath,['--test','scripts/tests/ai-infrastructure-public.test.mjs','scripts/tests/ai-infrastructure-paper.test.mjs'],{cwd:root,encoding:'utf8'})
 process.stdout.write(tests.stdout);process.stderr.write(tests.stderr);assert.equal(tests.status,0)
 const temp=await fs.mkdtemp(join(root,'node_modules','.wil-infrastructure-'))
 const forbidden=/RESEARCH_ONLY|REVIEW_REQUIRED|NOT_PUBLIC|CONFLICTING|~\/Users\/|\/Users\/|wil-ai-|research\/ai-infrastructure-financing|Beignet|2\.064|20%|80%|46\.03|12\.31|27\.3/;
@@ -22,7 +23,13 @@ try {
   const text=html.replace(/<!--.*?-->/gs,'').replace(/<[^>]*>/g,'').replace(/&amp;/g,'&')
   assert.equal((html.match(/data-project=/g)||[]).length,7);assert.equal((html.match(/data-financing="UNKNOWN"/g)||[]).length,7)
   assert.equal((html.match(/data-do-not-add/g)||[]).length,2)
-  assert.equal((html.match(/<h2(?:\s[^>]*)?>/g)||[]).length,4)
+  assert.equal((html.match(/data-paper-section=/g)||[]).length,5)
+  assert.equal((html.match(/<h2(?:\s[^>]*)?>/g)||[]).length,10)
+  assert.equal((html.match(/data-paper-chart=/g)||[]).length,3)
+  assert.equal((html.match(/data-paper-comparison=/g)||[]).length,5)
+  assert(html.indexOf('data-infrastructure-paper')<html.indexOf('data-independent-divider'))
+  assert(html.indexOf('data-independent-divider')<html.indexOf('data-page="ai-infrastructure"'))
+  assert(text.includes(paperCopy.labels.version[language]));assert(text.includes(paperCopy.comparisons.funding.evidence[language]))
   for(const item of [...Object.values(copy.sections),copy.ui.emptyAlphabet,copy.disclosures.fairwater,copy.disclosures.polaris,copy.disclosures.doubleCount,copy.disclosures.guarantee,copy.disclosures.maximumExposure])assert(text.includes(item[language]),item[language])
   for(const p of snapshot.projects){assert(html.includes(`data-project="${p.projectId}"`));for(const f of [...p.capacityDisplay,...p.powerSummary]){assert(text.includes(f.shortDefinition[language]));assert(text.includes(f.scope[language]));assert(text.includes(`${f.value} ${f.unit}`))}}
   assert.doesNotMatch(text,forbidden);assert.doesNotMatch(text,/undefined|NaN|Infinity/)
@@ -37,4 +44,4 @@ for(const f of relevant)assert.doesNotMatch(await fs.readFile(join(root,'dist/as
 const json=await fs.readFile(join(root,'src/data/ai-infrastructure/monitor.json'),'utf8');assert.doesNotMatch(json,forbidden)
 const inherited=[]
 for(const f of assets.filter(f=>f.endsWith('.js')&&!relevant.includes(f))){if(forbidden.test(await fs.readFile(join(root,'dist/assets',f),'utf8')))inherited.push(f)}
-console.log(`PASS: AI Infrastructure exact frozen bytes, bilingual SSR, seven cards, four sections, fail-closed fallback, no production-data/page artifact leakage. Existing unrelated chunks with matching audit strings: ${inherited.join(', ') || 'none'}`)
+console.log(`PASS: AI Infrastructure frozen bytes, bilingual paper-first SSR, three sourced charts, five comparison rows, seven unchanged cards/four detailed sections, fail-closed fallback, no excluded project leakage. Existing unrelated chunks with matching audit strings: ${inherited.join(', ') || 'none'}`)

@@ -4,6 +4,8 @@ import {infrastructureCopy as copy} from '../i18n/aiInfrastructure.js'
 import snapshot from '../data/ai-infrastructure/monitor.json'
 import {companyOrder,validInfrastructureSnapshot} from '../data/ai-infrastructure/contract.js'
 import '../ai-infrastructure.css'
+import {AiInfrastructurePaper} from '../components/AiInfrastructurePaper.jsx'
+import {paperCopy} from '../i18n/aiInfrastructurePaper.js'
 
 function Dates({fact,language}) {
  const label = value => value[language]
@@ -47,8 +49,10 @@ export function AiInfrastructure({language,data=snapshot}) {
  if(!validInfrastructureSnapshot(data)) return <><PageIntro eyebrow={label(copy.ui.fixed)} title={label(copy.page.title)} description={label(copy.page.subtitle)}/><p role="status" className="content-section">{label(copy.ui.unavailablePage)}</p></>
  const filtered=data.projects.filter(p=>(company==='ALL'||(company==='COMPARATIVE'?p.companyId===null:p.companyId===company))&&(status==='ALL'||p.projectStatus===status))
  const section=(id,children)=><section className="ia-section" aria-labelledby={`infra-section-${id}`}><h2 id={`infra-section-${id}`}>{label(copy.sections[id])}</h2>{children}</section>
- return <><PageIntro eyebrow={label(copy.ui.fixed)} title={label(copy.page.title)} description={label(copy.page.subtitle)}/>
- <div className="content-section global-section ia-page infra-page" data-page="ai-infrastructure">
+ return <><PageIntro eyebrow={label(paperCopy.hero)} title={label(copy.page.title)} description={label(paperCopy.intro)}/>
+ <AiInfrastructurePaper language={language}/>
+ <header className="content-section global-section infra-page infra-independent" data-independent-divider data-provenance="WORLD_INFLATION_LENS_QUALIFIED"><p className="infra-kicker">{label(paperCopy.labels.qualified)}</p><h2>{label(paperCopy.sections.independent)}</h2><p>{label(paperCopy.labels.detail)}</p></header>
+ <div className="content-section global-section ia-page infra-page" data-page="ai-infrastructure" data-provenance="WORLD_INFLATION_LENS_QUALIFIED">
   <p className="infra-vintage">{label(copy.labels.asOf)}: <time dateTime={data.asOf}>{data.asOf}</time></p><p>{label(copy.disclosures.clock)}</p><p>{label(copy.ui.counts)}</p><p>{label(copy.disclosures.counts)}</p>
   <aside className="infra-warning" data-do-not-add><p>{label(copy.disclosures.doubleCount)}</p></aside>
   {section('landscape',<>
