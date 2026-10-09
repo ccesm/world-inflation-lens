@@ -1,0 +1,45 @@
+{
+  "aggregate_investment": null,
+  "ai_roi": null,
+  "as_of": "2026-10-08",
+  "base_commit": "8e7d637a171de15c8f5c30b0896cae4400fdef70",
+  "branch": "codex/ai-infra-paper-validation-phase-b2",
+  "counts": {
+    "liability_checks_reconciled": 16,
+    "reconciled_schedules": 46,
+    "reviewed_numeric": 189,
+    "schedules": 50,
+    "source_filings": 9,
+    "unavailable": 45,
+    "unique_numeric": 488,
+    "unique_reproducible_tagged_contexts": 289,
+    "xbrl_numeric": 306
+  },
+  "distress_classification": null,
+  "financing_subtotal_reconciliations": 3,
+  "implementation_commit_policy": "Read final SHA from Git commit containing this report; avoid self-referential report hash",
+  "manual_original_html_independently_parsed": false,
+  "new_raw_financial_html_archived": 0,
+  "outcome": "PARTIAL — SOURCE GAPS",
+  "phase_c_started": false,
+  "primary_evidence_policy": "Primary SEC responses reused, exact contexts reproduced; reviewed native tables retained separately with locators and filing identity",
+  "prior_evidence_modified": false,
+  "production_main_observed": "a7899729f36217cf1d4142f1203e11c32984ad9d",
+  "production_modified": false,
+  "schedule_statuses": {
+    "CONFLICT_REQUIRES_REVIEW": 0,
+    "RECONCILED": 46,
+    "UNAVAILABLE_CONTROL": 4
+  },
+  "source_gaps": [
+    "B2-H01",
+    "B2-H02",
+    "B2-H03",
+    "B2-M01",
+    "B2-M02",
+    "B2-M03",
+    "B2-M04",
+    "B2-M05"
+  ],
+  "validation_receipt": "validation-results.json"
+}

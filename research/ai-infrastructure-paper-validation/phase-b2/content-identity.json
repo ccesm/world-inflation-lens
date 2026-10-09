@@ -1,0 +1,29 @@
+{
+  "as_of": "2026-10-08",
+  "base": "8e7d637a171de15c8f5c30b0896cae4400fdef70",
+  "counts": {
+    "liability_checks_reconciled": 16,
+    "reconciled_schedules": 46,
+    "reviewed_numeric": 189,
+    "schedules": 50,
+    "source_filings": 9,
+    "unavailable": 45,
+    "unique_numeric": 488,
+    "unique_reproducible_tagged_contexts": 289,
+    "xbrl_numeric": 306
+  },
+  "files": {
+    "amazon-debt-lease-schedules.json": "0d2f7b28293eb9a76bade58e842aa78239c918911ba57309b70c188206d6771c",
+    "capital-commitments.json": "f897e081b8a95305af2a8463cbd536060a30f4e477d9ddc3da9d9de95cb3729e",
+    "customer-financing.json": "b26b254bac07122818038ddd5afb169e22f367bd1e3a9a8254d205e2db66907d",
+    "evidence/selected-xbrl-contexts.json": "9aaa7da6038dbd7a22946ab6428a997731647940ecdd775f679976ad1dc56921",
+    "financial-pressure.json": "085f05811a26dd4ad7491687f4ace7b398edf6e3b03c29ab351b90399aff46c1",
+    "liquidity-refinancing.json": "c96283fb8612b9e3f763960e8e292f5df1f29443b75853f4a22a71478d924e2a",
+    "observations.json": "9e1beea3c301ab07dc6423bc457df14cc08dc203a6220ea39d683724fa0c7d72",
+    "oracle-debt-lease-schedules.json": "579610deb088f3ea79099db6740527fa03480f365e6e61142eecd7a5631ac61e",
+    "reconciliation.json": "f6d5fb80d71ef3ccf17eeb9d660c1241dbfb768cd293577c1e71b5f9c306eb57",
+    "source-register.json": "1f018739562b9e9f8aeef26c69fd49b0f03aed64c1f01df2b11edcc393c35b88"
+  },
+  "implementation": "b2.1",
+  "input_hash": "2014e91cd530873cd86e7de802a051747d99af4dc60b1702b209ac4007baf61f"
+}

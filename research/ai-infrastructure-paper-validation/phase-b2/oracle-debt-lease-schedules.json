@@ -1,0 +1,1614 @@
+{
+  "as_of": "2026-10-08",
+  "company": "oracle",
+  "contractual_interest": [],
+  "liability_reconciliation": [
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2023",
+      "source_refs": [
+        "oracle:FY2023:operating_lease:gross_control:xbrl",
+        "oracle:FY2023:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2023:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": null,
+      "label": "FY2023",
+      "source_refs": [
+        "oracle:FY2023:finance_lease:gross_control:xbrl",
+        "oracle:FY2023:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2023:finance_lease:liability_control:xbrl"
+      ],
+      "status": "UNAVAILABLE"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2024",
+      "source_refs": [
+        "oracle:FY2024:operating_lease:gross_control:xbrl",
+        "oracle:FY2024:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2024:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": null,
+      "label": "FY2024",
+      "source_refs": [
+        "oracle:FY2024:finance_lease:gross_control:xbrl",
+        "oracle:FY2024:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2024:finance_lease:liability_control:xbrl"
+      ],
+      "status": "UNAVAILABLE"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2025",
+      "source_refs": [
+        "oracle:FY2025:operating_lease:gross_control:xbrl",
+        "oracle:FY2025:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2025:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2025",
+      "source_refs": [
+        "oracle:FY2025:finance_lease:gross_control:xbrl",
+        "oracle:FY2025:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2025:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2026",
+      "source_refs": [
+        "oracle:FY2026:operating_lease:gross_control:xbrl",
+        "oracle:FY2026:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2026:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2026",
+      "source_refs": [
+        "oracle:FY2026:finance_lease:gross_control:xbrl",
+        "oracle:FY2026:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2026:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2027Q1",
+      "source_refs": [
+        "oracle:FY2027Q1:operating_lease:gross_control:xbrl",
+        "oracle:FY2027Q1:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2027Q1:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2027Q1",
+      "source_refs": [
+        "oracle:FY2027Q1:finance_lease:gross_control:xbrl",
+        "oracle:FY2027Q1:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2027Q1:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    }
+  ],
+  "schedules": [
+    {
+      "as_of_period_end": "2023-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 10000000000,
+        "24_36_MONTHS": 5694000000,
+        "36_60_MONTHS": 15420000000,
+        "BEYOND_60_MONTHS": 55750000000,
+        "WITHIN_12_MONTHS": 4063000000
+      },
+      "company": "oracle",
+      "family": "debt_principal",
+      "filed": "2023-06-20",
+      "label": "FY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "oracle:FY2023:debt_principal:bucket:0:xbrl",
+          "value_usd": 4063000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "oracle:FY2023:debt_principal:bucket:1:xbrl",
+          "value_usd": 10000000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2023:debt_principal:bucket:2:xbrl",
+          "value_usd": 5694000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2023:debt_principal:bucket:3:xbrl",
+          "value_usd": 5250000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2023:debt_principal:bucket:4:xbrl",
+          "value_usd": 10170000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2023:debt_principal:bucket:5:xbrl",
+          "value_usd": 55750000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 90927000000,
+        "difference_usd": null,
+        "reported_total_usd": null,
+        "status": "UNAVAILABLE_CONTROL"
+      },
+      "reported_total_ref": null,
+      "scope": "FY2025 borrowing principal adjusted for cross-currency swaps; FY2023/24 rendered control and adjustment basis not independently qualified",
+      "source_id": "oracle:0000950170-23-028914"
+    },
+    {
+      "as_of_period_end": "2023-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 832000000,
+        "24_36_MONTHS": 783000000,
+        "36_60_MONTHS": 1276000000,
+        "BEYOND_60_MONTHS": 1889000000,
+        "WITHIN_12_MONTHS": 906000000
+      },
+      "company": "oracle",
+      "family": "operating_lease",
+      "filed": "2023-06-20",
+      "label": "FY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "oracle:FY2023:operating_lease:bucket:0:xbrl",
+          "value_usd": 906000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "oracle:FY2023:operating_lease:bucket:1:xbrl",
+          "value_usd": 832000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2023:operating_lease:bucket:2:xbrl",
+          "value_usd": 783000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2023:operating_lease:bucket:3:xbrl",
+          "value_usd": 683000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2023:operating_lease:bucket:4:xbrl",
+          "value_usd": 593000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2023:operating_lease:bucket:5:xbrl",
+          "value_usd": 1889000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 5686000000,
+        "difference_usd": 0,
+        "reported_total_usd": 5686000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2023:operating_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "oracle:0000950170-23-028914"
+    },
+    {
+      "as_of_period_end": "2023-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": null,
+        "24_36_MONTHS": null,
+        "36_60_MONTHS": null,
+        "BEYOND_60_MONTHS": null,
+        "WITHIN_12_MONTHS": null
+      },
+      "company": "oracle",
+      "family": "finance_lease",
+      "filed": "2023-06-20",
+      "label": "FY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "oracle:FY2023:finance_lease:bucket:0:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "oracle:FY2023:finance_lease:bucket:1:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2023:finance_lease:bucket:2:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2023:finance_lease:bucket:3:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2023:finance_lease:bucket:4:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2023:finance_lease:bucket:5:xbrl",
+          "value_usd": null
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": null,
+        "difference_usd": null,
+        "reported_total_usd": null,
+        "status": "UNAVAILABLE_CONTROL"
+      },
+      "reported_total_ref": "oracle:FY2023:finance_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "oracle:0000950170-23-028914"
+    },
+    {
+      "as_of_period_end": "2023-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 294000000,
+        "24_36_MONTHS": 174000000,
+        "36_60_MONTHS": 211000000,
+        "BEYOND_60_MONTHS": 360000000,
+        "WITHIN_12_MONTHS": 1732000000
+      },
+      "company": "oracle",
+      "family": "purchase_obligations",
+      "filed": "2023-06-20",
+      "label": "FY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "oracle:FY2023:purchase_obligations:bucket:0:xbrl",
+          "value_usd": 1732000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "oracle:FY2023:purchase_obligations:bucket:1:xbrl",
+          "value_usd": 294000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2023:purchase_obligations:bucket:2:xbrl",
+          "value_usd": 174000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2023:purchase_obligations:bucket:3:xbrl",
+          "value_usd": 134000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2023:purchase_obligations:bucket:4:xbrl",
+          "value_usd": 77000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2023:purchase_obligations:bucket:5:xbrl",
+          "value_usd": 360000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 2771000000,
+        "difference_usd": 0,
+        "reported_total_usd": 2771000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2023:purchase_obligations:total:xbrl",
+      "scope": "Purchase and other obligations; scope changes by vintage",
+      "source_id": "oracle:0000950170-23-028914"
+    },
+    {
+      "as_of_period_end": "2024-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 5016000000,
+        "24_36_MONTHS": 5743000000,
+        "36_60_MONTHS": 10145000000,
+        "BEYOND_60_MONTHS": 55750000000,
+        "WITHIN_12_MONTHS": 10612000000
+      },
+      "company": "oracle",
+      "family": "debt_principal",
+      "filed": "2024-06-20",
+      "label": "FY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "oracle:FY2024:debt_principal:bucket:0:xbrl",
+          "value_usd": 10612000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2024:debt_principal:bucket:1:xbrl",
+          "value_usd": 5016000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2024:debt_principal:bucket:2:xbrl",
+          "value_usd": 5743000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2024:debt_principal:bucket:3:xbrl",
+          "value_usd": 10145000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2024:debt_principal:bucket:4:xbrl",
+          "value_usd": 0
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2024:debt_principal:bucket:5:xbrl",
+          "value_usd": 55750000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 87266000000,
+        "difference_usd": null,
+        "reported_total_usd": null,
+        "status": "UNAVAILABLE_CONTROL"
+      },
+      "reported_total_ref": null,
+      "scope": "FY2025 borrowing principal adjusted for cross-currency swaps; FY2023/24 rendered control and adjustment basis not independently qualified",
+      "source_id": "oracle:0000950170-24-075605"
+    },
+    {
+      "as_of_period_end": "2024-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1236000000,
+        "24_36_MONTHS": 1128000000,
+        "36_60_MONTHS": 1963000000,
+        "BEYOND_60_MONTHS": 3861000000,
+        "WITHIN_12_MONTHS": 1313000000
+      },
+      "company": "oracle",
+      "family": "operating_lease",
+      "filed": "2024-06-20",
+      "label": "FY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "oracle:FY2024:operating_lease:bucket:0:xbrl",
+          "value_usd": 1313000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2024:operating_lease:bucket:1:xbrl",
+          "value_usd": 1236000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2024:operating_lease:bucket:2:xbrl",
+          "value_usd": 1128000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2024:operating_lease:bucket:3:xbrl",
+          "value_usd": 1027000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2024:operating_lease:bucket:4:xbrl",
+          "value_usd": 936000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2024:operating_lease:bucket:5:xbrl",
+          "value_usd": 3861000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 9501000000,
+        "difference_usd": 0,
+        "reported_total_usd": 9501000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2024:operating_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "oracle:0000950170-24-075605"
+    },
+    {
+      "as_of_period_end": "2024-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": null,
+        "24_36_MONTHS": null,
+        "36_60_MONTHS": null,
+        "BEYOND_60_MONTHS": null,
+        "WITHIN_12_MONTHS": null
+      },
+      "company": "oracle",
+      "family": "finance_lease",
+      "filed": "2024-06-20",
+      "label": "FY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "oracle:FY2024:finance_lease:bucket:0:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2024:finance_lease:bucket:1:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2024:finance_lease:bucket:2:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2024:finance_lease:bucket:3:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2024:finance_lease:bucket:4:xbrl",
+          "value_usd": null
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2024:finance_lease:bucket:5:xbrl",
+          "value_usd": null
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": null,
+        "difference_usd": null,
+        "reported_total_usd": null,
+        "status": "UNAVAILABLE_CONTROL"
+      },
+      "reported_total_ref": "oracle:FY2024:finance_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "oracle:0000950170-24-075605"
+    },
+    {
+      "as_of_period_end": "2024-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 315000000,
+        "24_36_MONTHS": 188000000,
+        "36_60_MONTHS": 199000000,
+        "BEYOND_60_MONTHS": 260000000,
+        "WITHIN_12_MONTHS": 625000000
+      },
+      "company": "oracle",
+      "family": "purchase_obligations",
+      "filed": "2024-06-20",
+      "label": "FY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "oracle:FY2024:purchase_obligations:bucket:0:xbrl",
+          "value_usd": 625000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2024:purchase_obligations:bucket:1:xbrl",
+          "value_usd": 315000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2024:purchase_obligations:bucket:2:xbrl",
+          "value_usd": 188000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2024:purchase_obligations:bucket:3:xbrl",
+          "value_usd": 113000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2024:purchase_obligations:bucket:4:xbrl",
+          "value_usd": 86000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2024:purchase_obligations:bucket:5:xbrl",
+          "value_usd": 260000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 1587000000,
+        "difference_usd": 0,
+        "reported_total_usd": 1587000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2024:purchase_obligations:total:xbrl",
+      "scope": "Purchase and other obligations; scope changes by vintage",
+      "source_id": "oracle:0000950170-24-075605"
+    },
+    {
+      "as_of_period_end": "2025-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 5743000000,
+        "24_36_MONTHS": 10145000000,
+        "36_60_MONTHS": 9250000000,
+        "BEYOND_60_MONTHS": 60500000000,
+        "WITHIN_12_MONTHS": 7309000000
+      },
+      "company": "oracle",
+      "family": "debt_principal",
+      "filed": "2025-06-18",
+      "label": "FY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2025:debt_principal:bucket:0:xbrl",
+          "value_usd": 7309000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2025:debt_principal:bucket:1:xbrl",
+          "value_usd": 5743000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2025:debt_principal:bucket:2:xbrl",
+          "value_usd": 10145000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2025:debt_principal:bucket:3:xbrl",
+          "value_usd": 2000000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "oracle:FY2025:debt_principal:bucket:4:xbrl",
+          "value_usd": 7250000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2025:debt_principal:bucket:5:xbrl",
+          "value_usd": 60500000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 92947000000,
+        "difference_usd": 0,
+        "reported_total_usd": 92947000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2025:debt_maturity_total:reviewed",
+      "scope": "FY2025 borrowing principal adjusted for cross-currency swaps; FY2023/24 rendered control and adjustment basis not independently qualified",
+      "source_id": "oracle:0000950170-25-087926"
+    },
+    {
+      "as_of_period_end": "2025-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1869000000,
+        "24_36_MONTHS": 1795000000,
+        "36_60_MONTHS": 3363000000,
+        "BEYOND_60_MONTHS": 8692000000,
+        "WITHIN_12_MONTHS": 1964000000
+      },
+      "company": "oracle",
+      "family": "operating_lease",
+      "filed": "2025-06-18",
+      "label": "FY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2025:operating_lease:bucket:0:xbrl",
+          "value_usd": 1964000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2025:operating_lease:bucket:1:xbrl",
+          "value_usd": 1869000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2025:operating_lease:bucket:2:xbrl",
+          "value_usd": 1795000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2025:operating_lease:bucket:3:xbrl",
+          "value_usd": 1702000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "oracle:FY2025:operating_lease:bucket:4:xbrl",
+          "value_usd": 1661000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2025:operating_lease:bucket:5:xbrl",
+          "value_usd": 8692000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 17683000000,
+        "difference_usd": 0,
+        "reported_total_usd": 17683000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2025:operating_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "oracle:0000950170-25-087926"
+    },
+    {
+      "as_of_period_end": "2025-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 249000000,
+        "24_36_MONTHS": 256000000,
+        "36_60_MONTHS": 536000000,
+        "BEYOND_60_MONTHS": 3104000000,
+        "WITHIN_12_MONTHS": 266000000
+      },
+      "company": "oracle",
+      "family": "finance_lease",
+      "filed": "2025-06-18",
+      "label": "FY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2025:finance_lease:bucket:0:xbrl",
+          "value_usd": 266000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2025:finance_lease:bucket:1:xbrl",
+          "value_usd": 249000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2025:finance_lease:bucket:2:xbrl",
+          "value_usd": 256000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2025:finance_lease:bucket:3:xbrl",
+          "value_usd": 264000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "oracle:FY2025:finance_lease:bucket:4:xbrl",
+          "value_usd": 272000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2025:finance_lease:bucket:5:xbrl",
+          "value_usd": 3104000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 4411000000,
+        "difference_usd": 0,
+        "reported_total_usd": 4411000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2025:finance_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "oracle:0000950170-25-087926"
+    },
+    {
+      "as_of_period_end": "2025-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 401000000,
+        "24_36_MONTHS": 267000000,
+        "36_60_MONTHS": 384000000,
+        "BEYOND_60_MONTHS": 227000000,
+        "WITHIN_12_MONTHS": 947000000
+      },
+      "company": "oracle",
+      "family": "purchase_obligations",
+      "filed": "2025-06-18",
+      "label": "FY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "oracle:FY2025:purchase_obligations:bucket:0:xbrl",
+          "value_usd": 947000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2025:purchase_obligations:bucket:1:xbrl",
+          "value_usd": 401000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2025:purchase_obligations:bucket:2:xbrl",
+          "value_usd": 267000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2025:purchase_obligations:bucket:3:xbrl",
+          "value_usd": 262000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "oracle:FY2025:purchase_obligations:bucket:4:xbrl",
+          "value_usd": 122000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2025:purchase_obligations:bucket:5:xbrl",
+          "value_usd": 227000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 2226000000,
+        "difference_usd": 0,
+        "reported_total_usd": 2226000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2025:purchase_obligations:total:xbrl",
+      "scope": "Purchase and other obligations; scope changes by vintage",
+      "source_id": "oracle:0000950170-25-087926"
+    },
+    {
+      "as_of_period_end": "2026-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 10145000000,
+        "24_36_MONTHS": 5500000000,
+        "36_60_MONTHS": 17000000000,
+        "BEYOND_60_MONTHS": 90250000000,
+        "WITHIN_12_MONTHS": 7210000000
+      },
+      "company": "oracle",
+      "family": "debt_principal",
+      "filed": "2026-06-22",
+      "label": "FY2026",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2026:debt_principal:bucket:0:xbrl",
+          "value_usd": 7210000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2026:debt_principal:bucket:1:xbrl",
+          "value_usd": 10145000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2026:debt_principal:bucket:2:xbrl",
+          "value_usd": 5500000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2030",
+          "observation_id": "oracle:FY2026:debt_principal:bucket:3:xbrl",
+          "value_usd": 7250000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2031",
+          "observation_id": "oracle:FY2026:debt_principal:bucket:4:xbrl",
+          "value_usd": 9750000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2026:debt_principal:bucket:5:xbrl",
+          "value_usd": 90250000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 130105000000,
+        "difference_usd": 0,
+        "reported_total_usd": 130105000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2026:debt_maturity_total:reviewed",
+      "scope": "Reported long-term debt principal",
+      "source_id": "oracle:0001193125-26-277521"
+    },
+    {
+      "as_of_period_end": "2026-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 3603000000,
+        "24_36_MONTHS": 3550000000,
+        "36_60_MONTHS": 7069000000,
+        "BEYOND_60_MONTHS": 23933000000,
+        "WITHIN_12_MONTHS": 3712000000
+      },
+      "company": "oracle",
+      "family": "operating_lease",
+      "filed": "2026-06-22",
+      "label": "FY2026",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2026:operating_lease:bucket:0:xbrl",
+          "value_usd": 3712000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2026:operating_lease:bucket:1:xbrl",
+          "value_usd": 3603000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2026:operating_lease:bucket:2:xbrl",
+          "value_usd": 3550000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2030",
+          "observation_id": "oracle:FY2026:operating_lease:bucket:3:xbrl",
+          "value_usd": 3550000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2031",
+          "observation_id": "oracle:FY2026:operating_lease:bucket:4:xbrl",
+          "value_usd": 3519000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2026:operating_lease:bucket:5:xbrl",
+          "value_usd": 23933000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 41867000000,
+        "difference_usd": 0,
+        "reported_total_usd": 41867000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2026:operating_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "oracle:0001193125-26-277521"
+    },
+    {
+      "as_of_period_end": "2026-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 676000000,
+        "24_36_MONTHS": 697000000,
+        "36_60_MONTHS": 1458000000,
+        "BEYOND_60_MONTHS": 7973000000,
+        "WITHIN_12_MONTHS": 656000000
+      },
+      "company": "oracle",
+      "family": "finance_lease",
+      "filed": "2026-06-22",
+      "label": "FY2026",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2026:finance_lease:bucket:0:xbrl",
+          "value_usd": 656000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2026:finance_lease:bucket:1:xbrl",
+          "value_usd": 676000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2026:finance_lease:bucket:2:xbrl",
+          "value_usd": 697000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2030",
+          "observation_id": "oracle:FY2026:finance_lease:bucket:3:xbrl",
+          "value_usd": 718000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2031",
+          "observation_id": "oracle:FY2026:finance_lease:bucket:4:xbrl",
+          "value_usd": 740000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2026:finance_lease:bucket:5:xbrl",
+          "value_usd": 7973000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 11460000000,
+        "difference_usd": 0,
+        "reported_total_usd": 11460000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2026:finance_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "oracle:0001193125-26-277521"
+    },
+    {
+      "as_of_period_end": "2026-05-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1034000000,
+        "24_36_MONTHS": 1053000000,
+        "36_60_MONTHS": 1848000000,
+        "BEYOND_60_MONTHS": 7533000000,
+        "WITHIN_12_MONTHS": 1841000000
+      },
+      "company": "oracle",
+      "family": "purchase_obligations",
+      "filed": "2026-06-22",
+      "label": "FY2026",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2027",
+          "observation_id": "oracle:FY2026:purchase_obligations:bucket:0:xbrl",
+          "value_usd": 1841000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2028",
+          "observation_id": "oracle:FY2026:purchase_obligations:bucket:1:xbrl",
+          "value_usd": 1034000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2029",
+          "observation_id": "oracle:FY2026:purchase_obligations:bucket:2:xbrl",
+          "value_usd": 1053000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2030",
+          "observation_id": "oracle:FY2026:purchase_obligations:bucket:3:xbrl",
+          "value_usd": 952000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2031",
+          "observation_id": "oracle:FY2026:purchase_obligations:bucket:4:xbrl",
+          "value_usd": 896000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2026:purchase_obligations:bucket:5:xbrl",
+          "value_usd": 7533000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 13309000000,
+        "difference_usd": 0,
+        "reported_total_usd": 13309000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2026:purchase_obligations:total:xbrl",
+      "scope": "Purchase and other obligations; scope changes by vintage",
+      "source_id": "oracle:0001193125-26-277521"
+    },
+    {
+      "as_of_period_end": "2026-08-31",
+      "coarse_month_bands": null,
+      "company": "oracle",
+      "family": "operating_lease",
+      "filed": "2026-09-11",
+      "label": "FY2027Q1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of FY2027",
+          "observation_id": "oracle:FY2027Q1:operating_lease:bucket:0:xbrl",
+          "value_usd": 3219000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2028",
+          "observation_id": "oracle:FY2027Q1:operating_lease:bucket:1:xbrl",
+          "value_usd": 4135000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2029",
+          "observation_id": "oracle:FY2027Q1:operating_lease:bucket:2:xbrl",
+          "value_usd": 4097000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2030",
+          "observation_id": "oracle:FY2027Q1:operating_lease:bucket:3:xbrl",
+          "value_usd": 4109000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2031",
+          "observation_id": "oracle:FY2027Q1:operating_lease:bucket:4:xbrl",
+          "value_usd": 4089000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2032",
+          "observation_id": "oracle:FY2027Q1:operating_lease:bucket:5:xbrl",
+          "value_usd": 4030000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2027Q1:operating_lease:bucket:6:xbrl",
+          "value_usd": 24371000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 48050000000,
+        "difference_usd": 0,
+        "reported_total_usd": 48050000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2027Q1:operating_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments; excludes uncommenced leases",
+      "source_id": "oracle:0001193125-26-389274"
+    },
+    {
+      "as_of_period_end": "2026-08-31",
+      "coarse_month_bands": null,
+      "company": "oracle",
+      "family": "finance_lease",
+      "filed": "2026-09-11",
+      "label": "FY2027Q1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of FY2027",
+          "observation_id": "oracle:FY2027Q1:finance_lease:bucket:0:xbrl",
+          "value_usd": 620000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2028",
+          "observation_id": "oracle:FY2027Q1:finance_lease:bucket:1:xbrl",
+          "value_usd": 852000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2029",
+          "observation_id": "oracle:FY2027Q1:finance_lease:bucket:2:xbrl",
+          "value_usd": 923000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2030",
+          "observation_id": "oracle:FY2027Q1:finance_lease:bucket:3:xbrl",
+          "value_usd": 947000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2031",
+          "observation_id": "oracle:FY2027Q1:finance_lease:bucket:4:xbrl",
+          "value_usd": 971000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2032",
+          "observation_id": "oracle:FY2027Q1:finance_lease:bucket:5:xbrl",
+          "value_usd": 996000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2027Q1:finance_lease:bucket:6:xbrl",
+          "value_usd": 9886000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 15195000000,
+        "difference_usd": 0,
+        "reported_total_usd": 15195000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2027Q1:finance_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments; excludes uncommenced leases",
+      "source_id": "oracle:0001193125-26-389274"
+    },
+    {
+      "as_of_period_end": "2026-08-31",
+      "coarse_month_bands": null,
+      "company": "oracle",
+      "family": "purchase_obligations",
+      "filed": "2026-09-11",
+      "label": "FY2027Q1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of FY2027",
+          "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:0:xbrl",
+          "value_usd": 5449000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2028",
+          "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:1:xbrl",
+          "value_usd": 6176000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2029",
+          "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:2:xbrl",
+          "value_usd": 3863000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2030",
+          "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:3:xbrl",
+          "value_usd": 4318000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2031",
+          "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:4:xbrl",
+          "value_usd": 6768000000
+        },
+        {
+          "months": null,
+          "native_bucket": "FY2032",
+          "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:5:xbrl",
+          "value_usd": 954000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:6:xbrl",
+          "value_usd": 6622000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_FISCAL_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 34150000000,
+        "difference_usd": 0,
+        "reported_total_usd": 34150000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "oracle:FY2027Q1:purchase_obligations:total:xbrl",
+      "scope": "Cloud infrastructure components and data-center power; not all AI",
+      "source_id": "oracle:0001193125-26-389274"
+    }
+  ]
+}

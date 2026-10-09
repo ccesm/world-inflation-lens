@@ -1,0 +1,24 @@
+{
+  "qualification_date": "2026-10-08",
+  "attempts": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "method": "LOCAL_DESCRIPTIVE_PROJECT_UA",
+      "result": "ACCESS_BLOCKED",
+      "http_status": 403,
+      "repeated_host_requests": 0
+    },
+    {
+      "url": "https://investor.oracle.com/financials/default.aspx",
+      "result": "HTTP_200_INDEX_ONLY",
+      "financial_document_qualified": false
+    },
+    {
+      "url": "https://investor.oracle.com/sec-filings/default.aspx",
+      "result": "ACCESS_BLOCKED",
+      "http_status": 403
+    }
+  ],
+  "web_reader": "Official SEC full quarterly filings and compact annual R17/R20/R8 rendered sections inspected. Reader output is not raw HTTP HTML. Large Oracle annual HTML exceeded reader size limit.",
+  "policy": "No proxy, cookie bypass or repeated blocked raw-host requests"
+}

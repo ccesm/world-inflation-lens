@@ -1,0 +1,5079 @@
+[
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 4063000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:debt_principal:bucket:0:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 10000000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:debt_principal:bucket:1:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 5694000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:debt_principal:bucket:2:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 5250000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:debt_principal:bucket:3:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 10170000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:debt_principal:bucket:4:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 55750000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:debt_principal:bucket:5:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 906000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:bucket:0:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 832000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:bucket:1:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 783000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:bucket:2:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 683000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:bucket:3:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 593000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:bucket:4:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 1889000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:bucket:5:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 5686000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:total:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:bucket:0:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:bucket:1:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:bucket:2:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:bucket:3:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:bucket:4:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:bucket:5:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:total:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 1732000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:purchase_obligations:bucket:0:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 294000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:purchase_obligations:bucket:1:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 174000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:purchase_obligations:bucket:2:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 134000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:purchase_obligations:bucket:3:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 77000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:purchase_obligations:bucket:4:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 360000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:purchase_obligations:bucket:5:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 2771000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:purchase_obligations:total:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 5686000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 837000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q2I",
+        "fy": 2023,
+        "val": 4849000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "start": "2022-06-01",
+        "val": 894000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2023:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 8970000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 968000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 9938000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "start": "2022-06-01",
+        "val": 8300000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-23-028914",
+        "end": "2023-05-31",
+        "filed": "2023-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 90856000000
+      }
+    ],
+    "observation_id": "oracle:FY2023:debt_principal_native_amount:xbrl",
+    "tag": "DebtInstrumentCarryingAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 10612000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:debt_principal:bucket:0:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 5016000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:debt_principal:bucket:1:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 5743000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:debt_principal:bucket:2:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 10145000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:debt_principal:bucket:3:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 0
+      }
+    ],
+    "observation_id": "oracle:FY2024:debt_principal:bucket:4:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 55750000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:debt_principal:bucket:5:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 1313000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:bucket:0:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 1236000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:bucket:1:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 1128000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:bucket:2:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 1027000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:bucket:3:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 936000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:bucket:4:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 3861000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:bucket:5:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 9501000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:total:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:bucket:0:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:bucket:1:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:bucket:2:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:bucket:3:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:bucket:4:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:bucket:5:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:total:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 625000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:purchase_obligations:bucket:0:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 315000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:purchase_obligations:bucket:1:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 188000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:purchase_obligations:bucket:2:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 113000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:purchase_obligations:bucket:3:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 86000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:purchase_obligations:bucket:4:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 260000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:purchase_obligations:bucket:5:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 1587000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:purchase_obligations:total:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 9501000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q2I",
+        "fy": 2024,
+        "val": 1956000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 7545000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "start": "2023-06-01",
+        "val": 1200000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2024:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 9313000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 1233000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 10546000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "start": "2023-06-01",
+        "val": 9000000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-24-075605",
+        "end": "2024-05-31",
+        "filed": "2024-06-20",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 87202000000
+      }
+    ],
+    "observation_id": "oracle:FY2024:debt_principal_native_amount:xbrl",
+    "tag": "DebtInstrumentCarryingAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 7309000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:debt_principal:bucket:0:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 5743000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:debt_principal:bucket:1:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 10145000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:debt_principal:bucket:2:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 2000000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:debt_principal:bucket:3:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 7250000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:debt_principal:bucket:4:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 60500000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:debt_principal:bucket:5:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 1964000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:bucket:0:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 1869000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:bucket:1:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 1795000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:bucket:2:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 1702000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:bucket:3:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 1661000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:bucket:4:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 8692000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:bucket:5:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 17683000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:total:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 266000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:bucket:0:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 249000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:bucket:1:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 256000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:bucket:2:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 264000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:bucket:3:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 272000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:bucket:4:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 3104000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:bucket:5:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 4411000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:total:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 947000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:purchase_obligations:bucket:0:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 401000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:purchase_obligations:bucket:1:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 267000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:purchase_obligations:bucket:2:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 262000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:purchase_obligations:bucket:3:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 122000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:purchase_obligations:bucket:4:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 227000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:purchase_obligations:bucket:5:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 2226000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:purchase_obligations:total:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 17683000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 4233000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 13450000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 4411000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q2I",
+        "fy": 2025,
+        "val": 1477000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 2934000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024",
+        "fy": 2025,
+        "start": "2024-06-01",
+        "val": 27000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "start": "2024-06-01",
+        "val": 1685000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "start": "2024-06-01",
+        "val": 2900000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "start": "2024-06-01",
+        "val": 38000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 9387000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 1346000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 10733000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "start": "2024-06-01",
+        "val": 9300000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0000950170-25-087926",
+        "end": "2025-05-31",
+        "filed": "2025-06-18",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 92917000000
+      }
+    ],
+    "observation_id": "oracle:FY2025:debt_principal_native_amount:xbrl",
+    "tag": "DebtInstrumentCarryingAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 7210000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:debt_principal:bucket:0:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 10145000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:debt_principal:bucket:1:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 5500000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:debt_principal:bucket:2:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 7250000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:debt_principal:bucket:3:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 9750000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:debt_principal:bucket:4:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 90250000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:debt_principal:bucket:5:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 3712000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:bucket:0:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 3603000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:bucket:1:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 3550000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:bucket:2:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 3550000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:bucket:3:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 3519000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:bucket:4:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 23933000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:bucket:5:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 41867000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:total:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 656000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:bucket:0:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 676000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:bucket:1:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 697000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:bucket:2:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 718000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:bucket:3:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 740000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:bucket:4:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 7973000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:bucket:5:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 11460000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:total:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 1841000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:purchase_obligations:bucket:0:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 1034000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:purchase_obligations:bucket:1:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 1053000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:purchase_obligations:bucket:2:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 952000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:purchase_obligations:bucket:3:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 896000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:purchase_obligations:bucket:4:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 7533000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:purchase_obligations:bucket:5:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 13309000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:purchase_obligations:total:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 41867000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 11677000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "val": 30190000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 11460000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 3759000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "val": 7701000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2026:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025",
+        "fy": 2026,
+        "start": "2025-06-01",
+        "val": 2548000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025",
+        "fy": 2026,
+        "start": "2025-06-01",
+        "val": 4946000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025",
+        "fy": 2026,
+        "start": "2025-06-01",
+        "val": 279000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "val": 9916000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "val": 5479000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "val": 15395000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2026:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-277521",
+        "end": "2026-05-31",
+        "filed": "2026-06-22",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 130105000000
+      }
+    ],
+    "observation_id": "oracle:FY2026:debt_principal_native_amount:xbrl",
+    "tag": "DebtInstrumentCarryingAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 3219000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:bucket:0:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsRemainderOfFiscalYear"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 4135000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:bucket:1:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 4097000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:bucket:2:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 4109000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:bucket:3:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 4089000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:bucket:4:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 4030000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:bucket:5:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 24371000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:bucket:6:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 48050000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:total:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 620000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:bucket:0:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsRemainderOfFiscalYear"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 852000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:bucket:1:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 923000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:bucket:2:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 947000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:bucket:3:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 971000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:bucket:4:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 996000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:bucket:5:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 9886000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:bucket:6:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 15195000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:total:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 5449000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:0:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueInRemainderOfFiscalYear"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 6176000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:1:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 3863000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:2:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 4318000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:3:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 6768000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:4:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 954000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:5:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 6622000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:purchase_obligations:bucket:6:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 34150000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:purchase_obligations:total:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 48050000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 13429000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 34621000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 15195000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 6010000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 9185000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2027Q1:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3",
+        "fy": 2026,
+        "start": "2026-06-01",
+        "val": 950000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3",
+        "fy": 2026,
+        "start": "2026-06-01",
+        "val": 1539000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3",
+        "fy": 2026,
+        "start": "2026-06-01",
+        "val": 126000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 14686000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 16103000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3I",
+        "fy": 2026,
+        "val": 30789000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001193125-26-389274",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "form": "10-Q",
+        "fp": "Q1",
+        "frame": "CY2026Q3",
+        "fy": 2026,
+        "start": "2026-06-01",
+        "val": 4000000000
+      }
+    ],
+    "observation_id": "oracle:FY2027Q1:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [],
+    "observation_id": "oracle:FY2027Q1:debt_principal_native_amount:xbrl",
+    "tag": "DebtInstrumentCarryingAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 8500000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:debt_principal:bucket:0:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 5286000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:debt_principal:bucket:1:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 3146000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:debt_principal:bucket:2:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 8750000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:debt_principal:bucket:3:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 2250000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:debt_principal:bucket:4:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 39250000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:debt_principal:bucket:5:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 67182000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:debt_principal:total:xbrl",
+    "tag": "LongTermDebt"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 11229000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:bucket:0:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 9922000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:bucket:1:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 9156000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:bucket:2:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 8321000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:bucket:3:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 7546000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:bucket:4:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 44603000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:bucket:5:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 90777000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:total:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 2292000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:bucket:0:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 1471000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:bucket:1:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 1369000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:bucket:2:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 1123000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:bucket:3:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 1022000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:bucket:4:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 6829000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:bucket:5:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 14106000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:total:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 9432000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:purchase_obligations:bucket:0:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 7823000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:purchase_obligations:bucket:1:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 5901000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:purchase_obligations:bucket:2:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 4463000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:purchase_obligations:bucket:3:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 1912000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:purchase_obligations:bucket:4:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 5953000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:purchase_obligations:bucket:5:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023Q4I",
+        "fy": 2023,
+        "val": 35484000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:purchase_obligations:total:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 90777000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 15138000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 75639000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 14106000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 1997000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 12109000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "start": "2023-01-01",
+        "val": 4384000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "start": "2023-01-01",
+        "val": 10453000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "start": "2023-01-01",
+        "val": 642000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "start": "2023-01-01",
+        "val": 304000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 15227000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 5700000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 20600000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2023",
+        "fy": 2023,
+        "start": "2023-01-01",
+        "val": 12400000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-24-000008",
+        "end": "2023-12-31",
+        "filed": "2024-02-02",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2023,
+        "val": 67182000000
+      }
+    ],
+    "observation_id": "amazon:CY2023:debt_principal_native_amount:xbrl",
+    "tag": "LongTermDebt"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 5000000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:debt_principal:bucket:0:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 2750000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:debt_principal:bucket:1:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 8750000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:debt_principal:bucket:2:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 2250000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:debt_principal:bucket:3:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 3000000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:debt_principal:bucket:4:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 36250000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:debt_principal:bucket:5:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 58000000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:debt_principal:total:xbrl",
+    "tag": "LongTermDebt"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 12002000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:bucket:0:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 11023000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:bucket:1:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 10087000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:bucket:2:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 9205000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:bucket:3:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 8534000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:bucket:4:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 44443000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:bucket:5:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 95294000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:total:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 1491000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:bucket:0:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 1495000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:bucket:1:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 1317000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:bucket:2:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 1114000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:bucket:3:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 1022000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:bucket:4:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024Q4I",
+        "fy": 2024,
+        "val": 6081000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:bucket:5:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 12520000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:total:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2024:purchase_obligations:bucket:0:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2024:purchase_obligations:bucket:1:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2024:purchase_obligations:bucket:2:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2024:purchase_obligations:bucket:3:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2024:purchase_obligations:bucket:4:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2024:purchase_obligations:bucket:5:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2024:purchase_obligations:total:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 95294000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 15698000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 79596000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 12520000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 1918000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 10602000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "start": "2024-01-01",
+        "val": 2043000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "start": "2024-01-01",
+        "val": 12341000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "start": "2024-01-01",
+        "val": 854000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "start": "2024-01-01",
+        "val": 285000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 18103000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 6500000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 24600000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2024",
+        "fy": 2024,
+        "start": "2024-01-01",
+        "val": 14200000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-25-000004",
+        "end": "2024-12-31",
+        "filed": "2025-02-07",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2024,
+        "val": 58000000000
+      }
+    ],
+    "observation_id": "amazon:CY2024:debt_principal_native_amount:xbrl",
+    "tag": "LongTermDebt"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 2752000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:debt_principal:bucket:0:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 8832000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:debt_principal:bucket:1:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 4752000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:debt_principal:bucket:2:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 3000000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:debt_principal:bucket:3:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 4500000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:debt_principal:bucket:4:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 45000000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:debt_principal:bucket:5:xbrl",
+    "tag": "LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 68836000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:debt_principal:total:xbrl",
+    "tag": "LongTermDebt"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 15380000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:bucket:0:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 13186000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:bucket:1:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 12140000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:bucket:2:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 10911000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:bucket:3:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 9710000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:bucket:4:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 45587000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:bucket:5:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 106914000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:total:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 1838000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:bucket:0:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueNextTwelveMonths"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 1626000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:bucket:1:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearTwo"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 1726000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:bucket:2:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearThree"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 1285000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:bucket:3:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFour"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 1122000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:bucket:4:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025Q4I",
+        "fy": 2025,
+        "val": 7320000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:bucket:5:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDueAfterYearFive"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 14917000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:total:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2025:purchase_obligations:bucket:0:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFirstAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2025:purchase_obligations:bucket:1:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnSecondAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2025:purchase_obligations:bucket:2:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnThirdAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2025:purchase_obligations:bucket:3:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFourthAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2025:purchase_obligations:bucket:4:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceOnFifthAnniversary"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2025:purchase_obligations:bucket:5:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationDueAfterFiveYears"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:CY2025:purchase_obligations:total:xbrl",
+    "tag": "UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 106914000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 17662000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 89252000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 14917000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 2631000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 12286000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025",
+        "fy": 2025,
+        "start": "2025-01-01",
+        "val": 1557000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025",
+        "fy": 2025,
+        "start": "2025-01-01",
+        "val": 15038000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025",
+        "fy": 2025,
+        "start": "2025-01-01",
+        "val": 2911000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025",
+        "fy": 2025,
+        "start": "2025-01-01",
+        "val": 312000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 20576000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 4400000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 25000000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "frame": "CY2025",
+        "fy": 2025,
+        "start": "2025-01-01",
+        "val": 17400000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000004",
+        "end": "2025-12-31",
+        "filed": "2026-02-06",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2025,
+        "val": 68836000000
+      }
+    ],
+    "observation_id": "amazon:CY2025:debt_principal_native_amount:xbrl",
+    "tag": "LongTermDebt"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "fy": 2026,
+        "start": "2026-01-01",
+        "val": 863000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:finance_lease_principal:xbrl",
+    "tag": "FinanceLeasePrincipalPayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "fy": 2026,
+        "start": "2026-01-01",
+        "val": 7804000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:operating_lease_cash_paid:xbrl",
+    "tag": "OperatingLeasePayments"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "fy": 2026,
+        "start": "2026-01-01",
+        "val": 2128000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:finance_lease_noncash_additions:xbrl",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "fy": 2026,
+        "start": "2026-01-01",
+        "val": 209000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:finance_lease_interest_expense:xbrl",
+    "tag": "FinanceLeaseInterestExpense"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 20428000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:deferred_revenue_current:xbrl",
+    "tag": "ContractWithCustomerLiabilityCurrent"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 4500000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:deferred_revenue_noncurrent:xbrl",
+    "tag": "ContractWithCustomerLiabilityNoncurrent"
+  },
+  {
+    "contexts": [],
+    "observation_id": "amazon:2026H1:deferred_revenue_total:xbrl",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "fy": 2026,
+        "start": "2026-01-01",
+        "val": 15200000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:revenue_from_opening_deferred:xbrl",
+    "tag": "ContractWithCustomerLiabilityRevenueRecognized"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 132995000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:debt_principal_native_amount:xbrl",
+    "tag": "LongTermDebt"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 116350000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:operating_lease:gross_control:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 20030000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:operating_lease:imputed_interest:xbrl",
+    "tag": "LesseeOperatingLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 96320000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:operating_lease:liability_control:xbrl",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 16660000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:finance_lease:gross_control:xbrl",
+    "tag": "FinanceLeaseLiabilityPaymentsDue"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 3209000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:finance_lease:imputed_interest:xbrl",
+    "tag": "FinanceLeaseLiabilityUndiscountedExcessAmount"
+  },
+  {
+    "contexts": [
+      {
+        "accn": "0001018724-26-000026",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "form": "10-Q",
+        "fp": "Q2",
+        "frame": "CY2026Q2I",
+        "fy": 2026,
+        "val": 13451000000
+      }
+    ],
+    "observation_id": "amazon:2026H1:finance_lease:liability_control:xbrl",
+    "tag": "FinanceLeaseLiability"
+  }
+]

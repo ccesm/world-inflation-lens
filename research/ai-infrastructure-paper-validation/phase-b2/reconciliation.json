@@ -1,0 +1,352 @@
+{
+  "b1_comparisons": [
+    {
+      "b1_value_usd": null,
+      "b2_ref": "oracle:FY2024:uncommenced_leases_total:reviewed",
+      "b2_value_usd": 22900000000,
+      "company": "oracle",
+      "label": "FY2024",
+      "metric": "uncommenced_leases_total",
+      "status": "B1_UNAVAILABLE_NEW_EVIDENCE"
+    },
+    {
+      "b1_value_usd": null,
+      "b2_ref": "oracle:FY2025:uncommenced_leases_total:reviewed",
+      "b2_value_usd": 43400000000,
+      "company": "oracle",
+      "label": "FY2025",
+      "metric": "uncommenced_leases_total",
+      "status": "B1_UNAVAILABLE_NEW_EVIDENCE"
+    },
+    {
+      "b1_value_usd": null,
+      "b2_ref": "oracle:FY2026:uncommenced_leases_total:reviewed",
+      "b2_value_usd": 260000000000,
+      "company": "oracle",
+      "label": "FY2026",
+      "metric": "uncommenced_leases_total",
+      "status": "B1_UNAVAILABLE_NEW_EVIDENCE"
+    },
+    {
+      "b1_value_usd": 288000000000,
+      "b2_ref": "oracle:FY2027Q1:uncommenced_leases_total:reviewed",
+      "b2_value_usd": 288000000000,
+      "company": "oracle",
+      "label": "FY2027Q1",
+      "metric": "uncommenced_leases_total",
+      "status": "MATCH"
+    },
+    {
+      "b1_value_usd": null,
+      "b2_ref": "oracle:FY2026:customer_financing_prepaid_cf:reviewed",
+      "b2_value_usd": 4592000000,
+      "company": "oracle",
+      "label": "FY2026",
+      "metric": "customer_financing_prepayments",
+      "status": "B1_UNAVAILABLE_NEW_EVIDENCE"
+    },
+    {
+      "b1_value_usd": null,
+      "b2_ref": "oracle:FY2026:capex_short_term_financing_net:reviewed",
+      "b2_value_usd": 3345000000,
+      "company": "oracle",
+      "label": "FY2026",
+      "metric": "capex_short_term_financing_net",
+      "status": "B1_UNAVAILABLE_NEW_EVIDENCE"
+    },
+    {
+      "b1_value_usd": 11363000000,
+      "b2_ref": "oracle:FY2027Q1:customer_financing_prepaid_cf:reviewed",
+      "b2_value_usd": 11363000000,
+      "company": "oracle",
+      "label": "FY2027Q1",
+      "metric": "customer_financing_prepayments",
+      "status": "MATCH"
+    },
+    {
+      "b1_value_usd": -830000000,
+      "b2_ref": "oracle:FY2027Q1:capex_short_term_financing_net:reviewed",
+      "b2_value_usd": -830000000,
+      "company": "oracle",
+      "label": "FY2027Q1",
+      "metric": "capex_short_term_financing_net",
+      "status": "MATCH"
+    }
+  ],
+  "checks": [
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2023",
+      "source_refs": [
+        "oracle:FY2023:operating_lease:gross_control:xbrl",
+        "oracle:FY2023:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2023:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": null,
+      "label": "FY2023",
+      "source_refs": [
+        "oracle:FY2023:finance_lease:gross_control:xbrl",
+        "oracle:FY2023:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2023:finance_lease:liability_control:xbrl"
+      ],
+      "status": "UNAVAILABLE"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2024",
+      "source_refs": [
+        "oracle:FY2024:operating_lease:gross_control:xbrl",
+        "oracle:FY2024:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2024:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": null,
+      "label": "FY2024",
+      "source_refs": [
+        "oracle:FY2024:finance_lease:gross_control:xbrl",
+        "oracle:FY2024:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2024:finance_lease:liability_control:xbrl"
+      ],
+      "status": "UNAVAILABLE"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2025",
+      "source_refs": [
+        "oracle:FY2025:operating_lease:gross_control:xbrl",
+        "oracle:FY2025:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2025:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2025",
+      "source_refs": [
+        "oracle:FY2025:finance_lease:gross_control:xbrl",
+        "oracle:FY2025:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2025:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2026",
+      "source_refs": [
+        "oracle:FY2026:operating_lease:gross_control:xbrl",
+        "oracle:FY2026:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2026:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2026",
+      "source_refs": [
+        "oracle:FY2026:finance_lease:gross_control:xbrl",
+        "oracle:FY2026:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2026:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2027Q1",
+      "source_refs": [
+        "oracle:FY2027Q1:operating_lease:gross_control:xbrl",
+        "oracle:FY2027Q1:operating_lease:imputed_interest:xbrl",
+        "oracle:FY2027Q1:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2027Q1",
+      "source_refs": [
+        "oracle:FY2027Q1:finance_lease:gross_control:xbrl",
+        "oracle:FY2027Q1:finance_lease:imputed_interest:xbrl",
+        "oracle:FY2027Q1:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2023",
+      "source_refs": [
+        "amazon:CY2023:operating_lease:gross_control:xbrl",
+        "amazon:CY2023:operating_lease:imputed_interest:xbrl",
+        "amazon:CY2023:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2023",
+      "source_refs": [
+        "amazon:CY2023:finance_lease:gross_control:xbrl",
+        "amazon:CY2023:finance_lease:imputed_interest:xbrl",
+        "amazon:CY2023:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2024",
+      "source_refs": [
+        "amazon:CY2024:operating_lease:gross_control:xbrl",
+        "amazon:CY2024:operating_lease:imputed_interest:xbrl",
+        "amazon:CY2024:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2024",
+      "source_refs": [
+        "amazon:CY2024:finance_lease:gross_control:xbrl",
+        "amazon:CY2024:finance_lease:imputed_interest:xbrl",
+        "amazon:CY2024:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2025",
+      "source_refs": [
+        "amazon:CY2025:operating_lease:gross_control:xbrl",
+        "amazon:CY2025:operating_lease:imputed_interest:xbrl",
+        "amazon:CY2025:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2025",
+      "source_refs": [
+        "amazon:CY2025:finance_lease:gross_control:xbrl",
+        "amazon:CY2025:finance_lease:imputed_interest:xbrl",
+        "amazon:CY2025:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "2026H1",
+      "source_refs": [
+        "amazon:2026H1:operating_lease:gross_control:xbrl",
+        "amazon:2026H1:operating_lease:imputed_interest:xbrl",
+        "amazon:2026H1:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "2026H1",
+      "source_refs": [
+        "amazon:2026H1:finance_lease:gross_control:xbrl",
+        "amazon:2026H1:finance_lease:imputed_interest:xbrl",
+        "amazon:2026H1:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "financing_subcomponents",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2026",
+      "source_refs": [
+        "oracle:FY2026:employee_or_common_stock_net:reviewed",
+        "oracle:FY2026:buybacks_cf:reviewed",
+        "oracle:FY2026:withholding_share_repurchases_cf:reviewed",
+        "oracle:FY2026:preferred_stock_net:reviewed",
+        "oracle:FY2026:dividends_cf:reviewed",
+        "oracle:FY2026:commercial_paper_net_cf:reviewed",
+        "oracle:FY2026:capex_short_term_financing_net:reviewed",
+        "oracle:FY2026:senior_term_other_proceeds_cf:reviewed",
+        "oracle:FY2026:senior_term_other_repayments_cf:reviewed",
+        "oracle:FY2026:other_financing_cf:reviewed",
+        "oracle:FY2026:financing_cf"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "financing_subcomponents",
+      "company": "oracle",
+      "difference_usd": 0,
+      "label": "FY2027Q1",
+      "source_refs": [
+        "oracle:FY2027Q1:atm_equity_net_cf:reviewed",
+        "oracle:FY2027Q1:employee_stock_net_cf:reviewed",
+        "oracle:FY2027Q1:dividends_cf:reviewed",
+        "oracle:FY2027Q1:commercial_paper_net_cf:reviewed",
+        "oracle:FY2027Q1:capex_short_term_financing_net:reviewed",
+        "oracle:FY2027Q1:senior_term_other_repayments_cf:reviewed",
+        "oracle:FY2027Q1:other_financing_cf:reviewed",
+        "oracle:FY2027Q1:financing_cf"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "financing_subcomponents",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "2026H1",
+      "source_refs": [
+        "amazon:2026H1:debt_proceeds",
+        "amazon:2026H1:debt_repayments",
+        "amazon:2026H1:short_term_proceeds_and_other",
+        "amazon:2026H1:short_term_repayments_and_other",
+        "amazon:2026H1:finance_lease_principal",
+        "amazon:2026H1:financing_obligation_principal_paid:reviewed",
+        "amazon:2026H1:financing_cf"
+      ],
+      "status": "RECONCILED"
+    }
+  ],
+  "schedule_counts": {
+    "CONFLICT_REQUIRES_REVIEW": 0,
+    "RECONCILED": 46,
+    "UNAVAILABLE_CONTROL": 4
+  }
+}

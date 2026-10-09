@@ -1,0 +1,74 @@
+[
+  {
+    "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+    "field": "Oracle FY2026 / FY2027Q1 finance-lease principal",
+    "gap_id": "B2-H01",
+    "implementation_defect": false,
+    "limitation": "Total cash paid and accrued interest are not a qualified cash principal split. Keep principal null; obtain original supplemental cash disclosures or contract-specific reconciliation.",
+    "severity": "HIGH",
+    "status": "OPEN_SOURCE_GAP"
+  },
+  {
+    "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+    "field": "Customer financing contracts / refunds",
+    "gap_id": "B2-H02",
+    "implementation_defect": false,
+    "limitation": "Named-customer cash amounts, refund/repayment rights and complete contract-liability rollforwards remain unavailable for both issuers. Oracle has a $34M stock-versus-CF residual; no balancing plug.",
+    "severity": "HIGH",
+    "status": "OPEN_SOURCE_GAP"
+  },
+  {
+    "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+    "field": "Latest rolling-12-month payment / liquidity coverage",
+    "gap_id": "B2-H03",
+    "implementation_defect": false,
+    "limitation": "Quarter-end native remainder/year columns are not rolling 12 months. No exhaustive all-obligation denominator, intra-period liquidity forecast or distress classification can be supported.",
+    "severity": "HIGH",
+    "status": "OPEN_SOURCE_GAP"
+  },
+  {
+    "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+    "field": "Original HTML / custom-table independent parsing",
+    "gap_id": "B2-M01",
+    "implementation_defect": false,
+    "limitation": "Local SEC HTTP403 stopped retrieval. Official rendered tables reviewed through browser tool; selected primary XBRL contexts and numeric extracts archived, not original filing HTML. Manual fields cannot yet be re-read independently offline.",
+    "severity": "MEDIUM",
+    "status": "OPEN_SOURCE_GAP"
+  },
+  {
+    "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+    "field": "Oracle FY2023 / FY2024 principal total controls",
+    "gap_id": "B2-M02",
+    "implementation_defect": false,
+    "limitation": "Original tagged buckets exist but rendered schedule-total controls and hedge-adjustment scope are unqualified. No equality forced to net carrying debt.",
+    "severity": "MEDIUM",
+    "status": "OPEN_SOURCE_GAP"
+  },
+  {
+    "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+    "field": "Facilities / covenants / subsequent-event vintage",
+    "gap_id": "B2-M03",
+    "implementation_defect": false,
+    "limitation": "Oracle agreement-defined covenant not independently computed; Amazon lender approvals and draw after September30 unknown. Oracle lessor guarantee after September maturity unverified. June30 subsequent note issue remains separate.",
+    "severity": "MEDIUM",
+    "status": "OPEN_SOURCE_GAP"
+  },
+  {
+    "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+    "field": "Contract overlap / AI allocation",
+    "gap_id": "B2-M04",
+    "implementation_defect": false,
+    "limitation": "Corporate purchases, power, future leases, guarantees and unpaid PP&E may concern common assets or contracts. No complete overlap map or AI-only allocation; not added.",
+    "severity": "MEDIUM",
+    "status": "OPEN_SOURCE_GAP"
+  },
+  {
+    "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+    "field": "Amazon purchase-definition changes",
+    "gap_id": "B2-M05",
+    "implementation_defect": false,
+    "limitation": "Original native purchase schedules broaden from content/WholeFoods to energy/software and PP&E. Changes cannot be interpreted as pure AI-capital growth.",
+    "severity": "MEDIUM",
+    "status": "OPEN_SOURCE_GAP"
+  }
+]

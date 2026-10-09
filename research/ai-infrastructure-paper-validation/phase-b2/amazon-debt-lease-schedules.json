@@ -1,0 +1,3097 @@
+{
+  "as_of": "2026-10-08",
+  "company": "amazon",
+  "contractual_interest": [
+    {
+      "company": "amazon",
+      "family": "contractual_debt_interest",
+      "forecast": false,
+      "formula": "Native same-vintage long-term debt principal+interest minus principal; no coupon estimation",
+      "label": "CY2023",
+      "native_buckets": [
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "Thereafter"
+      ],
+      "source_refs": [
+        "amazon:CY2023:debt_principal_interest:total:reviewed",
+        "amazon:CY2023:debt_principal:total:xbrl"
+      ],
+      "value_usd": [
+        2116000000,
+        1889000000,
+        1712000000,
+        1654000000,
+        1393000000,
+        20926000000
+      ]
+    },
+    {
+      "company": "amazon",
+      "family": "contractual_debt_interest",
+      "forecast": false,
+      "formula": "Native same-vintage long-term debt principal+interest minus principal; no coupon estimation",
+      "label": "CY2024",
+      "native_buckets": [
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "Thereafter"
+      ],
+      "source_refs": [
+        "amazon:CY2024:debt_principal_interest:total:reviewed",
+        "amazon:CY2024:debt_principal:total:xbrl"
+      ],
+      "value_usd": [
+        1858000000,
+        1708000000,
+        1654000000,
+        1394000000,
+        1344000000,
+        19581000000
+      ]
+    },
+    {
+      "company": "amazon",
+      "family": "contractual_debt_interest",
+      "forecast": false,
+      "formula": "Native same-vintage long-term debt principal+interest minus principal; no coupon estimation",
+      "label": "CY2025",
+      "native_buckets": [
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030",
+        "Thereafter"
+      ],
+      "source_refs": [
+        "amazon:CY2025:debt_principal_interest:total:reviewed",
+        "amazon:CY2025:debt_principal:total:xbrl"
+      ],
+      "value_usd": [
+        2449000000,
+        2418000000,
+        2139000000,
+        1993000000,
+        1881000000,
+        28486000000
+      ]
+    }
+  ],
+  "liability_reconciliation": [
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2023",
+      "source_refs": [
+        "amazon:CY2023:operating_lease:gross_control:xbrl",
+        "amazon:CY2023:operating_lease:imputed_interest:xbrl",
+        "amazon:CY2023:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2023",
+      "source_refs": [
+        "amazon:CY2023:finance_lease:gross_control:xbrl",
+        "amazon:CY2023:finance_lease:imputed_interest:xbrl",
+        "amazon:CY2023:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2024",
+      "source_refs": [
+        "amazon:CY2024:operating_lease:gross_control:xbrl",
+        "amazon:CY2024:operating_lease:imputed_interest:xbrl",
+        "amazon:CY2024:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2024",
+      "source_refs": [
+        "amazon:CY2024:finance_lease:gross_control:xbrl",
+        "amazon:CY2024:finance_lease:imputed_interest:xbrl",
+        "amazon:CY2024:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2025",
+      "source_refs": [
+        "amazon:CY2025:operating_lease:gross_control:xbrl",
+        "amazon:CY2025:operating_lease:imputed_interest:xbrl",
+        "amazon:CY2025:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "CY2025",
+      "source_refs": [
+        "amazon:CY2025:finance_lease:gross_control:xbrl",
+        "amazon:CY2025:finance_lease:imputed_interest:xbrl",
+        "amazon:CY2025:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "operating_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "2026H1",
+      "source_refs": [
+        "amazon:2026H1:operating_lease:gross_control:xbrl",
+        "amazon:2026H1:operating_lease:imputed_interest:xbrl",
+        "amazon:2026H1:operating_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    },
+    {
+      "check": "finance_lease:discounted_liability",
+      "company": "amazon",
+      "difference_usd": 0,
+      "label": "2026H1",
+      "source_refs": [
+        "amazon:2026H1:finance_lease:gross_control:xbrl",
+        "amazon:2026H1:finance_lease:imputed_interest:xbrl",
+        "amazon:2026H1:finance_lease:liability_control:xbrl"
+      ],
+      "status": "RECONCILED"
+    }
+  ],
+  "schedules": [
+    {
+      "as_of_period_end": "2023-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 5286000000,
+        "24_36_MONTHS": 3146000000,
+        "36_60_MONTHS": 11000000000,
+        "BEYOND_60_MONTHS": 39250000000,
+        "WITHIN_12_MONTHS": 8500000000
+      },
+      "company": "amazon",
+      "family": "debt_principal",
+      "filed": "2024-02-02",
+      "label": "CY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:debt_principal:bucket:0:xbrl",
+          "value_usd": 8500000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:debt_principal:bucket:1:xbrl",
+          "value_usd": 5286000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:debt_principal:bucket:2:xbrl",
+          "value_usd": 3146000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:debt_principal:bucket:3:xbrl",
+          "value_usd": 8750000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:debt_principal:bucket:4:xbrl",
+          "value_usd": 2250000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:debt_principal:bucket:5:xbrl",
+          "value_usd": 39250000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 67182000000,
+        "difference_usd": 0,
+        "reported_total_usd": 67182000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2023:debt_principal:total:xbrl",
+      "scope": "Reported long-term debt principal",
+      "source_id": "amazon:0001018724-24-000008"
+    },
+    {
+      "as_of_period_end": "2023-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 9922000000,
+        "24_36_MONTHS": 9156000000,
+        "36_60_MONTHS": 15867000000,
+        "BEYOND_60_MONTHS": 44603000000,
+        "WITHIN_12_MONTHS": 11229000000
+      },
+      "company": "amazon",
+      "family": "operating_lease",
+      "filed": "2024-02-02",
+      "label": "CY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:operating_lease:bucket:0:xbrl",
+          "value_usd": 11229000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:operating_lease:bucket:1:xbrl",
+          "value_usd": 9922000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:operating_lease:bucket:2:xbrl",
+          "value_usd": 9156000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:operating_lease:bucket:3:xbrl",
+          "value_usd": 8321000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:operating_lease:bucket:4:xbrl",
+          "value_usd": 7546000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:operating_lease:bucket:5:xbrl",
+          "value_usd": 44603000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 90777000000,
+        "difference_usd": 0,
+        "reported_total_usd": 90777000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2023:operating_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "amazon:0001018724-24-000008"
+    },
+    {
+      "as_of_period_end": "2023-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1471000000,
+        "24_36_MONTHS": 1369000000,
+        "36_60_MONTHS": 2145000000,
+        "BEYOND_60_MONTHS": 6829000000,
+        "WITHIN_12_MONTHS": 2292000000
+      },
+      "company": "amazon",
+      "family": "finance_lease",
+      "filed": "2024-02-02",
+      "label": "CY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:finance_lease:bucket:0:xbrl",
+          "value_usd": 2292000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:finance_lease:bucket:1:xbrl",
+          "value_usd": 1471000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:finance_lease:bucket:2:xbrl",
+          "value_usd": 1369000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:finance_lease:bucket:3:xbrl",
+          "value_usd": 1123000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:finance_lease:bucket:4:xbrl",
+          "value_usd": 1022000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:finance_lease:bucket:5:xbrl",
+          "value_usd": 6829000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 14106000000,
+        "difference_usd": 0,
+        "reported_total_usd": 14106000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2023:finance_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "amazon:0001018724-24-000008"
+    },
+    {
+      "as_of_period_end": "2023-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 7823000000,
+        "24_36_MONTHS": 5901000000,
+        "36_60_MONTHS": 6375000000,
+        "BEYOND_60_MONTHS": 5953000000,
+        "WITHIN_12_MONTHS": 9432000000
+      },
+      "company": "amazon",
+      "family": "purchase_obligations",
+      "filed": "2024-02-02",
+      "label": "CY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:purchase_obligations:bucket:0:xbrl",
+          "value_usd": 9432000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:purchase_obligations:bucket:1:xbrl",
+          "value_usd": 7823000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:purchase_obligations:bucket:2:xbrl",
+          "value_usd": 5901000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:purchase_obligations:bucket:3:xbrl",
+          "value_usd": 4463000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:purchase_obligations:bucket:4:xbrl",
+          "value_usd": 1912000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:purchase_obligations:bucket:5:xbrl",
+          "value_usd": 5953000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 35484000000,
+        "difference_usd": 0,
+        "reported_total_usd": 35484000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2023:purchase_obligations:total:xbrl",
+      "scope": "Purchase and other obligations; scope changes by vintage",
+      "source_id": "amazon:0001018724-24-000008"
+    },
+    {
+      "as_of_period_end": "2024-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 2750000000,
+        "24_36_MONTHS": 8750000000,
+        "36_60_MONTHS": 5250000000,
+        "BEYOND_60_MONTHS": 36250000000,
+        "WITHIN_12_MONTHS": 5000000000
+      },
+      "company": "amazon",
+      "family": "debt_principal",
+      "filed": "2025-02-07",
+      "label": "CY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:debt_principal:bucket:0:xbrl",
+          "value_usd": 5000000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:debt_principal:bucket:1:xbrl",
+          "value_usd": 2750000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:debt_principal:bucket:2:xbrl",
+          "value_usd": 8750000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:debt_principal:bucket:3:xbrl",
+          "value_usd": 2250000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:debt_principal:bucket:4:xbrl",
+          "value_usd": 3000000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:debt_principal:bucket:5:xbrl",
+          "value_usd": 36250000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 58000000000,
+        "difference_usd": 0,
+        "reported_total_usd": 58000000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2024:debt_principal:total:xbrl",
+      "scope": "Reported long-term debt principal",
+      "source_id": "amazon:0001018724-25-000004"
+    },
+    {
+      "as_of_period_end": "2024-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 11023000000,
+        "24_36_MONTHS": 10087000000,
+        "36_60_MONTHS": 17739000000,
+        "BEYOND_60_MONTHS": 44443000000,
+        "WITHIN_12_MONTHS": 12002000000
+      },
+      "company": "amazon",
+      "family": "operating_lease",
+      "filed": "2025-02-07",
+      "label": "CY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:operating_lease:bucket:0:xbrl",
+          "value_usd": 12002000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:operating_lease:bucket:1:xbrl",
+          "value_usd": 11023000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:operating_lease:bucket:2:xbrl",
+          "value_usd": 10087000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:operating_lease:bucket:3:xbrl",
+          "value_usd": 9205000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:operating_lease:bucket:4:xbrl",
+          "value_usd": 8534000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:operating_lease:bucket:5:xbrl",
+          "value_usd": 44443000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 95294000000,
+        "difference_usd": 0,
+        "reported_total_usd": 95294000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2024:operating_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "amazon:0001018724-25-000004"
+    },
+    {
+      "as_of_period_end": "2024-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1495000000,
+        "24_36_MONTHS": 1317000000,
+        "36_60_MONTHS": 2136000000,
+        "BEYOND_60_MONTHS": 6081000000,
+        "WITHIN_12_MONTHS": 1491000000
+      },
+      "company": "amazon",
+      "family": "finance_lease",
+      "filed": "2025-02-07",
+      "label": "CY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:finance_lease:bucket:0:xbrl",
+          "value_usd": 1491000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:finance_lease:bucket:1:xbrl",
+          "value_usd": 1495000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:finance_lease:bucket:2:xbrl",
+          "value_usd": 1317000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:finance_lease:bucket:3:xbrl",
+          "value_usd": 1114000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:finance_lease:bucket:4:xbrl",
+          "value_usd": 1022000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:finance_lease:bucket:5:xbrl",
+          "value_usd": 6081000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 12520000000,
+        "difference_usd": 0,
+        "reported_total_usd": 12520000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2024:finance_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "amazon:0001018724-25-000004"
+    },
+    {
+      "as_of_period_end": "2025-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 8832000000,
+        "24_36_MONTHS": 4752000000,
+        "36_60_MONTHS": 7500000000,
+        "BEYOND_60_MONTHS": 45000000000,
+        "WITHIN_12_MONTHS": 2752000000
+      },
+      "company": "amazon",
+      "family": "debt_principal",
+      "filed": "2026-02-06",
+      "label": "CY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:debt_principal:bucket:0:xbrl",
+          "value_usd": 2752000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:debt_principal:bucket:1:xbrl",
+          "value_usd": 8832000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:debt_principal:bucket:2:xbrl",
+          "value_usd": 4752000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:debt_principal:bucket:3:xbrl",
+          "value_usd": 3000000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:debt_principal:bucket:4:xbrl",
+          "value_usd": 4500000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:debt_principal:bucket:5:xbrl",
+          "value_usd": 45000000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 68836000000,
+        "difference_usd": 0,
+        "reported_total_usd": 68836000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2025:debt_principal:total:xbrl",
+      "scope": "Reported long-term debt principal",
+      "source_id": "amazon:0001018724-26-000004"
+    },
+    {
+      "as_of_period_end": "2025-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 13186000000,
+        "24_36_MONTHS": 12140000000,
+        "36_60_MONTHS": 20621000000,
+        "BEYOND_60_MONTHS": 45587000000,
+        "WITHIN_12_MONTHS": 15380000000
+      },
+      "company": "amazon",
+      "family": "operating_lease",
+      "filed": "2026-02-06",
+      "label": "CY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:operating_lease:bucket:0:xbrl",
+          "value_usd": 15380000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:operating_lease:bucket:1:xbrl",
+          "value_usd": 13186000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:operating_lease:bucket:2:xbrl",
+          "value_usd": 12140000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:operating_lease:bucket:3:xbrl",
+          "value_usd": 10911000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:operating_lease:bucket:4:xbrl",
+          "value_usd": 9710000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:operating_lease:bucket:5:xbrl",
+          "value_usd": 45587000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 106914000000,
+        "difference_usd": 0,
+        "reported_total_usd": 106914000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2025:operating_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "amazon:0001018724-26-000004"
+    },
+    {
+      "as_of_period_end": "2025-12-31",
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1626000000,
+        "24_36_MONTHS": 1726000000,
+        "36_60_MONTHS": 2407000000,
+        "BEYOND_60_MONTHS": 7320000000,
+        "WITHIN_12_MONTHS": 1838000000
+      },
+      "company": "amazon",
+      "family": "finance_lease",
+      "filed": "2026-02-06",
+      "label": "CY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:finance_lease:bucket:0:xbrl",
+          "value_usd": 1838000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:finance_lease:bucket:1:xbrl",
+          "value_usd": 1626000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:finance_lease:bucket:2:xbrl",
+          "value_usd": 1726000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:finance_lease:bucket:3:xbrl",
+          "value_usd": 1285000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:finance_lease:bucket:4:xbrl",
+          "value_usd": 1122000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:finance_lease:bucket:5:xbrl",
+          "value_usd": 7320000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 14917000000,
+        "difference_usd": 0,
+        "reported_total_usd": 14917000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2025:finance_lease:total:xbrl",
+      "scope": "Recognized lease undiscounted payments",
+      "source_id": "amazon:0001018724-26-000004"
+    },
+    {
+      "as_of_period_end": "2023-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 7175000000,
+        "24_36_MONTHS": 4858000000,
+        "36_60_MONTHS": 14047000000,
+        "BEYOND_60_MONTHS": 60176000000,
+        "WITHIN_12_MONTHS": 10616000000
+      },
+      "company": "amazon",
+      "family": "debt_principal_interest",
+      "filed": "2024-02-02",
+      "label": "CY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:0:reviewed",
+          "value_usd": 10616000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:1:reviewed",
+          "value_usd": 7175000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:2:reviewed",
+          "value_usd": 4858000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:3:reviewed",
+          "value_usd": 10404000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:4:reviewed",
+          "value_usd": 3643000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:debt_principal_interest:bucket:5:reviewed",
+          "value_usd": 60176000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 96872000000,
+        "difference_usd": 0,
+        "reported_total_usd": 96872000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2023:debt_principal_interest:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-24-000008",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2023-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 462000000,
+        "24_36_MONTHS": 468000000,
+        "36_60_MONTHS": 960000000,
+        "BEYOND_60_MONTHS": 6282000000,
+        "WITHIN_12_MONTHS": 469000000
+      },
+      "company": "amazon",
+      "family": "financing_obligations",
+      "filed": "2024-02-02",
+      "label": "CY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:0:reviewed",
+          "value_usd": 469000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:1:reviewed",
+          "value_usd": 462000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:2:reviewed",
+          "value_usd": 468000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:3:reviewed",
+          "value_usd": 476000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:4:reviewed",
+          "value_usd": 484000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:financing_obligations:bucket:5:reviewed",
+          "value_usd": 6282000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 8641000000,
+        "difference_usd": 0,
+        "reported_total_usd": 8641000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2023:financing_obligations:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-24-000008",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2023-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 2620000000,
+        "24_36_MONTHS": 2836000000,
+        "36_60_MONTHS": 5831000000,
+        "BEYOND_60_MONTHS": 24860000000,
+        "WITHIN_12_MONTHS": 2034000000
+      },
+      "company": "amazon",
+      "family": "uncommenced_leases",
+      "filed": "2024-02-02",
+      "label": "CY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:0:reviewed",
+          "value_usd": 2034000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:1:reviewed",
+          "value_usd": 2620000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:2:reviewed",
+          "value_usd": 2836000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:3:reviewed",
+          "value_usd": 2852000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:4:reviewed",
+          "value_usd": 2979000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:uncommenced_leases:bucket:5:reviewed",
+          "value_usd": 24860000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 38181000000,
+        "difference_usd": 0,
+        "reported_total_usd": 38181000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2023:uncommenced_leases:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-24-000008",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2023-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1390000000,
+        "24_36_MONTHS": 1125000000,
+        "36_60_MONTHS": 1439000000,
+        "BEYOND_60_MONTHS": 9121000000,
+        "WITHIN_12_MONTHS": 3273000000
+      },
+      "company": "amazon",
+      "family": "other_commitments",
+      "filed": "2024-02-02",
+      "label": "CY2023",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2024",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:0:reviewed",
+          "value_usd": 3273000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:1:reviewed",
+          "value_usd": 1390000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:2:reviewed",
+          "value_usd": 1125000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:3:reviewed",
+          "value_usd": 759000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:4:reviewed",
+          "value_usd": 680000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2023:other_commitments:bucket:5:reviewed",
+          "value_usd": 9121000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 16348000000,
+        "difference_usd": 0,
+        "reported_total_usd": 16348000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2023:other_commitments:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-24-000008",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2024-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 4458000000,
+        "24_36_MONTHS": 10404000000,
+        "36_60_MONTHS": 7988000000,
+        "BEYOND_60_MONTHS": 55831000000,
+        "WITHIN_12_MONTHS": 6858000000
+      },
+      "company": "amazon",
+      "family": "debt_principal_interest",
+      "filed": "2025-02-07",
+      "label": "CY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:0:reviewed",
+          "value_usd": 6858000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:1:reviewed",
+          "value_usd": 4458000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:2:reviewed",
+          "value_usd": 10404000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:3:reviewed",
+          "value_usd": 3644000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:4:reviewed",
+          "value_usd": 4344000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:debt_principal_interest:bucket:5:reviewed",
+          "value_usd": 55831000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 85539000000,
+        "difference_usd": 0,
+        "reported_total_usd": 85539000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2024:debt_principal_interest:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-25-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2024-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 515000000,
+        "24_36_MONTHS": 523000000,
+        "36_60_MONTHS": 1071000000,
+        "BEYOND_60_MONTHS": 6397000000,
+        "WITHIN_12_MONTHS": 511000000
+      },
+      "company": "amazon",
+      "family": "financing_obligations",
+      "filed": "2025-02-07",
+      "label": "CY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:0:reviewed",
+          "value_usd": 511000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:1:reviewed",
+          "value_usd": 515000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:2:reviewed",
+          "value_usd": 523000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:3:reviewed",
+          "value_usd": 531000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:4:reviewed",
+          "value_usd": 540000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:financing_obligations:bucket:5:reviewed",
+          "value_usd": 6397000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 9017000000,
+        "difference_usd": 0,
+        "reported_total_usd": 9017000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2024:financing_obligations:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-25-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2024-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 3691000000,
+        "24_36_MONTHS": 5011000000,
+        "36_60_MONTHS": 8539000000,
+        "BEYOND_60_MONTHS": 41691000000,
+        "WITHIN_12_MONTHS": 2695000000
+      },
+      "company": "amazon",
+      "family": "uncommenced_leases",
+      "filed": "2025-02-07",
+      "label": "CY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:0:reviewed",
+          "value_usd": 2695000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:1:reviewed",
+          "value_usd": 3691000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:2:reviewed",
+          "value_usd": 5011000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:3:reviewed",
+          "value_usd": 4253000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:4:reviewed",
+          "value_usd": 4286000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:uncommenced_leases:bucket:5:reviewed",
+          "value_usd": 41691000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 61627000000,
+        "difference_usd": 0,
+        "reported_total_usd": 61627000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2024:uncommenced_leases:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-25-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2024-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 7941000000,
+        "24_36_MONTHS": 5413000000,
+        "36_60_MONTHS": 8189000000,
+        "BEYOND_60_MONTHS": 20296000000,
+        "WITHIN_12_MONTHS": 8536000000
+      },
+      "company": "amazon",
+      "family": "purchase_obligations",
+      "filed": "2025-02-07",
+      "label": "CY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:0:reviewed",
+          "value_usd": 8536000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:1:reviewed",
+          "value_usd": 7941000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:2:reviewed",
+          "value_usd": 5413000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:3:reviewed",
+          "value_usd": 4321000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:4:reviewed",
+          "value_usd": 3868000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:purchase_obligations:bucket:5:reviewed",
+          "value_usd": 20296000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 50375000000,
+        "difference_usd": 0,
+        "reported_total_usd": 50375000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2024:purchase_obligations:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-25-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2024-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1470000000,
+        "24_36_MONTHS": 1016000000,
+        "36_60_MONTHS": 1948000000,
+        "BEYOND_60_MONTHS": 11456000000,
+        "WITHIN_12_MONTHS": 2739000000
+      },
+      "company": "amazon",
+      "family": "other_commitments",
+      "filed": "2025-02-07",
+      "label": "CY2024",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2025",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:0:reviewed",
+          "value_usd": 2739000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:1:reviewed",
+          "value_usd": 1470000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:2:reviewed",
+          "value_usd": 1016000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:3:reviewed",
+          "value_usd": 923000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:4:reviewed",
+          "value_usd": 1025000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2024:other_commitments:bucket:5:reviewed",
+          "value_usd": 11456000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 18629000000,
+        "difference_usd": 0,
+        "reported_total_usd": 18629000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2024:other_commitments:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-25-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2025-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 11250000000,
+        "24_36_MONTHS": 6891000000,
+        "36_60_MONTHS": 11374000000,
+        "BEYOND_60_MONTHS": 73486000000,
+        "WITHIN_12_MONTHS": 5201000000
+      },
+      "company": "amazon",
+      "family": "debt_principal_interest",
+      "filed": "2026-02-06",
+      "label": "CY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:0:reviewed",
+          "value_usd": 5201000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:1:reviewed",
+          "value_usd": 11250000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:2:reviewed",
+          "value_usd": 6891000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:3:reviewed",
+          "value_usd": 4993000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:4:reviewed",
+          "value_usd": 6381000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:debt_principal_interest:bucket:5:reviewed",
+          "value_usd": 73486000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 108202000000,
+        "difference_usd": 0,
+        "reported_total_usd": 108202000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2025:debt_principal_interest:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2025-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 582000000,
+        "24_36_MONTHS": 592000000,
+        "36_60_MONTHS": 1213000000,
+        "BEYOND_60_MONTHS": 6651000000,
+        "WITHIN_12_MONTHS": 577000000
+      },
+      "company": "amazon",
+      "family": "financing_obligations",
+      "filed": "2026-02-06",
+      "label": "CY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:0:reviewed",
+          "value_usd": 577000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:1:reviewed",
+          "value_usd": 582000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:2:reviewed",
+          "value_usd": 592000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:3:reviewed",
+          "value_usd": 601000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:4:reviewed",
+          "value_usd": 612000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:financing_obligations:bucket:5:reviewed",
+          "value_usd": 6651000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 9615000000,
+        "difference_usd": 0,
+        "reported_total_usd": 9615000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2025:financing_obligations:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2025-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 9103000000,
+        "24_36_MONTHS": 6420000000,
+        "36_60_MONTHS": 13309000000,
+        "BEYOND_60_MONTHS": 61733000000,
+        "WITHIN_12_MONTHS": 5808000000
+      },
+      "company": "amazon",
+      "family": "uncommenced_leases",
+      "filed": "2026-02-06",
+      "label": "CY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:0:reviewed",
+          "value_usd": 5808000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:1:reviewed",
+          "value_usd": 9103000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:2:reviewed",
+          "value_usd": 6420000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:3:reviewed",
+          "value_usd": 6571000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:4:reviewed",
+          "value_usd": 6738000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:uncommenced_leases:bucket:5:reviewed",
+          "value_usd": 61733000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 96373000000,
+        "difference_usd": 0,
+        "reported_total_usd": 96373000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2025:uncommenced_leases:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2025-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 8934000000,
+        "24_36_MONTHS": 7195000000,
+        "36_60_MONTHS": 13260000000,
+        "BEYOND_60_MONTHS": 35477000000,
+        "WITHIN_12_MONTHS": 19906000000
+      },
+      "company": "amazon",
+      "family": "purchase_obligations",
+      "filed": "2026-02-06",
+      "label": "CY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:0:reviewed",
+          "value_usd": 19906000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:1:reviewed",
+          "value_usd": 8934000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:2:reviewed",
+          "value_usd": 7195000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:3:reviewed",
+          "value_usd": 6658000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:4:reviewed",
+          "value_usd": 6602000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:purchase_obligations:bucket:5:reviewed",
+          "value_usd": 35477000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 84772000000,
+        "difference_usd": 0,
+        "reported_total_usd": 84772000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2025:purchase_obligations:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2025-12-31",
+      "buckets": [
+        {
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": {
+        "12_24_MONTHS": 1578000000,
+        "24_36_MONTHS": 1120000000,
+        "36_60_MONTHS": 1988000000,
+        "BEYOND_60_MONTHS": 11226000000,
+        "WITHIN_12_MONTHS": 2956000000
+      },
+      "company": "amazon",
+      "family": "other_commitments",
+      "filed": "2026-02-06",
+      "label": "CY2025",
+      "native_buckets": [
+        {
+          "months": [
+            0,
+            12
+          ],
+          "native_bucket": "2026",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:0:reviewed",
+          "value_usd": 2956000000
+        },
+        {
+          "months": [
+            12,
+            24
+          ],
+          "native_bucket": "2027",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:1:reviewed",
+          "value_usd": 1578000000
+        },
+        {
+          "months": [
+            24,
+            36
+          ],
+          "native_bucket": "2028",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:2:reviewed",
+          "value_usd": 1120000000
+        },
+        {
+          "months": [
+            36,
+            48
+          ],
+          "native_bucket": "2029",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:3:reviewed",
+          "value_usd": 1000000000
+        },
+        {
+          "months": [
+            48,
+            60
+          ],
+          "native_bucket": "2030",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:4:reviewed",
+          "value_usd": 988000000
+        },
+        {
+          "months": [
+            60,
+            null
+          ],
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:CY2025:other_commitments:bucket:5:reviewed",
+          "value_usd": 11226000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "CALENDAR_YEAR",
+      "reconciliation": {
+        "bucket_sum_usd": 18868000000,
+        "difference_usd": 0,
+        "reported_total_usd": 18868000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:CY2025:other_commitments:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000004",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2026-06-30",
+      "buckets": [
+        {
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": null,
+      "company": "amazon",
+      "family": "debt_principal_interest",
+      "filed": "2026-07-31",
+      "label": "2026H1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:0:reviewed",
+          "value_usd": 2361000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:1:reviewed",
+          "value_usd": 14060000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:2:reviewed",
+          "value_usd": 17087000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:3:reviewed",
+          "value_usd": 13528000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:4:reviewed",
+          "value_usd": 11112000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:debt_principal_interest:bucket:5:reviewed",
+          "value_usd": 162161000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_CALENDAR_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 220309000000,
+        "difference_usd": 0,
+        "reported_total_usd": 220309000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:2026H1:debt_principal_interest:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000026",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2026-06-30",
+      "buckets": [
+        {
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": null,
+      "company": "amazon",
+      "family": "financing_obligations",
+      "filed": "2026-07-31",
+      "label": "2026H1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:0:reviewed",
+          "value_usd": 352000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:1:reviewed",
+          "value_usd": 682000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:2:reviewed",
+          "value_usd": 694000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:3:reviewed",
+          "value_usd": 706000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:4:reviewed",
+          "value_usd": 720000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:financing_obligations:bucket:5:reviewed",
+          "value_usd": 7916000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_CALENDAR_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 11070000000,
+        "difference_usd": 0,
+        "reported_total_usd": 11070000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:2026H1:financing_obligations:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000026",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2026-06-30",
+      "buckets": [
+        {
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": null,
+      "company": "amazon",
+      "family": "uncommenced_leases",
+      "filed": "2026-07-31",
+      "label": "2026H1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:0:reviewed",
+          "value_usd": 4018000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:1:reviewed",
+          "value_usd": 11732000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:2:reviewed",
+          "value_usd": 9278000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:3:reviewed",
+          "value_usd": 9483000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:4:reviewed",
+          "value_usd": 9227000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:uncommenced_leases:bucket:5:reviewed",
+          "value_usd": 93476000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_CALENDAR_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 137214000000,
+        "difference_usd": 0,
+        "reported_total_usd": 137214000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:2026H1:uncommenced_leases:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000026",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2026-06-30",
+      "buckets": [
+        {
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": null,
+      "company": "amazon",
+      "family": "purchase_obligations",
+      "filed": "2026-07-31",
+      "label": "2026H1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:0:reviewed",
+          "value_usd": 23452000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:1:reviewed",
+          "value_usd": 33026000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:2:reviewed",
+          "value_usd": 9326000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:3:reviewed",
+          "value_usd": 7961000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:4:reviewed",
+          "value_usd": 7659000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:purchase_obligations:bucket:5:reviewed",
+          "value_usd": 48641000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_CALENDAR_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 130065000000,
+        "difference_usd": 0,
+        "reported_total_usd": 130065000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:2026H1:purchase_obligations:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000026",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2026-06-30",
+      "buckets": [
+        {
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": null,
+      "company": "amazon",
+      "family": "other_commitments",
+      "filed": "2026-07-31",
+      "label": "2026H1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:0:reviewed",
+          "value_usd": 2145000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:1:reviewed",
+          "value_usd": 2044000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:2:reviewed",
+          "value_usd": 1212000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:3:reviewed",
+          "value_usd": 1008000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:4:reviewed",
+          "value_usd": 963000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:other_commitments:bucket:5:reviewed",
+          "value_usd": 10994000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_CALENDAR_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 18366000000,
+        "difference_usd": 0,
+        "reported_total_usd": 18366000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:2026H1:other_commitments:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000026",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2026-06-30",
+      "buckets": [
+        {
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": null,
+      "company": "amazon",
+      "family": "operating_lease",
+      "filed": "2026-07-31",
+      "label": "2026H1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:0:reviewed",
+          "value_usd": 9336000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:1:reviewed",
+          "value_usd": 14765000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:2:reviewed",
+          "value_usd": 13924000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:3:reviewed",
+          "value_usd": 12599000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:4:reviewed",
+          "value_usd": 11269000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:operating_lease:bucket:5:reviewed",
+          "value_usd": 54457000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_CALENDAR_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 116350000000,
+        "difference_usd": 0,
+        "reported_total_usd": 116350000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:2026H1:operating_lease:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000026",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "as_of_period_end": "2026-06-30",
+      "buckets": [
+        {
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:0:reviewed"
+        },
+        {
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:1:reviewed"
+        },
+        {
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:2:reviewed"
+        },
+        {
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:3:reviewed"
+        },
+        {
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:4:reviewed"
+        },
+        {
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:5:reviewed"
+        }
+      ],
+      "coarse_month_bands": null,
+      "company": "amazon",
+      "family": "finance_lease",
+      "filed": "2026-07-31",
+      "label": "2026H1",
+      "native_buckets": [
+        {
+          "months": null,
+          "native_bucket": "Remainder of 2026",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:0:reviewed",
+          "value_usd": 1088000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2027",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:1:reviewed",
+          "value_usd": 1775000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2028",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:2:reviewed",
+          "value_usd": 1885000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2029",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:3:reviewed",
+          "value_usd": 1482000000
+        },
+        {
+          "months": null,
+          "native_bucket": "2030",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:4:reviewed",
+          "value_usd": 1269000000
+        },
+        {
+          "months": null,
+          "native_bucket": "Thereafter",
+          "observation_id": "amazon:2026H1:finance_lease:bucket:5:reviewed",
+          "value_usd": 9161000000
+        }
+      ],
+      "not_ai_specific": true,
+      "period_basis": "NATIVE_CALENDAR_COLUMNS_NOT_ROLLING_12M",
+      "reconciliation": {
+        "bucket_sum_usd": 16660000000,
+        "difference_usd": 0,
+        "reported_total_usd": 16660000000,
+        "status": "RECONCILED"
+      },
+      "reported_total_ref": "amazon:2026H1:finance_lease:total:reviewed",
+      "scope": "Company-disclosed contractual schedule; not AI allocation",
+      "source_id": "amazon:0001018724-26-000026",
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    }
+  ]
+}

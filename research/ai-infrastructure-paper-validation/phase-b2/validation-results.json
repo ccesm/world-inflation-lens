@@ -1,0 +1,42 @@
+{
+  "as_of": "2026-10-08",
+  "build": "PASS",
+  "chart_visual_review": "PASS; native month-band order explicitly verified",
+  "fresh_process_chart_determinism": "PASS",
+  "fresh_process_data_and_report_determinism": "PASS",
+  "log_sha256": {
+    "build": "57045b231a34769eb7fc43ab7558fcb6d5df9a2fdd6cf2eb9d4e9e52beaef8ab",
+    "npm_ci": "866511107fd5820081869a96ead3d83d15ca4b062ee2168b156fa05781c656a4",
+    "phase_a": "be054c98fa548dbc897f3d798c59d108d14b660d83035c725adbec528868cb04",
+    "phase_b1": "5d2037b10100a0f4dbc2e2d065ea4f1fe5bea8add86141adb58b939330030434",
+    "phase_b2": "282e9b92a0e5a985d287724dff92eb54220ad824690b4ec48ba5e259a6324c59",
+    "verify": "6f2ffb35735e901bed3ced582757d3fa5e416f6e1fb203e1f9179d67a4a2ddba"
+  },
+  "node": "24.19.0",
+  "npm": "11.17.0",
+  "npm_ci": "PASS",
+  "phase_a": {
+    "checkout": "clean B1 base; phase-specific scope test preserved",
+    "failed": 0,
+    "passed": 13
+  },
+  "phase_b1": {
+    "checkout": "clean B1 base; phase-specific scope test preserved",
+    "failed": 0,
+    "passed": 43
+  },
+  "phase_b2": {
+    "checkout": "isolated B2 branch",
+    "failed": 0,
+    "passed": 51
+  },
+  "phase_c_started": false,
+  "prior_evidence_changes": 0,
+  "production_changes": 0,
+  "verify": "PASS",
+  "warnings": [
+    "Inherited Vite chunk-size warning",
+    "npm allow-scripts pending for esbuild/fsevents; build completed with installed platform binary",
+    "Inherited npm audit high-severity source-map-js advisory; lockfile unchanged; no fix in B2"
+  ]
+}

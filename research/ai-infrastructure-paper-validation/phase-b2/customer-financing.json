@@ -1,0 +1,301 @@
+{
+  "as_of": "2026-10-08",
+  "balances": [
+    {
+      "company": "oracle",
+      "component_sum_status": "EXACT_AT_DISCLOSED_PRECISION",
+      "component_sum_usd": 9938000000,
+      "component_vs_total_difference_usd": 0,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 8970000000,
+      "full_customer_cash_rollforward": null,
+      "label": "FY2023",
+      "noncurrent_usd": 968000000,
+      "period_end": "2023-05-31",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": 9938000000,
+      "source_refs": [
+        "oracle:FY2023:deferred_revenue_current:xbrl",
+        "oracle:FY2023:deferred_revenue_noncurrent:xbrl",
+        "oracle:FY2023:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    },
+    {
+      "company": "oracle",
+      "component_sum_status": "EXACT_AT_DISCLOSED_PRECISION",
+      "component_sum_usd": 10546000000,
+      "component_vs_total_difference_usd": 0,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 9313000000,
+      "full_customer_cash_rollforward": null,
+      "label": "FY2024",
+      "noncurrent_usd": 1233000000,
+      "period_end": "2024-05-31",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": 10546000000,
+      "source_refs": [
+        "oracle:FY2024:deferred_revenue_current:xbrl",
+        "oracle:FY2024:deferred_revenue_noncurrent:xbrl",
+        "oracle:FY2024:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    },
+    {
+      "company": "oracle",
+      "component_sum_status": "EXACT_AT_DISCLOSED_PRECISION",
+      "component_sum_usd": 10733000000,
+      "component_vs_total_difference_usd": 0,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 9387000000,
+      "full_customer_cash_rollforward": null,
+      "label": "FY2025",
+      "noncurrent_usd": 1346000000,
+      "period_end": "2025-05-31",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": 10733000000,
+      "source_refs": [
+        "oracle:FY2025:deferred_revenue_current:xbrl",
+        "oracle:FY2025:deferred_revenue_noncurrent:xbrl",
+        "oracle:FY2025:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    },
+    {
+      "company": "oracle",
+      "component_sum_status": "EXACT_AT_DISCLOSED_PRECISION",
+      "component_sum_usd": 15395000000,
+      "component_vs_total_difference_usd": 0,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 9916000000,
+      "full_customer_cash_rollforward": null,
+      "label": "FY2026",
+      "noncurrent_usd": 5479000000,
+      "period_end": "2026-05-31",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": 15395000000,
+      "source_refs": [
+        "oracle:FY2026:deferred_revenue_current:xbrl",
+        "oracle:FY2026:deferred_revenue_noncurrent:xbrl",
+        "oracle:FY2026:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    },
+    {
+      "company": "oracle",
+      "component_sum_status": "EXACT_AT_DISCLOSED_PRECISION",
+      "component_sum_usd": 30789000000,
+      "component_vs_total_difference_usd": 0,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 14686000000,
+      "full_customer_cash_rollforward": null,
+      "label": "FY2027Q1",
+      "noncurrent_usd": 16103000000,
+      "period_end": "2026-08-31",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": 30789000000,
+      "source_refs": [
+        "oracle:FY2027Q1:deferred_revenue_current:xbrl",
+        "oracle:FY2027Q1:deferred_revenue_noncurrent:xbrl",
+        "oracle:FY2027Q1:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    },
+    {
+      "company": "amazon",
+      "component_sum_status": "MIXED_PRECISION_APPROXIMATION_NOT_REPORTED_TOTAL",
+      "component_sum_usd": 20927000000,
+      "component_vs_total_difference_usd": 327000000,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 15227000000,
+      "full_customer_cash_rollforward": null,
+      "label": "CY2023",
+      "noncurrent_usd": 5700000000,
+      "period_end": "2023-12-31",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": 20600000000,
+      "source_refs": [
+        "amazon:CY2023:deferred_revenue_current:xbrl",
+        "amazon:CY2023:deferred_revenue_noncurrent:xbrl",
+        "amazon:CY2023:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    },
+    {
+      "company": "amazon",
+      "component_sum_status": "MIXED_PRECISION_APPROXIMATION_NOT_REPORTED_TOTAL",
+      "component_sum_usd": 24603000000,
+      "component_vs_total_difference_usd": 3000000,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 18103000000,
+      "full_customer_cash_rollforward": null,
+      "label": "CY2024",
+      "noncurrent_usd": 6500000000,
+      "period_end": "2024-12-31",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": 24600000000,
+      "source_refs": [
+        "amazon:CY2024:deferred_revenue_current:xbrl",
+        "amazon:CY2024:deferred_revenue_noncurrent:xbrl",
+        "amazon:CY2024:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    },
+    {
+      "company": "amazon",
+      "component_sum_status": "MIXED_PRECISION_APPROXIMATION_NOT_REPORTED_TOTAL",
+      "component_sum_usd": 24976000000,
+      "component_vs_total_difference_usd": -24000000,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 20576000000,
+      "full_customer_cash_rollforward": null,
+      "label": "CY2025",
+      "noncurrent_usd": 4400000000,
+      "period_end": "2025-12-31",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": 25000000000,
+      "source_refs": [
+        "amazon:CY2025:deferred_revenue_current:xbrl",
+        "amazon:CY2025:deferred_revenue_noncurrent:xbrl",
+        "amazon:CY2025:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    },
+    {
+      "company": "amazon",
+      "component_sum_status": "MIXED_PRECISION_APPROXIMATION_NOT_REPORTED_TOTAL",
+      "component_sum_usd": 24928000000,
+      "component_vs_total_difference_usd": null,
+      "contract_specific_receipts": "UNAVAILABLE",
+      "current_usd": 20428000000,
+      "full_customer_cash_rollforward": null,
+      "label": "2026H1",
+      "noncurrent_usd": 4500000000,
+      "period_end": "2026-06-30",
+      "refund_rights": "UNAVAILABLE",
+      "reported_total_usd": null,
+      "source_refs": [
+        "amazon:2026H1:deferred_revenue_current:xbrl",
+        "amazon:2026H1:deferred_revenue_noncurrent:xbrl",
+        "amazon:2026H1:deferred_revenue_total:xbrl"
+      ],
+      "total_not_cash_receipts": true
+    }
+  ],
+  "oracle_incomplete_reconciliation": {
+    "closing_deferred_usd": 30789000000,
+    "company": "oracle",
+    "explanation": "Cash-flow adjustments are not a full contract-liability roll-forward; FX/netting/other components unqualified. Do not infer receipts or refunds from the residual.",
+    "full_rollforward": null,
+    "label": "FY2027Q1",
+    "observed_stock_change_usd": 15394000000,
+    "opening_deferred_usd": 15395000000,
+    "other_deferred_cf_adjustment_usd": 3997000000,
+    "prepayment_cf_adjustment_usd": 11363000000,
+    "source_refs": [
+      "oracle:FY2027Q1:deferred_revenue_current:xbrl",
+      "oracle:FY2027Q1:deferred_revenue_noncurrent:xbrl",
+      "oracle:FY2027Q1:deferred_revenue_total:xbrl",
+      "oracle:FY2026:deferred_revenue_current:xbrl",
+      "oracle:FY2026:deferred_revenue_noncurrent:xbrl",
+      "oracle:FY2026:deferred_revenue_total:xbrl",
+      "oracle:FY2027Q1:customer_financing_prepaid_cf:reviewed",
+      "oracle:FY2027Q1:other_deferred_revenue_cf_adjustment:reviewed"
+    ],
+    "status": "PARTIAL_UNEXPLAINED_STOCK_CF_DIFFERENCE",
+    "unexplained_difference_usd": 34000000
+  },
+  "prepayment_observations": [
+    {
+      "accession": "0001193125-26-277521",
+      "company": "oracle",
+      "currency": "USD",
+      "filed": "2026-06-22",
+      "kind": "INDIRECT_CF_ADJUSTMENT_ALREADY_IN_OCF",
+      "label": "FY2026",
+      "metric": "customer_financing_prepaid_cf",
+      "native_unit": "USD_MILLION",
+      "native_value": 4592,
+      "note": "",
+      "observation_id": "oracle:FY2026:customer_financing_prepaid_cf:reviewed",
+      "period_end": "2026-05-31",
+      "period_start": "2025-06-01",
+      "precision_usd": 1000000,
+      "source_id": "oracle:0001193125-26-277521",
+      "source_locator": "Original consolidated cash flow statement; current-period column",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/R8.htm",
+      "value_usd": 4592000000,
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "accession": "0001193125-26-389274",
+      "company": "oracle",
+      "currency": "USD",
+      "filed": "2026-09-11",
+      "kind": "INDIRECT_CF_ADJUSTMENT_ALREADY_IN_OCF",
+      "label": "FY2027Q1",
+      "metric": "customer_financing_prepaid_cf",
+      "native_unit": "USD_MILLION",
+      "native_value": 11363,
+      "note": "",
+      "observation_id": "oracle:FY2027Q1:customer_financing_prepaid_cf:reviewed",
+      "period_end": "2026-08-31",
+      "period_start": "2026-06-01",
+      "precision_usd": 1000000,
+      "source_id": "oracle:0001193125-26-389274",
+      "source_locator": "Original consolidated cash flow statement; current-period column",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "value_usd": 11363000000,
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    }
+  ],
+  "statements": [
+    {
+      "accounting_classification": "CUSTOMER_ACCOUNTING_POLICY",
+      "calculation_method": "Official disclosed terms; no inferred amount",
+      "company": "oracle",
+      "effective_at": "2026-08-31",
+      "field": "customer_funding",
+      "filed": "2026-09-11",
+      "label": "FY2027Q1",
+      "native_amounts": [],
+      "source_id": "oracle:0001193125-26-389274",
+      "source_locator": "Note 1 Customer Prepayments / Note 5 Deferred Revenue",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "statement_id": "oracle:FY2027Q1:customer_funding",
+      "value": {
+        "cash_received": true,
+        "customer_specific_amounts": "UNAVAILABLE",
+        "full_rollforward": "UNAVAILABLE",
+        "liability": "Effects reflected in deferred revenue over performance period",
+        "ocf_included": true,
+        "refund_or_repayment_rights": "UNAVAILABLE",
+        "service_obligation": true
+      },
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    },
+    {
+      "accounting_classification": "CUSTOMER_ACCOUNTING_POLICY",
+      "calculation_method": "Official disclosed terms; no inferred amount",
+      "company": "amazon",
+      "effective_at": "2026-06-30",
+      "field": "unearned_revenue_policy",
+      "filed": "2026-07-31",
+      "label": "2026H1",
+      "native_amounts": [],
+      "source_id": "amazon:0001018724-26-000026",
+      "source_locator": "Note 1 Unearned Revenue",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+      "statement_id": "amazon:2026H1:unearned_revenue_policy",
+      "value": {
+        "contemporaneous_cash_received": "NOT_IDENTIFIED_FROM_STOCK",
+        "contract_specific_receipts": "UNAVAILABLE",
+        "paid_or_due": true,
+        "refund_or_repayment_rights": "UNAVAILABLE",
+        "total_at_june30": "NOT_SEPARATELY_REPORTED"
+      },
+      "verification": "PRIMARY_MANUALLY_VERIFIED_EXTRACT"
+    }
+  ],
+  "unearned_cash_received_total": null
+}

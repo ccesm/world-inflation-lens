@@ -1,0 +1,913 @@
+{
+  "as_of": "2026-10-08",
+  "assessments": [
+    {
+      "company": "oracle",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 0.5065540343722692,
+          "company_investment_to_ocf": 0.5065540343722692,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": 33494000000,
+          "financing_cf_usd": 7910000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "POSITIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": 8470000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 17165000000,
+          "state": "OCF_EXCEEDS_COMPANY_INVESTMENT"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": -11618000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_DECREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "FY2023",
+      "period_end": "2023-05-31",
+      "period_start": "2022-06-01",
+      "source_refs": [
+        "oracle:FY2023:acquisitions_net_of_cash",
+        "oracle:FY2023:borrowings_current",
+        "oracle:FY2023:borrowings_noncurrent",
+        "oracle:FY2023:buybacks",
+        "oracle:FY2023:cash",
+        "oracle:FY2023:cash_capex",
+        "oracle:FY2023:cash_common_dividends",
+        "oracle:FY2023:cash_preferred_dividends",
+        "oracle:FY2023:cash_stockholder_dividends",
+        "oracle:FY2023:combined_cash",
+        "oracle:FY2023:combined_cash_begin",
+        "oracle:FY2023:commercial_paper_net",
+        "oracle:FY2023:common_equity_proceeds",
+        "oracle:FY2023:customer_prepayments_rounded_note",
+        "oracle:FY2023:debt",
+        "oracle:FY2023:debt_after5_principal",
+        "oracle:FY2023:debt_next_12m_principal",
+        "oracle:FY2023:debt_proceeds",
+        "oracle:FY2023:debt_repayments",
+        "oracle:FY2023:debt_year2_principal",
+        "oracle:FY2023:debt_year3_principal",
+        "oracle:FY2023:debt_year4_principal",
+        "oracle:FY2023:debt_year5_principal",
+        "oracle:FY2023:deferred_revenue",
+        "oracle:FY2023:deferred_revenue_cf_adjustment",
+        "oracle:FY2023:finance_lease_current",
+        "oracle:FY2023:finance_lease_interest",
+        "oracle:FY2023:finance_lease_liability",
+        "oracle:FY2023:finance_lease_noncash_additions",
+        "oracle:FY2023:finance_lease_noncurrent",
+        "oracle:FY2023:finance_lease_payments_next_12m",
+        "oracle:FY2023:finance_lease_payments_total",
+        "oracle:FY2023:finance_lease_principal",
+        "oracle:FY2023:financing_cf",
+        "oracle:FY2023:fx",
+        "oracle:FY2023:interest_expense",
+        "oracle:FY2023:investing_cf",
+        "oracle:FY2023:ocf",
+        "oracle:FY2023:operating_income",
+        "oracle:FY2023:operating_lease_liability",
+        "oracle:FY2023:operating_lease_payments_next_12m",
+        "oracle:FY2023:operating_lease_payments_total",
+        "oracle:FY2023:preferred_equity_proceeds",
+        "oracle:FY2023:purchase_obligations_next_fiscal_year",
+        "oracle:FY2023:purchase_obligations_total",
+        "oracle:FY2023:reported_cash_change",
+        "oracle:FY2023:revenue",
+        "oracle:FY2023:short_term_investments"
+      ]
+    },
+    {
+      "company": "oracle",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 0.36769667434263376,
+          "company_investment_to_ocf": 0.36769667434263376,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": 0,
+          "financing_cf_usd": -10554000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "NEGATIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": 11807000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 18673000000,
+          "state": "OCF_EXCEEDS_COMPANY_INVESTMENT"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": 689000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_INCREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "FY2024",
+      "period_end": "2024-05-31",
+      "period_start": "2023-06-01",
+      "source_refs": [
+        "oracle:FY2024:acquisitions_net_of_cash",
+        "oracle:FY2024:borrowings_current",
+        "oracle:FY2024:borrowings_noncurrent",
+        "oracle:FY2024:buybacks",
+        "oracle:FY2024:cash",
+        "oracle:FY2024:cash_capex",
+        "oracle:FY2024:cash_common_dividends",
+        "oracle:FY2024:cash_preferred_dividends",
+        "oracle:FY2024:cash_stockholder_dividends",
+        "oracle:FY2024:combined_cash",
+        "oracle:FY2024:combined_cash_begin",
+        "oracle:FY2024:commercial_paper_net",
+        "oracle:FY2024:common_equity_proceeds",
+        "oracle:FY2024:customer_prepayments_rounded_note",
+        "oracle:FY2024:debt",
+        "oracle:FY2024:debt_after5_principal",
+        "oracle:FY2024:debt_next_12m_principal",
+        "oracle:FY2024:debt_proceeds",
+        "oracle:FY2024:debt_repayments",
+        "oracle:FY2024:debt_year2_principal",
+        "oracle:FY2024:debt_year3_principal",
+        "oracle:FY2024:debt_year4_principal",
+        "oracle:FY2024:debt_year5_principal",
+        "oracle:FY2024:deferred_revenue",
+        "oracle:FY2024:deferred_revenue_cf_adjustment",
+        "oracle:FY2024:finance_lease_current",
+        "oracle:FY2024:finance_lease_interest",
+        "oracle:FY2024:finance_lease_liability",
+        "oracle:FY2024:finance_lease_noncash_additions",
+        "oracle:FY2024:finance_lease_noncurrent",
+        "oracle:FY2024:finance_lease_payments_next_12m",
+        "oracle:FY2024:finance_lease_payments_total",
+        "oracle:FY2024:finance_lease_principal",
+        "oracle:FY2024:financing_cf",
+        "oracle:FY2024:fx",
+        "oracle:FY2024:interest_expense",
+        "oracle:FY2024:investing_cf",
+        "oracle:FY2024:ocf",
+        "oracle:FY2024:operating_income",
+        "oracle:FY2024:operating_lease_liability",
+        "oracle:FY2024:operating_lease_payments_next_12m",
+        "oracle:FY2024:operating_lease_payments_total",
+        "oracle:FY2024:preferred_equity_proceeds",
+        "oracle:FY2024:purchase_obligations_next_fiscal_year",
+        "oracle:FY2024:purchase_obligations_total",
+        "oracle:FY2024:reported_cash_change",
+        "oracle:FY2024:revenue",
+        "oracle:FY2024:short_term_investments"
+      ]
+    },
+    {
+      "company": "oracle",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 1.0189232025359012,
+          "company_investment_to_ocf": 1.0189232025359012,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": 19548000000,
+          "financing_cf_usd": 1098000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "POSITIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": -394000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 20821000000,
+          "state": "INVESTMENT_EXCEEDS_OCF"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": 332000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_INCREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "FY2025",
+      "period_end": "2025-05-31",
+      "period_start": "2024-06-01",
+      "source_refs": [
+        "oracle:FY2025:acquisitions_net_of_cash",
+        "oracle:FY2025:borrowings_current",
+        "oracle:FY2025:borrowings_noncurrent",
+        "oracle:FY2025:buybacks",
+        "oracle:FY2025:cash",
+        "oracle:FY2025:cash_capex",
+        "oracle:FY2025:cash_common_dividends",
+        "oracle:FY2025:cash_preferred_dividends",
+        "oracle:FY2025:cash_stockholder_dividends",
+        "oracle:FY2025:combined_cash",
+        "oracle:FY2025:combined_cash_begin",
+        "oracle:FY2025:commercial_paper_net",
+        "oracle:FY2025:common_equity_proceeds",
+        "oracle:FY2025:customer_prepayments_rounded_note",
+        "oracle:FY2025:debt",
+        "oracle:FY2025:debt_after5_principal",
+        "oracle:FY2025:debt_next_12m_principal",
+        "oracle:FY2025:debt_proceeds",
+        "oracle:FY2025:debt_repayments",
+        "oracle:FY2025:debt_year2_principal",
+        "oracle:FY2025:debt_year3_principal",
+        "oracle:FY2025:debt_year4_principal",
+        "oracle:FY2025:debt_year5_principal",
+        "oracle:FY2025:deferred_revenue",
+        "oracle:FY2025:deferred_revenue_cf_adjustment",
+        "oracle:FY2025:finance_lease_current",
+        "oracle:FY2025:finance_lease_interest",
+        "oracle:FY2025:finance_lease_liability",
+        "oracle:FY2025:finance_lease_noncash_additions",
+        "oracle:FY2025:finance_lease_noncurrent",
+        "oracle:FY2025:finance_lease_payments_next_12m",
+        "oracle:FY2025:finance_lease_payments_total",
+        "oracle:FY2025:finance_lease_principal",
+        "oracle:FY2025:financing_cf",
+        "oracle:FY2025:fx",
+        "oracle:FY2025:interest_expense",
+        "oracle:FY2025:investing_cf",
+        "oracle:FY2025:ocf",
+        "oracle:FY2025:operating_income",
+        "oracle:FY2025:operating_lease_liability",
+        "oracle:FY2025:operating_lease_payments_next_12m",
+        "oracle:FY2025:operating_lease_payments_total",
+        "oracle:FY2025:preferred_equity_proceeds",
+        "oracle:FY2025:purchase_obligations_next_fiscal_year",
+        "oracle:FY2025:purchase_obligations_total",
+        "oracle:FY2025:reported_cash_change",
+        "oracle:FY2025:revenue",
+        "oracle:FY2025:short_term_investments"
+      ]
+    },
+    {
+      "company": "oracle",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 1.7407198924226788,
+          "company_investment_to_ocf": 1.7407198924226788,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": 46093000000,
+          "financing_cf_usd": 40284000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "POSITIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": -23686000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 31977000000,
+          "state": "INVESTMENT_EXCEEDS_OCF"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": 20503000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_INCREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "FY2026",
+      "period_end": "2026-05-31",
+      "period_start": "2025-06-01",
+      "source_refs": [
+        "oracle:FY2026:acquisitions_net_of_cash",
+        "oracle:FY2026:borrowings_current",
+        "oracle:FY2026:borrowings_noncurrent",
+        "oracle:FY2026:buybacks",
+        "oracle:FY2026:cash",
+        "oracle:FY2026:cash_capex",
+        "oracle:FY2026:cash_common_dividends",
+        "oracle:FY2026:cash_preferred_dividends",
+        "oracle:FY2026:cash_stockholder_dividends",
+        "oracle:FY2026:combined_cash",
+        "oracle:FY2026:combined_cash_begin",
+        "oracle:FY2026:commercial_paper_net",
+        "oracle:FY2026:common_equity_proceeds",
+        "oracle:FY2026:customer_prepayments_rounded_note",
+        "oracle:FY2026:debt",
+        "oracle:FY2026:debt_after5_principal",
+        "oracle:FY2026:debt_next_12m_principal",
+        "oracle:FY2026:debt_proceeds",
+        "oracle:FY2026:debt_repayments",
+        "oracle:FY2026:debt_year2_principal",
+        "oracle:FY2026:debt_year3_principal",
+        "oracle:FY2026:debt_year4_principal",
+        "oracle:FY2026:debt_year5_principal",
+        "oracle:FY2026:deferred_revenue",
+        "oracle:FY2026:deferred_revenue_cf_adjustment",
+        "oracle:FY2026:finance_lease_current",
+        "oracle:FY2026:finance_lease_interest",
+        "oracle:FY2026:finance_lease_liability",
+        "oracle:FY2026:finance_lease_noncash_additions",
+        "oracle:FY2026:finance_lease_noncurrent",
+        "oracle:FY2026:finance_lease_payments_next_12m",
+        "oracle:FY2026:finance_lease_payments_total",
+        "oracle:FY2026:finance_lease_principal",
+        "oracle:FY2026:financing_cf",
+        "oracle:FY2026:fx",
+        "oracle:FY2026:interest_expense",
+        "oracle:FY2026:investing_cf",
+        "oracle:FY2026:ocf",
+        "oracle:FY2026:operating_income",
+        "oracle:FY2026:operating_lease_liability",
+        "oracle:FY2026:operating_lease_payments_next_12m",
+        "oracle:FY2026:operating_lease_payments_total",
+        "oracle:FY2026:preferred_equity_proceeds",
+        "oracle:FY2026:purchase_obligations_next_fiscal_year",
+        "oracle:FY2026:purchase_obligations_total",
+        "oracle:FY2026:reported_cash_change",
+        "oracle:FY2026:revenue",
+        "oracle:FY2026:short_term_investments"
+      ]
+    },
+    {
+      "company": "oracle",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 1.233562740769597,
+          "company_investment_to_ocf": 1.233562740769597,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": null,
+          "financing_cf_usd": 13111000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "POSITIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": -5396000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 23103000000,
+          "state": "INVESTMENT_EXCEEDS_OCF"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": 7645000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_INCREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "FY2027Q1",
+      "period_end": "2026-08-31",
+      "period_start": "2026-06-01",
+      "source_refs": [
+        "oracle:FY2027Q1:acquisitions_net_of_cash",
+        "oracle:FY2027Q1:borrowings_current:rendered",
+        "oracle:FY2027Q1:borrowings_noncurrent:rendered",
+        "oracle:FY2027Q1:buybacks",
+        "oracle:FY2027Q1:capex_short_term_financing_net:rendered",
+        "oracle:FY2027Q1:cash",
+        "oracle:FY2027Q1:cash_capex",
+        "oracle:FY2027Q1:cash_common_dividends",
+        "oracle:FY2027Q1:cash_preferred_dividends",
+        "oracle:FY2027Q1:cash_stockholder_dividends",
+        "oracle:FY2027Q1:combined_cash",
+        "oracle:FY2027Q1:combined_cash_begin",
+        "oracle:FY2027Q1:commercial_paper_net",
+        "oracle:FY2027Q1:common_equity_proceeds",
+        "oracle:FY2027Q1:customer_financing_prepayments:rendered",
+        "oracle:FY2027Q1:customer_prepayments_rounded_note",
+        "oracle:FY2027Q1:debt",
+        "oracle:FY2027Q1:debt_after5_principal",
+        "oracle:FY2027Q1:debt_next_12m_principal",
+        "oracle:FY2027Q1:debt_proceeds",
+        "oracle:FY2027Q1:debt_repayments",
+        "oracle:FY2027Q1:debt_year2_principal",
+        "oracle:FY2027Q1:debt_year3_principal",
+        "oracle:FY2027Q1:debt_year4_principal",
+        "oracle:FY2027Q1:debt_year5_principal",
+        "oracle:FY2027Q1:deferred_revenue",
+        "oracle:FY2027Q1:deferred_revenue_cf_adjustment",
+        "oracle:FY2027Q1:finance_lease_current",
+        "oracle:FY2027Q1:finance_lease_interest",
+        "oracle:FY2027Q1:finance_lease_liability",
+        "oracle:FY2027Q1:finance_lease_noncash_additions",
+        "oracle:FY2027Q1:finance_lease_noncurrent",
+        "oracle:FY2027Q1:finance_lease_payments_next_12m",
+        "oracle:FY2027Q1:finance_lease_payments_total",
+        "oracle:FY2027Q1:finance_lease_principal",
+        "oracle:FY2027Q1:financing_cf",
+        "oracle:FY2027Q1:fx",
+        "oracle:FY2027Q1:interest_expense",
+        "oracle:FY2027Q1:investing_cf",
+        "oracle:FY2027Q1:ocf",
+        "oracle:FY2027Q1:operating_income",
+        "oracle:FY2027Q1:operating_lease_liability",
+        "oracle:FY2027Q1:operating_lease_payments_next_12m",
+        "oracle:FY2027Q1:operating_lease_payments_total",
+        "oracle:FY2027Q1:preferred_equity_proceeds",
+        "oracle:FY2027Q1:purchase_obligations_next_fiscal_year",
+        "oracle:FY2027Q1:purchase_obligations_total",
+        "oracle:FY2027Q1:reported_cash_change",
+        "oracle:FY2027Q1:reported_company_fcf:rendered",
+        "oracle:FY2027Q1:revenue",
+        "oracle:FY2027Q1:short_term_investments",
+        "oracle:FY2027Q1:uncommenced_leases_total:rendered"
+      ]
+    },
+    {
+      "company": "amazon",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 0.6207355260989335,
+          "company_investment_to_ocf": 0.5666305653003084,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": 0,
+          "financing_cf_usd": -15879000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "NEGATIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": 36813000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 84946000000,
+          "state": "OCF_EXCEEDS_COMPANY_INVESTMENT"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": 19637000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_INCREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "CY2023",
+      "period_end": "2023-12-31",
+      "period_start": "2023-01-01",
+      "source_refs": [
+        "amazon:CY2023:buybacks",
+        "amazon:CY2023:cash",
+        "amazon:CY2023:cash_capex",
+        "amazon:CY2023:cash_common_dividends",
+        "amazon:CY2023:cash_preferred_dividends",
+        "amazon:CY2023:combined_cash",
+        "amazon:CY2023:combined_cash_begin",
+        "amazon:CY2023:customer_prepayments_rounded_note",
+        "amazon:CY2023:debt_after5_principal",
+        "amazon:CY2023:debt_next_12m_principal",
+        "amazon:CY2023:debt_principal_interest_near_term:rendered",
+        "amazon:CY2023:debt_principal_interest_total:rendered",
+        "amazon:CY2023:debt_proceeds",
+        "amazon:CY2023:debt_repayments",
+        "amazon:CY2023:debt_year2_principal",
+        "amazon:CY2023:debt_year3_principal",
+        "amazon:CY2023:debt_year4_principal",
+        "amazon:CY2023:debt_year5_principal",
+        "amazon:CY2023:deferred_revenue",
+        "amazon:CY2023:deferred_revenue_cf_adjustment",
+        "amazon:CY2023:finance_lease_current",
+        "amazon:CY2023:finance_lease_interest",
+        "amazon:CY2023:finance_lease_liability",
+        "amazon:CY2023:finance_lease_noncash_additions",
+        "amazon:CY2023:finance_lease_noncurrent",
+        "amazon:CY2023:finance_lease_payments_next_12m",
+        "amazon:CY2023:finance_lease_payments_total",
+        "amazon:CY2023:finance_lease_principal",
+        "amazon:CY2023:financing_cf",
+        "amazon:CY2023:financing_obligations_payments_near_term:rendered",
+        "amazon:CY2023:financing_obligations_payments_total:rendered",
+        "amazon:CY2023:fx",
+        "amazon:CY2023:interest_expense",
+        "amazon:CY2023:investing_cf",
+        "amazon:CY2023:long_term_debt_current_carrying",
+        "amazon:CY2023:long_term_debt_face",
+        "amazon:CY2023:long_term_debt_noncurrent_carrying",
+        "amazon:CY2023:ocf",
+        "amazon:CY2023:operating_income",
+        "amazon:CY2023:operating_lease_liability",
+        "amazon:CY2023:operating_lease_payments_next_12m",
+        "amazon:CY2023:operating_lease_payments_total",
+        "amazon:CY2023:other_commitments_near_term:rendered",
+        "amazon:CY2023:other_commitments_total:rendered",
+        "amazon:CY2023:ppe_sales_incentives:rendered",
+        "amazon:CY2023:purchase_obligations_near_term:rendered",
+        "amazon:CY2023:purchase_obligations_next_fiscal_year",
+        "amazon:CY2023:purchase_obligations_total",
+        "amazon:CY2023:reported_cash_change",
+        "amazon:CY2023:reported_company_fcf:rendered",
+        "amazon:CY2023:reported_net_cash_capex:rendered",
+        "amazon:CY2023:revenue",
+        "amazon:CY2023:short_term_borrowings:rendered",
+        "amazon:CY2023:short_term_investments",
+        "amazon:CY2023:short_term_proceeds_and_other",
+        "amazon:CY2023:short_term_repayments_and_other",
+        "amazon:CY2023:uncommenced_leases_near_term:rendered",
+        "amazon:CY2023:uncommenced_leases_total:rendered"
+      ]
+    },
+    {
+      "company": "amazon",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 0.7162681118772491,
+          "company_investment_to_ocf": 0.6701761350397404,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": 0,
+          "financing_cf_usd": -11812000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "NEGATIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": 38219000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 115877000000,
+          "state": "OCF_EXCEEDS_COMPANY_INVESTMENT"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": 8422000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_INCREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "CY2024",
+      "period_end": "2024-12-31",
+      "period_start": "2024-01-01",
+      "source_refs": [
+        "amazon:CY2024:buybacks",
+        "amazon:CY2024:cash",
+        "amazon:CY2024:cash_capex",
+        "amazon:CY2024:cash_common_dividends",
+        "amazon:CY2024:cash_preferred_dividends",
+        "amazon:CY2024:combined_cash",
+        "amazon:CY2024:combined_cash_begin",
+        "amazon:CY2024:customer_prepayments_rounded_note",
+        "amazon:CY2024:debt_after5_principal",
+        "amazon:CY2024:debt_next_12m_principal",
+        "amazon:CY2024:debt_principal_interest_near_term:rendered",
+        "amazon:CY2024:debt_principal_interest_total:rendered",
+        "amazon:CY2024:debt_proceeds",
+        "amazon:CY2024:debt_repayments",
+        "amazon:CY2024:debt_year2_principal",
+        "amazon:CY2024:debt_year3_principal",
+        "amazon:CY2024:debt_year4_principal",
+        "amazon:CY2024:debt_year5_principal",
+        "amazon:CY2024:deferred_revenue",
+        "amazon:CY2024:deferred_revenue_cf_adjustment",
+        "amazon:CY2024:finance_lease_current",
+        "amazon:CY2024:finance_lease_interest",
+        "amazon:CY2024:finance_lease_liability",
+        "amazon:CY2024:finance_lease_noncash_additions",
+        "amazon:CY2024:finance_lease_noncurrent",
+        "amazon:CY2024:finance_lease_payments_next_12m",
+        "amazon:CY2024:finance_lease_payments_total",
+        "amazon:CY2024:finance_lease_principal",
+        "amazon:CY2024:financing_cf",
+        "amazon:CY2024:financing_obligations_payments_near_term:rendered",
+        "amazon:CY2024:financing_obligations_payments_total:rendered",
+        "amazon:CY2024:fx",
+        "amazon:CY2024:interest_expense",
+        "amazon:CY2024:investing_cf",
+        "amazon:CY2024:long_term_debt_current_carrying",
+        "amazon:CY2024:long_term_debt_face",
+        "amazon:CY2024:long_term_debt_noncurrent_carrying",
+        "amazon:CY2024:ocf",
+        "amazon:CY2024:operating_income",
+        "amazon:CY2024:operating_lease_liability",
+        "amazon:CY2024:operating_lease_payments_next_12m",
+        "amazon:CY2024:operating_lease_payments_total",
+        "amazon:CY2024:other_commitments_near_term:rendered",
+        "amazon:CY2024:other_commitments_total:rendered",
+        "amazon:CY2024:ppe_sales_incentives:rendered",
+        "amazon:CY2024:purchase_obligations_near_term:rendered",
+        "amazon:CY2024:purchase_obligations_next_fiscal_year",
+        "amazon:CY2024:purchase_obligations_total:rendered",
+        "amazon:CY2024:reported_cash_change",
+        "amazon:CY2024:reported_company_fcf:rendered",
+        "amazon:CY2024:reported_net_cash_capex:rendered",
+        "amazon:CY2024:revenue",
+        "amazon:CY2024:short_term_borrowings",
+        "amazon:CY2024:short_term_investments",
+        "amazon:CY2024:short_term_proceeds_and_other",
+        "amazon:CY2024:short_term_repayments_and_other",
+        "amazon:CY2024:uncommenced_leases_near_term:rendered",
+        "amazon:CY2024:uncommenced_leases_total:rendered"
+      ]
+    },
+    {
+      "company": "amazon",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 0.9448442450220049,
+          "company_investment_to_ocf": 0.9197643247272675,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": 15673000000,
+          "financing_cf_usd": 9661000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "POSITIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": 11194000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 139514000000,
+          "state": "OCF_EXCEEDS_COMPANY_INVESTMENT"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": 7794000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_INCREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "CY2025",
+      "period_end": "2025-12-31",
+      "period_start": "2025-01-01",
+      "source_refs": [
+        "amazon:CY2025:buybacks:rendered",
+        "amazon:CY2025:cash",
+        "amazon:CY2025:cash_capex",
+        "amazon:CY2025:cash_common_dividends",
+        "amazon:CY2025:cash_preferred_dividends",
+        "amazon:CY2025:combined_cash",
+        "amazon:CY2025:combined_cash_begin",
+        "amazon:CY2025:customer_prepayments_rounded_note",
+        "amazon:CY2025:debt_after5_principal",
+        "amazon:CY2025:debt_next_12m_principal",
+        "amazon:CY2025:debt_principal_interest_near_term:rendered",
+        "amazon:CY2025:debt_principal_interest_total:rendered",
+        "amazon:CY2025:debt_proceeds",
+        "amazon:CY2025:debt_repayments",
+        "amazon:CY2025:debt_year2_principal",
+        "amazon:CY2025:debt_year3_principal",
+        "amazon:CY2025:debt_year4_principal",
+        "amazon:CY2025:debt_year5_principal",
+        "amazon:CY2025:deferred_revenue",
+        "amazon:CY2025:deferred_revenue_cf_adjustment",
+        "amazon:CY2025:finance_lease_current",
+        "amazon:CY2025:finance_lease_interest",
+        "amazon:CY2025:finance_lease_liability",
+        "amazon:CY2025:finance_lease_noncash_additions",
+        "amazon:CY2025:finance_lease_noncurrent",
+        "amazon:CY2025:finance_lease_payments_next_12m",
+        "amazon:CY2025:finance_lease_payments_total",
+        "amazon:CY2025:finance_lease_principal",
+        "amazon:CY2025:financing_cf",
+        "amazon:CY2025:financing_obligations_payments_near_term:rendered",
+        "amazon:CY2025:financing_obligations_payments_total:rendered",
+        "amazon:CY2025:fx",
+        "amazon:CY2025:interest_expense",
+        "amazon:CY2025:investing_cf",
+        "amazon:CY2025:long_term_debt_current_carrying",
+        "amazon:CY2025:long_term_debt_face",
+        "amazon:CY2025:long_term_debt_noncurrent_carrying",
+        "amazon:CY2025:ocf",
+        "amazon:CY2025:operating_income",
+        "amazon:CY2025:operating_lease_liability",
+        "amazon:CY2025:operating_lease_payments_next_12m",
+        "amazon:CY2025:operating_lease_payments_total",
+        "amazon:CY2025:other_commitments_near_term:rendered",
+        "amazon:CY2025:other_commitments_total:rendered",
+        "amazon:CY2025:ppe_sales_incentives:rendered",
+        "amazon:CY2025:purchase_obligations_near_term:rendered",
+        "amazon:CY2025:purchase_obligations_next_fiscal_year",
+        "amazon:CY2025:purchase_obligations_total:rendered",
+        "amazon:CY2025:reported_cash_change",
+        "amazon:CY2025:reported_company_fcf:rendered",
+        "amazon:CY2025:reported_net_cash_capex:rendered",
+        "amazon:CY2025:revenue",
+        "amazon:CY2025:short_term_borrowings",
+        "amazon:CY2025:short_term_investments",
+        "amazon:CY2025:short_term_proceeds_and_other",
+        "amazon:CY2025:short_term_repayments_and_other",
+        "amazon:CY2025:uncommenced_leases_near_term:rendered",
+        "amazon:CY2025:uncommenced_leases_total:rendered"
+      ]
+    },
+    {
+      "company": "amazon",
+      "confidence": {
+        "causal_attribution": "UNAVAILABLE",
+        "contract_completeness": "LIMITED_INCOMPLETE_PRIMARY_DOCUMENT_COVERAGE",
+        "numerical_bridge": "HIGH_EXACT_RECONCILIATION_AT_REPORTED_PRECISION"
+      },
+      "dimensions": {
+        "capex_intensity": {
+          "cash_ppe_to_ocf": 1.3779386437782664,
+          "company_investment_to_ocf": 1.3485207017740377,
+          "definition": "Oracle gross cash PP&E; Amazon native net cash investment; not AI allocation"
+        },
+        "external_financing": {
+          "debt_proceeds_usd": 66998000000,
+          "financing_cf_usd": 62913000000,
+          "limitation": "Observed funding mix, not dollars traced to particular AI assets",
+          "state": "POSITIVE_NET_FINANCING_FLOW"
+        },
+        "internal_cash_coverage": {
+          "company_convention_fcf_usd": -24891000000,
+          "limitation": "OCF may contain customer funding; FCF excludes many cash obligations",
+          "ocf_usd": 71419000000,
+          "state": "INVESTMENT_EXCEEDS_OCF"
+        },
+        "liquidity_consumption": {
+          "cash_change_including_restricted_usd": -9179000000,
+          "limitation": "Whole cash-flow bridge; cannot attribute movement to AI spending or infer cash exhaustion",
+          "state": "REPORTED_CASH_DECREASE"
+        },
+        "near_term_payments": {
+          "limitation": "No universal all-obligation rolling denominator; quarter tables keep remainder/full-year columns",
+          "rolling_12m_all_obligations": null,
+          "state": "NATIVE_SCHEDULE_AVAILABLE"
+        },
+        "refinancing": {
+          "covenant_breach_conclusion": "NOT_ESTABLISHED",
+          "distress_conclusion": "NOT_ESTABLISHED",
+          "guaranteed_refinancing": false,
+          "state": "MATURITIES_AND_CONDITIONAL_FACILITIES_IDENTIFIED"
+        }
+      },
+      "label": "2026H1",
+      "period_end": "2026-06-30",
+      "period_start": "2026-01-01",
+      "source_refs": [
+        "amazon:2026H1:buybacks",
+        "amazon:2026H1:cash",
+        "amazon:2026H1:cash_capex",
+        "amazon:2026H1:cash_common_dividends",
+        "amazon:2026H1:cash_preferred_dividends",
+        "amazon:2026H1:combined_cash",
+        "amazon:2026H1:combined_cash_begin",
+        "amazon:2026H1:customer_prepayments_rounded_note",
+        "amazon:2026H1:debt_after5_principal",
+        "amazon:2026H1:debt_next_12m_principal",
+        "amazon:2026H1:debt_principal_interest_near_term:rendered",
+        "amazon:2026H1:debt_principal_interest_total:rendered",
+        "amazon:2026H1:debt_proceeds",
+        "amazon:2026H1:debt_repayments",
+        "amazon:2026H1:debt_year2_principal",
+        "amazon:2026H1:debt_year3_principal",
+        "amazon:2026H1:debt_year4_principal",
+        "amazon:2026H1:debt_year5_principal",
+        "amazon:2026H1:deferred_revenue",
+        "amazon:2026H1:deferred_revenue_cf_adjustment",
+        "amazon:2026H1:finance_lease_current",
+        "amazon:2026H1:finance_lease_interest",
+        "amazon:2026H1:finance_lease_liability",
+        "amazon:2026H1:finance_lease_noncash_additions",
+        "amazon:2026H1:finance_lease_noncurrent",
+        "amazon:2026H1:finance_lease_payments_next_12m",
+        "amazon:2026H1:finance_lease_payments_total",
+        "amazon:2026H1:finance_lease_principal",
+        "amazon:2026H1:financing_cf",
+        "amazon:2026H1:financing_obligations_payments_near_term:rendered",
+        "amazon:2026H1:financing_obligations_payments_total:rendered",
+        "amazon:2026H1:fx",
+        "amazon:2026H1:interest_expense",
+        "amazon:2026H1:investing_cf",
+        "amazon:2026H1:long_term_debt_current_carrying",
+        "amazon:2026H1:long_term_debt_face",
+        "amazon:2026H1:long_term_debt_noncurrent_carrying",
+        "amazon:2026H1:ocf",
+        "amazon:2026H1:operating_income",
+        "amazon:2026H1:operating_lease_liability",
+        "amazon:2026H1:operating_lease_payments_next_12m",
+        "amazon:2026H1:operating_lease_payments_total",
+        "amazon:2026H1:other_commitments_near_term:rendered",
+        "amazon:2026H1:other_commitments_total:rendered",
+        "amazon:2026H1:ppe_sales_incentives:rendered",
+        "amazon:2026H1:purchase_obligations_near_term:rendered",
+        "amazon:2026H1:purchase_obligations_next_fiscal_year",
+        "amazon:2026H1:purchase_obligations_total:rendered",
+        "amazon:2026H1:reported_cash_change",
+        "amazon:2026H1:revenue",
+        "amazon:2026H1:short_term_borrowings",
+        "amazon:2026H1:short_term_investments",
+        "amazon:2026H1:short_term_proceeds_and_other",
+        "amazon:2026H1:short_term_repayments_and_other",
+        "amazon:2026H1:uncommenced_leases_near_term:rendered",
+        "amazon:2026H1:uncommenced_leases_total:rendered"
+      ]
+    }
+  ],
+  "automatic_refinancing_assumed": false,
+  "composite_score": null
+}
