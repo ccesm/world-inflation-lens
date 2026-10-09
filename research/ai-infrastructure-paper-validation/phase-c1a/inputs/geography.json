@@ -1,0 +1,153 @@
+{
+  "states": [
+    {
+      "state": "IL",
+      "stateFips": "17",
+      "stateName": "Illinois",
+      "sourceId": "census-states",
+      "locator": "line 15"
+    },
+    {
+      "state": "KS",
+      "stateFips": "20",
+      "stateName": "Kansas",
+      "sourceId": "census-states",
+      "locator": "line 18"
+    },
+    {
+      "state": "KY",
+      "stateFips": "21",
+      "stateName": "Kentucky",
+      "sourceId": "census-states",
+      "locator": "line 19"
+    },
+    {
+      "state": "MI",
+      "stateFips": "26",
+      "stateName": "Michigan",
+      "sourceId": "census-states",
+      "locator": "line 24"
+    },
+    {
+      "state": "MO",
+      "stateFips": "29",
+      "stateName": "Missouri",
+      "sourceId": "census-states",
+      "locator": "line 27"
+    },
+    {
+      "state": "NE",
+      "stateFips": "31",
+      "stateName": "Nebraska",
+      "sourceId": "census-states",
+      "locator": "line 29"
+    },
+    {
+      "state": "NM",
+      "stateFips": "35",
+      "stateName": "New Mexico",
+      "sourceId": "census-states",
+      "locator": "line 33"
+    },
+    {
+      "state": "OH",
+      "stateFips": "39",
+      "stateName": "Ohio",
+      "sourceId": "census-states",
+      "locator": "line 37"
+    },
+    {
+      "state": "OK",
+      "stateFips": "40",
+      "stateName": "Oklahoma",
+      "sourceId": "census-states",
+      "locator": "line 38"
+    },
+    {
+      "state": "PA",
+      "stateFips": "42",
+      "stateName": "Pennsylvania",
+      "sourceId": "census-states",
+      "locator": "line 40"
+    },
+    {
+      "state": "UT",
+      "stateFips": "49",
+      "stateName": "Utah",
+      "sourceId": "census-states",
+      "locator": "line 46"
+    },
+    {
+      "state": "VA",
+      "stateFips": "51",
+      "stateName": "Virginia",
+      "sourceId": "census-states",
+      "locator": "line 48"
+    },
+    {
+      "state": "WI",
+      "stateFips": "55",
+      "stateName": "Wisconsin",
+      "sourceId": "census-states",
+      "locator": "line 51"
+    }
+  ],
+  "counties": [
+    {
+      "state": "IL",
+      "county": "DeKalb County",
+      "countyFips": "17037",
+      "sourceId": "census-counties",
+      "locator": "line 616"
+    },
+    {
+      "state": "NE",
+      "county": "Sarpy County",
+      "countyFips": "31153",
+      "sourceId": "census-counties",
+      "locator": "line 1733"
+    },
+    {
+      "state": "NM",
+      "county": "Valencia County",
+      "countyFips": "35061",
+      "sourceId": "census-counties",
+      "locator": "line 1830"
+    },
+    {
+      "state": "OH",
+      "county": "Franklin County",
+      "countyFips": "39049",
+      "sourceId": "census-counties",
+      "locator": "line 2070"
+    },
+    {
+      "state": "OH",
+      "county": "Licking County",
+      "countyFips": "39089",
+      "sourceId": "census-counties",
+      "locator": "line 2090"
+    },
+    {
+      "state": "UT",
+      "county": "Utah County",
+      "countyFips": "49049",
+      "sourceId": "census-counties",
+      "locator": "line 2804"
+    },
+    {
+      "state": "VA",
+      "county": "Loudoun County",
+      "countyFips": "51107",
+      "sourceId": "census-counties",
+      "locator": "line 2875"
+    },
+    {
+      "state": "WI",
+      "county": "Racine County",
+      "countyFips": "55101",
+      "sourceId": "census-counties",
+      "locator": "line 3101"
+    }
+  ]
+}

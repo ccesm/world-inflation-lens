@@ -1,0 +1,372 @@
+{
+  "schemaVersion": "C1A.1",
+  "asOf": "2026-10-09",
+  "projects": [
+    {
+      "projectId": "META-SARPY",
+      "projectName": "Meta Sarpy / Papillion",
+      "company": "META",
+      "state": "NE",
+      "county": "Sarpy",
+      "locationStatus": "PRIMARY_VERIFIED",
+      "locationSourceRefs": [
+        "oppd-papillion",
+        "meta-sarpy"
+      ],
+      "sourceLocator": "OPPD article date/header and opening paragraphs; Meta retrospective opening paragraph",
+      "evidenceGrade": "E1",
+      "verificationMethod": "MANUAL_DOCUMENT_REVIEW_WITH_RAW_HASH",
+      "operationalStatus": "PARTIALLY_OPERATIONAL",
+      "statusSourceDate": "2019-06-18",
+      "milestones": [
+        {
+          "milestoneType": "ONLINE_ANNOUNCEMENT",
+          "date": "2019-06-18",
+          "datePrecision": "DAY",
+          "sourceRefs": [
+            "oppd-papillion",
+            "meta-sarpy"
+          ],
+          "sourceLocator": "OPPD article date/header and opening paragraphs; Meta retrospective opening paragraph",
+          "isFirstEnergization": false
+        }
+      ],
+      "energizationDate": null,
+      "energizationMonth": null,
+      "energizationStatus": "UNAVAILABLE",
+      "energizationMissingReason": "No first electrical service/meter commissioning date established by reviewed sources. Opening, traffic, construction and contract dates remain separate.",
+      "actualConnectedLoadMW": null,
+      "actualConsumptionMWh": null,
+      "plannedCapacityMW": null,
+      "operationalCapacityMW": null,
+      "capacityMissingReason": "No native campus electrical load/capacity qualified here; procurement/generation MW must not be substituted.",
+      "aiSpecificConsumptionMWh": null,
+      "aiShare": null,
+      "aiShareMissingReason": "No independently identified site workload electricity share.",
+      "utilityName": "Omaha Public Power District",
+      "utilityId": "14127",
+      "utilitySourceRefs": [
+        "oppd-report2017",
+        "oppd-papillion"
+      ],
+      "utilityMatchStatus": "VERIFIED_SERVICE_RELATION",
+      "capacityHistory": [
+        {
+          "value": 160,
+          "unit": "MW",
+          "definition": "SHOLES_WIND_GENERATION_PLAN_NOT_CAMPUS_LOAD",
+          "status": "PLANNED_AS_REPORTED",
+          "reportedPeriod": "2017",
+          "sourceRefs": [
+            "oppd-report2017"
+          ],
+          "sourceLocator": "p1 generation discussion"
+        }
+      ],
+      "qualificationStatus": "DOCUMENTARY_PROJECT_VERIFIED_EVENT_UNQUALIFIED",
+      "notes": "OPPD reports the facility serving traffic; June13 grand-opening ceremony and June18 report are not first energization. The later Meta source gives online year2019 only. Multi-phase expansion prevents a binary full-campus load assumption."
+    },
+    {
+      "projectId": "META-DEKALB",
+      "projectName": "Meta DeKalb",
+      "company": "META",
+      "state": "IL",
+      "county": "DeKalb",
+      "locationStatus": "PRIMARY_VERIFIED",
+      "locationSourceRefs": [
+        "meta-dekalb"
+      ],
+      "sourceLocator": "Article date and first/third paragraphs",
+      "evidenceGrade": "E1",
+      "verificationMethod": "MANUAL_DOCUMENT_REVIEW_WITH_RAW_HASH",
+      "operationalStatus": "PARTIALLY_OPERATIONAL",
+      "statusSourceDate": "2023-11-29",
+      "milestones": [
+        {
+          "milestoneType": "ONLINE_ANNOUNCEMENT",
+          "date": "2023-11-29",
+          "datePrecision": "DAY",
+          "sourceRefs": [
+            "meta-dekalb"
+          ],
+          "sourceLocator": "Article date and first/third paragraphs",
+          "isFirstEnergization": false
+        }
+      ],
+      "energizationDate": null,
+      "energizationMonth": null,
+      "energizationStatus": "UNAVAILABLE",
+      "energizationMissingReason": "No first electrical service/meter commissioning date established by reviewed sources. Opening, traffic, construction and contract dates remain separate.",
+      "actualConnectedLoadMW": null,
+      "actualConsumptionMWh": null,
+      "plannedCapacityMW": null,
+      "operationalCapacityMW": null,
+      "capacityMissingReason": "No native campus electrical load/capacity qualified here; procurement/generation MW must not be substituted.",
+      "aiSpecificConsumptionMWh": null,
+      "aiShare": null,
+      "aiShareMissingReason": "No independently identified site workload electricity share.",
+      "utilityName": "Commonwealth Edison",
+      "utilityId": "4110",
+      "utilitySourceRefs": [
+        "meta-dekalb"
+      ],
+      "utilityMatchStatus": "PARTIAL_RELATION_NOT_EXCLUSIVE_METER_MAP",
+      "capacityHistory": [],
+      "qualificationStatus": "DOCUMENTARY_PROJECT_VERIFIED_EVENT_UNQUALIFIED",
+      "notes": "Serving traffic is qualified; fully operational is future wording. Meta names ComEd as partner, not an exclusive meter/service boundary. Scanned city attachment is retained as reviewed-source candidate only, not a validated power connection claim."
+    },
+    {
+      "projectId": "META-LOSLUNAS",
+      "projectName": "Meta Los Lunas",
+      "company": "META",
+      "state": "NM",
+      "county": "Valencia",
+      "locationStatus": "PRIMARY_VERIFIED",
+      "locationSourceRefs": [
+        "meta-loslunas",
+        "nmprc2018"
+      ],
+      "sourceLocator": "Meta opening paragraph; NMPRC FY2018 report p16",
+      "evidenceGrade": "E1",
+      "verificationMethod": "MANUAL_DOCUMENT_REVIEW_WITH_RAW_HASH",
+      "operationalStatus": "PARTIALLY_OPERATIONAL",
+      "statusSourceDate": "2019-02-07",
+      "milestones": [
+        {
+          "milestoneType": "GRAND_OPENING",
+          "date": "2019-02-07",
+          "datePrecision": "DAY",
+          "sourceRefs": [
+            "meta-loslunas",
+            "nmprc2018"
+          ],
+          "sourceLocator": "Meta opening paragraph; NMPRC FY2018 report p16",
+          "isFirstEnergization": false
+        }
+      ],
+      "energizationDate": null,
+      "energizationMonth": null,
+      "energizationStatus": "UNAVAILABLE",
+      "energizationMissingReason": "No first electrical service/meter commissioning date established by reviewed sources. Opening, traffic, construction and contract dates remain separate.",
+      "actualConnectedLoadMW": null,
+      "actualConsumptionMWh": null,
+      "plannedCapacityMW": null,
+      "operationalCapacityMW": null,
+      "capacityMissingReason": "No native campus electrical load/capacity qualified here; procurement/generation MW must not be substituted.",
+      "aiSpecificConsumptionMWh": null,
+      "aiShare": null,
+      "aiShareMissingReason": "No independently identified site workload electricity share.",
+      "utilityName": "Public Service Company of New Mexico",
+      "utilityId": "15473",
+      "utilitySourceRefs": [
+        "nmprc2018",
+        "pnm2017"
+      ],
+      "utilityMatchStatus": "VERIFIED_SERVICE_RELATION",
+      "capacityHistory": [
+        {
+          "value": 30,
+          "unit": "MW",
+          "definition": "SOLAR_GENERATION_PLAN_NOT_CAMPUS_LOAD",
+          "status": "PLANNED_AS_REPORTED",
+          "reportedPeriod": "2017-02-01",
+          "sourceRefs": [
+            "pnm2017"
+          ],
+          "sourceLocator": "p1 three10MW solar sites"
+        },
+        {
+          "value": 100,
+          "unit": "MW",
+          "definition": "ADDITIONAL_SOLAR_GENERATION_PLAN_NOT_CAMPUS_LOAD",
+          "status": "APPROVED_NOT_ENERGIZED_EVIDENCE",
+          "reportedPeriod": "FY2018",
+          "sourceRefs": [
+            "nmprc2018"
+          ],
+          "sourceLocator": "p16 two50MW facilities"
+        }
+      ],
+      "qualificationStatus": "DOCUMENTARY_PROJECT_VERIFIED_EVENT_UNQUALIFIED",
+      "notes": "Opening is not first grid connection. Six-building campus completion remains conditional. Regulatory special service contract verifies PNM/Greater Kudu relationship, not actual monthly meter readings."
+    },
+    {
+      "projectId": "META-EAGLE",
+      "projectName": "Meta Eagle Mountain",
+      "company": "META",
+      "state": "UT",
+      "county": "Utah",
+      "locationStatus": "PRIMARY_VERIFIED",
+      "locationSourceRefs": [
+        "meta-eagle"
+      ],
+      "sourceLocator": "Article date and first paragraph",
+      "evidenceGrade": "E1",
+      "verificationMethod": "MANUAL_DOCUMENT_REVIEW_WITH_RAW_HASH",
+      "operationalStatus": "PARTIALLY_OPERATIONAL",
+      "statusSourceDate": "2021-07-14",
+      "milestones": [
+        {
+          "milestoneType": "ONLINE_ANNOUNCEMENT",
+          "date": "2021-07-14",
+          "datePrecision": "DAY",
+          "sourceRefs": [
+            "meta-eagle"
+          ],
+          "sourceLocator": "Article date and first paragraph",
+          "isFirstEnergization": false
+        }
+      ],
+      "energizationDate": null,
+      "energizationMonth": null,
+      "energizationStatus": "UNAVAILABLE",
+      "energizationMissingReason": "No first electrical service/meter commissioning date established by reviewed sources. Opening, traffic, construction and contract dates remain separate.",
+      "actualConnectedLoadMW": null,
+      "actualConsumptionMWh": null,
+      "plannedCapacityMW": null,
+      "operationalCapacityMW": null,
+      "capacityMissingReason": "No native campus electrical load/capacity qualified here; procurement/generation MW must not be substituted.",
+      "aiSpecificConsumptionMWh": null,
+      "aiShare": null,
+      "aiShareMissingReason": "No independently identified site workload electricity share.",
+      "utilityName": "PacifiCorp / Rocky Mountain Power",
+      "utilityId": "14354",
+      "utilitySourceRefs": [
+        "rmp2021",
+        "meta-eagle"
+      ],
+      "utilityMatchStatus": "PARTIAL_RELATION_NOT_EXCLUSIVE_METER_MAP",
+      "capacityHistory": [
+        {
+          "value": 814,
+          "unit": "MW",
+          "definition": "IN_STATE_SOLAR_SIGNED_PORTFOLIO_NOT_CAMPUS_LOAD",
+          "status": "CONTRACTED_AS_REPORTED",
+          "reportedPeriod": "2021-06-29",
+          "sourceRefs": [
+            "rmp2021"
+          ],
+          "sourceLocator": "solar total signed support paragraph"
+        }
+      ],
+      "qualificationStatus": "DOCUMENTARY_PROJECT_VERIFIED_EVENT_UNQUALIFIED",
+      "notes": "Rocky Mountain Power Schedule34 identifies renewable procurement relationship; county membership is not exclusive service proof. Solar portfolio MW is not campus connected load."
+    },
+    {
+      "projectId": "GOOG-NEWALBANY",
+      "projectName": "Google New Albany",
+      "company": "GOOG",
+      "state": "OH",
+      "county": null,
+      "locationStatus": "PRIMARY_VERIFIED",
+      "locationSourceRefs": [
+        "google-ohio",
+        "newalbany-city"
+      ],
+      "sourceLocator": "Google Ohio milestones; city Google noise section",
+      "evidenceGrade": "E1",
+      "verificationMethod": "MANUAL_DOCUMENT_REVIEW_WITH_RAW_HASH",
+      "operationalStatus": "CURRENT_OPERATION_REPORTED_TIMING_UNQUALIFIED",
+      "statusSourceDate": null,
+      "milestones": [
+        {
+          "milestoneType": "ACTIVE_SITE_REPORT",
+          "date": null,
+          "datePrecision": "UNAVAILABLE",
+          "sourceRefs": [
+            "google-ohio",
+            "newalbany-city"
+          ],
+          "sourceLocator": "Google Ohio milestones; city Google noise section",
+          "isFirstEnergization": false
+        }
+      ],
+      "energizationDate": null,
+      "energizationMonth": null,
+      "energizationStatus": "UNAVAILABLE",
+      "energizationMissingReason": "No first electrical service/meter commissioning date established by reviewed sources. Opening, traffic, construction and contract dates remain separate.",
+      "actualConnectedLoadMW": null,
+      "actualConsumptionMWh": null,
+      "plannedCapacityMW": null,
+      "operationalCapacityMW": null,
+      "capacityMissingReason": "No native campus electrical load/capacity qualified here; procurement/generation MW must not be substituted.",
+      "aiSpecificConsumptionMWh": null,
+      "aiShare": null,
+      "aiShareMissingReason": "No independently identified site workload electricity share.",
+      "utilityName": "AEP Ohio / Ohio Power (distribution candidate); AEP Energy (retail supply)",
+      "utilityId": "14006",
+      "utilitySourceRefs": [
+        "aep-google2020"
+      ],
+      "utilityMatchStatus": "PARTIAL_RELATION_NOT_EXCLUSIVE_METER_MAP",
+      "capacityHistory": [
+        {
+          "value": 400,
+          "unit": "MW",
+          "definition": "PANTHER_GROVE_WIND_PPA_NOT_CAMPUS_LOAD",
+          "status": "PLANNED_AS_REPORTED",
+          "reportedPeriod": "2020-07-01",
+          "sourceRefs": [
+            "aep-google2020"
+          ],
+          "sourceLocator": "PPA headline and Google retail supply paragraph"
+        }
+      ],
+      "qualificationStatus": "DOCUMENTARY_PROJECT_VERIFIED_EVENT_UNQUALIFIED",
+      "notes": "2019 is construction, not operation. City retrospectively reports active-campus cooling noise in September2025; exact first operational/energization date unavailable. AEP Energy retail supplier must not be conflated with Ohio Power distribution utility; New Albany spans Franklin/Licking and exact parcel is unqualified."
+    },
+    {
+      "projectId": "MSFT-FAIRWATER",
+      "projectName": "Microsoft Fairwater, Mount Pleasant",
+      "company": "MSFT",
+      "state": "WI",
+      "county": "Racine",
+      "locationStatus": "PRIMARY_VERIFIED",
+      "locationSourceRefs": [
+        "fairwater2025"
+      ],
+      "sourceLocator": "2025-09-18 article final building phases and expected early2026 opening",
+      "evidenceGrade": "E1",
+      "verificationMethod": "MANUAL_DOCUMENT_REVIEW_WITH_RAW_HASH",
+      "operationalStatus": "UNDER_CONSTRUCTION_AS_REPORTED",
+      "statusSourceDate": "2025-09-18",
+      "milestones": [
+        {
+          "milestoneType": "CONSTRUCTION_REPORT",
+          "date": "2025-09-18",
+          "datePrecision": "DAY",
+          "sourceRefs": [
+            "fairwater2025"
+          ],
+          "sourceLocator": "2025-09-18 article final building phases and expected early2026 opening",
+          "isFirstEnergization": false
+        }
+      ],
+      "energizationDate": null,
+      "energizationMonth": null,
+      "energizationStatus": "UNAVAILABLE",
+      "energizationMissingReason": "No first electrical service/meter commissioning date established by reviewed sources. Opening, traffic, construction and contract dates remain separate.",
+      "actualConnectedLoadMW": null,
+      "actualConsumptionMWh": null,
+      "plannedCapacityMW": null,
+      "operationalCapacityMW": null,
+      "capacityMissingReason": "No native campus electrical load/capacity qualified here; procurement/generation MW must not be substituted.",
+      "aiSpecificConsumptionMWh": null,
+      "aiShare": null,
+      "aiShareMissingReason": "No independently identified site workload electricity share.",
+      "utilityName": null,
+      "utilityId": null,
+      "utilitySourceRefs": [],
+      "utilityMatchStatus": "UNAVAILABLE",
+      "capacityHistory": [],
+      "qualificationStatus": "DOCUMENTARY_PROJECT_VERIFIED_EVENT_UNQUALIFIED",
+      "notes": "Historical report describes final construction and future service. It does not qualify a2025 energized event. No12-month post window through2025; updated operation and utility meter map need acquisition. AI purpose does not establish AI-only kWh."
+    }
+  ],
+  "verifiedProjectCount": 6,
+  "verifiedOperationalByDayCount": 4,
+  "verifiedFirstEnergizationCount": 0,
+  "measuredSiteLoadCount": 0,
+  "aiSpecificLoadCount": 0,
+  "boundary": "Operational-by announcements are upper bounds on use, not first electrical energization. No eligible treatment event."
+}

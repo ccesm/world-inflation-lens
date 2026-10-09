@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "C1A.1",
+  "asOf": "2026-10-09",
+  "measurements": [
+    {
+      "measurementId": "M-PLANNED",
+      "variable": "Planned capacity",
+      "definition": "Announcement/contract/proposed scope; not actual use",
+      "sourceRefs": [
+        "fairwater2025",
+        "rmp2021",
+        "aep-google2020"
+      ],
+      "missingness": "Campus planned nativeMWnotqualified; separate procurement MW retained",
+      "allowedUse": "SOURCE_AUDIT_ONLY"
+    },
+    {
+      "measurementId": "M-OPERATIONAL",
+      "variable": "Operational capacity",
+      "definition": "Verified native actual connectedMWnot inferred from online status",
+      "sourceRefs": [
+        "meta-dekalb",
+        "meta-eagle",
+        "oppd-papillion",
+        "meta-loslunas"
+      ],
+      "missingness": "ALL_SITE_MW_UNAVAILABLE",
+      "allowedUse": "NO_MW_TREATMENT"
+    },
+    {
+      "measurementId": "M-DEMAND",
+      "variable": "Measured regional demand",
+      "definition": "EIA sampled/adjusted retailsector salesMWh; not site meters",
+      "sourceRefs": [
+        "eia861m-state",
+        "eia-guide"
+      ],
+      "missingness": "No missing state outcome cells in retained window; sector/sampling boundary audit remains",
+      "allowedUse": "DESCRIPTIVE_REGIONAL_BASELINE_ONLY"
+    },
+    {
+      "measurementId": "M-PRICE",
+      "variable": "Observed regional electricity average price",
+      "definition": "Nominal realized revenue/kWh; composition-sensitive, not tariff/customer contract/CPI",
+      "sourceRefs": [
+        "eia861m-state",
+        "eia-guide"
+      ],
+      "missingness": "No missing state outcome cells; no individual data-center customer rate",
+      "allowedUse": "SECONDARY_DESCRIPTIVE_OUTCOME_ONLY"
+    },
+    {
+      "measurementId": "M-AI",
+      "variable": "AI-specific electricity consumption",
+      "definition": "Requires independently observed workload/meter allocation",
+      "sourceRefs": [],
+      "missingness": "UNAVAILABLE_ALL_SITES",
+      "allowedUse": "NO_AI_ATTRIBUTION"
+    }
+  ],
+  "controls": [
+    {
+      "controlId": "WEATHER",
+      "role": "CONFOUNDER",
+      "status": "STATE_HISTORY_AVAILABLE_LOCAL_MAPPING_PARTIAL",
+      "indicatorRefs": [
+        "WEATHER"
+      ],
+      "sourceRefs": [
+        "noaa-catalog",
+        "noaa-definition"
+      ],
+      "limitations": "Population weighted state weather differs from utility/project cooling degree demand."
+    },
+    {
+      "controlId": "FUEL",
+      "role": "CONFOUNDER",
+      "status": "BENCHMARK_AVAILABLE_LOCAL_FUEL_HISTORY_MISSING",
+      "indicatorRefs": [
+        "HENRY_HUB",
+        "GENERATION_FUEL"
+      ],
+      "sourceRefs": [
+        "henryhub",
+        "eia923-catalog"
+      ],
+      "limitations": "Basis, generation fuel mix, fuel clauses, and contract pass-through must be audited."
+    },
+    {
+      "controlId": "SUPPLY",
+      "role": "MEDIATOR_OR_PREEXISTING_CONSTRAINT",
+      "status": "PACKAGE_AVAILABLE_REGION_HISTORY_UNQUALIFIED",
+      "indicatorRefs": [
+        "GENERATION_FUEL",
+        "GENERATOR_CAPACITY",
+        "BA_LOAD"
+      ],
+      "sourceRefs": [
+        "eia923-2024",
+        "eia860-catalog",
+        "eia-guide"
+      ],
+      "limitations": "New generation/transmission may respond to data-center load; conditioning can block mechanism. Imports matter."
+    },
+    {
+      "controlId": "TARIFF",
+      "role": "CONFOUNDER_AND_MEDIATOR",
+      "status": "SELECTED_POLICY_DOCUMENTS_ONLY",
+      "indicatorRefs": [],
+      "sourceRefs": [
+        "oppd-report2017",
+        "nmprc2018",
+        "rmp2021"
+      ],
+      "limitations": "No complete dated tariff/fuel-adjustment/rate-case history. Average revenue/kWh changes with customer mix, not just rates."
+    },
+    {
+      "controlId": "OTHER_DEMAND",
+      "role": "CONFOUNDER",
+      "status": "UNAVAILABLE_MATCHED_HISTORY",
+      "indicatorRefs": [],
+      "sourceRefs": [],
+      "limitations": "Industrial openings/closures, EVs, population, employment, COVID changes and growth not joined. Annual data cannot be invented monthly."
+    },
+    {
+      "controlId": "GRID",
+      "role": "SPILLOVER_AND_CONSTRAINT",
+      "status": "UNQUALIFIED_MATCHED_HISTORY",
+      "indicatorRefs": [
+        "BA_LOAD"
+      ],
+      "sourceRefs": [
+        "eia-guide"
+      ],
+      "limitations": "Shared wholesale markets, transmission and utility costs contaminate neighboring controls; no congestion/interconnection historical audit."
+    }
+  ],
+  "identificationThreats": [
+    {
+      "threatId": "SELECTION",
+      "description": "Cheap reliable power and expected growth influence siting; no random treatment.",
+      "mitigation": "Audit siting/industrial histories; do not infer causality from significance."
+    },
+    {
+      "threatId": "REVERSE_CAUSALITY",
+      "description": "Demand/growth/prices influence location and investment.",
+      "mitigation": "Explicit counterfactual and anticipation protocol before estimates."
+    },
+    {
+      "threatId": "TIMING",
+      "description": "Online and construction dates differ from first electrical load; phases ramp gradually.",
+      "mitigation": "Obtain utility commissioning/meter history, interval timing and load ramp."
+    },
+    {
+      "threatId": "SPILLOVER",
+      "description": "Shared power markets/rate recovery and futuredata centers affect controls.",
+      "mitigation": "Screen all potential controls and exclude/define spillover zones."
+    },
+    {
+      "threatId": "COMPOSITION",
+      "description": "Commercial/industrial class assignment, customer mix and retail choice change outcomes.",
+      "mitigation": "Audit sector assignment, bundled/nonbundled and regulatory breaks."
+    },
+    {
+      "threatId": "MEASUREMENT",
+      "description": "Statewide aggregation dilutes site exposure; procurementMWis not consumption.",
+      "mitigation": "Request project/utility meter histories, independent power/measurement audit."
+    }
+  ],
+  "effectsEstimated": false
+}

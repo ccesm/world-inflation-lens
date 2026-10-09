@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "C1A.1",
+  "asOf": "2026-10-09",
+  "mappings": [
+    {
+      "mappingId": "MAP-META-SARPY",
+      "projectId": "META-SARPY",
+      "state": "NE",
+      "stateFips": "31",
+      "countyFips": "31153",
+      "countyCandidateFips": [],
+      "county": "Sarpy",
+      "identifierSourceRefs": [
+        "census-states",
+        "census-counties"
+      ],
+      "utilityId": "14127",
+      "utilityRole": "SUPPLY_AND_DISTRIBUTION_CONFIRMED",
+      "documentaryUtilityMatch": "VERIFIED_SERVICE_RELATION",
+      "countyMembershipStatus": "VERIFIED_2024",
+      "territoryEvidence": [
+        {
+          "utilityId": "14127",
+          "utilityName": "Omaha Public Power District",
+          "state": "NE",
+          "county": "Sarpy",
+          "dataYear": 2024,
+          "sourceId": "eia861-2024",
+          "sourceHash": "77ce49c60ac5a6bad50c442fc401aad5404a21da875dc5cbaba353af5ede54de",
+          "locator": "Service_Territory_2024.xlsx/Counties_States!A6840:F6840"
+        }
+      ],
+      "sourceRefs": [
+        "oppd-papillion",
+        "meta-sarpy",
+        "oppd-report2017",
+        "census-states",
+        "census-counties",
+        "eia861-2024"
+      ],
+      "outcomeGeography": "STATE_NOT_SITE",
+      "historicalBoundaryMatch": "UNQUALIFIED",
+      "meterServicePolygonMatch": "UNAVAILABLE",
+      "qualifiesForEventDesign": false,
+      "limitations": "2024county membership cannot certify earlier utility boundary or isolate project demand in state totals."
+    },
+    {
+      "mappingId": "MAP-META-DEKALB",
+      "projectId": "META-DEKALB",
+      "state": "IL",
+      "stateFips": "17",
+      "countyFips": "17037",
+      "countyCandidateFips": [],
+      "county": "DeKalb",
+      "identifierSourceRefs": [
+        "census-states",
+        "census-counties"
+      ],
+      "utilityId": "4110",
+      "utilityRole": "ROLE_OR_EXCLUSIVITY_REVIEW_REQUIRED",
+      "documentaryUtilityMatch": "PARTIAL_RELATION_NOT_EXCLUSIVE_METER_MAP",
+      "countyMembershipStatus": "VERIFIED_2024",
+      "territoryEvidence": [
+        {
+          "utilityId": "4110",
+          "utilityName": "Commonwealth Edison Co",
+          "state": "IL",
+          "county": "DeKalb",
+          "dataYear": 2024,
+          "sourceId": "eia861-2024",
+          "sourceHash": "77ce49c60ac5a6bad50c442fc401aad5404a21da875dc5cbaba353af5ede54de",
+          "locator": "Service_Territory_2024.xlsx/Counties_States!A1838:F1838"
+        }
+      ],
+      "sourceRefs": [
+        "meta-dekalb",
+        "census-states",
+        "census-counties",
+        "eia861-2024"
+      ],
+      "outcomeGeography": "STATE_NOT_SITE",
+      "historicalBoundaryMatch": "UNQUALIFIED",
+      "meterServicePolygonMatch": "UNAVAILABLE",
+      "qualifiesForEventDesign": false,
+      "limitations": "2024county membership cannot certify earlier utility boundary or isolate project demand in state totals."
+    },
+    {
+      "mappingId": "MAP-META-LOSLUNAS",
+      "projectId": "META-LOSLUNAS",
+      "state": "NM",
+      "stateFips": "35",
+      "countyFips": "35061",
+      "countyCandidateFips": [],
+      "county": "Valencia",
+      "identifierSourceRefs": [
+        "census-states",
+        "census-counties"
+      ],
+      "utilityId": "15473",
+      "utilityRole": "SUPPLY_AND_DISTRIBUTION_CONFIRMED",
+      "documentaryUtilityMatch": "VERIFIED_SERVICE_RELATION",
+      "countyMembershipStatus": "VERIFIED_2024",
+      "territoryEvidence": [
+        {
+          "utilityId": "15473",
+          "utilityName": "Public Service Co of NM",
+          "state": "NM",
+          "county": "Valencia",
+          "dataYear": 2024,
+          "sourceId": "eia861-2024",
+          "sourceHash": "77ce49c60ac5a6bad50c442fc401aad5404a21da875dc5cbaba353af5ede54de",
+          "locator": "Service_Territory_2024.xlsx/Counties_States!A7778:F7778"
+        }
+      ],
+      "sourceRefs": [
+        "meta-loslunas",
+        "nmprc2018",
+        "pnm2017",
+        "census-states",
+        "census-counties",
+        "eia861-2024"
+      ],
+      "outcomeGeography": "STATE_NOT_SITE",
+      "historicalBoundaryMatch": "UNQUALIFIED",
+      "meterServicePolygonMatch": "UNAVAILABLE",
+      "qualifiesForEventDesign": false,
+      "limitations": "2024county membership cannot certify earlier utility boundary or isolate project demand in state totals."
+    },
+    {
+      "mappingId": "MAP-META-EAGLE",
+      "projectId": "META-EAGLE",
+      "state": "UT",
+      "stateFips": "49",
+      "countyFips": "49049",
+      "countyCandidateFips": [],
+      "county": "Utah",
+      "identifierSourceRefs": [
+        "census-states",
+        "census-counties"
+      ],
+      "utilityId": "14354",
+      "utilityRole": "ROLE_OR_EXCLUSIVITY_REVIEW_REQUIRED",
+      "documentaryUtilityMatch": "PARTIAL_RELATION_NOT_EXCLUSIVE_METER_MAP",
+      "countyMembershipStatus": "VERIFIED_2024",
+      "territoryEvidence": [
+        {
+          "utilityId": "14354",
+          "utilityName": "PacifiCorp",
+          "state": "UT",
+          "county": "Utah",
+          "dataYear": 2024,
+          "sourceId": "eia861-2024",
+          "sourceHash": "77ce49c60ac5a6bad50c442fc401aad5404a21da875dc5cbaba353af5ede54de",
+          "locator": "Service_Territory_2024.xlsx/Counties_States!A7150:F7150"
+        }
+      ],
+      "sourceRefs": [
+        "meta-eagle",
+        "rmp2021",
+        "census-states",
+        "census-counties",
+        "eia861-2024"
+      ],
+      "outcomeGeography": "STATE_NOT_SITE",
+      "historicalBoundaryMatch": "UNQUALIFIED",
+      "meterServicePolygonMatch": "UNAVAILABLE",
+      "qualifiesForEventDesign": false,
+      "limitations": "2024county membership cannot certify earlier utility boundary or isolate project demand in state totals."
+    },
+    {
+      "mappingId": "MAP-GOOG-NEWALBANY",
+      "projectId": "GOOG-NEWALBANY",
+      "state": "OH",
+      "stateFips": "39",
+      "countyFips": null,
+      "countyCandidateFips": [
+        "39049",
+        "39089"
+      ],
+      "county": null,
+      "identifierSourceRefs": [
+        "census-states",
+        "census-counties"
+      ],
+      "utilityId": "14006",
+      "utilityRole": "ROLE_OR_EXCLUSIVITY_REVIEW_REQUIRED",
+      "documentaryUtilityMatch": "PARTIAL_RELATION_NOT_EXCLUSIVE_METER_MAP",
+      "countyMembershipStatus": "UNAVAILABLE",
+      "territoryEvidence": [],
+      "sourceRefs": [
+        "google-ohio",
+        "newalbany-city",
+        "aep-google2020",
+        "census-states",
+        "census-counties"
+      ],
+      "outcomeGeography": "STATE_NOT_SITE",
+      "historicalBoundaryMatch": "UNQUALIFIED",
+      "meterServicePolygonMatch": "UNAVAILABLE",
+      "qualifiesForEventDesign": false,
+      "limitations": "Current county membership is not exclusive parcel service or historically stable event geography. State outcomes are ecological; no site demand allocation. New Albany Franklin/Licking border and supplier/distributor roles need parcel verification."
+    },
+    {
+      "mappingId": "MAP-MSFT-FAIRWATER",
+      "projectId": "MSFT-FAIRWATER",
+      "state": "WI",
+      "stateFips": "55",
+      "countyFips": "55101",
+      "countyCandidateFips": [],
+      "county": "Racine",
+      "identifierSourceRefs": [
+        "census-states",
+        "census-counties"
+      ],
+      "utilityId": null,
+      "utilityRole": "ROLE_OR_EXCLUSIVITY_REVIEW_REQUIRED",
+      "documentaryUtilityMatch": "UNAVAILABLE",
+      "countyMembershipStatus": "UNAVAILABLE",
+      "territoryEvidence": [],
+      "sourceRefs": [
+        "fairwater2025",
+        "census-states",
+        "census-counties"
+      ],
+      "outcomeGeography": "STATE_NOT_SITE",
+      "historicalBoundaryMatch": "UNQUALIFIED",
+      "meterServicePolygonMatch": "UNAVAILABLE",
+      "qualifiesForEventDesign": false,
+      "limitations": "2024county membership cannot certify earlier utility boundary or isolate project demand in state totals."
+    }
+  ],
+  "verifiedStateIdentifierMatches": 6,
+  "verifiedCountyIdentifierMatches": 5,
+  "verifiedCurrentCountyUtilityMembershipMatches": 4,
+  "qualifiedEventGeographicMatches": 0,
+  "regionalContexts": [
+    {
+      "regionId": "VA-DOMINION",
+      "state": "VA",
+      "sourceRefs": [
+        "dominion2024"
+      ],
+      "status": "SOURCE_REACQUISITION_REQUIRED",
+      "notes": "HistoricalIRPURLreturns404. Aggregate connection count from search snippet is not adopted; no project-specific treatment date."
+    }
+  ]
+}

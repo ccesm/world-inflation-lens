@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "C1A.1",
+  "asOf": "2026-10-09",
+  "inheritedCriteria": {
+    "minimumPreMonths": 24,
+    "minimumPostMonths": 12,
+    "minimumExposedRegions": 3,
+    "minimumCandidateComparisonRegions": 6,
+    "source": "../phase-c0/PHASE_C1_RESEARCH_PLAN.md#measurable-acceptance-criteria",
+    "thresholdsAreNotIdentification": true
+  },
+  "exposedCandidates": [
+    {
+      "projectId": "META-SARPY",
+      "state": "NE",
+      "qualificationStatus": "INELIGIBLE_FOR_C1B_EVENT_SAMPLE",
+      "verifiedEventWindow": {
+        "preMonths": null,
+        "postMonths": null,
+        "continuous": false
+      },
+      "operationalAnnouncementWindow": {
+        "preMonths": 53,
+        "postMonths": 78,
+        "continuous": true,
+        "eventMonthExcluded": true,
+        "first": "2015-01",
+        "last": "2025-12"
+      },
+      "announcementWindowUse": "FEASIBILITY_BOUND_ONLY_NOT_VALIDATED_PRE_POST_EXPOSURE",
+      "exposureEligible": false,
+      "capacityIntensityEligible": false,
+      "pretrendStatus": "NOT_TESTED_EVENT_AND_GEOGRAPHY_UNQUALIFIED",
+      "comparisonStatus": "NO_QUALIFIED_MATCH",
+      "sourceRefs": [
+        "oppd-papillion",
+        "meta-sarpy",
+        "eia861m-state"
+      ]
+    },
+    {
+      "projectId": "META-DEKALB",
+      "state": "IL",
+      "qualificationStatus": "INELIGIBLE_FOR_C1B_EVENT_SAMPLE",
+      "verifiedEventWindow": {
+        "preMonths": null,
+        "postMonths": null,
+        "continuous": false
+      },
+      "operationalAnnouncementWindow": {
+        "preMonths": 106,
+        "postMonths": 25,
+        "continuous": true,
+        "eventMonthExcluded": true,
+        "first": "2015-01",
+        "last": "2025-12"
+      },
+      "announcementWindowUse": "FEASIBILITY_BOUND_ONLY_NOT_VALIDATED_PRE_POST_EXPOSURE",
+      "exposureEligible": false,
+      "capacityIntensityEligible": false,
+      "pretrendStatus": "NOT_TESTED_EVENT_AND_GEOGRAPHY_UNQUALIFIED",
+      "comparisonStatus": "NO_QUALIFIED_MATCH",
+      "sourceRefs": [
+        "meta-dekalb",
+        "eia861m-state"
+      ]
+    },
+    {
+      "projectId": "META-LOSLUNAS",
+      "state": "NM",
+      "qualificationStatus": "INELIGIBLE_FOR_C1B_EVENT_SAMPLE",
+      "verifiedEventWindow": {
+        "preMonths": null,
+        "postMonths": null,
+        "continuous": false
+      },
+      "operationalAnnouncementWindow": {
+        "preMonths": 49,
+        "postMonths": 82,
+        "continuous": true,
+        "eventMonthExcluded": true,
+        "first": "2015-01",
+        "last": "2025-12"
+      },
+      "announcementWindowUse": "FEASIBILITY_BOUND_ONLY_NOT_VALIDATED_PRE_POST_EXPOSURE",
+      "exposureEligible": false,
+      "capacityIntensityEligible": false,
+      "pretrendStatus": "NOT_TESTED_EVENT_AND_GEOGRAPHY_UNQUALIFIED",
+      "comparisonStatus": "NO_QUALIFIED_MATCH",
+      "sourceRefs": [
+        "meta-loslunas",
+        "nmprc2018",
+        "eia861m-state"
+      ]
+    },
+    {
+      "projectId": "META-EAGLE",
+      "state": "UT",
+      "qualificationStatus": "INELIGIBLE_FOR_C1B_EVENT_SAMPLE",
+      "verifiedEventWindow": {
+        "preMonths": null,
+        "postMonths": null,
+        "continuous": false
+      },
+      "operationalAnnouncementWindow": {
+        "preMonths": 78,
+        "postMonths": 53,
+        "continuous": true,
+        "eventMonthExcluded": true,
+        "first": "2015-01",
+        "last": "2025-12"
+      },
+      "announcementWindowUse": "FEASIBILITY_BOUND_ONLY_NOT_VALIDATED_PRE_POST_EXPOSURE",
+      "exposureEligible": false,
+      "capacityIntensityEligible": false,
+      "pretrendStatus": "NOT_TESTED_EVENT_AND_GEOGRAPHY_UNQUALIFIED",
+      "comparisonStatus": "NO_QUALIFIED_MATCH",
+      "sourceRefs": [
+        "meta-eagle",
+        "eia861m-state"
+      ]
+    },
+    {
+      "projectId": "GOOG-NEWALBANY",
+      "state": "OH",
+      "qualificationStatus": "INELIGIBLE_FOR_C1B_EVENT_SAMPLE",
+      "verifiedEventWindow": {
+        "preMonths": null,
+        "postMonths": null,
+        "continuous": false
+      },
+      "operationalAnnouncementWindow": null,
+      "announcementWindowUse": "FEASIBILITY_BOUND_ONLY_NOT_VALIDATED_PRE_POST_EXPOSURE",
+      "exposureEligible": false,
+      "capacityIntensityEligible": false,
+      "pretrendStatus": "NOT_TESTED_EVENT_AND_GEOGRAPHY_UNQUALIFIED",
+      "comparisonStatus": "NO_QUALIFIED_MATCH",
+      "sourceRefs": [
+        "google-ohio",
+        "newalbany-city",
+        "eia861m-state"
+      ]
+    },
+    {
+      "projectId": "MSFT-FAIRWATER",
+      "state": "WI",
+      "qualificationStatus": "INELIGIBLE_FOR_C1B_EVENT_SAMPLE",
+      "verifiedEventWindow": {
+        "preMonths": null,
+        "postMonths": null,
+        "continuous": false
+      },
+      "operationalAnnouncementWindow": null,
+      "announcementWindowUse": "FEASIBILITY_BOUND_ONLY_NOT_VALIDATED_PRE_POST_EXPOSURE",
+      "exposureEligible": false,
+      "capacityIntensityEligible": false,
+      "pretrendStatus": "NOT_TESTED_EVENT_AND_GEOGRAPHY_UNQUALIFIED",
+      "comparisonStatus": "NO_QUALIFIED_MATCH",
+      "sourceRefs": [
+        "fairwater2025",
+        "eia861m-state"
+      ]
+    }
+  ],
+  "comparisonCandidates": [
+    {
+      "regionId": "STATE-KS",
+      "state": "KS",
+      "candidateReason": "Prospective donor pool for regional industrial/weather/retail-regime matching; not chosen from post-event outcomes.",
+      "status": "CANDIDATE_NOT_QUALIFIED_COMPARISON",
+      "outcomeRows": 264,
+      "weatherRows": 264,
+      "availableFirst": "2015-01",
+      "availableLast": "2025-12",
+      "exposureContaminationStatus": "UNQUALIFIED_NO_UNEXPOSED_ASSERTION",
+      "industrialTrendStatus": "NOT_TESTED",
+      "priceTrendStatus": "NOT_TESTED",
+      "spilloverStatus": "UNQUALIFIED",
+      "regulatoryComparability": "UNQUALIFIED",
+      "sourceRefs": [
+        "eia861m-state",
+        "census-states",
+        "noaa-catalog"
+      ]
+    },
+    {
+      "regionId": "STATE-KY",
+      "state": "KY",
+      "candidateReason": "Prospective donor pool for regional industrial/weather/retail-regime matching; not chosen from post-event outcomes.",
+      "status": "CANDIDATE_NOT_QUALIFIED_COMPARISON",
+      "outcomeRows": 264,
+      "weatherRows": 264,
+      "availableFirst": "2015-01",
+      "availableLast": "2025-12",
+      "exposureContaminationStatus": "UNQUALIFIED_NO_UNEXPOSED_ASSERTION",
+      "industrialTrendStatus": "NOT_TESTED",
+      "priceTrendStatus": "NOT_TESTED",
+      "spilloverStatus": "UNQUALIFIED",
+      "regulatoryComparability": "UNQUALIFIED",
+      "sourceRefs": [
+        "eia861m-state",
+        "census-states",
+        "noaa-catalog"
+      ]
+    },
+    {
+      "regionId": "STATE-MI",
+      "state": "MI",
+      "candidateReason": "Prospective donor pool for regional industrial/weather/retail-regime matching; not chosen from post-event outcomes.",
+      "status": "CANDIDATE_NOT_QUALIFIED_COMPARISON",
+      "outcomeRows": 264,
+      "weatherRows": 264,
+      "availableFirst": "2015-01",
+      "availableLast": "2025-12",
+      "exposureContaminationStatus": "UNQUALIFIED_NO_UNEXPOSED_ASSERTION",
+      "industrialTrendStatus": "NOT_TESTED",
+      "priceTrendStatus": "NOT_TESTED",
+      "spilloverStatus": "UNQUALIFIED",
+      "regulatoryComparability": "UNQUALIFIED",
+      "sourceRefs": [
+        "eia861m-state",
+        "census-states",
+        "noaa-catalog"
+      ]
+    },
+    {
+      "regionId": "STATE-MO",
+      "state": "MO",
+      "candidateReason": "Prospective donor pool for regional industrial/weather/retail-regime matching; not chosen from post-event outcomes.",
+      "status": "CANDIDATE_NOT_QUALIFIED_COMPARISON",
+      "outcomeRows": 264,
+      "weatherRows": 264,
+      "availableFirst": "2015-01",
+      "availableLast": "2025-12",
+      "exposureContaminationStatus": "UNQUALIFIED_NO_UNEXPOSED_ASSERTION",
+      "industrialTrendStatus": "NOT_TESTED",
+      "priceTrendStatus": "NOT_TESTED",
+      "spilloverStatus": "UNQUALIFIED",
+      "regulatoryComparability": "UNQUALIFIED",
+      "sourceRefs": [
+        "eia861m-state",
+        "census-states",
+        "noaa-catalog"
+      ]
+    },
+    {
+      "regionId": "STATE-OK",
+      "state": "OK",
+      "candidateReason": "Prospective donor pool for regional industrial/weather/retail-regime matching; not chosen from post-event outcomes.",
+      "status": "CANDIDATE_NOT_QUALIFIED_COMPARISON",
+      "outcomeRows": 264,
+      "weatherRows": 264,
+      "availableFirst": "2015-01",
+      "availableLast": "2025-12",
+      "exposureContaminationStatus": "UNQUALIFIED_NO_UNEXPOSED_ASSERTION",
+      "industrialTrendStatus": "NOT_TESTED",
+      "priceTrendStatus": "NOT_TESTED",
+      "spilloverStatus": "UNQUALIFIED",
+      "regulatoryComparability": "UNQUALIFIED",
+      "sourceRefs": [
+        "eia861m-state",
+        "census-states",
+        "noaa-catalog"
+      ]
+    },
+    {
+      "regionId": "STATE-PA",
+      "state": "PA",
+      "candidateReason": "Prospective donor pool for regional industrial/weather/retail-regime matching; not chosen from post-event outcomes.",
+      "status": "CANDIDATE_NOT_QUALIFIED_COMPARISON",
+      "outcomeRows": 264,
+      "weatherRows": 264,
+      "availableFirst": "2015-01",
+      "availableLast": "2025-12",
+      "exposureContaminationStatus": "UNQUALIFIED_NO_UNEXPOSED_ASSERTION",
+      "industrialTrendStatus": "NOT_TESTED",
+      "priceTrendStatus": "NOT_TESTED",
+      "spilloverStatus": "UNQUALIFIED",
+      "regulatoryComparability": "UNQUALIFIED",
+      "sourceRefs": [
+        "eia861m-state",
+        "census-states",
+        "noaa-catalog"
+      ]
+    }
+  ],
+  "qualifiedExposedRegions": 0,
+  "qualifiedComparisonRegions": 0,
+  "completeStateSectorOutcomeRows": 3432,
+  "completeStateWeatherRows": 3432,
+  "nominalOutcomeCells": 13728,
+  "preliminaryOutcomeRows": 312,
+  "sampleTarget": [
+    "2015-01",
+    "2025-12"
+  ],
+  "gates": {
+    "exposure": false,
+    "historicalGeographicMatch": false,
+    "outcomeHistories": true,
+    "comparisonPoolScreening": false,
+    "localEssentialControls": false,
+    "preRegisteredProtocol": false,
+    "measurementAndPowerAudit": false
+  },
+  "classification": "PARTIAL — DATA GAPS",
+  "empiricalEffectsEstimated": false,
+  "causalEvidenceUpgrade": false
+}

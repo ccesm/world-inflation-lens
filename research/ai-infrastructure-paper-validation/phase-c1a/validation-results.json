@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "C1A.1",
+  "asOf": "2026-10-09",
+  "baseSHA": "439ce594d95eea8e8ebd6f47e4333372e2d56d69",
+  "branch": "codex/ai-infra-electricity-phase-c1a",
+  "classification": "PARTIAL — DATA GAPS",
+  "tests": {
+    "PhaseA": {
+      "passed": 13,
+      "failed": 0,
+      "baseline": "C1A worktree; inherited bytes checked"
+    },
+    "PhaseB1": {
+      "passed": 43,
+      "failed": 0,
+      "baseline": "8e7d637a171de15c8f5c30b0896cae4400fdef70 clean worktree"
+    },
+    "PhaseB2": {
+      "passed": 51,
+      "failed": 0,
+      "baseline": "596e7e69560ee17be0b5412e852e74032533f49a clean worktree"
+    },
+    "PhaseC0": {
+      "passed": 38,
+      "failed": 0,
+      "baseline": "439ce594d95eea8e8ebd6f47e4333372e2d56d69 clean worktree"
+    },
+    "PhaseC1A": {
+      "passed": 55,
+      "failed": 0,
+      "mode": "Offline schema, provenance, negative mutations, scope, fresh-process rebuild"
+    }
+  },
+  "build": "PASS; inherited large-chunk advisory only",
+  "verify": "PASS; complete npm run verify",
+  "independentChecks": {
+    "xlsxAlternativeReader": {
+      "result": "PASS",
+      "reader": "Read-only bundled openpyxl; no dependency change",
+      "records": 3432,
+      "numericCells": 13728
+    },
+    "originalRawReExtraction": "PASS; immutable external cache; all six normalized input artifacts matched",
+    "offlineRawControls": "PASS; weather, HenryHub, geography reparsed from archived original text",
+    "freshProcessDeterminism": "PASS; two independent process comparison and control rebuilds matched",
+    "originalSourceHashes": "PASS; 54 original objects checked",
+    "inheritedTrackedFiles": 478,
+    "scope": "Only research/ai-infrastructure-paper-validation/phase-c1a/; all existing files unchanged"
+  },
+  "sourceResponses": {
+    "total": 55,
+    "archived": 54,
+    "archivedBytes": 59858758,
+    "failed": [
+      {
+        "sourceId": "dominion2024",
+        "status": "HTTP_ERROR",
+        "httpStatus": 404
+      }
+    ]
+  },
+  "productionChanged": false,
+  "priorResearchChanged": false,
+  "c1bStarted": false,
+  "modelsEstimated": false,
+  "nationalInflationForecastCreated": false,
+  "scientificLimitation": "Passing software tests does not establish adequate event timing, geography, controls, comparison sample or causal truth. C1B gates remain unmet."
+}

@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "C1A.1",
+  "asOf": "2026-10-09",
+  "inheritedGaps": [
+    {
+      "gapId": "INHERITED-B2-H01",
+      "origin": "B2",
+      "severity": "HIGH",
+      "description": "Total cash paid and accrued interest are not a qualified cash principal split. Keep principal null; obtain original supplemental cash disclosures or contract-specific reconciliation.",
+      "sourceRef": "../phase-c0/gap-register.json#INHERITED-B2-H01",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION"
+    },
+    {
+      "gapId": "INHERITED-B2-H02",
+      "origin": "B2",
+      "severity": "HIGH",
+      "description": "Named-customer cash amounts, refund/repayment rights and complete contract-liability rollforwards remain unavailable for both issuers. Oracle has a $34M stock-versus-CF residual; no balancing plug.",
+      "sourceRef": "../phase-c0/gap-register.json#INHERITED-B2-H02",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION"
+    },
+    {
+      "gapId": "INHERITED-B2-H03",
+      "origin": "B2",
+      "severity": "HIGH",
+      "description": "Quarter-end native remainder/year columns are not rolling 12 months. No exhaustive all-obligation denominator, intra-period liquidity forecast or distress classification can be supported.",
+      "sourceRef": "../phase-c0/gap-register.json#INHERITED-B2-H03",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION"
+    },
+    {
+      "gapId": "INHERITED-B2-M01",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "description": "Local SEC HTTP403 stopped retrieval. Official rendered tables reviewed through browser tool; selected primary XBRL contexts and numeric extracts archived, not original filing HTML. Manual fields cannot yet be re-read independently offline.",
+      "sourceRef": "../phase-c0/gap-register.json#INHERITED-B2-M01",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION"
+    },
+    {
+      "gapId": "INHERITED-B2-M02",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "description": "Original tagged buckets exist but rendered schedule-total controls and hedge-adjustment scope are unqualified. No equality forced to net carrying debt.",
+      "sourceRef": "../phase-c0/gap-register.json#INHERITED-B2-M02",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION"
+    },
+    {
+      "gapId": "INHERITED-B2-M03",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "description": "Oracle agreement-defined covenant not independently computed; Amazon lender approvals and draw after September30 unknown. Oracle lessor guarantee after September maturity unverified. June30 subsequent note issue remains separate.",
+      "sourceRef": "../phase-c0/gap-register.json#INHERITED-B2-M03",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION"
+    },
+    {
+      "gapId": "INHERITED-B2-M04",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "description": "Corporate purchases, power, future leases, guarantees and unpaid PP&E may concern common assets or contracts. No complete overlap map or AI-only allocation; not added.",
+      "sourceRef": "../phase-c0/gap-register.json#INHERITED-B2-M04",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION"
+    },
+    {
+      "gapId": "INHERITED-B2-M05",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "description": "Original native purchase schedules broaden from content/WholeFoods to energy/software and PP&E. Changes cannot be interpreted as pure AI-capital growth.",
+      "sourceRef": "../phase-c0/gap-register.json#INHERITED-B2-M05",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION"
+    },
+    {
+      "gapId": "C0-H01",
+      "origin": "C0",
+      "severity": "HIGH",
+      "description": "Actual site energization, AI share and realized load are not qualified exposure data.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-H01",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "CAUSAL_AI_ELECTRICITY_ATTRIBUTION"
+    },
+    {
+      "gapId": "C0-H02",
+      "origin": "C0",
+      "severity": "HIGH",
+      "description": "No defensible exogenous AI investment shock or national no-AI counterfactual.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-H02",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "CAUSAL_AGGREGATE_INFLATION_OR_REAL_RATE"
+    },
+    {
+      "gapId": "C0-H03",
+      "origin": "C0",
+      "severity": "HIGH",
+      "description": "Firm/task adoption effects cannot currently be joined to consumer-price pass-through.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-H03",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "MACRO_PRODUCTIVITY_DISINFLATION_ATTRIBUTION"
+    },
+    {
+      "gapId": "C0-M01",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "description": "Weather, fuel, detailed input-price IDs, grid constraints and region/utility crosswalks not fully qualified.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-M01",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "C1_ESTIMATION_START"
+    },
+    {
+      "gapId": "C0-M02",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "description": "BTOS question definition break and short comparable new sample.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-M02",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "SPLICED_ADOPTION_TREND"
+    },
+    {
+      "gapId": "C0-M03",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "description": "ICE OAS privately sourced, licensed and FRED long history restricted from April 2026.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-M03",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "LONG_CREDIT_PANEL"
+    },
+    {
+      "gapId": "C0-M04",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "description": "Metadata manual checks do not freeze full macro histories, revisions or first publication vintages.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-M04",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "REAL_TIME_EMPIRICAL_REPRODUCTION"
+    },
+    {
+      "gapId": "C0-M05",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "description": "Primary author abstract now viewed via arXiv v2; full-paper identification audit and replication materials remain unqualified.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-M05",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "E3_E4_LITERATURE_GRADE"
+    },
+    {
+      "gapId": "C0-M06",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "description": "Corporate financing evidence detailed only for Oracle and Amazon.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-M06",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "FIVE_COMPANY_GENERALIZATION"
+    },
+    {
+      "gapId": "C0-M07",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "description": "Detailed Census construction numeric history and deflator need audit; servers/racks excluded.",
+      "sourceRef": "../phase-c0/gap-register.json#C0-M07",
+      "status": "PRESERVED_UNRESOLVED",
+      "blocks": "ALL_IN_AI_CONSTRUCTION_MEASURE"
+    }
+  ],
+  "gaps": [
+    {
+      "gapId": "C1A-H01",
+      "severity": "HIGH",
+      "description": "First energization dates and realized site loads unqualified",
+      "status": "OPEN",
+      "nextAction": "UTILITY_EVENT_ACQUISITION"
+    },
+    {
+      "gapId": "C1A-H02",
+      "severity": "HIGH",
+      "description": "No historically qualified meter/utility outcome geography",
+      "status": "OPEN",
+      "nextAction": "HISTORICAL_CROSSWALK"
+    },
+    {
+      "gapId": "C1A-H03",
+      "severity": "HIGH",
+      "description": "No six verified comparison regions or pretrend/power audit",
+      "status": "OPEN",
+      "nextAction": "CONTROL_SCREENING"
+    },
+    {
+      "gapId": "C1A-H04",
+      "severity": "HIGH",
+      "description": "Other industrial demand and dated rate/grid/local fuel controls incomplete",
+      "status": "OPEN",
+      "nextAction": "CONTROL_HYDRATION"
+    },
+    {
+      "gapId": "C1A-M01",
+      "severity": "MEDIUM",
+      "description": "AI-only electricity share unavailable; prohibits AI causal interpretation",
+      "status": "OPEN",
+      "nextAction": "DESCRIPTIVE_PROTOCOL_ONLY"
+    },
+    {
+      "gapId": "C1A-M02",
+      "severity": "MEDIUM",
+      "description": "2024sampled utility file alone fails24pre+12post; unbundled retail gaps",
+      "status": "OPEN",
+      "nextAction": "UTILITY_HISTORY_AND_DELIVERY"
+    },
+    {
+      "gapId": "C1A-M03",
+      "severity": "MEDIUM",
+      "description": "Current outcome/weather vintages, sector/border revisions and post2025preliminary flags",
+      "status": "OPEN",
+      "nextAction": "VINTAGE_AUDIT"
+    },
+    {
+      "gapId": "C1A-M04",
+      "severity": "MEDIUM",
+      "description": "Dominion historicalIRPURL404; no aggregate claim from search snippets",
+      "status": "OPEN",
+      "nextAction": "PRIMARY_REACQUISITION"
+    },
+    {
+      "gapId": "C1A-M05",
+      "severity": "MEDIUM",
+      "description": "Single-campus evidence screening overrepresents Meta and public announcements",
+      "status": "OPEN",
+      "nextAction": "BROADER_UTILITY_SCREENING"
+    },
+    {
+      "gapId": "C1A-M06",
+      "severity": "MEDIUM",
+      "description": "EIA923only2024package inspected; EIA930historical feed/flags not selected",
+      "status": "OPEN",
+      "nextAction": "REGIONAL_SUPPLY_AND_LOAD"
+    }
+  ],
+  "stopC1B": true
+}

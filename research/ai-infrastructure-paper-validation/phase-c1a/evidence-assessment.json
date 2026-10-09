@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "C1A.1",
+  "asOf": "2026-10-09",
+  "evidence": [
+    {
+      "evidenceId": "EV-META-SARPY",
+      "claim": "The named primary documents establish the project identity and the specified historical milestone, not first energization or AI consumption.",
+      "projectId": "META-SARPY",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "oppd-papillion",
+        "meta-sarpy"
+      ],
+      "sourceLocator": "OPPD article date/header and opening paragraphs; Meta retrospective opening paragraph",
+      "sourceReliability": "Authenticated issuer/utility/regulator documents with immutable raw identities",
+      "dataReproducibility": "MANUAL_DOCUMENT_INTERPRETATION_WITH_HASHED_SOURCE",
+      "statisticalRobustness": "NOT_APPLICABLE_NO_ASSOCIATION_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Named site and historical disclosure only",
+      "uncertainty": "OPPD reports the facility serving traffic; June13 grand-opening ceremony and June18 report are not first energization. The later Meta source gives online year2019 only. Multi-phase expansion prevents a binary full-campus load assumption.",
+      "gradeJustification": "Exact primary documentary fact only; no regional causal inference."
+    },
+    {
+      "evidenceId": "EV-META-DEKALB",
+      "claim": "The named primary documents establish the project identity and the specified historical milestone, not first energization or AI consumption.",
+      "projectId": "META-DEKALB",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "meta-dekalb"
+      ],
+      "sourceLocator": "Article date and first/third paragraphs",
+      "sourceReliability": "Authenticated issuer/utility/regulator documents with immutable raw identities",
+      "dataReproducibility": "MANUAL_DOCUMENT_INTERPRETATION_WITH_HASHED_SOURCE",
+      "statisticalRobustness": "NOT_APPLICABLE_NO_ASSOCIATION_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Named site and historical disclosure only",
+      "uncertainty": "Serving traffic is qualified; fully operational is future wording. Meta names ComEd as partner, not an exclusive meter/service boundary. Scanned city attachment is retained as reviewed-source candidate only, not a validated power connection claim.",
+      "gradeJustification": "Exact primary documentary fact only; no regional causal inference."
+    },
+    {
+      "evidenceId": "EV-META-LOSLUNAS",
+      "claim": "The named primary documents establish the project identity and the specified historical milestone, not first energization or AI consumption.",
+      "projectId": "META-LOSLUNAS",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "meta-loslunas",
+        "nmprc2018"
+      ],
+      "sourceLocator": "Meta opening paragraph; NMPRC FY2018 report p16",
+      "sourceReliability": "Authenticated issuer/utility/regulator documents with immutable raw identities",
+      "dataReproducibility": "MANUAL_DOCUMENT_INTERPRETATION_WITH_HASHED_SOURCE",
+      "statisticalRobustness": "NOT_APPLICABLE_NO_ASSOCIATION_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Named site and historical disclosure only",
+      "uncertainty": "Opening is not first grid connection. Six-building campus completion remains conditional. Regulatory special service contract verifies PNM/Greater Kudu relationship, not actual monthly meter readings.",
+      "gradeJustification": "Exact primary documentary fact only; no regional causal inference."
+    },
+    {
+      "evidenceId": "EV-META-EAGLE",
+      "claim": "The named primary documents establish the project identity and the specified historical milestone, not first energization or AI consumption.",
+      "projectId": "META-EAGLE",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "meta-eagle"
+      ],
+      "sourceLocator": "Article date and first paragraph",
+      "sourceReliability": "Authenticated issuer/utility/regulator documents with immutable raw identities",
+      "dataReproducibility": "MANUAL_DOCUMENT_INTERPRETATION_WITH_HASHED_SOURCE",
+      "statisticalRobustness": "NOT_APPLICABLE_NO_ASSOCIATION_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Named site and historical disclosure only",
+      "uncertainty": "Rocky Mountain Power Schedule34 identifies renewable procurement relationship; county membership is not exclusive service proof. Solar portfolio MW is not campus connected load.",
+      "gradeJustification": "Exact primary documentary fact only; no regional causal inference."
+    },
+    {
+      "evidenceId": "EV-GOOG-NEWALBANY",
+      "claim": "The named primary documents establish the project identity and the specified historical milestone, not first energization or AI consumption.",
+      "projectId": "GOOG-NEWALBANY",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "google-ohio",
+        "newalbany-city"
+      ],
+      "sourceLocator": "Google Ohio milestones; city Google noise section",
+      "sourceReliability": "Authenticated issuer/utility/regulator documents with immutable raw identities",
+      "dataReproducibility": "MANUAL_DOCUMENT_INTERPRETATION_WITH_HASHED_SOURCE",
+      "statisticalRobustness": "NOT_APPLICABLE_NO_ASSOCIATION_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Named site and historical disclosure only",
+      "uncertainty": "2019 is construction, not operation. City retrospectively reports active-campus cooling noise in September2025; exact first operational/energization date unavailable. AEP Energy retail supplier must not be conflated with Ohio Power distribution utility; New Albany spans Franklin/Licking and exact parcel is unqualified.",
+      "gradeJustification": "Exact primary documentary fact only; no regional causal inference."
+    },
+    {
+      "evidenceId": "EV-MSFT-FAIRWATER",
+      "claim": "The named primary documents establish the project identity and the specified historical milestone, not first energization or AI consumption.",
+      "projectId": "MSFT-FAIRWATER",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "fairwater2025"
+      ],
+      "sourceLocator": "2025-09-18 article final building phases and expected early2026 opening",
+      "sourceReliability": "Authenticated issuer/utility/regulator documents with immutable raw identities",
+      "dataReproducibility": "MANUAL_DOCUMENT_INTERPRETATION_WITH_HASHED_SOURCE",
+      "statisticalRobustness": "NOT_APPLICABLE_NO_ASSOCIATION_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Named site and historical disclosure only",
+      "uncertainty": "Historical report describes final construction and future service. It does not qualify a2025 energized event. No12-month post window through2025; updated operation and utility meter map need acquisition. AI purpose does not establish AI-only kWh.",
+      "gradeJustification": "Exact primary documentary fact only; no regional causal inference."
+    },
+    {
+      "evidenceId": "EV-STATE",
+      "claim": "Official selected state-sector outcome cells exist; native units and flags are retained.",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "eia861m-state"
+      ],
+      "sourceLocator": "inputs/ associated normalized file row/cell or date-column locators",
+      "sourceReliability": "Authenticated official published data",
+      "dataReproducibility": "FROZEN_INPUT_REBUILD; full XLSX raw reparse requires external cache; text controls available offline",
+      "statisticalRobustness": "NOT_TESTED_NO_RELATIONSHIP_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Selected states/sectors/months and native variable only",
+      "uncertainty": "Exposure, scope, revision and geographical limitations remain; no AI allocation.",
+      "gradeJustification": "Primary data observation/coverage, not E2regional association or E3/E4effect."
+    },
+    {
+      "evidenceId": "EV-UTILITY",
+      "claim": "Selected2024sampled/bundled utility rows exist; geography and36-month window remain unqualified.",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "eia861m-utility2024",
+        "eia861-2024"
+      ],
+      "sourceLocator": "inputs/ associated normalized file row/cell or date-column locators",
+      "sourceReliability": "Authenticated official published data",
+      "dataReproducibility": "FROZEN_INPUT_REBUILD; full XLSX raw reparse requires external cache; text controls available offline",
+      "statisticalRobustness": "NOT_TESTED_NO_RELATIONSHIP_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Selected states/sectors/months and native variable only",
+      "uncertainty": "Exposure, scope, revision and geographical limitations remain; no AI allocation.",
+      "gradeJustification": "Primary data observation/coverage, not E2regional association or E3/E4effect."
+    },
+    {
+      "evidenceId": "EV-WEATHER",
+      "claim": "Selected NOAA weighted daily data support complete calendar-month sums; not site-meter demand.",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "noaa-catalog",
+        "noaa2025-heating",
+        "noaa2025-cooling"
+      ],
+      "sourceLocator": "inputs/ associated normalized file row/cell or date-column locators",
+      "sourceReliability": "Authenticated official published data",
+      "dataReproducibility": "FROZEN_INPUT_REBUILD; full XLSX raw reparse requires external cache; text controls available offline",
+      "statisticalRobustness": "NOT_TESTED_NO_RELATIONSHIP_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Selected states/sectors/months and native variable only",
+      "uncertainty": "Exposure, scope, revision and geographical limitations remain; no AI allocation.",
+      "gradeJustification": "Primary data observation/coverage, not E2regional association or E3/E4effect."
+    },
+    {
+      "evidenceId": "EV-GAS",
+      "claim": "Published EIA monthly Henry Hub benchmark observations exist; not delivered local fuel costs.",
+      "evidenceGrade": "E1",
+      "sourceRefs": [
+        "henryhub"
+      ],
+      "sourceLocator": "inputs/ associated normalized file row/cell or date-column locators",
+      "sourceReliability": "Authenticated official published data",
+      "dataReproducibility": "FROZEN_INPUT_REBUILD; full XLSX raw reparse requires external cache; text controls available offline",
+      "statisticalRobustness": "NOT_TESTED_NO_RELATIONSHIP_ESTIMATED",
+      "causalIdentification": "NONE",
+      "externalValidity": "Selected states/sectors/months and native variable only",
+      "uncertainty": "Exposure, scope, revision and geographical limitations remain; no AI allocation.",
+      "gradeJustification": "Primary data observation/coverage, not E2regional association or E3/E4effect."
+    }
+  ],
+  "hypotheses": [
+    {
+      "hypothesisId": "E1",
+      "inheritedEvidenceGrade": "E0",
+      "evidenceGrade": "E0",
+      "assessment": "SOURCE_FEASIBILITY_PROGRESS_ONLY; no tested energy effect, controls/comparison/actual event gates unmet.",
+      "sourceRef": "../phase-c0/hypothesis-matrix.json#E1"
+    },
+    {
+      "hypothesisId": "E2",
+      "inheritedEvidenceGrade": "E0",
+      "evidenceGrade": "E0",
+      "assessment": "SOURCE_FEASIBILITY_PROGRESS_ONLY; no tested energy effect, controls/comparison/actual event gates unmet.",
+      "sourceRef": "../phase-c0/hypothesis-matrix.json#E2"
+    },
+    {
+      "hypothesisId": "E3",
+      "inheritedEvidenceGrade": "E0",
+      "evidenceGrade": "E0",
+      "assessment": "SOURCE_FEASIBILITY_PROGRESS_ONLY; no tested energy effect, controls/comparison/actual event gates unmet.",
+      "sourceRef": "../phase-c0/hypothesis-matrix.json#E3"
+    },
+    {
+      "hypothesisId": "E4",
+      "inheritedEvidenceGrade": "E0",
+      "evidenceGrade": "E0",
+      "assessment": "SOURCE_FEASIBILITY_PROGRESS_ONLY; no tested energy effect, controls/comparison/actual event gates unmet.",
+      "sourceRef": "../phase-c0/hypothesis-matrix.json#E4"
+    }
+  ],
+  "gradeDistribution": {
+    "E0": 0,
+    "E1": 10,
+    "E2": 0,
+    "E3": 0,
+    "E4": 0
+  },
+  "mechanismGrades": "Four inherited energy hypotheses remain E0; no promotion.",
+  "noNationalInflationEstimate": true
+}

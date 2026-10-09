@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "C1A.1",
+  "asOf": "2026-10-09",
+  "indicators": [
+    {
+      "indicatorId": "RETAIL_STATE",
+      "name": "State commercial/industrial sales, revenue, customers, average realized price",
+      "sourceRefs": [
+        "eia861m-catalog",
+        "eia861m-state",
+        "eia-guide"
+      ],
+      "frequency": "MONTHLY",
+      "geographicResolution": "STATE × CUSTOMER_SECTOR",
+      "units": [
+        "MWh",
+        "THOUSAND_USD",
+        "CUSTOMER_COUNT",
+        "CENTS_PER_KWH"
+      ],
+      "historicalCoverage": {
+        "catalog": "1990 onward; selected workbook 2010 onward",
+        "validatedStart": "2015-01",
+        "validatedEnd": "2025-12",
+        "states": 13,
+        "sectorMonthRows": 3432
+      },
+      "verificationStatus": "VERIFIED — DIRECT ACCESS",
+      "payloadHistoryQualified": true,
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "revisionPolicy": "Workbook retains Preliminary/Final. Current vintage includes revisions; no first-release vintage reconstruction.",
+      "publicationLag": null,
+      "publicationLagStatus": "EXACT_FIXED_LAG_NOT_QUALIFIED",
+      "latestIncludedPeriod": "2025-12",
+      "notes": "Native I:L and M:P columns. Formula cents/kWh=100×thousandUSD/MWh; rounding tolerance0.0051. Official aggregates already include adjustments; never re-add utility adjustment rows. State sector load includes non-data-center users; sample-based adjusted outcomes are not AI metering."
+    },
+    {
+      "indicatorId": "RETAIL_UTILITY",
+      "name": "Bundled sampled utility retail sales/revenue",
+      "sourceRefs": [
+        "eia861m-utility2024",
+        "eia-guide"
+      ],
+      "frequency": "MONTHLY",
+      "geographicResolution": "UTILITY × STATE × SECTOR",
+      "units": [
+        "MWh",
+        "THOUSAND_USD",
+        "CUSTOMER_COUNT"
+      ],
+      "historicalCoverage": {
+        "validatedStart": "2024-01",
+        "validatedEnd": "2024-12",
+        "utilities": 6,
+        "sectorMonthRows": 144
+      },
+      "verificationStatus": "VERIFIED — DIRECT ACCESS",
+      "payloadHistoryQualified": true,
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "revisionPolicy": "Retains final status in captured2024file. Historical sampling/customer scope and merger changes not audited.",
+      "publicationLag": null,
+      "publicationLagStatus": "EXACT_FIXED_LAG_NOT_QUALIFIED",
+      "latestIncludedPeriod": "2024",
+      "notes": "Only2024retrieved. Marketer nondisclosure and unbundled sales mean incomplete distributor-demand coverage, especially competitive retail states. One year cannot supply24pre+12post."
+    },
+    {
+      "indicatorId": "ANNUAL_TERRITORY",
+      "name": "Annual EIA861 service counties / utility identifiers",
+      "sourceRefs": [
+        "eia861-catalog",
+        "eia861-2024"
+      ],
+      "frequency": "ANNUAL",
+      "geographicResolution": "UTILITY × STATE × COUNTY",
+      "units": [
+        "COUNTY_MEMBERSHIP"
+      ],
+      "historicalCoverage": {
+        "validatedYear": 2024,
+        "selectedTerritoryRows": 241
+      },
+      "verificationStatus": "VERIFIED — DIRECT ACCESS",
+      "payloadHistoryQualified": false,
+      "seasonalAdjustment": "NOT_APPLICABLE_OR_UNQUALIFIED",
+      "revisionPolicy": "Use final annual release; historical territory/utility-ID versioning pending.",
+      "publicationLag": null,
+      "publicationLagStatus": "EXACT_FIXED_LAG_NOT_QUALIFIED",
+      "latestIncludedPeriod": "2024",
+      "notes": "County lists are not exclusive service polygons, parcel assignments or meter maps;2024 cannot be backdated to2019."
+    },
+    {
+      "indicatorId": "GENERATION_FUEL",
+      "name": "Plant generation and fuel receipts/costs",
+      "sourceRefs": [
+        "eia923-catalog",
+        "eia923-2024"
+      ],
+      "frequency": "MONTHLY_AND_ANNUAL",
+      "geographicResolution": "PLANT / PRIME_MOVER / FUEL",
+      "units": [
+        "MWh",
+        "MMBTU",
+        "NATIVE_FUEL_UNITS"
+      ],
+      "historicalCoverage": {
+        "validatedPackageYear": 2024,
+        "complete2015to2025Qualified": false
+      },
+      "verificationStatus": "VERIFIED — DIRECT ACCESS",
+      "payloadHistoryQualified": false,
+      "seasonalAdjustment": "NOT_APPLICABLE_OR_UNQUALIFIED",
+      "revisionPolicy": "2024Final workbook title checked; monthly respondents versus annual respondents require distinction. Full history and revisions pending.",
+      "publicationLag": null,
+      "publicationLagStatus": "EXACT_FIXED_LAG_NOT_QUALIFIED",
+      "latestIncludedPeriod": "2024",
+      "notes": "ZIP integrity and primary workbook headers verified. No regional generation/fuel analytic series extracted. Plant geography differs from demand imports/BA and confidentiality suppresses some costs. Catalog latest2026labels disagree; freeze2024control only."
+    },
+    {
+      "indicatorId": "GENERATOR_CAPACITY",
+      "name": "EIA860 actual in-service versus proposed generators",
+      "sourceRefs": [
+        "eia860-catalog"
+      ],
+      "frequency": "ANNUAL",
+      "geographicResolution": "GENERATOR",
+      "units": [
+        "MW_NAMEPLATE"
+      ],
+      "historicalCoverage": null,
+      "verificationStatus": "VERIFIED — MANUAL ACCESS",
+      "payloadHistoryQualified": false,
+      "seasonalAdjustment": "NOT_APPLICABLE_OR_UNQUALIFIED",
+      "revisionPolicy": "Catalog only; no qualified generator extraction/history.",
+      "publicationLag": null,
+      "publicationLagStatus": "EXACT_FIXED_LAG_NOT_QUALIFIED",
+      "latestIncludedPeriod": null,
+      "notes": "Potential supply mediator/control; nameplate is not actual generation or data-center load."
+    },
+    {
+      "indicatorId": "BA_LOAD",
+      "name": "EIA930 demand, generation and interchange",
+      "sourceRefs": [
+        "eia-guide",
+        "eia930-about"
+      ],
+      "frequency": "HOURLY",
+      "geographicResolution": "BALANCING_AUTHORITY",
+      "units": [
+        "MWh"
+      ],
+      "historicalCoverage": null,
+      "verificationStatus": "INSUFFICIENT DOCUMENTATION",
+      "payloadHistoryQualified": false,
+      "seasonalAdjustment": "NOT_APPLICABLE_OR_UNQUALIFIED",
+      "revisionPolicy": "Guide verifies BA collection; selected BA historical file, flags and revisions not acquired.",
+      "publicationLag": null,
+      "publicationLagStatus": "EXACT_FIXED_LAG_NOT_QUALIFIED",
+      "latestIncludedPeriod": null,
+      "notes": "Landing page HTTP200 is not a qualified payload. BA boundaries may span multiple utilities/states; no direct county-price match. RTO LMP also not qualified."
+    },
+    {
+      "indicatorId": "WEATHER",
+      "name": "NOAA CPC state population-weighted HDD/CDD",
+      "sourceRefs": [
+        "noaa-catalog",
+        "noaa-definition",
+        "noaa2015-cooling",
+        "noaa2015-heating",
+        "noaa2016-cooling",
+        "noaa2016-heating",
+        "noaa2017-cooling",
+        "noaa2017-heating",
+        "noaa2018-cooling",
+        "noaa2018-heating",
+        "noaa2019-cooling",
+        "noaa2019-heating",
+        "noaa2020-cooling",
+        "noaa2020-heating",
+        "noaa2021-cooling",
+        "noaa2021-heating",
+        "noaa2022-cooling",
+        "noaa2022-heating",
+        "noaa2023-cooling",
+        "noaa2023-heating",
+        "noaa2024-cooling",
+        "noaa2024-heating",
+        "noaa2025-cooling",
+        "noaa2025-heating"
+      ],
+      "frequency": "DAILY_TO_MONTHLY",
+      "geographicResolution": "STATE",
+      "units": [
+        "F_DEGREE_DAYS"
+      ],
+      "historicalCoverage": {
+        "validatedStart": "2015-01",
+        "validatedEnd": "2025-12",
+        "states": 13,
+        "metricMonthRows": 3432
+      },
+      "verificationStatus": "VERIFIED — DIRECT ACCESS",
+      "payloadHistoryQualified": true,
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "revisionPolicy": "CPC historical recomputations noted in catalog; archived current vintage not final historical meteorological vintages.",
+      "publicationLag": null,
+      "publicationLagStatus": "EXACT_FIXED_LAG_NOT_QUALIFIED",
+      "latestIncludedPeriod": "2025-12",
+      "notes": "Sum complete daily values; no interpolation. Updated catalog describes2010population weights; legacy explanation describes2000weights and65F base. Use updated weighted payload family only; local service-territory weather weights need review."
+    },
+    {
+      "indicatorId": "HENRY_HUB",
+      "name": "EIA published Henry Hub monthly natural gas spot benchmark",
+      "sourceRefs": [
+        "henryhub"
+      ],
+      "frequency": "MONTHLY",
+      "geographicResolution": "HENRY_HUB_NOT_LOCAL_DELIVERED_FUEL",
+      "units": [
+        "USD_PER_MMBTU"
+      ],
+      "historicalCoverage": {
+        "validatedStart": "2015-01",
+        "validatedEnd": "2025-12",
+        "monthlyRows": 132
+      },
+      "verificationStatus": "VERIFIED — DIRECT ACCESS",
+      "payloadHistoryQualified": true,
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "revisionPolicy": "Captured released table, no full release-vintage reconstruction. Original assessed-price compilation not independently replicated.",
+      "publicationLag": null,
+      "publicationLagStatus": "EXACT_FIXED_LAG_NOT_QUALIFIED",
+      "latestIncludedPeriod": "2025-12",
+      "notes": "Not local delivered gas, power-plant marginal cost or utility fuel pass-through. Use benchmark sensitivity only; local basis/fuel receipts still missing."
+    }
+  ],
+  "method": "Direct access is qualified only for the stated file/fields, not every historical indicator or every geographic join."
+}
