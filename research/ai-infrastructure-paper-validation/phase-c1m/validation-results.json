@@ -1,0 +1,88 @@
+{
+  "asOf": "2026-10-09",
+  "baseSHA": "8e6b3eec6b0584c1567c13d7e3979707225324fc",
+  "branch": "codex/ai-infra-macro-signals-phase-c1m",
+  "build": {
+    "command": "npm run build",
+    "inheritedWarnings": [
+      "Inconsistent JSON import attributes in existing infrastructure module",
+      "Chunks larger than500kB"
+    ],
+    "result": "PASS"
+  },
+  "c2Started": false,
+  "dependencyChanges": false,
+  "independentReader": {
+    "constructionCells": 152,
+    "reader": "Bundled openpyxl read-only; no dependency edits",
+    "result": "PASS",
+    "surveyCells": 227
+  },
+  "productionChanged": false,
+  "productionMainObserved": "12685c1f5bcb49a312caac211d23bd06b17e0ca4",
+  "repositoryVerify": {
+    "command": "npm run verify",
+    "exitCode": 0,
+    "result": "PASS"
+  },
+  "reproducibility": {
+    "coverage": "Reparsed13 original small downloads plus frozen inherited EIA extracts",
+    "freshProcessIdentity": "Two independent processes matched; repeated after final editorial correction",
+    "researchIdentity": "d8edb5ade89b52a62d4f5ddf85dcf9715331e55178cc8d95a617a5b87f1d4c88",
+    "result": "PASS",
+    "runtimeReceiptsExcluded": true
+  },
+  "researchTests": [
+    {
+      "executionBasis": "C1M isolated worktree",
+      "failed": 0,
+      "passed": 13,
+      "phase": "A"
+    },
+    {
+      "executionBasis": "clean exact B1 worktree; inherited Git scope guard",
+      "failed": 0,
+      "passed": 43,
+      "phase": "B1"
+    },
+    {
+      "executionBasis": "clean exact B2 worktree; inherited Git scope guard",
+      "failed": 0,
+      "passed": 51,
+      "phase": "B2"
+    },
+    {
+      "executionBasis": "clean exact C0 worktree; inherited Git scope guard",
+      "failed": 0,
+      "passed": 38,
+      "phase": "C0"
+    },
+    {
+      "executionBasis": "clean exact C1A worktree; inherited Git scope guard",
+      "failed": 0,
+      "passed": 55,
+      "phase": "C1A"
+    },
+    {
+      "executionBasis": "new branch; offline mutation, source, scope and determinism tests",
+      "failed": 0,
+      "passed": 51,
+      "phase": "C1M"
+    }
+  ],
+  "scheduledTasksCreated": false,
+  "schemaVersion": "C1M.1",
+  "scientificDecision": "COMPLETE — MACRO FRAMEWORK QUALIFIED",
+  "scientificLimitations": [
+    "Full AI-to-inflation mechanisms remain E0",
+    "BTOS numeric current-regime history unavailable",
+    "No causal attribution or numerical inflation forecast",
+    "Current-vintage history does not establish first-release information sets"
+  ],
+  "scope": {
+    "changedFiles": 26,
+    "lockedInheritedFiles": 530,
+    "productionModified": false
+  },
+  "totalResearchTests": 251
+}

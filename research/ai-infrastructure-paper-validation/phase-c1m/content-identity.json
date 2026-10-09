@@ -1,0 +1,31 @@
+{
+  "asOf": "2026-10-09",
+  "files": {
+    "PHASE_C1M_MACRO_RESEARCH_REPORT.md": "cb8a452b9598a8a058dd56c91b5eb5b663dd1f6f6268f559f457fd185e2e2b88",
+    "PHASE_C2_RECOMMENDATION.md": "0b1e8f2c92b08c7a0f1d16a53f8a7b2e5a8c9b7fce98ae73a9d1217f2529dda6",
+    "artifacts.py": "32209261ea8ff8dea5c3f594bb8026a74e4739e9616f24d7b0d5a231ff8f9908",
+    "baseline-lock.json": "7bfc9e8ae0ce3d0a90fb69b6790e801c269c6b0b1804c2fc7c333e1471ebe882",
+    "fixtures/CENSUS_DC.xlsx.gz": "defc163adecef728ed526ff27155f25f825893c437637aa54c5d5c272a3ce9b9",
+    "fixtures/CPIAUCSL.csv.gz": "0c1e8ae02cb2bc105342e99f4e552871a3435588eb46b93aee471c52d8e38b07",
+    "fixtures/CPILFESL.csv.gz": "52492b580ad0b1bbc949995e14fdef825db437d04ef01fcaa846e8858da25658",
+    "fixtures/DFII10.csv.gz": "a90b00da8436c46f5c7924b09ae80935b2960f959b020f48a9dcbfabfdf28877",
+    "fixtures/GDPC1.csv.gz": "9e5458f15199d20d43674012285bafc4e29da80d6b220a9795b90a356c4c971b",
+    "fixtures/NCBDBIQ027S.csv.gz": "910c32ca64f1c10444da2aee4cb8066db0d92d1e5dd1cb11b77b8afef5098300",
+    "fixtures/OPHNFB.csv.gz": "bacab73473d7b5bb6b47c31becc8f309505912c51ddbcc61f9b860561731f114",
+    "fixtures/PCEPI.csv.gz": "a57920d131d3d15f20dc21bb88bcf60aaa9e55fa32ad39fb3e1f545ecbacefb7",
+    "fixtures/PCEPILFE.csv.gz": "089a8f917fb813580343370cac6108e25456f1a8efc2a8276f8a95a397916285",
+    "fixtures/PNFIC1.csv.gz": "7dd731411a413251dd7b2f364785f686572c162406619e58a95e546275733c62",
+    "fixtures/SPF10.xlsx.gz": "f0e19eb1ce9d613474321a37426c5494d607c4121bac2f67c86e04c48d84694a",
+    "fixtures/T10YIE.csv.gz": "436e91ff1f3d2d6e4a838c557b83d13d24fdf66c0f6392d4016e4d27da101759",
+    "fixtures/ULCNFB.csv.gz": "f27ecf315eaae42cbd303c3f469ff84227229cae9195e1d07dce19832856f7a2",
+    "gap-preservation.json": "4015a5374a169cafb732151503a4c910662fc78e203e550786aace89d4103f6c",
+    "historical-coverage-and-gaps.json": "b1756fe75100869d78a395c9d996c75b82b9a5237ff5fe18ead471cff80d17cd",
+    "macro-indicator-register.json": "037752513d23080a45d87bb7abf1c11e18e4a3080bb32bb04b7db59eba5ab3cf",
+    "macro-monitoring-architecture.md": "6ddadd8a481c35ffe2c12c5b25e217e9cbbdeef4ebd1842318b9e83a4e743a36",
+    "macro-transmission-evidence.json": "45410d42342d147ddcb690cde1d28512e92a9d8a18ed66125767ac79b76d8488",
+    "official-source-qualification.json": "48f974e47c6fcfc916544cea69ab53d3664757189b4e75291c9adfe7aaf7c5d8",
+    "test_phase_c1m.py": "82df03d1e70bab252bdd3f0cee27ffced62d0666c195496b33ceffe20b50015a"
+  },
+  "schemaVersion": "C1M.1",
+  "sha256": "d8edb5ade89b52a62d4f5ddf85dcf9715331e55178cc8d95a617a5b87f1d4c88"
+}

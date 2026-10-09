@@ -1,0 +1,475 @@
+{
+  "asOf": "2026-10-09",
+  "evidence": [
+    {
+      "causalIdentification": "NONE",
+      "channel": "ENERGY",
+      "claim": "Official definition and captured-vintage coverage of State commercial electricity retail sales; no macro AI effect estimated.",
+      "dataReproducibility": "REUSE_QUALIFIED_C1A_EXTRACT; FUTURE_FULL_MACRO_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-EIA_COMM_SALES",
+      "externalValidity": "13 US states × commercial sector, not US total under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "EIA_COMM_SALES"
+      ],
+      "sourceLocator": "EIA-861M / Monthly-States / commercial Sales J",
+      "sourceRefs": [
+        "EIA_STATE"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Commercial retail flow across 13 states; data centers plus all other commercial demand. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "ENERGY",
+      "claim": "Official definition and captured-vintage coverage of State commercial realized average electricity price; no macro AI effect estimated.",
+      "dataReproducibility": "REUSE_QUALIFIED_C1A_EXTRACT; FUTURE_FULL_MACRO_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-EIA_COMM_PRICE",
+      "externalValidity": "13 US states × commercial sector, not US total under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "EIA_COMM_PRICE"
+      ],
+      "sourceLocator": "EIA-861M / Monthly-States / commercial Price L",
+      "sourceRefs": [
+        "EIA_STATE"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Published sector revenue/kWh; changing customer mix, not a tariff or CPI electricity. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "ENERGY",
+      "claim": "Official definition and captured-vintage coverage of Henry Hub monthly spot gas benchmark; no macro AI effect estimated.",
+      "dataReproducibility": "REUSE_QUALIFIED_C1A_EXTRACT; FUTURE_FULL_MACRO_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-HENRY_HUB",
+      "externalValidity": "Henry Hub US benchmark under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "HENRY_HUB"
+      ],
+      "sourceLocator": "EIA Henry Hub monthly history table",
+      "sourceRefs": [
+        "EIA_GAS"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Monthly benchmark gas price, not delivered utility fuel cost. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "ENERGY",
+      "claim": "Official definition and captured-vintage coverage of Private data-center construction put in place; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-CENSUS_DC",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "CENSUS_DC"
+      ],
+      "sourceLocator": "Private SA / Data center / column J",
+      "sourceRefs": [
+        "CENSUS_DC"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Construction installed during period; buildings/site work exclude racks, servers and land. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "FINANCING",
+      "claim": "Official definition and captured-vintage coverage of Real private nonresidential fixed investment; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-PNFIC1",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "PNFIC1"
+      ],
+      "sourceLocator": "BEA A008RX; FRED PNFIC1",
+      "sourceRefs": [
+        "PNFIC1"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Broad US structures/equipment/intellectual-property investment, no AI allocation. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "FINANCING",
+      "claim": "Official definition and captured-vintage coverage of 10-year inflation-indexed Treasury market yield; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-DFII10",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "DFII10"
+      ],
+      "sourceLocator": "Federal Reserve H.15; FRED DFII10",
+      "sourceRefs": [
+        "DFII10"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Constant maturity TIPS yield; not r-star, not an AI financing cost. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "FINANCING",
+      "claim": "Official definition and captured-vintage coverage of Nonfinancial corporate debt securities outstanding; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-NCBDBIQ027S",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "NCBDBIQ027S"
+      ],
+      "sourceLocator": "Federal Reserve Z.1; FRED NCBDBIQ027S",
+      "sourceRefs": [
+        "NCBDBIQ027S"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Debt securities only, excludes loans and is a stock rather than issuance flow. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "PRODUCTIVITY",
+      "claim": "Official definition and captured-vintage coverage of Businesses reporting current AI use, new core wording; no macro AI effect estimated.",
+      "dataReproducibility": "DEFERRED_NUMERIC_ADAPTER_QUALIFICATION",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-BTOS_AI",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "BTOS_AI"
+      ],
+      "sourceLocator": "BTOS core AI business-functions question; no API code qualified",
+      "sourceRefs": [
+        "BTOS"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Self-reported any business-function AI use; not verified deployment intensity or productivity. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "PRODUCTIVITY",
+      "claim": "Official definition and captured-vintage coverage of Nonfarm business labor productivity; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-OPHNFB",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "OPHNFB"
+      ],
+      "sourceLocator": "BLS Productivity and Costs; FRED OPHNFB",
+      "sourceRefs": [
+        "OPHNFB"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Aggregate nonfarm business output/hour, not AI productivity. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "PRODUCTIVITY",
+      "claim": "Official definition and captured-vintage coverage of Nonfarm business unit labor costs; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-ULCNFB",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "ULCNFB"
+      ],
+      "sourceLocator": "BLS Productivity and Costs; FRED ULCNFB",
+      "sourceRefs": [
+        "ULCNFB"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Hourly compensation relative to output/hour; not total unit production cost. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "PRODUCTIVITY",
+      "claim": "Official definition and captured-vintage coverage of Real GDP; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-GDPC1",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "GDPC1"
+      ],
+      "sourceLocator": "BEA A191RX; FRED GDPC1",
+      "sourceRefs": [
+        "GDPC1"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Real aggregate production; not potential output or AI contribution. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "INFLATION",
+      "claim": "Official definition and captured-vintage coverage of Headline CPI-U; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-CPIAUCSL",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "CPIAUCSL"
+      ],
+      "sourceLocator": "BLS CPI-U all items; FRED CPIAUCSL",
+      "sourceRefs": [
+        "CPIAUCSL"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Urban consumer basket index level; growth is inflation, not the level itself. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "INFLATION",
+      "claim": "Official definition and captured-vintage coverage of Core CPI-U; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-CPILFESL",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "CPILFESL"
+      ],
+      "sourceLocator": "BLS CPI-U less food/energy; FRED CPILFESL",
+      "sourceRefs": [
+        "CPILFESL"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "CPI-U excluding food/energy; overlaps headline rather than additive. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "INFLATION",
+      "claim": "Official definition and captured-vintage coverage of Headline PCE price index; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-PCEPI",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "PCEPI"
+      ],
+      "sourceLocator": "BEA DPCERG; FRED PCEPI",
+      "sourceRefs": [
+        "PCEPI"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Chain-type personal consumption prices; basket/weights differ from CPI. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "INFLATION",
+      "claim": "Official definition and captured-vintage coverage of Core PCE price index; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-PCEPILFE",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "PCEPILFE"
+      ],
+      "sourceLocator": "BEA DPCCRG; FRED PCEPILFE",
+      "sourceRefs": [
+        "PCEPILFE"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Chain-type PCE excluding food/energy; not AI-adjusted inflation. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "INFLATION",
+      "claim": "Official definition and captured-vintage coverage of 10-year market inflation compensation; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-T10YIE",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "T10YIE"
+      ],
+      "sourceLocator": "St. Louis Fed derived Treasury spread; FRED T10YIE",
+      "sourceRefs": [
+        "T10YIE"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Nominal-minus-real Treasury yield spread; includes inflation risk and liquidity premia. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "INFLATION",
+      "claim": "Official definition and captured-vintage coverage of SPF median 10-year annual average CPI inflation expectation; no macro AI effect estimated.",
+      "dataReproducibility": "BOUNDED_OFFICIAL_DOWNLOAD_SUCCEEDED; C2_ADAPTER_NOT_IMPLEMENTED",
+      "evidenceGrade": "E1",
+      "evidenceId": "OBS-SPF10",
+      "externalValidity": "United States under native definition only",
+      "gradeJustification": "Authenticates source definition/observations, not the AI transmission hypothesis.",
+      "indicatorRefs": [
+        "SPF10"
+      ],
+      "sourceLocator": "Philadelphia Fed INFLATION / INFCPI10YR column E",
+      "sourceRefs": [
+        "SPF10"
+      ],
+      "sourceReliability": "Official original producer with qualified distributor where applicable",
+      "statisticalRobustness": "NOT_ESTIMATED",
+      "uncertainty": "Median professional forecast over10years, not realized inflation or guaranteed outcome. Current vintage is not information available at earlier observation dates."
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "ENERGY",
+      "claim": "Construction and aggregate demand may tighten energy inputs; supply expansion, efficiency and non-AI demand may offset.",
+      "competingExplanations": "Weather, fuel, generation, regulation and electrification",
+      "counterevidenceOrCountermechanism": "Efficiency and additional supply are competing mechanisms; no replicated opposite AI effect claimed.",
+      "dataReproducibility": "Framework reproducible; relationship not estimated",
+      "evidenceGrade": "E0",
+      "evidenceId": "M-ENERGY",
+      "externalValidity": "Macro monitoring only; no identified AI counterfactual",
+      "gradeJustification": "Source qualification cannot promote plausible mechanism to E2–E4.",
+      "horizon": "0–3;3–7;7–20 years",
+      "indicatorRefs": [
+        "EIA_COMM_SALES",
+        "EIA_COMM_PRICE",
+        "HENRY_HUB",
+        "CENSUS_DC"
+      ],
+      "inheritedHypothesisRefs": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "leadingLaggingRelationship": "Candidate ordering only, not an estimated lag or forecasting signal. C2 may document aligned descriptives; no lag mining.",
+      "nextAction": "Research-only native-frequency descriptive snapshot after explicit C2 authorization.",
+      "sourceReliability": "Conditional economic reasoning anchored to separately graded primary metadata",
+      "statisticalRobustness": "NOT_TESTED",
+      "uncertainty": "Net sign, size, persistence and AI contribution unidentified"
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "FINANCING",
+      "claim": "Investment competes for financing; cash flows, global capital and policy can accommodate demand.",
+      "competingExplanations": "Fiscal deficits, Treasury issuance, refinancing, policy and global savings",
+      "counterevidenceOrCountermechanism": "Inherited Oracle/Amazon cash budgets do not establish distress, a five-company financing result or rising Treasury yields.",
+      "dataReproducibility": "Framework reproducible; relationship not estimated",
+      "evidenceGrade": "E0",
+      "evidenceId": "M-FINANCE",
+      "externalValidity": "Macro monitoring only; no identified AI counterfactual",
+      "gradeJustification": "Source qualification cannot promote plausible mechanism to E2–E4.",
+      "horizon": "0–3;3–7;7–20 years",
+      "indicatorRefs": [
+        "PNFIC1",
+        "DFII10",
+        "NCBDBIQ027S"
+      ],
+      "inheritedHypothesisRefs": [
+        "F1",
+        "F2",
+        "F3",
+        "F4"
+      ],
+      "leadingLaggingRelationship": "Candidate ordering only, not an estimated lag or forecasting signal. C2 may document aligned descriptives; no lag mining.",
+      "nextAction": "Research-only native-frequency descriptive snapshot after explicit C2 authorization.",
+      "sourceReliability": "Conditional economic reasoning anchored to separately graded primary metadata",
+      "statisticalRobustness": "NOT_TESTED",
+      "uncertainty": "Net sign, size, persistence and AI contribution unidentified"
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "PRODUCTIVITY",
+      "claim": "Operational adoption may improve output/hour; organizational adjustment and price pass-through govern consumer outcomes.",
+      "competingExplanations": "Firm selection, wages, market concentration, intangible capital and demand",
+      "counterevidenceOrCountermechanism": "Implementation costs, margins and rebound may offset lower unit costs; task gains are not national productivity.",
+      "dataReproducibility": "Framework reproducible; relationship not estimated",
+      "evidenceGrade": "E0",
+      "evidenceId": "M-PRODUCTIVITY",
+      "externalValidity": "Macro monitoring only; no identified AI counterfactual",
+      "gradeJustification": "Source qualification cannot promote plausible mechanism to E2–E4.",
+      "horizon": "3–7;7–20 years",
+      "indicatorRefs": [
+        "BTOS_AI",
+        "OPHNFB",
+        "ULCNFB",
+        "GDPC1"
+      ],
+      "inheritedHypothesisRefs": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "leadingLaggingRelationship": "Candidate ordering only, not an estimated lag or forecasting signal. C2 may document aligned descriptives; no lag mining.",
+      "nextAction": "Research-only native-frequency descriptive snapshot after explicit C2 authorization.",
+      "sourceReliability": "Conditional economic reasoning anchored to separately graded primary metadata",
+      "statisticalRobustness": "NOT_TESTED",
+      "uncertainty": "Net sign, size, persistence and AI contribution unidentified"
+    },
+    {
+      "causalIdentification": "NONE",
+      "channel": "INFLATION",
+      "claim": "Relative input-price shocks and supply gains interact with aggregate demand and endogenous monetary conditions.",
+      "competingExplanations": "Energy/imports, shelter, fiscal/monetary policy, expectations and global shocks",
+      "counterevidenceOrCountermechanism": "A one-time price-level change need not mean persistent inflation; local effects may be undetectable nationally.",
+      "dataReproducibility": "Framework reproducible; relationship not estimated",
+      "evidenceGrade": "E0",
+      "evidenceId": "M-INFLATION",
+      "externalValidity": "Macro monitoring only; no identified AI counterfactual",
+      "gradeJustification": "Source qualification cannot promote plausible mechanism to E2–E4.",
+      "horizon": "0–3;3–7;7–20 years",
+      "indicatorRefs": [
+        "CPIAUCSL",
+        "PCEPILFE",
+        "T10YIE",
+        "SPF10"
+      ],
+      "inheritedHypothesisRefs": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "leadingLaggingRelationship": "Candidate ordering only, not an estimated lag or forecasting signal. C2 may document aligned descriptives; no lag mining.",
+      "nextAction": "Research-only native-frequency descriptive snapshot after explicit C2 authorization.",
+      "sourceReliability": "Conditional economic reasoning anchored to separately graded primary metadata",
+      "statisticalRobustness": "NOT_TESTED",
+      "uncertainty": "Net sign, size, persistence and AI contribution unidentified"
+    }
+  ],
+  "grades": {
+    "E0": "Unverified mechanism",
+    "E1": "Verified primary observation/definition",
+    "E2": "Reproducible descriptive relationship",
+    "E3": "Robust association, causality uncertain",
+    "E4": "Credible causal evidence"
+  },
+  "inheritedEvidenceUnchanged": true,
+  "noRelationshipEstimated": true,
+  "schemaVersion": "C1M.1"
+}
