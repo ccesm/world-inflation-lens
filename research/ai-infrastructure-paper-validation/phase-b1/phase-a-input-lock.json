@@ -1,0 +1,8 @@
+{
+  "base_commit": "b90080dd9f94cee2afa6d94f17467bab0d46649f",
+  "files": {
+    "source-register.json": "2b65ebe69345fbf8c8accee042be95c1af03f986e7be0e9b4bf83b6e564cd138",
+    "sources/oracle-companyfacts.json.gz": "2def07e243e4ec1e3554333b51a11f64503b58cafd1164014c16bde206068165",
+    "sources/amazon-companyfacts.json.gz": "159cac13ba156cde55a974510ddbd74c94d5c6a494662261618435f70e23ddb7"
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "later_accession": "0000950170-25-037143",
+    "later_filed": "2025-03-11",
+    "later_value": 7500000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "oracle:FY2024:operating_lease_liability",
+    "original_accession": "0000950170-24-075605",
+    "original_value": 7545000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "OperatingLeaseLiability"
+  },
+  {
+    "later_accession": "0001193125-26-277521",
+    "later_filed": "2026-06-22",
+    "later_value": 2921000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "oracle:FY2025:finance_lease_noncash_additions",
+    "original_accession": "0000950170-25-087926",
+    "original_value": 2900000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "RightOfUseAssetObtainedInExchangeForFinanceLeaseLiability"
+  },
+  {
+    "later_accession": "0001193125-25-200095",
+    "later_filed": "2025-09-10",
+    "later_value": 2677000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "oracle:FY2025:finance_lease_noncurrent",
+    "original_accession": "0000950170-25-087926",
+    "original_value": 2700000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "FinanceLeaseLiabilityNoncurrent"
+  },
+  {
+    "later_accession": "0001193125-25-315925",
+    "later_filed": "2025-12-11",
+    "later_value": 2677000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "oracle:FY2025:finance_lease_noncurrent",
+    "original_accession": "0000950170-25-087926",
+    "original_value": 2700000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "FinanceLeaseLiabilityNoncurrent"
+  },
+  {
+    "later_accession": "0001193125-26-101045",
+    "later_filed": "2026-03-11",
+    "later_value": 2677000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "oracle:FY2025:finance_lease_noncurrent",
+    "original_accession": "0000950170-25-087926",
+    "original_value": 2700000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "FinanceLeaseLiabilityNoncurrent"
+  },
+  {
+    "later_accession": "0001193125-26-277521",
+    "later_filed": "2026-06-22",
+    "later_value": 2677000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "oracle:FY2025:finance_lease_noncurrent",
+    "original_accession": "0000950170-25-087926",
+    "original_value": 2700000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "FinanceLeaseLiabilityNoncurrent"
+  },
+  {
+    "later_accession": "0001018724-24-000083",
+    "later_filed": "2024-05-01",
+    "later_value": 20900000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "amazon:CY2023:deferred_revenue",
+    "original_accession": "0001018724-24-000008",
+    "original_value": 20600000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "later_accession": "0001018724-24-000130",
+    "later_filed": "2024-08-02",
+    "later_value": 20900000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "amazon:CY2023:deferred_revenue",
+    "original_accession": "0001018724-24-000008",
+    "original_value": 20600000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "later_accession": "0001018724-24-000161",
+    "later_filed": "2024-11-01",
+    "later_value": 20900000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "amazon:CY2023:deferred_revenue",
+    "original_accession": "0001018724-24-000008",
+    "original_value": 20600000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "ContractWithCustomerLiability"
+  },
+  {
+    "later_accession": "0001018724-25-000004",
+    "later_filed": "2025-02-07",
+    "later_value": 20900000000,
+    "note": "Difference retained; not necessarily an error correction/restatement",
+    "observation_id": "amazon:CY2023:deferred_revenue",
+    "original_accession": "0001018724-24-000008",
+    "original_value": 20600000000,
+    "status": "CHANGED_CONTEXT_REVIEW_REQUIRED",
+    "tag": "ContractWithCustomerLiability"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-08",
+  "research_base": "b90080dd9f94cee2afa6d94f17467bab0d46649f",
+  "branch": "codex/ai-infra-paper-validation-phase-b1",
+  "production_main_observed": "a7899729f36217cf1d4142f1203e11c32984ad9d",
+  "outcome": "PARTIAL — SOURCE GAPS",
+  "phase_a_tests": {
+    "passed": 13,
+    "failed": 0
+  },
+  "phase_b1_tests": {
+    "passed": 43,
+    "failed": 0
+  },
+  "npm_ci": "PASS",
+  "build": "PASS",
+  "verify": "PASS",
+  "funding_bridges": {
+    "historical_annual": 6,
+    "separate_2026": 3,
+    "flow_difference_usd": 0,
+    "stock_difference_usd": 0
+  },
+  "determinism": {
+    "economic_fresh_process": "IDENTICAL",
+    "report_fresh_process": "IDENTICAL",
+    "chart_fresh_process": "IDENTICAL",
+    "chart_hashes": {
+      "chart-a-funding-bridges.png": "c5b631211f187e7fa18af48a52ffaf73ceec89be1f0973d6bb0983e7ab2db72d",
+      "chart-a-funding-bridges.svg": "715486581658c7b9518363ae51555af060c4a47b158379162badb310d050fa6c",
+      "chart-b-investment-fcf.png": "45a2add1fad2098f1ce9e55229baa2e45d4a43c83cd98fa914a5569bf825cea5",
+      "chart-b-investment-fcf.svg": "e16f685228dbca87b624026d3801816d3ebc12f7d0cebf6bf9b92536a98ffb88"
+    }
+  },
+  "production_changes": false,
+  "phase_a_changes": false,
+  "deployment_changes": false,
+  "email_changes": false,
+  "additional_automations": false,
+  "source_counts": {
+    "reconciled_periods": 9,
+    "rendered_numeric_observations": 64,
+    "source_verified_numeric_observations": 405,
+    "unavailable_or_conflicting": 83,
+    "unique_company_period_metric_numeric_observations": 401,
+    "vintage_differences": 10,
+    "xbrl_verified_numeric_observations": 341
+  },
+  "known_validation_warnings": [
+    "Inherited mixed JSON import-attribute warning in Vite build",
+    "Inherited large chunks in production build; no optimization performed"
+  ],
+  "source_gaps": [
+    "Oracle historical uncommenced lease schedules and current debt maturity details not comprehensively hydrated",
+    "Oracle exact later finance-lease principal not independently reproduced",
+    "Supplemental rendered sources stored as reviewed structured cells, not archived original HTML",
+    "Amazon H1 2026 total deferred revenue and dividend fields remain unavailable",
+    "Complete financing subcomponent and contract liquidity reconciliation remains partial"
+  ],
+  "limits": [
+    "No financial distress conclusion",
+    "No AI-specific CapEx allocation",
+    "No AI ROI",
+    "No full contractual liquidity coverage denominator"
+  ],
+  "git_delivery": "Final commit and push receipt recorded in final delivery report; no self-referential commit hash"
+}

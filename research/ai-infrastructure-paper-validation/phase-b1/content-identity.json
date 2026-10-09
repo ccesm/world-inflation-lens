@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-10-08",
+  "base_commit": "b90080dd9f94cee2afa6d94f17467bab0d46649f",
+  "counts": {
+    "reconciled_periods": 9,
+    "rendered_numeric_observations": 64,
+    "source_verified_numeric_observations": 405,
+    "unavailable_or_conflicting": 83,
+    "unique_company_period_metric_numeric_observations": 401,
+    "vintage_differences": 10,
+    "xbrl_verified_numeric_observations": 341
+  },
+  "files": {
+    "company-financials.csv": "1f4bc4732e668ab918948aaa78e83791e9cc1fa3ea152201e7e703ea96697a98",
+    "financial-observations.json": "8bcb88a6b157a6b0fb3161e8458eaed9e2df364aafecb1a23262e637a581bb75",
+    "funding-bridges.json": "085a34ff898489d932b1a01112e1f7d48db7b876648797cee3212611ac8edf4d",
+    "indicators.json": "2c6d9bb3619ef4c103ec72e7cf7ef1f4149e3cd18376a0b819a2e6569bbc204c",
+    "primary-source-register.json": "437b8e82b7de88261f85e4390d62f6298db853ec2fa70dfd9a3196986b0390e8",
+    "vintage-differences.json": "ac954b45605118f60410be51f27b6441a75c00f74dcc6ef3e45ff049a4827d00"
+  },
+  "implementation": "b1.1"
+}
