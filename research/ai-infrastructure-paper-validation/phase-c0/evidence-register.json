@@ -1,0 +1,573 @@
+{
+  "schemaVersion": "C0.1",
+  "asOf": "2026-10-09",
+  "evidence": [
+    {
+      "evidenceId": "EV-LBNL",
+      "claim": "LBNL provides modeled historical data-center electricity estimates and forward scenarios; it does not meter AI-only demand.",
+      "evidenceGrade": "E1",
+      "claimType": "PRIMARY_REPORT_SCOPE",
+      "indicatorRefs": [
+        "EN-DC-ESTIMATE"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "All data centers, uncertain shipments/utilization/efficiency; estimated history and scenarios are not realized AI load.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-EIA",
+      "claim": "EIA-861M provides retail sales/revenue data by state and customer sector; no AI-only meter category is qualified here.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "EN-SALES",
+        "EN-PRICE",
+        "EN-REVENUE"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Sampling, adjustments, marketer/delivery scope, composition and revisions. Price is average revenue per kWh.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-GENERATOR",
+      "claim": "EIA-860 separates proposed and operable generators; proposed supply is not realized energy.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "EN-CAPACITY"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Operable includes standby/out-of-service; generation and grid headroom differ from nameplate MW.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-CONSTRUCTION",
+      "claim": "Census defines data-center buildings separately within office construction and excludes racks/servers and land acquisition from construction.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "EN-CONSTRUCTION"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Detailed numeric series not captured; not total corporate CapEx or all-in campus cost.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "Definitions: excluded construction items 2 and 4; Office / Data center",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-BTOS-BREAK",
+      "claim": "BTOS broadened its AI question from producing goods/services to any business functions; collection changed 2025-11-17 and a separate series was released 2025-12-04.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "PR-BTOS-OLD",
+        "PR-BTOS-NEW"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Definition break, weighting, nonresponse and actual-versus-intended use; no spliced adoption trend.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "Official question-update PDF pp. 1–4",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-ULC",
+      "claim": "BLS defines unit labor cost using compensation relative to real output; greater productivity can offset compensation growth mechanically.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "PR-ULC",
+        "PR-OUTPUT-HOUR"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Accounting identity, not AI attribution or evidence of consumer price pass-through.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "https://www.bls.gov/opub/hom/opt/calculation.htm ; compensation/output and ULC calculations",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-PRODUCTIVITY-PAPER",
+      "claim": "The authors of Generative AI at Work report improved task productivity in a customer-support deployment, with heterogeneous effects.",
+      "evidenceGrade": "E1",
+      "claimType": "PRIMARY_STUDY_REPORTED_FINDING",
+      "indicatorRefs": [],
+      "sourceReliability": "Primary author submission, authors and abstract verified on arXiv; NBER abstract also identified.",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Author abstract reviewed; no full-study replication or identification audit. Working-paper versions and journal results not combined; no numerical productivity-to-GDP or inflation extrapolation.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "https://arxiv.org/abs/2304.11771v2 ; author-submitted abstract, revised 2024-11-06",
+      "observation": null,
+      "asOf": "2026-10-09",
+      "externalSources": [
+        {
+          "url": "https://www.nber.org/papers/w31161",
+          "document": "Generative AI at Work, working paper 31161",
+          "verificationStatus": "ABSTRACT_ONLY",
+          "documentDate": "2023-04",
+          "latestVersionVerified": false
+        },
+        {
+          "url": "https://arxiv.org/abs/2304.11771v2",
+          "document": "Generative AI at Work, author-submitted v2",
+          "verificationStatus": "ABSTRACT_VIEWED",
+          "documentDate": "2024-11-06",
+          "latestVersionVerified": false
+        }
+      ]
+    },
+    {
+      "evidenceId": "EV-JCURVE",
+      "claim": "Complementary intangible investment and delayed reorganization can change measured productivity timing.",
+      "evidenceGrade": "E0",
+      "claimType": "RESEARCH_MODEL",
+      "indicatorRefs": [],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Historical general-purpose-technology model; no measured future AI GDP gain or inflation forecast.",
+      "gradeJustification": "Mechanism remains untested; source discussion does not establish an effect.",
+      "sourceLocator": "https://www.nber.org/papers/w25148 ; DOI 10.3386/w25148, revised January 2020 abstract",
+      "observation": null,
+      "asOf": "2026-10-09",
+      "externalSources": [
+        {
+          "url": "https://www.nber.org/papers/w25148",
+          "document": "The Productivity J-Curve",
+          "verificationStatus": "ABSTRACT_ONLY",
+          "documentDate": "2020-01",
+          "latestVersionVerified": false
+        }
+      ]
+    },
+    {
+      "evidenceId": "EV-POLICY",
+      "claim": "Productivity supply gains can coexist with investment/income demand gains and incomplete competitive price pass-through.",
+      "evidenceGrade": "E0",
+      "claimType": "POLICY_MECHANISM",
+      "indicatorRefs": [],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Governor policy analysis, not a causal empirical estimate; no numerical forecast adopted.",
+      "gradeJustification": "Mechanism remains untested; source discussion does not establish an effect.",
+      "sourceLocator": "https://www.federalreserve.gov/newsevents/speech/cook20260928a.htm ; AI and the economy discussion",
+      "observation": null,
+      "asOf": "2026-10-09",
+      "externalSources": [
+        {
+          "url": "https://www.federalreserve.gov/newsevents/speech/cook20260928a.htm",
+          "document": "An Update on AI and the Economy, Governor Cook",
+          "verificationStatus": "DOCUMENT_VIEWED",
+          "documentDate": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "evidenceId": "EV-PJM",
+      "claim": "PJM removes embedded data-center load from baseline electricity histories before applying separate large-load adjustments.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "EN-PJM-FORECAST"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Forecast methodology, not proof that unfulfilled requests become load; historical source availability and utility crosswalk still need audit.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/load-forecast-supplement-2026.pdf ; printed pp.20,28,33–35",
+      "observation": null,
+      "asOf": "2026-10-09",
+      "externalSources": [
+        {
+          "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/load-forecast-supplement-2026.pdf",
+          "document": "2026 load forecast supplement",
+          "verificationStatus": "DOCUMENT_VIEWED",
+          "documentDate": "2026"
+        }
+      ]
+    },
+    {
+      "evidenceId": "EV-ICE",
+      "claim": "FRED identifies ICE Data Indices LLC as the corporate OAS provider and limits history to three years starting April 2026.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "FI-OAS"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Private licensing/history limits; do not count this as official original-provider statistics or qualified long historical data.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-YIELDS",
+      "claim": "H.15 nominal and TIPS Treasury yields are market measures; term premium is a separate modeled quantity.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "FI-NOMINAL",
+        "FI-REAL",
+        "FI-TERM"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Policy, issuance, risk appetite, liquidity, global saving and inflation news confound AI interpretation.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-INFLATION-MEASURES",
+      "claim": "CPI/PCE series are price indexes; survey expectations and market breakeven compensation measure different objects.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "IN-CPI",
+        "IN-CORE-CPI",
+        "IN-PCE",
+        "IN-CORE-PCE",
+        "IN-BREAKEVEN",
+        "IN-SCE",
+        "IN-SPF"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Breakeven includes inflation risk and liquidity; no AI effect or pure expectation extracted.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-TIC",
+      "claim": "TIC transactions changed reporting from Form S to expanded SLT; old files end January 2023.",
+      "evidenceGrade": "E1",
+      "claimType": "METADATA_OBSERVATION",
+      "indicatorRefs": [
+        "FI-TIC",
+        "FI-TIC-BREAK"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Definition/custody and valuation effects; foreign Treasury demand is not inferred from holdings changes alone.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-ORACLE-FUNDING",
+      "claim": "Reported corporate cash investment and financing coexist in the native period; the cash flow bridge is not AI-only financing attribution.",
+      "evidenceGrade": "E2",
+      "claimType": "INHERITED_DESCRIPTIVE",
+      "indicatorRefs": [
+        "FI-CORPORATE"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Deterministic extraction from locked B1/B2 records; offline reproduction",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Full source_refs resolve inherited observations; no macro inference, funding necessity or distress inference. Fiscal/calendar periods distinct.",
+      "gradeJustification": "E2 is arithmetic/descriptive reproduction only, not causal identification.",
+      "sourceLocator": "phase-b1/funding-bridges.json: company=oracle, label=FY2027Q1",
+      "observation": {
+        "company": "oracle",
+        "label": "FY2027Q1",
+        "basis": "NATIVE_FISCAL_QUARTER",
+        "start": "2026-06-01",
+        "end": "2026-08-31",
+        "filed": "2026-09-11",
+        "accession": "0001193125-26-389274",
+        "company_convention_fcf_usd": -5396000000,
+        "fcf_definition": "OCF - cash PP&E; customer financing prepayments remain inside reported OCF",
+        "source_refs": {
+          "cash_capex": "oracle:FY2027Q1:cash_capex",
+          "customer_prepayments_rounded_note": "oracle:FY2027Q1:customer_prepayments_rounded_note",
+          "debt_proceeds": "oracle:FY2027Q1:debt_proceeds",
+          "debt_repayments": "oracle:FY2027Q1:debt_repayments",
+          "financing_cf": "oracle:FY2027Q1:financing_cf",
+          "investing_cf": "oracle:FY2027Q1:investing_cf",
+          "ocf": "oracle:FY2027Q1:ocf",
+          "reported_cash_change": "oracle:FY2027Q1:reported_cash_change"
+        },
+        "reported_values_usd": {
+          "cash_capex": 28499000000,
+          "customer_prepayments_rounded_note": 11400000000,
+          "debt_proceeds": null,
+          "debt_repayments": 4202000000,
+          "financing_cf": 13111000000,
+          "investing_cf": -28580000000,
+          "ocf": 23103000000,
+          "reported_cash_change": 7645000000
+        },
+        "ocf_coverage_limitation": "Arithmetic coverage only; OCF also serves dividends, debt service and other cash uses. Cash is fungible; no dollar traced to AI investment.",
+        "extractionBasis": "Frozen B1 native-period cash bridge, qualified within B2 lineage; not all B1 supplemental fields republished."
+      },
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-AMAZON-FUNDING",
+      "claim": "Reported corporate cash investment and financing coexist in the native period; the cash flow bridge is not AI-only financing attribution.",
+      "evidenceGrade": "E2",
+      "claimType": "INHERITED_DESCRIPTIVE",
+      "indicatorRefs": [
+        "FI-CORPORATE"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Deterministic extraction from locked B1/B2 records; offline reproduction",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Full source_refs resolve inherited observations; no macro inference, funding necessity or distress inference. Fiscal/calendar periods distinct.",
+      "gradeJustification": "E2 is arithmetic/descriptive reproduction only, not causal identification.",
+      "sourceLocator": "phase-b1/funding-bridges.json: company=amazon, label=2026H1",
+      "observation": {
+        "company": "amazon",
+        "label": "2026H1",
+        "basis": "CALENDAR_HALF_YEAR",
+        "start": "2026-01-01",
+        "end": "2026-06-30",
+        "filed": "2026-07-31",
+        "accession": "0001018724-26-000026",
+        "company_convention_fcf_usd": -24891000000,
+        "fcf_definition": "OCF - (gross PP&E purchases - proceeds from PP&E sales and incentives); finance leases separate",
+        "source_refs": {
+          "cash_capex": "amazon:2026H1:cash_capex",
+          "customer_prepayments_rounded_note": "amazon:2026H1:customer_prepayments_rounded_note",
+          "debt_proceeds": "amazon:2026H1:debt_proceeds",
+          "debt_repayments": "amazon:2026H1:debt_repayments",
+          "financing_cf": "amazon:2026H1:financing_cf",
+          "investing_cf": "amazon:2026H1:investing_cf",
+          "ocf": "amazon:2026H1:ocf",
+          "ppe_sales_incentives": "amazon:2026H1:ppe_sales_incentives:rendered",
+          "reported_cash_change": "amazon:2026H1:reported_cash_change"
+        },
+        "reported_values_usd": {
+          "cash_capex": 98411000000,
+          "customer_prepayments_rounded_note": null,
+          "debt_proceeds": 66998000000,
+          "debt_repayments": 2752000000,
+          "financing_cf": 62913000000,
+          "investing_cf": -143457000000,
+          "ocf": 71419000000,
+          "ppe_sales_incentives": 2101000000,
+          "reported_cash_change": -9179000000
+        },
+        "ocf_coverage_limitation": "Arithmetic coverage only; OCF also serves dividends, debt service and other cash uses. Cash is fungible; no dollar traced to AI investment.",
+        "extractionBasis": "Frozen B1 native-period cash bridge, qualified within B2 lineage; not all B1 supplemental fields republished."
+      },
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-B2-GAPS",
+      "claim": "B2 retains unresolved lease-principal, customer financing and maturity-window gaps; commitments, borrowing and exposure must not be summed.",
+      "evidenceGrade": "E1",
+      "claimType": "INHERITED_AUDIT",
+      "indicatorRefs": [
+        "FI-CORPORATE"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Oracle/Amazon do not generalize to all five firms; recognized liabilities vs future commitments vs cash flows differ.",
+      "gradeJustification": "E1 authenticates the stated source observation, not an effect of AI.",
+      "sourceLocator": "phase-b2/gap-register.json; customer-financing.json; reconciliation.json",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-CONSTRAINT",
+      "claim": "Scarce short-run generation/grid/equipment supply may raise relative input prices.",
+      "evidenceGrade": "E0",
+      "claimType": "UNTESTED_MECHANISM",
+      "indicatorRefs": [
+        "EN-SALES",
+        "EN-CAPACITY",
+        "EN-EQUIPMENT-PPI"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Conditional economic reasoning only. No descriptive model, association estimate or causal design executed in C0.",
+      "gradeJustification": "Mechanism remains untested; source discussion does not establish an effect.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-REB",
+      "claim": "Efficiency can lower energy per task yet expanded use can offset aggregate energy savings.",
+      "evidenceGrade": "E0",
+      "claimType": "UNTESTED_MECHANISM",
+      "indicatorRefs": [
+        "EN-DC-ESTIMATE"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Conditional economic reasoning only. No descriptive model, association estimate or causal design executed in C0.",
+      "gradeJustification": "Mechanism remains untested; source discussion does not establish an effect.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-REAL-RATE",
+      "claim": "Investment demand could affect equilibrium real rates conditional on saving, policy and global flows.",
+      "evidenceGrade": "E0",
+      "claimType": "UNTESTED_MECHANISM",
+      "indicatorRefs": [
+        "FI-REAL",
+        "FI-TIC",
+        "FI-TREASURY-SUPPLY"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Conditional economic reasoning only. No descriptive model, association estimate or causal design executed in C0.",
+      "gradeJustification": "Mechanism remains untested; source discussion does not establish an effect.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-PASSTHROUGH",
+      "claim": "Lower unit production costs need not lower consumer inflation when margins, wages or demand rise.",
+      "evidenceGrade": "E0",
+      "claimType": "UNTESTED_MECHANISM",
+      "indicatorRefs": [
+        "PR-ULC",
+        "IN-CORE-PCE"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Conditional economic reasoning only. No descriptive model, association estimate or causal design executed in C0.",
+      "gradeJustification": "Mechanism remains untested; source discussion does not establish an effect.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-LOCAL",
+      "claim": "Local electricity relative-price changes may remain undetectable in national inflation aggregates.",
+      "evidenceGrade": "E0",
+      "claimType": "UNTESTED_MECHANISM",
+      "indicatorRefs": [
+        "EN-PRICE",
+        "IN-CPI"
+      ],
+      "sourceReliability": "Authenticated official institution / source scope checked",
+      "dataReproducibility": "Reviewed metadata/source note; no new analytical series build",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "Only the stated population, period and definition; not aggregate AI causality",
+      "uncertainty": "Conditional economic reasoning only. No descriptive model, association estimate or causal design executed in C0.",
+      "gradeJustification": "Mechanism remains untested; source discussion does not establish an effect.",
+      "sourceLocator": "See indicator sourceLocator and officialSourceURL",
+      "observation": null,
+      "asOf": "2026-10-09"
+    },
+    {
+      "evidenceId": "EV-PJM-REVISION",
+      "claim": "PJM reduced its near-term 2026 load forecast relative to the previous vintage after economic/EV updates and stricter large-load vetting. This is a forecast revision, not an observed reduction in AI demand.",
+      "evidenceGrade": "E1",
+      "claimType": "PRIMARY_FORECAST_REVISION",
+      "indicatorRefs": [
+        "EN-PJM-FORECAST"
+      ],
+      "sourceReliability": "Official RTO publication",
+      "dataReproducibility": "Official source-vintage comparison described; no independent numerical forecast reproduction",
+      "statisticalRobustness": "NOT_TESTED_IN_C0",
+      "causalIdentification": "NONE",
+      "externalValidity": "PJM forecast and its vintage only",
+      "uncertainty": "Not realized load, not an AI causal effect; other demand assumptions changed.",
+      "gradeJustification": "E1 verifies the published forecast-revision statement, not the future quantities.",
+      "sourceLocator": "https://insidelines.pjm.com/pjms-updated-20-year-forecast-continues-to-see-significant-long-term-load-growth/ ; January 14, 2026, Changes From 2025 / large-load vetting",
+      "externalSources": [
+        {
+          "url": "https://insidelines.pjm.com/pjms-updated-20-year-forecast-continues-to-see-significant-long-term-load-growth/",
+          "document": "PJM Updated 20-Year Forecast",
+          "verificationStatus": "DOCUMENT_VIEWED",
+          "documentDate": "2026-01-14"
+        }
+      ],
+      "observation": null,
+      "asOf": "2026-10-09"
+    }
+  ],
+  "numericalInflationForecasts": [],
+  "newEmpiricalEstimates": []
+}

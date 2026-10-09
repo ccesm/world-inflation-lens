@@ -1,0 +1,677 @@
+{
+  "asOf": "2026-10-09",
+  "capturePolicy": "Reviewed metadata summaries, not archived raw documents or numerical histories. Source-page spot checks are explicitly manual. No access success is inferred from a search snippet alone for a quantitative effect.",
+  "checks": [
+    {
+      "indicatorId": "EN-SALES",
+      "url": "https://www.eia.gov/electricity/data/eia861m/index.php",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "EIA",
+        "originalDataset": "EIA-861M",
+        "exactSeriesIdentifier": "Form EIA-861M: sales",
+        "unit": "MWh",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED"
+      },
+      "locator": "Current/historical data; sector changes description",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-PRICE",
+      "url": "https://www.eia.gov/electricity/data/eia861m/index.php",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "EIA",
+        "originalDataset": "EIA-861M / Electric Power Monthly",
+        "exactSeriesIdentifier": "Form EIA-861M: revenue / sales",
+        "unit": "cents/kWh",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED"
+      },
+      "locator": "Sales/revenue/average price metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-REVENUE",
+      "url": "https://www.eia.gov/electricity/data/eia861m/index.php",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "EIA",
+        "originalDataset": "EIA-861M",
+        "exactSeriesIdentifier": null,
+        "unit": "USD",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-GENERATION",
+      "url": "https://www.eia.gov/electricity/data/eia923/index.php",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "EIA",
+        "originalDataset": "EIA-923",
+        "exactSeriesIdentifier": null,
+        "unit": "MWh and native fuel units",
+        "frequency": "MONTHLY / ANNUAL",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-CAPACITY",
+      "url": "https://www.eia.gov/electricity/data/eia860/",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "EIA",
+        "originalDataset": "EIA-860",
+        "exactSeriesIdentifier": "Form EIA-860: Operable / Proposed / Retired and Canceled",
+        "unit": "MW",
+        "frequency": "ANNUAL",
+        "seasonalAdjustment": null
+      },
+      "locator": "Generator tabs and construction cost description",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-DC-ESTIMATE",
+      "url": "https://bies.lbl.gov/publications/2024-lbnl-data-center-energy-usage-report",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "LBNL / DOE",
+        "originalDataset": "2024 United States Data Center Energy Usage Report",
+        "exactSeriesIdentifier": "DOI 10.71468/P1WC7Q",
+        "unit": "TWh",
+        "frequency": "REPORT",
+        "seasonalAdjustment": null
+      },
+      "locator": "Report abstract / publication date 2024-12-19",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-PJM-FORECAST",
+      "url": "https://www.pjm.com/planning/resource-adequacy-planning/load-forecast-dev-process.aspx",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "PJM",
+        "originalDataset": "Load Forecast Development Process",
+        "exactSeriesIdentifier": null,
+        "unit": "MW",
+        "frequency": "ANNUAL_FORECAST",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-PJM-LMP",
+      "url": "https://www.pjm.com/",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "PJM",
+        "originalDataset": "Data Miner / wholesale market data",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "EN-FERC",
+      "url": "https://www.ferc.gov/industries-data/electric/resources/industry-forms/form-no-1-annual-report-major-electric-utility",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "FERC",
+        "originalDataset": "Form 1",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": "ANNUAL",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-CONSTRUCTION",
+      "url": "https://www.census.gov/construction/c30/definitions.html",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Census Bureau",
+        "originalDataset": "Value of Construction Put in Place",
+        "exactSeriesIdentifier": null,
+        "unit": "USD",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Definitions: exclusions; Office / Data center",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "EN-CONSTRUCTION-TABLE",
+      "url": "https://www.census.gov/construction/c30/data/index.html",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "Census Bureau",
+        "originalDataset": "Construction Spending data catalog",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "EN-EQUIPMENT-PPI",
+      "url": "https://www.bls.gov/ppi/data-overview.htm",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "PPI commodity / industry tables",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "EN-COMPUTE-PPI",
+      "url": "https://www.bls.gov/ppi/tables/home.htm",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "Producer Price Index",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "EN-WAGES",
+      "url": "https://www.bls.gov/",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "CES / Employment Cost Index",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "EN-WEATHER",
+      "url": null,
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "NOAA",
+        "originalDataset": "Climate observations",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "EN-GAS",
+      "url": "https://www.eia.gov/electricity/data/eia923/index.php",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "EIA",
+        "originalDataset": "Natural gas / EIA-923",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "FI-CORPORATE",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "SEC / company IR",
+        "originalDataset": "Frozen Phase A/B1/B2 qualified source registers",
+        "exactSeriesIdentifier": null,
+        "unit": "USD",
+        "frequency": "Native fiscal quarter / year",
+        "seasonalAdjustment": null
+      },
+      "locator": "phase-a/source-register.json; phase-b1/funding-bridges.json; phase-b2/observations.json",
+      "qualificationBoundary": "Frozen inherited artifacts and hashes verified offline at exact B2; underlying raw/manual capture limitations retained."
+    },
+    {
+      "indicatorId": "FI-NOMINAL",
+      "url": "https://fred.stlouisfed.org/series/DGS10",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Board of Governors, Federal Reserve",
+        "originalDataset": "H.15; FRED distributor",
+        "exactSeriesIdentifier": "DGS10",
+        "unit": "percent",
+        "frequency": "DAILY",
+        "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED"
+      },
+      "locator": "FRED Notes: Source / H.15 / Units",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "FI-REAL",
+      "url": "https://fred.stlouisfed.org/series/DFII10",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Board of Governors, Federal Reserve",
+        "originalDataset": "H.15; FRED distributor",
+        "exactSeriesIdentifier": "DFII10",
+        "unit": "percent",
+        "frequency": "DAILY",
+        "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED"
+      },
+      "locator": "FRED Notes: Source / H.15 / Units",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "FI-TERM",
+      "url": "https://www.newyorkfed.org/research/data_indicators/term-premia-tabs",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Federal Reserve Bank of New York",
+        "originalDataset": "Adrian-Crump-Moench estimates",
+        "exactSeriesIdentifier": null,
+        "unit": "percent",
+        "frequency": "DAILY / MONTHLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "FI-OAS",
+      "url": "https://fred.stlouisfed.org/series/BAMLC0A0CM",
+      "status": "INSUFFICIENT DOCUMENTATION",
+      "reviewedMetadata": {
+        "primaryInstitution": "ICE Data Indices LLC",
+        "originalDataset": "ICE BofA US Corporate Index; FRED distributor",
+        "exactSeriesIdentifier": "BAMLC0A0CM",
+        "unit": "percent",
+        "frequency": "DAILY",
+        "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED"
+      },
+      "locator": "FRED Source and April 2026 history limitation",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "FI-Z1",
+      "url": "https://www.federalreserve.gov/releases/z1/",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Board of Governors, Federal Reserve",
+        "originalDataset": "Financial Accounts Z.1",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": "QUARTERLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "FI-TIC",
+      "url": "https://home.treasury.gov/data/treasury-international-capital-tic-system/",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "US Treasury",
+        "originalDataset": "Treasury International Capital",
+        "exactSeriesIdentifier": null,
+        "unit": "USD",
+        "frequency": "MONTHLY / QUARTERLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "FI-TIC-BREAK",
+      "url": "https://home.treasury.gov/data/treasury-international-capital-tic-system-home-page/tic-forms-instructions/securities-a-us-transactions-with-foreign-residents-in-long-term-securities",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "US Treasury",
+        "originalDataset": "TIC Securities (A)",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Form S / SLT explanatory notes",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "FI-SLOOS",
+      "url": "https://www.federalreserve.gov/",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "Board of Governors, Federal Reserve",
+        "originalDataset": "Senior Loan Officer Opinion Survey",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "FI-TREASURY-SUPPLY",
+      "url": "https://home.treasury.gov/",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "US Treasury",
+        "originalDataset": "Treasury auctions / fiscal data",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "PR-BTOS-OLD",
+      "url": "https://www.census.gov/hfp/btos/downloads/AI%20Question%20Wording%20Updates.pdf",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Census Bureau",
+        "originalDataset": "BTOS AI Core Questions (Original)",
+        "exactSeriesIdentifier": null,
+        "unit": "percent of businesses",
+        "frequency": "BIWEEKLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Pages 1–4: question change and historical series",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "PR-BTOS-NEW",
+      "url": "https://www.census.gov/hfp/btos/downloads/AI%20Question%20Wording%20Updates.pdf",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Census Bureau",
+        "originalDataset": "BTOS Core Questions, revised AI series",
+        "exactSeriesIdentifier": null,
+        "unit": "percent of businesses",
+        "frequency": "BIWEEKLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Page 1: independent new series",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "PR-BTOS-DETAIL",
+      "url": "https://www.census.gov/hfp/btos/data_downloads?tab=marketing",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "Census Bureau",
+        "originalDataset": "BTOS 2026 AI supplement",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "PR-OUTPUT-HOUR",
+      "url": "https://fred.stlouisfed.org/series/OPHNFB",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "Productivity and Costs; FRED distributor",
+        "exactSeriesIdentifier": "OPHNFB",
+        "unit": "index 2017=100",
+        "frequency": "QUARTERLY",
+        "seasonalAdjustment": "SEASONALLY_ADJUSTED"
+      },
+      "locator": "FRED Source / Units / Frequency",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "PR-ULC",
+      "url": "https://fred.stlouisfed.org/series/ULCNFB",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "Productivity and Costs; FRED distributor",
+        "exactSeriesIdentifier": "ULCNFB",
+        "unit": "index 2017=100",
+        "frequency": "QUARTERLY",
+        "seasonalAdjustment": "SEASONALLY_ADJUSTED"
+      },
+      "locator": "FRED Source / Units / Frequency",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "PR-INDUSTRY",
+      "url": "https://www.bls.gov/opub/hom/inp/concepts.htm",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "Industry productivity methodology",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": "ANNUAL",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "PR-GDP",
+      "url": "https://fred.stlouisfed.org/series/GDPC1",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "BEA",
+        "originalDataset": "NIPA; FRED distributor",
+        "exactSeriesIdentifier": "GDPC1 / BEA A191RX",
+        "unit": "billions chained 2017 USD",
+        "frequency": "QUARTERLY",
+        "seasonalAdjustment": "SEASONALLY_ADJUSTED_ANNUAL_RATE"
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "PR-POTENTIAL",
+      "url": null,
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "CBO / Federal Reserve",
+        "originalDataset": "Potential output models",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "IN-CPI",
+      "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "Consumer Price Index",
+        "exactSeriesIdentifier": "CPIAUCSL",
+        "unit": "index 1982–1984=100",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": "SEASONALLY_ADJUSTED"
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "IN-CORE-CPI",
+      "url": "https://fred.stlouisfed.org/series/CPILFESL",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "Consumer Price Index",
+        "exactSeriesIdentifier": "CPILFESL",
+        "unit": "index 1982–1984=100",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": "SEASONALLY_ADJUSTED"
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "IN-PCE",
+      "url": "https://fred.stlouisfed.org/series/PCEPI",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "BEA",
+        "originalDataset": "Personal Income and Outlays",
+        "exactSeriesIdentifier": "PCEPI",
+        "unit": "index 2017=100",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": "SEASONALLY_ADJUSTED"
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "IN-CORE-PCE",
+      "url": "https://fred.stlouisfed.org/series/PCEPILFE",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "BEA",
+        "originalDataset": "Personal Income and Outlays",
+        "exactSeriesIdentifier": "PCEPILFE",
+        "unit": "index 2017=100",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": "SEASONALLY_ADJUSTED"
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "IN-BREAKEVEN",
+      "url": "https://fred.stlouisfed.org/series/T10YIE",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Federal Reserve Bank of St. Louis",
+        "originalDataset": "Interest Rate Spreads; Treasury underlying inputs",
+        "exactSeriesIdentifier": "T10YIE",
+        "unit": "percent",
+        "frequency": "DAILY",
+        "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED"
+      },
+      "locator": "FRED Notes: underlying DGS10 / DFII10, Treasury data basis",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "IN-SCE",
+      "url": "https://www.newyorkfed.org/microeconomics/sce",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Federal Reserve Bank of New York",
+        "originalDataset": "Survey of Consumer Expectations",
+        "exactSeriesIdentifier": null,
+        "unit": "percent",
+        "frequency": "MONTHLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "IN-SPF",
+      "url": "https://www.philadelphiafed.org/surveys-and-data/pce10",
+      "status": "VERIFIED — MANUAL ACCESS",
+      "reviewedMetadata": {
+        "primaryInstitution": "Federal Reserve Bank of Philadelphia",
+        "originalDataset": "Survey of Professional Forecasters",
+        "exactSeriesIdentifier": "PCE10",
+        "unit": "percent",
+        "frequency": "QUARTERLY",
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Official document viewed and metadata checked; no programmatic payload or complete history certified."
+    },
+    {
+      "indicatorId": "IN-ELECTRIC-CPI",
+      "url": "https://www.bls.gov/",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "BLS",
+        "originalDataset": "CPI electricity item",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    },
+    {
+      "indicatorId": "IN-POLICY",
+      "url": "https://www.federalreserve.gov/",
+      "status": "CANDIDATE — UNVERIFIED",
+      "reviewedMetadata": {
+        "primaryInstitution": "Board of Governors, Federal Reserve",
+        "originalDataset": "Policy target / effective rates",
+        "exactSeriesIdentifier": null,
+        "unit": null,
+        "frequency": null,
+        "seasonalAdjustment": null
+      },
+      "locator": "Program description / metadata",
+      "qualificationBoundary": "Discovery candidate only; required series/definition/payload remains unqualified."
+    }
+  ],
+  "failedAccess": [
+    {
+      "url": "https://www.census.gov/construction/c30/",
+      "result": "404 via web reader",
+      "alternative": "https://www.census.gov/construction/c30/data/index.html"
+    },
+    {
+      "url": "https://www.bea.gov/data/prices-inflation/personal-consumption-expenditures-price-index",
+      "result": "Web reader error",
+      "alternative": "FRED PCEPI metadata identifies BEA original provider"
+    },
+    {
+      "url": "https://www.nber.org/system/files/working_papers/w31161/w31161.pdf",
+      "result": "Web reader error",
+      "alternative": "Primary NBER author abstract only; no full-study causal grade"
+    },
+    {
+      "url": "https://academic.oup.com/qje/article/140/2/889/7990658",
+      "result": "Web reader error",
+      "alternative": "No published-version numerical result used"
+    }
+  ],
+  "literatureAlternative": {
+    "url": "https://arxiv.org/abs/2304.11771v2",
+    "result": "Primary author-submitted abstract reviewed; causal identification/replication not qualified."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "implementationVersion": "C0.1",
+  "baseSHA": "596e7e69560ee17be0b5412e852e74032533f49a",
+  "asOf": "2026-10-09",
+  "sha256ByPath": {
+    "PHASE_C0_MACRO_TRANSMISSION_REPORT.md": "1da1ded5921e96231c0b8e6190578065cff2c636d5d3e0b3b70f646527fb333b",
+    "PHASE_C1_RESEARCH_PLAN.md": "516e1f2ef6b36e1828a6a33427456a82bc62e9ebb0eef24015ca3b5e5eb3f8bb",
+    "baseline-lock.json": "6855e4aba3744157040c075a2ac5752ee88cc523ffe81c5064d2f44bbe58d14b",
+    "evidence-register.json": "2bbeebb6712889843a7529cec9e1d280c44ac9914a0f42e8e9b5d62c2da37fd6",
+    "gap-register.json": "331ea1006b70163bca7a77f9628c975eacbed4ea7f6a67899b5792af4f5c8aca",
+    "hypothesis-matrix.json": "160cd27d347f7a687bec1247d0bb7dfdeb5442a6f81514bf195e547d981c3b7d",
+    "macro-transmission-map.md": "7092137c3a55e67b64565939fcc237354fccfae307c7848b836c42e85bce7d6a",
+    "methodology.md": "1e69f382b086410f54d0eadf1462e64cc437ef9937284128bcd5e44f79867850",
+    "official-data-source-register.json": "5f401070f5c1c4eb84ce0b71e2a2b19db8ecd1598c95d9040a73fd32d6c176f9",
+    "reproduce.py": "02c122cdf3ddf187c3d51deea94876bcde1be6d96370247bad30e7fc0461a111",
+    "source-verification-notes.json": "bbc6385559dcd801f6dd640ee0c6b89d8d3ddf610e005f0b72b2d360d2b0fa28",
+    "test_phase_c0.py": "a80f6b85f9141d02c7ac72e30e586dff7e3760dcdeaef315d1965f613237b1eb",
+    "validate.py": "108475cb63547a217a030fb95c3e8eea5d11a3f735182a79b22d884f916a7deb"
+  },
+  "contentHash": "3b0a3a882553d6920eeec84840c93e2c6a5f61b7b24aa1a89a27ddb364edd201"
+}

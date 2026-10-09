@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "C0.1",
+  "asOf": "2026-10-09",
+  "gaps": [
+    {
+      "gapId": "INHERITED-B2-H01",
+      "origin": "B2",
+      "severity": "HIGH",
+      "status": "OPEN_SOURCE_GAP",
+      "description": "Total cash paid and accrued interest are not a qualified cash principal split. Keep principal null; obtain original supplemental cash disclosures or contract-specific reconciliation.",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+      "sourceRef": "phase-b2/gap-register.json#B2-H01",
+      "nextAction": "Preserve unchanged; resolve only in separately authorized financial research."
+    },
+    {
+      "gapId": "INHERITED-B2-H02",
+      "origin": "B2",
+      "severity": "HIGH",
+      "status": "OPEN_SOURCE_GAP",
+      "description": "Named-customer cash amounts, refund/repayment rights and complete contract-liability rollforwards remain unavailable for both issuers. Oracle has a $34M stock-versus-CF residual; no balancing plug.",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+      "sourceRef": "phase-b2/gap-register.json#B2-H02",
+      "nextAction": "Preserve unchanged; resolve only in separately authorized financial research."
+    },
+    {
+      "gapId": "INHERITED-B2-H03",
+      "origin": "B2",
+      "severity": "HIGH",
+      "status": "OPEN_SOURCE_GAP",
+      "description": "Quarter-end native remainder/year columns are not rolling 12 months. No exhaustive all-obligation denominator, intra-period liquidity forecast or distress classification can be supported.",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+      "sourceRef": "phase-b2/gap-register.json#B2-H03",
+      "nextAction": "Preserve unchanged; resolve only in separately authorized financial research."
+    },
+    {
+      "gapId": "INHERITED-B2-M01",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "status": "OPEN_SOURCE_GAP",
+      "description": "Local SEC HTTP403 stopped retrieval. Official rendered tables reviewed through browser tool; selected primary XBRL contexts and numeric extracts archived, not original filing HTML. Manual fields cannot yet be re-read independently offline.",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+      "sourceRef": "phase-b2/gap-register.json#B2-M01",
+      "nextAction": "Preserve unchanged; resolve only in separately authorized financial research."
+    },
+    {
+      "gapId": "INHERITED-B2-M02",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "status": "OPEN_SOURCE_GAP",
+      "description": "Original tagged buckets exist but rendered schedule-total controls and hedge-adjustment scope are unqualified. No equality forced to net carrying debt.",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+      "sourceRef": "phase-b2/gap-register.json#B2-M02",
+      "nextAction": "Preserve unchanged; resolve only in separately authorized financial research."
+    },
+    {
+      "gapId": "INHERITED-B2-M03",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "status": "OPEN_SOURCE_GAP",
+      "description": "Oracle agreement-defined covenant not independently computed; Amazon lender approvals and draw after September30 unknown. Oracle lessor guarantee after September maturity unverified. June30 subsequent note issue remains separate.",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+      "sourceRef": "phase-b2/gap-register.json#B2-M03",
+      "nextAction": "Preserve unchanged; resolve only in separately authorized financial research."
+    },
+    {
+      "gapId": "INHERITED-B2-M04",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "status": "OPEN_SOURCE_GAP",
+      "description": "Corporate purchases, power, future leases, guarantees and unpaid PP&E may concern common assets or contracts. No complete overlap map or AI-only allocation; not added.",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+      "sourceRef": "phase-b2/gap-register.json#B2-M04",
+      "nextAction": "Preserve unchanged; resolve only in separately authorized financial research."
+    },
+    {
+      "gapId": "INHERITED-B2-M05",
+      "origin": "B2",
+      "severity": "MEDIUM",
+      "status": "OPEN_SOURCE_GAP",
+      "description": "Original native purchase schedules broaden from content/WholeFoods to energy/software and PP&E. Changes cannot be interpreted as pure AI-capital growth.",
+      "blocks": "FULL_CONTRACT_OR_DISTRESS_CONCLUSION",
+      "sourceRef": "phase-b2/gap-register.json#B2-M05",
+      "nextAction": "Preserve unchanged; resolve only in separately authorized financial research."
+    },
+    {
+      "gapId": "C0-H01",
+      "origin": "C0",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "description": "Actual site energization, AI share and realized load are not qualified exposure data.",
+      "blocks": "CAUSAL_AI_ELECTRICITY_ATTRIBUTION",
+      "nextAction": "Qualify regulator/utility site history; downgrade to data-center descriptive study if AI share absent."
+    },
+    {
+      "gapId": "C0-H02",
+      "origin": "C0",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "description": "No defensible exogenous AI investment shock or national no-AI counterfactual.",
+      "blocks": "CAUSAL_AGGREGATE_INFLATION_OR_REAL_RATE",
+      "nextAction": "No aggregate causal estimate or forecast; register future identification design."
+    },
+    {
+      "gapId": "C0-H03",
+      "origin": "C0",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "description": "Firm/task adoption effects cannot currently be joined to consumer-price pass-through.",
+      "blocks": "MACRO_PRODUCTIVITY_DISINFLATION_ATTRIBUTION",
+      "nextAction": "Qualify matched industry output/cost/price and exposure data."
+    },
+    {
+      "gapId": "C0-M01",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "description": "Weather, fuel, detailed input-price IDs, grid constraints and region/utility crosswalks not fully qualified.",
+      "blocks": "C1_ESTIMATION_START",
+      "nextAction": "Finish source and geography audit; do not guess or fill."
+    },
+    {
+      "gapId": "C0-M02",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "description": "BTOS question definition break and short comparable new sample.",
+      "blocks": "SPLICED_ADOPTION_TREND",
+      "nextAction": "Analyze regimes separately; audit weights and sampling."
+    },
+    {
+      "gapId": "C0-M03",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "description": "ICE OAS privately sourced, licensed and FRED long history restricted from April 2026.",
+      "blocks": "LONG_CREDIT_PANEL",
+      "nextAction": "Obtain lawful full history or use official sector debt descriptively."
+    },
+    {
+      "gapId": "C0-M04",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "description": "Metadata manual checks do not freeze full macro histories, revisions or first publication vintages.",
+      "blocks": "REAL_TIME_EMPIRICAL_REPRODUCTION",
+      "nextAction": "Capture official complete files with hashes in C1 source gate."
+    },
+    {
+      "gapId": "C0-M05",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "description": "Primary author abstract now viewed via arXiv v2; full-paper identification audit and replication materials remain unqualified.",
+      "blocks": "E3_E4_LITERATURE_GRADE",
+      "nextAction": "Acquire full primary study and assess selection/pretrends/robustness before grade upgrade."
+    },
+    {
+      "gapId": "C0-M06",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "description": "Corporate financing evidence detailed only for Oracle and Amazon.",
+      "blocks": "FIVE_COMPANY_GENERALIZATION",
+      "nextAction": "Separate financial extension; retain exact native fiscal periods."
+    },
+    {
+      "gapId": "C0-M07",
+      "origin": "C0",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "description": "Detailed Census construction numeric history and deflator need audit; servers/racks excluded.",
+      "blocks": "ALL_IN_AI_CONSTRUCTION_MEASURE",
+      "nextAction": "Qualify exact workbook rows and vintages; no media numbers."
+    }
+  ]
+}

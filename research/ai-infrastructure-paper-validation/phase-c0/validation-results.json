@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "C0.1",
+  "baseSHA": "596e7e69560ee17be0b5412e852e74032533f49a",
+  "branch": "codex/ai-infra-macro-transmission-phase-c0",
+  "validationDate": "2026-10-09",
+  "executionEnvironment": {
+    "node": "24.19.0",
+    "npm": "11.17.0"
+  },
+  "tests": {
+    "phaseA": {
+      "passed": 13,
+      "failed": 0,
+      "scope": "C0 worktree, inherited unchanged"
+    },
+    "phaseB1": {
+      "passed": 43,
+      "failed": 0,
+      "scope": "Clean detached exact B1 worktree, including inherited Git scope guard"
+    },
+    "phaseB2": {
+      "passed": 51,
+      "failed": 0,
+      "scope": "Exact B2-based C0 worktree before C0 staging, including inherited Git scope guard"
+    },
+    "phaseC0": {
+      "passed": 38,
+      "failed": 0
+    }
+  },
+  "build": "PASS",
+  "verify": "PASS",
+  "freshProcessRebuild": "IDENTICAL",
+  "inheritedTrackedFilesLocked": 463,
+  "productionModified": false,
+  "phaseA_B1_B2Modified": false,
+  "newEmpiricalAnalysisExecuted": false,
+  "forecastImplemented": false,
+  "phaseC1Started": false,
+  "indicatorCount": 43,
+  "verifiedMetadataEntries": 29,
+  "distinctVerifiedOfficialURLs": 26,
+  "unresolvedEntries": 14,
+  "evidenceEntries": 23,
+  "evidenceGradeDistribution": {
+    "E0": 7,
+    "E1": 14,
+    "E2": 2,
+    "E3": 0,
+    "E4": 0
+  },
+  "all17TransmissionHypotheses": "E0",
+  "contentHash": "3b0a3a882553d6920eeec84840c93e2c6a5f61b7b24aa1a89a27ddb364edd201",
+  "logs": {
+    "test": "c8af46b0c0ff386f9cd71a86f01fbd5f6c8e5d8c847147aa9a1f4425e2407919",
+    "build": "1367df2c45be3ff13e4282375966b20dad8732d85c86e10c441f7ba61e6ffc03",
+    "verify": "5d89001f1a2993969f0d467deebf72091d6731304adb5ba700531df384325b66"
+  },
+  "scientificLimitations": [
+    "No qualified AI-only energized regional load exposure",
+    "No causal aggregate AI inflation/real-rate counterfactual",
+    "Productivity-to-consumer-price linkage unqualified",
+    "All eight inherited B2 gaps preserved",
+    "Official metadata verification is not complete numerical history reproduction"
+  ],
+  "inheritedMaintenance": "source-map-js advisory unchanged, outside C0 scope; build emits existing chunk-size warning",
+  "finalCommitIdentity": "Recorded in final delivery; omitted from self-referential content identity",
+  "classification": "COMPLETE — FRAMEWORK VALIDATED",
+  "classificationBasis": "Required framework artifacts, individually scoped evidence, all 17 competing hypotheses, source feasibility, inherited gaps and exactly one gated empirical plan reviewed. No E3/E4 or forecasts claimed; completion applies to C0, not unresolved C1 acquisition/identification."
+}

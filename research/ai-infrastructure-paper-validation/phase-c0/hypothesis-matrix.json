@@ -1,0 +1,939 @@
+{
+  "schemaVersion": "C0.1",
+  "asOf": "2026-10-09",
+  "horizons": {
+    "short": "0–3 years",
+    "medium": "3–7 years",
+    "long": "7–20 years"
+  },
+  "hypotheses": [
+    {
+      "hypothesisId": "E1",
+      "workstream": "ENERGY",
+      "researchQuestion": "Does actual data-center energization raise regional electricity sales/load?",
+      "transmissionMechanism": "Energized compute and cooling add load; planned capacity alone does not.",
+      "expectedDirection": "POSITIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years"
+      ],
+      "dependentVariable": "Weather-adjusted commercial/industrial electricity sales and peak load",
+      "explanatoryVariables": [
+        "Qualified energization dates",
+        "Observed contracted/realized load"
+      ],
+      "mediatingVariables": [
+        "Utilization",
+        "Self-generation"
+      ],
+      "confoundingFactors": [
+        "Natural gas and other fuel costs",
+        "Heating/cooling weather",
+        "Utility tariff/rate-case changes",
+        "Generation mix and outages",
+        "EV/industrial electrification",
+        "Migration and business cycles",
+        "Self-generation and energy efficiency"
+      ],
+      "supportingEvidence": [
+        "EV-EIA",
+        "EV-LBNL",
+        "EV-PJM"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-REB"
+          ],
+          "statement": "Efficiency, onsite generation and delayed commissioning can weaken net grid demand; not a measured negative AI effect."
+        },
+        {
+          "type": "OBSERVATION_LIMIT",
+          "evidenceRefs": [
+            "EV-PJM-REVISION"
+          ],
+          "statement": "Official near-term forecast was reduced after demand assumption updates and request vetting; not evidence of realized falling AI demand."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "EN-SALES",
+        "EN-GENERATION",
+        "EN-WEATHER",
+        "EN-PJM-FORECAST"
+      ],
+      "proposedValidationMethod": "Regional descriptive event panel first; causal event study only after exposure and counterfactual gates.",
+      "falsificationCriteria": "No robust post-energization excess relative to comparable regions with adequate precision, or exposure timing is not verified.",
+      "knownLimitations": "All data-center use differs from AI use; utility/state boundaries can dilute effect.",
+      "nextResearchAction": "Qualify site-date-load and utility crosswalk before C1 estimation."
+    },
+    {
+      "hypothesisId": "E2",
+      "workstream": "ENERGY",
+      "researchQuestion": "Do pre-existing grid constraints amplify regional price pressure?",
+      "transmissionMechanism": "Peak scarcity/congestion and regulated cost recovery mediate prices.",
+      "expectedDirection": "POSITIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years"
+      ],
+      "dependentVariable": "Wholesale LMP and separately average retail rates",
+      "explanatoryVariables": [
+        "Actual load growth",
+        "Pre-treatment constrained capacity"
+      ],
+      "mediatingVariables": [
+        "Congestion",
+        "Rate cases"
+      ],
+      "confoundingFactors": [
+        "Natural gas and other fuel costs",
+        "Heating/cooling weather",
+        "Utility tariff/rate-case changes",
+        "Generation mix and outages",
+        "EV/industrial electrification",
+        "Migration and business cycles",
+        "Self-generation and energy efficiency"
+      ],
+      "supportingEvidence": [
+        "EV-CONSTRAINT",
+        "EV-EIA"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-GENERATOR"
+          ],
+          "statement": "Supply expansion, fixed tariffs or long-term contracts can buffer prices."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "EN-PRICE",
+        "EN-PJM-LMP",
+        "EN-CAPACITY",
+        "EN-FERC"
+      ],
+      "proposedValidationMethod": "Pre-specified constraint interaction; never treat retail composition changes as tariff effects.",
+      "falsificationCriteria": "Constrained regions do not have systematically larger changes after controls; effect disappears with fuel/weather controls.",
+      "knownLimitations": "Constraint and investment location are endogenous; wholesale/retail timing differs.",
+      "nextResearchAction": "Authenticate constraint history and price feeds."
+    },
+    {
+      "hypothesisId": "E3",
+      "workstream": "ENERGY",
+      "researchQuestion": "Does buildout pressure equipment/construction inputs?",
+      "transmissionMechanism": "Concentrated orders compete for transformers, labor and fixed-site construction.",
+      "expectedDirection": "POSITIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "0–3 years"
+      ],
+      "dependentVariable": "Electrical equipment PPI, construction compensation, lead times",
+      "explanatoryVariables": [
+        "Qualified construction spending",
+        "Equipment orders"
+      ],
+      "mediatingVariables": [
+        "Supply backlogs",
+        "Skilled labor scarcity"
+      ],
+      "confoundingFactors": [
+        "Natural gas and other fuel costs",
+        "Heating/cooling weather",
+        "Utility tariff/rate-case changes",
+        "Generation mix and outages",
+        "EV/industrial electrification",
+        "Migration and business cycles",
+        "Self-generation and energy efficiency",
+        "Tariffs/import costs",
+        "General construction cycle"
+      ],
+      "supportingEvidence": [
+        "EV-CONSTRUCTION",
+        "EV-CONSTRAINT"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [],
+          "statement": "Import substitution and manufacturer expansion can offset pressure; no replicated counterestimate."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "EN-CONSTRUCTION-TABLE",
+        "EN-EQUIPMENT-PPI",
+        "EN-COMPUTE-PPI",
+        "EN-WAGES"
+      ],
+      "proposedValidationMethod": "Separate input families; distributed-lag descriptive association with broad construction controls.",
+      "falsificationCriteria": "No differential input inflation relative to placebo equipment; nominal spending only follows prices.",
+      "knownLimitations": "Construction excludes GPUs/racks and land; expenditure is price × quantity.",
+      "nextResearchAction": "Qualify series IDs and nominal deflators."
+    },
+    {
+      "hypothesisId": "E4",
+      "workstream": "ENERGY",
+      "researchQuestion": "Does supply/efficiency expansion attenuate pressure?",
+      "transmissionMechanism": "New generation/transmission and efficiency relax constraints, with rebound risk.",
+      "expectedDirection": "AMBIGUOUS_NET",
+      "expectedTimeHorizon": [
+        "3–7 years",
+        "7–20 years"
+      ],
+      "dependentVariable": "Load per output unit, congestion and rate changes",
+      "explanatoryVariables": [
+        "Completed supply additions",
+        "Verified efficiency measures"
+      ],
+      "mediatingVariables": [
+        "Utilization",
+        "Rebound use"
+      ],
+      "confoundingFactors": [
+        "Natural gas and other fuel costs",
+        "Heating/cooling weather",
+        "Utility tariff/rate-case changes",
+        "Generation mix and outages",
+        "EV/industrial electrification",
+        "Migration and business cycles",
+        "Self-generation and energy efficiency"
+      ],
+      "supportingEvidence": [
+        "EV-GENERATOR",
+        "EV-REB"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-CONSTRAINT"
+          ],
+          "statement": "Delayed interconnection and induced demand may keep pressure elevated."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "EN-CAPACITY",
+        "EN-GENERATION",
+        "EN-FERC"
+      ],
+      "proposedValidationMethod": "Compare completed vs planned supply; lagged descriptive designs; no assumed utilization.",
+      "falsificationCriteria": "No decline in constraint measures after actual additions or aggregate demand offsets intensity reductions.",
+      "knownLimitations": "Compute output and efficiency denominator not harmonized.",
+      "nextResearchAction": "Seek primary efficiency/utilization and in-service evidence."
+    },
+    {
+      "hypothesisId": "F1",
+      "workstream": "FINANCING",
+      "researchQuestion": "Does infrastructure spending increase selected firms’ financing requirements?",
+      "transmissionMechanism": "Cash investment competes with other uses; debt/equity/prepayments/leases can fund the combined cash budget.",
+      "expectedDirection": "POSITIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years"
+      ],
+      "dependentVariable": "Native-period net financing flows and liquidity changes",
+      "explanatoryVariables": [
+        "Corporate cash PP&E",
+        "OCF"
+      ],
+      "mediatingVariables": [
+        "Distributions",
+        "Customer prepayments",
+        "Lease commencement"
+      ],
+      "confoundingFactors": [
+        "Fed policy and forward guidance",
+        "Fiscal deficit / net Treasury issuance",
+        "Inflation news",
+        "Foreign capital flows / global savings",
+        "Risk appetite and credit supply",
+        "Acquisitions/distributions",
+        "Maturity refinancing rather than new investment"
+      ],
+      "supportingEvidence": [
+        "EV-ORACLE-FUNDING",
+        "EV-AMAZON-FUNDING",
+        "EV-B2-GAPS"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "OBSERVATION_LIMIT",
+          "evidenceRefs": [
+            "EV-AMAZON-FUNDING"
+          ],
+          "statement": "Substantial OCF and liquidity coexist with borrowing; issuance does not prove funding distress or AI necessity."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "FI-CORPORATE"
+      ],
+      "proposedValidationMethod": "Preserve B2 bridges, extend firm coverage and timing without tracing fungible dollars to AI.",
+      "falsificationCriteria": "Financing moves explained by refinancing/acquisitions/distributions or cash investment covered internally.",
+      "knownLimitations": "Only Oracle/Amazon detailed; no AI allocation or complete obligation denominator.",
+      "nextResearchAction": "Resolve B2 gates and add remaining firms in a later phase."
+    },
+    {
+      "hypothesisId": "F2",
+      "workstream": "FINANCING",
+      "researchQuestion": "Does financing demand affect sector borrowing conditions?",
+      "transmissionMechanism": "Incremental issuance competes for credit under conditional supply/risk appetite.",
+      "expectedDirection": "AMBIGUOUS",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years"
+      ],
+      "dependentVariable": "Issuer spreads and net issuance, not Treasury yields",
+      "explanatoryVariables": [
+        "Investment-related issuance",
+        "Credit supply"
+      ],
+      "mediatingVariables": [
+        "Investor demand",
+        "Credit risk repricing"
+      ],
+      "confoundingFactors": [
+        "Fed policy and forward guidance",
+        "Fiscal deficit / net Treasury issuance",
+        "Inflation news",
+        "Foreign capital flows / global savings",
+        "Risk appetite and credit supply",
+        "Acquisitions/distributions",
+        "Maturity refinancing rather than new investment"
+      ],
+      "supportingEvidence": [
+        "EV-ICE",
+        "EV-ORACLE-FUNDING"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-AMAZON-FUNDING"
+          ],
+          "statement": "Strong cash flow and diversification can sustain spreads despite issuance."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "FI-OAS",
+        "FI-Z1",
+        "FI-SLOOS",
+        "FI-CORPORATE"
+      ],
+      "proposedValidationMethod": "Issuer-level matched issuance windows with maturity/rating controls; market aggregate as descriptive context.",
+      "falsificationCriteria": "No sector-relative spread/issuance change, or effect vanishes outside general risk shocks.",
+      "knownLimitations": "Licensed long history and issuer spreads not qualified; spread changes could drive investment.",
+      "nextResearchAction": "Qualify legally usable issuer-level credit data before analysis."
+    },
+    {
+      "hypothesisId": "F3",
+      "workstream": "FINANCING",
+      "researchQuestion": "Can AI investment demand contribute to real-rate pressure?",
+      "transmissionMechanism": "Desired investment relative to saving may affect rates; measured TIPS also reflects policy and market premia.",
+      "expectedDirection": "AMBIGUOUS",
+      "expectedTimeHorizon": [
+        "3–7 years",
+        "7–20 years"
+      ],
+      "dependentVariable": "Real market yields; equilibrium rate remains unobserved",
+      "explanatoryVariables": [
+        "Qualified broad investment demand",
+        "Saving / fiscal issuance"
+      ],
+      "mediatingVariables": [
+        "Global capital flows",
+        "Policy response"
+      ],
+      "confoundingFactors": [
+        "Fed policy and forward guidance",
+        "Fiscal deficit / net Treasury issuance",
+        "Inflation news",
+        "Foreign capital flows / global savings",
+        "Risk appetite and credit supply",
+        "Acquisitions/distributions",
+        "Maturity refinancing rather than new investment"
+      ],
+      "supportingEvidence": [
+        "EV-REAL-RATE",
+        "EV-YIELDS",
+        "EV-TIC"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-POLICY"
+          ],
+          "statement": "Saving, capital inflows and policy adjustment can offset investment demand."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "FI-REAL",
+        "FI-NOMINAL",
+        "FI-TERM",
+        "FI-TIC",
+        "FI-TREASURY-SUPPLY"
+      ],
+      "proposedValidationMethod": "Historical time-series decomposition as descriptive only; no credible AI Treasury instrument yet.",
+      "falsificationCriteria": "Yield movement fully explained by policy/fiscal/global shocks; no incremental explanatory content out of sample.",
+      "knownLimitations": "Small post-AI sample, endogenous policy and unobservable neutral rate.",
+      "nextResearchAction": "Do not select causal aggregate-rate pilot."
+    },
+    {
+      "hypothesisId": "F4",
+      "workstream": "FINANCING",
+      "researchQuestion": "Do cash generation and alternative financing mitigate pressure?",
+      "transmissionMechanism": "Internal funds/customer cash/equity and global investor demand can substitute for new borrowing.",
+      "expectedDirection": "MITIGATION_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years"
+      ],
+      "dependentVariable": "Net borrowing / liquidity conditional on investment",
+      "explanatoryVariables": [
+        "OCF",
+        "Explicit prepaid financing",
+        "Equity issuance"
+      ],
+      "mediatingVariables": [
+        "Cash allocation",
+        "Lease/project funding"
+      ],
+      "confoundingFactors": [
+        "Fed policy and forward guidance",
+        "Fiscal deficit / net Treasury issuance",
+        "Inflation news",
+        "Foreign capital flows / global savings",
+        "Risk appetite and credit supply",
+        "Acquisitions/distributions",
+        "Maturity refinancing rather than new investment"
+      ],
+      "supportingEvidence": [
+        "EV-ORACLE-FUNDING",
+        "EV-AMAZON-FUNDING",
+        "EV-B2-GAPS"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-B2-GAPS"
+          ],
+          "statement": "Alternative funding creates future performance or lease obligations; not free resources."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "FI-CORPORATE",
+        "FI-TIC",
+        "FI-Z1"
+      ],
+      "proposedValidationMethod": "Cash-flow and contract bridge; never add prepaid receipts to OCF a second time.",
+      "falsificationCriteria": "No mitigation after obligations and other cash uses are included; substitute funding increases required service.",
+      "knownLimitations": "Customer refund/roll-forward and lease principal unresolved.",
+      "nextResearchAction": "Keep B2 missing cells and no distress inference."
+    },
+    {
+      "hypothesisId": "P1",
+      "workstream": "PRODUCTIVITY",
+      "researchQuestion": "Does operational AI use improve firm/sector productivity?",
+      "transmissionMechanism": "Task assistance/reorganization may increase quality-adjusted output per hour.",
+      "expectedDirection": "POSITIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years"
+      ],
+      "dependentVariable": "Task/firm/industry productivity measured separately",
+      "explanatoryVariables": [
+        "Actual operational AI use"
+      ],
+      "mediatingVariables": [
+        "Training",
+        "Complementary capital"
+      ],
+      "confoundingFactors": [
+        "Sector mix and capital deepening",
+        "Worker/firm selection",
+        "Management quality",
+        "Post-pandemic output/hour revisions",
+        "Wages and demand",
+        "Complementary intangible investment"
+      ],
+      "supportingEvidence": [
+        "EV-PRODUCTIVITY-PAPER",
+        "EV-BTOS-BREAK"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-JCURVE"
+          ],
+          "statement": "Implementation, skill mismatch and measurement may delay or offset gains."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "PR-BTOS-OLD",
+        "PR-BTOS-NEW",
+        "PR-OUTPUT-HOUR",
+        "PR-INDUSTRY"
+      ],
+      "proposedValidationMethod": "Comparable survey vintages and industry panel; randomized/rollout designs separately audited, not extrapolated.",
+      "falsificationCriteria": "No improvement after quality/selection controls; negative controls show same pattern.",
+      "knownLimitations": "Survey adoption is not verified deployment; short post-break sample; task study external validity limited.",
+      "nextResearchAction": "Acquire full study and replication protocol; maintain BTOS regimes separately."
+    },
+    {
+      "hypothesisId": "P2",
+      "workstream": "PRODUCTIVITY",
+      "researchQuestion": "Does AI productivity lower unit labor cost vs counterfactual?",
+      "transmissionMechanism": "Higher real output per paid hour can lower compensation per output, conditional on wages.",
+      "expectedDirection": "NEGATIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "3–7 years",
+        "7–20 years"
+      ],
+      "dependentVariable": "Industry ULC",
+      "explanatoryVariables": [
+        "Validated productivity change",
+        "Compensation"
+      ],
+      "mediatingVariables": [
+        "Capital intensity",
+        "Labor reallocation"
+      ],
+      "confoundingFactors": [
+        "Sector mix and capital deepening",
+        "Worker/firm selection",
+        "Management quality",
+        "Post-pandemic output/hour revisions",
+        "Wages and demand",
+        "Complementary intangible investment"
+      ],
+      "supportingEvidence": [
+        "EV-ULC"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-POLICY"
+          ],
+          "statement": "Compensation, implementation spending or demand may absorb measured gains."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "PR-ULC",
+        "PR-OUTPUT-HOUR",
+        "PR-INDUSTRY"
+      ],
+      "proposedValidationMethod": "Decompose ULC identity and adoption associations; do not infer AI residual from TFP.",
+      "falsificationCriteria": "ULC does not fall relative to controls once compensation/quality/capital are considered.",
+      "knownLimitations": "Accounting identity does not identify AI causal productivity.",
+      "nextResearchAction": "Qualify industry concordance, output and compensation revisions."
+    },
+    {
+      "hypothesisId": "P3",
+      "workstream": "PRODUCTIVITY",
+      "researchQuestion": "Are production-cost gains passed through to customers?",
+      "transmissionMechanism": "Competition and pricing rules determine price/margin response to cost savings.",
+      "expectedDirection": "NEGATIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "3–7 years",
+        "7–20 years"
+      ],
+      "dependentVariable": "Matched producer/consumer item price changes and markups",
+      "explanatoryVariables": [
+        "Qualified unit-cost changes"
+      ],
+      "mediatingVariables": [
+        "Competition",
+        "Demand",
+        "Margins"
+      ],
+      "confoundingFactors": [
+        "Sector mix and capital deepening",
+        "Worker/firm selection",
+        "Management quality",
+        "Post-pandemic output/hour revisions",
+        "Wages and demand",
+        "Complementary intangible investment",
+        "Market concentration",
+        "Import prices"
+      ],
+      "supportingEvidence": [
+        "EV-PASSTHROUGH",
+        "EV-ULC"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-POLICY"
+          ],
+          "statement": "Higher markups, wages, demand or quality improvements can limit nominal price reductions."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "PR-ULC",
+        "IN-CPI",
+        "IN-PCE",
+        "EN-COMPUTE-PPI"
+      ],
+      "proposedValidationMethod": "Matched industry-product prices and cost shocks; assess measured pass-through independently of productivity.",
+      "falsificationCriteria": "Costs fall but prices do not after quality/demand controls; margin gains dominate.",
+      "knownLimitations": "Industry ULC and consumer baskets poorly aligned; services quality measurement.",
+      "nextResearchAction": "Do not infer lower aggregate inflation from task productivity."
+    },
+    {
+      "hypothesisId": "P4",
+      "workstream": "PRODUCTIVITY",
+      "researchQuestion": "Do adoption delays/concentration/rebound offset gains?",
+      "transmissionMechanism": "Complementary investment and induced demand may slow measured supply effects or preserve margins.",
+      "expectedDirection": "AMBIGUOUS",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years",
+        "7–20 years"
+      ],
+      "dependentVariable": "Productivity lag, price pass-through and utilization",
+      "explanatoryVariables": [
+        "Implementation timing",
+        "Market structure"
+      ],
+      "mediatingVariables": [
+        "Reorganization",
+        "Rebound demand"
+      ],
+      "confoundingFactors": [
+        "Sector mix and capital deepening",
+        "Worker/firm selection",
+        "Management quality",
+        "Post-pandemic output/hour revisions",
+        "Wages and demand",
+        "Complementary intangible investment"
+      ],
+      "supportingEvidence": [
+        "EV-JCURVE",
+        "EV-REB",
+        "EV-POLICY"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-PRODUCTIVITY-PAPER"
+          ],
+          "statement": "Some deployed tasks improve promptly; no universal implementation delay is established."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "PR-BTOS-DETAIL",
+        "PR-INDUSTRY",
+        "PR-GDP"
+      ],
+      "proposedValidationMethod": "Lag structure with pre-specified adoption regime; heterogeneity and no universal J-curve assumption.",
+      "falsificationCriteria": "Gains immediate and broad with competitive price pass-through and no net rebound.",
+      "knownLimitations": "Intangible investment and concentration measures not qualified.",
+      "nextResearchAction": "Register intangible and competition sources later; no annual GDP contribution assumed."
+    },
+    {
+      "hypothesisId": "I1",
+      "workstream": "INFLATION",
+      "researchQuestion": "Do bottlenecks generate temporary relative-price increases?",
+      "transmissionMechanism": "Localized scarce inputs may rise relative to other prices; a price-level step need not persist as inflation.",
+      "expectedDirection": "POSITIVE_RELATIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "0–3 years"
+      ],
+      "dependentVariable": "Sector price level and sector inflation separately",
+      "explanatoryVariables": [
+        "Verified regional constraints"
+      ],
+      "mediatingVariables": [
+        "Energy/input pass-through"
+      ],
+      "confoundingFactors": [
+        "Energy/import shocks",
+        "Monetary/fiscal policy response",
+        "Housing and labor-market conditions",
+        "Exchange rates",
+        "Expectations, markups and supply-chain disruptions",
+        "Natural gas and other fuel costs",
+        "Heating/cooling weather",
+        "Utility tariff/rate-case changes",
+        "Generation mix and outages",
+        "EV/industrial electrification",
+        "Migration and business cycles",
+        "Self-generation and energy efficiency"
+      ],
+      "supportingEvidence": [
+        "EV-CONSTRAINT",
+        "EV-EIA",
+        "EV-INFLATION-MEASURES"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-GENERATOR"
+          ],
+          "statement": "Supply completion or input substitution can reverse relative price pressure."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "EN-PRICE",
+        "EN-EQUIPMENT-PPI",
+        "IN-ELECTRIC-CPI",
+        "IN-CPI"
+      ],
+      "proposedValidationMethod": "Separate relative price and inflation-rate changes; do not equate EIA retail prices with CPI.",
+      "falsificationCriteria": "No sector differential after controls or temporary shock decays without persistent aggregate inflation.",
+      "knownLimitations": "National weights and AI share unresolved.",
+      "nextResearchAction": "Keep local estimates local; validate basket/channel before macro link."
+    },
+    {
+      "hypothesisId": "I2",
+      "workstream": "INFLATION",
+      "researchQuestion": "Does broad investment demand raise inflation under slack constraints?",
+      "transmissionMechanism": "Demand for labor/materials may exceed short-run productive capacity.",
+      "expectedDirection": "POSITIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years"
+      ],
+      "dependentVariable": "Core CPI/PCE inflation conditional on slack",
+      "explanatoryVariables": [
+        "Qualified real investment",
+        "Capacity constraints"
+      ],
+      "mediatingVariables": [
+        "Wages",
+        "Imports",
+        "Policy"
+      ],
+      "confoundingFactors": [
+        "Energy/import shocks",
+        "Monetary/fiscal policy response",
+        "Housing and labor-market conditions",
+        "Exchange rates",
+        "Expectations, markups and supply-chain disruptions"
+      ],
+      "supportingEvidence": [
+        "EV-POLICY",
+        "EV-CONSTRAINT"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-JCURVE"
+          ],
+          "statement": "Crowding out other investment, imports and supply gains may limit net demand."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "PR-GDP",
+        "PR-POTENTIAL",
+        "IN-CORE-CPI",
+        "IN-CORE-PCE"
+      ],
+      "proposedValidationMethod": "Descriptive accounting/channel analysis; causal aggregate estimate not feasible with current exposure.",
+      "falsificationCriteria": "Investment displaces other demand or rises with supply without inflation differential.",
+      "knownLimitations": "Company spending not national real AI investment; capacity slack modeled.",
+      "nextResearchAction": "Qualify investment deflators and counterfactual; no numerical forecast."
+    },
+    {
+      "hypothesisId": "I3",
+      "workstream": "INFLATION",
+      "researchQuestion": "Could AI supply gains reduce inflation relative to no-AI?",
+      "transmissionMechanism": "Productivity lowers marginal costs/potentially expands supply if passed through.",
+      "expectedDirection": "NEGATIVE_CONDITIONAL",
+      "expectedTimeHorizon": [
+        "3–7 years",
+        "7–20 years"
+      ],
+      "dependentVariable": "Inflation relative to independently defined counterfactual",
+      "explanatoryVariables": [
+        "Validated AI productivity"
+      ],
+      "mediatingVariables": [
+        "Unit costs",
+        "Competition",
+        "Demand response"
+      ],
+      "confoundingFactors": [
+        "Energy/import shocks",
+        "Monetary/fiscal policy response",
+        "Housing and labor-market conditions",
+        "Exchange rates",
+        "Expectations, markups and supply-chain disruptions",
+        "Sector mix and capital deepening",
+        "Worker/firm selection",
+        "Management quality",
+        "Post-pandemic output/hour revisions",
+        "Wages and demand",
+        "Complementary intangible investment"
+      ],
+      "supportingEvidence": [
+        "EV-ULC",
+        "EV-PASSTHROUGH",
+        "EV-PRODUCTIVITY-PAPER"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-POLICY",
+            "EV-REB"
+          ],
+          "statement": "Income/wealth demand, markup retention and rebound can offset supply gains."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "PR-OUTPUT-HOUR",
+        "PR-ULC",
+        "PR-GDP",
+        "IN-CORE-PCE"
+      ],
+      "proposedValidationMethod": "Identify adoption→productivity→cost→price separately; no mechanical addition of overlapping effects.",
+      "falsificationCriteria": "No attributable productivity or price pass-through; demand offsets supply in matched evidence.",
+      "knownLimitations": "No accepted no-AI aggregate counterfactual or project revenue allocation.",
+      "nextResearchAction": "Require staged channel evidence, not an aggregate AI residual."
+    },
+    {
+      "hypothesisId": "I4",
+      "workstream": "INFLATION",
+      "researchQuestion": "How does policy offset/amplify investment-price pressures?",
+      "transmissionMechanism": "Reaction functions influence demand, financing and expectations simultaneously.",
+      "expectedDirection": "AMBIGUOUS",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years"
+      ],
+      "dependentVariable": "Inflation and expectations conditional on policy response",
+      "explanatoryVariables": [
+        "Investment shocks",
+        "Policy surprises"
+      ],
+      "mediatingVariables": [
+        "Credit supply",
+        "Expectations"
+      ],
+      "confoundingFactors": [
+        "Energy/import shocks",
+        "Monetary/fiscal policy response",
+        "Housing and labor-market conditions",
+        "Exchange rates",
+        "Expectations, markups and supply-chain disruptions"
+      ],
+      "supportingEvidence": [
+        "EV-POLICY",
+        "EV-YIELDS"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-INFLATION-MEASURES"
+          ],
+          "statement": "Credible stabilization can contain persistence even when relative prices change."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "IN-POLICY",
+        "FI-REAL",
+        "IN-BREAKEVEN",
+        "IN-SCE",
+        "IN-SPF"
+      ],
+      "proposedValidationMethod": "Only externally identified policy shocks in later research; endogenous rate controls insufficient.",
+      "falsificationCriteria": "Observed persistence absent, or apparent effect driven by general policy/inflation news.",
+      "knownLimitations": "No AI-specific exogenous policy shock or sufficient sample.",
+      "nextResearchAction": "Do not infer policy causality from simultaneous rate/inflation movements."
+    },
+    {
+      "hypothesisId": "I5",
+      "workstream": "INFLATION",
+      "researchQuestion": "Could local effects be undetectable in aggregate inflation?",
+      "transmissionMechanism": "Small basket shares, offsets and spatial concentration dilute sector effects.",
+      "expectedDirection": "AMBIGUOUS_OR_UNDETECTABLE",
+      "expectedTimeHorizon": [
+        "0–3 years",
+        "3–7 years",
+        "7–20 years"
+      ],
+      "dependentVariable": "National CPI/PCE detectability",
+      "explanatoryVariables": [
+        "Qualified sector changes",
+        "Verified expenditure weights"
+      ],
+      "mediatingVariables": [
+        "Geographic concentration",
+        "Substitution"
+      ],
+      "confoundingFactors": [
+        "Energy/import shocks",
+        "Monetary/fiscal policy response",
+        "Housing and labor-market conditions",
+        "Exchange rates",
+        "Expectations, markups and supply-chain disruptions"
+      ],
+      "supportingEvidence": [
+        "EV-LOCAL",
+        "EV-INFLATION-MEASURES"
+      ],
+      "contradictoryEvidence": [
+        {
+          "type": "COUNTERMECHANISM",
+          "evidenceRefs": [
+            "EV-CONSTRAINT"
+          ],
+          "statement": "Broad persistent input spillovers could make national effects material, but none are estimated here."
+        }
+      ],
+      "evidenceGrade": "E0",
+      "evidenceGradeJustification": "Complete AI-to-outcome mechanism not empirically tested. E1 source observations and E2 corporate arithmetic cannot promote this hypothesis.",
+      "officialDataCandidates": [
+        "IN-CPI",
+        "IN-PCE",
+        "IN-ELECTRIC-CPI",
+        "EN-PRICE"
+      ],
+      "proposedValidationMethod": "Power/detectability assessment and compatible expenditure weights before any macro causal claim.",
+      "falsificationCriteria": "Stable, robust national effect with valid attribution rejects localization; imprecision alone is not evidence of zero.",
+      "knownLimitations": "No overlap-resolved expenditure map, effects cannot be summed.",
+      "nextResearchAction": "Pre-specify minimum detectable effect and explicitly report inconclusive results."
+    }
+  ]
+}
