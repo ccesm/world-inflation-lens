@@ -1,0 +1,1438 @@
+{
+  "aiROI": false,
+  "apiOrSecret": false,
+  "baseBranch": "codex/ai-infra-macro-signals-phase-c1m",
+  "baseSHA": "eb2da0e23ab9840e385a09b3889baa4454fddd74",
+  "branch": "codex/ai-infra-macro-descriptive-phase-c2",
+  "build": "PASS_EXIT_0",
+  "buildWarnings": [
+    "Inherited inconsistent JSON import attributes in AI Infrastructure contract module",
+    "Inherited chunks over 500kB; no dependency or application changes"
+  ],
+  "deploy": false,
+  "determinism": {
+    "allThreeOutputHashesMatch": true,
+    "freshProcesses": 2,
+    "independentArithmeticControl": "Fraction-based control checks every available native/year comparison",
+    "timezones": [
+      "UTC",
+      "Pacific/Honolulu"
+    ],
+    "workingDirectories": "DIFFERENT"
+  },
+  "emailChanged": false,
+  "evidence": {
+    "E3": 0,
+    "E4": 0,
+    "arithmetic": "E2_WITHIN_SERIES_ONLY",
+    "economicMechanisms": "E0",
+    "observations": "E1_INHERITED_AUTHENTICATED_PRODUCER",
+    "statisticalCorrelations": "NOT_ESTIMATED"
+  },
+  "finalDecision": "COMPLETE — DESCRIPTIVE ENGINE VALIDATED",
+  "finalSHA": "RESOLVES_TO_GIT_COMMIT_CONTAINING_THIS_REPORT; not self-referential",
+  "forecast": false,
+  "inheritedGapsPreserved": 28,
+  "inheritedModified": false,
+  "merge": false,
+  "missingCells": 360,
+  "newRawSources": 0,
+  "outputIdentity": {
+    "files": {
+      "analysis.json": {
+        "byteSize": 4594216,
+        "sha256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7"
+      },
+      "analysis.md": {
+        "byteSize": 16121,
+        "sha256": "0887d85ef708b34298bc6c597eda5210d65ad19371e293fda56b408443339ea2"
+      },
+      "observations.csv": {
+        "byteSize": 4008974,
+        "sha256": "115e07f822d1af2edb71d8ac20f081d3926bae8dcdf242e37ba786cd07e8449c"
+      }
+    },
+    "indicatorCount": 12,
+    "inputIdentityHash": "480e10d32d5d8317589aa279edafe4137b4d1bb8e384093ed0a1a896dcb5018d",
+    "observationCount": 12949,
+    "outputSetHash": "34eac463e54188e9da70e10cd7ae6758bec5ec2f365b9289b8f396f5cf96a788",
+    "schemaVersion": "C2.1",
+    "seriesCount": 36
+  },
+  "productionMainObserved": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+  "productionModified": false,
+  "rawControls": "raw-control-validation.json",
+  "remainingHighLimitations": [
+    "No identified AI-specific causal shock or consumer-price pass-through; E0 mechanisms remain untested"
+  ],
+  "remainingMediumLimitations": [
+    "First-release vintages/publication clocks incomplete; historical real-time backtests disabled",
+    "Energy/gas captures behind known available source periods",
+    "13-state commercial sample is not national or AI-specific",
+    "Historical definition stability beyond the proposed 2015+ context not certified"
+  ],
+  "runtime": {
+    "newDependencies": 0,
+    "node": "24.19.0",
+    "python": "3.9.6"
+  },
+  "scheduleAdded": false,
+  "schemaVersion": "C2.1",
+  "scientificLimitations": [
+    "AI-specific causality not identified",
+    "No first-release vintages; no real-time backtest",
+    "Frozen energy/gas sample behind later known catalog availability",
+    "13-state commercial sample is not national electricity use or AI consumption",
+    "All-era definition stability not independently certified"
+  ],
+  "scope": "EXACTLY_TWELVE_C1M_CORE_INDICATORS",
+  "scopeVerification": {
+    "changedPaths": "ONLY research/ai-infrastructure-paper-validation/phase-c2/",
+    "trackedBaselineFilesUnchanged": 557,
+    "unrelatedUserWork": "Untouched in original checkout"
+  },
+  "seriesResults": [
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "IL",
+        "locator": "Monthly-States!I375:L375",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 14.155505,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 4064856.3,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 7.33528,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:IL",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "KS",
+        "locator": "Monthly-States!I377:L377",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 4.749702,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 1267054.6,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 2.610993,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:KS",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "KY",
+        "locator": "Monthly-States!I378:L378",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 17.463565,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 1719022.3,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 5.448488,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:KY",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "MI",
+        "locator": "Monthly-States!I383:L383",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 11.613192,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 3099242.2,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 4.400549,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:MI",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "MO",
+        "locator": "Monthly-States!I385:L385",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 11.810228,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 2543214.2,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 4.685489,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:MO",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "NE",
+        "locator": "Monthly-States!I390:L390",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 14.065037,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 1361951.6,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 20.258493,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:NE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "NM",
+        "locator": "Monthly-States!I393:L393",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 3.361259,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 705168.94,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": -5.111493,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:NM",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "OH",
+        "locator": "Monthly-States!I396:L396",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 12.760603,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 5243274.1,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 24.488302,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:OH",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "OK",
+        "locator": "Monthly-States!I397:L397",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 1.580775,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 2186546.2,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 8.319216,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:OK",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "PA",
+        "locator": "Monthly-States!I399:L399",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 22.813336,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 3550379.9,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 6.523874,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:PA",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "UT",
+        "locator": "Monthly-States!I405:L405",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 4.9309,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 1223100.8,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 6.354215,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:UT",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "VA",
+        "locator": "Monthly-States!I406:L406",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 10.277076,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 7071781.5,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 9.78769,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:VA",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "WI",
+        "locator": "Monthly-States!I409:L409",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 11.308489,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 2030783.2,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 3.791912,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_PHYSICAL_QUANTITY",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_SALES:WI",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "MWh"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "IL",
+        "locator": "Monthly-States!I375:L375",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -6.051437,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 12.42,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 5.522515,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:IL",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "KS",
+        "locator": "Monthly-States!I377:L377",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -3.016859,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 10.93,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 2.054155,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:KS",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "KY",
+        "locator": "Monthly-States!I378:L378",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -2.408638,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 11.75,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": -0.254669,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:KY",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "MI",
+        "locator": "Monthly-States!I383:L383",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 0.698812,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 14.41,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 4.647785,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:MI",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "MO",
+        "locator": "Monthly-States!I385:L385",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -5.015045,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 9.47,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 0.530786,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:MO",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "NE",
+        "locator": "Monthly-States!I390:L390",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -3.271028,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 8.28,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 5.343511,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:NE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "NM",
+        "locator": "Monthly-States!I393:L393",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -1.010101,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 10.78,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 4.054054,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:NM",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "OH",
+        "locator": "Monthly-States!I396:L396",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -5.112316,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 12.25,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 15.348399,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:OH",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "OK",
+        "locator": "Monthly-States!I397:L397",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -0.578035,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 8.6,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 1.775148,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:OK",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "PA",
+        "locator": "Monthly-States!I399:L399",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 1.075269,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 13.16,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 18.132855,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:PA",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "UT",
+        "locator": "Monthly-States!I405:L405",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -1.559252,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 9.47,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 4.640884,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:UT",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "VA",
+        "locator": "Monthly-States!I406:L406",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -0.680934,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 10.21,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 15.23702,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:VA",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "WI",
+        "locator": "Monthly-States!I409:L409",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": -1.631702,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "Preliminary",
+        "value": 12.66,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 8.48329,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "Final": 120,
+        "Preliminary": 12
+      },
+      "seriesId": "EIA_COMM_PRICE:WI",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "sourceId": "EIA_STATE",
+      "unit": "CENTS_PER_KWH"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2025-12-01",
+        "missing": 0,
+        "rows": 132,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "CAPTURE_BEHIND_KNOWN_AVAILABLE",
+      "lastRecord": {
+        "geography": "HENRY_HUB",
+        "locator": "History table / 2025 / month 12",
+        "nativeBasePeriod": "2025-11-01",
+        "nativeChange": 12.401055,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 30,
+        "period": "2025-12-01",
+        "periodEnd": "2025-12-31",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 4.26,
+        "yearBasePeriod": "2024-12-01",
+        "yearChange": 41.528239,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_PRICE",
+      "missingRowCount": 0,
+      "rawRowCount": 132,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 132
+      },
+      "seriesId": "HENRY_HUB:HENRY_HUB",
+      "sourceHash": "60d2afb050b84d9ed082f94d9a73e4326231fb717e9c32390d7fcf36fbc5e7b8",
+      "sourceId": "EIA_GAS",
+      "unit": "USD_PER_MMBTU"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-08-01",
+        "missing": 0,
+        "rows": 140,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "Private SA!J5",
+        "nativeBasePeriod": "2026-07-01",
+        "nativeChange": 7.522118,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 31,
+        "period": "2026-08-01",
+        "periodEnd": "2026-08-31",
+        "revisionFlag": "p",
+        "value": 84950,
+        "yearBasePeriod": "2025-08-01",
+        "yearChange": 73.18356,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "CONSTRUCTION_SAAR_NOT_TOTAL_AI_CAPEX",
+      "missingRowCount": 0,
+      "rawRowCount": 152,
+      "revisionFlags": {
+        "NO_NATIVE_FLAG": 149,
+        "p": 1,
+        "r": 2
+      },
+      "seriesId": "CENSUS_DC:US",
+      "sourceHash": "e9faea98ea4fc9c57ffbb4e7e576a5907e17e2324dce7d4e58a17aaa8bb2c560",
+      "sourceId": "CENSUS_DC",
+      "unit": "MILLION_USD_SAAR"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-04-01",
+        "missing": 0,
+        "rows": 46,
+        "start": "2015-01-01"
+      },
+      "frequency": "QUARTERLY",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "CSV line 79",
+        "nativeBasePeriod": "2026-01-01",
+        "nativeChange": 2.173921,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 90,
+        "period": "2026-04-01",
+        "periodEnd": "2026-06-30",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 3985.726,
+        "yearBasePeriod": "2025-04-01",
+        "yearChange": 6.16104,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL",
+      "missingRowCount": 0,
+      "rawRowCount": 78,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 78
+      },
+      "seriesId": "PNFIC1:US",
+      "sourceHash": "1d09c0f0fe107c1ff623e353a249d754727cd7c6828ec78b7886525104bcf03d",
+      "sourceId": "PNFIC1",
+      "unit": "BILLION_CHAINED_2017_USD_SAAR"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-10-08",
+        "missing": 127,
+        "rows": 3071,
+        "start": "2015-01-01"
+      },
+      "frequency": "DAILY",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "CSV line 6202",
+        "nativeBasePeriod": "2026-10-07",
+        "nativeChange": -0.05,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 1,
+        "period": "2026-10-08",
+        "periodEnd": "2026-10-08",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 2.87,
+        "yearBasePeriod": null,
+        "yearChange": null,
+        "yearChangeStatus": "NOT_DEFINED_FOR_DAILY_YIELD"
+      },
+      "measureType": "REAL_YIELD",
+      "missingRowCount": 254,
+      "rawRowCount": 6201,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 6201
+      },
+      "seriesId": "DFII10:US",
+      "sourceHash": "0277781c1336527c38275803bfedc0b7f1c264740b9406981edda0d2796ab6ee",
+      "sourceId": "DFII10",
+      "unit": "PERCENT_PER_ANNUM"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-04-01",
+        "missing": 0,
+        "rows": 46,
+        "start": "2015-01-01"
+      },
+      "frequency": "QUARTERLY_END_OF_PERIOD",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "CSV line 324",
+        "nativeBasePeriod": "2026-01-01",
+        "nativeChange": 0.589051,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 90,
+        "period": "2026-04-01",
+        "periodEnd": "2026-06-30",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 9190040.0,
+        "yearBasePeriod": "2025-04-01",
+        "yearChange": 4.14134,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "DEBT_SECURITIES_STOCK_NOT_ISSUANCE_OR_TOTAL_DEBT",
+      "missingRowCount": 18,
+      "rawRowCount": 323,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 323
+      },
+      "seriesId": "NCBDBIQ027S:US",
+      "sourceHash": "4de946ca4b573efe3964f6105517b456cecc5f5caa94e76e4b4c990f6551f75a",
+      "sourceId": "NCBDBIQ027S",
+      "unit": "MILLION_USD"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-04-01",
+        "missing": 0,
+        "rows": 46,
+        "start": "2015-01-01"
+      },
+      "frequency": "QUARTERLY",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "CSV line 319",
+        "nativeBasePeriod": "2026-01-01",
+        "nativeChange": 0.353697,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 90,
+        "period": "2026-04-01",
+        "periodEnd": "2026-06-30",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 120.017,
+        "yearBasePeriod": "2025-04-01",
+        "yearChange": 2.242194,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "REAL_OUTPUT_PER_HOUR",
+      "missingRowCount": 0,
+      "rawRowCount": 318,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 318
+      },
+      "seriesId": "OPHNFB:US",
+      "sourceHash": "d42ef61a91b622bbe47aeba137a411221da8d75b178617ab6d819eb2ebe96f0f",
+      "sourceId": "OPHNFB",
+      "unit": "INDEX_2017_100"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-04-01",
+        "missing": 0,
+        "rows": 46,
+        "start": "2015-01-01"
+      },
+      "frequency": "QUARTERLY",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "CSV line 319",
+        "nativeBasePeriod": "2026-01-01",
+        "nativeChange": 0.290406,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 90,
+        "period": "2026-04-01",
+        "periodEnd": "2026-06-30",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 123.979,
+        "yearBasePeriod": "2025-04-01",
+        "yearChange": 1.397726,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "NOMINAL_COST_PER_REAL_OUTPUT",
+      "missingRowCount": 0,
+      "rawRowCount": 318,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 318
+      },
+      "seriesId": "ULCNFB:US",
+      "sourceHash": "ec8ee19cc2410e03b05654646d93ae4791e49fd1f07a6ad3c7ba1815a844d054",
+      "sourceId": "ULCNFB",
+      "unit": "INDEX_2017_100"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-08-01",
+        "missing": 1,
+        "rows": 140,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "CSV line 957",
+        "nativeBasePeriod": "2026-07-01",
+        "nativeChange": 0.396018,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 31,
+        "period": "2026-08-01",
+        "periodEnd": "2026-08-31",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 334.131,
+        "yearBasePeriod": "2025-08-01",
+        "yearChange": 3.353016,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "PRICE_INDEX",
+      "missingRowCount": 1,
+      "rawRowCount": 956,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 956
+      },
+      "seriesId": "CPIAUCSL:US",
+      "sourceHash": "f8ecddf53a9a9a74dda92c2c4204e6039466fcb744bc74171b73b5f6aac48119",
+      "sourceId": "CPIAUCSL",
+      "unit": "INDEX_1982_1984_100"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-08-01",
+        "missing": 0,
+        "rows": 140,
+        "start": "2015-01-01"
+      },
+      "frequency": "MONTHLY",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "CSV line 813",
+        "nativeBasePeriod": "2026-07-01",
+        "nativeChange": 0.247439,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 31,
+        "period": "2026-08-01",
+        "periodEnd": "2026-08-31",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 130.455,
+        "yearBasePeriod": "2025-08-01",
+        "yearChange": 3.007596,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "PRICE_INDEX",
+      "missingRowCount": 0,
+      "rawRowCount": 812,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 812
+      },
+      "seriesId": "PCEPILFE:US",
+      "sourceHash": "9f8d0f8e100cff9d9ee2e024557c8aa253c9aed7eade47ac5539c5860c36f616",
+      "sourceId": "PCEPILFE",
+      "unit": "INDEX_2017_100"
+    },
+    {
+      "commonWindow": {
+        "actualStart": "2015-01-01",
+        "end": "2026-07-01",
+        "missing": 0,
+        "rows": 47,
+        "start": "2015-01-01"
+      },
+      "frequency": "QUARTERLY_SURVEY",
+      "freshnessStatus": "MATCHES_C1M_KNOWN_AVAILABLE_NOT_LIVE_CHECKED",
+      "lastRecord": {
+        "geography": "US",
+        "locator": "INFLATION!E228",
+        "nativeBasePeriod": "2026-04-01",
+        "nativeChange": -0.1,
+        "nativeChangeStatus": "AVAILABLE",
+        "nativeIntervalDays": 91,
+        "period": "2026-07-01",
+        "periodEnd": "2026-09-30",
+        "revisionFlag": "NOT_DISCLOSED_PER_OBSERVATION",
+        "value": 2.3,
+        "yearBasePeriod": "2025-07-01",
+        "yearChange": -0.005,
+        "yearChangeStatus": "AVAILABLE"
+      },
+      "measureType": "SURVEY_EXPECTATION",
+      "missingRowCount": 87,
+      "rawRowCount": 227,
+      "revisionFlags": {
+        "NOT_DISCLOSED_PER_OBSERVATION": 227
+      },
+      "seriesId": "SPF10:US",
+      "sourceHash": "2bef852b0b4c4365ce9d38796c408ecb2648f024b2cc1d40a8c1426afe62e2e5",
+      "sourceId": "SPF10",
+      "unit": "PERCENT_ANNUAL_AVERAGE"
+    }
+  ],
+  "sourceAsOf": "2026-10-09",
+  "sourceCount": 11,
+  "tests": {
+    "A": 13,
+    "B1": 43,
+    "B2": 51,
+    "C0": 38,
+    "C1A": 55,
+    "C1M": 51,
+    "C2": 51
+  },
+  "testsSummary": {
+    "baselineRegressionExecution": "A in C2; B1/B2/C0/C1A/C1M in clean detached exact-baseline worktrees; all inherited bytes locked in C2",
+    "researchTestsFailed": 0,
+    "researchTestsPassed": 302
+  },
+  "validationExecutedDate": "2026-10-10",
+  "verify": "PASS_EXIT_0"
+}

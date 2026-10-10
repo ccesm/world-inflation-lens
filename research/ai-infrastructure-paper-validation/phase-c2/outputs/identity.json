@@ -1,0 +1,22 @@
+{
+  "files": {
+    "analysis.json": {
+      "byteSize": 4594216,
+      "sha256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7"
+    },
+    "analysis.md": {
+      "byteSize": 16121,
+      "sha256": "0887d85ef708b34298bc6c597eda5210d65ad19371e293fda56b408443339ea2"
+    },
+    "observations.csv": {
+      "byteSize": 4008974,
+      "sha256": "115e07f822d1af2edb71d8ac20f081d3926bae8dcdf242e37ba786cd07e8449c"
+    }
+  },
+  "indicatorCount": 12,
+  "inputIdentityHash": "480e10d32d5d8317589aa279edafe4137b4d1bb8e384093ed0a1a896dcb5018d",
+  "observationCount": 12949,
+  "outputSetHash": "34eac463e54188e9da70e10cd7ae6758bec5ec2f365b9289b8f396f5cf96a788",
+  "schemaVersion": "C2.1",
+  "seriesCount": 36
+}

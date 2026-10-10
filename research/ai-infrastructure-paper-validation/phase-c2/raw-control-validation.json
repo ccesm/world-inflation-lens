@@ -1,0 +1,27 @@
+{
+  "baseSHA": "eb2da0e23ab9840e385a09b3889baa4454fddd74",
+  "comparedNumericCellsBySource": {
+    "CENSUS_DC": 152,
+    "CPIAUCSL": 956,
+    "DFII10": 6201,
+    "EIA_GAS": 132,
+    "EIA_STATE": 3432,
+    "NCBDBIQ027S": 323,
+    "OPHNFB": 318,
+    "PCEPILFE": 812,
+    "PNFIC1": 78,
+    "SPF10": 227,
+    "ULCNFB": 318
+  },
+  "electricityControl": {
+    "cellsChecked": 3432,
+    "rawHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+    "status": "PASS_EXISTING_RAW_HASH_AND_NATIVE_CELLS"
+  },
+  "fixtureParserComparison": "PASS_INDEPENDENT_C2_VS_INHERITED_C1M",
+  "noEconomicPromotion": true,
+  "noNetwork": true,
+  "noNewSources": true,
+  "schemaVersion": "C2.1",
+  "sourceAsOf": "2026-10-09"
+}
