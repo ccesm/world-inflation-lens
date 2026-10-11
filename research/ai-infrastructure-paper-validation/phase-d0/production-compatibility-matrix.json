@@ -1,0 +1,193 @@
+{
+  "framework": {
+    "charts": "Custom SVG; d3-geo for geography",
+    "database": null,
+    "frontend": "React 19 / Vite 7 / native ESM JSX",
+    "routing": "Whitelisted hash routes",
+    "runtimeEconomicAPI": false,
+    "storage": "Committed build snapshots; localStorage only preferences; SystemStatus has separate operational HTTP fetch"
+  },
+  "newDependencies": 0,
+  "primaryIntegration": "STATIC_APPROVED_ARTIFACT",
+  "productionSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+  "researchSHA": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+  "rows": [
+    {
+      "anchor": "routeFromHash",
+      "disposition": "MINIMAL_ADAPTATION",
+      "finding": "Add one research reference route; keep unknown-route fallback and routeSection",
+      "id": "routing",
+      "path": "src/utils/routing.js",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "ResearchLoadBoundary",
+      "disposition": "MINIMAL_ADAPTATION",
+      "finding": "One lazy page branch, existing Suspense/error boundary, focus and title",
+      "id": "page-shell",
+      "path": "src/App.jsx",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "sectionLinks",
+      "disposition": "MINIMAL_ADAPTATION",
+      "finding": "One EN/ZH nav label and research-directory link, no main navigation redesign",
+      "id": "navigation",
+      "path": "src/i18n/architecture.js",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "pageResearchContext",
+      "disposition": "MINIMAL_ADAPTATION",
+      "finding": "One Productive Capacity route/context entry, no score/Signal integration",
+      "id": "context",
+      "path": "src/data/researchArchitecture.js",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "PageIntro",
+      "disposition": "DIRECT_REUSE",
+      "finding": "Presentational title/subtitle",
+      "id": "intro",
+      "path": "src/components/PageIntro.jsx",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "ResearchLoadBoundary",
+      "disposition": "DIRECT_REUSE",
+      "finding": "Lazy module failure isolation; explicit local asset error state still needed",
+      "id": "error-boundary",
+      "path": "src/components/ResearchLoadBoundary.jsx",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "chartPath",
+      "disposition": "MINIMAL_ADAPTATION",
+      "finding": "Drawing only: period -> date; map drawing gap frequency explicitly; preserve native statistical frequency",
+      "id": "svg-path",
+      "path": "src/utils/workspace.js",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "monthNumber",
+      "disposition": "UNSUITABLE_DIRECTLY",
+      "finding": "Month-based positioning and pointer indexing unsuitable for quarterly/daily; empty and all-null guard needed",
+      "id": "monthly-chart",
+      "path": "src/charts/TimeSeriesChart.jsx",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "growth",
+      "disposition": "UNSUITABLE_DIRECTLY",
+      "finding": "Recomputes YoY/annualized changes; C2 already qualified different native calculations",
+      "id": "productivity-panel",
+      "path": "src/components/ProductivityChart.jsx",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "annualGrowth",
+      "disposition": "UNSUITABLE_DIRECTLY",
+      "finding": "Live-vintage catalog and automatic growth/freshness coupling; do not register C2 into this catalog",
+      "id": "workspace-panel",
+      "path": "src/components/WorkspaceSeries.jsx",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "InternationalChart",
+      "disposition": "PATTERN_ONLY",
+      "finding": "Reuse responsive/table patterns, not percent domain/month-date/data coupling",
+      "id": "international-chart",
+      "path": "src/components/InternationalChart.jsx",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "withSeriesContract",
+      "disposition": "PATTERN_ONLY",
+      "finding": "Frequency/clock defaults are not C2 semantics; small separate contract",
+      "id": "series-contract",
+      "path": "src/data/seriesContract.js",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "temporalValue",
+      "disposition": "MINIMAL_ADAPTATION",
+      "finding": "Explicit precision/semantics formatting, not inferred first release",
+      "id": "clock-format",
+      "path": "src/utils/timeSemantics.js",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "content-section",
+      "disposition": "DIRECT_REUSE",
+      "finding": "Existing page classes/theme; narrowly scoped new CSS for cards/table",
+      "id": "styles",
+      "path": "src/styles.css",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "replaceBundle",
+      "disposition": "RESEARCH_ONLY_SEPARATION",
+      "finding": "Reuse validation/rollback discipline, do not extend live refresh output whitelist",
+      "id": "refresh",
+      "path": "scripts/refresh-data.mjs",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "base: '/world-inflation-lens/'",
+      "disposition": "DIRECT_REUSE",
+      "finding": "Existing lazy bundle and Pages base; no config change needed",
+      "id": "build",
+      "path": "vite.config.js",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "workflow_dispatch",
+      "disposition": "UNCHANGED",
+      "finding": "Normal existing owner-approved main publication; no D0/D1 workflow edits",
+      "id": "pages",
+      "path": ".github/workflows/deploy.yml",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "contents: read",
+      "disposition": "UNCHANGED",
+      "finding": "Company-accounting candidate workflow is not macro snapshot workflow",
+      "id": "capex-dispatch",
+      "path": ".github/workflows/ai-capex-quarterly-refresh.yml",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "dry-run",
+      "disposition": "UNCHANGED",
+      "finding": "No new topic, email or schedule",
+      "id": "notification",
+      "path": "scripts/notify.mjs",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "EIA",
+      "disposition": "MINIMAL_ADAPTATION",
+      "finding": "Update obsolete EN/ZH EIA not-integrated note only if D1 activates this source",
+      "id": "source-links",
+      "path": "src/data/researchLinks.js",
+      "referenceSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab"
+    },
+    {
+      "anchor": "def build(",
+      "disposition": "OFFLINE_REUSE",
+      "finding": "Python stdlib; immutable arithmetic and raw input qualification stay research-only",
+      "id": "c2-engine",
+      "path": "research/ai-infrastructure-paper-validation/phase-c2/engine.py",
+      "referenceSHA": "362929adfae20b31d8044e5c9a10ae020f0c9eaf"
+    },
+    {
+      "anchor": "def scope(",
+      "disposition": "UNSUITABLE_PRODUCTION_CLI",
+      "finding": "Strict C1M baseline lock and phase-C2-only writes reject production/D0 descendants; do not weaken guard",
+      "id": "c2-cli",
+      "path": "research/ai-infrastructure-paper-validation/phase-c2/engine.py",
+      "referenceSHA": "362929adfae20b31d8044e5c9a10ae020f0c9eaf"
+    }
+  ],
+  "schemaVersion": "D0.1"
+}

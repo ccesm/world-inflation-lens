@@ -1,0 +1,119 @@
+{
+  "licensingReview": [
+    {
+      "finding": "Distribution of EIA data allowed with dated acknowledgment; private/licensed material exceptions; translation attribution",
+      "status": "GENERAL_POLICY_REVIEWED",
+      "url": "https://www.eia.gov/about/copyrights_reuse.php"
+    },
+    {
+      "finding": "Original-provider and FRED attribution plus applicable series rights; no blanket public-domain declaration",
+      "status": "GENERAL_POLICY_REVIEWED_SOURCE_SPECIFIC_GATE_OPEN",
+      "url": "https://fred.stlouisfed.org/legal/"
+    },
+    {
+      "finding": "Online terms/privacy reviewed; does not establish unconditional SPF dataset redistribution permission",
+      "status": "TERMS_REVIEWED_DATA_SPECIFIC_GATE_OPEN",
+      "url": "https://www.philadelphiafed.org/about-us/privacy-notice"
+    }
+  ],
+  "risks": [
+    {
+      "category": "Source redistribution",
+      "description": "Source-specific redistribution status is absent from C2; EIA policy reviewed but FRED/Philadelphia Fed and original-provider terms need final per-source evidence",
+      "mitigation": "D1 reviewed rights sidecar and attribution; keep unresolved source values out of public candidate assets and block full twelve-indicator release until source-specific gates pass",
+      "riskId": "R01",
+      "severity": "HIGH",
+      "status": "PUBLIC_RELEASE_GATE"
+    },
+    {
+      "category": "Scientific attribution",
+      "description": "Aggregate commercial demand and general productivity are not AI-specific; E2 arithmetic is not association",
+      "mitigation": "Persistent bilingual observation/calculation/hypothesis distinction, no composite score or causal summary",
+      "riskId": "R02",
+      "severity": "HIGH",
+      "status": "PERMANENT_BOUNDARY"
+    },
+    {
+      "category": "Frequency/calculation mismatch",
+      "description": "Existing panels recalculate or assume monthly point positions; daily yield negatives need percentage points",
+      "mitigation": "Small presentational SVG using C2 outputs; exact period/null/domain tests",
+      "riskId": "R03",
+      "severity": "HIGH",
+      "status": "D1_TEST_GATE"
+    },
+    {
+      "category": "Vintage collision",
+      "description": "Same indicator ID in live production can have different snapshot/adjustment; CPIAUCNS differs from CPIAUCSL",
+      "mitigation": "Separate namespace and frozen source identity; no overwrite of catalog or existing data",
+      "riskId": "R04",
+      "severity": "MEDIUM",
+      "status": "D1_TEST_GATE"
+    },
+    {
+      "category": "Staleness",
+      "description": "Energy and gas stop in 2025 despite October 2026 source review",
+      "mitigation": "Per-series lastRecord, lastNonmissing, known-at-review source latest and snapshot clocks; never live label",
+      "riskId": "R05",
+      "severity": "MEDIUM",
+      "status": "VISIBLE_LIMITATION"
+    },
+    {
+      "category": "Missing release dates",
+      "description": "First publication dates are null; latest known catalog is not fetched latest",
+      "mitigation": "Show unknown explicitly, prohibit real-time backtests; retrieval is not publication",
+      "riskId": "R06",
+      "severity": "MEDIUM",
+      "status": "VISIBLE_LIMITATION"
+    },
+    {
+      "category": "History performance",
+      "description": "4.59 MB JSON; 6201 daily rows; DOM/table overhead",
+      "mitigation": "Small summary then one on-demand history asset; <=4 charts mounted; paginated accessible table; measure 390px/1280px",
+      "riskId": "R07",
+      "severity": "MEDIUM",
+      "status": "D1_MEASUREMENT_GATE"
+    },
+    {
+      "category": "Asset fetch/hash mismatch",
+      "description": "Old summary + new history or failed static fetch",
+      "mitigation": "Content-addressed same-origin BASE_URL path, hash/shape check; keep summary visible, user retry; no automatic replacement",
+      "riskId": "R08",
+      "severity": "MEDIUM",
+      "status": "D1_TEST_GATE"
+    },
+    {
+      "category": "Research/main drift",
+      "description": "Main has 15 newer data files and 199 research paths absent",
+      "mitigation": "Start D1 from freshly fetched main, never merge whole lineage; approved projection only",
+      "riskId": "R09",
+      "severity": "MEDIUM",
+      "status": "D1_RECHECK_GATE"
+    },
+    {
+      "category": "Definition/revision change",
+      "description": "Units, survey definitions, adjustments and revisions can change",
+      "mitigation": "New candidate vintage/diff; preserve last-valid snapshot; explicit definition version and review",
+      "riskId": "R10",
+      "severity": "MEDIUM",
+      "status": "MANUAL_UPDATE_GATE"
+    },
+    {
+      "category": "Inherited dependencies",
+      "description": "Existing security advisory and chunk/import warnings are not repaired here",
+      "mitigation": "Record existing risks; no dependency or lockfile edit",
+      "riskId": "R11",
+      "severity": "MEDIUM",
+      "status": "OUT_OF_SCOPE"
+    },
+    {
+      "category": "External source/navigation loss",
+      "description": "Official URLs or network history fetch may fail",
+      "mitigation": "Persist publisher/definition/date/hash in summary; semantic table; page-specific error only",
+      "riskId": "R12",
+      "severity": "LOW",
+      "status": "FALLBACK"
+    }
+  ],
+  "schemaVersion": "D0.1",
+  "unresolvedScientificGaps": "Inherited C0/C1A/C1M/C2 registers remain untouched; not prerequisites for descriptive snapshot design"
+}

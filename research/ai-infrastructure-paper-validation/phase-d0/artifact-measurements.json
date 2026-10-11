@@ -1,0 +1,32 @@
+{
+  "distinctSourceCount": 11,
+  "futureBudget": {
+    "budgetIsAcceptanceTargetNotBenchmark": true,
+    "defaultTableRows": 24,
+    "historyUncompressedBytes": 5000000,
+    "maxMountedCharts": 4,
+    "summaryUncompressedBytes": 150000
+  },
+  "method": "Exact committed byte size; hypothetical gzip level 9 mtime 0, not measured Pages transfer",
+  "missingCount": 360,
+  "outputs": {
+    "analysis.json": {
+      "byteSize": 4594216,
+      "gzipBytes": 363731,
+      "sha256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7"
+    },
+    "analysis.md": {
+      "byteSize": 16121,
+      "gzipBytes": 4507,
+      "sha256": "0887d85ef708b34298bc6c597eda5210d65ad19371e293fda56b408443339ea2"
+    },
+    "observations.csv": {
+      "byteSize": 4008974,
+      "gzipBytes": 299476,
+      "sha256": "115e07f822d1af2edb71d8ac20f081d3926bae8dcdf242e37ba786cd07e8449c"
+    }
+  },
+  "recordCount": 12949,
+  "schemaVersion": "D0.1",
+  "seriesCount": 36
+}

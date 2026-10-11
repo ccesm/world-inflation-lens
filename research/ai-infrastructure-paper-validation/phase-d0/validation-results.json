@@ -1,0 +1,131 @@
+{
+  "architecture": {
+    "approach": "STATIC_APPROVED_ARTIFACT",
+    "currentProductionVersion": "1.4.1",
+    "database": false,
+    "indicators": 12,
+    "newFramework": false,
+    "nullValues": 360,
+    "productionUIImplemented": false,
+    "proposedRoute": "#/research/ai-macro",
+    "publicProjectionGenerated": false,
+    "records": 12949,
+    "runtimeEconomicAPI": false,
+    "series": 36
+  },
+  "baseBranch": "codex/ai-infra-macro-descriptive-phase-c2",
+  "baseSHA": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+  "branch": "codex/ai-infra-macro-integration-phase-d0",
+  "browserAcceptance": "NOT_RUN_NO_D0_UI; D1 plan specifies 390px/1280px EN/ZH light/dark",
+  "build": "PASS_EXIT_0",
+  "causalValidation": "NOT_PERFORMED; software checks do not validate macro hypotheses",
+  "deploy": false,
+  "determinism": {
+    "C2OutputFreshProcesses": 2,
+    "D0AuditFreshProcesses": 2,
+    "allThreeC2OutputHashesMatch": true,
+    "differentCwd": true,
+    "timezones": [
+      "UTC",
+      "Pacific/Honolulu"
+    ]
+  },
+  "finalDecision": "COMPLETE — INTEGRATION ARCHITECTURE VALIDATED",
+  "finalSHA": "RESOLVES_TO_GIT_COMMIT_CONTAINING_THIS_REPORT; not self-referential",
+  "initialExtraProductionVerify": "FAILED_MISSING_494ae75_HISTORICAL_GIT_FIXTURE_IN_SHALLOW_CLONE; full history fetched; no code change",
+  "inspectionDate": "2026-10-10",
+  "merge": false,
+  "notificationChanged": false,
+  "phaseD1Started": false,
+  "productionMainObserved": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+  "productionPR": false,
+  "productionReferenceBuild": "PASS_EXIT_0",
+  "productionReferenceVerify": "PASS_EXIT_0_FULL_17_SCRIPT_CHAIN_AFTER_HISTORY_FETCH",
+  "remainingHighGates": [
+    "D1 per-source public redistribution review",
+    "D1 native-frequency/calculation semantics acceptance",
+    "Scientific AI-specific causality remains unidentified; permanent interpretation boundary"
+  ],
+  "remainingMediumGates": [
+    "D1 actual browser/performance and EN/ZH accessibility acceptance",
+    "Unknown release clocks and stale energy/gas captures remain visible",
+    "D1 must recheck then-current main and approved source vintage",
+    "Inherited dependency advisory/chunk/import warnings not repaired"
+  ],
+  "researchTestsFailed": 0,
+  "researchTestsPassed": 325,
+  "runtime": {
+    "newDependencies": 0,
+    "node": "24.19.0",
+    "python": "3.9.6"
+  },
+  "scheduleAdded": false,
+  "schemaVersion": "D0.1",
+  "scope": {
+    "inheritedFilesLocked": 571,
+    "onlyChangedPrefix": "research/ai-infrastructure-paper-validation/phase-d0/",
+    "originalUncommittedUserWork": "UNTOUCHED",
+    "priorResearchModified": false,
+    "productionFilesInspected": 372,
+    "productionModified": false
+  },
+  "tests": [
+    {
+      "checkoutSHA": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+      "exitCode": 0,
+      "failed": 0,
+      "passed": 13,
+      "phase": "a"
+    },
+    {
+      "checkoutSHA": "8e7d637a171de15c8f5c30b0896cae4400fdef70",
+      "exitCode": 0,
+      "failed": 0,
+      "passed": 43,
+      "phase": "b1"
+    },
+    {
+      "checkoutSHA": "596e7e69560ee17be0b5412e852e74032533f49a",
+      "exitCode": 0,
+      "failed": 0,
+      "passed": 51,
+      "phase": "b2"
+    },
+    {
+      "checkoutSHA": "439ce594d95eea8e8ebd6f47e4333372e2d56d69",
+      "exitCode": 0,
+      "failed": 0,
+      "passed": 38,
+      "phase": "c0"
+    },
+    {
+      "checkoutSHA": "8e6b3eec6b0584c1567c13d7e3979707225324fc",
+      "exitCode": 0,
+      "failed": 0,
+      "passed": 55,
+      "phase": "c1a"
+    },
+    {
+      "checkoutSHA": "eb2da0e23ab9840e385a09b3889baa4454fddd74",
+      "exitCode": 0,
+      "failed": 0,
+      "passed": 51,
+      "phase": "c1m"
+    },
+    {
+      "checkoutSHA": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+      "exitCode": 0,
+      "failed": 0,
+      "passed": 51,
+      "phase": "c2"
+    },
+    {
+      "checkoutSHA": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+      "exitCode": 0,
+      "failed": 0,
+      "passed": 23,
+      "phase": "d0"
+    }
+  ],
+  "verify": "PASS_EXIT_0_FULL_17_SCRIPT_CHAIN"
+}
