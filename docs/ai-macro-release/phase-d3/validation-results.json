@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "D3_VALIDATION_1",
+  "validatedImplementationSHA": "f54df97dab9629440588d42a3bb3e5e1bf90529e",
+  "validationDate": "2026-10-11T05:54:55.419Z",
+  "cleanInstall": {
+    "command": "npm ci --ignore-scripts --no-audit --no-fund",
+    "result": "PASS",
+    "runtime": "v24.19.0",
+    "os": "darwin arm64"
+  },
+  "security": {
+    "command": "npm audit --json",
+    "result": "PASS",
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "sourceMapJs": "1.2.2",
+    "broadUpgrades": false
+  },
+  "tests": {
+    "D3AuthenticatedOriginalInput": {
+      "passed": 51,
+      "failed": 0,
+      "skipped": 0
+    },
+    "D3DefaultOffline": {
+      "passed": 46,
+      "failed": 0,
+      "skipped": 1
+    },
+    "D21ExactSourceRegression": {
+      "passed": 50,
+      "failed": 0,
+      "skipped": 0
+    },
+    "fullRepositoryVerify": "PASS",
+    "existingAICapExPublicControlTests": {
+      "passed": 39,
+      "failed": 0
+    },
+    "existingAIInfrastructureTests": {
+      "passed": 50,
+      "failed": 0
+    },
+    "historicalResearch": "Prior A-C2/D0/D1/D2 results preserved in the pinned D2.1 source report; not imported into production or represented as new D3 executions"
+  },
+  "build": {
+    "result": "PASS",
+    "commit": "f54df97dab9629440588d42a3bb3e5e1bf90529e",
+    "existingChunkSizeWarning": "Present; no new framework or global refactor"
+  },
+  "browser": {
+    "schemaVersion": "D21_BROWSER_1",
+    "browser": "154.0.8037.99",
+    "execution": "Headless installed Chrome; local loopback preview, cold context per combination; not a remote network benchmark",
+    "url": "Isolated loopback production preview",
+    "results": [
+      {
+        "width": 390,
+        "language": "en",
+        "theme": "light",
+        "result": "PASS",
+        "initialMs": 1120,
+        "historyMs": 137,
+        "historyRequests": 1,
+        "indicators": 12,
+        "charts": 4,
+        "overflow": {
+          "client": 390,
+          "scroll": 390,
+          "offenders": []
+        },
+        "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+        "missingCPI": "PASS"
+      },
+      {
+        "width": 390,
+        "language": "en",
+        "theme": "dark",
+        "result": "PASS",
+        "initialMs": 600,
+        "historyMs": 113,
+        "historyRequests": 1,
+        "indicators": 12,
+        "charts": 4,
+        "overflow": {
+          "client": 390,
+          "scroll": 390,
+          "offenders": []
+        },
+        "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+        "missingCPI": "PASS"
+      },
+      {
+        "width": 390,
+        "language": "zh",
+        "theme": "light",
+        "result": "PASS",
+        "initialMs": 576,
+        "historyMs": 113,
+        "historyRequests": 1,
+        "indicators": 12,
+        "charts": 4,
+        "overflow": {
+          "client": 390,
+          "scroll": 390,
+          "offenders": []
+        },
+        "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+        "missingCPI": "PASS"
+      },
+      {
+        "width": 390,
+        "language": "zh",
+        "theme": "dark",
+        "result": "PASS",
+        "initialMs": 578,
+        "historyMs": 109,
+        "historyRequests": 1,
+        "indicators": 12,
+        "charts": 4,
+        "overflow": {
+          "client": 390,
+          "scroll": 390,
+          "offenders": []
+        },
+        "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+        "missingCPI": "PASS"
+      },
+      {
+        "width": 1280,
+        "language": "en",
+        "theme": "light",
+        "result": "PASS",
+        "initialMs": 1048,
+        "historyMs": 126,
+        "historyRequests": 1,
+        "indicators": 12,
+        "charts": 4,
+        "overflow": {
+          "client": 1280,
+          "scroll": 1280,
+          "offenders": []
+        },
+        "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+        "missingCPI": "PASS"
+      },
+      {
+        "width": 1280,
+        "language": "en",
+        "theme": "dark",
+        "result": "PASS",
+        "initialMs": 586,
+        "historyMs": 127,
+        "historyRequests": 1,
+        "indicators": 12,
+        "charts": 4,
+        "overflow": {
+          "client": 1280,
+          "scroll": 1280,
+          "offenders": []
+        },
+        "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+        "missingCPI": "PASS"
+      },
+      {
+        "width": 1280,
+        "language": "zh",
+        "theme": "light",
+        "result": "PASS",
+        "initialMs": 1047,
+        "historyMs": 104,
+        "historyRequests": 1,
+        "indicators": 12,
+        "charts": 4,
+        "overflow": {
+          "client": 1280,
+          "scroll": 1280,
+          "offenders": []
+        },
+        "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+        "missingCPI": "PASS"
+      },
+      {
+        "width": 1280,
+        "language": "zh",
+        "theme": "dark",
+        "result": "PASS",
+        "initialMs": 1056,
+        "historyMs": 112,
+        "historyRequests": 1,
+        "indicators": 12,
+        "charts": 4,
+        "overflow": {
+          "client": 1280,
+          "scroll": 1280,
+          "offenders": []
+        },
+        "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+        "missingCPI": "PASS"
+      },
+      {
+        "mode": "blocked",
+        "result": "PASS",
+        "summaryRetained": true,
+        "automaticRetry": false
+      },
+      {
+        "mode": "changed_bytes",
+        "result": "PASS",
+        "summaryRetained": true,
+        "automaticRetry": false
+      },
+      {
+        "legacyRoute": "home",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "dollar",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "fiscal",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "history",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "scenarios",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "purchasing-power",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "monitor",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "regimes",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "since-1971",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "drivers",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "us-cpi",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "timeline",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "overview",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "map",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "sources",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "external-shocks",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/ai-productivity",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/ai-labor",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/ai-capex",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/ai-infrastructure",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/digital-money",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/data",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/updates",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/international-dollar",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/signal-engine",
+        "result": "PASS"
+      }
+    ],
+    "pageErrors": [],
+    "economicRuntimeRequests": [],
+    "classification": "PASS",
+    "testedImplementationSHA": "f54df97dab9629440588d42a3bb3e5e1bf90529e"
+  },
+  "accessibility": {
+    "browser": "154.0.8037.99",
+    "results": [
+      {
+        "language": "en",
+        "result": "PASS",
+        "freshSPFHistoryRequests": 0,
+        "switchBackHistoryRequests": 1,
+        "keyboard": "Tab/Shift+Tab/Space",
+        "AX": "Named H3, explanatory text, link, main landmark; table restored after numerical selection",
+        "screenReader": "DEFERRED_BY_OWNER"
+      },
+      {
+        "language": "zh",
+        "result": "PASS",
+        "freshSPFHistoryRequests": 0,
+        "switchBackHistoryRequests": 1,
+        "keyboard": "Tab/Shift+Tab/Space",
+        "AX": "Named H3, explanatory text, link, main landmark; table restored after numerical selection",
+        "screenReader": "DEFERRED_BY_OWNER"
+      },
+      {
+        "kind": "LOCAL_PERFORMANCE",
+        "largestSeriesRenderMs": 119,
+        "method": "Cold local context, installed Chrome, includes history fetch/validation/render; not production benchmark"
+      }
+    ],
+    "actualScreenReader": "DEFERRED_BY_OWNER"
+  },
+  "integrity": {
+    "D21SelectedBytes": "IDENTICAL",
+    "regenerationFromAuthenticatedC2": "PASS",
+    "freshProcessDeterminism": "PASS",
+    "numericalRights": "10 exact reviewed source identities and intended uses validated",
+    "SPF10": "EXTERNAL_SOURCE_ONLY; rights UNRESOLVED; no numerical history/workbook/chart/table",
+    "historyHash": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+    "projectionHash": "1a0a3e41fdb6b5ab3bfcfa4bfae1f6891dd4ce82b0d82e00142542932b02f13b"
+  },
+  "scope": {
+    "result": "PASS",
+    "baseSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+    "existingAnchors": [
+      "package-lock.json",
+      "package.json",
+      "src/App.jsx",
+      "src/data/researchArchitecture.js",
+      "src/data/researchLinks.js",
+      "src/i18n/architecture.js",
+      "src/utils/routing.js"
+    ],
+    "protectedTrackedFiles": 365,
+    "productionEconomicDataChanged": false,
+    "workflowsChanged": false,
+    "sharedWorkspaceChanged": false
+  },
+  "manualScreenReaderAcceptance": "DEFERRED_BY_OWNER",
+  "formalScreenReaderPass": false,
+  "WCAGConformanceClaim": false,
+  "mergePerformed": false,
+  "deploymentPerformed": false,
+  "classification": "RELEASE PREPARED — OWNER APPROVAL REQUIRED"
+}
