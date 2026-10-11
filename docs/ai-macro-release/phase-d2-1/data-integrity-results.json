@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "D21_DATA_INTEGRITY_1",
+  "researchAsOf": "2026-10-09",
+  "privateResearch": {
+    "c2InputSHA256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7",
+    "indicators": 12,
+    "series": 36,
+    "records": 12949,
+    "missing": 360,
+    "fullD1SummaryBytes": 94416,
+    "fullD1SummaryFileSHA256": "6b4b37678b4e9e20495a1340de806c461c2fe33c2a1e995373dbd2fc2a99b9cb",
+    "fullD1HistoryBytes": 4500722,
+    "fullD1HistorySHA256": "5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590",
+    "beforeAfterByteIdentity": "UNCHANGED",
+    "location": "EXTERNAL_TO_RELEASE_TREE"
+  },
+  "publicSubset": {
+    "conceptualIndicators": 12,
+    "numericalIndicators": 11,
+    "series": 35,
+    "records": 12722,
+    "missing": 273,
+    "sources": 10,
+    "summaryBytes": 93328,
+    "summaryFileSHA256": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+    "projectionHash": "1a0a3e41fdb6b5ab3bfcfa4bfae1f6891dd4ce82b0d82e00142542932b02f13b",
+    "history": {
+      "byteSize": 4422270,
+      "missingCount": 273,
+      "path": "data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "recordCount": 12722,
+      "seriesCount": 35,
+      "sha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3"
+    },
+    "externalIndicator": {
+      "indicatorId": "SPF10",
+      "officialURL": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts",
+      "publicationMode": "EXTERNAL_SOURCE_ONLY",
+      "rightsStatus": "UNRESOLVED"
+    }
+  },
+  "preservation": {
+    "nativeFieldsAndObservations": "FIELD_BY_FIELD_EQUAL_TO_AUTHENTICATED_C2",
+    "economicRecalculation": false,
+    "sourceDatesUnitsFrequenciesRevisionFlags": "UNCHANGED",
+    "freshProcessRebuild": "IDENTICAL_SUMMARY_AND_HISTORY_BYTES",
+    "withheldDataPublished": false
+  },
+  "seriesCoverage": [
+    {
+      "seriesId": "EIA_COMM_SALES:IL",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:KS",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:KY",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:MI",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:MO",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:NE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:NM",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:OH",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:OK",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:PA",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:UT",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:VA",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:WI",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:IL",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:KS",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:KY",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:MI",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:MO",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:NE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:NM",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:OH",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:OK",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:PA",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:UT",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:VA",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:WI",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "HENRY_HUB:HENRY_HUB",
+      "sourceHash": "60d2afb050b84d9ed082f94d9a73e4326231fb717e9c32390d7fcf36fbc5e7b8",
+      "frequency": "MONTHLY",
+      "rawRowCount": 132,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2025-12-01"
+    },
+    {
+      "seriesId": "CENSUS_DC:US",
+      "sourceHash": "e9faea98ea4fc9c57ffbb4e7e576a5907e17e2324dce7d4e58a17aaa8bb2c560",
+      "frequency": "MONTHLY",
+      "rawRowCount": 152,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2026-08-01"
+    },
+    {
+      "seriesId": "PNFIC1:US",
+      "sourceHash": "1d09c0f0fe107c1ff623e353a249d754727cd7c6828ec78b7886525104bcf03d",
+      "frequency": "QUARTERLY",
+      "rawRowCount": 78,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2026-04-01"
+    },
+    {
+      "seriesId": "DFII10:US",
+      "sourceHash": "0277781c1336527c38275803bfedc0b7f1c264740b9406981edda0d2796ab6ee",
+      "frequency": "DAILY",
+      "rawRowCount": 6201,
+      "missingRowCount": 254,
+      "lastCapturedPeriod": "2026-10-08"
+    },
+    {
+      "seriesId": "NCBDBIQ027S:US",
+      "sourceHash": "4de946ca4b573efe3964f6105517b456cecc5f5caa94e76e4b4c990f6551f75a",
+      "frequency": "QUARTERLY_END_OF_PERIOD",
+      "rawRowCount": 323,
+      "missingRowCount": 18,
+      "lastCapturedPeriod": "2026-04-01"
+    },
+    {
+      "seriesId": "OPHNFB:US",
+      "sourceHash": "d42ef61a91b622bbe47aeba137a411221da8d75b178617ab6d819eb2ebe96f0f",
+      "frequency": "QUARTERLY",
+      "rawRowCount": 318,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2026-04-01"
+    },
+    {
+      "seriesId": "ULCNFB:US",
+      "sourceHash": "ec8ee19cc2410e03b05654646d93ae4791e49fd1f07a6ad3c7ba1815a844d054",
+      "frequency": "QUARTERLY",
+      "rawRowCount": 318,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2026-04-01"
+    },
+    {
+      "seriesId": "CPIAUCSL:US",
+      "sourceHash": "f8ecddf53a9a9a74dda92c2c4204e6039466fcb744bc74171b73b5f6aac48119",
+      "frequency": "MONTHLY",
+      "rawRowCount": 956,
+      "missingRowCount": 1,
+      "lastCapturedPeriod": "2026-08-01"
+    },
+    {
+      "seriesId": "PCEPILFE:US",
+      "sourceHash": "9f8d0f8e100cff9d9ee2e024557c8aa253c9aed7eade47ac5539c5860c36f616",
+      "frequency": "MONTHLY",
+      "rawRowCount": 812,
+      "missingRowCount": 0,
+      "lastCapturedPeriod": "2026-08-01"
+    }
+  ]
+}

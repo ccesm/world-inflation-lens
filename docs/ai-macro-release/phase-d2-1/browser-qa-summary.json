@@ -1,0 +1,308 @@
+{
+  "schemaVersion": "D21_BROWSER_ACCEPTANCE_1",
+  "testedAt": "2026-10-10",
+  "testedAsset": "ACTUAL_PUBLIC_35_SERIES_SUBSET",
+  "browser": "154.0.8037.99",
+  "execution": "Headless installed Chrome; local loopback preview, cold context per combination; not a remote network benchmark",
+  "combinations": [
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "result": "PASS",
+      "initialMs": 594,
+      "historyMs": 129,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "dark",
+      "result": "PASS",
+      "initialMs": 569,
+      "historyMs": 115,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "theme": "light",
+      "result": "PASS",
+      "initialMs": 557,
+      "historyMs": 112,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "theme": "dark",
+      "result": "PASS",
+      "initialMs": 1050,
+      "historyMs": 279,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "theme": "light",
+      "result": "PASS",
+      "initialMs": 596,
+      "historyMs": 128,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 1280,
+        "scroll": 1280,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "theme": "dark",
+      "result": "PASS",
+      "initialMs": 1061,
+      "historyMs": 113,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 1280,
+        "scroll": 1280,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 1280,
+      "language": "zh",
+      "theme": "light",
+      "result": "PASS",
+      "initialMs": 551,
+      "historyMs": 118,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 1280,
+        "scroll": 1280,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 1280,
+      "language": "zh",
+      "theme": "dark",
+      "result": "PASS",
+      "initialMs": 575,
+      "historyMs": 127,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 1280,
+        "scroll": 1280,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    }
+  ],
+  "historyFailureTests": [
+    {
+      "mode": "blocked",
+      "result": "PASS",
+      "summaryRetained": true,
+      "automaticRetry": false
+    },
+    {
+      "mode": "changed_bytes",
+      "result": "PASS",
+      "summaryRetained": true,
+      "automaticRetry": false
+    }
+  ],
+  "legacyRoutes": [
+    {
+      "legacyRoute": "home",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "dollar",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "fiscal",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "history",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "scenarios",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "purchasing-power",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "monitor",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "regimes",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "since-1971",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "drivers",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "us-cpi",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "timeline",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "overview",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "map",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "sources",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "external-shocks",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/ai-productivity",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/ai-labor",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/ai-capex",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/ai-infrastructure",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/digital-money",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/data",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/updates",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/international-dollar",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/signal-engine",
+      "result": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "economicRuntimeRequests": [],
+  "accessibility": {
+    "browser": "154.0.8037.99",
+    "results": [
+      {
+        "language": "en",
+        "result": "PASS",
+        "freshSPFHistoryRequests": 0,
+        "switchBackHistoryRequests": 1,
+        "keyboard": "Tab/Shift+Tab/Space",
+        "AX": "Named H3, explanatory text, link, main landmark; table restored after numerical selection",
+        "screenReader": "MANUAL ACCEPTANCE PENDING"
+      },
+      {
+        "language": "zh",
+        "result": "PASS",
+        "freshSPFHistoryRequests": 0,
+        "switchBackHistoryRequests": 1,
+        "keyboard": "Tab/Shift+Tab/Space",
+        "AX": "Named H3, explanatory text, link, main landmark; table restored after numerical selection",
+        "screenReader": "MANUAL ACCEPTANCE PENDING"
+      },
+      {
+        "kind": "LOCAL_PERFORMANCE",
+        "largestSeriesRenderMs": 119,
+        "method": "Cold local context, installed Chrome, includes history fetch/validation/render; not production benchmark"
+      }
+    ],
+    "actualScreenReader": "MANUAL ACCEPTANCE PENDING"
+  },
+  "nativeKeyboard": "PASS: actual macOS in-app Space/Down/Down/Return selects SPF10; Tab reaches official link; Return toggles Chinese; headings/explanation/link names verified",
+  "actualScreenReader": "MANUAL ACCEPTANCE PENDING",
+  "visualReview": "390px ZH dark SPF card visually inspected; text wraps, complete H2/H3 and warning/link present; no numeric value/chart/table",
+  "classification": "AUTOMATED_AND_NATIVE_KEYBOARD_PASS_MANUAL_AT_PENDING"
+}

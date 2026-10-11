@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "D21_SECURITY_1",
+  "reviewedAt": "2026-10-10",
+  "advisory": "GHSA-68fv-2mgg-jv7q",
+  "patchedDependency": "source-map-js",
+  "before": "1.2.1",
+  "after": "1.2.2",
+  "parent": "postcss@8.5.28 ^1.2.1",
+  "cleanInstall": "PASS",
+  "lockChangeScope": "ONLY_SOURCE_MAP_JS_VERSION_RESOLVED_INTEGRITY",
+  "auditExit": 0,
+  "auditVulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "rawAuditSHA256": "ac0ff9b1614df7acf7de01a1784b380de1df4839185639fd0ff2bc5aadd7dbad",
+  "build": "PASS",
+  "completeVerify": "PASS",
+  "remainingSecurityFindings": []
+}

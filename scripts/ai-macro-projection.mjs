@@ -46,22 +46,44 @@ export function project(input,rights){
  return {summary,summaryBytes,history,historyBytes}
 }
 // Public publishing is a separate, stricter gate from the historical D1 research fixture.
+export const spfURL='https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts'
 export function assertPublicRights(review, historicalRights){
- require(review?.schemaVersion==='D2_PUBLIC_RIGHTS_1'&&review.fullPublicReleaseAllowed===true&&Array.isArray(review.blockedSources)&&review.blockedSources.length===0,'D2 public rights unresolved: no asset writes permitted')
+ require(review?.schemaVersion==='D21_MIXED_PUBLIC_RIGHTS_1'&&review.intendedUse==='Read-only numerical display and same-origin static history for ten reviewed sources; SPF10 official landing-page navigation only; no download feature','Mixed policy / exact intended use required')
  const expected=historicalRights.records.map(r=>r.sourceId).sort()
  require(expected.length===11&&new Set(expected).size===11&&Array.isArray(review.records)&&JSON.stringify(review.records.map(r=>r.sourceId).sort())===JSON.stringify(expected),'Complete exact source coverage required')
  for(const old of historicalRights.records){
   const r=review.records.find(r=>r.sourceId===old.sourceId)
-  require(['ALLOWED — PUBLIC DISPLAY','ALLOWED — ATTRIBUTION REQUIRED'].includes(r.status)&&r.publicDisplay==='SUPPORTED'&&r.staticDownload==='SUPPORTED'&&r.derivativeDisplay==='SUPPORTED_WITH_CALCULATION_LABELS'&&r.sourceHash===old.sourceHash&&r.unresolvedQuestion===null&&r.policyURLs?.length>0&&r.evidence&&r.reviewedAt,'Source-specific public rights gate: '+old.sourceId)
+  require(r.sourceHash===old.sourceHash&&r.dataset&&r.attribution&&r.policyURLs?.length>0&&r.evidence&&r.reviewedAt,'Source identity/evidence required: '+old.sourceId)
+  if(old.sourceId==='SPF10'){
+   require(r.publicationMode==='EXTERNAL_SOURCE_ONLY'&&r.status==='UNRESOLVED'&&r.publicDisplay==='UNRESOLVED_FOR_FULL_HISTORY'&&r.staticDownload==='UNRESOLVED'&&r.derivativeDisplay==='UNRESOLVED_FOR_FULL_HISTORY'&&r.unresolvedQuestion,'SPF10 must remain unresolved / external-only')
+  }else require(r.publicationMode==='PUBLIC_NUMERICAL_DATA'&&['ALLOWED — PUBLIC DISPLAY','ALLOWED — ATTRIBUTION REQUIRED'].includes(r.status)&&r.publicDisplay==='SUPPORTED'&&r.staticDownload==='SUPPORTED'&&r.derivativeDisplay==='SUPPORTED_WITH_CALCULATION_LABELS'&&r.unresolvedQuestion===null,'Source-specific public rights gate: '+old.sourceId)
  }
+}
+export function projectPublic(input,rights,review){
+ assertPublicRights(review,rights)
+ const full=project(input,rights)
+ const series=full.summary.series.filter(s=>s.indicatorId!=='SPF10')
+ const history={...full.history,schemaVersion:'AI_MACRO_HISTORY_2',series:full.history.series.filter(s=>series.some(m=>m.seriesId===s.seriesId))}
+ const historyBytes=bytes(history),historyHash=hash(historyBytes),records=history.series.flatMap(s=>s.observations)
+ const sources=full.summary.sources.filter(s=>s.sourceId!=='SPF10').map(s=>{
+  const r=review.records.find(r=>r.sourceId===s.sourceId)
+  return {...s,rightsStatus:r.status,rightsScope:review.intendedUse,attribution:r.attribution,policyURLs:r.policyURLs,publicationMode:r.publicationMode}
+ })
+ const summary={...full.summary,schemaVersion:'AI_MACRO_PUBLIC_2',copyVersion:'D21_COPY_1',rightsHash:hash(bytes(review)),sources,series,
+ externalIndicators:[{indicatorId:'SPF10',publicationMode:'EXTERNAL_SOURCE_ONLY',rightsStatus:'UNRESOLVED',officialURL:spfURL}],
+ historyArtifact:{path:`data/ai-macro/${historyHash}/history.json`,sha256:historyHash,byteSize:historyBytes.length,seriesCount:series.length,recordCount:records.length,missingCount:records.filter(r=>r.value===null).length}}
+ delete summary.projectionHash
+ summary.projectionHash=hash(bytes(summary))
+ require(series.length===35&&sources.length===10,'Exact public subset')
+ return {summary,summaryBytes:bytes(summary),history,historyBytes}
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const root=resolve(dirname(fileURLToPath(import.meta.url)),'..'),index=process.argv.indexOf('--input')
  require(index>=0&&process.argv[index+1],'Supply --input with exact C2 analysis.json; no live retrieval')
- const publicRights=JSON.parse(await readFile(join(root,'docs/ai-macro-release/phase-d2/data-redistribution-review.json'),'utf8'))
+ const publicRights=JSON.parse(await readFile(join(root,'docs/ai-macro-release/phase-d2-1/publication-policy.json'),'utf8'))
  const rights=JSON.parse(await readFile(join(root,'docs/ai-macro/source-rights.json'),'utf8'))
  assertPublicRights(publicRights,rights)
- const result=project(await readFile(resolve(process.argv[index+1])),rights)
+ const result=projectPublic(await readFile(resolve(process.argv[index+1])),rights,publicRights)
  // Both fully validated in memory before writing; CLI owns only the dedicated snapshot paths.
  const historyPath=join(root,'public',result.summary.historyArtifact.path),summaryPath=join(root,'src/data/ai-macro/summary.json')
  await mkdir(dirname(historyPath),{recursive:true});await mkdir(dirname(summaryPath),{recursive:true})
@@ -71,5 +93,5 @@ if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  else {const staged=historyPath+'.tmp-'+process.pid;try{await writeFile(staged,result.historyBytes,{flag:'wx'});await rename(staged,historyPath)}finally{await unlink(staged).catch(()=>{})}}
  const stagedSummary=summaryPath+'.tmp-'+process.pid
  try{await writeFile(stagedSummary,result.summaryBytes,{flag:'wx'});await rename(stagedSummary,summaryPath)}finally{await unlink(stagedSummary).catch(()=>{})}
- console.log(JSON.stringify({projectionHash:result.summary.projectionHash,historyHash:result.summary.historyArtifact.sha256,summaryBytes:result.summaryBytes.length,historyBytes:result.historyBytes.length,records:12949,missing:360}))
+ console.log(JSON.stringify({projectionHash:result.summary.projectionHash,historyHash:result.summary.historyArtifact.sha256,summaryBytes:result.summaryBytes.length,historyBytes:result.historyBytes.length,records:result.summary.historyArtifact.recordCount,missing:result.summary.historyArtifact.missingCount}))
 }

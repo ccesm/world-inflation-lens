@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "D21_TEST_RESULTS_1",
+  "focusedSuites": {
+    "a": {
+      "passed": 13,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "b1": {
+      "passed": 43,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "b2": {
+      "passed": 51,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "c0": {
+      "passed": 38,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "c1a": {
+      "passed": 55,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "c1m": {
+      "passed": 51,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "c2": {
+      "passed": 51,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "d0": {
+      "passed": 23,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "d1": {
+      "passed": 30,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "d2": {
+      "passed": 39,
+      "failed": 0,
+      "scope": "PINNED_INDEPENDENT_HISTORICAL_CHECKOUT"
+    },
+    "d21": {
+      "passed": 50,
+      "failed": 0,
+      "scope": "ACTUAL_PERMITTED_PUBLIC_ASSET_WITH_AUTHENTICATED_EXTERNAL_C2_REGENERATION"
+    }
+  },
+  "focusedUniqueTests": 444,
+  "build": "PASS",
+  "completeRepositoryVerify": "PASS",
+  "browser": "See browser-qa-summary.json",
+  "scientificCausalityValidated": false,
+  "defaultOfflineWithoutPrivateInput": {
+    "passed": 45,
+    "skipped": 1,
+    "skipReason": "Optional authentic-C2 regeneration not requested; public byte identity still independently validated"
+  }
+}
