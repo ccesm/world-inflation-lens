@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "D1_BROWSER_1",
+  "browser": "154.0.8037.99",
+  "execution": "Headless installed Chrome; local loopback preview, cold context per combination; not a remote network benchmark",
+  "url": "http://127.0.0.1:5191/world-inflation-lens/",
+  "results": [
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "light",
+      "result": "PASS",
+      "initialMs": 627,
+      "historyMs": 145,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "theme": "dark",
+      "result": "PASS",
+      "initialMs": 636,
+      "historyMs": 129,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "theme": "light",
+      "result": "PASS",
+      "initialMs": 1015,
+      "historyMs": 117,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "theme": "dark",
+      "result": "PASS",
+      "initialMs": 1028,
+      "historyMs": 116,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "theme": "light",
+      "result": "PASS",
+      "initialMs": 552,
+      "historyMs": 115,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 1280,
+        "scroll": 1280,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 1280,
+      "language": "en",
+      "theme": "dark",
+      "result": "PASS",
+      "initialMs": 563,
+      "historyMs": 118,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 1280,
+        "scroll": 1280,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 1280,
+      "language": "zh",
+      "theme": "light",
+      "result": "PASS",
+      "initialMs": 545,
+      "historyMs": 131,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 1280,
+        "scroll": 1280,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "width": 1280,
+      "language": "zh",
+      "theme": "dark",
+      "result": "PASS",
+      "initialMs": 545,
+      "historyMs": 120,
+      "historyRequests": 1,
+      "indicators": 12,
+      "charts": 4,
+      "overflow": {
+        "client": 1280,
+        "scroll": 1280,
+        "offenders": []
+      },
+      "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+      "missingCPI": "PASS"
+    },
+    {
+      "mode": "blocked",
+      "result": "PASS",
+      "summaryRetained": true,
+      "automaticRetry": false
+    },
+    {
+      "mode": "changed_bytes",
+      "result": "PASS",
+      "summaryRetained": true,
+      "automaticRetry": false
+    },
+    {
+      "legacyRoute": "home",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/ai-infrastructure",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/ai-capex",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/ai-labor",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/signal-engine",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "research/data",
+      "result": "PASS"
+    },
+    {
+      "legacyRoute": "drivers",
+      "result": "PASS"
+    }
+  ],
+  "pageErrors": [],
+  "economicRuntimeRequests": [],
+  "classification": "PASS"
+}
