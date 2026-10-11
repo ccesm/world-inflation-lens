@@ -1,0 +1,761 @@
+{
+  "schemaVersion": "D2_INTEGRITY_1",
+  "reviewDate": "2026-10-10",
+  "d1Commit": "1356b9b66e17f6b6e290c11040aaf61e4e1c66ab",
+  "c2Commit": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+  "fullSnapshotCheck": {
+    "mode": "EXTERNAL_LOCAL_ONLY_NOT_PUSHED",
+    "indicators": 12,
+    "series": 36,
+    "records": 12949,
+    "missing": 360,
+    "snapshotDate": "2026-10-09",
+    "summaryBytes": 94416,
+    "summaryFileSha256": "6b4b37678b4e9e20495a1340de806c461c2fe33c2a1e995373dbd2fc2a99b9cb",
+    "projectionHash": "f1150945a0f32672c60ff594de2c079c7b8318554dc919bf5061771855bf8256",
+    "historyBytes": 4500722,
+    "historySha256": "5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590",
+    "inputIdentityHash": "480e10d32d5d8317589aa279edafe4137b4d1bb8e384093ed0a1a896dcb5018d",
+    "outputSetHash": "34eac463e54188e9da70e10cd7ae6758bec5ec2f365b9289b8f396f5cf96a788",
+    "byteIdenticalD1": true,
+    "byteIdenticalC2Projection": true,
+    "firstPublicationDates": null,
+    "causalEstimate": false,
+    "correlationEstimate": false,
+    "inflationForecast": false
+  },
+  "publicCandidate": {
+    "status": "BLOCKED_FULL_DATA_PACKAGING",
+    "mode": "RELEASE_HOLD",
+    "indicatorsWithValues": 0,
+    "series": 0,
+    "records": 0,
+    "missingValues": "NOT_APPLICABLE_NO_NUMERIC_ASSET",
+    "summaryStubSha256": "2cf8428d33988017336af9ed8a683a3a0bc395e86fef0e14f58fdea0cb484278",
+    "historyAssetIncluded": false,
+    "sourceBlocker": "SPF10",
+    "noReducedOrSubstitutedDataset": true
+  },
+  "seriesMetadata": [
+    {
+      "seriesId": "EIA_COMM_SALES:IL",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:KS",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:KY",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:MI",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:MO",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:NE",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:NM",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:OH",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:OK",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:PA",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:UT",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:VA",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_SALES:WI",
+      "indicatorId": "EIA_COMM_SALES",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "MWh",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; state totals already include EIA adjustments."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:IL",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:KS",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:KY",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:MI",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:MO",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:NE",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:NM",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:OH",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:OK",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:PA",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:UT",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:VA",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "EIA_COMM_PRICE:WI",
+      "indicatorId": "EIA_COMM_PRICE",
+      "sourceId": "EIA_STATE",
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "unit": "CENTS_PER_KWH",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:26:49.292802+00:00"
+      },
+      "revisionPolicy": "Final/Preliminary flags; later annual revisions retained separately."
+    },
+    {
+      "seriesId": "HENRY_HUB:HENRY_HUB",
+      "indicatorId": "HENRY_HUB",
+      "sourceId": "EIA_GAS",
+      "sourceHash": "60d2afb050b84d9ed082f94d9a73e4326231fb717e9c32390d7fcf36fbc5e7b8",
+      "unit": "USD_PER_MMBTU",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 132,
+      "missing": 0,
+      "capturedThrough": "2025-12-01",
+      "sourceAvailabilityRecordedAtReview": "2026-09-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09T21:28:03.526069+00:00"
+      },
+      "revisionPolicy": "Current historical vintage; correction frequency not qualified."
+    },
+    {
+      "seriesId": "CENSUS_DC:US",
+      "indicatorId": "CENSUS_DC",
+      "sourceId": "CENSUS_DC",
+      "sourceHash": "e9faea98ea4fc9c57ffbb4e7e576a5907e17e2324dce7d4e58a17aaa8bb2c560",
+      "unit": "MILLION_USD_SAAR",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "SEASONALLY_ADJUSTED_ANNUAL_RATE",
+      "records": 152,
+      "missing": 0,
+      "capturedThrough": "2026-08-01",
+      "sourceAvailabilityRecordedAtReview": "2026-08-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "Native p/r flags and revised current workbook; annual benchmark revisions require archived vintage audit."
+    },
+    {
+      "seriesId": "PNFIC1:US",
+      "indicatorId": "PNFIC1",
+      "sourceId": "PNFIC1",
+      "sourceHash": "1d09c0f0fe107c1ff623e353a249d754727cd7c6828ec78b7886525104bcf03d",
+      "unit": "BILLION_CHAINED_2017_USD_SAAR",
+      "frequency": "QUARTERLY",
+      "seasonalAdjustment": "SEASONALLY_ADJUSTED_ANNUAL_RATE",
+      "records": 78,
+      "missing": 0,
+      "capturedThrough": "2026-04-01",
+      "sourceAvailabilityRecordedAtReview": "2026-04-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "GDP advance/second/third estimates; annual updates revise history."
+    },
+    {
+      "seriesId": "DFII10:US",
+      "indicatorId": "DFII10",
+      "sourceId": "DFII10",
+      "sourceHash": "0277781c1336527c38275803bfedc0b7f1c264740b9406981edda0d2796ab6ee",
+      "unit": "PERCENT_PER_ANNUM",
+      "frequency": "DAILY",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 6201,
+      "missing": 254,
+      "capturedThrough": "2026-10-08",
+      "sourceAvailabilityRecordedAtReview": "2026-10-08",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "Daily rates can be corrected; holidays/missing dates preserved."
+    },
+    {
+      "seriesId": "NCBDBIQ027S:US",
+      "indicatorId": "NCBDBIQ027S",
+      "sourceId": "NCBDBIQ027S",
+      "sourceHash": "4de946ca4b573efe3964f6105517b456cecc5f5caa94e76e4b4c990f6551f75a",
+      "unit": "MILLION_USD",
+      "frequency": "QUARTERLY_END_OF_PERIOD",
+      "seasonalAdjustment": "NOT_SEASONALLY_ADJUSTED",
+      "records": 323,
+      "missing": 18,
+      "capturedThrough": "2026-04-01",
+      "sourceAvailabilityRecordedAtReview": "2026-04-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "Quarterly Z.1 may revise data and structure; breaks must be retained."
+    },
+    {
+      "seriesId": "OPHNFB:US",
+      "indicatorId": "OPHNFB",
+      "sourceId": "OPHNFB",
+      "sourceHash": "d42ef61a91b622bbe47aeba137a411221da8d75b178617ab6d819eb2ebe96f0f",
+      "unit": "INDEX_2017_100",
+      "frequency": "QUARTERLY",
+      "seasonalAdjustment": "SEASONALLY_ADJUSTED",
+      "records": 318,
+      "missing": 0,
+      "capturedThrough": "2026-04-01",
+      "sourceAvailabilityRecordedAtReview": "2026-04-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "Quarterly preliminary/revised releases and source annual revisions; benchmark definitions retained."
+    },
+    {
+      "seriesId": "ULCNFB:US",
+      "indicatorId": "ULCNFB",
+      "sourceId": "ULCNFB",
+      "sourceHash": "ec8ee19cc2410e03b05654646d93ae4791e49fd1f07a6ad3c7ba1815a844d054",
+      "unit": "INDEX_2017_100",
+      "frequency": "QUARTERLY",
+      "seasonalAdjustment": "SEASONALLY_ADJUSTED",
+      "records": 318,
+      "missing": 0,
+      "capturedThrough": "2026-04-01",
+      "sourceAvailabilityRecordedAtReview": "2026-04-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "Same productivity source revisions; identity is definition, not causal mechanism."
+    },
+    {
+      "seriesId": "CPIAUCSL:US",
+      "indicatorId": "CPIAUCSL",
+      "sourceId": "CPIAUCSL",
+      "sourceHash": "f8ecddf53a9a9a74dda92c2c4204e6039466fcb744bc74171b73b5f6aac48119",
+      "unit": "INDEX_1982_1984_100",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "SEASONALLY_ADJUSTED",
+      "records": 956,
+      "missing": 1,
+      "capturedThrough": "2026-08-01",
+      "sourceAvailabilityRecordedAtReview": "2026-08-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "SA factors updated annually; previous five years may be revised."
+    },
+    {
+      "seriesId": "PCEPILFE:US",
+      "indicatorId": "PCEPILFE",
+      "sourceId": "PCEPILFE",
+      "sourceHash": "9f8d0f8e100cff9d9ee2e024557c8aa253c9aed7eade47ac5539c5860c36f616",
+      "unit": "INDEX_2017_100",
+      "frequency": "MONTHLY",
+      "seasonalAdjustment": "SEASONALLY_ADJUSTED",
+      "records": 812,
+      "missing": 0,
+      "capturedThrough": "2026-08-01",
+      "sourceAvailabilityRecordedAtReview": "2026-08-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "Monthly and annual NIPA revisions; current historical vintage only."
+    },
+    {
+      "seriesId": "SPF10:US",
+      "indicatorId": "SPF10",
+      "sourceId": "SPF10",
+      "sourceHash": "2bef852b0b4c4365ce9d38796c408ecb2648f024b2cc1d40a8c1426afe62e2e5",
+      "unit": "PERCENT_ANNUAL_AVERAGE",
+      "frequency": "QUARTERLY_SURVEY",
+      "seasonalAdjustment": "NOT_APPLICABLE",
+      "records": 227,
+      "missing": 87,
+      "capturedThrough": "2026-07-01",
+      "sourceAvailabilityRecordedAtReview": "2026-07-01",
+      "clocks": {
+        "firstPublicationDates": null,
+        "firstReleaseVintageAvailable": false,
+        "metadataQualifiedAsOf": "2026-10-09",
+        "retrievedAt": "2026-10-09"
+      },
+      "revisionPolicy": "Missing early survey quarters remain null; current workbook, historical corrections not versioned here."
+    }
+  ]
+}

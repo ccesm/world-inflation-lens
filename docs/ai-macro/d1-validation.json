@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "D1_ACCEPTANCE_1",
+  "startingProductionMain": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+  "branch": "codex/ai-macro-monitor-phase-d1",
+  "researchCommit": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+  "architectureCommit": "6edc2357b56bfaf1f8af0f597cfcdd8a5ae1b2a3",
+  "researchAsOf": "2026-10-09",
+  "route": "#/research/ai-macro",
+  "snapshot": {
+    "indicators": 12,
+    "series": 36,
+    "records": 12949,
+    "nullLevels": 360,
+    "summaryBytes": 94416,
+    "historyBytes": 4500722,
+    "projectionHash": "f1150945a0f32672c60ff594de2c079c7b8318554dc919bf5061771855bf8256",
+    "historyHash": "5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590",
+    "exactC2Copy": "PASS",
+    "freshProcessDeterminism": "PASS",
+    "restrictedOrUnresolvedSourceRejection": "PASS",
+    "invalidInputLastValidProtection": "PASS"
+  },
+  "rights": {
+    "purpose": "NONCOMMERCIAL_INFORMATIONAL_RESEARCH_PREVIEW",
+    "ALLOWED": 11,
+    "RESTRICTED": 0,
+    "UNRESOLVED": 0,
+    "SPF10Qualification": "Scoped assessment of aggregate numeric facts and research use, not unrestricted workbook license"
+  },
+  "regressions": {
+    "A": 13,
+    "B1": 43,
+    "B2": 51,
+    "C0": 38,
+    "C1A": 55,
+    "C1M": 51,
+    "C2": 51,
+    "D0": 23,
+    "D1": 30,
+    "failed": 0,
+    "skipped": 0,
+    "execution": "Prior research in exact verified clean checkouts; no inherited research imported into production lineage"
+  },
+  "build": "PASS",
+  "verify": "PASS",
+  "browser": {
+    "combinations": 8,
+    "indicatorsPerCombination": 12,
+    "legacyRoutes": 7,
+    "failureCases": 2,
+    "pageErrors": 0,
+    "economicRuntimeRequests": 0,
+    "overflow": "NONE",
+    "snapshotInitialMs": [
+      627,
+      636,
+      1015,
+      1028,
+      552,
+      563,
+      545,
+      545
+    ],
+    "historyLoadValidateRenderMs": [
+      145,
+      129,
+      117,
+      116,
+      115,
+      118,
+      131,
+      120
+    ],
+    "keyboard": "Tab focus and Enter pagination passed; native OS popup arrow selection not automated; no screen-reader certification"
+  },
+  "scope": {
+    "modifiedIntegrationAnchors": [
+      "package.json",
+      "src/App.jsx",
+      "src/data/researchArchitecture.js",
+      "src/data/researchLinks.js",
+      "src/i18n/architecture.js",
+      "src/utils/routing.js"
+    ],
+    "productionMainModified": false,
+    "existingEconomicDataModified": false,
+    "priorResearchImportedOrModified": false,
+    "dependenciesChanged": false,
+    "versionChanged": false,
+    "workflowsChanged": false,
+    "notificationsChanged": false,
+    "scheduledTasksCreated": false,
+    "merged": false,
+    "deployed": false,
+    "productionPRCreated": false
+  },
+  "remainingLimitations": [
+    "Not a live feed: EIA/gas captured observations end in 2025",
+    "Unknown original release dates and no first-release vintage/backtest",
+    "No statistical association, causal identification, AI-specific macro effect or forecast",
+    "Local headless timing is not remote internet performance",
+    "Owner/native-popup and screen-reader review recommended for D2",
+    "Future source vintages or different/commercial use require renewed rights review",
+    "Inherited large production chunks and dependency advisories left unchanged"
+  ],
+  "classification": "COMPLETE — PREVIEW VALIDATED",
+  "nextPhase": "D2 release preparation only after separate instruction; no automatic merge or deployment"
+}
