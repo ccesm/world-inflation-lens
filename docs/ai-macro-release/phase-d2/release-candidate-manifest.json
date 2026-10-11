@@ -1,0 +1,419 @@
+{
+  "schemaVersion": "D2_RELEASE_CANDIDATE_1",
+  "baseProductionSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+  "observedRemoteMain": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+  "d1SourceSHA": "1356b9b66e17f6b6e290c11040aaf61e4e1c66ab",
+  "branch": "codex/ai-macro-monitor-phase-d2",
+  "d2CommitSHA": "b6454a0f237f729f8d58c1a9a219bf547c084ac6",
+  "d2CommitMeaning": "Validated implementation commit; manifest-only audit follow-up is the enclosing handoff commit, resolve with git rev-parse HEAD",
+  "classification": "PARTIAL — RELEASE GAPS",
+  "candidateStatus": "BLOCKED_FULL_DATA_PACKAGING",
+  "route": "#/research/ai-macro",
+  "version": "1.4.1",
+  "changedFiles": [
+    "docs/AI_MACRO_MONITOR_ACCEPTANCE.md",
+    "docs/ai-macro-release/phase-d2/PHASE_D2_RELEASE_READINESS.md",
+    "docs/ai-macro-release/phase-d2/PHASE_D3_DEPLOYMENT_PLAN.md",
+    "docs/ai-macro-release/phase-d2/accessibility-review.md",
+    "docs/ai-macro-release/phase-d2/browser-qa-results.md",
+    "docs/ai-macro-release/phase-d2/browser-qa-summary.json",
+    "docs/ai-macro-release/phase-d2/browser-release.mjs",
+    "docs/ai-macro-release/phase-d2/data-integrity-results.json",
+    "docs/ai-macro-release/phase-d2/data-redistribution-review.json",
+    "docs/ai-macro-release/phase-d2/generate-manifest.mjs",
+    "docs/ai-macro-release/phase-d2/performance-results.md",
+    "docs/ai-macro-release/phase-d2/release-candidate-manifest.json",
+    "docs/ai-macro-release/phase-d2/release-security-review.md",
+    "docs/ai-macro-release/phase-d2/test-release.mjs",
+    "docs/ai-macro-release/phase-d2/verify-release.mjs",
+    "docs/ai-macro/browser-acceptance.json",
+    "docs/ai-macro/d1-validation.json",
+    "docs/ai-macro/redistribution-assessment.md",
+    "docs/ai-macro/source-rights.json",
+    "package.json",
+    "scripts/ai-macro-projection.mjs",
+    "scripts/tests/ai-macro-public.test.mjs",
+    "scripts/verify-ai-macro-browser.mjs",
+    "scripts/verify-ai-macro.mjs",
+    "src/App.jsx",
+    "src/ai-macro.css",
+    "src/components/AiMacroChart.jsx",
+    "src/data/ai-macro/contract.js",
+    "src/data/ai-macro/history.js",
+    "src/data/ai-macro/summary.json",
+    "src/data/researchArchitecture.js",
+    "src/data/researchLinks.js",
+    "src/i18n/aiMacro.js",
+    "src/i18n/architecture.js",
+    "src/pages/AiMacro.jsx",
+    "src/utils/routing.js"
+  ],
+  "sourceFileChecksums": [
+    {
+      "path": "docs/AI_MACRO_MONITOR_ACCEPTANCE.md",
+      "byteSize": 8688,
+      "sha256": "c5e85edea9e698b44b7d2d711925b63521512a31a53b7fca923ece921641cc3f"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/PHASE_D2_RELEASE_READINESS.md",
+      "byteSize": 10221,
+      "sha256": "d53dc64bea88c96939393a8d2f39ca94cbf336731a52f64da24a9fbf3123ddfa"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/PHASE_D3_DEPLOYMENT_PLAN.md",
+      "byteSize": 3585,
+      "sha256": "45ea17bdd14c21cf3a026b46626d66383e2aeeeef32a4a4e532063d57da37569"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/accessibility-review.md",
+      "byteSize": 3022,
+      "sha256": "25a2c55f77904dfc6406656c5c8e76cc2107d34173c980876724e3e46d96cbee"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/browser-qa-results.md",
+      "byteSize": 3448,
+      "sha256": "082facce320edcdaa8c656e5d34d6248683f2146723960b1fe62f6024d088cc4"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/browser-qa-summary.json",
+      "byteSize": 10121,
+      "sha256": "1dd450d54a78686a269e062940092d4d4990fbc2a48f266f3d25aea243b74cef"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/browser-release.mjs",
+      "byteSize": 7296,
+      "sha256": "389c5e8f85af66bf0708a57cfbe463921ff360e51e907cc1458bd740426274be"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/data-integrity-results.json",
+      "byteSize": 29260,
+      "sha256": "9347d97824874a511d3309c3f3bf6b18c6aff62e148e8e84502b75f932ee6b1d"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/data-redistribution-review.json",
+      "byteSize": 16260,
+      "sha256": "822c8389b4ed2f193e16869721b517c70a96e76de243947dce2744a6b92f61ba"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/generate-manifest.mjs",
+      "byteSize": 4427,
+      "sha256": "aefbdc3cc0964e182921f0441e8006c5f36836450d44a68dd00c4f273d6bbc35"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/performance-results.md",
+      "byteSize": 2111,
+      "sha256": "602c43695f9b7e44c96d49bd702b36c6b5fe1f110a65cddb7f848f69669a798a"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/release-security-review.md",
+      "byteSize": 3756,
+      "sha256": "e01d6e543391df121c67eed9749f349da4d27e81853c64613ed9899813ec95df"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/test-release.mjs",
+      "byteSize": 11507,
+      "sha256": "4961231288d7e8dbdfe6bb898898f8073c5dd1a210a5e683e55337320c96ac44"
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2/verify-release.mjs",
+      "byteSize": 1946,
+      "sha256": "89769f478c95691e49bc9e14cd4ce811fee01ee8f8638eae24c12df8464d5677"
+    },
+    {
+      "path": "docs/ai-macro/browser-acceptance.json",
+      "byteSize": 4981,
+      "sha256": "c655d98f873fd7e72ab3ca80ace81e9755d6a6af9f969f9e434f25b30091ce25"
+    },
+    {
+      "path": "docs/ai-macro/d1-validation.json",
+      "byteSize": 3418,
+      "sha256": "e105197f08899f90ca5f0e2b448f1b9ece1b914fde18396684fb575e1c4558f1"
+    },
+    {
+      "path": "docs/ai-macro/redistribution-assessment.md",
+      "byteSize": 3379,
+      "sha256": "e35b8b61df2964ec164e8d7111827fa708852c1447404799aeaee8bcdd851fad"
+    },
+    {
+      "path": "docs/ai-macro/source-rights.json",
+      "byteSize": 17288,
+      "sha256": "d5b11dfd8abdcc472c079833042fa2261a01dcc136da208d72f4e637934290f3"
+    },
+    {
+      "path": "package.json",
+      "byteSize": 1747,
+      "sha256": "ebecd5e8016e4b9a1ae9eb2e103e63ff4474b8c6ff9ce9386c6cdc789ee7442e"
+    },
+    {
+      "path": "scripts/ai-macro-projection.mjs",
+      "byteSize": 7570,
+      "sha256": "3b5928beaf2ecffde9bb9a44309c5fd730bc5eb306b070494c7655ccb7f5c1d1"
+    },
+    {
+      "path": "scripts/tests/ai-macro-public.test.mjs",
+      "byteSize": 10689,
+      "sha256": "2a44b83aa48d2e387e16cebb215337b4c369d2289d006739de9ad645ede97dad"
+    },
+    {
+      "path": "scripts/verify-ai-macro-browser.mjs",
+      "byteSize": 9224,
+      "sha256": "29907c3e020f0e4548fe887cc6f5712cd47924d139738ef9db356a16c1c8cc65"
+    },
+    {
+      "path": "scripts/verify-ai-macro.mjs",
+      "byteSize": 514,
+      "sha256": "089b46f48249565460655946363433ee9a3da0674bb9d1ac2ed235f57596ecd6"
+    },
+    {
+      "path": "src/App.jsx",
+      "byteSize": 12233,
+      "sha256": "cd2f17864967ef02a6eb9760ca1681c1d4fb639035dde5cdf8c8d01a3fe2eb49"
+    },
+    {
+      "path": "src/ai-macro.css",
+      "byteSize": 4239,
+      "sha256": "caf6cbbc8cb745d29f6bea2268002f7b6a7d8e09c2115bcba5ea26c7cb860c26"
+    },
+    {
+      "path": "src/components/AiMacroChart.jsx",
+      "byteSize": 2100,
+      "sha256": "d7d84c803c77825e940fca5a9c4c1d83d9f9457b6c3ac82097c5c6007f13e63a"
+    },
+    {
+      "path": "src/data/ai-macro/contract.js",
+      "byteSize": 7358,
+      "sha256": "32ac98c5b014a3f45cbe3102cbf12388e32ea1ace30036fef99fdcce661109fa"
+    },
+    {
+      "path": "src/data/ai-macro/history.js",
+      "byteSize": 1346,
+      "sha256": "f6fb170fea76397401e92e0f83ceb70656b069b82e1540de2e7ed624fc94d374"
+    },
+    {
+      "path": "src/data/ai-macro/summary.json",
+      "byteSize": 311,
+      "sha256": "2cf8428d33988017336af9ed8a683a3a0bc395e86fef0e14f58fdea0cb484278"
+    },
+    {
+      "path": "src/data/researchArchitecture.js",
+      "byteSize": 23215,
+      "sha256": "371ecd8b217db90f203bc21269fb8c7b4a115c3ef530f14cd8b52e99a0b9098b"
+    },
+    {
+      "path": "src/data/researchLinks.js",
+      "byteSize": 2813,
+      "sha256": "37f59ad9404325a514997d48559683eacd72488ec48bc82413a444c4ff135db3"
+    },
+    {
+      "path": "src/i18n/aiMacro.js",
+      "byteSize": 17184,
+      "sha256": "e4a5874e8c9d6d3190f73630f03e911a311497e9a9c9b03ffb0bdeffab987580"
+    },
+    {
+      "path": "src/i18n/architecture.js",
+      "byteSize": 15274,
+      "sha256": "bf8d610216c0949425dcf6cc6b32ba75dcee4d478ac5886869995e96e2350dec"
+    },
+    {
+      "path": "src/pages/AiMacro.jsx",
+      "byteSize": 9021,
+      "sha256": "8c40a8df4432a9450c86183612b18e4e8dd2c8c5bb02fcaa7c4ca1016963d55f"
+    },
+    {
+      "path": "src/utils/routing.js",
+      "byteSize": 1301,
+      "sha256": "bed341ae8dbd0e8018b49522a1a1f89a8c387c7f6651ae3a1a13c77131445a3f"
+    }
+  ],
+  "manifestSelfHash": "Intentionally excluded to avoid self reference",
+  "includedAssets": [
+    {
+      "path": "src/data/ai-macro/summary.json",
+      "schema": "AI_MACRO_RELEASE_HOLD_1",
+      "byteSize": 311,
+      "sha256": "2cf8428d33988017336af9ed8a683a3a0bc395e86fef0e14f58fdea0cb484278",
+      "economicRecords": 0
+    },
+    {
+      "path": "dist/assets/AiMacro-B0R2xrjp.js",
+      "byteSize": 34534,
+      "sha256": "5b94541341846f07f2609acd5053f8595652ddf2d1ce8b9b46455227967be13c",
+      "kind": "Lazy UI bundle containing release hold, no numerical source payload"
+    }
+  ],
+  "includedDatasetVersions": [],
+  "withheldLocalDataset": {
+    "snapshot": "2026-10-09",
+    "indicators": 12,
+    "series": 36,
+    "records": 12949,
+    "missing": 360,
+    "historyHash": "5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590",
+    "projectionHash": "f1150945a0f32672c60ff594de2c079c7b8318554dc919bf5061771855bf8256",
+    "location": "EXTERNAL_LOCAL_ONLY — not in branch or deployable assets"
+  },
+  "dataPermissions": [
+    {
+      "sourceId": "PNFIC1",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "NCBDBIQ027S",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "DFII10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "OPHNFB",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "ULCNFB",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "CPIAUCSL",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "PCEPILFE",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "CENSUS_DC",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "SPF10",
+      "status": "UNRESOLVED",
+      "staticDownload": "UNRESOLVED"
+    },
+    {
+      "sourceId": "EIA_STATE",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    },
+    {
+      "sourceId": "EIA_GAS",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "staticDownload": "SUPPORTED"
+    }
+  ],
+  "regressionTests": [
+    {
+      "phase": "A",
+      "passed": 13,
+      "failed": 0,
+      "reference": "b90080dd9f94cee2afa6d94f17467bab0d46649f",
+      "execution": "Unchanged Phase A files in pinned C2 checkout"
+    },
+    {
+      "phase": "B1",
+      "passed": 43,
+      "failed": 0,
+      "reference": "8e7d637a171de15c8f5c30b0896cae4400fdef70",
+      "execution": "Independent clean pinned phase checkout"
+    },
+    {
+      "phase": "B2",
+      "passed": 51,
+      "failed": 0,
+      "reference": "596e7e69560ee17be0b5412e852e74032533f49a",
+      "execution": "Independent clean pinned phase checkout"
+    },
+    {
+      "phase": "C0",
+      "passed": 38,
+      "failed": 0,
+      "reference": "439ce594d95eea8e8ebd6f47e4333372e2d56d69",
+      "execution": "Independent clean pinned phase checkout"
+    },
+    {
+      "phase": "C1A",
+      "passed": 55,
+      "failed": 0,
+      "reference": "8e6b3eec6b0584c1567c13d7e3979707225324fc",
+      "execution": "Independent clean pinned phase checkout"
+    },
+    {
+      "phase": "C1M",
+      "passed": 51,
+      "failed": 0,
+      "reference": "eb2da0e23ab9840e385a09b3889baa4454fddd74",
+      "execution": "Independent clean pinned phase checkout"
+    },
+    {
+      "phase": "C2",
+      "passed": 51,
+      "failed": 0,
+      "reference": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+      "execution": "Independent clean pinned phase checkout"
+    },
+    {
+      "phase": "D0",
+      "passed": 23,
+      "failed": 0,
+      "reference": "6edc2357b56bfaf1f8af0f597cfcdd8a5ae1b2a3",
+      "execution": "Independent clean pinned phase checkout"
+    },
+    {
+      "phase": "D1",
+      "passed": 30,
+      "failed": 0,
+      "reference": "1356b9b66e17f6b6e290c11040aaf61e4e1c66ab",
+      "execution": "Independent clean pinned phase checkout"
+    }
+  ],
+  "d2Tests": {
+    "defaultHoldTests": 35,
+    "externalFullTests": 4,
+    "failed": 0,
+    "execution": "node --test docs/ai-macro-release/phase-d2/test-release.mjs; optional explicit WIL_D2_FULL_FIXTURE and WIL_D2_C2_INPUT"
+  },
+  "build": "PASS",
+  "repositoryVerify": "PASS",
+  "manualNumericalRestorationTest": "PASS — rejected by stricter default validator; expected nonzero exit",
+  "browser": {
+    "fullLocalCombinations": 8,
+    "publicHoldCombinations": 8,
+    "legacyRoutes": 26,
+    "screenReader": "MANUAL ACCEPTANCE PENDING"
+  },
+  "releaseGates": [
+    {
+      "id": "LIC-01",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "reason": "SPF10 public historical redistribution permission unresolved"
+    },
+    {
+      "id": "SEC-01",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "reason": "source-map-js 1.2.1 high advisory; separate patched-version remediation required"
+    },
+    {
+      "id": "A11Y-01",
+      "severity": "MEDIUM",
+      "status": "OPEN",
+      "reason": "Actual screen-reader and full manual accessibility acceptance pending"
+    }
+  ],
+  "productionModified": false,
+  "dependenciesChanged": false,
+  "workflowsChanged": false,
+  "publicPreviewPublished": false,
+  "prOpened": false,
+  "merged": false,
+  "deployed": false
+}
