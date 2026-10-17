@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T05:45:51.226Z",
+  "updatedAt": "2026-10-17T14:43:00.104Z",
   "application": {
     "version": "1.4.1",
-    "codeCommit": "9ae7c29d0e13745cbe12f960cdc2dc15192d5e94",
-    "snapshotCommit": "0d58921e3e726411ac4ac1b63f6a6f0ccfbe0e7f"
+    "codeCommit": "4e919c135eeba897ea5acc4f07380f5163248d67",
+    "snapshotCommit": "4e919c135eeba897ea5acc4f07380f5163248d67"
   },
   "lastAttempt": {
-    "runId": "39007115865",
+    "runId": "39041770590",
     "attempt": "1",
-    "startedAt": "2026-10-17T05:40:21Z",
-    "completedAt": "2026-10-17T05:45:51.226Z",
-    "refreshResult": "SUCCESS_CHANGED",
+    "startedAt": "2026-10-17T14:40:45Z",
+    "completedAt": "2026-10-17T14:43:00.104Z",
+    "refreshResult": "NOT_REQUESTED",
     "buildResult": "success",
     "deploymentResult": "success",
-    "notificationResult": "ACCEPTED_BY_GMAIL",
-    "codeCommit": "9ae7c29d0e13745cbe12f960cdc2dc15192d5e94",
-    "snapshotCommit": "0d58921e3e726411ac4ac1b63f6a6f0ccfbe0e7f",
+    "notificationResult": "NOT_REQUESTED",
+    "codeCommit": "4e919c135eeba897ea5acc4f07380f5163248d67",
+    "snapshotCommit": "4e919c135eeba897ea5acc4f07380f5163248d67",
     "version": "1.4.1"
   },
   "data": {
@@ -29,18 +29,18 @@
     "result": "SUCCESS_CHANGED"
   },
   "deployment": {
-    "lastSuccessfulAt": "2026-10-17T05:44:57Z",
-    "codeCommit": "9ae7c29d0e13745cbe12f960cdc2dc15192d5e94",
-    "snapshotCommit": "0d58921e3e726411ac4ac1b63f6a6f0ccfbe0e7f",
+    "lastSuccessfulAt": "2026-10-17T14:42:23Z",
+    "codeCommit": "4e919c135eeba897ea5acc4f07380f5163248d67",
+    "snapshotCommit": "4e919c135eeba897ea5acc4f07380f5163248d67",
     "version": "1.4.1",
     "result": "success"
   },
   "notification": {
-    "result": "ACCEPTED_BY_GMAIL",
-    "updatedAt": "2026-10-17T05:45:51.226Z"
+    "result": "NOT_REQUESTED",
+    "updatedAt": "2026-10-17T14:43:00.104Z"
   },
   "freshness": {
-    "asOf": "2026-10-17T05:45:51.226Z",
+    "asOf": "2026-10-17T14:43:00.104Z",
     "counts": {
       "CURRENT": 64,
       "MANUAL_REVIEWED": 8,
