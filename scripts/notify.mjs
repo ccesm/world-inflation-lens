@@ -1,4 +1,4 @@
-import { readFile, appendFile } from 'node:fs/promises'
+import { readFile, appendFile, mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { createDigest, mailConfig, sendDigest, shouldSendNotification } from './lib/notification.mjs'
 import { createWeeklyDigest, loadWeeklySources } from './lib/weeklyDigest.mjs'
@@ -10,6 +10,7 @@ const read = async path => JSON.parse(await readFile(resolve(root, path), 'utf8'
 try {
   const env = process.env
   const dry = process.argv.includes('--dry-run')
+  if (process.argv.includes('--html-preview') && !dry) throw new Error('HTML preview requires --dry-run')
   const ledger = await read('data/updates/history.json').catch(() => null)
   const headline = await read('data/inflation/fred.json').catch(() => null)
   const monitor = await read('data/inflation/monitor.json').catch(() => null)
@@ -27,6 +28,10 @@ try {
   const digest = mode === 'weekly' ? createWeeklyDigest({ ...args, sources: args.build === 'success' && args.deploy === 'success' ? await loadWeeklySources(root) : [] }) : createDigest(args)
   const send = shouldSendNotification({ success: digest.success, mode })
   if (dry) {
+    if (process.argv.includes('--html-preview') && digest.html) {
+      await mkdir(resolve(root,'.refresh'),{recursive:true})
+      await writeFile(resolve(root,'.refresh/weekly-email-preview.html'),digest.html)
+    }
     console.log('PREVIEW ONLY — no email sent.' + (previewLatest ? '\n使用最近记录及模拟成功部署生成样稿，不代表新的执行或部署验收。Last recorded check with simulated deployment success; not a new run or deployment acceptance.' : '') + '\n' + digest.text)
   } else if (!send) {
     await notificationOutput('NOT_REQUESTED')
