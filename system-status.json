@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T15:11:08.206Z",
+  "updatedAt": "2026-10-17T16:45:20.090Z",
   "application": {
     "version": "1.4.1",
-    "codeCommit": "314d59aa2bdf5d134e40e9535536b242e4a6205c",
-    "snapshotCommit": "3dbf9353ada22cd33ac64ed158f3fd29e9ec3b66"
+    "codeCommit": "03413caa9868f4608e828ad94d3f57b490e03380",
+    "snapshotCommit": "03413caa9868f4608e828ad94d3f57b490e03380"
   },
   "lastAttempt": {
-    "runId": "39043551511",
+    "runId": "39050614917",
     "attempt": "1",
-    "startedAt": "2026-10-17T15:05:48Z",
-    "completedAt": "2026-10-17T15:11:08.206Z",
-    "refreshResult": "SUCCESS_NO_CHANGE",
+    "startedAt": "2026-10-17T16:42:59Z",
+    "completedAt": "2026-10-17T16:45:20.090Z",
+    "refreshResult": "NOT_REQUESTED",
     "buildResult": "success",
     "deploymentResult": "success",
-    "notificationResult": "ACCEPTED_BY_GMAIL",
-    "codeCommit": "314d59aa2bdf5d134e40e9535536b242e4a6205c",
-    "snapshotCommit": "3dbf9353ada22cd33ac64ed158f3fd29e9ec3b66",
+    "notificationResult": "NOT_REQUESTED",
+    "codeCommit": "03413caa9868f4608e828ad94d3f57b490e03380",
+    "snapshotCommit": "03413caa9868f4608e828ad94d3f57b490e03380",
     "version": "1.4.1"
   },
   "data": {
@@ -29,18 +29,18 @@
     "result": "SUCCESS_NO_CHANGE"
   },
   "deployment": {
-    "lastSuccessfulAt": "2026-10-17T15:10:04Z",
-    "codeCommit": "314d59aa2bdf5d134e40e9535536b242e4a6205c",
-    "snapshotCommit": "3dbf9353ada22cd33ac64ed158f3fd29e9ec3b66",
+    "lastSuccessfulAt": "2026-10-17T16:44:34Z",
+    "codeCommit": "03413caa9868f4608e828ad94d3f57b490e03380",
+    "snapshotCommit": "03413caa9868f4608e828ad94d3f57b490e03380",
     "version": "1.4.1",
     "result": "success"
   },
   "notification": {
-    "result": "ACCEPTED_BY_GMAIL",
-    "updatedAt": "2026-10-17T15:11:08.206Z"
+    "result": "NOT_REQUESTED",
+    "updatedAt": "2026-10-17T16:45:20.090Z"
   },
   "freshness": {
-    "asOf": "2026-10-17T15:11:08.206Z",
+    "asOf": "2026-10-17T16:45:20.090Z",
     "counts": {
       "CURRENT": 64,
       "MANUAL_REVIEWED": 8,
