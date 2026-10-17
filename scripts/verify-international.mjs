@@ -8,7 +8,7 @@ import {parseCofer,readCoferCsv,validateCofer,compareCofer} from './lib/internat
 import {parseTic,validateTic,compareTic} from './lib/international-tic.mjs'
 import {parseBisCsv,validateBisSnapshot,reviewBisRevisions} from './lib/international-bis.mjs'
 import {internationalFiles,internationalSummary,prepareInternational,compareInternational} from './lib/international.mjs'
-import {internationalFixtures} from './lib/international-fixtures.mjs'
+import {internationalFixtures,internationalFixtureCheckedAt} from './lib/international-fixtures.mjs'
 import {seriesMetadata} from '../src/data/seriesContract.js'
 import {seriesRegistry} from '../src/data/seriesRegistry.js'
 import {freshness} from '../src/utils/freshness.js'
@@ -21,7 +21,7 @@ validateCofer(bundles.cofer);validateTic(bundles.tic);validateBisSnapshot(bundle
 assert.deepEqual(await read('data/international-dollar/summary.json'),internationalSummary(bundles),'Homepage summaries must be mechanically generated from the exact full snapshots')
 const compressed=async file=>gunzipSync(await readFile(join(root,'scripts/fixtures/international-dollar',file+'.gz'))).toString()
 const [cofer,tic,bis]=await Promise.all(['wil-cofer.csv','wil-tic.txt','wil-bis-total.csv'].map(compressed))
-const at='2026-10-02T23:59:00Z'
+const at=internationalFixtureCheckedAt
 const parsedCofer=parseCofer(cofer,at)
 assert.equal(parsedCofer.series.find(s=>s.id==='COFER_CNY').observations[0].sourcePeriod,'2016-Q4')
 assert.equal(parsedCofer.series.find(s=>s.id==='COFER_AUD').observations[0].sourcePeriod,'2012-Q4')
@@ -61,5 +61,16 @@ assert.deepEqual(Object.keys(internationalCopy.en).sort(),Object.keys(internatio
 // Existing registry entries must retain identical meanings, not merely pass new-policy tests.
 const old=execFileSync('git',['show','494ae75:src/data/seriesRegistry.js'],{cwd:root,encoding:'utf8'});const oldRegistry=(await import('data:text/javascript;base64,'+Buffer.from(old).toString('base64'))).seriesRegistry
 for(const [id,value] of Object.entries(oldRegistry))assert.deepEqual(seriesRegistry[id],value,`Protected registry meaning changed: ${id}`)
-const temp=await mkdtemp(join(tmpdir(),'wil-international-fixture-'));try{await internationalFixtures(root,temp);const prepared=await prepareInternational({input:temp,checkedAt:at});assert.equal(prepared.bis.series.length,3);assert.ok(compareInternational(bundles,prepared).every(c=>c.total===0))}finally{await rm(temp,{recursive:true,force:true})}
+// Compare the archived adapters with their own raw fixture vintage, not today's production history.
+const temp=await mkdtemp(join(tmpdir(),'wil-international-fixture-'))
+try{
+ await internationalFixtures(root,temp)
+ const prepared=await prepareInternational({input:temp,checkedAt:at})
+ const headers=await read('scripts/fixtures/international-dollar/wil-tic-headers.json')
+ assert.deepEqual(prepared.cofer,parsedCofer)
+ assert.deepEqual(prepared.tic,parseTic(tic,{checkedAt:at,lastModified:headers.lastModified}))
+ assert.equal(prepared.bis.series.length,3)
+ for(const [index,file] of ['wil-bis-total.csv','wil-bis-loans.csv','wil-bis-securities.csv'].entries())assert.deepEqual(prepared.bis.series[index],parseBisCsv(await compressed(file),prepared.bis.series[index].id))
+ assert.ok(compareInternational(prepared,prepared).every(c=>c.total===0))
+}finally{await rm(temp,{recursive:true,force:true})}
 console.log('PASS: official COFER/TIC/BIS schemas, dimensions, denominator, periods, missingness, revisions, source-aware freshness, exact summary/CSV, bilingual route and protected registry meanings')

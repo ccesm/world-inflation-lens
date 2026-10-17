@@ -1,6 +1,7 @@
 import { readFile, appendFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import { createDigest, mailConfig, sendDigest } from './lib/notification.mjs'
+import { createDigest, mailConfig, sendDigest, shouldSendNotification } from './lib/notification.mjs'
+import { createWeeklyDigest, loadWeeklySources } from './lib/weeklyDigest.mjs'
 import { notificationOutput } from './lib/statusFiles.mjs'
 import { resolveSummary } from './lib/signalShadowSummary.mjs'
 
@@ -16,12 +17,20 @@ try {
     const latest = s.observations.findLast(p => Number.isFinite(p.value))
     return { id: s.id, date: latest?.date || 'unavailable', value: latest?.value ?? '—', units: s.units, frequency: s.frequency, sourceUrl: s.sourceUrl }
   })
-  const runId = env.GITHUB_RUN_ID || (dry ? '0' : '')
+  const mode = process.argv.includes('--weekly') ? 'weekly' : env.NOTIFICATION_MODE || 'failure_only'
+  const previewLatest = dry && mode === 'weekly' && !env.GITHUB_RUN_ID
+  const previewRun = previewLatest ? ledger?.runs?.find(r => r.checkCompletedAt && /\/runs\/\d+$/.test(r.runUrl)) : null
+  const runId = env.GITHUB_RUN_ID || (previewRun ? previewRun.runUrl.split('/').at(-1) : dry ? '0' : '')
   const signalSummary = resolveSummary({ value: env.SIGNAL_SHADOW_SUMMARY,
     enabled: env.SIGNAL_SHADOW_ENABLED === 'true', jobResult: env.SIGNAL_SHADOW_RESULT, buildResult: env.BUILD_RESULT })
-  const digest = createDigest({ ledger, observations, build: env.BUILD_RESULT || 'unknown', deploy: env.DEPLOY_RESULT || 'unknown', runId, signalSummary })
+  const args = { ledger, observations, build: env.BUILD_RESULT || (previewLatest ? 'success' : 'unknown'), deploy: env.DEPLOY_RESULT || (previewLatest ? 'success' : 'unknown'), runId, signalSummary }
+  const digest = mode === 'weekly' ? createWeeklyDigest({ ...args, sources: args.build === 'success' && args.deploy === 'success' ? await loadWeeklySources(root) : [] }) : createDigest(args)
+  const send = shouldSendNotification({ success: digest.success, mode })
   if (dry) {
-    console.log('PREVIEW ONLY — no email sent.\n' + digest.text)
+    console.log('PREVIEW ONLY — no email sent.' + (previewLatest ? '\n使用最近记录及模拟成功部署生成样稿，不代表新的执行或部署验收。Last recorded check with simulated deployment success; not a new run or deployment acceptance.' : '') + '\n' + digest.text)
+  } else if (!send) {
+    await notificationOutput('NOT_REQUESTED')
+    console.log('日常更新成功，按周报设置不发送每日邮件。Successful daily check: email suppressed by weekly cadence.')
   } else {
     let config
     try { config=mailConfig(env) } catch { throw Object.assign(new Error('Gmail configuration is invalid; review the account and app-password settings.'),{notificationResult:'FAILED_CONFIGURATION'}) }

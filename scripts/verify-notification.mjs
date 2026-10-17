@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict'
+import { spawnSync } from 'node:child_process'
+import { fileURLToPath } from 'node:url'
 import { readFile } from 'node:fs/promises'
 import { createDigest, mailConfig, sendDigest, runUrl } from './lib/notification.mjs'
 
@@ -80,3 +82,6 @@ assert.match(workflow, /secrets.GMAIL_ADDRESS/)
 assert.match(workflow, /secrets.GMAIL_APP_PASSWORD/)
 assert.doesNotMatch(workflow, /RESEND_API_KEY|NOTIFY_FROM|NOTIFY_TO/)
 console.log('PASS: daily timezone schedule, exact snapshot checkout and Gmail post-deployment notification wiring')
+
+const weekly = spawnSync(process.execPath, ['--test', fileURLToPath(new URL('./tests/weekly-digest.test.mjs', import.meta.url))], { encoding:'utf8', maxBuffer:2000000 })
+process.stdout.write(weekly.stdout); process.stderr.write(weekly.stderr); assert.equal(weekly.status,0,'Weekly digest regressions failed')

@@ -41,6 +41,11 @@ export function createDigest({ ledger, build, deploy, runId, observations = [], 
   return { subject, text: lines.join('\n'), success }
 }
 
+export function shouldSendNotification({ success, mode = 'daily' }) {
+  if (!['daily','weekly','failure_only'].includes(mode)) throw new Error('Invalid notification mode')
+  return mode !== 'failure_only' || !success
+}
+
 export function mailConfig(env) {
   const names = ['GMAIL_ADDRESS', 'GMAIL_APP_PASSWORD']
   if (names.some(k => !env[k]?.trim())) return null

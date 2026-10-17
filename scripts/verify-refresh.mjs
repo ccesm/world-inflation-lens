@@ -1,5 +1,6 @@
-import { internationalFixtures } from './lib/international-fixtures.mjs'
+import { internationalFixtures, internationalFixtureCheckedAt } from './lib/international-fixtures.mjs'
 import assert from 'node:assert/strict'
+import { internationalFiles, internationalSummary, prepareInternational } from './lib/international.mjs'
 import { productivityFixtures } from './lib/productivity-fixtures.mjs'
 import { externalFixtures } from './lib/external-fixtures.mjs'
 import { readFile, writeFile, mkdir, mkdtemp, cp, rm } from 'node:fs/promises'
@@ -44,6 +45,11 @@ try {
   }
   await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',version:'0.13.0',scripts:{build:'node -e "process.exit(0)"',verify:'node -e "process.exit(0)"'}}))
   const input = join(temp, 'inputs'); await mkdir(input); await externalFixtures(root, input); await productivityFixtures(root,input,{revise:true}); await internationalFixtures(root,input)
+  // Only the disposable CLI baseline uses archived fixture data. A refreshed production
+  // bundle may already be newer than these inputs; never compare those different vintages.
+  const fixtureInternational = await prepareInternational({input, checkedAt:internationalFixtureCheckedAt})
+  for (const [id,file] of Object.entries(internationalFiles)) await writeFile(join(temp,`data/international-dollar/${file}.json`),JSON.stringify(fixtureInternational[id])+'\n')
+  await writeFile(join(temp,'data/international-dollar/summary.json'),JSON.stringify(internationalSummary(fixtureInternational))+'\n')
   const headline = await read(files[0]), drivers = await read(files[1]), world = await read(files[2]), countries = await read('data/countries/metadata.json')
   const originalFiles = await Promise.all(files.map(path => readFile(join(temp, path), 'utf8')))
   const allSeries = [structuredClone(headline), ...drivers.series, ...(await read('data/inflation/monitor.json')).series, await read('data/digital-money/bank-deposits.json')]
@@ -77,6 +83,17 @@ try {
   const wrongCurrency=run();assert.notEqual(wrongCurrency.status,0);assert.match(wrongCurrency.stderr,/identity changed/)
   assert.deepEqual(await Promise.all(files.map(path=>readFile(join(temp,path),'utf8'))),originalFiles,'Invalid international candidate preserves all domestic and international data')
   await writeFile(join(input,'wil-bis-total.csv'),originalBis)
+  // A genuinely older candidate must still be rejected. Synthetic metadata is confined
+  // to this test copy; observations and the original archived source timestamp stay intact.
+  const ticPath=join(temp,'data/international-dollar/treasury-holdings.json'),originalTic=await readFile(ticPath,'utf8')
+  const newerTic=JSON.parse(originalTic),newerSourceTime='2026-10-01T00:00:00.000Z'
+  assert.ok(newerSourceTime>newerTic.metadata.sourceUpdatedAt)
+  newerTic.metadata.sourceUpdatedAt=newerSourceTime
+  newerTic.metadata.sourceUpdatedTime={...newerTic.metadata.sourceUpdatedTime,value:newerSourceTime,original:new Date(newerSourceTime).toUTCString()}
+  const newerTicBytes=JSON.stringify(newerTic)+'\n';await writeFile(ticPath,newerTicBytes)
+  const sourceRegression=run();assert.notEqual(sourceRegression.status,0);assert.match(sourceRegression.stderr,/TIC source file timestamp regressed/)
+  assert.deepEqual(await Promise.all(files.map(path=>readFile(join(temp,path),'utf8'))),files.map((path,i)=>path==='data/international-dollar/treasury-holdings.json'?newerTicBytes:originalFiles[i]),'A regressed source must preserve the entire prior bundle')
+  await writeFile(ticPath,originalTic)
   // A failing build must restore the complete new+old data bundle and ledger.
   await writeFile(join(temp, 'package.json'), JSON.stringify({type:'module',version:'0.13.0',scripts:{build:'node -e "process.exit(1)"',verify:'node -e "process.exit(0)"'}}))
   const buildFailure = run(); assert.notEqual(buildFailure.status, 0); assert.match(buildFailure.stderr, /restoring bundle/)
