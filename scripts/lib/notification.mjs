@@ -67,7 +67,7 @@ export async function sendDigest({ config, digest, runId, attempt = '1', transpo
   const transporter = transporterFactory({ service: 'gmail', auth: { user: config.address, pass: config.password }, connectionTimeout: 15000, greetingTimeout: 15000, socketTimeout: 15000 })
   try {
     // SMTP cannot prove whether an uncertain send reached Gmail. Do not retry automatically.
-    const result = await transporter.sendMail({ from: config.address, to: config.address, subject: digest.subject, text: digest.text, messageId: `<wil-${runId}-${attempt}-${hash}@world-inflation-lens.github.io>` })
+    const result = await transporter.sendMail({ from: config.address, to: config.address, subject: digest.subject, text: digest.text, ...(digest.html ? { html: digest.html } : {}), messageId: `<wil-${runId}-${attempt}-${hash}@world-inflation-lens.github.io>` })
     if (result?.rejected?.length || !result?.accepted?.some(address => address.toLowerCase() === config.address.toLowerCase())) throw new Error('Gmail did not confirm recipient acceptance')
     return { status: 'accepted' } // SMTP acceptance is not confirmed inbox delivery.
   } catch (error) {
