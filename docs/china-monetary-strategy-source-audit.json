@@ -1,0 +1,262 @@
+{
+  "reviewedOn": "2026-10-17",
+  "scope": "Published explanatory article only; no new indicator qualifications or series redistribution rights.",
+  "input": {
+    "sha256": "1987725ae89d30f94adcaae58fcc36e2dd4e98f11ff30317d8fe7560a533e9cc",
+    "description": "Owner-supplied Chinese research report, reviewed and adapted with publication authorization on 2026-10-17."
+  },
+  "originalReferences": [
+    {
+      "id": "R1",
+      "date": "2026-08-12",
+      "title": {
+        "en": "PBOC reform and development plan — Guangdong financial authority republication",
+        "zh": "人民银行改革发展规划——广东金融主管部门转载"
+      },
+      "url": "https://www.gdjr.gov.cn/gdjr/jrzx/jryw/content/mpost_44477.html",
+      "note": {
+        "en": "Institutional republication attributed to the PBOC; the original PBOC-hosted page was not located.",
+        "zh": "机构转载并注明来源为人民银行；未找到央行原站页面。"
+      },
+      "originalUrl": "https://www.gdjr.gov.cn/gdjr/jrzx/jryw/content/mpost_44477.html",
+      "access": "VERIFIED_INSTITUTIONAL_REPUBLICATION",
+      "finding": "Full institutional republication reviewed, attributed to PBOC. Original PBOC-hosted 2026 plan page not located. Do not present an inferred dollar-replacement roadmap as official policy. Original PBOC 2025 report provides independent support for broad directions."
+    },
+    {
+      "id": "R2",
+      "date": "2026-03-14",
+      "title": {
+        "en": "National 15th Five-Year Plan — Ministry of Education republication",
+        "zh": "国家“十五五”规划纲要——教育部转载"
+      },
+      "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2026/2026_zt03/yw/202603/t20260314_1430877.html",
+      "note": {
+        "en": "Search-index text was accessible; direct retrieval encountered a redirect loop. Not used as sole support for article claims.",
+        "zh": "可读取搜索索引文本；直接访问出现重定向循环。不作为本文主张的唯一依据。"
+      },
+      "originalUrl": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2026/2026_zt03/yw/202603/t20260314_1430877.html",
+      "access": "PARTIAL_INDEX_ONLY",
+      "finding": "Search-index text supports the topic; direct web retrieval returned redirect-loop error. Alternative CPPCC full-plan page indexed but direct retrieval also failed. Article does not rely solely on this reference; limitation visible in bibliography."
+    },
+    {
+      "id": "R3",
+      "date": "2025 · 2025-12-26",
+      "title": {
+        "en": "PBOC RMB Internationalization Report (2025), summary pp. 1–5",
+        "zh": "人民银行《人民币国际化报告（2025）》概要第 1–5 页"
+      },
+      "url": "https://wuhan.pbc.gov.cn/huobizhengceersi/214481/3871621/5885243/2025122616492523798.pdf",
+      "note": {
+        "en": "Verified PBOC-hosted report, replacing the supplied generic index. Host filename date is not a confirmed first-publication date.",
+        "zh": "已核验央行托管报告，替换原引用的通用目录。托管文件名日期并非已确认的首次发布日期。"
+      },
+      "originalUrl": "https://www.pbc.gov.cn/en/3688241/3688636/3828468/index.html",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE",
+      "finding": "Generic index resolves through 2025 report page to original PBOC PDFs. Wuhan PBOC-hosted bilingual PDF summary printed pp.1 and3 directly verifies 27.2% (2024) and 28.1% (2025H1) and denominator of China cross-border goods settlement. Earlier 2025103108544623039.pdf candidate returned 404; replaced with verified institutional copy. Host filename date is not first-publication proof. English primary PDF also accessible at https://www.pbc.gov.cn/en/3688241/3688636/3828468/5624529/2025123116494089198/2025123116480428858.pdf"
+    },
+    {
+      "id": "R4",
+      "date": "2015-10-08",
+      "title": {
+        "en": "PBOC: CIPS Phase I launch",
+        "zh": "人民银行：CIPS 一期上线"
+      },
+      "url": "https://www.pbc.gov.cn/huobizhengceersi/214481/214511/3406537/6722bd10fe55400d8644bd0027540c9a/index.html",
+      "note": {
+        "en": "Replaces the supplied operator reference, whose direct retrieval returned HTTP 403. This original PBOC notice directly verifies the launch date and functions.",
+        "zh": "替换直接访问返回 HTTP 403 的原运营机构引用。这份人民银行原始公告直接确认上线日期与功能。"
+      },
+      "originalUrl": "https://www.cips.com.cn/eportal/ui?articleKey=4629&columnId=2725&pageId=13743",
+      "access": "ORIGINAL_403_PRIMARY_ALTERNATE_VERIFIED",
+      "finding": "Original operator reference is visible in search index but direct retrieval returned HTTP403. Replaced by directly reviewed original PBOC launch notice dated2015-10-08, which verifies clearing/settlement functions and launch. PBOC2015Q3 monetary-policy report independently corroborates. Infrastructure operation does not establish global payment share or complete SWIFT substitution."
+    },
+    {
+      "id": "R5",
+      "date": "2026-02-25",
+      "title": {
+        "en": "Hong Kong Budget 2026, paragraph 91",
+        "zh": "香港 2026 年预算案第 91 段"
+      },
+      "url": "https://www.budget.gov.hk/2026/sim/budget14.html",
+      "originalUrl": "https://www.budget.gov.hk/2026/sim/budget14.html",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE",
+      "finding": "Budget paragraph91 verified. Funding statements are dated February; July7 HKMA notice changes facility effectiveJuly10. Article omits amount to avoid presenting February ceiling as latest; separates availability from use."
+    },
+    {
+      "id": "R6",
+      "date": "2026-09-16",
+      "title": {
+        "en": "Hong Kong 2026–2030 plan, Part II",
+        "zh": "香港 2026—2030 年规划第二部分"
+      },
+      "url": "https://www.info.gov.hk/gia/general/202609/16/P2026091600140p.htm",
+      "originalUrl": "https://www.info.gov.hk/gia/general/202609/16/P2026091600140p.htm",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE",
+      "finding": "Full government plan PartII verified, dated2026-09-16. Offshore RMB, rates, dimsum, connect and commodity directions are policy objectives; depth is an outcome needing evidence."
+    },
+    {
+      "id": "R7",
+      "date": "2026",
+      "title": {
+        "en": "Hong Kong Policy Address, paragraphs 33–45",
+        "zh": "香港施政报告第 33—45 段"
+      },
+      "url": "https://www.policyaddress.gov.hk/2026/sc/chapter3.html",
+      "originalUrl": "https://www.policyaddress.gov.hk/2026/sc/chapter3.html",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE",
+      "finding": "ChapterIII paragraphs33–45 verified; paragraph45 plans formal gold commissioning in2027Q1 and details of a new physically delivered RMB gold future. July7 and October7 FSTB updates distinguish trial from formal launch; HKEX2017 announcement distinguishes older contracts."
+    },
+    {
+      "id": "R8",
+      "date": "2016-09-30",
+      "title": {
+        "en": "IMF: new SDR basket effective 2016-10-01",
+        "zh": "IMF：新 SDR 篮子自 2016-10-01 生效"
+      },
+      "url": "https://www.imf.org/zh/news/articles/2016/09/30/am16-pr16440-imf-launches-new-sdr-basket-including-chinese-renminbi",
+      "originalUrl": "https://www.imf.org/zh/news/articles/2016/09/30/am16-pr16440-imf-launches-new-sdr-basket-including-chinese-renminbi",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE",
+      "finding": "IMF announcement dated2016-09-30; basket effective2016-10-01. Inclusion does not establish full capital-account convertibility."
+    },
+    {
+      "id": "R9",
+      "date": "2025-09-30",
+      "title": {
+        "en": "BIS: preliminary OTC foreign-exchange survey commentary",
+        "zh": "BIS：场外外汇调查初步结果评论"
+      },
+      "url": "https://www.bis.org/publications/202509-commentary-otc-derivatives",
+      "note": {
+        "en": "Published 2025-09-30; observations: April 2025. The cited figures are the preliminary release, not a claim to the latest final vintage.",
+        "zh": "发布于 2025-09-30；观察期为 2025 年 4 月。所引数字为初步发布版本，并非最新终版的声明。"
+      },
+      "originalUrl": "https://www.bis.org/publications/202509-commentary-otc-derivatives",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE",
+      "finding": "BIS September30 2025 commentary: preliminary April2025 OTC FX survey, RMB8.5%,USD89.2%, shares total200% because two currencies per trade. No exchange-traded or payment denominator substitution. Frozen publication fact, not claim of latest final survey vintage."
+    },
+    {
+      "id": "R10",
+      "date": "2026-09-30",
+      "title": {
+        "en": "IMF COFER data brief",
+        "zh": "IMF COFER 数据简报"
+      },
+      "url": "https://data.imf.org/en/news/imf%20data%20brief%20september%2030",
+      "note": {
+        "en": "Published 2026-09-30; observations: 2026-Q2. Uses the revised COFER foreign-exchange denominator, consistent with the existing preview.",
+        "zh": "发布于 2026-09-30；观察期为 2026-Q2。使用修订后的 COFER 外汇储备分母，与既有预览一致。"
+      },
+      "originalUrl": "https://data.imf.org/en/news/imf%20data%20brief%20september%2030",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE",
+      "finding": "IMF brief published2026-09-30, observation2026Q2. USD56.70% andRMB2.11% verified, consistent with existing canonical revised/imputed COFER. Excludes gold,SDRs,IMF reserve position. No snapshot refreshed or duplicated."
+    },
+    {
+      "id": "R11",
+      "date": "2026-02-17",
+      "title": {
+        "en": "IMF China Article IV staff report, Box 6, printed p. 51",
+        "zh": "IMF 中国第四条磋商工作人员报告，专栏 6，印刷页码 51"
+      },
+      "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf",
+      "note": {
+        "en": "Report prepared 2026-01-28, published 2026-02-17. Staff assessments are external analysis rather than Chinese official policy.",
+        "zh": "报告准备于 2026-01-28，发布于 2026-02-17。工作人员评估是外部分析，并非中国官方政策。"
+      },
+      "originalUrl": "https://www.imf.org/en/publications/cr/issues/2026/02/17/peoples-republic-of-china-2025-article-iv-consultation-press-release-staff-report-and-574028",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE",
+      "finding": "Primary IMF landing and PDF directly reviewed. Report prepared2026-01-28, published2026-02-17. Box6 printedp51/PDFp55 supports capital controls, shallow offshore/hedging markets and globally accessible safe-asset constraints. Staff analytical assessment is not Chinese official policy. Staff macro discussion covers domestic-demand/property risks. Supplied eLibrary secondary route replaced by primary PDF."
+    }
+  ],
+  "additionalSources": [
+    {
+      "id": "H1",
+      "date": "2009-07-02",
+      "title": {
+        "en": "Joint trade-settlement pilot rules, Ministry of Finance",
+        "zh": "财政部发布跨境贸易人民币结算试点联合公告"
+      },
+      "url": "https://www.mof.gov.cn/gkml/bulinggonggao/czbgg/200907/t20090702_174935.htm",
+      "note": {
+        "en": "Notice signed 2009-07-01 and published 2009-07-02.",
+        "zh": "公告署名日期为 2009-07-01，发布日期为 2009-07-02。"
+      },
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE"
+    },
+    {
+      "id": "H2",
+      "date": "2026-07-07",
+      "title": {
+        "en": "HKMA/PBOC/SFC offshore RMB measures",
+        "zh": "金管局／人民银行／证监会离岸人民币措施"
+      },
+      "url": "https://www.info.gov.hk/gia/general/202607/07/P2026070700530.htm?fontSize=1",
+      "note": {
+        "en": "Announced 2026-07-07; the facility change was effective 2026-07-10. Other proposed measures have different implementation status.",
+        "zh": "公告于 2026-07-07；资金安排变更于 2026-07-10 生效。其他拟议措施的实施状态各不相同。"
+      },
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE"
+    },
+    {
+      "id": "H3",
+      "date": "2026-07-07",
+      "title": {
+        "en": "Hong Kong FSTB: gold clearing trial and Delivery Connect",
+        "zh": "香港财库局：黄金清算试运行与交割互联"
+      },
+      "url": "https://www.info.gov.hk/gia/general/202607/07/P2026070700223p.htm",
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE"
+    },
+    {
+      "id": "H4",
+      "date": "2026-10-07",
+      "title": {
+        "en": "Hong Kong FSTB: gold implementation update",
+        "zh": "香港财库局：黄金体系实施进展"
+      },
+      "url": "https://www.info.gov.hk/gia/general/202610/07/P2026100600281p.htm",
+      "note": {
+        "en": "Published 2026-10-07, describing a speech on 2026-10-06. Formal launch remained scheduled for 2027-Q1.",
+        "zh": "发布于 2026-10-07，记述 2026-10-06 的发言。正式启用仍计划于 2027-Q1。"
+      },
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE"
+    },
+    {
+      "id": "H5",
+      "date": "2017-06-23",
+      "title": {
+        "en": "HKEX: USD and CNH gold futures launch announcement",
+        "zh": "港交所：美元及离岸人民币黄金期货推出公告"
+      },
+      "url": "https://www.hkex.com.hk/News/News-Release/2017/170623news?sc_lang=en",
+      "note": {
+        "en": "Announcement: 2017-06-23; planned trading date: 2017-07-10. This historical announcement does not establish current product liquidity.",
+        "zh": "公告日期：2017-06-23；计划交易日期：2017-07-10。历史公告并不能确立当前产品流动性。"
+      },
+      "access": "VERIFIED_INSTITUTIONAL_SOURCE"
+    }
+  ],
+  "corrections": [
+    "Keep the strategy chain explicitly analytical; no official unified gold/dollar-replacement roadmap was established.",
+    "Attribute reference1 to a Guangdong institutional republication, not an original PBOC-hosted release.",
+    "Disclose reference2 direct-access failure and avoid using index-only material as sole claim support.",
+    "Replace reference3 generic index with a directly reviewed PBOC-hosted report; retain 2024/2025H1 observation periods and China settlement denominator.",
+    "Replace the HTTP403 operator launch reference with the directly accessible original PBOC announcement; retain the original reference URL in this audit.",
+    "Distinguish settlement from invoicing, worldwide payment shares and third-country use.",
+    "Update the February funding discussion with the July7 announcement and July10 effective date; agreement/facility caps are not actual drawings.",
+    "Distinguish July gold trial and issuer-reported initial transactions from future formal launch; October update still describes DvP linkage in final stages.",
+    "Distinguish proposed 2026 gold futures from HKEX2017 products; a historical launch announcement is not proof of current liquidity.",
+    "Use October1 2016 SDR effective date rather than announcement date; SDR eligibility is not full capital-account opening.",
+    "Label BIS figures as preliminary April2025 OTC participation with sum200%; do not represent as broader turnover or latest final vintage.",
+    "Label COFER 2026Q2 observation versus September30 release and use consistent revised/imputed foreign-exchange denominator.",
+    "Attribute IMF constraints to staff analysis; distinguish trade-surplus funding interpretation from an accounting impossibility.",
+    "Keep oil–RMB–gold and US-inflation effects unverified; no probabilities, forecast paths or promoted monitoring indicators."
+  ],
+  "remainingGaps": [
+    "Original PBOC-hosted 2026 reform-plan page not located; institutional republication and 2025 primary report used.",
+    "National-plan reference2 direct retrieval failed; index-only corroboration, not sole claim support.",
+    "No independent audit of sustained HK gold activity, conversion costs, foreign participation or oil-related settlement flows.",
+    "Swap drawings, third-country payments and offshore safe-asset demand need separate qualification.",
+    "Unrestricted redistribution rights not inferred from public access. Existing Fed/FRED terms and all PILOT/HOLD release gates unchanged.",
+    "BIS figure is explicitly a preliminary historical publication vintage; no new dataset or final-series harmonization undertaken."
+  ]
+}
