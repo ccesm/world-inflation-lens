@@ -8,6 +8,10 @@ on:
         description: Check official data before deploying
         type: boolean
         default: true
+      weekly_summary:
+        description: Send weekly data digest after this refresh and deployment (refresh must be true)
+        type: boolean
+        default: false
       signal_qualification:
         description: Feature-branch-only shadow qualification (production jobs skip)
         type: choice
@@ -15,6 +19,8 @@ on:
         default: disabled
   schedule:
     - cron: '40 17 * * *'
+      timezone: America/Los_Angeles
+    - cron: '20 17 * * 5'
       timezone: America/Los_Angeles
 permissions:
   contents: read
@@ -65,6 +71,9 @@ jobs:
           cache: npm
       - uses: actions/configure-pages@v5
       - run: npm ci
+      - name: Validate weekly-summary inputs
+        if: github.event_name == 'workflow_dispatch' && inputs.weekly_summary
+        run: test '${{ inputs.refresh }}' = 'true'
       - name: Record application and code identity
         id: context
         run: node scripts/status-context.mjs
@@ -180,7 +189,7 @@ jobs:
         run: echo "deployed_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
 
   notify:
-    name: Daily email summary
+    name: Weekly data digest or update-failure alert
     if: >-
       always() && github.ref == 'refs/heads/main' &&
       (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh))
@@ -203,6 +212,7 @@ jobs:
       - name: Send result after update and deployment
         id: mail
         env:
+          NOTIFICATION_MODE: ${{ (github.event.schedule == '20 17 * * 5' || inputs.weekly_summary) && 'weekly' || 'failure_only' }}
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           BUILD_RESULT: ${{ needs.build.result }}
