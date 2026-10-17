@@ -1,0 +1,523 @@
+{
+  "schemaVersion": "D32_REQUALIFICATION_1",
+  "localDate": "2026-10-17",
+  "baseSHA": "f9f5ba54a6ec795938cdedd5a7e984aabeec97af",
+  "originalD3SHA": "4f94726f7166542f42d046499748de00084b3b92",
+  "repairSHA": "39867318c27caf3f1d4b4af37289056b57f40278",
+  "integrationSHA": "216d6af68e51cf7344bcd4040ad33c7b9fd4e46b",
+  "finalHeadResolution": "git rev-parse HEAD; containing report commit is documentation/audit-only",
+  "technicalResult": "PASS",
+  "productionRecommendation": "NO_GO_PERMISSION_REVIEW_REQUIRED",
+  "priorFailures": {
+    "pipeline": {
+      "pass": 66,
+      "fail": 1,
+      "rootCause": "Obsolete 1.1.0 assertion plus latent obsolete FEATURE_BASE data comparison"
+    },
+    "public": {
+      "pass": 0,
+      "fail": 84,
+      "rootCause": "October 4 acceptance clock applied to refreshed snapshots; direct evaluator rejects METADATA_AFTER_SNAPSHOT_ACCEPTANCE:sourceUpdatedAt"
+    },
+    "OP12": {
+      "rootCause": "Earlier D3.1 checkout under temporary allowed output roots",
+      "resolution": "Repair and candidate both live outside temporary roots; no safeguard changes"
+    }
+  },
+  "tests": {
+    "cleanInstall": "PASS",
+    "build": "PASS",
+    "repositoryVerify": {
+      "result": "PASS",
+      "entrypoints": 18,
+      "weeklyDigest": 19,
+      "aiCapex": 39,
+      "aiInfrastructure": 50,
+      "defaultMacro": {
+        "pass": 46,
+        "skip": 1,
+        "skipReason": "Optional private-input regeneration; separately exercised with authenticated C2"
+      }
+    },
+    "signalCore": {
+      "pass": 256,
+      "skip": 2,
+      "fail": 0,
+      "skipReason": "Pre-existing unsupported methodology cases"
+    },
+    "signalPipelineArchive": {
+      "pass": 71,
+      "fail": 0,
+      "newBaselineNegativeCases": 4
+    },
+    "signalPublic": {
+      "pass": 86,
+      "fail": 0,
+      "newTimeNegativeCases": 2
+    },
+    "macroAuthenticated": {
+      "pass": 51,
+      "fail": 0
+    },
+    "scope": {
+      "result": "PASS",
+      "protectedProductionFiles": 367,
+      "productionDataFiles": 32,
+      "frozenMacroFiles": 16
+    },
+    "macroBrowser": {
+      "schemaVersion": "D21_BROWSER_1",
+      "browser": "155.0.8059.82",
+      "execution": "Headless installed Chrome; local loopback preview, cold context per combination; not a remote network benchmark",
+      "url": "http://127.0.0.1:5197/world-inflation-lens/",
+      "results": [
+        {
+          "width": 390,
+          "language": "en",
+          "theme": "light",
+          "result": "PASS",
+          "initialMs": 590,
+          "historyMs": 127,
+          "historyRequests": 1,
+          "indicators": 12,
+          "charts": 4,
+          "overflow": {
+            "client": 390,
+            "scroll": 390,
+            "offenders": []
+          },
+          "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+          "missingCPI": "PASS"
+        },
+        {
+          "width": 390,
+          "language": "en",
+          "theme": "dark",
+          "result": "PASS",
+          "initialMs": 547,
+          "historyMs": 114,
+          "historyRequests": 1,
+          "indicators": 12,
+          "charts": 4,
+          "overflow": {
+            "client": 390,
+            "scroll": 390,
+            "offenders": []
+          },
+          "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+          "missingCPI": "PASS"
+        },
+        {
+          "width": 390,
+          "language": "zh",
+          "theme": "light",
+          "result": "PASS",
+          "initialMs": 997,
+          "historyMs": 117,
+          "historyRequests": 1,
+          "indicators": 12,
+          "charts": 4,
+          "overflow": {
+            "client": 390,
+            "scroll": 390,
+            "offenders": []
+          },
+          "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+          "missingCPI": "PASS"
+        },
+        {
+          "width": 390,
+          "language": "zh",
+          "theme": "dark",
+          "result": "PASS",
+          "initialMs": 1002,
+          "historyMs": 120,
+          "historyRequests": 1,
+          "indicators": 12,
+          "charts": 4,
+          "overflow": {
+            "client": 390,
+            "scroll": 390,
+            "offenders": []
+          },
+          "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+          "missingCPI": "PASS"
+        },
+        {
+          "width": 1280,
+          "language": "en",
+          "theme": "light",
+          "result": "PASS",
+          "initialMs": 998,
+          "historyMs": 125,
+          "historyRequests": 1,
+          "indicators": 12,
+          "charts": 4,
+          "overflow": {
+            "client": 1280,
+            "scroll": 1280,
+            "offenders": []
+          },
+          "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+          "missingCPI": "PASS"
+        },
+        {
+          "width": 1280,
+          "language": "en",
+          "theme": "dark",
+          "result": "PASS",
+          "initialMs": 1009,
+          "historyMs": 123,
+          "historyRequests": 1,
+          "indicators": 12,
+          "charts": 4,
+          "overflow": {
+            "client": 1280,
+            "scroll": 1280,
+            "offenders": []
+          },
+          "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+          "missingCPI": "PASS"
+        },
+        {
+          "width": 1280,
+          "language": "zh",
+          "theme": "light",
+          "result": "PASS",
+          "initialMs": 1006,
+          "historyMs": 105,
+          "historyRequests": 1,
+          "indicators": 12,
+          "charts": 4,
+          "overflow": {
+            "client": 1280,
+            "scroll": 1280,
+            "offenders": []
+          },
+          "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+          "missingCPI": "PASS"
+        },
+        {
+          "width": 1280,
+          "language": "zh",
+          "theme": "dark",
+          "result": "PASS",
+          "initialMs": 533,
+          "historyMs": 127,
+          "historyRequests": 1,
+          "indicators": 12,
+          "charts": 4,
+          "overflow": {
+            "client": 1280,
+            "scroll": 1280,
+            "offenders": []
+          },
+          "keyboard": "PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated",
+          "missingCPI": "PASS"
+        },
+        {
+          "mode": "blocked",
+          "result": "PASS",
+          "summaryRetained": true,
+          "automaticRetry": false
+        },
+        {
+          "mode": "changed_bytes",
+          "result": "PASS",
+          "summaryRetained": true,
+          "automaticRetry": false
+        },
+        {
+          "legacyRoute": "home",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "dollar",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "fiscal",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "history",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "scenarios",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "purchasing-power",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "monitor",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "regimes",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "since-1971",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "drivers",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "us-cpi",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "timeline",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "overview",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "map",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "sources",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "external-shocks",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/ai-productivity",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/ai-labor",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/ai-capex",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/ai-infrastructure",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/digital-money",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/data",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/updates",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/international-dollar",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/signal-engine",
+          "result": "PASS"
+        }
+      ],
+      "pageErrors": [],
+      "economicRuntimeRequests": [],
+      "classification": "PASS"
+    },
+    "accessibility": {
+      "browser": "155.0.8059.82",
+      "results": [
+        {
+          "language": "en",
+          "result": "PASS",
+          "freshSPFHistoryRequests": 0,
+          "switchBackHistoryRequests": 1,
+          "keyboard": "Tab/Shift+Tab/Space",
+          "AX": "Named H3, explanatory text, link, main landmark; table restored after numerical selection",
+          "screenReader": "DEFERRED_BY_OWNER"
+        },
+        {
+          "language": "zh",
+          "result": "PASS",
+          "freshSPFHistoryRequests": 0,
+          "switchBackHistoryRequests": 1,
+          "keyboard": "Tab/Shift+Tab/Space",
+          "AX": "Named H3, explanatory text, link, main landmark; table restored after numerical selection",
+          "screenReader": "DEFERRED_BY_OWNER"
+        },
+        {
+          "kind": "LOCAL_PERFORMANCE",
+          "largestSeriesRenderMs": 119,
+          "method": "Cold local context, installed Chrome, includes history fetch/validation/render; not production benchmark"
+        }
+      ],
+      "actualScreenReader": "DEFERRED_BY_OWNER"
+    },
+    "existingBrowser": {
+      "result": "PASS",
+      "homeChecks": 12,
+      "routeChecks": 324,
+      "keyboard": [
+        "Skip-to-main preserves route and moves keyboard focus",
+        "All primary links activate with Enter and focus the route heading",
+        "Language and theme controls persist through reload"
+      ],
+      "behaviors": [
+        {
+          "language": "zh",
+          "check": "CBO metric query, solid/dashed segments, full history/projection CSV with values and provenance, keyboard year inspection"
+        },
+        {
+          "language": "zh",
+          "check": "Debt model arithmetic and invalid-input handling"
+        },
+        {
+          "language": "zh",
+          "check": "Map country/year, Drivers topic/episode/range/inspection/CSV, Timeline year and keyboard adjustment"
+        },
+        {
+          "language": "zh",
+          "check": "Workspace query selection/range, exact-period YoY CSV, share URL and saved selection"
+        },
+        {
+          "language": "zh",
+          "check": "Treasury matched-date arithmetic, recent calculation rows/nulls, input source provenance and freshness"
+        },
+        {
+          "language": "zh",
+          "check": "Monitor filters, External topic/planned evidence, AI focus/proxies, Digital focus/publication dates/qualifiers/CSV"
+        },
+        {
+          "language": "zh",
+          "check": "Historical purchasing power, Since 1971 real/nominal controls, scenario arithmetic and invalid-input handling"
+        },
+        {
+          "language": "zh",
+          "check": "Data Health and System Status, distinct date precision, manual review and fixed-vintage rules, Research Map focus"
+        },
+        {
+          "language": "zh",
+          "check": "Dollar descriptive-band deep link opens retained observations and per-indicator thresholds"
+        },
+        {
+          "language": "en",
+          "check": "CBO metric query, solid/dashed segments, full history/projection CSV with values and provenance, keyboard year inspection"
+        },
+        {
+          "language": "en",
+          "check": "Debt model arithmetic and invalid-input handling"
+        },
+        {
+          "language": "en",
+          "check": "Map country/year, Drivers topic/episode/range/inspection/CSV, Timeline year and keyboard adjustment"
+        },
+        {
+          "language": "en",
+          "check": "Workspace query selection/range, exact-period YoY CSV, share URL and saved selection"
+        },
+        {
+          "language": "en",
+          "check": "Treasury matched-date arithmetic, recent calculation rows/nulls, input source provenance and freshness"
+        },
+        {
+          "language": "en",
+          "check": "Monitor filters, External topic/planned evidence, AI focus/proxies, Digital focus/publication dates/qualifiers/CSV"
+        },
+        {
+          "language": "en",
+          "check": "Historical purchasing power, Since 1971 real/nominal controls, scenario arithmetic and invalid-input handling"
+        },
+        {
+          "language": "en",
+          "check": "Data Health and System Status, distinct date precision, manual review and fixed-vintage rules, Research Map focus"
+        },
+        {
+          "language": "en",
+          "check": "Dollar descriptive-band deep link opens retained observations and per-indicator thresholds"
+        }
+      ],
+      "statusFixtures": [
+        {
+          "language": "en",
+          "cases": [
+            "failed refresh retains validated data",
+            "Gmail acceptance explicitly does not confirm inbox delivery",
+            "malformed status falls back without inventing success"
+          ]
+        },
+        {
+          "language": "zh",
+          "cases": [
+            "failed refresh retains validated data",
+            "Gmail acceptance explicitly does not confirm inbox delivery",
+            "malformed status falls back without inventing success"
+          ]
+        }
+      ],
+      "errors": []
+    }
+  },
+  "frozen": {
+    "conceptualIndicators": 12,
+    "numericalIndicators": 11,
+    "series": 35,
+    "records": 12722,
+    "missingValues": 273,
+    "numericalSources": 10,
+    "projectionHash": "1a0a3e41fdb6b5ab3bfcfa4bfae1f6891dd4ce82b0d82e00142542932b02f13b",
+    "summaryHash": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+    "historyHash": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+    "historyBytes": 4422270
+  },
+  "security": {
+    "root": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "isolatedEngine": {
+      "info": 0,
+      "low": 0,
+      "moderate": 1,
+      "high": 0,
+      "critical": 0,
+      "total": 1
+    },
+    "sourceMapJs": "1.2.2 retained",
+    "inheritedAdvisory": "GHSA-2g4f-4pwh-qvx6; Ajv 8.17.1; $data not enabled"
+  },
+  "permissions": {
+    "frozenFilesChanged": false,
+    "frozenReviewDate": "2026-10-10",
+    "liveReviewDate": "2026-10-17",
+    "SPF10": "UNRESOLVED / EXTERNAL_SOURCE_ONLY",
+    "liveFREDStaticHistoryClearance": "UNRESOLVED; see D32_SOURCE_PERMISSION_REVIEW.md",
+    "termsChangeSinceD31": "NOT_ESTABLISHED"
+  },
+  "release": {
+    "draft": true,
+    "autoMerge": false,
+    "merge": false,
+    "deploy": false,
+    "economicRefresh": false,
+    "notifications": false,
+    "newAutomation": false,
+    "manualScreenReader": "DEFERRED_BY_OWNER",
+    "formalWCAGClaim": false
+  }
+}
