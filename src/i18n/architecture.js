@@ -76,3 +76,5 @@ sectionLinks.dollar.push(['#/research/international-dollar', '国际美元', 'In
 sectionLinks.research.unshift(['#/research/international-dollar', '国际美元', 'International Dollar'], ['#/research/data', '数据工作台', 'Data Workspace'], ['#/research/updates', '更新与修订', 'Updates & Revisions'])
 
 sectionLinks.research.unshift(['#/research/signal-engine', '信号引擎', 'Signal Engine'])
+
+sectionLinks.research.unshift(['#/research/global-monetary-order', '全球货币秩序', 'Global Monetary Order'])
