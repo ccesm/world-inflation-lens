@@ -45,6 +45,19 @@ try{
   assert.equal(historyRequests,0,'No numerical history request even when every source is opened')
   results.push({width,language,theme,result:'PASS',renderMs,historyRequests,sourceConcepts:12,keyboard:'Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus',overflow});await context.close()
  }
+ for(const language of ['en','zh']){
+  const context=await browser.newContext(),page=await context.newPage();await context.addInitScript(language=>localStorage.setItem('wil-language',language),language)
+  await page.goto(url+'#/research/ai-macro?focus=macro-PRODUCTIVITY');await page.waitForFunction(()=>document.activeElement?.id==='macro-heading-PRODUCTIVITY')
+  results.push({directDeepLink:'PRODUCTIVITY',language,result:'PASS',afterAuthentication:true});await context.close()
+ }
+ for(const mode of ['tampered_provenance','crypto_failure']){
+  const context=await browser.newContext(),page=await context.newPage();page.on('pageerror',e=>errors.push(String(e)))
+  await context.addInitScript(()=>localStorage.setItem('wil-language','en'));let numericalRequests=0;page.on('request',r=>{if(r.url().includes('/data/ai-macro/'))numericalRequests++})
+  if(mode==='crypto_failure')await context.addInitScript(()=>Object.defineProperty(crypto.subtle,'digest',{value:async()=>{throw Error('TEST_ONLY_CRYPTO_FAILURE')}}))
+  else await page.route('**/assets/AiMacro-*.js',async route=>{const response=await route.fetch(),body=await response.text(),changed=body.replace(p.sources[0].retainedSourceHash,'0'.repeat(64));assert.notEqual(body,changed);await route.fulfill({response,body:changed})})
+  await page.goto(url+'#/research/ai-macro');await page.locator('.am-page [role="alert"]').waitFor();assert.equal(await page.locator('[data-macro-section]').count(),0);assert.equal(numericalRequests,0);assert((await page.locator('.am-page').innerText()).includes(c.invalid.en))
+  results.push({mode,result:'PASS',unverifiedArticleWithheld:true,numericalFallback:false});await context.close()
+ }
  const context=await browser.newContext(),page=await context.newPage();page.on('pageerror',e=>errors.push(String(e)))
  for(const route of (await import('../src/utils/routing.js')).routes.filter(r=>r!=='research/ai-macro')){await page.goto(url+'#/'+route);await page.locator('main h1').waitFor();assert.equal(await page.locator('h1').count(),1);assert(!/NaN|Infinity|undefined/.test(await page.locator('main').innerText()));results.push({legacyRoute:route,result:'PASS'})}
  const old=await context.request.get(url+'data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json');assert(!old.headers()['content-type']?.includes('application/json'));assert(!/AI_MACRO_HISTORY_2/.test(await old.text()));results.push({oldHistoryAsset:'ABSENT',response:old.status(),note:'Preview may return HTML SPA fallback; no numerical data'})
