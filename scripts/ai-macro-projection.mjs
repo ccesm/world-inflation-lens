@@ -1,6 +1,5 @@
 // Offline projection of pinned, validated C2 output. Copies arithmetic; never fetches or calculates it.
-import { readFile, mkdir, writeFile, rename, unlink } from 'node:fs/promises'
-import { resolve, dirname, join } from 'node:path'
+import { resolve } from 'node:path'
 import { createHash } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 export const researchCommit='362929adfae20b31d8044e5c9a10ae020f0c9eaf'
@@ -77,21 +76,8 @@ export function projectPublic(input,rights,review){
  require(series.length===35&&sources.length===10,'Exact public subset')
  return {summary,summaryBytes:bytes(summary),history,historyBytes}
 }
+// Historical pure projection exports remain for original research reproducibility.
+// D3.3 retires the former CLI writer; the original is preserved in the private archive.
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- const root=resolve(dirname(fileURLToPath(import.meta.url)),'..'),index=process.argv.indexOf('--input')
- require(index>=0&&process.argv[index+1],'Supply --input with exact C2 analysis.json; no live retrieval')
- const publicRights=JSON.parse(await readFile(join(root,'docs/ai-macro-release/phase-d2-1/publication-policy.json'),'utf8'))
- const rights=JSON.parse(await readFile(join(root,'docs/ai-macro/source-rights.json'),'utf8'))
- assertPublicRights(publicRights,rights)
- const result=projectPublic(await readFile(resolve(process.argv[index+1])),rights,publicRights)
- // Both fully validated in memory before writing; CLI owns only the dedicated snapshot paths.
- const historyPath=join(root,'public',result.summary.historyArtifact.path),summaryPath=join(root,'src/data/ai-macro/summary.json')
- await mkdir(dirname(historyPath),{recursive:true});await mkdir(dirname(summaryPath),{recursive:true})
- // Immutable object first; only the summary is the atomic publication pointer.
- let existing;try{existing=await readFile(historyPath)}catch(error){if(error.code!=='ENOENT')throw error}
- if(existing)require(hash(existing)===result.summary.historyArtifact.sha256,'Existing immutable object changed')
- else {const staged=historyPath+'.tmp-'+process.pid;try{await writeFile(staged,result.historyBytes,{flag:'wx'});await rename(staged,historyPath)}finally{await unlink(staged).catch(()=>{})}}
- const stagedSummary=summaryPath+'.tmp-'+process.pid
- try{await writeFile(stagedSummary,result.summaryBytes,{flag:'wx'});await rename(stagedSummary,summaryPath)}finally{await unlink(stagedSummary).catch(()=>{})}
- console.log(JSON.stringify({projectionHash:result.summary.projectionHash,historyHash:result.summary.historyArtifact.sha256,summaryBytes:result.summaryBytes.length,historyBytes:result.historyBytes.length,records:result.summary.historyArtifact.recordCount,missing:result.summary.historyArtifact.missingCount}))
+ throw Error('NUMERICAL_MACRO_PUBLICATION_RETIRED: use the reviewed D3.3 narrative publication; no files written')
 }

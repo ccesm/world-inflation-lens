@@ -1,62 +1,55 @@
-// Optional real Chromium acceptance. No browser dependency is added to the application.
+// D3.3 research-publication acceptance; no source downloads or hosted history.
 import assert from 'node:assert/strict'
 import {readFile,mkdir,writeFile} from 'node:fs/promises'
-import {resolve} from 'node:path'
+import {resolve,join} from 'node:path'
 import {pathToFileURL} from 'node:url'
-import {CORE,SECTIONS} from '../src/data/ai-macro/contract.js'
-import {macroCopy as c,text,valueText,periodText} from '../src/i18n/aiMacro.js'
+import {macroCopy as c,text} from '../src/i18n/aiMacro.js'
+import {CHANNELS} from '../src/data/ai-macro/contract.js'
 const {chromium}=await import(pathToFileURL(process.env.WIL_PLAYWRIGHT_MODULE))
-const url=process.env.WIL_BROWSER_URL||'http://127.0.0.1:5194/world-inflation-lens/',out=resolve(process.env.WIL_BROWSER_OUTPUT_DIR||'.refresh/ai-macro-browser')
-await mkdir(out,{recursive:true})
-const data=JSON.parse(await readFile(new URL('../src/data/ai-macro/summary.json',import.meta.url)))
-const browser=await chromium.launch({headless:true,executablePath:process.env.WIL_CHROME_EXECUTABLE}),results=[],requests=[],errors=[]
+const url=process.env.WIL_BROWSER_URL||'http://127.0.0.1:5198/world-inflation-lens/',out=resolve(process.env.WIL_BROWSER_OUTPUT_DIR||'.refresh/d33-browser')
+assert.equal(new URL(url).hostname,'127.0.0.1');await mkdir(out,{recursive:true})
+const p=JSON.parse(await readFile(new URL('../src/data/ai-macro/publication.json',import.meta.url)))
+const browser=await chromium.launch({headless:true,executablePath:process.env.WIL_CHROME_EXECUTABLE}),results=[],requests=[],errors=[],axe=[]
 try{
- for(const width of [390,1280])for(const language of ['en','zh'])for(const theme of ['light','dark']){
-  const context=await browser.newContext({viewport:{width,height:900}});await context.addInitScript(({language,theme})=>{localStorage.setItem('wil-language',language);localStorage.setItem('wil-theme',theme)},{language,theme});const page=await context.newPage()
-  page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>requests.push({url:r.url(),resourceType:r.resourceType()}));let fetches=0;page.on('request',r=>{if(r.url().includes('/data/ai-macro/'))fetches++})
-  const start=performance.now();await page.goto(url+'#/research/ai-macro');await page.locator('[data-page="ai-macro"]').waitFor();const initialMs=performance.now()-start
-  assert.equal(await page.locator('[data-macro-section]').count(),4);assert.equal(fetches,0,'No history fetch on initial route');assert.equal(await page.title(),`${text(c.title,language)} | World Inflation Lens`)
-  await page.screenshot({path:resolve(out,`${width}-${language}-${theme}-overview.png`)})
-  const historyStart=performance.now();await page.locator('[data-macro-section="ENERGY"]').getByRole('button',{name:text(c.showHistory,language),exact:true}).click();await page.locator('.am-chart svg').waitFor();const historyMs=performance.now()-historyStart
-  for(const [channel,ids]of Object.entries(SECTIONS)){
-   const panel=page.locator(`[data-macro-section="${channel}"]`),indicator=panel.getByLabel(text(c.indicator,language),{exact:true})
-   if(channel!=='ENERGY'){await panel.getByRole('button',{name:text(c.showHistory,language),exact:true}).click();await panel.locator('.am-chart svg').waitFor()}
-   for(const id of ids){
-    const began=performance.now();await indicator.selectOption(id);
-    if(id==='SPF10'){
-     const external=panel.locator('[data-external-indicator="SPF10"]');assert.equal(await external.count(),1);assert.equal(await panel.locator('.am-chart,table,[data-series]').count(),0);assert.equal(await panel.getByRole('button').count(),0)
-     const link=external.getByRole('link',{name:text(c.spfLink,language),exact:true});assert.equal(await link.getAttribute('href'),data.externalIndicators[0].officialURL);assert.equal(await link.getAttribute('target'),'_blank');assert.equal(await link.getAttribute('rel'),'noopener noreferrer');assert((await external.innerText()).includes(text(c.spfHosted,language)));assert((await external.innerText()).includes(text(c.spfLimits,language)))
-     await link.focus();await page.keyboard.press('Tab');await page.keyboard.press('Shift+Tab');assert(await link.evaluate(e=>e===document.activeElement));assert.notEqual(await link.evaluate(e=>getComputedStyle(e).outlineStyle),'none');await page.screenshot({path:resolve(out,`${width}-${language}-${theme}-spf.png`)});await panel.screenshot({path:resolve(out,`${width}-${language}-${theme}-spf-card.png`)});continue
-    }
-    const s=data.series.find(s=>s.indicatorId===id&&(!id.startsWith('EIA_COMM_')||s.geography==='VA'))
-    assert.equal(await panel.locator('[data-series]').getAttribute('data-series'),s.seriesId);assert((await panel.locator('.am-reading').innerText()).includes(valueText(s.lastRecord.value,language)));assert((await panel.locator('.am-reading').innerText()).includes(periodText(s.lastRecord.period,s.frequency,language)));assert.equal(await panel.locator('.am-chart svg').count(),1);assert((await panel.innerText()).includes(text(c.releaseUnknown,language)));assert((await panel.innerText()).includes(text(c.definitions[id],language)))
-    await panel.getByText(text(c.provenance,language),{exact:true}).click();assert((await panel.innerText()).includes(s.sourceHash));await panel.getByText(text(c.provenance,language),{exact:true}).click()
-    const anchor=panel.locator('a').first();assert.equal(await anchor.getAttribute('href'),data.sources.find(x=>x.sourceId===s.sourceId).officialURL)
-    await panel.getByLabel(text(c.measure,language),{exact:true}).selectOption('nativeChange');assert((await panel.locator('caption').innerText()).includes(s.calculationUnit==='PERCENTAGE_POINTS'?text(c.pp,language):'%'));await panel.getByLabel(text(c.measure,language),{exact:true}).selectOption('value')
-    if(id==='CPIAUCSL'){const missing=panel.locator('tr[data-missing="true"]');assert.equal(await missing.count(),1);assert((await missing.innerText()).includes('2025-10'));assert((await missing.innerText()).includes(text(c.missing,language)))}
-    if(id==='DFII10'){assert.equal(await panel.getByLabel(text(c.measure,language),{exact:true}).locator('option').count(),2);await panel.getByLabel(text(c.historyRange,language),{exact:true}).selectOption('full');assert((await panel.locator('.am-line').getAttribute('d')).includes('M'));assert((await panel.locator('svg').innerHTML()).includes('2003'));await panel.getByLabel(text(c.historyRange,language),{exact:true}).selectOption('recent')}
-    assert(performance.now()-began<5000,'Local indicator switch budget')
-   }
-   await indicator.selectOption(ids[0]);assert.equal(await panel.locator('tbody tr').count(),24)
+ for(const width of [320,390,1280])for(const language of ['en','zh'])for(const theme of ['light','dark']){
+  const context=await browser.newContext({viewport:{width,height:900}});await context.addInitScript(({language,theme})=>{localStorage.setItem('wil-language',language);localStorage.setItem('wil-theme',theme)},{language,theme})
+  const page=await context.newPage(),t=x=>text(x,language);let historyRequests=0
+  page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>requests.push({url:r.url(),type:r.resourceType()}))
+  await page.route('**/data/ai-macro/**',r=>{historyRequests++;return r.abort()})
+  const start=performance.now();await page.goto(url+'#/research/ai-macro');await page.locator('[data-page="ai-macro"]').waitFor();const renderMs=Math.round(performance.now()-start)
+  assert.equal(await page.title(),t(c.title)+' | World Inflation Lens');assert.equal(await page.locator('h1').count(),1)
+  const article=page.locator('[data-page="ai-macro"]');assert.equal(await article.locator('[data-macro-section]').count(),4);assert.equal(await article.locator('[data-evidence-id]').count(),12)
+  assert.equal(await article.locator('table,svg,canvas,select,iframe,a[download]').count(),0)
+  assert((await article.innerText()).includes(t(c.accessBoundary)));assert((await article.innerText()).includes('2026-10-09'));assert((await article.innerText()).includes('2026-10-17'))
+  for(const channel of p.channels){
+   const section=page.locator(`[data-macro-section="${channel.id}"]`),copy=c.channels[channel.id]
+   for(const key of ['question','finding','alternatives','unresolved','method'])assert((await section.innerText()).includes(t(copy[key])))
+   for(const key of ['finding','observations','counterEvidence','alternatives','unresolved','sectionMethod'])assert.equal(await section.getByRole('heading',{name:t(c[key]),exact:true}).count(),1)
+   const details=section.locator('.am-sources');await details.locator('summary').click();assert(await details.evaluate(e=>e.open))
+   for(const id of channel.sourceIds){const source=section.locator(`[data-source-id="${id}"]`),spec=p.sources.find(x=>x.id===id);assert((await source.innerText()).includes(spec.datasetIdentifier));assert((await source.innerText()).includes(t(c.providers[spec.providerId])));assert((await source.innerText()).includes(t(c.sourceCopy[id].access)));const link=source.locator('a').first();assert.equal(await link.getAttribute('href'),spec.officialURL);assert.equal(await link.getAttribute('target'),null);assert.equal(await link.getAttribute('download'),null)}
   }
-  assert.equal(fetches,1,'All four charts share one frozen history fetch')
-  // Real keyboard operation of a native selector and paginated table controls.
-  const energy=page.locator('[data-macro-section="ENERGY"]'),select=energy.getByLabel(text(c.indicator,language),{exact:true});await select.focus();assert(await select.evaluate(e=>e===document.activeElement));await page.keyboard.press('Tab');assert(await energy.getByLabel(text(c.state,language),{exact:true}).evaluate(e=>e===document.activeElement));await select.selectOption('EIA_COMM_SALES')
-  await energy.getByRole('button',{name:text(c.older,language),exact:true}).focus();await page.keyboard.press('Enter');assert.equal(await energy.locator('tbody tr').count(),24);await energy.getByRole('button',{name:text(c.newer,language),exact:true}).click()
-  assert.equal(await page.locator('.am-chart svg').count(),4);assert.equal(await page.locator('.am-page table caption').count(),4)
-  const overflow=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,offenders:[...document.querySelectorAll('.am-page *')].filter(e=>e.getBoundingClientRect().right>innerWidth+1).map(e=>e.tagName+'.'+e.className).slice(0,8)}));assert(overflow.scroll<=width+1,JSON.stringify(overflow));assert.equal(overflow.offenders.length,0,JSON.stringify(overflow))
-  await energy.locator('.am-chart').scrollIntoViewIfNeeded();await page.screenshot({path:resolve(out,`${width}-${language}-${theme}-history.png`)})
-  // Local navigation is resolved by the existing router, not a new navigation framework.
-  await page.goto(url+'#/research');await page.locator('main .research-tool-link[href="#/research/ai-macro"]').click();await page.locator('[data-page="ai-macro"]').waitFor()
-  results.push({width,language,theme,result:'PASS',initialMs:Math.round(initialMs),historyMs:Math.round(historyMs),historyRequests:fetches,indicators:12,charts:4,overflow,keyboard:'PASS: Tab focus and Enter table pagination; semantic native selects; OS popup arrow selection not automated',missingCPI:'PASS'});await context.close()
+  assert.equal(await article.locator('[data-source-id]').count(),12)
+  // Native disclosure operation and ordinary same-context provider navigation.
+  const first=article.locator('.am-sources').first();await first.evaluate(e=>e.open=false);await first.locator('summary').focus();await page.keyboard.press('Space');assert(await first.evaluate(e=>e.open));await page.keyboard.press('Tab');const link=first.locator('a').first();assert(await link.evaluate(e=>e===document.activeElement));assert.notEqual(await link.evaluate(e=>getComputedStyle(e).outlineStyle),'none');await page.keyboard.press('Shift+Tab');assert(await first.locator('summary').evaluate(e=>e===document.activeElement))
+  // Existing hash-router focus semantics remain valid for each research channel.
+  for(const id of CHANNELS){await article.locator(`.am-contents a[href$="macro-${id}"]`).click();await page.waitForFunction(id=>document.activeElement?.id===`macro-heading-${id}`,id)}
+  const overflow=await page.evaluate(()=>({client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,offenders:[...document.querySelectorAll('.am-page *')].filter(e=>e.getBoundingClientRect().right>innerWidth+1).map(e=>e.tagName).slice(0,10)}));assert(overflow.scroll<=width+1,JSON.stringify(overflow));assert.equal(overflow.offenders.length,0,JSON.stringify(overflow))
+  if(width===390){await page.goto(url+'#/research/ai-macro');await article.waitFor();await page.screenshot({path:join(out,`${width}-${language}-${theme}-overview.png`)});await page.locator('[data-macro-section="ENERGY"]').screenshot({path:join(out,`${width}-${language}-${theme}-energy.png`)})}
+  if(width===1280&&theme==='light')await article.screenshot({path:join(out,`${width}-${language}-article.png`)})
+  if(width===390&&theme==='light'){
+   const cdp=await context.newCDPSession(page),ax=await cdp.send('Accessibility.getFullAXTree'),nodes=ax.nodes.filter(n=>!n.ignored)
+   for(const channel of p.channels)assert(nodes.some(n=>n.role?.value==='heading'&&n.name?.value===t(c.channels[channel.id].question)))
+   assert(nodes.some(n=>n.role?.value==='main'));assert(nodes.some(n=>n.role?.value==='article'))
+   await writeFile(join(out,`ax-${language}.json`),JSON.stringify(ax,null,2)+'\n');axe.push({language,result:'PASS',scope:'Named article/main landmarks, four research questions, native disclosure and provider-link keyboard focus',formalScreenReader:'DEFERRED_BY_OWNER'})
+  }
+  assert.equal(historyRequests,0,'No numerical history request even when every source is opened')
+  results.push({width,language,theme,result:'PASS',renderMs,historyRequests,sourceConcepts:12,keyboard:'Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus',overflow});await context.close()
  }
- for(const mode of ['blocked','changed_bytes']){
-  const context=await browser.newContext();await context.addInitScript(()=>localStorage.setItem('wil-language','en'));const page=await context.newPage();let attempts=0
-  const bytes=await readFile(new URL('../public/'+data.historyArtifact.path,import.meta.url));bytes[10]^=1
-  await page.route('**/data/ai-macro/**',r=>{attempts++;return mode==='blocked'?r.fulfill({status:503,body:'blocked'}):r.fulfill({status:200,contentType:'application/json',body:bytes})})
-  await page.goto(url+'#/research/ai-macro');const panel=page.locator('[data-macro-section="ENERGY"]');await panel.getByRole('button',{name:c.showHistory.en,exact:true}).click();await panel.getByRole('alert').waitFor();assert.equal(await page.locator('[data-series]').count(),4);assert.equal(await page.locator('.am-chart').count(),0);assert.equal(attempts,1);await panel.getByRole('button',{name:c.retry.en,exact:true}).click();await panel.getByRole('alert').waitFor();assert.equal(attempts,2);results.push({mode,result:'PASS',summaryRetained:true,automaticRetry:false});await context.close()
- }
- const context=await browser.newContext(),page=await context.newPage();for(const route of (await import('../src/utils/routing.js')).routes.filter(r=>r!=='research/ai-macro')){await page.goto(url+'#/'+route);await page.locator('main h1').waitFor();assert.equal(await page.locator('h1').count(),1);assert(!/NaN|Infinity|undefined/.test(await page.locator('main').innerText()));results.push({legacyRoute:route,result:'PASS'})}await context.close()
- assert.equal(errors.length,0,errors.join('\n'));const sourceRequests=requests.filter(r=>/eia\.gov|census\.gov|fred\.stlouisfed\.org|philadelphiafed\.org/.test(r.url));assert.equal(sourceRequests.length,0,'No live economic source requests')
- const report={schemaVersion:'D21_BROWSER_1',browser:await browser.version(),execution:'Headless installed Chrome; local loopback preview, cold context per combination; not a remote network benchmark',url,results,pageErrors:errors,economicRuntimeRequests:sourceRequests,classification:'PASS'};await writeFile(resolve(out,'results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2))
+ const context=await browser.newContext(),page=await context.newPage();page.on('pageerror',e=>errors.push(String(e)))
+ for(const route of (await import('../src/utils/routing.js')).routes.filter(r=>r!=='research/ai-macro')){await page.goto(url+'#/'+route);await page.locator('main h1').waitFor();assert.equal(await page.locator('h1').count(),1);assert(!/NaN|Infinity|undefined/.test(await page.locator('main').innerText()));results.push({legacyRoute:route,result:'PASS'})}
+ const old=await context.request.get(url+'data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json');assert(!old.headers()['content-type']?.includes('application/json'));assert(!/AI_MACRO_HISTORY_2/.test(await old.text()));results.push({oldHistoryAsset:'ABSENT',response:old.status(),note:'Preview may return HTML SPA fallback; no numerical data'})
+ await context.close();assert.equal(errors.length,0,errors.join('\n'))
+ const economicRuntimeRequests=requests.filter(r=>/eia\.gov|census\.gov|fred\.stlouisfed\.org|federalreserve\.gov|bls\.gov|bea\.gov|philadelphiafed\.org/.test(r.url));assert.equal(economicRuntimeRequests.length,0)
+ const report={schemaVersion:'D33_NARRATIVE_BROWSER_1',browser:await browser.version(),url,classification:'PASS',results,accessibility:axe,pageErrors:errors,economicRuntimeRequests,formalScreenReader:'DEFERRED_BY_OWNER',execution:'Installed headless Chrome; local production build; no production performance or formal WCAG claim'}
+ await writeFile(join(out,'results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2))
 }finally{await browser.close()}

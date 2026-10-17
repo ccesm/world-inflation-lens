@@ -1,56 +1,56 @@
 import publicIdentity from './public-identity.json' with {type:'json'}
-// Fixed-vintage presentation contract; no economic calculations or source retrieval.
-export const CORE=['EIA_COMM_SALES','EIA_COMM_PRICE','HENRY_HUB','CENSUS_DC','PNFIC1','DFII10','NCBDBIQ027S','OPHNFB','ULCNFB','CPIAUCSL','PCEPILFE','SPF10']
-export const STATES=['IL','KS','KY','MI','MO','NE','NM','OH','OK','PA','UT','VA','WI']
-export const SECTIONS={ENERGY:CORE.slice(0,4),FINANCING:CORE.slice(4,7),PRODUCTIVITY:CORE.slice(7,9),INFLATION:CORE.slice(9)}
-export const identity={projectionHash:'f1150945a0f32672c60ff594de2c079c7b8318554dc919bf5061771855bf8256',historyHash:'5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590',researchCommit:'362929adfae20b31d8044e5c9a10ae020f0c9eaf',inputHash:'480e10d32d5d8317589aa279edafe4137b4d1bb8e384093ed0a1a896dcb5018d'}
-export const FREQUENCIES=['MONTHLY','QUARTERLY','DAILY','QUARTERLY_END_OF_PERIOD','QUARTERLY_SURVEY']
-export const UNITS=['MWh','CENTS_PER_KWH','USD_PER_MMBTU','MILLION_USD_SAAR','BILLION_CHAINED_2017_USD_SAAR','PERCENT_PER_ANNUM','MILLION_USD','INDEX_2017_100','INDEX_1982_1984_100','PERCENT_ANNUAL_AVERAGE']
-export const CHANGE_STATUS=['AVAILABLE','COMPARISON_PERIOD_ABSENT','MISSING_ENDPOINT','NOT_DEFINED_FOR_DAILY_YIELD']
-const date=value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value)&&Number.isFinite(Date.parse(value))&&new Date(value).toISOString().slice(0,10)===value
-const hash=value=>typeof value==='string'&&/^[a-f0-9]{64}$/.test(value)
-const numeric=value=>value===null||(typeof value==='number'&&Number.isFinite(value))
-const exact=(object,fields)=>object&&Object.keys(object).sort().join('|')===[...fields].sort().join('|')
-export const NUMERICAL_CORE=CORE.filter(id=>id!=='SPF10')
-export const EXTERNAL={indicatorId:'SPF10',publicationMode:'EXTERNAL_SOURCE_ONLY',rightsStatus:'UNRESOLVED',officialURL:'https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts'}
-const rootFields=['schemaVersion','researchCommit','researchAsOf','copyVersion','c2SchemaVersion','c2InputHash','inputIdentityHash','outputSetHash','rightsHash','sources','series','historyArtifact','evidence','projectionHash','externalIndicators']
-const rowFields=['geography','locator','nativeBasePeriod','nativeChange','nativeChangeStatus','nativeIntervalDays','period','periodEnd','revisionFlag','value','yearBasePeriod','yearChange','yearChangeStatus']
-export function publicURL(value){try{const u=new URL(value);return u.protocol==='https:'&&!u.username&&!u.password&&['eia.gov','census.gov','philadelphiafed.org','fred.stlouisfed.org'].some(h=>u.hostname===h||u.hostname.endsWith('.'+h))}catch{return false}}
-export function validRecord(r){
- return exact(r,rowFields)&&date(r.period)&&date(r.periodEnd)&&r.period<=r.periodEnd&&r.periodEnd<='2026-10-09'&&numeric(r.value)&&numeric(r.nativeChange)&&numeric(r.yearChange)&&CHANGE_STATUS.includes(r.nativeChangeStatus)&&CHANGE_STATUS.includes(r.yearChangeStatus)&&typeof r.locator==='string'&&r.locator.length>0&&[r.nativeBasePeriod,r.yearBasePeriod].every(v=>v===null||date(v))&&(r.nativeIntervalDays===null||Number.isInteger(r.nativeIntervalDays))&&((r.nativeChangeStatus==='AVAILABLE')===(r.nativeChange!==null))&&((r.yearChangeStatus==='AVAILABLE')===(r.yearChange!==null))
+import {macroCopy} from '../../i18n/aiMacro.js'
+// Fixed narrative publication. There is no source-data loader or numerical contract.
+export const CHANNELS=['ENERGY','FINANCING','PRODUCTIVITY','INFLATION']
+export const INDICATORS=['EIA_COMM_SALES','EIA_COMM_PRICE','HENRY_HUB','CENSUS_DC','PNFIC1','DFII10','NCBDBIQ027S','OPHNFB','ULCNFB','CPIAUCSL','PCEPILFE','SPF10']
+export const CLAIMS=['energy-sales','energy-construction','energy-gas','energy-prices','financing-investment','financing-yield','financing-boundary','productivity-output','productivity-cost','inflation-prices','inflation-boundary','inflation-spf']
+const sourceURLs={
+ EIA_COMM_SALES:'https://www.eia.gov/electricity/data/eia861m/',EIA_COMM_PRICE:'https://www.eia.gov/electricity/data/eia861m/',HENRY_HUB:'https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm',
+ CENSUS_DC:'https://www.census.gov/construction/c30/data/index.html',PNFIC1:'https://www.bea.gov/data/gdp/gross-domestic-product',DFII10:'https://www.federalreserve.gov/releases/h15/',NCBDBIQ027S:'https://www.federalreserve.gov/releases/z1/',
+ OPHNFB:'https://www.bls.gov/productivity/',ULCNFB:'https://www.bls.gov/productivity/',CPIAUCSL:'https://www.bls.gov/cpi/',PCEPILFE:'https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy',SPF10:'https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts',
 }
-export function validSummary(s){try{
- if(!exact(s,rootFields)||s.schemaVersion!=='AI_MACRO_PUBLIC_2'||s.researchCommit!==identity.researchCommit||s.researchAsOf!=='2026-10-09'||s.c2SchemaVersion!=='C2.1'||s.copyVersion!=='D21_COPY_1'||s.projectionHash!==publicIdentity.projectionHash||s.inputIdentityHash!==identity.inputHash||s.rightsHash!==publicIdentity.rightsHash||JSON.stringify(canonical(s.externalIndicators))!==JSON.stringify(canonical([EXTERNAL])))return false
- if(s.series.length!==35||new Set(s.series.map(x=>x.seriesId)).size!==35||s.sources.length!==10||new Set(s.sources.map(x=>x.sourceId)).size!==10)return false
- if(NUMERICAL_CORE.some(id=>s.series.filter(x=>x.indicatorId===id).length!==(['EIA_COMM_SALES','EIA_COMM_PRICE'].includes(id)?13:1)))return false
- if(s.sources.some(x=>!['ALLOWED — PUBLIC DISPLAY','ALLOWED — ATTRIBUTION REQUIRED'].includes(x.rightsStatus)||x.publicationMode!=='PUBLIC_NUMERICAL_DATA'||x.sourceId==='SPF10'||!hash(x.sourceHash)||!publicURL(x.officialURL)))return false
- if(s.series.some(x=>!NUMERICAL_CORE.includes(x.indicatorId)||!FREQUENCIES.includes(x.frequency)||!UNITS.includes(x.unit)||!SECTIONS[x.channel]?.includes(x.indicatorId)||!validRecord(x.lastRecord)||!validRecord(x.lastNonmissing)||x.lastNonmissing.value===null||x.sourceHash!==s.sources.find(y=>y.sourceId===x.sourceId)?.sourceHash||x.clocks.firstPublicationDates!==null||x.clocks.firstReleaseVintageAvailable!==false||x.evidence.causalIdentification!=='NONE'||x.evidence.statisticalAssociation!=='NOT_ESTIMATED'||x.evidence.aiSpecificValue!==null))return false
- if(['EIA_COMM_SALES','EIA_COMM_PRICE'].some(id=>s.series.filter(x=>x.indicatorId===id).map(x=>x.geography).sort().join('|')!==STATES.join('|')))return false
- if(s.series.reduce((n,x)=>n+x.rawRowCount,0)!==publicIdentity.recordCount||s.series.reduce((n,x)=>n+x.missingRowCount,0)!==publicIdentity.missingCount)return false
- const a=s.historyArtifact
- return exact(a,['path','sha256','byteSize','seriesCount','recordCount','missingCount'])&&a.sha256===publicIdentity.historyHash&&a.path===`data/ai-macro/${a.sha256}/history.json`&&a.byteSize===publicIdentity.byteSize&&a.seriesCount===35&&a.recordCount===publicIdentity.recordCount&&a.missingCount===publicIdentity.missingCount&&s.evidence.forecast===false
-}catch{return false}}
-export function canonical(value){if(Array.isArray(value))return value.map(canonical);if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(k=>[k,canonical(value[k])]));return value}
-export async function digest(bytes,cryptoImpl=globalThis.crypto){return [...new Uint8Array(await cryptoImpl.subtle.digest('SHA-256',bytes))].map(v=>v.toString(16).padStart(2,'0')).join('')}
-export async function verifySummary(s,cryptoImpl=globalThis.crypto){
- if(!validSummary(s))throw Error('Invalid macro snapshot')
- const {projectionHash,...payload}=s
- if(await digest(new TextEncoder().encode(JSON.stringify(canonical(payload))+'\n'),cryptoImpl)!==projectionHash)throw Error('Macro snapshot identity mismatch')
- return s
+const catalogIds=['PNFIC1','DFII10','NCBDBIQ027S','OPHNFB','ULCNFB','CPIAUCSL','PCEPILFE']
+const exact=(o,keys)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o).sort().join('|')===[...keys].sort().join('|')
+const same=(a,b)=>JSON.stringify(a)===JSON.stringify(b)
+const hash=x=>typeof x==='string'&&/^[a-f0-9]{64}$/.test(x)
+const short=x=>typeof x==='string'&&x.length>0&&x.length<=320&&!/[<>\u0000-\u001f]/.test(x)
+const refs=(a,ids)=>Array.isArray(a)&&a.length>0&&a.length<=ids.length&&new Set(a).size===a.length&&a.every(id=>ids.includes(id))
+const forbidden=new Set(['observations','series','historyArtifact','lastRecord','lastNonmissing','value','values','nativeChange','yearChange','rawRowCount','missingRowCount','payload','download','historyURL'])
+function narrativeOnly(x){
+ if(typeof x==='number'||typeof x==='bigint'||x===null)return false
+ if(Array.isArray(x))return x.length<=INDICATORS.length&&x.every(narrativeOnly)
+ if(x&&typeof x==='object')return Object.entries(x).every(([k,v])=>!forbidden.has(k)&&narrativeOnly(v))
+ return typeof x==='string'||typeof x==='boolean'
 }
-export function validHistory(h,s){try{
- if(!exact(h,['schemaVersion','researchCommit','researchAsOf','inputIdentityHash','series'])||h.schemaVersion!=='AI_MACRO_HISTORY_2'||h.researchCommit!==s.researchCommit||h.researchAsOf!==s.researchAsOf||h.inputIdentityHash!==s.inputIdentityHash||h.series.length!==35||new Set(h.series.map(x=>x.seriesId)).size!==35)return false
- for(const x of h.series){
-  const meta=s.series.find(y=>y.seriesId===x.seriesId)
-  if(!meta||!exact(x,['seriesId','sourceHash','observations'])||x.sourceHash!==meta.sourceHash||x.observations.length!==meta.rawRowCount)return false
-  if(x.observations.some((r,i)=>!validRecord(r)||r.geography!==meta.geography||(i>0&&x.observations[i-1].period>=r.period)))return false
-  if(x.observations.filter(r=>r.value===null).length!==meta.missingRowCount)return false
-  if(JSON.stringify(canonical(x.observations.at(-1)))!==JSON.stringify(canonical(meta.lastRecord)))return false
+export const canonical=x=>Array.isArray(x)?x.map(canonical):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,canonical(x[k])])):x
+export const canonicalText=x=>JSON.stringify(canonical(x))+'\n'
+export async function digest(value,cryptoImpl=globalThis.crypto){
+ if(!cryptoImpl?.subtle)throw Error('PUBLICATION_CRYPTO_UNAVAILABLE')
+ return [...new Uint8Array(await cryptoImpl.subtle.digest('SHA-256',new TextEncoder().encode(canonicalText(value))))].map(x=>x.toString(16).padStart(2,'0')).join('')
+}
+export function validPublication(p){try{
+ if(!narrativeOnly(p)||!exact(p,['schemaVersion','publicationId','publicationDate','researchAsOf','copyVersion','numericFactPolicy','research','channels','claims','sources']))return false
+ if(p.schemaVersion!=='AI_MACRO_RESEARCH_PUBLICATION_1'||p.publicationId!==publicIdentity.publicationId||p.publicationDate!=='2026-10-17'||p.researchAsOf!=='2026-10-09'||p.copyVersion!=='D33_COPY_1'||p.numericFactPolicy!=='NO_ECONOMIC_FIGURES_IN_THIS_EDITION')return false
+ if(!exact(p.research,['commit','c2Sha256','inputIdentityHash','outputSetHash'])||p.research.commit!=='362929adfae20b31d8044e5c9a10ae020f0c9eaf'||p.research.c2Sha256!=='ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7'||p.research.inputIdentityHash!=='480e10d32d5d8317589aa279edafe4137b4d1bb8e384093ed0a1a896dcb5018d'||p.research.outputSetHash!=='34eac463e54188e9da70e10cd7ae6758bec5ec2f365b9289b8f396f5cf96a788')return false
+ if(!Array.isArray(p.sources)||!same(p.sources.map(s=>s.id),INDICATORS))return false
+ for(const s of p.sources){
+  const spf=s.id==='SPF10',keys=['id','providerId','datasetIdentifier','officialURL','catalogURL','publicationMode',...(spf?[]:['retainedSourceHash'])]
+  if(!exact(s,keys)||!macroCopy.providers[s.providerId]||!short(s.datasetIdentifier)||s.officialURL!==sourceURLs[s.id]||s.catalogURL!==(catalogIds.includes(s.id)?`https://fred.stlouisfed.org/series/${s.id}`:'')||s.publicationMode!==(spf?'EXTERNAL_SOURCE_ONLY':'NARRATIVE_PROVENANCE_ONLY')||(!spf&&!hash(s.retainedSourceHash)))return false
  }
- return true
+ if(!Array.isArray(p.claims)||!same(p.claims.map(c=>c.id),CLAIMS))return false
+ for(const c of p.claims)if(!exact(c,['id','kind','sourceIds','researchLocator'])||!['E1','E2'].includes(c.kind)||!refs(c.sourceIds,INDICATORS)||!short(c.researchLocator)||!macroCopy.claims[c.id]||c.sourceIds.includes('SPF10')&&c.kind!=='E1')return false
+ if(!Array.isArray(p.channels)||!same(p.channels.map(c=>c.id),CHANNELS))return false
+ const used=[]
+ for(const c of p.channels){
+  if(!exact(c,['id','sourceIds','observationRefs','counterEvidenceRefs'])||!refs(c.sourceIds,INDICATORS)||!refs(c.observationRefs,CLAIMS)||!refs(c.counterEvidenceRefs,CLAIMS))return false
+  for(const id of [...c.observationRefs,...c.counterEvidenceRefs]){used.push(id);if(p.claims.find(x=>x.id===id).sourceIds.some(s=>!c.sourceIds.includes(s)))return false}
+ }
+ return new Set(used).size===CLAIMS.length&&new Set(p.channels.flatMap(c=>c.sourceIds)).size===INDICATORS.length
 }catch{return false}}
-// View-only selection; neither fields nor statistical frequencies are transformed.
-export function chartPoints(records,measure='value',full=false){return records.filter(r=>full||r.period>='2015-01-01').map(r=>({date:r.period,value:r[measure]}))}
-export function drawingFrequency(frequency){return frequency==='MONTHLY'?'monthly':frequency==='DAILY'?'daily':'quarterly'}
-
-export function isReleaseHold(s){return exact(s,['schemaVersion','reason','sourceIds','researchAsOf','fullProjectionHash','fullHistoryHash'])&&s.schemaVersion==='AI_MACRO_RELEASE_HOLD_1'&&s.reason==='PUBLIC_REDISTRIBUTION_UNRESOLVED'&&JSON.stringify(s.sourceIds)==='["SPF10"]'&&s.researchAsOf==='2026-10-09'&&s.fullProjectionHash===identity.projectionHash&&s.fullHistoryHash===identity.historyHash}
+export async function verifyPublication(p,cryptoImpl=globalThis.crypto){
+ if(!validPublication(p))throw Error('INVALID_RESEARCH_PUBLICATION')
+ if(await digest(p,cryptoImpl)!==publicIdentity.publicationSha256)throw Error('PUBLICATION_IDENTITY_MISMATCH')
+ if(await digest(macroCopy,cryptoImpl)!==publicIdentity.copySha256)throw Error('PUBLICATION_COPY_IDENTITY_MISMATCH')
+ return p
+}
+export const publicationIdentity=publicIdentity
