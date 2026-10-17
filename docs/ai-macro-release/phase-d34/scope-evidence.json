@@ -1,0 +1,395 @@
+{
+  "schemaVersion": "D34_SCOPE_1",
+  "main": "03413caa9868f4608e828ad94d3f57b490e03380",
+  "previous": "abcedb2c049b01769fb0c5423370661e466b4ee5",
+  "merge": "93dc3d559654c04fe675a68434d3a6b6b4278ded",
+  "result": "PASS",
+  "protectedProductionFiles": 378,
+  "productionDataFiles": 32,
+  "productionDataIdentities": [
+    {
+      "path": "data/countries/README.md",
+      "sha256": "de9dbcdf4ad006d8ef3ffdab7a2772679d33b1fdb345b5500374947d1fce96a8"
+    },
+    {
+      "path": "data/countries/metadata.json",
+      "sha256": "72c7bb3460c2f2e93aec56a7f50dafe624895c73ac6cc72b3b77198705b40ad3"
+    },
+    {
+      "path": "data/countries/world.geo.json",
+      "sha256": "449c45d2c352e897647cbd67a5b72c26cb140e24a06fd5acf37e42e4d48de9a5"
+    },
+    {
+      "path": "data/digital-money/bank-deposits.json",
+      "sha256": "bd06d2e9a7ec0316b71590e85a2545292fd6c9bc6adcdc5d17a1ce2b079d2c05"
+    },
+    {
+      "path": "data/digital-money/source-excerpts.json",
+      "sha256": "ecd22450c9329c417e09b4f3aea47b7b571d14b4202024e4d2ee72cd3ec8a7a7"
+    },
+    {
+      "path": "data/digital-money/stablecoins.json",
+      "sha256": "0cf123d4a98f35f892d9603c080fca2e171e3b0337812dd316eb56cc65679df1"
+    },
+    {
+      "path": "data/digital-money/treasury-holdings.json",
+      "sha256": "f3aee159bec1a3c3e56d3372123fe0ee696a9258808af567aa618b64f6824502"
+    },
+    {
+      "path": "data/external/fao-food.json",
+      "sha256": "a57956a9b266c53f0274ecaade9aa0d09e4eb1cd8a5ab018d3955702c6151aa3"
+    },
+    {
+      "path": "data/external/gpr.json",
+      "sha256": "01a21ecc5640f75eb1f73441d9e3bda8e8a8f8befa436e60b29cde006cd4bf16"
+    },
+    {
+      "path": "data/external/gscpi.json",
+      "sha256": "7eee72fca7923670caa491cabe2d65a27fa1f0a9b6951f6da2ee8baea7c12674"
+    },
+    {
+      "path": "data/external/import-report.json",
+      "sha256": "8b91e053de9fe1ea4acc39722292e14abb4d37f0821d36f27bfa25427a8c1ac9"
+    },
+    {
+      "path": "data/external/sipri-military.json",
+      "sha256": "5dbc240112142e5d221b85b2140910c2ec1d0e3fcfacca3e01e6950bcfc922cd"
+    },
+    {
+      "path": "data/fiscal/cbo-2026-02.json",
+      "sha256": "356570b4ee143522beee0995e71cf51997fefff14feafec360b556c0fea7ca13"
+    },
+    {
+      "path": "data/fiscal/sources/historical-2026-02.csv",
+      "sha256": "8fee9c6ec249b8b1685a189edbb28cfa8233022f72fe4f65723eb886c7ac7309"
+    },
+    {
+      "path": "data/fiscal/sources/historical-schema.json",
+      "sha256": "b81d86470cca2cbb9aa53a86674cd25751c5a79c9d96a788188fb7b8d63fbc02"
+    },
+    {
+      "path": "data/fiscal/sources/long-term-2026-02.csv",
+      "sha256": "61018d3f4334c26a1704438e28c3b523b641c45549c8bf04c3890fd463f7a5f5"
+    },
+    {
+      "path": "data/fiscal/sources/long-term-schema.json",
+      "sha256": "86ab64b7f1e5a952d45626abb07f03f3682e174c2b23b60b2c44e9103ac04c50"
+    },
+    {
+      "path": "data/history/README.md",
+      "sha256": "1e8249e2e3f197d7c86e43da627da9bc0269d394829d7a6bad10f48c3c1b44c2"
+    },
+    {
+      "path": "data/history/events.json",
+      "sha256": "c3ed0e7b3155443fde742c27bc8f6f50b2411ff4cccf3677b2f2b4025d7550e0"
+    },
+    {
+      "path": "data/inflation/README.md",
+      "sha256": "6808fe85922317fc65e5013f55e8f6e1afbef5c6464c43786ecc69f333f2183d"
+    },
+    {
+      "path": "data/inflation/drivers.json",
+      "sha256": "1ab800c18db5d20f0d7888852c95a5f8488f96aa106acd0293438cb5fd947637"
+    },
+    {
+      "path": "data/inflation/fred.json",
+      "sha256": "fbd369c4af7cb9e010c84b0a12b970697256565b01a29d6f6de27b7deccbae78"
+    },
+    {
+      "path": "data/inflation/monitor.json",
+      "sha256": "50a8eb89156a996182b6c8d1de1cab9b4632c41fff7fd739dc4f8d39bd309d9e"
+    },
+    {
+      "path": "data/inflation/worldbank.json",
+      "sha256": "b3561ace71a7282e7f9d2229e14f8dede0a1b1121f4c61fa100391fdf6ccaf82"
+    },
+    {
+      "path": "data/international-dollar/global-dollar-credit.json",
+      "sha256": "e14e61aaa8f40fe0b68f8968c1fd6da02b413c31b0c883b8eb468f3862e19f85"
+    },
+    {
+      "path": "data/international-dollar/reserve-composition.json",
+      "sha256": "49cbe38b7c726ef51043663054f3681beec3a4b40ae1dbf2c0cd8219d9fa331a"
+    },
+    {
+      "path": "data/international-dollar/revisions.json",
+      "sha256": "78f6970aa739db467a4ec1b6c92345a83d043c32146d6541ea6b253f74be061d"
+    },
+    {
+      "path": "data/international-dollar/summary.json",
+      "sha256": "7dd7a2693aa6ad2e5e39dc6ee102252820a9c740b536afe56e91f4d5a0c3a3e0"
+    },
+    {
+      "path": "data/international-dollar/treasury-holdings.json",
+      "sha256": "323d72e38f78b3657e933f8c569917bf514f851b2f5f793ccd80fd9ec507f99f"
+    },
+    {
+      "path": "data/productivity/import-report.json",
+      "sha256": "685aa1e0481e2eb056d0d12136423ab7f1961f09bbdecd298da0fb75c7333f8a"
+    },
+    {
+      "path": "data/productivity/series.json",
+      "sha256": "2c0017f767fda53d7310f12be823be39efe475559edbebcbb0642d53896b9a03"
+    },
+    {
+      "path": "data/updates/history.json",
+      "sha256": "1838b0add9df7aa7d6bec9ce09c49a0a763a4a037c0ca8e5b9d16bf728d4af68"
+    }
+  ],
+  "SignalProductionIdentical": true,
+  "workflowsNotificationsWeeklyDigestIdentical": true,
+  "originalD33PublicationAndEvidenceIdentical": true,
+  "manualScreenReaderAcceptance": "DEFERRED_BY_OWNER",
+  "changedPaths": [
+    "README.md",
+    "docs/ai-macro-release/phase-d34/PHASE_D34_RELEASE_READINESS.md",
+    "docs/ai-macro-release/phase-d34/branches.json",
+    "docs/ai-macro-release/phase-d34/exposure.json",
+    "docs/ai-macro-release/phase-d34/private-preservation.json",
+    "docs/ai-macro-release/phase-d34/scope-evidence.json",
+    "docs/ai-macro-release/phase-d34/source-links.json",
+    "docs/ai-macro-release/phase-d34/verification-results.json",
+    "docs/ai-macro-release/phase-d34/verify-scope.mjs",
+    "docs/china-monetary-strategy-publication.md",
+    "docs/china-monetary-strategy-source-audit.json",
+    "package.json",
+    "scripts/tests/china-monetary-strategy.test.mjs",
+    "scripts/verify-china-strategy-browser.mjs",
+    "src/App.jsx",
+    "src/china-monetary-strategy.css",
+    "src/global-monetary-order.css",
+    "src/i18n/architecture.js",
+    "src/i18n/chinaMonetaryStrategy.js",
+    "src/i18n/monetaryResearch.js",
+    "src/pages/ChinaMonetaryStrategy.jsx",
+    "src/pages/MonetaryOrderResearch.jsx",
+    "src/utils/routing.js"
+  ],
+  "publicTree": {
+    "result": "PASS",
+    "files": [
+      {
+        "path": "data/signal-engine/current.json",
+        "bytes": 362,
+        "sha256": "5f0d533e49b43d3a0be91bd9a2a4e2bd3c7483b50345224a0a31641aa963acbb"
+      },
+      {
+        "path": "favicon.svg",
+        "bytes": 286,
+        "sha256": "efbe3ea4b25d5d5bf6d04bfe9e252facc919cf67b389b08a460a0b48a594f785"
+      },
+      {
+        "path": "README.md",
+        "bytes": 55,
+        "sha256": "1560841ef3c135a0932f509835828678c47aca381d583c85d6f2fa4a58289c79"
+      }
+    ],
+    "scope": "Excluded macro publication histories only; inherited economic modules remain"
+  },
+  "buildTree": {
+    "result": "PASS",
+    "files": [
+      {
+        "path": "assets/AiCapex-CStRxl8L.js",
+        "bytes": 150586,
+        "sha256": "5ae1648c426c048675681a6eb27084d06d0da1d66aef470b5c9ec67fc60cc85b"
+      },
+      {
+        "path": "assets/AiCapex-CyGBwTD3.css",
+        "bytes": 3263,
+        "sha256": "a7475287af576d50bd836becdb26a3a23dbf11cffec8eaf70e1b6276090fe9a5"
+      },
+      {
+        "path": "assets/AiInfrastructure-Dav_eQek.js",
+        "bytes": 96178,
+        "sha256": "a674d7527b1fe8147af30ff6aefeb53d9081341ca92343cfdc1ea070e18a36a5"
+      },
+      {
+        "path": "assets/AiInfrastructure-Podoq5Ed.css",
+        "bytes": 9187,
+        "sha256": "98522175f24cb8b806d052753cb08e44472f74ff9c56a6b5cfab19b2a9bf08b7"
+      },
+      {
+        "path": "assets/AiLabor-CFt6e67F.css",
+        "bytes": 1494,
+        "sha256": "be49ce9c8e386f71fda0924cc2796ea84c7531f965cfc6cd4729f8da27bd79e4"
+      },
+      {
+        "path": "assets/AiLabor-nJWIkMf7.js",
+        "bytes": 24926,
+        "sha256": "cbec59154188169020743b8e896f92562f7b66106ac30049cd928590ed04b0f9"
+      },
+      {
+        "path": "assets/AiMacro-BQOHeDDX.css",
+        "bytes": 3148,
+        "sha256": "89cdceefabf2487e837a066ffd69bf794fb9f82fd1e1f2d368b15a780a1f788e"
+      },
+      {
+        "path": "assets/AiMacro-un4E62nS.js",
+        "bytes": 46453,
+        "sha256": "988e425c49462feb79b0836290e70b29fbedd5855f695325de9f899c10d634e9"
+      },
+      {
+        "path": "assets/ChinaMonetaryStrategy-BcHDGIiw.css",
+        "bytes": 3608,
+        "sha256": "a578252b8c4cb018a34a75018fd905b14fd5ef5cb044b43c39617b17c9432b06"
+      },
+      {
+        "path": "assets/ChinaMonetaryStrategy-BoI8tSNr.js",
+        "bytes": 33803,
+        "sha256": "bc0adb770d3584558fe56872acc65864dd126162896fa45e768a12a90734dd8c"
+      },
+      {
+        "path": "assets/DataWorkspace-CqkJqzkN.js",
+        "bytes": 11963,
+        "sha256": "1e729cd8d0e393b99409b8586f0a59e3e2c9703702b74eef57586b432b386992"
+      },
+      {
+        "path": "assets/driver-data-BpQcH1wC.js",
+        "bytes": 188114,
+        "sha256": "428df46b5278685f1a8577dab3b32d40ebb9f0e48fe1cc307c1b0373aab7ebb2"
+      },
+      {
+        "path": "assets/external-data-D2cYa6WM.js",
+        "bytes": 212387,
+        "sha256": "2be5b2e8fc17366db9fd9fe61de3feb481400d261a3efe751a2e30788c1da0bd"
+      },
+      {
+        "path": "assets/ExternalShocks-CSrHD6a2.js",
+        "bytes": 27520,
+        "sha256": "e99671089b97d4f79ac2d71875e1c8899b13715d126074234709861dee098a86"
+      },
+      {
+        "path": "assets/global-data-BpIugEh2.js",
+        "bytes": 208652,
+        "sha256": "5594b6f6a85d1841cef1b1ffab4d0bd9ac605de1802e8fd15bba45fdf4fdad2c"
+      },
+      {
+        "path": "assets/global-monetary-order-COCzNvel.css",
+        "bytes": 2070,
+        "sha256": "06f6802780c48771661725aa0684b24128ea351f33b4dd456f145030ad32aa21"
+      },
+      {
+        "path": "assets/index-CUBRHoWB.css",
+        "bytes": 88886,
+        "sha256": "4082c14adf27718c6083b72319d4b9d79a87514ca839d02c8d194da11cd936d8"
+      },
+      {
+        "path": "assets/index-JRPxJd2w.js",
+        "bytes": 904635,
+        "sha256": "558f3c8fa80e4ca0d065db3663713d00448d0bb5e44decc08593184d3fb3543b"
+      },
+      {
+        "path": "assets/international-dollar-CssA8-FP.css",
+        "bytes": 1686,
+        "sha256": "fe967a689762dc09e537198fa51a2543e2e75c06bb39ff7637b50eeb629e4c01"
+      },
+      {
+        "path": "assets/international-dollar-G6vD_zs8.js",
+        "bytes": 1993,
+        "sha256": "e355b9d1f1f03efc6edc3418ba871490526c83fbf23c7e14e36889113547296a"
+      },
+      {
+        "path": "assets/InternationalDollar-B1gD9_PU.js",
+        "bytes": 10134,
+        "sha256": "07ef1a22133219aed7dda75dc15946a6e82982283a37d017041203cb48b617f6"
+      },
+      {
+        "path": "assets/internationalDollar-BP0CPIRT.js",
+        "bytes": 116196,
+        "sha256": "28bc079b36f421b3d19c73da60276568db58922fb9e533f200e0613eb6195ec7"
+      },
+      {
+        "path": "assets/internationalDollar-D94m21nF.js",
+        "bytes": 13774,
+        "sha256": "7cd265cb080b99f80326e2ca6aad191ddd63bf9368fe495bf4a3efe975153757"
+      },
+      {
+        "path": "assets/InternationalRevisions-wherOVNG.js",
+        "bytes": 48245,
+        "sha256": "76aa8d9378bd93a1a66a7d9fa47768deeaaffdcefa8248aad4a25fb3080fb03b"
+      },
+      {
+        "path": "assets/MonetaryOrderResearch-D_AKzfAi.js",
+        "bytes": 1068,
+        "sha256": "721e21dcc51af01f0348029decbc65cdb25287b20b5158a17bf4f19a96ca4f7c"
+      },
+      {
+        "path": "assets/monitor-data-DeXBq-xP.js",
+        "bytes": 1333272,
+        "sha256": "02b211dabdf55806bfdd5a0f449fa56f6876b723137b8d4e0f13b3ef3f1cd173"
+      },
+      {
+        "path": "assets/productivity-data-BF6PPvRR.js",
+        "bytes": 281069,
+        "sha256": "451cf8f0eb538823b48ece7046389d8b1ea0e26b2d0c13f7768ca41215e99d05"
+      },
+      {
+        "path": "assets/researchLinks-D8kDPPXA.js",
+        "bytes": 2555,
+        "sha256": "9e55914911a71c3b9bee013bd8e89997e49ad9a9f74380ca99cda4e3b114dc10"
+      },
+      {
+        "path": "assets/SectionLanding-BXzxl4bi.js",
+        "bytes": 16421,
+        "sha256": "41c12a235bc28edff3bb443d4817c2ad7c613313b104e6b0df57b7e917338e5b"
+      },
+      {
+        "path": "assets/SignalEngine-D6_sHkNm.js",
+        "bytes": 4164,
+        "sha256": "b45a4e92b77de25fab9596bafd677dc6b1266ec16e494323683f1a9f9573e578"
+      },
+      {
+        "path": "assets/Sources-FOEwf_bd.js",
+        "bytes": 13393,
+        "sha256": "243f66db2a763086636318cd646d7482995da4780f7259890d0ae2153fe33443"
+      },
+      {
+        "path": "assets/Transmission-BU1df0Lc.css",
+        "bytes": 2103,
+        "sha256": "9494ac428a4982386aefd625cf2b3c538a5300636597a1ea13422034e5cfd59a"
+      },
+      {
+        "path": "assets/Transmission-H6ci6PjO.js",
+        "bytes": 30983,
+        "sha256": "3f67a02c7a403b6a0a5ee2f71adc81ac10ad0274762c0a5b9de05550e01897e8"
+      },
+      {
+        "path": "assets/UpdateJournal-BguCvrkw.js",
+        "bytes": 4495,
+        "sha256": "bff6f834daa5a71ef97a91988ce83c64677c6c63fd166ce3507236665a994175"
+      },
+      {
+        "path": "assets/workspace-CXWQeTkK.js",
+        "bytes": 2735,
+        "sha256": "20a8da292fb060783bc74cbb67661b1fbd3b01713a7f40281562db696cfe1e48"
+      },
+      {
+        "path": "assets/WorldMap-DI60yZBq.js",
+        "bytes": 267912,
+        "sha256": "4862ddd524a37ce3b79e70acefeacb821e2b329f39ca8b266fa838b7eb1112c5"
+      },
+      {
+        "path": "data/signal-engine/current.json",
+        "bytes": 362,
+        "sha256": "5f0d533e49b43d3a0be91bd9a2a4e2bd3c7483b50345224a0a31641aa963acbb"
+      },
+      {
+        "path": "favicon.svg",
+        "bytes": 286,
+        "sha256": "efbe3ea4b25d5d5bf6d04bfe9e252facc919cf67b389b08a460a0b48a594f785"
+      },
+      {
+        "path": "index.html",
+        "bytes": 1556,
+        "sha256": "a99319d876b27a73e2902dbf53997a12002c53896bd3d79d32a627c7f91ce669"
+      },
+      {
+        "path": "README.md",
+        "bytes": 55,
+        "sha256": "1560841ef3c135a0932f509835828678c47aca381d583c85d6f2fa4a58289c79"
+      }
+    ],
+    "scope": "Excluded macro publication histories only; inherited economic modules remain"
+  }
+}
