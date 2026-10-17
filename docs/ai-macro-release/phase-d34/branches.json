@@ -1,0 +1,46 @@
+[
+  {
+    "branch": "origin/codex/ai-infra-macro-descriptive-phase-c2",
+    "sha": "362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+    "currentTreePaths": [
+      "research/ai-infrastructure-paper-validation/phase-c1m/fixtures/SPF10.xlsx.gz",
+      "research/ai-infrastructure-paper-validation/phase-c2/outputs/analysis.json",
+      "research/ai-infrastructure-paper-validation/phase-c2/outputs/observations.csv"
+    ],
+    "classification": "CURRENTLY_ACCESSIBLE"
+  },
+  {
+    "branch": "origin/codex/ai-infra-macro-integration-phase-d0",
+    "sha": "6edc2357b56bfaf1f8af0f597cfcdd8a5ae1b2a3",
+    "currentTreePaths": [
+      "research/ai-infrastructure-paper-validation/phase-c1m/fixtures/SPF10.xlsx.gz",
+      "research/ai-infrastructure-paper-validation/phase-c2/outputs/analysis.json",
+      "research/ai-infrastructure-paper-validation/phase-c2/outputs/observations.csv"
+    ],
+    "classification": "CURRENTLY_ACCESSIBLE"
+  },
+  {
+    "branch": "origin/codex/ai-infra-macro-signals-phase-c1m",
+    "sha": "eb2da0e23ab9840e385a09b3889baa4454fddd74",
+    "currentTreePaths": [
+      "research/ai-infrastructure-paper-validation/phase-c1m/fixtures/SPF10.xlsx.gz"
+    ],
+    "classification": "CURRENTLY_ACCESSIBLE"
+  },
+  {
+    "branch": "origin/codex/ai-macro-monitor-phase-d1",
+    "sha": "1356b9b66e17f6b6e290c11040aaf61e4e1c66ab",
+    "currentTreePaths": [
+      "public/data/ai-macro/5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590/history.json"
+    ],
+    "classification": "CURRENTLY_ACCESSIBLE"
+  },
+  {
+    "branch": "origin/codex/ai-macro-monitor-phase-d2-1",
+    "sha": "9c65c0cfdf1dc5ac02906a508a5bd9b3d61b29b3",
+    "currentTreePaths": [
+      "public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json"
+    ],
+    "classification": "CURRENTLY_ACCESSIBLE"
+  }
+]

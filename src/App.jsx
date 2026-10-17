@@ -28,6 +28,7 @@ import { ResearchContext } from './components/ResearchContext.jsx'
 import './research-map.css'
 import './treasury-pricing.css'
 
+const AiMacro = lazy(() => import('./pages/AiMacro.jsx').then(m => ({default:m.AiMacro})))
 const AiInfrastructure = lazy(() => import('./pages/AiInfrastructure.jsx').then(m => ({default:m.AiInfrastructure})))
 const AiCapex = lazy(() => import('./pages/AiCapex.jsx').then(m => ({default:m.AiCapex})))
 const AiLabor = lazy(() => import('./pages/AiLabor.jsx').then(m => ({default:m.AiLabor})))
@@ -152,6 +153,7 @@ export default function App() {
       {route === 'research/ai-productivity' && <AiProductivity language={language} />}
       {route === 'research/ai-labor' && <AiLabor language={language} />}
       {route === 'research/ai-capex' && <AiCapex language={language} />}
+      {route === 'research/ai-macro' && <AiMacro language={language} />}
       {route === 'research/ai-infrastructure' && <AiInfrastructure language={language} />}
       {route === 'external-shocks' && <ExternalShocks language={language} />}
       {route === 'sources' && <Sources t={t} language={language} />}
