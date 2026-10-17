@@ -20,6 +20,7 @@ import { UsCpi } from './pages/UsCpi.jsx'
 import { DigitalMoney } from './pages/DigitalMoney.jsx'
 import { AiProductivity } from './pages/AiProductivity.jsx'
 import { Drivers } from './pages/Drivers.jsx'
+import { monetaryResearchNavigation } from './i18n/monetaryResearch.js'
 
 const UpdateJournal = lazy(() => import('./pages/UpdateJournal.jsx').then(m => ({default:m.UpdateJournal})))
 import { workspaceCopy } from './i18n/workspace.js'
@@ -32,6 +33,8 @@ const AiInfrastructure = lazy(() => import('./pages/AiInfrastructure.jsx').then(
 const AiCapex = lazy(() => import('./pages/AiCapex.jsx').then(m => ({default:m.AiCapex})))
 const AiLabor = lazy(() => import('./pages/AiLabor.jsx').then(m => ({default:m.AiLabor})))
 const SignalEngine = lazy(() => import('./pages/SignalEngine.jsx').then(m => ({default:m.SignalEngine})))
+const ChinaMonetaryStrategy = lazy(() => import('./pages/ChinaMonetaryStrategy.jsx').then(m => ({default:m.ChinaMonetaryStrategy})))
+const MonetaryOrderResearch = lazy(() => import('./pages/MonetaryOrderResearch.jsx').then(m => ({default:m.MonetaryOrderResearch})))
 const InternationalDollar = lazy(() => import('./pages/InternationalDollar.jsx').then(m => ({default:m.InternationalDollar})))
 const Sources = lazy(() => import('./pages/Sources.jsx').then(m => ({default:m.Sources})))
 const DataWorkspace = lazy(() => import('./pages/DataWorkspace.jsx').then(m => ({default:m.DataWorkspace})))
@@ -93,7 +96,7 @@ export default function App() {
   const [theme, setTheme] = useState(initialTheme)
   const mainRef = useRef(null)
   const previousNavigationKey = useRef(pageKey)
-  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav, 'research/signal-engine': language === 'zh' ? '信号引擎' : 'Signal Engine', 'research/data': workspaceCopy[language].title, 'research/updates': workspaceCopy[language].journal, 'research/international-dollar': language === 'zh' ? '国际美元' : 'International Dollar' } }
+  const a = iaCopy[language], t = { ...copy[language], nav: { ...copy[language].nav, ...a.nav, ...monetaryResearchNavigation[language], 'research/signal-engine': language === 'zh' ? '信号引擎' : 'Signal Engine', 'research/data': workspaceCopy[language].title, 'research/updates': workspaceCopy[language].journal, 'research/international-dollar': language === 'zh' ? '国际美元' : 'International Dollar' } }
   const section = routeSection(route), links = sectionLinks[section] || []
   const selectedSectionLink = links.find(([href]) => href === navigationKey)?.[0] || links.find(([href]) => href === navigationKey.split('?')[0])?.[0] || ''
 
@@ -155,6 +158,8 @@ export default function App() {
       {route === 'external-shocks' && <ExternalShocks language={language} />}
       {route === 'sources' && <Sources t={t} language={language} />}
       {route === 'research/signal-engine' && <SignalEngine language={language} />}
+      {route === 'research/global-monetary-order' && <MonetaryOrderResearch language={language} />}
+      {route === 'research/global-monetary-order/china-strategy' && <ChinaMonetaryStrategy language={language} />}
       {route === 'research/international-dollar' && <InternationalDollar language={language} />}
       {route === 'research/data' && <DataWorkspace language={language} />}
       {route === 'research/updates' && <UpdateJournal language={language} />}

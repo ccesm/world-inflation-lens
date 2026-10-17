@@ -2,6 +2,12 @@
 
 A bilingual Vite + React research site studying two related questions over the next 20–30 years: the U.S. dollar’s domestic purchasing power and its international role in reserves, finance, trade and payments. Observations, official conditional projections and hypothetical scenarios remain distinct. Global inflation provides supporting context.
 
+## Global Monetary Order — China strategy research
+
+Research → **Global Monetary Order** → **China's Long-Term Monetary Strategy** (`#/research/global-monetary-order/china-strategy`) provides a complete English/Chinese policy article, mechanism diagram, dated milestones and a policy/outcome table. Official statements, observations, interpretations and hypotheses remain distinct. No new numerical dataset or PILOT/HOLD promotion is included. See the [publication record](docs/china-monetary-strategy-publication.md) and [source audit](docs/china-monetary-strategy-source-audit.json).
+
+研究 → **全球货币秩序** → **中国的长期国际货币战略**，提供双语文章、机制图、历史节点与政策／结果表，保留来源、日期及不确定性区分，不新增数值数据集或提升 PILOT／HOLD 指标。
+
 ## V1.4.1 — AI Infrastructure paper-first
 
 The AI Infrastructure page now starts with the academic paper, Bottom Line, three key charts and conclusions, then compares those claims with World Inflation Lens qualified evidence before showing detailed project data. Paper estimates and scenarios remain separate from the unchanged seven-project evidence; financing remains UNKNOWN where unqualified. No new project facts, return calculations or automation are introduced. See [v1.4.1 release notes](docs/v1.4.1-ai-infrastructure-paper-first.md).
