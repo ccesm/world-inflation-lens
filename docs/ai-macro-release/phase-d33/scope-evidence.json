@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "D33_SCOPE_1",
+  "base": "3dbf9353ada22cd33ac64ed158f3fd29e9ec3b66",
+  "previousD32": "4b0e48c418930ba0bf575a2629879bf1ea67a6cf",
+  "head": "19e60397b547ff86a8c270f4eb91de67d13e984b",
+  "result": "PASS",
+  "protectedProductionFiles": 368,
+  "productionDataFiles": 32,
+  "productionDataIdentities": [
+    {
+      "path": "data/countries/README.md",
+      "sha256": "de9dbcdf4ad006d8ef3ffdab7a2772679d33b1fdb345b5500374947d1fce96a8"
+    },
+    {
+      "path": "data/countries/metadata.json",
+      "sha256": "72c7bb3460c2f2e93aec56a7f50dafe624895c73ac6cc72b3b77198705b40ad3"
+    },
+    {
+      "path": "data/countries/world.geo.json",
+      "sha256": "449c45d2c352e897647cbd67a5b72c26cb140e24a06fd5acf37e42e4d48de9a5"
+    },
+    {
+      "path": "data/digital-money/bank-deposits.json",
+      "sha256": "bd06d2e9a7ec0316b71590e85a2545292fd6c9bc6adcdc5d17a1ce2b079d2c05"
+    },
+    {
+      "path": "data/digital-money/source-excerpts.json",
+      "sha256": "ecd22450c9329c417e09b4f3aea47b7b571d14b4202024e4d2ee72cd3ec8a7a7"
+    },
+    {
+      "path": "data/digital-money/stablecoins.json",
+      "sha256": "0cf123d4a98f35f892d9603c080fca2e171e3b0337812dd316eb56cc65679df1"
+    },
+    {
+      "path": "data/digital-money/treasury-holdings.json",
+      "sha256": "f3aee159bec1a3c3e56d3372123fe0ee696a9258808af567aa618b64f6824502"
+    },
+    {
+      "path": "data/external/fao-food.json",
+      "sha256": "a57956a9b266c53f0274ecaade9aa0d09e4eb1cd8a5ab018d3955702c6151aa3"
+    },
+    {
+      "path": "data/external/gpr.json",
+      "sha256": "01a21ecc5640f75eb1f73441d9e3bda8e8a8f8befa436e60b29cde006cd4bf16"
+    },
+    {
+      "path": "data/external/gscpi.json",
+      "sha256": "7eee72fca7923670caa491cabe2d65a27fa1f0a9b6951f6da2ee8baea7c12674"
+    },
+    {
+      "path": "data/external/import-report.json",
+      "sha256": "8b91e053de9fe1ea4acc39722292e14abb4d37f0821d36f27bfa25427a8c1ac9"
+    },
+    {
+      "path": "data/external/sipri-military.json",
+      "sha256": "5dbc240112142e5d221b85b2140910c2ec1d0e3fcfacca3e01e6950bcfc922cd"
+    },
+    {
+      "path": "data/fiscal/cbo-2026-02.json",
+      "sha256": "356570b4ee143522beee0995e71cf51997fefff14feafec360b556c0fea7ca13"
+    },
+    {
+      "path": "data/fiscal/sources/historical-2026-02.csv",
+      "sha256": "8fee9c6ec249b8b1685a189edbb28cfa8233022f72fe4f65723eb886c7ac7309"
+    },
+    {
+      "path": "data/fiscal/sources/historical-schema.json",
+      "sha256": "b81d86470cca2cbb9aa53a86674cd25751c5a79c9d96a788188fb7b8d63fbc02"
+    },
+    {
+      "path": "data/fiscal/sources/long-term-2026-02.csv",
+      "sha256": "61018d3f4334c26a1704438e28c3b523b641c45549c8bf04c3890fd463f7a5f5"
+    },
+    {
+      "path": "data/fiscal/sources/long-term-schema.json",
+      "sha256": "86ab64b7f1e5a952d45626abb07f03f3682e174c2b23b60b2c44e9103ac04c50"
+    },
+    {
+      "path": "data/history/README.md",
+      "sha256": "1e8249e2e3f197d7c86e43da627da9bc0269d394829d7a6bad10f48c3c1b44c2"
+    },
+    {
+      "path": "data/history/events.json",
+      "sha256": "c3ed0e7b3155443fde742c27bc8f6f50b2411ff4cccf3677b2f2b4025d7550e0"
+    },
+    {
+      "path": "data/inflation/README.md",
+      "sha256": "6808fe85922317fc65e5013f55e8f6e1afbef5c6464c43786ecc69f333f2183d"
+    },
+    {
+      "path": "data/inflation/drivers.json",
+      "sha256": "1ab800c18db5d20f0d7888852c95a5f8488f96aa106acd0293438cb5fd947637"
+    },
+    {
+      "path": "data/inflation/fred.json",
+      "sha256": "fbd369c4af7cb9e010c84b0a12b970697256565b01a29d6f6de27b7deccbae78"
+    },
+    {
+      "path": "data/inflation/monitor.json",
+      "sha256": "50a8eb89156a996182b6c8d1de1cab9b4632c41fff7fd739dc4f8d39bd309d9e"
+    },
+    {
+      "path": "data/inflation/worldbank.json",
+      "sha256": "b3561ace71a7282e7f9d2229e14f8dede0a1b1121f4c61fa100391fdf6ccaf82"
+    },
+    {
+      "path": "data/international-dollar/global-dollar-credit.json",
+      "sha256": "e14e61aaa8f40fe0b68f8968c1fd6da02b413c31b0c883b8eb468f3862e19f85"
+    },
+    {
+      "path": "data/international-dollar/reserve-composition.json",
+      "sha256": "49cbe38b7c726ef51043663054f3681beec3a4b40ae1dbf2c0cd8219d9fa331a"
+    },
+    {
+      "path": "data/international-dollar/revisions.json",
+      "sha256": "78f6970aa739db467a4ec1b6c92345a83d043c32146d6541ea6b253f74be061d"
+    },
+    {
+      "path": "data/international-dollar/summary.json",
+      "sha256": "7dd7a2693aa6ad2e5e39dc6ee102252820a9c740b536afe56e91f4d5a0c3a3e0"
+    },
+    {
+      "path": "data/international-dollar/treasury-holdings.json",
+      "sha256": "323d72e38f78b3657e933f8c569917bf514f851b2f5f793ccd80fd9ec507f99f"
+    },
+    {
+      "path": "data/productivity/import-report.json",
+      "sha256": "685aa1e0481e2eb056d0d12136423ab7f1961f09bbdecd298da0fb75c7333f8a"
+    },
+    {
+      "path": "data/productivity/series.json",
+      "sha256": "2c0017f767fda53d7310f12be823be39efe475559edbebcbb0642d53896b9a03"
+    },
+    {
+      "path": "data/updates/history.json",
+      "sha256": "1838b0add9df7aa7d6bec9ce09c49a0a763a4a037c0ca8e5b9d16bf728d4af68"
+    }
+  ],
+  "changedPaths": [
+    "data/international-dollar/global-dollar-credit.json",
+    "data/international-dollar/reserve-composition.json",
+    "data/international-dollar/revisions.json",
+    "data/international-dollar/summary.json",
+    "data/international-dollar/treasury-holdings.json",
+    "data/updates/history.json",
+    "docs/WEEKLY_DATA_DIGEST.md",
+    "docs/ai-macro-release/phase-d33/PHASE_D33_REVIEW.md",
+    "docs/ai-macro-release/phase-d33/PUBLIC_EXPOSURE_AUDIT.md",
+    "docs/ai-macro-release/phase-d33/RIGHTS_AND_ACCESSIBILITY.md",
+    "docs/ai-macro-release/phase-d33/SOURCE_EVIDENCE_MAP.md",
+    "docs/ai-macro-release/phase-d33/STRUCTURE_AND_PLAN.md",
+    "docs/ai-macro-release/phase-d33/test-publication.mjs",
+    "docs/ai-macro-release/phase-d33/verify-release.mjs",
+    "docs/ai-macro-release/phase-d33/verify-scope.mjs",
+    "public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+    "scripts/ai-macro-projection.mjs",
+    "scripts/lib/aiMacroPublication.mjs",
+    "scripts/lib/notification.mjs",
+    "scripts/lib/weeklyDigest.mjs",
+    "scripts/lib/weeklyTable.mjs",
+    "scripts/notify.mjs",
+    "scripts/tests/weekly-digest.test.mjs",
+    "scripts/verify-ai-macro-browser.mjs",
+    "scripts/verify-ai-macro.mjs",
+    "src/ai-macro.css",
+    "src/components/AiMacroChart.jsx",
+    "src/data/ai-macro/contract.js",
+    "src/data/ai-macro/history.js",
+    "src/data/ai-macro/public-identity.json",
+    "src/data/ai-macro/publication.json",
+    "src/data/ai-macro/summary.json",
+    "src/data/researchArchitecture.js",
+    "src/i18n/aiMacro.js",
+    "src/i18n/architecture.js",
+    "src/pages/AiMacro.jsx"
+  ],
+  "workflowsAndNotificationsIdentical": true,
+  "SignalProductionIdentical": true,
+  "historicalEvidencePreserved": true,
+  "historyRewrite": false,
+  "privateResearchCommitted": false
+}

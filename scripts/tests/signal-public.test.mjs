@@ -1,4 +1,7 @@
 import assert from 'node:assert/strict'
+import { vintageSandbox } from './signal-fixture.mjs'
+import { validateAcceptedInput } from '../signal-engine/acceptance.mjs'
+import { evaluate } from '../../research/signal-engine/engine/engine.mjs'
 import React from 'react'
 import { renderToStaticMarkup as render } from 'react-dom/server'
 import { test, before, after } from 'node:test'
@@ -20,24 +23,37 @@ import { validatePublicSignal, verifyPublicSignalBytes, unavailableSignal } from
 import { validatePublicMeaning, publishPublicIdentity, verifyPublicIdentity, publicSignalSha256 } from '../lib/signalPublicIntegrity.mjs'
 import { signalFactors } from '../../src/data/signalPresentation.js'
 import { generatePublicSignal, parsePublicArguments } from '../signal-public.mjs'
-let root, result, projection, acceptedFixture, server, Brief, Page, Card
+// Frozen semantic expectations use authenticated historical inputs, independently of live refreshes.
+const FIXTURE_COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
+const FROZEN_AT = '2026-10-04T18:00:00.000Z'
+const passed = () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }]
+let root, result, projection, acceptedFixture, server, Brief, Page, Card, fixture, currentResult, currentClock
 before(async () => {
  root = fs.mkdtempSync(path.join(fs.realpathSync(os.tmpdir()), 'wil-public-test-'))
  const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim()
- const clock = () => '2026-10-04T18:00:00.000Z'
+ const committedAt = execFileSync('git', ['show', '-s', '--format=%cI', commit], { cwd: ROOT, encoding: 'utf8' }).trim()
+ // Explicit synthetic test clock: two days after this checked-out commit. This is
+ // not a production acceptance receipt and never derives a clock from source values.
+ const acceptedAt = new Date(Date.parse(committedAt) + 2 * 86400000).toISOString()
+ currentClock = () => acceptedAt
+ fixture = vintageSandbox(); fixture.install(FIXTURE_COMMIT)
+ const frozen = captureAcceptedInput({ repo: fixture.repo, targetCommit: FIXTURE_COMMIT, codeCommit: commit, clock: () => FROZEN_AT, gates: passed })
+ result = runShadow({ repo: fixture.repo, accepted: frozen, codeCommit: commit, store: new RestrictedStore(path.join(root, 'frozen')), clock: () => FROZEN_AT })
+ assert(result.artifact, JSON.stringify(result.run))
+ validateStoredInterpretation(new RestrictedStore(path.join(root, 'frozen')), result.run.artifactHash, { repo: fixture.repo })
+ projection = makePublicSignal(result)
  // Explicit test acceptance fixture; real command is separately run with real gates.
- const accepted = captureAcceptedInput({ targetCommit: commit, codeCommit: commit, clock, gates: () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }] })
+ const accepted = captureAcceptedInput({ targetCommit: commit, codeCommit: commit, clock: currentClock, gates: passed })
  acceptedFixture = accepted
  const store = new RestrictedStore(path.join(root, 'restricted'))
- result = runShadow({ accepted, codeCommit: commit, store, clock })
- assert(result.artifact, JSON.stringify(result.run))
- validateStoredInterpretation(store, result.run.artifactHash)
- projection = makePublicSignal(result)
- server = await createServer({ server: { middlewareMode: true } })
+ currentResult = runShadow({ accepted, codeCommit: commit, store, clock: currentClock })
+ assert(currentResult.artifact, JSON.stringify(currentResult.run))
+ validateStoredInterpretation(store, currentResult.run.artifactHash)
+ server = await createServer({ server: { middlewareMode: true }, optimizeDeps: { noDiscovery: true, include: [] } })
  Brief = (await server.ssrLoadModule('/src/components/SignalEngineBrief.jsx')).SignalBriefView
  const page = await server.ssrLoadModule('/src/pages/SignalEngine.jsx'); Page = page.SignalEngineView; Card = page.SignalFactorCard
 })
-after(async () => { await server?.close(); fs.rmSync(root, { recursive: true, force: true }) })
+after(async () => { await server?.close(); fixture?.close(); fs.rmSync(root, { recursive: true, force: true }) })
 test('CURRENT: public schema + independent semantic validation against validated run', () => {
  assert(validatePublicSchema(projection)); assert(validatePublicAgainstRun(projection, result))
  assert.equal(projection.validFactorCount, 7)
@@ -52,7 +68,7 @@ test('UNAVAILABLE has no current assessments or stale conclusions', () => {
 test('same semantic input => byte identical public projection; no run timestamp', () => {
  assert.equal(JSON.stringify(projection), JSON.stringify(makePublicSignal(result)))
  assert(!JSON.stringify(projection).includes('generatedAt'))
- assert.equal(workingSignalInputHash(ROOT), dataIdentity(ROOT, result.artifact.content.inputSnapshotCommit).hash)
+ assert.equal(workingSignalInputHash(fixture.repo), dataIdentity(ROOT, FIXTURE_COMMIT).hash)
 })
 test('email / public conclusions use exactly the same semantic generator', () => {
  const summary = summaryFromRun(result)
@@ -152,7 +168,7 @@ test('accepted-input engine failure is isolated and temporary restricted storage
  const temp = fs.realpathSync(os.tmpdir()), before = fs.readdirSync(temp).filter(n => n.startsWith('wil-public-signal-')).sort()
  const hash = workingSignalInputHash(ROOT)
  const fallback = await generatePublicSignal({ file, acceptedFactory: () => acceptedFixture,
-  evaluateOptions: { clock: () => '2026-10-04T18:00:00.000Z', evaluateFn: () => { throw Error('test-only evaluation failure') }, testOnlyForceEvaluation: true } })
+  evaluateOptions: { clock: currentClock, evaluateFn: () => { throw Error('test-only evaluation failure') }, testOnlyForceEvaluation: true } })
  assert.deepEqual(fallback, unavailableSignal()); assert.equal(workingSignalInputHash(ROOT), hash)
  assert.deepEqual(fs.readdirSync(temp).filter(n => n.startsWith('wil-public-signal-')).sort(), before)
 })
@@ -176,11 +192,11 @@ const encoded = value => Buffer.from(JSON.stringify(value) + '\n')
 const clientOptions = (bytes, status, snapshot) => ({ artifactSha256: publicSignalSha256(bytes), status, snapshotCommit: snapshot, inputHash: workingSignalInputHash(ROOT) })
 test('F1: complete bytes, status and accepted snapshot are independently bound to the build', async () => {
  const snapshot = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim()
- const current = makePublicSignal(result, snapshot), currentBytes = encoded(current), fallbackBytes = encoded(unavailableSignal())
+ const current = makePublicSignal(currentResult, snapshot), currentBytes = encoded(current), fallbackBytes = encoded(unavailableSignal())
  const currentBuild = clientOptions(currentBytes, 'CURRENT', snapshot), unavailableBuild = clientOptions(fallbackBytes, 'UNAVAILABLE', snapshot)
  assert.equal((await verifyPublicSignalBytes(currentBytes, currentBuild)).status, 'CURRENT')
  assert.equal((await verifyPublicSignalBytes(fallbackBytes, unavailableBuild)).status, 'UNAVAILABLE')
- assert.equal(current.inputSnapshotHash, projection.inputSnapshotHash, 'same economic inputs in both builds')
+ assert.equal(current.inputSnapshotHash, acceptedFixture.receipt.inputSnapshotHash, 'same economic inputs in both builds')
  await assert.rejects(verifyPublicSignalBytes(currentBytes, unavailableBuild), /ARTIFACT_MISMATCH/)
  await assert.rejects(verifyPublicSignalBytes(fallbackBytes, currentBuild), /ARTIFACT_MISMATCH/)
  for (const mutate of [
@@ -194,7 +210,7 @@ test('F1: complete bytes, status and accepted snapshot are independently bound t
 test('F1/F2: final gate checks exact accepted snapshot, digest and canonical bilingual prose', () => {
  const snapshot = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim()
  const file = path.join(root, 'verified-current.json'), identityFile = path.join(root, 'verified-current.identity.json')
- const current = makePublicSignal(result, snapshot)
+ const current = makePublicSignal(currentResult, snapshot)
  fs.writeFileSync(file, encoded(current)); const identity = publishPublicIdentity({ repo: ROOT, file, identityFile, snapshotCommit: snapshot })
  assert.equal(verifyPublicIdentity({ repo: ROOT, file, identityFile, expectedSnapshot: snapshot }).artifactSha256, identity.artifactSha256)
  assert(validatePublicMeaning(current))
@@ -230,7 +246,7 @@ test('F3: cleanup EACCES cannot alter CURRENT or block an UNAVAILABLE fallback',
  try {
   const goodFile = path.join(root, 'cleanup-current.json')
   const good = await generatePublicSignal({ file: goodFile, snapshot, acceptedFactory: () => acceptedFixture,
-   evaluateOptions: { clock: () => '2026-10-04T18:00:00.000Z' }, cleanupTemporary })
+   evaluateOptions: { clock: currentClock }, cleanupTemporary })
   assert.equal(good.status, 'CURRENT'); assert.equal(JSON.parse(fs.readFileSync(goodFile)).status, 'CURRENT')
   assert.equal(verifyPublicIdentity({ repo: ROOT, file: goodFile, identityFile: `${goodFile}.build-identity.json`, expectedSnapshot: snapshot }).status, 'CURRENT')
   const badFile = path.join(root, 'cleanup-unavailable.json')
@@ -248,4 +264,16 @@ test('F4/F5: Home heading stays after first brief; policy evidence goes to actua
  const policy = signalFactors.find(f => f.id === 'policy-rate-direction')
  assert.equal(policy.series, 'FEDFUNDS'); assert.equal(policy.researchLink, '#/drivers?topic=rates')
  assert.equal(policy.sourceUrl, 'https://fred.stlouisfed.org/series/FEDFUNDS')
+})
+
+test('fixture clocks cannot accept genuinely future source metadata', () => {
+ const early = captureAcceptedInput({ targetCommit: acceptedFixture.receipt.targetCommit, codeCommit: acceptedFixture.receipt.codeCommit, clock: () => '2022-01-01T00:00:00.000Z', gates: passed })
+ const { archive, env } = validateAcceptedInput(early)
+ assert.throws(() => evaluate(archive, env, { mode: 'RECORDED_AS_OF', periodCutoff: null, asOf: early.receipt.acceptedAt, evaluatedAt: early.receipt.acceptedAt }), /METADATA_AFTER_SNAPSHOT_ACCEPTANCE/)
+})
+test('current build fixture rejects an as-of earlier than genuine acceptance', () => {
+ const store = new RestrictedStore(path.join(root, 'backdated'))
+ const rejected = runShadow({ accepted: acceptedFixture, codeCommit: acceptedFixture.receipt.codeCommit, store, clock: currentClock, asOf: '2022-01-01T00:00:00.000Z' })
+ assert.equal(rejected.run.result, 'FAILED'); assert.equal(rejected.run.failureStage, 'ACCEPTANCE')
+ assert.equal(rejected.run.artifactHash, null)
 })

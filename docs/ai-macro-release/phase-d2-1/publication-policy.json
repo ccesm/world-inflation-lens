@@ -1,0 +1,330 @@
+{
+  "schemaVersion": "D21_MIXED_PUBLIC_RIGHTS_1",
+  "intendedUse": "Read-only numerical display and same-origin static history for ten reviewed sources; SPF10 official landing-page navigation only; no download feature",
+  "records": [
+    {
+      "sourceId": "PNFIC1",
+      "originalProvider": "BEA",
+      "dataset": "Real Private Nonresidential Fixed Investment (PNFIC1), BEA NIPA; chained 2017 dollars, SAAR",
+      "indicatorIds": [
+        "PNFIC1"
+      ],
+      "sourceHash": "1d09c0f0fe107c1ff623e353a249d754727cd7c6828ec78b7886525104bcf03d",
+      "officialURL": "https://fred.stlouisfed.org/series/PNFIC1",
+      "policyURLs": [
+        "https://fred.stlouisfed.org/series/PNFIC1",
+        "https://fred.stlouisfed.org/legal/"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "BEA via FRED, Federal Reserve Bank of St. Louis",
+      "evidence": "Exact series explicitly tagged Public Domain: Citation Requested; retain source/distributor citation; no provider graphics/logos.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "NCBDBIQ027S",
+      "originalProvider": "Federal Reserve Board",
+      "dataset": "Nonfinancial Corporate Business; Debt Securities; Liability, Level (NCBDBIQ027S), Federal Reserve Financial Accounts",
+      "indicatorIds": [
+        "NCBDBIQ027S"
+      ],
+      "sourceHash": "4de946ca4b573efe3964f6105517b456cecc5f5caa94e76e4b4c990f6551f75a",
+      "officialURL": "https://fred.stlouisfed.org/series/NCBDBIQ027S",
+      "policyURLs": [
+        "https://fred.stlouisfed.org/series/NCBDBIQ027S",
+        "https://fred.stlouisfed.org/legal/"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "Federal Reserve Board via FRED, Federal Reserve Bank of St. Louis",
+      "evidence": "Exact series explicitly tagged Public Domain: Citation Requested; retain source/distributor citation; no provider graphics/logos.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "DFII10",
+      "originalProvider": "Federal Reserve Board / Treasury yield methodology",
+      "dataset": "Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity, Quoted on an Investment Basis, Inflation-Indexed (DFII10), Federal Reserve H.15",
+      "indicatorIds": [
+        "DFII10"
+      ],
+      "sourceHash": "0277781c1336527c38275803bfedc0b7f1c264740b9406981edda0d2796ab6ee",
+      "officialURL": "https://fred.stlouisfed.org/series/DFII10",
+      "policyURLs": [
+        "https://fred.stlouisfed.org/series/DFII10",
+        "https://fred.stlouisfed.org/legal/"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "Federal Reserve Board / Treasury yield methodology via FRED, Federal Reserve Bank of St. Louis",
+      "evidence": "Exact series explicitly tagged Public Domain: Citation Requested; retain source/distributor citation; no provider graphics/logos.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "OPHNFB",
+      "originalProvider": "BLS",
+      "dataset": "Nonfarm Business Sector: Labor Productivity (Output per Hour) for All Workers (OPHNFB), BLS",
+      "indicatorIds": [
+        "OPHNFB"
+      ],
+      "sourceHash": "d42ef61a91b622bbe47aeba137a411221da8d75b178617ab6d819eb2ebe96f0f",
+      "officialURL": "https://fred.stlouisfed.org/series/OPHNFB",
+      "policyURLs": [
+        "https://fred.stlouisfed.org/series/OPHNFB",
+        "https://fred.stlouisfed.org/legal/",
+        "https://www.bls.gov/opub/copyright-information.htm"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "BLS via FRED, Federal Reserve Bank of St. Louis",
+      "evidence": "Exact series explicitly tagged Public Domain: Citation Requested; retain source/distributor citation; no provider graphics/logos.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "ULCNFB",
+      "originalProvider": "BLS",
+      "dataset": "Nonfarm Business Sector: Unit Labor Costs for All Workers (ULCNFB), BLS",
+      "indicatorIds": [
+        "ULCNFB"
+      ],
+      "sourceHash": "ec8ee19cc2410e03b05654646d93ae4791e49fd1f07a6ad3c7ba1815a844d054",
+      "officialURL": "https://fred.stlouisfed.org/series/ULCNFB",
+      "policyURLs": [
+        "https://fred.stlouisfed.org/series/ULCNFB",
+        "https://fred.stlouisfed.org/legal/",
+        "https://www.bls.gov/opub/copyright-information.htm"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "BLS via FRED, Federal Reserve Bank of St. Louis",
+      "evidence": "Exact series explicitly tagged Public Domain: Citation Requested; retain source/distributor citation; no provider graphics/logos.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "CPIAUCSL",
+      "originalProvider": "BLS",
+      "dataset": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCSL), BLS, seasonally adjusted",
+      "indicatorIds": [
+        "CPIAUCSL"
+      ],
+      "sourceHash": "f8ecddf53a9a9a74dda92c2c4204e6039466fcb744bc74171b73b5f6aac48119",
+      "officialURL": "https://fred.stlouisfed.org/series/CPIAUCSL",
+      "policyURLs": [
+        "https://fred.stlouisfed.org/series/CPIAUCSL",
+        "https://fred.stlouisfed.org/legal/",
+        "https://www.bls.gov/opub/copyright-information.htm"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "BLS via FRED, Federal Reserve Bank of St. Louis",
+      "evidence": "Exact series explicitly tagged Public Domain: Citation Requested; retain source/distributor citation; no provider graphics/logos.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "PCEPILFE",
+      "originalProvider": "BEA",
+      "dataset": "Personal Consumption Expenditures Excluding Food and Energy (Chain-Type Price Index) (PCEPILFE), BEA",
+      "indicatorIds": [
+        "PCEPILFE"
+      ],
+      "sourceHash": "9f8d0f8e100cff9d9ee2e024557c8aa253c9aed7eade47ac5539c5860c36f616",
+      "officialURL": "https://fred.stlouisfed.org/series/PCEPILFE",
+      "policyURLs": [
+        "https://fred.stlouisfed.org/series/PCEPILFE",
+        "https://fred.stlouisfed.org/legal/"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "BEA via FRED, Federal Reserve Bank of St. Louis",
+      "evidence": "Exact series explicitly tagged Public Domain: Citation Requested; retain source/distributor citation; no provider graphics/logos.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "CENSUS_DC",
+      "originalProvider": "Census Bureau",
+      "dataset": "Value of Construction Put in Place: private data-center construction; privsatime.xlsx, private SA sheet column J",
+      "indicatorIds": [
+        "CENSUS_DC"
+      ],
+      "sourceHash": "e9faea98ea4fc9c57ffbb4e7e576a5907e17e2324dce7d4e58a17aaa8bb2c560",
+      "officialURL": "https://www.census.gov/construction/c30/xlsx/privsatime.xlsx",
+      "policyURLs": [
+        "https://www.census.gov/about/policies/citation.html",
+        "https://www2.census.gov/foia/ds_policies/ds027.pdf"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "Census Bureau",
+      "evidence": "Census public-use statement supports replication with citation; selected government aggregate construction facts, excluding protected third-party material.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "SPF10",
+      "originalProvider": "Federal Reserve Bank of Philadelphia",
+      "dataset": "Survey of Professional Forecasters: quarterly median ten-year annual-average CPI inflation expectation, Inflation.xlsx column E",
+      "indicatorIds": [
+        "SPF10"
+      ],
+      "sourceHash": "2bef852b0b4c4365ce9d38796c408ecb2648f024b2cc1d40a8c1426afe62e2e5",
+      "officialURL": "https://www.philadelphiafed.org/-/media/FRBP/Assets/Surveys-And-Data/survey-of-professional-forecasters/historical-data/Inflation.xlsx?hash=0E7FC9E86818CF8A1C512953603AA6D8&sc_lang=en",
+      "policyURLs": [
+        "https://www.philadelphiafed.org/about-us/privacy-notice",
+        "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts",
+        "https://www.copyright.gov/help/faq/faq-protect.html"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "UNRESOLVED",
+      "publicDisplay": "UNRESOLVED_FOR_FULL_HISTORY",
+      "staticDownload": "UNRESOLVED",
+      "derivativeDisplay": "UNRESOLVED_FOR_FULL_HISTORY",
+      "attribution": "Federal Reserve Bank of Philadelphia",
+      "evidence": "Online terms allow research use but require owner permission for protected material; no dataset-specific grant establishing public static historical redistribution found. Numerical-facts analysis is not substituted for documented permission.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted"
+      ],
+      "unresolvedQuestion": "Obtain dataset-specific public display and downloadable-history authorization or authoritative explicit license.",
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "EXTERNAL_SOURCE_ONLY"
+    },
+    {
+      "sourceId": "EIA_STATE",
+      "originalProvider": "EIA",
+      "dataset": "EIA-861M sales_revenue.xlsx: commercial sales and average realized price, 13 frozen states",
+      "indicatorIds": [
+        "EIA_COMM_PRICE",
+        "EIA_COMM_SALES"
+      ],
+      "sourceHash": "f50ac9dcdcb1b8656e543927e9301bbb87288b1821c1d00ffa52e0902e77e4a0",
+      "officialURL": "https://www.eia.gov/electricity/data/eia861m/xls/sales_revenue.xlsx",
+      "policyURLs": [
+        "https://www.eia.gov/about/copyrights_reuse.php"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "EIA",
+      "evidence": "EIA expressly supports redistribution of its own data with attribution/date; excludes third-party protected content and trademarks.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted",
+        "Use dated EIA attribution; identify the frozen dataset vintage and retrieval date, and do not invent an individual observation publication date. Chinese explanations are World Inflation Lens translations, not EIA-authored statements."
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    },
+    {
+      "sourceId": "EIA_GAS",
+      "originalProvider": "EIA",
+      "dataset": "Henry Hub Natural Gas Spot Price, monthly (RNGWHHDM), USD/MMBtu",
+      "indicatorIds": [
+        "HENRY_HUB"
+      ],
+      "sourceHash": "60d2afb050b84d9ed082f94d9a73e4326231fb717e9c32390d7fcf36fbc5e7b8",
+      "officialURL": "https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm",
+      "policyURLs": [
+        "https://www.eia.gov/about/copyrights_reuse.php"
+      ],
+      "reviewedAt": "2026-10-10",
+      "status": "ALLOWED — ATTRIBUTION REQUIRED",
+      "publicDisplay": "SUPPORTED",
+      "staticDownload": "SUPPORTED",
+      "derivativeDisplay": "SUPPORTED_WITH_CALCULATION_LABELS",
+      "attribution": "EIA",
+      "evidence": "EIA expressly supports redistribution of its own data with attribution/date; excludes third-party protected content and trademarks.",
+      "restrictions": [
+        "No endorsement or source logos",
+        "Retain dates, native definition, source hash and attribution",
+        "No unrestricted commercial-use or whole-document permission asserted",
+        "Use dated EIA attribution; identify the frozen dataset vintage and retrieval date, and do not invent an individual observation publication date. Chinese explanations are World Inflation Lens translations, not EIA-authored statements."
+      ],
+      "unresolvedQuestion": null,
+      "observationVintage": "2026-10-09 frozen C2 selection; not refreshed by this rights review",
+      "publicationMode": "PUBLIC_NUMERICAL_DATA"
+    }
+  ]
+}
