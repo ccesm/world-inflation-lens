@@ -1,0 +1,15 @@
+# D3.2 source permission reassessment — 2026-10-17
+
+**RELEASE BLOCKED: FRED static-history permission needs resolution.** This supplement supersedes any assumption that passing the frozen permission tests alone establishes current release clearance. It does not change the frozen source policy, data or intended use.
+
+All seven reviewed FRED series still show their public-domain/citation-requested labels: [PNFIC1](https://fred.stlouisfed.org/series/PNFIC1), [NCBDBIQ027S](https://fred.stlouisfed.org/series/NCBDBIQ027S), [DFII10](https://fred.stlouisfed.org/series/DFII10), [OPHNFB](https://fred.stlouisfed.org/series/OPHNFB), [ULCNFB](https://fred.stlouisfed.org/series/ULCNFB), [CPIAUCSL](https://fred.stlouisfed.org/series/CPIAUCSL), [PCEPILFE](https://fred.stlouisfed.org/series/PCEPILFE).
+
+The [current full FRED terms](https://fred.stlouisfed.org/legal/), Prohibitions paragraph (p), restrict storage, caching, archiving and provision of stored content to third parties without prior written consent. Series-label permission remains conditional on avoiding prohibited uses. **Assessment/inference:** those labels alone do not resolve how the restriction applies to this site's bundled numerical history. The current static-history use therefore cannot receive renewed clearance from this audit. This is a newly surfaced ambiguity; no archived terms comparison establishes that the terms changed since D3.1. Resolve the scope with documented permission or a qualified interpretation before release. No contact was sent, permission invented, source replaced or data refreshed.
+
+Other primary pages were reopened: [EIA reuse](https://www.eia.gov/about/copyrights_reuse.php) supports attributed government-data reuse while excluding protected third-party material and logos; [BLS copyright](https://www.bls.gov/opub/copyright-information.htm) retains its public-domain information policy. [Census citation](https://www.census.gov/about/policies/citation.html) and [DS027 public-access policy](https://www2.census.gov/foia/ds_policies/ds027.pdf) were reachable; their availability is not an expanded license grant.
+
+The [Philadelphia Fed notice](https://www.philadelphiafed.org/about-us/privacy-notice) retains purpose and copyright limitations. The [official SPF landing page](https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts) remains the external destination. SPF10 numerical rights remain UNRESOLVED: no hosted values, derived numerical history, workbook, chart, download or runtime request.
+
+The ten-source hash/attribution/use-scope allowlist, original October 10 review dates and external-only SPF policy are byte-identical to original D3. Tests establish conformance to those stored policies, not a new rights grant. Application use is unchanged: noncommercial informational research, own charts, original attribution, no provider logos or AI training/inference feature.
+
+中文：七个 FRED 序列仍带公有领域及引用标签，但当前完整条款对存储、缓存、归档及向第三方提供存储内容的限制，与网站静态历史数据的适用关系尚未解决。本审计不能重新确认发布许可，建议暂不发布；不声称条款自上次审计以来发生变化。经济数据、来源政策及用途不变，SPF10 仍仅链接官方页面。应先取得可核查的许可或合格解释，再单独请求生产发布批准。
