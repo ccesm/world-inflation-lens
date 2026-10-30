@@ -1,7 +1,1251 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulCheck": "2026-10-29T06:23:02.082Z",
+  "lastSuccessfulCheck": "2026-10-30T06:21:45.390Z",
   "runs": [
+    {
+      "checkedAt": "2026-10-30T06:21:45.390Z",
+      "checkStartedAt": "2026-10-30T06:21:45.390Z",
+      "checkCompletedAt": "2026-10-30T06:22:27.953Z",
+      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/41013599558",
+      "changes": [
+        {
+          "id": "CPIAUCNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIUFDNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIENGNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "MCOILWTICO",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FEDFUNDS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CUUR0000SAH1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CEU0500000003",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "M2SL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "PCEPILFE",
+          "added": 1,
+          "filled": 0,
+          "revised": 2,
+          "withdrawn": 0,
+          "total": 3,
+          "examples": [
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 130.133,
+              "after": 130.148
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 130.455,
+              "after": 130.489
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 130.902
+            }
+          ]
+        },
+        {
+          "id": "T5YIFR",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-10-29",
+              "kind": "added",
+              "before": null,
+              "after": 2.23
+            }
+          ]
+        },
+        {
+          "id": "DGS10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-10-28",
+              "kind": "added",
+              "before": null,
+              "after": 5.05
+            }
+          ]
+        },
+        {
+          "id": "DFII10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-10-28",
+              "kind": "added",
+              "before": null,
+              "after": 2.67
+            }
+          ]
+        },
+        {
+          "id": "DTWEXBGS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "WALCL",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-10-28",
+              "kind": "added",
+              "before": null,
+              "after": 6745635
+            }
+          ]
+        },
+        {
+          "id": "FYPUGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFSGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYOINT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FP.CPI.TOTL.ZG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "GPR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GSCPI",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_FOOD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_MEAT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_DAIRY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_CEREALS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_OILS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_SUGAR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "OPHNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "ULCNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COMPNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "PNFIC1",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 4106.907
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 4106.907
+            }
+          ]
+        },
+        {
+          "id": "A679RC1Q027SBEA",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 1765.37
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 1765.37
+            }
+          ]
+        },
+        {
+          "id": "B985RC1Q027SBEA",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 831.467
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 831.467
+            }
+          ]
+        },
+        {
+          "id": "B935RC1Q027SBEA",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 504.127
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 504.127
+            }
+          ]
+        },
+        {
+          "id": "IPN22112CS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CUUR0000SEHF01",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GDPC1",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 24611.077
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 24611.077
+            }
+          ]
+        },
+        {
+          "id": "CE16OV",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPG3344S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "MHHNGSP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_DATACENTER",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_NONRES",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_ELECTRONIC",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "DPSACBM027SBOG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_USD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_EUR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CNY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_JPY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_GBP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_AUD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CAD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CHF",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_OTHER",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_IMPUTED",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_TOTAL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_JAPAN",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_CHINA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_UK",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_OFFICIAL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "BIS_USD_TOTAL",
+          "added": 1,
+          "filled": 0,
+          "revised": 19,
+          "withdrawn": 0,
+          "total": 20,
+          "examples": [
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 13432077.683,
+              "after": 13461781.627
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 13439868.941,
+              "after": 13465594.237
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 13412346.848,
+              "after": 13436887.077
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 13301358.372,
+              "after": 13306450.332
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 13100248.169,
+              "after": 13094489.354
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 12824272.658,
+              "after": 12814617.521
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 12716729.135,
+              "after": 12691180.285
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 12825944.274,
+              "after": 12792432.455
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 12862497.442,
+              "after": 12821766.544
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 12779995.25,
+              "after": 12759309.345
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 13060284.031,
+              "after": 13034390.294
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 13166158.243,
+              "after": 13140749.694
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 13261443.003,
+              "after": 13260178.495
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 13145732.424,
+              "after": 13127739.862
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 13735915.923,
+              "after": 13759738.514
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 13979225.357,
+              "after": 14002516.068
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 14226387.541,
+              "after": 14240684.034
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 14253874.857,
+              "after": 14264166.94
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 14747653.746,
+              "after": 14770950.729
+            },
+            {
+              "date": "2026-04",
+              "kind": "added",
+              "before": null,
+              "after": 15132723.957
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 13432077.683,
+              "after": 13461781.627
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 13439868.941,
+              "after": 13465594.237
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 13412346.848,
+              "after": 13436887.077
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 13301358.372,
+              "after": 13306450.332
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 13100248.169,
+              "after": 13094489.354
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 12824272.658,
+              "after": 12814617.521
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 12716729.135,
+              "after": 12691180.285
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 12825944.274,
+              "after": 12792432.455
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 12862497.442,
+              "after": 12821766.544
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 12779995.25,
+              "after": 12759309.345
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 13060284.031,
+              "after": 13034390.294
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 13166158.243,
+              "after": 13140749.694
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 13261443.003,
+              "after": 13260178.495
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 13145732.424,
+              "after": 13127739.862
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 13735915.923,
+              "after": 13759738.514
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 13979225.357,
+              "after": 14002516.068
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 14226387.541,
+              "after": 14240684.034
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 14253874.857,
+              "after": 14264166.94
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 14747653.746,
+              "after": 14770950.729
+            },
+            {
+              "date": "2026-04",
+              "kind": "added",
+              "before": null,
+              "after": 15132723.957
+            }
+          ]
+        },
+        {
+          "id": "BIS_USD_LOANS",
+          "added": 1,
+          "filled": 0,
+          "revised": 19,
+          "withdrawn": 0,
+          "total": 20,
+          "examples": [
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 6216581.331,
+              "after": 6246285.275
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 6168528.513,
+              "after": 6194253.809
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 6151259.506,
+              "after": 6175799.735
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 6097497.48,
+              "after": 6102589.44
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 5973167.036,
+              "after": 5967408.221
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 5753899.634,
+              "after": 5744244.497
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 5622868.366,
+              "after": 5597319.516
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 5729409.299,
+              "after": 5695897.48
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 5803234.31,
+              "after": 5762503.412
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 5677566.533,
+              "after": 5656880.628
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 5868826.774,
+              "after": 5842933.037
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 5898238.797,
+              "after": 5872830.248
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 5913220.231,
+              "after": 5911955.723
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 5758935.967,
+              "after": 5740943.405
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 6169389.925,
+              "after": 6193212.516
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 6298939.542,
+              "after": 6322230.253
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 6391430.009,
+              "after": 6405726.502
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 6327130.303,
+              "after": 6337422.386
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 6683005.559,
+              "after": 6706302.542
+            },
+            {
+              "date": "2026-04",
+              "kind": "added",
+              "before": null,
+              "after": 6936280.678
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 6216581.331,
+              "after": 6246285.275
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 6168528.513,
+              "after": 6194253.809
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 6151259.506,
+              "after": 6175799.735
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 6097497.48,
+              "after": 6102589.44
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 5973167.036,
+              "after": 5967408.221
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 5753899.634,
+              "after": 5744244.497
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 5622868.366,
+              "after": 5597319.516
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 5729409.299,
+              "after": 5695897.48
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 5803234.31,
+              "after": 5762503.412
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 5677566.533,
+              "after": 5656880.628
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 5868826.774,
+              "after": 5842933.037
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 5898238.797,
+              "after": 5872830.248
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 5913220.231,
+              "after": 5911955.723
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 5758935.967,
+              "after": 5740943.405
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 6169389.925,
+              "after": 6193212.516
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 6298939.542,
+              "after": 6322230.253
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 6391430.009,
+              "after": 6405726.502
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 6327130.303,
+              "after": 6337422.386
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 6683005.559,
+              "after": 6706302.542
+            },
+            {
+              "date": "2026-04",
+              "kind": "added",
+              "before": null,
+              "after": 6936280.678
+            }
+          ]
+        },
+        {
+          "id": "BIS_USD_SECURITIES",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-04",
+              "kind": "added",
+              "before": null,
+              "after": 8196443.279
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-04",
+              "kind": "added",
+              "before": null,
+              "after": 8196443.279
+            }
+          ]
+        }
+      ]
+    },
     {
       "checkedAt": "2026-10-29T06:23:02.082Z",
       "checkStartedAt": "2026-10-29T06:23:02.082Z",
@@ -21883,636 +23127,7 @@
           "changes": []
         }
       ]
-    },
-    {
-      "checkedAt": "2026-10-04T06:16:16.990Z",
-      "checkStartedAt": "2026-10-04T06:16:16.990Z",
-      "checkCompletedAt": "2026-10-04T06:16:46.084Z",
-      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/37182297633",
-      "changes": [
-        {
-          "id": "CPIAUCNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CPIUFDNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CPIENGNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "MCOILWTICO",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FEDFUNDS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CUUR0000SAH1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CEU0500000003",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "M2SL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "PCEPILFE",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "T5YIFR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "DGS10",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "DFII10",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "DTWEXBGS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "WALCL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYPUGDA188S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYFSGDA188S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYOINT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYFR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FP.CPI.TOTL.ZG",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "GPR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GPRT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GPRA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GSCPI",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_FOOD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_MEAT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_DAIRY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_CEREALS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_OILS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_SUGAR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "OPHNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "ULCNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COMPNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "PNFIC1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "A679RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "B985RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "B935RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "IPN22112CS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CUUR0000SEHF01",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GDPC1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CE16OV",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "IPG3344S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "MHHNGSP",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_DATACENTER",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_NONRES",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_ELECTRONIC",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "DPSACBM027SBOG",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_USD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_EUR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CNY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_JPY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_GBP",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_AUD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CAD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CHF",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_OTHER",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_IMPUTED",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_TOTAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_JAPAN",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_CHINA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_UK",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_OFFICIAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_TOTAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_LOANS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_SECURITIES",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        }
-      ]
     }
   ],
-  "lastSuccessfulCheckCompletedAt": "2026-10-29T06:23:46.446Z"
+  "lastSuccessfulCheckCompletedAt": "2026-10-30T06:22:27.953Z"
 }
