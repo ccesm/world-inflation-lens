@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "file": "c2-analysis.json",
+      "bytes": 4594216,
+      "sha256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7",
+      "result": "PASS",
+      "mode": "0o600"
+    },
+    {
+      "file": "c2-identity.json",
+      "bytes": 718,
+      "sha256": "329b4360ff92e435f81d5fbb334ae99d74a8fb90f7ad3d31fbf72954e90feb45",
+      "result": "PASS",
+      "mode": "0o600"
+    },
+    {
+      "file": "d32-summary.json",
+      "bytes": 93328,
+      "sha256": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+      "result": "PASS",
+      "mode": "0o600"
+    },
+    {
+      "file": "d32-history.json",
+      "bytes": 4422270,
+      "sha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+      "result": "PASS",
+      "mode": "0o600"
+    },
+    {
+      "file": "c2-research-original.tar.gz",
+      "bytes": 5099119,
+      "sha256": "43dfb26fc06f1423c7b88363b332dd8b5d727516bcd1d5f9d7e3f4a0b5d5d461",
+      "result": "PASS",
+      "mode": "0o600"
+    },
+    {
+      "file": "d32-publication-original.tar.gz",
+      "bytes": 408482,
+      "sha256": "b607820e326c93abbb433397751d38b97235c29c79f4a7994051f3cc38ae6415",
+      "result": "PASS",
+      "mode": "0o600"
+    }
+  ],
+  "archiveEntries": {
+    "c2-research-original.tar.gz": {
+      "count": 198,
+      "byteIdentity": "PASS",
+      "supportingDocumentation": [
+        "research/ai-infrastructure-paper-validation/phase-a/methodology.md",
+        "research/ai-infrastructure-paper-validation/phase-b1/PHASE_B1_FINANCING_REPORT.md",
+        "research/ai-infrastructure-paper-validation/phase-b2/PHASE_B2_OBLIGATIONS_REPORT.md",
+        "research/ai-infrastructure-paper-validation/phase-c0/PHASE_C0_MACRO_TRANSMISSION_REPORT.md",
+        "research/ai-infrastructure-paper-validation/phase-c0/PHASE_C1_RESEARCH_PLAN.md",
+        "research/ai-infrastructure-paper-validation/phase-c0/macro-transmission-map.md",
+        "research/ai-infrastructure-paper-validation/phase-c0/methodology.md",
+        "research/ai-infrastructure-paper-validation/phase-c1a/PHASE_C1A_FEASIBILITY_REPORT.md",
+        "research/ai-infrastructure-paper-validation/phase-c1a/PHASE_C1B_READINESS_ASSESSMENT.md",
+        "research/ai-infrastructure-paper-validation/phase-c1a/methodology.md",
+        "research/ai-infrastructure-paper-validation/phase-c1m/PHASE_C1M_MACRO_RESEARCH_REPORT.md",
+        "research/ai-infrastructure-paper-validation/phase-c1m/PHASE_C2_RECOMMENDATION.md",
+        "research/ai-infrastructure-paper-validation/phase-c1m/macro-monitoring-architecture.md",
+        "research/ai-infrastructure-paper-validation/phase-c2/PHASE_C2_DESCRIPTIVE_REPORT.md",
+        "research/ai-infrastructure-paper-validation/phase-c2/README.md",
+        "research/ai-infrastructure-paper-validation/phase-c2/methodology.md",
+        "research/ai-infrastructure-paper-validation/phase-c2/outputs/analysis.md"
+      ]
+    },
+    "d32-publication-original.tar.gz": {
+      "count": 27,
+      "byteIdentity": "PASS",
+      "supportingDocumentation": [
+        "docs/ai-macro-release/phase-d2/PHASE_D3_DEPLOYMENT_PLAN.md",
+        "docs/ai-macro-release/phase-d3/D32_SOURCE_PERMISSION_REVIEW.md",
+        "docs/ai-macro-release/phase-d3/PHASE_D32_REQUALIFICATION.md",
+        "docs/ai-macro-release/phase-d3/RELEASE_PREPARATION.md",
+        "docs/ai-macro/redistribution-assessment.md"
+      ]
+    }
+  },
+  "backup": "ABSENT_OWNER_CONFIRMED_2026-10-17",
+  "researchValuesModified": false
+}

@@ -1,0 +1,211 @@
+{
+  "checkedAt": "2026-10-17",
+  "rawURLChecks": [
+    {
+      "label": "D3.2 commit history",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/4b0e48c418930ba0bf575a2629879bf1ea67a6cf/public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "expectedSha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/4b0e48c418930ba0bf575a2629879bf1ea67a6cf/public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 4422270,
+      "sha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "D3.2 summary",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/4b0e48c418930ba0bf575a2629879bf1ea67a6cf/src/data/ai-macro/summary.json",
+      "expectedSha256": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/4b0e48c418930ba0bf575a2629879bf1ea67a6cf/src/data/ai-macro/summary.json",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 93328,
+      "sha256": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "C2 analysis",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/362929adfae20b31d8044e5c9a10ae020f0c9eaf/research/ai-infrastructure-paper-validation/phase-c2/outputs/analysis.json",
+      "expectedSha256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7",
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/362929adfae20b31d8044e5c9a10ae020f0c9eaf/research/ai-infrastructure-paper-validation/phase-c2/outputs/analysis.json",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 4594216,
+      "sha256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "C2 observations",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/362929adfae20b31d8044e5c9a10ae020f0c9eaf/research/ai-infrastructure-paper-validation/phase-c2/outputs/observations.csv",
+      "expectedSha256": "115e07f822d1af2edb71d8ac20f081d3926bae8dcdf242e37ba786cd07e8449c",
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/362929adfae20b31d8044e5c9a10ae020f0c9eaf/research/ai-infrastructure-paper-validation/phase-c2/outputs/observations.csv",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 4008974,
+      "sha256": "115e07f822d1af2edb71d8ac20f081d3926bae8dcdf242e37ba786cd07e8449c",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "C2 SPF fixture",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/362929adfae20b31d8044e5c9a10ae020f0c9eaf/research/ai-infrastructure-paper-validation/phase-c1m/fixtures/SPF10.xlsx.gz",
+      "expectedSha256": null,
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/362929adfae20b31d8044e5c9a10ae020f0c9eaf/research/ai-infrastructure-paper-validation/phase-c1m/fixtures/SPF10.xlsx.gz",
+      "contentType": "application/octet-stream",
+      "bytes": 10368,
+      "sha256": "f0e19eb1ce9d613474321a37426c5494d607c4121bac2f67c86e04c48d84694a",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "codex/ai-infra-macro-integration-phase-d0",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-infra-macro-integration-phase-d0/research/ai-infrastructure-paper-validation/phase-c2/outputs/analysis.json",
+      "expectedSha256": null,
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-infra-macro-integration-phase-d0/research/ai-infrastructure-paper-validation/phase-c2/outputs/analysis.json",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 4594216,
+      "sha256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "codex/ai-macro-monitor-phase-d1",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-macro-monitor-phase-d1/public/data/ai-macro/5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590/history.json",
+      "expectedSha256": null,
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-macro-monitor-phase-d1/public/data/ai-macro/5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590/history.json",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 4500722,
+      "sha256": "5c8381bb1729570146b7ddcaf371251f9d1fa678daa1751cfd2c86222d371590",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "codex/ai-macro-monitor-phase-d2",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-macro-monitor-phase-d2/src/data/ai-macro/summary.json",
+      "expectedSha256": null,
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-macro-monitor-phase-d2/src/data/ai-macro/summary.json",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 311,
+      "sha256": "2cf8428d33988017336af9ed8a683a3a0bc395e86fef0e14f58fdea0cb484278",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "codex/ai-macro-monitor-phase-d2-1",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-macro-monitor-phase-d2-1/public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "expectedSha256": null,
+      "http": 200,
+      "finalURL": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-macro-monitor-phase-d2-1/public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 4422270,
+      "sha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+      "identityMatch": true,
+      "classification": "CURRENTLY_ACCESSIBLE"
+    },
+    {
+      "label": "codex/ai-macro-monitor-phase-d3",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/codex/ai-macro-monitor-phase-d3/public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "expectedSha256": null,
+      "http": 404,
+      "classification": "NOT_FOUND"
+    },
+    {
+      "label": "refs/pull/18/head",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/refs/pull/18/head/public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "expectedSha256": null,
+      "http": 404,
+      "classification": "NOT_FOUND"
+    },
+    {
+      "label": "refs/pull/18/merge",
+      "url": "https://raw.githubusercontent.com/ccesm/world-inflation-lens/refs/pull/18/merge/public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "expectedSha256": null,
+      "http": 404,
+      "classification": "NOT_FOUND"
+    },
+    {
+      "label": "Production old macro history",
+      "url": "https://ccesm.github.io/world-inflation-lens/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "http": 404,
+      "classification": "NOT_FOUND"
+    }
+  ],
+  "sourceArchive": {
+    "url": "https://codeload.github.com/ccesm/world-inflation-lens/tar.gz/362929adfae20b31d8044e5c9a10ae020f0c9eaf",
+    "classification": "CURRENTLY_ACCESSIBLE",
+    "archiveBytes": 6683641,
+    "verifiedMember": "phase-c2/outputs/analysis.json",
+    "verifiedMemberSha256": "ac85a5fe4455112f95f83ae2a650a637578480cf8ec1feba8cd52db15b642ec7"
+  },
+  "pagesArtifacts": [
+    {
+      "id": 12107232356,
+      "head": "03413caa9868f4608e828ad94d3f57b490e03380",
+      "expired": false,
+      "classification": "CURRENTLY_ACCESSIBLE",
+      "files": 38,
+      "excludedMacroPayloadScan": "PASS"
+    },
+    {
+      "id": 12104743601,
+      "head": "314d59aa2bdf5d134e40e9535536b242e4a6205c",
+      "expired": false,
+      "classification": "CURRENTLY_ACCESSIBLE",
+      "files": 34,
+      "excludedMacroPayloadScan": "PASS"
+    },
+    {
+      "id": 12104716610,
+      "head": "4e919c135eeba897ea5acc4f07380f5163248d67",
+      "expired": false,
+      "classification": "CURRENTLY_ACCESSIBLE",
+      "files": 34,
+      "excludedMacroPayloadScan": "PASS"
+    },
+    {
+      "id": 12104059701,
+      "head": "314d59aa2bdf5d134e40e9535536b242e4a6205c",
+      "expired": false,
+      "classification": "CURRENTLY_ACCESSIBLE",
+      "files": 34,
+      "excludedMacroPayloadScan": "PASS"
+    },
+    {
+      "id": 12103754820,
+      "head": "4e919c135eeba897ea5acc4f07380f5163248d67",
+      "expired": false,
+      "classification": "CURRENTLY_ACCESSIBLE",
+      "files": 34,
+      "excludedMacroPayloadScan": "PASS"
+    },
+    {
+      "id": 12091865461,
+      "head": "9ae7c29d0e13745cbe12f960cdc2dc15192d5e94",
+      "expired": false,
+      "classification": "CURRENTLY_ACCESSIBLE",
+      "files": 34,
+      "excludedMacroPayloadScan": "PASS"
+    },
+    {
+      "id": 12090469343,
+      "head": "9ae7c29d0e13745cbe12f960cdc2dc15192d5e94",
+      "expired": false,
+      "classification": "CURRENTLY_ACCESSIBLE",
+      "files": 34,
+      "excludedMacroPayloadScan": "PASS"
+    }
+  ],
+  "artifactListingCount": 37,
+  "releaseListingCount": 13,
+  "releaseAssetCount": 62,
+  "nonPagesArtifactContents": "NOT_VERIFIED",
+  "releaseAssetContents": "NOT_VERIFIED",
+  "unlistedDeletedExpiredCachedForkedCopies": "NOT_VERIFIED"
+}

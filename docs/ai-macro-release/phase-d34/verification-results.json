@@ -1,0 +1,434 @@
+{
+  "schemaVersion": "D34_RELEASE_RESULTS_1",
+  "codeCandidate": "93dc3d559654c04fe675a68434d3a6b6b4278ded",
+  "main": "03413caa9868f4608e828ad94d3f57b490e03380",
+  "D33": "abcedb2c049b01769fb0c5423370661e466b4ee5",
+  "finalHead": "Containing report commit; immutable final SHA and exact-head CI receipt in PR #18 Phase D3.4 handoff",
+  "build": "PASS",
+  "fullVerify": "PASS (19 entrypoints, including China publication and AI Macro)",
+  "tests": {
+    "signal-core": {
+      "tests": 258,
+      "pass": 256,
+      "fail": 0,
+      "skipped": 2
+    },
+    "signal-pipeline": {
+      "tests": 71,
+      "pass": 71,
+      "fail": 0,
+      "skipped": 0
+    },
+    "signal-public": {
+      "tests": 86,
+      "pass": 86,
+      "fail": 0,
+      "skipped": 0
+    },
+    "internal": {
+      "tests": 51,
+      "pass": 51,
+      "fail": 0,
+      "skipped": 0
+    }
+  },
+  "macroBrowser": {
+    "schemaVersion": "D33_NARRATIVE_BROWSER_1",
+    "browser": "155.0.8059.82",
+    "url": "http://127.0.0.1:5199/world-inflation-lens/",
+    "classification": "PASS",
+    "results": [
+      {
+        "width": 320,
+        "language": "en",
+        "theme": "light",
+        "result": "PASS",
+        "renderMs": 593,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 320,
+          "scroll": 320,
+          "offenders": []
+        }
+      },
+      {
+        "width": 320,
+        "language": "en",
+        "theme": "dark",
+        "result": "PASS",
+        "renderMs": 527,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 320,
+          "scroll": 320,
+          "offenders": []
+        }
+      },
+      {
+        "width": 320,
+        "language": "zh",
+        "theme": "light",
+        "result": "PASS",
+        "renderMs": 588,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 320,
+          "scroll": 320,
+          "offenders": []
+        }
+      },
+      {
+        "width": 320,
+        "language": "zh",
+        "theme": "dark",
+        "result": "PASS",
+        "renderMs": 560,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 320,
+          "scroll": 320,
+          "offenders": []
+        }
+      },
+      {
+        "width": 390,
+        "language": "en",
+        "theme": "light",
+        "result": "PASS",
+        "renderMs": 1074,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 390,
+          "scroll": 390,
+          "offenders": []
+        }
+      },
+      {
+        "width": 390,
+        "language": "en",
+        "theme": "dark",
+        "result": "PASS",
+        "renderMs": 983,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 390,
+          "scroll": 390,
+          "offenders": []
+        }
+      },
+      {
+        "width": 390,
+        "language": "zh",
+        "theme": "light",
+        "result": "PASS",
+        "renderMs": 1015,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 390,
+          "scroll": 390,
+          "offenders": []
+        }
+      },
+      {
+        "width": 390,
+        "language": "zh",
+        "theme": "dark",
+        "result": "PASS",
+        "renderMs": 1004,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 390,
+          "scroll": 390,
+          "offenders": []
+        }
+      },
+      {
+        "width": 1280,
+        "language": "en",
+        "theme": "light",
+        "result": "PASS",
+        "renderMs": 1018,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 1280,
+          "scroll": 1280,
+          "offenders": []
+        }
+      },
+      {
+        "width": 1280,
+        "language": "en",
+        "theme": "dark",
+        "result": "PASS",
+        "renderMs": 999,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 1280,
+          "scroll": 1280,
+          "offenders": []
+        }
+      },
+      {
+        "width": 1280,
+        "language": "zh",
+        "theme": "light",
+        "result": "PASS",
+        "renderMs": 536,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 1280,
+          "scroll": 1280,
+          "offenders": []
+        }
+      },
+      {
+        "width": 1280,
+        "language": "zh",
+        "theme": "dark",
+        "result": "PASS",
+        "renderMs": 507,
+        "historyRequests": 0,
+        "sourceConcepts": 12,
+        "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+        "overflow": {
+          "client": 1280,
+          "scroll": 1280,
+          "offenders": []
+        }
+      },
+      {
+        "directDeepLink": "PRODUCTIVITY",
+        "language": "en",
+        "result": "PASS",
+        "afterAuthentication": true
+      },
+      {
+        "directDeepLink": "PRODUCTIVITY",
+        "language": "zh",
+        "result": "PASS",
+        "afterAuthentication": true
+      },
+      {
+        "mode": "tampered_provenance",
+        "result": "PASS",
+        "unverifiedArticleWithheld": true,
+        "numericalFallback": false
+      },
+      {
+        "mode": "crypto_failure",
+        "result": "PASS",
+        "unverifiedArticleWithheld": true,
+        "numericalFallback": false
+      },
+      {
+        "legacyRoute": "home",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "dollar",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "fiscal",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "history",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "scenarios",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "purchasing-power",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "monitor",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "regimes",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "since-1971",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "drivers",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "us-cpi",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "timeline",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "overview",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "map",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "sources",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "external-shocks",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/ai-productivity",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/ai-labor",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/ai-capex",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/ai-infrastructure",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/digital-money",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/data",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/updates",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/international-dollar",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/signal-engine",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/global-monetary-order",
+        "result": "PASS"
+      },
+      {
+        "legacyRoute": "research/global-monetary-order/china-strategy",
+        "result": "PASS"
+      },
+      {
+        "oldHistoryAsset": "ABSENT",
+        "response": 200,
+        "note": "Preview may return HTML SPA fallback; no numerical data"
+      }
+    ],
+    "accessibility": [
+      {
+        "language": "en",
+        "result": "PASS",
+        "scope": "Named article/main landmarks, four research questions, native disclosure and provider-link keyboard focus",
+        "formalScreenReader": "DEFERRED_BY_OWNER"
+      },
+      {
+        "language": "zh",
+        "result": "PASS",
+        "scope": "Named article/main landmarks, four research questions, native disclosure and provider-link keyboard focus",
+        "formalScreenReader": "DEFERRED_BY_OWNER"
+      }
+    ],
+    "pageErrors": [],
+    "economicRuntimeRequests": [],
+    "formalScreenReader": "DEFERRED_BY_OWNER",
+    "execution": "Installed headless Chrome; local production build; no production performance or formal WCAG claim"
+  },
+  "existingBrowser": {
+    "result": "PASS",
+    "errors": [],
+    "homeChecks": 12,
+    "routeChecks": 348,
+    "behaviorChecks": 18
+  },
+  "chinaBrowser": {
+    "result": "PASS",
+    "displayChecks": 12,
+    "interactionLanguages": 2,
+    "candidateBuildDiscoverabilityLanguages": 2,
+    "productionURLWasLoopback": true,
+    "errors": []
+  },
+  "rootDependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "isolatedSignalDependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 1,
+    "high": 0,
+    "critical": 0,
+    "total": 1
+  },
+  "sourceLinks": {
+    "total": 17,
+    "directHTTP200": 8,
+    "alternateExactURLContentRetrieval": 9
+  },
+  "privatePreservation": {
+    "files": 6,
+    "C2ArchiveFiles": 198,
+    "D32ArchiveFiles": 27,
+    "C2Series": 36,
+    "C2Observations": 12949,
+    "C2MissingValues": 360,
+    "D32Indicators": 11,
+    "D32Series": 35,
+    "D32Observations": 12722,
+    "D32MissingValues": 273,
+    "independentBackup": "ABSENT_OWNER_CONFIRMED"
+  },
+  "manualScreenReaderAcceptance": "DEFERRED_BY_OWNER",
+  "prospectivePublicationBoundary": "PASS",
+  "production": "NO_GO_PENDING_OWNER_DECISIONS_AND_AUTHORIZATION"
+}

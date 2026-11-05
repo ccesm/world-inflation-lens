@@ -1,0 +1,413 @@
+{
+  "schemaVersion": "D3_RELEASE_CANDIDATE_1",
+  "repository": "ccesm/world-inflation-lens",
+  "productionBaseSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+  "D21SourceSHA": "9c65c0cfdf1dc5ac02906a508a5bd9b3d61b29b3",
+  "branch": "codex/ai-macro-monitor-phase-d3",
+  "implementationSHA": "f54df97dab9629440588d42a3bb3e5e1bf90529e",
+  "containingAuditCommit": "Resolve git rev-parse HEAD; audit-only successor prevents self-referential Git hashes. Final candidate SHA is recorded in the Draft PR.",
+  "applicationVersion": "1.4.1",
+  "changedFiles": [
+    "docs/ai-macro-release/phase-d2-1/publication-policy.json",
+    "docs/ai-macro-release/phase-d2-1/publication-safety.mjs",
+    "docs/ai-macro-release/phase-d2/PHASE_D3_DEPLOYMENT_PLAN.md",
+    "docs/ai-macro-release/phase-d3/RELEASE_PREPARATION.md",
+    "docs/ai-macro-release/phase-d3/browser-accessibility.mjs",
+    "docs/ai-macro-release/phase-d3/release-candidate-manifest.json",
+    "docs/ai-macro-release/phase-d3/release-policy.json",
+    "docs/ai-macro-release/phase-d3/test-release.mjs",
+    "docs/ai-macro-release/phase-d3/validation-results.json",
+    "docs/ai-macro-release/phase-d3/verify-release.mjs",
+    "docs/ai-macro-release/phase-d3/verify-scope.mjs",
+    "docs/ai-macro/redistribution-assessment.md",
+    "docs/ai-macro/source-rights.json",
+    "package-lock.json",
+    "package.json",
+    "public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+    "scripts/ai-macro-projection.mjs",
+    "scripts/verify-ai-macro-browser.mjs",
+    "scripts/verify-ai-macro.mjs",
+    "src/App.jsx",
+    "src/ai-macro.css",
+    "src/components/AiMacroChart.jsx",
+    "src/data/ai-macro/contract.js",
+    "src/data/ai-macro/history.js",
+    "src/data/ai-macro/public-identity.json",
+    "src/data/ai-macro/summary.json",
+    "src/data/researchArchitecture.js",
+    "src/data/researchLinks.js",
+    "src/i18n/aiMacro.js",
+    "src/i18n/architecture.js",
+    "src/pages/AiMacro.jsx",
+    "src/utils/routing.js"
+  ],
+  "existingFilesModified": 7,
+  "newFilesAdded": 25,
+  "D21ByteIdentities": [
+    {
+      "path": "docs/ai-macro-release/phase-d2-1/publication-policy.json",
+      "sha256": "be5d51462a8e39e494898df73e2d9c50b3520149e0a4df5e285bc6f8b91ff594",
+      "bytes": 16775
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2-1/publication-safety.mjs",
+      "sha256": "036a810f349148aebe43125ffa3ecb907bd4c9bf7e072298b82ec2f5f7101487",
+      "bytes": 2517
+    },
+    {
+      "path": "docs/ai-macro/redistribution-assessment.md",
+      "sha256": "e35b8b61df2964ec164e8d7111827fa708852c1447404799aeaee8bcdd851fad",
+      "bytes": 3379
+    },
+    {
+      "path": "docs/ai-macro/source-rights.json",
+      "sha256": "d5b11dfd8abdcc472c079833042fa2261a01dcc136da208d72f4e637934290f3",
+      "bytes": 17288
+    },
+    {
+      "path": "public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "sha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+      "bytes": 4422270
+    },
+    {
+      "path": "scripts/ai-macro-projection.mjs",
+      "sha256": "635643c3e9320acb2b142c73bc324ef5d64097b91754beace32edfea4558b712",
+      "bytes": 9736
+    },
+    {
+      "path": "scripts/verify-ai-macro-browser.mjs",
+      "sha256": "c9826ebeae99694f34c80e37b3b5b32ba533199d764e25fb970bdb2eea95cabe",
+      "bytes": 10316
+    },
+    {
+      "path": "src/App.jsx",
+      "sha256": "cd2f17864967ef02a6eb9760ca1681c1d4fb639035dde5cdf8c8d01a3fe2eb49",
+      "bytes": 12233
+    },
+    {
+      "path": "src/ai-macro.css",
+      "sha256": "caf6cbbc8cb745d29f6bea2268002f7b6a7d8e09c2115bcba5ea26c7cb860c26",
+      "bytes": 4239
+    },
+    {
+      "path": "src/components/AiMacroChart.jsx",
+      "sha256": "d7d84c803c77825e940fca5a9c4c1d83d9f9457b6c3ac82097c5c6007f13e63a",
+      "bytes": 2100
+    },
+    {
+      "path": "src/data/ai-macro/contract.js",
+      "sha256": "61ac75243f36af85b5c57db0b793baa5fe53085ab3f84ad98d138e21da37b734",
+      "bytes": 8105
+    },
+    {
+      "path": "src/data/ai-macro/history.js",
+      "sha256": "f6fb170fea76397401e92e0f83ceb70656b069b82e1540de2e7ed624fc94d374",
+      "bytes": 1346
+    },
+    {
+      "path": "src/data/ai-macro/public-identity.json",
+      "sha256": "68dfb0c00c6c1b836ab844379ae1a1c734b8abb3728c4bca7201d62fd02f04f1",
+      "bytes": 305
+    },
+    {
+      "path": "src/data/ai-macro/summary.json",
+      "sha256": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+      "bytes": 93328
+    },
+    {
+      "path": "src/data/researchArchitecture.js",
+      "sha256": "371ecd8b217db90f203bc21269fb8c7b4a115c3ef530f14cd8b52e99a0b9098b",
+      "bytes": 23215
+    },
+    {
+      "path": "src/data/researchLinks.js",
+      "sha256": "4b04d7862a4b1d72eec281ded4a8befb6a8b17bfdac2e9d082cf918bef07420d",
+      "bytes": 2814
+    },
+    {
+      "path": "src/i18n/aiMacro.js",
+      "sha256": "1a640ebb482c4fc29cc3fcc696d86729c039fd77f8fd7a54652d2ec9c1c642a4",
+      "bytes": 18952
+    },
+    {
+      "path": "src/i18n/architecture.js",
+      "sha256": "bf8d610216c0949425dcf6cc6b32ba75dcee4d478ac5886869995e96e2350dec",
+      "bytes": 15274
+    },
+    {
+      "path": "src/pages/AiMacro.jsx",
+      "sha256": "60c7ef7092fdb6d7e18aebedf4950e7ca0cf03003582bc7fd88656fc8c19211a",
+      "bytes": 9704
+    },
+    {
+      "path": "src/utils/routing.js",
+      "sha256": "bed341ae8dbd0e8018b49522a1a1f89a8c387c7f6651ae3a1a13c77131445a3f",
+      "bytes": 1301
+    }
+  ],
+  "publicDataset": {
+    "researchAsOf": "2026-10-09",
+    "conceptualIndicators": 12,
+    "numericalIndicators": 11,
+    "numericalSeries": 35,
+    "records": 12722,
+    "missingValues": 273,
+    "numericalSourceIdentities": 10,
+    "projectionHash": "1a0a3e41fdb6b5ab3bfcfa4bfae1f6891dd4ce82b0d82e00142542932b02f13b",
+    "summaryFileSHA256": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+    "summaryBytes": 93328,
+    "historySHA256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+    "historyBytes": 4422270,
+    "economicRefresh": false
+  },
+  "sourceBoundary": {
+    "numerical": "Exact D2.1 policy hashes, attribution and intended use preserved",
+    "SPF10": "EXTERNAL_SOURCE_ONLY",
+    "SPF10Redistribution": "UNRESOLVED",
+    "externalURL": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts"
+  },
+  "MANUAL_SCREEN_READER_ACCEPTANCE": "DEFERRED_BY_OWNER",
+  "formalScreenReaderPass": false,
+  "WCAGConformanceClaim": false,
+  "workflows": {
+    "unchanged": true,
+    "remoteInventoryVerified": true,
+    "registered": [
+      "deploy.yml",
+      "ai-capex-quarterly-refresh.yml",
+      "signal-engine-shadow-qualification.yml",
+      "signal-engine-tests.yml"
+    ],
+    "PRTriggered": [
+      "signal-engine-tests.yml"
+    ],
+    "PRPermissions": "contents: read",
+    "PRProductionDeployment": false,
+    "PRMail": false,
+    "newSchedule": false
+  },
+  "validatedBuild": {
+    "implementationSHA": "f54df97dab9629440588d42a3bb3e5e1bf90529e",
+    "identities": [
+      {
+        "path": "dist/assets/AiCapex-C5SvDVMH.js",
+        "bytes": 150586,
+        "sha256": "b1eb632c921ef3e0ef24f0088e740a96723a3234a1c3108320a4055055615ef7"
+      },
+      {
+        "path": "dist/assets/AiCapex-CyGBwTD3.css",
+        "bytes": 3263,
+        "sha256": "a7475287af576d50bd836becdb26a3a23dbf11cffec8eaf70e1b6276090fe9a5"
+      },
+      {
+        "path": "dist/assets/AiInfrastructure-4yRg4Dbz.js",
+        "bytes": 96178,
+        "sha256": "53a11eb2da6e405071914e6c4771e1d932c80c24daa3a1c012cbf73e856a717f"
+      },
+      {
+        "path": "dist/assets/AiInfrastructure-Podoq5Ed.css",
+        "bytes": 9187,
+        "sha256": "98522175f24cb8b806d052753cb08e44472f74ff9c56a6b5cfab19b2a9bf08b7"
+      },
+      {
+        "path": "dist/assets/AiLabor-CFt6e67F.css",
+        "bytes": 1494,
+        "sha256": "be49ce9c8e386f71fda0924cc2796ea84c7531f965cfc6cd4729f8da27bd79e4"
+      },
+      {
+        "path": "dist/assets/AiLabor-qYcK0Orr.js",
+        "bytes": 24926,
+        "sha256": "dd0be42031715f7e657084d9db5f3a2c689ba1d111d5bc7ed7a014fc6103c5ca"
+      },
+      {
+        "path": "dist/assets/AiMacro-DKl1RGGS.css",
+        "bytes": 4156,
+        "sha256": "f502caf99bcb84baa55cd5acc695e961fea8aba8399a8fdff0391d5c50693cf2"
+      },
+      {
+        "path": "dist/assets/AiMacro-DN0IVUDb.js",
+        "bytes": 130802,
+        "sha256": "38be1a13c07586e14383ae5ba9bc44ebf36bee954c9bfc68afde37bb50832578"
+      },
+      {
+        "path": "dist/assets/DataWorkspace-G9XBl0eH.js",
+        "bytes": 11963,
+        "sha256": "722fc71ce549e2af91ad18859da483eb56dc39d933929fc3292a63dcf84a8994"
+      },
+      {
+        "path": "dist/assets/driver-data-Dnx55DHh.js",
+        "bytes": 188009,
+        "sha256": "4f9983a025466b7e03d9fe3328d143cabec9a2cdc68b57f65cf2a85c4611a627"
+      },
+      {
+        "path": "dist/assets/external-data-Dt7FE8Kp.js",
+        "bytes": 212387,
+        "sha256": "27569eed8ed2333ff580d9f259e10dda317a59299c66cd2e42eea742c60b0214"
+      },
+      {
+        "path": "dist/assets/ExternalShocks-D0DC33AK.js",
+        "bytes": 27520,
+        "sha256": "deee9f06268c27569096a653dfd7aaad133db239f85ac6dd291e888b0d462fdd"
+      },
+      {
+        "path": "dist/assets/global-data-DQlglTVl.js",
+        "bytes": 208652,
+        "sha256": "e06f372cdbca53357edf7296ee727f122a3e0dc3632614d78f168dc54de61ded"
+      },
+      {
+        "path": "dist/assets/index-CUBRHoWB.css",
+        "bytes": 88886,
+        "sha256": "4082c14adf27718c6083b72319d4b9d79a87514ca839d02c8d194da11cd936d8"
+      },
+      {
+        "path": "dist/assets/index-DV-ZWN6w.js",
+        "bytes": 877275,
+        "sha256": "924c387c707a09b639f3ece515c77d3f4f32529fe9e4e8235031c7b1de415dbb"
+      },
+      {
+        "path": "dist/assets/international-dollar-Bkp0WX3P.js",
+        "bytes": 1993,
+        "sha256": "1feb2ee0a88ee8c53c8e96902fba3e81f2aafc99fafd5848ea18e47c09d5c69c"
+      },
+      {
+        "path": "dist/assets/international-dollar-CssA8-FP.css",
+        "bytes": 1686,
+        "sha256": "fe967a689762dc09e537198fa51a2543e2e75c06bb39ff7637b50eeb629e4c01"
+      },
+      {
+        "path": "dist/assets/InternationalDollar-BXO9Hzgj.js",
+        "bytes": 10134,
+        "sha256": "232aa920e53faaf763c3e9917369906981e0a723d58c0575a4e5e82ceddb23c5"
+      },
+      {
+        "path": "dist/assets/internationalDollar-CzcTZfkN.js",
+        "bytes": 116022,
+        "sha256": "490ad0f0b9b71dde025f3b80b0f52ce520201733ceab53357d8fbaa9f1954c46"
+      },
+      {
+        "path": "dist/assets/internationalDollar-D94m21nF.js",
+        "bytes": 13774,
+        "sha256": "7cd265cb080b99f80326e2ca6aad191ddd63bf9368fe495bf4a3efe975153757"
+      },
+      {
+        "path": "dist/assets/InternationalRevisions-2OXpzXE_.js",
+        "bytes": 27928,
+        "sha256": "3d6bbdbdeaabc25b8445ae3f15991bcb46dc77f6062438d8cccf84748a20d673"
+      },
+      {
+        "path": "dist/assets/monitor-data-BYJidOgm.js",
+        "bytes": 1332515,
+        "sha256": "fc3c72f78521bd958921794cc04075b695276ecd834506189416cf063f2103c5"
+      },
+      {
+        "path": "dist/assets/productivity-data-B-SmjLsW.js",
+        "bytes": 280962,
+        "sha256": "d69568d63b08151c34d14e1ad3b7d1f489c2076345f96cba9f964f6f6efd977d"
+      },
+      {
+        "path": "dist/assets/researchLinks-D8kDPPXA.js",
+        "bytes": 2555,
+        "sha256": "9e55914911a71c3b9bee013bd8e89997e49ad9a9f74380ca99cda4e3b114dc10"
+      },
+      {
+        "path": "dist/assets/SectionLanding-CWZBAYfS.js",
+        "bytes": 16421,
+        "sha256": "6e8097f3bc2af7cfcfb32cd73e94a5e5a18fdbc8ab01fa3d096022a4e01df41e"
+      },
+      {
+        "path": "dist/assets/SignalEngine-Bd8B61LO.js",
+        "bytes": 4164,
+        "sha256": "757a33cbbe28f1bf079e80e0ed188adec4c006bd06dc454aa5ce7f6960e93e6e"
+      },
+      {
+        "path": "dist/assets/Sources-Dy-q4TY8.js",
+        "bytes": 13393,
+        "sha256": "061ff0b2e675ee61906939b67a2df1b15fe3f8e37426460c298c073b389b9476"
+      },
+      {
+        "path": "dist/assets/Transmission-BU1df0Lc.css",
+        "bytes": 2103,
+        "sha256": "9494ac428a4982386aefd625cf2b3c538a5300636597a1ea13422034e5cfd59a"
+      },
+      {
+        "path": "dist/assets/Transmission-CdlMpMB4.js",
+        "bytes": 30983,
+        "sha256": "d6528a13fc2e872de3ba58337a53902ad9943248271497d9f2a2cd1d83cc3591"
+      },
+      {
+        "path": "dist/assets/UpdateJournal-DIQN4Bur.js",
+        "bytes": 4495,
+        "sha256": "21aacf63814e1ab9e3358928ddcd472b2cbe9e9a9e7ba1e8f2723c64bd748ad9"
+      },
+      {
+        "path": "dist/assets/workspace-CXWQeTkK.js",
+        "bytes": 2735,
+        "sha256": "20a8da292fb060783bc74cbb67661b1fbd3b01713a7f40281562db696cfe1e48"
+      },
+      {
+        "path": "dist/assets/WorldMap-DKgQY5Hd.js",
+        "bytes": 267912,
+        "sha256": "552085c8483a36855c82f4f7615f7abb378223c827298d5486e7b06bc6c9a005"
+      },
+      {
+        "path": "dist/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+        "bytes": 4422270,
+        "sha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3"
+      },
+      {
+        "path": "dist/data/signal-engine/current.json",
+        "bytes": 362,
+        "sha256": "5f0d533e49b43d3a0be91bd9a2a4e2bd3c7483b50345224a0a31641aa963acbb"
+      },
+      {
+        "path": "dist/favicon.svg",
+        "bytes": 286,
+        "sha256": "efbe3ea4b25d5d5bf6d04bfe9e252facc919cf67b389b08a460a0b48a594f785"
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 1556,
+        "sha256": "a8157d074f84edd63a14f5aedadeaee4b43370b4a3e178d4ba75d3132c574f3b"
+      },
+      {
+        "path": "dist/README.md",
+        "bytes": 55,
+        "sha256": "1560841ef3c135a0932f509835828678c47aca381d583c85d6f2fa4a58289c79"
+      }
+    ],
+    "finalAuditCommit": "Only audit JSON is added after this build; final head will be rebuilt and browser/repository checks rerun before push. Record final build receipt in Draft PR."
+  },
+  "validationReport": "validation-results.json",
+  "productionProtection": [
+    "data/",
+    ".github/",
+    "research/",
+    "existing production modules outside seven reviewed anchors"
+  ],
+  "remainingRisks": [
+    {
+      "severity": "MEDIUM",
+      "issue": "Formal screen-reader acceptance deferred by owner; no WCAG claim"
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "Fixed-vintage observation endpoints differ; snapshot is not a live feed"
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "SPF10 underlying numerical redistribution unresolved; external-only boundary must remain"
+    },
+    {
+      "severity": "LOW",
+      "issue": "Deferred 4.42 MB static history; local timings are not remote performance guarantees"
+    },
+    {
+      "severity": "LOW",
+      "issue": "Existing large application chunks; no broad refactor in D3"
+    }
+  ],
+  "remainingBlockingHighIssues": [],
+  "mergeAuthorized": false,
+  "deploymentAuthorized": false,
+  "classification": "RELEASE PREPARED — OWNER APPROVAL REQUIRED"
+}

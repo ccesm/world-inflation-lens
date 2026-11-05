@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "D32_SCOPE_AUDIT_1",
+  "baseSHA": "f9f5ba54a6ec795938cdedd5a7e984aabeec97af",
+  "originalD3": "4f94726f7166542f42d046499748de00084b3b92",
+  "repairSHA": "39867318c27caf3f1d4b4af37289056b57f40278",
+  "auditedHead": "216d6af68e51cf7344bcd4040ad33c7b9fd4e46b",
+  "result": "PASS",
+  "protectedProductionFiles": 367,
+  "productionDataFiles": 32,
+  "productionDataIdentities": [
+    {
+      "path": "data/countries/README.md",
+      "sha256": "de9dbcdf4ad006d8ef3ffdab7a2772679d33b1fdb345b5500374947d1fce96a8"
+    },
+    {
+      "path": "data/countries/metadata.json",
+      "sha256": "72c7bb3460c2f2e93aec56a7f50dafe624895c73ac6cc72b3b77198705b40ad3"
+    },
+    {
+      "path": "data/countries/world.geo.json",
+      "sha256": "449c45d2c352e897647cbd67a5b72c26cb140e24a06fd5acf37e42e4d48de9a5"
+    },
+    {
+      "path": "data/digital-money/bank-deposits.json",
+      "sha256": "bd06d2e9a7ec0316b71590e85a2545292fd6c9bc6adcdc5d17a1ce2b079d2c05"
+    },
+    {
+      "path": "data/digital-money/source-excerpts.json",
+      "sha256": "ecd22450c9329c417e09b4f3aea47b7b571d14b4202024e4d2ee72cd3ec8a7a7"
+    },
+    {
+      "path": "data/digital-money/stablecoins.json",
+      "sha256": "0cf123d4a98f35f892d9603c080fca2e171e3b0337812dd316eb56cc65679df1"
+    },
+    {
+      "path": "data/digital-money/treasury-holdings.json",
+      "sha256": "f3aee159bec1a3c3e56d3372123fe0ee696a9258808af567aa618b64f6824502"
+    },
+    {
+      "path": "data/external/fao-food.json",
+      "sha256": "a57956a9b266c53f0274ecaade9aa0d09e4eb1cd8a5ab018d3955702c6151aa3"
+    },
+    {
+      "path": "data/external/gpr.json",
+      "sha256": "01a21ecc5640f75eb1f73441d9e3bda8e8a8f8befa436e60b29cde006cd4bf16"
+    },
+    {
+      "path": "data/external/gscpi.json",
+      "sha256": "7eee72fca7923670caa491cabe2d65a27fa1f0a9b6951f6da2ee8baea7c12674"
+    },
+    {
+      "path": "data/external/import-report.json",
+      "sha256": "8b91e053de9fe1ea4acc39722292e14abb4d37f0821d36f27bfa25427a8c1ac9"
+    },
+    {
+      "path": "data/external/sipri-military.json",
+      "sha256": "5dbc240112142e5d221b85b2140910c2ec1d0e3fcfacca3e01e6950bcfc922cd"
+    },
+    {
+      "path": "data/fiscal/cbo-2026-02.json",
+      "sha256": "356570b4ee143522beee0995e71cf51997fefff14feafec360b556c0fea7ca13"
+    },
+    {
+      "path": "data/fiscal/sources/historical-2026-02.csv",
+      "sha256": "8fee9c6ec249b8b1685a189edbb28cfa8233022f72fe4f65723eb886c7ac7309"
+    },
+    {
+      "path": "data/fiscal/sources/historical-schema.json",
+      "sha256": "b81d86470cca2cbb9aa53a86674cd25751c5a79c9d96a788188fb7b8d63fbc02"
+    },
+    {
+      "path": "data/fiscal/sources/long-term-2026-02.csv",
+      "sha256": "61018d3f4334c26a1704438e28c3b523b641c45549c8bf04c3890fd463f7a5f5"
+    },
+    {
+      "path": "data/fiscal/sources/long-term-schema.json",
+      "sha256": "86ab64b7f1e5a952d45626abb07f03f3682e174c2b23b60b2c44e9103ac04c50"
+    },
+    {
+      "path": "data/history/README.md",
+      "sha256": "1e8249e2e3f197d7c86e43da627da9bc0269d394829d7a6bad10f48c3c1b44c2"
+    },
+    {
+      "path": "data/history/events.json",
+      "sha256": "c3ed0e7b3155443fde742c27bc8f6f50b2411ff4cccf3677b2f2b4025d7550e0"
+    },
+    {
+      "path": "data/inflation/README.md",
+      "sha256": "6808fe85922317fc65e5013f55e8f6e1afbef5c6464c43786ecc69f333f2183d"
+    },
+    {
+      "path": "data/inflation/drivers.json",
+      "sha256": "1ab800c18db5d20f0d7888852c95a5f8488f96aa106acd0293438cb5fd947637"
+    },
+    {
+      "path": "data/inflation/fred.json",
+      "sha256": "fbd369c4af7cb9e010c84b0a12b970697256565b01a29d6f6de27b7deccbae78"
+    },
+    {
+      "path": "data/inflation/monitor.json",
+      "sha256": "50a8eb89156a996182b6c8d1de1cab9b4632c41fff7fd739dc4f8d39bd309d9e"
+    },
+    {
+      "path": "data/inflation/worldbank.json",
+      "sha256": "b3561ace71a7282e7f9d2229e14f8dede0a1b1121f4c61fa100391fdf6ccaf82"
+    },
+    {
+      "path": "data/international-dollar/global-dollar-credit.json",
+      "sha256": "69e33a4966f2402fe1d31a6a01bc3a4f0fe812bbf68d7c07285d2bdca65ec0fa"
+    },
+    {
+      "path": "data/international-dollar/reserve-composition.json",
+      "sha256": "36d3c10d7f95ce6736fafc79a060e2be1497963ee4b8ea8d1cce69f174e0e765"
+    },
+    {
+      "path": "data/international-dollar/revisions.json",
+      "sha256": "9586ff0122826206180f1736a238463da878eeac75c067b7aa9b05b16414f722"
+    },
+    {
+      "path": "data/international-dollar/summary.json",
+      "sha256": "1d8a13ae7c2d2b08d61208852a448fbec48144f1ca44a4e19d8185e0559e05ad"
+    },
+    {
+      "path": "data/international-dollar/treasury-holdings.json",
+      "sha256": "fbcbc0b1126ae02f26981d9f0bce80232133a6c430944df223e962fea940141c"
+    },
+    {
+      "path": "data/productivity/import-report.json",
+      "sha256": "685aa1e0481e2eb056d0d12136423ab7f1961f09bbdecd298da0fb75c7333f8a"
+    },
+    {
+      "path": "data/productivity/series.json",
+      "sha256": "2c0017f767fda53d7310f12be823be39efe475559edbebcbb0642d53896b9a03"
+    },
+    {
+      "path": "data/updates/history.json",
+      "sha256": "9291a2e879c385588a2e339467210be30741e5be2f09c11df795a653fd7185c9"
+    }
+  ],
+  "frozenMacroIdentities": [
+    {
+      "path": "docs/ai-macro-release/phase-d2-1/publication-policy.json",
+      "sha256": "be5d51462a8e39e494898df73e2d9c50b3520149e0a4df5e285bc6f8b91ff594",
+      "bytes": 16775
+    },
+    {
+      "path": "docs/ai-macro-release/phase-d2-1/publication-safety.mjs",
+      "sha256": "036a810f349148aebe43125ffa3ecb907bd4c9bf7e072298b82ec2f5f7101487",
+      "bytes": 2517
+    },
+    {
+      "path": "docs/ai-macro/redistribution-assessment.md",
+      "sha256": "e35b8b61df2964ec164e8d7111827fa708852c1447404799aeaee8bcdd851fad",
+      "bytes": 3379
+    },
+    {
+      "path": "docs/ai-macro/source-rights.json",
+      "sha256": "d5b11dfd8abdcc472c079833042fa2261a01dcc136da208d72f4e637934290f3",
+      "bytes": 17288
+    },
+    {
+      "path": "public/data/ai-macro/6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3/history.json",
+      "sha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+      "bytes": 4422270
+    },
+    {
+      "path": "scripts/ai-macro-projection.mjs",
+      "sha256": "635643c3e9320acb2b142c73bc324ef5d64097b91754beace32edfea4558b712",
+      "bytes": 9736
+    },
+    {
+      "path": "scripts/verify-ai-macro-browser.mjs",
+      "sha256": "c9826ebeae99694f34c80e37b3b5b32ba533199d764e25fb970bdb2eea95cabe",
+      "bytes": 10316
+    },
+    {
+      "path": "scripts/verify-ai-macro.mjs",
+      "sha256": "3b1e8cb65281557bfd737e32e83b2a1e5c5ebdcdcb6eb127cb73f35a6914ba1c",
+      "bytes": 378
+    },
+    {
+      "path": "src/ai-macro.css",
+      "sha256": "caf6cbbc8cb745d29f6bea2268002f7b6a7d8e09c2115bcba5ea26c7cb860c26",
+      "bytes": 4239
+    },
+    {
+      "path": "src/components/AiMacroChart.jsx",
+      "sha256": "d7d84c803c77825e940fca5a9c4c1d83d9f9457b6c3ac82097c5c6007f13e63a",
+      "bytes": 2100
+    },
+    {
+      "path": "src/data/ai-macro/contract.js",
+      "sha256": "61ac75243f36af85b5c57db0b793baa5fe53085ab3f84ad98d138e21da37b734",
+      "bytes": 8105
+    },
+    {
+      "path": "src/data/ai-macro/history.js",
+      "sha256": "f6fb170fea76397401e92e0f83ceb70656b069b82e1540de2e7ed624fc94d374",
+      "bytes": 1346
+    },
+    {
+      "path": "src/data/ai-macro/public-identity.json",
+      "sha256": "68dfb0c00c6c1b836ab844379ae1a1c734b8abb3728c4bca7201d62fd02f04f1",
+      "bytes": 305
+    },
+    {
+      "path": "src/data/ai-macro/summary.json",
+      "sha256": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+      "bytes": 93328
+    },
+    {
+      "path": "src/i18n/aiMacro.js",
+      "sha256": "1a640ebb482c4fc29cc3fcc696d86729c039fd77f8fd7a54652d2ec9c1c642a4",
+      "bytes": 18952
+    },
+    {
+      "path": "src/pages/AiMacro.jsx",
+      "sha256": "60c7ef7092fdb6d7e18aebedf4950e7ca0cf03003582bc7fd88656fc8c19211a",
+      "bytes": 9704
+    }
+  ],
+  "workflowsIdentical": true,
+  "signalProductionIdentical": true,
+  "permissionsIdentical": true
+}

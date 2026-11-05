@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "D3_RELEASE_POLICY_1",
+  "ownerInstructionDate": "2026-10-10",
+  "D21SourceSHA": "9c65c0cfdf1dc5ac02906a508a5bd9b3d61b29b3",
+  "productionBaseSHA": "4a10e16f2d956fc25262c55da16a10c8d36fedab",
+  "MANUAL_SCREEN_READER_ACCEPTANCE": "DEFERRED_BY_OWNER",
+  "ownerInformalCheck": "Owner reports brief informal VoiceOver check without obvious issue; full manual cases not completed",
+  "formalScreenReaderPass": false,
+  "WCAGConformanceClaim": false,
+  "remainingAccessibilityRisk": "Actual spoken reading order/live-announcement/new-tab behavior not fully accepted with assistive technology",
+  "SPF10PublicationMode": "EXTERNAL_SOURCE_ONLY",
+  "SPF10RedistributionRights": "UNRESOLVED",
+  "numericalSourcePermissionsRequired": true,
+  "draftPRPermitted": true,
+  "mergeAuthorized": false,
+  "deploymentAuthorized": false,
+  "newSchedulesAuthorized": false
+}

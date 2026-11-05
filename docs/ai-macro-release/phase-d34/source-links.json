@@ -1,0 +1,121 @@
+[
+  {
+    "url": "https://fred.stlouisfed.org/series/CPIAUCSL",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "The read operation timed out",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "Consumer Price Index for All Urban Consumers: All Items in U.S. City Average"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/series/DFII10",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "The read operation timed out",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity, Inflation-Indexed"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/series/NCBDBIQ027S",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "The read operation timed out",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "Nonfinancial Corporate Business; Debt Securities; Liability, Level"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/series/OPHNFB",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "The read operation timed out",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "Nonfarm Business Sector: Labor Productivity (Output per Hour)"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/series/PCEPILFE",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "The read operation timed out",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "Personal Consumption Expenditures Excluding Food and Energy (Chain-Type Price Index)"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/series/PNFIC1",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "The read operation timed out",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "Real Private Nonresidential Fixed Investment"
+  },
+  {
+    "url": "https://fred.stlouisfed.org/series/ULCNFB",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "[Errno 60] Operation timed out",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "Nonfarm Business Sector: Unit Labor Costs"
+  },
+  {
+    "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+    "http": 200,
+    "finalURL": "https://www.bea.gov/data/gdp/gross-domestic-product",
+    "title": "Gross Domestic Product | U.S. Bureau of Economic Analysis (BEA)",
+    "result": "PASS"
+  },
+  {
+    "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
+    "http": 200,
+    "finalURL": "https://www.bea.gov/data/personal-consumption-expenditures-price-index-excluding-food-and-energy",
+    "title": "Personal Consumption Expenditures Price Index, Excluding Food and Energy | U.S. Bureau of Economic Analysis (BEA)",
+    "result": "PASS"
+  },
+  {
+    "url": "https://www.bls.gov/cpi/",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "HTTP Error 403: Forbidden",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "CPI Home : U.S. Bureau of Labor Statistics"
+  },
+  {
+    "url": "https://www.bls.gov/productivity/",
+    "result": "PASS_CONTENT_RETRIEVAL",
+    "directHTTPAttempt": "HTTP Error 403: Forbidden",
+    "method": "Independent web retrieval, exact URL and dataset/page title; direct local HTTP attempt was blocked or timed out",
+    "title": "Productivity Home Page : U.S. Bureau of Labor Statistics"
+  },
+  {
+    "url": "https://www.census.gov/construction/c30/data/index.html",
+    "http": 200,
+    "finalURL": "https://www.census.gov/construction/c30/data/index.html",
+    "title": "Construction Spending - Data",
+    "result": "PASS"
+  },
+  {
+    "url": "https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm",
+    "http": 200,
+    "finalURL": "https://www.eia.gov/dnav/ng/hist/rngwhhdm.htm",
+    "title": "Henry Hub Natural Gas Spot Price (Dollars per Million Btu)",
+    "result": "PASS"
+  },
+  {
+    "url": "https://www.eia.gov/electricity/data/eia861m/",
+    "http": 200,
+    "finalURL": "https://www.eia.gov/electricity/data/eia861m/",
+    "title": "Form EIA-861M (formerly EIA-826) detailed data - U.S. Energy Information Administration (EIA)",
+    "result": "PASS"
+  },
+  {
+    "url": "https://www.federalreserve.gov/releases/h15/",
+    "http": 200,
+    "finalURL": "https://www.federalreserve.gov/releases/h15/",
+    "title": "Federal Reserve Board - H.15 - Selected Interest Rates (Daily) - October 16, 2026",
+    "result": "PASS"
+  },
+  {
+    "url": "https://www.federalreserve.gov/releases/z1/",
+    "http": 200,
+    "finalURL": "https://www.federalreserve.gov/releases/z1/",
+    "title": "The Fed - Financial Accounts of the United States - Z.1 - Current Release",
+    "result": "PASS"
+  },
+  {
+    "url": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts",
+    "http": 200,
+    "finalURL": "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/inflation-forecasts",
+    "title": "Short-Term and Long-Term Inflation Forecasts: Survey of Professional Forecasters",
+    "result": "PASS"
+  }
+]

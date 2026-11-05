@@ -1,4 +1,5 @@
 import test from 'node:test'
+import { vintageSandbox } from './signal-fixture.mjs'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -17,8 +18,24 @@ import { disclosureCategories } from '../signal-shadow-qualification.mjs'
 import { summaryFromRun } from '../lib/signalShadowSummary.mjs'
 
 const COMMIT = '21cdb441befc2e3b3a52011093603911a67d9a5f'
-// Accepted production baseline after the v1.1.0 release snapshot sync.
-const FEATURE_BASE = '7123887af80647a8c2298872b29e1f6697296c0f'
+// Bind preservation to the explicit checked-out commit, allowing later authorized releases/refreshes.
+const BASELINE = execFileSync('git', ['rev-parse', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim()
+const committed = file => execFileSync('git', ['show', `${BASELINE}:${file}`], { cwd: ROOT })
+const baselineVersion = JSON.parse(committed('package.json')).version
+const baselineEconomic = dataIdentity(ROOT, BASELINE)
+const baselineRefresh = sha256(committed('scripts/refresh-data.mjs'))
+function assertBaseline({ version, lockVersion, refreshHash, economicHash }) {
+  assert.equal(version, baselineVersion, 'preserve explicit checked-out application baseline')
+  assert.equal(lockVersion, baselineVersion, 'lock root must match application baseline')
+  assert.equal(refreshHash, baselineRefresh, 'preserve committed refresh implementation')
+  assert.equal(economicHash, baselineEconomic.hash, 'tests must preserve the current committed economic bundle')
+}
+const baselineState = () => ({
+  version: JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'))).version,
+  lockVersion: JSON.parse(fs.readFileSync(path.join(ROOT, 'package-lock.json'))).packages[''].version,
+  refreshHash: sha256(fs.readFileSync(path.join(ROOT, 'scripts/refresh-data.mjs'))),
+  economicHash: contentHash(baselineEconomic.files.map(f => ({ path: f.path, sha256: sha256(fs.readFileSync(path.join(ROOT, f.path))) }))),
+})
 const ACCEPTED = '2026-10-04T00:20:00.000Z', ASOF = '2026-10-04T00:21:00.000Z'
 const passed = () => [{ name: 'npm run build', result: 'PASS' }, { name: 'npm run verify', result: 'PASS' }]
 // This explicit mock proves adapter behavior, never live production acceptance.
@@ -42,23 +59,6 @@ function sandbox(seeded = true) {
 }
 const invoke = (store, options = {}) => runShadow({ ...invocation, store, runId: '101', ...options })
 const count = (root, dir) => fs.existsSync(path.join(root, dir)) ? fs.readdirSync(path.join(root, dir)).filter(f => f.endsWith('.json')).length : 0
-function vintageSandbox() {
-  const root = temp('wil-shadow-vintage-'), repo = path.join(root, 'repo'), store = new RestrictedStore(path.join(root, 'store'))
-  fs.mkdirSync(repo)
-  // Read-only history reference; all economic working files are independent.
-  fs.symlinkSync(path.join(ROOT, '.git'), path.join(repo, '.git'))
-  for (const folder of ['src', 'scripts', 'docs']) fs.cpSync(path.join(ROOT, folder), path.join(repo, folder), { recursive: true })
-  for (const name of ['package.json', 'package-lock.json', 'vite.config.js']) fs.copyFileSync(path.join(ROOT, name), path.join(repo, name))
-  for (const folder of ['engine', 'fixtures']) fs.cpSync(path.join(ROOT, 'research/signal-engine', folder), path.join(repo, 'research/signal-engine', folder), { recursive: true })
-  for (const name of ['signal-engine-v0.1-draft.json', 'output.schema.json', 'package-lock.json']) fs.copyFileSync(path.join(ROOT, 'research/signal-engine', name), path.join(repo, 'research/signal-engine', name))
-  const install = commit => {
-    for (const f of dataIdentity(ROOT, commit).files) {
-      const target = path.join(repo, f.path); fs.mkdirSync(path.dirname(target), { recursive: true })
-      fs.writeFileSync(target, execFileSync('git', ['show', `${commit}:${f.path}`], { cwd: ROOT, maxBuffer: 25_000_000 }))
-    }
-  }
-  return { root, repo, store, install, close: () => fs.rmSync(root, { recursive: true, force: true }) }
-}
 test.after(() => fs.rmSync(baselineRoot, { recursive: true, force: true }))
 
 test('PIPELINE validated accepted snapshot produces seven isolated factors and no aggregate', () => {
@@ -480,9 +480,18 @@ test('ISOLATION workflow shadow job cannot gate deployment/notifications; restri
   const shadow = yml.split('  signal-shadow:')[1].split('  deploy:')[0]
   assert(shadow.includes('needs: build')); assert(shadow.includes('continue-on-error: true')); assert(shadow.includes('--store')); assert(!/--private-archive|SIGNAL_ARCHIVE_REPOSITORY|SIGNAL_ARCHIVE_TOKEN/.test(shadow))
   assert(!shadow.includes('upload-artifact')); assert(!yml.split('  deploy:')[1].split('  notify:')[0].includes('signal-shadow'))
-  assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'))).version, '1.1.0')
+  assertBaseline(baselineState())
   assert(fs.readFileSync(path.join(ROOT, '.gitignore'), 'utf8').includes('research/signal-engine/production-artifacts/'))
   // Email now intentionally appends safe shadow health; its SMTP/isolation
   // behavior is independently protected by the notification summary tests.
-  assert.equal(execFileSync('git', ['diff', FEATURE_BASE, '--name-only', '--', 'data', 'scripts/refresh-data.mjs'], { cwd: ROOT }).toString(), '')
+  assertBaseline(baselineState())
+})
+
+for (const [name, change] of Object.entries({
+  'uncommitted application version': state => { state.version = '0.0.0-invalid' },
+  'mismatched lock version': state => { state.lockVersion = '0.0.0-invalid' },
+  'changed refresh implementation': state => { state.refreshHash = '0'.repeat(64) },
+  'changed economic bundle': state => { state.economicHash = '0'.repeat(64) },
+})) test(`ISOLATION baseline rejects ${name}`, () => {
+  const state = baselineState(); change(state); assert.throws(() => assertBaseline(state))
 })

@@ -1,0 +1,644 @@
+{
+  "schemaVersion": "D33_REVIEW_RESULTS_1",
+  "productionBase": "3dbf9353ada22cd33ac64ed158f3fd29e9ec3b66",
+  "implementation": "19e60397b547ff86a8c270f4eb91de67d13e984b",
+  "finalHead": "Resolve containing review commit with git rev-parse HEAD / PR #18 head",
+  "publicationIdentity": {
+    "copySha256": "6a0c365b2497cfa0c373aff5b0da8cbbc3c0f795eb6834339edfe9d1580e04b4",
+    "previousProjectionHash": "1a0a3e41fdb6b5ab3bfcfa4bfae1f6891dd4ce82b0d82e00142542932b02f13b",
+    "previousSummarySha256": "09247e08d0a45ee96c74cf6ce0646d21bc2ef3e32ff78feb271ff1db07a27688",
+    "protectedHistorySha256": "6bfbc2c89362cc39d3ddc7bd50044866d3251059998bcea76196878aa1dcfeb3",
+    "publicationId": "ai-macro-d33-2026-10-17",
+    "publicationSha256": "64295f79ed0d3d1e5f535a02e581718fd101abfd2108e96ea9373ce2aaec6f59",
+    "schemaVersion": "AI_MACRO_RESEARCH_IDENTITY_1",
+    "supersedesD32Commit": "4b0e48c418930ba0bf575a2629879bf1ea67a6cf"
+  },
+  "technical": "PASS",
+  "ownerReview": "GO",
+  "production": "NO_GO_OWNER_APPROVAL_REQUIRED",
+  "tests": {
+    "repositoryVerify": "PASS (18 entrypoints)",
+    "weeklyDigest": 34,
+    "aiCapex": 39,
+    "aiInfrastructure": 50,
+    "narrativeDefault": {
+      "pass": 43,
+      "skip": 1,
+      "fail": 0
+    },
+    "narrativeInternal": {
+      "pass": 51,
+      "skip": 0,
+      "fail": 0
+    },
+    "signalCore": {
+      "pass": 256,
+      "skip": 2,
+      "fail": 0
+    },
+    "signalPipelineArchive": {
+      "pass": 71,
+      "fail": 0
+    },
+    "signalPublic": {
+      "pass": 86,
+      "fail": 0
+    },
+    "macroBrowser": {
+      "schemaVersion": "D33_NARRATIVE_BROWSER_1",
+      "browser": "155.0.8059.82",
+      "url": "http://127.0.0.1:5198/world-inflation-lens/",
+      "classification": "PASS",
+      "results": [
+        {
+          "width": 320,
+          "language": "en",
+          "theme": "light",
+          "result": "PASS",
+          "renderMs": 1085,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 320,
+            "scroll": 320,
+            "offenders": []
+          }
+        },
+        {
+          "width": 320,
+          "language": "en",
+          "theme": "dark",
+          "result": "PASS",
+          "renderMs": 1036,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 320,
+            "scroll": 320,
+            "offenders": []
+          }
+        },
+        {
+          "width": 320,
+          "language": "zh",
+          "theme": "light",
+          "result": "PASS",
+          "renderMs": 580,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 320,
+            "scroll": 320,
+            "offenders": []
+          }
+        },
+        {
+          "width": 320,
+          "language": "zh",
+          "theme": "dark",
+          "result": "PASS",
+          "renderMs": 1002,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 320,
+            "scroll": 320,
+            "offenders": []
+          }
+        },
+        {
+          "width": 390,
+          "language": "en",
+          "theme": "light",
+          "result": "PASS",
+          "renderMs": 529,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 390,
+            "scroll": 390,
+            "offenders": []
+          }
+        },
+        {
+          "width": 390,
+          "language": "en",
+          "theme": "dark",
+          "result": "PASS",
+          "renderMs": 1000,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 390,
+            "scroll": 390,
+            "offenders": []
+          }
+        },
+        {
+          "width": 390,
+          "language": "zh",
+          "theme": "light",
+          "result": "PASS",
+          "renderMs": 1008,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 390,
+            "scroll": 390,
+            "offenders": []
+          }
+        },
+        {
+          "width": 390,
+          "language": "zh",
+          "theme": "dark",
+          "result": "PASS",
+          "renderMs": 1039,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 390,
+            "scroll": 390,
+            "offenders": []
+          }
+        },
+        {
+          "width": 1280,
+          "language": "en",
+          "theme": "light",
+          "result": "PASS",
+          "renderMs": 527,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 1280,
+            "scroll": 1280,
+            "offenders": []
+          }
+        },
+        {
+          "width": 1280,
+          "language": "en",
+          "theme": "dark",
+          "result": "PASS",
+          "renderMs": 1020,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 1280,
+            "scroll": 1280,
+            "offenders": []
+          }
+        },
+        {
+          "width": 1280,
+          "language": "zh",
+          "theme": "light",
+          "result": "PASS",
+          "renderMs": 1044,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 1280,
+            "scroll": 1280,
+            "offenders": []
+          }
+        },
+        {
+          "width": 1280,
+          "language": "zh",
+          "theme": "dark",
+          "result": "PASS",
+          "renderMs": 1064,
+          "historyRequests": 0,
+          "sourceConcepts": 12,
+          "keyboard": "Native details Space/Tab/Shift+Tab; provider visible focus; channel hash focus",
+          "overflow": {
+            "client": 1280,
+            "scroll": 1280,
+            "offenders": []
+          }
+        },
+        {
+          "directDeepLink": "PRODUCTIVITY",
+          "language": "en",
+          "result": "PASS",
+          "afterAuthentication": true
+        },
+        {
+          "directDeepLink": "PRODUCTIVITY",
+          "language": "zh",
+          "result": "PASS",
+          "afterAuthentication": true
+        },
+        {
+          "mode": "tampered_provenance",
+          "result": "PASS",
+          "unverifiedArticleWithheld": true,
+          "numericalFallback": false
+        },
+        {
+          "mode": "crypto_failure",
+          "result": "PASS",
+          "unverifiedArticleWithheld": true,
+          "numericalFallback": false
+        },
+        {
+          "legacyRoute": "home",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "dollar",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "fiscal",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "history",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "scenarios",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "purchasing-power",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "monitor",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "regimes",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "since-1971",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "drivers",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "us-cpi",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "timeline",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "overview",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "map",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "sources",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "external-shocks",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/ai-productivity",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/ai-labor",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/ai-capex",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/ai-infrastructure",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/digital-money",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/data",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/updates",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/international-dollar",
+          "result": "PASS"
+        },
+        {
+          "legacyRoute": "research/signal-engine",
+          "result": "PASS"
+        },
+        {
+          "oldHistoryAsset": "ABSENT",
+          "response": 200,
+          "note": "Preview may return HTML SPA fallback; no numerical data"
+        }
+      ],
+      "accessibility": [
+        {
+          "language": "en",
+          "result": "PASS",
+          "scope": "Named article/main landmarks, four research questions, native disclosure and provider-link keyboard focus",
+          "formalScreenReader": "DEFERRED_BY_OWNER"
+        },
+        {
+          "language": "zh",
+          "result": "PASS",
+          "scope": "Named article/main landmarks, four research questions, native disclosure and provider-link keyboard focus",
+          "formalScreenReader": "DEFERRED_BY_OWNER"
+        }
+      ],
+      "pageErrors": [],
+      "economicRuntimeRequests": [],
+      "formalScreenReader": "DEFERRED_BY_OWNER",
+      "execution": "Installed headless Chrome; local production build; no production performance or formal WCAG claim"
+    },
+    "existingBrowser": {
+      "result": "PASS",
+      "homeChecks": 12,
+      "routeChecks": 324,
+      "behaviors": 18,
+      "errors": []
+    },
+    "publicTree": {
+      "result": "PASS",
+      "files": [
+        {
+          "path": "data/signal-engine/current.json",
+          "bytes": 362,
+          "sha256": "5f0d533e49b43d3a0be91bd9a2a4e2bd3c7483b50345224a0a31641aa963acbb"
+        },
+        {
+          "path": "favicon.svg",
+          "bytes": 286,
+          "sha256": "efbe3ea4b25d5d5bf6d04bfe9e252facc919cf67b389b08a460a0b48a594f785"
+        },
+        {
+          "path": "README.md",
+          "bytes": 55,
+          "sha256": "1560841ef3c135a0932f509835828678c47aca381d583c85d6f2fa4a58289c79"
+        }
+      ],
+      "scope": "Excluded macro publication histories only; inherited economic modules remain"
+    },
+    "buildTree": {
+      "result": "PASS",
+      "files": [
+        {
+          "path": "assets/AiCapex-CyGBwTD3.css",
+          "bytes": 3263,
+          "sha256": "a7475287af576d50bd836becdb26a3a23dbf11cffec8eaf70e1b6276090fe9a5"
+        },
+        {
+          "path": "assets/AiCapex-v3aYyKgy.js",
+          "bytes": 150586,
+          "sha256": "2cc2ca98d0a70f18c5878cc354f5bc3244474132d1a370aa2d33877cceb49b5d"
+        },
+        {
+          "path": "assets/AiInfrastructure-Cm2Rsd9E.js",
+          "bytes": 96178,
+          "sha256": "e455988630c8fdba5478bac867328e459ed0af10aac8d1a27eab100b1234a89e"
+        },
+        {
+          "path": "assets/AiInfrastructure-Podoq5Ed.css",
+          "bytes": 9187,
+          "sha256": "98522175f24cb8b806d052753cb08e44472f74ff9c56a6b5cfab19b2a9bf08b7"
+        },
+        {
+          "path": "assets/AiLabor-CFt6e67F.css",
+          "bytes": 1494,
+          "sha256": "be49ce9c8e386f71fda0924cc2796ea84c7531f965cfc6cd4729f8da27bd79e4"
+        },
+        {
+          "path": "assets/AiLabor-DFjoyaad.js",
+          "bytes": 24926,
+          "sha256": "978a94c31ac2b5604d225a4f562be049c24a36a5a9b6f9209a9457a9ab128e1d"
+        },
+        {
+          "path": "assets/AiMacro-BQOHeDDX.css",
+          "bytes": 3148,
+          "sha256": "89cdceefabf2487e837a066ffd69bf794fb9f82fd1e1f2d368b15a780a1f788e"
+        },
+        {
+          "path": "assets/AiMacro-DAS3k_uF.js",
+          "bytes": 46453,
+          "sha256": "1e5871c7dc7d9dced09cbb0508434ff594af76c30c1011d67759dc85d7f2e7f1"
+        },
+        {
+          "path": "assets/DataWorkspace-DEdD2e1z.js",
+          "bytes": 11963,
+          "sha256": "5cfc4e3fdece95cdf5ce2cd7316690e9253902536c81737d345970e48c43b4ae"
+        },
+        {
+          "path": "assets/driver-data-BpQcH1wC.js",
+          "bytes": 188114,
+          "sha256": "428df46b5278685f1a8577dab3b32d40ebb9f0e48fe1cc307c1b0373aab7ebb2"
+        },
+        {
+          "path": "assets/external-data-D2cYa6WM.js",
+          "bytes": 212387,
+          "sha256": "2be5b2e8fc17366db9fd9fe61de3feb481400d261a3efe751a2e30788c1da0bd"
+        },
+        {
+          "path": "assets/ExternalShocks-wNL9yZbA.js",
+          "bytes": 27520,
+          "sha256": "52acb086a4526372e0f85da2fe4ad9a7239ddcddb2a3e020a84b7692edc38236"
+        },
+        {
+          "path": "assets/global-data-BpIugEh2.js",
+          "bytes": 208652,
+          "sha256": "5594b6f6a85d1841cef1b1ffab4d0bd9ac605de1802e8fd15bba45fdf4fdad2c"
+        },
+        {
+          "path": "assets/index-CMHWFVXH.js",
+          "bytes": 899786,
+          "sha256": "f9ed796e570c0cf1fd09d573e94726de055b5870c5ab47a2fae68b85d77dc132"
+        },
+        {
+          "path": "assets/index-CUBRHoWB.css",
+          "bytes": 88886,
+          "sha256": "4082c14adf27718c6083b72319d4b9d79a87514ca839d02c8d194da11cd936d8"
+        },
+        {
+          "path": "assets/international-dollar-C7m1agO8.js",
+          "bytes": 1993,
+          "sha256": "cedfa7b4326652494df484d26fe3ff96c52da483d0c9d368b08ccad54727ff56"
+        },
+        {
+          "path": "assets/international-dollar-CssA8-FP.css",
+          "bytes": 1686,
+          "sha256": "fe967a689762dc09e537198fa51a2543e2e75c06bb39ff7637b50eeb629e4c01"
+        },
+        {
+          "path": "assets/InternationalDollar-C7_vyWJQ.js",
+          "bytes": 10134,
+          "sha256": "11d1a25db8b24e5fceb776e07c7fd995b35a5a76dea3084ff42d15462da7b03b"
+        },
+        {
+          "path": "assets/internationalDollar-D94m21nF.js",
+          "bytes": 13774,
+          "sha256": "7cd265cb080b99f80326e2ca6aad191ddd63bf9368fe495bf4a3efe975153757"
+        },
+        {
+          "path": "assets/internationalDollar-DOWtGI5G.js",
+          "bytes": 116196,
+          "sha256": "3ab44c139bbaff5febf5a4c6ba9818a5127beb6c9b0380e77bceb8aca1f3e98b"
+        },
+        {
+          "path": "assets/InternationalRevisions-DoDG3MAn.js",
+          "bytes": 48245,
+          "sha256": "a79a961a206281d47cf92d5cac80f218aaa7c6f37448396720508613023e5a9d"
+        },
+        {
+          "path": "assets/monitor-data-DeXBq-xP.js",
+          "bytes": 1333272,
+          "sha256": "02b211dabdf55806bfdd5a0f449fa56f6876b723137b8d4e0f13b3ef3f1cd173"
+        },
+        {
+          "path": "assets/productivity-data-BF6PPvRR.js",
+          "bytes": 281069,
+          "sha256": "451cf8f0eb538823b48ece7046389d8b1ea0e26b2d0c13f7768ca41215e99d05"
+        },
+        {
+          "path": "assets/researchLinks-D8kDPPXA.js",
+          "bytes": 2555,
+          "sha256": "9e55914911a71c3b9bee013bd8e89997e49ad9a9f74380ca99cda4e3b114dc10"
+        },
+        {
+          "path": "assets/SectionLanding-ua7kuoUl.js",
+          "bytes": 16421,
+          "sha256": "2622efab34a4b9ee8702f6b678e999049f117ca738cf83a04ec8686badcfba09"
+        },
+        {
+          "path": "assets/SignalEngine-CvcHAxi6.js",
+          "bytes": 4164,
+          "sha256": "ec0082fce6dcefa391c395c49251dd3370e50ef3e88c6edb6f99f8d193e6f69a"
+        },
+        {
+          "path": "assets/Sources-DLPdrJE7.js",
+          "bytes": 13393,
+          "sha256": "b624727bf543bc934b5596d1222107b826e9f807211da44eefcae207e62a26f5"
+        },
+        {
+          "path": "assets/Transmission-BU1df0Lc.css",
+          "bytes": 2103,
+          "sha256": "9494ac428a4982386aefd625cf2b3c538a5300636597a1ea13422034e5cfd59a"
+        },
+        {
+          "path": "assets/Transmission-C4duu06O.js",
+          "bytes": 30983,
+          "sha256": "df5bcf884326b96c0080e1b46da50c3c5294b30dea8c0f8c062d89be8d1ab4d5"
+        },
+        {
+          "path": "assets/UpdateJournal-eeTpsUW0.js",
+          "bytes": 4495,
+          "sha256": "c71f8190f9930628f2897077ac2e24ed1112f82ff37af2607512c84ed113e1de"
+        },
+        {
+          "path": "assets/workspace-CXWQeTkK.js",
+          "bytes": 2735,
+          "sha256": "20a8da292fb060783bc74cbb67661b1fbd3b01713a7f40281562db696cfe1e48"
+        },
+        {
+          "path": "assets/WorldMap-DUmRXntK.js",
+          "bytes": 267912,
+          "sha256": "3e01067d1422207b333919aec73d18d70d1b3a50eb7d1ae14fa8c6e2e1ad27a5"
+        },
+        {
+          "path": "data/signal-engine/current.json",
+          "bytes": 362,
+          "sha256": "5f0d533e49b43d3a0be91bd9a2a4e2bd3c7483b50345224a0a31641aa963acbb"
+        },
+        {
+          "path": "favicon.svg",
+          "bytes": 286,
+          "sha256": "efbe3ea4b25d5d5bf6d04bfe9e252facc919cf67b389b08a460a0b48a594f785"
+        },
+        {
+          "path": "index.html",
+          "bytes": 1556,
+          "sha256": "e4ccc8455d45833518c5b3bbff6c9aedef78b1eb2479c2c59e6fa6dde41099b1"
+        },
+        {
+          "path": "README.md",
+          "bytes": 55,
+          "sha256": "1560841ef3c135a0932f509835828678c47aca381d583c85d6f2fa4a58289c79"
+        }
+      ],
+      "scope": "Excluded macro publication histories only; inherited economic modules remain"
+    }
+  },
+  "preservation": {
+    "originalC2Files": 198,
+    "originalC2Series": 36,
+    "originalC2Records": 12949,
+    "oldSubsetSeries": 35,
+    "oldSubsetRecords": 12722,
+    "oldSubsetMissing": 273,
+    "privateCopiesExcludedFromGit": true,
+    "historicalGitExposureUnchanged": true,
+    "productionDataFiles": 32,
+    "protectedProductionFiles": 368
+  },
+  "economicFiguresInNewPublication": 0,
+  "sourcePermissionsExpanded": false,
+  "formalScreenReader": "DEFERRED_BY_OWNER",
+  "WCAGClaim": false,
+  "security": {
+    "root": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "isolated": {
+      "info": 0,
+      "low": 0,
+      "moderate": 1,
+      "high": 0,
+      "critical": 0,
+      "total": 1
+    }
+  },
+  "actions": {
+    "merge": false,
+    "deploy": false,
+    "refresh": false,
+    "notifications": false,
+    "newAutomation": false,
+    "forcePush": false,
+    "historyRewrite": false
+  }
+}
