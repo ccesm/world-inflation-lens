@@ -1,7 +1,3893 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulCheck": "2026-11-05T08:27:15.486Z",
+  "lastSuccessfulCheck": "2026-11-07T14:50:31.453Z",
   "runs": [
+    {
+      "checkedAt": "2026-11-07T14:50:31.453Z",
+      "checkStartedAt": "2026-11-07T14:50:31.453Z",
+      "checkCompletedAt": "2026-11-07T14:51:15.840Z",
+      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/42383284650",
+      "changes": [
+        {
+          "id": "CPIAUCNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIUFDNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIENGNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "MCOILWTICO",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FEDFUNDS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CUUR0000SAH1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CEU0500000003",
+          "added": 1,
+          "filled": 0,
+          "revised": 1,
+          "withdrawn": 0,
+          "total": 2,
+          "examples": [
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 37.69,
+              "after": 37.74
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 37.93
+            }
+          ]
+        },
+        {
+          "id": "M2SL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "PCEPILFE",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "T5YIFR",
+          "added": 2,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 2,
+          "examples": [
+            {
+              "date": "2026-11-05",
+              "kind": "added",
+              "before": null,
+              "after": 2.22
+            },
+            {
+              "date": "2026-11-06",
+              "kind": "added",
+              "before": null,
+              "after": 2.17
+            }
+          ]
+        },
+        {
+          "id": "DGS10",
+          "added": 2,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 2,
+          "examples": [
+            {
+              "date": "2026-11-04",
+              "kind": "added",
+              "before": null,
+              "after": 4.9
+            },
+            {
+              "date": "2026-11-05",
+              "kind": "added",
+              "before": null,
+              "after": 4.84
+            }
+          ]
+        },
+        {
+          "id": "DFII10",
+          "added": 2,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 2,
+          "examples": [
+            {
+              "date": "2026-11-04",
+              "kind": "added",
+              "before": null,
+              "after": 2.64
+            },
+            {
+              "date": "2026-11-05",
+              "kind": "added",
+              "before": null,
+              "after": 2.6
+            }
+          ]
+        },
+        {
+          "id": "DTWEXBGS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "WALCL",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-11-04",
+              "kind": "added",
+              "before": null,
+              "after": 6748145
+            }
+          ]
+        },
+        {
+          "id": "FYPUGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFSGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYOINT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FP.CPI.TOTL.ZG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "GPR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GSCPI",
+          "added": 1,
+          "filled": 0,
+          "revised": 349,
+          "withdrawn": 0,
+          "total": 350,
+          "examples": [
+            {
+              "date": "1997-09",
+              "kind": "revised",
+              "before": -0.05,
+              "after": -0.567556727175814
+            },
+            {
+              "date": "1997-10",
+              "kind": "revised",
+              "before": -0.08,
+              "after": -0.440775745993572
+            },
+            {
+              "date": "1997-11",
+              "kind": "revised",
+              "before": -0.29,
+              "after": -0.78035966065985
+            },
+            {
+              "date": "1997-12",
+              "kind": "revised",
+              "before": -0.44,
+              "after": -1.08822352851235
+            },
+            {
+              "date": "1998-01",
+              "kind": "revised",
+              "before": -0.79,
+              "after": -1.17908966203628
+            },
+            {
+              "date": "1998-02",
+              "kind": "revised",
+              "before": -0.41,
+              "after": -0.489883457791449
+            },
+            {
+              "date": "1998-03",
+              "kind": "revised",
+              "before": -0.12,
+              "after": -0.0712277650622379
+            },
+            {
+              "date": "1998-04",
+              "kind": "revised",
+              "before": -0.22,
+              "after": -0.146183958776851
+            },
+            {
+              "date": "1998-05",
+              "kind": "revised",
+              "before": -0.48,
+              "after": -0.471055211336946
+            },
+            {
+              "date": "1998-06",
+              "kind": "revised",
+              "before": -0.76,
+              "after": -0.760774507395113
+            },
+            {
+              "date": "1998-07",
+              "kind": "revised",
+              "before": -0.97,
+              "after": -0.878491174415479
+            },
+            {
+              "date": "1998-08",
+              "kind": "revised",
+              "before": -0.86,
+              "after": -0.876296494782559
+            },
+            {
+              "date": "1998-09",
+              "kind": "revised",
+              "before": -0.94,
+              "after": -0.897392719663204
+            },
+            {
+              "date": "1998-10",
+              "kind": "revised",
+              "before": -0.78,
+              "after": -0.52812511110336
+            },
+            {
+              "date": "1998-11",
+              "kind": "revised",
+              "before": -0.86,
+              "after": -0.68364599715061
+            },
+            {
+              "date": "1998-12",
+              "kind": "revised",
+              "before": -0.67,
+              "after": -0.561277818406883
+            },
+            {
+              "date": "1999-01",
+              "kind": "revised",
+              "before": -0.39,
+              "after": -0.273089595604523
+            },
+            {
+              "date": "1999-02",
+              "kind": "revised",
+              "before": -0.06,
+              "after": -0.0748862359450205
+            },
+            {
+              "date": "1999-03",
+              "kind": "revised",
+              "before": -0.31,
+              "after": -0.300499875609847
+            },
+            {
+              "date": "1999-04",
+              "kind": "revised",
+              "before": -0.39,
+              "after": -0.257857291550447
+            }
+          ],
+          "changes": [
+            {
+              "date": "1997-09",
+              "kind": "revised",
+              "before": -0.05,
+              "after": -0.567556727175814
+            },
+            {
+              "date": "1997-10",
+              "kind": "revised",
+              "before": -0.08,
+              "after": -0.440775745993572
+            },
+            {
+              "date": "1997-11",
+              "kind": "revised",
+              "before": -0.29,
+              "after": -0.78035966065985
+            },
+            {
+              "date": "1997-12",
+              "kind": "revised",
+              "before": -0.44,
+              "after": -1.08822352851235
+            },
+            {
+              "date": "1998-01",
+              "kind": "revised",
+              "before": -0.79,
+              "after": -1.17908966203628
+            },
+            {
+              "date": "1998-02",
+              "kind": "revised",
+              "before": -0.41,
+              "after": -0.489883457791449
+            },
+            {
+              "date": "1998-03",
+              "kind": "revised",
+              "before": -0.12,
+              "after": -0.0712277650622379
+            },
+            {
+              "date": "1998-04",
+              "kind": "revised",
+              "before": -0.22,
+              "after": -0.146183958776851
+            },
+            {
+              "date": "1998-05",
+              "kind": "revised",
+              "before": -0.48,
+              "after": -0.471055211336946
+            },
+            {
+              "date": "1998-06",
+              "kind": "revised",
+              "before": -0.76,
+              "after": -0.760774507395113
+            },
+            {
+              "date": "1998-07",
+              "kind": "revised",
+              "before": -0.97,
+              "after": -0.878491174415479
+            },
+            {
+              "date": "1998-08",
+              "kind": "revised",
+              "before": -0.86,
+              "after": -0.876296494782559
+            },
+            {
+              "date": "1998-09",
+              "kind": "revised",
+              "before": -0.94,
+              "after": -0.897392719663204
+            },
+            {
+              "date": "1998-10",
+              "kind": "revised",
+              "before": -0.78,
+              "after": -0.52812511110336
+            },
+            {
+              "date": "1998-11",
+              "kind": "revised",
+              "before": -0.86,
+              "after": -0.68364599715061
+            },
+            {
+              "date": "1998-12",
+              "kind": "revised",
+              "before": -0.67,
+              "after": -0.561277818406883
+            },
+            {
+              "date": "1999-01",
+              "kind": "revised",
+              "before": -0.39,
+              "after": -0.273089595604523
+            },
+            {
+              "date": "1999-02",
+              "kind": "revised",
+              "before": -0.06,
+              "after": -0.0748862359450205
+            },
+            {
+              "date": "1999-03",
+              "kind": "revised",
+              "before": -0.31,
+              "after": -0.300499875609847
+            },
+            {
+              "date": "1999-04",
+              "kind": "revised",
+              "before": -0.39,
+              "after": -0.257857291550447
+            },
+            {
+              "date": "1999-05",
+              "kind": "revised",
+              "before": -0.46,
+              "after": -0.41697147531371
+            },
+            {
+              "date": "1999-06",
+              "kind": "revised",
+              "before": -0.44,
+              "after": -0.396744423518711
+            },
+            {
+              "date": "1999-07",
+              "kind": "revised",
+              "before": -0.69,
+              "after": -0.69035738943052
+            },
+            {
+              "date": "1999-08",
+              "kind": "revised",
+              "before": -0.58,
+              "after": -0.528467254685505
+            },
+            {
+              "date": "1999-09",
+              "kind": "revised",
+              "before": -0.47,
+              "after": -0.434618101069741
+            },
+            {
+              "date": "1999-10",
+              "kind": "revised",
+              "before": -0.23,
+              "after": -0.252332122237393
+            },
+            {
+              "date": "1999-11",
+              "kind": "revised",
+              "before": -0.29,
+              "after": -0.290374158305099
+            },
+            {
+              "date": "1999-12",
+              "kind": "revised",
+              "before": -0.3,
+              "after": -0.246344741603555
+            },
+            {
+              "date": "2000-01",
+              "kind": "revised",
+              "before": -0.65,
+              "after": -0.605623836218001
+            },
+            {
+              "date": "2000-02",
+              "kind": "revised",
+              "before": -0.43,
+              "after": -0.430568473320916
+            },
+            {
+              "date": "2000-03",
+              "kind": "revised",
+              "before": -0.35,
+              "after": -0.324206008861888
+            },
+            {
+              "date": "2000-04",
+              "kind": "revised",
+              "before": 0.08,
+              "after": 0.0055173118430199
+            },
+            {
+              "date": "2000-05",
+              "kind": "revised",
+              "before": 0.24,
+              "after": 0.221365457990782
+            },
+            {
+              "date": "2000-06",
+              "kind": "revised",
+              "before": 0,
+              "after": 0.0402017144058976
+            },
+            {
+              "date": "2000-07",
+              "kind": "revised",
+              "before": -0.02,
+              "after": 0.0206148934882662
+            },
+            {
+              "date": "2000-08",
+              "kind": "revised",
+              "before": 0.05,
+              "after": 0.113272811539951
+            },
+            {
+              "date": "2000-09",
+              "kind": "revised",
+              "before": 0.03,
+              "after": 0.0524044725778008
+            },
+            {
+              "date": "2000-10",
+              "kind": "revised",
+              "before": -0.44,
+              "after": -0.467021858125351
+            },
+            {
+              "date": "2000-11",
+              "kind": "revised",
+              "before": -0.64,
+              "after": -0.692058057916704
+            },
+            {
+              "date": "2000-12",
+              "kind": "revised",
+              "before": -0.87,
+              "after": -0.901867624178092
+            },
+            {
+              "date": "2001-01",
+              "kind": "revised",
+              "before": -0.79,
+              "after": -0.841541758034026
+            },
+            {
+              "date": "2001-02",
+              "kind": "revised",
+              "before": -0.73,
+              "after": -0.687153204439158
+            },
+            {
+              "date": "2001-03",
+              "kind": "revised",
+              "before": -0.5,
+              "after": -0.541091749033013
+            },
+            {
+              "date": "2001-04",
+              "kind": "revised",
+              "before": -0.86,
+              "after": -0.87735729015438
+            },
+            {
+              "date": "2001-05",
+              "kind": "revised",
+              "before": -1.01,
+              "after": -0.982579149000282
+            },
+            {
+              "date": "2001-06",
+              "kind": "revised",
+              "before": -0.65,
+              "after": -0.661144555800644
+            },
+            {
+              "date": "2001-07",
+              "kind": "revised",
+              "before": -0.6,
+              "after": -0.787314900078366
+            },
+            {
+              "date": "2001-08",
+              "kind": "revised",
+              "before": -0.63,
+              "after": -0.758768547629254
+            },
+            {
+              "date": "2001-09",
+              "kind": "revised",
+              "before": -0.61,
+              "after": -0.656267776506335
+            },
+            {
+              "date": "2001-10",
+              "kind": "revised",
+              "before": -1.01,
+              "after": -1.03382735148683
+            },
+            {
+              "date": "2001-11",
+              "kind": "revised",
+              "before": -1.24,
+              "after": -1.30684970969752
+            },
+            {
+              "date": "2001-12",
+              "kind": "revised",
+              "before": -1.1,
+              "after": -1.18407184288302
+            },
+            {
+              "date": "2002-01",
+              "kind": "revised",
+              "before": -0.78,
+              "after": -1.00775945555317
+            },
+            {
+              "date": "2002-02",
+              "kind": "revised",
+              "before": -0.39,
+              "after": -0.575709084767771
+            },
+            {
+              "date": "2002-03",
+              "kind": "revised",
+              "before": -0.42,
+              "after": -0.51344768237844
+            },
+            {
+              "date": "2002-04",
+              "kind": "revised",
+              "before": -0.57,
+              "after": -0.711029438490329
+            },
+            {
+              "date": "2002-05",
+              "kind": "revised",
+              "before": -0.32,
+              "after": -0.414332039221104
+            },
+            {
+              "date": "2002-06",
+              "kind": "revised",
+              "before": -0.64,
+              "after": -0.663898771030633
+            },
+            {
+              "date": "2002-07",
+              "kind": "revised",
+              "before": -0.94,
+              "after": -0.975565737944
+            },
+            {
+              "date": "2002-08",
+              "kind": "revised",
+              "before": -1.06,
+              "after": -1.09506495470758
+            },
+            {
+              "date": "2002-09",
+              "kind": "revised",
+              "before": -1.13,
+              "after": -1.13574716484996
+            },
+            {
+              "date": "2002-10",
+              "kind": "revised",
+              "before": -1.21,
+              "after": -1.22346288574505
+            },
+            {
+              "date": "2002-11",
+              "kind": "revised",
+              "before": -0.76,
+              "after": -0.723386274530399
+            },
+            {
+              "date": "2002-12",
+              "kind": "revised",
+              "before": -0.72,
+              "after": -0.679078927202881
+            },
+            {
+              "date": "2003-01",
+              "kind": "revised",
+              "before": -0.65,
+              "after": -0.600120760100506
+            },
+            {
+              "date": "2003-02",
+              "kind": "revised",
+              "before": -0.34,
+              "after": -0.309907565519768
+            },
+            {
+              "date": "2003-03",
+              "kind": "revised",
+              "before": -0.37,
+              "after": -0.334095615864187
+            },
+            {
+              "date": "2003-04",
+              "kind": "revised",
+              "before": -0.63,
+              "after": -0.520751761940859
+            },
+            {
+              "date": "2003-05",
+              "kind": "revised",
+              "before": -0.29,
+              "after": -0.143428835334824
+            },
+            {
+              "date": "2003-06",
+              "kind": "revised",
+              "before": -0.19,
+              "after": -0.127728908064347
+            },
+            {
+              "date": "2003-07",
+              "kind": "revised",
+              "before": -0.11,
+              "after": -0.0405319255692589
+            },
+            {
+              "date": "2003-08",
+              "kind": "revised",
+              "before": -0.16,
+              "after": -0.100289270155943
+            },
+            {
+              "date": "2003-09",
+              "kind": "revised",
+              "before": -0.05,
+              "after": 0.0251054357278837
+            },
+            {
+              "date": "2003-10",
+              "kind": "revised",
+              "before": -0.45,
+              "after": -0.351594793991498
+            },
+            {
+              "date": "2003-11",
+              "kind": "revised",
+              "before": -0.59,
+              "after": -0.519041669377797
+            },
+            {
+              "date": "2003-12",
+              "kind": "revised",
+              "before": -0.5,
+              "after": -0.435905319568732
+            },
+            {
+              "date": "2004-01",
+              "kind": "revised",
+              "before": -0.7,
+              "after": -0.562943856994921
+            },
+            {
+              "date": "2004-02",
+              "kind": "revised",
+              "before": -0.56,
+              "after": -0.434713611768209
+            },
+            {
+              "date": "2004-03",
+              "kind": "revised",
+              "before": -0.12,
+              "after": -0.0922300650432493
+            },
+            {
+              "date": "2004-04",
+              "kind": "revised",
+              "before": 0.3,
+              "after": 0.282800267218133
+            },
+            {
+              "date": "2004-05",
+              "kind": "revised",
+              "before": 0.28,
+              "after": 0.231869038015575
+            },
+            {
+              "date": "2004-06",
+              "kind": "revised",
+              "before": 0.32,
+              "after": 0.346562302591494
+            },
+            {
+              "date": "2004-07",
+              "kind": "revised",
+              "before": -0.61,
+              "after": -0.562699417196411
+            },
+            {
+              "date": "2004-08",
+              "kind": "revised",
+              "before": -0.03,
+              "after": 0.0386687394771976
+            },
+            {
+              "date": "2004-09",
+              "kind": "revised",
+              "before": -0.11,
+              "after": -0.0747709599707058
+            },
+            {
+              "date": "2004-10",
+              "kind": "revised",
+              "before": -0.67,
+              "after": -0.666267395792473
+            },
+            {
+              "date": "2004-11",
+              "kind": "revised",
+              "before": -0.15,
+              "after": -0.0609753592599062
+            },
+            {
+              "date": "2004-12",
+              "kind": "revised",
+              "before": 0.02,
+              "after": 0.0659316649606848
+            },
+            {
+              "date": "2005-01",
+              "kind": "revised",
+              "before": -0.2,
+              "after": -0.193300514941426
+            },
+            {
+              "date": "2005-02",
+              "kind": "revised",
+              "before": -0.26,
+              "after": -0.248129820177997
+            },
+            {
+              "date": "2005-03",
+              "kind": "revised",
+              "before": -0.38,
+              "after": -0.347659283043624
+            },
+            {
+              "date": "2005-04",
+              "kind": "revised",
+              "before": -1.41,
+              "after": -1.38412893663909
+            },
+            {
+              "date": "2005-05",
+              "kind": "revised",
+              "before": -1.06,
+              "after": -1.03447922552373
+            },
+            {
+              "date": "2005-06",
+              "kind": "revised",
+              "before": -0.95,
+              "after": -0.971748178211138
+            },
+            {
+              "date": "2005-07",
+              "kind": "revised",
+              "before": -0.82,
+              "after": -0.961286412566123
+            },
+            {
+              "date": "2005-08",
+              "kind": "revised",
+              "before": -0.53,
+              "after": -0.594595168958684
+            },
+            {
+              "date": "2005-09",
+              "kind": "revised",
+              "before": 0.04,
+              "after": 0.00381891375494729
+            },
+            {
+              "date": "2005-10",
+              "kind": "revised",
+              "before": -0.02,
+              "after": -0.180008459349809
+            },
+            {
+              "date": "2005-11",
+              "kind": "revised",
+              "before": -0.49,
+              "after": -0.76250312221521
+            },
+            {
+              "date": "2005-12",
+              "kind": "revised",
+              "before": -0.61,
+              "after": -0.864750219866122
+            },
+            {
+              "date": "2006-01",
+              "kind": "revised",
+              "before": -0.3,
+              "after": -0.529956177238557
+            },
+            {
+              "date": "2006-02",
+              "kind": "revised",
+              "before": -0.69,
+              "after": -0.905920356863833
+            },
+            {
+              "date": "2006-03",
+              "kind": "revised",
+              "before": -0.34,
+              "after": -0.513817735605458
+            },
+            {
+              "date": "2006-04",
+              "kind": "revised",
+              "before": 0.11,
+              "after": -0.000310988701216721
+            },
+            {
+              "date": "2006-05",
+              "kind": "revised",
+              "before": 0.04,
+              "after": 0.0592037520849241
+            },
+            {
+              "date": "2006-06",
+              "kind": "revised",
+              "before": 0.15,
+              "after": 0.112733342561798
+            },
+            {
+              "date": "2006-07",
+              "kind": "revised",
+              "before": -0.13,
+              "after": -0.131013293694868
+            },
+            {
+              "date": "2006-08",
+              "kind": "revised",
+              "before": 0.05,
+              "after": 0.0426752261089499
+            },
+            {
+              "date": "2006-09",
+              "kind": "revised",
+              "before": -0.68,
+              "after": -0.668433972506138
+            },
+            {
+              "date": "2006-10",
+              "kind": "revised",
+              "before": -0.53,
+              "after": -0.536237208604724
+            },
+            {
+              "date": "2006-11",
+              "kind": "revised",
+              "before": -0.28,
+              "after": -0.259147334311382
+            },
+            {
+              "date": "2006-12",
+              "kind": "revised",
+              "before": -0.5,
+              "after": -0.486389876867314
+            },
+            {
+              "date": "2007-01",
+              "kind": "revised",
+              "before": -0.87,
+              "after": -0.897241258829883
+            },
+            {
+              "date": "2007-02",
+              "kind": "revised",
+              "before": -0.73,
+              "after": -0.732474480467672
+            },
+            {
+              "date": "2007-03",
+              "kind": "revised",
+              "before": -0.62,
+              "after": -0.597007354058276
+            },
+            {
+              "date": "2007-04",
+              "kind": "revised",
+              "before": -0.87,
+              "after": -0.854835451984454
+            },
+            {
+              "date": "2007-05",
+              "kind": "revised",
+              "before": -0.45,
+              "after": -0.439864637037235
+            },
+            {
+              "date": "2007-06",
+              "kind": "revised",
+              "before": -0.42,
+              "after": -0.413594989666594
+            },
+            {
+              "date": "2007-07",
+              "kind": "revised",
+              "before": -0.49,
+              "after": -0.471316771658582
+            },
+            {
+              "date": "2007-08",
+              "kind": "revised",
+              "before": -0.15,
+              "after": -0.147463463313642
+            },
+            {
+              "date": "2007-09",
+              "kind": "revised",
+              "before": -0.07,
+              "after": -0.0581745632430359
+            },
+            {
+              "date": "2007-10",
+              "kind": "revised",
+              "before": -0.69,
+              "after": -0.649256604355341
+            },
+            {
+              "date": "2007-11",
+              "kind": "revised",
+              "before": -0.59,
+              "after": -0.539772048180683
+            },
+            {
+              "date": "2007-12",
+              "kind": "revised",
+              "before": -0.2,
+              "after": -0.190184801809637
+            },
+            {
+              "date": "2008-01",
+              "kind": "revised",
+              "before": -0.45,
+              "after": -0.421038934912908
+            },
+            {
+              "date": "2008-02",
+              "kind": "revised",
+              "before": 0.37,
+              "after": 0.389207167355423
+            },
+            {
+              "date": "2008-03",
+              "kind": "revised",
+              "before": 0.1,
+              "after": 0.11728232603737
+            },
+            {
+              "date": "2008-04",
+              "kind": "revised",
+              "before": 0.11,
+              "after": 0.126414749082272
+            },
+            {
+              "date": "2008-05",
+              "kind": "revised",
+              "before": -0.14,
+              "after": -0.141334425170162
+            },
+            {
+              "date": "2008-06",
+              "kind": "revised",
+              "before": 0.24,
+              "after": 0.263180962768422
+            },
+            {
+              "date": "2008-07",
+              "kind": "revised",
+              "before": 0.94,
+              "after": 0.988616827302846
+            },
+            {
+              "date": "2008-08",
+              "kind": "revised",
+              "before": 0.29,
+              "after": 0.283704440876717
+            },
+            {
+              "date": "2008-09",
+              "kind": "revised",
+              "before": -0.49,
+              "after": -0.522165979890161
+            },
+            {
+              "date": "2008-10",
+              "kind": "revised",
+              "before": -0.8,
+              "after": -0.950518423808237
+            },
+            {
+              "date": "2008-11",
+              "kind": "revised",
+              "before": -1.39,
+              "after": -1.45296360863187
+            },
+            {
+              "date": "2008-12",
+              "kind": "revised",
+              "before": -0.64,
+              "after": -0.609717008317987
+            },
+            {
+              "date": "2009-01",
+              "kind": "revised",
+              "before": -0.35,
+              "after": -0.371427838652882
+            },
+            {
+              "date": "2009-02",
+              "kind": "revised",
+              "before": -0.35,
+              "after": -0.449523873648806
+            },
+            {
+              "date": "2009-03",
+              "kind": "revised",
+              "before": 0.23,
+              "after": 0.166434575598331
+            },
+            {
+              "date": "2009-04",
+              "kind": "revised",
+              "before": 0.76,
+              "after": 0.807544638608588
+            },
+            {
+              "date": "2009-05",
+              "kind": "revised",
+              "before": 0.24,
+              "after": 0.283018585198092
+            },
+            {
+              "date": "2009-06",
+              "kind": "revised",
+              "before": -0.54,
+              "after": -0.561571002112628
+            },
+            {
+              "date": "2009-07",
+              "kind": "revised",
+              "before": -0.81,
+              "after": -0.81673484175504
+            },
+            {
+              "date": "2009-08",
+              "kind": "revised",
+              "before": -1.22,
+              "after": -1.19775083621181
+            },
+            {
+              "date": "2009-09",
+              "kind": "revised",
+              "before": -0.62,
+              "after": -0.557804069879127
+            },
+            {
+              "date": "2009-10",
+              "kind": "revised",
+              "before": -0.63,
+              "after": -0.513312210830724
+            },
+            {
+              "date": "2009-11",
+              "kind": "revised",
+              "before": -0.92,
+              "after": -0.844686161563336
+            },
+            {
+              "date": "2009-12",
+              "kind": "revised",
+              "before": -0.73,
+              "after": -0.66646853931206
+            },
+            {
+              "date": "2010-01",
+              "kind": "revised",
+              "before": -0.41,
+              "after": -0.359811815414445
+            },
+            {
+              "date": "2010-02",
+              "kind": "revised",
+              "before": -0.2,
+              "after": -0.201855164467609
+            },
+            {
+              "date": "2010-03",
+              "kind": "revised",
+              "before": 0.27,
+              "after": 0.29771359180291
+            },
+            {
+              "date": "2010-04",
+              "kind": "revised",
+              "before": 0.21,
+              "after": 0.219903756448429
+            },
+            {
+              "date": "2010-05",
+              "kind": "revised",
+              "before": 0.43,
+              "after": 0.37965807791797
+            },
+            {
+              "date": "2010-06",
+              "kind": "revised",
+              "before": -0.01,
+              "after": -0.0637213939232992
+            },
+            {
+              "date": "2010-07",
+              "kind": "revised",
+              "before": -0.07,
+              "after": -0.0842494913063859
+            },
+            {
+              "date": "2010-08",
+              "kind": "revised",
+              "before": 0.24,
+              "after": 0.284678436396006
+            },
+            {
+              "date": "2010-09",
+              "kind": "revised",
+              "before": 0.3,
+              "after": 0.335977642102818
+            },
+            {
+              "date": "2010-10",
+              "kind": "revised",
+              "before": 0.59,
+              "after": 0.649106494208529
+            },
+            {
+              "date": "2010-11",
+              "kind": "revised",
+              "before": 0.42,
+              "after": 0.40257120169853
+            },
+            {
+              "date": "2010-12",
+              "kind": "revised",
+              "before": 0.69,
+              "after": 0.658757342445589
+            },
+            {
+              "date": "2011-01",
+              "kind": "revised",
+              "before": 0.72,
+              "after": 0.714110197056662
+            },
+            {
+              "date": "2011-02",
+              "kind": "revised",
+              "before": 0.3,
+              "after": 0.29489143159734
+            },
+            {
+              "date": "2011-03",
+              "kind": "revised",
+              "before": 0.68,
+              "after": 0.680943058731338
+            },
+            {
+              "date": "2011-04",
+              "kind": "revised",
+              "before": 1.55,
+              "after": 1.56266392986775
+            },
+            {
+              "date": "2011-05",
+              "kind": "revised",
+              "before": 0.89,
+              "after": 0.896563553250927
+            },
+            {
+              "date": "2011-06",
+              "kind": "revised",
+              "before": 0.16,
+              "after": 0.187205429861114
+            },
+            {
+              "date": "2011-07",
+              "kind": "revised",
+              "before": 0.23,
+              "after": 0.27142779750829
+            },
+            {
+              "date": "2011-08",
+              "kind": "revised",
+              "before": -0.14,
+              "after": -0.1317445620439
+            },
+            {
+              "date": "2011-09",
+              "kind": "revised",
+              "before": -0.53,
+              "after": -0.562001905495806
+            },
+            {
+              "date": "2011-10",
+              "kind": "revised",
+              "before": -0.36,
+              "after": -0.390444300498667
+            },
+            {
+              "date": "2011-11",
+              "kind": "revised",
+              "before": 0.12,
+              "after": 0.140716328355547
+            },
+            {
+              "date": "2011-12",
+              "kind": "revised",
+              "before": -0.05,
+              "after": -0.0596185947685707
+            },
+            {
+              "date": "2012-01",
+              "kind": "revised",
+              "before": 0.35,
+              "after": 0.347779826899711
+            },
+            {
+              "date": "2012-02",
+              "kind": "revised",
+              "before": -0.03,
+              "after": -0.0243995186051353
+            },
+            {
+              "date": "2012-03",
+              "kind": "revised",
+              "before": -0.37,
+              "after": -0.394313712293201
+            },
+            {
+              "date": "2012-04",
+              "kind": "revised",
+              "before": -0.36,
+              "after": -0.339910694546763
+            },
+            {
+              "date": "2012-05",
+              "kind": "revised",
+              "before": -0.7,
+              "after": -0.693857842255315
+            },
+            {
+              "date": "2012-06",
+              "kind": "revised",
+              "before": -0.73,
+              "after": -0.712660898849731
+            },
+            {
+              "date": "2012-07",
+              "kind": "revised",
+              "before": -0.73,
+              "after": -0.684318821802621
+            },
+            {
+              "date": "2012-08",
+              "kind": "revised",
+              "before": -0.18,
+              "after": -0.152665904713399
+            },
+            {
+              "date": "2012-09",
+              "kind": "revised",
+              "before": -0.29,
+              "after": -0.270025119084447
+            },
+            {
+              "date": "2012-10",
+              "kind": "revised",
+              "before": -0.05,
+              "after": -0.026095907722834
+            },
+            {
+              "date": "2012-11",
+              "kind": "revised",
+              "before": -0.4,
+              "after": -0.372285271112459
+            },
+            {
+              "date": "2012-12",
+              "kind": "revised",
+              "before": -0.17,
+              "after": -0.171393999000574
+            },
+            {
+              "date": "2013-01",
+              "kind": "revised",
+              "before": -0.08,
+              "after": -0.0846633706203544
+            },
+            {
+              "date": "2013-02",
+              "kind": "revised",
+              "before": -0.39,
+              "after": -0.405663114265216
+            },
+            {
+              "date": "2013-03",
+              "kind": "revised",
+              "before": -0.56,
+              "after": -0.568792066058353
+            },
+            {
+              "date": "2013-04",
+              "kind": "revised",
+              "before": -0.74,
+              "after": -0.760652435662028
+            },
+            {
+              "date": "2013-05",
+              "kind": "revised",
+              "before": -0.89,
+              "after": -0.881204263518109
+            },
+            {
+              "date": "2013-06",
+              "kind": "revised",
+              "before": -0.71,
+              "after": -0.695399181379114
+            },
+            {
+              "date": "2013-07",
+              "kind": "revised",
+              "before": -0.71,
+              "after": -0.688909101801842
+            },
+            {
+              "date": "2013-08",
+              "kind": "revised",
+              "before": -0.65,
+              "after": -0.612967408289951
+            },
+            {
+              "date": "2013-09",
+              "kind": "revised",
+              "before": -0.39,
+              "after": -0.315778960698491
+            },
+            {
+              "date": "2013-10",
+              "kind": "revised",
+              "before": -0.27,
+              "after": -0.223763265503399
+            },
+            {
+              "date": "2013-11",
+              "kind": "revised",
+              "before": -0.76,
+              "after": -0.731623950371791
+            },
+            {
+              "date": "2013-12",
+              "kind": "revised",
+              "before": -0.57,
+              "after": -0.536600554980115
+            },
+            {
+              "date": "2014-01",
+              "kind": "revised",
+              "before": -0.68,
+              "after": -0.666991440786661
+            },
+            {
+              "date": "2014-02",
+              "kind": "revised",
+              "before": -0.35,
+              "after": -0.314245151245575
+            },
+            {
+              "date": "2014-03",
+              "kind": "revised",
+              "before": -0.69,
+              "after": -0.648318521819508
+            },
+            {
+              "date": "2014-04",
+              "kind": "revised",
+              "before": -0.9,
+              "after": -0.839450438366155
+            },
+            {
+              "date": "2014-05",
+              "kind": "revised",
+              "before": -0.91,
+              "after": -0.856704104557204
+            },
+            {
+              "date": "2014-06",
+              "kind": "revised",
+              "before": -0.76,
+              "after": -0.729374215055026
+            },
+            {
+              "date": "2014-07",
+              "kind": "revised",
+              "before": -0.87,
+              "after": -0.845853418493088
+            },
+            {
+              "date": "2014-08",
+              "kind": "revised",
+              "before": -0.69,
+              "after": -0.667011435257073
+            },
+            {
+              "date": "2014-09",
+              "kind": "revised",
+              "before": -0.83,
+              "after": -0.849793298735094
+            },
+            {
+              "date": "2014-10",
+              "kind": "revised",
+              "before": -0.61,
+              "after": -0.620605280338484
+            },
+            {
+              "date": "2014-11",
+              "kind": "revised",
+              "before": -0.95,
+              "after": -1.00591659025247
+            },
+            {
+              "date": "2014-12",
+              "kind": "revised",
+              "before": -0.4,
+              "after": -0.435718768840701
+            },
+            {
+              "date": "2015-01",
+              "kind": "revised",
+              "before": -0.55,
+              "after": -0.5431533801211
+            },
+            {
+              "date": "2015-02",
+              "kind": "revised",
+              "before": -0.32,
+              "after": -0.348275442362755
+            },
+            {
+              "date": "2015-03",
+              "kind": "revised",
+              "before": -0.39,
+              "after": -0.424394749935431
+            },
+            {
+              "date": "2015-04",
+              "kind": "revised",
+              "before": -0.41,
+              "after": -0.381784232618355
+            },
+            {
+              "date": "2015-05",
+              "kind": "revised",
+              "before": -0.56,
+              "after": -0.577461729548227
+            },
+            {
+              "date": "2015-06",
+              "kind": "revised",
+              "before": -0.88,
+              "after": -0.899856091261617
+            },
+            {
+              "date": "2015-07",
+              "kind": "revised",
+              "before": -0.44,
+              "after": -0.441824653495391
+            },
+            {
+              "date": "2015-08",
+              "kind": "revised",
+              "before": -0.69,
+              "after": -0.70755826313237
+            },
+            {
+              "date": "2015-09",
+              "kind": "revised",
+              "before": -0.44,
+              "after": -0.429088637646361
+            },
+            {
+              "date": "2015-10",
+              "kind": "revised",
+              "before": -0.31,
+              "after": -0.278149314097013
+            },
+            {
+              "date": "2015-11",
+              "kind": "revised",
+              "before": -0.66,
+              "after": -0.678173694395757
+            },
+            {
+              "date": "2015-12",
+              "kind": "revised",
+              "before": -0.63,
+              "after": -0.638809540895923
+            },
+            {
+              "date": "2016-01",
+              "kind": "revised",
+              "before": -0.8,
+              "after": -0.827948018097526
+            },
+            {
+              "date": "2016-02",
+              "kind": "revised",
+              "before": -0.78,
+              "after": -0.77148721397684
+            },
+            {
+              "date": "2016-03",
+              "kind": "revised",
+              "before": -0.72,
+              "after": -0.675587924124615
+            },
+            {
+              "date": "2016-04",
+              "kind": "revised",
+              "before": -0.36,
+              "after": -0.293115922376508
+            },
+            {
+              "date": "2016-05",
+              "kind": "revised",
+              "before": -0.73,
+              "after": -0.743075471169386
+            },
+            {
+              "date": "2016-06",
+              "kind": "revised",
+              "before": -0.34,
+              "after": -0.319774951736079
+            },
+            {
+              "date": "2016-07",
+              "kind": "revised",
+              "before": -0.2,
+              "after": -0.196896516185053
+            },
+            {
+              "date": "2016-08",
+              "kind": "revised",
+              "before": 0.04,
+              "after": 0.0676166280424097
+            },
+            {
+              "date": "2016-09",
+              "kind": "revised",
+              "before": -0.32,
+              "after": -0.311762068058155
+            },
+            {
+              "date": "2016-10",
+              "kind": "revised",
+              "before": -0.07,
+              "after": -0.0877980451126932
+            },
+            {
+              "date": "2016-11",
+              "kind": "revised",
+              "before": -0.32,
+              "after": -0.338530475623697
+            },
+            {
+              "date": "2016-12",
+              "kind": "revised",
+              "before": -0.24,
+              "after": -0.25622136658411
+            },
+            {
+              "date": "2017-01",
+              "kind": "revised",
+              "before": 0.09,
+              "after": 0.130764649451021
+            },
+            {
+              "date": "2017-02",
+              "kind": "revised",
+              "before": 0.05,
+              "after": 0.12917205500793
+            },
+            {
+              "date": "2017-03",
+              "kind": "revised",
+              "before": 0.02,
+              "after": 0.0571391254777469
+            },
+            {
+              "date": "2017-04",
+              "kind": "revised",
+              "before": -0.03,
+              "after": -0.0144244080278906
+            },
+            {
+              "date": "2017-05",
+              "kind": "revised",
+              "before": -0.18,
+              "after": -0.175867153085179
+            },
+            {
+              "date": "2017-06",
+              "kind": "revised",
+              "before": 0.06,
+              "after": 0.0670204968014554
+            },
+            {
+              "date": "2017-07",
+              "kind": "revised",
+              "before": 0.05,
+              "after": 0.0581134570122198
+            },
+            {
+              "date": "2017-08",
+              "kind": "revised",
+              "before": 0.34,
+              "after": 0.354356650933533
+            },
+            {
+              "date": "2017-09",
+              "kind": "revised",
+              "before": 0.53,
+              "after": 0.515122397916518
+            },
+            {
+              "date": "2017-10",
+              "kind": "revised",
+              "before": 0.79,
+              "after": 0.755138627165397
+            },
+            {
+              "date": "2017-11",
+              "kind": "revised",
+              "before": 0.77,
+              "after": 0.782529557560247
+            },
+            {
+              "date": "2017-12",
+              "kind": "revised",
+              "before": 0.62,
+              "after": 0.641301024676671
+            },
+            {
+              "date": "2018-01",
+              "kind": "revised",
+              "before": 0.54,
+              "after": 0.545777749597066
+            },
+            {
+              "date": "2018-02",
+              "kind": "revised",
+              "before": 0.04,
+              "after": 0.0335809988215313
+            },
+            {
+              "date": "2018-03",
+              "kind": "revised",
+              "before": 0.39,
+              "after": 0.412940564251204
+            },
+            {
+              "date": "2018-04",
+              "kind": "revised",
+              "before": 0.47,
+              "after": 0.491407288673092
+            },
+            {
+              "date": "2018-05",
+              "kind": "revised",
+              "before": 0.35,
+              "after": 0.348256200998893
+            },
+            {
+              "date": "2018-06",
+              "kind": "revised",
+              "before": 0.43,
+              "after": 0.403280588498577
+            },
+            {
+              "date": "2018-07",
+              "kind": "revised",
+              "before": 0.47,
+              "after": 0.419041902841566
+            },
+            {
+              "date": "2018-08",
+              "kind": "revised",
+              "before": 0.52,
+              "after": 0.510999613039376
+            },
+            {
+              "date": "2018-09",
+              "kind": "revised",
+              "before": 0.44,
+              "after": 0.447100298551648
+            },
+            {
+              "date": "2018-10",
+              "kind": "revised",
+              "before": 0.51,
+              "after": 0.513016414975562
+            },
+            {
+              "date": "2018-11",
+              "kind": "revised",
+              "before": 0.41,
+              "after": 0.437172393009602
+            },
+            {
+              "date": "2018-12",
+              "kind": "revised",
+              "before": 0.43,
+              "after": 0.446826758131309
+            },
+            {
+              "date": "2019-01",
+              "kind": "revised",
+              "before": 0.46,
+              "after": 0.498007056639331
+            },
+            {
+              "date": "2019-02",
+              "kind": "revised",
+              "before": 0.1,
+              "after": 0.125790279575746
+            },
+            {
+              "date": "2019-03",
+              "kind": "revised",
+              "before": 0.19,
+              "after": 0.206221207243782
+            },
+            {
+              "date": "2019-04",
+              "kind": "revised",
+              "before": -0.01,
+              "after": -0.00198010571805967
+            },
+            {
+              "date": "2019-05",
+              "kind": "revised",
+              "before": -0.61,
+              "after": -0.630342247070661
+            },
+            {
+              "date": "2019-06",
+              "kind": "revised",
+              "before": -0.51,
+              "after": -0.483571883768168
+            },
+            {
+              "date": "2019-07",
+              "kind": "revised",
+              "before": -0.47,
+              "after": -0.463072538481425
+            },
+            {
+              "date": "2019-08",
+              "kind": "revised",
+              "before": -0.3,
+              "after": -0.308996106548053
+            },
+            {
+              "date": "2019-09",
+              "kind": "revised",
+              "before": 0.07,
+              "after": 0.107077354569269
+            },
+            {
+              "date": "2019-10",
+              "kind": "revised",
+              "before": 0.03,
+              "after": 0.0545891754427352
+            },
+            {
+              "date": "2019-11",
+              "kind": "revised",
+              "before": 0.08,
+              "after": 0.121404278482605
+            },
+            {
+              "date": "2019-12",
+              "kind": "revised",
+              "before": -0.03,
+              "after": 0.0222243311666573
+            },
+            {
+              "date": "2020-01",
+              "kind": "revised",
+              "before": -0.03,
+              "after": 0.0475227411214095
+            },
+            {
+              "date": "2020-02",
+              "kind": "revised",
+              "before": 1.21,
+              "after": 1.21060644757134
+            },
+            {
+              "date": "2020-03",
+              "kind": "revised",
+              "before": 2.64,
+              "after": 2.61510987369778
+            },
+            {
+              "date": "2020-04",
+              "kind": "revised",
+              "before": 3.47,
+              "after": 3.38561564344874
+            },
+            {
+              "date": "2020-05",
+              "kind": "revised",
+              "before": 2.57,
+              "after": 2.60101365736973
+            },
+            {
+              "date": "2020-06",
+              "kind": "revised",
+              "before": 2.26,
+              "after": 2.25458930379017
+            },
+            {
+              "date": "2020-07",
+              "kind": "revised",
+              "before": 2.85,
+              "after": 2.91146823920973
+            },
+            {
+              "date": "2020-08",
+              "kind": "revised",
+              "before": 1.34,
+              "after": 1.44185965521804
+            },
+            {
+              "date": "2020-09",
+              "kind": "revised",
+              "before": 0.51,
+              "after": 0.593746192313117
+            },
+            {
+              "date": "2020-10",
+              "kind": "revised",
+              "before": 0.02,
+              "after": 0.0762393216252498
+            },
+            {
+              "date": "2020-11",
+              "kind": "revised",
+              "before": 0.71,
+              "after": 0.726052242821728
+            },
+            {
+              "date": "2020-12",
+              "kind": "revised",
+              "before": 1.68,
+              "after": 1.66675361398389
+            },
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 1.41,
+              "after": 1.32622978330223
+            },
+            {
+              "date": "2021-02",
+              "kind": "revised",
+              "before": 2.03,
+              "after": 1.94397578408155
+            },
+            {
+              "date": "2021-03",
+              "kind": "revised",
+              "before": 2.3,
+              "after": 2.25337026720763
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 2.82,
+              "after": 2.73026508318827
+            },
+            {
+              "date": "2021-05",
+              "kind": "revised",
+              "before": 3.1,
+              "after": 3.01070526485887
+            },
+            {
+              "date": "2021-06",
+              "kind": "revised",
+              "before": 2.76,
+              "after": 2.74826697105498
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 2.93,
+              "after": 2.93559284561176
+            },
+            {
+              "date": "2021-08",
+              "kind": "revised",
+              "before": 3.36,
+              "after": 3.31548746515593
+            },
+            {
+              "date": "2021-09",
+              "kind": "revised",
+              "before": 3.45,
+              "after": 3.3775183560861
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 4.02,
+              "after": 3.92890419041194
+            },
+            {
+              "date": "2021-11",
+              "kind": "revised",
+              "before": 4.39,
+              "after": 4.34855507796978
+            },
+            {
+              "date": "2021-12",
+              "kind": "revised",
+              "before": 4.43,
+              "after": 4.42613633271112
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 3.73,
+              "after": 3.71758581747706
+            },
+            {
+              "date": "2022-02",
+              "kind": "revised",
+              "before": 2.81,
+              "after": 2.79888187318709
+            },
+            {
+              "date": "2022-03",
+              "kind": "revised",
+              "before": 2.89,
+              "after": 2.85308404012474
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 3.52,
+              "after": 3.52493368720117
+            },
+            {
+              "date": "2022-05",
+              "kind": "revised",
+              "before": 2.8,
+              "after": 2.74798389091964
+            },
+            {
+              "date": "2022-06",
+              "kind": "revised",
+              "before": 2.48,
+              "after": 2.43546107874717
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 1.9,
+              "after": 1.85428766367675
+            },
+            {
+              "date": "2022-08",
+              "kind": "revised",
+              "before": 1.55,
+              "after": 1.54257325556968
+            },
+            {
+              "date": "2022-09",
+              "kind": "revised",
+              "before": 1.14,
+              "after": 1.04987183589672
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 1.25,
+              "after": 1.14885606046682
+            },
+            {
+              "date": "2022-11",
+              "kind": "revised",
+              "before": 1.32,
+              "after": 1.28500204520927
+            },
+            {
+              "date": "2022-12",
+              "kind": "revised",
+              "before": 1.36,
+              "after": 1.33900952508131
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 1.02,
+              "after": 1.07201188165181
+            },
+            {
+              "date": "2023-02",
+              "kind": "revised",
+              "before": -0.27,
+              "after": -0.236028796590453
+            },
+            {
+              "date": "2023-03",
+              "kind": "revised",
+              "before": -1.21,
+              "after": -1.17426841271913
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": -1.31,
+              "after": -1.31541752693882
+            },
+            {
+              "date": "2023-05",
+              "kind": "revised",
+              "before": -1.56,
+              "after": -1.56345208529701
+            },
+            {
+              "date": "2023-06",
+              "kind": "revised",
+              "before": -1.08,
+              "after": -1.09263692397756
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": -0.95,
+              "after": -0.920927826373689
+            },
+            {
+              "date": "2023-08",
+              "kind": "revised",
+              "before": -1.02,
+              "after": -1.07849228743275
+            },
+            {
+              "date": "2023-09",
+              "kind": "revised",
+              "before": -0.64,
+              "after": -0.64943186441891
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": -0.37,
+              "after": -0.38057508538196
+            },
+            {
+              "date": "2023-11",
+              "kind": "revised",
+              "before": 0.2,
+              "after": 0.166824189340927
+            },
+            {
+              "date": "2023-12",
+              "kind": "revised",
+              "before": -0.13,
+              "after": -0.160686096689709
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": -0.29,
+              "after": -0.344192407341852
+            },
+            {
+              "date": "2024-02",
+              "kind": "revised",
+              "before": -0.18,
+              "after": -0.202178042059682
+            },
+            {
+              "date": "2024-03",
+              "kind": "revised",
+              "before": -0.38,
+              "after": -0.367470146433402
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": -0.97,
+              "after": -0.972255921099925
+            },
+            {
+              "date": "2024-05",
+              "kind": "revised",
+              "before": -0.59,
+              "after": -0.598054902775825
+            },
+            {
+              "date": "2024-06",
+              "kind": "revised",
+              "before": -0.3,
+              "after": -0.361716643817402
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": -0.04,
+              "after": -0.0612570615215835
+            },
+            {
+              "date": "2024-08",
+              "kind": "revised",
+              "before": 0.2,
+              "after": 0.202526604577456
+            },
+            {
+              "date": "2024-09",
+              "kind": "revised",
+              "before": 0.13,
+              "after": 0.104979201003596
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": -0.37,
+              "after": -0.374469386484986
+            },
+            {
+              "date": "2024-11",
+              "kind": "revised",
+              "before": -0.37,
+              "after": -0.299546174983664
+            },
+            {
+              "date": "2024-12",
+              "kind": "revised",
+              "before": -0.36,
+              "after": -0.285288027660005
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": -0.26,
+              "after": -0.191587012611613
+            },
+            {
+              "date": "2025-02",
+              "kind": "revised",
+              "before": -0.12,
+              "after": -0.0262212021780254
+            },
+            {
+              "date": "2025-03",
+              "kind": "revised",
+              "before": -0.25,
+              "after": -0.200497267492541
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": -0.34,
+              "after": -0.2549756245604
+            },
+            {
+              "date": "2025-05",
+              "kind": "revised",
+              "before": 0.18,
+              "after": 0.271786138416224
+            },
+            {
+              "date": "2025-06",
+              "kind": "revised",
+              "before": -0.01,
+              "after": 0.0717512465052927
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 0.03,
+              "after": 0.0137419504485125
+            },
+            {
+              "date": "2025-08",
+              "kind": "revised",
+              "before": -0.08,
+              "after": -0.0855006469067008
+            },
+            {
+              "date": "2025-09",
+              "kind": "revised",
+              "before": -0.04,
+              "after": -0.0293117878282136
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": -0.15,
+              "after": -0.084170171175674
+            },
+            {
+              "date": "2025-11",
+              "kind": "revised",
+              "before": -0.21,
+              "after": -0.145242794989183
+            },
+            {
+              "date": "2025-12",
+              "kind": "revised",
+              "before": 0.47,
+              "after": 0.554575982479669
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 0.36,
+              "after": 0.429717546681391
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 0.49,
+              "after": 0.533102002554163
+            },
+            {
+              "date": "2026-03",
+              "kind": "revised",
+              "before": 0.63,
+              "after": 0.641963758769754
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 1.78,
+              "after": 1.8055316194783
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 1.81,
+              "after": 1.80167697440387
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 1.21,
+              "after": 1.2025615909384
+            },
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 0.93,
+              "after": 0.951129968456539
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 1.2,
+              "after": 1.27103115086032
+            },
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 1.28,
+              "after": 1.36118044629765
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 1.26191118130865
+            }
+          ]
+        },
+        {
+          "id": "FAO_FOOD",
+          "added": 1,
+          "filled": 0,
+          "revised": 2,
+          "withdrawn": 0,
+          "total": 3,
+          "examples": [
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 134,
+              "after": 133.9
+            },
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 136,
+              "after": 135.6
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 133.9
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 134,
+              "after": 133.9
+            },
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 136,
+              "after": 135.6
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 133.9
+            }
+          ]
+        },
+        {
+          "id": "FAO_MEAT",
+          "added": 1,
+          "filled": 0,
+          "revised": 2,
+          "withdrawn": 0,
+          "total": 3,
+          "examples": [
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 129.3,
+              "after": 129
+            },
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 127.9,
+              "after": 127.1
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 125.5
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 129.3,
+              "after": 129
+            },
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 127.9,
+              "after": 127.1
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 125.5
+            }
+          ]
+        },
+        {
+          "id": "FAO_DAIRY",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 117.8
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 117.8
+            }
+          ]
+        },
+        {
+          "id": "FAO_CEREALS",
+          "added": 1,
+          "filled": 0,
+          "revised": 1,
+          "withdrawn": 0,
+          "total": 2,
+          "examples": [
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 122.8,
+              "after": 122.3
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 116.8
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 122.8,
+              "after": 122.3
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 116.8
+            }
+          ]
+        },
+        {
+          "id": "FAO_OILS",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 199.2
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 199.2
+            }
+          ]
+        },
+        {
+          "id": "FAO_SUGAR",
+          "added": 1,
+          "filled": 0,
+          "revised": 1,
+          "withdrawn": 0,
+          "total": 2,
+          "examples": [
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 114,
+              "after": 113.7
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 121.3
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 114,
+              "after": 113.7
+            },
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 121.3
+            }
+          ]
+        },
+        {
+          "id": "OPHNFB",
+          "added": 1,
+          "filled": 0,
+          "revised": 22,
+          "withdrawn": 0,
+          "total": 23,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 111.394,
+              "after": 111.635
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 111.626,
+              "after": 111.928
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 110.948,
+              "after": 111.212
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 111.578,
+              "after": 111.797
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 110.176,
+              "after": 110.409
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 109.36,
+              "after": 109.59
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 109.423,
+              "after": 109.589
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 110.047,
+              "after": 110.219
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 110.298,
+              "after": 110.592
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 111.404,
+              "after": 111.534
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 112.786,
+              "after": 112.859
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 113.881,
+              "after": 114.037
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 113.947,
+              "after": 114.367
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 114.99,
+              "after": 115.384
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 116.035,
+              "after": 116.366
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 116.445,
+              "after": 116.978
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 116.187,
+              "after": 116.958
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 117.385,
+              "after": 118.16
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 118.884,
+              "after": 119.464
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 119.35,
+              "after": 119.823
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 111.394,
+              "after": 111.635
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 111.626,
+              "after": 111.928
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 110.948,
+              "after": 111.212
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 111.578,
+              "after": 111.797
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 110.176,
+              "after": 110.409
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 109.36,
+              "after": 109.59
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 109.423,
+              "after": 109.589
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 110.047,
+              "after": 110.219
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 110.298,
+              "after": 110.592
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 111.404,
+              "after": 111.534
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 112.786,
+              "after": 112.859
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 113.881,
+              "after": 114.037
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 113.947,
+              "after": 114.367
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 114.99,
+              "after": 115.384
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 116.035,
+              "after": 116.366
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 116.445,
+              "after": 116.978
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 116.187,
+              "after": 116.958
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 117.385,
+              "after": 118.16
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 118.884,
+              "after": 119.464
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 119.35,
+              "after": 119.823
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 119.594,
+              "after": 120.243
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 120.017,
+              "after": 120.862
+            },
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 121.922
+            }
+          ]
+        },
+        {
+          "id": "ULCNFB",
+          "added": 1,
+          "filled": 0,
+          "revised": 22,
+          "withdrawn": 0,
+          "total": 23,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 106.937,
+              "after": 106.743
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 108.449,
+              "after": 108.199
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 110.544,
+              "after": 110.357
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 111.499,
+              "after": 111.185
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 113.45,
+              "after": 113.285
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 114.442,
+              "after": 114.191
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 116.407,
+              "after": 116.184
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 115.899,
+              "after": 115.782
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 116.544,
+              "after": 116.439
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 117.231,
+              "after": 117.361
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 117.571,
+              "after": 117.768
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 117.93,
+              "after": 117.991
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 119.531,
+              "after": 119.232
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 119.844,
+              "after": 119.462
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 120.171,
+              "after": 119.747
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 121.032,
+              "after": 120.284
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 123.17,
+              "after": 121.807
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 122.27,
+              "after": 121.475
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 122.57,
+              "after": 121.494
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 123.216,
+              "after": 122.904
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 106.937,
+              "after": 106.743
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 108.449,
+              "after": 108.199
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 110.544,
+              "after": 110.357
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 111.499,
+              "after": 111.185
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 113.45,
+              "after": 113.285
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 114.442,
+              "after": 114.191
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 116.407,
+              "after": 116.184
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 115.899,
+              "after": 115.782
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 116.544,
+              "after": 116.439
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 117.231,
+              "after": 117.361
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 117.571,
+              "after": 117.768
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 117.93,
+              "after": 117.991
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 119.531,
+              "after": 119.232
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 119.844,
+              "after": 119.462
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 120.171,
+              "after": 119.747
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 121.032,
+              "after": 120.284
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 123.17,
+              "after": 121.807
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 122.27,
+              "after": 121.475
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 122.57,
+              "after": 121.494
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 123.216,
+              "after": 122.904
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 123.62,
+              "after": 124.018
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 123.979,
+              "after": 124.6
+            },
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 124.393
+            }
+          ]
+        },
+        {
+          "id": "COMPNFB",
+          "added": 1,
+          "filled": 0,
+          "revised": 22,
+          "withdrawn": 0,
+          "total": 23,
+          "examples": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 119.121,
+              "after": 119.163
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 121.057,
+              "after": 121.105
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 122.646,
+              "after": 122.73
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 124.409,
+              "after": 124.302
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 124.995,
+              "after": 125.076
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 125.154,
+              "after": 125.142
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 127.377,
+              "after": 127.326
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 127.543,
+              "after": 127.613
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 128.545,
+              "after": 128.771
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 130.6,
+              "after": 130.898
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 132.603,
+              "after": 132.912
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 134.3,
+              "after": 134.553
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 136.202,
+              "after": 136.361
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 137.809,
+              "after": 137.841
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 139.441,
+              "after": 139.345
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 140.935,
+              "after": 140.707
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 143.108,
+              "after": 142.463
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 143.527,
+              "after": 143.535
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 145.716,
+              "after": 145.141
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 147.059,
+              "after": 147.268
+            }
+          ],
+          "changes": [
+            {
+              "date": "2021-01",
+              "kind": "revised",
+              "before": 119.121,
+              "after": 119.163
+            },
+            {
+              "date": "2021-04",
+              "kind": "revised",
+              "before": 121.057,
+              "after": 121.105
+            },
+            {
+              "date": "2021-07",
+              "kind": "revised",
+              "before": 122.646,
+              "after": 122.73
+            },
+            {
+              "date": "2021-10",
+              "kind": "revised",
+              "before": 124.409,
+              "after": 124.302
+            },
+            {
+              "date": "2022-01",
+              "kind": "revised",
+              "before": 124.995,
+              "after": 125.076
+            },
+            {
+              "date": "2022-04",
+              "kind": "revised",
+              "before": 125.154,
+              "after": 125.142
+            },
+            {
+              "date": "2022-07",
+              "kind": "revised",
+              "before": 127.377,
+              "after": 127.326
+            },
+            {
+              "date": "2022-10",
+              "kind": "revised",
+              "before": 127.543,
+              "after": 127.613
+            },
+            {
+              "date": "2023-01",
+              "kind": "revised",
+              "before": 128.545,
+              "after": 128.771
+            },
+            {
+              "date": "2023-04",
+              "kind": "revised",
+              "before": 130.6,
+              "after": 130.898
+            },
+            {
+              "date": "2023-07",
+              "kind": "revised",
+              "before": 132.603,
+              "after": 132.912
+            },
+            {
+              "date": "2023-10",
+              "kind": "revised",
+              "before": 134.3,
+              "after": 134.553
+            },
+            {
+              "date": "2024-01",
+              "kind": "revised",
+              "before": 136.202,
+              "after": 136.361
+            },
+            {
+              "date": "2024-04",
+              "kind": "revised",
+              "before": 137.809,
+              "after": 137.841
+            },
+            {
+              "date": "2024-07",
+              "kind": "revised",
+              "before": 139.441,
+              "after": 139.345
+            },
+            {
+              "date": "2024-10",
+              "kind": "revised",
+              "before": 140.935,
+              "after": 140.707
+            },
+            {
+              "date": "2025-01",
+              "kind": "revised",
+              "before": 143.108,
+              "after": 142.463
+            },
+            {
+              "date": "2025-04",
+              "kind": "revised",
+              "before": 143.527,
+              "after": 143.535
+            },
+            {
+              "date": "2025-07",
+              "kind": "revised",
+              "before": 145.716,
+              "after": 145.141
+            },
+            {
+              "date": "2025-10",
+              "kind": "revised",
+              "before": 147.059,
+              "after": 147.268
+            },
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 147.843,
+              "after": 149.124
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 148.796,
+              "after": 150.595
+            },
+            {
+              "date": "2026-07",
+              "kind": "added",
+              "before": null,
+              "after": 151.663
+            }
+          ]
+        },
+        {
+          "id": "PNFIC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "A679RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "B985RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "B935RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPN22112CS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CUUR0000SEHF01",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GDPC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CE16OV",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 163615
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-10",
+              "kind": "added",
+              "before": null,
+              "after": 163615
+            }
+          ]
+        },
+        {
+          "id": "IPG3344S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "MHHNGSP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_DATACENTER",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_NONRES",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_ELECTRONIC",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "DPSACBM027SBOG",
+          "added": 0,
+          "filled": 0,
+          "revised": 2,
+          "withdrawn": 0,
+          "total": 2,
+          "examples": [
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 19410.3919,
+              "after": 19410.3597
+            },
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 19636.7116,
+              "after": 19636.727
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-07",
+              "kind": "revised",
+              "before": 19410.3919,
+              "after": 19410.3597
+            },
+            {
+              "date": "2026-09",
+              "kind": "revised",
+              "before": 19636.7116,
+              "after": 19636.727
+            }
+          ]
+        },
+        {
+          "id": "COFER_USD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_EUR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CNY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_JPY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_GBP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_AUD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CAD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CHF",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_OTHER",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_IMPUTED",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_TOTAL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_JAPAN",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_CHINA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_UK",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_OFFICIAL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "BIS_USD_TOTAL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "BIS_USD_LOANS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "BIS_USD_SECURITIES",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        }
+      ]
+    },
     {
       "checkedAt": "2026-11-05T08:27:15.486Z",
       "checkStartedAt": "2026-11-05T08:27:15.486Z",
@@ -20788,636 +24674,7 @@
           "changes": []
         }
       ]
-    },
-    {
-      "checkedAt": "2026-10-11T06:21:24.928Z",
-      "checkStartedAt": "2026-10-11T06:21:24.928Z",
-      "checkCompletedAt": "2026-10-11T06:22:58.409Z",
-      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/38117777272",
-      "changes": [
-        {
-          "id": "CPIAUCNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CPIUFDNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CPIENGNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "MCOILWTICO",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FEDFUNDS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CUUR0000SAH1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CEU0500000003",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "M2SL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "PCEPILFE",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "T5YIFR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "DGS10",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "DFII10",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "DTWEXBGS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "WALCL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYPUGDA188S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYFSGDA188S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYOINT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYFR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FP.CPI.TOTL.ZG",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "GPR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GPRT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GPRA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GSCPI",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_FOOD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_MEAT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_DAIRY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_CEREALS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_OILS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_SUGAR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "OPHNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "ULCNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COMPNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "PNFIC1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "A679RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "B985RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "B935RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "IPN22112CS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CUUR0000SEHF01",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GDPC1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CE16OV",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "IPG3344S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "MHHNGSP",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_DATACENTER",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_NONRES",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_ELECTRONIC",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "DPSACBM027SBOG",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_USD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_EUR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CNY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_JPY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_GBP",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_AUD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CAD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CHF",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_OTHER",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_IMPUTED",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_TOTAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_JAPAN",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_CHINA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_UK",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_OFFICIAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_TOTAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_LOANS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_SECURITIES",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        }
-      ]
     }
   ],
-  "lastSuccessfulCheckCompletedAt": "2026-11-05T08:27:59.031Z"
+  "lastSuccessfulCheckCompletedAt": "2026-11-07T14:51:15.840Z"
 }
