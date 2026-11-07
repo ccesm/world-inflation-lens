@@ -32,6 +32,11 @@ for (const invalid of ['60', '46328', '2958466', '46327.5', '-1', '', 'not-a-dat
 assert.ok(gscpi.series[0].observations.some(p=>p.value<0));assert.ok(gscpi.series[0].observations.some(p=>p.value>0))
 assert.deepEqual(parseFao('FAO Food Price Index\n2014-2016=100\nDate,Food Price Index,Meat,Dairy,Cereals,Oils,Sugar\n2026-08,133.3,127.9,119.2,116.3,196.9,106.4').map(s=>s.observations[0].value),[133.3,127.9,119.2,116.3,196.9,106.4])
 assert.throws(()=>parseFao('FAO Food Price Index\n2000=100'))
+const faoCsv = 'FAO Food Price Index\r\n2014-2016=100\r\nDate,Food Price Index,Meat,Dairy,Cereals,Oils,Sugar\r\n2026-10,133.9,125.5,117.8,116.8,199.2,\r\n'
+assert.deepEqual(parseFao('\uFEFF' + faoCsv), parseFao(faoCsv))
+assert.equal(parseFao('\uFEFF' + faoCsv).at(-1).observations[0].value, null)
+assert.throws(() => parseFao('\uFEFF' + faoCsv.replace('2014-2016=100', '2000=100')))
+assert.deepEqual(csvRows('\uFEFF"a,b",c\r\nx,\uFEFFy'), [['a,b', 'c'], ['x', '\uFEFFy']])
 const rawSipri = {usFootnote:'All figures for the USA are for financial year',sheets:Object.fromEntries(['Share of GDP','Share of Govt. spending','Constant (2024) US$','Regional totals'].map((s,i)=>[s,{row:i===3?'World':'United States of America',title:'SIPRI 2026',notes:['constant 2024'],cells:[{date:'2025',value:i<2?.03:100,sourceFormat:i<2?'0.0%':'0',sourceColor:null}]}]))}
 assert.deepEqual(parseSipri(rawSipri).map(s=>s.observations[0].value),[3,3,100,100]);rawSipri.sheets['Share of GDP'].cells[0].sourceFormat='0';assert.throws(()=>parseSipri(rawSipri),/fractions/)
 assert.equal(sipri.series[3].observations.find(p=>p.date==='1991').value,null)

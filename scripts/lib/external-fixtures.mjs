@@ -9,7 +9,7 @@ export async function externalFixtures(root, input) {
   await writeFile(join(input, 'gpr-extracted.json'), JSON.stringify(raw)); await writeFile(join(input, 'gpr.xls'), 'isolated workbook fixture')
   await writeFile(join(input, 'gpr.html'), `Last update: ${new Date(`${gpr.metadata.sourceUpdatedAt}T00:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}`)
   const [y,m,d] = fao.metadata.sourceUpdatedAt.split('-'); await writeFile(join(input, 'fao.html'), `Release date: ${d}/${m}/${y}`)
-  await writeFile(join(input, 'fao.csv'), ['FAO Food Price Index','2014-2016=100','Date,Food Price Index,Meat,Dairy,Cereals,Oils,Sugar', ...fao.series[0].observations.map((p,i) => [p.date, ...fao.series.map(s => s.observations[i].value ?? '')].join(','))].join('\n'))
+  await writeFile(join(input, 'fao.csv'), '\uFEFF' + ['FAO Food Price Index','2014-2016=100','Date,Food Price Index,Meat,Dairy,Cereals,Oils,Sugar', ...fao.series[0].observations.map((p,i) => [p.date, ...fao.series.map(s => s.observations[i].value ?? '')].join(','))].join('\r\n'))
   const vintage = gscpi.metadata.sourceVintageComparison
   const serial = date => (Date.parse(`${date}-01T00:00:00Z`) - Date.UTC(1899, 11, 30)) / 86400000
   await writeFile(join(input, 'gscpi.csv'), [`Date,${serial(vintage.from)},${serial(vintage.to)}`, ...gscpi.series[0].observations.map(p => `${p.date}-01,${p.value ?? '#N/A'},${p.value ?? '#N/A'}`)].join('\n'))

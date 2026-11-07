@@ -19,6 +19,8 @@ const historicalDownloadUrls = {
   'fao-food': ['https://www.fao.org/media/docs/worldfoodsituationlibraries/default-document-library/food_price_indices_data.csv?sfvrsn=523ebd2a_83&download=true'],
 }
 export function csvRows(text) {
+  // A UTF-8 BOM marks the file encoding, not the first CSV field (FAO exports).
+  text = text.replace(/^\uFEFF/, '')
   const rows = []; let row = [], cell = '', quoted = false
   for (let i = 0; i < text.length; i++) {
     const c = text[i]
