@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T07:44:12.543Z",
+  "updatedAt": "2026-11-07T14:09:38.268Z",
   "application": {
     "version": "1.4.1",
-    "codeCommit": "5823ed14113ec228eca38642af42e4c264db64ed",
-    "snapshotCommit": "2d57608ab42bba9d6ae6d1c50c98e05f278d4bf4"
+    "codeCommit": "248a58489cefdc246f6d081c8100f055f858a3f7",
+    "snapshotCommit": "248a58489cefdc246f6d081c8100f055f858a3f7"
   },
   "lastAttempt": {
-    "runId": "42352451969",
+    "runId": "42380096607",
     "attempt": "1",
-    "startedAt": "2026-11-07T07:43:21Z",
-    "completedAt": "2026-11-07T07:44:12.543Z",
-    "refreshResult": "FAILED",
-    "buildResult": "failure",
-    "deploymentResult": "skipped",
-    "notificationResult": "ACCEPTED_BY_GMAIL",
-    "codeCommit": "2d57608ab42bba9d6ae6d1c50c98e05f278d4bf4",
-    "snapshotCommit": null,
+    "startedAt": "2026-11-07T14:07:23Z",
+    "completedAt": "2026-11-07T14:09:38.268Z",
+    "refreshResult": "NOT_REQUESTED",
+    "buildResult": "success",
+    "deploymentResult": "success",
+    "notificationResult": "NOT_REQUESTED",
+    "codeCommit": "248a58489cefdc246f6d081c8100f055f858a3f7",
+    "snapshotCommit": "248a58489cefdc246f6d081c8100f055f858a3f7",
     "version": "1.4.1"
   },
   "data": {
@@ -29,21 +29,21 @@
     "result": "FAILED"
   },
   "deployment": {
-    "lastSuccessfulAt": "2026-11-05T08:29:44Z",
-    "codeCommit": "5823ed14113ec228eca38642af42e4c264db64ed",
-    "snapshotCommit": "2d57608ab42bba9d6ae6d1c50c98e05f278d4bf4",
+    "lastSuccessfulAt": "2026-11-07T14:08:55Z",
+    "codeCommit": "248a58489cefdc246f6d081c8100f055f858a3f7",
+    "snapshotCommit": "248a58489cefdc246f6d081c8100f055f858a3f7",
     "version": "1.4.1",
-    "result": "skipped"
+    "result": "success"
   },
   "notification": {
-    "result": "ACCEPTED_BY_GMAIL",
-    "updatedAt": "2026-11-07T07:44:12.543Z"
+    "result": "NOT_REQUESTED",
+    "updatedAt": "2026-11-07T14:09:38.268Z"
   },
   "freshness": {
-    "asOf": "2026-11-05T08:30:27.792Z",
+    "asOf": "2026-11-07T14:09:38.268Z",
     "counts": {
-      "CURRENT": 61,
-      "WAITING_FOR_EXPECTED_RELEASE": 3,
+      "REFRESH_FAILED": 59,
+      "SOURCE_UPDATED_NOT_YET_CAPTURED": 5,
       "MANUAL_REVIEWED": 8,
       "FIXED_VINTAGE": 3
     }
