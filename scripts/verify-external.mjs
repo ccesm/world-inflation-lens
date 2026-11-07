@@ -16,6 +16,19 @@ assert.deepEqual(parseGpr({ header:['month','GPR','GPRT','GPRA'], labels:{ GPR:'
 assert.throws(()=>parseGpr({header:['bad']}))
 const supply = parseGscpi('Date,Aug-26,Sep-26\n2026-06-01,-1,-0.5\n2026-07-01,0.79,0.94\n2026-08-01,#N/A,1.06')
 assert.equal(supply.series[0].observations[0].value,-.5); assert.equal(supply.sourceVintageComparison.revised,2)
+// The November 2026 official CSV uses Excel serials in release headers and
+// end-of-month observation dates. Preserve revisions and missing values.
+const serialSupply = parseGscpi('Date,46296,46327\n30-Sep-2026,0.5,0.6\n31-Oct-2026,#N/A,1.26191118130865\n30-Nov-2026,#N/A,#N/A')
+assert.equal(serialSupply.vintage, '2026-11')
+assert.equal(serialSupply.sourceVintageComparison.from, '2026-10')
+assert.equal(serialSupply.sourceVintageComparison.revised, 1)
+assert.deepEqual(serialSupply.series[0].observations, [
+  { date: '2026-09', value: 0.6 }, { date: '2026-10', value: 1.26191118130865 }, { date: '2026-11', value: null },
+])
+assert.deepEqual(parseGscpi('Date,Oct-26,46327\n30-Sep-2026,0.5,0.6'), parseGscpi('Date,46296,Nov-26\n30-Sep-2026,0.5,0.6'))
+for (const invalid of ['60', '46328', '2958466', '46327.5', '-1', '', 'not-a-date']) {
+  assert.throws(() => parseGscpi(`Date,46296,${invalid}\n30-Sep-2026,0.5,0.6`))
+}
 assert.ok(gscpi.series[0].observations.some(p=>p.value<0));assert.ok(gscpi.series[0].observations.some(p=>p.value>0))
 assert.deepEqual(parseFao('FAO Food Price Index\n2014-2016=100\nDate,Food Price Index,Meat,Dairy,Cereals,Oils,Sugar\n2026-08,133.3,127.9,119.2,116.3,196.9,106.4').map(s=>s.observations[0].value),[133.3,127.9,119.2,116.3,196.9,106.4])
 assert.throws(()=>parseFao('FAO Food Price Index\n2000=100'))

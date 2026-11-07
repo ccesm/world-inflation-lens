@@ -37,6 +37,20 @@ const number = value => {
 const item = (id, units, observations, extra = {}) => ({ id, units, observations, ...extra })
 const month = text => { const d = new Date(text); assert.ok(Number.isFinite(d.getTime()), `Invalid date: ${text}`); return d.toISOString().slice(0, 7) }
 
+function gscpiVintage(text) {
+  // The NY Fed CSV also exports release headers as Excel 1900-system serials.
+  // Decode only whole-day, first-of-month dates; never treat them as Unix time.
+  if (/^\d+$/.test(text)) {
+    const serial = Number(text)
+    assert.ok(Number.isSafeInteger(serial) && serial > 60 && serial <= 2958465, `Invalid GSCPI release date: ${text}`)
+    const date = new Date(Date.UTC(1899, 11, 30) + serial * 86400000)
+    assert.equal(date.getUTCDate(), 1, `Expected GSCPI release month start: ${text}`)
+    return date.toISOString().slice(0, 7)
+  }
+  assert.match(text, /^[A-Z][a-z]{2}-\d{2}$/, 'Invalid GSCPI release month')
+  return month(`01-${text}`)
+}
+
 export function parseGpr(raw) {
   assert.deepEqual(raw.header, ['month', 'GPR', 'GPRT', 'GPRA'])
   return externalIds.gpr.map((id, i) => {
@@ -47,7 +61,7 @@ export function parseGpr(raw) {
 export function parseGscpi(text) {
   const rows = csvRows(text).filter(r => r[0]); const header = rows.shift()
   assert.equal(header[0], 'Date'); assert.ok(header.length > 2)
-  const vintage = month(`01-${header.at(-1)}`), previousVintage = month(`01-${header.at(-2)}`)
+  const vintage = gscpiVintage(header.at(-1)), previousVintage = gscpiVintage(header.at(-2))
   const points = index => rows.map(r => { assert.equal(r.length, header.length, 'GSCPI column mismatch'); return { date: month(r[0]), value: number(r.at(index)) } })
   const observations = points(-1)
   const prior = points(-2).filter(p => p.date < previousVintage)
