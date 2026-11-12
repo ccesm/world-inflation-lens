@@ -12,6 +12,7 @@ import { monitorSources } from './lib/monitorSources.mjs'
 import { diffObservations, parseWorldBank, worldPoints, summarizeChanges } from './lib/refresh.mjs'
 import { writeCheckReport } from './lib/statusFiles.mjs'
 import { readFileSync } from 'node:fs'
+import { downloadData } from './lib/data-download.mjs'
 
 const root = resolve(import.meta.dirname, '..')
 const checkedAt = new Date().toISOString()
@@ -33,15 +34,7 @@ async function download(url, filename, json = false) {
     const text = await readFile(resolve(input, filename), 'utf8')
     return json ? JSON.parse(text) : text
   }
-  let failure
-  for (let attempt = 0; attempt < 3; attempt++) {
-    try {
-      const response = await fetch(url, { signal: AbortSignal.timeout(30000), headers: { 'User-Agent': `WorldInflationLens/${version} public-data-refresh` } })
-      assert.ok(response.ok, `HTTP ${response.status}: ${url}`)
-      return json ? await response.json() : await response.text()
-    } catch (error) { failure = error }
-  }
-  throw failure
+  return downloadData(url, { json, headers: { 'User-Agent': `WorldInflationLens/${version} public-data-refresh` } })
 }
 
 // Build the complete candidate in memory. A failed download or validation writes nothing.
