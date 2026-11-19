@@ -1,7 +1,895 @@
 {
   "schemaVersion": 1,
-  "lastSuccessfulCheck": "2026-11-18T09:02:49.710Z",
+  "lastSuccessfulCheck": "2026-11-19T09:26:14.012Z",
   "runs": [
+    {
+      "checkedAt": "2026-11-19T09:26:14.012Z",
+      "checkStartedAt": "2026-11-19T09:26:14.012Z",
+      "checkCompletedAt": "2026-11-19T09:26:57.123Z",
+      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/44496348935",
+      "changes": [
+        {
+          "id": "CPIAUCNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIUFDNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CPIENGNS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "MCOILWTICO",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FEDFUNDS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CUUR0000SAH1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "CEU0500000003",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "M2SL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "PCEPILFE",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "T5YIFR",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-11-18",
+              "kind": "added",
+              "before": null,
+              "after": 2.15
+            }
+          ]
+        },
+        {
+          "id": "DGS10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-11-17",
+              "kind": "added",
+              "before": null,
+              "after": 5.1
+            }
+          ]
+        },
+        {
+          "id": "DFII10",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-11-17",
+              "kind": "added",
+              "before": null,
+              "after": 2.89
+            }
+          ]
+        },
+        {
+          "id": "DTWEXBGS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "WALCL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYPUGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFSGDA188S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYOINT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FYFR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "FP.CPI.TOTL.ZG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": []
+        },
+        {
+          "id": "GPR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GPRA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GSCPI",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_FOOD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_MEAT",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_DAIRY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_CEREALS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_OILS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "FAO_SUGAR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "OPHNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "ULCNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COMPNFB",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "PNFIC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "A679RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "B985RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "B935RC1Q027SBEA",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPN22112CS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CUUR0000SEHF01",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "GDPC1",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CE16OV",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "IPG3344S",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "MHHNGSP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_DATACENTER",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_NONRES",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "CENSUS_ELECTRONIC",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "DPSACBM027SBOG",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_USD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_EUR",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CNY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_JPY",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_GBP",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_AUD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CAD",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_CHF",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_OTHER",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "COFER_IMPUTED",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "TIC_TOTAL",
+          "added": 1,
+          "filled": 0,
+          "revised": 7,
+          "withdrawn": 0,
+          "total": 8,
+          "examples": [
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 9289111,
+              "after": 9289112
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 9487270,
+              "after": 9487273
+            },
+            {
+              "date": "2026-03",
+              "kind": "revised",
+              "before": 9352405,
+              "after": 9352409
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 9350145,
+              "after": 9350147
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 9368501,
+              "after": 9368504
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 9298509,
+              "after": 9298454
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 9331654,
+              "after": 9316697
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 9241225
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-01",
+              "kind": "revised",
+              "before": 9289111,
+              "after": 9289112
+            },
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 9487270,
+              "after": 9487273
+            },
+            {
+              "date": "2026-03",
+              "kind": "revised",
+              "before": 9352405,
+              "after": 9352409
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 9350145,
+              "after": 9350147
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 9368501,
+              "after": 9368504
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 9298509,
+              "after": 9298454
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 9331654,
+              "after": 9316697
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 9241225
+            }
+          ]
+        },
+        {
+          "id": "TIC_JAPAN",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 1063137
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 1063137
+            }
+          ]
+        },
+        {
+          "id": "TIC_CHINA",
+          "added": 1,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 1,
+          "examples": [
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 563935
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 563935
+            }
+          ]
+        },
+        {
+          "id": "TIC_UK",
+          "added": 1,
+          "filled": 0,
+          "revised": 6,
+          "withdrawn": 0,
+          "total": 7,
+          "examples": [
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 897338,
+              "after": 897339
+            },
+            {
+              "date": "2026-03",
+              "kind": "revised",
+              "before": 927134,
+              "after": 927135
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 937523,
+              "after": 937524
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 948593,
+              "after": 948594
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 939861,
+              "after": 939863
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 1009450,
+              "after": 994493
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 985819
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-02",
+              "kind": "revised",
+              "before": 897338,
+              "after": 897339
+            },
+            {
+              "date": "2026-03",
+              "kind": "revised",
+              "before": 927134,
+              "after": 927135
+            },
+            {
+              "date": "2026-04",
+              "kind": "revised",
+              "before": 937523,
+              "after": 937524
+            },
+            {
+              "date": "2026-05",
+              "kind": "revised",
+              "before": 948593,
+              "after": 948594
+            },
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 939861,
+              "after": 939863
+            },
+            {
+              "date": "2026-08",
+              "kind": "revised",
+              "before": 1009450,
+              "after": 994493
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 985819
+            }
+          ]
+        },
+        {
+          "id": "TIC_OFFICIAL",
+          "added": 1,
+          "filled": 0,
+          "revised": 1,
+          "withdrawn": 0,
+          "total": 2,
+          "examples": [
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 3778117,
+              "after": 3778147
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 3674654
+            }
+          ],
+          "changes": [
+            {
+              "date": "2026-06",
+              "kind": "revised",
+              "before": 3778117,
+              "after": 3778147
+            },
+            {
+              "date": "2026-09",
+              "kind": "added",
+              "before": null,
+              "after": 3674654
+            }
+          ]
+        },
+        {
+          "id": "BIS_USD_TOTAL",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "BIS_USD_LOANS",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        },
+        {
+          "id": "BIS_USD_SECURITIES",
+          "added": 0,
+          "filled": 0,
+          "revised": 0,
+          "withdrawn": 0,
+          "total": 0,
+          "examples": [],
+          "changes": []
+        }
+      ]
+    },
     {
       "checkedAt": "2026-11-18T09:02:49.710Z",
       "checkStartedAt": "2026-11-18T09:02:49.710Z",
@@ -23807,657 +24695,7 @@
           "changes": []
         }
       ]
-    },
-    {
-      "checkedAt": "2026-10-21T05:14:03.137Z",
-      "checkStartedAt": "2026-10-21T05:14:03.137Z",
-      "checkCompletedAt": "2026-10-21T05:14:34.096Z",
-      "runUrl": "https://github.com/ccesm/world-inflation-lens/actions/runs/39548367583",
-      "changes": [
-        {
-          "id": "CPIAUCNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CPIUFDNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CPIENGNS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "MCOILWTICO",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FEDFUNDS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CUUR0000SAH1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "CEU0500000003",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "M2SL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "PCEPILFE",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "T5YIFR",
-          "added": 1,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 1,
-          "examples": [
-            {
-              "date": "2026-10-20",
-              "kind": "added",
-              "before": null,
-              "after": 2.31
-            }
-          ]
-        },
-        {
-          "id": "DGS10",
-          "added": 1,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 1,
-          "examples": [
-            {
-              "date": "2026-10-19",
-              "kind": "added",
-              "before": null,
-              "after": 5.15
-            }
-          ]
-        },
-        {
-          "id": "DFII10",
-          "added": 1,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 1,
-          "examples": [
-            {
-              "date": "2026-10-19",
-              "kind": "added",
-              "before": null,
-              "after": 2.8
-            }
-          ]
-        },
-        {
-          "id": "DTWEXBGS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "WALCL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYPUGDA188S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYFSGDA188S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYOINT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FYFR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "FP.CPI.TOTL.ZG",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": []
-        },
-        {
-          "id": "GPR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GPRT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GPRA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GSCPI",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_FOOD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_MEAT",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_DAIRY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_CEREALS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_OILS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "FAO_SUGAR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "OPHNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "ULCNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COMPNFB",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "PNFIC1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "A679RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "B985RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "B935RC1Q027SBEA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "IPN22112CS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CUUR0000SEHF01",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "GDPC1",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CE16OV",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "IPG3344S",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "MHHNGSP",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_DATACENTER",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_NONRES",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "CENSUS_ELECTRONIC",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "DPSACBM027SBOG",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_USD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_EUR",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CNY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_JPY",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_GBP",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_AUD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CAD",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_CHF",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_OTHER",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "COFER_IMPUTED",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_TOTAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_JAPAN",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_CHINA",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_UK",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "TIC_OFFICIAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_TOTAL",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_LOANS",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        },
-        {
-          "id": "BIS_USD_SECURITIES",
-          "added": 0,
-          "filled": 0,
-          "revised": 0,
-          "withdrawn": 0,
-          "total": 0,
-          "examples": [],
-          "changes": []
-        }
-      ]
     }
   ],
-  "lastSuccessfulCheckCompletedAt": "2026-11-18T09:04:39.311Z"
+  "lastSuccessfulCheckCompletedAt": "2026-11-19T09:26:57.123Z"
 }
