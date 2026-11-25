@@ -15,7 +15,11 @@ export function parseFredTable(html, expectedId, expected = {}) {
   assert.equal(field('Frequency'), frequency)
   assert.equal(field('Seasonal Adjustment'), expected.adjustment || 'Not Seasonally Adjusted')
   const normalizeUnits = value => value.replace(/[–—]/g, '-').replace(/\s*=\s*/g, '=').trim()
-  if (expected.units) assert.equal(normalizeUnits(field('Units')), normalizeUnits(expected.units))
+  if (expected.units) {
+    const actualUnits = normalizeUnits(field('Units'))
+    const expectedUnits = normalizeUnits(expected.units)
+    assert.equal(actualUnits, expectedUnits, `${expectedId}: expected units ${expectedUnits}, received ${actualUnits}`)
+  }
   const table = html.match(/<table id="data-table-observations"[\s\S]*?<\/table>/)?.[0]
   assert.ok(table, 'Missing observation table')
   const extra = html.match(/<div id="extra-rows">([\s\S]*?)<\/div>/)?.[1] || ''

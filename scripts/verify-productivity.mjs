@@ -9,6 +9,14 @@ const bundle=JSON.parse(await readFile(new URL('../data/productivity/series.json
 validateProductivity(bundle)
 const byId=Object.fromEntries(bundle.series.map(s=>[s.id,s]))
 for(const spec of productivitySources){const s=byId[spec.id];const html=productivityHtml(s);const parsed=parseProductivityFred(html,spec,s.retrievedAt);assert.deepEqual(parsed.observations,s.observations);assert.throws(()=>parseProductivityFred(html.replace(`<td>${s.units}</td>`,'<td>Wrong units</td>'),spec,s.retrievedAt));assert.throws(()=>parseProductivityFred(html.replace(`<td>${spec.frequency}</td>`,'<td>Annual</td>'),spec,s.retrievedAt));assert.throws(()=>parseProductivityFred(html.replace(`<td>${spec.adjustment}</td>`,'<td>Wrong adjustment</td>'),spec,s.retrievedAt))}
+for (const id of ['IPN22112CS', 'IPG3344S']) {
+  const series = byId[id]
+  const spec = productivitySources.find(source => source.id === id)
+  assert.equal(series.units, 'Index 2022=100')
+  const oldBase = productivityHtml(series).replace('<td>Index 2022=100</td>', '<td>Index 2017=100</td>')
+  assert.throws(() => parseProductivityFred(oldBase, spec, series.retrievedAt), new RegExp(`${id}: expected units Index 2022=100, received Index 2017=100`))
+}
+for (const id of ['OPHNFB', 'ULCNFB', 'COMPNFB']) assert.equal(byId[id].units, 'Index 2017=100')
 for(const mutation of [b=>b.series[0].observations.splice(4,1),b=>b.series[0].observations[4].date=b.series[0].observations[3].date,b=>b.series[0].observations[4].date='1948-02',b=>b.series[0].observations[4].value=-1,b=>b.series[3].proxy=false,b=>b.series[0].observations.pop()]){const b=structuredClone(bundle);mutation(b);assert.throws(()=>validateProductivity(b))}
 assert.throws(()=>parseConstruction({title:'Wrong',units:'Millions of dollars'},Buffer.from(''), '2026-09-16'))
 const q={frequency:'quarterly',observations:[{date:'2020-01',value:100},{date:'2020-04',value:102},{date:'2020-07',value:null},{date:'2020-10',value:105},{date:'2021-01',value:110},{date:'2021-04',value:112}]}
