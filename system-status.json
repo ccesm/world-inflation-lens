@@ -1,48 +1,49 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-26T10:02:23.377Z",
+  "updatedAt": "2026-11-27T10:08:02.972Z",
   "application": {
     "version": "1.4.1",
-    "codeCommit": "5cf3710cd7dfca3c8881db3af88aee949f3a78ae",
-    "snapshotCommit": "97eec2eb177e6f19d9347197a1cbeb941fda3476"
+    "codeCommit": "97eec2eb177e6f19d9347197a1cbeb941fda3476",
+    "snapshotCommit": "76e2c4ba044783ee6895a15e819e604703bda1c3"
   },
   "lastAttempt": {
-    "runId": "45797076020",
+    "runId": "45979048125",
     "attempt": "1",
-    "startedAt": "2026-11-26T09:59:29Z",
-    "completedAt": "2026-11-26T10:02:23.377Z",
-    "refreshResult": "SUCCESS_CHANGED",
+    "startedAt": "2026-11-27T10:04:55Z",
+    "completedAt": "2026-11-27T10:08:02.972Z",
+    "refreshResult": "SUCCESS_NO_CHANGE",
     "buildResult": "success",
     "deploymentResult": "success",
     "notificationResult": "NOT_REQUESTED",
-    "codeCommit": "5cf3710cd7dfca3c8881db3af88aee949f3a78ae",
-    "snapshotCommit": "97eec2eb177e6f19d9347197a1cbeb941fda3476",
+    "codeCommit": "97eec2eb177e6f19d9347197a1cbeb941fda3476",
+    "snapshotCommit": "76e2c4ba044783ee6895a15e819e604703bda1c3",
     "version": "1.4.1"
   },
   "data": {
-    "checkStartedAt": "2026-11-26T09:59:47.351Z",
-    "checkCompletedAt": "2026-11-26T10:00:18.336Z",
-    "lastSuccessfulCheck": "2026-11-26T10:00:18.336Z",
-    "lastSuccessfulCheckStartedAt": "2026-11-26T09:59:47.351Z",
+    "checkStartedAt": "2026-11-27T10:05:18.040Z",
+    "checkCompletedAt": "2026-11-27T10:05:50.272Z",
+    "lastSuccessfulCheck": "2026-11-27T10:05:50.272Z",
+    "lastSuccessfulCheckStartedAt": "2026-11-27T10:05:18.040Z",
     "legacySuccessfulCheckRecordedAt": "2026-10-02T04:03:43.319Z",
-    "lastAttemptAt": "2026-11-26T09:59:47.351Z",
-    "result": "SUCCESS_CHANGED"
+    "lastAttemptAt": "2026-11-27T10:05:18.040Z",
+    "result": "SUCCESS_NO_CHANGE"
   },
   "deployment": {
-    "lastSuccessfulAt": "2026-11-26T10:01:24Z",
-    "codeCommit": "5cf3710cd7dfca3c8881db3af88aee949f3a78ae",
-    "snapshotCommit": "97eec2eb177e6f19d9347197a1cbeb941fda3476",
+    "lastSuccessfulAt": "2026-11-27T10:06:52Z",
+    "codeCommit": "97eec2eb177e6f19d9347197a1cbeb941fda3476",
+    "snapshotCommit": "76e2c4ba044783ee6895a15e819e604703bda1c3",
     "version": "1.4.1",
     "result": "success"
   },
   "notification": {
     "result": "NOT_REQUESTED",
-    "updatedAt": "2026-11-26T10:02:23.377Z"
+    "updatedAt": "2026-11-27T10:08:02.972Z"
   },
   "freshness": {
-    "asOf": "2026-11-26T10:02:23.377Z",
+    "asOf": "2026-11-27T10:08:02.972Z",
     "counts": {
-      "CURRENT": 64,
+      "CURRENT": 61,
+      "WAITING_FOR_EXPECTED_RELEASE": 3,
       "MANUAL_REVIEWED": 8,
       "FIXED_VINTAGE": 3
     }
@@ -51,385 +52,385 @@
     "CPIAUCNS": {
       "sourceUpdatedAt": "2026-11-10T14:12:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:47.624Z",
+      "checkedAt": "2026-11-27T10:05:18.309Z",
       "changed": false
     },
     "CPIUFDNS": {
       "sourceUpdatedAt": "2026-11-10T14:13:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:47.783Z",
+      "checkedAt": "2026-11-27T10:05:18.516Z",
       "changed": false
     },
     "CPIENGNS": {
       "sourceUpdatedAt": "2026-11-10T14:13:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:47.939Z",
+      "checkedAt": "2026-11-27T10:05:18.730Z",
       "changed": false
     },
     "MCOILWTICO": {
       "sourceUpdatedAt": "2026-11-04T18:18:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:48.107Z",
+      "checkedAt": "2026-11-27T10:05:18.918Z",
       "changed": false
     },
     "FEDFUNDS": {
       "sourceUpdatedAt": "2026-11-02T21:16:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:48.261Z",
+      "checkedAt": "2026-11-27T10:05:19.124Z",
       "changed": false
     },
     "CUUR0000SAH1": {
       "sourceUpdatedAt": "2026-11-10T14:13:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:48.427Z",
+      "checkedAt": "2026-11-27T10:05:19.331Z",
       "changed": false
     },
     "CEU0500000003": {
       "sourceUpdatedAt": "2026-11-06T15:41:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:48.593Z",
+      "checkedAt": "2026-11-27T10:05:19.551Z",
       "changed": false
     },
     "M2SL": {
       "sourceUpdatedAt": "2026-11-24T18:02:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:48.758Z",
+      "checkedAt": "2026-11-27T10:05:19.750Z",
       "changed": false
     },
     "PCEPILFE": {
       "sourceUpdatedAt": "2026-11-25T13:42:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:48.922Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:19.928Z",
+      "changed": false
     },
     "T5YIFR": {
       "sourceUpdatedAt": "2026-11-25T22:04:00.000Z",
       "latestAvailableObservationDate": "2026-11-25",
-      "checkedAt": "2026-11-26T09:59:49.137Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:20.181Z",
+      "changed": false
     },
     "DGS10": {
       "sourceUpdatedAt": "2026-11-25T21:16:00.000Z",
       "latestAvailableObservationDate": "2026-11-24",
-      "checkedAt": "2026-11-26T09:59:49.442Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:20.494Z",
+      "changed": false
     },
     "DFII10": {
       "sourceUpdatedAt": "2026-11-25T21:16:00.000Z",
       "latestAvailableObservationDate": "2026-11-24",
-      "checkedAt": "2026-11-26T09:59:49.651Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:20.744Z",
+      "changed": false
     },
     "DTWEXBGS": {
       "sourceUpdatedAt": "2026-11-23T21:16:00.000Z",
       "latestAvailableObservationDate": "2026-11-20",
-      "checkedAt": "2026-11-26T09:59:49.855Z",
+      "checkedAt": "2026-11-27T10:05:20.998Z",
       "changed": false
     },
     "WALCL": {
       "sourceUpdatedAt": "2026-11-19T21:32:00.000Z",
       "latestAvailableObservationDate": "2026-11-18",
-      "checkedAt": "2026-11-26T09:59:50.020Z",
+      "checkedAt": "2026-11-27T10:05:21.183Z",
       "changed": false
     },
     "FYPUGDA188S": {
       "sourceUpdatedAt": "2026-10-29T00:22:00.000Z",
       "latestAvailableObservationDate": "2025-01-01",
-      "checkedAt": "2026-11-26T09:59:50.184Z",
+      "checkedAt": "2026-11-27T10:05:21.382Z",
       "changed": false
     },
     "FYFSGDA188S": {
       "sourceUpdatedAt": "2026-10-29T00:22:00.000Z",
       "latestAvailableObservationDate": "2025-01-01",
-      "checkedAt": "2026-11-26T09:59:50.334Z",
+      "checkedAt": "2026-11-27T10:05:21.564Z",
       "changed": false
     },
     "FYOINT": {
       "sourceUpdatedAt": "2026-10-29T00:17:00.000Z",
       "latestAvailableObservationDate": "2026-09-30",
-      "checkedAt": "2026-11-26T09:59:50.498Z",
+      "checkedAt": "2026-11-27T10:05:21.777Z",
       "changed": false
     },
     "FYFR": {
       "sourceUpdatedAt": "2026-10-29T00:17:00.000Z",
       "latestAvailableObservationDate": "2026-09-30",
-      "checkedAt": "2026-11-26T09:59:50.661Z",
+      "checkedAt": "2026-11-27T10:05:21.970Z",
       "changed": false
     },
     "FP.CPI.TOTL.ZG": {
       "sourceUpdatedAt": "2026-11-11",
       "latestAvailableObservationDate": "2025",
-      "checkedAt": "2026-11-26T09:59:50.858Z",
+      "checkedAt": "2026-11-27T10:05:22.905Z",
       "changed": false
     },
     "GPR": {
       "sourceUpdatedAt": "2026-11-02",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.323Z",
+      "checkedAt": "2026-11-27T10:05:23.878Z",
       "changed": false
     },
     "GPRT": {
       "sourceUpdatedAt": "2026-11-02",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.323Z",
+      "checkedAt": "2026-11-27T10:05:23.878Z",
       "changed": false
     },
     "GPRA": {
       "sourceUpdatedAt": "2026-11-02",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.323Z",
+      "checkedAt": "2026-11-27T10:05:23.878Z",
       "changed": false
     },
     "GSCPI": {
       "sourceUpdatedAt": "2026-11",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.324Z",
+      "checkedAt": "2026-11-27T10:05:23.879Z",
       "changed": false
     },
     "FAO_FOOD": {
       "sourceUpdatedAt": "2026-11-06",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.329Z",
+      "checkedAt": "2026-11-27T10:05:23.883Z",
       "changed": false
     },
     "FAO_MEAT": {
       "sourceUpdatedAt": "2026-11-06",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.329Z",
+      "checkedAt": "2026-11-27T10:05:23.883Z",
       "changed": false
     },
     "FAO_DAIRY": {
       "sourceUpdatedAt": "2026-11-06",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.329Z",
+      "checkedAt": "2026-11-27T10:05:23.883Z",
       "changed": false
     },
     "FAO_CEREALS": {
       "sourceUpdatedAt": "2026-11-06",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.329Z",
+      "checkedAt": "2026-11-27T10:05:23.883Z",
       "changed": false
     },
     "FAO_OILS": {
       "sourceUpdatedAt": "2026-11-06",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.329Z",
+      "checkedAt": "2026-11-27T10:05:23.883Z",
       "changed": false
     },
     "FAO_SUGAR": {
       "sourceUpdatedAt": "2026-11-06",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:52.329Z",
+      "checkedAt": "2026-11-27T10:05:23.883Z",
       "changed": false
     },
     "OPHNFB": {
       "sourceUpdatedAt": "2026-11-05T13:38:00.000Z",
       "latestAvailableObservationDate": "2026-07",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "ULCNFB": {
       "sourceUpdatedAt": "2026-11-05T13:39:00.000Z",
       "latestAvailableObservationDate": "2026-07",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "COMPNFB": {
       "sourceUpdatedAt": "2026-11-05T13:38:00.000Z",
       "latestAvailableObservationDate": "2026-07",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "PNFIC1": {
       "sourceUpdatedAt": "2026-11-25T13:57:00.000Z",
       "latestAvailableObservationDate": "2026-07",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:26.810Z",
+      "changed": false
     },
     "A679RC1Q027SBEA": {
       "sourceUpdatedAt": "2026-11-25T13:55:00.000Z",
       "latestAvailableObservationDate": "2026-07",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:26.810Z",
+      "changed": false
     },
     "B985RC1Q027SBEA": {
       "sourceUpdatedAt": "2026-11-25T13:56:00.000Z",
       "latestAvailableObservationDate": "2026-07",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:26.810Z",
+      "changed": false
     },
     "B935RC1Q027SBEA": {
       "sourceUpdatedAt": "2026-11-25T13:56:00.000Z",
       "latestAvailableObservationDate": "2026-07",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:26.810Z",
+      "changed": false
     },
     "IPN22112CS": {
       "sourceUpdatedAt": "2026-11-24T17:05:00.000Z",
       "latestAvailableObservationDate": "2026-08",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "CUUR0000SEHF01": {
       "sourceUpdatedAt": "2026-11-10T14:13:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "GDPC1": {
       "sourceUpdatedAt": "2026-11-25T13:57:00.000Z",
       "latestAvailableObservationDate": "2026-07",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
-      "changed": true
+      "checkedAt": "2026-11-27T10:05:26.810Z",
+      "changed": false
     },
     "CE16OV": {
       "sourceUpdatedAt": "2026-11-06T15:42:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "IPG3344S": {
       "sourceUpdatedAt": "2026-11-24T17:06:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "MHHNGSP": {
       "sourceUpdatedAt": "2026-11-04T18:32:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "CENSUS_DATACENTER": {
       "sourceUpdatedAt": "2026-11-02",
       "latestAvailableObservationDate": "2026-09",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "CENSUS_NONRES": {
       "sourceUpdatedAt": "2026-11-02",
       "latestAvailableObservationDate": "2026-09",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "CENSUS_ELECTRONIC": {
       "sourceUpdatedAt": "2026-11-02",
       "latestAvailableObservationDate": "2026-09",
-      "checkedAt": "2026-11-26T09:59:54.953Z",
+      "checkedAt": "2026-11-27T10:05:26.810Z",
       "changed": false
     },
     "DPSACBM027SBOG": {
       "sourceUpdatedAt": "2026-11-20T21:21:00.000Z",
       "latestAvailableObservationDate": "2026-10",
-      "checkedAt": "2026-11-26T09:59:55.120Z",
+      "checkedAt": "2026-11-27T10:05:27.039Z",
       "changed": false
     },
     "COFER_USD": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_EUR": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_CNY": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_JPY": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_GBP": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_AUD": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_CAD": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_CHF": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_OTHER": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "COFER_IMPUTED": {
       "sourceUpdatedAt": "2026-09-30T13:00:00Z",
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "TIC_TOTAL": {
       "sourceUpdatedAt": "2026-11-18T21:04:51.000Z",
       "latestAvailableObservationDate": "2026-09",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "TIC_JAPAN": {
       "sourceUpdatedAt": "2026-11-18T21:04:51.000Z",
       "latestAvailableObservationDate": "2026-09",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "TIC_CHINA": {
       "sourceUpdatedAt": "2026-11-18T21:04:51.000Z",
       "latestAvailableObservationDate": "2026-09",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "TIC_UK": {
       "sourceUpdatedAt": "2026-11-18T21:04:51.000Z",
       "latestAvailableObservationDate": "2026-09",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "TIC_OFFICIAL": {
       "sourceUpdatedAt": "2026-11-18T21:04:51.000Z",
       "latestAvailableObservationDate": "2026-09",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "BIS_USD_TOTAL": {
       "sourceUpdatedAt": null,
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "BIS_USD_LOANS": {
       "sourceUpdatedAt": null,
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     },
     "BIS_USD_SECURITIES": {
       "sourceUpdatedAt": null,
       "latestAvailableObservationDate": "2026-04",
-      "checkedAt": "2026-11-26T09:59:56.342Z",
+      "checkedAt": "2026-11-27T10:05:28.203Z",
       "changed": false
     }
   }
